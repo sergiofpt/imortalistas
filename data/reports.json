@@ -101,7 +101,45 @@
     "en": "22 traits (response, metabolism and mental health); 312 of 330 SNPs (142 imputed)."
    },
    "paginas": 41,
-   "tamanho_kb": 221,
+   "tamanho_kb": 218,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "alimentos-longevidade-173",
+   "titulo": {
+    "pt": "Alimentos favoráveis à longevidade",
+    "en": "Longevity-favourable foods"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/alimentos-longevidade-173-alimentos.pdf",
+   "descricao": {
+    "pt": "141 de 173 alimentos com indicação genética favorável (73 moderada, 68 fraca); 32 neutros.",
+    "en": "141 of 173 foods with a favourable genetic indication (73 moderate, 68 weak); 32 neutral."
+   },
+   "paginas": 32,
+   "tamanho_kb": 184,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "health-report-72",
+   "titulo": {
+    "pt": "Health Report genético",
+    "en": "Genetic Health Report"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/health-report-72-tracos.pdf",
+   "descricao": {
+    "pt": "72 traços: 17 favoráveis, 10 desfavoráveis e os restantes típicos; 826 de 931 SNPs (241 imputados).",
+    "en": "72 traits: 17 favourable, 10 unfavourable and the rest typical; 826 of 931 SNPs (241 imputed)."
+   },
+   "paginas": 92,
+   "tamanho_kb": 501,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
