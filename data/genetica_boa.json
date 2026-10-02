@@ -1,0 +1,463 @@
+{
+ "_leia_me": "Página genetica-boa.html: SÓ resultados favoráveis. Ver README.md, secção \"Páginas de genética\". estado: ok | warn | bad | na | info. Texto: HTML simples (b, i, em, strong, br, small, sub, sup).",
+ "atualizado_em": "2026-10-02",
+ "fonte": {
+  "pt": "Fonte principal: <b>Genetica</b> · relatorio_dna_bruto.md (ficheiro bruto de genótipos: array de 684 967 marcadores, analisado localmente a 02-10-2026) · complementar: histamina_mastocitos_ige.md, metilacao_homocisteina.md e sergio_perfil_genetico.md (inclui os relatórios genéticos de 25-08-2026 e o relatório de cancro de 02-10-2026) · não diagnóstico",
+  "en": "Primary source: <b>Genetica</b> · relatorio_dna_bruto.md (raw genotype file: array of 684,967 markers, analysed locally on 02-10-2026) · supplementary: histamina_mastocitos_ige.md, metilacao_homocisteina.md and sergio_perfil_genetico.md (includes the genetic reports of 25-08-2026 and the cancer report of 02-10-2026) · not diagnostic"
+ },
+ "notas": [
+  {
+   "pt": "Só os resultados <b>favoráveis</b> (variantes protetoras, alelos de longevidade, scores abaixo da média, função normal com significado clínico tranquilizador). Os desfavoráveis estão em <b>Genética Má</b>; os neutros e médios não aparecem. Um array só testa variantes conhecidas: não exclui cancro hereditário (BRCA/Lynch), hipercolesterolemia familiar nem cardiomiopatias, e não mede CNV (duplicações do CYP2D6, GSTM1/GSTT1, LPA KIV-2).",
+   "en": "Only the <b>favourable</b> results (protective variants, longevity alleles, below-average scores, normal function with reassuring clinical meaning). Unfavourable ones are under <b>Bad Genetics</b>; neutral and average ones are not shown. An array only tests known variants: it does not rule out hereditary cancer (BRCA/Lynch), familial hypercholesterolaemia or cardiomyopathies, and it does not measure CNVs (CYP2D6 duplications, GSTM1/GSTT1, LPA KIV-2)."
+  }
+ ],
+ "seccoes": [
+  {
+   "id": "cardiovascular",
+   "titulo": {
+    "pt": "Cardiovascular e lípidos",
+    "en": "Cardiovascular and lipids"
+   },
+   "linhas": [
+    {
+     "item": "LPA",
+     "texto": {
+      "pt": "rs10455872 AA + rs3798220 TT: sem alelos de risco de Lp(a); Lp(a) medida 2 mg/dL",
+      "en": "rs10455872 AA + rs3798220 TT: no Lp(a) risk alleles; measured Lp(a) 2 mg/dL"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Sem risco",
+      "en": "No risk"
+     }
+    },
+    {
+     "item": {
+      "pt": "Scores CV",
+      "en": "CV scores"
+     },
+     "texto": {
+      "pt": "PGS de doença coronária P32–38 (cobertura baixa) · PGS de Lp(a) P17–20",
+      "en": "Coronary disease PGS P32–38 (low coverage) · Lp(a) PGS P17–20"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Abaixo da média",
+      "en": "Below average"
+     }
+    },
+    {
+     "item": "LDLR / SORT1",
+     "texto": {
+      "pt": "rs6511720 GT, rs12740374 GT: 1 alelo redutor de LDL em cada",
+      "en": "rs6511720 GT, rs12740374 GT: 1 LDL-lowering allele in each"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Favorável",
+      "en": "Favourable"
+     }
+    },
+    {
+     "item": "APOC3",
+     "texto": {
+      "pt": "Baixa atividade (rs5128 CC, rs2542052 CC): favorável aos triglicerídeos",
+      "en": "Low activity (rs5128 CC, rs2542052 CC): favourable for triglycerides"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Favorável",
+      "en": "Favourable"
+     }
+    },
+    {
+     "item": "SH2B3 · PHACTR1 · IL6R",
+     "texto": {
+      "pt": "SH2B3 R262 homozigoto (rs3184504 CC) · PHACTR1 rs9349379 AA (menor risco coronário) · IL6R Asp358Ala heterozigoto (menos sinalização IL-6, menos doença coronária)",
+      "en": "SH2B3 R262 homozygous (rs3184504 CC) · PHACTR1 rs9349379 AA (lower coronary risk) · IL6R Asp358Ala heterozygous (less IL-6 signalling, less coronary disease)"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Favorável",
+      "en": "Favourable"
+     }
+    },
+    {
+     "item": {
+      "pt": "Trombose",
+      "en": "Thrombosis"
+     },
+     "texto": {
+      "pt": "Fator V Leiden e protrombina G20210A negativos · ABO rs505922 TT: grupo O provável (menos tromboembolismo venoso; confirmar com tipagem)",
+      "en": "Factor V Leiden and prothrombin G20210A negative · ABO rs505922 TT: probable blood group O (less venous thromboembolism; confirm by typing)"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Negativo",
+      "en": "Negative"
+     }
+    }
+   ]
+  },
+  {
+   "id": "figado-metabolismo",
+   "titulo": {
+    "pt": "Fígado e metabolismo",
+    "en": "Liver and metabolism"
+   },
+   "linhas": [
+    {
+     "item": "HSD17B13",
+     "texto": {
+      "pt": "rs72613567 T/TA (inferido, VPP 96%): alelo protetor do fígado (menos inflamação e fibrose; atenua o PNPLA3 I148M)",
+      "en": "rs72613567 T/TA (inferred, PPV 96%): liver-protective allele (less inflammation and fibrosis; attenuates PNPLA3 I148M)"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Protetor",
+      "en": "Protective"
+     }
+    },
+    {
+     "item": "TM6SF2",
+     "texto": {
+      "pt": "rs58542926 CC (E167K): não portador",
+      "en": "rs58542926 CC (E167K): non-carrier"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Favorável",
+      "en": "Favourable"
+     }
+    },
+    {
+     "item": "ALDH2",
+     "texto": {
+      "pt": "rs671 GG: função normal (sem o alelo asiático de deficiência)",
+      "en": "rs671 GG: normal function (no Asian deficiency allele)"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Normal",
+      "en": "Normal"
+     }
+    },
+    {
+     "item": "DIO2",
+     "texto": {
+      "pt": "rs225014 TT (Thr92Thr): sem o alelo Ala92 associado a pior conversão de T4 em T3",
+      "en": "rs225014 TT (Thr92Thr): no Ala92 allele linked to poorer T4-to-T3 conversion"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Favorável",
+      "en": "Favourable"
+     }
+    }
+   ]
+  },
+  {
+   "id": "longevidade",
+   "titulo": {
+    "pt": "Longevidade e cérebro",
+    "en": "Longevity and brain"
+   },
+   "linhas": [
+    {
+     "item": "APOE",
+     "texto": {
+      "pt": "ε3/ε3: rs7412 CC genotipado + rs429358 TT inferido (VPP 99,3%); sem ε4",
+      "en": "ε3/ε3: rs7412 CC genotyped + rs429358 TT inferred (PPV 99.3%); no ε4"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Favorável",
+      "en": "Favourable"
+     }
+    },
+    {
+     "item": "FOXO3",
+     "texto": {
+      "pt": "rs2802292 GG + rs2764264 CC: homozigoto para os alelos de longevidade mais replicados · PGS de longevidade (330 variantes) P89",
+      "en": "rs2802292 GG + rs2764264 CC: homozygous for the most replicated longevity alleles · longevity PGS (330 variants) P89"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Favorável",
+      "en": "Favourable"
+     }
+    },
+    {
+     "item": "TREM2",
+     "texto": {
+      "pt": "Não portador das variantes de risco de Alzheimer",
+      "en": "Non-carrier of the Alzheimer's risk variants"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Favorável",
+      "en": "Favourable"
+     }
+    },
+    {
+     "item": {
+      "pt": "Envelhecimento",
+      "en": "Ageing"
+     },
+     "texto": {
+      "pt": "Healthy aging “higher” · presbiopia P4 (relatórios de 25-08-2026)",
+      "en": "Healthy aging “higher” · presbyopia P4 (reports of 25-08-2026)"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Favorável",
+      "en": "Favourable"
+     }
+    }
+   ]
+  },
+  {
+   "id": "cancro",
+   "titulo": {
+    "pt": "Cancro",
+    "en": "Cancer"
+   },
+   "linhas": [
+    {
+     "item": {
+      "pt": "Pele não-melanoma",
+      "en": "Non-melanoma skin"
+     },
+     "texto": {
+      "pt": "Carcinoma espinocelular P3 · basocelular “less likely”",
+      "en": "Squamous cell carcinoma P3 · basal cell “less likely”"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Abaixo da média",
+      "en": "Below average"
+     }
+    },
+    {
+     "item": {
+      "pt": "Scores de cancro",
+      "en": "Cancer scores"
+     },
+     "texto": {
+      "pt": "18 dos 29 scores do relatório de cancro de 02-10-2026 “less likely”, incluindo pâncreas e fígado",
+      "en": "18 of the 29 scores in the cancer report of 02-10-2026 “less likely”, including pancreas and liver"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Abaixo da média",
+      "en": "Below average"
+     }
+    },
+    {
+     "item": {
+      "pt": "Genes de risco",
+      "en": "Risk genes"
+     },
+     "texto": {
+      "pt": "HOXB13 CC · MUTYH (G396D, Y179C), CHEK2 I157T e APC I1307K: não portador",
+      "en": "HOXB13 CC · MUTYH (G396D, Y179C), CHEK2 I157T and APC I1307K: non-carrier"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Negativo",
+      "en": "Negative"
+     }
+    },
+    {
+     "item": "MC1R",
+     "texto": {
+      "pt": "R151C, R160W, D294H, V60L e restantes variantes principais: todas de referência (sem variantes “ruivas”)",
+      "en": "R151C, R160W, D294H, V60L and the other main variants: all reference (no “red hair” variants)"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Sem risco",
+      "en": "No risk"
+     }
+    }
+   ]
+  },
+  {
+   "id": "nutrientes",
+   "titulo": {
+    "pt": "Nutrientes, osso e intestino",
+    "en": "Nutrients, bone and gut"
+   },
+   "linhas": [
+    {
+     "item": {
+      "pt": "Vitamina D",
+      "en": "Vitamin D"
+     },
+     "texto": {
+      "pt": "GC rs2282679 TT, rs7041 CC, rs4588 GG · DHCR7 rs12785878 TT: genótipos de 25(OH)D mais alta",
+      "en": "GC rs2282679 TT, rs7041 CC, rs4588 GG · DHCR7 rs12785878 TT: higher-25(OH)D genotypes"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Favorável",
+      "en": "Favourable"
+     }
+    },
+    {
+     "item": {
+      "pt": "Ómega-3",
+      "en": "Omega-3"
+     },
+     "texto": {
+      "pt": "FADS1/2 de alta atividade: conversão eficiente",
+      "en": "High-activity FADS1/2: efficient conversion"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Favorável",
+      "en": "Favourable"
+     }
+    },
+    {
+     "item": {
+      "pt": "Lactose",
+      "en": "Lactose"
+     },
+     "texto": {
+      "pt": "LCT AG: tolerante à lactose",
+      "en": "LCT AG: lactose tolerant"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Favorável",
+      "en": "Favourable"
+     }
+    },
+    {
+     "item": {
+      "pt": "Doença celíaca",
+      "en": "Coeliac disease"
+     },
+     "texto": {
+      "pt": "Sem HLA-DQ2.5/DQ8 (rs2187668 CC, rs7454108 TT): muito improvável",
+      "en": "No HLA-DQ2.5/DQ8 (rs2187668 CC, rs7454108 TT): very unlikely"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Negativo",
+      "en": "Negative"
+     }
+    },
+    {
+     "item": "NOD2 · CLEC7A",
+     "texto": {
+      "pt": "NOD2 sem variantes de Crohn · CLEC7A sem o stop Y238X de Dectin-1",
+      "en": "NOD2 without Crohn’s variants · CLEC7A without the Dectin-1 Y238X stop"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Negativo",
+      "en": "Negative"
+     }
+    },
+    {
+     "item": "COL1A1",
+     "texto": {
+      "pt": "rs1800012 CC: sem o alelo “s” de osteoporose",
+      "en": "rs1800012 CC: no “s” osteoporosis allele"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Favorável",
+      "en": "Favourable"
+     }
+    }
+   ]
+  },
+  {
+   "id": "farmacogenomica",
+   "titulo": {
+    "pt": "Farmacogenómica",
+    "en": "Pharmacogenomics"
+   },
+   "linhas": [
+    {
+     "item": "SLCO1B1",
+     "texto": {
+      "pt": "*1/*14 (função aumentada): estatinas bem toleradas, favorável à pitavastatina",
+      "en": "*1/*14 (increased function): statins well tolerated, favourable for pitavastatin"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Favorável",
+      "en": "Favourable"
+     }
+    },
+    {
+     "item": "CYP2D6",
+     "texto": {
+      "pt": "*1/*2 provável: metabolizador normal (o array não vê duplicações)",
+      "en": "Probable *1/*2: normal metaboliser (the array cannot see duplications)"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Normal",
+      "en": "Normal"
+     }
+    },
+    {
+     "item": "CYP2C19 · CYP3A4",
+     "texto": {
+      "pt": "CYP2C19 *1/*1 · CYP3A4 *1/*1 (sem *22): metabolizadores normais",
+      "en": "CYP2C19 *1/*1 · CYP3A4 *1/*1 (no *22): normal metabolisers"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Normal",
+      "en": "Normal"
+     }
+    },
+    {
+     "item": "ABCG2",
+     "texto": {
+      "pt": "rs2231142 GG: função normal",
+      "en": "rs2231142 GG: normal function"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Normal",
+      "en": "Normal"
+     }
+    },
+    {
+     "item": "HLA",
+     "texto": {
+      "pt": "B*57:01 negativo · A*31:01 provável negativo",
+      "en": "B*57:01 negative · A*31:01 probably negative"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Negativo",
+      "en": "Negative"
+     }
+    },
+    {
+     "item": {
+      "pt": "Sem variantes",
+      "en": "No variants"
+     },
+     "texto": {
+      "pt": "DPYD · TPMT · NUDT15 · G6PD · UGT1A9 · RYR1 · CACNA1S",
+      "en": "DPYD · TPMT · NUDT15 · G6PD · UGT1A9 · RYR1 · CACNA1S"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Normal",
+      "en": "Normal"
+     }
+    }
+   ]
+  }
+ ]
+}

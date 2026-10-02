@@ -16,7 +16,8 @@ laboratório (ver classifica_intolerancia); os restantes vão para "marcadores".
 import argparse, csv, json, os, re, sys
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 F_SANGUE = os.path.join(RAIZ, 'data', 'sangue.json')
-F_GENETICA = os.path.join(RAIZ, 'data', 'genetica.json')  # página genetica.html (editada à mão; ver README)
+# páginas de genética (JSON editados à mão; ver README): Genética Má e Genética Boa
+F_GENETICA = {'genetica.html': os.path.join(RAIZ, 'data', 'genetica.json'), 'genetica-boa.html': os.path.join(RAIZ, 'data', 'genetica_boa.json')}
 # privacidade: nunca publicar a medida da balança nem nada que a permita deduzir
 # (os termos são montados por partes para que o próprio ficheiro não os contenha literalmente)
 _T = ['ger' + 'mano', 'sou' + 'sa', 'cu' + 'f', 'coim' + 'bra', 'pe' + 'so', 'i' + 'mc', 'b' + 'mi', 'f' + 'mi', 'l' + 'mi', '19' + '99', 'lis' + 'boa', 'lis' + 'bon', 'chen' + 'nai']
@@ -128,11 +129,18 @@ def cmd_sangue(a):
 
 TAGS_OK = re.compile(r'</?(b|i|em|strong|br|small|sub|sup)\s*/?>', re.I)
 def verificar_genetica():
-    """data/genetica.json: estrutura, PT+EN em todos os textos, ids únicos, estados válidos, só HTML simples."""
-    if not os.path.exists(F_GENETICA): print('AVISO: data/genetica.json não existe (genetica.html fica vazia)'); return True
-    ok = True; d = ler(F_GENETICA); ids = set(); n = 0
+    ok = True
+    for pag, f in F_GENETICA.items():
+        if not os.path.exists(os.path.join(RAIZ, pag)): ok = False; print(f'ERRO: falta {pag}')
+        if not os.path.exists(f): ok = False; print(f'ERRO: falta data/{os.path.basename(f)} ({pag} fica vazia)'); continue
+        ok = verificar_genetica_json(f) and ok
+    return ok
+
+def verificar_genetica_json(F):
+    """JSON de uma página de genética: estrutura, PT+EN em todos os textos, ids únicos, estados válidos, só HTML simples."""
+    ok = True; d = ler(F); ids = set(); n = 0; nome = os.path.basename(F)
     def err(m):
-        nonlocal ok; ok = False; print('ERRO genetica.json: ' + m)
+        nonlocal ok; ok = False; print(f'ERRO {nome}: ' + m)
     def bi(o, onde, obrig=True):
         if o is None or o == '':
             if obrig: err(f'{onde}: texto em falta')
@@ -155,7 +163,7 @@ def verificar_genetica():
             n += 1; bi(r.get('item'), f'{sid}.linhas[{k}].item'); bi(r.get('texto'), f'{sid}.linhas[{k}].texto')
             if r.get('rotulo') is not None: bi(r.get('rotulo'), f'{sid}.linhas[{k}].rotulo')
             if r.get('estado', 'na') not in ('ok', 'warn', 'bad', 'na', 'info'): err(f'{sid}.linhas[{k}]: estado {r.get("estado")!r} (ok, warn, bad, na, info)')
-    print(f'genetica.json: {len(ids)} secções, {n} linhas')
+    print(f'{nome}: {len(ids)} secções, {n} linhas')
     return ok
 
 def cmd_verificar(a):

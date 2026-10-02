@@ -1,22 +1,22 @@
 {
- "_leia_me": "Conteúdo da página genetica.html. Ver README.md, secção \"Página Genética\". estado: ok (verde) | warn (amarelo) | bad (vermelho) | na (cinzento). Texto: HTML simples (b, i, br, small, sub, sup).",
+ "_leia_me": "Página genetica.html: SÓ resultados desfavoráveis. Ver README.md, secção \"Páginas de genética\". estado: ok | warn | bad | na | info. Texto: HTML simples (b, i, em, strong, br, small, sub, sup).",
  "atualizado_em": "2026-10-02",
  "fonte": {
-  "pt": "Fonte principal: <b>Genetica</b> · relatorio_dna_bruto.md (ficheiro bruto de genótipos: array de 684 967 marcadores, analisado localmente a 02-10-2026; 99,92% concordante com os relatórios anteriores) · complementar: sergio_perfil_genetico.md, sergio_variantes.csv, sergio_genetica_x_sangue.md e 6 relatórios genéticos de 25-08-2026 (array + imputação) · não diagnóstico",
-  "en": "Primary source: <b>Genetica</b> · relatorio_dna_bruto.md (raw genotype file: array of 684,967 markers, analysed locally on 02-10-2026; 99.92% concordant with the earlier reports) · supplementary: sergio_perfil_genetico.md, sergio_variantes.csv, sergio_genetica_x_sangue.md and 6 genetic reports of 25-08-2026 (array + imputation) · not diagnostic"
+  "pt": "Fonte principal: <b>Genetica</b> · relatorio_dna_bruto.md (ficheiro bruto de genótipos: array de 684 967 marcadores, analisado localmente a 02-10-2026) · complementar: histamina_mastocitos_ige.md, metilacao_homocisteina.md e sergio_perfil_genetico.md (inclui os relatórios genéticos de 25-08-2026 e o relatório de cancro de 02-10-2026) · não diagnóstico",
+  "en": "Primary source: <b>Genetica</b> · relatorio_dna_bruto.md (raw genotype file: array of 684,967 markers, analysed locally on 02-10-2026) · supplementary: histamina_mastocitos_ige.md, metilacao_homocisteina.md and sergio_perfil_genetico.md (includes the genetic reports of 25-08-2026 and the cancer report of 02-10-2026) · not diagnostic"
  },
  "notas": [
   {
-   "pt": "Único achado ClinVar plausível: <b>SERPINA1 Pi*MZ provável</b> (portador de défice de alfa-1-antitripsina), <b>por confirmar</b> em laboratório clínico (AAT sérica + fenótipo Pi). Os restantes hits raros são artefactos prováveis do array. Um array não exclui cancro hereditário (BRCA/Lynch), hipercolesterolemia familiar nem cardiomiopatias; sem CNV (duplicações do CYP2D6, GSTM1/GSTT1 e LPA KIV-2 não avaliáveis).",
-   "en": "Only plausible ClinVar finding: <b>probable SERPINA1 Pi*MZ</b> (alpha-1 antitrypsin deficiency carrier), <b>to be confirmed</b> in a clinical lab (serum AAT + Pi phenotype). The other rare hits are probable array artefacts. An array does not rule out hereditary cancer (BRCA/Lynch), familial hypercholesterolaemia or cardiomyopathies; no CNV (CYP2D6 duplications, GSTM1/GSTT1 and LPA KIV-2 not assessable)."
+   "pt": "Só os resultados <b>desfavoráveis</b> (alelos de risco, scores acima da média, estado de portador, necessidades aumentadas). Os favoráveis estão em <b>Genética Boa</b>; os neutros e médios não aparecem. Achado ClinVar a confirmar em laboratório clínico: <b>SERPINA1 Pi*MZ provável</b> (AAT sérica + fenótipo Pi). Um array só testa variantes conhecidas: não exclui cancro hereditário (BRCA/Lynch), hipercolesterolemia familiar nem cardiomiopatias, e não mede CNV (duplicações do CYP2D6, GSTM1/GSTT1, LPA KIV-2).",
+   "en": "Only the <b>unfavourable</b> results (risk alleles, above-average scores, carrier status, increased needs). Favourable ones are under <b>Good Genetics</b>; neutral and average ones are not shown. ClinVar finding to confirm in a clinical lab: <b>probable SERPINA1 Pi*MZ</b> (serum AAT + Pi phenotype). An array only tests known variants: it does not rule out hereditary cancer (BRCA/Lynch), familial hypercholesterolaemia or cardiomyopathies, and it does not measure CNVs (CYP2D6 duplications, GSTM1/GSTT1, LPA KIV-2)."
   }
  ],
  "seccoes": [
   {
    "id": "cardiometabolico",
    "titulo": {
-    "pt": "Cardiometabólico e fígado",
-    "en": "Cardiometabolic and liver"
+    "pt": "Cardiometabólico",
+    "en": "Cardiometabolic"
    },
    "linhas": [
     {
@@ -32,66 +32,15 @@
      }
     },
     {
-     "item": {
-      "pt": "Scores CV",
-      "en": "CV scores"
-     },
-     "texto": {
-      "pt": "PGS de doença coronária P32–38 (cobertura baixa) · PGS de LDL inconclusivo · PGS de Lp(a) P17–20",
-      "en": "Coronary disease PGS P32–38 (low coverage) · LDL PGS inconclusive · Lp(a) PGS P17–20"
-     },
-     "estado": "na",
-     "rotulo": {
-      "pt": "Típico",
-      "en": "Typical"
-     }
-    },
-    {
      "item": "CETP",
      "texto": {
-      "pt": "rs708272 GG + rs3764261 CC + rs5882 AA: atividade alta → HDL baixo (confirmado: HDL 41)",
-      "en": "rs708272 GG + rs3764261 CC + rs5882 AA: high activity → low HDL (confirmed: HDL 41)"
+      "pt": "rs708272 GG + rs3764261 CC + rs5882 AA: atividade alta → HDL mais baixo (HDL medido 41)",
+      "en": "rs708272 GG + rs3764261 CC + rs5882 AA: high activity → lower HDL (measured HDL 41)"
      },
      "estado": "warn",
      "rotulo": {
       "pt": "Confirmado",
       "en": "Confirmed"
-     }
-    },
-    {
-     "item": "LDLR / SORT1",
-     "texto": {
-      "pt": "rs6511720 TG, rs12740374 TG: alelos de LDL mais baixo",
-      "en": "rs6511720 TG, rs12740374 TG: lower-LDL alleles"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Favorável",
-      "en": "Favourable"
-     }
-    },
-    {
-     "item": "LPA",
-     "texto": {
-      "pt": "rs10455872 AA + rs3798220 TT: sem alelos de risco; Lp(a) medida 2 mg/dL (KIV-2 não avaliável)",
-      "en": "rs10455872 AA + rs3798220 TT: no risk alleles; measured Lp(a) 2 mg/dL (KIV-2 not assessable)"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Sem risco",
-      "en": "No risk"
-     }
-    },
-    {
-     "item": "APOC3",
-     "texto": {
-      "pt": "Baixa atividade (rs5128 CC, rs2542052 CC): favorável aos TG; sem variantes raras de perda de função",
-      "en": "Low activity (rs5128 CC, rs2542052 CC): favourable for TG; no rare loss-of-function variants"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Favorável",
-      "en": "Favourable"
      }
     },
     {
@@ -110,49 +59,10 @@
      }
     },
     {
-     "item": "PNPLA3",
-     "texto": {
-      "pt": "rs738409 GC (I148M het): fígado gordo; TM6SF2 CC (não portador)",
-      "en": "rs738409 GC (I148M het): fatty liver; TM6SF2 CC (non-carrier)"
-     },
-     "estado": "bad",
-     "rotulo": {
-      "pt": "Confirmado",
-      "en": "Confirmed"
-     }
-    },
-    {
-     "item": "SERPINA1",
-     "texto": {
-      "pt": "rs28929474 CT: Pi*MZ provável (portador de défice de alfa-1-antitripsina; cofator de fibrose hepática); sem Pi*S. Não confirmado",
-      "en": "rs28929474 CT: probable Pi*MZ (alpha-1 antitrypsin deficiency carrier; liver fibrosis cofactor); no Pi*S. Not confirmed"
-     },
-     "estado": "warn",
-     "rotulo": {
-      "pt": "Por confirmar",
-      "en": "To confirm"
-     }
-    },
-    {
-     "item": {
-      "pt": "Fígado (outros)",
-      "en": "Liver (other)"
-     },
-     "texto": {
-      "pt": "HSD17B13 T/TA (inferido): alelo protetor · MBOAT7 rs641738 CT: 1 alelo de risco",
-      "en": "HSD17B13 T/TA (inferred): protective allele · MBOAT7 rs641738 CT: 1 risk allele"
-     },
-     "estado": "na",
-     "rotulo": {
-      "pt": "Misto",
-      "en": "Mixed"
-     }
-    },
-    {
      "item": "TCF7L2",
      "texto": {
-      "pt": "rs7903146 TC + rs12255372 TG: risco de DM2 (mascarado pelos fármacos)",
-      "en": "rs7903146 TC + rs12255372 TG: T2D risk (masked by medication)"
+      "pt": "rs7903146 CT + rs12255372 TG: risco de diabetes tipo 2",
+      "en": "rs7903146 CT + rs12255372 TG: type 2 diabetes risk"
      },
      "estado": "warn",
      "rotulo": {
@@ -175,8 +85,8 @@
     {
      "item": "MTNR1B",
      "texto": {
-      "pt": "rs10830963 CG: glicemia em jejum mais alta; melatonina piora a tolerância à glicose",
-      "en": "rs10830963 CG: higher fasting glucose; melatonin worsens glucose tolerance"
+      "pt": "rs10830963 CG: glicemia em jejum mais alta; refeições tardias pesam mais",
+      "en": "rs10830963 CG: higher fasting glucose; late meals weigh more"
      },
      "estado": "warn",
      "rotulo": {
@@ -186,116 +96,128 @@
     },
     {
      "item": {
-      "pt": "Outros",
-      "en": "Others"
+      "pt": "Scores metabólicos",
+      "en": "Metabolic scores"
      },
      "texto": {
-      "pt": "MC4R TT · PPARG CC · GCKR TC · KCNJ11 TT · SLC30A8 CC",
-      "en": "MC4R TT · PPARG CC · GCKR TC · KCNJ11 TT · SLC30A8 CC"
+      "pt": "PGS de diabetes tipo 2 P60–71 · PGS de gordura visceral ajustada P78 (independente da adiposidade global)",
+      "en": "Type 2 diabetes PGS P60–71 · adjusted visceral fat PGS P78 (independent of overall adiposity)"
      },
-     "estado": "na",
+     "estado": "warn",
      "rotulo": {
-      "pt": "Neutro",
-      "en": "Neutral"
+      "pt": "Acima da média",
+      "en": "Above average"
      }
     }
    ]
   },
   {
-   "id": "longevidade",
+   "id": "figado",
    "titulo": {
-    "pt": "Longevidade e cérebro",
-    "en": "Longevity and brain"
+    "pt": "Fígado",
+    "en": "Liver"
    },
    "linhas": [
     {
-     "item": "APOE",
+     "item": "SERPINA1",
      "texto": {
-      "pt": "ε3/ε3: rs7412 CC genotipado + rs429358 TT inferido (VPP 99,3%); sem ε4 nem ε2",
-      "en": "ε3/ε3: rs7412 CC genotyped + rs429358 TT inferred (PPV 99.3%); no ε4 and no ε2"
+      "pt": "rs28929474 CT: Pi*MZ provável (portador de défice de alfa-1-antitripsina; cofator de fibrose hepática). Por confirmar",
+      "en": "rs28929474 CT: probable Pi*MZ (alpha-1 antitrypsin deficiency carrier; liver fibrosis cofactor). To be confirmed"
      },
-     "estado": "ok",
+     "estado": "warn",
      "rotulo": {
-      "pt": "Favorável",
-      "en": "Favourable"
+      "pt": "Portador",
+      "en": "Carrier"
+     }
+    },
+    {
+     "item": "PNPLA3",
+     "texto": {
+      "pt": "rs738409 GC (I148M heterozigoto): fígado gordo",
+      "en": "rs738409 GC (I148M heterozygous): fatty liver"
+     },
+     "estado": "bad",
+     "rotulo": {
+      "pt": "Confirmado",
+      "en": "Confirmed"
+     }
+    },
+    {
+     "item": "MBOAT7 · PEMT",
+     "texto": {
+      "pt": "MBOAT7 rs641738 CT: 1 alelo de risco · PEMT V175M heterozigoto (colina; ligação fraca a fígado gordo)",
+      "en": "MBOAT7 rs641738 CT: 1 risk allele · PEMT V175M heterozygous (choline; weak link to fatty liver)"
+     },
+     "estado": "warn",
+     "rotulo": {
+      "pt": "Risco",
+      "en": "Risk"
      }
     },
     {
      "item": {
-      "pt": "Cognição",
-      "en": "Cognition"
+      "pt": "Gordura hepática (PGS)",
+      "en": "Liver fat (PGS)"
      },
      "texto": {
-      "pt": "PGS de Alzheimer sem APOE P87 (componente não-APOE acima da média); APOE ε3/ε3 neutro · TREM2 não portador",
-      "en": "Alzheimer's PGS without APOE P87 (non-APOE component above average); APOE ε3/ε3 neutral · TREM2 non-carrier"
+      "pt": "Score de 4 genes P69 · score por RM P66: ligeiramente acima da média",
+      "en": "4-gene score P69 · MRI-based score P66: slightly above average"
      },
-     "estado": "na",
+     "estado": "warn",
      "rotulo": {
-      "pt": "Misto",
-      "en": "Mixed"
+      "pt": "Acima da média",
+      "en": "Above average"
      }
-    },
+    }
+   ]
+  },
+  {
+   "id": "cerebro-cancro",
+   "titulo": {
+    "pt": "Cérebro, cancro e envelhecimento",
+    "en": "Brain, cancer and ageing"
+   },
+   "linhas": [
     {
-     "item": "FOXO3",
-     "texto": {
-      "pt": "rs2802292 GG + rs2764264 CC: homozigoto para os alelos de longevidade · PGS de longevidade (330 variantes) P89",
-      "en": "rs2802292 GG + rs2764264 CC: homozygous for the longevity alleles · longevity PGS (330 variants) P89"
+     "item": {
+      "pt": "Alzheimer (PGS)",
+      "en": "Alzheimer's (PGS)"
      },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Favorável",
-      "en": "Favourable"
-     }
-    },
-    {
-     "item": "TP53",
      "texto": {
-      "pt": "rs1042522 CC = Arg72/Arg72 (inferido, VPP 97%): apoptose mais eficiente",
-      "en": "rs1042522 CC = Arg72/Arg72 (inferred, PPV 97%): more efficient apoptosis"
+      "pt": "PGS sem APOE P87: componente não-APOE acima da média",
+      "en": "PGS without APOE P87: non-APOE component above average"
      },
-     "estado": "na",
+     "estado": "warn",
      "rotulo": {
-      "pt": "Info",
-      "en": "Info"
+      "pt": "Acima da média",
+      "en": "Above average"
      }
     },
     {
      "item": {
-      "pt": "Telómeros",
-      "en": "Telomeres"
+      "pt": "Melanoma (PGS)",
+      "en": "Melanoma (PGS)"
      },
      "texto": {
-      "pt": "Score de 7 SNPs P49 (médio): “mais curtos” não confirmado · TERT rs2736100 CC (alelo de telómeros mais longos)",
-      "en": "7-SNP score P49 (average): “shorter” not confirmed · TERT rs2736100 CC (longer-telomere allele)"
+      "pt": "P89 (“more likely”, relatório de cancro de 02-10-2026): fundo poligénico (CTSS, AGR2, SOX4 com 2 alelos de risco cada), sem alelos de risco em MC1R/IRF4/TYR",
+      "en": "P89 (“more likely”, cancer report of 02-10-2026): polygenic background (CTSS, AGR2, SOX4 with 2 risk alleles each), no risk alleles in MC1R/IRF4/TYR"
      },
-     "estado": "na",
+     "estado": "bad",
      "rotulo": {
-      "pt": "Médio",
-      "en": "Average"
+      "pt": "Risco",
+      "en": "Risk"
      }
     },
     {
-     "item": "Klotho",
+     "item": "TERT",
      "texto": {
-      "pt": "rs9536314 TT (sem KL-VS): típico",
-      "en": "rs9536314 TT (no KL-VS): typical"
+      "pt": "rs2736100 CC, rs7734992 CC, rs10069690 TT: os alelos que alongam os telómeros associam-se em GWAS a mais risco de alguns cancros (glioma, tiroide, rim) e de hematopoiese clonal (CHIP)",
+      "en": "rs2736100 CC, rs7734992 CC, rs10069690 TT: the telomere-lengthening alleles are linked in GWAS to higher risk of some cancers (glioma, thyroid, kidney) and of clonal haematopoiesis (CHIP)"
      },
-     "estado": "na",
+     "estado": "warn",
      "rotulo": {
-      "pt": "Típico",
-      "en": "Typical"
-     }
-    },
-    {
-     "item": "BDNF / COMT",
-     "texto": {
-      "pt": "Val66Met CT · COMT GG (Val/Val)",
-      "en": "Val66Met CT · COMT GG (Val/Val)"
-     },
-     "estado": "na",
-     "rotulo": {
-      "pt": "Info",
-      "en": "Info"
+      "pt": "Atenção",
+      "en": "Caution"
      }
     },
     {
@@ -304,8 +226,8 @@
       "en": "Muscle"
      },
      "texto": {
-      "pt": "Fragilidade P82 · sarcopenia “mais provável” · ACTN3 TC (R/X) · PPARGC1A CC (hoje contrariado pelo fenótipo)",
-      "en": "Frailty P82 · sarcopenia “more likely” · ACTN3 TC (R/X) · PPARGC1A CC (currently contradicted by phenotype)"
+      "pt": "PGS de fragilidade P82 · sarcopenia “mais provável” (relatórios de 25-08-2026; contrariado pelo fenótipo atual)",
+      "en": "Frailty PGS P82 · sarcopenia “more likely” (reports of 25-08-2026; contradicted by the current phenotype)"
      },
      "estado": "warn",
      "rotulo": {
@@ -315,32 +237,17 @@
     },
     {
      "item": {
-      "pt": "Cancro",
-      "en": "Cancer"
+      "pt": "Pele (envelhecimento)",
+      "en": "Skin (ageing)"
      },
      "texto": {
-      "pt": "Colorretal: PGS P45–54 (médio; P76 não confirmado) · próstata: PGS não elevado (inconclusivo; P79 não confirmado) · HOXB13 CC · MUTYH, CHEK2 I157T e APC I1307K não portador",
-      "en": "Colorectal: PGS P45–54 (average; P76 not confirmed) · prostate: PGS not elevated (inconclusive; P79 not confirmed) · HOXB13 CC · MUTYH, CHEK2 I157T and APC I1307K non-carrier"
+      "pt": "Rugas faciais “more” (relatórios de 25-08-2026)",
+      "en": "Facial wrinkles “more” (reports of 25-08-2026)"
      },
-     "estado": "na",
+     "estado": "warn",
      "rotulo": {
-      "pt": "Típico",
-      "en": "Typical"
-     }
-    },
-    {
-     "item": {
-      "pt": "Envelhecimento",
-      "en": "Ageing"
-     },
-     "texto": {
-      "pt": "Healthy aging “higher” · rugas faciais “more” · cabelo grisalho típico · presbiopia P4",
-      "en": "Healthy aging “higher” · facial wrinkles “more” · typical greying · presbyopia P4"
-     },
-     "estado": "na",
-     "rotulo": {
-      "pt": "Info",
-      "en": "Info"
+      "pt": "Risco",
+      "en": "Risk"
      }
     },
     {
@@ -361,25 +268,52 @@
    ]
   },
   {
-   "id": "nutrientes",
+   "id": "metilacao-nutrientes",
    "titulo": {
-    "pt": "Nutrientes e metabolismo",
-    "en": "Nutrients and metabolism"
+    "pt": "Metilação, histamina e nutrientes",
+    "en": "Methylation, histamine and nutrients"
    },
    "linhas": [
     {
-     "item": {
-      "pt": "Metilação",
-      "en": "Methylation"
-     },
+     "item": "MTHFR",
      "texto": {
-      "pt": "MTHFR C677T AG + A1298C TG (heterozigoto composto) · MTR AA · MTRR AA · BHMT AG. Homocisteína 18,4 alta, mas a genética só explica uma parte",
-      "en": "MTHFR C677T AG + A1298C TG (compound heterozygote) · MTR AA · MTRR AA · BHMT AG. Homocysteine 18.4 is high, but genetics only explains part of it"
+      "pt": "C677T (rs1801133 GA) + A1298C (rs1801131 TG): heterozigoto composto, ~50–60% da atividade (sem R594Q)",
+      "en": "C677T (rs1801133 GA) + A1298C (rs1801131 TG): compound heterozygote, ~50–60% activity (no R594Q)"
      },
      "estado": "warn",
      "rotulo": {
-      "pt": "Parcial",
-      "en": "Partial"
+      "pt": "Reduzida",
+      "en": "Reduced"
+     }
+    },
+    {
+     "item": {
+      "pt": "Homocisteína (score)",
+      "en": "Homocysteine (score)"
+     },
+     "texto": {
+      "pt": "Score genético P92 (+0,20 DP, ≈ +0,7 µmol/L): DPEP1 rs154657 AA, MMUT rs9369898 AA, GNMT rs9296404 TT (inferido; sobe após carga de metionina). Explica só ~1 µmol/L dos 18,4",
+      "en": "Genetic score P92 (+0.20 SD, ≈ +0.7 µmol/L): DPEP1 rs154657 AA, MMUT rs9369898 AA, GNMT rs9296404 TT (inferred; raises it after a methionine load). Explains only ~1 µmol/L of the 18.4"
+     },
+     "estado": "warn",
+     "rotulo": {
+      "pt": "Acima da média",
+      "en": "Above average"
+     }
+    },
+    {
+     "item": {
+      "pt": "Histamina",
+      "en": "Histamine"
+     },
+     "texto": {
+      "pt": "Degradação ligeiramente reduzida: DAO Thr16Met (rs10156191 CT) + His645Asp (rs1049793 CG, menos proteína DAO) · HNMT Thr105Ile (rs11558538 CT, enzima termolábil); todos heterozigotos",
+      "en": "Mildly reduced breakdown: DAO Thr16Met (rs10156191 CT) + His645Asp (rs1049793 CG, less DAO protein) · HNMT Thr105Ile (rs11558538 CT, thermolabile enzyme); all heterozygous"
+     },
+     "estado": "warn",
+     "rotulo": {
+      "pt": "Reduzida",
+      "en": "Reduced"
      }
     },
     {
@@ -388,8 +322,8 @@
       "en": "Iron"
      },
      "texto": {
-      "pt": "HFE H63D het (rs1799945 CG), sem C282Y · TMPRSS6 GA",
-      "en": "HFE H63D het (rs1799945 CG), no C282Y · TMPRSS6 GA"
+      "pt": "HFE H63D heterozigoto (rs1799945 CG), sem C282Y: portador (risco de hemocromatose muito baixo)",
+      "en": "HFE H63D heterozygous (rs1799945 CG), no C282Y: carrier (very low haemochromatosis risk)"
      },
      "estado": "warn",
      "rotulo": {
@@ -399,92 +333,71 @@
     },
     {
      "item": {
-      "pt": "Vitamina D",
-      "en": "Vitamin D"
-     },
-     "texto": {
-      "pt": "GC rs2282679 TT, rs7041 CC, rs4588 GG · DHCR7 rs12785878 TT: 25(OH)D prevista mais alta (contrariado: 37,4)",
-      "en": "GC rs2282679 TT, rs7041 CC, rs4588 GG · DHCR7 rs12785878 TT: higher predicted 25(OH)D (contradicted: 37.4)"
-     },
-     "estado": "warn",
-     "rotulo": {
-      "pt": "Contradito",
-      "en": "Contradicted"
-     }
-    },
-    {
-     "item": {
-      "pt": "Ómega-3",
-      "en": "Omega-3"
-     },
-     "texto": {
-      "pt": "FADS1/2 de alta atividade; índice ómega-3 5,4% baixo, não explicado pela genética (dose/absorção)",
-      "en": "FADS1/2 high activity; omega-3 index 5.4% is low, not explained by genetics (dose/absorption)"
-     },
-     "estado": "na",
-     "rotulo": {
-      "pt": "Não genético",
-      "en": "Not genetic"
-     }
-    },
-    {
-     "item": {
-      "pt": "Minerais",
-      "en": "Minerals"
-     },
-     "texto": {
-      "pt": "Zinco 42 e cobre 62 baixos: sem variante explicativa (não genético)",
-      "en": "Zinc 42 and copper 62 low: no explanatory variant (not genetic)"
-     },
-     "estado": "na",
-     "rotulo": {
-      "pt": "Não genético",
-      "en": "Not genetic"
-     }
-    },
-    {
-     "item": {
       "pt": "Aminoácidos",
       "en": "Amino acids"
      },
      "texto": {
-      "pt": "Histidina: necessidade aumentada; leucina e valina “mais altas”",
-      "en": "Histidine: increased need; leucine and valine “higher”"
+      "pt": "Histidina: necessidade aumentada · leucina e valina: necessidades “mais altas” · CPS1 CC: glicina geneticamente mais baixa",
+      "en": "Histidine: increased need · leucine and valine: “higher” needs · CPS1 CC: genetically lower glycine"
      },
-     "estado": "na",
+     "estado": "warn",
      "rotulo": {
-      "pt": "Info",
-      "en": "Info"
+      "pt": "Necessidade ↑",
+      "en": "Need ↑"
+     }
+    }
+   ]
+  },
+  {
+   "id": "pele-imunidade",
+   "titulo": {
+    "pt": "Pele e imunidade",
+    "en": "Skin and immunity"
+   },
+   "linhas": [
+    {
+     "item": {
+      "pt": "Barreira cutânea",
+      "en": "Skin barrier"
+     },
+     "texto": {
+      "pt": "1 alelo de risco no locus de eczema rs12123821 (HRNR/FLG) · possível nulo raro do FLG (rs542799026 GC, não confirmado)",
+      "en": "1 risk allele at the eczema locus rs12123821 (HRNR/FLG) · possible rare FLG null (rs542799026 GC, not confirmed)"
+     },
+     "estado": "warn",
+     "rotulo": {
+      "pt": "Atenção",
+      "en": "Caution"
      }
     },
     {
      "item": {
-      "pt": "Digestão",
-      "en": "Digestion"
+      "pt": "Imunidade",
+      "en": "Immunity"
      },
      "texto": {
-      "pt": "Lactose tolerante (LCT AG) · sem HLA-DQ2/DQ8: doença celíaca muito improvável",
-      "en": "Lactose tolerant (LCT AG) · no HLA-DQ2/DQ8: coeliac disease very unlikely"
+      "pt": "CARD9 S12N N/N e ATG16L1 T300A heterozigoto (risco ligeiro de doença inflamatória intestinal) · TLR2 P631H heterozigoto (hipofuncional in vitro); evidência fraca",
+      "en": "CARD9 S12N N/N and ATG16L1 T300A heterozygous (slight inflammatory bowel disease risk) · TLR2 P631H heterozygous (hypofunctional in vitro); weak evidence"
      },
-     "estado": "ok",
+     "estado": "warn",
      "rotulo": {
-      "pt": "Favorável",
-      "en": "Favourable"
+      "pt": "Risco",
+      "en": "Risk"
      }
     },
     {
      "item": {
-      "pt": "Dieta do relatório",
-      "en": "Report diet"
+      "pt": "Cabelo",
+      "en": "Hair"
      },
      "texto": {
-      "pt": "Mediterrânica (30% gordura, 30% proteína, 40% hidratos)",
-      "en": "Mediterranean (30% fat, 30% protein, 40% carbohydrate)"
+      "pt": "AR rs6152 G: alelo de risco de alopecia androgenética (como ~85% dos homens europeus)",
+      "en": "AR rs6152 G: androgenetic alopecia risk allele (like ~85% of European men)"
      },
-     "estado": "na",
+     "estado": "warn",
      "rotulo": {
-      "pt": "Info",
-      "en": "Info"
+      "pt": "Risco",
+      "en": "Risk"
      }
     }
    ]
@@ -499,8 +412,8 @@
     {
      "item": "CYP2C9",
      "texto": {
-      "pt": "*1/*3 (metabolizador intermédio): AINEs com cautela",
-      "en": "*1/*3 (intermediate metaboliser): NSAIDs with caution"
+      "pt": "*1/*3 (metabolizador intermédio): AINEs de semivida longa, fenitoína e siponimod com cautela",
+      "en": "*1/*3 (intermediate metaboliser): long half-life NSAIDs, phenytoin and siponimod with caution"
      },
      "estado": "bad",
      "rotulo": {
@@ -511,8 +424,8 @@
     {
      "item": "VKORC1 + CYP4F2",
      "texto": {
-      "pt": "rs9923231 TT + CYP4F2 CC: alta sensibilidade a varfarina/acenocumarol",
-      "en": "rs9923231 TT + CYP4F2 CC: high sensitivity to warfarin/acenocoumarol"
+      "pt": "rs9923231 TT + CYP4F2 CC: alta sensibilidade a varfarina/acenocumarol (dose muito menor)",
+      "en": "rs9923231 TT + CYP4F2 CC: high sensitivity to warfarin/acenocoumarol (much lower dose)"
      },
      "estado": "bad",
      "rotulo": {
@@ -521,82 +434,22 @@
      }
     },
     {
-     "item": "SLCO1B1",
-     "texto": {
-      "pt": "*1/*14 (função aumentada): estatinas bem toleradas, favorável à pitavastatina",
-      "en": "*1/*14 (increased function): statins well tolerated, favourable for pitavastatin"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Favorável",
-      "en": "Favourable"
-     }
-    },
-    {
-     "item": "ABCG2",
-     "texto": {
-      "pt": "rs2231142 GG: normal",
-      "en": "rs2231142 GG: normal"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Normal",
-      "en": "Normal"
-     }
-    },
-    {
-     "item": "CYP3A4 / CYP3A5",
-     "texto": {
-      "pt": "*1/*1 / *1/*3 (expressor): exposição à rapamicina tendencialmente mais baixa",
-      "en": "*1/*1 / *1/*3 (expresser): rapamycin exposure tends to be lower"
-     },
-     "estado": "na",
-     "rotulo": {
-      "pt": "Info",
-      "en": "Info"
-     }
-    },
-    {
-     "item": "CYP2C19 · CYP2B6",
-     "texto": {
-      "pt": "*1/*1 normal · *2/*4 rápido",
-      "en": "*1/*1 normal · *2/*4 rapid"
-     },
-     "estado": "na",
-     "rotulo": {
-      "pt": "Info",
-      "en": "Info"
-     }
-    },
-    {
-     "item": "CYP2D6",
-     "texto": {
-      "pt": "*1/*2 provável (metabolizador normal); o array não vê deleções nem duplicações",
-      "en": "Probable *1/*2 (normal metaboliser); the array cannot see deletions or duplications"
-     },
-     "estado": "na",
-     "rotulo": {
-      "pt": "Provável",
-      "en": "Probable"
-     }
-    },
-    {
      "item": "NAT2",
      "texto": {
-      "pt": "*5/*5 provável: acetilador lento (isoniazida, hidralazina, sulfassalazina)",
-      "en": "Probable *5/*5: slow acetylator (isoniazid, hydralazine, sulfasalazine)"
+      "pt": "*5/*5 provável: acetilador lento (isoniazida, hidralazina, sulfassalazina; mais risco de cancro da bexiga com tabaco); somado à DAO/HNMT ligeiramente reduzidas",
+      "en": "Probable *5/*5: slow acetylator (isoniazid, hydralazine, sulfasalazine; higher bladder cancer risk with tobacco); on top of mildly reduced DAO/HNMT"
      },
      "estado": "warn",
      "rotulo": {
-      "pt": "Cautela",
-      "en": "Caution"
+      "pt": "Lento",
+      "en": "Slow"
      }
     },
     {
      "item": "UGT1A1",
      "texto": {
-      "pt": "*1/*28: portador de Gilbert (metabolizador intermédio; irinotecano, atazanavir); bilirrubina coerente",
-      "en": "*1/*28: Gilbert carrier (intermediate metaboliser; irinotecan, atazanavir); bilirubin consistent"
+      "pt": "*1/*28: portador de Gilbert (metabolizador intermédio; irinotecano, atazanavir)",
+      "en": "*1/*28: Gilbert carrier (intermediate metaboliser; irinotecan, atazanavir)"
      },
      "estado": "warn",
      "rotulo": {
@@ -605,45 +458,15 @@
      }
     },
     {
-     "item": "HLA",
+     "item": "CYP3A5",
      "texto": {
-      "pt": "B*57:01 negativo · A*31:01 provável negativo · B*58:01 indeterminado",
-      "en": "B*57:01 negative · A*31:01 probably negative · B*58:01 indeterminate"
+      "pt": "*1/*3 (expressor): exposição por mg à rapamicina possivelmente mais baixa do que em não expressores",
+      "en": "*1/*3 (expresser): rapamycin exposure per mg possibly lower than in non-expressers"
      },
-     "estado": "na",
+     "estado": "warn",
      "rotulo": {
-      "pt": "Parcial",
-      "en": "Partial"
-     }
-    },
-    {
-     "item": {
-      "pt": "Sem variantes",
-      "en": "No variants"
-     },
-     "texto": {
-      "pt": "DPYD · TPMT · NUDT15 · G6PD · UGT1A9 · RYR1 · CACNA1S",
-      "en": "DPYD · TPMT · NUDT15 · G6PD · UGT1A9 · RYR1 · CACNA1S"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Normal",
-      "en": "Normal"
-     }
-    },
-    {
-     "item": {
-      "pt": "Não avaliável",
-      "en": "Not assessable"
-     },
-     "texto": {
-      "pt": "CNV (CYP2D6, GSTM1/GSTT1) · HLA-B*58:01",
-      "en": "CNV (CYP2D6, GSTM1/GSTT1) · HLA-B*58:01"
-     },
-     "estado": "na",
-     "rotulo": {
-      "pt": "Lacuna",
-      "en": "Gap"
+      "pt": "Atenção",
+      "en": "Caution"
      }
     }
    ]

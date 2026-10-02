@@ -1,17 +1,19 @@
 # imortalistas · Cronologia de Exames de Sangue
 
-Cronologia de Exames de Sangue do Sérgio F: resultados de análises ao sangue (e urina do mesmo painel), para registo e comparação entre datas, e a secção Intolerâncias Alimentares (`index.html`). A Genética tem página própria (`genetica.html`). Site estático em GitHub Pages, `noindex` nas duas páginas.
+Cronologia de Exames de Sangue do Sérgio F: resultados de análises ao sangue (e urina do mesmo painel), para registo e comparação entre datas, e a secção Intolerâncias Alimentares (`index.html`). A genética tem duas páginas próprias: `genetica.html` (“Genética Má”: só resultados desfavoráveis) e `genetica-boa.html` (“Genética Boa”: só resultados favoráveis). Site estático em GitHub Pages, `noindex` nas três páginas.
 
 ```
 index.html                         análises ao sangue + Intolerâncias Alimentares (HTML + CSS + JS, sem bibliotecas nem pedidos externos)
-genetica.html                      página Genética (mesmo cabeçalho, idioma e tema); o conteúdo vem de data/genetica.json
+genetica.html                      Genética Má: só resultados desfavoráveis (mesmo cabeçalho, idioma e tema); conteúdo em data/genetica.json
+genetica-boa.html                  Genética Boa: só resultados favoráveis; conteúdo em data/genetica_boa.json
 data/sangue.json                   resultados por marcador e por data (sangue/urina em "marcadores", intolerâncias alimentares em "intolerancias")
-data/genetica.json                 conteúdo da página Genética (secções, linhas, PT/EN)
-ferramentas/adicionar_colheita.py  acrescenta uma data e verifica os ficheiros (sangue.json, genetica.json e termos proibidos)
+data/genetica.json                 conteúdo de genetica.html (secções, linhas, PT/EN)
+data/genetica_boa.json             conteúdo de genetica-boa.html (mesmo formato)
+ferramentas/adicionar_colheita.py  acrescenta uma data e verifica os ficheiros (sangue.json, genetica.json, genetica_boa.json e termos proibidos)
 .nojekyll
 ```
 
-As páginas leem `data/sangue.json` / `data/genetica.json` ao abrir. Para a ver localmente: `python3 -m http.server` na raiz e abrir `http://localhost:8000/` (por `file://` o navegador bloqueia a leitura do JSON).
+As páginas leem `data/sangue.json`, `data/genetica.json` ou `data/genetica_boa.json` ao abrir. Para a ver localmente: `python3 -m http.server` na raiz e abrir `http://localhost:8000/` (por `file://` o navegador bloqueia a leitura do JSON).
 
 ## Formato dos dados
 
@@ -59,9 +61,14 @@ As páginas leem `data/sangue.json` / `data/genetica.json` ao abrir. Para a ver 
 3. Correr `python3 ferramentas/adicionar_colheita.py verificar` (datas coerentes e pesquisa de termos proibidos), abrir a página por `http.server` e confirmar que não há erros na consola.
 4. Fazer commit de `data/sangue.json`. A página abre na data mais recente com “Não comparar” (sem coluna Δ nem filtro de tendência); ao escolher uma data em “comparar com” aparecem essa coluna, o Δ, o filtro de tendência e, no Resumo, as contagens de melhorias/pioras. “Mostrar todas as datas em colunas” mostra todas as datas. O gráfico de cada marcador tem os pontos igualmente espaçados por colheita (não proporcional ao tempo), eixo com valores redondos e rótulos sem sobreposição (verificado por `site_build/test_chart_overlap.py`, fora do repositório).
 
-## Página Genética (`genetica.html` + `data/genetica.json`)
+## Páginas de genética
 
-A página só tem o cabeçalho, o título “Genética” / “Genetics” e um contentor; tudo o resto é gerado a partir de `data/genetica.json`, por isso **para acrescentar conteúdo basta editar o JSON** (não é preciso mexer no HTML):
+| Página | Menu | Título | Conteúdo | O que entra |
+|---|---|---|---|---|
+| `genetica.html` | Genética Má / Bad Genetics | Genética - Apenas maus resultados / Genetics - Unfavourable results only | `data/genetica.json` | só desfavoráveis: alelos de risco, scores acima da média, estado de portador, metabolismo reduzido, necessidades aumentadas |
+| `genetica-boa.html` | Genética Boa / Good Genetics | Genética - Apenas bons resultados / Genetics - Favourable results only | `data/genetica_boa.json` | só favoráveis: variantes protetoras, alelos de longevidade, scores abaixo da média, função normal com significado clínico tranquilizador |
+
+Resultados neutros, médios ou não confirmados não entram em nenhuma das duas. Cada página só tem o cabeçalho, o título e um contentor; tudo o resto é gerado a partir do JSON respetivo, por isso **para acrescentar conteúdo basta editar o JSON** (não é preciso mexer no HTML). Os dois JSON têm o mesmo formato:
 
 ```json
 {
@@ -78,18 +85,18 @@ A página só tem o cabeçalho, o título “Genética” / “Genetics” e um 
  ]
 }
 ```
-- Cada entrada de `seccoes` é um cartão (2 por linha no computador, 1 no telemóvel), pela ordem do ficheiro, e aparece também nos atalhos por baixo da nota. Para uma secção nova, acrescentar um objeto com um `id` novo (minúsculas, números e hífens; dá o link `genetica.html#id`).
+- Cada entrada de `seccoes` é um cartão (2 por linha no computador, 1 no telemóvel), pela ordem do ficheiro, e aparece também nos atalhos por baixo da nota. Para uma secção nova, acrescentar um objeto com um `id` novo (minúsculas, números e hífens; dá o link `genetica.html#id` ou `genetica-boa.html#id`).
 - Cada entrada de `linhas` é uma linha da tabela: `item` (gene/tema, a negrito), `texto`, e opcionalmente `estado` + `rotulo` (a etiqueta colorida): `ok` verde, `warn` amarelo, `bad` vermelho, `na` cinzento, `info` azul.
 - Textos bilingues: `{"pt": "…", "en": "…"}`; se o texto for igual nas duas línguas (ex. nome do gene) pode ser só `"CYP2C9"`. Pode levar HTML simples: `<b>`, `<i>`, `<em>`, `<strong>`, `<br>`, `<small>`, `<sub>`, `<sup>` (o resto é mostrado como texto).
 - As mesmas regras de privacidade e de nomes (abaixo) aplicam-se aqui: sem nomes de laboratórios ou empresas, sem dados pessoais.
-- Depois de editar: `python3 ferramentas/adicionar_colheita.py verificar` (estrutura, PT+EN em todos os textos, ids únicos, estados válidos, HTML permitido, termos proibidos), abrir `genetica.html` por `http.server` e confirmar que não há erros na consola.
+- Depois de editar: `python3 ferramentas/adicionar_colheita.py verificar` (estrutura, PT+EN em todos os textos, ids únicos, estados válidos, HTML permitido, termos proibidos), abrir `genetica.html` e `genetica-boa.html` por `http.server` e confirmar que não há erros na consola.
 
 ## Regras permanentes do painel
 
-- Só análises + Intolerâncias Alimentares (secção própria) em `index.html` + Genética em `genetica.html`: nada de outros exames, medicação/stack, suplementos, prioridades, questões ou sugestões dos bots.
+- Só análises + Intolerâncias Alimentares (secção própria) em `index.html` + Genética Má (`genetica.html`) e Genética Boa (`genetica-boa.html`): nada de outros exames, medicação/stack, suplementos, prioridades, questões ou sugestões dos bots.
 - Identificação: só “Sérgio F” e a idade; sem data de nascimento nem cidade.
 - Privacidade: nunca publicar a medida da balança, o índice de massa do corpo (nem pela sigla), índices por altura² nem nada que permita deduzir aquela medida.
 - Sem nomes de laboratórios ou fornecedores em lado nenhum, nas duas línguas: só datas.
-- Títulos: “Cronologia de Exames de Sangue” / “Blood Test Timeline” (`index.html`) e “Genética” / “Genetics” (`genetica.html`). Cabeçalho sem marca, igual nas duas páginas: Resumo · Análises · Intolerâncias Alimentares (âncoras de `index.html`) · Genética (`genetica.html`), com o seletor “Português | English” no canto superior direito (guardado em `localStorage`, chave `lang`, partilhada pelas duas páginas; por omissão português).
-- Tema: seletor “Escuro | Claro” / “Dark | Light” ao lado do idioma (guardado em `localStorage`, chave `theme`, partilhada pelas duas páginas; sem escolha, segue o tema do sistema). Cores só por variáveis CSS, incluindo os gráficos.
-- `meta robots noindex` nas duas páginas.
+- Títulos: “Cronologia de Exames de Sangue” / “Blood Test Timeline” (`index.html`) e os títulos acima nas páginas de genética. Cabeçalho sem marca, igual nas três páginas: Resumo · Análises · Intolerâncias Alimentares (âncoras de `index.html`) · Genética Má (`genetica.html`) · Genética Boa (`genetica-boa.html`), com o seletor “Português | English” no canto superior direito (guardado em `localStorage`, chave `lang`, partilhada pelas três páginas; por omissão português).
+- Tema: seletor “Escuro | Claro” / “Dark | Light” ao lado do idioma (guardado em `localStorage`, chave `theme`, partilhada pelas três páginas; sem escolha, segue o tema do sistema). Cores só por variáveis CSS, incluindo os gráficos.
+- `meta robots noindex` nas três páginas.
