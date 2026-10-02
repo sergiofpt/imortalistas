@@ -1,6 +1,6 @@
 {
- "_leia_me": "Formato e procedimento para acrescentar datas: README.md, secção \"Como adicionar uma nova data\". \"marcadores\" = análises ao sangue e urina; \"intolerancias\" = intolerâncias alimentares (secção própria, estado sempre sem_alvo). Campos *_en = texto em inglês (opcionais). Sem nomes de laboratórios.",
- "versao": 3,
+ "_leia_me": "Formato e procedimento para acrescentar datas: README.md, secção \"Como adicionar uma nova data\". \"marcadores\" = análises ao sangue e urina; \"intolerancias\" = intolerâncias alimentares (secção própria; estado intolerante / nao_intolerante pelo limite do laboratório). Campos *_en = texto em inglês (opcionais). Sem nomes de laboratórios.",
+ "versao": 4,
  "atualizado_em": "2026-10-02",
  "colheitas": [
   {
@@ -4912,11 +4912,10 @@
    "m_en": "IgG Agar-agar",
    "c": "IgG alimentar",
    "c_en": "Food IgG",
-   "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "regras": [
-    "sem_alvo"
+    "intolerancia"
    ],
    "resultados": [
     {
@@ -4926,21 +4925,21 @@
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "sem_alvo",
+     "s": "intolerante",
      "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
-   ]
+   ],
+   "melhor": "baixo"
   },
   {
    "m": "IgG Linhaça",
    "m_en": "IgG Flaxseed",
    "c": "IgG alimentar",
    "c_en": "Food IgG",
-   "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "regras": [
-    "sem_alvo"
+    "intolerancia"
    ],
    "resultados": [
     {
@@ -4950,21 +4949,21 @@
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "sem_alvo",
+     "s": "intolerante",
      "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
-   ]
+   ],
+   "melhor": "baixo"
   },
   {
    "m": "IgG Alga esparguete",
    "m_en": "IgG Sea spaghetti",
    "c": "IgG alimentar",
    "c_en": "Food IgG",
-   "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "regras": [
-    "sem_alvo"
+    "intolerancia"
    ],
    "resultados": [
     {
@@ -4974,21 +4973,21 @@
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "sem_alvo",
+     "s": "intolerante",
      "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
-   ]
+   ],
+   "melhor": "baixo"
   },
   {
    "m": "IgG Noz de cola",
    "m_en": "IgG Kola nut",
    "c": "IgG alimentar",
    "c_en": "Food IgG",
-   "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "regras": [
-    "sem_alvo"
+    "intolerancia"
    ],
    "resultados": [
     {
@@ -4998,21 +4997,21 @@
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "sem_alvo",
+     "s": "intolerante",
      "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
-   ]
+   ],
+   "melhor": "baixo"
   },
   {
    "m": "IgG Alga wakame",
    "m_en": "IgG Wakame",
    "c": "IgG alimentar",
    "c_en": "Food IgG",
-   "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "regras": [
-    "sem_alvo"
+    "intolerancia"
    ],
    "resultados": [
     {
@@ -5022,21 +5021,21 @@
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "sem_alvo",
+     "s": "intolerante",
      "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
-   ]
+   ],
+   "melhor": "baixo"
   },
   {
    "m": "IgG Clara de ovo",
    "m_en": "IgG Egg white",
    "c": "IgG alimentar",
    "c_en": "Food IgG",
-   "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "regras": [
-    "sem_alvo"
+    "intolerancia"
    ],
    "resultados": [
     {
@@ -5046,21 +5045,21 @@
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "sem_alvo",
+     "s": "intolerante",
      "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
-   ]
+   ],
+   "melhor": "baixo"
   },
   {
    "m": "IgG Levedura de cerveja",
    "m_en": "IgG Brewer's yeast",
    "c": "IgG alimentar",
    "c_en": "Food IgG",
-   "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "regras": [
-    "sem_alvo"
+    "intolerancia"
    ],
    "resultados": [
     {
@@ -5070,21 +5069,21 @@
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "sem_alvo",
+     "s": "intolerante",
      "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
-   ]
+   ],
+   "melhor": "baixo"
   },
   {
    "m": "IgG Feijão branco",
    "m_en": "IgG Haricot bean",
    "c": "IgG alimentar",
    "c_en": "Food IgG",
-   "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "regras": [
-    "sem_alvo"
+    "intolerancia"
    ],
    "resultados": [
     {
@@ -5094,21 +5093,21 @@
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "sem_alvo",
+     "s": "intolerante",
      "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
-   ]
+   ],
+   "melhor": "baixo"
   },
   {
    "m": "IgG Malte",
    "m_en": "IgG Malt",
    "c": "IgG alimentar",
    "c_en": "Food IgG",
-   "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "regras": [
-    "sem_alvo"
+    "intolerancia"
    ],
    "resultados": [
     {
@@ -5118,21 +5117,21 @@
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "sem_alvo",
+     "s": "intolerante",
      "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
-   ]
+   ],
+   "melhor": "baixo"
   },
   {
    "m": "IgG Ervilha",
    "m_en": "IgG Pea",
    "c": "IgG alimentar",
    "c_en": "Food IgG",
-   "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "regras": [
-    "sem_alvo"
+    "intolerancia"
    ],
    "resultados": [
     {
@@ -5142,21 +5141,21 @@
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "sem_alvo",
+     "s": "intolerante",
      "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
-   ]
+   ],
+   "melhor": "baixo"
   },
   {
    "m": "IgG Lúcio",
    "m_en": "IgG Pike",
    "c": "IgG alimentar",
    "c_en": "Food IgG",
-   "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "regras": [
-    "sem_alvo"
+    "intolerancia"
    ],
    "resultados": [
     {
@@ -5166,21 +5165,21 @@
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "sem_alvo",
+     "s": "nao_intolerante",
      "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
-   ]
+   ],
+   "melhor": "baixo"
   },
   {
    "m": "IgG Ginkgo",
    "m_en": "IgG Ginkgo",
    "c": "IgG alimentar",
    "c_en": "Food IgG",
-   "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "regras": [
-    "sem_alvo"
+    "intolerancia"
    ],
    "resultados": [
     {
@@ -5190,21 +5189,21 @@
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "sem_alvo",
+     "s": "nao_intolerante",
      "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
-   ]
+   ],
+   "melhor": "baixo"
   },
   {
    "m": "IgG Leite de vaca",
    "m_en": "IgG Cow's milk",
    "c": "IgG alimentar",
    "c_en": "Food IgG",
-   "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "regras": [
-    "sem_alvo"
+    "intolerancia"
    ],
    "resultados": [
     {
@@ -5214,21 +5213,21 @@
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "sem_alvo",
+     "s": "nao_intolerante",
      "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
-   ]
+   ],
+   "melhor": "baixo"
   },
   {
    "m": "IgG Semente de girassol",
    "m_en": "IgG Sunflower seed",
    "c": "IgG alimentar",
    "c_en": "Food IgG",
-   "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "regras": [
-    "sem_alvo"
+    "intolerancia"
    ],
    "resultados": [
     {
@@ -5238,21 +5237,21 @@
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "sem_alvo",
+     "s": "nao_intolerante",
      "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
-   ]
+   ],
+   "melhor": "baixo"
   },
   {
    "m": "IgG Levedura de padeiro",
    "m_en": "IgG Baker's yeast",
    "c": "IgG alimentar",
    "c_en": "Food IgG",
-   "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "regras": [
-    "sem_alvo"
+    "intolerancia"
    ],
    "resultados": [
     {
@@ -5262,21 +5261,21 @@
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "sem_alvo",
+     "s": "nao_intolerante",
      "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
-   ]
+   ],
+   "melhor": "baixo"
   },
   {
    "m": "IgG Leite de cabra",
    "m_en": "IgG Goat's milk",
    "c": "IgG alimentar",
    "c_en": "Food IgG",
-   "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "regras": [
-    "sem_alvo"
+    "intolerancia"
    ],
    "resultados": [
     {
@@ -5286,21 +5285,21 @@
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "sem_alvo",
+     "s": "nao_intolerante",
      "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
-   ]
+   ],
+   "melhor": "baixo"
   },
   {
    "m": "IgG Chufa",
    "m_en": "IgG Tiger nut",
    "c": "IgG alimentar",
    "c_en": "Food IgG",
-   "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "regras": [
-    "sem_alvo"
+    "intolerancia"
    ],
    "resultados": [
     {
@@ -5310,21 +5309,21 @@
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "sem_alvo",
+     "s": "nao_intolerante",
      "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
-   ]
+   ],
+   "melhor": "baixo"
   },
   {
    "m": "IgG Aipo",
    "m_en": "IgG Celery",
    "c": "IgG alimentar",
    "c_en": "Food IgG",
-   "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "regras": [
-    "sem_alvo"
+    "intolerancia"
    ],
    "resultados": [
     {
@@ -5334,21 +5333,21 @@
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "sem_alvo",
+     "s": "nao_intolerante",
      "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
-   ]
+   ],
+   "melhor": "baixo"
   },
   {
    "m": "IgG Solha",
    "m_en": "IgG Plaice",
    "c": "IgG alimentar",
    "c_en": "Food IgG",
-   "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "regras": [
-    "sem_alvo"
+    "intolerancia"
    ],
    "resultados": [
     {
@@ -5358,21 +5357,21 @@
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "sem_alvo",
+     "s": "nao_intolerante",
      "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
-   ]
+   ],
+   "melhor": "baixo"
   },
   {
    "m": "IgG Amaranto",
    "m_en": "IgG Amaranth",
    "c": "IgG alimentar",
    "c_en": "Food IgG",
-   "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "regras": [
-    "sem_alvo"
+    "intolerancia"
    ],
    "resultados": [
     {
@@ -5382,21 +5381,21 @@
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "sem_alvo",
+     "s": "nao_intolerante",
      "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
-   ]
+   ],
+   "melhor": "baixo"
   },
   {
    "m": "IgG Caju",
    "m_en": "IgG Cashew",
    "c": "IgG alimentar",
    "c_en": "Food IgG",
-   "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "regras": [
-    "sem_alvo"
+    "intolerancia"
    ],
    "resultados": [
     {
@@ -5406,21 +5405,21 @@
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "sem_alvo",
+     "s": "nao_intolerante",
      "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
-   ]
+   ],
+   "melhor": "baixo"
   },
   {
    "m": "IgG restantes alimentos (incl. gliadina)",
    "m_en": "IgG other foods (incl. gliadin)",
    "c": "IgG alimentar",
    "c_en": "Food IgG",
-   "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "regras": [
-    "sem_alvo"
+    "intolerancia"
    ],
    "resultados": [
     {
@@ -5430,9 +5429,11 @@
      "ref": "normal ≤23",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "sem_alvo"
+     "s": "nao_intolerante",
+     "ref_en": "normal ≤23"
     }
-   ]
+   ],
+   "melhor": "baixo"
   }
  ]
 }

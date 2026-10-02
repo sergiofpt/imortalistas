@@ -179,7 +179,8 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 <section id="intolerancias">
 <h2><span class="l-pt">Intolerâncias Alimentares</span><span class="l-en">Food Intolerances</span></h2>
 <p class="src"><span class="l-pt">Fonte</span><span class="l-en">Source</span>: data/sangue.json (<span class="l-pt">lista</span><span class="l-en">list</span> “intolerancias”) · <span id="iSrc"></span></p>
-<div class="note"><span class="l-pt">IgG específicas para alimentos: indicam exposição/contacto com o alimento, não intolerância nem alergia. Por isso não têm alvo (“Sem alvo”) e não entram nas contagens das análises ao sangue. A referência é a classificação do laboratório.</span><span class="l-en">Food-specific IgG: indicates exposure to the food, not intolerance or allergy. They therefore have no target (“No target”) and are not counted with the blood tests. The reference is the lab’s classification.</span></div>
+<div class="note"><span class="l-pt">Classificação de cada alimento pelo limite do próprio laboratório (IgG específicas, normal ≤ 23 U/ml): <b>acima do limite = Intolerante</b> (vermelho), incluindo a faixa limítrofe 24–29; <b>igual ou abaixo = Não intolerante</b> (verde). Estas análises não entram nas contagens das análises ao sangue.</span><span class="l-en">Each food is classified against the lab’s own cut-off (specific IgG, normal ≤ 23 U/ml): <b>above the cut-off = Intolerant</b> (red), including the 24–29 borderline band; <b>at or below = Not intolerant</b> (green). These tests are not counted with the blood tests.</span></div>
+<div class="legend" id="iSum" style="margin-bottom:10px"></div>
 <div class="ctrl" id="iCtrl">
 <b><span class="l-pt">Datas</span><span class="l-en">Dates</span></b>
 <label><span class="l-pt">Data</span><span class="l-en">Date</span> <select id="iA" aria-label="Data principal" data-al-en="Main date"></select></label>
@@ -189,10 +190,11 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 </div>
 <div class="filters">
 <input id="iq" type="search" placeholder="Procurar alimento…" data-ph-en="Search food…" aria-label="Procurar alimento" data-al-en="Search food">
+<select id="ist" aria-label="Classificação" data-al-en="Classification"><option value="" data-en="All">Todos</option><option value="intolerante" data-en="Intolerant">Intolerante</option><option value="nao_intolerante" data-en="Not intolerant">Não intolerante</option></select>
 <span class="mut small" id="icount"></span>
 </div>
 <div class="tw tall"><table id="it"><thead></thead><tbody><tr><td class="mut"><span class="l-pt">A carregar data/sangue.json…</span><span class="l-en">Loading data/sangue.json…</span></td></tr></tbody></table></div>
-<p class="small mut"><span class="l-pt">Δ = data principal vs data de comparação · clique num alimento para ver a evolução.</span><span class="l-en">Δ = main date vs comparison date · click a food to see its trend.</span></p>
+<p class="small mut"><span class="l-pt">Δ = data principal vs data de comparação (verde = desceu) · clique num alimento para ver a evolução; no gráfico, a faixa verde vai até ao limite.</span><span class="l-en">Δ = main date vs comparison date (green = went down) · click a food to see its trend; in the chart, the green band runs up to the cut-off.</span></p>
 </section>
 
 <!-- ============ GENÉTICA ============ -->
@@ -319,7 +321,7 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 // ===== idioma =====
 let LANG='pt';try{if(localStorage.getItem('lang')==='en')LANG='en'}catch(e){}
 const L=(p,e)=>LANG==='en'?e:p;
-const SL={otimo:['ok','Ótimo','Optimal'],aceitavel:['warn','Aceitável','Acceptable'],fora_do_otimo:['warn','Fora do ótimo','Outside optimal'],fora_de_referencia:['bad','Fora da referência','Out of range'],sem_alvo:['na','Sem alvo','No target']};
+const SL={otimo:['ok','Ótimo','Optimal'],aceitavel:['warn','Aceitável','Acceptable'],fora_do_otimo:['warn','Fora do ótimo','Outside optimal'],fora_de_referencia:['bad','Fora da referência','Out of range'],sem_alvo:['na','Sem alvo','No target'],intolerante:['bad','Intolerante','Intolerant'],nao_intolerante:['ok','Não intolerante','Not intolerant']};
 const lab=s=>SL[s][LANG==='en'?2:1];
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const pt=s=>LANG==='en'?s:(/^-?\d+(\.\d+)?$/.test(s)?s.replace('.',','):s);
@@ -341,7 +343,14 @@ function estado(v,rmin,rmax,omin,omax,regras){regras=regras||[];if(!isNum(v))ret
  if(!((!has(rmin)||v>=rmin)&&(!has(rmax)||v<=rmax)))return 'fora_de_referencia';
  const lo=has(omin)?omin:0,marg=has(omax)?0.25*(omax-lo):0.10*Math.abs(omin),dist=(has(omin)&&v<omin)?omin-v:v-omax;
  return dist<=marg?'aceitavel':'fora_do_otimo';}
-const stOf=(row,r)=>r?((row.regras||[]).includes('sem_alvo')?'sem_alvo':SL[r.s]?r.s:estado(r.v,r.ref_min,r.ref_max,row.omin,row.omax,row.regras)):null;
+// intolerâncias alimentares: limite = ref_max do laboratório; acima = intolerante (inclui limítrofe), igual/abaixo = não intolerante (mesma regra de adicionar_colheita.py)
+function intolSt(r){const t=String(r.v??'').trim();if(/neg|n[ãa]o detet|not detect/i.test(t))return 'nao_intolerante';if(/pos|elev|lim[ií]tr|border|equ[ií]v|duvid|d[uú]bi/i.test(t))return 'intolerante';
+ let cut=has(r.ref_max)?r.ref_max:null;if(cut===null&&r.ref){const m=String(r.ref).match(/(?:normal|negativ\w*)\s*(≤|<=|<)\s*(\d+(?:[.,]\d+)?)/i);if(m)cut=parseFloat(m[2].replace(',','.'))-(m[1]==='<'?1e-9:0)}
+ const m=t.match(/^([<>≤≥]=?)?\s*(-?\d+(?:[.,]\d+)?)$/);if(cut===null||!m)return null;const x=parseFloat(m[2].replace(',','.')),op=(m[1]||'')[0];
+ if(op==='<'||op==='≤')return x<=cut?'nao_intolerante':null;if(op==='>'||op==='≥')return x>=cut?'intolerante':null;return x>cut?'intolerante':'nao_intolerante'}
+const isIntol=row=>(row.regras||[]).includes('intolerancia');
+const labR=(row,st)=>isIntol(row)&&st==='sem_alvo'?L('Sem classificação','Unclassified'):lab(st);
+const stOf=(row,r)=>r?isIntol(row)?(intolSt(r)||'sem_alvo'):((row.regras||[]).includes('sem_alvo')?'sem_alvo':SL[r.s]?r.s:estado(r.v,r.ref_min,r.ref_max,row.omin,row.omax,row.regras)):null;
 const kOf=s=>s?SL[s][0]:'na';
 // +1 = aproxima-se do ótimo, -1 = afasta-se, 0 = neutro
 function trendDir(row,a,b){const da=distO(row,a),db=distO(row,b);
@@ -362,8 +371,8 @@ function chartSVG(row,cols){const pts=cols.slice().sort((a,b)=>a.data<b.data?-1:
  let pad=(hi-lo)*0.12||Math.abs(hi)*0.1||1;const pos=lo>=0;lo-=pad;hi+=pad;if(pos&&lo<0)lo=0;
  const t0=pts[0].t,t1=pts[pts.length-1].t,X=t=>pts.length<2?Lm+(W-Lm-R)/2:Lm+(t-t0)/(t1-t0||1)*(W-Lm-R),Y=v=>T+(hi-v)/(hi-lo)*(H-T-B);
  const cl=v=>Math.max(T,Math.min(H-B,Y(v)));let g='';
- if(has(row.omin)||has(row.omax)){const y1=cl(has(row.omax)?row.omax:hi),y2=cl(has(row.omin)?row.omin:lo);if(y2-y1>1)g+=`<rect x="${Lm}" y="${y1}" width="${W-Lm-R}" height="${y2-y1}" style="fill:var(--chok)"/>`+(y2-y1>13?`<text x="${W-R-4}" y="${y1+12}" text-anchor="end" font-size="10" style="fill:var(--okt)">${L('ótimo','optimal')}</text>`:'')}
- [rr.ref_min,rr.ref_max].forEach(b=>{if(!semAlvo&&has(b)&&b>lo&&b<hi)g+=`<line x1="${Lm}" x2="${W-R}" y1="${Y(b)}" y2="${Y(b)}" style="stroke:var(--bad)" stroke-dasharray="4 3" stroke-width="1"/><text x="${Lm+4}" y="${Y(b)-3}" font-size="9.5" style="fill:var(--badt)">ref. ${fv(b)}</text>`});
+ const iI=isIntol(row),bmax=iI?rr.ref_max:row.omax,bmin=iI?null:row.omin;if(has(bmin)||has(bmax)){const y1=cl(has(bmax)?bmax:hi),y2=cl(has(bmin)?bmin:lo);if(y2-y1>1)g+=`<rect x="${Lm}" y="${y1}" width="${W-Lm-R}" height="${y2-y1}" style="fill:var(--chok)"/>`+(y2-y1>13?`<text x="${W-R-4}" y="${y1+12}" text-anchor="end" font-size="10" style="fill:var(--okt)">${iI?L('não intolerante','not intolerant'):L('ótimo','optimal')}</text>`:'')}
+ [rr.ref_min,rr.ref_max].forEach(b=>{if(!semAlvo&&has(b)&&b>lo&&b<hi)g+=`<line x1="${Lm}" x2="${W-R}" y1="${Y(b)}" y2="${Y(b)}" style="stroke:var(--bad)" stroke-dasharray="4 3" stroke-width="1"/><text x="${Lm+4}" y="${Y(b)-3}" font-size="9.5" style="fill:var(--badt)">${iI?L('limite','cut-off'):'ref.'} ${fv(b)}</text>`});
  for(let i=0;i<3;i++){const v=lo+(hi-lo)*i/2;g+=`<text x="${Lm-6}" y="${Y(v)+3}" text-anchor="end" font-size="10" style="fill:var(--mut)">${fnum(v,Math.abs(hi-lo)<1?3:Math.abs(hi-lo)<10?2:Math.abs(hi-lo)<100?1:0)}</text><line x1="${Lm}" x2="${W-R}" y1="${Y(v)}" y2="${Y(v)}" style="stroke:var(--grid)"/>`}
  if(pts.length>1)g+=`<polyline fill="none" style="stroke:var(--acc)" stroke-width="2" points="${pts.map(p=>X(p.t)+','+Y(p.y)).join(' ')}"/>`;
  const col={ok:'var(--ok)',warn:'var(--warn)',bad:'var(--bad)',na:'var(--na)'};
@@ -371,8 +380,8 @@ function chartSVG(row,cols){const pts=cols.slice().sort((a,b)=>a.data<b.data?-1:
  return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${L('Evolução de','Trend of')} ${esc(nm(row))}">${g}</svg>`}
 function detailHtml(row,cols){const svg=chartSVG(row,cols),n=cols.filter(c=>row.res[c.data]).length,num=cols.filter(c=>row.res[c.data]&&isNum(row.res[c.data].v)).length;
  let msg='';if(n<2)msg=`<span class="await">⏳ ${L('Aguarda próximo exame: a tendência aparece quando houver 2 ou mais datas.','Awaiting next test: the trend appears once there are 2 or more dates.')}</span>`;else if(!num)msg=`<span class="mut small">${L('Resultado qualitativo: sem gráfico.','Qualitative result: no chart.')}</span>`;
- const lst=cols.filter(c=>row.res[c.data]).map(c=>{const r=row.res[c.data],st=stOf(row,r),k=kOf(st);const nt=tx(r,'nota');return `<tr><td>${esc(fdate(r.data_real||c.data))}</td><td class="num">${esc(fv(r.v))} <span class="mut">${esc(r.u||row.u||'')}</span></td><td><span class="pill ${k}">${lab(st)}</span></td><td class="mut">${esc(ptr(tx(r,'ref')||row.ref||''))}${nt?'<br>'+esc(nt):''}</td></tr>`}).join('');
- return `<div class="in"><div class="chartwrap">${svg}<table><thead><tr><th>${L('Data','Date')}</th><th>${L('Valor','Value')}</th><th>${L('Estado','Status')}</th><th>${L('Ref. · nota','Ref. · note')}</th></tr></thead><tbody>${lst}</tbody></table></div>${msg?`<div class="msg">${msg}</div>`:''}</div>`}
+ const lst=cols.filter(c=>row.res[c.data]).map(c=>{const r=row.res[c.data],st=stOf(row,r),k=kOf(st);const nt=tx(r,'nota');return `<tr><td>${esc(fdate(r.data_real||c.data))}</td><td class="num">${esc(fv(r.v))} <span class="mut">${esc(r.u||row.u||'')}</span></td><td><span class="pill ${k}">${labR(row,st)}</span></td><td class="mut">${esc(ptr(tx(r,'ref')||row.ref||''))}${nt?'<br>'+esc(nt):''}</td></tr>`}).join('');
+ return `<div class="in"><div class="chartwrap">${svg}<table><thead><tr><th>${L('Data','Date')}</th><th>${L('Valor','Value')}</th><th>${isIntol(row)?L('Classificação','Classification'):L('Estado','Status')}</th><th>${L('Ref. · nota','Ref. · note')}</th></tr></thead><tbody>${lst}</tbody></table></div>${msg?`<div class="msg">${msg}</div>`:''}</div>`}
 // tabela
 function Series(o){const cols=o.colheitas.slice().sort((a,b)=>a.data<b.data?1:-1);const A=document.getElementById(o.ids.A),Bs=document.getElementById(o.ids.B),All=document.getElementById(o.ids.all);
  const optTxt=c=>`${esc(fdate(c.data))} · ${esc(tx(c,'rotulo'))}`;
@@ -387,7 +396,7 @@ function Series(o){const cols=o.colheitas.slice().sort((a,b)=>a.data<b.data?1:-1
  function render(){const sc=shown(),a=A.value,b=Bs.value,bef=o.before(),aft=o.after(),ncol=bef.length+sc.length+1+aft.length;
   th.innerHTML='<tr>'+bef.map(h=>`<th>${h}</th>`).join('')+sc.map(c=>`<th class="dcol${c.data===a?' a':''}">${esc(fdate(c.data))}<small>${c.data===a?L('principal','main'):c.data===b?L('comparação','comparison'):esc(tx(c,'rotulo'))}</small></th>`).join('')+`<th class="dcol" title="${b?L('Data principal vs data de comparação','Main date vs comparison date'):L('Aguarda próximo exame','Awaiting next test')}">Δ${b?`<small>${esc(fdate(a))} vs ${esc(fdate(b))}</small>`:`<small>${L('aguarda','awaiting')}</small>`}</th>`+aft.map(h=>`<th>${h}</th>`).join('')+'</tr>';
   const rs=o.rows.filter(r=>o.filter(r,a,b));let h='';
-  rs.forEach(r=>{const ra=r.res[a],rb=b?r.res[b]:null;h+=`<tr class="mk${isOpen(r.key)?' open':''}" data-k="${esc(r.key)}" tabindex="0" aria-expanded="${isOpen(r.key)}">`+o.cellsBefore(r,ra)+sc.map(c=>{const x=r.res[c.data];if(!x)return `<td class="v miss" title="${L('Sem resultado nesta data','No result on this date')}">—</td>`;const st=stOf(r,x);return `<td class="v ${kOf(st)}" title="${esc(lab(st))}">${esc(fv(x.v))}</td>`}).join('')+`<td class="dl">${deltaHtml(delta(r,ra,rb))}</td>`+o.cellsAfter(r,ra)+'</tr>';
+  rs.forEach(r=>{const ra=r.res[a],rb=b?r.res[b]:null;h+=`<tr class="mk${isOpen(r.key)?' open':''}" data-k="${esc(r.key)}" tabindex="0" aria-expanded="${isOpen(r.key)}">`+o.cellsBefore(r,ra)+sc.map(c=>{const x=r.res[c.data];if(!x)return `<td class="v miss" title="${L('Sem resultado nesta data','No result on this date')}">—</td>`;const st=stOf(r,x);return `<td class="v ${kOf(st)}" title="${esc(labR(r,st))}">${esc(fv(x.v))}</td>`}).join('')+`<td class="dl">${deltaHtml(delta(r,ra,rb))}</td>`+o.cellsAfter(r,ra)+'</tr>';
    if(isOpen(r.key))h+=`<tr class="det"><td colspan="${ncol}">${detailHtml(r,cols)}</td></tr>`});
   tb.innerHTML=h||`<tr><td colspan="${ncol}" class="mut">${L('Nenhum resultado com estes filtros.','No results with these filters.')}</td></tr>`;
   document.getElementById(o.ids.count).textContent=rs.length+L(' de ',' of ')+o.rows.length;if(o.onRender)o.onRender(a,b)}
@@ -428,19 +437,23 @@ loadJSON('data/sangue.json').then(D=>{SD=D;const rows=mkRows(D.marcadores,m=>({c
 function intol(D){const list=D.intolerancias||[];IROWS=mkRows(list,m=>({c:m.c,c_en:m.c_en||''}));iSrcTxt();
  const ds=new Set(list.flatMap(m=>(m.resultados||[]).map(r=>r.data))),cols=D.colheitas.filter(c=>ds.has(c.data));
  if(!cols.length){document.querySelector('#it tbody').innerHTML=`<tr><td class="mut">${L('Sem resultados de intolerâncias alimentares.','No food intolerance results.')}</td></tr>`;return}
- IS=Series({colheitas:cols,rows:IROWS,ids:{A:'iA',B:'iB',all:'iAll',await:'iAwait',table:'it',count:'icount'},inputs:['iq'],
-  before:()=>[L('Alimento','Food')],after:()=>[L('Unidade','Unit'),L('Referência do lab.','Lab reference'),L('Estado','Status'),L('Nota','Note')],
-  filter:r=>{const q=document.getElementById('iq').value.trim().toLowerCase();return !q||r.label.toLowerCase().includes(q)||r.label_en.toLowerCase().includes(q)},
+ IS=Series({colheitas:cols,rows:IROWS,ids:{A:'iA',B:'iB',all:'iAll',await:'iAwait',table:'it',count:'icount'},inputs:['iq','ist'],
+  before:()=>[L('Alimento','Food')],after:()=>[L('Unidade','Unit'),L('Referência do lab.','Lab reference'),L('Classificação','Classification'),L('Nota','Note')],
+  filter:(r,a)=>{const q=document.getElementById('iq').value.trim().toLowerCase(),f=document.getElementById('ist').value;if(q&&!(r.label.toLowerCase().includes(q)||r.label_en.toLowerCase().includes(q)))return false;if(f&&stOf(r,r.res[a])!==f)return false;return true},
+  onRender:a=>iSummary(a),
   cellsBefore:(r,ra)=>`<td><b>${esc(nm(r))}</b>${ra&&ra.data_real?`<div class="small mut">${esc(fdate(ra.data_real))}</div>`:''}</td>`,
-  cellsAfter:(r,ra)=>{if(!ra)return `<td></td><td></td><td><span class="mut small">${L('sem resultado','no result')}</span></td><td></td>`;const st=stOf(r,ra);return `<td class="mut small">${esc(ra.u||'')}</td><td class="small">${esc(ptr(tx(ra,'ref')))}</td><td><span class="pill ${kOf(st)}">${lab(st)}</span></td><td class="small">${esc(tx(ra,'nota'))}</td>`}});
+  cellsAfter:(r,ra)=>{if(!ra)return `<td></td><td></td><td><span class="mut small">${L('sem resultado','no result')}</span></td><td></td>`;const st=stOf(r,ra);return `<td class="mut small">${esc(ra.u||'')}</td><td class="small">${esc(ptr(tx(ra,'ref')))}</td><td><span class="pill ${kOf(st)}">${labR(r,st)}</span></td><td class="small">${esc(tx(ra,'nota'))}</td>`}});
  if(SS)SS.render()}
+function iCounts(a){const c={intolerante:[],nao_intolerante:[],sem_alvo:[]};(IROWS||[]).forEach(r=>{const x=r.res[a];if(x)c[stOf(r,x)].push(r)});return c}
+function iSummary(a){const c=iCounts(a),el=document.getElementById('iSum');if(!el)return;
+ el.innerHTML=`<span class="pill bad">${c.intolerante.length} ${L('intolerante','intolerant')}</span><span class="pill ok">${c.nao_intolerante.length} ${L('não intolerante','not intolerant')}</span>`+(c.sem_alvo.length?`<span class="pill na">${c.sem_alvo.length} ${L('sem classificação','unclassified')}</span>`:'')+`<span>${L('em','on')} ${esc(fdate(a))}</span>`}
 function summary(rows,a,b,cols){const c={ok:0,warn:0,bad:0,na:0};let t=0,good=0,bad=0,chg=0;rows.forEach(r=>{const ra=r.res[a];if(!ra)return;t++;c[kOf(stOf(r,ra))]++;if(b){const rb=r.res[b],d=delta(r,ra,rb);if(d&&d.dir>0)good++;if(d&&d.dir<0)bad++;if(rb&&stOf(r,ra)!==stOf(r,rb))chg++}});
  const col={ok:'var(--ok)',warn:'var(--warn)',bad:'var(--bad)',na:'var(--na)'};const ca=cols.find(x=>x.data===a);
  document.getElementById('bsTitle').textContent=L('Análises de '+fdate(a)+' em números','Tests of '+fdate(a)+' in numbers');
  document.getElementById('bloodSummary').innerHTML=`<div><span class="num" style="font-size:22px">${t}</span> <span class="mut small">${L('marcadores','markers')} · ${esc(tx(ca,'descricao')||fdate(a))}</span></div><div class="bar">`+['ok','warn','bad','na'].map(k=>`<span style="width:${t?c[k]/t*100:0}%;background:${col[k]}"></span>`).join('')+'</div>'+
  `<div class="legend"><span class="pill ok">${c.ok} ${L('ótimo','optimal')}</span><span class="pill warn">${c.warn} ${L('aceitável/fora do ótimo','acceptable/outside optimal')}</span><span class="pill bad">${c.bad} ${L('fora da referência','out of range')}</span><span class="pill na">${c.na} ${L('sem alvo','no target')}</span></div>`+
  (b?`<div class="legend" style="margin-top:8px"><span>vs ${esc(fdate(b))}:</span><span class="pill ok">${good} ${L('melhoraram','improved')}</span><span class="pill bad">${bad} ${L('pioraram','worsened')}</span><span class="pill info">${chg} ${L('mudaram de estado','changed status')}</span></div>`:`<div style="margin-top:10px"><span class="await">⏳ ${L('Aguarda próximo exame para comparar com esta data','Awaiting next test to compare with this date')}</span></div>`)+
- (IROWS&&IROWS.length?`<div class="small mut" style="margin-top:10px">${L('Estas contagens não incluem as','These counts exclude the')} ${IROWS.length} ${L('análises de intolerâncias alimentares, que têm secção própria:','food intolerance tests, which have their own section:')} <a href="#intolerancias">${L('Intolerâncias Alimentares','Food Intolerances')}</a>.</div>`:'')}
+ (IROWS&&IROWS.length?(()=>{const ia=IS?IS.cols[0].data:a,ic=iCounts(ia);return `<div class="small mut" style="margin-top:10px">${L('Estas contagens não incluem as','These counts exclude the')} ${IROWS.length} ${L('análises de intolerâncias alimentares, que têm secção própria','food intolerance tests, which have their own section')} (<a href="#intolerancias">${L('Intolerâncias Alimentares','Food Intolerances')}</a>: ${ic.intolerante.length} ${L('intolerante','intolerant')}, ${ic.nao_intolerante.length} ${L('não intolerante','not intolerant')}).</div>`})():'')}
 // ---- alternar idioma (estático: .l-pt/.l-en; atributos e opções: data-pt/data-en) ----
 function applyLang(){const en=LANG==='en';document.documentElement.lang=en?'en':'pt-PT';document.title=en?'Sérgio F · Blood Test Timeline':'Sérgio F · Cronologia de Exames de Sangue';
  document.querySelectorAll('[data-en]').forEach(el=>{if(!el.hasAttribute('data-pt'))el.setAttribute('data-pt',el.textContent);el.textContent=en?el.dataset.en:el.dataset.pt});

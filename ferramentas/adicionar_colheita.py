@@ -10,7 +10,8 @@ Uso (a partir da raiz do repositório):
 É idempotente: voltar a correr com a mesma data substitui os resultados dessa data.
 Não grava o nome do laboratório (a página mostra só datas).
 Marcadores de intolerância alimentar (IgG/IgE específicas para alimentos) vão automaticamente para a lista
-"intolerancias" (secção própria da página, estado sempre 'sem_alvo'); os restantes vão para "marcadores".
+"intolerancias" (secção própria da página) e são classificados 'intolerante' / 'nao_intolerante' pelo limite do
+laboratório (ver classifica_intolerancia); os restantes vão para "marcadores".
 """
 import argparse, csv, json, os, re, sys
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -22,11 +23,32 @@ PROIBIDO = re.compile('|'.join(r'\b%s\b' % t for t in _T) + '|' + '|'.join([
     'we' + r'ight(?!:)', 'massa ' + 'corporal', 'frei' + 'tas', r'\d\s?' + r'kg\b', 'kg' + '/m', 'har' + 'ris',
     # nomes de laboratórios/fornecedores: a página mostra só datas
     'ai' + 'wo', 'thyro' + 'care', 'lipo' + 'mic', 'food' + 'print', 'self' + 'decode']), re.I)
-# painéis de intolerância/sensibilidade alimentar (IgG/IgE específicas para alimentos): lista 'intolerancias', sempre 'sem_alvo'
+# painéis de intolerância/sensibilidade alimentar (IgG/IgE específicas para alimentos): lista 'intolerancias'
 INTOL = re.compile(r'aliment|intoler|food', re.I)
 def e_intolerancia(nome, cat, lab):
     return bool(INTOL.search(cat or '') or INTOL.search(nome or '') or INTOL.search(lab or '') or re.match(r'Ig[GE]4? (?!total)', nome or '', re.I))
-ESTADOS = {'otimo', 'aceitavel', 'fora_do_otimo', 'fora_de_referencia', 'sem_alvo'}
+ESTADOS = {'otimo', 'aceitavel', 'fora_do_otimo', 'fora_de_referencia', 'sem_alvo', 'intolerante', 'nao_intolerante'}
+# ---- classificação das intolerâncias (a página usa a mesma regra) ----
+# Limite = ref_max (limite superior do intervalo normal/negativo do laboratório); se faltar, lê-se do texto
+# da referência ("normal ≤23", "negativo <24"...). Valor acima do limite = 'intolerante' (inclui a faixa
+# limítrofe/duvidosa); igual ou abaixo = 'nao_intolerante'. "<x" só é 'nao_intolerante' se x ≤ limite; ">x" é
+# 'intolerante' se x ≥ limite. Texto: "negativo" = nao_intolerante; "positivo/elevado/limítrofe/duvidoso" = intolerante.
+# Sem limite ou sem valor interpretável: None (fica 'sem_alvo' e o verificar avisa).
+def classifica_intolerancia(v, ref_max, ref_txt):
+    t = str(v if v is not None else '').strip()
+    if re.search(r'neg|n[ãa]o detet|not detect', t, re.I): return 'nao_intolerante'
+    if re.search(r'pos|elev|lim[ií]tr|border|equ[ií]v|duvid|d[uú]bi', t, re.I): return 'intolerante'
+    cut = ref_max
+    if cut is None and ref_txt:
+        mm = re.search(r'(?:normal|negativ\w*)\s*(≤|<=|<)\s*(\d+(?:[.,]\d+)?)', ref_txt, re.I)
+        if mm: cut = float(mm.group(2).replace(',', '.')) - (1e-9 if mm.group(1) == '<' else 0)
+    mm = re.fullmatch(r'([<>≤≥]=?)?\s*(-?\d+(?:[.,]\d+)?)', t)
+    if cut is None or not mm: return None
+    x, op = float(mm.group(2).replace(',', '.')), mm.group(1) or ''
+    if op[:1] in ('<', '≤'): return 'nao_intolerante' if x <= cut else None
+    if op[:1] in ('>', '≥'): return 'intolerante' if x >= cut else None
+    return 'intolerante' if x > cut else 'nao_intolerante'
+# ---- fim classificação
 
 def ler(p): return json.load(open(p, encoding='utf-8'))
 def gravar(p, d):
@@ -81,8 +103,8 @@ def cmd_sangue(a):
             d['intolerancias' if alim else 'marcadores'].append(m); idx[nome] = m; novos += 1
         elif alim and m in d['marcadores']:
             d['marcadores'].remove(m); d['intolerancias'].append(m)
-        if alim and 'sem_alvo' not in m.get('regras', []):
-            m['regras'] = m.get('regras', []) + ['sem_alvo']; m['alvo'] = '—'; m['otimo_min'] = None; m['otimo_max'] = None
+        if alim:
+            m['regras'] = ['intolerancia']; m['melhor'] = 'baixo'; m['otimo_min'] = None; m['otimo_max'] = None; m.pop('alvo', None)
         regras = m.get('regras', [])
         v = r['valor']; s = r['estado'] if r['estado'] in ESTADOS else None
         if 'so_categoria' in regras and num(v) is not None:   # NAFLD Fibrosis Score: o número usa medidas corporais
@@ -90,6 +112,9 @@ def cmd_sangue(a):
         if regras and num(r['valor']) is not None and 'so_categoria' not in regras:
             s = estado(float(r['valor']), num(r['ref_min']), num(r['ref_max']), m.get('otimo_min'), m.get('otimo_max'), regras)
         if 'sem_alvo' in regras: s = 'sem_alvo'
+        if 'intolerancia' in regras:
+            s = classifica_intolerancia(v, num(r['ref_max']), r['ref_texto'])
+            if not s: s = 'sem_alvo'; print(f'  AVISO: {nome} = {v!r} sem limite interpretável em {r["ref_texto"]!r}: fica sem classificação')
         res = {'data': a.data, 'v': v, 'u': r['unidade'], 'ref': r['ref_texto'],
                'ref_min': num(r['ref_min']), 'ref_max': num(r['ref_max'])}
         if s: res['s'] = s
@@ -107,8 +132,13 @@ def cmd_verificar(a):
         for i in d['marcadores']:
             if e_intolerancia(i['m'], i.get('c'), ''): ok = False; print(f'ERRO {p}: {i["m"]} é intolerância alimentar mas está em "marcadores"')
         for i in d.get('intolerancias', []):
-            if 'sem_alvo' not in i.get('regras', []) or any(r.get('s') not in (None, 'sem_alvo') for r in i['resultados']):
-                ok = False; print(f'ERRO {p}: {i["m"]} (intolerancias) tem de ter estado sem_alvo')
+            if 'intolerancia' not in i.get('regras', []): ok = False; print(f'ERRO {p}: {i["m"]} (intolerancias) sem a regra "intolerancia"')
+            for r in i['resultados']:
+                esp = classifica_intolerancia(r.get('v'), r.get('ref_max'), r.get('ref'))
+                if esp and r.get('s') != esp: ok = False; print(f'ERRO {p}: {i["m"]} {r["data"]} = {r.get("v")} deve ser {esp} (está {r.get("s")})')
+                if not esp: print(f'AVISO {p}: {i["m"]} {r["data"]} = {r.get("v")!r} sem classificação (limite em falta)')
+        for i in d['marcadores']:
+            if any(r.get('s') in ('intolerante', 'nao_intolerante') for r in i['resultados']): ok = False; print(f'ERRO {p}: {i["m"]} tem estado de intolerância fora da secção')
         for i in itens:
             for r in i['resultados']:
                 if r['data'] not in datas: ok = False; print(f'ERRO {p}: {i["m"]} tem data {r["data"]} sem colheita')
