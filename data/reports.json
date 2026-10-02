@@ -49,6 +49,25 @@
     "pt": "português",
     "en": "Portuguese"
    }
+  },
+  {
+   "id": "dopamina-noradrenalina",
+   "titulo": {
+    "pt": "Dopamina e Noradrenalina",
+    "en": "Dopamine & Noradrenaline"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/dopamina-noradrenalina.pdf",
+   "descricao": {
+    "pt": "47 de 48 SNPs (6 imputados); mais provável um turnover de dopamina mais rápido do que o típico.",
+    "en": "47 of 48 SNPs (6 imputed); a faster-than-typical dopamine turnover is more likely."
+   },
+   "paginas": 24,
+   "tamanho_kb": 149,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
   }
  ]
 }
