@@ -18,7 +18,7 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 F_SANGUE = os.path.join(RAIZ, 'data', 'sangue.json')
 # privacidade: nunca publicar a medida da balança nem nada que a permita deduzir
 # (os termos são montados por partes para que o próprio ficheiro não os contenha literalmente)
-_T = ['pe' + 'so', 'i' + 'mc', 'b' + 'mi', 'f' + 'mi', 'l' + 'mi', '19' + '99', 'lis' + 'boa', 'lis' + 'bon', 'chen' + 'nai']
+_T = ['ger' + 'mano', 'sou' + 'sa', 'cu' + 'f', 'coim' + 'bra', 'pe' + 'so', 'i' + 'mc', 'b' + 'mi', 'f' + 'mi', 'l' + 'mi', '19' + '99', 'lis' + 'boa', 'lis' + 'bon', 'chen' + 'nai']
 PROIBIDO = re.compile('|'.join(r'\b%s\b' % t for t in _T) + '|' + '|'.join([
     'we' + r'ight(?!:)', 'massa ' + 'corporal', 'frei' + 'tas', r'\d\s?' + r'kg\b', 'kg' + '/m', 'har' + 'ris',
     # nomes de laboratórios/fornecedores: a página mostra só datas
@@ -62,6 +62,7 @@ def num(x):
 def estado(v, rmin, rmax, omin, omax, regras=()):
     """Igual a biomarcadores/scripts/comum.py + regras do painel."""
     if 'acima_do_otimo_fora' in regras and omax is not None and v >= omax: return 'fora_de_referencia'
+    if 'sem_limite_inferior' in regras: rmin = None   # LDL, ApoB, estrôncio: abaixo do mínimo do laboratório não conta como fora
     if omin is None and omax is None and rmin is None and rmax is None: return 'sem_alvo'
     if (omin is None or v >= omin) and (omax is None or v <= omax): return 'otimo'
     if not ((rmin is None or v >= rmin) and (rmax is None or v <= rmax)): return 'fora_de_referencia'

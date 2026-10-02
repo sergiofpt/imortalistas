@@ -4,6 +4,33 @@
  "atualizado_em": "2026-10-02",
  "colheitas": [
   {
+   "data": "2024-01-12",
+   "rotulo": "jan 2024",
+   "descricao": "12-01-2024",
+   "rotulo_en": "Jan 2024",
+   "descricao_en": "12-01-2024",
+   "nota": "Só os resultados anteriores citados no boletim de 21-03-2026.",
+   "nota_en": "Only the previous results quoted in the 21-03-2026 report."
+  },
+  {
+   "data": "2026-02-21",
+   "rotulo": "fev 2026",
+   "descricao": "21-02-2026",
+   "rotulo_en": "Feb 2026",
+   "descricao_en": "21-02-2026",
+   "nota": "Só os resultados anteriores citados no boletim de 21-03-2026.",
+   "nota_en": "Only the previous results quoted in the 21-03-2026 report."
+  },
+  {
+   "data": "2026-03-21",
+   "rotulo": "mar 2026",
+   "descricao": "21-03-2026",
+   "rotulo_en": "Mar 2026",
+   "descricao_en": "21-03-2026",
+   "nota": "Jejum e hora de colheita não indicados no boletim.",
+   "nota_en": "Fasting status and collection time not stated in the report."
+  },
+  {
    "data": "2026-08-25",
    "rotulo": "ago 2026",
    "descricao": "25-08-2026 e 27-08-2026",
@@ -23,6 +50,16 @@
    "otimo_min": 0,
    "otimo_max": 0.2,
    "resultados": [
+    {
+     "data": "2026-03-21",
+     "v": "0.06",
+     "u": "x 10³/µl",
+     "ref": "Sem intervalo no relatório para o valor absoluto",
+     "ref_min": null,
+     "ref_max": null,
+     "s": "otimo",
+     "ref_en": "No range in the report for the absolute value"
+    },
     {
      "data": "2026-08-25",
      "v": "0.06",
@@ -44,6 +81,16 @@
    "otimo_max": 0.5,
    "resultados": [
     {
+     "data": "2026-03-21",
+     "v": "0.07",
+     "u": "x 10³/µl",
+     "ref": "Sem intervalo no relatório para o valor absoluto",
+     "ref_min": null,
+     "ref_max": null,
+     "s": "otimo",
+     "ref_en": "No range in the report for the absolute value"
+    },
+    {
      "data": "2026-08-25",
      "v": "0.1",
      "u": "X 10³/µL",
@@ -63,6 +110,16 @@
    "otimo_min": 1,
    "otimo_max": 3.5,
    "resultados": [
+    {
+     "data": "2026-03-21",
+     "v": "3.14",
+     "u": "x 10³/µl",
+     "ref": "Sem intervalo no relatório para o valor absoluto",
+     "ref_min": null,
+     "ref_max": null,
+     "s": "otimo",
+     "ref_en": "No range in the report for the absolute value"
+    },
     {
      "data": "2026-08-25",
      "v": "3.25",
@@ -84,6 +141,16 @@
    "otimo_max": 0.8,
    "resultados": [
     {
+     "data": "2026-03-21",
+     "v": "0.70",
+     "u": "x 10³/µl",
+     "ref": "Sem intervalo no relatório para o valor absoluto",
+     "ref_min": null,
+     "ref_max": null,
+     "s": "otimo",
+     "ref_en": "No range in the report for the absolute value"
+    },
+    {
      "data": "2026-08-25",
      "v": "0.27",
      "u": "X 10³/µL",
@@ -103,6 +170,16 @@
    "otimo_min": 1.5,
    "otimo_max": 4,
    "resultados": [
+    {
+     "data": "2026-03-21",
+     "v": "3.05",
+     "u": "x 10³/µl",
+     "ref": "Sem intervalo no relatório para o valor absoluto",
+     "ref_min": null,
+     "ref_max": null,
+     "s": "otimo",
+     "ref_en": "No range in the report for the absolute value"
+    },
     {
      "data": "2026-08-25",
      "v": "3.35",
@@ -124,6 +201,37 @@
    "otimo_max": 2,
    "resultados": [
     {
+     "data": "2024-01-12",
+     "v": "0.3",
+     "u": "%",
+     "ref": "0.00 - 2.00",
+     "ref_min": 0,
+     "ref_max": 2,
+     "s": "otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-02-21",
+     "v": "1.1",
+     "u": "%",
+     "ref": "0.00 - 2.00",
+     "ref_min": 0,
+     "ref_max": 2,
+     "s": "otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "0.9",
+     "u": "%",
+     "ref": "0.00 - 2.00",
+     "ref_min": 0,
+     "ref_max": 2,
+     "s": "otimo"
+    },
+    {
      "data": "2026-08-25",
      "v": "0.9",
      "u": "%",
@@ -144,6 +252,39 @@
    "otimo_max": 8,
    "resultados": [
     {
+     "data": "2024-01-12",
+     "v": "0.9",
+     "u": "%",
+     "ref": "1.00 - 6.00",
+     "ref_min": 1,
+     "ref_max": 6,
+     "s": "fora_de_referencia",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim). Alvo nesta data: 1–6 (relativo ao intervalo deste boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range). Target on this date: 1–6 (relative to this report's range)."
+    },
+    {
+     "data": "2026-02-21",
+     "v": "1.1",
+     "u": "%",
+     "ref": "1.00 - 6.00",
+     "ref_min": 1,
+     "ref_max": 6,
+     "s": "otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim). Alvo nesta data: 1–6 (relativo ao intervalo deste boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range). Target on this date: 1–6 (relative to this report's range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "1.0",
+     "u": "%",
+     "ref": "1.00 - 6.00",
+     "ref_min": 1,
+     "ref_max": 6,
+     "s": "otimo",
+     "nota": "Alvo nesta data: 1–6 (relativo ao intervalo deste boletim).",
+     "nota_en": "Target on this date: 1–6 (relative to this report's range)."
+    },
+    {
      "data": "2026-08-25",
      "v": "1.4",
      "u": "%",
@@ -163,6 +304,37 @@
    "otimo_min": 14,
    "otimo_max": 16,
    "resultados": [
+    {
+     "data": "2024-01-12",
+     "v": "15.5",
+     "u": "g/dl",
+     "ref": "13.0 - 17.0",
+     "ref_min": 13,
+     "ref_max": 17,
+     "s": "otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-02-21",
+     "v": "17.5",
+     "u": "g/dl",
+     "ref": "13.0 - 17.0",
+     "ref_min": 13,
+     "ref_max": 17,
+     "s": "fora_de_referencia",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "17.0",
+     "u": "g/dl",
+     "ref": "13.0 - 17.0",
+     "ref_min": 13,
+     "ref_max": 17,
+     "s": "fora_do_otimo"
+    },
     {
      "data": "2026-08-25",
      "v": "15.4",
@@ -224,6 +396,37 @@
    "otimo_max": 6,
    "resultados": [
     {
+     "data": "2024-01-12",
+     "v": "9.8",
+     "u": "x 10³/µl",
+     "ref": "4.0 - 10.0",
+     "ref_min": 4,
+     "ref_max": 10,
+     "s": "fora_do_otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-02-21",
+     "v": "6.2",
+     "u": "x 10³/µl",
+     "ref": "4.0 - 10.0",
+     "ref_min": 4,
+     "ref_max": 10,
+     "s": "aceitavel",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "7.0",
+     "u": "x 10³/µl",
+     "ref": "4.0 - 10.0",
+     "ref_min": 4,
+     "ref_max": 10,
+     "s": "fora_do_otimo"
+    },
+    {
      "data": "2026-08-25",
      "v": "7.03",
      "u": "X 10³/µL",
@@ -243,6 +446,39 @@
    "otimo_min": 15,
    "otimo_max": 49,
    "resultados": [
+    {
+     "data": "2024-01-12",
+     "v": "36.8",
+     "u": "%",
+     "ref": "20.00 - 40.00",
+     "ref_min": 20,
+     "ref_max": 40,
+     "s": "otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim). Alvo nesta data: 20–40 (relativo ao intervalo deste boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range). Target on this date: 20–40 (relative to this report's range)."
+    },
+    {
+     "data": "2026-02-21",
+     "v": "51.0",
+     "u": "%",
+     "ref": "20.00 - 40.00",
+     "ref_min": 20,
+     "ref_max": 40,
+     "s": "fora_de_referencia",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim). Alvo nesta data: 20–40 (relativo ao intervalo deste boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range). Target on this date: 20–40 (relative to this report's range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "44.7",
+     "u": "%",
+     "ref": "20.00 - 40.00",
+     "ref_min": 20,
+     "ref_max": 40,
+     "s": "fora_de_referencia",
+     "nota": "Alvo nesta data: 20–40 (relativo ao intervalo deste boletim).",
+     "nota_en": "Target on this date: 20–40 (relative to this report's range)."
+    },
     {
      "data": "2026-08-25",
      "v": "46.2",
@@ -264,6 +500,39 @@
    "otimo_max": 33,
    "resultados": [
     {
+     "data": "2024-01-12",
+     "v": "28.5",
+     "u": "pg",
+     "ref": "27.0 - 32.0",
+     "ref_min": 27,
+     "ref_max": 32,
+     "s": "otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim). Alvo nesta data: 27–32 (relativo ao intervalo deste boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range). Target on this date: 27–32 (relative to this report's range)."
+    },
+    {
+     "data": "2026-02-21",
+     "v": "29.9",
+     "u": "pg",
+     "ref": "27.0 - 32.0",
+     "ref_min": 27,
+     "ref_max": 32,
+     "s": "otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim). Alvo nesta data: 27–32 (relativo ao intervalo deste boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range). Target on this date: 27–32 (relative to this report's range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "30.4",
+     "u": "pg",
+     "ref": "27.0 - 32.0",
+     "ref_min": 27,
+     "ref_max": 32,
+     "s": "otimo",
+     "nota": "Alvo nesta data: 27–32 (relativo ao intervalo deste boletim).",
+     "nota_en": "Target on this date: 27–32 (relative to this report's range)."
+    },
+    {
      "data": "2026-08-25",
      "v": "30.0",
      "u": "pg",
@@ -283,6 +552,37 @@
    "otimo_min": 32,
    "otimo_max": 36,
    "resultados": [
+    {
+     "data": "2024-01-12",
+     "v": "33.1",
+     "u": "g/dl",
+     "ref": "32.0 - 36.0",
+     "ref_min": 32,
+     "ref_max": 36,
+     "s": "otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-02-21",
+     "v": "34.2",
+     "u": "g/dl",
+     "ref": "32.0 - 36.0",
+     "ref_min": 32,
+     "ref_max": 36,
+     "s": "otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "35.1",
+     "u": "g/dl",
+     "ref": "32.0 - 36.0",
+     "ref_min": 32,
+     "ref_max": 36,
+     "s": "otimo"
+    },
     {
      "data": "2026-08-25",
      "v": "33.4",
@@ -304,6 +604,37 @@
    "otimo_max": 92,
    "resultados": [
     {
+     "data": "2024-01-12",
+     "v": "86.4",
+     "u": "fl",
+     "ref": "80.0 - 97.0",
+     "ref_min": 80,
+     "ref_max": 97,
+     "s": "otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-02-21",
+     "v": "87.5",
+     "u": "fl",
+     "ref": "80.0 - 97.0",
+     "ref_min": 80,
+     "ref_max": 97,
+     "s": "otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "86.8",
+     "u": "fl",
+     "ref": "80.0 - 97.0",
+     "ref_min": 80,
+     "ref_max": 97,
+     "s": "otimo"
+    },
+    {
      "data": "2026-08-25",
      "v": "89.7",
      "u": "fL",
@@ -323,6 +654,39 @@
    "otimo_min": 1,
    "otimo_max": 10,
    "resultados": [
+    {
+     "data": "2024-01-12",
+     "v": "8.0",
+     "u": "%",
+     "ref": "2.00 - 10.00",
+     "ref_min": 2,
+     "ref_max": 10,
+     "s": "otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim). Alvo nesta data: 2–10 (relativo ao intervalo deste boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range). Target on this date: 2–10 (relative to this report's range)."
+    },
+    {
+     "data": "2026-02-21",
+     "v": "7.4",
+     "u": "%",
+     "ref": "2.00 - 10.00",
+     "ref_min": 2,
+     "ref_max": 10,
+     "s": "otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim). Alvo nesta data: 2–10 (relativo ao intervalo deste boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range). Target on this date: 2–10 (relative to this report's range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "10.0",
+     "u": "%",
+     "ref": "2.00 - 10.00",
+     "ref_min": 2,
+     "ref_max": 10,
+     "s": "otimo",
+     "nota": "Alvo nesta data: 2–10 (relativo ao intervalo deste boletim).",
+     "nota_en": "Target on this date: 2–10 (relative to this report's range)."
+    },
     {
      "data": "2026-08-25",
      "v": "3.8",
@@ -363,6 +727,42 @@
    "otimo_min": 38,
    "otimo_max": 80,
    "resultados": [
+    {
+     "data": "2024-01-12",
+     "v": "54.0",
+     "u": "%",
+     "ref": "40.00 - 80.00 (Neutrófilos %)",
+     "ref_min": 40,
+     "ref_max": 80,
+     "s": "otimo",
+     "ref_en": "40.00 - 80.00 (Neutrophils %)",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim). Alvo nesta data: 40–80 (relativo ao intervalo deste boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range). Target on this date: 40–80 (relative to this report's range)."
+    },
+    {
+     "data": "2026-02-21",
+     "v": "39.4",
+     "u": "%",
+     "ref": "40.00 - 80.00 (Neutrófilos %)",
+     "ref_min": 40,
+     "ref_max": 80,
+     "s": "fora_de_referencia",
+     "ref_en": "40.00 - 80.00 (Neutrophils %)",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim). Alvo nesta data: 40–80 (relativo ao intervalo deste boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range). Target on this date: 40–80 (relative to this report's range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "43.4",
+     "u": "%",
+     "ref": "40.00 - 80.00 (Neutrófilos %)",
+     "ref_min": 40,
+     "ref_max": 80,
+     "s": "otimo",
+     "ref_en": "40.00 - 80.00 (Neutrophils %)",
+     "nota": "Alvo nesta data: 40–80 (relativo ao intervalo deste boletim).",
+     "nota_en": "Target on this date: 40–80 (relative to this report's range)."
+    },
     {
      "data": "2026-08-25",
      "v": "47.6",
@@ -444,6 +844,37 @@
    "otimo_max": 48,
    "resultados": [
     {
+     "data": "2024-01-12",
+     "v": "46.9",
+     "u": "%",
+     "ref": "40.0 - 50.0",
+     "ref_min": 40,
+     "ref_max": 50,
+     "s": "otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-02-21",
+     "v": "51.2",
+     "u": "%",
+     "ref": "40.0 - 50.0",
+     "ref_min": 40,
+     "ref_max": 50,
+     "s": "fora_de_referencia",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "48.5",
+     "u": "%",
+     "ref": "40.0 - 50.0",
+     "ref_min": 40,
+     "ref_max": 50,
+     "s": "aceitavel"
+    },
+    {
      "data": "2026-08-25",
      "v": "46.1",
      "u": "%",
@@ -504,6 +935,37 @@
    "otimo_max": 350,
    "resultados": [
     {
+     "data": "2024-01-12",
+     "v": "279",
+     "u": "x 10³/µl",
+     "ref": "150 - 400",
+     "ref_min": 150,
+     "ref_max": 400,
+     "s": "otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-02-21",
+     "v": "336",
+     "u": "x 10³/µl",
+     "ref": "150 - 400",
+     "ref_min": 150,
+     "ref_max": 400,
+     "s": "otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "321",
+     "u": "x 10³/µl",
+     "ref": "150 - 400",
+     "ref_min": 150,
+     "ref_max": 400,
+     "s": "otimo"
+    },
+    {
      "data": "2026-08-25",
      "v": "333",
      "u": "X 10³/µL",
@@ -524,6 +986,37 @@
    "otimo_max": 5.5,
    "resultados": [
     {
+     "data": "2024-01-12",
+     "v": "5.43",
+     "u": "x 10⁶/µl",
+     "ref": "4.50 - 5.50",
+     "ref_min": 4.5,
+     "ref_max": 5.5,
+     "s": "otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-02-21",
+     "v": "5.85",
+     "u": "x 10⁶/µl",
+     "ref": "4.50 - 5.50",
+     "ref_min": 4.5,
+     "ref_max": 5.5,
+     "s": "fora_de_referencia",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "5.59",
+     "u": "x 10⁶/µl",
+     "ref": "4.50 - 5.50",
+     "ref_min": 4.5,
+     "ref_max": 5.5,
+     "s": "fora_de_referencia"
+    },
+    {
      "data": "2026-08-25",
      "v": "5.14",
      "u": "X 10^6/µL",
@@ -543,6 +1036,37 @@
    "otimo_min": 11,
    "otimo_max": 13,
    "resultados": [
+    {
+     "data": "2024-01-12",
+     "v": "12.0",
+     "u": "%",
+     "ref": "11.6 - 14.0 (R.D.W.)",
+     "ref_min": 11.6,
+     "ref_max": 14,
+     "s": "otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-02-21",
+     "v": "12.1",
+     "u": "%",
+     "ref": "11.6 - 14.0 (R.D.W.)",
+     "ref_min": 11.6,
+     "ref_max": 14,
+     "s": "otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "12.6",
+     "u": "%",
+     "ref": "11.6 - 14.0 (R.D.W.)",
+     "ref_min": 11.6,
+     "ref_max": 14,
+     "s": "otimo"
+    },
     {
      "data": "2026-08-25",
      "v": "12.3",
@@ -604,6 +1128,37 @@
    "otimo_max": 5.3,
    "resultados": [
     {
+     "data": "2024-01-12",
+     "v": "5.6",
+     "u": "%",
+     "ref": "4.3 - 6.1 [NGSP]",
+     "ref_min": 4.3,
+     "ref_max": 6.1,
+     "s": "fora_do_otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-02-21",
+     "v": "5.1",
+     "u": "%",
+     "ref": "4.3 - 6.1 [NGSP]",
+     "ref_min": 4.3,
+     "ref_max": 6.1,
+     "s": "otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "5.2",
+     "u": "%",
+     "ref": "4.3 - 6.1 [NGSP]",
+     "ref_min": 4.3,
+     "ref_max": 6.1,
+     "s": "otimo"
+    },
+    {
      "data": "2026-08-25",
      "v": "4.8",
      "u": "%",
@@ -623,6 +1178,40 @@
    "otimo_min": 85,
    "otimo_max": 105,
    "resultados": [
+    {
+     "data": "2024-01-12",
+     "v": "114",
+     "u": "mg/dL",
+     "ref": "Sem intervalo",
+     "ref_min": null,
+     "ref_max": null,
+     "s": "fora_do_otimo",
+     "ref_en": "No range",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-02-21",
+     "v": "100",
+     "u": "mg/dL",
+     "ref": "Sem intervalo",
+     "ref_min": null,
+     "ref_max": null,
+     "s": "otimo",
+     "ref_en": "No range",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "103",
+     "u": "mg/dL",
+     "ref": "Sem intervalo",
+     "ref_min": null,
+     "ref_max": null,
+     "s": "otimo",
+     "ref_en": "No range"
+    },
     {
      "data": "2026-08-25",
      "v": "91",
@@ -786,6 +1375,37 @@
    "otimo_max": 20,
    "resultados": [
     {
+     "data": "2024-01-12",
+     "v": "73",
+     "u": "U/l",
+     "ref": "15 - 85",
+     "ref_min": 15,
+     "ref_max": 85,
+     "s": "fora_do_otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-02-21",
+     "v": "59",
+     "u": "U/l",
+     "ref": "15 - 85",
+     "ref_min": 15,
+     "ref_max": 85,
+     "s": "fora_do_otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "49",
+     "u": "U/l",
+     "ref": "15 - 85",
+     "ref_min": 15,
+     "ref_max": 85,
+     "s": "fora_do_otimo"
+    },
+    {
      "data": "2026-08-25",
      "v": "48.2",
      "u": "U/L",
@@ -946,6 +1566,37 @@
    "otimo_max": 25,
    "resultados": [
     {
+     "data": "2024-01-12",
+     "v": "60",
+     "u": "U/l",
+     "ref": "15 - 37",
+     "ref_min": 15,
+     "ref_max": 37,
+     "s": "fora_de_referencia",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-02-21",
+     "v": "41",
+     "u": "U/l",
+     "ref": "15 - 37",
+     "ref_min": 15,
+     "ref_max": 37,
+     "s": "fora_de_referencia",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "31",
+     "u": "U/l",
+     "ref": "15 - 37",
+     "ref_min": 15,
+     "ref_max": 37,
+     "s": "fora_do_otimo"
+    },
+    {
      "data": "2026-08-25",
      "v": "38.4",
      "u": "U/L",
@@ -965,6 +1616,37 @@
    "otimo_min": 10,
    "otimo_max": 25,
    "resultados": [
+    {
+     "data": "2024-01-12",
+     "v": "123",
+     "u": "U/l",
+     "ref": "16 - 63",
+     "ref_min": 16,
+     "ref_max": 63,
+     "s": "fora_de_referencia",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-02-21",
+     "v": "49",
+     "u": "U/l",
+     "ref": "16 - 63",
+     "ref_min": 16,
+     "ref_max": 63,
+     "s": "fora_do_otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "60",
+     "u": "U/l",
+     "ref": "16 - 63",
+     "ref_min": 16,
+     "ref_max": 63,
+     "s": "fora_do_otimo"
+    },
     {
      "data": "2026-08-25",
      "v": "67.9",
@@ -1005,6 +1687,28 @@
    "otimo_min": 100,
    "otimo_max": 220,
    "resultados": [
+    {
+     "data": "2026-02-21",
+     "v": "343",
+     "u": "U/l",
+     "ref": "85 - 227",
+     "ref_min": 85,
+     "ref_max": 227,
+     "s": "fora_de_referencia",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim). Alvo nesta data: 85–227 (relativo ao intervalo deste boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range). Target on this date: 85–227 (relative to this report's range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "140",
+     "u": "U/l",
+     "ref": "85 - 227",
+     "ref_min": 85,
+     "ref_max": 227,
+     "s": "otimo",
+     "nota": "Alvo nesta data: 85–227 (relativo ao intervalo deste boletim).",
+     "nota_en": "Target on this date: 85–227 (relative to this report's range)."
+    },
     {
      "data": "2026-08-25",
      "v": "188.62",
@@ -1054,6 +1758,40 @@
    ],
    "resultados": [
     {
+     "data": "2024-01-12",
+     "v": "115",
+     "u": "mg/dL",
+     "ref": "< 115 (risco baixo/moderado); < 100 elevado; < 70 muito elevado",
+     "ref_min": null,
+     "ref_max": 115,
+     "s": "fora_do_otimo",
+     "ref_en": "< 115 (low/moderate risk); < 100 high; < 70 very high",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-02-21",
+     "v": "51",
+     "u": "mg/dL",
+     "ref": "< 115 (risco baixo/moderado); < 100 elevado; < 70 muito elevado",
+     "ref_min": null,
+     "ref_max": 115,
+     "s": "otimo",
+     "ref_en": "< 115 (low/moderate risk); < 100 high; < 70 very high",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "54",
+     "u": "mg/dL",
+     "ref": "< 115 (risco baixo/moderado); < 100 elevado; < 70 muito elevado",
+     "ref_min": null,
+     "ref_max": 115,
+     "s": "otimo",
+     "ref_en": "< 115 (low/moderate risk); < 100 high; < 70 very high"
+    },
+    {
      "data": "2026-08-25",
      "v": "21.76",
      "u": "mg/dL",
@@ -1074,6 +1812,40 @@
    "otimo_max": 180,
    "resultados": [
     {
+     "data": "2024-01-12",
+     "v": "199",
+     "u": "mg/dL",
+     "ref": "< 190 (doença coronária: < 175)",
+     "ref_min": null,
+     "ref_max": 190,
+     "s": "fora_de_referencia",
+     "ref_en": "< 190 (coronary disease: < 175)",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-02-21",
+     "v": "111",
+     "u": "mg/dL",
+     "ref": "< 190 (doença coronária: < 175)",
+     "ref_min": null,
+     "ref_max": 190,
+     "s": "otimo",
+     "ref_en": "< 190 (coronary disease: < 175)",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "118",
+     "u": "mg/dL",
+     "ref": "< 190 (doença coronária: < 175)",
+     "ref_min": null,
+     "ref_max": 190,
+     "s": "otimo",
+     "ref_en": "< 190 (coronary disease: < 175)"
+    },
+    {
      "data": "2026-08-25",
      "v": "85",
      "u": "mg/dL",
@@ -1093,6 +1865,37 @@
    "otimo_min": 50,
    "otimo_max": 80,
    "resultados": [
+    {
+     "data": "2024-01-12",
+     "v": "39",
+     "u": "mg/dL",
+     "ref": "35 - 55",
+     "ref_min": 35,
+     "ref_max": 55,
+     "s": "fora_do_otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-02-21",
+     "v": "39",
+     "u": "mg/dL",
+     "ref": "35 - 55",
+     "ref_min": 35,
+     "ref_max": 55,
+     "s": "fora_do_otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "45",
+     "u": "mg/dL",
+     "ref": "35 - 55",
+     "ref_min": 35,
+     "ref_max": 55,
+     "s": "aceitavel"
+    },
     {
      "data": "2026-08-25",
      "v": "41",
@@ -1133,6 +1936,37 @@
    "otimo_min": null,
    "otimo_max": 100,
    "resultados": [
+    {
+     "data": "2024-01-12",
+     "v": "223",
+     "u": "mg/dL",
+     "ref": "< 150",
+     "ref_min": null,
+     "ref_max": 150,
+     "s": "fora_de_referencia",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-02-21",
+     "v": "105",
+     "u": "mg/dL",
+     "ref": "< 150",
+     "ref_min": null,
+     "ref_max": 150,
+     "s": "aceitavel",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "96",
+     "u": "mg/dL",
+     "ref": "< 150",
+     "ref_min": null,
+     "ref_max": 150,
+     "s": "otimo"
+    },
     {
      "data": "2026-08-25",
      "v": "68",
@@ -1258,6 +2092,28 @@
    ],
    "resultados": [
     {
+     "data": "2026-02-21",
+     "v": "49.6",
+     "u": "mg/dL",
+     "ref": "80.0 - 155.0 (nefelometria)",
+     "ref_min": 80,
+     "ref_max": 155,
+     "s": "otimo",
+     "ref_en": "80.0 - 155.0 (nephelometry)",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "64.9",
+     "u": "mg/dL",
+     "ref": "80.0 - 155.0 (nefelometria)",
+     "ref_min": 80,
+     "ref_max": 155,
+     "s": "aceitavel",
+     "ref_en": "80.0 - 155.0 (nephelometry)"
+    },
+    {
      "data": "2026-08-25",
      "v": "30",
      "u": "mg/dL",
@@ -1318,6 +2174,26 @@
    "otimo_max": 9,
    "resultados": [
     {
+     "data": "2026-02-21",
+     "v": "24.58",
+     "u": "µmol/L",
+     "ref": "3.70 - 13.90",
+     "ref_min": 3.7,
+     "ref_max": 13.9,
+     "s": "fora_de_referencia",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "14.17",
+     "u": "µmol/L",
+     "ref": "3.70 - 13.90",
+     "ref_min": 3.7,
+     "ref_max": 13.9,
+     "s": "fora_de_referencia"
+    },
+    {
      "data": "2026-08-25",
      "v": "18.4",
      "u": "µmol/L",
@@ -1358,6 +2234,28 @@
    "otimo_max": 10,
    "resultados": [
     {
+     "data": "2026-02-21",
+     "v": "9.4",
+     "u": "mg/dL",
+     "ref": "8.5 - 10.1 (Calcémia)",
+     "ref_min": 8.5,
+     "ref_max": 10.1,
+     "s": "otimo",
+     "ref_en": "8.5 - 10.1 (serum calcium)",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "8.9",
+     "u": "mg/dL",
+     "ref": "8.5 - 10.1 (Calcémia)",
+     "ref_min": 8.5,
+     "ref_max": 10.1,
+     "s": "aceitavel",
+     "ref_en": "8.5 - 10.1 (serum calcium)"
+    },
+    {
      "data": "2026-08-25",
      "v": "9.58",
      "u": "mg/dL",
@@ -1377,6 +2275,40 @@
    "otimo_min": 3.5,
    "otimo_max": 5.5,
    "resultados": [
+    {
+     "data": "2024-01-12",
+     "v": "8.0",
+     "u": "mg/dL",
+     "ref": "3.5 - 7.2 (Uricémia)",
+     "ref_min": 3.5,
+     "ref_max": 7.2,
+     "s": "fora_de_referencia",
+     "ref_en": "3.5 - 7.2 (serum uric acid)",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-02-21",
+     "v": "3.9",
+     "u": "mg/dL",
+     "ref": "3.5 - 7.2 (Uricémia)",
+     "ref_min": 3.5,
+     "ref_max": 7.2,
+     "s": "otimo",
+     "ref_en": "3.5 - 7.2 (serum uric acid)",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "4.3",
+     "u": "mg/dL",
+     "ref": "3.5 - 7.2 (Uricémia)",
+     "ref_min": 3.5,
+     "ref_max": 7.2,
+     "s": "otimo",
+     "ref_en": "3.5 - 7.2 (serum uric acid)"
+    },
     {
      "data": "2026-08-25",
      "v": "5.1",
@@ -1398,6 +2330,26 @@
    "otimo_max": 142,
    "resultados": [
     {
+     "data": "2026-02-21",
+     "v": "141.0",
+     "u": "mmol/l",
+     "ref": "136.0 - 145.0",
+     "ref_min": 136,
+     "ref_max": 145,
+     "s": "otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "141.0",
+     "u": "mmol/l",
+     "ref": "136.0 - 145.0",
+     "ref_min": 136,
+     "ref_max": 145,
+     "s": "otimo"
+    },
+    {
      "data": "2026-08-25",
      "v": "142.5",
      "u": "mmol/L",
@@ -1418,6 +2370,15 @@
    "otimo_max": 5,
    "resultados": [
     {
+     "data": "2026-03-21",
+     "v": "4.4",
+     "u": "mmol/l",
+     "ref": "3.5 - 5.1",
+     "ref_min": 3.5,
+     "ref_max": 5.1,
+     "s": "otimo"
+    },
+    {
      "data": "2026-08-25",
      "v": "3.97",
      "u": "mmol/L",
@@ -1437,6 +2398,26 @@
    "otimo_min": 100,
    "otimo_max": 106,
    "resultados": [
+    {
+     "data": "2026-02-21",
+     "v": "106.0",
+     "u": "mmol/l",
+     "ref": "98.0 - 107.0",
+     "ref_min": 98,
+     "ref_max": 107,
+     "s": "otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "107.0",
+     "u": "mmol/l",
+     "ref": "98.0 - 107.0",
+     "ref_min": 98,
+     "ref_max": 107,
+     "s": "aceitavel"
+    },
     {
      "data": "2026-08-25",
      "v": "105.7",
@@ -1477,6 +2458,28 @@
    "otimo_min": 0.6,
    "otimo_max": 1.2,
    "resultados": [
+    {
+     "data": "2024-01-12",
+     "v": "0.85",
+     "u": "mg/dL",
+     "ref": "0.70 - 1.30 (Jaffé)",
+     "ref_min": 0.7,
+     "ref_max": 1.3,
+     "s": "otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim). Alvo nesta data: 0.7–1.3 (relativo ao intervalo deste boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range). Target on this date: 0.7–1.3 (relative to this report's range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "1.14",
+     "u": "mg/dL",
+     "ref": "0.70 - 1.30 (Jaffé)",
+     "ref_min": 0.7,
+     "ref_max": 1.3,
+     "s": "otimo",
+     "nota": "Alvo nesta data: 0.7–1.3 (relativo ao intervalo deste boletim).",
+     "nota_en": "Target on this date: 0.7–1.3 (relative to this report's range)."
+    },
     {
      "data": "2026-08-25",
      "v": "0.8",
@@ -1537,6 +2540,16 @@
    "otimo_min": 90,
    "otimo_max": 120,
    "resultados": [
+    {
+     "data": "2026-03-21",
+     "v": "88",
+     "u": "ml/min/1,73 m²",
+     "ref": ">= 60 (CKD-EPI 2009, creatinina)",
+     "ref_min": 60,
+     "ref_max": null,
+     "s": "aceitavel",
+     "ref_en": ">= 60 (CKD-EPI 2009, creatinine)"
+    },
     {
      "data": "2026-08-25",
      "v": "124",
@@ -1683,6 +2696,37 @@
    "otimo_max": 2.5,
    "resultados": [
     {
+     "data": "2024-01-12",
+     "v": "2.362",
+     "u": "mUI/l",
+     "ref": "0.350 - 5.500",
+     "ref_min": 0.35,
+     "ref_max": 5.5,
+     "s": "otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-02-21",
+     "v": "2.209",
+     "u": "mUI/l",
+     "ref": "0.350 - 5.500",
+     "ref_min": 0.35,
+     "ref_max": 5.5,
+     "s": "otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "0.927",
+     "u": "mUI/l",
+     "ref": "0.350 - 5.500",
+     "ref_min": 0.35,
+     "ref_max": 5.5,
+     "s": "otimo"
+    },
+    {
      "data": "2026-08-25",
      "v": "1.35",
      "u": "µIU/mL",
@@ -1703,6 +2747,37 @@
    "otimo_max": 4,
    "resultados": [
     {
+     "data": "2024-01-12",
+     "v": "3.79",
+     "u": "pg/ml",
+     "ref": "2.30 - 4.20",
+     "ref_min": 2.3,
+     "ref_max": 4.2,
+     "s": "otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-02-21",
+     "v": "3.15",
+     "u": "pg/ml",
+     "ref": "2.30 - 4.20",
+     "ref_min": 2.3,
+     "ref_max": 4.2,
+     "s": "otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "3.26",
+     "u": "pg/ml",
+     "ref": "2.30 - 4.20",
+     "ref_min": 2.3,
+     "ref_max": 4.2,
+     "s": "otimo"
+    },
+    {
      "data": "2026-08-25",
      "v": "3.38",
      "u": "pg/mL",
@@ -1722,6 +2797,37 @@
    "otimo_min": 1,
    "otimo_max": 1.6,
    "resultados": [
+    {
+     "data": "2024-01-12",
+     "v": "1.11",
+     "u": "ng/dl",
+     "ref": "0.80 - 1.76",
+     "ref_min": 0.8,
+     "ref_max": 1.76,
+     "s": "otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-02-21",
+     "v": "1.82",
+     "u": "ng/dl",
+     "ref": "0.80 - 1.76",
+     "ref_min": 0.8,
+     "ref_max": 1.76,
+     "s": "fora_de_referencia",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "1.67",
+     "u": "ng/dl",
+     "ref": "0.80 - 1.76",
+     "ref_min": 0.8,
+     "ref_max": 1.76,
+     "s": "aceitavel"
+    },
     {
      "data": "2026-08-25",
      "v": "1.65",
@@ -1865,6 +2971,28 @@
    "otimo_min": 40,
    "otimo_max": 60,
    "resultados": [
+    {
+     "data": "2026-02-21",
+     "v": "43.90",
+     "u": "ng/ml",
+     "ref": "Suficiência 30 - 100 (Deficiência <10; Insuficiência 10-30; Toxicidade >100)",
+     "ref_min": 30,
+     "ref_max": 100,
+     "s": "otimo",
+     "ref_en": "Sufficiency 30 - 100 (Deficiency <10; Insufficiency 10-30; Toxicity >100)",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "45.90",
+     "u": "ng/ml",
+     "ref": "Suficiência 30 - 100 (Deficiência <10; Insuficiência 10-30; Toxicidade >100)",
+     "ref_min": 30,
+     "ref_max": 100,
+     "s": "otimo",
+     "ref_en": "Sufficiency 30 - 100 (Deficiency <10; Insufficiency 10-30; Toxicity >100)"
+    },
     {
      "data": "2026-08-25",
      "v": "37.39",
@@ -2845,6 +3973,18 @@
    "otimo_max": 196,
    "resultados": [
     {
+     "data": "2026-03-21",
+     "v": "258",
+     "u": "ng/dL",
+     "ref": "32 - 332 (convertido de ng/ml)",
+     "ref_min": 32.0,
+     "ref_max": 332.0,
+     "s": "otimo",
+     "ref_en": "32 - 332 (converted from ng/ml)",
+     "nota": "No boletim: 2.58 ng/ml (ref. 0.32 - 3.32 (novos valores de referência)); convertido ×100 para ng/dL para comparar com as outras datas. Alvo nesta data: 32–332 (relativo ao intervalo deste boletim).",
+     "nota_en": "In the report: 2.58 ng/ml (ref. 0.32 - 3.32 (new reference values)); converted ×100 to ng/dL to compare with the other dates. Target on this date: 32–332 (relative to this report's range)."
+    },
+    {
      "data": "2026-08-25",
      "v": "93.86",
      "u": "ng/dL",
@@ -2904,6 +4044,30 @@
    "otimo_min": 6.2,
    "otimo_max": 19.4,
    "resultados": [
+    {
+     "data": "2026-02-21",
+     "v": "17.91",
+     "u": "µg/dl",
+     "ref": "5.27 - 22.45 (basal; hora de colheita não indicada)",
+     "ref_min": 5.27,
+     "ref_max": 22.45,
+     "s": "otimo",
+     "ref_en": "5.27 - 22.45 (baseline; collection time not stated)",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim). Alvo nesta data: 5.27–22.45 (relativo ao intervalo deste boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range). Target on this date: 5.27–22.45 (relative to this report's range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "14.15",
+     "u": "µg/dl",
+     "ref": "5.27 - 22.45 (basal; hora de colheita não indicada)",
+     "ref_min": 5.27,
+     "ref_max": 22.45,
+     "s": "otimo",
+     "ref_en": "5.27 - 22.45 (baseline; collection time not stated)",
+     "nota": "Alvo nesta data: 5.27–22.45 (relativo ao intervalo deste boletim).",
+     "nota_en": "Target on this date: 5.27–22.45 (relative to this report's range)."
+    },
     {
      "data": "2026-08-25",
      "v": "9.31",
@@ -2968,6 +4132,18 @@
    "otimo_max": 701,
    "resultados": [
     {
+     "data": "2026-03-21",
+     "v": "1920",
+     "u": "ng/dL",
+     "ref": "190 - 1500 (convertido de ng/ml)",
+     "ref_min": 190.0,
+     "ref_max": 1500,
+     "s": "fora_de_referencia",
+     "ref_en": "190 - 1500 (converted from ng/ml)",
+     "nota": "No boletim: 19.20 ng/ml (ref. 1.90 - 15.00 (radioimunoensaio)); convertido ×100 para ng/dL para comparar com as outras datas. Alvo nesta data: 190–1500 (relativo ao intervalo deste boletim).",
+     "nota_en": "In the report: 19.20 ng/ml (ref. 1.90 - 15.00 (radioimmunoassay)); converted ×100 to ng/dL to compare with the other dates. Target on this date: 190–1500 (relative to this report's range)."
+    },
+    {
      "data": "2026-08-25",
      "v": "927.34",
      "u": "µg/dL",
@@ -2991,6 +4167,28 @@
    "otimo_max": 464,
    "resultados": [
     {
+     "data": "2026-02-21",
+     "v": "852.0",
+     "u": "µg/dl",
+     "ref": "80.0 - 560.0",
+     "ref_min": 80,
+     "ref_max": 560,
+     "s": "fora_de_referencia",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim). Alvo nesta data: 250–560 (relativo ao intervalo deste boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range). Target on this date: 250–560 (relative to this report's range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "527.0",
+     "u": "µg/dl",
+     "ref": "80.0 - 560.0",
+     "ref_min": 80,
+     "ref_max": 560,
+     "s": "otimo",
+     "nota": "Alvo nesta data: 250–560 (relativo ao intervalo deste boletim).",
+     "nota_en": "Target on this date: 250–560 (relative to this report's range)."
+    },
+    {
      "data": "2026-08-25",
      "v": "311.87",
      "u": "µg/dL",
@@ -3010,6 +4208,37 @@
    "otimo_min": 20,
    "otimo_max": 35,
    "resultados": [
+    {
+     "data": "2024-01-12",
+     "v": "33.7",
+     "u": "pg/ml",
+     "ref": "< 32.0",
+     "ref_min": null,
+     "ref_max": 32,
+     "s": "otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-02-21",
+     "v": "147.1",
+     "u": "pg/ml",
+     "ref": "< 32.0",
+     "ref_min": null,
+     "ref_max": 32,
+     "s": "fora_de_referencia",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "48.4",
+     "u": "pg/ml",
+     "ref": "< 32.0",
+     "ref_min": null,
+     "ref_max": 32,
+     "s": "fora_de_referencia"
+    },
     {
      "data": "2026-08-25",
      "v": "51",
@@ -3071,6 +4300,15 @@
    "otimo_max": 900,
    "resultados": [
     {
+     "data": "2026-03-21",
+     "v": "259.4",
+     "u": "ng/dl",
+     "ref": "241.0 - 827.0",
+     "ref_min": 241,
+     "ref_max": 827,
+     "s": "fora_do_otimo"
+    },
+    {
      "data": "2026-08-25",
      "v": "448.74",
      "u": "ng/dL",
@@ -3091,6 +4329,42 @@
    "otimo_max": 25.1,
    "resultados": [
     {
+     "data": "2024-01-12",
+     "v": "11.90",
+     "u": "pg/ml",
+     "ref": "4.81 - 22.42 (quimioluminescência; novos valores de referência)",
+     "ref_min": 4.81,
+     "ref_max": 22.42,
+     "s": "aceitavel",
+     "ref_en": "4.81 - 22.42 (chemiluminescence; new reference values)",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim). Alvo nesta data: 13.62–22.42 (relativo ao intervalo deste boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range). Target on this date: 13.62–22.42 (relative to this report's range)."
+    },
+    {
+     "data": "2026-02-21",
+     "v": "34.80",
+     "u": "pg/ml",
+     "ref": "4.81 - 22.42 (quimioluminescência; novos valores de referência)",
+     "ref_min": 4.81,
+     "ref_max": 22.42,
+     "s": "fora_de_referencia",
+     "ref_en": "4.81 - 22.42 (chemiluminescence; new reference values)",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim). Alvo nesta data: 13.62–22.42 (relativo ao intervalo deste boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range). Target on this date: 13.62–22.42 (relative to this report's range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "8.91",
+     "u": "pg/ml",
+     "ref": "4.81 - 22.42 (quimioluminescência; novos valores de referência)",
+     "ref_min": 4.81,
+     "ref_max": 22.42,
+     "s": "fora_do_otimo",
+     "ref_en": "4.81 - 22.42 (chemiluminescence; new reference values)",
+     "nota": "Alvo nesta data: 13.62–22.42 (relativo ao intervalo deste boletim).",
+     "nota_en": "Target on this date: 13.62–22.42 (relative to this report's range)."
+    },
+    {
      "data": "2026-08-25",
      "v": "20.83",
      "u": "pg/mL",
@@ -3110,6 +4384,15 @@
    "otimo_min": 20,
    "otimo_max": 50,
    "resultados": [
+    {
+     "data": "2026-03-21",
+     "v": "26.95",
+     "u": "nmol/l",
+     "ref": "11.54 - 54.49",
+     "ref_min": 11.54,
+     "ref_max": 54.49,
+     "s": "otimo"
+    },
     {
      "data": "2026-08-25",
      "v": "40.9",
@@ -3150,6 +4433,16 @@
    "otimo_min": 3,
    "otimo_max": 4,
    "resultados": [
+    {
+     "data": "2026-03-21",
+     "v": "3.3",
+     "u": "mg/dL",
+     "ref": "2.5 - 4.9 (Fosfatémia)",
+     "ref_min": 2.5,
+     "ref_max": 4.9,
+     "s": "otimo",
+     "ref_en": "2.5 - 4.9 (serum phosphate)"
+    },
     {
      "data": "2026-08-25",
      "v": "4.02",
@@ -4904,6 +6197,194 @@
      "s": "otimo"
     }
    ]
+  },
+  {
+   "m": "Glicose sérica",
+   "c": "Metabolismo da glicose",
+   "otimo_min": 70,
+   "otimo_max": 90,
+   "resultados": [
+    {
+     "data": "2024-01-12",
+     "v": "80",
+     "u": "mg/dL",
+     "ref": "70 - 110 (Glicémia; jejum não indicado no relatório)",
+     "ref_min": 70,
+     "ref_max": 110,
+     "s": "otimo",
+     "ref_en": "70 - 110 (serum glucose; fasting not stated in the report)",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "89",
+     "u": "mg/dL",
+     "ref": "70 - 110 (Glicémia; jejum não indicado no relatório)",
+     "ref_min": 70,
+     "ref_max": 110,
+     "s": "otimo",
+     "ref_en": "70 - 110 (serum glucose; fasting not stated in the report)"
+    }
+   ],
+   "m_en": "Serum glucose",
+   "c_en": "Glucose metabolism"
+  },
+  {
+   "m": "HbA1c (IFCC)",
+   "c": "Metabolismo da glicose",
+   "otimo_min": 27,
+   "otimo_max": 34,
+   "resultados": [
+    {
+     "data": "2024-01-12",
+     "v": "37",
+     "u": "mmol/mol",
+     "ref": "< 42",
+     "ref_min": null,
+     "ref_max": 42,
+     "s": "fora_do_otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-02-21",
+     "v": "33",
+     "u": "mmol/mol",
+     "ref": "< 42",
+     "ref_min": null,
+     "ref_max": 42,
+     "s": "otimo",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "33",
+     "u": "mmol/mol",
+     "ref": "< 42",
+     "ref_min": null,
+     "ref_max": 42,
+     "s": "otimo"
+    }
+   ],
+   "m_en": "HbA1c (IFCC)",
+   "c_en": "Glucose metabolism"
+  },
+  {
+   "m": "Proteína C reativa",
+   "c": "Risco cardiovascular",
+   "otimo_min": null,
+   "otimo_max": 0.1,
+   "resultados": [
+    {
+     "data": "2024-01-12",
+     "v": "0.11",
+     "u": "mg/dL",
+     "ref": "0.05 - 1.00 (imunoturbidimetria reforçada com látex)",
+     "ref_min": 0.05,
+     "ref_max": 1,
+     "s": "aceitavel",
+     "ref_en": "0.05 - 1.00 (latex-enhanced immunoturbidimetry)",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-02-21",
+     "v": "0.07",
+     "u": "mg/dL",
+     "ref": "0.05 - 1.00 (imunoturbidimetria reforçada com látex)",
+     "ref_min": 0.05,
+     "ref_max": 1,
+     "s": "otimo",
+     "ref_en": "0.05 - 1.00 (latex-enhanced immunoturbidimetry)",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "0.09",
+     "u": "mg/dL",
+     "ref": "0.05 - 1.00 (imunoturbidimetria reforçada com látex)",
+     "ref_min": 0.05,
+     "ref_max": 1,
+     "s": "otimo",
+     "ref_en": "0.05 - 1.00 (latex-enhanced immunoturbidimetry)"
+    }
+   ],
+   "m_en": "C-reactive protein",
+   "c_en": "Cardiovascular risk"
+  },
+  {
+   "m": "Ureia sérica",
+   "c": "Função renal e eletrólitos",
+   "otimo_min": 21.4,
+   "otimo_max": 42.8,
+   "resultados": [
+    {
+     "data": "2024-01-12",
+     "v": "37",
+     "u": "mg/dL",
+     "ref": "< 50 (Urémia; ureia, não BUN)",
+     "ref_min": null,
+     "ref_max": 50,
+     "s": "otimo",
+     "ref_en": "< 50 (serum urea; urea, not BUN)",
+     "nota": "Resultado anterior citado no boletim de 21-03-2026 (referência desse boletim).",
+     "nota_en": "Previous result quoted in the 21-03-2026 report (that report's reference range)."
+    },
+    {
+     "data": "2026-03-21",
+     "v": "32",
+     "u": "mg/dL",
+     "ref": "< 50 (Urémia; ureia, não BUN)",
+     "ref_min": null,
+     "ref_max": 50,
+     "s": "otimo",
+     "ref_en": "< 50 (serum urea; urea, not BUN)"
+    }
+   ],
+   "m_en": "Serum urea",
+   "c_en": "Kidney function and electrolytes"
+  },
+  {
+   "m": "FSH",
+   "c": "Hormonas esteroides",
+   "otimo_min": 1.4,
+   "otimo_max": 18.1,
+   "resultados": [
+    {
+     "data": "2026-03-21",
+     "v": "2.43",
+     "u": "mUI/ml",
+     "ref": "1.4 - 18.1 (homens 13-70 anos)",
+     "ref_min": 1.4,
+     "ref_max": 18.1,
+     "s": "otimo",
+     "ref_en": "1.4 - 18.1 (men 13-70 years)"
+    }
+   ],
+   "m_en": "FSH",
+   "c_en": "Steroid hormones"
+  },
+  {
+   "m": "LH",
+   "c": "Hormonas esteroides",
+   "otimo_min": 1.5,
+   "otimo_max": 9.3,
+   "resultados": [
+    {
+     "data": "2026-03-21",
+     "v": "6.31",
+     "u": "mUI/ml",
+     "ref": "1.50 - 9.30",
+     "ref_min": 1.5,
+     "ref_max": 9.3,
+     "s": "otimo"
+    }
+   ],
+   "m_en": "LH",
+   "c_en": "Steroid hormones"
   }
  ],
  "intolerancias": [

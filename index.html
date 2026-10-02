@@ -201,18 +201,20 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 <section id="genetica">
 <div class="l-pt">
 <h2>Genética</h2>
-<p class="src">Fonte: <b>Genetica</b> · sergio_perfil_genetico.md (30-09-2026, revisto a 01-10-2026 01:00), sergio_variantes.csv (2448 linhas), sergio_genetica_x_sangue.md (01-10-2026 00:25) · 6 relatórios genéticos de 25-08-2026 (array + imputação; não diagnóstico)</p>
-<div class="note">Sem variantes ClinVar patogénicas ou provavelmente patogénicas reportadas. Não foram analisados: BRCA/Lynch, hipercolesterolemia familiar, CYP2D6, HLA, G6PD, GSTM1/GSTT1.</div>
+<p class="src">Fonte principal: <b>Genetica</b> · relatorio_dna_bruto.md (ficheiro bruto de genótipos: array de 684 967 marcadores, analisado localmente a 02-10-2026; 99,92% concordante com os relatórios anteriores) · complementar: sergio_perfil_genetico.md, sergio_variantes.csv, sergio_genetica_x_sangue.md e 6 relatórios genéticos de 25-08-2026 (array + imputação) · não diagnóstico</p>
+<div class="note">Único achado ClinVar plausível: <b>SERPINA1 Pi*MZ provável</b> (portador de défice de alfa-1-antitripsina), <b>por confirmar</b> em laboratório clínico (AAT sérica + fenótipo Pi). Os restantes hits raros são artefactos prováveis do array. Um array não exclui cancro hereditário (BRCA/Lynch), hipercolesterolemia familiar nem cardiomiopatias; sem CNV (duplicações do CYP2D6, GSTM1/GSTT1 e LPA KIV-2 não avaliáveis).</div>
 <div class="grid g2">
-<div class="card"><h3 style="margin-top:0">Cardiometabólico</h3><div class="tw"><table class="gv"><tbody>
-<tr><td>9p21 (CDKN2B/2A)</td><td>rs10757278 GG, rs4977574 GG, rs9632884 CC: homozigoto de risco coronário, independente dos lípidos</td><td><span class="pill bad">Risco</span></td></tr>
-<tr><td>Scores CV</td><td>ApoB poligénico P67 · DCV P47 · aterosclerose P2</td><td><span class="pill na">Típico</span></td></tr>
-<tr><td>CETP</td><td>rs708272 GG + rs5882 AA: atividade alta → HDL baixo (confirmado: HDL 41)</td><td><span class="pill warn">Confirmado</span></td></tr>
+<div class="card"><h3 style="margin-top:0">Cardiometabólico e fígado</h3><div class="tw"><table class="gv"><tbody>
+<tr><td>9p21 (CDKN2B/2A)</td><td>rs1333049 CC, rs10757278 GG, rs4977574 GG: homozigoto de risco coronário, independente dos lípidos (CAC atual 0)</td><td><span class="pill bad">Risco</span></td></tr>
+<tr><td>Scores CV</td><td>PGS de doença coronária P32–38 (cobertura baixa) · PGS de LDL inconclusivo · PGS de Lp(a) P17–20</td><td><span class="pill na">Típico</span></td></tr>
+<tr><td>CETP</td><td>rs708272 GG + rs3764261 CC + rs5882 AA: atividade alta → HDL baixo (confirmado: HDL 41)</td><td><span class="pill warn">Confirmado</span></td></tr>
 <tr><td>LDLR / SORT1</td><td>rs6511720 TG, rs12740374 TG: alelos de LDL mais baixo</td><td><span class="pill ok">Favorável</span></td></tr>
-<tr><td>LPA</td><td>rs3798220 TT (rs10455872 e KIV-2 não testados); Lp(a) medida 2 mg/dL</td><td><span class="pill ok">Baixo risco</span></td></tr>
-<tr><td>APOC3</td><td>Baixa atividade (rs5128 CC, rs2542052 CC): favorável aos TG</td><td><span class="pill ok">Favorável</span></td></tr>
+<tr><td>LPA</td><td>rs10455872 AA + rs3798220 TT: sem alelos de risco; Lp(a) medida 2 mg/dL (KIV-2 não avaliável)</td><td><span class="pill ok">Sem risco</span></td></tr>
+<tr><td>APOC3</td><td>Baixa atividade (rs5128 CC, rs2542052 CC): favorável aos TG; sem variantes raras de perda de função</td><td><span class="pill ok">Favorável</span></td></tr>
 <tr><td>Sal</td><td>AGT rs699 GA, ACE rs4343 GA: sensibilidade ao sal alta</td><td><span class="pill warn">Atenção</span></td></tr>
 <tr><td>PNPLA3</td><td>rs738409 GC (I148M het): fígado gordo; TM6SF2 CC (não portador)</td><td><span class="pill bad">Confirmado</span></td></tr>
+<tr><td>SERPINA1</td><td>rs28929474 CT: Pi*MZ provável (portador de défice de alfa-1-antitripsina; cofator de fibrose hepática); sem Pi*S. Não confirmado</td><td><span class="pill warn">Por confirmar</span></td></tr>
+<tr><td>Fígado (outros)</td><td>HSD17B13 T/TA (inferido): alelo protetor · MBOAT7 rs641738 CT: 1 alelo de risco</td><td><span class="pill na">Misto</span></td></tr>
 <tr><td>TCF7L2</td><td>rs7903146 TC + rs12255372 TG: risco de DM2 (mascarado pelos fármacos)</td><td><span class="pill warn">Risco</span></td></tr>
 <tr><td>FTO</td><td>rs9939609 TA + rs1421085 TC: mais fome/ingestão</td><td><span class="pill warn">Risco</span></td></tr>
 <tr><td>MTNR1B</td><td>rs10830963 CG: glicemia em jejum mais alta; melatonina piora a tolerância à glicose</td><td><span class="pill warn">Risco</span></td></tr>
@@ -220,26 +222,27 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 </tbody></table></div></div>
 
 <div class="card"><h3 style="margin-top:0">Longevidade e cérebro</h3><div class="tw"><table class="gv"><tbody>
-<tr><td>APOE</td><td>ε3/ε3 (inferido: rs429358 TT, rs7412 CC), sem ε4</td><td><span class="pill ok">Favorável</span></td></tr>
-<tr><td>Cognição</td><td>Alzheimer P40 · declínio cognitivo P1 · TREM2 não portador</td><td><span class="pill ok">Favorável</span></td></tr>
-<tr><td>FOXO3</td><td>rs2802292 GG + rs2764264 CC: alelos de longevidade</td><td><span class="pill ok">Favorável</span></td></tr>
-<tr><td>Telómeros</td><td>Score “mais curtos”; TERT rs2736100 CC</td><td><span class="pill warn">Desfavorável</span></td></tr>
+<tr><td>APOE</td><td>ε3/ε3: rs7412 CC genotipado + rs429358 TT inferido (VPP 99,3%); sem ε4 nem ε2</td><td><span class="pill ok">Favorável</span></td></tr>
+<tr><td>Cognição</td><td>PGS de Alzheimer sem APOE P87 (componente não-APOE acima da média); APOE ε3/ε3 neutro · TREM2 não portador</td><td><span class="pill na">Misto</span></td></tr>
+<tr><td>FOXO3</td><td>rs2802292 GG + rs2764264 CC: homozigoto para os alelos de longevidade · PGS de longevidade (330 variantes) P89</td><td><span class="pill ok">Favorável</span></td></tr>
+<tr><td>TP53</td><td>rs1042522 CC = Arg72/Arg72 (inferido, VPP 97%): apoptose mais eficiente</td><td><span class="pill na">Info</span></td></tr>
+<tr><td>Telómeros</td><td>Score de 7 SNPs P49 (médio): “mais curtos” não confirmado · TERT rs2736100 CC (alelo de telómeros mais longos)</td><td><span class="pill na">Médio</span></td></tr>
 <tr><td>Klotho</td><td>rs9536314 TT (sem KL-VS): típico</td><td><span class="pill na">Típico</span></td></tr>
 <tr><td>BDNF / COMT</td><td>Val66Met CT · COMT GG (Val/Val)</td><td><span class="pill na">Info</span></td></tr>
-<tr><td>Músculo</td><td>Fragilidade P82 · sarcopenia “mais provável” · ACTN3 TC · PPARGC1A CC (hoje contrariado pelo fenótipo)</td><td><span class="pill warn">Risco</span></td></tr>
-<tr><td>Cancro</td><td>Colorretal P76 (“more likely”) · próstata P79 · HOXB13 CC · pâncreas “less likely”</td><td><span class="pill warn">Atenção</span></td></tr>
+<tr><td>Músculo</td><td>Fragilidade P82 · sarcopenia “mais provável” · ACTN3 TC (R/X) · PPARGC1A CC (hoje contrariado pelo fenótipo)</td><td><span class="pill warn">Risco</span></td></tr>
+<tr><td>Cancro</td><td>Colorretal: PGS P45–54 (médio; P76 não confirmado) · próstata: PGS não elevado (inconclusivo; P79 não confirmado) · HOXB13 CC · MUTYH, CHEK2 I157T e APC I1307K não portador</td><td><span class="pill na">Típico</span></td></tr>
 <tr><td>Envelhecimento</td><td>Healthy aging “higher” · rugas faciais “more” · cabelo grisalho típico · presbiopia P4</td><td><span class="pill na">Info</span></td></tr>
-<tr><td>Cafeína</td><td>Sensibilidade alta · CYP1A2 rs762551 AC</td><td><span class="pill warn">Atenção</span></td></tr>
+<tr><td>Cafeína</td><td>CYP1A2 rs762551 AC (*1F heterozigoto): depuração intermédia · sensibilidade alta</td><td><span class="pill warn">Atenção</span></td></tr>
 </tbody></table></div></div>
 
 <div class="card"><h3 style="margin-top:0">Nutrientes e metabolismo</h3><div class="tw"><table class="gv"><tbody>
-<tr><td>Metilação</td><td>MTHFR C677T AG + A1298C TG (provável heterozigoto composto) · MTR AA · BHMT AG · MAT1A AG · GNMT TT; betaína prevista baixa. Homocisteína 18,4 confirma</td><td><span class="pill bad">Confirmado</span></td></tr>
+<tr><td>Metilação</td><td>MTHFR C677T AG + A1298C TG (heterozigoto composto) · MTR AA · MTRR AA · BHMT AG. Homocisteína 18,4 alta, mas a genética só explica uma parte</td><td><span class="pill warn">Parcial</span></td></tr>
 <tr><td>Ferro</td><td>HFE H63D het (rs1799945 CG), sem C282Y · TMPRSS6 GA</td><td><span class="pill warn">Portador</span></td></tr>
-<tr><td>Vitamina D</td><td>GC rs2282679 TT, rs7041 CC, rs4588 GG: 25(OH)D prevista mais alta (contrariado: 37,4)</td><td><span class="pill warn">Contradito</span></td></tr>
-<tr><td>Ómega-3</td><td>DHA: necessidade aumentada · FADS1/2 alta atividade (índice 5,4% confirma)</td><td><span class="pill bad">Confirmado</span></td></tr>
-<tr><td>Minerais</td><td>Zinco e potássio: necessidade aumentada (zinco 42 confirma)</td><td><span class="pill warn">Confirmado</span></td></tr>
+<tr><td>Vitamina D</td><td>GC rs2282679 TT, rs7041 CC, rs4588 GG · DHCR7 rs12785878 TT: 25(OH)D prevista mais alta (contrariado: 37,4)</td><td><span class="pill warn">Contradito</span></td></tr>
+<tr><td>Ómega-3</td><td>FADS1/2 de alta atividade; índice ómega-3 5,4% baixo, não explicado pela genética (dose/absorção)</td><td><span class="pill na">Não genético</span></td></tr>
+<tr><td>Minerais</td><td>Zinco 42 e cobre 62 baixos: sem variante explicativa (não genético)</td><td><span class="pill na">Não genético</span></td></tr>
 <tr><td>Aminoácidos</td><td>Histidina: necessidade aumentada; leucina e valina “mais altas”</td><td><span class="pill na">Info</span></td></tr>
-<tr><td>Digestão</td><td>Lactose tolerante (LCT AG) · celíaca baixo risco (DQ2.5 tag CC; DQ8 não avaliado)</td><td><span class="pill ok">Favorável</span></td></tr>
+<tr><td>Digestão</td><td>Lactose tolerante (LCT AG) · sem HLA-DQ2/DQ8: doença celíaca muito improvável</td><td><span class="pill ok">Favorável</span></td></tr>
 <tr><td>Dieta do relatório</td><td>Mediterrânica (30% gordura, 30% proteína, 40% hidratos)</td><td><span class="pill na">Info</span></td></tr>
 </tbody></table></div></div>
 
@@ -250,26 +253,31 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 <tr><td>ABCG2</td><td>rs2231142 GG: normal</td><td><span class="pill ok">Normal</span></td></tr>
 <tr><td>CYP3A4 / CYP3A5</td><td>*1/*1 / *1/*3 (expressor): exposição à rapamicina tendencialmente mais baixa</td><td><span class="pill na">Info</span></td></tr>
 <tr><td>CYP2C19 · CYP2B6</td><td>*1/*1 normal · *2/*4 rápido</td><td><span class="pill na">Info</span></td></tr>
-<tr><td>UGT1A1</td><td>*28 possível (chamada ambígua); bilirrubina não mostra padrão de Gilbert</td><td><span class="pill na">Ambíguo</span></td></tr>
-<tr><td>Sem variantes</td><td>DPYD · TPMT · NUDT15 · RYR1 · CACNA1S</td><td><span class="pill ok">Normal</span></td></tr>
-<tr><td>Não testados</td><td>CYP2D6 · HLA · G6PD</td><td><span class="pill na">Lacuna</span></td></tr>
+<tr><td>CYP2D6</td><td>*1/*2 provável (metabolizador normal); o array não vê deleções nem duplicações</td><td><span class="pill na">Provável</span></td></tr>
+<tr><td>NAT2</td><td>*5/*5 provável: acetilador lento (isoniazida, hidralazina, sulfassalazina)</td><td><span class="pill warn">Cautela</span></td></tr>
+<tr><td>UGT1A1</td><td>*1/*28: portador de Gilbert (metabolizador intermédio; irinotecano, atazanavir); bilirrubina coerente</td><td><span class="pill warn">Portador</span></td></tr>
+<tr><td>HLA</td><td>B*57:01 negativo · A*31:01 provável negativo · B*58:01 indeterminado</td><td><span class="pill na">Parcial</span></td></tr>
+<tr><td>Sem variantes</td><td>DPYD · TPMT · NUDT15 · G6PD · UGT1A9 · RYR1 · CACNA1S</td><td><span class="pill ok">Normal</span></td></tr>
+<tr><td>Não avaliável</td><td>CNV (CYP2D6, GSTM1/GSTT1) · HLA-B*58:01</td><td><span class="pill na">Lacuna</span></td></tr>
 </tbody></table></div></div>
 </div>
 </div>
 <div class="l-en">
 <h2>Genetics</h2>
-<p class="src">Source: <b>Genetica</b> · sergio_perfil_genetico.md (30-09-2026, revised 01-10-2026 01:00), sergio_variantes.csv (2448 rows), sergio_genetica_x_sangue.md (01-10-2026 00:25) · 6 genetic reports of 25-08-2026 (array + imputation; not diagnostic)</p>
-<div class="note">No pathogenic or likely pathogenic ClinVar variants reported. Not analysed: BRCA/Lynch, familial hypercholesterolaemia, CYP2D6, HLA, G6PD, GSTM1/GSTT1.</div>
+<p class="src">Primary source: <b>Genetica</b> · relatorio_dna_bruto.md (raw genotype file: array of 684,967 markers, analysed locally on 02-10-2026; 99.92% concordant with the earlier reports) · supplementary: sergio_perfil_genetico.md, sergio_variantes.csv, sergio_genetica_x_sangue.md and 6 genetic reports of 25-08-2026 (array + imputation) · not diagnostic</p>
+<div class="note">Only plausible ClinVar finding: <b>probable SERPINA1 Pi*MZ</b> (alpha-1 antitrypsin deficiency carrier), <b>to be confirmed</b> in a clinical lab (serum AAT + Pi phenotype). The other rare hits are probable array artefacts. An array does not rule out hereditary cancer (BRCA/Lynch), familial hypercholesterolaemia or cardiomyopathies; no CNV (CYP2D6 duplications, GSTM1/GSTT1 and LPA KIV-2 not assessable).</div>
 <div class="grid g2">
-<div class="card"><h3 style="margin-top:0">Cardiometabolic</h3><div class="tw"><table class="gv"><tbody>
-<tr><td>9p21 (CDKN2B/2A)</td><td>rs10757278 GG, rs4977574 GG, rs9632884 CC: homozygous for coronary risk, independent of lipids</td><td><span class="pill bad">Risk</span></td></tr>
-<tr><td>CV scores</td><td>Polygenic ApoB P67 · CVD P47 · atherosclerosis P2</td><td><span class="pill na">Typical</span></td></tr>
-<tr><td>CETP</td><td>rs708272 GG + rs5882 AA: high activity → low HDL (confirmed: HDL 41)</td><td><span class="pill warn">Confirmed</span></td></tr>
+<div class="card"><h3 style="margin-top:0">Cardiometabolic and liver</h3><div class="tw"><table class="gv"><tbody>
+<tr><td>9p21 (CDKN2B/2A)</td><td>rs1333049 CC, rs10757278 GG, rs4977574 GG: homozygous for coronary risk, independent of lipids (current CAC 0)</td><td><span class="pill bad">Risk</span></td></tr>
+<tr><td>CV scores</td><td>Coronary disease PGS P32–38 (low coverage) · LDL PGS inconclusive · Lp(a) PGS P17–20</td><td><span class="pill na">Typical</span></td></tr>
+<tr><td>CETP</td><td>rs708272 GG + rs3764261 CC + rs5882 AA: high activity → low HDL (confirmed: HDL 41)</td><td><span class="pill warn">Confirmed</span></td></tr>
 <tr><td>LDLR / SORT1</td><td>rs6511720 TG, rs12740374 TG: lower-LDL alleles</td><td><span class="pill ok">Favourable</span></td></tr>
-<tr><td>LPA</td><td>rs3798220 TT (rs10455872 and KIV-2 not tested); measured Lp(a) 2 mg/dL</td><td><span class="pill ok">Low risk</span></td></tr>
-<tr><td>APOC3</td><td>Low activity (rs5128 CC, rs2542052 CC): favourable for TG</td><td><span class="pill ok">Favourable</span></td></tr>
+<tr><td>LPA</td><td>rs10455872 AA + rs3798220 TT: no risk alleles; measured Lp(a) 2 mg/dL (KIV-2 not assessable)</td><td><span class="pill ok">No risk</span></td></tr>
+<tr><td>APOC3</td><td>Low activity (rs5128 CC, rs2542052 CC): favourable for TG; no rare loss-of-function variants</td><td><span class="pill ok">Favourable</span></td></tr>
 <tr><td>Salt</td><td>AGT rs699 GA, ACE rs4343 GA: high salt sensitivity</td><td><span class="pill warn">Caution</span></td></tr>
 <tr><td>PNPLA3</td><td>rs738409 GC (I148M het): fatty liver; TM6SF2 CC (non-carrier)</td><td><span class="pill bad">Confirmed</span></td></tr>
+<tr><td>SERPINA1</td><td>rs28929474 CT: probable Pi*MZ (alpha-1 antitrypsin deficiency carrier; liver fibrosis cofactor); no Pi*S. Not confirmed</td><td><span class="pill warn">To confirm</span></td></tr>
+<tr><td>Liver (other)</td><td>HSD17B13 T/TA (inferred): protective allele · MBOAT7 rs641738 CT: 1 risk allele</td><td><span class="pill na">Mixed</span></td></tr>
 <tr><td>TCF7L2</td><td>rs7903146 TC + rs12255372 TG: T2D risk (masked by medication)</td><td><span class="pill warn">Risk</span></td></tr>
 <tr><td>FTO</td><td>rs9939609 TA + rs1421085 TC: more hunger/intake</td><td><span class="pill warn">Risk</span></td></tr>
 <tr><td>MTNR1B</td><td>rs10830963 CG: higher fasting glucose; melatonin worsens glucose tolerance</td><td><span class="pill warn">Risk</span></td></tr>
@@ -277,26 +285,27 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 </tbody></table></div></div>
 
 <div class="card"><h3 style="margin-top:0">Longevity and brain</h3><div class="tw"><table class="gv"><tbody>
-<tr><td>APOE</td><td>ε3/ε3 (inferred: rs429358 TT, rs7412 CC), no ε4</td><td><span class="pill ok">Favourable</span></td></tr>
-<tr><td>Cognition</td><td>Alzheimer's P40 · cognitive decline P1 · TREM2 non-carrier</td><td><span class="pill ok">Favourable</span></td></tr>
-<tr><td>FOXO3</td><td>rs2802292 GG + rs2764264 CC: longevity alleles</td><td><span class="pill ok">Favourable</span></td></tr>
-<tr><td>Telomeres</td><td>“Shorter” score; TERT rs2736100 CC</td><td><span class="pill warn">Unfavourable</span></td></tr>
+<tr><td>APOE</td><td>ε3/ε3: rs7412 CC genotyped + rs429358 TT inferred (PPV 99.3%); no ε4 and no ε2</td><td><span class="pill ok">Favourable</span></td></tr>
+<tr><td>Cognition</td><td>Alzheimer's PGS without APOE P87 (non-APOE component above average); APOE ε3/ε3 neutral · TREM2 non-carrier</td><td><span class="pill na">Mixed</span></td></tr>
+<tr><td>FOXO3</td><td>rs2802292 GG + rs2764264 CC: homozygous for the longevity alleles · longevity PGS (330 variants) P89</td><td><span class="pill ok">Favourable</span></td></tr>
+<tr><td>TP53</td><td>rs1042522 CC = Arg72/Arg72 (inferred, PPV 97%): more efficient apoptosis</td><td><span class="pill na">Info</span></td></tr>
+<tr><td>Telomeres</td><td>7-SNP score P49 (average): “shorter” not confirmed · TERT rs2736100 CC (longer-telomere allele)</td><td><span class="pill na">Average</span></td></tr>
 <tr><td>Klotho</td><td>rs9536314 TT (no KL-VS): typical</td><td><span class="pill na">Typical</span></td></tr>
 <tr><td>BDNF / COMT</td><td>Val66Met CT · COMT GG (Val/Val)</td><td><span class="pill na">Info</span></td></tr>
-<tr><td>Muscle</td><td>Frailty P82 · sarcopenia “more likely” · ACTN3 TC · PPARGC1A CC (currently contradicted by phenotype)</td><td><span class="pill warn">Risk</span></td></tr>
-<tr><td>Cancer</td><td>Colorectal P76 (“more likely”) · prostate P79 · HOXB13 CC · pancreas “less likely”</td><td><span class="pill warn">Caution</span></td></tr>
+<tr><td>Muscle</td><td>Frailty P82 · sarcopenia “more likely” · ACTN3 TC (R/X) · PPARGC1A CC (currently contradicted by phenotype)</td><td><span class="pill warn">Risk</span></td></tr>
+<tr><td>Cancer</td><td>Colorectal: PGS P45–54 (average; P76 not confirmed) · prostate: PGS not elevated (inconclusive; P79 not confirmed) · HOXB13 CC · MUTYH, CHEK2 I157T and APC I1307K non-carrier</td><td><span class="pill na">Typical</span></td></tr>
 <tr><td>Ageing</td><td>Healthy aging “higher” · facial wrinkles “more” · typical greying · presbyopia P4</td><td><span class="pill na">Info</span></td></tr>
-<tr><td>Caffeine</td><td>High sensitivity · CYP1A2 rs762551 AC</td><td><span class="pill warn">Caution</span></td></tr>
+<tr><td>Caffeine</td><td>CYP1A2 rs762551 AC (*1F heterozygous): intermediate clearance · high sensitivity</td><td><span class="pill warn">Caution</span></td></tr>
 </tbody></table></div></div>
 
 <div class="card"><h3 style="margin-top:0">Nutrients and metabolism</h3><div class="tw"><table class="gv"><tbody>
-<tr><td>Methylation</td><td>MTHFR C677T AG + A1298C TG (probable compound heterozygote) · MTR AA · BHMT AG · MAT1A AG · GNMT TT; predicted low betaine. Homocysteine 18.4 confirms</td><td><span class="pill bad">Confirmed</span></td></tr>
+<tr><td>Methylation</td><td>MTHFR C677T AG + A1298C TG (compound heterozygote) · MTR AA · MTRR AA · BHMT AG. Homocysteine 18.4 is high, but genetics only explains part of it</td><td><span class="pill warn">Partial</span></td></tr>
 <tr><td>Iron</td><td>HFE H63D het (rs1799945 CG), no C282Y · TMPRSS6 GA</td><td><span class="pill warn">Carrier</span></td></tr>
-<tr><td>Vitamin D</td><td>GC rs2282679 TT, rs7041 CC, rs4588 GG: higher predicted 25(OH)D (contradicted: 37.4)</td><td><span class="pill warn">Contradicted</span></td></tr>
-<tr><td>Omega-3</td><td>DHA: increased need · FADS1/2 high activity (index 5.4% confirms)</td><td><span class="pill bad">Confirmed</span></td></tr>
-<tr><td>Minerals</td><td>Zinc and potassium: increased need (zinc 42 confirms)</td><td><span class="pill warn">Confirmed</span></td></tr>
+<tr><td>Vitamin D</td><td>GC rs2282679 TT, rs7041 CC, rs4588 GG · DHCR7 rs12785878 TT: higher predicted 25(OH)D (contradicted: 37.4)</td><td><span class="pill warn">Contradicted</span></td></tr>
+<tr><td>Omega-3</td><td>FADS1/2 high activity; omega-3 index 5.4% is low, not explained by genetics (dose/absorption)</td><td><span class="pill na">Not genetic</span></td></tr>
+<tr><td>Minerals</td><td>Zinc 42 and copper 62 low: no explanatory variant (not genetic)</td><td><span class="pill na">Not genetic</span></td></tr>
 <tr><td>Amino acids</td><td>Histidine: increased need; leucine and valine “higher”</td><td><span class="pill na">Info</span></td></tr>
-<tr><td>Digestion</td><td>Lactose tolerant (LCT AG) · low coeliac risk (DQ2.5 tag CC; DQ8 not assessed)</td><td><span class="pill ok">Favourable</span></td></tr>
+<tr><td>Digestion</td><td>Lactose tolerant (LCT AG) · no HLA-DQ2/DQ8: coeliac disease very unlikely</td><td><span class="pill ok">Favourable</span></td></tr>
 <tr><td>Report diet</td><td>Mediterranean (30% fat, 30% protein, 40% carbohydrate)</td><td><span class="pill na">Info</span></td></tr>
 </tbody></table></div></div>
 
@@ -307,9 +316,12 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 <tr><td>ABCG2</td><td>rs2231142 GG: normal</td><td><span class="pill ok">Normal</span></td></tr>
 <tr><td>CYP3A4 / CYP3A5</td><td>*1/*1 / *1/*3 (expresser): rapamycin exposure tends to be lower</td><td><span class="pill na">Info</span></td></tr>
 <tr><td>CYP2C19 · CYP2B6</td><td>*1/*1 normal · *2/*4 rapid</td><td><span class="pill na">Info</span></td></tr>
-<tr><td>UGT1A1</td><td>*28 possible (ambiguous call); bilirubin shows no Gilbert pattern</td><td><span class="pill na">Ambiguous</span></td></tr>
-<tr><td>No variants</td><td>DPYD · TPMT · NUDT15 · RYR1 · CACNA1S</td><td><span class="pill ok">Normal</span></td></tr>
-<tr><td>Not tested</td><td>CYP2D6 · HLA · G6PD</td><td><span class="pill na">Gap</span></td></tr>
+<tr><td>CYP2D6</td><td>Probable *1/*2 (normal metaboliser); the array cannot see deletions or duplications</td><td><span class="pill na">Probable</span></td></tr>
+<tr><td>NAT2</td><td>Probable *5/*5: slow acetylator (isoniazid, hydralazine, sulfasalazine)</td><td><span class="pill warn">Caution</span></td></tr>
+<tr><td>UGT1A1</td><td>*1/*28: Gilbert carrier (intermediate metaboliser; irinotecan, atazanavir); bilirubin consistent</td><td><span class="pill warn">Carrier</span></td></tr>
+<tr><td>HLA</td><td>B*57:01 negative · A*31:01 probably negative · B*58:01 indeterminate</td><td><span class="pill na">Partial</span></td></tr>
+<tr><td>No variants</td><td>DPYD · TPMT · NUDT15 · G6PD · UGT1A9 · RYR1 · CACNA1S</td><td><span class="pill ok">Normal</span></td></tr>
+<tr><td>Not assessable</td><td>CNV (CYP2D6, GSTM1/GSTT1) · HLA-B*58:01</td><td><span class="pill na">Gap</span></td></tr>
 </tbody></table></div></div>
 </div>
 </div>
@@ -338,6 +350,7 @@ const fv=v=>typeof v==='number'?(LANG==='en'?String(v):String(v).replace('.',','
 // mesma regra que biomarcadores/scripts/comum.py (usada só se o resultado não trouxer "s")
 function estado(v,rmin,rmax,omin,omax,regras){regras=regras||[];if(!isNum(v))return 'sem_alvo';v=toNum(v);
  if(regras.includes('acima_do_otimo_fora')&&has(omax)&&v>=omax)return 'fora_de_referencia';
+ if(regras.includes('sem_limite_inferior'))rmin=null;
  if(!has(omin)&&!has(omax)&&!has(rmin)&&!has(rmax))return 'sem_alvo';
  if((!has(omin)||v>=omin)&&(!has(omax)||v<=omax))return 'otimo';
  if(!((!has(rmin)||v>=rmin)&&(!has(rmax)||v<=rmax)))return 'fora_de_referencia';
