@@ -144,6 +144,443 @@
     "pt": "português",
     "en": "Portuguese"
    }
+  },
+  {
+   "id": "musculo-osso-sarcopenia",
+   "titulo": {
+    "pt": "Músculo, Osso e Sarcopenia",
+    "en": "Muscle, Bone and Sarcopenia"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/musculo-osso-sarcopenia.pdf",
+   "descricao": {
+    "pt": "35 variantes e 10 scores: articulações favoráveis e densidade óssea típica; o ponto fraco é a massa e a força muscular.",
+    "en": "35 variants and 10 scores: favourable joints and typical bone density; muscle mass and strength are the weak point."
+   },
+   "paginas": 14,
+   "tamanho_kb": 77,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "matriz-extracelular-glicacao",
+   "titulo": {
+    "pt": "Matriz Extracelular e Glicação",
+    "en": "Extracellular Matrix and Glycation"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/matriz-extracelular-glicacao.pdf",
+   "descricao": {
+    "pt": "31 variantes e 8 scores: glicação e rigidez arterial favoráveis; o ponto fraco é a elastina (alfa-1 antitripsina PiMZ).",
+    "en": "31 variants and 8 scores: favourable glycation and arterial stiffness; the weak point is elastin (alpha-1 antitrypsin PiMZ)."
+   },
+   "paginas": 16,
+   "tamanho_kb": 81,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "pele-skin-care",
+   "titulo": {
+    "pt": "Pele e Skin Care",
+    "en": "Skin and Skin Care"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/pele-skin-care.pdf",
+   "descricao": {
+    "pt": "46 variantes e 16 scores: genética da pele favorável no conjunto (resposta ao sol, cancro de pele, rugas) e ativos tópicos.",
+    "en": "46 variants and 16 scores: skin genetics favourable overall (sun response, skin cancer, wrinkles) and topical actives."
+   },
+   "paginas": 21,
+   "tamanho_kb": 97,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "cabelo",
+   "titulo": {
+    "pt": "Cabelo",
+    "en": "Hair"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/cabelo.pdf",
+   "descricao": {
+    "pt": "31 variantes e 4 scores: risco genético médio de calvície de padrão masculino; sem o alelo do IRF4 dos cabelos brancos precoces.",
+    "en": "31 variants and 4 scores: average genetic risk of male-pattern baldness; no IRF4 early-greying allele."
+   },
+   "paginas": 16,
+   "tamanho_kb": 72,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "unhas-cicatrizacao-inflamacao-pele",
+   "titulo": {
+    "pt": "Unhas, Cicatrização e Inflamação da Pele",
+    "en": "Nails, Wound Healing and Skin Inflammation"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/unhas-cicatrizacao-inflamacao-pele.pdf",
+   "descricao": {
+    "pt": "31 variantes e 6 scores: inflamação da pele favorável (psoríase, eczema, urticária); sinais contra no vitiligo e na hidradenite.",
+    "en": "31 variants and 6 scores: favourable skin inflammation (psoriasis, eczema, urticaria); signals against in vitiligo and hidradenitis."
+   },
+   "paginas": 17,
+   "tamanho_kb": 85,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "cardiovascular-avancado",
+   "titulo": {
+    "pt": "Cardiovascular Avançado",
+    "en": "Advanced Cardiovascular"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/cardiovascular-avancado.pdf",
+   "descricao": {
+    "pt": "83 SNPs e 12 scores: genética vascular mista; 9p21 de risco e trombose venosa moderada, sem Lp(a) alta e com scores coronário e de fibrilhação auricular baixos.",
+    "en": "83 SNPs and 12 scores: mixed vascular genetics; 9p21 risk and moderate venous thrombosis, no high Lp(a), low coronary and atrial-fibrillation scores."
+   },
+   "paginas": 20,
+   "tamanho_kb": 110,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "rim-acido-urico",
+   "titulo": {
+    "pt": "Rim e Ácido Úrico",
+    "en": "Kidney and Uric Acid"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/rim-acido-urico.pdf",
+   "descricao": {
+    "pt": "50 SNPs e 11 scores: genética renal favorável (eGFR no percentil 94, sem APOL1 G1 nem ABCG2 Q141K); ácido úrico típico.",
+    "en": "50 SNPs and 11 scores: favourable kidney genetics (eGFR at the 94th percentile, no APOL1 G1 or ABCG2 Q141K); typical uric acid."
+   },
+   "paginas": 17,
+   "tamanho_kb": 87,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "ferro-metais",
+   "titulo": {
+    "pt": "Ferro e Metais",
+    "en": "Iron and Metals"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/ferro-metais.pdf",
+   "descricao": {
+    "pt": "46 SNPs e 3 scores: a genética puxa o ferro para cima (HFE H63D, ferritina genética no percentil 80); sem hemocromatose clássica nem Wilson.",
+    "en": "46 SNPs and 3 scores: genetics pushes iron up (HFE H63D, genetic ferritin at the 80th percentile); no classic haemochromatosis or Wilson disease."
+   },
+   "paginas": 16,
+   "tamanho_kb": 80,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "destoxificacao-fase-i-ii",
+   "titulo": {
+    "pt": "Destoxificação Fase I e II",
+    "en": "Detoxification Phase I and II"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/destoxificacao-fase-i-ii.pdf",
+   "descricao": {
+    "pt": "39 SNPs: fase I favorável; pontos fracos na fase II (NAT2 lento, GSTA1, GCLM) e na PON1; CYP2C9*3 e CYP3A5 expressor.",
+    "en": "39 SNPs: favourable phase I; weak points in phase II (slow NAT2, GSTA1, GCLM) and PON1; CYP2C9*3 and CYP3A5 expresser."
+   },
+   "paginas": 14,
+   "tamanho_kb": 75,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "reparacao-adn-estabilidade-genoma",
+   "titulo": {
+    "pt": "Reparação do ADN e Estabilidade do Genoma",
+    "en": "DNA Repair and Genome Stability"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/reparacao-adn-estabilidade-genoma.pdf",
+   "descricao": {
+    "pt": "Reparação do ADN como ponto forte relativo: vias comuns sem alelos de menor eficiência e nenhuma variante patogénica plausível no painel de 63 genes.",
+    "en": "DNA repair as a relative strength: common pathways without lower-efficiency alleles and no plausible pathogenic variant in the 63-gene panel."
+   },
+   "paginas": 9,
+   "tamanho_kb": 55,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "telomeros-senescencia-celular",
+   "titulo": {
+    "pt": "Telómeros e Senescência Celular",
+    "en": "Telomeres and Cellular Senescence"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/telomeros-senescencia-celular.pdf",
+   "descricao": {
+    "pt": "Reserva telomérica genética um pouco abaixo da média (percentil ~25), com o TERT a puxar nos dois sentidos; idade epigenética típica.",
+    "en": "Genetic telomere reserve slightly below average (~25th percentile), with TERT pulling both ways; typical epigenetic age."
+   },
+   "paginas": 9,
+   "tamanho_kb": 57,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "sensores-nutrientes-autofagia",
+   "titulo": {
+    "pt": "Sensores de Nutrientes e Autofagia",
+    "en": "Nutrient Sensing and Autophagy"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/sensores-nutrientes-autofagia.pdf",
+   "descricao": {
+    "pt": "Um dos eixos mais favoráveis: FOXO3 homozigoto de longevidade e IGF-1 geneticamente baixo (percentil 7), sem fraquezas fortes na autofagia.",
+    "en": "One of the most favourable axes: FOXO3 longevity homozygote and genetically low IGF-1 (7th percentile), no strong autophagy weaknesses."
+   },
+   "paginas": 8,
+   "tamanho_kb": 49,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "proteostase",
+   "titulo": {
+    "pt": "Proteostase",
+    "en": "Proteostasis"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/proteostase.pdf",
+   "descricao": {
+    "pt": "Proteostase neuronal favorável (APOE ε3/ε3, MAPT H2/H2, sem variantes lisossomais de Parkinson); fraqueza na alfa-1 antitripsina Z (fígado e pulmão).",
+    "en": "Favourable neuronal proteostasis (APOE ε3/ε3, MAPT H2/H2, no lysosomal Parkinson variants); weakness in alpha-1 antitrypsin Z (liver and lung)."
+   },
+   "paginas": 10,
+   "tamanho_kb": 62,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "celulas-estaminais-regeneracao",
+   "titulo": {
+    "pt": "Células Estaminais e Regeneração",
+    "en": "Stem Cells and Regeneration"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/celulas-estaminais-regeneracao.pdf",
+   "descricao": {
+    "pt": "Predisposição baixa a típica para expansões clonais (sem JAK2 46/1, SH2B3 favorável), com reserva telomérica um pouco abaixo da média.",
+    "en": "Low-to-typical predisposition to clonal expansion (no JAK2 46/1, favourable SH2B3), with telomere reserve slightly below average."
+   },
+   "paginas": 8,
+   "tamanho_kb": 50,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "risco-cancro-scores-poligenicos",
+   "titulo": {
+    "pt": "Risco de Cancro (Scores Poligénicos)",
+    "en": "Cancer Risk (Polygenic Scores)"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/risco-cancro-scores-poligenicos.pdf",
+   "descricao": {
+    "pt": "22 scores e 57 SNPs: sem variantes patogénicas confirmadas nos genes clássicos de cancro hereditário cobertos pelo chip; fundo poligénico baixo a médio na maioria.",
+    "en": "22 scores and 57 SNPs: no confirmed pathogenic variants in the classic hereditary cancer genes covered by the chip; low-to-medium polygenic background for most."
+   },
+   "paginas": 21,
+   "tamanho_kb": 114,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "cerebro-neurodegeneracao",
+   "titulo": {
+    "pt": "Cérebro e Neurodegeneração",
+    "en": "Brain and Neurodegeneration"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/cerebro-neurodegeneracao.pdf",
+   "descricao": {
+    "pt": "43 SNPs e 10 scores: APOE ε3/ε3; Parkinson e AVC com risco poligénico baixo; a prioridade são os pequenos vasos e o sono.",
+    "en": "43 SNPs and 10 scores: APOE ε3/ε3; low polygenic risk for Parkinson's and stroke; the priority is small vessels and sleep."
+   },
+   "paginas": 16,
+   "tamanho_kb": 90,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "capacidade-cognitiva-plasticidade",
+   "titulo": {
+    "pt": "Capacidade Cognitiva e Plasticidade",
+    "en": "Cognitive Capacity and Plasticity"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/capacidade-cognitiva-plasticidade.pdf",
+   "descricao": {
+    "pt": "Base favorável (APOE ε3/ε3, MAPT H2/H2, scores de inteligência fluida no limite superior do típico); BDNF Val/Met: a plasticidade depende mais do exercício e do sono.",
+    "en": "Favourable base (APOE ε3/ε3, MAPT H2/H2, fluid-intelligence scores at the upper end of typical); BDNF Val/Met: plasticity relies more on exercise and sleep."
+   },
+   "paginas": 15,
+   "tamanho_kb": 59,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "ritmo-circadiano-sono",
+   "titulo": {
+    "pt": "Ritmo Circadiano e Sono",
+    "en": "Circadian Rhythm and Sleep"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/ritmo-circadiano-sono.pdf",
+   "descricao": {
+    "pt": "28 variantes e 11 scores: relógio geneticamente matutino e necessidade de sono típica; a insónia é o ponto mais desfavorável.",
+    "en": "28 variants and 11 scores: genetically morning-type clock and typical sleep need; insomnia is the least favourable point."
+   },
+   "paginas": 14,
+   "tamanho_kb": 77,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "imunidade-envelhecimento-imunitario",
+   "titulo": {
+    "pt": "Imunidade e Envelhecimento Imunitário",
+    "en": "Immunity and Immune Ageing"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/imunidade-envelhecimento-imunitario.pdf",
+   "descricao": {
+    "pt": "28 variantes e 20 scores: genética imunitária favorável no conjunto (PCR genética baixa, boa defesa antiviral, sem JAK2 46/1).",
+    "en": "28 variants and 20 scores: immune genetics favourable overall (low genetic CRP, good antiviral defence, no JAK2 46/1)."
+   },
+   "paginas": 17,
+   "tamanho_kb": 87,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "hormonas",
+   "titulo": {
+    "pt": "Hormonas",
+    "en": "Hormones"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/hormonas.pdf",
+   "descricao": {
+    "pt": "27 variantes e 11 scores: genética hormonal equilibrada (testosterona e SHBG típicas, tiroide e cortisol normais); estradiol genético no lado baixo.",
+    "en": "27 variants and 11 scores: balanced hormonal genetics (typical testosterone and SHBG, normal thyroid and cortisol); genetic oestradiol on the low side."
+   },
+   "paginas": 15,
+   "tamanho_kb": 77,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "microbioma-intestino",
+   "titulo": {
+    "pt": "Microbioma e Intestino",
+    "en": "Microbiome and Gut"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/microbioma-intestino.pdf",
+   "descricao": {
+    "pt": "31 SNPs e 11 scores: terreno intestinal muito favorável (doença celíaca praticamente excluída, risco muito baixo de doença inflamatória intestinal, secretor FUT2).",
+    "en": "31 SNPs and 11 scores: very favourable gut terrain (coeliac disease practically ruled out, very low inflammatory bowel disease risk, FUT2 secretor)."
+   },
+   "paginas": 16,
+   "tamanho_kb": 79,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "longevidade-excecional",
+   "titulo": {
+    "pt": "Longevidade Excecional",
+    "en": "Exceptional Longevity"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/longevidade-excecional.pdf",
+   "descricao": {
+    "pt": "29 SNPs e 4 scores: boa base genética (APOE ε3/ε3, FOXO3 homozigoto, score de longevidade no percentil 92); fraquezas vasculares e inflamatórias modificáveis.",
+    "en": "29 SNPs and 4 scores: good genetic base (APOE ε3/ε3, FOXO3 homozygote, longevity score at the 92nd percentile); modifiable vascular and inflammatory weaknesses."
+   },
+   "paginas": 14,
+   "tamanho_kb": 70,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "visao-audicao",
+   "titulo": {
+    "pt": "Visão e Audição",
+    "en": "Vision and Hearing"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/visao-audicao.pdf",
+   "descricao": {
+    "pt": "Mácula, cristalino e audição típicos; o ponto mais desfavorável é o glaucoma (score de ângulo aberto no percentil 97,9).",
+    "en": "Macula, lens and hearing typical; the least favourable point is glaucoma (open-angle score at the 97.9th percentile)."
+   },
+   "paginas": 17,
+   "tamanho_kb": 72,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
   }
  ]
 }
