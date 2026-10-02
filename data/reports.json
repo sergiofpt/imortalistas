@@ -68,6 +68,25 @@
     "pt": "português",
     "en": "Portuguese"
    }
+  },
+  {
+   "id": "suplementos-1002",
+   "titulo": {
+    "pt": "Resposta genética a suplementos (1002 suplementos)",
+    "en": "Genetic response to supplements (1002 supplements)"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/suplementos-1002.pdf",
+   "descricao": {
+    "pt": "53 a evitar ou pausar, 67 a ajustar, 111 a monitorizar, 222 normais, 11 indeterminados e 538 sem relevância genética.",
+    "en": "53 to avoid or pause, 67 to adjust, 111 to monitor, 222 normal, 11 undetermined and 538 with no genetic relevance."
+   },
+   "paginas": 89,
+   "tamanho_kb": 501,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
   }
  ]
 }
