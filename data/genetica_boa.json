@@ -1,14 +1,22 @@
 {
- "_leia_me": "Página genetica-boa.html: SÓ resultados favoráveis. Ver README.md, secção \"Páginas de genética\". estado: ok | warn | bad | na | info. Texto: HTML simples (b, i, em, strong, br, small, sub, sup).",
+ "_leia_me": "Página genetica-boa.html: SÓ resultados favoráveis. Ver README.md, secção \"Páginas de genética\". estado: ok | warn | bad | na | info. Texto: HTML simples (b, i, em, strong, br, small, sub, sup). Cada secção tem \"evitar\" e \"priorizar\" (listas de textos PT/EN). O protocolo consolidado está em data/genetica_protocolo.json.",
  "atualizado_em": "2026-10-02",
  "fonte": {
-  "pt": "Fonte principal: <b>Genetica</b> · relatorio_dna_bruto.md (ficheiro bruto de genótipos: array de 684 967 marcadores, analisado localmente a 02-10-2026) · complementar: histamina_mastocitos_ige.md, metilacao_homocisteina.md e sergio_perfil_genetico.md (inclui os relatórios genéticos de 25-08-2026 e o relatório de cancro de 02-10-2026) · não diagnóstico",
-  "en": "Primary source: <b>Genetica</b> · relatorio_dna_bruto.md (raw genotype file: array of 684,967 markers, analysed locally on 02-10-2026) · supplementary: histamina_mastocitos_ige.md, metilacao_homocisteina.md and sergio_perfil_genetico.md (includes the genetic reports of 25-08-2026 and the cancer report of 02-10-2026) · not diagnostic"
+  "pt": "Fonte principal: <b>Genetica</b> · ficheiro bruto de genótipos (array de 684 967 marcadores, analisado localmente) + imputação genómica de 02-10-2026 (painel 1000G 30x; só genótipos com DR2 ≥ 0,8) · complementar: resumo favorável/desfavorável (22 temas), sergio_perfil_genetico.md §1–§20, raw_analise/ (stress oxidativo, mitocôndrias, inflamação e autoimunidade, histamina, metilação, farmacogenómica, scores poligénicos, ClinVar) e plano_genetico/plano_completo.md · não diagnóstico",
+  "en": "Primary source: <b>Genetica</b> · raw genotype file (array of 684,967 markers, analysed locally) + genomic imputation of 02-10-2026 (1000G 30x panel; only genotypes with DR2 ≥ 0.8) · supplementary: favourable/unfavourable summary (22 themes), sergio_perfil_genetico.md §1–§20, raw_analise/ (oxidative stress, mitochondria, inflammation and autoimmunity, histamine, methylation, pharmacogenomics, polygenic scores, ClinVar) and plano_genetico/plano_completo.md · not a diagnosis"
  },
  "notas": [
   {
-   "pt": "Só os resultados <b>favoráveis</b> (variantes protetoras, alelos de longevidade, scores abaixo da média, função normal com significado clínico tranquilizador). Os desfavoráveis estão em <b>Genética Má</b>; os neutros e médios não aparecem. Um array só testa variantes conhecidas: não exclui cancro hereditário (BRCA/Lynch), hipercolesterolemia familiar nem cardiomiopatias, e não mede CNV (duplicações do CYP2D6, GSTM1/GSTT1, LPA KIV-2).",
-   "en": "Only the <b>favourable</b> results (protective variants, longevity alleles, below-average scores, normal function with reassuring clinical meaning). Unfavourable ones are under <b>Bad Genetics</b>; neutral and average ones are not shown. An array only tests known variants: it does not rule out hereditary cancer (BRCA/Lynch), familial hypercholesterolaemia or cardiomyopathies, and it does not measure CNVs (CYP2D6 duplications, GSTM1/GSTT1, LPA KIV-2)."
+   "pt": "Só os resultados <b>favoráveis</b> (variantes protetoras, alelos de longevidade, scores abaixo da média, função normal com significado clínico tranquilizador). Os desfavoráveis estão em <b>Genética Má</b>; os neutros, médios ou sem conclusão não aparecem. Aqui, <b>Priorizar</b> serve para aproveitar ou manter a vantagem.",
+   "en": "Only the <b>favourable</b> results (protective variants, longevity alleles, below-average scores, normal function with reassuring clinical meaning). Unfavourable ones are under <b>Bad Genetics</b>; neutral, average or inconclusive ones are not shown. Here, <b>Prioritize</b> is about using or keeping the advantage."
+  },
+  {
+   "pt": "Cada categoria tem um bloco <b>Evitar</b> e um bloco <b>Priorizar</b> ligados aos genes dessa categoria; o <b>Protocolo genético</b> (no topo) junta tudo sem contradições, com o cartão PGx e as análises de confirmação. Os valores das análises prevalecem sobre doses baseadas só na genética. <b>Tudo é sugestão (não aplicada) e precisa de validação médica.</b>",
+   "en": "Each category has an <b>Avoid</b> block and a <b>Prioritize</b> block tied to that category’s genes; the <b>Genetic protocol</b> (at the top) brings everything together without contradictions, with the PGx card and the confirmation tests. Lab values take precedence over doses based on genetics alone. <b>Everything is a suggestion (not applied) and needs medical validation.</b>"
+  },
+  {
+   "pt": "Um array só testa variantes conhecidas: não exclui cancro hereditário (BRCA/Lynch), hipercolesterolemia familiar nem cardiomiopatias, e não mede CNV (duplicações do CYP2D6, GSTM1/GSTT1, LPA KIV-2). A imputação melhora os scores poligénicos e os genótipos comuns, mas não as variantes raras.",
+   "en": "An array only tests known variants: it does not rule out hereditary cancer (BRCA/Lynch), familial hypercholesterolaemia or cardiomyopathies, and it does not measure CNVs (CYP2D6 duplications, GSTM1/GSTT1, LPA KIV-2). Imputation improves polygenic scores and common genotypes, but not rare variants."
   }
  ],
  "seccoes": [
@@ -22,8 +30,8 @@
     {
      "item": "LPA",
      "texto": {
-      "pt": "rs10455872 AA + rs3798220 TT: sem alelos de risco de Lp(a); Lp(a) medida 2 mg/dL",
-      "en": "rs10455872 AA + rs3798220 TT: no Lp(a) risk alleles; measured Lp(a) 2 mg/dL"
+      "pt": "rs10455872 AA + rs3798220 TT: sem os alelos principais de risco de Lp(a); Lp(a) medida 2 mg/dL (o PGS genómico de Lp(a) está na Genética Má)",
+      "en": "rs10455872 AA + rs3798220 TT: none of the main Lp(a) risk alleles; measured Lp(a) 2 mg/dL (the genomic Lp(a) PGS is under Bad Genetics)"
      },
      "estado": "ok",
      "rotulo": {
@@ -37,8 +45,8 @@
       "en": "CV scores"
      },
      "texto": {
-      "pt": "PGS de doença coronária P32–38 (cobertura baixa) · PGS de Lp(a) P17–20",
-      "en": "Coronary disease PGS P32–38 (low coverage) · Lp(a) PGS P17–20"
+      "pt": "PGS de doença coronária com a imputação (cobertura alta): metaGRS <b>P5</b> e GPS_Mult P30 (antes P32–38 com cobertura baixa) · PGS de LDL (PRS-CS) P20",
+      "en": "Coronary disease PGS with imputation (high coverage): metaGRS <b>P5</b> and GPS_Mult P30 (previously P32–38 with low coverage) · LDL PGS (PRS-CS) P20"
      },
      "estado": "ok",
      "rotulo": {
@@ -96,6 +104,45 @@
       "pt": "Negativo",
       "en": "Negative"
      }
+    },
+    {
+     "item": {
+      "pt": "Resposta aos hipolipemiantes",
+      "en": "Lipid-lowering response"
+     },
+     "texto": {
+      "pt": "HMGCR sem o haplótipo H7 (resposta normal às estatinas) · ABCG5/8 e ABCG8 D19H sem hiperabsorção de esteróis · APOB R3527Q ausente (sem FDB)",
+      "en": "HMGCR without the H7 haplotype (normal statin response) · ABCG5/8 and ABCG8 D19H without sterol hyperabsorption · APOB R3527Q absent (no FDB)"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Favorável",
+      "en": "Favourable"
+     }
+    }
+   ],
+   "evitar": [
+    {
+     "pt": "Ler o PGS coronário baixo como licença para relaxar: o 9p21 homozigoto, o CETP e o ApoB P67 (Genética Má) mantêm a prioridade cardiovascular",
+     "en": "Reading the low coronary PGS as a licence to relax: the homozygous 9p21, CETP and ApoB P67 (Bad Genetics) keep cardiovascular disease a priority"
+    },
+    {
+     "pt": "Parar ou baixar a terapêutica hipolipemiante por a genética ser favorável; aspirina sem indicação",
+     "en": "Stopping or reducing lipid-lowering therapy because the genetics are favourable; aspirin without an indication"
+    }
+   ],
+   "priorizar": [
+    {
+     "pt": "Aproveitar a resposta normal às estatinas: dose desejada sem restrição genética, com LDL e ApoB <b>quanto mais baixos melhor</b>",
+     "en": "Make use of the normal statin response: desired dose with no genetic restriction, with LDL and ApoB <b>the lower the better</b>"
+    },
+    {
+     "pt": "Manter o CAC em 0: azeite, fibra sem máximo, treino aeróbio; repetir o CAC por volta dos 35–40 anos",
+     "en": "Keep CAC at 0: olive oil, fibre with no maximum, aerobic training; repeat CAC at around 35–40"
+    },
+    {
+     "pt": "Confirmar o grupo sanguíneo por tipagem ABO",
+     "en": "Confirm the blood group by ABO typing"
     }
    ]
   },
@@ -109,8 +156,8 @@
     {
      "item": "HSD17B13",
      "texto": {
-      "pt": "rs72613567 T/TA (inferido, VPP 96%): alelo protetor do fígado (menos inflamação e fibrose; atenua o PNPLA3 I148M)",
-      "en": "rs72613567 T/TA (inferred, PPV 96%): liver-protective allele (less inflammation and fibrosis; attenuates PNPLA3 I148M)"
+      "pt": "rs72613567 T/TA (confirmado pela imputação, DR2 1,00): alelo protetor do fígado (menos inflamação e fibrose; atenua o PNPLA3 I148M)",
+      "en": "rs72613567 T/TA (confirmed by imputation, DR2 1.00): liver-protective allele (less inflammation and fibrosis; attenuates PNPLA3 I148M)"
      },
      "estado": "ok",
      "rotulo": {
@@ -128,6 +175,21 @@
      "rotulo": {
       "pt": "Favorável",
       "en": "Favourable"
+     }
+    },
+    {
+     "item": {
+      "pt": "MASLD (PGS)",
+      "en": "MASLD (PGS)"
+     },
+     "texto": {
+      "pt": "PGS de MASLD com 68 variantes P24 com a imputação (antes P31)",
+      "en": "68-variant MASLD PGS P24 with imputation (previously P31)"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Abaixo da média",
+      "en": "Below average"
      }
     },
     {
@@ -153,6 +215,42 @@
       "pt": "Favorável",
       "en": "Favourable"
      }
+    },
+    {
+     "item": "MC4R · HNF4A",
+     "texto": {
+      "pt": "MC4R rs17782313 TT (sem o alelo de mais apetite) · HNF4A T130I ausente",
+      "en": "MC4R rs17782313 TT (no increased-appetite allele) · HNF4A T130I absent"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Favorável",
+      "en": "Favourable"
+     }
+    }
+   ],
+   "evitar": [
+    {
+     "pt": "Álcool, mesmo com o ALDH2 normal (PNPLA3 + Pi*MZ na Genética Má)",
+     "en": "Alcohol, even with normal ALDH2 (PNPLA3 + Pi*MZ under Bad Genetics)"
+    },
+    {
+     "pt": "Contar com o HSD17B13 para desvalorizar transaminases altas: a proteção é parcial",
+     "en": "Relying on HSD17B13 to dismiss high transaminases: the protection is partial"
+    }
+   ],
+   "priorizar": [
+    {
+     "pt": "A proteção do HSD17B13 rende mais com frutose ≈ 0, pouca gordura visceral, café filtrado de manhã e ómega-3",
+     "en": "HSD17B13 protection pays off most with fructose ≈ 0, little visceral fat, filtered coffee in the morning and omega-3"
+    },
+    {
+     "pt": "Tiroide sem restrição genética: se algum dia for preciso, a levotiroxina isolada chega (DIO2 Thr92Thr)",
+     "en": "Thyroid with no genetic restriction: if ever needed, levothyroxine alone is enough (DIO2 Thr92Thr)"
+    },
+    {
+     "pt": "Manter o apetite controlado com proteína e fibra em todas as refeições (MC4R favorável, FTO de risco)",
+     "en": "Keep appetite in check with protein and fibre at every meal (MC4R favourable, FTO at risk)"
     }
    ]
   },
@@ -166,8 +264,8 @@
     {
      "item": "APOE",
      "texto": {
-      "pt": "ε3/ε3: rs7412 CC genotipado + rs429358 TT inferido (VPP 99,3%); sem ε4",
-      "en": "ε3/ε3: rs7412 CC genotyped + rs429358 TT inferred (PPV 99.3%); no ε4"
+      "pt": "ε3/ε3: rs7412 CC genotipado + rs429358 TT (agora genótipo direto na imputação, DR2 0,99); sem ε4",
+      "en": "ε3/ε3: rs7412 CC genotyped + rs429358 TT (now a direct genotype on imputation, DR2 0.99); no ε4"
      },
      "estado": "ok",
      "rotulo": {
@@ -178,8 +276,8 @@
     {
      "item": "FOXO3",
      "texto": {
-      "pt": "rs2802292 GG + rs2764264 CC: homozigoto para os alelos de longevidade mais replicados · PGS de longevidade (330 variantes) P89",
-      "en": "rs2802292 GG + rs2764264 CC: homozygous for the most replicated longevity alleles · longevity PGS (330 variants) P89"
+      "pt": "rs2802292 GG + rs2764264 CC + rs13217795 CC: homozigoto para os alelos de longevidade mais replicados · PGS de longevidade P92 com a imputação (antes P89)",
+      "en": "rs2802292 GG + rs2764264 CC + rs13217795 CC: homozygous for the most replicated longevity alleles · longevity PGS P92 with imputation (previously P89)"
      },
      "estado": "ok",
      "rotulo": {
@@ -188,10 +286,10 @@
      }
     },
     {
-     "item": "TREM2",
+     "item": "TREM2 · C9orf72",
      "texto": {
-      "pt": "Não portador das variantes de risco de Alzheimer",
-      "en": "Non-carrier of the Alzheimer's risk variants"
+      "pt": "TREM2 R47H e R62H ausentes · C9orf72 sem o haplótipo de risco",
+      "en": "TREM2 R47H and R62H absent · C9orf72 without the risk haplotype"
      },
      "estado": "ok",
      "rotulo": {
@@ -213,6 +311,114 @@
       "pt": "Favorável",
       "en": "Favourable"
      }
+    }
+   ],
+   "evitar": [
+    {
+     "pt": "Ativadores da telomerase “para a longevidade” (epitalon, TA-65, astrágalo): o TERT e o melanoma pesam mais",
+     "en": "Telomerase activators “for longevity” (epitalon, TA-65, astragalus): TERT and melanoma weigh more"
+    },
+    {
+     "pt": "Estimular o eixo GH/IGF-1 (secretagogos, IGF-1): vai contra a via FOXO3",
+     "en": "Stimulating the GH/IGF-1 axis (secretagogues, IGF-1): works against the FOXO3 pathway"
+    }
+   ],
+   "priorizar": [
+    {
+     "pt": "Ativar a via FOXO3/AMPK: treino aeróbio zona 2 + intervalos, força, sono regular e janela alimentar de 10–12 h",
+     "en": "Activate the FOXO3/AMPK pathway: zone 2 + interval aerobic training, strength, regular sleep and a 10–12 h eating window"
+    },
+    {
+     "pt": "Rapamicina conforme prescrita, calibrada pelo doseamento de sirolimus",
+     "en": "Rapamycin as prescribed, calibrated by the sirolimus level"
+    },
+    {
+     "pt": "DHA (o APOE ε3 responde bem) dentro dos 3,2–4 g/dia de EPA+DHA",
+     "en": "DHA (APOE ε3 responds well) within the 3.2–4 g/day of EPA+DHA"
+    }
+   ]
+  },
+  {
+   "id": "mitocondrias",
+   "titulo": {
+    "pt": "Mitocôndrias e defesa antioxidante",
+    "en": "Mitochondria and antioxidant defence"
+   },
+   "linhas": [
+    {
+     "item": "PPARGC1A",
+     "texto": {
+      "pt": "Gly482Gly (rs8192678 CC): boa biogénese mitocondrial e boa resposta ao treino aeróbio",
+      "en": "Gly482Gly (rs8192678 CC): good mitochondrial biogenesis and good response to aerobic training"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Favorável",
+      "en": "Favourable"
+     }
+    },
+    {
+     "item": "NRF2 · NQO1 · GCLC",
+     "texto": {
+      "pt": "NFE2L2 −617 C/C (genótipo direto na imputação) · NQO1 *1/*1 · GCLC −129 C/C: regulação antioxidante forte",
+      "en": "NFE2L2 −617 C/C (direct genotype on imputation) · NQO1 *1/*1 · GCLC −129 C/C: strong antioxidant regulation"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Favorável",
+      "en": "Favourable"
+     }
+    },
+    {
+     "item": "SOD2 · SOD3 · HMOX1 · PON1",
+     "texto": {
+      "pt": "SOD2 Ala16Ala · SOD3 Arg213Arg · HMOX1 −413 A/A · PON1 Q192Q (isoforma boa)",
+      "en": "SOD2 Ala16Ala · SOD3 Arg213Arg · HMOX1 −413 A/A · PON1 Q192Q (good isoform)"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Favorável",
+      "en": "Favourable"
+     }
+    },
+    {
+     "item": {
+      "pt": "Energia",
+      "en": "Energy"
+     },
+     "texto": {
+      "pt": "NDUFB6 sem alelos de risco · ACADM K329E e CPT1A P479L/A275T ausentes (β-oxidação normal) · COQ2 sem V393A · mtDNA HV sem mutações patogénicas clássicas",
+      "en": "NDUFB6 without risk alleles · ACADM K329E and CPT1A P479L/A275T absent (normal β-oxidation) · COQ2 without V393A · mtDNA HV without classic pathogenic mutations"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Favorável",
+      "en": "Favourable"
+     }
+    }
+   ],
+   "evitar": [
+    {
+     "pt": "CoQ10 sem indicação (COQ2 e NQO1 normais); antioxidantes em dose alta logo antes ou depois do treino (NAC longe do treino)",
+     "en": "CoQ10 without an indication (normal COQ2 and NQO1); high-dose antioxidants right before or after training (NAC away from training)"
+    },
+    {
+     "pt": "Metformina (pode atenuar a adaptação mitocondrial ao treino num bom respondedor)",
+     "en": "Metformin (may blunt mitochondrial adaptation to training in a good responder)"
+    }
+   ],
+   "priorizar": [
+    {
+     "pt": "Treino aeróbio zona 2 + intervalos (PGC-1α Gly/Gly: boa resposta prevista)",
+     "en": "Zone 2 + interval aerobic training (PGC-1α Gly/Gly: good predicted response)"
+    },
+    {
+     "pt": "Crucíferas e sulforafano para estimular o NRF2 intacto; exposição moderada ao frio",
+     "en": "Cruciferous vegetables and sulforaphane to stimulate the intact NRF2; moderate cold exposure"
+    },
+    {
+     "pt": "Péptidos mitocondriais (SS-31, MOTS-c) com prioridade baixa: as mitocôndrias já são geneticamente favoráveis",
+     "en": "Mitochondrial peptides (SS-31, MOTS-c) at low priority: the mitochondria are already genetically favourable"
     }
    ]
   },
@@ -244,8 +450,8 @@
       "en": "Cancer scores"
      },
      "texto": {
-      "pt": "18 dos 29 scores do relatório de cancro de 02-10-2026 “less likely”, incluindo pâncreas e fígado",
-      "en": "18 of the 29 scores in the cancer report of 02-10-2026 “less likely”, including pancreas and liver"
+      "pt": "18 dos 29 scores do relatório de cancro de 02-10-2026 “less likely”, incluindo pâncreas, fígado e estômago",
+      "en": "18 of the 29 scores in the cancer report of 02-10-2026 “less likely”, including pancreas, liver and stomach"
      },
      "estado": "ok",
      "rotulo": {
@@ -259,8 +465,8 @@
       "en": "Risk genes"
      },
      "texto": {
-      "pt": "HOXB13 CC · MUTYH (G396D, Y179C), CHEK2 I157T e APC I1307K: não portador",
-      "en": "HOXB13 CC · MUTYH (G396D, Y179C), CHEK2 I157T and APC I1307K: non-carrier"
+      "pt": "HOXB13 G84E · MUTYH (G396D, Y179C), CHEK2 I157T e APC I1307K: não portador · TP53 Arg72/Arg72 (evidência fraca)",
+      "en": "HOXB13 G84E · MUTYH (G396D, Y179C), CHEK2 I157T and APC I1307K: non-carrier · TP53 Arg72/Arg72 (weak evidence)"
      },
      "estado": "ok",
      "rotulo": {
@@ -269,16 +475,148 @@
      }
     },
     {
-     "item": "MC1R",
+     "item": {
+      "pt": "Pigmentação",
+      "en": "Pigmentation"
+     },
      "texto": {
-      "pt": "R151C, R160W, D294H, V60L e restantes variantes principais: todas de referência (sem variantes “ruivas”)",
-      "en": "R151C, R160W, D294H, V60L and the other main variants: all reference (no “red hair” variants)"
+      "pt": "MC1R R151C, R160W, D294H, V60L e restantes variantes principais de referência (sem variantes “ruivas”) · IRF4 CC · SLC45A2 com 1 alelo escuro",
+      "en": "MC1R R151C, R160W, D294H, V60L and the other main variants all reference (no “red hair” variants) · IRF4 CC · SLC45A2 with 1 dark allele"
      },
      "estado": "ok",
      "rotulo": {
       "pt": "Sem risco",
       "en": "No risk"
      }
+    }
+   ],
+   "evitar": [
+    {
+     "pt": "Tratar o risco baixo como proteção: tabaco, álcool, carne processada ou carbonizada e sol sem proteção anulam a vantagem",
+     "en": "Treating low risk as protection: tobacco, alcohol, processed or charred meat and unprotected sun cancel out the advantage"
+    }
+   ],
+   "priorizar": [
+    {
+     "pt": "Manter a dermatoscopia anual (o melanoma P89 está na Genética Má) e o protetor solar diário",
+     "en": "Keep the annual dermatoscopy (melanoma P89 is under Bad Genetics) and daily sunscreen"
+    },
+    {
+     "pt": "Rastreio colorretal precoce mesmo assim (o array não cobre Lynch); fibra sem máximo e crucíferas",
+     "en": "Early colorectal screening anyway (the array does not cover Lynch); fibre with no maximum and cruciferous vegetables"
+    }
+   ]
+  },
+  {
+   "id": "imunidade",
+   "titulo": {
+    "pt": "Imunidade e autoimunidade",
+    "en": "Immunity and autoimmunity"
+   },
+   "linhas": [
+    {
+     "item": {
+      "pt": "HLA autoimune",
+      "en": "Autoimmune HLA"
+     },
+     "texto": {
+      "pt": "Sem B*27, C*06:02, DRB1*15:01, DR3, DR4, DQ2 nem DQ8 (confirmado por tags imputadas): espondilite, uveíte anterior, psoríase, esclerose múltipla, diabetes tipo 1 e celíaca muito improváveis",
+      "en": "No B*27, C*06:02, DRB1*15:01, DR3, DR4, DQ2 or DQ8 (confirmed by imputed tags): spondylitis, anterior uveitis, psoriasis, multiple sclerosis, type 1 diabetes and coeliac disease very unlikely"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Negativo",
+      "en": "Negative"
+     }
+    },
+    {
+     "item": {
+      "pt": "Scores autoimunes",
+      "en": "Autoimmune scores"
+     },
+     "texto": {
+      "pt": "Celíaca P4 · doença inflamatória intestinal P2–9 · psoríase P6 · eczema P10 · Sjögren P3 · alergia P19 · colite ulcerosa P27 (imputação)",
+      "en": "Coeliac P4 · inflammatory bowel disease P2–9 · psoriasis P6 · eczema P10 · Sjögren P3 · allergy P19 · ulcerative colitis P27 (imputation)"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Abaixo da média",
+      "en": "Below average"
+     }
+    },
+    {
+     "item": "NOD2 · CLEC7A",
+     "texto": {
+      "pt": "NOD2 sem R702W, G908R nem 1007fs (variantes de Crohn) · CLEC7A sem o stop Y238X de Dectin-1",
+      "en": "NOD2 without R702W, G908R or 1007fs (Crohn’s variants) · CLEC7A without the Dectin-1 Y238X stop"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Negativo",
+      "en": "Negative"
+     }
+    },
+    {
+     "item": "PTPN22 · STAT4 · CTLA4",
+     "texto": {
+      "pt": "PTPN22 sem 620W (rs2476601 GG) · STAT4 rs7574865 GG · CTLA4 +49 AA · sem epítopo partilhado da artrite reumatoide",
+      "en": "PTPN22 without 620W (rs2476601 GG) · STAT4 rs7574865 GG · CTLA4 +49 AA · no rheumatoid arthritis shared epitope"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Negativo",
+      "en": "Negative"
+     }
+    },
+    {
+     "item": {
+      "pt": "Citocinas",
+      "en": "Cytokines"
+     },
+     "texto": {
+      "pt": "TNF −308 GG · IL17A GG · NLRP3 sem Q705K · IL-10 sem o haplótipo ATA · JAK2 sem 46/1",
+      "en": "TNF −308 GG · IL17A GG · NLRP3 without Q705K · IL-10 without the ATA haplotype · JAK2 without 46/1"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Favorável",
+      "en": "Favourable"
+     }
+    },
+    {
+     "item": {
+      "pt": "Pulmão e rim",
+      "en": "Lung and kidney"
+     },
+     "texto": {
+      "pt": "MUC5B G/G (sem o principal risco de fibrose pulmonar) · APOL1 sem G1 · CFHR3/1 com 1 alelo protetor (nefropatia IgA)",
+      "en": "MUC5B G/G (without the main pulmonary fibrosis risk) · APOL1 without G1 · CFHR3/1 with 1 protective allele (IgA nephropathy)"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Favorável",
+      "en": "Favourable"
+     }
+    }
+   ],
+   "evitar": [
+    {
+     "pt": "Dieta sem glúten “por precaução” (celíaca muito improvável)",
+     "en": "A gluten-free diet “just in case” (coeliac disease very unlikely)"
+    },
+    {
+     "pt": "Tabaco e vaping: o MUC5B favorável não compensa o Pi*MZ (Genética Má)",
+     "en": "Tobacco and vaping: the favourable MUC5B does not offset Pi*MZ (Bad Genetics)"
+    }
+   ],
+   "priorizar": [
+    {
+     "pt": "Glúten e lactose sem restrição genética; dieta variada com fibra sem máximo",
+     "en": "Gluten and lactose with no genetic restriction; varied diet with fibre with no maximum"
+    },
+    {
+     "pt": "Imunomoduladores (timosina α1, timalina) com risco autoimune genético baixo; vacinação em dia",
+     "en": "Immunomodulators (thymosin α1, thymalin) with low genetic autoimmune risk; vaccinations up to date"
     }
    ]
   },
@@ -295,8 +633,8 @@
       "en": "Vitamin D"
      },
      "texto": {
-      "pt": "GC rs2282679 TT, rs7041 CC, rs4588 GG · DHCR7 rs12785878 TT: genótipos de 25(OH)D mais alta",
-      "en": "GC rs2282679 TT, rs7041 CC, rs4588 GG · DHCR7 rs12785878 TT: higher-25(OH)D genotypes"
+      "pt": "GC rs2282679 TT, rs7041 CC, rs4588 GG · DHCR7 rs12785878 TT: genótipos de 25(OH)D mais alta (a dose decide-se pela análise)",
+      "en": "GC rs2282679 TT, rs7041 CC, rs4588 GG · DHCR7 rs12785878 TT: higher-25(OH)D genotypes (the dose is decided by the blood test)"
      },
      "estado": "ok",
      "rotulo": {
@@ -310,8 +648,8 @@
       "en": "Omega-3"
      },
      "texto": {
-      "pt": "FADS1/2 de alta atividade: conversão eficiente",
-      "en": "High-activity FADS1/2: efficient conversion"
+      "pt": "FADS1 rs174546 CC, FADS1/2 rs174537 GG, FADS2 rs1535 AA: dessaturases de alta atividade, conversão eficiente",
+      "en": "FADS1 rs174546 CC, FADS1/2 rs174537 GG, FADS2 rs1535 AA: high-activity desaturases, efficient conversion"
      },
      "estado": "ok",
      "rotulo": {
@@ -336,42 +674,61 @@
     },
     {
      "item": {
-      "pt": "Doença celíaca",
-      "en": "Coeliac disease"
+      "pt": "B12 e folato",
+      "en": "B12 and folate"
      },
      "texto": {
-      "pt": "Sem HLA-DQ2.5/DQ8 (rs2187668 CC, rs7454108 TT): muito improvável",
-      "en": "No HLA-DQ2.5/DQ8 (rs2187668 CC, rs7454108 TT): very unlikely"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Negativo",
-      "en": "Negative"
-     }
-    },
-    {
-     "item": "NOD2 · CLEC7A",
-     "texto": {
-      "pt": "NOD2 sem variantes de Crohn · CLEC7A sem o stop Y238X de Dectin-1",
-      "en": "NOD2 without Crohn’s variants · CLEC7A without the Dectin-1 Y238X stop"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Negativo",
-      "en": "Negative"
-     }
-    },
-    {
-     "item": "COL1A1",
-     "texto": {
-      "pt": "rs1800012 CC: sem o alelo “s” de osteoporose",
-      "en": "rs1800012 CC: no “s” osteoporosis allele"
+      "pt": "MTR, MTRR, CUBN, CLYBL e TCN2 sem risco relevante de B12 · FUT2 secretor · CBS rs234709 com 1 alelo que baixa a homocisteína",
+      "en": "MTR, MTRR, CUBN, CLYBL and TCN2 without relevant B12 risk · FUT2 secretor · CBS rs234709 with 1 homocysteine-lowering allele"
      },
      "estado": "ok",
      "rotulo": {
       "pt": "Favorável",
       "en": "Favourable"
      }
+    },
+    {
+     "item": {
+      "pt": "Osso e músculo",
+      "en": "Bone and muscle"
+     },
+     "texto": {
+      "pt": "COL1A1 rs1800012 CC (sem o alelo “s” de osteoporose) · LRP5 e ESR1 sem alelos de baixa densidade óssea · MSTN rs1805086 TT",
+      "en": "COL1A1 rs1800012 CC (no “s” osteoporosis allele) · LRP5 and ESR1 without low bone density alleles · MSTN rs1805086 TT"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Favorável",
+      "en": "Favourable"
+     }
+    }
+   ],
+   "evitar": [
+    {
+     "pt": "Baixar a vitamina D3 para 4000 UI só pela genética: a 25(OH)D está em 37 com 10 000 UI",
+     "en": "Lowering vitamin D3 to 4000 IU on genetics alone: 25(OH)D is at 37 on 10,000 IU"
+    },
+    {
+     "pt": "Óleos refinados (girassol, milho) como gordura principal: com FADS de alta atividade, mais LA vira AA",
+     "en": "Refined oils (sunflower, corn) as the main fat: with high-activity FADS, more LA becomes AA"
+    },
+    {
+     "pt": "Restringir lacticínios sem motivo (tolerante à lactose); excesso de gemas (LDL)",
+     "en": "Restricting dairy without reason (lactose tolerant); too many egg yolks (LDL)"
+    }
+   ],
+   "priorizar": [
+    {
+     "pt": "<b>Vitamina D3 10 000 UI/dia</b> + K2 MK-7 240 µg, com gordura e longe do psyllium; ajustar só pela 25(OH)D",
+     "en": "<b>Vitamin D3 10,000 IU/day</b> + K2 MK-7 240 µg, with fat and away from psyllium; adjust only by 25(OH)D"
+    },
+    {
+     "pt": "<b>Ómega-3 3,2–4 g/dia de EPA+DHA</b>, com mais DHA (forma rTG, com a refeição mais gorda), até o índice de ómega-3 passar de 5,4% para 8%; peixe gordo pequeno 3×/semana",
+     "en": "<b>Omega-3 3.2–4 g/day EPA+DHA</b>, with more DHA (rTG form, with the fattiest meal), until the omega-3 index goes from 5.4% to 8%; small oily fish 3×/week"
+    },
+    {
+     "pt": "Lacticínios magros fermentados às refeições (também travam a absorção de ferro); colagénio 20 g + creatina 5 g e treino de força para o osso",
+     "en": "Fermented low-fat dairy with meals (also curbs iron absorption); collagen 20 g + creatine 5 g and strength training for bone"
     }
    ]
   },
@@ -407,10 +764,10 @@
      }
     },
     {
-     "item": "CYP2C19 · CYP3A4",
+     "item": "CYP2C19 · CYP3A4 · CYP2C8",
      "texto": {
-      "pt": "CYP2C19 *1/*1 · CYP3A4 *1/*1 (sem *22): metabolizadores normais",
-      "en": "CYP2C19 *1/*1 · CYP3A4 *1/*1 (no *22): normal metabolisers"
+      "pt": "CYP2C19 *1/*1 · CYP3A4 *1/*1 (sem *22) · CYP2C8*3 ausente (imputação; via principal da isotretinoína normal): metabolizadores normais",
+      "en": "CYP2C19 *1/*1 · CYP3A4 *1/*1 (no *22) · CYP2C8*3 absent (imputation; normal main isotretinoin pathway): normal metabolisers"
      },
      "estado": "ok",
      "rotulo": {
@@ -433,8 +790,8 @@
     {
      "item": "HLA",
      "texto": {
-      "pt": "B*57:01 negativo · A*31:01 provável negativo",
-      "en": "B*57:01 negative · A*31:01 probably negative"
+      "pt": "B*57:01, B*35:01 e DRB1*15:01 negativos · <b>B*58:01</b> e A*31:01 não portadores prováveis (tags imputadas; antes indeterminado)",
+      "en": "B*57:01, B*35:01 and DRB1*15:01 negative · <b>B*58:01</b> and A*31:01 probable non-carriers (imputed tags; previously undetermined)"
      },
      "estado": "ok",
      "rotulo": {
@@ -448,14 +805,34 @@
       "en": "No variants"
      },
      "texto": {
-      "pt": "DPYD · TPMT · NUDT15 · G6PD · UGT1A9 · RYR1 · CACNA1S",
-      "en": "DPYD · TPMT · NUDT15 · G6PD · UGT1A9 · RYR1 · CACNA1S"
+      "pt": "DPYD · TPMT · NUDT15 · G6PD · UGT1A9 · RYR1 · CACNA1S · BCHE",
+      "en": "DPYD · TPMT · NUDT15 · G6PD · UGT1A9 · RYR1 · CACNA1S · BCHE"
      },
      "estado": "ok",
      "rotulo": {
       "pt": "Normal",
       "en": "Normal"
      }
+    }
+   ],
+   "evitar": [
+    {
+     "pt": "Assumir o HLA-B*58:01 negativo sem tipagem antes de alopurinol (a calibração assenta em poucos portadores)",
+     "en": "Assuming HLA-B*58:01 negative without typing before allopurinol (calibration rests on few carriers)"
+    },
+    {
+     "pt": "Fármacos CYP2D6 de margem estreita sem um teste clínico com CNV (o array não vê duplicações)",
+     "en": "Narrow-margin CYP2D6 drugs without a clinical test including CNV (the array cannot see duplications)"
+    }
+   ],
+   "priorizar": [
+    {
+     "pt": "Estatinas na dose desejada (pitavastatina; rosuvastatina ou atorvastatina como alternativas); IBP em dose padrão",
+     "en": "Statins at the desired dose (pitavastatin; rosuvastatin or atorvastatin as alternatives); PPIs at standard dose"
+    },
+    {
+     "pt": "Sem restrição genética: amoxicilina-clavulanato e flucloxacilina (sem o HLA de lesão hepática), fluoropirimidinas e tiopurinas, rasburicase, primaquina e dapsona sem restrição por G6PD (normal), anestesia com precauções padrão",
+     "en": "No genetic restriction: amoxicillin-clavulanate and flucloxacillin (no liver-injury HLA), fluoropyrimidines and thiopurines, rasburicase, primaquine and dapsone with no G6PD restriction (normal G6PD), anaesthesia with standard precautions"
     }
    ]
   }

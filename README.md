@@ -9,11 +9,12 @@ genetica-boa.html                  Genética Boa: só resultados favoráveis; co
 data/sangue.json                   resultados por marcador e por data (sangue/urina em "marcadores", intolerâncias alimentares em "intolerancias")
 data/genetica.json                 conteúdo de genetica.html (secções, linhas, PT/EN)
 data/genetica_boa.json             conteúdo de genetica-boa.html (mesmo formato)
-ferramentas/adicionar_colheita.py  acrescenta uma data e verifica os ficheiros (sangue.json, genetica.json, genetica_boa.json e termos proibidos)
+data/genetica_protocolo.json       Protocolo genético consolidado, mostrado no topo das duas páginas de genética
+ferramentas/adicionar_colheita.py  acrescenta uma data e verifica os ficheiros (sangue.json, genetica.json, genetica_boa.json, genetica_protocolo.json e termos proibidos)
 .nojekyll
 ```
 
-As páginas leem `data/sangue.json`, `data/genetica.json` ou `data/genetica_boa.json` ao abrir. Para a ver localmente: `python3 -m http.server` na raiz e abrir `http://localhost:8000/` (por `file://` o navegador bloqueia a leitura do JSON).
+As páginas leem `data/sangue.json`, `data/genetica.json` ou `data/genetica_boa.json` (+ `data/genetica_protocolo.json` nas duas de genética) ao abrir. Para a ver localmente: `python3 -m http.server` na raiz e abrir `http://localhost:8000/` (por `file://` o navegador bloqueia a leitura do JSON).
 
 ## Formato dos dados
 
@@ -81,19 +82,23 @@ Resultados neutros, médios ou não confirmados não entram em nenhuma das duas.
    "linhas": [
     {"item": "CYP2C9", "texto": {"pt": "*1/*3 (metabolizador intermédio)…", "en": "*1/*3 (intermediate metaboliser)…"},
      "estado": "bad", "rotulo": {"pt": "Cautela", "en": "Caution"}}
-   ]}
+   ],
+   "evitar": [ {"pt": "Varfarina e acenocumarol (preferir DOAC)…", "en": "Warfarin and acenocoumarol (prefer a DOAC)…"} ],
+   "priorizar": [ {"pt": "Cartão PGx no processo clínico…", "en": "PGx card in the medical record…"} ]}
  ]
 }
 ```
 - Cada entrada de `seccoes` é um cartão (2 por linha no computador, 1 no telemóvel), pela ordem do ficheiro, e aparece também nos atalhos por baixo da nota. Para uma secção nova, acrescentar um objeto com um `id` novo (minúsculas, números e hífens; dá o link `genetica.html#id` ou `genetica-boa.html#id`).
+- `evitar` e `priorizar` (obrigatórios em todas as secções): listas de ações concretas ligadas aos genes dessa secção (fármacos, suplementos com doses, dieta, exercício, rastreio, análises de confirmação), mostradas por baixo da tabela nos blocos **Evitar** (vermelho) e **Priorizar** (verde) / **Avoid** e **Prioritize**. Na Genética Boa, “Priorizar” é para aproveitar ou manter a vantagem. Os valores das análises prevalecem sobre doses só genéticas (ex.: D3 10 000 UI, ómega-3 3,2–4 g/dia de EPA+DHA); tudo é sugestão e precisa de validação médica.
+- `data/genetica_protocolo.json` (`titulo`, `intro`, `blocos[{titulo, itens[]}]`, textos PT/EN) é o **Protocolo genético**: um cartão destacado no topo das duas páginas (primeiro atalho, `#protocolo`) que junta o Evitar/Priorizar sem contradições, com o cartão PGx e as análises de confirmação. Ao mudar um Evitar/Priorizar, confirmar que o protocolo continua coerente.
 - Cada entrada de `linhas` é uma linha da tabela: `item` (gene/tema, a negrito), `texto`, e opcionalmente `estado` + `rotulo` (a etiqueta colorida): `ok` verde, `warn` amarelo, `bad` vermelho, `na` cinzento, `info` azul.
 - Textos bilingues: `{"pt": "…", "en": "…"}`; se o texto for igual nas duas línguas (ex. nome do gene) pode ser só `"CYP2C9"`. Pode levar HTML simples: `<b>`, `<i>`, `<em>`, `<strong>`, `<br>`, `<small>`, `<sub>`, `<sup>` (o resto é mostrado como texto).
 - As mesmas regras de privacidade e de nomes (abaixo) aplicam-se aqui: sem nomes de laboratórios ou empresas, sem dados pessoais.
-- Depois de editar: `python3 ferramentas/adicionar_colheita.py verificar` (estrutura, PT+EN em todos os textos, ids únicos, estados válidos, HTML permitido, termos proibidos), abrir `genetica.html` e `genetica-boa.html` por `http.server` e confirmar que não há erros na consola.
+- Depois de editar: `python3 ferramentas/adicionar_colheita.py verificar` (estrutura, PT+EN em todos os textos, ids únicos, estados válidos, `evitar`/`priorizar` em todas as secções, protocolo, HTML permitido, termos proibidos), abrir `genetica.html` e `genetica-boa.html` por `http.server` e confirmar que não há erros na consola.
 
 ## Regras permanentes do painel
 
-- Só análises + Intolerâncias Alimentares (secção própria) em `index.html` + Genética Má (`genetica.html`) e Genética Boa (`genetica-boa.html`): nada de outros exames, medicação/stack, suplementos, prioridades, questões ou sugestões dos bots.
+- Só análises + Intolerâncias Alimentares (secção própria) em `index.html` + Genética Má (`genetica.html`) e Genética Boa (`genetica-boa.html`): nada de outros exames, medicação/stack, suplementos, prioridades, questões ou sugestões dos bots em `index.html`. Exceção (pedido do Sérgio F, 02-10-2026): nas páginas de genética, os blocos Evitar/Priorizar e o Protocolo genético podem ter fármacos, suplementos com doses, dieta, exercício e rastreio ligados aos genes, sempre como sugestão a validar pelo médico e sem valores de outros bots além dos usados nas regras de consistência.
 - Identificação: só “Sérgio F” e a idade; sem data de nascimento nem cidade.
 - Privacidade: nunca publicar a medida da balança, o índice de massa do corpo (nem pela sigla), índices por altura² nem nada que permita deduzir aquela medida.
 - Sem nomes de laboratórios ou fornecedores em lado nenhum, nas duas línguas: só datas.

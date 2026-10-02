@@ -1,22 +1,30 @@
 {
- "_leia_me": "Página genetica.html: SÓ resultados desfavoráveis. Ver README.md, secção \"Páginas de genética\". estado: ok | warn | bad | na | info. Texto: HTML simples (b, i, em, strong, br, small, sub, sup).",
+ "_leia_me": "Página genetica.html: SÓ resultados desfavoráveis. Ver README.md, secção \"Páginas de genética\". estado: ok | warn | bad | na | info. Texto: HTML simples (b, i, em, strong, br, small, sub, sup). Cada secção tem \"evitar\" e \"priorizar\" (listas de textos PT/EN). O protocolo consolidado está em data/genetica_protocolo.json.",
  "atualizado_em": "2026-10-02",
  "fonte": {
-  "pt": "Fonte principal: <b>Genetica</b> · relatorio_dna_bruto.md (ficheiro bruto de genótipos: array de 684 967 marcadores, analisado localmente a 02-10-2026) · complementar: histamina_mastocitos_ige.md, metilacao_homocisteina.md e sergio_perfil_genetico.md (inclui os relatórios genéticos de 25-08-2026 e o relatório de cancro de 02-10-2026) · não diagnóstico",
-  "en": "Primary source: <b>Genetica</b> · relatorio_dna_bruto.md (raw genotype file: array of 684,967 markers, analysed locally on 02-10-2026) · supplementary: histamina_mastocitos_ige.md, metilacao_homocisteina.md and sergio_perfil_genetico.md (includes the genetic reports of 25-08-2026 and the cancer report of 02-10-2026) · not diagnostic"
+  "pt": "Fonte principal: <b>Genetica</b> · ficheiro bruto de genótipos (array de 684 967 marcadores, analisado localmente) + imputação genómica de 02-10-2026 (painel 1000G 30x; só genótipos com DR2 ≥ 0,8) · complementar: resumo favorável/desfavorável (22 temas), sergio_perfil_genetico.md §1–§20, raw_analise/ (stress oxidativo, mitocôndrias, inflamação e autoimunidade, histamina, metilação, farmacogenómica, scores poligénicos, ClinVar) e plano_genetico/plano_completo.md · não diagnóstico",
+  "en": "Primary source: <b>Genetica</b> · raw genotype file (array of 684,967 markers, analysed locally) + genomic imputation of 02-10-2026 (1000G 30x panel; only genotypes with DR2 ≥ 0.8) · supplementary: favourable/unfavourable summary (22 themes), sergio_perfil_genetico.md §1–§20, raw_analise/ (oxidative stress, mitochondria, inflammation and autoimmunity, histamine, methylation, pharmacogenomics, polygenic scores, ClinVar) and plano_genetico/plano_completo.md · not a diagnosis"
  },
  "notas": [
   {
-   "pt": "Só os resultados <b>desfavoráveis</b> (alelos de risco, scores acima da média, estado de portador, necessidades aumentadas). Os favoráveis estão em <b>Genética Boa</b>; os neutros e médios não aparecem. Achado ClinVar a confirmar em laboratório clínico: <b>SERPINA1 Pi*MZ provável</b> (AAT sérica + fenótipo Pi). Um array só testa variantes conhecidas: não exclui cancro hereditário (BRCA/Lynch), hipercolesterolemia familiar nem cardiomiopatias, e não mede CNV (duplicações do CYP2D6, GSTM1/GSTT1, LPA KIV-2).",
-   "en": "Only the <b>unfavourable</b> results (risk alleles, above-average scores, carrier status, increased needs). Favourable ones are under <b>Good Genetics</b>; neutral and average ones are not shown. ClinVar finding to confirm in a clinical lab: <b>probable SERPINA1 Pi*MZ</b> (serum AAT + Pi phenotype). An array only tests known variants: it does not rule out hereditary cancer (BRCA/Lynch), familial hypercholesterolaemia or cardiomyopathies, and it does not measure CNVs (CYP2D6 duplications, GSTM1/GSTT1, LPA KIV-2)."
+   "pt": "Só os resultados <b>desfavoráveis</b> ou de <b>atenção</b> (alelos de risco, scores acima da média, estado de portador, necessidades aumentadas). Os favoráveis estão em <b>Genética Boa</b>; os neutros, médios ou sem conclusão não aparecem (incluindo os genes de neurotransmissores, sem juízo favorável/desfavorável). Achado ClinVar a confirmar em laboratório clínico: <b>SERPINA1 Pi*MZ</b> (apoiado pela imputação; AAT sérica + fenótipo Pi).",
+   "en": "Only the <b>unfavourable</b> or <b>caution</b> results (risk alleles, above-average scores, carrier status, increased needs). Favourable ones are under <b>Good Genetics</b>; neutral, average or inconclusive ones are not shown (including the neurotransmitter genes, which carry no favourable/unfavourable judgement). ClinVar finding to be confirmed by a clinical lab: <b>SERPINA1 Pi*MZ</b> (supported by imputation; serum AAT + Pi phenotype)."
+  },
+  {
+   "pt": "Cada categoria tem um bloco <b>Evitar</b> e um bloco <b>Priorizar</b> ligados aos genes dessa categoria; o <b>Protocolo genético</b> (no topo) junta tudo sem contradições, com o cartão PGx e as análises de confirmação. Os valores das análises prevalecem sobre doses baseadas só na genética. <b>Tudo é sugestão (não aplicada) e precisa de validação médica.</b>",
+   "en": "Each category has an <b>Avoid</b> block and a <b>Prioritize</b> block tied to that category’s genes; the <b>Genetic protocol</b> (at the top) brings everything together without contradictions, with the PGx card and the confirmation tests. Lab values take precedence over doses based on genetics alone. <b>Everything is a suggestion (not applied) and needs medical validation.</b>"
+  },
+  {
+   "pt": "Um array só testa variantes conhecidas: não exclui cancro hereditário (BRCA/Lynch), hipercolesterolemia familiar nem cardiomiopatias, e não mede CNV (duplicações do CYP2D6, GSTM1/GSTT1, LPA KIV-2). A imputação melhora os scores poligénicos e os genótipos comuns, mas não as variantes raras.",
+   "en": "An array only tests known variants: it does not rule out hereditary cancer (BRCA/Lynch), familial hypercholesterolaemia or cardiomyopathies, and it does not measure CNVs (CYP2D6 duplications, GSTM1/GSTT1, LPA KIV-2). Imputation improves polygenic scores and common genotypes, but not rare variants."
   }
  ],
  "seccoes": [
   {
-   "id": "cardiometabolico",
+   "id": "cardiovascular",
    "titulo": {
-    "pt": "Cardiometabólico",
-    "en": "Cardiometabolic"
+    "pt": "Cardiovascular e lípidos",
+    "en": "Cardiovascular and lipids"
    },
    "linhas": [
     {
@@ -44,25 +52,117 @@
      }
     },
     {
+     "item": "APOB · ApoB (PGS)",
+     "texto": {
+      "pt": "APOB rs693 GA · PGS de ApoB P67: ApoB geneticamente um pouco acima da média",
+      "en": "APOB rs693 GA · ApoB PGS P67: genetically slightly above-average ApoB"
+     },
+     "estado": "warn",
+     "rotulo": {
+      "pt": "Acima da média",
+      "en": "Above average"
+     }
+    },
+    {
+     "item": {
+      "pt": "Lp(a) (PGS genómico)",
+      "en": "Lp(a) (genomic PGS)"
+     },
+     "texto": {
+      "pt": "P75 com a imputação (antes P17–20, com pouca cobertura). Sinal misto: os SNPs principais do LPA não têm risco (ver Genética Boa) e o número de repetições KIV-2, que é o que mais pesa, não se vê no array",
+      "en": "P75 with imputation (previously P17–20, with low coverage). Mixed signal: the main LPA SNPs carry no risk (see Good Genetics) and the KIV-2 repeat number, which matters most, is not visible on the array"
+     },
+     "estado": "warn",
+     "rotulo": {
+      "pt": "Sinal misto",
+      "en": "Mixed signal"
+     }
+    },
+    {
+     "item": "NOS3 · MPO",
+     "texto": {
+      "pt": "NOS3 −786 T/C + Glu298Asp G/T (confirmado pela imputação): menos óxido nítrico endotelial · MPO −463 G/G: mais atividade oxidante",
+      "en": "NOS3 −786 T/C + Glu298Asp G/T (confirmed by imputation): less endothelial nitric oxide · MPO −463 G/G: higher oxidant activity"
+     },
+     "estado": "warn",
+     "rotulo": {
+      "pt": "Ligeiro",
+      "en": "Mild"
+     }
+    },
+    {
      "item": {
       "pt": "Sal",
       "en": "Salt"
      },
      "texto": {
-      "pt": "AGT rs699 GA, ACE rs4343 GA: sensibilidade ao sal alta",
-      "en": "AGT rs699 GA, ACE rs4343 GA: high salt sensitivity"
+      "pt": "AGT rs699 GA, ACE rs4343 GA, ADD1 rs4961 GT, GNB3 rs5443 CT, CYP11B2 −344 AA: sensibilidade ao sal alta",
+      "en": "AGT rs699 GA, ACE rs4343 GA, ADD1 rs4961 GT, GNB3 rs5443 CT, CYP11B2 −344 AA: high salt sensitivity"
      },
      "estado": "warn",
      "rotulo": {
       "pt": "Atenção",
       "en": "Caution"
      }
+    }
+   ],
+   "evitar": [
+    {
+     "pt": "Gordura saturada acima de 7% da energia (manteiga, natas, queijo gordo, coco, carnes gordas) e gordura trans",
+     "en": "Saturated fat above 7% of energy (butter, cream, full-fat cheese, coconut, fatty meat) and trans fat"
     },
+    {
+     "pt": "Café não filtrado (prensa, turco, muitos expressos): o cafestol sobe a LDL",
+     "en": "Unfiltered coffee (French press, Turkish, many espressos): cafestol raises LDL"
+    },
+    {
+     "pt": "Sal acima de 5 g/dia, enchidos e snacks salgados; potássio em comprimido ou sal com KCl (telmisartan)",
+     "en": "Salt above 5 g/day, cured meats and salty snacks; potassium tablets or KCl salt (telmisartan)"
+    },
+    {
+     "pt": "Nitratos orgânicos e shots concentrados de beterraba (tadalafil); os nitratos dos vegetais são seguros",
+     "en": "Organic nitrates and concentrated beetroot shots (tadalafil); nitrates from vegetables are safe"
+    },
+    {
+     "pt": "Aspirina sem indicação clínica (risco hemorrágico, sem ganho genético); tabaco e vaping",
+     "en": "Aspirin without a clinical indication (bleeding risk, no genetic gain); tobacco and vaping"
+    }
+   ],
+   "priorizar": [
+    {
+     "pt": "LDL e ApoB <b>quanto mais baixos melhor, sem limite inferior</b>: manter a terapêutica hipolipemiante (resposta normal às estatinas) e discutir retomar inclisiran ou um anti-PCSK9; obicetrapib (inibidor da CETP) quando estiver aprovado",
+     "en": "LDL and ApoB <b>the lower the better, with no lower limit</b>: keep the lipid-lowering therapy (normal statin response) and discuss restarting inclisiran or an anti-PCSK9; obicetrapib (CETP inhibitor) once approved"
+    },
+    {
+     "pt": "Fibra <b>quanto mais melhor, sem máximo</b>: ≥ 50 g/dia da comida + psyllium 15–20 g + PHGG 10 g; aveia e cevada (β-glucano)",
+     "en": "Fibre <b>the more the better, with no maximum</b>: ≥ 50 g/day from food + psyllium 15–20 g + PHGG 10 g; oats and barley (β-glucan)"
+    },
+    {
+     "pt": "Azeite virgem extra 40–50 mL/dia (PON1/NOS3); nitratos de folhas verdes e beterraba inteira; potássio da comida 3,5–4,7 g/dia",
+     "en": "Extra-virgin olive oil 40–50 mL/day (PON1/NOS3); nitrates from leafy greens and whole beetroot; potassium from food 3.5–4.7 g/day"
+    },
+    {
+     "pt": "Treino aeróbio regular (zona 2 + intervalos) para o óxido nítrico endotelial",
+     "en": "Regular aerobic training (zone 2 + intervals) for endothelial nitric oxide"
+    },
+    {
+     "pt": "Confirmação: Lp(a) 1× para fechar o sinal misto do PGS; ApoB e LDL a cada análise; repetir o CAC por volta dos 35–40 anos",
+     "en": "Confirmation: Lp(a) once to settle the mixed PGS signal; ApoB and LDL at every test; repeat CAC at around 35–40"
+    }
+   ]
+  },
+  {
+   "id": "metabolico",
+   "titulo": {
+    "pt": "Glicose e metabolismo",
+    "en": "Glucose and metabolism"
+   },
+   "linhas": [
     {
      "item": "TCF7L2",
      "texto": {
-      "pt": "rs7903146 CT + rs12255372 TG: risco de diabetes tipo 2",
-      "en": "rs7903146 CT + rs12255372 TG: type 2 diabetes risk"
+      "pt": "rs7903146 CT + rs12255372 TG: risco de diabetes tipo 2 (picos de glicose depois das refeições)",
+      "en": "rs7903146 CT + rs12255372 TG: type 2 diabetes risk (post-meal glucose spikes)"
      },
      "estado": "warn",
      "rotulo": {
@@ -85,8 +185,8 @@
     {
      "item": "MTNR1B",
      "texto": {
-      "pt": "rs10830963 CG: glicemia em jejum mais alta; refeições tardias pesam mais",
-      "en": "rs10830963 CG: higher fasting glucose; late meals weigh more"
+      "pt": "rs10830963 CG: glicemia em jejum mais alta; refeições tardias e melatonina em dose alta baixam a secreção de insulina",
+      "en": "rs10830963 CG: higher fasting glucose; late meals and high-dose melatonin reduce insulin secretion"
      },
      "estado": "warn",
      "rotulo": {
@@ -100,14 +200,73 @@
       "en": "Metabolic scores"
      },
      "texto": {
-      "pt": "PGS de diabetes tipo 2 P60–71 · PGS de gordura visceral ajustada P78 (independente da adiposidade global)",
-      "en": "Type 2 diabetes PGS P60–71 · adjusted visceral fat PGS P78 (independent of overall adiposity)"
+      "pt": "PGS de diabetes tipo 2 genómico P57 (582 variantes P62; antes P60–71 com pouca cobertura) · PGS de gordura visceral ajustada P78 (independente da adiposidade global)",
+      "en": "Genomic type 2 diabetes PGS P57 (582 variants P62; previously P60–71 with low coverage) · adjusted visceral fat PGS P78 (independent of overall adiposity)"
      },
      "estado": "warn",
      "rotulo": {
       "pt": "Acima da média",
       "en": "Above average"
      }
+    },
+    {
+     "item": {
+      "pt": "Outros alelos",
+      "en": "Other alleles"
+     },
+     "texto": {
+      "pt": "GCKR P446L TC (frutose → triglicerídeos e gordura hepática) · KCNJ11 E23K TT · FABP2 Ala54Thr CT · UCP1 −3826 A/G (termogénese) · SIRT3 V208I e CPT2 V368I heterozigotos · leucina e valina geneticamente mais altas (associadas a resistência à insulina); todos ligeiros",
+      "en": "GCKR P446L TC (fructose → triglycerides and liver fat) · KCNJ11 E23K TT · FABP2 Ala54Thr CT · UCP1 −3826 A/G (thermogenesis) · SIRT3 V208I and CPT2 V368I heterozygous · genetically higher leucine and valine (linked to insulin resistance); all mild"
+     },
+     "estado": "warn",
+     "rotulo": {
+      "pt": "Ligeiro",
+      "en": "Mild"
+     }
+    }
+   ],
+   "evitar": [
+    {
+     "pt": "Açúcar adicionado, frutose, bebidas açucaradas e sumos (frutose adicionada ≈ 0; GCKR/TCF7L2)",
+     "en": "Added sugar, fructose, sugary drinks and juices (added fructose ≈ 0; GCKR/TCF7L2)"
+    },
+    {
+     "pt": "Melatonina em dose alta e refeições ou lanches nas 3 h antes de deitar (MTNR1B)",
+     "en": "High-dose melatonin and meals or snacks in the 3 h before bed (MTNR1B)"
+    },
+    {
+     "pt": "BCAA ou leucina isolados; berberina (inibe o CYP3A4 da rapamicina e soma-se aos fármacos que baixam a glicose)",
+     "en": "Isolated BCAAs or leucine; berberine (inhibits rapamycin’s CYP3A4 and adds to the glucose-lowering drugs)"
+    },
+    {
+     "pt": "Metformina (redundante com a imeglimina); pioglitazona em cima da imeglimina e da acarbose (só como substituta, ver Protocolo)",
+     "en": "Metformin (redundant with imeglimin); pioglitazone on top of imeglimin and acarbose (only as a substitute, see Protocol)"
+    },
+    {
+     "pt": "Trocar o retatrutide por um agonista GLP-1 isolado (resposta genética pior ao GLP-1)",
+     "en": "Switching retatrutide for a GLP-1-only agonist (poorer genetic response to GLP-1)"
+    }
+   ],
+   "priorizar": [
+    {
+     "pt": "Hidratos 35–40% da energia, ≥ 80% de baixo índice glicémico e intactos, sobretudo ao pequeno-almoço e almoço; janela alimentar de 10–12 h",
+     "en": "Carbohydrates 35–40% of energy, ≥ 80% low glycaemic index and intact, mostly at breakfast and lunch; 10–12 h eating window"
+    },
+    {
+     "pt": "Melatonina 0,3–1 mg, 30–60 min antes de deitar e ≥ 3 h depois da última refeição",
+     "en": "Melatonin 0.3–1 mg, 30–60 min before bed and ≥ 3 h after the last meal"
+    },
+    {
+     "pt": "Proteína em 4 refeições de 30–40 g + treino de força 3×/semana (proteger a massa magra com o retatrutide)",
+     "en": "Protein in 4 meals of 30–40 g + strength training 3×/week (protect lean mass on retatrutide)"
+    },
+    {
+     "pt": "Zinco total 20–25 mg/dia + cobre 1,5–2 mg (SLC30A8); exposição moderada ao frio (UCP1); treino zona 2 + intervalos",
+     "en": "Total zinc 20–25 mg/day + copper 1.5–2 mg (SLC30A8); moderate cold exposure (UCP1); zone 2 + interval training"
+    },
+    {
+     "pt": "Hipoglicemia com acarbose: corrigir com dextrose (o açúcar comum não serve). Vigiar HbA1c, glicose e insulina em jejum",
+     "en": "Hypoglycaemia on acarbose: treat with dextrose (table sugar does not work). Monitor HbA1c, fasting glucose and insulin"
     }
    ]
   },
@@ -121,8 +280,8 @@
     {
      "item": "SERPINA1",
      "texto": {
-      "pt": "rs28929474 CT: Pi*MZ provável (portador de défice de alfa-1-antitripsina; cofator de fibrose hepática). Por confirmar",
-      "en": "rs28929474 CT: probable Pi*MZ (alpha-1 antitrypsin deficiency carrier; liver fibrosis cofactor). To be confirmed"
+      "pt": "rs28929474 CT: Pi*MZ (portador de défice de alfa-1-antitripsina; cofator de fibrose hepática e de doença pulmonar). Apoiado pelo haplótipo na imputação (GP 1,00); confirmar clinicamente",
+      "en": "rs28929474 CT: Pi*MZ (alpha-1 antitrypsin deficiency carrier; cofactor for liver fibrosis and lung disease). Supported by the haplotype on imputation (GP 1.00); confirm clinically"
      },
      "estado": "warn",
      "rotulo": {
@@ -133,8 +292,8 @@
     {
      "item": "PNPLA3",
      "texto": {
-      "pt": "rs738409 GC (I148M heterozigoto): fígado gordo",
-      "en": "rs738409 GC (I148M heterozygous): fatty liver"
+      "pt": "rs738409 GC (I148M heterozigoto): fígado gordo; mais sensível ao açúcar e à frutose",
+      "en": "rs738409 GC (I148M heterozygous): fatty liver; more sensitive to sugar and fructose"
      },
      "estado": "bad",
      "rotulo": {
@@ -145,8 +304,8 @@
     {
      "item": "MBOAT7 · PEMT",
      "texto": {
-      "pt": "MBOAT7 rs641738 CT: 1 alelo de risco · PEMT V175M heterozigoto (colina; ligação fraca a fígado gordo)",
-      "en": "MBOAT7 rs641738 CT: 1 risk allele · PEMT V175M heterozygous (choline; weak link to fatty liver)"
+      "pt": "MBOAT7 rs641738 CT: 1 alelo de risco · PEMT V175M heterozigoto (menos colina endógena; ligação fraca a fígado gordo)",
+      "en": "MBOAT7 rs641738 CT: 1 risk allele · PEMT V175M heterozygous (less endogenous choline; weak link to fatty liver)"
      },
      "estado": "warn",
      "rotulo": {
@@ -160,14 +319,58 @@
       "en": "Liver fat (PGS)"
      },
      "texto": {
-      "pt": "Score de 4 genes P69 · score por RM P66: ligeiramente acima da média",
-      "en": "4-gene score P69 · MRI-based score P66: slightly above average"
+      "pt": "Score de 4 genes P69 · score por RM P66: ligeiramente acima da média (o PGS de MASLD de 68 variantes desce para P24 com a imputação: ver Genética Boa)",
+      "en": "4-gene score P69 · MRI-based score P66: slightly above average (the 68-variant MASLD PGS drops to P24 with imputation: see Good Genetics)"
      },
      "estado": "warn",
      "rotulo": {
       "pt": "Acima da média",
       "en": "Above average"
      }
+    }
+   ],
+   "evitar": [
+    {
+     "pt": "Álcool (manter zero: PNPLA3 + Pi*MZ)",
+     "en": "Alcohol (keep at zero: PNPLA3 + Pi*MZ)"
+    },
+    {
+     "pt": "Extrato de chá verde (EGCG), kava, ashwagandha, niacina em dose alta e levedura de arroz vermelho; terbinafina oral",
+     "en": "Green tea extract (EGCG), kava, ashwagandha, high-dose niacin and red yeast rice; oral terbinafine"
+    },
+    {
+     "pt": "Curcumina, luteolina, apigenina e quercetina concentradas <b>enquanto a ALT estiver alta</b>",
+     "en": "Concentrated curcumin, luteolin, apigenin and quercetin <b>while ALT is high</b>"
+    },
+    {
+     "pt": "Paracetamol acima de 2 g/dia; frutose e açúcar livre",
+     "en": "Paracetamol above 2 g/day; fructose and free sugar"
+    },
+    {
+     "pt": "Tabaco, vaping e poeiras/fumos inalados (Pi*MZ também afeta o pulmão)",
+     "en": "Tobacco, vaping and inhaled dusts/fumes (Pi*MZ also affects the lungs)"
+    }
+   ],
+   "priorizar": [
+    {
+     "pt": "Confirmação: <b>AAT sérica + fenótipo Pi</b>; elastografia hepática e ALT/AST/GGT seguidas",
+     "en": "Confirmation: <b>serum AAT + Pi phenotype</b>; liver elastography and serial ALT/AST/GGT"
+    },
+    {
+     "pt": "Café filtrado de manhã (≤ 200 mg de cafeína): protege da fibrose nos portadores de PNPLA3",
+     "en": "Filtered coffee in the morning (≤ 200 mg caffeine): protects against fibrosis in PNPLA3 carriers"
+    },
+    {
+     "pt": "Ómega-3 3,2–4 g/dia de EPA+DHA (útil no fígado dos portadores de 148M); azeite virgem extra",
+     "en": "Omega-3 3.2–4 g/day EPA+DHA (useful for the liver of 148M carriers); extra-virgin olive oil"
+    },
+    {
+     "pt": "Colina 250–500 mg/dia (citicolina ou fosfatidilcolina, não bitartarato) + clara de ovo, tofu e peixe (PEMT)",
+     "en": "Choline 250–500 mg/day (citicoline or phosphatidylcholine, not bitartrate) + egg white, tofu and fish (PEMT)"
+    },
+    {
+     "pt": "Menos gordura visceral (retatrutide + exercício) e frutose ≈ 0: é assim que o HSD17B13 protetor rende mais",
+     "en": "Less visceral fat (retatrutide + exercise) and fructose ≈ 0: this is how the protective HSD17B13 pays off most"
     }
    ]
   },
@@ -181,11 +384,11 @@
     {
      "item": {
       "pt": "Alzheimer (PGS)",
-      "en": "Alzheimer's (PGS)"
+      "en": "Alzheimer’s (PGS)"
      },
      "texto": {
-      "pt": "PGS sem APOE P87: componente não-APOE acima da média",
-      "en": "PGS without APOE P87: non-APOE component above average"
+      "pt": "PGS de 39 variantes sem APOE P91 (antes P87) · o PGS genómico (249 mil variantes, imputado) fica no P52; APOE ε3/ε3 neutro",
+      "en": "39-variant PGS without APOE P91 (previously P87) · the genomic PGS (249,000 variants, imputed) is at P52; APOE ε3/ε3 neutral"
      },
      "estado": "warn",
      "rotulo": {
@@ -199,8 +402,8 @@
       "en": "Melanoma (PGS)"
      },
      "texto": {
-      "pt": "P89 (“more likely”, relatório de cancro de 02-10-2026): fundo poligénico (CTSS, AGR2, SOX4 com 2 alelos de risco cada), sem alelos de risco em MC1R/IRF4/TYR",
-      "en": "P89 (“more likely”, cancer report of 02-10-2026): polygenic background (CTSS, AGR2, SOX4 with 2 risk alleles each), no risk alleles in MC1R/IRF4/TYR"
+      "pt": "P89 (“more likely”, relatório de cancro de 02-10-2026): fundo poligénico (CTSS, AGR2, SOX4 com 2 alelos de risco cada) · HERC2 rs12913832 AG (1 alelo de pigmentação clara); sem alelos de risco em MC1R/IRF4/TYR",
+      "en": "P89 (“more likely”, cancer report of 02-10-2026): polygenic background (CTSS, AGR2, SOX4 with 2 risk alleles each) · HERC2 rs12913832 AG (1 light-pigmentation allele); no risk alleles in MC1R/IRF4/TYR"
      },
      "estado": "bad",
      "rotulo": {
@@ -211,8 +414,38 @@
     {
      "item": "TERT",
      "texto": {
-      "pt": "rs2736100 CC, rs7734992 CC, rs10069690 TT: os alelos que alongam os telómeros associam-se em GWAS a mais risco de alguns cancros (glioma, tiroide, rim) e de hematopoiese clonal (CHIP)",
-      "en": "rs2736100 CC, rs7734992 CC, rs10069690 TT: the telomere-lengthening alleles are linked in GWAS to higher risk of some cancers (glioma, thyroid, kidney) and of clonal haematopoiesis (CHIP)"
+      "pt": "rs2736100 CC, rs7734992 CC, rs10069690 TT, rs2242652 GG, rs2736098 CC: os alelos que alongam os telómeros associam-se em GWAS a mais risco de alguns cancros (glioma, pulmão, tiroide, rim) e de hematopoiese clonal (CHIP)",
+      "en": "rs2736100 CC, rs7734992 CC, rs10069690 TT, rs2242652 GG, rs2736098 CC: the telomere-lengthening alleles are linked in GWAS to higher risk of some cancers (glioma, lung, thyroid, kidney) and of clonal haematopoiesis (CHIP)"
+     },
+     "estado": "warn",
+     "rotulo": {
+      "pt": "Atenção",
+      "en": "Caution"
+     }
+    },
+    {
+     "item": {
+      "pt": "Telómeros (score)",
+      "en": "Telomeres (score)"
+     },
+     "texto": {
+      "pt": "Score de 7 SNPs P24 com a imputação (7 de 7; antes P49 com 6 de 7): telómeros geneticamente um pouco mais curtos; evidência fraca",
+      "en": "7-SNP score P24 with imputation (7 of 7; previously P49 with 6 of 7): genetically slightly shorter telomeres; weak evidence"
+     },
+     "estado": "warn",
+     "rotulo": {
+      "pt": "Ligeiro",
+      "en": "Mild"
+     }
+    },
+    {
+     "item": {
+      "pt": "Cancro gástrico",
+      "en": "Gastric cancer"
+     },
+     "texto": {
+      "pt": "PSCA rs2294008 TT + grupo O provável + IL1B −511T + CXCL8 −251 AA: mais gastrite atrófica e cancro gástrico difuso <b>se houver H. pylori</b>",
+      "en": "PSCA rs2294008 TT + probable blood group O + IL1B −511T + CXCL8 −251 AA: more atrophic gastritis and diffuse gastric cancer <b>if H. pylori is present</b>"
      },
      "estado": "warn",
      "rotulo": {
@@ -249,21 +482,46 @@
       "pt": "Risco",
       "en": "Risk"
      }
+    }
+   ],
+   "evitar": [
+    {
+     "pt": "<b>Epitalon, TA-65 e astrágalo</b> (ativadores da telomerase: alelos TERT de risco + melanoma P89)",
+     "en": "<b>Epitalon, TA-65 and astragalus</b> (telomerase activators: TERT risk alleles + melanoma P89)"
     },
     {
-     "item": {
-      "pt": "Cafeína",
-      "en": "Caffeine"
-     },
-     "texto": {
-      "pt": "CYP1A2 rs762551 AC (*1F heterozigoto): depuração intermédia · sensibilidade alta",
-      "en": "CYP1A2 rs762551 AC (*1F heterozygous): intermediate clearance · high sensitivity"
-     },
-     "estado": "warn",
-     "rotulo": {
-      "pt": "Atenção",
-      "en": "Caution"
-     }
+     "pt": "Melanotan II e bremelanotide (estimulam os melanócitos); solários e queimaduras solares",
+     "en": "Melanotan II and bremelanotide (stimulate melanocytes); tanning beds and sunburn"
+    },
+    {
+     "pt": "Secretagogos de GH (CJC-1295, ipamorelina, GHRP-2/6, sermorelina, MK-677), IGF-1/PEG-MGF e folistatina",
+     "en": "GH secretagogues (CJC-1295, ipamorelin, GHRP-2/6, sermorelin, MK-677), IGF-1/PEG-MGF and follistatin"
+    },
+    {
+     "pt": "BPC-157 e TB-500 (angiogénicos, sem dados humanos de segurança oncológica); tabaco",
+     "en": "BPC-157 and TB-500 (angiogenic, no human oncological safety data); tobacco"
+    }
+   ],
+   "priorizar": [
+    {
+     "pt": "<b>Dermatoscopia anual da pele toda</b> + autoexame mensal; protetor solar FPS 50 diário (também pela isotretinoína)",
+     "en": "<b>Annual full-skin dermatoscopy</b> + monthly self-check; daily SPF 50 sunscreen (also because of isotretinoin)"
+    },
+    {
+     "pt": "Pesquisa de H. pylori (teste respiratório ou antigénio fecal) e erradicação se positivo",
+     "en": "H. pylori testing (breath test or stool antigen) and eradication if positive"
+    },
+    {
+     "pt": "<b>Rastreio colorretal precoce</b> (FIT ou colonoscopia, a decidir com o médico)",
+     "en": "<b>Early colorectal screening</b> (FIT or colonoscopy, to be decided with the doctor)"
+    },
+    {
+     "pt": "Treino de força 3×/semana + creatina 5 g/dia + proteína em todas as refeições (fragilidade P82)",
+     "en": "Strength training 3×/week + creatine 5 g/day + protein at every meal (frailty P82)"
+    },
+    {
+     "pt": "Cérebro: lítio 5 mg (manter), sono regular, treino aeróbio e glicose/LDL controladas",
+     "en": "Brain: lithium 5 mg (keep), regular sleep, aerobic training and controlled glucose/LDL"
     }
    ]
   },
@@ -275,10 +533,10 @@
    },
    "linhas": [
     {
-     "item": "MTHFR",
+     "item": "MTHFR · DHFR",
      "texto": {
-      "pt": "C677T (rs1801133 GA) + A1298C (rs1801131 TG): heterozigoto composto, ~50–60% da atividade (sem R594Q)",
-      "en": "C677T (rs1801133 GA) + A1298C (rs1801131 TG): compound heterozygote, ~50–60% activity (no R594Q)"
+      "pt": "MTHFR C677T (rs1801133 GA) + A1298C (rs1801131 TG): heterozigoto composto, ~50–60% da atividade (sem R594Q) · DHFR rs408626 CC: redução lenta do ácido fólico · BHMT rs3733890 GA",
+      "en": "MTHFR C677T (rs1801133 GA) + A1298C (rs1801131 TG): compound heterozygote, ~50–60% activity (no R594Q) · DHFR rs408626 CC: slow folic acid reduction · BHMT rs3733890 GA"
      },
      "estado": "warn",
      "rotulo": {
@@ -292,8 +550,8 @@
       "en": "Homocysteine (score)"
      },
      "texto": {
-      "pt": "Score genético P92 (+0,20 DP, ≈ +0,7 µmol/L): DPEP1 rs154657 AA, MMUT rs9369898 AA, GNMT rs9296404 TT (inferido; sobe após carga de metionina). Explica só ~1 µmol/L dos 18,4",
-      "en": "Genetic score P92 (+0.20 SD, ≈ +0.7 µmol/L): DPEP1 rs154657 AA, MMUT rs9369898 AA, GNMT rs9296404 TT (inferred; raises it after a methionine load). Explains only ~1 µmol/L of the 18.4"
+      "pt": "Score genético P92 (+0,20 DP, ≈ +0,7 µmol/L): DPEP1 rs154657 AA, MMUT rs9369898 AA, GNMT rs9296404 TT (confirmado pela imputação; sobe após carga de metionina). Explica só ~1 µmol/L dos 18,4",
+      "en": "Genetic score P92 (+0.20 SD, ≈ +0.7 µmol/L): DPEP1 rs154657 AA, MMUT rs9369898 AA, GNMT rs9296404 TT (confirmed by imputation; raises it after a methionine load). Explains only ~1 µmol/L of the 18.4"
      },
      "estado": "warn",
      "rotulo": {
@@ -322,8 +580,8 @@
       "en": "Iron"
      },
      "texto": {
-      "pt": "HFE H63D heterozigoto (rs1799945 CG), sem C282Y: portador (risco de hemocromatose muito baixo)",
-      "en": "HFE H63D heterozygous (rs1799945 CG), no C282Y: carrier (very low haemochromatosis risk)"
+      "pt": "HFE H63D heterozigoto (rs1799945 CG, confirmado pela imputação), sem C282Y nem S65C: portador (risco de hemocromatose muito baixo; absorve um pouco mais de ferro)",
+      "en": "HFE H63D heterozygous (rs1799945 CG, confirmed by imputation), no C282Y or S65C: carrier (very low haemochromatosis risk; absorbs slightly more iron)"
      },
      "estado": "warn",
      "rotulo": {
@@ -333,12 +591,12 @@
     },
     {
      "item": {
-      "pt": "Aminoácidos",
-      "en": "Amino acids"
+      "pt": "Necessidades aumentadas",
+      "en": "Increased needs"
      },
      "texto": {
-      "pt": "Histidina: necessidade aumentada · leucina e valina: necessidades “mais altas” · CPS1 CC: glicina geneticamente mais baixa",
-      "en": "Histidine: increased need · leucine and valine: “higher” needs · CPS1 CC: genetically lower glycine"
+      "pt": "Glicina geneticamente mais baixa (CPS1 rs715 TT + rs1047891 CC) · betaína mais baixa · colina (PEMT) · zinco (SLC30A8 CC) · histidina · potássio · DHA",
+      "en": "Genetically lower glycine (CPS1 rs715 TT + rs1047891 CC) · lower betaine · choline (PEMT) · zinc (SLC30A8 CC) · histidine · potassium · DHA"
      },
      "estado": "warn",
      "rotulo": {
@@ -346,23 +604,167 @@
       "en": "Need ↑"
      }
     }
+   ],
+   "evitar": [
+    {
+     "pt": "Ácido fólico em qualquer produto (DHFR CC: fica por metabolizar); SAMe",
+     "en": "Folic acid in any product (DHFR CC: it stays unmetabolised); SAMe"
+    },
+    {
+     "pt": "B6 acima de 5 mg/dia; TMG acima de 3 g/dia (com ≥ 4 g a LDL sobe)",
+     "en": "B6 above 5 mg/day; TMG above 3 g/day (at ≥ 4 g LDL rises)"
+    },
+    {
+     "pt": "Catecóis concentrados de uso diário (luteolina, quercetina, EGCG): a COMT Val/Val gasta SAM e produz homocisteína; a quercetina fica só no pulso senolítico mensal",
+     "en": "Daily concentrated catechols (luteolin, quercetin, EGCG): COMT Val/Val uses up SAM and produces homocysteine; quercetin stays only in the monthly senolytic pulse"
+    },
+    {
+     "pt": "Ferro ou multivitamínico com ferro; vitamina C com as refeições; carne vermelha e vísceras frequentes; cereais fortificados com ferro",
+     "en": "Iron or multivitamins with iron; vitamin C with meals; frequent red meat and offal; iron-fortified cereals"
+    },
+    {
+     "pt": "Zinco alto sem cobre (o cobre baixo reduz a DAO, já heterozigota)",
+     "en": "High zinc without copper (low copper reduces DAO, already heterozygous)"
+    }
+   ],
+   "priorizar": [
+    {
+     "pt": "5-MTHF 800 µg (não subir) + B12 1000 µg (metil ou adenosil); TMG 3 g/dia em 2 tomas; glicina 5 g/dia; creatina 5 g/dia",
+     "en": "5-MTHF 800 µg (do not increase) + B12 1000 µg (methyl or adenosyl); TMG 3 g/day in 2 doses; glycine 5 g/day; creatine 5 g/day"
+    },
+    {
+     "pt": "Colina 250–500 mg/dia; folhas verdes, beterraba, quinoa e leguminosas todos os dias (folato e betaína)",
+     "en": "Choline 250–500 mg/day; leafy greens, beetroot, quinoa and legumes every day (folate and betaine)"
+    },
+    {
+     "pt": "<b>Ferritina sempre abaixo de 100</b>: lacticínios, chá ou café às refeições, Ca-AKG às refeições, vitamina C só entre refeições",
+     "en": "<b>Ferritin always below 100</b>: dairy, tea or coffee with meals, Ca-AKG with meals, vitamin C only between meals"
+    },
+    {
+     "pt": "Zinco total 20–25 mg + cobre 1,5–2 mg (relação ≈ 10–15:1); histidina e potássio pela comida",
+     "en": "Total zinc 20–25 mg + copper 1.5–2 mg (ratio ≈ 10–15:1); histidine and potassium from food"
+    },
+    {
+     "pt": "Confirmação: homocisteína em jejum (sempre no mesmo laboratório), folato eritrocitário, MMA, holo-TC; cobre, zinco e ceruloplasmina; ferritina e saturação da transferrina",
+     "en": "Confirmation: fasting homocysteine (always at the same lab), red-cell folate, MMA, holo-TC; copper, zinc and caeruloplasmin; ferritin and transferrin saturation"
+    }
+   ]
+  },
+  {
+   "id": "destoxificacao",
+   "titulo": {
+    "pt": "Destoxificação e stress oxidativo",
+    "en": "Detoxification and oxidative stress"
+   },
+   "linhas": [
+    {
+     "item": "GSTM1 · GSTA1 · GSTP1",
+     "texto": {
+      "pt": "GSTM1 nulo provável · GSTA1 *B/*B · GSTP1 Ile105Val heterozigoto: conjugação de fase II fraca (GSTT1 não testável)",
+      "en": "Probable GSTM1 null · GSTA1 *B/*B · GSTP1 Ile105Val heterozygous: weak phase II conjugation (GSTT1 not testable)"
+     },
+     "estado": "warn",
+     "rotulo": {
+      "pt": "Fraca",
+      "en": "Weak"
+     }
+    },
+    {
+     "item": "PON1",
+     "texto": {
+      "pt": "Baixa expressão (Met55Met, −108 T/T): menos proteção da LDL contra a oxidação (a isoforma Q192 é a boa)",
+      "en": "Low expression (Met55Met, −108 T/T): less protection of LDL against oxidation (the Q192 isoform is the good one)"
+     },
+     "estado": "warn",
+     "rotulo": {
+      "pt": "Ligeiro",
+      "en": "Mild"
+     }
+    },
+    {
+     "item": "GCLM · GPX1",
+     "texto": {
+      "pt": "GCLM −588 C/T e GPX1 Pro198Leu heterozigotos; com SOD2 Ala/Ala fica um desfasamento de H<sub>2</sub>O<sub>2</sub>",
+      "en": "GCLM −588 C/T and GPX1 Pro198Leu heterozygous; with SOD2 Ala/Ala this leaves an H<sub>2</sub>O<sub>2</sub> mismatch"
+     },
+     "estado": "warn",
+     "rotulo": {
+      "pt": "Ligeiro",
+      "en": "Mild"
+     }
+    },
+    {
+     "item": {
+      "pt": "Cafeína",
+      "en": "Caffeine"
+     },
+     "texto": {
+      "pt": "CYP1A2 rs762551 AC (*1F) + rs2472297 CC: depuração lenta · ADORA2A rs5751876 CC: sono sensível à cafeína",
+      "en": "CYP1A2 rs762551 AC (*1F) + rs2472297 CC: slow clearance · ADORA2A rs5751876 CC: caffeine-sensitive sleep"
+     },
+     "estado": "warn",
+     "rotulo": {
+      "pt": "Atenção",
+      "en": "Caution"
+     }
+    }
+   ],
+   "evitar": [
+    {
+     "pt": "Carne processada, fumada, carbonizada ou bem passada (aminas heterocíclicas: GSTM1/GSTA1/NAT2)",
+     "en": "Processed, smoked, charred or well-done meat (heterocyclic amines: GSTM1/GSTA1/NAT2)"
+    },
+    {
+     "pt": "Fumo, solventes e organofosforados (lavar bem fruta e legumes)",
+     "en": "Smoke, solvents and organophosphates (wash fruit and vegetables well)"
+    },
+    {
+     "pt": "Mais de 200 mg de cafeína por dia ou cafeína depois das 12h; café não filtrado",
+     "en": "More than 200 mg of caffeine a day or caffeine after 12:00; unfiltered coffee"
+    },
+    {
+     "pt": "Excesso de selénio (sem castanha-do-Brasil: o suplemento já dá 55 µg); antioxidantes em dose alta à volta do treino",
+     "en": "Excess selenium (no Brazil nuts: the supplement already provides 55 µg); high-dose antioxidants around training"
+    }
+   ],
+   "priorizar": [
+    {
+     "pt": "Crucíferas 1–2 porções/dia (brócolos e rebentos, couves, rúcula, agrião) com mostarda em grão ou uma crucífera crua; sulforafano (glucorafanina 100 mg) de manhã",
+     "en": "Cruciferous vegetables 1–2 servings/day (broccoli and sprouts, cabbage, rocket, watercress) with mustard seed or a raw crucifer; sulforaphane (glucoraphanin 100 mg) in the morning"
+    },
+    {
+     "pt": "NAC 1200–1800 mg longe do treino + glicina 5 g (GlyNAC) para o glutatião",
+     "en": "NAC 1200–1800 mg away from training + glycine 5 g (GlyNAC) for glutathione"
+    },
+    {
+     "pt": "Azeite virgem extra e hidroxitirosol em dose baixa (sobem a PON1)",
+     "en": "Extra-virgin olive oil and low-dose hydroxytyrosol (raise PON1)"
+    },
+    {
+     "pt": "Café filtrado ≤ 200 mg de cafeína só até às 12h; depois, descafeinado",
+     "en": "Filtered coffee ≤ 200 mg caffeine only until 12:00; decaf afterwards"
+    },
+    {
+     "pt": "Opcional: teste dirigido de GSTM1/GSTT1 (deleções que o array não vê)",
+     "en": "Optional: targeted GSTM1/GSTT1 test (deletions the array cannot see)"
+    }
    ]
   },
   {
    "id": "pele-imunidade",
    "titulo": {
-    "pt": "Pele e imunidade",
-    "en": "Skin and immunity"
+    "pt": "Pele, imunidade e inflamação",
+    "en": "Skin, immunity and inflammation"
    },
    "linhas": [
     {
      "item": {
-      "pt": "Barreira cutânea",
-      "en": "Skin barrier"
+      "pt": "Barreira cutânea · dermatite seborreica",
+      "en": "Skin barrier · seborrhoeic dermatitis"
      },
      "texto": {
-      "pt": "1 alelo de risco no locus de eczema rs12123821 (HRNR/FLG) · possível nulo raro do FLG (rs542799026 GC, não confirmado)",
-      "en": "1 risk allele at the eczema locus rs12123821 (HRNR/FLG) · possible rare FLG null (rs542799026 GC, not confirmed)"
+      "pt": "1 alelo de risco no locus de eczema rs12123821 (HRNR/FLG) · possível nulo raro do FLG (rs542799026 GC, não confirmado; o c.2282del4 imputado não é fiável) · CARD9 rs4077515 TT: resposta mais forte à <i>Malassezia</i> (hipótese para a dermatite seborreica)",
+      "en": "1 risk allele at the eczema locus rs12123821 (HRNR/FLG) · possible rare FLG null (rs542799026 GC, not confirmed; the imputed c.2282del4 is not reliable) · CARD9 rs4077515 TT: stronger response to <i>Malassezia</i> (hypothesis for the seborrhoeic dermatitis)"
      },
      "estado": "warn",
      "rotulo": {
@@ -376,13 +778,28 @@
       "en": "Immunity"
      },
      "texto": {
-      "pt": "CARD9 S12N N/N e ATG16L1 T300A heterozigoto (risco ligeiro de doença inflamatória intestinal) · TLR2 P631H heterozigoto (hipofuncional in vitro); evidência fraca",
-      "en": "CARD9 S12N N/N and ATG16L1 T300A heterozygous (slight inflammatory bowel disease risk) · TLR2 P631H heterozygous (hypofunctional in vitro); weak evidence"
+      "pt": "CARD9 rs10781499 AA e ATG16L1 T300A heterozigoto (risco ligeiro de doença inflamatória intestinal) · TLR2 P631H heterozigoto · MBL2 codão 52 heterozigoto · IFIH1 TT; evidência fraca",
+      "en": "CARD9 rs10781499 AA and ATG16L1 T300A heterozygous (slight inflammatory bowel disease risk) · TLR2 P631H heterozygous · MBL2 codon 52 heterozygous · IFIH1 TT; weak evidence"
      },
      "estado": "warn",
      "rotulo": {
-      "pt": "Risco",
-      "en": "Risk"
+      "pt": "Ligeiro",
+      "en": "Mild"
+     }
+    },
+    {
+     "item": {
+      "pt": "Scores inflamatórios",
+      "en": "Inflammatory scores"
+     },
+     "texto": {
+      "pt": "Sarcoidose P92 (BTNL2 TT, ANXA11 Arg230 homozigoto, DRB1*11) · vitiligo P90 (TYR R402 GG) · doença diverticular P72 (antes P39) · uveíte P85 · basófilos P91; nenhuma doença com risco claramente aumentado",
+      "en": "Sarcoidosis P92 (BTNL2 TT, ANXA11 Arg230 homozygous, DRB1*11) · vitiligo P90 (TYR R402 GG) · diverticular disease P72 (previously P39) · uveitis P85 · basophils P91; no disease with clearly increased risk"
+     },
+     "estado": "warn",
+     "rotulo": {
+      "pt": "Ligeiro",
+      "en": "Mild"
      }
     },
     {
@@ -399,6 +816,46 @@
       "pt": "Risco",
       "en": "Risk"
      }
+    }
+   ],
+   "evitar": [
+    {
+     "pt": "Retinol, vitamina A pré-formada e óleo de fígado de bacalhau (soma-se à isotretinoína)",
+     "en": "Retinol, preformed vitamin A and cod liver oil (adds to isotretinoin)"
+    },
+    {
+     "pt": "Sol sem proteção; sabões agressivos e banhos muito quentes (barreira FLG + isotretinoína)",
+     "en": "Unprotected sun; harsh soaps and very hot showers (FLG barrier + isotretinoin)"
+    },
+    {
+     "pt": "Antifúngicos orais por rotina: fluconazol só fora das 2 semanas depois de uma toma de rapamicina; terbinafina oral não (fígado)",
+     "en": "Routine oral antifungals: fluconazole only outside the 2 weeks after a rapamycin dose; no oral terbinafine (liver)"
+    },
+    {
+     "pt": "GHK-Cu sistémico (mexe na relação zinco:cobre; só tópico)",
+     "en": "Systemic GHK-Cu (disturbs the zinc:copper ratio; topical only)"
+    }
+   ],
+   "priorizar": [
+    {
+     "pt": "<b>Protetor solar diário</b> (FPS 50; isotretinoína) e emolientes com ceramidas",
+     "en": "<b>Daily sunscreen</b> (SPF 50; isotretinoin) and ceramide emollients"
+    },
+    {
+     "pt": "Dermatite seborreica: cetoconazol 2% ou ciclopirox tópicos (champô ou creme) 2–3×/semana, como manutenção",
+     "en": "Seborrhoeic dermatitis: topical ketoconazole 2% or ciclopirox (shampoo or cream) 2–3×/week as maintenance"
+    },
+    {
+     "pt": "Confirmação: <b>sequenciação do FLG</b> (nulo possível); isotretinoína na menor dose eficaz",
+     "en": "Confirmation: <b>FLG sequencing</b> (possible null); isotretinoin at the lowest effective dose"
+    },
+    {
+     "pt": "Fibra sem máximo, probiótico e fermentados (doença diverticular P72)",
+     "en": "Fibre with no maximum, probiotic and fermented foods (diverticular disease P72)"
+    },
+    {
+     "pt": "Atenção a sinais de sarcoidose (tosse persistente, lesões na pele, olhos vermelhos) e de vitiligo (manchas claras)",
+     "en": "Watch for signs of sarcoidosis (persistent cough, skin lesions, red eyes) and vitiligo (pale patches)"
     }
    ]
   },
@@ -424,8 +881,8 @@
     {
      "item": "VKORC1 + CYP4F2",
      "texto": {
-      "pt": "rs9923231 TT + CYP4F2 CC: alta sensibilidade a varfarina/acenocumarol (dose muito menor)",
-      "en": "rs9923231 TT + CYP4F2 CC: high sensitivity to warfarin/acenocoumarol (much lower dose)"
+      "pt": "VKORC1 −1639 TT (rs9923231, confirmado pela imputação, DR2 0,99) + CYP4F2 CC: alta sensibilidade a varfarina/acenocumarol (dose muito menor)",
+      "en": "VKORC1 −1639 TT (rs9923231, confirmed by imputation, DR2 0.99) + CYP4F2 CC: high sensitivity to warfarin/acenocoumarol (much lower dose)"
      },
      "estado": "bad",
      "rotulo": {
@@ -436,8 +893,8 @@
     {
      "item": "NAT2",
      "texto": {
-      "pt": "*5/*5 provável: acetilador lento (isoniazida, hidralazina, sulfassalazina; mais risco de cancro da bexiga com tabaco); somado à DAO/HNMT ligeiramente reduzidas",
-      "en": "Probable *5/*5: slow acetylator (isoniazid, hydralazine, sulfasalazine; higher bladder cancer risk with tobacco); on top of mildly reduced DAO/HNMT"
+      "pt": "*5/*5 provável: acetilador lento (isoniazida, hidralazina, sulfassalazina, sulfametoxazol; mais risco de cancro da bexiga com tabaco); somado à DAO/HNMT ligeiramente reduzidas",
+      "en": "Probable *5/*5: slow acetylator (isoniazid, hydralazine, sulfasalazine, sulfamethoxazole; higher bladder cancer risk with tobacco); on top of mildly reduced DAO/HNMT"
      },
      "estado": "warn",
      "rotulo": {
@@ -448,8 +905,8 @@
     {
      "item": "UGT1A1",
      "texto": {
-      "pt": "*1/*28: portador de Gilbert (metabolizador intermédio; irinotecano, atazanavir)",
-      "en": "*1/*28: Gilbert carrier (intermediate metaboliser; irinotecan, atazanavir)"
+      "pt": "*1/*28 ((TA)7 heterozigoto, confirmado pela imputação): portador de Gilbert (metabolizador intermédio; irinotecano, atazanavir; bilirrubina ligeiramente alta é benigna)",
+      "en": "*1/*28 ((TA)7 heterozygous, confirmed by imputation): Gilbert carrier (intermediate metaboliser; irinotecan, atazanavir; slightly high bilirubin is benign)"
      },
      "estado": "warn",
      "rotulo": {
@@ -458,16 +915,52 @@
      }
     },
     {
-     "item": "CYP3A5",
+     "item": "CYP3A5 · ABCB1",
      "texto": {
-      "pt": "*1/*3 (expressor): exposição por mg à rapamicina possivelmente mais baixa do que em não expressores",
-      "en": "*1/*3 (expresser): rapamycin exposure per mg possibly lower than in non-expressers"
+      "pt": "CYP3A5 *1/*3 (expressor): exposição por mg à rapamicina possivelmente mais baixa do que em não expressores · ABCB1 3435 TT (efeito inconsistente)",
+      "en": "CYP3A5 *1/*3 (expresser): rapamycin exposure per mg possibly lower than in non-expressers · ABCB1 3435 TT (inconsistent effect)"
      },
      "estado": "warn",
      "rotulo": {
       "pt": "Atenção",
       "en": "Caution"
      }
+    }
+   ],
+   "evitar": [
+    {
+     "pt": "Varfarina e acenocumarol (preferir DOAC); se for mesmo preciso um cumarínico: algoritmo genético e cerca de 50% da dose inicial",
+     "en": "Warfarin and acenocoumarol (prefer a DOAC); if a coumarin is truly needed: genetic algorithm and about 50% of the starting dose"
+    },
+    {
+     "pt": "AINE crónico; piroxicam e tenoxicam; meloxicam acima de 50% da dose (CYP2C9; rim com telmisartan + dapagliflozina)",
+     "en": "Chronic NSAIDs; piroxicam and tenoxicam; meloxicam above 50% of the dose (CYP2C9; kidneys with telmisartan + dapagliflozin)"
+    },
+    {
+     "pt": "Isoniazida sem dose guiada pelo NAT2; sulfametoxazol (mais hipersensibilidade nos acetiladores lentos)",
+     "en": "Isoniazid without NAT2-guided dosing; sulfamethoxazole (more hypersensitivity in slow acetylators)"
+    },
+    {
+     "pt": "Toranja, pomelo e laranja amarga; berberina e polifenóis concentrados na janela da rapamicina (3 dias antes a 7 dias depois); fluconazol oral só fora das 2 semanas depois de uma toma",
+     "en": "Grapefruit, pomelo and bitter orange; berberine and concentrated polyphenols in the rapamycin window (3 days before to 7 days after); oral fluconazole only outside the 2 weeks after a dose"
+    }
+   ],
+   "priorizar": [
+    {
+     "pt": "Levar o <b>cartão PGx</b> (ver Protocolo) para o processo clínico e mostrá-lo antes de qualquer fármaco novo",
+     "en": "Put the <b>PGx card</b> (see Protocol) in the medical record and show it before any new drug"
+    },
+    {
+     "pt": "Confirmação: <b>doseamento de sirolimus 24–48 h após a dose</b>, sem polifenóis nem azóis nos dias anteriores, para calibrar a dose em vez de a subir às cegas",
+     "en": "Confirmation: <b>sirolimus level 24–48 h after the dose</b>, with no polyphenols or azoles in the preceding days, to calibrate the dose instead of raising it blindly"
+    },
+    {
+     "pt": "Dor: paracetamol ≤ 2 g/dia como 1.ª linha; AINE só na menor dose e pelo menor tempo",
+     "en": "Pain: paracetamol ≤ 2 g/day as first line; NSAIDs only at the lowest dose for the shortest time"
+    },
+    {
+     "pt": "Se algum dia for preciso: DOAC para anticoagular; tacrolimus 1,5–2× a dose inicial (CYP3A5 expressor)",
+     "en": "If ever needed: a DOAC for anticoagulation; tacrolimus 1.5–2× the starting dose (CYP3A5 expresser)"
     }
    ]
   }

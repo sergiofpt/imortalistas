@@ -125,9 +125,19 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 .lang button:hover{background:var(--nab);color:var(--ink)}.lang button.on{color:var(--ink);font-weight:700}
 .lang .sep{color:var(--na)}
 @media(max-width:640px){html{scroll-padding-top:136px}.topin{gap:4px 8px;padding:6px 12px;flex-wrap:wrap}.tools{order:-1;margin-left:auto;gap:10px}nav.main{flex:1 1 100%;order:2;flex-wrap:wrap;overflow:visible;gap:2px}nav.main a{padding:6px 10px}.lang{font-size:12.5px}.lang button{padding:5px 3px}}
+.ap{margin-top:12px;border:1px solid var(--line);border-left:4px solid var(--na);border-radius:10px;padding:8px 12px 6px}
+.ap h4{margin:0 0 4px;font-size:13.5px;letter-spacing:.02em;text-transform:uppercase}
+.ap ul,.pblk ul{margin:0;padding-left:18px}.ap li,.pblk li{font-size:13.5px;line-height:1.45;margin:2px 0 4px}
+.ap.av{background:var(--vbad);border-left-color:var(--bad)}.ap.av h4{color:var(--badt)}
+.ap.pr{background:var(--vok);border-left-color:var(--ok)}.ap.pr h4{color:var(--okt)}
+.proto{border:2px solid var(--acc);margin-bottom:16px}.proto h2{margin:0 0 6px}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;margin-top:10px}
+.pblk{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--det)}.pblk h4{margin:0 0 6px;font-size:14px;color:var(--acc)}
+.secnav a.pnav{border-color:var(--acc);color:var(--acc);font-weight:700}
+@media(max-width:640px){.pgrid{grid-template-columns:1fr}}
 </style>
 </head>
-<body data-json="data/genetica.json" data-title-pt="Sérgio F · Genética - Apenas maus resultados" data-title-en="Sérgio F · Genetics - Unfavourable results only">
+<body data-json="data/genetica.json" data-proto="data/genetica_protocolo.json" data-title-pt="Sérgio F · Genética - Apenas maus resultados" data-title-en="Sérgio F · Genetics - Unfavourable results only">
 <header class="top"><div class="topin">
 <nav class="main" id="nav">
 <a href="index.html#resumo" data-en="Summary">Resumo</a><a href="index.html#sangue" data-en="Tests">Análises</a><a href="index.html#intolerancias" data-en="Food Intolerances">Intolerâncias Alimentares</a><a href="genetica.html" class="active" aria-current="page" data-en="Bad Genetics">Genética Má</a><a href="genetica-boa.html" data-en="Good Genetics">Genética Boa</a>
@@ -150,10 +160,11 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 <p class="src" id="gSrc"></p>
 <div id="gNotas"></div>
 <nav class="secnav" id="gNav" aria-label="Secções" data-al-en="Sections"></nav>
+<div id="gProto"></div>
 <div class="grid g2" id="gen"><div class="card mut"><span class="l-pt">A carregar data/genetica.json…</span><span class="l-en">Loading data/genetica.json…</span></div></div>
 </section>
 </main>
-<footer><span class="l-pt">Compilado a 02-10-2026 (PT) só com dados genéticos registados. As análises ao sangue estão na página principal: <a href="index.html">Cronologia de Exames de Sangue</a>. Documento de apoio: não substitui o médico. Dados em data/genetica.json (mesmo site); sem pedidos a serviços externos.</span><span class="l-en">Compiled on 02-10-2026 (PT) only from recorded genetic data. Blood tests are on the main page: <a href="index.html">Blood Test Timeline</a>. Supporting document: not a substitute for a doctor. Data in data/genetica.json (same site); no requests to external services.</span></footer>
+<footer><span class="l-pt">Compilado a 02-10-2026 (PT) só com dados genéticos registados. As análises ao sangue estão na página principal: <a href="index.html">Cronologia de Exames de Sangue</a>. Documento de apoio: não substitui o médico. Dados em data/genetica.json e data/genetica_protocolo.json (mesmo site); sem pedidos a serviços externos. Evitar, Priorizar e o Protocolo genético são sugestões que precisam de validação médica.</span><span class="l-en">Compiled on 02-10-2026 (PT) only from recorded genetic data. Blood tests are on the main page: <a href="index.html">Blood Test Timeline</a>. Supporting document: not a substitute for a doctor. Data in data/genetica.json and data/genetica_protocolo.json (same site); no requests to external services. Avoid, Prioritize and the Genetic protocol are suggestions that need medical validation.</span></footer>
 
 <script>
 // ===== páginas de genética: conteúdo no JSON indicado em <body data-json> (PT/EN); mesmas chaves localStorage que index.html =====
@@ -166,18 +177,28 @@ const safe=s=>esc(s).replace(/&lt;(\/?)(b|i|em|strong|br|small|sub|sup)\s*\/?&gt
 const H=o=>safe(T(o));
 const fdate=d=>String(d).split('-').reverse().join('-');
 const ESTADOS=['ok','warn','bad','na','info'];
-let GD=null,GERR=null,scrolled=false;const SRC=document.body.dataset.json||'data/genetica.json';
+let GD=null,GERR=null,PD=null,PERR=null,scrolled=false;const SRC=document.body.dataset.json||'data/genetica.json',PSRC=document.body.dataset.proto||'data/genetica_protocolo.json';
+// blocos Evitar / Priorizar de cada secção (listas PT/EN no JSON: "evitar", "priorizar")
+const lista=a=>`<ul>${(a||[]).map(x=>`<li>${H(x)}</li>`).join('')}</ul>`;
+const ap=s=>(s.evitar&&s.evitar.length?`<div class="ap av"><h4>${L('Evitar','Avoid')}</h4>${lista(s.evitar)}</div>`:'')+(s.priorizar&&s.priorizar.length?`<div class="ap pr"><h4>${L('Priorizar','Prioritize')}</h4>${lista(s.priorizar)}</div>`:'');
+// protocolo genético consolidado (data/genetica_protocolo.json), igual nas duas páginas
+function renderProto(){const el=document.getElementById('gProto');if(!el)return;
+ if(PERR){el.innerHTML=`<div class="card mut">${L('Não foi possível carregar','Could not load')} ${esc(PSRC)} (${esc(PERR.message)}).</div>`;return}
+ if(!PD){el.innerHTML='';return}
+ el.innerHTML=`<article class="card proto" id="protocolo"><h2>${H(PD.titulo)}</h2>${PD.intro?`<p class="small">${H(PD.intro)}</p>`:''}<div class="pgrid">`+
+  (PD.blocos||[]).map(b=>`<div class="pblk"><h4>${H(b.titulo)}</h4>${lista(b.itens)}</div>`).join('')+`</div></article>`}
 function loadJSON(u){return fetch(u,{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error(u+': HTTP '+r.status);return r.json()})}
 function render(){const g=document.getElementById('gen'),meta=document.getElementById('genMeta');
  if(GERR){g.innerHTML=`<div class="card mut">${L('Não foi possível carregar','Could not load')} ${esc(SRC)} (${esc(GERR.message)}). ${L('Se abriu o ficheiro localmente, sirva a pasta com','If you opened the file locally, serve the folder with')} <code>python3 -m http.server</code>.</div>`;return}
  if(!GD)return;const S=GD.seccoes||[],n=S.reduce((a,s)=>a+(s.linhas||[]).length,0);
  document.getElementById('gSrc').innerHTML=H(GD.fonte);
  document.getElementById('gNotas').innerHTML=(GD.notas||[]).map(x=>`<div class="note">${H(x)}</div>`).join('');
- document.getElementById('gNav').innerHTML=S.map(s=>`<a href="#${esc(s.id)}">${H(s.titulo)}</a>`).join('');
+ document.getElementById('gNav').innerHTML=(PD?`<a href="#protocolo" class="pnav">${H(PD.titulo)}</a>`:'')+S.map(s=>`<a href="#${esc(s.id)}">${H(s.titulo)}</a>`).join('');
+ renderProto();
  g.innerHTML=S.map(s=>`<article class="card" id="${esc(s.id)}"><h3 style="margin-top:0">${H(s.titulo)}</h3>${s.intro?`<p class="small mut">${H(s.intro)}</p>`:''}<div class="tw"><table class="gv"><tbody>`+
-  (s.linhas||[]).map(r=>`<tr><td>${H(r.item)}</td><td>${H(r.texto)}</td><td>${r.rotulo?`<span class="pill ${ESTADOS.includes(r.estado)?r.estado:'na'}">${H(r.rotulo)}</span>`:''}</td></tr>`).join('')+`</tbody></table></div></article>`).join('');
+  (s.linhas||[]).map(r=>`<tr><td>${H(r.item)}</td><td>${H(r.texto)}</td><td>${r.rotulo?`<span class="pill ${ESTADOS.includes(r.estado)?r.estado:'na'}">${H(r.rotulo)}</span>`:''}</td></tr>`).join('')+`</tbody></table></div>${ap(s)}</article>`).join('');
  meta.innerHTML=`${S.length} ${L(S.length===1?'secção':'secções',S.length===1?'section':'sections')} · ${n} ${L('linhas','rows')}<br>${L('Atualizado a','Updated on')} ${esc(fdate(GD.atualizado_em||''))} (PT)`;
- if(!scrolled&&location.hash){scrolled=true;const t=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(t)t.scrollIntoView()}}
+ if(!scrolled&&location.hash&&(PD||PERR)){scrolled=true;const t=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(t)t.scrollIntoView()}}
 function applyLang(){const en=LANG==='en';document.documentElement.lang=en?'en':'pt-PT';document.title=en?document.body.dataset.titleEn:document.body.dataset.titlePt;
  document.querySelectorAll('[data-en]').forEach(el=>{if(!el.hasAttribute('data-pt'))el.setAttribute('data-pt',el.textContent);el.textContent=en?el.dataset.en:el.dataset.pt});
  document.querySelectorAll('[data-al-en]').forEach(el=>{if(!el.hasAttribute('data-al-pt'))el.setAttribute('data-al-pt',el.getAttribute('aria-label'));el.setAttribute('aria-label',en?el.dataset.alEn:el.dataset.alPt)});
@@ -185,6 +206,7 @@ function applyLang(){const en=LANG==='en';document.documentElement.lang=en?'en':
 document.querySelectorAll('#lang button').forEach(b=>b.addEventListener('click',()=>{if(LANG===b.dataset.l)return;LANG=b.dataset.l;try{localStorage.setItem('lang',LANG)}catch(e){}applyLang()}));
 applyLang();
 loadJSON(SRC).then(d=>{GD=d;render()}).catch(e=>{console.warn(e);GERR=e;render()});
+loadJSON(PSRC).then(d=>{PD=d;render()}).catch(e=>{console.warn(e);PERR=e;render()});
 
 // ===== tema (escuro/claro): escolha guardada em localStorage 'theme'; sem escolha, segue o sistema =====
 const mqD=window.matchMedia?matchMedia('(prefers-color-scheme: dark)'):null;

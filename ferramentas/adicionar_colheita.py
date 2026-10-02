@@ -18,6 +18,8 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 F_SANGUE = os.path.join(RAIZ, 'data', 'sangue.json')
 # páginas de genética (JSON editados à mão; ver README): Genética Má e Genética Boa
 F_GENETICA = {'genetica.html': os.path.join(RAIZ, 'data', 'genetica.json'), 'genetica-boa.html': os.path.join(RAIZ, 'data', 'genetica_boa.json')}
+# protocolo genético consolidado (mostrado no topo das duas páginas de genética)
+F_PROTOCOLO = os.path.join(RAIZ, 'data', 'genetica_protocolo.json')
 # privacidade: nunca publicar a medida da balança nem nada que a permita deduzir
 # (os termos são montados por partes para que o próprio ficheiro não os contenha literalmente)
 _T = ['ger' + 'mano', 'sou' + 'sa', 'cu' + 'f', 'coim' + 'bra', 'pe' + 'so', 'i' + 'mc', 'b' + 'mi', 'f' + 'mi', 'l' + 'mi', '19' + '99', 'lis' + 'boa', 'lis' + 'bon', 'chen' + 'nai']
@@ -134,6 +136,33 @@ def verificar_genetica():
         if not os.path.exists(os.path.join(RAIZ, pag)): ok = False; print(f'ERRO: falta {pag}')
         if not os.path.exists(f): ok = False; print(f'ERRO: falta data/{os.path.basename(f)} ({pag} fica vazia)'); continue
         ok = verificar_genetica_json(f) and ok
+    if not os.path.exists(F_PROTOCOLO): ok = False; print('ERRO: falta data/genetica_protocolo.json (o Protocolo genético fica vazio)')
+    else: ok = verificar_protocolo_json(F_PROTOCOLO) and ok
+    return ok
+
+def _bi_check(o, onde, err, obrig=True):
+    if o is None or o == '':
+        if obrig: err(f'{onde}: texto em falta')
+        return
+    if isinstance(o, str): vals = [o]
+    elif isinstance(o, dict) and o.get('pt') and o.get('en'): vals = [o['pt'], o['en']]
+    else: err(f'{onde}: precisa de "pt" e "en" (ou um texto igual nas duas línguas)'); return
+    for v in vals:
+        if re.search(r'<[a-z/!]', TAGS_OK.sub('', v), re.I): err(f'{onde}: HTML não permitido em {v[:60]!r} (só b, i, em, strong, br, small, sub, sup)')
+
+def verificar_protocolo_json(F):
+    """data/genetica_protocolo.json: titulo, intro opcional, blocos[{titulo, itens[]}] com PT+EN e só HTML simples."""
+    ok = True; d = ler(F); nome = os.path.basename(F)
+    def err(m):
+        nonlocal ok; ok = False; print(f'ERRO {nome}: ' + m)
+    _bi_check(d.get('titulo'), 'titulo', err); _bi_check(d.get('intro'), 'intro', err, False)
+    if not d.get('blocos'): err('sem "blocos"')
+    n = 0
+    for k, b in enumerate(d.get('blocos', [])):
+        _bi_check(b.get('titulo'), f'blocos[{k}].titulo', err)
+        if not b.get('itens'): err(f'blocos[{k}]: sem "itens"')
+        for j, x in enumerate(b.get('itens', [])): n += 1; _bi_check(x, f'blocos[{k}].itens[{j}]', err)
+    print(f'{nome}: {len(d.get("blocos", []))} blocos, {n} itens')
     return ok
 
 def verificar_genetica_json(F):
@@ -163,6 +192,10 @@ def verificar_genetica_json(F):
             n += 1; bi(r.get('item'), f'{sid}.linhas[{k}].item'); bi(r.get('texto'), f'{sid}.linhas[{k}].texto')
             if r.get('rotulo') is not None: bi(r.get('rotulo'), f'{sid}.linhas[{k}].rotulo')
             if r.get('estado', 'na') not in ('ok', 'warn', 'bad', 'na', 'info'): err(f'{sid}.linhas[{k}]: estado {r.get("estado")!r} (ok, warn, bad, na, info)')
+        # blocos Evitar / Priorizar (listas de textos PT/EN; obrigatórios em todas as secções)
+        for campo in ('evitar', 'priorizar'):
+            if not s.get(campo): err(f'{sid}: falta "{campo}" (lista de textos PT/EN)')
+            for k, x in enumerate(s.get(campo) or []): bi(x, f'{sid}.{campo}[{k}]')
     print(f'{nome}: {len(ids)} secções, {n} linhas')
     return ok
 

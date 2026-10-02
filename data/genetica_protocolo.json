@@ -1,0 +1,226 @@
+{
+ "_leia_me": "Protocolo genético consolidado, mostrado no topo de genetica.html e genetica-boa.html (genetica.js). blocos[].itens: textos PT/EN; só HTML simples. Os valores das análises prevalecem sobre doses só genéticas.",
+ "atualizado_em": "2026-10-02",
+ "titulo": {
+  "pt": "Protocolo genético",
+  "en": "Genetic protocol"
+ },
+ "intro": {
+  "pt": "Junta o Evitar/Priorizar das duas páginas num só plano, sem contradições entre categorias. Os <b>valores das análises prevalecem</b> sobre doses baseadas só na genética. <b>Tudo é sugestão (não aplicada) e precisa de validação médica.</b>",
+  "en": "Brings the Avoid/Prioritize items of both pages into a single plan, without contradictions between categories. <b>Lab values take precedence</b> over doses based on genetics alone. <b>Everything is a suggestion (not applied) and needs medical validation.</b>"
+ },
+ "blocos": [
+  {
+   "titulo": {
+    "pt": "Cartão PGx (guardar no processo clínico)",
+    "en": "PGx card (keep in the medical record)"
+   },
+   "itens": [
+    {
+     "pt": "<b>Anticoagulação</b> · CYP2C9 *1/*3 + VKORC1 −1639 TT + CYP4F2 CC: preferir DOAC; cumarínico só com algoritmo genético e ~50% da dose inicial",
+     "en": "<b>Anticoagulation</b> · CYP2C9 *1/*3 + VKORC1 −1639 TT + CYP4F2 CC: prefer a DOAC; coumarins only with a genetic algorithm and ~50% of the starting dose"
+    },
+    {
+     "pt": "<b>AINEs</b> · CYP2C9 *1/*3: menor dose e curso curto; meloxicam 50%; piroxicam e tenoxicam: usar alternativa; 1.ª linha paracetamol ≤ 2 g/dia",
+     "en": "<b>NSAIDs</b> · CYP2C9 *1/*3: lowest dose and short course; meloxicam 50%; piroxicam and tenoxicam: use an alternative; first line paracetamol ≤ 2 g/day"
+    },
+    {
+     "pt": "<b>NAT2 *5/*5 (lento)</b> · isoniazida guiada pelo NAT2 com vigilância hepática; cautela com hidralazina, sulfassalazina e sulfametoxazol",
+     "en": "<b>NAT2 *5/*5 (slow)</b> · NAT2-guided isoniazid with liver monitoring; caution with hydralazine, sulfasalazine and sulfamethoxazole"
+    },
+    {
+     "pt": "<b>UGT1A1 *1/*28 (Gilbert)</b> · irinotecano e atazanavir; bilirrubina indireta ligeiramente alta é benigna",
+     "en": "<b>UGT1A1 *1/*28 (Gilbert)</b> · irinotecan and atazanavir; slightly high indirect bilirubin is benign"
+    },
+    {
+     "pt": "<b>CYP3A5 *1/*3 (expressor)</b> · sirolimus e tacrolimus com menos exposição por mg (tacrolimus 1,5–2× a dose inicial); calibrar por doseamento",
+     "en": "<b>CYP3A5 *1/*3 (expresser)</b> · sirolimus and tacrolimus with lower exposure per mg (tacrolimus 1.5–2× the starting dose); calibrate by drug level"
+    },
+    {
+     "pt": "<b>CYP2D6 *1/*2 provável</b> · codeína, tramadol e ondansetrom em dose padrão só depois de um teste clínico com CNV",
+     "en": "<b>Probable CYP2D6 *1/*2</b> · codeine, tramadol and ondansetron at standard dose only after a clinical test including CNV"
+    },
+    {
+     "pt": "<b>HLA</b> · B*57:01, B*35:01 e DRB1*15:01 negativos; B*58:01 e A*31:01 não portadores prováveis: tipar B*58:01 antes de alopurinol",
+     "en": "<b>HLA</b> · B*57:01, B*35:01 and DRB1*15:01 negative; B*58:01 and A*31:01 probable non-carriers: type B*58:01 before allopurinol"
+    },
+    {
+     "pt": "<b>Normais</b> · SLCO1B1 *1/*14 (estatinas na dose desejada), CYP2C19 *1/*1, CYP3A4 *1/*1, CYP2C8*3 ausente, DPYD, TPMT, NUDT15, G6PD, RYR1/CACNA1S, BCHE",
+     "en": "<b>Normal</b> · SLCO1B1 *1/*14 (statins at the desired dose), CYP2C19 *1/*1, CYP3A4 *1/*1, CYP2C8*3 absent, DPYD, TPMT, NUDT15, G6PD, RYR1/CACNA1S, BCHE"
+    }
+   ]
+  },
+  {
+   "titulo": {
+    "pt": "Análises e exames de confirmação",
+    "en": "Confirmation tests and screening"
+   },
+   "itens": [
+    {
+     "pt": "<b>AAT sérica + fenótipo Pi</b> (confirmar o Pi*MZ)",
+     "en": "<b>Serum AAT + Pi phenotype</b> (confirm Pi*MZ)"
+    },
+    {
+     "pt": "<b>Doseamento de sirolimus 24–48 h após a dose</b>, sem polifenóis nem azóis nos dias anteriores",
+     "en": "<b>Sirolimus level 24–48 h after the dose</b>, with no polyphenols or azoles in the preceding days"
+    },
+    {
+     "pt": "<b>Lp(a)</b> 1× (PGS genómico P75 contra SNPs principais sem risco)",
+     "en": "<b>Lp(a)</b> once (genomic PGS P75 versus main SNPs without risk)"
+    },
+    {
+     "pt": "<b>Sequenciação do FLG</b> (nulo possível; dermatite seborreica e pele seca com a isotretinoína)",
+     "en": "<b>FLG sequencing</b> (possible null; seborrhoeic dermatitis and dry skin on isotretinoin)"
+    },
+    {
+     "pt": "<b>Dermatoscopia anual da pele toda</b> + autoexame mensal (melanoma P89)",
+     "en": "<b>Annual full-skin dermatoscopy</b> + monthly self-check (melanoma P89)"
+    },
+    {
+     "pt": "<b>Rastreio colorretal precoce</b> (FIT ou colonoscopia, com o médico)",
+     "en": "<b>Early colorectal screening</b> (FIT or colonoscopy, with the doctor)"
+    },
+    {
+     "pt": "Elastografia hepática + ALT/AST/GGT (PNPLA3 + MBOAT7 + Pi*MZ); pesquisa de H. pylori (PSCA TT + grupo O)",
+     "en": "Liver elastography + ALT/AST/GGT (PNPLA3 + MBOAT7 + Pi*MZ); H. pylori testing (PSCA TT + group O)"
+    },
+    {
+     "pt": "Homocisteína em jejum (mesmo laboratório), folato eritrocitário, MMA, holo-TC; cobre, zinco e ceruloplasmina; ferritina e saturação da transferrina",
+     "en": "Fasting homocysteine (same lab), red-cell folate, MMA, holo-TC; copper, zinc and caeruloplasmin; ferritin and transferrin saturation"
+    },
+    {
+     "pt": "Tipagem HLA-B*58:01 antes de alopurinol; CYP2D6 com CNV antes de fármacos CYP2D6 de margem estreita; tipagem ABO",
+     "en": "HLA-B*58:01 typing before allopurinol; CYP2D6 with CNV before narrow-margin CYP2D6 drugs; ABO typing"
+    },
+    {
+     "pt": "Opcional: GSTM1/GSTT1; repetir o CAC por volta dos 35–40 anos",
+     "en": "Optional: GSTM1/GSTT1; repeat CAC at around 35–40"
+    }
+   ]
+  },
+  {
+   "titulo": {
+    "pt": "Suplementos",
+    "en": "Supplements"
+   },
+   "itens": [
+    {
+     "pt": "<b>Manter</b> · vitamina D3 <b>10 000 UI</b> + K2 MK-7 240 µg (a 25(OH)D está em 37 com esta dose: não baixar para 4000) · 5-MTHF 800 µg · B12 1000 µg · creatina 5 g · colagénio 20 g · NAC 1200–1800 mg longe do treino · sulforafano · magnésio · taurina · lítio 5 mg",
+     "en": "<b>Keep</b> · vitamin D3 <b>10,000 IU</b> + K2 MK-7 240 µg (25(OH)D is at 37 on this dose: do not lower to 4000) · 5-MTHF 800 µg · B12 1000 µg · creatine 5 g · collagen 20 g · NAC 1200–1800 mg away from training · sulforaphane · magnesium · taurine · lithium 5 mg"
+    },
+    {
+     "pt": "<b>Ajustar</b> · ómega-3 <b>3,2–4 g/dia de EPA+DHA</b>, com mais DHA, até índice 8% (agora 5,4%) · TMG 3 g/dia (não passar) · glicina 5 g/dia · zinco total 20–25 mg + cobre 1,5–2 mg · B6 ≤ 5 mg · melatonina 0,3–1 mg · vitamina C só entre refeições · Ca-AKG às refeições · licopeno ≤ 10 mg",
+     "en": "<b>Adjust</b> · omega-3 <b>3.2–4 g/day EPA+DHA</b>, with more DHA, up to an 8% index (now 5.4%) · TMG 3 g/day (do not exceed) · glycine 5 g/day · total zinc 20–25 mg + copper 1.5–2 mg · B6 ≤ 5 mg · melatonin 0.3–1 mg · vitamin C only between meals · Ca-AKG with meals · lycopene ≤ 10 mg"
+    },
+    {
+     "pt": "<b>Acrescentar</b> · colina 250–500 mg/dia (citicolina ou fosfatidilcolina) · fibra <b>sem máximo</b>: psyllium 15–20 g + PHGG 10 g + ≥ 50 g da comida (fármacos ≥ 1 h antes ou 2–4 h depois)",
+     "en": "<b>Add</b> · choline 250–500 mg/day (citicoline or phosphatidylcholine) · fibre <b>with no maximum</b>: psyllium 15–20 g + PHGG 10 g + ≥ 50 g from food (drugs ≥ 1 h before or 2–4 h after)"
+    },
+    {
+     "pt": "<b>Pausar enquanto a ALT estiver alta</b> · curcumina, luteolina, apigenina e quercetina concentradas. Fisetina + quercetina só 1×/mês como pulso senolítico, fora da janela da rapamicina e da semana do FOXO4-DRI, com a ALT normal",
+     "en": "<b>Pause while ALT is high</b> · concentrated curcumin, luteolin, apigenin and quercetin. Fisetin + quercetin only once a month as a senolytic pulse, outside the rapamycin window and the FOXO4-DRI week, with normal ALT"
+    },
+    {
+     "pt": "<b>Não tomar</b> · ácido fólico, ferro, retinol/óleo de fígado de bacalhau, SAMe, EGCG, kava, ashwagandha, niacina em dose alta, levedura de arroz vermelho, berberina, BCAA isolados, potássio em comprimido, CoQ10 sem indicação",
+     "en": "<b>Do not take</b> · folic acid, iron, retinol/cod liver oil, SAMe, EGCG, kava, ashwagandha, high-dose niacin, red yeast rice, berberine, isolated BCAAs, potassium tablets, CoQ10 without an indication"
+    }
+   ]
+  },
+  {
+   "titulo": {
+    "pt": "Fármacos e péptidos",
+    "en": "Drugs and peptides"
+   },
+   "itens": [
+    {
+     "pt": "<b>Compatíveis com a PGx</b> · rapamicina (com doseamento), retatrutide, isotretinoína (menor dose eficaz + protetor solar diário), imeglimina, acarbose, dapagliflozina, ácido bempedoico, ezetimiba, pitavastatina, telmisartan, tadalafil, naltrexona em dose baixa",
+     "en": "<b>PGx-compatible</b> · rapamycin (with drug level), retatrutide, isotretinoin (lowest effective dose + daily sunscreen), imeglimin, acarbose, dapagliflozin, bempedoic acid, ezetimibe, pitavastatin, telmisartan, tadalafil, low-dose naltrexone"
+    },
+    {
+     "pt": "<b>LDL/ApoB mais baixos</b> · discutir inclisiran ou anti-PCSK9; obicetrapib quando aprovado",
+     "en": "<b>Lower LDL/ApoB</b> · discuss inclisiran or an anti-PCSK9; obicetrapib once approved"
+    },
+    {
+     "pt": "<b>Pioglitazona</b> · só como substituta da imeglimina e/ou de parte da acarbose, nunca em cima delas",
+     "en": "<b>Pioglitazone</b> · only as a substitute for imeglimin and/or part of acarbose, never on top of them"
+    },
+    {
+     "pt": "<b>Evitar</b> · epitalon, TA-65 e astrágalo (TERT + melanoma) · Melanotan II, bremelanotide · secretagogos de GH, IGF-1/PEG-MGF, folistatina · BPC-157, TB-500 · 5-amino-1MQ (pausa) · metformina (redundante) · aspirina sem indicação · AINE crónico",
+     "en": "<b>Avoid</b> · epitalon, TA-65 and astragalus (TERT + melanoma) · Melanotan II, bremelanotide · GH secretagogues, IGF-1/PEG-MGF, follistatin · BPC-157, TB-500 · 5-amino-1MQ (paused) · metformin (redundant) · aspirin without an indication · chronic NSAIDs"
+    },
+    {
+     "pt": "<b>Janela da rapamicina</b> (3 dias antes a 7 dias depois) · sem toranja, polifenóis concentrados nem berberina; fluconazol oral só fora das 2 semanas depois de uma toma (preferir antifúngicos tópicos); senolíticos e FOXO4-DRI sem sobreposição",
+     "en": "<b>Rapamycin window</b> (3 days before to 7 days after) · no grapefruit, concentrated polyphenols or berberine; oral fluconazole only outside the 2 weeks after a dose (prefer topical antifungals); senolytics and FOXO4-DRI never overlapping"
+    }
+   ]
+  },
+  {
+   "titulo": {
+    "pt": "Dieta",
+    "en": "Diet"
+   },
+   "itens": [
+    {
+     "pt": "Mediterrânica de base vegetal integral; hidratos 35–40% da energia, ≥ 80% de baixo índice glicémico, sobretudo de manhã; frutose adicionada ≈ 0",
+     "en": "Whole-food plant-based Mediterranean; carbohydrates 35–40% of energy, ≥ 80% low glycaemic index, mostly in the morning; added fructose ≈ 0"
+    },
+    {
+     "pt": "Fibra <b>quanto mais melhor</b>; gordura saturada < 7% e trans 0; azeite virgem extra 40–50 mL/dia; peixe gordo pequeno 3×/semana",
+     "en": "Fibre <b>the more the better</b>; saturated fat < 7% and trans 0; extra-virgin olive oil 40–50 mL/day; small oily fish 3×/week"
+    },
+    {
+     "pt": "Crucíferas e leguminosas 1–2 porções/dia cada; folhas verdes diárias; frutos secos 30–40 g/dia",
+     "en": "Cruciferous vegetables and legumes 1–2 servings/day each; leafy greens daily; nuts 30–40 g/day"
+    },
+    {
+     "pt": "Sal < 5 g com potássio da comida (3,5–4,7 g); carne vermelha e vísceras raras; nada de carne processada ou carbonizada",
+     "en": "Salt < 5 g with potassium from food (3.5–4.7 g); red meat and offal rarely; no processed or charred meat"
+    },
+    {
+     "pt": "Café filtrado ≤ 200 mg de cafeína só até às 12h; álcool zero; sem toranja; janela alimentar de 10–12 h e última refeição ≥ 3 h antes de deitar",
+     "en": "Filtered coffee ≤ 200 mg caffeine only until 12:00; zero alcohol; no grapefruit; 10–12 h eating window and last meal ≥ 3 h before bed"
+    }
+   ]
+  },
+  {
+   "titulo": {
+    "pt": "Exercício e estilo de vida",
+    "en": "Exercise and lifestyle"
+   },
+   "itens": [
+    {
+     "pt": "Aeróbio zona 2 + intervalos (PGC-1α, NOS3, TCF7L2) e força 3×/semana com proteína e creatina (fragilidade P82)",
+     "en": "Zone 2 + interval aerobic training (PGC-1α, NOS3, TCF7L2) and strength 3×/week with protein and creatine (frailty P82)"
+    },
+    {
+     "pt": "Protetor solar diário e emolientes com ceramidas; sem solários",
+     "en": "Daily sunscreen and ceramide emollients; no tanning beds"
+    },
+    {
+     "pt": "Sem tabaco nem vaping (Pi*MZ, GSTM1); exposição moderada ao frio (UCP1); sono regular",
+     "en": "No tobacco or vaping (Pi*MZ, GSTM1); moderate cold exposure (UCP1); regular sleep"
+    }
+   ]
+  },
+  {
+   "titulo": {
+    "pt": "Regras de prioridade",
+    "en": "Priority rules"
+   },
+   "itens": [
+    {
+     "pt": "Os valores das análises prevalecem sobre doses baseadas só na genética",
+     "en": "Lab values take precedence over doses based on genetics alone"
+    },
+    {
+     "pt": "LDL e ApoB quanto mais baixos melhor, sem limite inferior · fibra sem máximo · ferritina sempre abaixo de 100 · estrôncio baixo é aceitável",
+     "en": "LDL and ApoB the lower the better, with no lower limit · fibre with no maximum · ferritin always below 100 · low strontium is acceptable"
+    },
+    {
+     "pt": "Tudo é sugestão (não aplicada) e precisa de validação médica",
+     "en": "Everything is a suggestion (not applied) and needs medical validation"
+    }
+   ]
+  }
+ ]
+}
