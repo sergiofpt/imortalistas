@@ -30,6 +30,25 @@
     "DPWG",
     "FDA"
    ]
+  },
+  {
+   "id": "intolerancias-alimentares-626",
+   "titulo": {
+    "pt": "Intolerâncias alimentares genéticas (626 alimentos)",
+    "en": "Genetic food intolerances (626 foods)"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/intolerancias-alimentares-626-alimentos.pdf",
+   "descricao": {
+    "pt": "Só os alimentos com predisposição genética: 0 a evitar, 140 a limitar e 162 a vigiar.",
+    "en": "Only the foods with a genetic predisposition: 0 to avoid, 140 to limit and 162 to watch."
+   },
+   "paginas": 36,
+   "tamanho_kb": 223,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
   }
  ]
 }
