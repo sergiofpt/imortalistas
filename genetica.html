@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="data:,">
+<title>Sérgio F · Genética</title>
+<meta name="color-scheme" content="light dark">
+<script>(function(){var d=document.documentElement,t=null;try{if(localStorage.getItem('lang')==='en')d.lang='en';t=localStorage.getItem('theme')}catch(e){}if(t!=='dark'&&t!=='light')t=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';d.setAttribute('data-theme',t)})()</script>
+<style>
+:root{--bg:#f5f7fa;--card:#fff;--ink:#14202e;--mut:#5b6b7d;--line:#e3e8ef;--acc:#1f5eff;--ok:#12a150;--okb:#e6f6ec;--warn:#d98a00;--warnb:#fff4dc;--bad:#d93636;--badb:#fde9e9;--na:#8a97a8;--nab:#eef1f5;--r:14px;--head:rgba(255,255,255,.94);--th:#fafbfd;--hov:#fafcff;--okt:#0b7a3b;--warnt:#9a5f00;--badt:#b02020;--nat:#56657a;--infob:#e8efff;--infot:#1f45b5;--noteb:#f0f5ff;--notel:#d7e3ff;--vok:#eefaf2;--vwarn:#fff6e3;--vwarnt:#8f5800;--vbad:#fdeeee;--vna:#3b4a5c;--open:#f3f7ff;--det:#fbfcfe;--grid:#eef1f5;--chok:#e6f6ec;--actfg:#fff;--hero1:#0f2747;--hero2:#1f5eff;color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:78px}
+body{margin:0;font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+header.top{position:sticky;top:0;z-index:50;background:var(--head);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
+.topin{max-width:1240px;margin:0 auto;display:flex;align-items:center;gap:18px;padding:10px 20px}
+
+
+nav.main{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0}
+nav.main::-webkit-scrollbar{display:none}
+nav.main a{white-space:nowrap;text-decoration:none;color:var(--mut);font-size:13.5px;padding:7px 11px;border-radius:999px;font-weight:500}
+nav.main a:hover{background:var(--nab);color:var(--ink)}
+nav.main a.active{background:var(--ink);color:var(--actfg)}
+main{max-width:1240px;margin:0 auto;padding:22px 20px 60px}
+section{margin:0 0 34px}
+.hero{background:linear-gradient(135deg,var(--hero1),var(--hero2));color:#fff;border-radius:20px;padding:28px 30px;margin-bottom:26px;display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:flex-end}
+.hero h1{margin:0 0 6px;font-size:28px;letter-spacing:-.3px}
+.hero p{margin:0;opacity:.85}
+.hero .meta{font-size:13px;opacity:.85;text-align:right}
+h2{font-size:22px;margin:0 0 4px;letter-spacing:-.2px}
+h3{font-size:16px;margin:18px 0 8px}
+.src{font-size:12.5px;color:var(--mut);margin:0 0 14px}
+.src b{color:var(--ink);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px}
+.grid{display:grid;gap:14px}.grid>*{min-width:0}
+.g4{grid-template-columns:repeat(4,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
+@media(max-width:1000px){.g4{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.filters input[type=search]{min-width:0;flex:1 1 100%}.g4,.g3,.g2{grid-template-columns:1fr}.hero h1{font-size:22px}.hero .meta{text-align:left}}
+
+
+
+
+
+
+
+.pill{display:inline-block;font-size:11.5px;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap}
+.pill.ok{background:var(--okb);color:var(--okt)}.pill.warn{background:var(--warnb);color:var(--warnt)}.pill.bad{background:var(--badb);color:var(--badt)}.pill.na{background:var(--nab);color:var(--nat)}.pill.info{background:var(--infob);color:var(--infot)}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{text-align:left;font-size:12px;text-transform:uppercase;letter-spacing:.3px;color:var(--mut);font-weight:700;padding:9px 10px;border-bottom:2px solid var(--line);background:var(--th);position:sticky;top:0}
+td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:hover td{background:var(--hov)}
+.tw{overflow:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--card)}
+.tw.tall{max-height:640px}
+.num{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.mut{color:var(--mut)}
+.small{font-size:12.5px}
+
+
+
+
+
+.filters{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 12px}
+.filters input,.filters select{font:inherit;font-size:14px;padding:8px 11px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink)}
+.filters input[type=search]{min-width:220px}
+.filters label{font-size:13.5px;color:var(--mut);display:flex;gap:6px;align-items:center;cursor:pointer}
+.legend{display:flex;flex-wrap:wrap;gap:8px;font-size:12.5px;color:var(--mut);align-items:center}
+.bar{display:flex;height:12px;border-radius:999px;overflow:hidden;margin:8px 0 6px;background:var(--nab)}
+.bar span{display:block;height:100%}
+
+
+
+
+
+
+
+.note{background:var(--noteb);border:1px solid var(--notel);border-radius:12px;padding:11px 14px;font-size:13.5px;margin:0 0 14px}
+
+
+th
+
+
+
+
+
+footer{max-width:1240px;margin:0 auto;padding:0 20px 40px;color:var(--mut);font-size:12.5px}
+.gv td:first-child{font-weight:600;white-space:nowrap}
+.ctrl{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 10px;padding:10px 12px;background:var(--card);border:1px solid var(--line);border-radius:12px}
+.ctrl b{font-size:13px}
+.ctrl select{font:inherit;font-size:14px;padding:7px 10px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);max-width:100%}
+.ctrl label{font-size:13.5px;color:var(--mut);display:flex;gap:6px;align-items:center;cursor:pointer}
+.await{display:inline-flex;gap:6px;align-items:center;background:var(--nab);color:var(--vna);border-radius:999px;padding:3px 10px;font-size:12.5px;font-weight:600}
+th.dcol,td.v,td.dl{text-align:right}
+td.v{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+td.v.ok{background:var(--vok);color:var(--okt)}td.v.warn{background:var(--vwarn);color:var(--vwarnt)}td.v.bad{background:var(--vbad);color:var(--badt)}td.v.na{color:var(--vna)}
+td.v.miss{color:var(--na);font-weight:500}
+th.dcol small{display:block;font-weight:500;text-transform:none;letter-spacing:0;color:var(--mut)}
+th.dcol.a{color:var(--ink)}
+.tr{font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}.tr small{font-weight:500;margin-left:4px}
+.tr.good{color:var(--ok)}.tr.bad{color:var(--bad)}.tr.neu{color:var(--mut)}
+tr.mk{cursor:pointer}tr.mk td:first-child b:after{content:" ▸";color:var(--na);font-weight:400}
+tr.mk.open td:first-child b:after{content:" ▾"}
+tr.mk.open td{background:var(--open)}
+tr.det>td{background:var(--det);padding:12px 14px}
+tr.det:hover td{background:var(--det)}
+.det .in{position:sticky;left:0;max-width:min(980px,calc(100vw - 72px))}
+.det .chartwrap{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-start}
+.det svg{width:100%;max-width:560px;height:auto;background:var(--card);border:1px solid var(--line);border-radius:10px;flex:1 1 320px}
+.det table{font-size:12.5px;flex:1 1 280px;width:auto}
+.det table td,.det table th{padding:5px 8px;position:static}
+.det .msg{margin:8px 0 0}
+@media(max-width:640px){.ctrl select{flex:1 1 100%}}
+@media print{header.top{position:static}.tw.tall{max-height:none}}
+html[data-theme="dark"]{color-scheme:dark;--bg:#0e141d;--card:#161e2a;--ink:#e5eaf1;--mut:#9aa7b8;--line:#2a3545;--acc:#7a9dff;--ok:#34c47a;--okb:#11321f;--warn:#e8a63f;--warnb:#36290f;--bad:#f06464;--badb:#3b1a1d;--na:#7f8c9e;--nab:#222b39;
+--head:rgba(16,22,32,.92);--th:#1b2431;--hov:#1b2432;--okt:#63d99a;--warnt:#f2bf6b;--badt:#ff8f8f;--nat:#aeb9c8;--infob:#1d2a4a;--infot:#a3bcff;--noteb:#152038;--notel:#2a3b63;--vok:#13301f;--vwarn:#33280f;--vwarnt:#f2bf6b;--vbad:#3a1b1e;--vna:#c5cedb;--open:#1a2640;--det:#121923;--grid:#263142;--chok:#143524;--actfg:#0e141d;--hero1:#0b1a31;--hero2:#1c3f9e}
+html[data-theme="dark"] .filters input::placeholder{color:#7f8c9e}
+main a{color:var(--acc)}
+.secnav{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 16px}.secnav a{padding:5px 11px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);text-decoration:none;font-size:13px}.secnav a:hover{background:var(--nab)}
+footer a{color:var(--acc)}
+html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
+.tools{display:flex;align-items:center;gap:14px;margin-left:auto;flex:0 0 auto}
+.lang{display:flex;align-items:center;gap:4px;font-size:13.5px;white-space:nowrap}
+.lang button{font:inherit;border:0;background:none;color:var(--mut);cursor:pointer;padding:6px 6px;border-radius:8px}
+.lang button:hover{background:var(--nab);color:var(--ink)}.lang button.on{color:var(--ink);font-weight:700}
+.lang .sep{color:var(--na)}
+@media(max-width:640px){html{scroll-padding-top:136px}.topin{gap:4px 8px;padding:6px 12px;flex-wrap:wrap}.tools{order:-1;margin-left:auto;gap:10px}nav.main{flex:1 1 100%;order:2;flex-wrap:wrap;overflow:visible;gap:2px}nav.main a{padding:6px 10px}.lang{font-size:12.5px}.lang button{padding:5px 3px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="topin">
+<nav class="main" id="nav">
+<a href="index.html#resumo" data-en="Summary">Resumo</a><a href="index.html#sangue" data-en="Tests">Análises</a><a href="index.html#intolerancias" data-en="Food Intolerances">Intolerâncias Alimentares</a><a href="genetica.html" class="active" aria-current="page" data-en="Genetics">Genética</a>
+</nav>
+<div class="tools">
+<div class="lang" id="lang" role="group" aria-label="Idioma / Language"><button type="button" data-l="pt" lang="pt-PT">Português</button><span class="sep" aria-hidden="true">|</span><button type="button" data-l="en" lang="en">English</button></div>
+<div class="lang" id="theme" role="group" aria-label="Tema" data-al-en="Theme"><button type="button" data-t="dark" data-en="Dark">Escuro</button><span class="sep" aria-hidden="true">|</span><button type="button" data-t="light" data-en="Light">Claro</button></div>
+</div>
+</div></header>
+<main>
+
+<div class="hero">
+<div><h1><span class="l-pt">Genética</span><span class="l-en">Genetics</span></h1>
+<p>Sérgio F · <span class="l-pt">27 anos</span><span class="l-en">27 years</span> · M</p></div>
+<div class="meta" id="genMeta"><span class="l-pt">Genética</span><span class="l-en">Genetics</span></div>
+</div>
+
+<!-- conteúdo gerado a partir de data/genetica.json (genetica.js) -->
+<section id="genetica">
+<p class="src" id="gSrc"></p>
+<div id="gNotas"></div>
+<nav class="secnav" id="gNav" aria-label="Secções" data-al-en="Sections"></nav>
+<div class="grid g2" id="gen"><div class="card mut"><span class="l-pt">A carregar data/genetica.json…</span><span class="l-en">Loading data/genetica.json…</span></div></div>
+</section>
+</main>
+<footer><span class="l-pt">Compilado a 02-10-2026 (PT) só com dados genéticos registados. As análises ao sangue estão na página principal: <a href="index.html">Cronologia de Exames de Sangue</a>. Documento de apoio: não substitui o médico. Dados em data/genetica.json (mesmo site); sem pedidos a serviços externos.</span><span class="l-en">Compiled on 02-10-2026 (PT) only from recorded genetic data. Blood tests are on the main page: <a href="index.html">Blood Test Timeline</a>. Supporting document: not a substitute for a doctor. Data in data/genetica.json (same site); no requests to external services.</span></footer>
+
+<script>
+// ===== página Genética: conteúdo em data/genetica.json (PT/EN); mesmas chaves localStorage que index.html =====
+let LANG='pt';try{if(localStorage.getItem('lang')==='en')LANG='en'}catch(e){}
+const L=(p,e)=>LANG==='en'?e:p;
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+// texto bilingue: "texto" (igual nas 2 línguas) ou {"pt":"…","en":"…"}; só HTML simples (b, i, em, strong, br, small, sub, sup)
+const T=o=>o==null?'':typeof o==='string'?o:(LANG==='en'&&o.en?o.en:(o.pt||''));
+const safe=s=>esc(s).replace(/&lt;(\/?)(b|i|em|strong|br|small|sub|sup)\s*\/?&gt;/g,'<$1$2>');
+const H=o=>safe(T(o));
+const fdate=d=>String(d).split('-').reverse().join('-');
+const ESTADOS=['ok','warn','bad','na','info'];
+let GD=null,GERR=null,scrolled=false;
+function loadJSON(u){return fetch(u,{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error(u+': HTTP '+r.status);return r.json()})}
+function render(){const g=document.getElementById('gen'),meta=document.getElementById('genMeta');
+ if(GERR){g.innerHTML=`<div class="card mut">${L('Não foi possível carregar','Could not load')} data/genetica.json (${esc(GERR.message)}). ${L('Se abriu o ficheiro localmente, sirva a pasta com','If you opened the file locally, serve the folder with')} <code>python3 -m http.server</code>.</div>`;return}
+ if(!GD)return;const S=GD.seccoes||[],n=S.reduce((a,s)=>a+(s.linhas||[]).length,0);
+ document.getElementById('gSrc').innerHTML=H(GD.fonte);
+ document.getElementById('gNotas').innerHTML=(GD.notas||[]).map(x=>`<div class="note">${H(x)}</div>`).join('');
+ document.getElementById('gNav').innerHTML=S.map(s=>`<a href="#${esc(s.id)}">${H(s.titulo)}</a>`).join('');
+ g.innerHTML=S.map(s=>`<article class="card" id="${esc(s.id)}"><h3 style="margin-top:0">${H(s.titulo)}</h3>${s.intro?`<p class="small mut">${H(s.intro)}</p>`:''}<div class="tw"><table class="gv"><tbody>`+
+  (s.linhas||[]).map(r=>`<tr><td>${H(r.item)}</td><td>${H(r.texto)}</td><td>${r.rotulo?`<span class="pill ${ESTADOS.includes(r.estado)?r.estado:'na'}">${H(r.rotulo)}</span>`:''}</td></tr>`).join('')+`</tbody></table></div></article>`).join('');
+ meta.innerHTML=`${S.length} ${L(S.length===1?'secção':'secções',S.length===1?'section':'sections')} · ${n} ${L('linhas','rows')}<br>${L('Atualizado a','Updated on')} ${esc(fdate(GD.atualizado_em||''))} (PT)`;
+ if(!scrolled&&location.hash){scrolled=true;const t=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(t)t.scrollIntoView()}}
+function applyLang(){const en=LANG==='en';document.documentElement.lang=en?'en':'pt-PT';document.title=en?'Sérgio F · Genetics':'Sérgio F · Genética';
+ document.querySelectorAll('[data-en]').forEach(el=>{if(!el.hasAttribute('data-pt'))el.setAttribute('data-pt',el.textContent);el.textContent=en?el.dataset.en:el.dataset.pt});
+ document.querySelectorAll('[data-al-en]').forEach(el=>{if(!el.hasAttribute('data-al-pt'))el.setAttribute('data-al-pt',el.getAttribute('aria-label'));el.setAttribute('aria-label',en?el.dataset.alEn:el.dataset.alPt)});
+ document.querySelectorAll('#lang button').forEach(b=>{const on=b.dataset.l===LANG;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});render()}
+document.querySelectorAll('#lang button').forEach(b=>b.addEventListener('click',()=>{if(LANG===b.dataset.l)return;LANG=b.dataset.l;try{localStorage.setItem('lang',LANG)}catch(e){}applyLang()}));
+applyLang();
+loadJSON('data/genetica.json').then(d=>{GD=d;render()}).catch(e=>{console.warn(e);GERR=e;render()});
+
+// ===== tema (escuro/claro): escolha guardada em localStorage 'theme'; sem escolha, segue o sistema =====
+const mqD=window.matchMedia?matchMedia('(prefers-color-scheme: dark)'):null;
+let THEME=null;try{THEME=localStorage.getItem('theme')}catch(e){}
+const curTheme=()=>THEME==='dark'||THEME==='light'?THEME:(mqD&&mqD.matches?'dark':'light');
+function applyTheme(){const t=curTheme();document.documentElement.setAttribute('data-theme',t);document.querySelectorAll('#theme button').forEach(b=>{const on=b.dataset.t===t;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)})}
+document.querySelectorAll('#theme button').forEach(b=>b.addEventListener('click',()=>{THEME=b.dataset.t;try{localStorage.setItem('theme',THEME)}catch(e){}applyTheme()}));
+if(mqD){const f=()=>{if(THEME!=='dark'&&THEME!=='light')applyTheme()};mqD.addEventListener?mqD.addEventListener('change',f):mqD.addListener(f)}
+applyTheme();
+</script>
+</body>
+</html>

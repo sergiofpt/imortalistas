@@ -16,6 +16,7 @@ laboratório (ver classifica_intolerancia); os restantes vão para "marcadores".
 import argparse, csv, json, os, re, sys
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 F_SANGUE = os.path.join(RAIZ, 'data', 'sangue.json')
+F_GENETICA = os.path.join(RAIZ, 'data', 'genetica.json')  # página genetica.html (editada à mão; ver README)
 # privacidade: nunca publicar a medida da balança nem nada que a permita deduzir
 # (os termos são montados por partes para que o próprio ficheiro não os contenha literalmente)
 _T = ['ger' + 'mano', 'sou' + 'sa', 'cu' + 'f', 'coim' + 'bra', 'pe' + 'so', 'i' + 'mc', 'b' + 'mi', 'f' + 'mi', 'l' + 'mi', '19' + '99', 'lis' + 'boa', 'lis' + 'bon', 'chen' + 'nai']
@@ -125,6 +126,38 @@ def cmd_sangue(a):
     gravar(F_SANGUE, d)
     print(f'sangue: {len(rows) - ignorados} resultados em {a.data}; {novos} marcadores novos; {len(d["marcadores"])} marcadores; {len(d["intolerancias"])} intolerâncias alimentares; {len(d["colheitas"])} datas')
 
+TAGS_OK = re.compile(r'</?(b|i|em|strong|br|small|sub|sup)\s*/?>', re.I)
+def verificar_genetica():
+    """data/genetica.json: estrutura, PT+EN em todos os textos, ids únicos, estados válidos, só HTML simples."""
+    if not os.path.exists(F_GENETICA): print('AVISO: data/genetica.json não existe (genetica.html fica vazia)'); return True
+    ok = True; d = ler(F_GENETICA); ids = set(); n = 0
+    def err(m):
+        nonlocal ok; ok = False; print('ERRO genetica.json: ' + m)
+    def bi(o, onde, obrig=True):
+        if o is None or o == '':
+            if obrig: err(f'{onde}: texto em falta')
+            return
+        if isinstance(o, str): vals = [o]
+        elif isinstance(o, dict) and o.get('pt') and o.get('en'): vals = [o['pt'], o['en']]
+        else: err(f'{onde}: precisa de "pt" e "en" (ou um texto igual nas duas línguas)'); return
+        for v in vals:
+            resto = TAGS_OK.sub('', v)
+            if re.search(r'<[a-z/!]', resto, re.I): err(f'{onde}: HTML não permitido em {v[:60]!r} (só b, i, em, strong, br, small, sub, sup)')
+    bi(d.get('fonte'), 'fonte')
+    for k, x in enumerate(d.get('notas', [])): bi(x, f'notas[{k}]')
+    if not d.get('seccoes'): err('sem "seccoes"')
+    for s in d.get('seccoes', []):
+        sid = s.get('id', '')
+        if not re.fullmatch(r'[a-z0-9][a-z0-9-]*', sid or ''): err(f'id inválido {sid!r} (minúsculas, números e hífens)')
+        if sid in ids or sid in ('genetica', 'gen', 'lang', 'theme', 'nav'): err(f'id repetido ou reservado {sid!r}')
+        ids.add(sid); bi(s.get('titulo'), f'{sid}.titulo'); bi(s.get('intro'), f'{sid}.intro', False)
+        for k, r in enumerate(s.get('linhas', [])):
+            n += 1; bi(r.get('item'), f'{sid}.linhas[{k}].item'); bi(r.get('texto'), f'{sid}.linhas[{k}].texto')
+            if r.get('rotulo') is not None: bi(r.get('rotulo'), f'{sid}.linhas[{k}].rotulo')
+            if r.get('estado', 'na') not in ('ok', 'warn', 'bad', 'na', 'info'): err(f'{sid}.linhas[{k}]: estado {r.get("estado")!r} (ok, warn, bad, na, info)')
+    print(f'genetica.json: {len(ids)} secções, {n} linhas')
+    return ok
+
 def cmd_verificar(a):
     ok = True
     for p in (F_SANGUE,):
@@ -146,6 +179,7 @@ def cmd_verificar(a):
                 if 'lab' in r: ok = False; print(f'ERRO {p}: {i["m"]} tem campo lab (a página mostra só datas)')
                 if r.get('s') and r['s'] not in ESTADOS: ok = False; print(f'ERRO {p}: estado inválido {r["s"]} em {i["m"]}')
         print(f'{os.path.basename(p)}: {len(d["marcadores"])} marcadores + {len(d.get("intolerancias", []))} intolerâncias alimentares, datas {sorted(datas)}')
+    ok = verificar_genetica() and ok
     for base, _, fs in os.walk(RAIZ):
         if '.git' in base: continue
         for f in fs:

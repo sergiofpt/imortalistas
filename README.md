@@ -1,15 +1,17 @@
 # imortalistas · Cronologia de Exames de Sangue
 
-Cronologia de Exames de Sangue do Sérgio F: resultados de análises ao sangue (e urina do mesmo painel), para registo e comparação entre datas, a secção Intolerâncias Alimentares e a secção Genética. Página estática em GitHub Pages, `noindex`.
+Cronologia de Exames de Sangue do Sérgio F: resultados de análises ao sangue (e urina do mesmo painel), para registo e comparação entre datas, e a secção Intolerâncias Alimentares (`index.html`). A Genética tem página própria (`genetica.html`). Site estático em GitHub Pages, `noindex` nas duas páginas.
 
 ```
-index.html                         página (HTML + CSS + JS, sem bibliotecas nem pedidos externos); a secção Genética é texto fixo no HTML, em PT e EN
+index.html                         análises ao sangue + Intolerâncias Alimentares (HTML + CSS + JS, sem bibliotecas nem pedidos externos)
+genetica.html                      página Genética (mesmo cabeçalho, idioma e tema); o conteúdo vem de data/genetica.json
 data/sangue.json                   resultados por marcador e por data (sangue/urina em "marcadores", intolerâncias alimentares em "intolerancias")
-ferramentas/adicionar_colheita.py  acrescenta uma data e verifica o ficheiro
+data/genetica.json                 conteúdo da página Genética (secções, linhas, PT/EN)
+ferramentas/adicionar_colheita.py  acrescenta uma data e verifica os ficheiros (sangue.json, genetica.json e termos proibidos)
 .nojekyll
 ```
 
-A página lê `data/sangue.json` ao abrir. Para a ver localmente: `python3 -m http.server` na raiz e abrir `http://localhost:8000/` (por `file://` o navegador bloqueia a leitura do JSON).
+As páginas leem `data/sangue.json` / `data/genetica.json` ao abrir. Para a ver localmente: `python3 -m http.server` na raiz e abrir `http://localhost:8000/` (por `file://` o navegador bloqueia a leitura do JSON).
 
 ## Formato dos dados
 
@@ -57,12 +59,37 @@ A página lê `data/sangue.json` ao abrir. Para a ver localmente: `python3 -m ht
 3. Correr `python3 ferramentas/adicionar_colheita.py verificar` (datas coerentes e pesquisa de termos proibidos), abrir a página por `http.server` e confirmar que não há erros na consola.
 4. Fazer commit de `data/sangue.json`. A página abre na data mais recente com “Não comparar” (sem coluna Δ nem filtro de tendência); ao escolher uma data em “comparar com” aparecem essa coluna, o Δ, o filtro de tendência e, no Resumo, as contagens de melhorias/pioras. “Mostrar todas as datas em colunas” mostra todas as datas. O gráfico de cada marcador tem os pontos igualmente espaçados por colheita (não proporcional ao tempo), eixo com valores redondos e rótulos sem sobreposição (verificado por `site_build/test_chart_overlap.py`, fora do repositório).
 
+## Página Genética (`genetica.html` + `data/genetica.json`)
+
+A página só tem o cabeçalho, o título “Genética” / “Genetics” e um contentor; tudo o resto é gerado a partir de `data/genetica.json`, por isso **para acrescentar conteúdo basta editar o JSON** (não é preciso mexer no HTML):
+
+```json
+{
+ "atualizado_em": "2026-10-02",
+ "fonte": {"pt": "Fonte principal: …", "en": "Primary source: …"},
+ "notas": [ {"pt": "Caixa de nota (azul) no topo…", "en": "Note box at the top…"} ],
+ "seccoes": [
+  {"id": "farmacogenomica", "titulo": {"pt": "Farmacogenómica", "en": "Pharmacogenomics"},
+   "intro": {"pt": "(opcional) frase por baixo do título", "en": "(optional) line under the title"},
+   "linhas": [
+    {"item": "CYP2C9", "texto": {"pt": "*1/*3 (metabolizador intermédio)…", "en": "*1/*3 (intermediate metaboliser)…"},
+     "estado": "bad", "rotulo": {"pt": "Cautela", "en": "Caution"}}
+   ]}
+ ]
+}
+```
+- Cada entrada de `seccoes` é um cartão (2 por linha no computador, 1 no telemóvel), pela ordem do ficheiro, e aparece também nos atalhos por baixo da nota. Para uma secção nova, acrescentar um objeto com um `id` novo (minúsculas, números e hífens; dá o link `genetica.html#id`).
+- Cada entrada de `linhas` é uma linha da tabela: `item` (gene/tema, a negrito), `texto`, e opcionalmente `estado` + `rotulo` (a etiqueta colorida): `ok` verde, `warn` amarelo, `bad` vermelho, `na` cinzento, `info` azul.
+- Textos bilingues: `{"pt": "…", "en": "…"}`; se o texto for igual nas duas línguas (ex. nome do gene) pode ser só `"CYP2C9"`. Pode levar HTML simples: `<b>`, `<i>`, `<em>`, `<strong>`, `<br>`, `<small>`, `<sub>`, `<sup>` (o resto é mostrado como texto).
+- As mesmas regras de privacidade e de nomes (abaixo) aplicam-se aqui: sem nomes de laboratórios ou empresas, sem dados pessoais.
+- Depois de editar: `python3 ferramentas/adicionar_colheita.py verificar` (estrutura, PT+EN em todos os textos, ids únicos, estados válidos, HTML permitido, termos proibidos), abrir `genetica.html` por `http.server` e confirmar que não há erros na consola.
+
 ## Regras permanentes do painel
 
-- Só análises + Intolerâncias Alimentares (secção própria) + Genética: nada de outros exames, medicação/stack, suplementos, prioridades, questões ou sugestões dos bots.
+- Só análises + Intolerâncias Alimentares (secção própria) em `index.html` + Genética em `genetica.html`: nada de outros exames, medicação/stack, suplementos, prioridades, questões ou sugestões dos bots.
 - Identificação: só “Sérgio F” e a idade; sem data de nascimento nem cidade.
 - Privacidade: nunca publicar a medida da balança, o índice de massa do corpo (nem pela sigla), índices por altura² nem nada que permita deduzir aquela medida.
 - Sem nomes de laboratórios ou fornecedores em lado nenhum, nas duas línguas: só datas.
-- Título: “Cronologia de Exames de Sangue” / “Blood Test Timeline”; cabeçalho sem marca, com o seletor “Português | English” no canto superior direito (guardado em `localStorage`, chave `lang`; por omissão português).
-- Tema: seletor “Escuro | Claro” / “Dark | Light” ao lado do idioma (guardado em `localStorage`, chave `theme`; sem escolha, segue o tema do sistema). Cores só por variáveis CSS, incluindo os gráficos.
-- `meta robots noindex`.
+- Títulos: “Cronologia de Exames de Sangue” / “Blood Test Timeline” (`index.html`) e “Genética” / “Genetics” (`genetica.html`). Cabeçalho sem marca, igual nas duas páginas: Resumo · Análises · Intolerâncias Alimentares (âncoras de `index.html`) · Genética (`genetica.html`), com o seletor “Português | English” no canto superior direito (guardado em `localStorage`, chave `lang`, partilhada pelas duas páginas; por omissão português).
+- Tema: seletor “Escuro | Claro” / “Dark | Light” ao lado do idioma (guardado em `localStorage`, chave `theme`, partilhada pelas duas páginas; sem escolha, segue o tema do sistema). Cores só por variáveis CSS, incluindo os gráficos.
+- `meta robots noindex` nas duas páginas.
