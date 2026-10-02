@@ -6,8 +6,8 @@
   {
    "data": "2026-08-25",
    "rotulo": "ago 2026",
-   "descricao": "AIWO e Thyrocare 25-08-2026 · Lipomic 27-08-2026 · Chennai",
-   "nota": "Jejum e hora não documentados no painel AIWO (aminoácidos às 08:38). Colhido já sob a medicação, os péptidos e os suplementos atuais."
+   "descricao": "AIWO e Thyrocare 25-08-2026 · Lipomic 27-08-2026",
+   "nota": "Jejum e hora não documentados no painel AIWO (aminoácidos às 08:38)."
   }
  ],
  "marcadores": [
@@ -1001,8 +1001,7 @@
      "ref": "0 - 130.00",
      "ref_min": 0,
      "ref_max": 130,
-     "s": "otimo",
-     "nota": "Sob pitavastatina + ezetimiba + ácido bempedoico."
+     "s": "otimo"
     }
    ]
   },
@@ -1195,8 +1194,7 @@
      "ref": "0 - 120.00",
      "ref_min": 0,
      "ref_max": 120,
-     "s": "otimo",
-     "nota": "Sob pitavastatina + ezetimiba + ácido bempedoico."
+     "s": "otimo"
     }
    ]
   },
@@ -3186,7 +3184,7 @@
      "ref_min": 0,
      "ref_max": 30,
      "s": "fora_de_referencia",
-     "nota": "Urina muito diluída (densidade 1,003): repetir na 1.ª urina da manhã."
+     "nota": "Urina muito diluída (densidade 1,003)."
     }
    ]
   },
@@ -3224,8 +3222,7 @@
      "ref": "1.00 - 1.03",
      "ref_min": 1,
      "ref_max": 1.03,
-     "s": "aceitavel",
-     "nota": "Diurese osmótica da dapagliflozina."
+     "s": "aceitavel"
     }
    ]
   },
@@ -3472,8 +3469,7 @@
      "ref": "ABSENT",
      "ref_min": null,
      "ref_max": null,
-     "s": "fora_de_referencia",
-     "nota": "Efeito esperado da dapagliflozina (Genetica; Medicamentos)."
+     "s": "fora_de_referencia"
     }
    ]
   },

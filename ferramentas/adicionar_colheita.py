@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
-"""Acrescenta uma nova data (colheita) a data/sangue.json ou data/exames.json.
+r"""Acrescenta uma nova data (colheita) de análises a data/sangue.json.
 
 Uso (a partir da raiz do repositório):
   python3 ferramentas/adicionar_colheita.py sangue --csv historico.csv --data 2026-12-03 \
-      --rotulo "dez 2026" --descricao "AIWO 03-12-2026 · Lisboa" [--datas-csv 2026-12-03,2026-12-05]
-  python3 ferramentas/adicionar_colheita.py exame --data 2027-02-10 --rotulo "fev 2027" \
-      --grupo "Estudo do sono (ApneaLink)" --item "IAH" --valor 3.1 [--estado otimo] [--data-real 2027-02-11]
+      --rotulo "dez 2026" --descricao "AIWO 03-12-2026" [--datas-csv 2026-12-03,2026-12-05]
   python3 ferramentas/adicionar_colheita.py verificar
 
 É idempotente: voltar a correr com a mesma data substitui os resultados dessa data.
@@ -13,10 +11,9 @@ Uso (a partir da raiz do repositório):
 import argparse, csv, json, os, re, sys
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 F_SANGUE = os.path.join(RAIZ, 'data', 'sangue.json')
-F_EXAMES = os.path.join(RAIZ, 'data', 'exames.json')
 # privacidade: nunca publicar a medida da balança nem nada que a permita deduzir
 # (os termos são montados por partes para que o próprio ficheiro não os contenha literalmente)
-_T = ['pe' + 'so', 'i' + 'mc', 'b' + 'mi', 'f' + 'mi', 'l' + 'mi']
+_T = ['pe' + 'so', 'i' + 'mc', 'b' + 'mi', 'f' + 'mi', 'l' + 'mi', '19' + '99', 'lis' + 'boa', 'lis' + 'bon', 'chen' + 'nai']
 PROIBIDO = re.compile('|'.join(r'\b%s\b' % t for t in _T) + '|' + '|'.join([
     'we' + r'ight(?!:)', 'massa ' + 'corporal', 'frei' + 'tas', r'\d\s?' + r'kg\b', 'kg' + '/m', 'har' + 'ris']), re.I)
 ESTADOS = {'otimo', 'aceitavel', 'fora_do_otimo', 'fora_de_referencia', 'sem_alvo'}
@@ -79,32 +76,11 @@ def cmd_sangue(a):
     gravar(F_SANGUE, d)
     print(f'sangue: {len(rows) - ignorados} resultados em {a.data}; {novos} marcadores novos; {len(d["marcadores"])} marcadores; {len(d["colheitas"])} datas')
 
-def cmd_exame(a):
-    d = ler(F_EXAMES)
-    if PROIBIDO.search(a.item) or PROIBIDO.search(a.unidade or ''): sys.exit('Parâmetro proibido pela regra de privacidade.')
-    upsert_colheita(d, a.data, a.rotulo, a.descricao)
-    g = next((g for g in d['grupos'] if g['g'] == a.grupo), None)
-    if not g: g = {'g': a.grupo, 'itens': []}; d['grupos'].append(g)
-    it = next((i for i in g['itens'] if i['m'] == a.item), None)
-    if not it:
-        it = {'m': a.item, 'u': a.unidade or '', 'ref': a.ref or '', 'resultados': []}; g['itens'].append(it)
-    it['resultados'] = [r for r in it['resultados'] if r['data'] != a.data]
-    v = num(a.valor); res = {'data': a.data, 'v': v if v is not None else a.valor}
-    s = a.estado
-    if not s and v is not None and ('otimo_min' in it or 'otimo_max' in it):
-        s = estado(v, None, None, it.get('otimo_min'), it.get('otimo_max'))
-    res['s'] = s or 'sem_alvo'
-    if a.data_real: res['data_real'] = a.data_real
-    if a.nota: res['nota'] = a.nota
-    it['resultados'].append(res); it['resultados'].sort(key=lambda x: x['data'])
-    d['atualizado_em'] = a.hoje
-    gravar(F_EXAMES, d); print(f'exames: {a.grupo} › {a.item} = {res["v"]} ({res["s"]}) em {a.data}')
-
 def cmd_verificar(a):
     ok = True
-    for p, chave in ((F_SANGUE, 'marcadores'), (F_EXAMES, 'grupos')):
+    for p in (F_SANGUE,):
         d = ler(p); datas = {c['data'] for c in d['colheitas']}
-        itens = d['marcadores'] if chave == 'marcadores' else [i for g in d['grupos'] for i in g['itens']]
+        itens = d['marcadores']
         for i in itens:
             for r in i['resultados']:
                 if r['data'] not in datas: ok = False; print(f'ERRO {p}: {i["m"]} tem data {r["data"]} sem colheita')
@@ -124,8 +100,5 @@ ap.add_argument('--hoje', default=__import__('datetime').date.today().isoformat(
 sp = ap.add_subparsers(dest='cmd', required=True)
 p = sp.add_parser('sangue'); p.add_argument('--csv', required=True); p.add_argument('--data', required=True)
 p.add_argument('--datas-csv'); p.add_argument('--rotulo'); p.add_argument('--descricao'); p.set_defaults(f=cmd_sangue)
-p = sp.add_parser('exame'); p.add_argument('--data', required=True); p.add_argument('--grupo', required=True); p.add_argument('--item', required=True)
-p.add_argument('--valor', required=True); p.add_argument('--estado', choices=sorted(ESTADOS)); p.add_argument('--unidade'); p.add_argument('--ref')
-p.add_argument('--data-real'); p.add_argument('--nota'); p.add_argument('--rotulo'); p.add_argument('--descricao'); p.set_defaults(f=cmd_exame)
 p = sp.add_parser('verificar'); p.set_defaults(f=cmd_verificar)
 a = ap.parse_args(); a.f(a)

@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex,nofollow">
 <meta name="referrer" content="no-referrer">
 <link rel="icon" href="data:,">
-<title>Sérgio F · Painel de Saúde e Longevidade</title>
+<title>Sérgio F · Cronologia de Exames de Sangue</title>
 <style>
 :root{--bg:#f5f7fa;--card:#fff;--ink:#14202e;--mut:#5b6b7d;--line:#e3e8ef;--acc:#1f5eff;--ok:#12a150;--okb:#e6f6ec;--warn:#d98a00;--warnb:#fff4dc;--bad:#d93636;--badb:#fde9e9;--na:#8a97a8;--nab:#eef1f5;--r:14px}
 *{box-sizing:border-box}
@@ -35,14 +35,14 @@ h3{font-size:16px;margin:18px 0 8px}
 .grid{display:grid;gap:14px}.grid>*{min-width:0}
 .g4{grid-template-columns:repeat(4,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
 @media(max-width:1000px){.g4{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:640px){.brand span{display:none}.filters input[type=search]{min-width:0;flex:1 1 100%}.kv{grid-template-columns:1fr}.kv dd{margin-bottom:4px}.donutwrap{justify-content:center}.g4,.g3,.g2{grid-template-columns:1fr}.hero h1{font-size:22px}.hero .meta{text-align:left}}
-.kpi{position:relative;border-left:5px solid var(--na);padding:14px 16px 13px}
-.kpi.ok{border-left-color:var(--ok)}.kpi.warn{border-left-color:var(--warn)}.kpi.bad{border-left-color:var(--bad)}
-.kpi .lb{font-size:13px;color:var(--mut);font-weight:600}
-.kpi .vl{font-size:26px;font-weight:700;margin:2px 0 0;letter-spacing:-.4px}
-.kpi .vl small{font-size:13px;font-weight:500;color:var(--mut);margin-left:3px}
-.kpi .sub{font-size:12.5px;color:var(--mut);margin-top:2px}
-.kpi .dot{position:absolute;top:14px;right:14px}
+@media(max-width:640px){.brand span{display:none}.filters input[type=search]{min-width:0;flex:1 1 100%}.g4,.g3,.g2{grid-template-columns:1fr}.hero h1{font-size:22px}.hero .meta{text-align:left}}
+
+
+
+
+
+
+
 .pill{display:inline-block;font-size:11.5px;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap}
 .pill.ok{background:var(--okb);color:#0b7a3b}.pill.warn{background:var(--warnb);color:#9a5f00}.pill.bad{background:var(--badb);color:#b02020}.pill.na{background:var(--nab);color:#56657a}.pill.info{background:#e8efff;color:#1f45b5}
 table{width:100%;border-collapse:collapse;font-size:13.5px}
@@ -54,11 +54,11 @@ tr:hover td{background:#fafcff}
 .num{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
 .mut{color:var(--mut)}
 .small{font-size:12.5px}
-ul.clean{margin:6px 0 0;padding-left:18px}ul.clean li{margin:3px 0}
-ol.prio{margin:0;padding:0;list-style:none;counter-reset:p}
-ol.prio li{counter-increment:p;display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
-ol.prio li:last-child{border-bottom:0}
-ol.prio li:before{content:counter(p);flex:0 0 28px;height:28px;border-radius:50%;background:var(--ink);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:13px}
+
+
+
+
+
 .filters{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 12px}
 .filters input,.filters select{font:inherit;font-size:14px;padding:8px 11px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
 .filters input[type=search]{min-width:220px}
@@ -66,22 +66,22 @@ ol.prio li:before{content:counter(p);flex:0 0 28px;height:28px;border-radius:50%
 .legend{display:flex;flex-wrap:wrap;gap:8px;font-size:12.5px;color:var(--mut);align-items:center}
 .bar{display:flex;height:12px;border-radius:999px;overflow:hidden;margin:8px 0 6px;background:var(--nab)}
 .bar span{display:block;height:100%}
-.tag{display:inline-block;background:var(--nab);color:#3b4a5c;border-radius:6px;padding:1px 7px;font-size:12px;margin:2px 3px 2px 0;font-weight:500}
-.exam h3{margin:0 0 4px;display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
-.exam .dt{font-size:12px;color:var(--mut);margin-bottom:8px}
-.kv{display:grid;grid-template-columns:auto 1fr;gap:3px 12px;font-size:13.5px}
-.kv dt{color:var(--mut)}.kv dd{margin:0;font-weight:600}
-.empty{border:2px dashed var(--line);border-radius:var(--r);padding:16px 18px;color:var(--mut);background:#fbfcfd}
-.empty b{color:var(--ink)}
+
+
+
+
+
+
+
 .note{background:#f0f5ff;border:1px solid #d7e3ff;border-radius:12px;padding:11px 14px;font-size:13.5px;margin:0 0 14px}
-.sug{background:#fff8e8;border:1px solid #f3dfae;border-radius:12px;padding:10px 14px;font-size:13.5px;margin:0 0 12px}
-.sugcol{background:#fffbf1}
-th.sugcol{background:#fff3d6;color:#8a5a00}
-.flag{display:flex;gap:10px;padding:9px 0;border-bottom:1px solid var(--line);font-size:13.5px}
-.flag:last-child{border-bottom:0}
-.flag .pill{flex:0 0 auto;margin-top:2px}
-.donutwrap{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
-.lg i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+
+
+th
+
+
+
+
+
 footer{max-width:1240px;margin:0 auto;padding:0 20px 40px;color:var(--mut);font-size:12.5px}
 .gv td:first-child{font-weight:600;white-space:nowrap}
 .ctrl{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 10px;padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:12px}
@@ -114,22 +114,30 @@ tr.det:hover td{background:#fbfcfe}
 </head>
 <body>
 <header class="top"><div class="topin">
-<div class="brand">Sérgio F <span>· Longevidade</span></div>
+<div class="brand">Sérgio F <span>· Cronologia de Exames de Sangue</span></div>
 <nav class="main" id="nav">
-<a href="#sangue">Análises</a><a href="#prioridades">Prioridades</a><a href="#exames">Exames</a><a href="#genetica">Genética</a><a href="#stack">Stack</a><a href="#questoes">Questões</a>
+<a href="#resumo">Resumo</a><a href="#sangue">Análises</a><a href="#genetica">Genética</a>
 </nav></div></header>
 <main>
 
 <div class="hero">
-<div><h1>Painel de saúde e longevidade</h1>
-<p>Sérgio F · n. 05-06-1999 (27 anos) · Lisboa · M</p></div>
-<div class="meta" id="heroMeta">Exames e análises: Chennai (AIWO), 25–27-08-2026<br>Compilado a 02-10-2026 (PT) a partir dos registos dos bots</div>
+<div><h1>Cronologia de Exames de Sangue</h1>
+<p>Sérgio F · 27 anos · M</p></div>
+<div class="meta" id="heroMeta">Análises ao sangue<br>Compilado a 02-10-2026 (PT)</div>
 </div>
+
+<!-- ============ RESUMO ============ -->
+<section id="resumo">
+<div class="card">
+<h3 style="margin-top:0" id="bsTitle">Análises em números</h3>
+<div id="bloodSummary"><span class="mut">A carregar…</span></div>
+</div>
+</section>
 
 <!-- ============ SANGUE ============ -->
 <section id="sangue">
 <h2>Análises ao sangue e à urina</h2>
-<p class="src">Fonte: <b>Exames de Sangue</b> · data/sangue.json (gerado de /workspace/biomarcadores/historico.csv) · <span id="sSrc">AIWO e Thyrocare 25-08-2026, Lipomic 27-08-2026</span>. Jejum e hora não documentados no painel AIWO (aminoácidos às 08:38).</p>
+<p class="src">Fonte: data/sangue.json · <span id="sSrc">AIWO e Thyrocare 25-08-2026, Lipomic 27-08-2026</span>. Jejum e hora não documentados no painel AIWO (aminoácidos às 08:38).</p>
 <div class="ctrl" id="sCtrl">
 <b>Datas</b>
 <label>Data <select id="sA" aria-label="Data principal"></select></label>
@@ -145,91 +153,9 @@ tr.det:hover td{background:#fbfcfe}
 <label><input type="checkbox" id="flagged"> Só os que não estão no ótimo</label>
 <span class="mut small" id="count"></span>
 </div>
-<div class="legend" style="margin-bottom:10px"><span class="pill ok">Ótimo</span><span class="pill warn">Aceitável</span><span class="pill warn">Fora do ótimo</span><span class="pill bad">Fora da referência</span><span class="pill na">Sem alvo</span><span>· “Alvo” = alvo ótimo de longevidade registado pelo bot · Δ = data principal vs data de comparação (verde = aproxima-se do ótimo) · clique num marcador para ver a evolução</span></div>
+<div class="legend" style="margin-bottom:10px"><span class="pill ok">Ótimo</span><span class="pill warn">Aceitável</span><span class="pill warn">Fora do ótimo</span><span class="pill bad">Fora da referência</span><span class="pill na">Sem alvo</span><span>· “Alvo” = alvo ótimo de longevidade · Δ = data principal vs data de comparação (verde = aproxima-se do ótimo) · clique num marcador para ver a evolução</span></div>
 <div class="tw tall"><table id="bt"><thead></thead><tbody><tr><td class="mut">A carregar data/sangue.json…</td></tr></tbody></table></div>
-<p class="small mut">Sem resultado no painel: bicarbonato, VDRL, lítio. Não medidos: CK, ceruloplasmina, alfa-1 antitripsina, anti-TPO, LH/FSH/prolactina, IGF-1, PTH, folato eritrocitário, MMA, holoTC, TDP (B1 em sangue total), anti-HBs/anti-HBc, anti-tTG IgA. As IgG alimentares indicam exposição, não intolerância.</p>
-</section>
-
-<!-- ============ PRIORIDADES ============ -->
-<section id="prioridades">
-<h2>Prioridades e análises em números</h2>
-<p class="src">Fontes: <b>Exames de Sangue</b> (historico.csv, 01-10-2026 00:21) · <b>Exames</b> (INDICE.md, 01-10-2026 00:09) · <b>Relacional</b> (dados_consolidados.md, 01-10-2026 01:01) · <b>Genetica</b> (01-10-2026 00:25)</p>
-<div class="grid g2">
-<div class="card">
-<h3 style="margin-top:0">Prioridades principais</h3>
-<ol class="prio">
-<li><div><b>Fígado:</b> MASLD (esteatose grau I, hepatomegalia, volume 1877 ml), ALT 67,9, GGT 48,2, PNPLA3 I148M. Hepatologia, FibroScan/CAP ou RM-PDFF + R2*. <span class="mut small">Relacional REL-002 (urgente) · Genetica · Exames</span></div></li>
-<li><div><b>Regras de dias de doença</b> (dapagliflozina + telmisartan + retatrutide + acarbose): risco de cetoacidose euglicémica e de lesão renal aguda. <span class="mut small">Relacional REL-035 (urgente) · Medicamentos</span></div></li>
-<li><div><b>Gordura visceral e ectópica</b> (4,9 L; pericárdica 184 ml), preservando a massa magra sob retatrutide (DEXA a cada 6 meses). <span class="mut small">Exames · Genetica · Medicamentos</span></div></li>
-<li><div><b>Ferritina 310 → &lt; 100:</b> a dádiva no IPST está bloqueada pela medicação; a via indicada é a flebotomia terapêutica com prescrição médica. <span class="mut small">Genetica · Medicamentos · Relacional REL-010</span></div></li>
-<li><div><b>Metilação:</b> homocisteína 18,4 com folato 9,1, B1 baixa (2,02) e B6 alta (53,8) apesar do stack. <span class="mut small">Genetica · Suplementos · Relacional</span></div></li>
-<li><div><b>Ómega-3 5,4%</b>, <b>zinco 42 / cobre 62</b> baixos (ceruloplasmina antes de mexer) e <b>vitamina D 37</b> sob 10 000 UI. <span class="mut small">Genetica · Suplementos · Relacional</span></div></li>
-</ol>
-</div>
-<div class="card">
-<h3 style="margin-top:0" id="bsTitle">Análises em números</h3>
-<div id="bloodSummary"></div>
-<p class="small mut" style="margin-top:12px">Todos os valores foram colhidos <b>já sob a medicação, os péptidos e os suplementos atuais</b> (o Sérgio confirmou a 01-10-2026). Glicose, lípidos e glicosúria refletem os fármacos.</p>
-</div>
-</div>
-</section>
-
-<!-- ============ EXAMES ============ -->
-<section id="exames">
-<h2>Exames</h2>
-<p class="src">Fonte: <b>Exames</b> · /workspace/exames/*.md, INDICE.md e dados.json (registos de 30-09 e 01-10-2026) · valores numéricos por data em data/exames.json · exames feitos em Chennai a 25–26-08-2026</p>
-<h3>Relatórios de 25–26-08-2026</h3>
-<div class="grid g3">
-<div class="card exam"><h3>DEXA: composição corporal <span class="pill bad">Atenção</span></h3><div class="dt">26-08-2026 · FUJIFILM FDX Visionary-DR</div>
-<div class="donutwrap"><svg width="120" height="120" viewBox="0 0 42 42" role="img" aria-label="Composição corporal: gordura 31,6%, massa magra 65,3%, osso 3,1%">
-<circle cx="21" cy="21" r="15.915" fill="none" stroke="#eef1f5" stroke-width="6"/>
-<circle cx="21" cy="21" r="15.915" fill="none" stroke="#d93636" stroke-width="6" stroke-dasharray="31.6 68.4" stroke-dashoffset="25"/>
-<circle cx="21" cy="21" r="15.915" fill="none" stroke="#1f5eff" stroke-width="6" stroke-dasharray="65.3 34.7" stroke-dashoffset="-6.6"/>
-<circle cx="21" cy="21" r="15.915" fill="none" stroke="#8a97a8" stroke-width="6" stroke-dasharray="3.1 96.9" stroke-dashoffset="-71.9"/>
-<text x="21" y="20.5" text-anchor="middle" font-size="6" font-weight="700" fill="#14202e">31,6%</text><text x="21" y="26" text-anchor="middle" font-size="3.4" fill="#5b6b7d">gordura</text></svg>
-<div class="lg small"><div><i style="background:#d93636"></i>Gordura 31,6%</div><div><i style="background:#1f5eff"></i>Massa magra 65,3%</div><div><i style="background:#8a97a8"></i>Osso 3,1%</div></div></div>
-<dl class="kv" style="margin-top:10px"><dt>VAT</dt><dd>1003,8 g · 141,2 cm²</dd><dt>Androide/ginoide</dt><dd>1,09</dd><dt>DMO corpo inteiro</dt><dd>1,281 g/cm² (T −0,3; Z −0,2)</dd></dl></div>
-
-<div class="card exam"><h3>Quantificação de gordura, músculo e órgãos <span class="pill bad">Atenção</span></h3><div class="dt">25-08-2026 · volumetria por imagem (Aarthi)</div>
-<dl class="kv"><dt>Gordura visceral</dt><dd>4913,22 ml (ref. &lt; 1500)</dd><dt>Pericárdica</dt><dd>183,84 ml (ref. 53–121)</dd><dt>Subcutânea</dt><dd>23 216,55 ml</dd><dt>Fígado</dt><dd>1877,16 ml (ref. 1100–1640)</dd><dt>Baço</dt><dd>267,03 ml (ref. 71–251)</dd><dt>Rins D / E</dt><dd>229,46 / 273,14 ml (ref. 70,16–153,3)</dd><dt>Psoas</dt><dd>22,63 cm² (&gt; 11,5; sem sarcopenia)</dd></dl></div>
-
-<div class="card exam"><h3>Ecografia abdominal e pélvica <span class="pill bad">Atenção</span></h3><div class="dt">25-08-2026</div>
-<ul class="clean small"><li><b>Hepatomegalia ligeira (~15,5 cm) com esteatose grau I</b>; FibroScan sugerido</li><li>Rins D 11,8×5,1 cm, E 10,7×5,9 cm: normais</li><li>Baço 10,2 cm; próstata 15,7 cc: normais</li></ul></div>
-
-<div class="card exam"><h3>RM de corpo inteiro + angio-RM <span class="pill warn">Achados</span></h3><div class="dt">25-08-2026 · Vital MRI</div>
-<ul class="clean small"><li>Cérebro, artérias cerebrais e cervicais, tiroide e órgãos normais</li><li>Fígado descrito como “normal” (discorda da ecografia)</li><li>Protrusões discais C5-C6, C6-C7, D2–D7, L5-S1 (desidratação parcial); retificação cervical</li><li>Desvio do septo nasal à esquerda; calcificações de 1–2 mm na parede torácica anterior</li></ul></div>
-
-<div class="card exam"><h3>BrainAge (BrainKey) <span class="pill ok">Normal</span></h3><div class="dt">25-08-2026 · volumetria da RM cerebral</div>
-<dl class="kv"><dt>BrainAge</dt><dd>26 anos (cronológica 27)</dd><dt>Substância branca</dt><dd>P77</dd><dt>Hipocampo</dt><dd>P27</dd><dt>Cerebelo</dt><dd>P7 (típico, perto de P5)</dd><dt>Tálamo</dt><dd>P17</dd><dt>SC parietal</dt><dd>P21</dd></dl><p class="small mut" style="margin:8px 0 0">Todas as regiões no intervalo típico. É a linha de base.</p></div>
-
-<div class="card exam"><h3>TC: score de cálcio + aorta <span class="pill ok">Normal</span></h3><div class="dt">25-08-2026</div>
-<dl class="kv"><dt>CAC total</dt><dd>0 (TC não sincronizada)</dd><dt>Aorta</dt><dd>Normal nos 7 segmentos; máx. 30,52 mm (ascendente)</dd></dl></div>
-
-<div class="card exam"><h3>Estudo do sono (ApneaLink) <span class="pill ok">Sem apneia</span></h3><div class="dt">Noite de 25 para 26-08-2026 · análise automática</div>
-<dl class="kv"><dt>IAH</dt><dd>2,6/h (&lt; 5)</dd><dt>SpO₂ média / mín.</dt><dd>95% / 90%</dd><dt>Ressonar</dt><dd>41 eventos</dd><dt>Limitação de fluxo</dt><dd>37% das respirações</dd><dt>Pulso</dt><dd>51–103 bpm (média 72)</dd><dt>Limitações</dt><dd>4 h 33 min de fluxo válido; ODI não impresso</dd></dl></div>
-
-<div class="card exam"><h3>Densitometria óssea (fémur + coluna) <span class="pill ok">Normal</span></h3><div class="dt">26-08-2026 · DEXA</div>
-<dl class="kv"><dt>Anca total</dt><dd>1,424 g/cm² (T/Z +1,5)</dd><dt>Colo do fémur</dt><dd>T +2,5 / Z +2,6</dd><dt>L1–L4</dt><dd>1,424 g/cm² (T +2,2; Z +2,3)</dd></dl></div>
-
-<div class="card exam"><h3>Outros exames</h3><div class="dt">25-08-2026</div>
-<ul class="clean small"><li><b>Calorimetria:</b> RMR medida 3404 kcal/dia, acima do previsto pela fórmula; manutenção 4425; condições não padronizadas <span class="pill warn">Validar</span></li><li><b>ECG:</b> sinusal com arritmia sinusal; FC 77–78; PR 180; QRS 90; QTc 419 ms <span class="pill ok">Normal</span></li><li><b>RX do tórax:</b> sem alterações <span class="pill ok">Normal</span></li><li><b>NEO-PI-3:</b> conscienciosidade forte; stress prolongado com recuperação lenta, autocrítica e solidão; acompanhamento psicológico em curso; sem pontuações numéricas</li></ul></div>
-</div>
-
-<h3 style="margin-top:22px">Exames em números ao longo do tempo</h3>
-<div class="ctrl" id="eCtrl">
-<b>Datas</b>
-<label>Data <select id="eA" aria-label="Data principal dos exames"></select></label>
-<label>comparar com <select id="eB" aria-label="Data de comparação dos exames"></select></label>
-<label><input type="checkbox" id="eAll" checked> Mostrar todas as datas em colunas</label>
-<span id="eAwait"></span>
-</div>
-<div class="filters">
-<input id="eq" type="search" placeholder="Procurar parâmetro…" aria-label="Procurar parâmetro">
-<select id="eg" aria-label="Exame"><option value="">Todos os exames</option></select>
-<span class="mut small" id="ecount"></span>
-</div>
-<div class="tw tall"><table id="et"><thead></thead><tbody><tr><td class="mut">A carregar data/exames.json…</td></tr></tbody></table></div>
-<p class="small mut">Só valores numéricos; as descrições qualitativas estão nos relatórios acima. Clique num parâmetro para ver a evolução.</p>
+<p class="small mut">Sem resultado no painel de 25-08-2026: bicarbonato, VDRL, lítio. As IgG alimentares indicam exposição, não intolerância.</p>
 </section>
 
 <!-- ============ GENÉTICA ============ -->
@@ -290,157 +216,10 @@ tr.det:hover td{background:#fbfcfe}
 </tbody></table></div></div>
 </div>
 </section>
-
-<!-- ============ STACK ============ -->
-<section id="stack">
-<h2>Suplementos, medicação e péptidos</h2>
-<p class="src">Fontes: <b>Suplementos + Medicamentos</b> (memória partilhada de 30-09-2026 via coordenador; suplementos-v2.md 01-10-2026 01:01; medicamentos-peptideos.md 01-10-2026 00:33) · <b>Relacional</b> (analise_suplementos.md 01-10-2026 00:59) · <b>Genetica</b> (sergio_genetica_x_sangue.md §4, 01-10-2026 00:25)</p>
-<div class="note"><b>Stack atual = o stack real.</b> O Sérgio decidiu manter tudo exatamente como reportou e, por agora, não adotar nenhuma sugestão dos bots. Tudo isto já era tomado antes da colheita de 25-08-2026. Péptidos testados por terceiros (Sérgio, 01-10-2026). Álcool: zero. Não há datas de início.</div>
-
-<h3>Medicação atual</h3>
-<div class="tw"><table><thead><tr><th>Fármaco</th><th>Dose / esquema atual</th><th>Notas registadas</th><th class="sugcol">Sugestões (não aplicadas)</th></tr></thead><tbody>
-<tr><td><b>Dapagliflozina</b></td><td class="num">10 mg</td><td class="small">Explica a glicosúria 2+ e a urina diluída; risco de cetoacidose euglicémica</td><td class="small sugcol">Medicamentos/Relacional: medidor de cetonas; parar em dias de doença e ≥ 3 dias antes de cirurgia</td></tr>
-<tr><td><b>Acarbose</b></td><td class="num">200 mg 1–2×/dia</td><td class="small">Acima do máximo do rótulo por toma (100 mg/refeição); a subida da ALT é dose-dependente</td><td class="small sugcol">Medicamentos: ≤ 100 mg por refeição (máx. 300 mg/dia) · Relacional: 1.º fármaco a testar se a ALT não descer</td></tr>
-<tr><td><b>Imeglimina</b></td><td class="num">1000 mg 2×/dia</td><td class="small">Aprovada só no Japão; sem dados em normoglicémicos</td><td class="small sugcol">Medicamentos: candidata n.º 1 a sair</td></tr>
-<tr><td><b>Telmisartan</b></td><td class="num">20 mg</td><td class="small">Retém potássio (KCl só com potássio medido); sobe o lítio</td><td class="small sugcol">Relacional: parar em dias de vómitos/diarreia</td></tr>
-<tr><td><b>Pitavastatina</b></td><td class="num">4 mg</td><td class="small">PGx favorável (SLCO1B1 *1/*14); sem CYP3A4 (compatível com rapamicina)</td><td class="small sugcol">Manter (todos os bots)</td></tr>
-<tr><td><b>Ezetimiba</b></td><td class="num">10 mg</td><td class="small">Parte da terapêutica tripla (ApoB 30)</td><td class="small sugcol">Manter</td></tr>
-<tr><td><b>Ácido bempedoico</b></td><td class="num">180 mg</td><td class="small">Úrico (compensado pela dapagliflozina), gota, litíase biliar, Hb −0,3</td><td class="small sugcol">Medicamentos: opção de retomar o inclisiran e retirar o bempedoico, ou associação fixa com ezetimiba</td></tr>
-<tr><td>Inclisiran</td><td class="mut">Suspenso (data desconhecida)</td><td class="small">Possível efeito residual na ApoB de agosto</td><td class="small sugcol">Medicamentos: retomar</td></tr>
-<tr><td><b>Isotretinoína</b></td><td class="num">40 mg 1×/semana (quarta)</td><td class="small">Vitamina A 926 (limite 980); contraindicada com tetraciclinas e vitamina A; pode subir ALT/TG; bloqueia a dádiva</td><td class="small sugcol">Medicamentos: discutir a indicação face à tretinoína tópica; CK; zero retinol</td></tr>
-<tr><td><b>Rapamicina</b></td><td class="num">4 mg de 6 em 6 semanas</td><td class="small">Esquema sem protocolo humano estudado; interage com polifenóis (CYP3A4/P-gp); cicatrização</td><td class="small sugcol">Medicamentos: decidir com o médico o esquema; doseamento às 48 h opcional · Relacional: registar as tomas</td></tr>
-<tr><td><b>Tadalafil</b></td><td class="num">5 mg</td><td class="small">Nunca com nitratos ou poppers</td><td class="small sugcol">Manter</td></tr>
-<tr><td><b>Naltrexona em dose baixa</b></td><td class="num">4,5 mg</td><td class="small">Bloqueia opioides (tramadol, codeína)</td><td class="small sugcol">Manter</td></tr>
-</tbody></table></div>
-
-<h3>Péptidos atuais</h3>
-<div class="tw"><table><thead><tr><th>Péptido</th><th>Esquema atual</th><th>Notas registadas</th><th class="sugcol">Sugestões (não aplicadas)</th></tr></thead><tbody>
-<tr><td><b>Retatrutide</b></td><td class="num">8 mg de 6 em 6 dias</td><td class="small">Não aprovado; o fármaco mais justificado pelos dados (VAT, MASLD, HOMA-IR); custa massa magra; FC; disestesia</td><td class="small sugcol">Medicamentos: lote testado, força 3×/semana, proteína ≥ 1,6 g/kg, DEXA a cada 6 meses</td></tr>
-<tr><td><b>Epitalon + pinealon</b></td><td class="num">500 mcg + 1 mg (10 dias sim / 20 não)</td><td class="small">Evidência fraca/animal</td><td class="small sugcol">—</td></tr>
-<tr><td><b>Oxitocina</b></td><td class="num">160 mcg (75 dias sim / 42 não)</td><td class="small">≈ 95 UI (derivado); antidiurética (sódio)</td><td class="small sugcol">Medicamentos: confirmar a via; baixar se SC/IM</td></tr>
-<tr><td><b>Glutationa</b></td><td class="num">100 mg 1×/semana (sábado)</td><td class="small">Redundante com a NAC 1800 mg</td><td class="small sugcol">Medicamentos/Relacional: parar</td></tr>
-<tr><td><b>Ciclo semestral</b></td><td class="small">SS-31 25 mg/dia ×21 d + 5-amino-1MQ 100 mg · MOTS-c 5 mg a cada 5 d ×21 d · humanina 5 mg 2×/sem ×21 d · timosina α1 1,6 mg 2×/sem ×20 d · timalina 10 mg/dia ×10 d · FOXO4-DRI 3 mg dias alternados ×5 d</td><td class="small">7 agentes em simultâneo; evidência quase só animal; timosina α1 é o de melhor perfil</td><td class="small sugcol">Medicamentos: escalonar (1–2 por bloco); tirar a timalina; não juntar rapamicina, fisetina e FOXO4-DRI na mesma semana</td></tr>
-</tbody></table></div>
-
-<h3>Suplementos atuais</h3>
-<div class="sug">As colunas a amarelo são <b>sugestões dos bots, não aplicadas</b>. Mostram-se só para referência.</div>
-<div class="tw tall"><table><thead><tr><th>Suplemento</th><th>Dose atual</th><th>Dado medido</th><th class="sugcol">Sugestão Suplementos (v2)</th><th class="sugcol">Sugestão Relacional</th><th class="sugcol">Nota Genetica</th></tr></thead><tbody id="supp"></tbody></table></div>
-
-<h3>Alertas de segurança registados</h3>
-<div class="grid g2">
-<div class="card">
-<div class="flag"><span class="pill bad">Alta</span><div><b>Cetoacidose euglicémica:</b> dapagliflozina + défice calórico do retatrutide + acarbose/imeglimina. A glicemia normal não a exclui. <span class="mut">(Medicamentos; Relacional REL-035)</span></div></div>
-<div class="flag"><span class="pill bad">Alta</span><div><b>Fígado:</b> MASLD + PNPLA3 + vários fármacos com sinal hepático (acarbose acima do rótulo, isotretinoína, bempedoico) e polifenóis concentrados. <span class="mut">(Medicamentos; Relacional REL-002)</span></div></div>
-<div class="flag"><span class="pill bad">Alta</span><div><b>Retatrutide:</b> experimental, não aprovado, origem não farmacêutica; FC e disestesia (a B6 alta confunde a leitura). <span class="mut">(Medicamentos)</span></div></div>
-<div class="flag"><span class="pill warn">Mod.-alta</span><div><b>Perda de massa magra</b> sob retatrutide; 3-metil-histidina 59,9; fragilidade genética P82. <span class="mut">(Medicamentos; Relacional REL-036)</span></div></div>
-<div class="flag"><span class="pill warn">Mod.-alta</span><div><b>Volume e rim:</b> telmisartan + tadalafil + dapagliflozina + défice calórico → hipotensão e lesão renal aguda em gastroenterite. <span class="mut">(Medicamentos)</span></div></div>
-<div class="flag"><span class="pill warn">Mod.-alta</span><div><b>AINEs</b> + CYP2C9 *1/*3 + ARA + iSGLT2 (“triple whammy”); opioides bloqueados pela LDN; paracetamol ≤ 2–3 g/dia. <span class="mut">(Medicamentos; Relacional REL-011)</span></div></div>
-</div>
-<div class="card">
-<div class="flag"><span class="pill warn">Moderada</span><div><b>Isotretinoína:</b> tetraciclinas proibidas; zero vitamina A pré-formada; CK com treino; humor. <span class="mut">(Medicamentos; Relacional REL-038)</span></div></div>
-<div class="flag"><span class="pill warn">Moderada</span><div><b>Oxitocina 160 µg ≈ 95 UI</b>, via por confirmar; risco de hiponatremia. <span class="mut">(Medicamentos)</span></div></div>
-<div class="flag"><span class="pill warn">Moderada</span><div><b>Melatonina até 100 mg</b> com MTNR1B CG e CYP1A2 AC: pode inflacionar a insulina/HOMA-IR. <span class="mut">(Medicamentos; Suplementos)</span></div></div>
-<div class="flag"><span class="pill warn">Moderada</span><div><b>Ferritina:</b> a dádiva no IPST está excluída (péptidos injetáveis sem receita, isotretinoína, rapamicina). <span class="mut">(Medicamentos; Relacional REL-010)</span></div></div>
-<div class="flag"><span class="pill bad">Nunca</span><div>AINE crónico · tetraciclinas com isotretinoína · nitratos/poppers com tadalafil · vitamina A pré-formada · ferro · toranja (rapamicina, tadalafil). Evitar chá verde/EGCG, ashwagandha, kava, niacina alta, levedura de arroz vermelho, berberina. <span class="mut">(Medicamentos; Suplementos)</span></div></div>
-<div class="flag"><span class="pill info">Cirurgia</span><div>Dapagliflozina parada ≥ 3 dias antes; rapamicina 1–2 semanas antes e depois; dieta líquida 24 h antes (retatrutide) e avisar o anestesista; antiplaquetários naturais 7–14 dias antes. <span class="mut">(Medicamentos)</span></div></div>
-</div>
-</div>
-</section>
-
-<!-- ============ QUESTÕES ============ -->
-<section id="questoes">
-<h2>Contradições, questões em aberto e próximos exames</h2>
-<p class="src">Fontes: <b>Relacional</b> (REL-029, analise_cruzada.md, 01-10-2026 01:00), <b>Genetica</b>, <b>Suplementos + Medicamentos</b>, <b>Exames</b>, comparação feita nesta compilação.</p>
-<div class="grid g3">
-<div class="card"><h3 style="margin-top:0">Contradições nos dados</h3><ul class="clean small">
-<li><b>Fígado:</b> RM “normal” vs ecografia (esteatose + hepatomegalia) e volumetria 1877 ml.</li>
-<li><b>RMR:</b> 3404 kcal medidas, muito acima do previsto pela fórmula.</li>
-<li><b>Folato:</b> “B9” 1 ng/mL vs folato sérico 9,1 ng/mL.</li>
-<li><b>DHEA 927 “µg/dL”</b>: unidade provavelmente ng/dL (DHEA-S normal).</li>
-<li><b>Vitamina D:</b> genética prevê 25(OH)D alta; medida 37,4 sob 10 000 UI.</li>
-<li><b>Retatrutide</b> já tomado antes de 25-08 e mesmo assim há esteatose com ALT alta (inesperado; Relacional).</li>
-<li><b>Óleo de peixe:</b> Suplementos regista EPA 1125 + DHA 875 mg (2 g reais); o Relacional supõe que “2 g” seja óleo. Rótulo por confirmar.</li>
-<li><b>Tensão arterial:</b> autorreportada sempre ótima; o relatório de Medicamentos nota que nunca foi medida nos exames.</li>
-</ul></div>
-<div class="card"><h3 style="margin-top:0">Divergências entre bots (sugestões, não aplicadas)</h3><ul class="clean small">
-<li><b>B6 15 mg:</b> pausar (Suplementos v2, Relacional) vs ≤ 10 mg (Medicamentos) vs 2–5 mg (Genetica).</li>
-<li><b>B2 25 mg:</b> ~10 mg/dia (Suplementos) vs parar (Relacional) vs 5–10 mg (Genetica).</li>
-<li><b>Ómega-3:</b> +DHA até ~3,2–4 g (Suplementos) vs trocar de produto, ≤ 3 g (Relacional).</li>
-<li><b>Polifenóis:</b> pausar 5 (Suplementos) vs pausar 8, incluindo picnogenol, hidroxitirosol e folha de oliveira (Relacional).</li>
-<li><b>R-ALA, 2.º alho, gengibre diário:</b> manter (Suplementos) vs cortar (Relacional).</li>
-<li><b>Vitamina C:</b> só entre refeições (Suplementos) vs pausar (Relacional).</li>
-<li><b>Colagénio 20 g:</b> manter (Suplementos) vs 10–15 g (Relacional).</li>
-<li><b>Zinco:</b> o ficheiro anterior do Suplementos queria subir já; agora todos pedem a ceruloplasmina primeiro.</li>
-<li><b>Ferritina:</b> o ficheiro anterior do Suplementos propunha dar sangue; com a medicação, a dádiva está excluída.</li>
-</ul></div>
-<div class="card"><h3 style="margin-top:0">Questões em aberto</h3><ul class="clean small">
-<li>Há quanto tempo toma cada fármaco, péptido e suplemento</li>
-<li>Data da última rapamicina antes de 25-08 e fase dos ciclos de péptidos</li>
-<li>Data da última dose de inclisiran</li>
-<li>Rótulo do óleo de peixe (EPA/DHA por dose, forma) e dos minerais vestigiais</li>
-<li>Via e quantidade real da oxitocina</li>
-<li>Estado de jejum e hora da colheita de agosto</li>
-<li>História familiar; tabaco/vape; horas de sono; dieta e treino reais</li>
-<li>Dados brutos genéticos e plataforma do teste</li>
-<li>Indicação da isotretinoína</li>
-</ul></div>
-</div>
-<div class="card" style="margin-top:14px"><h3 style="margin-top:0">Próximos exames registados pelos bots</h3>
-<div class="grid g3 small">
-<div><b>Fígado</b><br>FibroScan/CAP ou RM-PDFF + R2* · ceruloplasmina (cobre urinário 24 h se baixa) · CK · alfa-1 antitripsina · anti-tTG IgA + IgA total · anti-HBc/anti-HBs · ALT/AST/GGT às 8–12 semanas</div>
-<div><b>Rim e metabolismo</b><br>UACR em 2 primeiras urinas da manhã · cistatina C · bicarbonato · insulina/glicemia em jejum confirmado · frutosamina · CGM 14 dias</div>
-<div><b>Ferro</b><br>Ferritina + saturação em jejum (a cada 2 flebotomias, se prescritas) · hemograma</div>
-<div><b>Vitaminas e minerais</b><br>Homocisteína · folato eritrocitário · MMA/holoTC · P5P · TDP (B1) · 25(OH)D + PTH + cálcio urinário · zinco/cobre em tubo sem metais · antimónio e prata repetidos · lítio sérico · anti-TPO</div>
-<div><b>Composição e capacidade</b><br>DEXA a cada 6 meses · prova de esforço cardiopulmonar (VO₂máx) · calorimetria padronizada · IGF-1</div>
-<div><b>Ómega-3, hormonas e genética</b><br>Índice ómega-3 padronizado em 3–4 meses · estradiol LC-MS/MS + LH/FSH · CYP2D6 · UGT1A1 direto<br><span class="mut">Não pedir: CAC, PSA, Lp(a), RM de corpo inteiro (Relacional)</span></div>
-</div></div>
-</section>
 </main>
-<footer>Painel compilado a 01-10-2026 (PT) só com dados registados pelos bots. Onde não há registo aparece “sem dados”. Documento de apoio: não substitui o médico. Dados em data/sangue.json e data/exames.json (mesmo site); sem pedidos a serviços externos.</footer>
+<footer>Painel compilado a 02-10-2026 (PT) só com resultados de análises e dados genéticos registados. Documento de apoio: não substitui o médico. Dados em data/sangue.json (mesmo site); sem pedidos a serviços externos.</footer>
 
 <script>
-const SUPP = [
-["Creatina","5 g","Creatinina 0,8; cistatina C 0,66","Manter","Manter","Útil (sarcopenia prevista)"],
-["Taurina","6 g","Não medida","→ 3 g","→ 3 g","Sem dados"],
-["Colagénio bovino","20 g","Glicina 179 (ótimo ≥ 308)","Manter","→ 10–15 g + proteína completa","Abaixo do ótimo; rever a hora"],
-["Glicina","3 g ao deitar","Glicina 179,46 µmol/L","Manter (→ 5 g se continuar baixa)","Manter (pode subir para 5 g)","Rever a hora face à colheita"],
-["Vitamina C lipossomal","500 mg","Ferritina 310","Só entre refeições (≥ 2 h)","Pausar enquanto ferritina > 100","Longe das refeições"],
-["D3 + K2 MK-7","10 000 UI + 240 mcg","25(OH)D 37,39","Manter; com refeição gorda, longe do psyllium","Manter; repetir com PTH e cálcio urinário","Não subir sem médico; medir PTH"],
-["B2 (R5P)","25 mg","B2 39,33 (ref. 2,33–14,68)","25 mg 3×/semana (~10 mg/dia)","Parar","Pode descer para 5–10 mg"],
-["B6 (P5P)","15 mg","P5P 53,83 (ref. 2,1–21,7)","Pausar","Parar","2–5 mg ou pausar (Medicamentos: ≤ 10 mg)"],
-["5-MTHF","800 mcg","Folato 9,1; homocisteína 18,4","Manter; confirmar o produto","Mudar de marca","Verificar adesão e marca"],
-["B12","1000 mcg","B12 829","Manter","Manter","Confirmar com MMA/holoTC"],
-["Minerais vestigiais","Iodo 50 mcg, zinco 11 mg, selénio 55 mcg, cobre 0,9 mg, manganês 2,3 mg, crómio 35 mcg, molibdénio 45 mcg, boro 1 mg","Zinco 42,41; cobre 62,28; selénio 134,55","Igual até à ceruloplasmina; depois + Zn ~10 mg + Cu ~1 mg","Ceruloplasmina primeiro; não acrescentar selénio","Não subir o zinco sem cobre/ceruloplasmina; confirmar sem ferro"],
-["TMG","1500 mg","Homocisteína 18,4","→ 3 g","→ 3 g","Pode subir para 3 g"],
-["Magnésio glicinato","500 mg","Mg 2,15","Manter (noite)","Manter","Adequado"],
-["Magnésio acetil-taurato","750 mg","Mg 2,15","Manter (noite)","Manter","Adequado"],
-["NAC","1800 mg (3 h depois do treino)","Cistina 26,78","→ 1200 mg à noite, ≥ 6 h pós-treino","→ 1200 mg (600 mg 2×/dia)","Sem sinal de problema"],
-["Óleo de peixe","“2 g” (Suplementos: EPA 1125 + DHA 875 mg)","Índice ómega-3 5,4%; AA/EPA 20,6","+ ~1,2 g DHA → ~3,2 g (até 4 g)","Trocar para rTG IFOS 5★, 2,5–3 g reais; ≤ 3 g","Adicionar 2–3 g EPA+DHA"],
-["Melatonina","Até 100 mg (Suplementos v2: “300 µg ou 100 mg”)","HOMA-IR 2,1; MTNR1B CG","Só 0,3 mg","0,3–1 mg","—"],
-["Curcumina Longvida","1 g","ALT 67,9","Pausar 8–12 semanas","Pausar","—"],
-["Luteolina","100 mg","ALT 67,9","Pausar","Pausar","—"],
-["Apigenina","100 mg","ALT 67,9","Pausar","Pausar","—"],
-["Fisetina + quercetina","2,5 g + 250 mg, 3×/mês","ALT 67,9","Pausar; depois nunca na semana da rapamicina","Pausar","—"],
-["Picnogenol","100 mg","—","Manter","Pausar","—"],
-["Hidroxitirosol + folha de oliveira","25 mg + oleuropeína 250 mg","—","Manter","Pausar","—"],
-["Alho envelhecido + alho negro","1,2 g + 10 g","—","Manter","Só o alho envelhecido","—"],
-["Gengibre","400 mg","—","Manter","Só em SOS (náusea)","—"],
-["R-ALA","240 mg","Glicemia 73,3; HbA1c 4,8","Manter (em jejum)","Parar","—"],
-["Psyllium","10 g","—","→ 15 g","Manter ou mais","Fibra: benefício (colorretal P76)"],
-["PHGG","6 g","—","→ 10 g","Manter ou mais","—"],
-["Probiótico (Ultimate Flora 150B)","sem dados de dose","—","Manter","Manter","—"],
-["Tributirina","500 mg","—","Manter","Manter","—"],
-["Lítio (orotato)","5 mg","TSH 1,35; cálcio 9,58","Manter; lítio sérico","Manter","—"],
-["Ca-AKG","2 g","Cálcio 9,58","Manter (1 g ×2)","Manter","—"],
-["L-carnosina","2 g","—","Manter","Manter","—"],
-["Ergotioneína","10 mg","—","Manter","Manter","—"],
-["ALCAR","500 mg","—","Manter","Manter","—"],
-["Astaxantina · licopeno · luteína/zeaxantina","12 mg · 35 mg · 20 + 4 mg","Vitamina A 926,52","Manter (refeição gorda)","Manter","—"],
-["Sulforafano","Glucorafanina 100 mg","—","Manter","Manter","—"],
-["Proteína","~140 g/dia","UACR 66,7 (urina diluída)","Não subir até repetir UACR","Não subir até repetir UACR","—"],
-["Tiamina (B1)","Não toma","B1 2,02 (ref. 2,7–10,12)","Acrescentar 100 mg/dia","Acrescentar 100 mg/dia","Discutir com o médico"],
-["Pastilhas de dextrose","Não tem","Acarbose","Hipoglicemia → dextrose","Acrescentar (SOS)","—"]
-];
 const SL={otimo:['ok','Ótimo'],aceitavel:['warn','Aceitável'],fora_do_otimo:['warn','Fora do ótimo'],fora_de_referencia:['bad','Fora da referência'],sem_alvo:['na','Sem alvo']};
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const pt=s=>/^-?\d+(\.\d+)?$/.test(s)?s.replace('.',','):s;
@@ -499,17 +278,21 @@ function Series(o){const cols=o.colheitas.slice().sort((a,b)=>a.data<b.data?1:-1
   Bs.innerHTML=others.length?others.map(c=>`<option value="${c.data}"${prev&&c.data===prev.data?' selected':''}>${esc(fdate(c.data))} · ${esc(c.rotulo||'')}</option>`).join(''):'<option value="">— sem outra data —</option>';Bs.disabled=!others.length};
  fillB();const aw=document.getElementById(o.ids.await);
  if(cols.length<2){aw.innerHTML='<span class="await">⏳ Só há 1 data ('+esc(fdate(cols[0].data))+'): aguarda próximo exame para comparar e ver tendências.</span>';All.disabled=true}
- const open=new Set();const tb=document.querySelector('#'+o.ids.table+' tbody'),th=document.querySelector('#'+o.ids.table+' thead');
+ let openK=null;const isOpen=k=>openK===k;const tb=document.querySelector('#'+o.ids.table+' tbody'),th=document.querySelector('#'+o.ids.table+' thead');
  const api={cols,row:null,A:()=>A.value,B:()=>Bs.value,render};
  function shown(){if(All.checked||!Bs.value)return cols;return cols.filter(c=>c.data===A.value||c.data===Bs.value)}
  function render(){const sc=shown(),a=A.value,b=Bs.value,ncol=o.before.length+sc.length+1+o.after.length;
   th.innerHTML='<tr>'+o.before.map(h=>`<th>${h}</th>`).join('')+sc.map(c=>`<th class="dcol${c.data===a?' a':''}">${esc(fdate(c.data))}<small>${c.data===a?'principal':c.data===b?'comparação':esc(c.rotulo||'')}</small></th>`).join('')+`<th class="dcol" title="${b?'Data principal vs data de comparação':'Aguarda próximo exame'}">Δ${b?`<small>${esc(fdate(a))} vs ${esc(fdate(b))}</small>`:'<small>aguarda</small>'}</th>`+o.after.map(h=>`<th>${h}</th>`).join('')+'</tr>';
   const rs=o.rows.filter(r=>o.filter(r,a,b));let h='';
-  rs.forEach(r=>{const ra=r.res[a],rb=b?r.res[b]:null;h+=`<tr class="mk${open.has(r.key)?' open':''}" data-k="${esc(r.key)}" tabindex="0" aria-expanded="${open.has(r.key)}">`+o.cellsBefore(r,ra)+sc.map(c=>{const x=r.res[c.data];if(!x)return '<td class="v miss" title="Sem resultado nesta data">—</td>';const k=kOf(stOf(r,x));return `<td class="v ${k}" title="${esc(SL[stOf(r,x)][1])}">${esc(fv(x.v))}</td>`}).join('')+`<td class="dl">${deltaHtml(delta(r,ra,rb))}</td>`+o.cellsAfter(r,ra)+'</tr>';
-   if(open.has(r.key))h+=`<tr class="det"><td colspan="${ncol}">${detailHtml(r,cols)}</td></tr>`});
+  rs.forEach(r=>{const ra=r.res[a],rb=b?r.res[b]:null;h+=`<tr class="mk${isOpen(r.key)?' open':''}" data-k="${esc(r.key)}" tabindex="0" aria-expanded="${isOpen(r.key)}">`+o.cellsBefore(r,ra)+sc.map(c=>{const x=r.res[c.data];if(!x)return '<td class="v miss" title="Sem resultado nesta data">—</td>';const k=kOf(stOf(r,x));return `<td class="v ${k}" title="${esc(SL[stOf(r,x)][1])}">${esc(fv(x.v))}</td>`}).join('')+`<td class="dl">${deltaHtml(delta(r,ra,rb))}</td>`+o.cellsAfter(r,ra)+'</tr>';
+   if(isOpen(r.key))h+=`<tr class="det"><td colspan="${ncol}">${detailHtml(r,cols)}</td></tr>`});
   tb.innerHTML=h||`<tr><td colspan="${ncol}" class="mut">Nenhum resultado com estes filtros.</td></tr>`;
   document.getElementById(o.ids.count).textContent=rs.length+' de '+o.rows.length;if(o.onRender)o.onRender(a,b)}
- tb.addEventListener('click',e=>{const tr=e.target.closest('tr.mk');if(!tr)return;const k=tr.dataset.k;open.has(k)?open.delete(k):open.add(k);render()});
+ // um gráfico aberto de cada vez: o mesmo marcador alterna; outro marcador troca; clique fora do painel ou Esc fecha
+ const close=()=>{if(openK===null)return false;const k=openK;openK=null;render();return k};
+ tb.addEventListener('click',e=>{const tr=e.target.closest('tr.mk');if(!tr||!tb.contains(tr))return;const k=tr.dataset.k;openK=(openK===k)?null:k;render();if(openK!==null){const n=tb.querySelector('tr.mk.open');if(n)n.focus({preventScroll:true})}});
+ document.addEventListener('click',e=>{if(openK===null)return;const t=e.target;if(t instanceof Element&&tb.contains(t)&&t.closest('tr.mk,tr.det'))return;close()},true);
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&openK!==null){const k=close();const n=tb.querySelector(`tr.mk[data-k="${k}"]`);if(n)n.focus({preventScroll:true})}});
  tb.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('tr.mk')){e.preventDefault();e.target.click()}});
  A.addEventListener('input',()=>{fillB();render()});Bs.addEventListener('input',render);All.addEventListener('input',render);
  (o.inputs||[]).forEach(id=>document.getElementById(id).addEventListener('input',render));render();return api}
@@ -517,8 +300,8 @@ function mkRows(list,extra){return list.map((m,i)=>{const res={};(m.resultados||
 function alvoTxt(m){if(has(m.alvo))return m.alvo;const a=m.otimo_min,b=m.otimo_max;return has(a)&&has(b)?a+'–'+b:has(b)?'< '+b:has(a)?'> '+a:'—'}
 function loadJSON(u){return fetch(u,{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error(u+': HTTP '+r.status);return r.json()})}
 function failMsg(id,u,e){document.querySelector('#'+id+' tbody').innerHTML=`<tr><td class="mut">Não foi possível carregar ${esc(u)} (${esc(e.message)}). Se abriu o ficheiro localmente, sirva a pasta com <code>python3 -m http.server</code>.</td></tr>`}
-let SS=null,ES=null;
-function heroMeta(){if(!SS)return;const c=SS.cols,ec=ES?ES.cols:[];document.getElementById('heroMeta').innerHTML=`Análises: ${c.length} data${c.length>1?'s':''} (última ${esc(fdate(c[0].data))}${c.length>1?', anterior '+esc(fdate(c[1].data)):''})`+(ec.length?` · Exames: ${ec.length} data${ec.length>1?'s':''}`:'')+(c.length<2?' · tendências a partir do próximo exame':'')+'<br>Compilado a 02-10-2026 (PT) a partir dos registos dos bots'}
+let SS=null;
+function heroMeta(){if(!SS)return;const c=SS.cols;document.getElementById('heroMeta').innerHTML=`Análises: ${c.length} data${c.length>1?'s':''} (última ${esc(fdate(c[0].data))}${c.length>1?', anterior '+esc(fdate(c[1].data)):''})`+(c.length<2?' · tendências a partir da próxima colheita':'')+'<br>Compilado a 02-10-2026 (PT)'}
 // ---- sangue ----
 loadJSON('data/sangue.json').then(D=>{const rows=mkRows(D.marcadores,m=>({c:m.c,alvo:alvoTxt(m)}));
  const cats=[...new Set(rows.map(r=>r.c))];const cs=document.getElementById('cat');cats.forEach(c=>{const op=document.createElement('option');op.value=c;op.textContent=c;cs.appendChild(op)});
@@ -538,17 +321,7 @@ function summary(rows,a,b,cols){const c={ok:0,warn:0,bad:0,na:0};let t=0,good=0,
  document.getElementById('bloodSummary').innerHTML=`<div><span class="num" style="font-size:22px">${t}</span> <span class="mut small">marcadores · ${esc(ca&&ca.descricao||fdate(a))}</span></div><div class="bar">`+['ok','warn','bad','na'].map(k=>`<span style="width:${t?c[k]/t*100:0}%;background:${col[k]}"></span>`).join('')+'</div>'+
  `<div class="legend"><span class="pill ok">${c.ok} ótimo</span><span class="pill warn">${c.warn} aceitável/fora do ótimo</span><span class="pill bad">${c.bad} fora da referência</span><span class="pill na">${c.na} sem alvo</span></div>`+
  (b?`<div class="legend" style="margin-top:8px"><span>vs ${esc(fdate(b))}:</span><span class="pill ok">${good} melhoraram</span><span class="pill bad">${bad} pioraram</span><span class="pill info">${chg} mudaram de estado</span></div>`:'<div style="margin-top:10px"><span class="await">⏳ Aguarda próximo exame para comparar com esta data</span></div>')}
-// ---- exames ----
-loadJSON('data/exames.json').then(D=>{const rows=[];D.grupos.forEach(g=>mkRows(g.itens,m=>({g:g.g})).forEach(r=>{r.key=rows.length+'';rows.push(r)}));
- const gs=document.getElementById('eg');D.grupos.forEach(g=>{const op=document.createElement('option');op.value=g.g;op.textContent=g.g;gs.appendChild(op)});
- ES=Series({colheitas:D.colheitas,rows,ids:{A:'eA',B:'eB',all:'eAll',await:'eAwait',table:'et',count:'ecount'},inputs:['eq','eg'],
-  before:['Parâmetro'],after:['Unidade','Referência','Estado','Exame'],
-  filter:r=>{const q=document.getElementById('eq').value.trim().toLowerCase(),g=gs.value;return (!q||r.label.toLowerCase().includes(q))&&(!g||r.g===g)},
-  cellsBefore:(r,ra)=>`<td><b>${esc(r.label)}</b>${ra&&ra.data_real?`<div class="small mut">${esc(fdate(ra.data_real))}</div>`:''}</td>`,
-  cellsAfter:(r,ra)=>{const st=ra?stOf(r,ra):null;return `<td class="mut small">${esc(r.u)}</td><td class="small">${esc(r.ref)}</td><td>${st?`<span class="pill ${SL[st][0]}">${SL[st][1]}</span>`:'<span class="mut small">sem resultado</span>'}</td><td class="small mut">${esc(r.g)}${ra&&ra.nota?'<div>'+esc(ra.nota)+'</div>':''}</td>`}});heroMeta()}).catch(e=>{console.warn(e);failMsg('et','data/exames.json',e)});
 
-// suplementos
-document.getElementById('supp').innerHTML=SUPP.map(r=>`<tr><td><b>${esc(r[0])}</b></td><td class="small">${esc(r[1])}</td><td class="small mut">${esc(r[2])}</td><td class="small sugcol">${esc(r[3])}</td><td class="small sugcol">${esc(r[4])}</td><td class="small sugcol">${esc(r[5])}</td></tr>`).join('');
 // navegação ativa
 const links=[...document.querySelectorAll('#nav a')];const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id))}})},{rootMargin:'-40% 0px -55% 0px'});
 document.querySelectorAll('main section').forEach(s=>obs.observe(s));
