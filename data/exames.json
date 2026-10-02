@@ -1,0 +1,688 @@
+{
+ "_leia_me": "Valores numéricos dos exames por data. Procedimento: README.md, secção \"Como adicionar uma nova data\". Respeitar a regra de privacidade do README (nada que permita deduzir a medida da balança).",
+ "versao": 2,
+ "atualizado_em": "2026-10-02",
+ "colheitas": [
+  {
+   "data": "2026-08-25",
+   "rotulo": "ago 2026",
+   "descricao": "Chennai (AIWO) 25–26-08-2026 · DEXA a 26-08-2026"
+  }
+ ],
+ "grupos": [
+  {
+   "g": "DEXA: composição corporal",
+   "itens": [
+    {
+     "m": "Gordura corporal",
+     "u": "%",
+     "ref": "",
+     "melhor": "baixo",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 31.6,
+       "s": "sem_alvo",
+       "data_real": "2026-08-26"
+      }
+     ]
+    },
+    {
+     "m": "Massa magra",
+     "u": "%",
+     "ref": "",
+     "melhor": "alto",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 65.3,
+       "s": "sem_alvo",
+       "data_real": "2026-08-26"
+      }
+     ]
+    },
+    {
+     "m": "Osso",
+     "u": "%",
+     "ref": "",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 3.1,
+       "s": "sem_alvo",
+       "data_real": "2026-08-26"
+      }
+     ]
+    },
+    {
+     "m": "VAT (massa)",
+     "u": "g",
+     "ref": "",
+     "melhor": "baixo",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 1003.8,
+       "s": "sem_alvo",
+       "data_real": "2026-08-26"
+      }
+     ]
+    },
+    {
+     "m": "VAT (área)",
+     "u": "cm²",
+     "ref": "",
+     "melhor": "baixo",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 141.2,
+       "s": "sem_alvo",
+       "data_real": "2026-08-26"
+      }
+     ]
+    },
+    {
+     "m": "Rácio androide/ginoide",
+     "u": "",
+     "ref": "",
+     "melhor": "baixo",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 1.09,
+       "s": "sem_alvo",
+       "data_real": "2026-08-26"
+      }
+     ]
+    },
+    {
+     "m": "DMO corpo inteiro",
+     "u": "g/cm²",
+     "ref": "",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 1.281,
+       "s": "otimo",
+       "data_real": "2026-08-26"
+      }
+     ]
+    },
+    {
+     "m": "DMO corpo inteiro: T-score",
+     "u": "",
+     "ref": "≥ -1,0",
+     "otimo_min": -1,
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": -0.3,
+       "s": "otimo",
+       "data_real": "2026-08-26"
+      }
+     ]
+    },
+    {
+     "m": "DMO corpo inteiro: Z-score",
+     "u": "",
+     "ref": "",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": -0.2,
+       "s": "otimo",
+       "data_real": "2026-08-26"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "g": "Densitometria óssea (fémur + coluna)",
+   "itens": [
+    {
+     "m": "Anca total: DMO",
+     "u": "g/cm²",
+     "ref": "",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 1.424,
+       "s": "otimo",
+       "data_real": "2026-08-26"
+      }
+     ]
+    },
+    {
+     "m": "Anca total: T-score",
+     "u": "",
+     "ref": "≥ -1,0",
+     "otimo_min": -1,
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 1.5,
+       "s": "otimo",
+       "data_real": "2026-08-26"
+      }
+     ]
+    },
+    {
+     "m": "Colo do fémur: T-score",
+     "u": "",
+     "ref": "≥ -1,0",
+     "otimo_min": -1,
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 2.5,
+       "s": "otimo",
+       "data_real": "2026-08-26"
+      }
+     ]
+    },
+    {
+     "m": "Colo do fémur: Z-score",
+     "u": "",
+     "ref": "",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 2.6,
+       "s": "otimo",
+       "data_real": "2026-08-26"
+      }
+     ]
+    },
+    {
+     "m": "L1–L4: DMO",
+     "u": "g/cm²",
+     "ref": "",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 1.424,
+       "s": "otimo",
+       "data_real": "2026-08-26"
+      }
+     ]
+    },
+    {
+     "m": "L1–L4: T-score",
+     "u": "",
+     "ref": "≥ -1,0",
+     "otimo_min": -1,
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 2.2,
+       "s": "otimo",
+       "data_real": "2026-08-26"
+      }
+     ]
+    },
+    {
+     "m": "L1–L4: Z-score",
+     "u": "",
+     "ref": "",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 2.3,
+       "s": "otimo",
+       "data_real": "2026-08-26"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "g": "Quantificação de gordura, músculo e órgãos",
+   "itens": [
+    {
+     "m": "Gordura visceral",
+     "u": "ml",
+     "ref": "< 1500",
+     "otimo_max": 1500,
+     "melhor": "baixo",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 4913.22,
+       "s": "fora_de_referencia"
+      }
+     ]
+    },
+    {
+     "m": "Gordura pericárdica",
+     "u": "ml",
+     "ref": "53–121",
+     "otimo_min": 53,
+     "otimo_max": 121,
+     "melhor": "baixo",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 183.84,
+       "s": "fora_de_referencia"
+      }
+     ]
+    },
+    {
+     "m": "Gordura subcutânea",
+     "u": "ml",
+     "ref": "sem referência",
+     "melhor": "baixo",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 23216.55,
+       "s": "sem_alvo"
+      }
+     ]
+    },
+    {
+     "m": "Fígado (volume)",
+     "u": "ml",
+     "ref": "1100–1640",
+     "otimo_min": 1100,
+     "otimo_max": 1640,
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 1877.16,
+       "s": "fora_de_referencia"
+      }
+     ]
+    },
+    {
+     "m": "Baço (volume)",
+     "u": "ml",
+     "ref": "71–251",
+     "otimo_min": 71,
+     "otimo_max": 251,
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 267.03,
+       "s": "fora_de_referencia"
+      }
+     ]
+    },
+    {
+     "m": "Rim direito (volume)",
+     "u": "ml",
+     "ref": "70,16–153,3",
+     "otimo_min": 70.16,
+     "otimo_max": 153.3,
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 229.46,
+       "s": "fora_de_referencia"
+      }
+     ]
+    },
+    {
+     "m": "Rim esquerdo (volume)",
+     "u": "ml",
+     "ref": "70,16–153,3",
+     "otimo_min": 70.16,
+     "otimo_max": 153.3,
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 273.14,
+       "s": "fora_de_referencia"
+      }
+     ]
+    },
+    {
+     "m": "Psoas (área)",
+     "u": "cm²",
+     "ref": "> 11,5 (sem sarcopenia)",
+     "otimo_min": 11.5,
+     "melhor": "alto",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 22.63,
+       "s": "otimo"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "g": "Ecografia abdominal e pélvica",
+   "itens": [
+    {
+     "m": "Fígado (dimensão)",
+     "u": "cm",
+     "ref": "",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 15.5,
+       "s": "fora_de_referencia",
+       "nota": "Hepatomegalia ligeira com esteatose grau I"
+      }
+     ]
+    },
+    {
+     "m": "Baço (dimensão)",
+     "u": "cm",
+     "ref": "",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 10.2,
+       "s": "otimo"
+      }
+     ]
+    },
+    {
+     "m": "Próstata (volume)",
+     "u": "cc",
+     "ref": "",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 15.7,
+       "s": "otimo"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "g": "BrainAge (BrainKey)",
+   "itens": [
+    {
+     "m": "BrainAge",
+     "u": "anos",
+     "ref": "± 7 anos da idade cronológica (27)",
+     "melhor": "baixo",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 26,
+       "s": "otimo"
+      }
+     ]
+    },
+    {
+     "m": "Substância branca (percentil)",
+     "u": "P",
+     "ref": "intervalo típico",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 77,
+       "s": "otimo"
+      }
+     ]
+    },
+    {
+     "m": "Hipocampo (percentil)",
+     "u": "P",
+     "ref": "intervalo típico",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 27,
+       "s": "otimo"
+      }
+     ]
+    },
+    {
+     "m": "Cerebelo (percentil)",
+     "u": "P",
+     "ref": "intervalo típico",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 7,
+       "s": "otimo"
+      }
+     ]
+    },
+    {
+     "m": "Tálamo (percentil)",
+     "u": "P",
+     "ref": "intervalo típico",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 17,
+       "s": "otimo"
+      }
+     ]
+    },
+    {
+     "m": "SC parietal (percentil)",
+     "u": "P",
+     "ref": "intervalo típico",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 21,
+       "s": "otimo"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "g": "TC: score de cálcio + aorta",
+   "itens": [
+    {
+     "m": "CAC total",
+     "u": "score",
+     "ref": "0–10 (TC não sincronizada)",
+     "otimo_min": 0,
+     "otimo_max": 10,
+     "melhor": "baixo",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 0,
+       "s": "otimo"
+      }
+     ]
+    },
+    {
+     "m": "Aorta ascendente (máx.)",
+     "u": "mm",
+     "ref": "< 34",
+     "otimo_max": 34,
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 30.52,
+       "s": "otimo"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "g": "Estudo do sono (ApneaLink)",
+   "itens": [
+    {
+     "m": "IAH",
+     "u": "/h",
+     "ref": "< 5",
+     "otimo_max": 5,
+     "melhor": "baixo",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 2.6,
+       "s": "otimo"
+      }
+     ]
+    },
+    {
+     "m": "SpO₂ média",
+     "u": "%",
+     "ref": "94–98",
+     "otimo_min": 94,
+     "otimo_max": 98,
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 95,
+       "s": "otimo"
+      }
+     ]
+    },
+    {
+     "m": "SpO₂ mínima",
+     "u": "%",
+     "ref": "90–98",
+     "otimo_min": 90,
+     "otimo_max": 98,
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 90,
+       "s": "otimo"
+      }
+     ]
+    },
+    {
+     "m": "Eventos de ressonar",
+     "u": "",
+     "ref": "",
+     "melhor": "baixo",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 41,
+       "s": "sem_alvo"
+      }
+     ]
+    },
+    {
+     "m": "Limitação de fluxo",
+     "u": "% resp.",
+     "ref": "< ~60",
+     "otimo_max": 60,
+     "melhor": "baixo",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 37,
+       "s": "otimo"
+      }
+     ]
+    },
+    {
+     "m": "Pulso médio",
+     "u": "bpm",
+     "ref": "",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 72,
+       "s": "sem_alvo"
+      }
+     ]
+    },
+    {
+     "m": "Pulso máximo",
+     "u": "bpm",
+     "ref": "< 90",
+     "otimo_max": 90,
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 103,
+       "s": "fora_de_referencia"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "g": "Calorimetria e ECG",
+   "itens": [
+    {
+     "m": "RMR medida",
+     "u": "kcal/dia",
+     "ref": "",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 3404,
+       "s": "sem_alvo",
+       "nota": "Condições não padronizadas"
+      }
+     ]
+    },
+    {
+     "m": "Manutenção (estimativa)",
+     "u": "kcal/dia",
+     "ref": "",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 4425,
+       "s": "sem_alvo"
+      }
+     ]
+    },
+    {
+     "m": "ECG: frequência ventricular",
+     "u": "bpm",
+     "ref": "",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 77,
+       "s": "otimo"
+      }
+     ]
+    },
+    {
+     "m": "ECG: PR",
+     "u": "ms",
+     "ref": "",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 180,
+       "s": "otimo"
+      }
+     ]
+    },
+    {
+     "m": "ECG: QRS",
+     "u": "ms",
+     "ref": "",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 90,
+       "s": "otimo"
+      }
+     ]
+    },
+    {
+     "m": "ECG: QTc",
+     "u": "ms",
+     "ref": "",
+     "resultados": [
+      {
+       "data": "2026-08-25",
+       "v": 419,
+       "s": "otimo"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
