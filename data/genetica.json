@@ -1,5 +1,5 @@
 {
- "_leia_me": "Página genetica.html: SÓ resultados desfavoráveis. Ver README.md, secção \"Páginas de genética\". estado: ok | warn | bad | na | info. Texto: HTML simples (b, i, em, strong, br, small, sub, sup). Cada secção tem \"evitar\" e \"priorizar\" (listas de textos PT/EN). O protocolo consolidado está em data/genetica_protocolo.json.",
+ "_leia_me": "Página genetica.html: SÓ resultados desfavoráveis. Ver README.md, secção \"Páginas de genética\". estado: ok | warn | bad | na | info. Texto: HTML simples (b, i, em, strong, br, small, sub, sup). Cada secção tem \"evitar\" e \"priorizar\" (listas de textos PT/EN) e pode ter \"ajustar\" e \"monitorizar\" (opcionais; usados na Farmacogenómica) e \"intro\". \"farmacos\" (só em genetica.json): tabela pesquisável dos fármacos acionáveis do relatório PGx (gerada de pgx632.py). O protocolo consolidado está em data/genetica_protocolo.json.",
  "atualizado_em": "2026-10-02",
  "fonte": {
   "pt": "Fonte principal: <b>Genetica</b> · ficheiro bruto de genótipos (array de 684 967 marcadores, analisado localmente) + imputação genómica de 02-10-2026 (painel 1000G 30x; só genótipos com DR2 ≥ 0,8) · complementar: resumo favorável/desfavorável (22 temas), sergio_perfil_genetico.md §1–§20, raw_analise/ (stress oxidativo, mitocôndrias, inflamação e autoimunidade, histamina, metilação, farmacogenómica, scores poligénicos, ClinVar) e plano_genetico/plano_completo.md · não diagnóstico",
@@ -11,8 +11,8 @@
    "en": "Only the <b>unfavourable</b> or <b>caution</b> results (risk alleles, above-average scores, carrier status, increased needs). Favourable ones are under <b>Good Genetics</b>; neutral, average or inconclusive ones are not shown (including the neurotransmitter genes, which carry no favourable/unfavourable judgement). ClinVar finding to be confirmed by a clinical lab: <b>SERPINA1 Pi*MZ</b> (supported by imputation; serum AAT + Pi phenotype)."
   },
   {
-   "pt": "Cada categoria tem um bloco <b>Evitar</b> e um bloco <b>Priorizar</b> ligados aos genes dessa categoria; o <b>Protocolo genético</b> (no topo) junta tudo sem contradições, com o cartão PGx e as análises de confirmação. Os valores das análises prevalecem sobre doses baseadas só na genética. <b>Tudo é sugestão (não aplicada) e precisa de validação médica.</b>",
-   "en": "Each category has an <b>Avoid</b> block and a <b>Prioritize</b> block tied to that category’s genes; the <b>Genetic protocol</b> (at the top) brings everything together without contradictions, with the PGx card and the confirmation tests. Lab values take precedence over doses based on genetics alone. <b>Everything is a suggestion (not applied) and needs medical validation.</b>"
+   "pt": "Cada categoria tem um bloco <b>Evitar</b> e um bloco <b>Priorizar</b> ligados aos genes dessa categoria (a Farmacogenómica tem ainda <b>Ajustar a dose</b> e <b>Monitorizar</b>, e a tabela pesquisável <b>Fármacos acionáveis</b>); o <b>Protocolo genético</b> (no topo) junta tudo sem contradições, com o cartão PGx e as análises de confirmação. Os valores das análises prevalecem sobre doses baseadas só na genética. <b>Tudo é sugestão (não aplicada) e precisa de validação médica.</b>",
+   "en": "Each category has an <b>Avoid</b> block and a <b>Prioritize</b> block tied to that category’s genes (Pharmacogenomics also has <b>Adjust the dose</b> and <b>Monitor</b>, plus the searchable <b>Actionable drugs</b> table); the <b>Genetic protocol</b> (at the top) brings everything together without contradictions, with the PGx card and the confirmation tests. Lab values take precedence over doses based on genetics alone. <b>Everything is a suggestion (not applied) and needs medical validation.</b>"
   },
   {
    "pt": "Um array só testa variantes conhecidas: não exclui cancro hereditário (BRCA/Lynch), hipercolesterolemia familiar nem cardiomiopatias, e não mede CNV (duplicações do CYP2D6, GSTM1/GSTT1, LPA KIV-2). A imputação melhora os scores poligénicos e os genótipos comuns, mas não as variantes raras.",
@@ -865,12 +865,16 @@
     "pt": "Farmacogenómica",
     "en": "Pharmacogenomics"
    },
+   "intro": {
+    "pt": "Relatório de <b>632 fármacos</b> (chip + imputação; CPIC, DPWG e rótulos FDA): <b>2 a evitar</b>, <b>16 com ajuste de dose</b>, <b>35 a monitorizar</b> e 8 indeterminados; os restantes estão na Genética Boa. <b>Medicação atual: nenhum fármaco a evitar nem com mudança de dose.</b> Lista completa e pesquisável em <b>Fármacos acionáveis</b>, no fim da página.",
+    "en": "Report on <b>632 drugs</b> (chip + imputation; CPIC, DPWG and FDA labels): <b>2 to avoid</b>, <b>16 needing a dose adjustment</b>, <b>35 to monitor</b> and 8 undetermined; the rest are under Good Genetics. <b>Current medication: no drug to avoid and no dose change.</b> Full searchable list under <b>Actionable drugs</b>, at the end of the page."
+   },
    "linhas": [
     {
      "item": "CYP2C9",
      "texto": {
-      "pt": "*1/*3 (metabolizador intermédio): AINEs de semivida longa, fenitoína e siponimod com cautela",
-      "en": "*1/*3 (intermediate metaboliser): long half-life NSAIDs, phenytoin and siponimod with caution"
+      "pt": "*1/*3 (atividade 1,0; metabolizador intermédio): <b>piroxicam e tenoxicam a evitar</b>; ibuprofeno, celecoxib, flurbiprofeno e lornoxicam na menor dose; meloxicam 50%; fenitoína ~25% menos; fluvastatina ≤ 40 mg; siponimod 1 mg; outros AINEs e sulfonilureias a monitorizar",
+      "en": "*1/*3 (activity score 1.0; intermediate metaboliser): <b>avoid piroxicam and tenoxicam</b>; ibuprofen, celecoxib, flurbiprofen and lornoxicam at the lowest dose; meloxicam 50%; phenytoin ~25% less; fluvastatin ≤ 40 mg; siponimod 1 mg; other NSAIDs and sulfonylureas to monitor"
      },
      "estado": "bad",
      "rotulo": {
@@ -881,8 +885,8 @@
     {
      "item": "VKORC1 + CYP4F2",
      "texto": {
-      "pt": "VKORC1 −1639 TT (rs9923231, confirmado pela imputação, DR2 0,99) + CYP4F2 CC: alta sensibilidade a varfarina/acenocumarol (dose muito menor)",
-      "en": "VKORC1 −1639 TT (rs9923231, confirmed by imputation, DR2 0.99) + CYP4F2 CC: high sensitivity to warfarin/acenocoumarol (much lower dose)"
+      "pt": "VKORC1 −1639 TT (rs9923231, confirmado pela imputação, DR2 0,99) + CYP4F2 CC, somados ao CYP2C9 *1/*3: alta sensibilidade aos cumarínicos (varfarina com manutenção prevista ~0,5–2 mg/dia; acenocumarol e fenprocumon ~50% da dose inicial)",
+      "en": "VKORC1 −1639 TT (rs9923231, confirmed by imputation, DR2 0.99) + CYP4F2 CC, on top of CYP2C9 *1/*3: high sensitivity to coumarins (warfarin with a predicted maintenance of ~0.5–2 mg/day; acenocoumarol and phenprocoumon ~50% of the starting dose)"
      },
      "estado": "bad",
      "rotulo": {
@@ -893,8 +897,8 @@
     {
      "item": "NAT2",
      "texto": {
-      "pt": "*5/*5 provável: acetilador lento (isoniazida, hidralazina, sulfassalazina, sulfametoxazol; mais risco de cancro da bexiga com tabaco); somado à DAO/HNMT ligeiramente reduzidas",
-      "en": "Probable *5/*5: slow acetylator (isoniazid, hydralazine, sulfasalazine, sulfamethoxazole; higher bladder cancer risk with tobacco); on top of mildly reduced DAO/HNMT"
+      "pt": "*5/*5 provável: acetilador lento (dose menor de isoniazida, hidralazina e amifampridina; sulfametoxazol, dapsona, sulfassalazina e procainamida a monitorizar; mais risco de cancro da bexiga com tabaco); somado à DAO/HNMT ligeiramente reduzidas",
+      "en": "Probable *5/*5: slow acetylator (lower dose of isoniazid, hydralazine and amifampridine; sulfamethoxazole, dapsone, sulfasalazine and procainamide to monitor; higher bladder cancer risk with tobacco); on top of mildly reduced DAO/HNMT"
      },
      "estado": "warn",
      "rotulo": {
@@ -905,8 +909,8 @@
     {
      "item": "UGT1A1",
      "texto": {
-      "pt": "*1/*28 ((TA)7 heterozigoto, confirmado pela imputação): portador de Gilbert (metabolizador intermédio; irinotecano, atazanavir; bilirrubina ligeiramente alta é benigna)",
-      "en": "*1/*28 ((TA)7 heterozygous, confirmed by imputation): Gilbert carrier (intermediate metaboliser; irinotecan, atazanavir; slightly high bilirubin is benign)"
+      "pt": "*1/*28 ((TA)7 heterozigoto, confirmado pela imputação): portador de Gilbert (metabolizador intermédio; irinotecano e sacituzumab com mais neutropenia, nilotinib e pazopanib com mais bilirrubina, belinostat; atazanavir sem restrição; bilirrubina ligeiramente alta é benigna)",
+      "en": "*1/*28 ((TA)7 heterozygous, confirmed by imputation): Gilbert carrier (intermediate metaboliser; irinotecan and sacituzumab with more neutropenia, nilotinib and pazopanib with more bilirubin, belinostat; atazanavir unrestricted; slightly high bilirubin is benign)"
      },
      "estado": "warn",
      "rotulo": {
@@ -917,38 +921,106 @@
     {
      "item": "CYP3A5 · ABCB1",
      "texto": {
-      "pt": "CYP3A5 *1/*3 (expressor): exposição por mg à rapamicina possivelmente mais baixa do que em não expressores · ABCB1 3435 TT (efeito inconsistente)",
-      "en": "CYP3A5 *1/*3 (expresser): rapamycin exposure per mg possibly lower than in non-expressers · ABCB1 3435 TT (inconsistent effect)"
+      "pt": "CYP3A5 *1/*3 (expressor): exposição por mg à rapamicina possivelmente mais baixa do que em não expressores (calibrar por doseamento); tacrolímus sistémico 1,5–2× a dose inicial · ABCB1 3435 TT (efeito inconsistente)",
+      "en": "CYP3A5 *1/*3 (expresser): rapamycin exposure per mg possibly lower than in non-expressers (calibrate by drug level); systemic tacrolimus 1.5–2× the starting dose · ABCB1 3435 TT (inconsistent effect)"
      },
      "estado": "warn",
      "rotulo": {
       "pt": "Atenção",
       "en": "Caution"
      }
+    },
+    {
+     "item": "CYP2B6",
+     "texto": {
+      "pt": "*2/*4 (metabolizador rápido provável): metadona com níveis possivelmente mais baixos (titular pela resposta, com ECG pelo QT); sertralina, bupropiona e efavirenz em dose padrão",
+      "en": "*2/*4 (probable rapid metaboliser): methadone levels possibly lower (titrate by response, with an ECG for QT); sertraline, bupropion and efavirenz at standard dose"
+     },
+     "estado": "warn",
+     "rotulo": {
+      "pt": "Rápido",
+      "en": "Rapid"
+     }
     }
    ],
    "evitar": [
     {
-     "pt": "Varfarina e acenocumarol (preferir DOAC); se for mesmo preciso um cumarínico: algoritmo genético e cerca de 50% da dose inicial",
-     "en": "Warfarin and acenocoumarol (prefer a DOAC); if a coumarin is truly needed: genetic algorithm and about 50% of the starting dose"
+     "pt": "<b>Piroxicam e tenoxicam</b> (CYP2C9 *1/*3, semivida longa): escolher outro AINE ou paracetamol",
+     "en": "<b>Piroxicam and tenoxicam</b> (CYP2C9 *1/*3, long half-life): choose another NSAID or paracetamol"
     },
     {
-     "pt": "AINE crónico; piroxicam e tenoxicam; meloxicam acima de 50% da dose (CYP2C9; rim com telmisartan + dapagliflozina)",
-     "en": "Chronic NSAIDs; piroxicam and tenoxicam; meloxicam above 50% of the dose (CYP2C9; kidneys with telmisartan + dapagliflozin)"
+     "pt": "AINE crónico, de qualquer tipo (CYP2C9; rim com telmisartan + dapagliflozina)",
+     "en": "Chronic NSAIDs of any kind (CYP2C9; kidneys with telmisartan + dapagliflozin)"
     },
     {
-     "pt": "Isoniazida sem dose guiada pelo NAT2; sulfametoxazol (mais hipersensibilidade nos acetiladores lentos)",
-     "en": "Isoniazid without NAT2-guided dosing; sulfamethoxazole (more hypersensitivity in slow acetylators)"
+     "pt": "Cumarínicos (varfarina, acenocumarol, fenprocumon) quando um DOAC servir",
+     "en": "Coumarins (warfarin, acenocoumarol, phenprocoumon) whenever a DOAC will do"
+    },
+    {
+     "pt": "Terbinafina oral (HLA-A*33:01 não avaliável + fígado genético): preferir antifúngico tópico",
+     "en": "Oral terbinafine (HLA-A*33:01 not assessable + liver genetics): prefer a topical antifungal"
     },
     {
      "pt": "Toranja, pomelo e laranja amarga; berberina e polifenóis concentrados na janela da rapamicina (3 dias antes a 7 dias depois); fluconazol oral só fora das 2 semanas depois de uma toma",
      "en": "Grapefruit, pomelo and bitter orange; berberine and concentrated polyphenols in the rapamycin window (3 days before to 7 days after); oral fluconazole only outside the 2 weeks after a dose"
     }
    ],
+   "ajustar": [
+    {
+     "pt": "<b>Cumarínicos</b>: varfarina por algoritmo genético (manutenção prevista ~0,5–2 mg/dia, INR apertado); acenocumarol e fenprocumon com ~50% da dose inicial e INR mais frequente",
+     "en": "<b>Coumarins</b>: warfarin by genetic algorithm (predicted maintenance ~0.5–2 mg/day, tight INR); acenocoumarol and phenprocoumon at ~50% of the starting dose with more frequent INR"
+    },
+    {
+     "pt": "<b>AINEs CYP2C9</b>: ibuprofeno, celecoxib, flurbiprofeno e lornoxicam na menor dose e curso curto; meloxicam com 50% da menor dose (máximo 50% da dose máxima)",
+     "en": "<b>CYP2C9 NSAIDs</b>: ibuprofen, celecoxib, flurbiprofen and lornoxicam at the lowest dose for a short course; meloxicam at 50% of the lowest dose (at most 50% of the maximum dose)"
+    },
+    {
+     "pt": "<b>Fenitoína/fosfenitoína</b>: carga habitual e manutenção ~25% menor, guiada por níveis · <b>fluvastatina</b> ≤ 40 mg/dia · <b>siponimod</b> 1 mg/dia de manutenção",
+     "en": "<b>Phenytoin/fosphenytoin</b>: usual loading dose and ~25% lower maintenance, guided by levels · <b>fluvastatin</b> ≤ 40 mg/day · <b>siponimod</b> 1 mg/day maintenance"
+    },
+    {
+     "pt": "<b>NAT2 lento</b>: isoniazida em dose guiada pelo NAT2 + piridoxina + vigilância hepática; hidralazina com 40–75 mg/dia iniciais (cautela a partir de 200 mg/dia); amifampridina na menor dose inicial",
+     "en": "<b>Slow NAT2</b>: isoniazid at a NAT2-guided dose + pyridoxine + liver monitoring; hydralazine starting at 40–75 mg/day (caution from 200 mg/day); amifampridine at the lowest starting dose"
+    },
+    {
+     "pt": "<b>Tacrolímus sistémico</b>: 1,5–2× a dose inicial, guiado por níveis (CYP3A5 expressor; o tópico não é afetado)",
+     "en": "<b>Systemic tacrolimus</b>: 1.5–2× the starting dose, guided by levels (CYP3A5 expresser; topical use is not affected)"
+    }
+   ],
+   "monitorizar": [
+    {
+     "pt": "<b>CYP2D6 (sem CNV no chip)</b>: codeína, tramadol, tamoxifeno, eliglustate, pimozida, tetrabenazina e deutetrabenazina: confirmar com teste clínico com CNV antes de uso regular; com tamoxifeno, evitar inibidores fortes do CYP2D6 (paroxetina, fluoxetina, bupropiona)",
+     "en": "<b>CYP2D6 (no CNV on the chip)</b>: codeine, tramadol, tamoxifen, eliglustat, pimozide, tetrabenazine and deutetrabenazine: confirm with a clinical test including CNV before regular use; with tamoxifen, avoid strong CYP2D6 inhibitors (paroxetine, fluoxetine, bupropion)"
+    },
+    {
+     "pt": "<b>UGT1A1*28</b>: irinotecano e sacituzumab govitecan (hemograma apertado), nilotinib e pazopanib (bilirrubina benigna que confunde a vigilância hepática), belinostat",
+     "en": "<b>UGT1A1*28</b>: irinotecan and sacituzumab govitecan (close blood counts), nilotinib and pazopanib (benign bilirubin that muddles liver monitoring), belinostat"
+    },
+    {
+     "pt": "<b>CYP2C9</b>: outros AINEs (diclofenac, naproxeno, aceclofenac, indometacina, nimesulida, parecoxib) e sulfonilureias (glibenclamida, gliclazida, glimepirida, glipizida, tolbutamida: começar baixo e vigiar hipoglicemias)",
+     "en": "<b>CYP2C9</b>: other NSAIDs (diclofenac, naproxen, aceclofenac, indometacin, nimesulide, parecoxib) and sulfonylureas (glibenclamide, gliclazide, glimepiride, glipizide, tolbutamide: start low and watch for hypoglycaemia)"
+    },
+    {
+     "pt": "<b>NAT2 e CYP2B6</b>: sulfametoxazol, dapsona, sulfassalazina e procainamida (G6PD normal); metadona (CYP2B6 *2/*4: titular pela resposta, com ECG)",
+     "en": "<b>NAT2 and CYP2B6</b>: sulfamethoxazole, dapsone, sulfasalazine and procainamide (normal G6PD); methadone (CYP2B6 *2/*4: titrate by response, with an ECG)"
+    },
+    {
+     "pt": "<b>Medicação atual</b>: sirolímus (doseamento 24–48 h após a dose) e isotretinoína (fígado e lípidos; protetor solar diário). Fígado genético: transaminases com metotrexato, leflunomida, acitretina e paracetamol (≤ 2 g/dia)",
+     "en": "<b>Current medication</b>: sirolimus (drug level 24–48 h after the dose) and isotretinoin (liver and lipids; daily sunscreen). Liver genetics: transaminases with methotrexate, leflunomide, acitretin and paracetamol (≤ 2 g/day)"
+    },
+    {
+     "pt": "<b>Indeterminados</b>: aminoglicosídeos (MT-RNR1 não determinável: curso curto e vigilância auditiva; teste m.1555A>G se o uso for repetido), lapatinib (HLA-DRB1*07:01 não avaliado)",
+     "en": "<b>Undetermined</b>: aminoglycosides (MT-RNR1 not determinable: short course and hearing monitoring; m.1555A>G test if use is repeated), lapatinib (HLA-DRB1*07:01 not assessed)"
+    }
+   ],
    "priorizar": [
     {
      "pt": "Levar o <b>cartão PGx</b> (ver Protocolo) para o processo clínico e mostrá-lo antes de qualquer fármaco novo",
      "en": "Put the <b>PGx card</b> (see Protocol) in the medical record and show it before any new drug"
+    },
+    {
+     "pt": "<b>Confirmar os achados acionáveis com um teste PGx clínico</b> (CYP2D6 com CNV + HLA); o chip e a imputação não substituem o laboratório",
+     "en": "<b>Confirm the actionable findings with a clinical PGx test</b> (CYP2D6 with CNV + HLA); the chip and imputation do not replace a clinical lab"
     },
     {
      "pt": "Confirmação: <b>doseamento de sirolimus 24–48 h após a dose</b>, sem polifenóis nem azóis nos dias anteriores, para calibrar a dose em vez de a subir às cegas",
@@ -959,10 +1031,987 @@
      "en": "Pain: paracetamol ≤ 2 g/day as first line; NSAIDs only at the lowest dose for the shortest time"
     },
     {
-     "pt": "Se algum dia for preciso: DOAC para anticoagular; tacrolimus 1,5–2× a dose inicial (CYP3A5 expressor)",
-     "en": "If ever needed: a DOAC for anticoagulation; tacrolimus 1.5–2× the starting dose (CYP3A5 expresser)"
+     "pt": "Se algum dia for preciso anticoagular: DOAC (apixabano, rivaroxabano, edoxabano ou dabigatrano: sem interação PGx relevante)",
+     "en": "If anticoagulation is ever needed: a DOAC (apixaban, rivaroxaban, edoxaban or dabigatran: no relevant PGx interaction)"
     }
    ]
   }
- ]
+ ],
+ "farmacos": {
+  "id": "farmacos",
+  "titulo": {
+   "pt": "Fármacos acionáveis (relatório de 632)",
+   "en": "Actionable drugs (632-drug report)"
+  },
+  "intro": {
+   "pt": "Só os fármacos com ação (evitar, ajustar a dose, monitorizar ou indeterminado); os 226 normais e os 345 sem interação PGx conhecida não são listados. Pesquise pelo nome, gene ou ação. Somatropina aparece em Evitar por coerência com o protocolo (GH/IGF-1), não por PGx.",
+   "en": "Only drugs that need action (avoid, adjust the dose, monitor or undetermined); the 226 normal ones and the 345 with no known PGx interaction are not listed. Search by name, gene or action. Somatropin is under Avoid for consistency with the protocol (GH/IGF-1), not because of PGx."
+  },
+  "fonte": {
+   "pt": "Genetica · relatório PGx de 632 fármacos (chip + imputação; CPIC, DPWG, rótulos FDA) · confirmar com teste PGx clínico",
+   "en": "Genetica · 632-drug PGx report (chip + imputation; CPIC, DPWG, FDA labels) · confirm with a clinical PGx test"
+  },
+  "linhas": [
+   {
+    "f": {
+     "pt": "piroxicam",
+     "en": "piroxicam"
+    },
+    "acao": "evitar",
+    "genes": {
+     "pt": "CYP2C9",
+     "en": "CYP2C9"
+    },
+    "rec": {
+     "pt": "Evitar: escolher um AINE que não dependa do CYP2C9 ou de semivida curta (CPIC 2020).",
+     "en": "Avoid: choose an NSAID not dependent on CYP2C9 or with a short half-life (CPIC 2020)."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "somatropina (hormona de crescimento)",
+     "en": "somatropin (growth hormone)"
+    },
+    "acao": "evitar",
+    "genes": {
+     "pt": "TERT/melanoma (contexto)",
+     "en": "TERT/melanoma (context)"
+    },
+    "rec": {
+     "pt": "Não é interação PGx: o protocolo sugere evitar GH/IGF-1 (alelos TERT e melanoma P89).",
+     "en": "Not a PGx interaction: the protocol suggests avoiding GH/IGF-1 (TERT alleles and melanoma P89)."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "tenoxicam",
+     "en": "tenoxicam"
+    },
+    "acao": "evitar",
+    "genes": {
+     "pt": "CYP2C9",
+     "en": "CYP2C9"
+    },
+    "rec": {
+     "pt": "Evitar: escolher um AINE que não dependa do CYP2C9 ou de semivida curta (CPIC 2020).",
+     "en": "Avoid: choose an NSAID not dependent on CYP2C9 or with a short half-life (CPIC 2020)."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "acenocumarol",
+     "en": "acenocoumarol"
+    },
+    "acao": "ajustar",
+    "genes": {
+     "pt": "CYP2C9, VKORC1",
+     "en": "CYP2C9, VKORC1"
+    },
+    "rec": {
+     "pt": "~50% da dose inicial e INR mais frequente (DPWG); preferir um DOAC.",
+     "en": "~50% of the starting dose and more frequent INR (DPWG); prefer a DOAC."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "amifampridina",
+     "en": "amifampridine"
+    },
+    "acao": "ajustar",
+    "genes": {
+     "pt": "NAT2",
+     "en": "NAT2"
+    },
+    "rec": {
+     "pt": "NAT2 lento: começar com a menor dose diária recomendada (rótulo FDA).",
+     "en": "Slow NAT2: start at the lowest recommended daily dose (FDA label)."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "celecoxib",
+     "en": "celecoxib"
+    },
+    "acao": "ajustar",
+    "genes": {
+     "pt": "CYP2C9",
+     "en": "CYP2C9"
+    },
+    "rec": {
+     "pt": "Menor dose eficaz, titular com cautela e curso curto; sem uso crónico (CPIC 2020).",
+     "en": "Lowest effective dose, titrate carefully and keep the course short; no chronic use (CPIC 2020)."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "fenitoína",
+     "en": "phenytoin"
+    },
+    "acao": "ajustar",
+    "genes": {
+     "pt": "CYP2C9, HLA-B*15:02",
+     "en": "CYP2C9, HLA-B*15:02"
+    },
+    "rec": {
+     "pt": "Carga habitual; manutenção ~25% menor, ajustada por níveis séricos (CPIC 2020); HLA-B*15:02 com probabilidade a priori muito baixa.",
+     "en": "Usual loading dose; ~25% lower maintenance, adjusted by serum levels (CPIC 2020); HLA-B*15:02 has a very low prior probability."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "fenprocumon",
+     "en": "phenprocoumon"
+    },
+    "acao": "ajustar",
+    "genes": {
+     "pt": "CYP2C9, VKORC1",
+     "en": "CYP2C9, VKORC1"
+    },
+    "rec": {
+     "pt": "~50% da dose inicial e INR mais frequente (DPWG); preferir um DOAC.",
+     "en": "~50% of the starting dose and more frequent INR (DPWG); prefer a DOAC."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "flurbiprofeno",
+     "en": "flurbiprofen"
+    },
+    "acao": "ajustar",
+    "genes": {
+     "pt": "CYP2C9",
+     "en": "CYP2C9"
+    },
+    "rec": {
+     "pt": "Menor dose eficaz, titular com cautela e curso curto; sem uso crónico (CPIC 2020).",
+     "en": "Lowest effective dose, titrate carefully and keep the course short; no chronic use (CPIC 2020)."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "fluvastatina",
+     "en": "fluvastatin"
+    },
+    "acao": "ajustar",
+    "genes": {
+     "pt": "CYP2C9, SLCO1B1",
+     "en": "CYP2C9, SLCO1B1"
+    },
+    "rec": {
+     "pt": "Dose inicial ≤ 40 mg/dia; se for preciso mais, outra estatina (CPIC 2022).",
+     "en": "Starting dose ≤ 40 mg/day; if more is needed, another statin (CPIC 2022)."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "fosfenitoína",
+     "en": "fosphenytoin"
+    },
+    "acao": "ajustar",
+    "genes": {
+     "pt": "CYP2C9, HLA-B*15:02",
+     "en": "CYP2C9, HLA-B*15:02"
+    },
+    "rec": {
+     "pt": "Carga habitual; manutenção ~25% menor, ajustada por níveis séricos (CPIC 2020); HLA-B*15:02 com probabilidade a priori muito baixa.",
+     "en": "Usual loading dose; ~25% lower maintenance, adjusted by serum levels (CPIC 2020); HLA-B*15:02 has a very low prior probability."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "hidralazina",
+     "en": "hydralazine"
+    },
+    "acao": "ajustar",
+    "genes": {
+     "pt": "NAT2",
+     "en": "NAT2"
+    },
+    "rec": {
+     "pt": "Dose inicial total 40–75 mg/dia, titular com cuidado; cautela a partir de 200 mg/dia (lúpus induzido).",
+     "en": "Total starting dose 40–75 mg/day, titrate carefully; caution from 200 mg/day (drug-induced lupus)."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "ibuprofeno",
+     "en": "ibuprofen"
+    },
+    "acao": "ajustar",
+    "genes": {
+     "pt": "CYP2C9",
+     "en": "CYP2C9"
+    },
+    "rec": {
+     "pt": "Menor dose eficaz, titular com cautela e curso curto; sem uso crónico (CPIC 2020).",
+     "en": "Lowest effective dose, titrate carefully and keep the course short; no chronic use (CPIC 2020)."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "isoniazida",
+     "en": "isoniazid"
+    },
+    "acao": "ajustar",
+    "genes": {
+     "pt": "NAT2, PNPLA3/Pi*MZ (fígado)",
+     "en": "NAT2, PNPLA3/Pi*MZ (liver)"
+    },
+    "rec": {
+     "pt": "Dose guiada pelo NAT2 (menor nos acetiladores lentos) + piridoxina + vigilância hepática apertada (fígado genético).",
+     "en": "NAT2-guided dose (lower in slow acetylators) + pyridoxine + close liver monitoring (liver genetics)."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "lornoxicam",
+     "en": "lornoxicam"
+    },
+    "acao": "ajustar",
+    "genes": {
+     "pt": "CYP2C9",
+     "en": "CYP2C9"
+    },
+    "rec": {
+     "pt": "Menor dose eficaz, titular com cautela e curso curto; sem uso crónico (CPIC 2020).",
+     "en": "Lowest effective dose, titrate carefully and keep the course short; no chronic use (CPIC 2020)."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "meloxicam",
+     "en": "meloxicam"
+    },
+    "acao": "ajustar",
+    "genes": {
+     "pt": "CYP2C9",
+     "en": "CYP2C9"
+    },
+    "rec": {
+     "pt": "Iniciar com 50% da menor dose e não passar de 50% da dose máxima, ou usar alternativa (CPIC 2020).",
+     "en": "Start at 50% of the lowest dose and do not exceed 50% of the maximum dose, or use an alternative (CPIC 2020)."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "siponimod",
+     "en": "siponimod"
+    },
+    "acao": "ajustar",
+    "genes": {
+     "pt": "CYP2C9",
+     "en": "CYP2C9"
+    },
+    "rec": {
+     "pt": "Manutenção 1 mg/dia em vez de 2 mg (genotipagem CYP2C9 obrigatória no rótulo).",
+     "en": "Maintenance 1 mg/day instead of 2 mg (CYP2C9 genotyping is mandatory on the label)."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "tacrolímus (sistémico)",
+     "en": "tacrolimus (systemic)"
+    },
+    "acao": "ajustar",
+    "genes": {
+     "pt": "CYP3A5, CYP3A4",
+     "en": "CYP3A5, CYP3A4"
+    },
+    "rec": {
+     "pt": "Expressor CYP3A5: dose inicial 1,5–2× (sem passar o máximo do rótulo) e guiar por níveis (CPIC 2015); o tópico não é afetado.",
+     "en": "CYP3A5 expresser: 1.5–2× starting dose (without exceeding the label maximum), guided by levels (CPIC 2015); topical use is not affected."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "varfarina",
+     "en": "warfarin"
+    },
+    "acao": "ajustar",
+    "genes": {
+     "pt": "CYP2C9, VKORC1, CYP4F2",
+     "en": "CYP2C9, VKORC1, CYP4F2"
+    },
+    "rec": {
+     "pt": "Dose por algoritmo genético; manutenção prevista ~0,5–2 mg/dia (vs ~5 mg); INR apertado; preferir um DOAC (CPIC 2017).",
+     "en": "Dose by genetic algorithm; predicted maintenance ~0.5–2 mg/day (vs ~5 mg); tight INR; prefer a DOAC (CPIC 2017)."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "aceclofenac",
+     "en": "aceclofenac"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "CYP2C9",
+     "en": "CYP2C9"
+    },
+    "rec": {
+     "pt": "Sem recomendação CPIC formal, mas também CYP2C9: menor dose eficaz, curso curto, sem uso crónico.",
+     "en": "No formal CPIC recommendation, but also CYP2C9: lowest effective dose, short course, no chronic use."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "acitretina",
+     "en": "acitretin"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "PNPLA3/Pi*MZ (fígado)",
+     "en": "PNPLA3/Pi*MZ (liver)"
+    },
+    "rec": {
+     "pt": "Sem guideline PGx; fígado genético desfavorável (PNPLA3 + Pi*MZ): vigiar transaminases.",
+     "en": "No PGx guideline; unfavourable liver genetics (PNPLA3 + Pi*MZ): monitor transaminases."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "belinostat",
+     "en": "belinostat"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "UGT1A1",
+     "en": "UGT1A1"
+    },
+    "rec": {
+     "pt": "UGT1A1 *1/*28: sem ajuste de dose; vigiar toxicidade (rótulo FDA).",
+     "en": "UGT1A1 *1/*28: no dose adjustment; monitor toxicity (FDA label)."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "codeína",
+     "en": "codeine"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "CYP2D6, SLC22A1 (OCT1)",
+     "en": "CYP2D6, SLC22A1 (OCT1)"
+    },
+    "rec": {
+     "pt": "CYP2D6 normal provável → dose do rótulo, mas confirmar com teste clínico com CNV antes de uso regular (duplicações invisíveis no chip); OCT1 normal.",
+     "en": "Probable normal CYP2D6 → label dose, but confirm with a clinical test including CNV before regular use (duplications are invisible on the chip); normal OCT1."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "dapsona",
+     "en": "dapsone"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "NAT2, G6PD",
+     "en": "NAT2, G6PD"
+    },
+    "rec": {
+     "pt": "G6PD normal (sem restrição por hemólise); NAT2 lento: mais metemoglobinemia possível, vigiar.",
+     "en": "Normal G6PD (no haemolysis restriction); slow NAT2: more methaemoglobinaemia possible, monitor."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "deutetrabenazina",
+     "en": "deutetrabenazine"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "CYP2D6",
+     "en": "CYP2D6"
+    },
+    "rec": {
+     "pt": "O rótulo pede genotipagem CYP2D6 acima de certas doses; metabolizador normal provável, confirmar com teste clínico com CNV.",
+     "en": "The label asks for CYP2D6 genotyping above certain doses; probable normal metaboliser, confirm with a clinical test including CNV."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "diclofenac",
+     "en": "diclofenac"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "CYP2C9",
+     "en": "CYP2C9"
+    },
+    "rec": {
+     "pt": "Sem recomendação CPIC formal, mas também CYP2C9: menor dose eficaz, curso curto, sem uso crónico.",
+     "en": "No formal CPIC recommendation, but also CYP2C9: lowest effective dose, short course, no chronic use."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "eliglustate",
+     "en": "eliglustat"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "CYP2D6",
+     "en": "CYP2D6"
+    },
+    "rec": {
+     "pt": "A dose depende do fenótipo CYP2D6: teste clínico com CNV obrigatório antes de iniciar.",
+     "en": "The dose depends on the CYP2D6 phenotype: a clinical test including CNV is mandatory before starting."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "glibenclamida",
+     "en": "glibenclamide"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "CYP2C9, G6PD",
+     "en": "CYP2C9, G6PD"
+    },
+    "rec": {
+     "pt": "CYP2C9*3: mais exposição e hipoglicemia; começar baixo e vigiar a glicemia (G6PD normal).",
+     "en": "CYP2C9*3: higher exposure and hypoglycaemia; start low and monitor glucose (normal G6PD)."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "gliclazida",
+     "en": "gliclazide"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "CYP2C9, G6PD",
+     "en": "CYP2C9, G6PD"
+    },
+    "rec": {
+     "pt": "CYP2C9*3: mais exposição e hipoglicemia; começar baixo e vigiar a glicemia (G6PD normal).",
+     "en": "CYP2C9*3: higher exposure and hypoglycaemia; start low and monitor glucose (normal G6PD)."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "glimepirida",
+     "en": "glimepiride"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "CYP2C9, G6PD",
+     "en": "CYP2C9, G6PD"
+    },
+    "rec": {
+     "pt": "CYP2C9*3: mais exposição e hipoglicemia; começar baixo e vigiar a glicemia (G6PD normal).",
+     "en": "CYP2C9*3: higher exposure and hypoglycaemia; start low and monitor glucose (normal G6PD)."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "glipizida",
+     "en": "glipizide"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "CYP2C9, G6PD",
+     "en": "CYP2C9, G6PD"
+    },
+    "rec": {
+     "pt": "CYP2C9*3: mais exposição e hipoglicemia; começar baixo e vigiar a glicemia (G6PD normal).",
+     "en": "CYP2C9*3: higher exposure and hypoglycaemia; start low and monitor glucose (normal G6PD)."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "indometacina",
+     "en": "indomethacin"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "CYP2C9",
+     "en": "CYP2C9"
+    },
+    "rec": {
+     "pt": "Sem recomendação CPIC formal, mas também CYP2C9: menor dose eficaz, curso curto, sem uso crónico.",
+     "en": "No formal CPIC recommendation, but also CYP2C9: lowest effective dose, short course, no chronic use."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "irinotecano",
+     "en": "irinotecan"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "UGT1A1, DPYD",
+     "en": "UGT1A1, DPYD"
+    },
+    "rec": {
+     "pt": "UGT1A1 *1/*28: mais neutropenia; redução de dose só para *28/*28; hemograma apertado (DPYD normal).",
+     "en": "UGT1A1 *1/*28: more neutropenia; dose reduction only for *28/*28; close blood counts (normal DPYD)."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "isotretinoína",
+     "en": "isotretinoin"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "CYP2C8, CYP2C9, CYP3A4, PNPLA3/Pi*MZ (fígado)",
+     "en": "CYP2C8, CYP2C9, CYP3A4, PNPLA3/Pi*MZ (liver)"
+    },
+    "rec": {
+     "pt": "Compatível (via principal CYP2C8 normal; CYP2C9*3 pode subir ligeiramente a exposição); vigiar fígado e lípidos; protetor solar diário.",
+     "en": "Compatible (main CYP2C8 pathway normal; CYP2C9*3 may slightly raise exposure); monitor liver and lipids; daily sunscreen."
+    },
+    "atual": true
+   },
+   {
+    "f": {
+     "pt": "leflunomida",
+     "en": "leflunomide"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "PNPLA3/Pi*MZ (fígado)",
+     "en": "PNPLA3/Pi*MZ (liver)"
+    },
+    "rec": {
+     "pt": "Sem guideline PGx; fígado genético desfavorável (PNPLA3 + Pi*MZ): vigiar transaminases.",
+     "en": "No PGx guideline; unfavourable liver genetics (PNPLA3 + Pi*MZ): monitor transaminases."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "metadona",
+     "en": "methadone"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "CYP2B6, OPRM1",
+     "en": "CYP2B6, OPRM1"
+    },
+    "rec": {
+     "pt": "CYP2B6 *2/*4 (rápido): níveis possivelmente mais baixos; titular pela resposta, com ECG pelo QT.",
+     "en": "CYP2B6 *2/*4 (rapid): levels possibly lower; titrate by response, with an ECG for QT."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "metotrexato",
+     "en": "methotrexate"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "MTHFR, SLCO1B1",
+     "en": "MTHFR, SLCO1B1"
+    },
+    "rec": {
+     "pt": "MTHFR: associação fraca a mais toxicidade (CPIC nível C); folato de suporte decidido pelo médico (com metotrexato é a exceção à regra de não tomar ácido fólico); hemograma e fígado.",
+     "en": "MTHFR: weak link to more toxicity (CPIC level C); supportive folate decided by the doctor (with methotrexate this is the exception to the no-folic-acid rule); blood counts and liver."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "naproxeno",
+     "en": "naproxen"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "CYP2C9",
+     "en": "CYP2C9"
+    },
+    "rec": {
+     "pt": "Sem recomendação CPIC formal, mas também CYP2C9: menor dose eficaz, curso curto, sem uso crónico.",
+     "en": "No formal CPIC recommendation, but also CYP2C9: lowest effective dose, short course, no chronic use."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "nilotinib",
+     "en": "nilotinib"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "UGT1A1, HLA-B*57:01",
+     "en": "UGT1A1, HLA-B*57:01"
+    },
+    "rec": {
+     "pt": "UGT1A1*28: mais hiperbilirrubinemia (benigna, mas confunde a vigilância hepática); HLA-B*57:01 negativo.",
+     "en": "UGT1A1*28: more hyperbilirubinaemia (benign, but it muddles liver monitoring); HLA-B*57:01 negative."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "nimesulida",
+     "en": "nimesulide"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "CYP2C9",
+     "en": "CYP2C9"
+    },
+    "rec": {
+     "pt": "Sem recomendação CPIC formal, mas também CYP2C9: menor dose eficaz, curso curto, sem uso crónico.",
+     "en": "No formal CPIC recommendation, but also CYP2C9: lowest effective dose, short course, no chronic use."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "paracetamol",
+     "en": "paracetamol (acetaminophen)"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "UGT1A1, PNPLA3/Pi*MZ (fígado)",
+     "en": "UGT1A1, PNPLA3/Pi*MZ (liver)"
+    },
+    "rec": {
+     "pt": "Sem guideline PGx; UGT1A1*28 + fígado genético: ≤ 2 g/dia como 1.ª linha da dor.",
+     "en": "No PGx guideline; UGT1A1*28 + liver genetics: ≤ 2 g/day as first-line pain relief."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "parecoxib",
+     "en": "parecoxib"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "CYP2C9",
+     "en": "CYP2C9"
+    },
+    "rec": {
+     "pt": "Sem recomendação CPIC formal, mas também CYP2C9: menor dose eficaz, curso curto, sem uso crónico.",
+     "en": "No formal CPIC recommendation, but also CYP2C9: lowest effective dose, short course, no chronic use."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "pazopanib",
+     "en": "pazopanib"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "UGT1A1, HLA-B*57:01",
+     "en": "UGT1A1, HLA-B*57:01"
+    },
+    "rec": {
+     "pt": "UGT1A1*28: mais hiperbilirrubinemia (benigna, mas confunde a vigilância hepática); HLA-B*57:01 negativo.",
+     "en": "UGT1A1*28: more hyperbilirubinaemia (benign, but it muddles liver monitoring); HLA-B*57:01 negative."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "pimozida",
+     "en": "pimozide"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "CYP2D6",
+     "en": "CYP2D6"
+    },
+    "rec": {
+     "pt": "O rótulo pede genotipagem CYP2D6 acima de certas doses; metabolizador normal provável, confirmar com teste clínico com CNV.",
+     "en": "The label asks for CYP2D6 genotyping above certain doses; probable normal metaboliser, confirm with a clinical test including CNV."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "procainamida",
+     "en": "procainamide"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "NAT2",
+     "en": "NAT2"
+    },
+    "rec": {
+     "pt": "NAT2 lento: mais procainamida e mais lúpus induzido; vigiar níveis e ANA.",
+     "en": "Slow NAT2: more procainamide and more drug-induced lupus; monitor levels and ANA."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "sacituzumab govitecano",
+     "en": "sacituzumab govitecan"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "UGT1A1",
+     "en": "UGT1A1"
+    },
+    "rec": {
+     "pt": "UGT1A1 *1/*28: risco intermédio de neutropenia; vigiar hemograma.",
+     "en": "UGT1A1 *1/*28: intermediate neutropenia risk; monitor blood counts."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "sirolímus (rapamicina)",
+     "en": "sirolimus (rapamycin)"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "CYP3A5, CYP3A4",
+     "en": "CYP3A5, CYP3A4"
+    },
+    "rec": {
+     "pt": "Expressor CYP3A5: menos exposição por mg; doseamento 24–48 h após a dose para calibrar (sem polifenóis nem azóis antes).",
+     "en": "CYP3A5 expresser: lower exposure per mg; drug level 24–48 h after the dose to calibrate (no polyphenols or azoles beforehand)."
+    },
+    "atual": true
+   },
+   {
+    "f": {
+     "pt": "sulfametoxazol (com trimetoprim)",
+     "en": "sulfamethoxazole (with trimethoprim)"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "NAT2, G6PD",
+     "en": "NAT2, G6PD"
+    },
+    "rec": {
+     "pt": "NAT2 lento: mais hipersensibilidade possível (vigiar pele e fígado); G6PD normal.",
+     "en": "Slow NAT2: more hypersensitivity possible (watch skin and liver); normal G6PD."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "sulfassalazina",
+     "en": "sulfasalazine"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "NAT2, G6PD",
+     "en": "NAT2, G6PD"
+    },
+    "rec": {
+     "pt": "NAT2 lento: acumula sulfapiridina (náusea, hemólise, pele); começar baixo e titular.",
+     "en": "Slow NAT2: sulfapyridine accumulates (nausea, haemolysis, skin); start low and titrate."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "tamoxifeno",
+     "en": "tamoxifen"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "CYP2D6, F5/F2",
+     "en": "CYP2D6, F5/F2"
+    },
+    "rec": {
+     "pt": "CYP2D6 normal provável → 20 mg/dia; evitar inibidores fortes do CYP2D6 (paroxetina, fluoxetina, bupropiona); confirmar com teste com CNV.",
+     "en": "Probable normal CYP2D6 → 20 mg/day; avoid strong CYP2D6 inhibitors (paroxetine, fluoxetine, bupropion); confirm with a test including CNV."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "tetrabenazina",
+     "en": "tetrabenazine"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "CYP2D6",
+     "en": "CYP2D6"
+    },
+    "rec": {
+     "pt": "O rótulo pede genotipagem CYP2D6 acima de certas doses; metabolizador normal provável, confirmar com teste clínico com CNV.",
+     "en": "The label asks for CYP2D6 genotyping above certain doses; probable normal metaboliser, confirm with a clinical test including CNV."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "tolbutamida",
+     "en": "tolbutamide"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "CYP2C9, G6PD",
+     "en": "CYP2C9, G6PD"
+    },
+    "rec": {
+     "pt": "CYP2C9*3: mais exposição e hipoglicemia; começar baixo e vigiar a glicemia (G6PD normal).",
+     "en": "CYP2C9*3: higher exposure and hypoglycaemia; start low and monitor glucose (normal G6PD)."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "tramadol",
+     "en": "tramadol"
+    },
+    "acao": "monitorizar",
+    "genes": {
+     "pt": "CYP2D6, SLC22A1 (OCT1)",
+     "en": "CYP2D6, SLC22A1 (OCT1)"
+    },
+    "rec": {
+     "pt": "CYP2D6 normal provável → dose do rótulo, mas confirmar com teste clínico com CNV antes de uso regular (duplicações invisíveis no chip); OCT1 normal.",
+     "en": "Probable normal CYP2D6 → label dose, but confirm with a clinical test including CNV before regular use (duplications are invisible on the chip); normal OCT1."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "amicacina",
+     "en": "amikacin"
+    },
+    "acao": "indeterminado",
+    "genes": {
+     "pt": "MT-RNR1",
+     "en": "MT-RNR1"
+    },
+    "rec": {
+     "pt": "MT-RNR1 não determinável no chip: curso curto e vigilância auditiva; teste m.1555A>G se o uso for repetido (CPIC 2021).",
+     "en": "MT-RNR1 not determinable on the chip: short course and hearing monitoring; m.1555A>G test if use is repeated (CPIC 2021)."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "estreptomicina",
+     "en": "streptomycin"
+    },
+    "acao": "indeterminado",
+    "genes": {
+     "pt": "MT-RNR1",
+     "en": "MT-RNR1"
+    },
+    "rec": {
+     "pt": "MT-RNR1 não determinável no chip: curso curto e vigilância auditiva; teste m.1555A>G se o uso for repetido (CPIC 2021).",
+     "en": "MT-RNR1 not determinable on the chip: short course and hearing monitoring; m.1555A>G test if use is repeated (CPIC 2021)."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "gentamicina",
+     "en": "gentamicin"
+    },
+    "acao": "indeterminado",
+    "genes": {
+     "pt": "MT-RNR1",
+     "en": "MT-RNR1"
+    },
+    "rec": {
+     "pt": "MT-RNR1 não determinável no chip: curso curto e vigilância auditiva; teste m.1555A>G se o uso for repetido (CPIC 2021).",
+     "en": "MT-RNR1 not determinable on the chip: short course and hearing monitoring; m.1555A>G test if use is repeated (CPIC 2021)."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "lapatinib",
+     "en": "lapatinib"
+    },
+    "acao": "indeterminado",
+    "genes": {
+     "pt": "HLA-DRB1*07:01",
+     "en": "HLA-DRB1*07:01"
+    },
+    "rec": {
+     "pt": "HLA-DRB1*07:01 não avaliado (hepatotoxicidade): vigiar fígado se algum dia for usado.",
+     "en": "HLA-DRB1*07:01 not assessed (hepatotoxicity): monitor the liver if ever used."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "neomicina",
+     "en": "neomycin"
+    },
+    "acao": "indeterminado",
+    "genes": {
+     "pt": "MT-RNR1",
+     "en": "MT-RNR1"
+    },
+    "rec": {
+     "pt": "MT-RNR1 não determinável no chip: curso curto e vigilância auditiva; teste m.1555A>G se o uso for repetido (CPIC 2021).",
+     "en": "MT-RNR1 not determinable on the chip: short course and hearing monitoring; m.1555A>G test if use is repeated (CPIC 2021)."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "terbinafina",
+     "en": "terbinafine"
+    },
+    "acao": "indeterminado",
+    "genes": {
+     "pt": "HLA-A*33:01, PNPLA3/Pi*MZ (fígado)",
+     "en": "HLA-A*33:01, PNPLA3/Pi*MZ (liver)"
+    },
+    "rec": {
+     "pt": "HLA-A*33:01 não avaliável + fígado genético: preferir antifúngico tópico; se oral, vigiar transaminases.",
+     "en": "HLA-A*33:01 not assessable + liver genetics: prefer a topical antifungal; if oral, monitor transaminases."
+    },
+    "atual": false
+   },
+   {
+    "f": {
+     "pt": "tobramicina",
+     "en": "tobramycin"
+    },
+    "acao": "indeterminado",
+    "genes": {
+     "pt": "MT-RNR1",
+     "en": "MT-RNR1"
+    },
+    "rec": {
+     "pt": "MT-RNR1 não determinável no chip: curso curto e vigilância auditiva; teste m.1555A>G se o uso for repetido (CPIC 2021).",
+     "en": "MT-RNR1 not determinable on the chip: short course and hearing monitoring; m.1555A>G test if use is repeated (CPIC 2021)."
+    },
+    "atual": false
+   }
+  ]
+ }
 }

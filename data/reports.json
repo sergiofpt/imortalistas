@@ -1,0 +1,35 @@
+{
+ "_leia_me": "Lista de relatórios da página genetica-reports.html (reports.js). Para acrescentar um relatório: copiar o PDF (já verificado quanto à privacidade) para reports/ e juntar uma entrada a \"relatorios\". Campos: id (único, letras/números/hífens), titulo {pt,en}, data AAAA-MM-DD, ficheiro \"reports/<nome>.pdf\" (obrigatórios); descricao {pt,en}, paginas, tamanho_kb, lingua {pt,en}, etiquetas [..] (opcionais). A página ordena por data (mais recente primeiro). Ver README.md, secção \"Genética Reports\".",
+ "atualizado_em": "2026-10-02",
+ "intro": {
+  "pt": "Relatórios completos da genética em PDF, para guardar ou levar ao médico. Cada relatório novo é só uma entrada em <b>data/reports.json</b>. <b>Tudo é sugestão (não aplicada) e precisa de validação médica.</b>",
+  "en": "Full genetics reports as PDFs, to keep or take to the doctor. Each new report is just one entry in <b>data/reports.json</b>. <b>Everything is a suggestion (not applied) and needs medical validation.</b>"
+ },
+ "relatorios": [
+  {
+   "id": "farmacogenomica-632",
+   "titulo": {
+    "pt": "Farmacogenómica: resposta prevista a 632 medicamentos",
+    "en": "Pharmacogenomics: predicted response to 632 drugs"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/farmacogenomica-632-medicamentos.pdf",
+   "descricao": {
+    "pt": "Chip + imputação, com CPIC, DPWG e rótulos FDA, organizado por categoria terapêutica: 2 a evitar (piroxicam, tenoxicam), 16 com ajuste de dose, 35 a monitorizar, 8 indeterminados, 226 normais e 345 sem interação PGx conhecida. A medicação atual não tem nenhum fármaco a evitar nem com mudança de dose. Confirmar os achados acionáveis com um teste PGx clínico (CYP2D6 com CNV + HLA).",
+    "en": "Chip + imputation, with CPIC, DPWG and FDA labels, organised by therapeutic category: 2 to avoid (piroxicam, tenoxicam), 16 needing a dose adjustment, 35 to monitor, 8 undetermined, 226 normal and 345 with no known PGx interaction. Current medication has no drug to avoid and no dose change. Confirm the actionable findings with a clinical PGx test (CYP2D6 with CNV + HLA)."
+   },
+   "paginas": 49,
+   "tamanho_kb": 272,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   },
+   "etiquetas": [
+    "PGx",
+    "CPIC",
+    "DPWG",
+    "FDA"
+   ]
+  }
+ ]
+}

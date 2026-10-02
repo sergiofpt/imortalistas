@@ -1,5 +1,5 @@
 {
- "_leia_me": "Página genetica-boa.html: SÓ resultados favoráveis. Ver README.md, secção \"Páginas de genética\". estado: ok | warn | bad | na | info. Texto: HTML simples (b, i, em, strong, br, small, sub, sup). Cada secção tem \"evitar\" e \"priorizar\" (listas de textos PT/EN). O protocolo consolidado está em data/genetica_protocolo.json.",
+ "_leia_me": "Página genetica-boa.html: SÓ resultados favoráveis. Ver README.md, secção \"Páginas de genética\". estado: ok | warn | bad | na | info. Texto: HTML simples (b, i, em, strong, br, small, sub, sup). Cada secção tem \"evitar\" e \"priorizar\" (listas de textos PT/EN) e pode ter \"ajustar\" e \"monitorizar\" (opcionais; usados na Farmacogenómica) e \"intro\". \"farmacos\" (só em genetica.json): tabela pesquisável dos fármacos acionáveis do relatório PGx (gerada de pgx632.py). O protocolo consolidado está em data/genetica_protocolo.json.",
  "atualizado_em": "2026-10-02",
  "fonte": {
   "pt": "Fonte principal: <b>Genetica</b> · ficheiro bruto de genótipos (array de 684 967 marcadores, analisado localmente) + imputação genómica de 02-10-2026 (painel 1000G 30x; só genótipos com DR2 ≥ 0,8) · complementar: resumo favorável/desfavorável (22 temas), sergio_perfil_genetico.md §1–§20, raw_analise/ (stress oxidativo, mitocôndrias, inflamação e autoimunidade, histamina, metilação, farmacogenómica, scores poligénicos, ClinVar) e plano_genetico/plano_completo.md · não diagnóstico",
@@ -740,6 +740,21 @@
    },
    "linhas": [
     {
+     "item": {
+      "pt": "632 fármacos",
+      "en": "632 drugs"
+     },
+     "texto": {
+      "pt": "<b>226 com genótipo normal</b> (dose padrão) + <b>345 sem interação PGx conhecida</b>; a medicação atual não tem nenhum fármaco a evitar nem com mudança de dose (só sirolímus e isotretinoína a monitorizar; pitavastatina na dose desejada)",
+      "en": "<b>226 with a normal genotype</b> (standard dose) + <b>345 with no known PGx interaction</b>; current medication has no drug to avoid and no dose change (only sirolimus and isotretinoin to monitor; pitavastatin at the desired dose)"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Compatível",
+      "en": "Compatible"
+     }
+    },
+    {
      "item": "SLCO1B1",
      "texto": {
       "pt": "*1/*14 (função aumentada): estatinas bem toleradas, favorável à pitavastatina",
@@ -766,8 +781,20 @@
     {
      "item": "CYP2C19 · CYP3A4 · CYP2C8",
      "texto": {
-      "pt": "CYP2C19 *1/*1 · CYP3A4 *1/*1 (sem *22) · CYP2C8*3 ausente (imputação; via principal da isotretinoína normal): metabolizadores normais",
-      "en": "CYP2C19 *1/*1 · CYP3A4 *1/*1 (no *22) · CYP2C8*3 absent (imputation; normal main isotretinoin pathway): normal metabolisers"
+      "pt": "CYP2C19 <b>*1/*1</b> (sem *2, *3, *4 nem *17: clopidogrel, IBP, citalopram e voriconazol em dose padrão) · CYP3A4 *1/*1 (sem *22) · CYP2C8*3 ausente (imputação; via principal da isotretinoína normal): metabolizadores normais",
+      "en": "CYP2C19 <b>*1/*1</b> (no *2, *3, *4 or *17: clopidogrel, PPIs, citalopram and voriconazole at standard dose) · CYP3A4 *1/*1 (no *22) · CYP2C8*3 absent (imputation; normal main isotretinoin pathway): normal metabolisers"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Normal",
+      "en": "Normal"
+     }
+    },
+    {
+     "item": "OCT1 (SLC22A1)",
+     "texto": {
+      "pt": "Sem R61C, G401S, M420del nem G465R: função normal (captação normal da metformina e exposição normal ao metabolito ativo do tramadol e da morfina da codeína)",
+      "en": "No R61C, G401S, M420del or G465R: normal function (normal metformin uptake and normal exposure to the active metabolite of tramadol and to morphine from codeine)"
      },
      "estado": "ok",
      "rotulo": {
@@ -778,8 +805,8 @@
     {
      "item": "ABCG2",
      "texto": {
-      "pt": "rs2231142 GG: função normal",
-      "en": "rs2231142 GG: normal function"
+      "pt": "rs2231142 GG: função normal (rosuvastatina na dose desejada)",
+      "en": "rs2231142 GG: normal function (rosuvastatin at the desired dose)"
      },
      "estado": "ok",
      "rotulo": {
@@ -790,8 +817,8 @@
     {
      "item": "HLA",
      "texto": {
-      "pt": "B*57:01, B*35:01 e DRB1*15:01 negativos · <b>B*58:01</b> e A*31:01 não portadores prováveis (tags imputadas; antes indeterminado)",
-      "en": "B*57:01, B*35:01 and DRB1*15:01 negative · <b>B*58:01</b> and A*31:01 probable non-carriers (imputed tags; previously undetermined)"
+      "pt": "<b>B*57:01 negativo</b> (abacavir; pazopanib e flucloxacilina sem o HLA de lesão hepática), B*35:01 e DRB1*15:01 negativos · <b>B*58:01</b> e A*31:01 não portadores prováveis (tags imputadas; tipar antes de alopurinol)",
+      "en": "<b>B*57:01 negative</b> (abacavir; pazopanib and flucloxacillin without the liver-injury HLA), B*35:01 and DRB1*15:01 negative · <b>B*58:01</b> and A*31:01 probable non-carriers (imputed tags; type before allopurinol)"
      },
      "estado": "ok",
      "rotulo": {
@@ -800,13 +827,37 @@
      }
     },
     {
+     "item": "DPYD · TPMT · NUDT15",
+     "texto": {
+      "pt": "DPYD sem nenhuma das 13 variantes testadas (atividade 2: fluoropirimidinas na dose do rótulo) · TPMT *1/*1 e NUDT15 *1/*1 (tiopurinas na dose inicial padrão)",
+      "en": "DPYD with none of the 13 variants tested (activity score 2: fluoropyrimidines at label dose) · TPMT *1/*1 and NUDT15 *1/*1 (thiopurines at standard starting dose)"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Normal",
+      "en": "Normal"
+     }
+    },
+    {
+     "item": "G6PD · POLG",
+     "texto": {
+      "pt": "G6PD B (normal): dapsona, primaquina, rasburicase e sulfonamidas sem restrição por hemólise · POLG sem A467T nem W748S (valproato sem a contraindicação POLG)",
+      "en": "G6PD B (normal): dapsone, primaquine, rasburicase and sulfonamides with no haemolysis restriction · POLG without A467T or W748S (valproate without the POLG contraindication)"
+     },
+     "estado": "ok",
+     "rotulo": {
+      "pt": "Normal",
+      "en": "Normal"
+     }
+    },
+    {
      "item": {
-      "pt": "Sem variantes",
-      "en": "No variants"
+      "pt": "Outros sem variantes",
+      "en": "Others without variants"
      },
      "texto": {
-      "pt": "DPYD · TPMT · NUDT15 · G6PD · UGT1A9 · RYR1 · CACNA1S · BCHE",
-      "en": "DPYD · TPMT · NUDT15 · G6PD · UGT1A9 · RYR1 · CACNA1S · BCHE"
+      "pt": "IFNL3/IFNL4 rs12979860 CC (genótipo favorável) · UGT1A9 · RYR1 · CACNA1S (anestesia com precauções padrão) · BCHE",
+      "en": "IFNL3/IFNL4 rs12979860 CC (favourable genotype) · UGT1A9 · RYR1 · CACNA1S (anaesthesia with standard precautions) · BCHE"
      },
      "estado": "ok",
      "rotulo": {
@@ -823,16 +874,24 @@
     {
      "pt": "Fármacos CYP2D6 de margem estreita sem um teste clínico com CNV (o array não vê duplicações)",
      "en": "Narrow-margin CYP2D6 drugs without a clinical test including CNV (the array cannot see duplications)"
+    },
+    {
+     "pt": "Dispensar o teste DPYD clínico antes de quimioterapia com fluoropirimidinas ou a tipagem HLA-B*57:01 antes de abacavir (o chip não substitui o laboratório)",
+     "en": "Skipping the clinical DPYD test before fluoropyrimidine chemotherapy or HLA-B*57:01 typing before abacavir (the chip does not replace the lab)"
     }
    ],
    "priorizar": [
     {
-     "pt": "Estatinas na dose desejada (pitavastatina; rosuvastatina ou atorvastatina como alternativas); IBP em dose padrão",
-     "en": "Statins at the desired dose (pitavastatin; rosuvastatin or atorvastatin as alternatives); PPIs at standard dose"
+     "pt": "Estatinas na dose desejada (pitavastatina; rosuvastatina ou atorvastatina como alternativas); clopidogrel, IBP, citalopram/escitalopram e sertralina em dose padrão (CYP2C19 *1/*1)",
+     "en": "Statins at the desired dose (pitavastatin; rosuvastatin or atorvastatin as alternatives); clopidogrel, PPIs, citalopram/escitalopram and sertraline at standard dose (CYP2C19 *1/*1)"
     },
     {
-     "pt": "Sem restrição genética: amoxicilina-clavulanato e flucloxacilina (sem o HLA de lesão hepática), fluoropirimidinas e tiopurinas, rasburicase, primaquina e dapsona sem restrição por G6PD (normal), anestesia com precauções padrão",
-     "en": "No genetic restriction: amoxicillin-clavulanate and flucloxacillin (no liver-injury HLA), fluoropyrimidines and thiopurines, rasburicase, primaquine and dapsone with no G6PD restriction (normal G6PD), anaesthesia with standard precautions"
+     "pt": "Sem restrição genética: amoxicilina-clavulanato e flucloxacilina (sem o HLA de lesão hepática), fluoropirimidinas e tiopurinas, rasburicase, primaquina e dapsona sem restrição por G6PD (normal), valproato sem restrição POLG, anestesia com precauções padrão",
+     "en": "No genetic restriction: amoxicillin-clavulanate and flucloxacillin (no liver-injury HLA), fluoropyrimidines and thiopurines, rasburicase, primaquine and dapsone with no G6PD restriction (normal G6PD), valproate with no POLG restriction, anaesthesia with standard precautions"
+    },
+    {
+     "pt": "Ondansetrom e morfina em dose padrão (OCT1 normal; o OCT1 normal não muda a decisão de manter a metformina fora do protocolo); DOAC sem interação PGx se algum dia for preciso anticoagular",
+     "en": "Ondansetron and morphine at standard dose (normal OCT1; normal OCT1 does not change the decision to keep metformin out of the protocol); DOACs have no PGx interaction should anticoagulation ever be needed"
     }
    ]
   }

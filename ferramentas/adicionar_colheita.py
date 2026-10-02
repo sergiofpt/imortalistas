@@ -6,6 +6,10 @@ Uso (a partir da raiz do repositório):
       --rotulo "dez 2026" --descricao "03-12-2026" [--rotulo-en "Dec 2026" --descricao-en "03-12-2026"]
       [--nota "..." --nota-en "..."] [--datas-csv 2026-12-03,2026-12-05]
   python3 ferramentas/adicionar_colheita.py verificar
+  python3 ferramentas/adicionar_colheita.py relatorio --pdf novo.pdf --id meu-relatorio --data 2026-12-03 \
+      --titulo-pt "Título" --titulo-en "Title" [--descricao-pt "..." --descricao-en "..."] [--paginas 12]
+      [--lingua-pt português --lingua-en Portuguese] [--nome nome-no-site.pdf]
+      (verifica a privacidade do PDF com pdftotext, copia-o para reports/ e junta a entrada em data/reports.json)
 
 É idempotente: voltar a correr com a mesma data substitui os resultados dessa data.
 Não grava o nome do laboratório (a página mostra só datas).
@@ -20,13 +24,18 @@ F_SANGUE = os.path.join(RAIZ, 'data', 'sangue.json')
 F_GENETICA = {'genetica.html': os.path.join(RAIZ, 'data', 'genetica.json'), 'genetica-boa.html': os.path.join(RAIZ, 'data', 'genetica_boa.json')}
 # protocolo genético consolidado (mostrado no topo das duas páginas de genética)
 F_PROTOCOLO = os.path.join(RAIZ, 'data', 'genetica_protocolo.json')
+# página Genética Reports: lista de relatórios em PDF (data/reports.json; PDFs em reports/)
+F_REPORTS = os.path.join(RAIZ, 'data', 'reports.json')
+D_REPORTS = os.path.join(RAIZ, 'reports')
 # privacidade: nunca publicar a medida da balança nem nada que a permita deduzir
 # (os termos são montados por partes para que o próprio ficheiro não os contenha literalmente)
 _T = ['ger' + 'mano', 'sou' + 'sa', 'cu' + 'f', 'coim' + 'bra', 'pe' + 'so', 'i' + 'mc', 'b' + 'mi', 'f' + 'mi', 'l' + 'mi', '19' + '99', 'lis' + 'boa', 'lis' + 'bon', 'chen' + 'nai']
 PROIBIDO = re.compile('|'.join(r'\b%s\b' % t for t in _T) + '|' + '|'.join([
     'we' + r'ight(?!:)', 'massa ' + 'corporal', 'frei' + 'tas', r'\d\s?' + r'kg\b', 'kg' + '/m', 'har' + 'ris',
     # nomes de laboratórios/fornecedores: a página mostra só datas
-    'ai' + 'wo', 'thyro' + 'care', 'lipo' + 'mic', 'food' + 'print', 'self' + 'decode']), re.I)
+    'ai' + 'wo', 'thyro' + 'care', 'lipo' + 'mic', 'food' + 'print', 'self' + 'decode', 'omics' + 'edge']), re.I)
+# nos PDFs também não pode aparecer o país nem a ascendência regional (texto extraído com pdftotext)
+PDF_EXTRA = re.compile(r'\bportugal\b|ib[ée]ric|s[ée]rgio(?!\s+f\b)', re.I)
 # painéis de intolerância/sensibilidade alimentar (IgG/IgE específicas para alimentos): lista 'intolerancias'
 INTOL = re.compile(r'aliment|intoler|food', re.I)
 def e_intolerancia(nome, cat, lab):
@@ -138,7 +147,71 @@ def verificar_genetica():
         ok = verificar_genetica_json(f) and ok
     if not os.path.exists(F_PROTOCOLO): ok = False; print('ERRO: falta data/genetica_protocolo.json (o Protocolo genético fica vazio)')
     else: ok = verificar_protocolo_json(F_PROTOCOLO) and ok
+    if not os.path.exists(os.path.join(RAIZ, 'genetica-reports.html')): ok = False; print('ERRO: falta genetica-reports.html')
+    if not os.path.exists(F_REPORTS): ok = False; print('ERRO: falta data/reports.json (a Genética Reports fica vazia)')
+    else: ok = verificar_reports_json(F_REPORTS) and ok
     return ok
+
+def privacidade_pdf(caminho):
+    """Extrai o texto do PDF com pdftotext e devolve a lista de termos proibidos encontrados (None se não houver pdftotext)."""
+    import shutil, subprocess
+    if not shutil.which('pdftotext'): return None
+    t = subprocess.run(['pdftotext', '-q', caminho, '-'], capture_output=True, text=True).stdout
+    return [m.group(0) for m in PROIBIDO.finditer(t)] + [m.group(0) for m in PDF_EXTRA.finditer(t)]
+
+RE_FICH = re.compile(r'reports/[A-Za-z0-9._-]+\.pdf')
+def verificar_reports_json(F):
+    """data/reports.json: relatorios[{id, titulo{pt,en}, data AAAA-MM-DD, ficheiro reports/<nome>.pdf}] + PDF existente e sem termos proibidos."""
+    ok = True; d = ler(F); nome = os.path.basename(F); ids = set()
+    def err(m):
+        nonlocal ok; ok = False; print(f'ERRO {nome}: ' + m)
+    _bi_check(d.get('intro'), 'intro', err, False)
+    if not isinstance(d.get('relatorios'), list): err('falta a lista "relatorios"'); return ok
+    for k, r in enumerate(d['relatorios']):
+        rid = r.get('id', '')
+        if not re.fullmatch(r'[a-z0-9][a-z0-9-]*', rid or ''): err(f'relatorios[{k}]: id inválido {rid!r}')
+        if rid in ids or rid in ('reports', 'nav', 'lang', 'theme'): err(f'relatorios[{k}]: id repetido ou reservado {rid!r}')
+        ids.add(rid)
+        _bi_check(r.get('titulo'), f'{rid}.titulo', err); _bi_check(r.get('descricao'), f'{rid}.descricao', err, False)
+        if r.get('lingua') is not None: _bi_check(r.get('lingua'), f'{rid}.lingua', err)
+        if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', str(r.get('data', ''))): err(f'{rid}: data {r.get("data")!r} (AAAA-MM-DD)')
+        fich = r.get('ficheiro', '')
+        if not RE_FICH.fullmatch(fich or '') or '..' in fich: err(f'{rid}: ficheiro {fich!r} (tem de ser reports/<nome>.pdf)'); continue
+        cam = os.path.join(RAIZ, fich)
+        if not os.path.exists(cam): err(f'{rid}: falta o ficheiro {fich}'); continue
+        if open(cam, 'rb').read(5) != b'%PDF-': err(f'{rid}: {fich} não é um PDF')
+        achados = privacidade_pdf(cam)
+        if achados is None: print(f'AVISO {nome}: sem pdftotext, não verifiquei a privacidade de {fich}')
+        elif achados: err(f'{rid}: {fich} tem termos proibidos: {sorted(set(achados))}')
+    if os.path.isdir(D_REPORTS):
+        usados = {r.get('ficheiro') for r in d['relatorios']}
+        for f in sorted(os.listdir(D_REPORTS)):
+            if 'reports/' + f not in usados: print(f'AVISO {nome}: reports/{f} não está em reports.json (não aparece na página)')
+    print(f'{nome}: {len(d["relatorios"])} relatórios')
+    return ok
+
+def cmd_relatorio(a):
+    """Junta um relatório PDF: verifica a privacidade, copia para reports/ e acrescenta a entrada em data/reports.json."""
+    import shutil
+    if not os.path.exists(a.pdf): sys.exit(f'Não encontro {a.pdf}')
+    nomef = a.nome or os.path.basename(a.pdf)
+    if not re.fullmatch(r'[A-Za-z0-9._-]+\.pdf', nomef): sys.exit('Nome do ficheiro: só letras, números, ponto, hífen e _; tem de acabar em .pdf (use --nome)')
+    achados = privacidade_pdf(a.pdf)
+    if achados is None: sys.exit('É preciso o pdftotext (poppler-utils) para verificar a privacidade do PDF')
+    if achados: sys.exit(f'PDF com termos proibidos {sorted(set(achados))}: gere uma versão limpa primeiro')
+    if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', a.data): sys.exit('--data no formato AAAA-MM-DD')
+    for t in (a.titulo_pt, a.titulo_en, a.descricao_pt or '', a.descricao_en or ''):
+        if PROIBIDO.search(t): sys.exit(f'Texto com termo proibido: {t!r}')
+    d = ler(F_REPORTS) if os.path.exists(F_REPORTS) else {'atualizado_em': a.hoje, 'relatorios': []}
+    if any(r.get('id') == a.id for r in d['relatorios']): sys.exit(f'Já existe um relatório com id {a.id!r}')
+    os.makedirs(D_REPORTS, exist_ok=True); shutil.copyfile(a.pdf, os.path.join(D_REPORTS, nomef))
+    r = {'id': a.id, 'titulo': {'pt': a.titulo_pt, 'en': a.titulo_en}, 'data': a.data, 'ficheiro': 'reports/' + nomef}
+    if a.descricao_pt and a.descricao_en: r['descricao'] = {'pt': a.descricao_pt, 'en': a.descricao_en}
+    if a.paginas: r['paginas'] = a.paginas
+    r['tamanho_kb'] = round(os.path.getsize(a.pdf) / 1024)
+    if a.lingua_pt and a.lingua_en: r['lingua'] = {'pt': a.lingua_pt, 'en': a.lingua_en}
+    d['relatorios'].append(r); d['atualizado_em'] = a.hoje; gravar(F_REPORTS, d)
+    print(f'relatório {a.id!r} acrescentado: reports/{nomef} ({len(d["relatorios"])} relatórios); corra "verificar" antes de publicar')
 
 def _bi_check(o, onde, err, obrig=True):
     if o is None or o == '':
@@ -196,6 +269,20 @@ def verificar_genetica_json(F):
         for campo in ('evitar', 'priorizar'):
             if not s.get(campo): err(f'{sid}: falta "{campo}" (lista de textos PT/EN)')
             for k, x in enumerate(s.get(campo) or []): bi(x, f'{sid}.{campo}[{k}]')
+        # blocos opcionais Ajustar a dose / Monitorizar (usados na Farmacogenómica)
+        for campo in ('ajustar', 'monitorizar'):
+            if campo in s and not isinstance(s[campo], list): err(f'{sid}: "{campo}" tem de ser uma lista')
+            for k, x in enumerate(s.get(campo) or []): bi(x, f'{sid}.{campo}[{k}]')
+    # tabela pesquisável opcional dos fármacos acionáveis (relatório PGx)
+    F2 = d.get('farmacos')
+    if F2 is not None:
+        bi(F2.get('titulo'), 'farmacos.titulo'); bi(F2.get('intro'), 'farmacos.intro', False); bi(F2.get('fonte'), 'farmacos.fonte', False)
+        if (F2.get('id') or 'farmacos') in ids: err('farmacos.id repete o id de uma secção')
+        if not F2.get('linhas'): err('farmacos: sem "linhas"')
+        for k, l in enumerate(F2.get('linhas') or []):
+            bi(l.get('f'), f'farmacos.linhas[{k}].f'); bi(l.get('genes'), f'farmacos.linhas[{k}].genes'); bi(l.get('rec'), f'farmacos.linhas[{k}].rec')
+            if l.get('acao') not in ('evitar', 'ajustar', 'monitorizar', 'indeterminado'): err(f'farmacos.linhas[{k}]: acao {l.get("acao")!r} (evitar, ajustar, monitorizar, indeterminado)')
+        print(f'{nome}: tabela farmacos com {len(F2.get("linhas") or [])} fármacos')
     print(f'{nome}: {len(ids)} secções, {n} linhas')
     return ok
 
@@ -237,4 +324,9 @@ p = sp.add_parser('sangue'); p.add_argument('--csv', required=True); p.add_argum
 p.add_argument('--datas-csv'); p.add_argument('--rotulo'); p.add_argument('--descricao'); p.add_argument('--nota')
 p.add_argument('--rotulo-en'); p.add_argument('--descricao-en'); p.add_argument('--nota-en'); p.set_defaults(f=cmd_sangue)
 p = sp.add_parser('verificar'); p.set_defaults(f=cmd_verificar)
+p = sp.add_parser('relatorio', help='juntar um relatório PDF à página Genética Reports')
+p.add_argument('--pdf', required=True); p.add_argument('--id', required=True); p.add_argument('--data', required=True)
+p.add_argument('--titulo-pt', required=True); p.add_argument('--titulo-en', required=True)
+p.add_argument('--descricao-pt'); p.add_argument('--descricao-en'); p.add_argument('--lingua-pt'); p.add_argument('--lingua-en')
+p.add_argument('--paginas', type=int); p.add_argument('--nome', help='nome do ficheiro em reports/ (por omissão, o do PDF)'); p.set_defaults(f=cmd_relatorio)
 a = ap.parse_args(); a.f(a)

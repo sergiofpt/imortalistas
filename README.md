@@ -1,6 +1,6 @@
 # imortalistas · Cronologia de Exames de Sangue
 
-Cronologia de Exames de Sangue do Sérgio F: resultados de análises ao sangue (e urina do mesmo painel), para registo e comparação entre datas, e a secção Intolerâncias Alimentares (`index.html`). A genética tem duas páginas próprias: `genetica.html` (“Genética Má”: só resultados desfavoráveis) e `genetica-boa.html` (“Genética Boa”: só resultados favoráveis). Site estático em GitHub Pages, `noindex` nas três páginas.
+Cronologia de Exames de Sangue do Sérgio F: resultados de análises ao sangue (e urina do mesmo painel), para registo e comparação entre datas, e a secção Intolerâncias Alimentares (`index.html`). A genética tem três páginas próprias: `genetica.html` (“Genética Má”: só resultados desfavoráveis), `genetica-boa.html` (“Genética Boa”: só resultados favoráveis) e `genetica-reports.html` (“Genética Reports”: relatórios completos em PDF). Site estático em GitHub Pages, `noindex` nas quatro páginas.
 
 ```
 index.html                         análises ao sangue + Intolerâncias Alimentares (HTML + CSS + JS, sem bibliotecas nem pedidos externos)
@@ -10,11 +10,14 @@ data/sangue.json                   resultados por marcador e por data (sangue/ur
 data/genetica.json                 conteúdo de genetica.html (secções, linhas, PT/EN)
 data/genetica_boa.json             conteúdo de genetica-boa.html (mesmo formato)
 data/genetica_protocolo.json       Protocolo genético consolidado, mostrado no topo das duas páginas de genética
-ferramentas/adicionar_colheita.py  acrescenta uma data e verifica os ficheiros (sangue.json, genetica.json, genetica_boa.json, genetica_protocolo.json e termos proibidos)
+genetica-reports.html              Genética Reports: lista de relatórios em PDF; conteúdo em data/reports.json
+data/reports.json                  lista dos relatórios (título PT/EN, data, ficheiro em reports/)
+reports/*.pdf                      os PDFs dos relatórios (já verificados quanto à privacidade)
+ferramentas/adicionar_colheita.py  acrescenta uma data ou um relatório e verifica os ficheiros (sangue.json, genetica*.json, reports.json + PDFs e termos proibidos)
 .nojekyll
 ```
 
-As páginas leem `data/sangue.json`, `data/genetica.json` ou `data/genetica_boa.json` (+ `data/genetica_protocolo.json` nas duas de genética) ao abrir. Para a ver localmente: `python3 -m http.server` na raiz e abrir `http://localhost:8000/` (por `file://` o navegador bloqueia a leitura do JSON).
+As páginas leem `data/sangue.json`, `data/genetica.json` ou `data/genetica_boa.json` (+ `data/genetica_protocolo.json` nas duas de genética; `data/reports.json` na Genética Reports) ao abrir. Para a ver localmente: `python3 -m http.server` na raiz e abrir `http://localhost:8000/` (por `file://` o navegador bloqueia a leitura do JSON).
 
 ## Formato dos dados
 
@@ -91,17 +94,44 @@ Resultados neutros, médios ou não confirmados não entram em nenhuma das duas.
 - Cada entrada de `seccoes` é um cartão (2 por linha no computador, 1 no telemóvel), pela ordem do ficheiro, e aparece também nos atalhos por baixo da nota. Para uma secção nova, acrescentar um objeto com um `id` novo (minúsculas, números e hífens; dá o link `genetica.html#id` ou `genetica-boa.html#id`).
 - `evitar` e `priorizar` (obrigatórios em todas as secções): listas de ações concretas ligadas aos genes dessa secção (fármacos, suplementos com doses, dieta, exercício, rastreio, análises de confirmação), mostradas por baixo da tabela nos blocos **Evitar** (vermelho) e **Priorizar** (verde) / **Avoid** e **Prioritize**. Na Genética Boa, “Priorizar” é para aproveitar ou manter a vantagem. Os valores das análises prevalecem sobre doses só genéticas (ex.: D3 10 000 UI, ómega-3 3,2–4 g/dia de EPA+DHA); tudo é sugestão e precisa de validação médica.
 - `data/genetica_protocolo.json` (`titulo`, `intro`, `blocos[{titulo, itens[]}]`, textos PT/EN) é o **Protocolo genético**: um cartão destacado no topo das duas páginas (primeiro atalho, `#protocolo`) que junta o Evitar/Priorizar sem contradições, com o cartão PGx e as análises de confirmação. Ao mudar um Evitar/Priorizar, confirmar que o protocolo continua coerente.
+- `ajustar` e `monitorizar` (opcionais, usados na Farmacogenómica da Genética Má): blocos **Ajustar a dose** (amarelo) e **Monitorizar** (azul) / **Adjust the dose** e **Monitor**, entre o Evitar e o Priorizar. `intro` (opcional) é um parágrafo por baixo do título do cartão.
+- `farmacos` (opcional, só em `data/genetica.json`): tabela pesquisável **Fármacos acionáveis** (último cartão e último atalho, `#farmacos`) com `titulo`, `intro`, `fonte` e `linhas[{f, acao, genes, rec, atual}]`: `f` nome do fármaco PT/EN, `acao` = `evitar` | `ajustar` | `monitorizar` | `indeterminado`, `genes` e `rec` (recomendação resumida) PT/EN, `atual: true` para a medicação atual. Só entram os fármacos com ação; os normais e os sem interação PGx conhecida ficam de fora. Hoje é gerada a partir do CSV do relatório PGx de 632 fármacos (60 linhas; ivacaftor excluído, só se aplica a fibrose quística; somatropina em Evitar por coerência com o protocolo).
 - Cada entrada de `linhas` é uma linha da tabela: `item` (gene/tema, a negrito), `texto`, e opcionalmente `estado` + `rotulo` (a etiqueta colorida): `ok` verde, `warn` amarelo, `bad` vermelho, `na` cinzento, `info` azul.
 - Textos bilingues: `{"pt": "…", "en": "…"}`; se o texto for igual nas duas línguas (ex. nome do gene) pode ser só `"CYP2C9"`. Pode levar HTML simples: `<b>`, `<i>`, `<em>`, `<strong>`, `<br>`, `<small>`, `<sub>`, `<sup>` (o resto é mostrado como texto).
 - As mesmas regras de privacidade e de nomes (abaixo) aplicam-se aqui: sem nomes de laboratórios ou empresas, sem dados pessoais.
-- Depois de editar: `python3 ferramentas/adicionar_colheita.py verificar` (estrutura, PT+EN em todos os textos, ids únicos, estados válidos, `evitar`/`priorizar` em todas as secções, protocolo, HTML permitido, termos proibidos), abrir `genetica.html` e `genetica-boa.html` por `http.server` e confirmar que não há erros na consola.
+- Depois de editar: `python3 ferramentas/adicionar_colheita.py verificar` (estrutura, PT+EN em todos os textos, ids únicos, estados válidos, `evitar`/`priorizar` em todas as secções, `ajustar`/`monitorizar`/`farmacos`, protocolo, reports.json + privacidade dos PDFs, HTML permitido, termos proibidos), abrir `genetica.html` e `genetica-boa.html` por `http.server` e confirmar que não há erros na consola.
+
+## Genética Reports (relatórios em PDF)
+
+`genetica-reports.html` mostra a lista de `data/reports.json` (mais recente primeiro, com pesquisa); cada relatório tem o título, a data, uma descrição opcional e os botões **Descarregar PDF** / **Abrir no browser** (**Download PDF** / **Open in browser**).
+
+```json
+{"atualizado_em": "2026-10-02",
+ "intro": {"pt": "…", "en": "…"},
+ "relatorios": [
+  {"id": "farmacogenomica-632",
+   "titulo": {"pt": "Farmacogenómica: resposta prevista a 632 medicamentos", "en": "Pharmacogenomics: predicted response to 632 drugs"},
+   "data": "2026-10-02",
+   "ficheiro": "reports/farmacogenomica-632-medicamentos.pdf",
+   "descricao": {"pt": "…", "en": "…"}, "paginas": 49, "tamanho_kb": 272,
+   "lingua": {"pt": "português", "en": "Portuguese"}, "etiquetas": ["PGx", "CPIC"]}
+ ]}
+```
+
+Como acrescentar um relatório novo:
+1. **Privacidade primeiro:** `pdftotext relatorio.pdf - | grep -i -E '…'` não pode encontrar o nome completo (só “Sérgio F”), a medida da balança, a data de nascimento, a cidade, o país nem nomes de laboratórios ou fornecedores. Se encontrar, gerar uma versão limpa a partir da fonte (HTML/MD) do relatório.
+2. Mais simples: `python3 ferramentas/adicionar_colheita.py relatorio --pdf relatorio.pdf --id novo-relatorio --data 2026-12-03 --titulo-pt "…" --titulo-en "…" [--descricao-pt "…" --descricao-en "…" --paginas 12 --lingua-pt português --lingua-en Portuguese --nome nome-no-site.pdf]`. Faz a verificação de privacidade com `pdftotext` (recusa o PDF se tiver termos proibidos), copia-o para `reports/` e junta a entrada em `data/reports.json`.
+3. Ou à mão: copiar o PDF para `reports/` (nome só com letras, números, `.`, `-`, `_`) e acrescentar um objeto a `relatorios` (`id`, `titulo` PT/EN, `data` AAAA-MM-DD e `ficheiro` `reports/<nome>.pdf` são obrigatórios).
+4. `python3 ferramentas/adicionar_colheita.py verificar` (confirma o JSON, que o PDF existe, que é PDF e que não tem termos proibidos; avisa de PDFs em `reports/` que não estão na lista) e abrir `genetica-reports.html` por `http.server`.
+
+A página só aceita ficheiros `reports/<nome>.pdf`; uma entrada inválida aparece marcada como “Ficheiro inválido”, sem link.
 
 ## Regras permanentes do painel
 
-- Só análises + Intolerâncias Alimentares (secção própria) em `index.html` + Genética Má (`genetica.html`) e Genética Boa (`genetica-boa.html`): nada de outros exames, medicação/stack, suplementos, prioridades, questões ou sugestões dos bots em `index.html`. Exceção (pedido do Sérgio F, 02-10-2026): nas páginas de genética, os blocos Evitar/Priorizar e o Protocolo genético podem ter fármacos, suplementos com doses, dieta, exercício e rastreio ligados aos genes, sempre como sugestão a validar pelo médico e sem valores de outros bots além dos usados nas regras de consistência.
+- Só análises + Intolerâncias Alimentares (secção própria) em `index.html` + Genética Má (`genetica.html`), Genética Boa (`genetica-boa.html`) e Genética Reports (`genetica-reports.html`, relatórios em PDF): nada de outros exames, medicação/stack, suplementos, prioridades, questões ou sugestões dos bots em `index.html`. Exceção (pedido do Sérgio F, 02-10-2026): nas páginas de genética, os blocos Evitar/Priorizar e o Protocolo genético podem ter fármacos, suplementos com doses, dieta, exercício e rastreio ligados aos genes, sempre como sugestão a validar pelo médico e sem valores de outros bots além dos usados nas regras de consistência.
 - Identificação: só “Sérgio F” e a idade; sem data de nascimento nem cidade.
 - Privacidade: nunca publicar a medida da balança, o índice de massa do corpo (nem pela sigla), índices por altura² nem nada que permita deduzir aquela medida.
 - Sem nomes de laboratórios ou fornecedores em lado nenhum, nas duas línguas: só datas.
-- Títulos: “Cronologia de Exames de Sangue” / “Blood Test Timeline” (`index.html`) e os títulos acima nas páginas de genética. Cabeçalho sem marca, igual nas três páginas: Resumo · Análises · Intolerâncias Alimentares (âncoras de `index.html`) · Genética Má (`genetica.html`) · Genética Boa (`genetica-boa.html`), com o seletor “Português | English” no canto superior direito (guardado em `localStorage`, chave `lang`, partilhada pelas três páginas; por omissão português).
-- Tema: seletor “Escuro | Claro” / “Dark | Light” ao lado do idioma (guardado em `localStorage`, chave `theme`, partilhada pelas três páginas; sem escolha, segue o tema do sistema). Cores só por variáveis CSS, incluindo os gráficos.
-- `meta robots noindex` nas três páginas.
+- Títulos: “Cronologia de Exames de Sangue” / “Blood Test Timeline” (`index.html`) e os títulos acima nas páginas de genética. Cabeçalho sem marca, igual nas quatro páginas: Resumo · Análises · Intolerâncias Alimentares (âncoras de `index.html`) · Genética Má (`genetica.html`) · Genética Boa (`genetica-boa.html`) · Genética Reports (`genetica-reports.html`), com o seletor “Português | English” no canto superior direito (guardado em `localStorage`, chave `lang`, partilhada pelas quatro páginas; por omissão português).
+- Tema: seletor “Escuro | Claro” / “Dark | Light” ao lado do idioma (guardado em `localStorage`, chave `theme`, partilhada pelas quatro páginas; sem escolha, segue o tema do sistema). Cores só por variáveis CSS, incluindo os gráficos.
+- `meta robots noindex` nas quatro páginas.

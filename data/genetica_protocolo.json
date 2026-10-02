@@ -12,41 +12,49 @@
  "blocos": [
   {
    "titulo": {
-    "pt": "Cartão PGx (guardar no processo clínico)",
-    "en": "PGx card (keep in the medical record)"
+    "pt": "Cartão PGx (guardar no processo clínico) · 632 fármacos",
+    "en": "PGx card (keep in the medical record) · 632 drugs"
    },
    "itens": [
     {
-     "pt": "<b>Anticoagulação</b> · CYP2C9 *1/*3 + VKORC1 −1639 TT + CYP4F2 CC: preferir DOAC; cumarínico só com algoritmo genético e ~50% da dose inicial",
-     "en": "<b>Anticoagulation</b> · CYP2C9 *1/*3 + VKORC1 −1639 TT + CYP4F2 CC: prefer a DOAC; coumarins only with a genetic algorithm and ~50% of the starting dose"
+     "pt": "<b>Medicação atual</b> · nenhum fármaco a evitar nem com mudança de dose; sirolímus (doseamento) e isotretinoína (fígado e lípidos) só a monitorizar",
+     "en": "<b>Current medication</b> · no drug to avoid and no dose change; sirolimus (drug level) and isotretinoin (liver and lipids) only to monitor"
     },
     {
-     "pt": "<b>AINEs</b> · CYP2C9 *1/*3: menor dose e curso curto; meloxicam 50%; piroxicam e tenoxicam: usar alternativa; 1.ª linha paracetamol ≤ 2 g/dia",
-     "en": "<b>NSAIDs</b> · CYP2C9 *1/*3: lowest dose and short course; meloxicam 50%; piroxicam and tenoxicam: use an alternative; first line paracetamol ≤ 2 g/day"
+     "pt": "<b>Anticoagulação</b> · CYP2C9 *1/*3 + VKORC1 −1639 TT + CYP4F2 CC: preferir DOAC; varfarina só por algoritmo genético (manutenção prevista ~0,5–2 mg/dia); acenocumarol e fenprocumon ~50% da dose inicial, INR frequente",
+     "en": "<b>Anticoagulation</b> · CYP2C9 *1/*3 + VKORC1 −1639 TT + CYP4F2 CC: prefer a DOAC; warfarin only by genetic algorithm (predicted maintenance ~0.5–2 mg/day); acenocoumarol and phenprocoumon ~50% of the starting dose, frequent INR"
     },
     {
-     "pt": "<b>NAT2 *5/*5 (lento)</b> · isoniazida guiada pelo NAT2 com vigilância hepática; cautela com hidralazina, sulfassalazina e sulfametoxazol",
-     "en": "<b>NAT2 *5/*5 (slow)</b> · NAT2-guided isoniazid with liver monitoring; caution with hydralazine, sulfasalazine and sulfamethoxazole"
+     "pt": "<b>AINEs</b> · CYP2C9 *1/*3: <b>evitar piroxicam e tenoxicam</b>; ibuprofeno, celecoxib, flurbiprofeno e lornoxicam na menor dose e curso curto; meloxicam 50%; outros AINEs a monitorizar; 1.ª linha paracetamol ≤ 2 g/dia",
+     "en": "<b>NSAIDs</b> · CYP2C9 *1/*3: <b>avoid piroxicam and tenoxicam</b>; ibuprofen, celecoxib, flurbiprofen and lornoxicam at the lowest dose for a short course; meloxicam 50%; other NSAIDs to monitor; first line paracetamol ≤ 2 g/day"
     },
     {
-     "pt": "<b>UGT1A1 *1/*28 (Gilbert)</b> · irinotecano e atazanavir; bilirrubina indireta ligeiramente alta é benigna",
-     "en": "<b>UGT1A1 *1/*28 (Gilbert)</b> · irinotecan and atazanavir; slightly high indirect bilirubin is benign"
+     "pt": "<b>Outros CYP2C9</b> · fenitoína/fosfenitoína ~25% menos na manutenção (por níveis); fluvastatina ≤ 40 mg/dia; siponimod 1 mg/dia; sulfonilureias a começar baixo (hipoglicemia)",
+     "en": "<b>Other CYP2C9</b> · phenytoin/fosphenytoin ~25% lower maintenance (by levels); fluvastatin ≤ 40 mg/day; siponimod 1 mg/day; sulfonylureas started low (hypoglycaemia)"
     },
     {
-     "pt": "<b>CYP3A5 *1/*3 (expressor)</b> · sirolimus e tacrolimus com menos exposição por mg (tacrolimus 1,5–2× a dose inicial); calibrar por doseamento",
-     "en": "<b>CYP3A5 *1/*3 (expresser)</b> · sirolimus and tacrolimus with lower exposure per mg (tacrolimus 1.5–2× the starting dose); calibrate by drug level"
+     "pt": "<b>NAT2 *5/*5 (lento)</b> · isoniazida guiada pelo NAT2 + piridoxina + vigilância hepática; hidralazina 40–75 mg/dia iniciais; amifampridina na menor dose; monitorizar sulfametoxazol, dapsona, sulfassalazina e procainamida",
+     "en": "<b>NAT2 *5/*5 (slow)</b> · NAT2-guided isoniazid + pyridoxine + liver monitoring; hydralazine starting at 40–75 mg/day; amifampridine at the lowest dose; monitor sulfamethoxazole, dapsone, sulfasalazine and procainamide"
     },
     {
-     "pt": "<b>CYP2D6 *1/*2 provável</b> · codeína, tramadol e ondansetrom em dose padrão só depois de um teste clínico com CNV",
-     "en": "<b>Probable CYP2D6 *1/*2</b> · codeine, tramadol and ondansetron at standard dose only after a clinical test including CNV"
+     "pt": "<b>UGT1A1 *1/*28 (Gilbert)</b> · irinotecano e sacituzumab (neutropenia), nilotinib, pazopanib e belinostat a monitorizar; atazanavir sem restrição; bilirrubina indireta ligeiramente alta é benigna",
+     "en": "<b>UGT1A1 *1/*28 (Gilbert)</b> · irinotecan and sacituzumab (neutropenia), nilotinib, pazopanib and belinostat to monitor; atazanavir unrestricted; slightly high indirect bilirubin is benign"
     },
     {
-     "pt": "<b>HLA</b> · B*57:01, B*35:01 e DRB1*15:01 negativos; B*58:01 e A*31:01 não portadores prováveis: tipar B*58:01 antes de alopurinol",
-     "en": "<b>HLA</b> · B*57:01, B*35:01 and DRB1*15:01 negative; B*58:01 and A*31:01 probable non-carriers: type B*58:01 before allopurinol"
+     "pt": "<b>CYP3A5 *1/*3 (expressor)</b> · sirolimus e tacrolimus com menos exposição por mg (tacrolimus sistémico 1,5–2× a dose inicial); calibrar por doseamento",
+     "en": "<b>CYP3A5 *1/*3 (expresser)</b> · sirolimus and tacrolimus with lower exposure per mg (systemic tacrolimus 1.5–2× the starting dose); calibrate by drug level"
     },
     {
-     "pt": "<b>Normais</b> · SLCO1B1 *1/*14 (estatinas na dose desejada), CYP2C19 *1/*1, CYP3A4 *1/*1, CYP2C8*3 ausente, DPYD, TPMT, NUDT15, G6PD, RYR1/CACNA1S, BCHE",
-     "en": "<b>Normal</b> · SLCO1B1 *1/*14 (statins at the desired dose), CYP2C19 *1/*1, CYP3A4 *1/*1, CYP2C8*3 absent, DPYD, TPMT, NUDT15, G6PD, RYR1/CACNA1S, BCHE"
+     "pt": "<b>CYP2D6 *1/*2 provável (sem CNV)</b> · codeína, tramadol, tamoxifeno, eliglustate, pimozida e tetrabenazina só depois de um teste clínico com CNV; ondansetrom em dose padrão · <b>CYP2B6 *2/*4 (rápido)</b> · metadona titulada pela resposta, com ECG",
+     "en": "<b>Probable CYP2D6 *1/*2 (no CNV)</b> · codeine, tramadol, tamoxifen, eliglustat, pimozide and tetrabenazine only after a clinical test including CNV; ondansetron at standard dose · <b>CYP2B6 *2/*4 (rapid)</b> · methadone titrated by response, with an ECG"
+    },
+    {
+     "pt": "<b>HLA</b> · B*57:01, B*35:01 e DRB1*15:01 negativos; B*58:01 e A*31:01 não portadores prováveis: tipar B*58:01 antes de alopurinol · <b>indeterminados</b>: A*33:01 (terbinafina oral: preferir tópica), DRB1*07:01 (lapatinib), MT-RNR1 (aminoglicosídeos: curso curto e vigilância auditiva)",
+     "en": "<b>HLA</b> · B*57:01, B*35:01 and DRB1*15:01 negative; B*58:01 and A*31:01 probable non-carriers: type B*58:01 before allopurinol · <b>undetermined</b>: A*33:01 (oral terbinafine: prefer topical), DRB1*07:01 (lapatinib), MT-RNR1 (aminoglycosides: short course and hearing monitoring)"
+    },
+    {
+     "pt": "<b>Normais</b> · SLCO1B1 *1/*14 (estatinas na dose desejada), CYP2C19 *1/*1, OCT1, CYP3A4 *1/*1, CYP2C8*3 ausente, DPYD, TPMT, NUDT15, G6PD, POLG (valproato), IFNL3 favorável, RYR1/CACNA1S, BCHE",
+     "en": "<b>Normal</b> · SLCO1B1 *1/*14 (statins at the desired dose), CYP2C19 *1/*1, OCT1, CYP3A4 *1/*1, CYP2C8*3 absent, DPYD, TPMT, NUDT15, G6PD, POLG (valproate), favourable IFNL3, RYR1/CACNA1S, BCHE"
     }
    ]
   },
@@ -89,8 +97,8 @@
      "en": "Fasting homocysteine (same lab), red-cell folate, MMA, holo-TC; copper, zinc and caeruloplasmin; ferritin and transferrin saturation"
     },
     {
-     "pt": "Tipagem HLA-B*58:01 antes de alopurinol; CYP2D6 com CNV antes de fármacos CYP2D6 de margem estreita; tipagem ABO",
-     "en": "HLA-B*58:01 typing before allopurinol; CYP2D6 with CNV before narrow-margin CYP2D6 drugs; ABO typing"
+     "pt": "<b>Teste PGx clínico</b> para confirmar os achados acionáveis (CYP2D6 com CNV + HLA, incluindo B*58:01 antes de alopurinol); MT-RNR1 m.1555A>G se forem previstos aminoglicosídeos repetidos; tipagem ABO",
+     "en": "<b>Clinical PGx test</b> to confirm the actionable findings (CYP2D6 with CNV + HLA, including B*58:01 before allopurinol); MT-RNR1 m.1555A>G if repeated aminoglycosides are expected; ABO typing"
     },
     {
      "pt": "Opcional: GSTM1/GSTT1; repetir o CAC por volta dos 35–40 anos",
@@ -133,8 +141,8 @@
    },
    "itens": [
     {
-     "pt": "<b>Compatíveis com a PGx</b> · rapamicina (com doseamento), retatrutide, isotretinoína (menor dose eficaz + protetor solar diário), imeglimina, acarbose, dapagliflozina, ácido bempedoico, ezetimiba, pitavastatina, telmisartan, tadalafil, naltrexona em dose baixa",
-     "en": "<b>PGx-compatible</b> · rapamycin (with drug level), retatrutide, isotretinoin (lowest effective dose + daily sunscreen), imeglimin, acarbose, dapagliflozin, bempedoic acid, ezetimibe, pitavastatin, telmisartan, tadalafil, low-dose naltrexone"
+     "pt": "<b>Compatíveis com a PGx</b> (relatório de 632 fármacos: nenhum a evitar nem com mudança de dose) · rapamicina (com doseamento), retatrutide, isotretinoína (menor dose eficaz + protetor solar diário), imeglimina, acarbose, dapagliflozina, ácido bempedoico, ezetimiba, pitavastatina, telmisartan, tadalafil, naltrexona em dose baixa",
+     "en": "<b>PGx-compatible</b> (632-drug report: none to avoid and no dose change) · rapamycin (with drug level), retatrutide, isotretinoin (lowest effective dose + daily sunscreen), imeglimin, acarbose, dapagliflozin, bempedoic acid, ezetimibe, pitavastatin, telmisartan, tadalafil, low-dose naltrexone"
     },
     {
      "pt": "<b>LDL/ApoB mais baixos</b> · discutir inclisiran ou anti-PCSK9; obicetrapib quando aprovado",
