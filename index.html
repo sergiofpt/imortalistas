@@ -159,7 +159,7 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 <b><span class="l-pt">Datas</span><span class="l-en">Dates</span></b>
 <label><span class="l-pt">Data</span><span class="l-en">Date</span> <select id="sA" aria-label="Data principal" data-al-en="Main date"></select></label>
 <label><span class="l-pt">comparar com</span><span class="l-en">compare with</span> <select id="sB" aria-label="Data de comparação" data-al-en="Comparison date"></select></label>
-<label><input type="checkbox" id="sAll" checked> <span class="l-pt">Mostrar todas as datas em colunas</span><span class="l-en">Show all dates as columns</span></label>
+<label><input type="checkbox" id="sAll"> <span class="l-pt">Mostrar todas as datas em colunas</span><span class="l-en">Show all dates as columns</span></label>
 <span id="sAwait"></span>
 </div>
 <div class="filters">
@@ -170,7 +170,7 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 <label><input type="checkbox" id="flagged"> <span class="l-pt">Só os que não estão no ótimo</span><span class="l-en">Only those not optimal</span></label>
 <span class="mut small" id="count"></span>
 </div>
-<div class="legend" style="margin-bottom:10px"><span class="pill ok"><span class="l-pt">Ótimo</span><span class="l-en">Optimal</span></span><span class="pill warn"><span class="l-pt">Aceitável</span><span class="l-en">Acceptable</span></span><span class="pill warn"><span class="l-pt">Fora do ótimo</span><span class="l-en">Outside optimal</span></span><span class="pill bad"><span class="l-pt">Fora da referência</span><span class="l-en">Out of range</span></span><span class="pill na"><span class="l-pt">Sem alvo</span><span class="l-en">No target</span></span><span><span class="l-pt">· “Alvo” = alvo ótimo de longevidade · Δ = data principal vs data de comparação (verde = aproxima-se do ótimo) · clique num marcador para ver a evolução</span><span class="l-en">· “Target” = optimal longevity target · Δ = main date vs comparison date (green = moving towards optimal) · click a marker to see its trend</span></span></div>
+<div class="legend" style="margin-bottom:10px"><span class="pill ok"><span class="l-pt">Ótimo</span><span class="l-en">Optimal</span></span><span class="pill warn"><span class="l-pt">Aceitável</span><span class="l-en">Acceptable</span></span><span class="pill warn"><span class="l-pt">Fora do ótimo</span><span class="l-en">Outside optimal</span></span><span class="pill bad"><span class="l-pt">Fora da referência</span><span class="l-en">Out of range</span></span><span class="pill na"><span class="l-pt">Sem alvo</span><span class="l-en">No target</span></span><span><span class="l-pt">· “Alvo” = alvo ótimo de longevidade · Δ = data principal vs data de comparação, quando escolhida (verde = aproxima-se do ótimo) · clique num marcador para ver a evolução</span><span class="l-en">· “Target” = optimal longevity target · Δ = main date vs comparison date, when one is chosen (green = moving towards optimal) · click a marker to see its trend</span></span></div>
 <div class="tw tall"><table id="bt"><thead></thead><tbody><tr><td class="mut"><span class="l-pt">A carregar data/sangue.json…</span><span class="l-en">Loading data/sangue.json…</span></td></tr></tbody></table></div>
 <p class="small mut"><span class="l-pt">Sem resultado no painel de 25-08-2026: bicarbonato, VDRL, lítio. As intolerâncias alimentares estão na secção própria, abaixo.</span><span class="l-en">No result in the 25-08-2026 panel: bicarbonate, VDRL, lithium. Food intolerances are in their own section, below.</span></p>
 </section>
@@ -185,7 +185,7 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 <b><span class="l-pt">Datas</span><span class="l-en">Dates</span></b>
 <label><span class="l-pt">Data</span><span class="l-en">Date</span> <select id="iA" aria-label="Data principal" data-al-en="Main date"></select></label>
 <label><span class="l-pt">comparar com</span><span class="l-en">compare with</span> <select id="iB" aria-label="Data de comparação" data-al-en="Comparison date"></select></label>
-<label><input type="checkbox" id="iAll" checked> <span class="l-pt">Mostrar todas as datas em colunas</span><span class="l-en">Show all dates as columns</span></label>
+<label><input type="checkbox" id="iAll"> <span class="l-pt">Mostrar todas as datas em colunas</span><span class="l-en">Show all dates as columns</span></label>
 <span id="iAwait"></span>
 </div>
 <div class="filters">
@@ -194,7 +194,7 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 <span class="mut small" id="icount"></span>
 </div>
 <div class="tw tall"><table id="it"><thead></thead><tbody><tr><td class="mut"><span class="l-pt">A carregar data/sangue.json…</span><span class="l-en">Loading data/sangue.json…</span></td></tr></tbody></table></div>
-<p class="small mut"><span class="l-pt">Δ = data principal vs data de comparação (verde = desceu) · clique num alimento para ver a evolução; no gráfico, a faixa verde vai até ao limite.</span><span class="l-en">Δ = main date vs comparison date (green = went down) · click a food to see its trend; in the chart, the green band runs up to the cut-off.</span></p>
+<p class="small mut"><span class="l-pt">Δ = data principal vs data de comparação, quando escolhida (verde = desceu) · clique num alimento para ver a evolução; no gráfico, a faixa verde vai até ao limite.</span><span class="l-en">Δ = main date vs comparison date, when one is chosen (green = went down) · click a food to see its trend; in the chart, the green band runs up to the cut-off.</span></p>
 </section>
 
 <!-- ============ GENÉTICA ============ -->
@@ -376,21 +376,46 @@ function delta(row,ra,rb){if(!ra||!rb||!isNum(ra.v)||!isNum(rb.v))return null;co
 function deltaHtml(x){if(!x)return '<span class="mut">—</span>';const cls=x.dir>0?'good':x.dir<0?'bad':'neu';
  return `<span class="tr ${cls}">${x.arrow} ${x.diff>0?'+':''}${fnum(x.diff,x.d)}${x.pc!==null&&Math.abs(x.diff)>1e-12?`<small>${x.pc>0?'+':''}${fnum(x.pc,Math.abs(x.pc)<10?1:0)}%</small>`:''}</span>`}
 const nm=row=>LANG==='en'&&row.label_en?row.label_en:row.label;
-// gráfico SVG inline
-function chartSVG(row,cols){const pts=cols.slice().sort((a,b)=>a.data<b.data?-1:1).map(c=>({c,r:row.res[c.data]})).filter(p=>p.r&&isNum(p.r.v)).map(p=>({...p,y:toNum(p.r.v),t:Date.parse(p.r.data_real||p.c.data)}));
+// gráfico SVG inline: x ordinal (pontos igualmente espaçados por colheita), eixo y com valores redondos, rótulos sem colisões
+function niceStep(raw){const p=Math.pow(10,Math.floor(Math.log10(raw))),f=raw/p;return (f<=1?1:f<=2?2:f<=2.5?2.5:f<=5?5:10)*p}
+function stepDecs(st){for(let d=0;d<6;d++){if(Math.abs(Math.round(st*Math.pow(10,d))-st*Math.pow(10,d))<1e-6)return d}return 6}
+const tw=(t,fs,b)=>String(t).length*fs*(b?0.64:0.58)+2;// largura estimada do texto
+function chartSVG(row,cols){const pts=cols.slice().sort((a,b)=>a.data<b.data?-1:1).map(c=>({c,r:row.res[c.data]})).filter(p=>p.r&&isNum(p.r.v)).map(p=>({...p,y:toNum(p.r.v)}));
  if(!pts.length)return '';
- const W=560,H=190,Lm=54,R=36,T=22,B=34;const ys=pts.map(p=>p.y);let lo=Math.min(...ys),hi=Math.max(...ys);const span0=(hi-lo)||Math.abs(hi)*0.5||1;
- const semAlvo=(row.regras||[]).includes('sem_alvo');const rr=pts[pts.length-1].r;[row.omin,row.omax].concat(semAlvo?[]:[rr.ref_min,rr.ref_max]).forEach(b=>{if(has(b)&&b>=lo-span0*3&&b<=hi+span0*3){lo=Math.min(lo,b);hi=Math.max(hi,b)}});
- let pad=(hi-lo)*0.12||Math.abs(hi)*0.1||1;const pos=lo>=0;lo-=pad;hi+=pad;if(pos&&lo<0)lo=0;
- const t0=pts[0].t,t1=pts[pts.length-1].t,X=t=>pts.length<2?Lm+(W-Lm-R)/2:Lm+(t-t0)/(t1-t0||1)*(W-Lm-R),Y=v=>T+(hi-v)/(hi-lo)*(H-T-B);
- const cl=v=>Math.max(T,Math.min(H-B,Y(v)));let g='';
- const iI=isIntol(row),bmax=iI?rr.ref_max:row.omax,bmin=iI?null:row.omin;if(has(bmin)||has(bmax)){const y1=cl(has(bmax)?bmax:hi),y2=cl(has(bmin)?bmin:lo);if(y2-y1>1)g+=`<rect x="${Lm}" y="${y1}" width="${W-Lm-R}" height="${y2-y1}" style="fill:var(--chok)"/>`+(y2-y1>13?`<text x="${W-R-4}" y="${y1+12}" text-anchor="end" font-size="10" style="fill:var(--okt)">${iI?L('não intolerante','not intolerant'):L('ótimo','optimal')}</text>`:'')}
- [rr.ref_min,rr.ref_max].forEach(b=>{if(!semAlvo&&has(b)&&b>lo&&b<hi)g+=`<line x1="${Lm}" x2="${W-R}" y1="${Y(b)}" y2="${Y(b)}" style="stroke:var(--bad)" stroke-dasharray="4 3" stroke-width="1"/><text x="${Lm+4}" y="${Y(b)-3}" font-size="9.5" style="fill:var(--badt)">${iI?L('limite','cut-off'):'ref.'} ${fv(b)}</text>`});
- for(let i=0;i<3;i++){const v=lo+(hi-lo)*i/2;g+=`<text x="${Lm-6}" y="${Y(v)+3}" text-anchor="end" font-size="10" style="fill:var(--mut)">${fnum(v,Math.abs(hi-lo)<1?3:Math.abs(hi-lo)<10?2:Math.abs(hi-lo)<100?1:0)}</text><line x1="${Lm}" x2="${W-R}" y1="${Y(v)}" y2="${Y(v)}" style="stroke:var(--grid)"/>`}
- if(pts.length>1)g+=`<polyline fill="none" style="stroke:var(--acc)" stroke-width="2" points="${pts.map(p=>X(p.t)+','+Y(p.y)).join(' ')}"/>`;
+ const W=(typeof innerWidth==='number'&&innerWidth<640)?380:560,H=210,Lm=50,R=70,T=30,B=40,PX=34;const ys=pts.map(p=>p.y);let lo=Math.min(...ys),hi=Math.max(...ys);const span0=(hi-lo)||Math.abs(hi)*0.5||1;
+ const semAlvo=(row.regras||[]).includes('sem_alvo');const rr=pts[pts.length-1].r;const iI=isIntol(row);
+ [row.omin,row.omax].concat(semAlvo?[]:[rr.ref_min,rr.ref_max]).forEach(b=>{if(has(b)&&b>=lo-span0*3&&b<=hi+span0*3){lo=Math.min(lo,b);hi=Math.max(hi,b)}});
+ const pos=lo>=0;let pad=(hi-lo)*0.06||Math.abs(hi)*0.1||1;lo-=pad;hi+=pad;if(pos&&lo<0)lo=0;
+ let st=niceStep((hi-lo)/4);let t0=Math.floor(lo/st+1e-9)*st,t1=Math.ceil(hi/st-1e-9)*st;while((t1-t0)/st>6){st=niceStep(st*1.5);t0=Math.floor(lo/st+1e-9)*st;t1=Math.ceil(hi/st-1e-9)*st}
+ if(pos&&t0<0)t0=0;lo=t0;hi=t1;if(hi<=lo)hi=lo+st;const sd=stepDecs(st);
+ const n=pts.length,X=i=>n<2?Lm+(W-Lm-R)/2:Lm+PX+i*(W-Lm-R-2*PX)/(n-1),Y=v=>T+(hi-v)/(hi-lo)*(H-T-B);
+ const cl=v=>Math.max(T,Math.min(H-B,Y(v)));let g='';const boxes=[];// caixas ocupadas [x1,y1,x2,y2]
+ const hit=(b)=>boxes.some(o=>b[0]<o[2]&&b[2]>o[0]&&b[1]<o[3]&&b[3]>o[1]);
+ const txt=(x,y,t,fs,anc,sty,bold)=>{const w=tw(t,fs,bold),x1=anc==='end'?x-w:anc==='middle'?x-w/2:x;boxes.push([x1-1,y-fs*0.8,x1+w+1,y+fs*0.25]);return `<text x="${x.toFixed(1)}" y="${y.toFixed(1)}"${anc!=='start'?` text-anchor="${anc}"`:''} font-size="${fs}"${bold?' font-weight="700"':''} style="fill:var(${sty})">${esc(t)}</text>`};
+ // faixa ótima / não intolerante + legenda no topo (fora da área dos pontos)
+ const bmax=iI?rr.ref_max:row.omax,bmin=iI?null:row.omin;
+ if(has(bmin)||has(bmax)){const y1=cl(has(bmax)?bmax:hi),y2=cl(has(bmin)?bmin:lo);if(y2-y1>1){g+=`<rect x="${Lm}" y="${y1.toFixed(1)}" width="${W-Lm-R}" height="${(y2-y1).toFixed(1)}" style="fill:var(--chok)"/>`;
+  const rg=iI?'≤ '+fv(bmax):has(bmin)&&has(bmax)?fv(bmin)+'–'+fv(bmax):has(bmax)?'≤ '+fv(bmax):'≥ '+fv(bmin);const lt=(iI?L('não intolerante','not intolerant'):L('ótimo','optimal'))+' '+rg;g+=`<rect x="${Lm}" y="5" width="12" height="9" rx="2" style="fill:var(--chok);stroke:var(--okt)" stroke-width="0.8"/>`+txt(Lm+16,13,lt,10,'start','--okt')}}
+ // eixo y: valores redondos
+ for(let v=lo;v<=hi+st*1e-6;v+=st){const yy=Y(v);g+=`<line x1="${Lm}" x2="${W-R}" y1="${yy.toFixed(1)}" y2="${yy.toFixed(1)}" style="stroke:var(--grid)"/>`+txt(Lm-6,yy+3.5,fnum(v,sd),10,'end','--mut')}
+ // linhas de referência: rótulo na margem direita (sem colisão com os valores do eixo, que estão à esquerda)
+ const refs=semAlvo?[]:[rr.ref_min,rr.ref_max].filter(b=>has(b)&&b>lo&&b<hi).map(b=>({b,y:Y(b)})).sort((a,b)=>a.y-b.y);
+ refs.forEach((r,k)=>{let ly=r.y+3.5;if(k&&ly-refs[k-1].ly<12)ly=refs[k-1].ly+12;r.ly=Math.min(ly,H-B+3);});
+ if(refs.length===2&&refs[1].ly-refs[0].ly<12)refs[0].ly=refs[1].ly-12;
+ refs.forEach(r=>{boxes.push([Lm,r.y-2,W-R,r.y+2]);g+=`<line x1="${Lm}" x2="${W-R}" y1="${r.y.toFixed(1)}" y2="${r.y.toFixed(1)}" style="stroke:var(--bad)" stroke-dasharray="4 3" stroke-width="1"/>`+txt(W-R+5,r.ly,(iI?L('limite','cut-off'):'ref.')+' '+fv(r.b),9.5,'start','--badt')});
+ if(n>1)g+=`<polyline fill="none" style="stroke:var(--acc)" stroke-width="2" points="${pts.map((p,i)=>X(i).toFixed(1)+','+Y(p.y).toFixed(1)).join(' ')}"/>`;
  const col={ok:'var(--ok)',warn:'var(--warn)',bad:'var(--bad)',na:'var(--na)'};
- pts.forEach(p=>{const k=kOf(stOf(row,p.r));g+=`<circle cx="${X(p.t)}" cy="${Y(p.y)}" r="5" style="fill:${col[k]};stroke:var(--card)" stroke-width="1.5"><title>${esc(fdate(p.r.data_real||p.c.data))}: ${esc(fv(p.r.v))}</title></circle><text x="${X(p.t)}" y="${Y(p.y)-9}" text-anchor="middle" font-size="11" font-weight="700" style="fill:var(--ink)">${esc(fv(p.r.v))}</text><text x="${X(p.t)}" y="${H-12}" text-anchor="middle" font-size="10" style="fill:var(--mut)">${esc(fdate(p.c.data))}</text>`});
- return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${L('Evolução de','Trend of')} ${esc(nm(row))}">${g}</svg>`}
+ // datas por baixo de cada ponto (2 linhas alternadas se não couberem)
+ const dw=tw('00-00-0000',10),two=n>1&&(W-Lm-R-2*PX)/(n-1)<dw+6;
+ pts.forEach((p,i)=>{g+=txt(X(i),H-B+16+(two&&i%2?13:0),fdate(p.c.data),10,'middle','--mut')});
+ pts.forEach((p,i)=>{boxes.push([X(i)-6,Y(p.y)-6,X(i)+6,Y(p.y)+6])});
+ // valores: acima, abaixo, mais acima/abaixo ou ao lado; o primeiro sítio livre dentro do gráfico
+ let pg='';pts.forEach((p,i)=>{const k=kOf(stOf(row,p.r)),x=X(i),y=Y(p.y),t=fv(p.r.v),w=tw(t,11,1);
+  pg+=`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="5" style="fill:${col[k]};stroke:var(--card)" stroke-width="1.5"><title>${esc(fdate(p.r.data_real||p.c.data))}: ${esc(t)}</title></circle>`;
+  const cand=[[0,-9],[0,17]].concat([[0,-23],[0,31],[w/2+9,4],[-w/2-9,4]]);let pick=null;
+  for(const [dx,dy] of cand){const bx=[x+dx-w/2-1,y+dy-11*0.8,x+dx+w/2+1,y+dy+11*0.25];if(bx[1]<0||bx[3]>H-B+2||bx[0]<Lm-2||bx[2]>W-R+2)continue;if(!hit(bx)){pick=[dx,dy];break}}
+  if(!pick)pick=[0,-9];pg+=txt(x+pick[0],y+pick[1],t,11,'middle','--ink',1)});
+ return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${L('Evolução de','Trend of')} ${esc(nm(row))}">${g}${pg}</svg>`}
 function detailHtml(row,cols){const svg=chartSVG(row,cols),n=cols.filter(c=>row.res[c.data]).length,num=cols.filter(c=>row.res[c.data]&&isNum(row.res[c.data].v)).length;
  let msg='';if(n<2)msg=`<span class="await">⏳ ${L('Aguarda próximo exame: a tendência aparece quando houver 2 ou mais datas.','Awaiting next test: the trend appears once there are 2 or more dates.')}</span>`;else if(!num)msg=`<span class="mut small">${L('Resultado qualitativo: sem gráfico.','Qualitative result: no chart.')}</span>`;
  const lst=cols.filter(c=>row.res[c.data]).map(c=>{const r=row.res[c.data],st=stOf(row,r),k=kOf(st);const nt=tx(r,'nota');return `<tr><td>${esc(fdate(r.data_real||c.data))}</td><td class="num">${esc(fv(r.v))} <span class="mut">${esc(r.u||row.u||'')}</span></td><td><span class="pill ${k}">${labR(row,st)}</span></td><td class="mut">${esc(ptr(tx(r,'ref')||row.ref||''))}${nt?'<br>'+esc(nt):''}</td></tr>`}).join('');
@@ -399,20 +424,20 @@ function detailHtml(row,cols){const svg=chartSVG(row,cols),n=cols.filter(c=>row.
 function Series(o){const cols=o.colheitas.slice().sort((a,b)=>a.data<b.data?1:-1);const A=document.getElementById(o.ids.A),Bs=document.getElementById(o.ids.B),All=document.getElementById(o.ids.all);
  const optTxt=c=>`${esc(fdate(c.data))} · ${esc(tx(c,'rotulo'))}`;
  const fillA=()=>{const v=A.value;A.innerHTML=cols.map(c=>`<option value="${c.data}">${optTxt(c)}</option>`).join('');if(v)A.value=v};
- const fillB=keep=>{const v=Bs.value,others=cols.filter(c=>c.data!==A.value),prev=others.find(c=>c.data<A.value)||others[0];
-  Bs.innerHTML=others.length?others.map(c=>`<option value="${c.data}"${prev&&c.data===prev.data?' selected':''}>${optTxt(c)}</option>`).join(''):`<option value="">${L('— sem outra data —','— no other date —')}</option>`;Bs.disabled=!others.length;if(keep&&v&&others.some(c=>c.data===v))Bs.value=v};
+ const fillB=()=>{const v=Bs.value,others=cols.filter(c=>c.data!==A.value);
+  Bs.innerHTML=`<option value="">${L('Não comparar','No comparison')}</option>`+others.map(c=>`<option value="${c.data}">${optTxt(c)}</option>`).join('');Bs.disabled=!others.length;Bs.value=v&&others.some(c=>c.data===v)?v:''};
  const aw=document.getElementById(o.ids.await);
  const awaitMsg=()=>{aw.innerHTML=cols.length<2?`<span class="await">⏳ ${L('Só há 1 data','Only 1 date')} (${esc(fdate(cols[0].data))}): ${L('aguarda próximo exame para comparar e ver tendências.','awaiting next test to compare and see trends.')}</span>`:''};
  fillA();fillB();awaitMsg();if(cols.length<2)All.disabled=true;
  let openK=null;const isOpen=k=>openK===k;const tb=document.querySelector('#'+o.ids.table+' tbody'),th=document.querySelector('#'+o.ids.table+' thead');
- function shown(){if(All.checked||!Bs.value)return cols;return cols.filter(c=>c.data===A.value||c.data===Bs.value)}
- function render(){const sc=shown(),a=A.value,b=Bs.value,bef=o.before(),aft=o.after(),ncol=bef.length+sc.length+1+aft.length;
-  th.innerHTML='<tr>'+bef.map(h=>`<th>${h}</th>`).join('')+sc.map(c=>`<th class="dcol${c.data===a?' a':''}">${esc(fdate(c.data))}<small>${c.data===a?L('principal','main'):c.data===b?L('comparação','comparison'):esc(tx(c,'rotulo'))}</small></th>`).join('')+`<th class="dcol" title="${b?L('Data principal vs data de comparação','Main date vs comparison date'):L('Aguarda próximo exame','Awaiting next test')}">Δ${b?`<small>${esc(fdate(a))} vs ${esc(fdate(b))}</small>`:`<small>${L('aguarda','awaiting')}</small>`}</th>`+aft.map(h=>`<th>${h}</th>`).join('')+'</tr>';
+ function shown(){if(All.checked)return cols;return cols.filter(c=>c.data===A.value||(Bs.value&&c.data===Bs.value))}
+ function render(){const sc=shown(),a=A.value,b=Bs.value,bef=o.before(),aft=o.after(),ncol=bef.length+sc.length+(b?1:0)+aft.length;
+  th.innerHTML='<tr>'+bef.map(h=>`<th>${h}</th>`).join('')+sc.map(c=>`<th class="dcol${c.data===a?' a':''}">${esc(fdate(c.data))}<small>${c.data===a?L('principal','main'):c.data===b?L('comparação','comparison'):esc(tx(c,'rotulo'))}</small></th>`).join('')+(b?`<th class="dcol dl" title="${L('Data principal vs data de comparação','Main date vs comparison date')}">Δ<small>${esc(fdate(a))} vs ${esc(fdate(b))}</small></th>`:'')+aft.map(h=>`<th>${h}</th>`).join('')+'</tr>';
   const rs=o.rows.filter(r=>o.filter(r,a,b));let h='';
-  rs.forEach(r=>{const ra=r.res[a],rb=b?r.res[b]:null;h+=`<tr class="mk${isOpen(r.key)?' open':''}" data-k="${esc(r.key)}" tabindex="0" aria-expanded="${isOpen(r.key)}">`+o.cellsBefore(r,ra)+sc.map(c=>{const x=r.res[c.data];if(!x)return `<td class="v miss" title="${L('Sem resultado nesta data','No result on this date')}">—</td>`;const st=stOf(r,x);return `<td class="v ${kOf(st)}" title="${esc(labR(r,st))}">${esc(fv(x.v))}</td>`}).join('')+`<td class="dl">${deltaHtml(delta(r,ra,rb))}</td>`+o.cellsAfter(r,ra)+'</tr>';
+  rs.forEach(r=>{const ra=r.res[a],rb=b?r.res[b]:null;h+=`<tr class="mk${isOpen(r.key)?' open':''}" data-k="${esc(r.key)}" tabindex="0" aria-expanded="${isOpen(r.key)}">`+o.cellsBefore(r,ra)+sc.map(c=>{const x=r.res[c.data];if(!x)return `<td class="v miss" title="${L('Sem resultado nesta data','No result on this date')}">—</td>`;const st=stOf(r,x);return `<td class="v ${kOf(st)}" title="${esc(labR(r,st))}">${esc(fv(x.v))}</td>`}).join('')+(b?`<td class="dl">${deltaHtml(delta(r,ra,rb))}</td>`:'')+o.cellsAfter(r,ra)+'</tr>';
    if(isOpen(r.key))h+=`<tr class="det"><td colspan="${ncol}">${detailHtml(r,cols)}</td></tr>`});
   tb.innerHTML=h||`<tr><td colspan="${ncol}" class="mut">${L('Nenhum resultado com estes filtros.','No results with these filters.')}</td></tr>`;
-  document.getElementById(o.ids.count).textContent=rs.length+L(' de ',' of ')+o.rows.length;if(o.onRender)o.onRender(a,b)}
+  document.getElementById(o.ids.count).textContent=rs.length+L(' de ',' of ')+o.rows.length;if(o.onRender)o.onRender(a,b);if(o.onCmp)o.onCmp(b)}
  // um gráfico aberto de cada vez: o mesmo marcador alterna; outro marcador troca; clique fora do painel ou Esc fecha
  const close=()=>{if(openK===null)return false;const k=openK;openK=null;render();return k};
  tb.addEventListener('click',e=>{const tr=e.target.closest('tr.mk');if(!tr||!tb.contains(tr))return;const k=tr.dataset.k;openK=(openK===k)?null:k;render();if(openK!==null){const n=tb.querySelector('tr.mk.open');if(n)n.focus({preventScroll:true})}});
@@ -421,7 +446,7 @@ function Series(o){const cols=o.colheitas.slice().sort((a,b)=>a.data<b.data?1:-1
  tb.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('tr.mk')){e.preventDefault();e.target.click()}});
  A.addEventListener('input',()=>{fillB();render()});Bs.addEventListener('input',render);All.addEventListener('input',render);
  (o.inputs||[]).forEach(id=>document.getElementById(id).addEventListener('input',render));render();
- return {cols,render,relabel(){fillA();fillB(true);awaitMsg();render()}}}
+ return {cols,render,relabel(){fillA();fillB();awaitMsg();render()}}}
 function mkRows(list,extra){return list.map((m,i)=>{const res={};(m.resultados||[]).forEach(r=>{res[r.data]=r});return Object.assign({key:String(i),label:m.m,label_en:m.m_en||'',omin:m.otimo_min,omax:m.otimo_max,regras:m.regras||[],melhor:m.melhor||null,u:m.u||'',ref:m.ref||'',res},extra?extra(m):{})})}
 function alvoTxt(m){const a=m.otimo_min,b=m.otimo_max;return has(a)&&has(b)?a+'–'+b:has(b)?'< '+b:has(a)?'> '+a:'—'}
 function loadJSON(u){return fetch(u,{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error(u+': HTTP '+r.status);return r.json()})}
@@ -433,19 +458,18 @@ function heroMeta(){const el=document.getElementById('heroMeta');if(!SS){el.inne
 function fillCats(){if(!SROWS)return;const cs=document.getElementById('cat'),v=cs.value,seen=new Set();cs.innerHTML=`<option value="">${L('Todas as categorias','All categories')}</option>`;
  SROWS.forEach(r=>{if(seen.has(r.c))return;seen.add(r.c);const op=document.createElement('option');op.value=r.c;op.textContent=LANG==='en'&&r.c_en?r.c_en:r.c;cs.appendChild(op)});cs.value=v}
 function iSrcTxt(){if(!SD||!IROWS)return;const ds=[...new Set(IROWS.flatMap(r=>Object.values(r.res).map(x=>x.data_real||x.data)))].sort();document.getElementById('iSrc').textContent=(ds.length?ds.map(fdate).join(' | '):'—')+' · '+IROWS.length+' '+L('marcadores','markers')}
-function srcTxt(){iSrcTxt();if(!SD)return;document.getElementById('sSrc').textContent=SD.colheitas.map(c=>tx(c,'descricao')||fdate(c.data)).join(' | ')+' · '+SROWS.length+' '+L('marcadores','markers')+'. '+SD.colheitas.map(c=>tx(c,'nota')).filter(Boolean).join(' ')}
+function srcTxt(){iSrcTxt();if(!SD)return;document.getElementById('sSrc').textContent=SD.colheitas.map(c=>tx(c,'descricao')||fdate(c.data)).join(' | ')+' · '+SROWS.length+' '+L('marcadores','markers')+'. '+[...new Set(SD.colheitas.map(c=>tx(c,'nota')).filter(Boolean))].join(' ')}
 // ---- sangue ----
 loadJSON('data/sangue.json').then(D=>{SD=D;const rows=mkRows(D.marcadores,m=>({c:m.c,c_en:m.c_en||'',alvo:has(m.alvo)?m.alvo:alvoTxt(m),alvo_en:m.alvo_en||''}));SROWS=rows;
  fillCats();srcTxt();const cs=document.getElementById('cat');
- if(D.colheitas.length<2)document.getElementById('sTr').disabled=true;
- SS=Series({colheitas:D.colheitas,rows,ids:{A:'sA',B:'sB',all:'sAll',await:'sAwait',table:'bt',count:'count'},inputs:['q','cat','st','flagged','sTr'],
+  SS=Series({colheitas:D.colheitas,rows,ids:{A:'sA',B:'sB',all:'sAll',await:'sAwait',table:'bt',count:'count'},inputs:['q','cat','st','flagged','sTr'],
   before:()=>[L('Marcador','Marker')],after:()=>[L('Unidade','Unit'),L('Referência do lab.','Lab reference'),L('Alvo','Target'),L('Estado','Status'),L('Categoria','Category'),L('Nota','Note')],
   filter:(r,a,b)=>{const q=document.getElementById('q').value.trim().toLowerCase(),c=cs.value,s=document.getElementById('st').value,f=document.getElementById('flagged').checked,t=document.getElementById('sTr').value;const ra=r.res[a],st=stOf(r,ra);
    if(q&&!(r.label.toLowerCase().includes(q)||r.label_en.toLowerCase().includes(q)))return false;if(c&&r.c!==c)return false;if(s&&(!st||SL[st][0]!==s))return false;if(f&&!(st==='fora_do_otimo'||st==='fora_de_referencia'||st==='aceitavel'))return false;
-   if(t){const rb=b?r.res[b]:null;if(t==='chg')return !!(ra&&rb&&stOf(r,ra)!==stOf(r,rb));const d=delta(r,ra,rb);if(!d)return false;return t==='good'?d.dir>0:d.dir<0}return true},
+   if(t&&b){const rb=r.res[b];if(t==='chg')return !!(ra&&rb&&stOf(r,ra)!==stOf(r,rb));const d=delta(r,ra,rb);if(!d)return false;return t==='good'?d.dir>0:d.dir<0}return true},
   cellsBefore:(r,ra)=>`<td><b>${esc(nm(r))}</b>${ra&&ra.data_real?`<div class="small mut">${esc(fdate(ra.data_real))}</div>`:''}</td>`,
   cellsAfter:(r,ra)=>{const al=LANG==='en'&&r.alvo_en?r.alvo_en:r.alvo,ct=LANG==='en'&&r.c_en?r.c_en:r.c;if(!ra)return `<td></td><td></td><td class="small">${esc(ptr(al))}</td><td><span class="mut small">${L('sem resultado','no result')}</span></td><td class="small mut">${esc(ct)}</td><td></td>`;const st=stOf(r,ra);return `<td class="mut small">${esc(ra.u||'')}</td><td class="small">${esc(ptr(tx(ra,'ref')))}</td><td class="small">${esc(ptr(al))}</td><td><span class="pill ${kOf(st)}">${lab(st)}</span></td><td class="small mut">${esc(ct)}</td><td class="small">${esc(tx(ra,'nota'))}</td>`},
-  onRender:(a,b)=>summary(rows,a,b,D.colheitas)});heroMeta();intol(D)}).catch(e=>{console.warn(e);LOADERR=e;failMsg()});
+  onRender:(a,b)=>summary(rows,a,b,D.colheitas),onCmp:b=>{const tr=document.getElementById('sTr');tr.disabled=!b;tr.title=b?'':L('Escolha uma data de comparação para filtrar por tendência','Pick a comparison date to filter by trend')}});heroMeta();intol(D)}).catch(e=>{console.warn(e);LOADERR=e;failMsg()});
 // ---- intolerâncias alimentares (secção própria; estado sempre "Sem alvo") ----
 function intol(D){const list=D.intolerancias||[];IROWS=mkRows(list,m=>({c:m.c,c_en:m.c_en||''}));iSrcTxt();
  const ds=new Set(list.flatMap(m=>(m.resultados||[]).map(r=>r.data))),cols=D.colheitas.filter(c=>ds.has(c.data));
@@ -465,7 +489,7 @@ function summary(rows,a,b,cols){const c={ok:0,warn:0,bad:0,na:0};let t=0,good=0,
  document.getElementById('bsTitle').textContent=L('Análises de '+fdate(a)+' em números','Tests of '+fdate(a)+' in numbers');
  document.getElementById('bloodSummary').innerHTML=`<div><span class="num" style="font-size:22px">${t}</span> <span class="mut small">${L('marcadores','markers')} · ${esc(tx(ca,'descricao')||fdate(a))}</span></div><div class="bar">`+['ok','warn','bad','na'].map(k=>`<span style="width:${t?c[k]/t*100:0}%;background:${col[k]}"></span>`).join('')+'</div>'+
  `<div class="legend"><span class="pill ok">${c.ok} ${L('ótimo','optimal')}</span><span class="pill warn">${c.warn} ${L('aceitável/fora do ótimo','acceptable/outside optimal')}</span><span class="pill bad">${c.bad} ${L('fora da referência','out of range')}</span><span class="pill na">${c.na} ${L('sem alvo','no target')}</span></div>`+
- (b?`<div class="legend" style="margin-top:8px"><span>vs ${esc(fdate(b))}:</span><span class="pill ok">${good} ${L('melhoraram','improved')}</span><span class="pill bad">${bad} ${L('pioraram','worsened')}</span><span class="pill info">${chg} ${L('mudaram de estado','changed status')}</span></div>`:`<div style="margin-top:10px"><span class="await">⏳ ${L('Aguarda próximo exame para comparar com esta data','Awaiting next test to compare with this date')}</span></div>`)+
+ (b?`<div class="legend" style="margin-top:8px"><span>vs ${esc(fdate(b))}:</span><span class="pill ok">${good} ${L('melhoraram','improved')}</span><span class="pill bad">${bad} ${L('pioraram','worsened')}</span><span class="pill info">${chg} ${L('mudaram de estado','changed status')}</span></div>`:cols.length<2?`<div style="margin-top:10px"><span class="await">⏳ ${L('Aguarda próximo exame para comparar com esta data','Awaiting next test to compare with this date')}</span></div>`:'')+
  (IROWS&&IROWS.length?(()=>{const ia=IS?IS.cols[0].data:a,ic=iCounts(ia);return `<div class="small mut" style="margin-top:10px">${L('Estas contagens não incluem as','These counts exclude the')} ${IROWS.length} ${L('análises de intolerâncias alimentares, que têm secção própria','food intolerance tests, which have their own section')} (<a href="#intolerancias">${L('Intolerâncias Alimentares','Food Intolerances')}</a>: ${ic.intolerante.length} ${L('intolerante','intolerant')}, ${ic.nao_intolerante.length} ${L('não intolerante','not intolerant')}).</div>`})():'')}
 // ---- alternar idioma (estático: .l-pt/.l-en; atributos e opções: data-pt/data-en) ----
 function applyLang(){const en=LANG==='en';document.documentElement.lang=en?'en':'pt-PT';document.title=en?'Sérgio F · Blood Test Timeline':'Sérgio F · Cronologia de Exames de Sangue';

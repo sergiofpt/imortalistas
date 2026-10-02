@@ -55,7 +55,7 @@ A página lê `data/sangue.json` ao abrir. Para a ver localmente: `python3 -m ht
    ```
    `--data` é a coluna nova; `--descricao` leva só datas (sem nome do laboratório); `--datas-csv` junta na mesma coluna análises da mesma bateria feitas noutros dias. O script é idempotente (repetir substitui essa data), mantém os nomes dos marcadores, cria marcadores novos se for preciso e aplica as regras acima.
 3. Correr `python3 ferramentas/adicionar_colheita.py verificar` (datas coerentes e pesquisa de termos proibidos), abrir a página por `http.server` e confirmar que não há erros na consola.
-4. Fazer commit de `data/sangue.json`. A tabela passa a ter uma coluna por data, Δ face à data de comparação, filtro de tendência e gráfico por marcador.
+4. Fazer commit de `data/sangue.json`. A página abre na data mais recente com “Não comparar” (sem coluna Δ nem filtro de tendência); ao escolher uma data em “comparar com” aparecem essa coluna, o Δ, o filtro de tendência e, no Resumo, as contagens de melhorias/pioras. “Mostrar todas as datas em colunas” mostra todas as datas. O gráfico de cada marcador tem os pontos igualmente espaçados por colheita (não proporcional ao tempo), eixo com valores redondos e rótulos sem sobreposição (verificado por `site_build/test_chart_overlap.py`, fora do repositório).
 
 ## Regras permanentes do painel
 
