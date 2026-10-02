@@ -87,6 +87,25 @@
     "pt": "português",
     "en": "Portuguese"
    }
+  },
+  {
+   "id": "psicadelicos",
+   "titulo": {
+    "pt": "Psicadélicos",
+    "en": "Psychedelics"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/psicadelicos.pdf",
+   "descricao": {
+    "pt": "22 traços (resposta, metabolismo e saúde mental); 312 de 330 SNPs (142 imputados).",
+    "en": "22 traits (response, metabolism and mental health); 312 of 330 SNPs (142 imputed)."
+   },
+   "paginas": 41,
+   "tamanho_kb": 221,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
   }
  ]
 }
