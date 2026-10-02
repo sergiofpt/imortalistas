@@ -1,26 +1,30 @@
 {
- "_leia_me": "Formato e procedimento para acrescentar datas: README.md, secção \"Como adicionar uma nova data\". Respeitar a regra de privacidade do README.",
- "versao": 2,
+ "_leia_me": "Formato e procedimento para acrescentar datas: README.md, secção \"Como adicionar uma nova data\". \"marcadores\" = análises ao sangue e urina; \"intolerancias\" = intolerâncias alimentares (secção própria, estado sempre sem_alvo). Campos *_en = texto em inglês (opcionais). Sem nomes de laboratórios.",
+ "versao": 3,
  "atualizado_em": "2026-10-02",
  "colheitas": [
   {
    "data": "2026-08-25",
    "rotulo": "ago 2026",
-   "descricao": "AIWO e Thyrocare 25-08-2026 · Lipomic 27-08-2026",
-   "nota": "Jejum e hora não documentados no painel AIWO (aminoácidos às 08:38)."
+   "descricao": "25-08-2026 e 27-08-2026",
+   "nota": "Jejum e hora não documentados (aminoácidos às 08:38).",
+   "rotulo_en": "Aug 2026",
+   "descricao_en": "25-08-2026 and 27-08-2026",
+   "nota_en": "Fasting status and time not documented (amino acids at 08:38)."
   }
  ],
  "marcadores": [
   {
    "m": "Basófilos (absoluto)",
+   "m_en": "Basophils (absolute)",
    "c": "Hematologia",
+   "c_en": "Haematology",
    "alvo": "0–0.2",
    "otimo_min": 0,
    "otimo_max": 0.2,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.06",
      "u": "X 10³/µL",
      "ref": "0 - 0.20",
@@ -32,14 +36,15 @@
   },
   {
    "m": "Eosinófilos (absoluto)",
+   "m_en": "Eosinophils (absolute)",
    "c": "Hematologia",
+   "c_en": "Haematology",
    "alvo": "0–0.5",
    "otimo_min": 0,
    "otimo_max": 0.5,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.1",
      "u": "X 10³/µL",
      "ref": "0 - 0.50",
@@ -51,14 +56,15 @@
   },
   {
    "m": "Linfócitos (absoluto)",
+   "m_en": "Lymphocytes (absolute)",
    "c": "Hematologia",
+   "c_en": "Haematology",
    "alvo": "1–3.5",
    "otimo_min": 1,
    "otimo_max": 3.5,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "3.25",
      "u": "X 10³/µL",
      "ref": "0.85 - 3.90",
@@ -70,14 +76,15 @@
   },
   {
    "m": "Monócitos (absoluto)",
+   "m_en": "Monocytes (absolute)",
    "c": "Hematologia",
+   "c_en": "Haematology",
    "alvo": "0.2–0.8",
    "otimo_min": 0.2,
    "otimo_max": 0.8,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.27",
      "u": "X 10³/µL",
      "ref": "0.20 - 0.95",
@@ -89,14 +96,15 @@
   },
   {
    "m": "Neutrófilos (absoluto)",
+   "m_en": "Neutrophils (absolute)",
    "c": "Hematologia",
+   "c_en": "Haematology",
    "alvo": "1.5–4",
    "otimo_min": 1.5,
    "otimo_max": 4,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "3.35",
      "u": "X 10³/µL",
      "ref": "1.50 - 7.80",
@@ -108,14 +116,15 @@
   },
   {
    "m": "Basófilos (%)",
+   "m_en": "Basophils (%)",
    "c": "Hematologia",
+   "c_en": "Haematology",
    "alvo": "0–2",
    "otimo_min": 0,
    "otimo_max": 2,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.9",
      "u": "%",
      "ref": "0 - 2.00",
@@ -127,14 +136,15 @@
   },
   {
    "m": "Eosinófilos (%)",
+   "m_en": "Eosinophils (%)",
    "c": "Hematologia",
+   "c_en": "Haematology",
    "alvo": "0–8",
    "otimo_min": 0,
    "otimo_max": 8,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "1.4",
      "u": "%",
      "ref": "0 - 8.00",
@@ -146,14 +156,15 @@
   },
   {
    "m": "Hemoglobina",
+   "m_en": "Haemoglobin",
    "c": "Hematologia",
+   "c_en": "Haematology",
    "alvo": "14–16",
    "otimo_min": 14,
    "otimo_max": 16,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "15.4",
      "u": "g/dL",
      "ref": "13.20 - 17.10",
@@ -165,14 +176,15 @@
   },
   {
    "m": "Granulócitos imaturos (absoluto)",
+   "m_en": "Immature granulocytes (absolute)",
    "c": "Hematologia",
+   "c_en": "Haematology",
    "alvo": "0–0.1",
    "otimo_min": 0,
    "otimo_max": 0.1,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.01",
      "u": "X 10³/µL",
      "ref": "0 - 0.10",
@@ -184,14 +196,15 @@
   },
   {
    "m": "Granulócitos imaturos (%)",
+   "m_en": "Immature granulocytes (%)",
    "c": "Hematologia",
+   "c_en": "Haematology",
    "alvo": "0–1",
    "otimo_min": 0,
    "otimo_max": 1,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.1",
      "u": "%",
      "ref": "0 - 1.00",
@@ -203,14 +216,15 @@
   },
   {
    "m": "Leucócitos totais",
+   "m_en": "Total leukocytes (WBC)",
    "c": "Hematologia",
+   "c_en": "Haematology",
    "alvo": "3.5–6",
    "otimo_min": 3.5,
    "otimo_max": 6,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "7.03",
      "u": "X 10³/µL",
      "ref": "3.80 - 10.50",
@@ -222,14 +236,15 @@
   },
   {
    "m": "Linfócitos (%)",
+   "m_en": "Lymphocytes (%)",
    "c": "Hematologia",
+   "c_en": "Haematology",
    "alvo": "15–49",
    "otimo_min": 15,
    "otimo_max": 49,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "46.2",
      "u": "%",
      "ref": "15.00 - 49.00",
@@ -241,14 +256,15 @@
   },
   {
    "m": "HGM (MCH)",
+   "m_en": "MCH",
    "c": "Hematologia",
+   "c_en": "Haematology",
    "alvo": "27–33",
    "otimo_min": 27,
    "otimo_max": 33,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "30.0",
      "u": "pg",
      "ref": "27.00 - 33.00",
@@ -260,14 +276,15 @@
   },
   {
    "m": "CHGM (MCHC)",
+   "m_en": "MCHC",
    "c": "Hematologia",
+   "c_en": "Haematology",
    "alvo": "32–36",
    "otimo_min": 32,
    "otimo_max": 36,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "33.4",
      "u": "g/dL",
      "ref": "32.00 - 36.00",
@@ -279,14 +296,15 @@
   },
   {
    "m": "VGM (MCV)",
+   "m_en": "MCV",
    "c": "Hematologia",
+   "c_en": "Haematology",
    "alvo": "82–92",
    "otimo_min": 82,
    "otimo_max": 92,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "89.7",
      "u": "fL",
      "ref": "80.00 - 100.00",
@@ -298,14 +316,15 @@
   },
   {
    "m": "Monócitos (%)",
+   "m_en": "Monocytes (%)",
    "c": "Hematologia",
+   "c_en": "Haematology",
    "alvo": "1–10",
    "otimo_min": 1,
    "otimo_max": 10,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "3.8",
      "u": "%",
      "ref": "1.00 - 10.00",
@@ -317,14 +336,15 @@
   },
   {
    "m": "VPM (MPV)",
+   "m_en": "MPV",
    "c": "Hematologia",
+   "c_en": "Haematology",
    "alvo": "7–12",
    "otimo_min": 7,
    "otimo_max": 12,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "9.1",
      "u": "fL",
      "ref": "7.00 - 12.00",
@@ -336,14 +356,15 @@
   },
   {
    "m": "Neutrófilos segmentados (%)",
+   "m_en": "Segmented neutrophils (%)",
    "c": "Hematologia",
+   "c_en": "Haematology",
    "alvo": "38–80",
    "otimo_min": 38,
    "otimo_max": 80,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "47.6",
      "u": "%",
      "ref": "38.00 - 80.00",
@@ -355,14 +376,15 @@
   },
   {
    "m": "Eritroblastos (absoluto)",
+   "m_en": "Nucleated RBC (absolute)",
    "c": "Hematologia",
+   "c_en": "Haematology",
    "alvo": "0–0.01",
    "otimo_min": 0,
    "otimo_max": 0.01,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.01",
      "u": "X 10³/µL",
      "ref": "0 - 0.01",
@@ -374,14 +396,15 @@
   },
   {
    "m": "Eritroblastos (%)",
+   "m_en": "Nucleated RBC (%)",
    "c": "Hematologia",
+   "c_en": "Haematology",
    "alvo": "0–0.01",
    "otimo_min": 0,
    "otimo_max": 0.01,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.01",
      "u": "%",
      "ref": "0 - 0.01",
@@ -393,14 +416,15 @@
   },
   {
    "m": "Plaquetócrito (PCT)",
+   "m_en": "Plateletcrit (PCT)",
    "c": "Hematologia",
+   "c_en": "Haematology",
    "alvo": "0.2–0.4",
    "otimo_min": 0.2,
    "otimo_max": 0.4,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.3",
      "u": "%",
      "ref": "0.20 - 0.40",
@@ -412,14 +436,15 @@
   },
   {
    "m": "Hematócrito",
+   "m_en": "Haematocrit",
    "c": "Hematologia",
+   "c_en": "Haematology",
    "alvo": "42–48",
    "otimo_min": 42,
    "otimo_max": 48,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "46.1",
      "u": "%",
      "ref": "38.50 - 50.00",
@@ -431,14 +456,15 @@
   },
   {
    "m": "PDW",
+   "m_en": "PDW",
    "c": "Hematologia",
+   "c_en": "Haematology",
    "alvo": "9.6–15.2",
    "otimo_min": 9.6,
    "otimo_max": 15.2,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "10.2",
      "u": "fL",
      "ref": "9.60 - 15.20",
@@ -450,14 +476,15 @@
   },
   {
    "m": "P-LCR (plaquetas grandes)",
+   "m_en": "P-LCR (large platelets)",
    "c": "Hematologia",
+   "c_en": "Haematology",
    "alvo": "19.7–42.4",
    "otimo_min": 19.7,
    "otimo_max": 42.4,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "17.8",
      "u": "%",
      "ref": "19.70 - 42.40",
@@ -469,14 +496,15 @@
   },
   {
    "m": "Plaquetas",
+   "m_en": "Platelets",
    "c": "Hematologia",
+   "c_en": "Haematology",
    "alvo": "150–350",
    "otimo_min": 150,
    "otimo_max": 350,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "333",
      "u": "X 10³/µL",
      "ref": "140.00 - 400.00",
@@ -488,14 +516,15 @@
   },
   {
    "m": "Eritrócitos",
+   "m_en": "Erythrocytes (RBC)",
    "c": "Hematologia",
+   "c_en": "Haematology",
    "alvo": "4.5–5.5",
    "otimo_min": 4.5,
    "otimo_max": 5.5,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "5.14",
      "u": "X 10^6/µL",
      "ref": "4.20 - 5.80",
@@ -507,14 +536,15 @@
   },
   {
    "m": "RDW-CV",
+   "m_en": "RDW-CV",
    "c": "Hematologia",
+   "c_en": "Haematology",
    "alvo": "11–13",
    "otimo_min": 11,
    "otimo_max": 13,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "12.3",
      "u": "%",
      "ref": "11.00 - 15.00",
@@ -526,14 +556,15 @@
   },
   {
    "m": "RDW-SD",
+   "m_en": "RDW-SD",
    "c": "Hematologia",
+   "c_en": "Haematology",
    "alvo": "39–46",
    "otimo_min": 39,
    "otimo_max": 46,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "40.2",
      "u": "fL",
      "ref": "39.00 - 46.00",
@@ -545,14 +576,15 @@
   },
   {
    "m": "Velocidade de sedimentação (VS)",
+   "m_en": "Erythrocyte sedimentation rate (ESR)",
    "c": "Hematologia",
+   "c_en": "Haematology",
    "alvo": "0–10",
    "otimo_min": 0,
    "otimo_max": 10,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "2.72",
      "u": "mm/hr",
      "ref": "0 - 15.00",
@@ -564,14 +596,15 @@
   },
   {
    "m": "HbA1c",
+   "m_en": "HbA1c",
    "c": "Metabolismo da glicose",
+   "c_en": "Glucose metabolism",
    "alvo": "4.6–5.3",
    "otimo_min": 4.6,
    "otimo_max": 5.3,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "4.8",
      "u": "%",
      "ref": "4.00 - 5.70",
@@ -583,14 +616,15 @@
   },
   {
    "m": "Glicose média estimada",
+   "m_en": "Estimated average glucose",
    "c": "Metabolismo da glicose",
+   "c_en": "Glucose metabolism",
    "alvo": "85–105",
    "otimo_min": 85,
    "otimo_max": 105,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "91",
      "u": "mg/dL",
      "ref": "68.00 - 114.00",
@@ -602,14 +636,15 @@
   },
   {
    "m": "Glicose em jejum",
+   "m_en": "Fasting glucose",
    "c": "Metabolismo da glicose",
+   "c_en": "Glucose metabolism",
    "alvo": "70–90",
    "otimo_min": 70,
    "otimo_max": 90,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "73.3",
      "u": "mg/dL",
      "ref": "65.00 - 100.00",
@@ -621,14 +656,15 @@
   },
   {
    "m": "Frutosamina",
+   "m_en": "Fructosamine",
    "c": "Metabolismo da glicose",
+   "c_en": "Glucose metabolism",
    "alvo": "205–250",
    "otimo_min": 205,
    "otimo_max": 250,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "210.42",
      "u": "µmol/L",
      "ref": "205.00 - 285.00",
@@ -640,14 +676,15 @@
   },
   {
    "m": "Cetonas no sangue",
+   "m_en": "Blood ketones",
    "c": "Metabolismo da glicose",
+   "c_en": "Glucose metabolism",
    "alvo": "0–2.9",
    "otimo_min": 0,
    "otimo_max": 2.9,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "1.11",
      "u": "mg/dL",
      "ref": "0 - 2.90",
@@ -659,14 +696,15 @@
   },
   {
    "m": "Insulina em jejum",
+   "m_en": "Fasting insulin",
    "c": "Metabolismo da glicose",
+   "c_en": "Glucose metabolism",
    "alvo": "2–6",
    "otimo_min": 2,
    "otimo_max": 6,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "11.6",
      "u": "µU/ml",
      "ref": "0 - 12.00",
@@ -678,14 +716,15 @@
   },
   {
    "m": "Péptido C",
+   "m_en": "C-peptide",
    "c": "Metabolismo da glicose",
+   "c_en": "Glucose metabolism",
    "alvo": "0.8–2",
    "otimo_min": 0.8,
    "otimo_max": 2,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "2.33",
      "u": "ng/mL",
      "ref": "0.80 - 3.85",
@@ -697,52 +736,57 @@
   },
   {
    "m": "HOMA-IR",
+   "m_en": "HOMA-IR",
    "c": "Metabolismo da glicose",
+   "c_en": "Glucose metabolism",
    "alvo": "0.5–1",
    "otimo_min": 0.5,
    "otimo_max": 1,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "2.1",
      "u": "",
      "ref": "0.5 - 1.49 (calculado pelo relatório: insulina x glicose / 405)",
      "ref_min": 0.5,
      "ref_max": 1.49,
-     "s": "fora_de_referencia"
+     "s": "fora_de_referencia",
+     "ref_en": "0.5 - 1.49 (calculated by the report: insulin x glucose / 405)"
     }
    ]
   },
   {
    "m": "Rácio TG/HDL",
+   "m_en": "TG/HDL ratio",
    "c": "Metabolismo da glicose",
+   "c_en": "Glucose metabolism",
    "alvo": "0–1",
    "otimo_min": 0,
    "otimo_max": 1,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "1.66",
      "u": "ratio",
      "ref": "Sem intervalo no relatório (scorecard p.2)",
      "ref_min": null,
      "ref_max": null,
-     "s": "fora_do_otimo"
+     "s": "fora_do_otimo",
+     "ref_en": "No range in the report (scorecard p.2)"
     }
    ]
   },
   {
    "m": "GGT",
+   "m_en": "GGT",
    "c": "Função hepática",
+   "c_en": "Liver function",
    "alvo": "10–20",
    "otimo_min": 10,
    "otimo_max": 20,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "48.2",
      "u": "U/L",
      "ref": "0 - 15.00",
@@ -754,14 +798,15 @@
   },
   {
    "m": "Fosfatase alcalina",
+   "m_en": "Alkaline phosphatase",
    "c": "Função hepática",
+   "c_en": "Liver function",
    "alvo": "40–90",
    "otimo_min": 40,
    "otimo_max": 90,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "52.1",
      "u": "U/L",
      "ref": "36.00 - 130.00",
@@ -773,14 +818,15 @@
   },
   {
    "m": "Bilirrubina total",
+   "m_en": "Total bilirubin",
    "c": "Função hepática",
+   "c_en": "Liver function",
    "alvo": "0.5–1.2",
    "otimo_min": 0.5,
    "otimo_max": 1.2,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.74",
      "u": "mg/dL",
      "ref": "0.20 - 1.20",
@@ -792,14 +838,15 @@
   },
   {
    "m": "Bilirrubina direta",
+   "m_en": "Direct bilirubin",
    "c": "Função hepática",
+   "c_en": "Liver function",
    "alvo": "0–0.2",
    "otimo_min": 0,
    "otimo_max": 0.2,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.28",
      "u": "mg/dL",
      "ref": "0 - 0.20",
@@ -811,14 +858,15 @@
   },
   {
    "m": "Bilirrubina indireta",
+   "m_en": "Indirect bilirubin",
    "c": "Função hepática",
+   "c_en": "Liver function",
    "alvo": "0.2–1",
    "otimo_min": 0.2,
    "otimo_max": 1,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.46",
      "u": "mg/dL",
      "ref": "0.20 - 1.20",
@@ -830,14 +878,15 @@
   },
   {
    "m": "Proteínas totais",
+   "m_en": "Total protein",
    "c": "Função hepática",
+   "c_en": "Liver function",
    "alvo": "6.5–8",
    "otimo_min": 6.5,
    "otimo_max": 8,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "7.69",
      "u": "gm/dL",
      "ref": "6.10 - 8.10",
@@ -849,14 +898,15 @@
   },
   {
    "m": "Albumina",
+   "m_en": "Albumin",
    "c": "Função hepática",
+   "c_en": "Liver function",
    "alvo": "4.5–5",
    "otimo_min": 4.5,
    "otimo_max": 5,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "4.73",
      "u": "g/dL",
      "ref": "3.60 - 5.10",
@@ -868,14 +918,15 @@
   },
   {
    "m": "Globulina",
+   "m_en": "Globulin",
    "c": "Função hepática",
+   "c_en": "Liver function",
    "alvo": "2–3",
    "otimo_min": 2,
    "otimo_max": 3,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "2.96",
      "u": "gm/dL",
      "ref": "1.90 - 3.70",
@@ -887,14 +938,15 @@
   },
   {
    "m": "AST (TGO)",
+   "m_en": "AST (SGOT)",
    "c": "Função hepática",
+   "c_en": "Liver function",
    "alvo": "10–25",
    "otimo_min": 10,
    "otimo_max": 25,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "38.4",
      "u": "U/L",
      "ref": "9.00 - 35.00",
@@ -906,14 +958,15 @@
   },
   {
    "m": "ALT (TGP)",
+   "m_en": "ALT (SGPT)",
    "c": "Função hepática",
+   "c_en": "Liver function",
    "alvo": "10–25",
    "otimo_min": 10,
    "otimo_max": 25,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "67.9",
      "u": "U/L",
      "ref": "5.00 - 46.00",
@@ -925,14 +978,15 @@
   },
   {
    "m": "Rácio albumina/globulina",
+   "m_en": "Albumin/globulin ratio",
    "c": "Função hepática",
+   "c_en": "Liver function",
    "alvo": "1.5–2.2",
    "otimo_min": 1.5,
    "otimo_max": 2.2,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "1.6",
      "u": "ratio",
      "ref": "1.00 - 2.50",
@@ -944,14 +998,15 @@
   },
   {
    "m": "LDH",
+   "m_en": "LDH",
    "c": "Função hepática",
+   "c_en": "Liver function",
    "alvo": "100–220",
    "otimo_min": 100,
    "otimo_max": 220,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "188.62",
      "u": "U/L",
      "ref": "100.00 - 220.00",
@@ -963,7 +1018,9 @@
   },
   {
    "m": "NAFLD Fibrosis Score",
+   "m_en": "NAFLD Fibrosis Score",
    "c": "Função hepática",
+   "c_en": "Liver function",
    "alvo": "< -1.455",
    "otimo_min": null,
    "otimo_max": -1.455,
@@ -973,20 +1030,23 @@
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "< -1,455",
      "u": "score",
      "ref": "< -1.455 = F0-F2 (sem fibrose avançada)",
      "ref_min": null,
      "ref_max": -1.455,
-     "s": "otimo"
+     "s": "otimo",
+     "ref_en": "< -1.455 = F0-F2 (no advanced fibrosis)"
     }
    ]
   },
   {
    "m": "LDL colesterol",
+   "m_en": "LDL cholesterol",
    "c": "Lípidos",
+   "c_en": "Lipids",
    "alvo": "< 70 (quanto mais baixo, melhor)",
+   "alvo_en": "< 70 (lower is better)",
    "otimo_min": null,
    "otimo_max": 70,
    "regras": [
@@ -995,7 +1055,6 @@
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "21.76",
      "u": "mg/dL",
      "ref": "0 - 130.00",
@@ -1007,14 +1066,15 @@
   },
   {
    "m": "Colesterol total",
+   "m_en": "Total cholesterol",
    "c": "Lípidos",
+   "c_en": "Lipids",
    "alvo": "< 180",
    "otimo_min": null,
    "otimo_max": 180,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "85",
      "u": "mg/dL",
      "ref": "0 - 180.00",
@@ -1026,14 +1086,15 @@
   },
   {
    "m": "HDL colesterol",
+   "m_en": "HDL cholesterol",
    "c": "Lípidos",
+   "c_en": "Lipids",
    "alvo": "50–80",
    "otimo_min": 50,
    "otimo_max": 80,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "41",
      "u": "mg/dL",
      "ref": "40.00 - 90.00",
@@ -1045,14 +1106,15 @@
   },
   {
    "m": "Colesterol não-HDL",
+   "m_en": "Non-HDL cholesterol",
    "c": "Lípidos",
+   "c_en": "Lipids",
    "alvo": "< 100",
    "otimo_min": null,
    "otimo_max": 100,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "43.6",
      "u": "mg/dL",
      "ref": "0 - 130.00",
@@ -1064,14 +1126,15 @@
   },
   {
    "m": "Triglicéridos",
+   "m_en": "Triglycerides",
    "c": "Lípidos",
+   "c_en": "Lipids",
    "alvo": "< 100",
    "otimo_min": null,
    "otimo_max": 100,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "68",
      "u": "mg/dL",
      "ref": "0 - 150.00",
@@ -1083,14 +1146,15 @@
   },
   {
    "m": "VLDL colesterol",
+   "m_en": "VLDL cholesterol",
    "c": "Lípidos",
+   "c_en": "Lipids",
    "alvo": "< 20",
    "otimo_min": null,
    "otimo_max": 20,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "13.6",
      "u": "mg/dL",
      "ref": "0 - 30.00",
@@ -1102,14 +1166,15 @@
   },
   {
    "m": "Rácio LDL/HDL",
+   "m_en": "LDL/HDL ratio",
    "c": "Lípidos",
+   "c_en": "Lipids",
    "alvo": "< 2",
    "otimo_min": null,
    "otimo_max": 2,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.5",
      "u": "ratio",
      "ref": "1.00 - 4.90",
@@ -1121,14 +1186,15 @@
   },
   {
    "m": "Rácio colesterol total/HDL",
+   "m_en": "Total cholesterol/HDL ratio",
    "c": "Lípidos",
+   "c_en": "Lipids",
    "alvo": "< 3.5",
    "otimo_min": null,
    "otimo_max": 3.5,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "2.1",
      "u": "ratio",
      "ref": "0 - 5.00",
@@ -1140,14 +1206,15 @@
   },
   {
    "m": "Lipoproteína(a)",
+   "m_en": "Lipoprotein(a)",
    "c": "Risco cardiovascular",
+   "c_en": "Cardiovascular risk",
    "alvo": "< 30",
    "otimo_min": null,
    "otimo_max": 30,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "2",
      "u": "mg/dL",
      "ref": "0 - 30.00",
@@ -1159,14 +1226,15 @@
   },
   {
    "m": "Apolipoproteína A1",
+   "m_en": "Apolipoprotein A1",
    "c": "Risco cardiovascular",
+   "c_en": "Cardiovascular risk",
    "alvo": "140–180",
    "otimo_min": 140,
    "otimo_max": 180,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "155",
      "u": "mg/dL",
      "ref": "115.00 - 178.00",
@@ -1178,8 +1246,11 @@
   },
   {
    "m": "Apolipoproteína B",
+   "m_en": "Apolipoprotein B",
    "c": "Risco cardiovascular",
+   "c_en": "Cardiovascular risk",
    "alvo": "< 60 (quanto mais baixo, melhor)",
+   "alvo_en": "< 60 (lower is better)",
    "otimo_min": null,
    "otimo_max": 60,
    "regras": [
@@ -1188,7 +1259,6 @@
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "30",
      "u": "mg/dL",
      "ref": "0 - 120.00",
@@ -1200,14 +1270,15 @@
   },
   {
    "m": "PCR de alta sensibilidade",
+   "m_en": "hs-CRP",
    "c": "Risco cardiovascular",
+   "c_en": "Cardiovascular risk",
    "alvo": "< 1",
    "otimo_min": null,
    "otimo_max": 1,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.44",
      "u": "mg/L",
      "ref": "0 - 1.00",
@@ -1219,14 +1290,15 @@
   },
   {
    "m": "Rácio ApoB/ApoA1",
+   "m_en": "ApoB/ApoA1 ratio",
    "c": "Risco cardiovascular",
+   "c_en": "Cardiovascular risk",
    "alvo": "< 0.6",
    "otimo_min": null,
    "otimo_max": 0.6,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.2",
      "u": "ratio",
      "ref": "0 - 0.95",
@@ -1238,14 +1310,15 @@
   },
   {
    "m": "Homocisteína",
+   "m_en": "Homocysteine",
    "c": "Risco cardiovascular",
+   "c_en": "Cardiovascular risk",
    "alvo": "5–9",
    "otimo_min": 5,
    "otimo_max": 9,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "18.4",
      "u": "µmol/L",
      "ref": "0 - 15.00",
@@ -1257,14 +1330,15 @@
   },
   {
    "m": "Lp-PLA2",
+   "m_en": "Lp-PLA2",
    "c": "Risco cardiovascular",
+   "c_en": "Cardiovascular risk",
    "alvo": "0–200",
    "otimo_min": 0,
    "otimo_max": 200,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "65",
      "u": "U/L",
      "ref": "0 - 200.00",
@@ -1276,14 +1350,15 @@
   },
   {
    "m": "Cálcio",
+   "m_en": "Calcium",
    "c": "Função renal e eletrólitos",
+   "c_en": "Kidney function and electrolytes",
    "alvo": "9–10",
    "otimo_min": 9,
    "otimo_max": 10,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "9.58",
      "u": "mg/dL",
      "ref": "8.60 - 10.40",
@@ -1295,14 +1370,15 @@
   },
   {
    "m": "Ácido úrico",
+   "m_en": "Uric acid",
    "c": "Função renal e eletrólitos",
+   "c_en": "Kidney function and electrolytes",
    "alvo": "3.5–5.5",
    "otimo_min": 3.5,
    "otimo_max": 5.5,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "5.1",
      "u": "mg/dL",
      "ref": "4.00 - 8.00",
@@ -1314,14 +1390,15 @@
   },
   {
    "m": "Sódio",
+   "m_en": "Sodium",
    "c": "Função renal e eletrólitos",
+   "c_en": "Kidney function and electrolytes",
    "alvo": "138–142",
    "otimo_min": 138,
    "otimo_max": 142,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "142.5",
      "u": "mmol/L",
      "ref": "135.00 - 146.00",
@@ -1333,14 +1410,15 @@
   },
   {
    "m": "Potássio",
+   "m_en": "Potassium",
    "c": "Função renal e eletrólitos",
+   "c_en": "Kidney function and electrolytes",
    "alvo": "4–5",
    "otimo_min": 4,
    "otimo_max": 5,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "3.97",
      "u": "mmol/L",
      "ref": "3.50 - 5.30",
@@ -1352,14 +1430,15 @@
   },
   {
    "m": "Cloreto",
+   "m_en": "Chloride",
    "c": "Função renal e eletrólitos",
+   "c_en": "Kidney function and electrolytes",
    "alvo": "100–106",
    "otimo_min": 100,
    "otimo_max": 106,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "105.7",
      "u": "mmol/L",
      "ref": "98.00 - 110.00",
@@ -1371,14 +1450,15 @@
   },
   {
    "m": "Ureia (BUN)",
+   "m_en": "Urea (BUN)",
    "c": "Função renal e eletrólitos",
+   "c_en": "Kidney function and electrolytes",
    "alvo": "10–20",
    "otimo_min": 10,
    "otimo_max": 20,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "18.1",
      "u": "mg/dL",
      "ref": "7.00 - 25.00",
@@ -1390,14 +1470,15 @@
   },
   {
    "m": "Creatinina sérica",
+   "m_en": "Serum creatinine",
    "c": "Função renal e eletrólitos",
+   "c_en": "Kidney function and electrolytes",
    "alvo": "0.6–1.2",
    "otimo_min": 0.6,
    "otimo_max": 1.2,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.8",
      "u": "mg/dL",
      "ref": "0.60 - 1.20",
@@ -1409,14 +1490,15 @@
   },
   {
    "m": "Rácio BUN/creatinina",
+   "m_en": "BUN/creatinine ratio",
    "c": "Função renal e eletrólitos",
+   "c_en": "Kidney function and electrolytes",
    "alvo": "10–20",
    "otimo_min": 10,
    "otimo_max": 20,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "22.63",
      "u": "ratio",
      "ref": "6.00 - 22.00",
@@ -1428,14 +1510,15 @@
   },
   {
    "m": "Cistatina C",
+   "m_en": "Cystatin C",
    "c": "Função renal e eletrólitos",
+   "c_en": "Kidney function and electrolytes",
    "alvo": "0.6–0.9",
    "otimo_min": 0.6,
    "otimo_max": 0.9,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.66",
      "u": "mg/L",
      "ref": "0.62 - 1.16",
@@ -1447,14 +1530,15 @@
   },
   {
    "m": "TFGe",
+   "m_en": "eGFR",
    "c": "Função renal e eletrólitos",
+   "c_en": "Kidney function and electrolytes",
    "alvo": "90–120",
    "otimo_min": 90,
    "otimo_max": 120,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "124",
      "u": "mL/min/1.73 m2",
      "ref": "90.00 - 150.00",
@@ -1466,14 +1550,15 @@
   },
   {
    "m": "Capacidade total de fixação do ferro (TIBC)",
+   "m_en": "Total iron-binding capacity (TIBC)",
    "c": "Ferro",
+   "c_en": "Iron",
    "alvo": "250–370",
    "otimo_min": 250,
    "otimo_max": 370,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "358",
      "u": "µg/dL",
      "ref": "250.00 - 425.00",
@@ -1485,14 +1570,15 @@
   },
   {
    "m": "Ferro sérico",
+   "m_en": "Serum iron",
    "c": "Ferro",
+   "c_en": "Iron",
    "alvo": "60–150",
    "otimo_min": 60,
    "otimo_max": 150,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "131",
      "u": "µg/dL",
      "ref": "50.00 - 180.00",
@@ -1504,14 +1590,15 @@
   },
   {
    "m": "Saturação da transferrina",
+   "m_en": "Transferrin saturation",
    "c": "Ferro",
+   "c_en": "Iron",
    "alvo": "25–45",
    "otimo_min": 25,
    "otimo_max": 45,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "37",
      "u": "%",
      "ref": "20.00 - 48.00",
@@ -1523,7 +1610,9 @@
   },
   {
    "m": "Ferritina",
+   "m_en": "Ferritin",
    "c": "Ferro",
+   "c_en": "Iron",
    "alvo": "< 100",
    "otimo_min": null,
    "otimo_max": 100,
@@ -1533,27 +1622,28 @@
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "310",
      "u": "ng/mL",
      "ref": "30.00 - 300.00",
      "ref_min": 30,
      "ref_max": 300,
      "s": "fora_de_referencia",
-     "nota": "Alvo do Sérgio < 100 ng/mL."
+     "nota": "Alvo do Sérgio F < 100 ng/mL.",
+     "nota_en": "Sérgio F's target < 100 ng/mL."
     }
    ]
   },
   {
    "m": "T3 total",
+   "m_en": "Total T3",
    "c": "Tiroide",
+   "c_en": "Thyroid",
    "alvo": "76–181",
    "otimo_min": 76,
    "otimo_max": 181,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "131",
      "u": "ng/dL",
      "ref": "76.00 - 181.00",
@@ -1565,14 +1655,15 @@
   },
   {
    "m": "T4 total",
+   "m_en": "Total T4",
    "c": "Tiroide",
+   "c_en": "Thyroid",
    "alvo": "4.9–10.5",
    "otimo_min": 4.9,
    "otimo_max": 10.5,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "9.97",
      "u": "µg/dL",
      "ref": "4.90 - 10.50",
@@ -1584,14 +1675,15 @@
   },
   {
    "m": "TSH",
+   "m_en": "TSH",
    "c": "Tiroide",
+   "c_en": "Thyroid",
    "alvo": "0.5–2.5",
    "otimo_min": 0.5,
    "otimo_max": 2.5,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "1.35",
      "u": "µIU/mL",
      "ref": "0.40 - 4.50",
@@ -1603,14 +1695,15 @@
   },
   {
    "m": "T3 livre",
+   "m_en": "Free T3",
    "c": "Tiroide",
+   "c_en": "Thyroid",
    "alvo": "3–4",
    "otimo_min": 3,
    "otimo_max": 4,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "3.38",
      "u": "pg/mL",
      "ref": "2.30 - 4.20",
@@ -1622,14 +1715,15 @@
   },
   {
    "m": "T4 livre",
+   "m_en": "Free T4",
    "c": "Tiroide",
+   "c_en": "Thyroid",
    "alvo": "1–1.6",
    "otimo_min": 1,
    "otimo_max": 1.6,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "1.65",
      "u": "ng/dL",
      "ref": "0.80 - 1.80",
@@ -1641,14 +1735,15 @@
   },
   {
    "m": "Anticorpos anti-tiroglobulina",
+   "m_en": "Anti-thyroglobulin antibodies",
    "c": "Tiroide",
+   "c_en": "Thyroid",
    "alvo": "0–1",
    "otimo_min": 0,
    "otimo_max": 1,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.9",
      "u": "IU/mL",
      "ref": "0 - 1.00",
@@ -1660,14 +1755,15 @@
   },
   {
    "m": "Amilase",
+   "m_en": "Amylase",
    "c": "Pâncreas",
+   "c_en": "Pancreas",
    "alvo": "21–101",
    "otimo_min": 21,
    "otimo_max": 101,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "51.89",
      "u": "U/L",
      "ref": "21.00 - 101.00",
@@ -1679,14 +1775,15 @@
   },
   {
    "m": "Lipase",
+   "m_en": "Lipase",
    "c": "Pâncreas",
+   "c_en": "Pancreas",
    "alvo": "7–60",
    "otimo_min": 7,
    "otimo_max": 60,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "32.2",
      "u": "U/L",
      "ref": "7.00 - 60.00",
@@ -1698,14 +1795,15 @@
   },
   {
    "m": "Vitamina A (retinol)",
+   "m_en": "Vitamin A (retinol)",
    "c": "Vitaminas",
+   "c_en": "Vitamins",
    "alvo": "400–800",
    "otimo_min": 400,
    "otimo_max": 800,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "926.52",
      "u": "ng/mL",
      "ref": "380.00 - 980.00",
@@ -1717,14 +1815,15 @@
   },
   {
    "m": "Vitamina D3 (25-OH D3)",
+   "m_en": "Vitamin D3 (25-OH D3)",
    "c": "Vitaminas",
+   "c_en": "Vitamins",
    "alvo": "40–60",
    "otimo_min": 40,
    "otimo_max": 60,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "37.08",
      "u": "ng/mL",
      "ref": "30.00 - 100.00",
@@ -1736,34 +1835,38 @@
   },
   {
    "m": "Vitamina D2 (25-OH D2)",
+   "m_en": "Vitamin D2 (25-OH D2)",
    "c": "Vitaminas",
+   "c_en": "Vitamins",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.31",
      "u": "ng/mL",
      "ref": "Sem intervalo próprio; o relatório aplicou 20.00 - 100.00 (intervalo da vitamina D total) e sinalizou como 'crítico', sem validade",
      "ref_min": null,
      "ref_max": null,
      "s": "otimo",
-     "nota": "Sem intervalo próprio."
+     "nota": "Sem intervalo próprio.",
+     "ref_en": "No dedicated range; the report applied 20.00 - 100.00 (total vitamin D range) and flagged it as 'critical', which is not valid",
+     "nota_en": "No dedicated range."
     }
    ]
   },
   {
    "m": "Vitamina D total (25-OH)",
+   "m_en": "Total vitamin D (25-OH)",
    "c": "Vitaminas",
+   "c_en": "Vitamins",
    "alvo": "40–60",
    "otimo_min": 40,
    "otimo_max": 60,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "37.39",
      "u": "ng/mL",
      "ref": "20.00 - 100.00",
@@ -1775,34 +1878,37 @@
   },
   {
    "m": "Vitamina E (alfa-tocoferol)",
+   "m_en": "Vitamin E (alpha-tocopherol)",
    "c": "Vitaminas",
+   "c_en": "Vitamins",
    "alvo": "8000–15000",
    "otimo_min": 8000,
    "otimo_max": 15000,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "5972.94",
      "u": "ng/mL",
      "ref": "5900.00 - 19400.00",
      "ref_min": 5900,
      "ref_max": 19400,
      "s": "fora_do_otimo",
-     "nota": "Ajustada aos lípidos ≈ 3,9 mg/g, normal (derivado)."
+     "nota": "Ajustada aos lípidos ≈ 3,9 mg/g, normal (derivado).",
+     "nota_en": "Lipid-adjusted ≈ 3.9 mg/g, normal (derived)."
     }
    ]
   },
   {
    "m": "Vitamina K1",
+   "m_en": "Vitamin K1",
    "c": "Vitaminas",
+   "c_en": "Vitamins",
    "alvo": "0.4–1.5",
    "otimo_min": 0.4,
    "otimo_max": 1.5,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.18",
      "u": "ng/mL",
      "ref": "0.13 - 1.50",
@@ -1814,14 +1920,15 @@
   },
   {
    "m": "Vitamina B1 (tiamina)",
+   "m_en": "Vitamin B1 (thiamine)",
    "c": "Vitaminas",
+   "c_en": "Vitamins",
    "alvo": "3.5–10.12",
    "otimo_min": 3.5,
    "otimo_max": 10.12,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "2.02",
      "u": "ng/mL",
      "ref": "2.70 - 10.12",
@@ -1833,14 +1940,15 @@
   },
   {
    "m": "Vitamina B2 (riboflavina)",
+   "m_en": "Vitamin B2 (riboflavin)",
    "c": "Vitaminas",
+   "c_en": "Vitamins",
    "alvo": "2.33–14.68",
    "otimo_min": 2.33,
    "otimo_max": 14.68,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "39.33",
      "u": "ng/mL",
      "ref": "2.33 - 14.68",
@@ -1852,14 +1960,15 @@
   },
   {
    "m": "Vitamina B3 (niacina)",
+   "m_en": "Vitamin B3 (niacin)",
    "c": "Vitaminas",
+   "c_en": "Vitamins",
    "alvo": "0–5",
    "otimo_min": 0,
    "otimo_max": 5,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "2.56",
      "u": "ng/mL",
      "ref": "0 - 5.00",
@@ -1871,14 +1980,15 @@
   },
   {
    "m": "Vitamina B5 (ácido pantoténico)",
+   "m_en": "Vitamin B5 (pantothenic acid)",
    "c": "Vitaminas",
+   "c_en": "Vitamins",
    "alvo": "12.9–759.33",
    "otimo_min": 12.9,
    "otimo_max": 759.33,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "31.64",
      "u": "ng/mL",
      "ref": "12.90 - 759.33",
@@ -1890,14 +2000,15 @@
   },
   {
    "m": "Vitamina B6 (P5P)",
+   "m_en": "Vitamin B6 (P5P)",
    "c": "Vitaminas",
+   "c_en": "Vitamins",
    "alvo": "5–30",
    "otimo_min": 5,
    "otimo_max": 30,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "53.83",
      "u": "ng/mL",
      "ref": "2.10 - 21.70",
@@ -1909,14 +2020,15 @@
   },
   {
    "m": "Vitamina B7 (biotina)",
+   "m_en": "Vitamin B7 (biotin)",
    "c": "Vitaminas",
+   "c_en": "Vitamins",
    "alvo": "0.22–3",
    "otimo_min": 0.22,
    "otimo_max": 3,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "1.31",
      "u": "ng/mL",
      "ref": "0.22 - 3.00",
@@ -1928,34 +2040,37 @@
   },
   {
    "m": "Vitamina B9",
+   "m_en": "Vitamin B9",
    "c": "Vitaminas",
+   "c_en": "Vitamins",
    "alvo": "0.2–20",
    "otimo_min": 0.2,
    "otimo_max": 20,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "1",
      "u": "ng/mL",
      "ref": "0.20 - 20.00",
      "ref_min": 0.2,
      "ref_max": 20,
      "s": "otimo",
-     "nota": "Discordante do folato sérico 9,1 ng/mL."
+     "nota": "Discordante do folato sérico 9,1 ng/mL.",
+     "nota_en": "Discordant with serum folate 9.1 ng/mL."
     }
    ]
   },
   {
    "m": "Vitamina B12",
+   "m_en": "Vitamin B12",
    "c": "Vitaminas",
+   "c_en": "Vitamins",
    "alvo": "500–1000",
    "otimo_min": 500,
    "otimo_max": 1000,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "829",
      "u": "pg/mL",
      "ref": "200.00 - 1100.00",
@@ -1967,14 +2082,15 @@
   },
   {
    "m": "Folato sérico",
+   "m_en": "Serum folate",
    "c": "Vitaminas",
+   "c_en": "Vitamins",
    "alvo": "12–20",
    "otimo_min": 12,
    "otimo_max": 20,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "9.1",
      "u": "ng/mL",
      "ref": "5.41 - 20.00",
@@ -1986,204 +2102,225 @@
   },
   {
    "m": "Anti-VHC total",
+   "m_en": "Anti-HCV total",
    "c": "Serologias",
+   "c_en": "Serology",
    "alvo": "0–0.9",
    "otimo_min": 0,
    "otimo_max": 0.9,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.06",
      "u": "OD Ratio",
      "ref": "0 - 0.90 (negativo)",
      "ref_min": 0,
      "ref_max": 0.9,
-     "s": "otimo"
+     "s": "otimo",
+     "ref_en": "0 - 0.90 (negative)"
     }
    ]
   },
   {
    "m": "Anti-VHA total",
+   "m_en": "Anti-HAV total",
    "c": "Serologias",
+   "c_en": "Serology",
    "alvo": "> 0.9",
    "otimo_min": 0.9,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "3.12",
      "u": "OD Ratio",
      "ref": "0 - 0.90 (>0.90 = positivo)",
      "ref_min": 0,
      "ref_max": 0.9,
-     "s": "otimo"
+     "s": "otimo",
+     "ref_en": "0 - 0.90 (>0.90 = positive)"
     }
    ]
   },
   {
    "m": "Anti-Chlamydia IgG",
+   "m_en": "Anti-Chlamydia IgG",
    "c": "Serologias",
+   "c_en": "Serology",
    "alvo": "0–1.1",
    "otimo_min": 0,
    "otimo_max": 1.1,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.2",
      "u": "OD Ratio",
      "ref": "0 - 1.10 (negativo)",
      "ref_min": 0,
      "ref_max": 1.1,
-     "s": "otimo"
+     "s": "otimo",
+     "ref_en": "0 - 1.10 (negative)"
     }
    ]
   },
   {
    "m": "Anti-Chlamydia IgM",
+   "m_en": "Anti-Chlamydia IgM",
    "c": "Serologias",
+   "c_en": "Serology",
    "alvo": "0–1",
    "otimo_min": 0,
    "otimo_max": 1,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.83",
      "u": "OD Ratio",
      "ref": "0 - 1.00 (negativo)",
      "ref_min": 0,
      "ref_max": 1,
-     "s": "otimo"
+     "s": "otimo",
+     "ref_en": "0 - 1.00 (negative)"
     }
    ]
   },
   {
    "m": "VIH (ELISA)",
+   "m_en": "HIV (ELISA)",
    "c": "Serologias",
+   "c_en": "Serology",
    "alvo": "0–0.9",
    "otimo_min": 0,
    "otimo_max": 0.9,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.21",
      "u": "OD Ratio",
      "ref": "0 - 0.90 (negativo)",
      "ref_min": 0,
      "ref_max": 0.9,
-     "s": "otimo"
+     "s": "otimo",
+     "ref_en": "0 - 0.90 (negative)"
     }
    ]
   },
   {
    "m": "HSV IgG",
+   "m_en": "HSV IgG",
    "c": "Serologias",
+   "c_en": "Serology",
    "alvo": "0–9",
    "otimo_min": 0,
    "otimo_max": 9,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "1",
      "u": "AU/mL",
      "ref": "0 - 9.00 (negativo)",
      "ref_min": 0,
      "ref_max": 9,
-     "s": "otimo"
+     "s": "otimo",
+     "ref_en": "0 - 9.00 (negative)"
     }
    ]
   },
   {
    "m": "HSV IgM",
+   "m_en": "HSV IgM",
    "c": "Serologias",
+   "c_en": "Serology",
    "alvo": "0–5.99",
    "otimo_min": 0,
    "otimo_max": 5.99,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "1",
      "u": "AU/mL",
      "ref": "0 - 5.99 (negativo)",
      "ref_min": 0,
      "ref_max": 5.99,
-     "s": "otimo"
+     "s": "otimo",
+     "ref_en": "0 - 5.99 (negative)"
     }
    ]
   },
   {
    "m": "AgHBs",
+   "m_en": "HBsAg",
    "c": "Serologias",
+   "c_en": "Serology",
    "alvo": "0–0.9",
    "otimo_min": 0,
    "otimo_max": 0.9,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.32",
      "u": "OD Ratio",
      "ref": "0 - 0.90 (negativo)",
      "ref_min": 0,
      "ref_max": 0.9,
-     "s": "otimo"
+     "s": "otimo",
+     "ref_en": "0 - 0.90 (negative)"
     }
    ]
   },
   {
    "m": "TPAb (anticorpos anti-Treponema)",
+   "m_en": "TPAb (anti-Treponema antibodies)",
    "c": "Serologias",
+   "c_en": "Serology",
    "alvo": "0–1",
    "otimo_min": 0,
    "otimo_max": 1,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.3",
      "u": "OD Ratio",
      "ref": "0 - 1.00 (negativo)",
      "ref_min": 0,
      "ref_max": 1,
-     "s": "otimo"
+     "s": "otimo",
+     "ref_en": "0 - 1.00 (negative)"
     }
    ]
   },
   {
    "m": "TPHA",
+   "m_en": "TPHA",
    "c": "Serologias",
+   "c_en": "Serology",
    "alvo": "0–20",
    "otimo_min": 0,
    "otimo_max": 20,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "10",
      "u": "-",
      "ref": "0 - 20.00 (negativo)",
      "ref_min": 0,
      "ref_max": 20,
-     "s": "otimo"
+     "s": "otimo",
+     "ref_en": "0 - 20.00 (negative)"
     }
    ]
   },
   {
    "m": "Arsénio",
+   "m_en": "Arsenic",
    "c": "Elementos e metais",
+   "c_en": "Trace elements and metals",
    "alvo": "0–10",
    "otimo_min": 0,
    "otimo_max": 10,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "1.4",
      "u": "µg/l",
      "ref": "0 - 23.00",
@@ -2195,14 +2332,15 @@
   },
   {
    "m": "Chumbo",
+   "m_en": "Lead",
    "c": "Elementos e metais",
+   "c_en": "Trace elements and metals",
    "alvo": "0–10",
    "otimo_min": 0,
    "otimo_max": 10,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "12.53",
      "u": "µg/l",
      "ref": "0 - 100.00",
@@ -2214,14 +2352,15 @@
   },
   {
    "m": "Cádmio",
+   "m_en": "Cadmium",
    "c": "Elementos e metais",
+   "c_en": "Trace elements and metals",
    "alvo": "0–0.5",
    "otimo_min": 0,
    "otimo_max": 0.5,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.22",
      "u": "µg/l",
      "ref": "0 - 5.00",
@@ -2233,14 +2372,15 @@
   },
   {
    "m": "Mercúrio",
+   "m_en": "Mercury",
    "c": "Elementos e metais",
+   "c_en": "Trace elements and metals",
    "alvo": "0–5",
    "otimo_min": 0,
    "otimo_max": 5,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "3.46",
      "u": "µg/l",
      "ref": "0 - 10.00",
@@ -2252,14 +2392,15 @@
   },
   {
    "m": "Crómio",
+   "m_en": "Chromium",
    "c": "Elementos e metais",
+   "c_en": "Trace elements and metals",
    "alvo": "0–1.4",
    "otimo_min": 0,
    "otimo_max": 1.4,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.83",
      "u": "µg/l",
      "ref": "0 - 1.40",
@@ -2271,14 +2412,15 @@
   },
   {
    "m": "Bário",
+   "m_en": "Barium",
    "c": "Elementos e metais",
+   "c_en": "Trace elements and metals",
    "alvo": "0–10",
    "otimo_min": 0,
    "otimo_max": 10,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.52",
      "u": "µg/l",
      "ref": "0 - 10.00",
@@ -2290,14 +2432,15 @@
   },
   {
    "m": "Cobalto",
+   "m_en": "Cobalt",
    "c": "Elementos e metais",
+   "c_en": "Trace elements and metals",
    "alvo": "0–1",
    "otimo_min": 0,
    "otimo_max": 1,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.25",
      "u": "µg/l",
      "ref": "0 - 10.00",
@@ -2309,14 +2452,15 @@
   },
   {
    "m": "Césio",
+   "m_en": "Caesium",
    "c": "Elementos e metais",
+   "c_en": "Trace elements and metals",
    "alvo": "0–5",
    "otimo_min": 0,
    "otimo_max": 5,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.73",
      "u": "µg/l",
      "ref": "0 - 5.00",
@@ -2328,14 +2472,15 @@
   },
   {
    "m": "Selénio",
+   "m_en": "Selenium",
    "c": "Elementos e metais",
+   "c_en": "Trace elements and metals",
    "alvo": "110–150",
    "otimo_min": 110,
    "otimo_max": 150,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "134.55",
      "u": "µg/l",
      "ref": "63.00 - 160.00",
@@ -2347,14 +2492,15 @@
   },
   {
    "m": "Alumínio",
+   "m_en": "Aluminium",
    "c": "Elementos e metais",
+   "c_en": "Trace elements and metals",
    "alvo": "0–10",
    "otimo_min": 0,
    "otimo_max": 10,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "13.42",
      "u": "µg/l",
      "ref": "0 - 30.00",
@@ -2366,14 +2512,15 @@
   },
   {
    "m": "Prata",
+   "m_en": "Silver",
    "c": "Elementos e metais",
+   "c_en": "Trace elements and metals",
    "alvo": "0–1",
    "otimo_min": 0,
    "otimo_max": 1,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "1.33",
      "u": "µg/l",
      "ref": "0 - 1.00",
@@ -2385,14 +2532,15 @@
   },
   {
    "m": "Berílio",
+   "m_en": "Beryllium",
    "c": "Elementos e metais",
+   "c_en": "Trace elements and metals",
    "alvo": "0–1",
    "otimo_min": 0,
    "otimo_max": 1,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.02",
      "u": "µg/l",
      "ref": "0 - 1.00",
@@ -2404,14 +2552,15 @@
   },
   {
    "m": "Bismuto",
+   "m_en": "Bismuth",
    "c": "Elementos e metais",
+   "c_en": "Trace elements and metals",
    "alvo": "0–0.5",
    "otimo_min": 0,
    "otimo_max": 0.5,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.15",
      "u": "µg/l",
      "ref": "0 - 0.50",
@@ -2423,14 +2572,15 @@
   },
   {
    "m": "Manganês",
+   "m_en": "Manganese",
    "c": "Elementos e metais",
+   "c_en": "Trace elements and metals",
    "alvo": "4.2–15",
    "otimo_min": 4.2,
    "otimo_max": 15,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "11.99",
      "u": "µg/l",
      "ref": "4.20 - 16.50",
@@ -2442,14 +2592,15 @@
   },
   {
    "m": "Molibdénio",
+   "m_en": "Molybdenum",
    "c": "Elementos e metais",
+   "c_en": "Trace elements and metals",
    "alvo": "0–3.3",
    "otimo_min": 0,
    "otimo_max": 3.3,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.78",
      "u": "µg/l",
      "ref": "0 - 3.30",
@@ -2461,14 +2612,15 @@
   },
   {
    "m": "Níquel",
+   "m_en": "Nickel",
    "c": "Elementos e metais",
+   "c_en": "Trace elements and metals",
    "alvo": "0–11",
    "otimo_min": 0,
    "otimo_max": 11,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "1.63",
      "u": "µg/l",
      "ref": "0 - 11.00",
@@ -2480,14 +2632,15 @@
   },
   {
    "m": "Antimónio",
+   "m_en": "Antimony",
    "c": "Elementos e metais",
+   "c_en": "Trace elements and metals",
    "alvo": "0–1",
    "otimo_min": 0,
    "otimo_max": 1,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "8.53",
      "u": "µg/l",
      "ref": "0 - 6.00",
@@ -2499,14 +2652,15 @@
   },
   {
    "m": "Estanho",
+   "m_en": "Tin",
    "c": "Elementos e metais",
+   "c_en": "Trace elements and metals",
    "alvo": "0–5",
    "otimo_min": 0,
    "otimo_max": 5,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.22",
      "u": "µg/l",
      "ref": "0 - 5.00",
@@ -2518,7 +2672,9 @@
   },
   {
    "m": "Estrôncio",
+   "m_en": "Strontium",
    "c": "Elementos e metais",
+   "c_en": "Trace elements and metals",
    "alvo": "< 45",
    "otimo_min": null,
    "otimo_max": 45,
@@ -2528,27 +2684,28 @@
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "8.91",
      "u": "µg/l",
      "ref": "10.00 - 45.00",
      "ref_min": 10,
      "ref_max": 45,
      "s": "otimo",
-     "nota": "Valor baixo sem relevância."
+     "nota": "Valor baixo sem relevância.",
+     "nota_en": "Low value of no relevance."
     }
    ]
   },
   {
    "m": "Tálio",
+   "m_en": "Thallium",
    "c": "Elementos e metais",
+   "c_en": "Trace elements and metals",
    "alvo": "0–0.5",
    "otimo_min": 0,
    "otimo_max": 0.5,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.04",
      "u": "µg/l",
      "ref": "0 - 5.00",
@@ -2560,14 +2717,15 @@
   },
   {
    "m": "Urânio",
+   "m_en": "Uranium",
    "c": "Elementos e metais",
+   "c_en": "Trace elements and metals",
    "alvo": "0–1",
    "otimo_min": 0,
    "otimo_max": 1,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.03",
      "u": "µg/l",
      "ref": "0 - 1.00",
@@ -2579,14 +2737,15 @@
   },
   {
    "m": "Vanádio",
+   "m_en": "Vanadium",
    "c": "Elementos e metais",
+   "c_en": "Trace elements and metals",
    "alvo": "0–2",
    "otimo_min": 0,
    "otimo_max": 2,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.31",
      "u": "µg/l",
      "ref": "0 - 2.00",
@@ -2598,14 +2757,15 @@
   },
   {
    "m": "Anti-CCP (ACCP)",
+   "m_en": "Anti-CCP (ACCP)",
    "c": "Autoimunidade e artrite",
+   "c_en": "Autoimmunity and arthritis",
    "alvo": "0–40",
    "otimo_min": 0,
    "otimo_max": 40,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "8",
      "u": "RU/ml",
      "ref": "0 - 40.00",
@@ -2617,14 +2777,15 @@
   },
   {
    "m": "ANA (anticorpos antinucleares)",
+   "m_en": "ANA (antinuclear antibodies)",
    "c": "Autoimunidade e artrite",
+   "c_en": "Autoimmunity and arthritis",
    "alvo": "0–25",
    "otimo_min": 0,
    "otimo_max": 25,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.6",
      "u": "AU/mL",
      "ref": "0 - 25.00",
@@ -2636,14 +2797,15 @@
   },
   {
    "m": "Antiestreptolisina O (TASO)",
+   "m_en": "Antistreptolysin O (ASO)",
    "c": "Autoimunidade e artrite",
+   "c_en": "Autoimmunity and arthritis",
    "alvo": "0–200",
    "otimo_min": 0,
    "otimo_max": 200,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "132",
      "u": "IU/mL",
      "ref": "0 - 200.00",
@@ -2655,14 +2817,15 @@
   },
   {
    "m": "Fator reumatoide",
+   "m_en": "Rheumatoid factor",
    "c": "Autoimunidade e artrite",
+   "c_en": "Autoimmunity and arthritis",
    "alvo": "0–14",
    "otimo_min": 0,
    "otimo_max": 14,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "10",
      "u": "IU/mL",
      "ref": "0 - 14.00",
@@ -2674,14 +2837,15 @@
   },
   {
    "m": "17-OH-progesterona",
+   "m_en": "17-OH-progesterone",
    "c": "Hormonas esteroides",
+   "c_en": "Steroid hormones",
    "alvo": "42–196",
    "otimo_min": 42,
    "otimo_max": 196,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "93.86",
      "u": "ng/dL",
      "ref": "42.00 - 196.00",
@@ -2693,14 +2857,15 @@
   },
   {
    "m": "Aldosterona",
+   "m_en": "Aldosterone",
    "c": "Hormonas esteroides",
+   "c_en": "Steroid hormones",
    "alvo": "3–30",
    "otimo_min": 3,
    "otimo_max": 30,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "7.49",
      "u": "ng/dL",
      "ref": "3.00 - 30.00",
@@ -2712,14 +2877,15 @@
   },
   {
    "m": "Androstenediona",
+   "m_en": "Androstenedione",
    "c": "Hormonas esteroides",
+   "c_en": "Steroid hormones",
    "alvo": "40–190",
    "otimo_min": 40,
    "otimo_max": 190,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "80.68",
      "u": "ng/dL",
      "ref": "40.00 - 190.00",
@@ -2731,34 +2897,38 @@
   },
   {
    "m": "Cortisol",
+   "m_en": "Cortisol",
    "c": "Hormonas esteroides",
+   "c_en": "Steroid hormones",
    "alvo": "6.2–19.4",
    "otimo_min": 6.2,
    "otimo_max": 19.4,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "9.31",
      "u": "µg/dL",
      "ref": "6.20 - 19.40 (hora de colheita não indicada)",
      "ref_min": 6.2,
      "ref_max": 19.4,
      "s": "otimo",
-     "nota": "Hora da colheita não indicada."
+     "nota": "Hora da colheita não indicada.",
+     "ref_en": "6.20 - 19.40 (collection time not stated)",
+     "nota_en": "Collection time not stated."
     }
    ]
   },
   {
    "m": "Corticosterona",
+   "m_en": "Corticosterone",
    "c": "Hormonas esteroides",
+   "c_en": "Steroid hormones",
    "alvo": "53–1560",
    "otimo_min": 53,
    "otimo_max": 1560,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "206.62",
      "u": "ng/dL",
      "ref": "53.00 - 1560.00",
@@ -2770,14 +2940,15 @@
   },
   {
    "m": "11-Desoxicortisol",
+   "m_en": "11-Deoxycortisol",
    "c": "Hormonas esteroides",
+   "c_en": "Steroid hormones",
    "alvo": "10–79",
    "otimo_min": 10,
    "otimo_max": 79,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "76.33",
      "u": "ng/dL",
      "ref": "10.00 - 79.00",
@@ -2789,34 +2960,38 @@
   },
   {
    "m": "DHEA",
+   "m_en": "DHEA",
    "c": "Hormonas esteroides",
+   "c_en": "Steroid hormones",
    "alvo": "31–701",
    "otimo_min": 31,
    "otimo_max": 701,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "927.34",
      "u": "µg/dL",
      "ref": "31.00 - 701.00 (unidade tal como reportada; provavelmente ng/dL)",
      "ref_min": 31,
      "ref_max": 701,
      "s": "fora_de_referencia",
-     "nota": "Unidade provavelmente ng/dL (erro do laboratório); DHEA-S normal."
+     "nota": "Unidade provavelmente ng/dL (erro do laboratório); DHEA-S normal.",
+     "ref_en": "31.00 - 701.00 (unit as reported; probably ng/dL)",
+     "nota_en": "Unit probably ng/dL (laboratory error); DHEA-S normal."
     }
    ]
   },
   {
    "m": "DHEA-S",
+   "m_en": "DHEA-S",
    "c": "Hormonas esteroides",
+   "c_en": "Steroid hormones",
    "alvo": "250–464",
    "otimo_min": 250,
    "otimo_max": 464,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "311.87",
      "u": "µg/dL",
      "ref": "106.00 - 464.00",
@@ -2828,14 +3003,15 @@
   },
   {
    "m": "Estradiol",
+   "m_en": "Oestradiol",
    "c": "Hormonas esteroides",
+   "c_en": "Steroid hormones",
    "alvo": "20–35",
    "otimo_min": 20,
    "otimo_max": 35,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "51",
      "u": "pg/mL",
      "ref": "0 - 39.00",
@@ -2847,14 +3023,15 @@
   },
   {
    "m": "Renina direta",
+   "m_en": "Direct renin",
    "c": "Hormonas esteroides",
+   "c_en": "Steroid hormones",
    "alvo": "4.4–46.1",
    "otimo_min": 4.4,
    "otimo_max": 46.1,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "12.1",
      "u": "µIU/mL",
      "ref": "4.40 - 46.10",
@@ -2866,14 +3043,15 @@
   },
   {
    "m": "Progesterona",
+   "m_en": "Progesterone",
    "c": "Hormonas esteroides",
+   "c_en": "Steroid hormones",
    "alvo": "0–1.4",
    "otimo_min": 0,
    "otimo_max": 1.4,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.14",
      "u": "ng/mL",
      "ref": "0 - 1.40",
@@ -2885,14 +3063,15 @@
   },
   {
    "m": "Testosterona total",
+   "m_en": "Total testosterone",
    "c": "Hormonas esteroides",
+   "c_en": "Steroid hormones",
    "alvo": "500–900",
    "otimo_min": 500,
    "otimo_max": 900,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "448.74",
      "u": "ng/dL",
      "ref": "250.00 - 1110.00",
@@ -2904,14 +3083,15 @@
   },
   {
    "m": "Testosterona livre",
+   "m_en": "Free testosterone",
    "c": "Hormonas esteroides",
+   "c_en": "Steroid hormones",
    "alvo": "15–25.1",
    "otimo_min": 15,
    "otimo_max": 25.1,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "20.83",
      "u": "pg/mL",
      "ref": "8.70 - 25.10",
@@ -2923,14 +3103,15 @@
   },
   {
    "m": "SHBG",
+   "m_en": "SHBG",
    "c": "Hormonas esteroides",
+   "c_en": "Steroid hormones",
    "alvo": "20–50",
    "otimo_min": 20,
    "otimo_max": 50,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "40.9",
      "u": "nmol/L",
      "ref": "10.00 - 50.00",
@@ -2942,14 +3123,15 @@
   },
   {
    "m": "IgE total",
+   "m_en": "Total IgE",
    "c": "Alergia",
+   "c_en": "Allergy",
    "alvo": "0–100",
    "otimo_min": 0,
    "otimo_max": 100,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "14.7",
      "u": "IU/mL",
      "ref": "0 - 114.00",
@@ -2961,14 +3143,15 @@
   },
   {
    "m": "Fósforo",
+   "m_en": "Phosphorus",
    "c": "Minerais",
+   "c_en": "Minerals",
    "alvo": "3–4",
    "otimo_min": 3,
    "otimo_max": 4,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "4.02",
      "u": "mg/dL",
      "ref": "2.50 - 4.50",
@@ -2980,14 +3163,15 @@
   },
   {
    "m": "Cobre",
+   "m_en": "Copper",
    "c": "Minerais",
+   "c_en": "Minerals",
    "alvo": "80–120",
    "otimo_min": 80,
    "otimo_max": 120,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "62.28",
      "u": "µg/dL",
      "ref": "70.00 - 175.00",
@@ -2999,14 +3183,15 @@
   },
   {
    "m": "Zinco",
+   "m_en": "Zinc",
    "c": "Minerais",
+   "c_en": "Minerals",
    "alvo": "80–120",
    "otimo_min": 80,
    "otimo_max": 120,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "42.41",
      "u": "µg/dL",
      "ref": "60.00 - 130.00",
@@ -3018,14 +3203,15 @@
   },
   {
    "m": "Magnésio",
+   "m_en": "Magnesium",
    "c": "Minerais",
+   "c_en": "Minerals",
    "alvo": "2–2.5",
    "otimo_min": 2,
    "otimo_max": 2.5,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "2.15",
      "u": "mg/dL",
      "ref": "1.50 - 2.50",
@@ -3037,14 +3223,15 @@
   },
   {
    "m": "AFP (alfa-fetoproteína)",
+   "m_en": "AFP (alpha-fetoprotein)",
    "c": "Marcadores tumorais",
+   "c_en": "Tumour markers",
    "alvo": "0–6.1",
    "otimo_min": 0,
    "otimo_max": 6.1,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "2.19",
      "u": "IU/mL",
      "ref": "0 - 6.10",
@@ -3056,14 +3243,15 @@
   },
   {
    "m": "Beta-hCG",
+   "m_en": "Beta-hCG",
    "c": "Marcadores tumorais",
+   "c_en": "Tumour markers",
    "alvo": "0–5",
    "otimo_min": 0,
    "otimo_max": 5,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.2",
      "u": "mIU/ml",
      "ref": "0 - 5.00",
@@ -3075,14 +3263,15 @@
   },
   {
    "m": "CA 19.9",
+   "m_en": "CA 19-9",
    "c": "Marcadores tumorais",
+   "c_en": "Tumour markers",
    "alvo": "0–34",
    "otimo_min": 0,
    "otimo_max": 34,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "3.33",
      "u": "U/mL",
      "ref": "0 - 34.00",
@@ -3094,14 +3283,15 @@
   },
   {
    "m": "CEA",
+   "m_en": "CEA",
    "c": "Marcadores tumorais",
+   "c_en": "Tumour markers",
    "alvo": "0–3",
    "otimo_min": 0,
    "otimo_max": 3,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "1.19",
      "u": "ng/mL",
      "ref": "0 - 5.00",
@@ -3113,14 +3303,15 @@
   },
   {
    "m": "PSA total",
+   "m_en": "Total PSA",
    "c": "Marcadores tumorais",
+   "c_en": "Tumour markers",
    "alvo": "0–1",
    "otimo_min": 0,
    "otimo_max": 1,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.48",
      "u": "ng/mL",
      "ref": "0 - 4.00",
@@ -3132,14 +3323,15 @@
   },
   {
    "m": "PSA livre",
+   "m_en": "Free PSA",
    "c": "Marcadores tumorais",
+   "c_en": "Tumour markers",
    "alvo": "0–0.5",
    "otimo_min": 0,
    "otimo_max": 0.5,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.25",
      "u": "ng/mL",
      "ref": "0 - 0.50",
@@ -3151,14 +3343,15 @@
   },
   {
    "m": "Creatinina urinária",
+   "m_en": "Urine creatinine",
    "c": "Urina",
+   "c_en": "Urine",
    "alvo": "30–300",
    "otimo_min": 30,
    "otimo_max": 300,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "20.09",
      "u": "mg/dL",
      "ref": "20.00 - 320.00",
@@ -3170,34 +3363,37 @@
   },
   {
    "m": "Rácio albumina/creatinina urinária",
+   "m_en": "Urine albumin/creatinine ratio (UACR)",
    "c": "Urina",
+   "c_en": "Urine",
    "alvo": "0–10",
    "otimo_min": 0,
    "otimo_max": 10,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "66.7",
      "u": "µg/mg of Creatinine",
      "ref": "0 - 30.00",
      "ref_min": 0,
      "ref_max": 30,
      "s": "fora_de_referencia",
-     "nota": "Urina muito diluída (densidade 1,003)."
+     "nota": "Urina muito diluída (densidade 1,003).",
+     "nota_en": "Very dilute urine (specific gravity 1.003)."
     }
    ]
   },
   {
    "m": "Microalbumina urinária",
+   "m_en": "Urine microalbumin",
    "c": "Urina",
+   "c_en": "Urine",
    "alvo": "0–20",
    "otimo_min": 0,
    "otimo_max": 20,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "13.4",
      "u": "µg/ml",
      "ref": "0 - 20.00",
@@ -3209,14 +3405,15 @@
   },
   {
    "m": "Densidade urinária",
+   "m_en": "Urine specific gravity",
    "c": "Urina",
+   "c_en": "Urine",
    "alvo": "1.005–1.025",
    "otimo_min": 1.005,
    "otimo_max": 1.025,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "1.003",
      "u": "-",
      "ref": "1.00 - 1.03",
@@ -3228,14 +3425,15 @@
   },
   {
    "m": "Urobilinogénio",
+   "m_en": "Urobilinogen",
    "c": "Urina",
+   "c_en": "Urine",
    "alvo": "0.2–1",
    "otimo_min": 0.2,
    "otimo_max": 1,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "0.2",
      "u": "mg/dL",
      "ref": "0.20 - 1.00",
@@ -3247,14 +3445,15 @@
   },
   {
    "m": "Células epiteliais",
+   "m_en": "Epithelial cells",
    "c": "Urina",
+   "c_en": "Urine",
    "alvo": "0–3",
    "otimo_min": 0,
    "otimo_max": 3,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "2",
      "u": "/HPF",
      "ref": "0 - 3.00",
@@ -3266,14 +3465,15 @@
   },
   {
    "m": "pH urinário",
+   "m_en": "Urine pH",
    "c": "Urina",
+   "c_en": "Urine",
    "alvo": "5.5–7",
    "otimo_min": 5.5,
    "otimo_max": 7,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "6",
      "u": "-",
      "ref": "5.00 - 8.00",
@@ -3285,14 +3485,15 @@
   },
   {
    "m": "Aspeto da urina",
+   "m_en": "Urine appearance",
    "c": "Urina",
+   "c_en": "Urine",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "Clear",
      "u": "-",
      "ref": "CLEAR",
@@ -3304,14 +3505,15 @@
   },
   {
    "m": "Bactérias na urina",
+   "m_en": "Urine bacteria",
    "c": "Urina",
+   "c_en": "Urine",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "Absent",
      "u": "-",
      "ref": "ABSENT",
@@ -3323,14 +3525,15 @@
   },
   {
    "m": "Bilirrubina urinária",
+   "m_en": "Urine bilirubin",
    "c": "Urina",
+   "c_en": "Urine",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "Absent",
      "u": "-",
      "ref": "ABSENT",
@@ -3342,14 +3545,15 @@
   },
   {
    "m": "Sangue na urina",
+   "m_en": "Urine blood",
    "c": "Urina",
+   "c_en": "Urine",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "Negative",
      "u": "-",
      "ref": "NEGATIVE",
@@ -3361,14 +3565,15 @@
   },
   {
    "m": "Pigmentos biliares",
+   "m_en": "Bile pigments",
    "c": "Urina",
+   "c_en": "Urine",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "Absent",
      "u": "-",
      "ref": "ABSENT",
@@ -3380,14 +3585,15 @@
   },
   {
    "m": "Sais biliares",
+   "m_en": "Bile salts",
    "c": "Urina",
+   "c_en": "Urine",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "Negative",
      "u": "-",
      "ref": "NEGATIVE",
@@ -3399,14 +3605,15 @@
   },
   {
    "m": "Cilindros",
+   "m_en": "Casts",
    "c": "Urina",
+   "c_en": "Urine",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "Absent",
      "u": "-",
      "ref": "ABSENT",
@@ -3418,14 +3625,15 @@
   },
   {
    "m": "Cor da urina",
+   "m_en": "Urine colour",
    "c": "Urina",
+   "c_en": "Urine",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "Pale yellow",
      "u": "-",
      "ref": "CLEAR, PALE YELLOW",
@@ -3437,14 +3645,15 @@
   },
   {
    "m": "Cristais",
+   "m_en": "Crystals",
    "c": "Urina",
+   "c_en": "Urine",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "Absent",
      "u": "-",
      "ref": "ABSENT",
@@ -3456,14 +3665,15 @@
   },
   {
    "m": "Glicose urinária",
+   "m_en": "Urine glucose",
    "c": "Urina",
+   "c_en": "Urine",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "Present 2+(250-500 mg/dl)",
      "u": "-",
      "ref": "ABSENT",
@@ -3475,14 +3685,15 @@
   },
   {
    "m": "Corpos cetónicos na urina",
+   "m_en": "Urine ketones",
    "c": "Urina",
+   "c_en": "Urine",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "Negative",
      "u": "-",
      "ref": "NEGATIVE",
@@ -3494,14 +3705,15 @@
   },
   {
    "m": "Leucócitos na urina",
+   "m_en": "Urine leukocytes",
    "c": "Urina",
+   "c_en": "Urine",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "Negative",
      "u": "-",
      "ref": "NEGATIVE",
@@ -3513,14 +3725,15 @@
   },
   {
    "m": "Nitritos",
+   "m_en": "Nitrites",
    "c": "Urina",
+   "c_en": "Urine",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "Absent",
      "u": "-",
      "ref": "ABSENT",
@@ -3532,14 +3745,15 @@
   },
   {
    "m": "Proteínas na urina",
+   "m_en": "Urine protein",
    "c": "Urina",
+   "c_en": "Urine",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "AIWO",
      "v": "Absent",
      "u": "-",
      "ref": "ABSENT",
@@ -3551,414 +3765,455 @@
   },
   {
    "m": "Índice ómega-3 (EPA+DHA)",
+   "m_en": "Omega-3 index (EPA+DHA)",
    "c": "Ácidos gordos",
+   "c_en": "Fatty acids",
    "alvo": "8–12",
    "otimo_min": 8,
    "otimo_max": 12,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Lipomic (AIWO)",
      "v": "5.4",
      "u": "%",
      "ref": "Desejável >8% (escala: Deficiente <4%; Insuficiente 4-8%; Suficiente/Ótimo >8%)",
      "ref_min": 8,
      "ref_max": null,
      "s": "fora_de_referencia",
-     "data_real": "2026-08-27"
+     "data_real": "2026-08-27",
+     "ref_en": "Desirable >8% (scale: Deficient <4%; Insufficient 4-8%; Sufficient/Optimal >8%)"
     }
    ]
   },
   {
    "m": "Rácio ómega-6/ómega-3",
+   "m_en": "Omega-6/omega-3 ratio",
    "c": "Ácidos gordos",
+   "c_en": "Fatty acids",
    "alvo": "< 3",
    "otimo_min": null,
    "otimo_max": 3,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Lipomic (AIWO)",
      "v": "5.1",
      "u": "ratio (x:1)",
      "ref": "Desejável <3:1 (Ótimo ≤3; Moderadamente alto 3-8; Significativamente alto >8)",
      "ref_min": null,
      "ref_max": 3,
      "s": "fora_de_referencia",
-     "data_real": "2026-08-27"
+     "data_real": "2026-08-27",
+     "ref_en": "Desirable <3:1 (Optimal ≤3; Moderately high 3-8; Significantly high >8)"
     }
    ]
   },
   {
    "m": "Rácio AA/EPA",
+   "m_en": "AA/EPA ratio",
    "c": "Ácidos gordos",
+   "c_en": "Fatty acids",
    "alvo": "1.5–3",
    "otimo_min": 1.5,
    "otimo_max": 3,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Lipomic (AIWO)",
      "v": "20.6",
      "u": "ratio (x:1)",
      "ref": "Desejável <3:1 (p.2); 1,5-3 (p.3)",
      "ref_min": 1.5,
      "ref_max": 3,
      "s": "fora_de_referencia",
-     "data_real": "2026-08-27"
+     "data_real": "2026-08-27",
+     "ref_en": "Desirable <3:1 (p.2); 1.5-3 (p.3)"
     }
    ]
   },
   {
    "m": "Ácidos gordos ómega-6 totais",
+   "m_en": "Total omega-6 fatty acids",
    "c": "Ácidos gordos",
+   "c_en": "Fatty acids",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Lipomic (AIWO)",
      "v": "34.5",
      "u": "%",
      "ref": "Sem intervalo",
      "ref_min": null,
      "ref_max": null,
      "s": "sem_alvo",
-     "data_real": "2026-08-27"
+     "data_real": "2026-08-27",
+     "ref_en": "No range"
     }
    ]
   },
   {
    "m": "Ácido linoleico (LA) C18:2n6",
+   "m_en": "Linoleic acid (LA) C18:2n6",
    "c": "Ácidos gordos",
+   "c_en": "Fatty acids",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Lipomic (AIWO)",
      "v": "17.3",
      "u": "%",
      "ref": "Sem intervalo",
      "ref_min": null,
      "ref_max": null,
      "s": "sem_alvo",
-     "data_real": "2026-08-27"
+     "data_real": "2026-08-27",
+     "ref_en": "No range"
     }
    ]
   },
   {
    "m": "Ácido gama-linolénico (GLA) C18:3n6",
+   "m_en": "Gamma-linolenic acid (GLA) C18:3n6",
    "c": "Ácidos gordos",
+   "c_en": "Fatty acids",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Lipomic (AIWO)",
      "v": "0.6",
      "u": "%",
      "ref": "Sem intervalo",
      "ref_min": null,
      "ref_max": null,
      "s": "sem_alvo",
-     "data_real": "2026-08-27"
+     "data_real": "2026-08-27",
+     "ref_en": "No range"
     }
    ]
   },
   {
    "m": "Ácido di-homo-gama-linolénico (DGLA) C20:3n6",
+   "m_en": "Dihomo-gamma-linolenic acid (DGLA) C20:3n6",
    "c": "Ácidos gordos",
+   "c_en": "Fatty acids",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Lipomic (AIWO)",
      "v": "2.2",
      "u": "%",
      "ref": "Sem intervalo",
      "ref_min": null,
      "ref_max": null,
      "s": "sem_alvo",
-     "data_real": "2026-08-27"
+     "data_real": "2026-08-27",
+     "ref_en": "No range"
     }
    ]
   },
   {
    "m": "Ácido araquidónico (AA) C20:4n6",
+   "m_en": "Arachidonic acid (AA) C20:4n6",
    "c": "Ácidos gordos",
+   "c_en": "Fatty acids",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Lipomic (AIWO)",
      "v": "14.4",
      "u": "%",
      "ref": "Sem intervalo",
      "ref_min": null,
      "ref_max": null,
      "s": "sem_alvo",
-     "data_real": "2026-08-27"
+     "data_real": "2026-08-27",
+     "ref_en": "No range"
     }
    ]
   },
   {
    "m": "Ácidos gordos ómega-3 totais",
+   "m_en": "Total omega-3 fatty acids",
    "c": "Ácidos gordos",
+   "c_en": "Fatty acids",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Lipomic (AIWO)",
      "v": "6.8",
      "u": "%",
      "ref": "Sem intervalo",
      "ref_min": null,
      "ref_max": null,
      "s": "sem_alvo",
-     "data_real": "2026-08-27"
+     "data_real": "2026-08-27",
+     "ref_en": "No range"
     }
    ]
   },
   {
    "m": "Ácido alfa-linolénico (ALA) C18:3n3",
+   "m_en": "Alpha-linolenic acid (ALA) C18:3n3",
    "c": "Ácidos gordos",
+   "c_en": "Fatty acids",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Lipomic (AIWO)",
      "v": "0.2",
      "u": "%",
      "ref": "Sem intervalo",
      "ref_min": null,
      "ref_max": null,
      "s": "sem_alvo",
-     "data_real": "2026-08-27"
+     "data_real": "2026-08-27",
+     "ref_en": "No range"
     }
    ]
   },
   {
    "m": "Ácido eicosapentaenoico (EPA) C20:5n3",
+   "m_en": "Eicosapentaenoic acid (EPA) C20:5n3",
    "c": "Ácidos gordos",
+   "c_en": "Fatty acids",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Lipomic (AIWO)",
      "v": "0.7",
      "u": "%",
      "ref": "Sem intervalo",
      "ref_min": null,
      "ref_max": null,
      "s": "sem_alvo",
-     "data_real": "2026-08-27"
+     "data_real": "2026-08-27",
+     "ref_en": "No range"
     }
    ]
   },
   {
    "m": "Ácido docosapentaenoico (DPA) C22:5n3",
+   "m_en": "Docosapentaenoic acid (DPA) C22:5n3",
    "c": "Ácidos gordos",
+   "c_en": "Fatty acids",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Lipomic (AIWO)",
      "v": "1.2",
      "u": "%",
      "ref": "Sem intervalo",
      "ref_min": null,
      "ref_max": null,
      "s": "sem_alvo",
-     "data_real": "2026-08-27"
+     "data_real": "2026-08-27",
+     "ref_en": "No range"
     }
    ]
   },
   {
    "m": "Ácido docosa-hexaenoico (DHA) C22:6n3",
+   "m_en": "Docosahexaenoic acid (DHA) C22:6n3",
    "c": "Ácidos gordos",
+   "c_en": "Fatty acids",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Lipomic (AIWO)",
      "v": "4.7",
      "u": "%",
      "ref": "Sem intervalo",
      "ref_min": null,
      "ref_max": null,
      "s": "sem_alvo",
-     "data_real": "2026-08-27"
+     "data_real": "2026-08-27",
+     "ref_en": "No range"
     }
    ]
   },
   {
    "m": "Ácidos gordos saturados totais",
+   "m_en": "Total saturated fatty acids",
    "c": "Ácidos gordos",
+   "c_en": "Fatty acids",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Lipomic (AIWO)",
      "v": "38.7",
      "u": "%",
      "ref": "Sem intervalo",
      "ref_min": null,
      "ref_max": null,
      "s": "sem_alvo",
-     "data_real": "2026-08-27"
+     "data_real": "2026-08-27",
+     "ref_en": "No range"
     }
    ]
   },
   {
    "m": "Ácido mirístico (MA) C14:0",
+   "m_en": "Myristic acid (MA) C14:0",
    "c": "Ácidos gordos",
+   "c_en": "Fatty acids",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Lipomic (AIWO)",
      "v": "0.7",
      "u": "%",
      "ref": "Sem intervalo (parâmetro não acreditado pela NABL)",
      "ref_min": null,
      "ref_max": null,
      "s": "sem_alvo",
-     "data_real": "2026-08-27"
+     "data_real": "2026-08-27",
+     "ref_en": "No range (parameter not NABL-accredited)"
     }
    ]
   },
   {
    "m": "Ácido palmítico (PA) C16:0",
+   "m_en": "Palmitic acid (PA) C16:0",
    "c": "Ácidos gordos",
+   "c_en": "Fatty acids",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Lipomic (AIWO)",
      "v": "23.8",
      "u": "%",
      "ref": "Sem intervalo",
      "ref_min": null,
      "ref_max": null,
      "s": "sem_alvo",
-     "data_real": "2026-08-27"
+     "data_real": "2026-08-27",
+     "ref_en": "No range"
     }
    ]
   },
   {
    "m": "Ácido esteárico (SA) C18:0",
+   "m_en": "Stearic acid (SA) C18:0",
    "c": "Ácidos gordos",
+   "c_en": "Fatty acids",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Lipomic (AIWO)",
      "v": "14.2",
      "u": "%",
      "ref": "Sem intervalo",
      "ref_min": null,
      "ref_max": null,
      "s": "sem_alvo",
-     "data_real": "2026-08-27"
+     "data_real": "2026-08-27",
+     "ref_en": "No range"
     }
    ]
   },
   {
    "m": "Ácidos gordos monoinsaturados totais",
+   "m_en": "Total monounsaturated fatty acids",
    "c": "Ácidos gordos",
+   "c_en": "Fatty acids",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Lipomic (AIWO)",
      "v": "20.1",
      "u": "%",
      "ref": "Sem intervalo",
      "ref_min": null,
      "ref_max": null,
      "s": "sem_alvo",
-     "data_real": "2026-08-27"
+     "data_real": "2026-08-27",
+     "ref_en": "No range"
     }
    ]
   },
   {
    "m": "Ácido palmitoleico (PLA) C16:1n7",
+   "m_en": "Palmitoleic acid (PLA) C16:1n7",
    "c": "Ácidos gordos",
+   "c_en": "Fatty acids",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Lipomic (AIWO)",
      "v": "1.1",
      "u": "%",
      "ref": "Sem intervalo (parâmetro não acreditado pela NABL)",
      "ref_min": null,
      "ref_max": null,
      "s": "sem_alvo",
-     "data_real": "2026-08-27"
+     "data_real": "2026-08-27",
+     "ref_en": "No range (parameter not NABL-accredited)"
     }
    ]
   },
   {
    "m": "Ácido oleico (OA) C18:1 cis-9",
+   "m_en": "Oleic acid (OA) C18:1 cis-9",
    "c": "Ácidos gordos",
+   "c_en": "Fatty acids",
    "alvo": "—",
    "otimo_min": null,
    "otimo_max": null,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Lipomic (AIWO)",
      "v": "19.0",
      "u": "%",
      "ref": "Sem intervalo",
      "ref_min": null,
      "ref_max": null,
      "s": "sem_alvo",
-     "data_real": "2026-08-27"
+     "data_real": "2026-08-27",
+     "ref_en": "No range"
     }
    ]
   },
   {
    "m": "Valina",
+   "m_en": "Valine",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "136–222.5",
    "otimo_min": 136,
    "otimo_max": 222.5,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "227.44",
      "u": "µmol/L",
      "ref": "136 - 309",
@@ -3970,14 +4225,15 @@
   },
   {
    "m": "Treonina",
+   "m_en": "Threonine",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "85–231",
    "otimo_min": 85,
    "otimo_max": 231,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "133.11",
      "u": "µmol/L",
      "ref": "85 - 231",
@@ -3989,34 +4245,37 @@
   },
   {
    "m": "3-Metil-histidina",
+   "m_en": "3-Methylhistidine",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "2–9",
    "otimo_min": 2,
    "otimo_max": 9,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "59.93",
      "u": "µmol/L",
      "ref": "2 - 9",
      "ref_min": 2,
      "ref_max": 9,
      "s": "fora_de_referencia",
-     "nota": "Sobe com catabolismo muscular, carne e treino intenso."
+     "nota": "Sobe com catabolismo muscular, carne e treino intenso.",
+     "nota_en": "Rises with muscle catabolism, meat intake and intense training."
     }
    ]
   },
   {
    "m": "Triptofano",
+   "m_en": "Tryptophan",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "53–77",
    "otimo_min": 53,
    "otimo_max": 77,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "33.41",
      "u": "µmol/L",
      "ref": "29 - 77",
@@ -4028,14 +4287,15 @@
   },
   {
    "m": "Tirosina",
+   "m_en": "Tyrosine",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "31–60.5",
    "otimo_min": 31,
    "otimo_max": 60.5,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "51.3",
      "u": "µmol/L",
      "ref": "31 - 90",
@@ -4047,14 +4307,15 @@
   },
   {
    "m": "N-Metil-histidina",
+   "m_en": "N-Methylhistidine",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "< 28",
    "otimo_min": null,
    "otimo_max": 28,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "9.63",
      "u": "µmol/L",
      "ref": "< 28",
@@ -4066,14 +4327,15 @@
   },
   {
    "m": "Ornitina",
+   "m_en": "Ornithine",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "38–130",
    "otimo_min": 38,
    "otimo_max": 130,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "53.39",
      "u": "µmol/L",
      "ref": "38 - 130",
@@ -4085,14 +4347,15 @@
   },
   {
    "m": "Fenilalanina",
+   "m_en": "Phenylalanine",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "35–57.5",
    "otimo_min": 35,
    "otimo_max": 57.5,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "48.76",
      "u": "µmol/L",
      "ref": "35 - 80",
@@ -4104,14 +4367,15 @@
   },
   {
    "m": "Prolina",
+   "m_en": "Proline",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "97–368",
    "otimo_min": 97,
    "otimo_max": 368,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "218.3",
      "u": "µmol/L",
      "ref": "97 - 368",
@@ -4123,14 +4387,15 @@
   },
   {
    "m": "Sarcosina",
+   "m_en": "Sarcosine",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "< 5",
    "otimo_min": null,
    "otimo_max": 5,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "0.41",
      "u": "µmol/L",
      "ref": "< 5",
@@ -4142,14 +4407,15 @@
   },
   {
    "m": "Serina",
+   "m_en": "Serine",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "125–187",
    "otimo_min": 125,
    "otimo_max": 187,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "75.37",
      "u": "µmol/L",
      "ref": "63 - 187",
@@ -4161,14 +4427,15 @@
   },
   {
    "m": "Hidroxilisina",
+   "m_en": "Hydroxylysine",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "< 2",
    "otimo_min": null,
    "otimo_max": 2,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "0.92",
      "u": "µmol/L",
      "ref": "< 2",
@@ -4180,14 +4447,15 @@
   },
   {
    "m": "Hidroxiprolina",
+   "m_en": "Hydroxyproline",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "4–29",
    "otimo_min": 4,
    "otimo_max": 29,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "16.25",
      "u": "µmol/L",
      "ref": "4 - 29",
@@ -4199,14 +4467,15 @@
   },
   {
    "m": "Isoleucina",
+   "m_en": "Isoleucine",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "36–71.5",
    "otimo_min": 36,
    "otimo_max": 71.5,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "81.8",
      "u": "µmol/L",
      "ref": "36 - 107",
@@ -4218,14 +4487,15 @@
   },
   {
    "m": "Leucina",
+   "m_en": "Leucine",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "68–125.5",
    "otimo_min": 68,
    "otimo_max": 125.5,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "108.75",
      "u": "µmol/L",
      "ref": "68 - 183",
@@ -4237,14 +4507,15 @@
   },
   {
    "m": "Lisina",
+   "m_en": "Lysine",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "103–255",
    "otimo_min": 103,
    "otimo_max": 255,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "118.08",
      "u": "µmol/L",
      "ref": "103 - 255",
@@ -4256,14 +4527,15 @@
   },
   {
    "m": "Metionina",
+   "m_en": "Methionine",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "4–44",
    "otimo_min": 4,
    "otimo_max": 44,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "22.63",
      "u": "µmol/L",
      "ref": "4 - 44",
@@ -4275,14 +4547,15 @@
   },
   {
    "m": "Cistina",
+   "m_en": "Cystine",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "3–95",
    "otimo_min": 3,
    "otimo_max": 95,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "26.78",
      "u": "µmol/L",
      "ref": "3 - 95",
@@ -4294,14 +4567,15 @@
   },
   {
    "m": "Ácido gama-aminobutírico (GABA)",
+   "m_en": "Gamma-aminobutyric acid (GABA)",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "< 2",
    "otimo_min": null,
    "otimo_max": 2,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "0.16",
      "u": "µmol/L",
      "ref": "< 2",
@@ -4313,14 +4587,15 @@
   },
   {
    "m": "Glutamina",
+   "m_en": "Glutamine",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "664–957",
    "otimo_min": 664,
    "otimo_max": 957,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "432.16",
      "u": "µmol/L",
      "ref": "371 - 957",
@@ -4332,14 +4607,15 @@
   },
   {
    "m": "Ácido glutâmico",
+   "m_en": "Glutamic acid",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "13–63",
    "otimo_min": 13,
    "otimo_max": 63,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "50.46",
      "u": "µmol/L",
      "ref": "13 - 113",
@@ -4351,14 +4627,15 @@
   },
   {
    "m": "Glicina",
+   "m_en": "Glycine",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "308–490",
    "otimo_min": 308,
    "otimo_max": 490,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "179.46",
      "u": "µmol/L",
      "ref": "126 - 490",
@@ -4370,14 +4647,15 @@
   },
   {
    "m": "Histidina",
+   "m_en": "Histidine",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "81–123",
    "otimo_min": 81,
    "otimo_max": 123,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "55.32",
      "u": "µmol/L",
      "ref": "39 - 123",
@@ -4389,14 +4667,15 @@
   },
   {
    "m": "Asparagina",
+   "m_en": "Asparagine",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "37–92",
    "otimo_min": 37,
    "otimo_max": 92,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "47.18",
      "u": "µmol/L",
      "ref": "37 - 92",
@@ -4408,14 +4687,15 @@
   },
   {
    "m": "Ácido aspártico",
+   "m_en": "Aspartic acid",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "< 7",
    "otimo_min": null,
    "otimo_max": 7,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "1.49",
      "u": "µmol/L",
      "ref": "< 7",
@@ -4427,14 +4707,15 @@
   },
   {
    "m": "Ácido beta-aminoisobutírico (BAIBA)",
+   "m_en": "Beta-aminoisobutyric acid (BAIBA)",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "< 5",
    "otimo_min": null,
    "otimo_max": 5,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "0.14",
      "u": "µmol/L",
      "ref": "< 5",
@@ -4446,14 +4727,15 @@
   },
   {
    "m": "Beta-alanina",
+   "m_en": "Beta-alanine",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "< 29",
    "otimo_min": null,
    "otimo_max": 29,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "4.47",
      "u": "µmol/L",
      "ref": "< 29",
@@ -4465,14 +4747,15 @@
   },
   {
    "m": "Citrulina",
+   "m_en": "Citrulline",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "17–46",
    "otimo_min": 17,
    "otimo_max": 46,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "30.86",
      "u": "µmol/L",
      "ref": "17 - 46",
@@ -4484,14 +4767,15 @@
   },
   {
    "m": "Cistationina",
+   "m_en": "Cystathionine",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "< 5",
    "otimo_min": null,
    "otimo_max": 5,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "0.18",
      "u": "µmol/L",
      "ref": "< 5",
@@ -4503,14 +4787,15 @@
   },
   {
    "m": "Ácido alfa-aminoadípico",
+   "m_en": "Alpha-aminoadipic acid",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "< 3",
    "otimo_min": null,
    "otimo_max": 3,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "0.45",
      "u": "µmol/L",
      "ref": "< 3",
@@ -4522,14 +4807,15 @@
   },
   {
    "m": "Ácido alfa-aminobutírico",
+   "m_en": "Alpha-aminobutyric acid",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "9–37",
    "otimo_min": 9,
    "otimo_max": 37,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "25.75",
      "u": "µmol/L",
      "ref": "9 - 37",
@@ -4541,14 +4827,15 @@
   },
   {
    "m": "Alanina",
+   "m_en": "Alanine",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "200–389.5",
    "otimo_min": 200,
    "otimo_max": 389.5,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "220.95",
      "u": "µmol/L",
      "ref": "200 - 579",
@@ -4560,14 +4847,15 @@
   },
   {
    "m": "Anserina",
+   "m_en": "Anserine",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "< 1",
    "otimo_min": null,
    "otimo_max": 1,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "0.33",
      "u": "µmol/L",
      "ref": "< 1",
@@ -4579,14 +4867,15 @@
   },
   {
    "m": "Arginina",
+   "m_en": "Arginine",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "32–120",
    "otimo_min": 32,
    "otimo_max": 120,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "75.38",
      "u": "µmol/L",
      "ref": "32 - 120",
@@ -4598,14 +4887,15 @@
   },
   {
    "m": "Ácido argininossuccínico",
+   "m_en": "Argininosuccinic acid",
    "c": "Aminoácidos (soro)",
+   "c_en": "Amino acids (serum)",
    "alvo": "< 2",
    "otimo_min": null,
    "otimo_max": 2,
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (AIWO)",
      "v": "0.12",
      "u": "µmol/L",
      "ref": "< 2",
@@ -4614,422 +4904,533 @@
      "s": "otimo"
     }
    ]
-  },
+  }
+ ],
+ "intolerancias": [
   {
    "m": "IgG Agar-agar",
+   "m_en": "IgG Agar-agar",
    "c": "IgG alimentar",
-   "alvo": "0–23",
-   "otimo_min": 0,
-   "otimo_max": 23,
+   "c_en": "Food IgG",
+   "alvo": "—",
+   "otimo_min": null,
+   "otimo_max": null,
+   "regras": [
+    "sem_alvo"
+   ],
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (CNS FoodPrint 200+)",
      "v": "120",
      "u": "U/ml",
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "fora_de_referencia"
+     "s": "sem_alvo",
+     "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
    ]
   },
   {
    "m": "IgG Linhaça",
+   "m_en": "IgG Flaxseed",
    "c": "IgG alimentar",
-   "alvo": "0–23",
-   "otimo_min": 0,
-   "otimo_max": 23,
+   "c_en": "Food IgG",
+   "alvo": "—",
+   "otimo_min": null,
+   "otimo_max": null,
+   "regras": [
+    "sem_alvo"
+   ],
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (CNS FoodPrint 200+)",
      "v": "109",
      "u": "U/ml",
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "fora_de_referencia"
+     "s": "sem_alvo",
+     "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
    ]
   },
   {
    "m": "IgG Alga esparguete",
+   "m_en": "IgG Sea spaghetti",
    "c": "IgG alimentar",
-   "alvo": "0–23",
-   "otimo_min": 0,
-   "otimo_max": 23,
+   "c_en": "Food IgG",
+   "alvo": "—",
+   "otimo_min": null,
+   "otimo_max": null,
+   "regras": [
+    "sem_alvo"
+   ],
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (CNS FoodPrint 200+)",
      "v": "52",
      "u": "U/ml",
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "fora_de_referencia"
+     "s": "sem_alvo",
+     "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
    ]
   },
   {
    "m": "IgG Noz de cola",
+   "m_en": "IgG Kola nut",
    "c": "IgG alimentar",
-   "alvo": "0–23",
-   "otimo_min": 0,
-   "otimo_max": 23,
+   "c_en": "Food IgG",
+   "alvo": "—",
+   "otimo_min": null,
+   "otimo_max": null,
+   "regras": [
+    "sem_alvo"
+   ],
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (CNS FoodPrint 200+)",
      "v": "52",
      "u": "U/ml",
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "fora_de_referencia"
+     "s": "sem_alvo",
+     "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
    ]
   },
   {
    "m": "IgG Alga wakame",
+   "m_en": "IgG Wakame",
    "c": "IgG alimentar",
-   "alvo": "0–23",
-   "otimo_min": 0,
-   "otimo_max": 23,
+   "c_en": "Food IgG",
+   "alvo": "—",
+   "otimo_min": null,
+   "otimo_max": null,
+   "regras": [
+    "sem_alvo"
+   ],
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (CNS FoodPrint 200+)",
      "v": "36",
      "u": "U/ml",
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "fora_de_referencia"
+     "s": "sem_alvo",
+     "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
    ]
   },
   {
    "m": "IgG Clara de ovo",
+   "m_en": "IgG Egg white",
    "c": "IgG alimentar",
-   "alvo": "0–23",
-   "otimo_min": 0,
-   "otimo_max": 23,
+   "c_en": "Food IgG",
+   "alvo": "—",
+   "otimo_min": null,
+   "otimo_max": null,
+   "regras": [
+    "sem_alvo"
+   ],
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (CNS FoodPrint 200+)",
      "v": "32",
      "u": "U/ml",
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "fora_de_referencia"
+     "s": "sem_alvo",
+     "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
    ]
   },
   {
    "m": "IgG Levedura de cerveja",
+   "m_en": "IgG Brewer's yeast",
    "c": "IgG alimentar",
-   "alvo": "0–23",
-   "otimo_min": 0,
-   "otimo_max": 23,
+   "c_en": "Food IgG",
+   "alvo": "—",
+   "otimo_min": null,
+   "otimo_max": null,
+   "regras": [
+    "sem_alvo"
+   ],
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (CNS FoodPrint 200+)",
      "v": "29",
      "u": "U/ml",
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "aceitavel"
+     "s": "sem_alvo",
+     "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
    ]
   },
   {
    "m": "IgG Feijão branco",
+   "m_en": "IgG Haricot bean",
    "c": "IgG alimentar",
-   "alvo": "0–23",
-   "otimo_min": 0,
-   "otimo_max": 23,
+   "c_en": "Food IgG",
+   "alvo": "—",
+   "otimo_min": null,
+   "otimo_max": null,
+   "regras": [
+    "sem_alvo"
+   ],
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (CNS FoodPrint 200+)",
      "v": "26",
      "u": "U/ml",
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "aceitavel"
+     "s": "sem_alvo",
+     "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
    ]
   },
   {
    "m": "IgG Malte",
+   "m_en": "IgG Malt",
    "c": "IgG alimentar",
-   "alvo": "0–23",
-   "otimo_min": 0,
-   "otimo_max": 23,
+   "c_en": "Food IgG",
+   "alvo": "—",
+   "otimo_min": null,
+   "otimo_max": null,
+   "regras": [
+    "sem_alvo"
+   ],
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (CNS FoodPrint 200+)",
      "v": "24",
      "u": "U/ml",
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "aceitavel"
+     "s": "sem_alvo",
+     "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
    ]
   },
   {
    "m": "IgG Ervilha",
+   "m_en": "IgG Pea",
    "c": "IgG alimentar",
-   "alvo": "0–23",
-   "otimo_min": 0,
-   "otimo_max": 23,
+   "c_en": "Food IgG",
+   "alvo": "—",
+   "otimo_min": null,
+   "otimo_max": null,
+   "regras": [
+    "sem_alvo"
+   ],
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (CNS FoodPrint 200+)",
      "v": "24",
      "u": "U/ml",
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "aceitavel"
+     "s": "sem_alvo",
+     "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
    ]
   },
   {
    "m": "IgG Lúcio",
+   "m_en": "IgG Pike",
    "c": "IgG alimentar",
-   "alvo": "0–23",
-   "otimo_min": 0,
-   "otimo_max": 23,
+   "c_en": "Food IgG",
+   "alvo": "—",
+   "otimo_min": null,
+   "otimo_max": null,
+   "regras": [
+    "sem_alvo"
+   ],
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (CNS FoodPrint 200+)",
      "v": "23",
      "u": "U/ml",
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "otimo"
+     "s": "sem_alvo",
+     "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
    ]
   },
   {
    "m": "IgG Ginkgo",
+   "m_en": "IgG Ginkgo",
    "c": "IgG alimentar",
-   "alvo": "0–23",
-   "otimo_min": 0,
-   "otimo_max": 23,
+   "c_en": "Food IgG",
+   "alvo": "—",
+   "otimo_min": null,
+   "otimo_max": null,
+   "regras": [
+    "sem_alvo"
+   ],
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (CNS FoodPrint 200+)",
      "v": "22",
      "u": "U/ml",
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "otimo"
+     "s": "sem_alvo",
+     "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
    ]
   },
   {
    "m": "IgG Leite de vaca",
+   "m_en": "IgG Cow's milk",
    "c": "IgG alimentar",
-   "alvo": "0–23",
-   "otimo_min": 0,
-   "otimo_max": 23,
+   "c_en": "Food IgG",
+   "alvo": "—",
+   "otimo_min": null,
+   "otimo_max": null,
+   "regras": [
+    "sem_alvo"
+   ],
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (CNS FoodPrint 200+)",
      "v": "22",
      "u": "U/ml",
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "otimo"
+     "s": "sem_alvo",
+     "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
    ]
   },
   {
    "m": "IgG Semente de girassol",
+   "m_en": "IgG Sunflower seed",
    "c": "IgG alimentar",
-   "alvo": "0–23",
-   "otimo_min": 0,
-   "otimo_max": 23,
+   "c_en": "Food IgG",
+   "alvo": "—",
+   "otimo_min": null,
+   "otimo_max": null,
+   "regras": [
+    "sem_alvo"
+   ],
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (CNS FoodPrint 200+)",
      "v": "21",
      "u": "U/ml",
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "otimo"
+     "s": "sem_alvo",
+     "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
    ]
   },
   {
    "m": "IgG Levedura de padeiro",
+   "m_en": "IgG Baker's yeast",
    "c": "IgG alimentar",
-   "alvo": "0–23",
-   "otimo_min": 0,
-   "otimo_max": 23,
+   "c_en": "Food IgG",
+   "alvo": "—",
+   "otimo_min": null,
+   "otimo_max": null,
+   "regras": [
+    "sem_alvo"
+   ],
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (CNS FoodPrint 200+)",
      "v": "20",
      "u": "U/ml",
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "otimo"
+     "s": "sem_alvo",
+     "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
    ]
   },
   {
    "m": "IgG Leite de cabra",
+   "m_en": "IgG Goat's milk",
    "c": "IgG alimentar",
-   "alvo": "0–23",
-   "otimo_min": 0,
-   "otimo_max": 23,
+   "c_en": "Food IgG",
+   "alvo": "—",
+   "otimo_min": null,
+   "otimo_max": null,
+   "regras": [
+    "sem_alvo"
+   ],
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (CNS FoodPrint 200+)",
      "v": "19",
      "u": "U/ml",
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "otimo"
+     "s": "sem_alvo",
+     "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
    ]
   },
   {
    "m": "IgG Chufa",
+   "m_en": "IgG Tiger nut",
    "c": "IgG alimentar",
-   "alvo": "0–23",
-   "otimo_min": 0,
-   "otimo_max": 23,
+   "c_en": "Food IgG",
+   "alvo": "—",
+   "otimo_min": null,
+   "otimo_max": null,
+   "regras": [
+    "sem_alvo"
+   ],
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (CNS FoodPrint 200+)",
      "v": "19",
      "u": "U/ml",
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "otimo"
+     "s": "sem_alvo",
+     "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
    ]
   },
   {
    "m": "IgG Aipo",
+   "m_en": "IgG Celery",
    "c": "IgG alimentar",
-   "alvo": "0–23",
-   "otimo_min": 0,
-   "otimo_max": 23,
+   "c_en": "Food IgG",
+   "alvo": "—",
+   "otimo_min": null,
+   "otimo_max": null,
+   "regras": [
+    "sem_alvo"
+   ],
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (CNS FoodPrint 200+)",
      "v": "18",
      "u": "U/ml",
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "otimo"
+     "s": "sem_alvo",
+     "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
    ]
   },
   {
    "m": "IgG Solha",
+   "m_en": "IgG Plaice",
    "c": "IgG alimentar",
-   "alvo": "0–23",
-   "otimo_min": 0,
-   "otimo_max": 23,
+   "c_en": "Food IgG",
+   "alvo": "—",
+   "otimo_min": null,
+   "otimo_max": null,
+   "regras": [
+    "sem_alvo"
+   ],
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (CNS FoodPrint 200+)",
      "v": "16",
      "u": "U/ml",
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "otimo"
+     "s": "sem_alvo",
+     "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
    ]
   },
   {
    "m": "IgG Amaranto",
+   "m_en": "IgG Amaranth",
    "c": "IgG alimentar",
-   "alvo": "0–23",
-   "otimo_min": 0,
-   "otimo_max": 23,
+   "c_en": "Food IgG",
+   "alvo": "—",
+   "otimo_min": null,
+   "otimo_max": null,
+   "regras": [
+    "sem_alvo"
+   ],
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (CNS FoodPrint 200+)",
      "v": "15",
      "u": "U/ml",
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "otimo"
+     "s": "sem_alvo",
+     "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
    ]
   },
   {
    "m": "IgG Caju",
+   "m_en": "IgG Cashew",
    "c": "IgG alimentar",
-   "alvo": "0–23",
-   "otimo_min": 0,
-   "otimo_max": 23,
+   "c_en": "Food IgG",
+   "alvo": "—",
+   "otimo_min": null,
+   "otimo_max": null,
+   "regras": [
+    "sem_alvo"
+   ],
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (CNS FoodPrint 200+)",
      "v": "15",
      "u": "U/ml",
      "ref": "normal ≤23; limítrofe 24-29; elevado ≥30",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "otimo"
+     "s": "sem_alvo",
+     "ref_en": "normal ≤23; borderline 24-29; elevated ≥30"
     }
    ]
   },
   {
    "m": "IgG restantes alimentos (incl. gliadina)",
+   "m_en": "IgG other foods (incl. gliadin)",
    "c": "IgG alimentar",
-   "alvo": "0–23",
-   "otimo_min": 0,
-   "otimo_max": 23,
+   "c_en": "Food IgG",
+   "alvo": "—",
+   "otimo_min": null,
+   "otimo_max": null,
+   "regras": [
+    "sem_alvo"
+   ],
    "resultados": [
     {
      "data": "2026-08-25",
-     "lab": "Thyrocare (CNS FoodPrint 200+)",
      "v": "<15",
      "u": "U/ml",
      "ref": "normal ≤23",
      "ref_min": 0,
      "ref_max": 23,
-     "s": "otimo"
+     "s": "sem_alvo"
     }
    ]
   }

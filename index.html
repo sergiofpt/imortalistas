@@ -7,23 +7,25 @@
 <meta name="referrer" content="no-referrer">
 <link rel="icon" href="data:,">
 <title>Sérgio F · Cronologia de Exames de Sangue</title>
+<meta name="color-scheme" content="light dark">
+<script>(function(){var d=document.documentElement,t=null;try{if(localStorage.getItem('lang')==='en')d.lang='en';t=localStorage.getItem('theme')}catch(e){}if(t!=='dark'&&t!=='light')t=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';d.setAttribute('data-theme',t)})()</script>
 <style>
-:root{--bg:#f5f7fa;--card:#fff;--ink:#14202e;--mut:#5b6b7d;--line:#e3e8ef;--acc:#1f5eff;--ok:#12a150;--okb:#e6f6ec;--warn:#d98a00;--warnb:#fff4dc;--bad:#d93636;--badb:#fde9e9;--na:#8a97a8;--nab:#eef1f5;--r:14px}
+:root{--bg:#f5f7fa;--card:#fff;--ink:#14202e;--mut:#5b6b7d;--line:#e3e8ef;--acc:#1f5eff;--ok:#12a150;--okb:#e6f6ec;--warn:#d98a00;--warnb:#fff4dc;--bad:#d93636;--badb:#fde9e9;--na:#8a97a8;--nab:#eef1f5;--r:14px;--head:rgba(255,255,255,.94);--th:#fafbfd;--hov:#fafcff;--okt:#0b7a3b;--warnt:#9a5f00;--badt:#b02020;--nat:#56657a;--infob:#e8efff;--infot:#1f45b5;--noteb:#f0f5ff;--notel:#d7e3ff;--vok:#eefaf2;--vwarn:#fff6e3;--vwarnt:#8f5800;--vbad:#fdeeee;--vna:#3b4a5c;--open:#f3f7ff;--det:#fbfcfe;--grid:#eef1f5;--chok:#e6f6ec;--actfg:#fff;--hero1:#0f2747;--hero2:#1f5eff;color-scheme:light}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:78px}
 body{margin:0;font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
-header.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
+header.top{position:sticky;top:0;z-index:50;background:var(--head);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
 .topin{max-width:1240px;margin:0 auto;display:flex;align-items:center;gap:18px;padding:10px 20px}
-.brand{font-weight:700;white-space:nowrap;font-size:15px}
-.brand span{color:var(--acc)}
+
+
 nav.main{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0}
 nav.main::-webkit-scrollbar{display:none}
 nav.main a{white-space:nowrap;text-decoration:none;color:var(--mut);font-size:13.5px;padding:7px 11px;border-radius:999px;font-weight:500}
 nav.main a:hover{background:var(--nab);color:var(--ink)}
-nav.main a.active{background:var(--ink);color:#fff}
+nav.main a.active{background:var(--ink);color:var(--actfg)}
 main{max-width:1240px;margin:0 auto;padding:22px 20px 60px}
 section{margin:0 0 34px}
-.hero{background:linear-gradient(135deg,#0f2747,#1f5eff);color:#fff;border-radius:20px;padding:28px 30px;margin-bottom:26px;display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:flex-end}
+.hero{background:linear-gradient(135deg,var(--hero1),var(--hero2));color:#fff;border-radius:20px;padding:28px 30px;margin-bottom:26px;display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:flex-end}
 .hero h1{margin:0 0 6px;font-size:28px;letter-spacing:-.3px}
 .hero p{margin:0;opacity:.85}
 .hero .meta{font-size:13px;opacity:.85;text-align:right}
@@ -35,7 +37,7 @@ h3{font-size:16px;margin:18px 0 8px}
 .grid{display:grid;gap:14px}.grid>*{min-width:0}
 .g4{grid-template-columns:repeat(4,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
 @media(max-width:1000px){.g4{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:640px){.brand span{display:none}.filters input[type=search]{min-width:0;flex:1 1 100%}.g4,.g3,.g2{grid-template-columns:1fr}.hero h1{font-size:22px}.hero .meta{text-align:left}}
+@media(max-width:640px){.filters input[type=search]{min-width:0;flex:1 1 100%}.g4,.g3,.g2{grid-template-columns:1fr}.hero h1{font-size:22px}.hero .meta{text-align:left}}
 
 
 
@@ -44,12 +46,12 @@ h3{font-size:16px;margin:18px 0 8px}
 
 
 .pill{display:inline-block;font-size:11.5px;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap}
-.pill.ok{background:var(--okb);color:#0b7a3b}.pill.warn{background:var(--warnb);color:#9a5f00}.pill.bad{background:var(--badb);color:#b02020}.pill.na{background:var(--nab);color:#56657a}.pill.info{background:#e8efff;color:#1f45b5}
+.pill.ok{background:var(--okb);color:var(--okt)}.pill.warn{background:var(--warnb);color:var(--warnt)}.pill.bad{background:var(--badb);color:var(--badt)}.pill.na{background:var(--nab);color:var(--nat)}.pill.info{background:var(--infob);color:var(--infot)}
 table{width:100%;border-collapse:collapse;font-size:13.5px}
-th{text-align:left;font-size:12px;text-transform:uppercase;letter-spacing:.3px;color:var(--mut);font-weight:700;padding:9px 10px;border-bottom:2px solid var(--line);background:#fafbfd;position:sticky;top:0}
+th{text-align:left;font-size:12px;text-transform:uppercase;letter-spacing:.3px;color:var(--mut);font-weight:700;padding:9px 10px;border-bottom:2px solid var(--line);background:var(--th);position:sticky;top:0}
 td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
-tr:hover td{background:#fafcff}
-.tw{overflow:auto;border:1px solid var(--line);border-radius:var(--r);background:#fff}
+tr:hover td{background:var(--hov)}
+.tw{overflow:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--card)}
 .tw.tall{max-height:640px}
 .num{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
 .mut{color:var(--mut)}
@@ -60,7 +62,7 @@ tr:hover td{background:#fafcff}
 
 
 .filters{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 12px}
-.filters input,.filters select{font:inherit;font-size:14px;padding:8px 11px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+.filters input,.filters select{font:inherit;font-size:14px;padding:8px 11px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink)}
 .filters input[type=search]{min-width:220px}
 .filters label{font-size:13.5px;color:var(--mut);display:flex;gap:6px;align-items:center;cursor:pointer}
 .legend{display:flex;flex-wrap:wrap;gap:8px;font-size:12.5px;color:var(--mut);align-items:center}
@@ -73,7 +75,7 @@ tr:hover td{background:#fafcff}
 
 
 
-.note{background:#f0f5ff;border:1px solid #d7e3ff;border-radius:12px;padding:11px 14px;font-size:13.5px;margin:0 0 14px}
+.note{background:var(--noteb);border:1px solid var(--notel);border-radius:12px;padding:11px 14px;font-size:13.5px;margin:0 0 14px}
 
 
 th
@@ -84,14 +86,14 @@ th
 
 footer{max-width:1240px;margin:0 auto;padding:0 20px 40px;color:var(--mut);font-size:12.5px}
 .gv td:first-child{font-weight:600;white-space:nowrap}
-.ctrl{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 10px;padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:12px}
+.ctrl{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 10px;padding:10px 12px;background:var(--card);border:1px solid var(--line);border-radius:12px}
 .ctrl b{font-size:13px}
-.ctrl select{font:inherit;font-size:14px;padding:7px 10px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);max-width:100%}
+.ctrl select{font:inherit;font-size:14px;padding:7px 10px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);max-width:100%}
 .ctrl label{font-size:13.5px;color:var(--mut);display:flex;gap:6px;align-items:center;cursor:pointer}
-.await{display:inline-flex;gap:6px;align-items:center;background:var(--nab);color:#3b4a5c;border-radius:999px;padding:3px 10px;font-size:12.5px;font-weight:600}
+.await{display:inline-flex;gap:6px;align-items:center;background:var(--nab);color:var(--vna);border-radius:999px;padding:3px 10px;font-size:12.5px;font-weight:600}
 th.dcol,td.v,td.dl{text-align:right}
 td.v{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
-td.v.ok{background:#eefaf2;color:#0b7a3b}td.v.warn{background:#fff6e3;color:#8f5800}td.v.bad{background:#fdeeee;color:#b02020}td.v.na{color:#3b4a5c}
+td.v.ok{background:var(--vok);color:var(--okt)}td.v.warn{background:var(--vwarn);color:var(--vwarnt)}td.v.bad{background:var(--vbad);color:var(--badt)}td.v.na{color:var(--vna)}
 td.v.miss{color:var(--na);font-weight:500}
 th.dcol small{display:block;font-weight:500;text-transform:none;letter-spacing:0;color:var(--mut)}
 th.dcol.a{color:var(--ink)}
@@ -99,69 +101,105 @@ th.dcol.a{color:var(--ink)}
 .tr.good{color:var(--ok)}.tr.bad{color:var(--bad)}.tr.neu{color:var(--mut)}
 tr.mk{cursor:pointer}tr.mk td:first-child b:after{content:" ▸";color:var(--na);font-weight:400}
 tr.mk.open td:first-child b:after{content:" ▾"}
-tr.mk.open td{background:#f3f7ff}
-tr.det>td{background:#fbfcfe;padding:12px 14px}
-tr.det:hover td{background:#fbfcfe}
+tr.mk.open td{background:var(--open)}
+tr.det>td{background:var(--det);padding:12px 14px}
+tr.det:hover td{background:var(--det)}
 .det .in{position:sticky;left:0;max-width:min(980px,calc(100vw - 72px))}
 .det .chartwrap{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-start}
-.det svg{width:100%;max-width:560px;height:auto;background:#fff;border:1px solid var(--line);border-radius:10px;flex:1 1 320px}
+.det svg{width:100%;max-width:560px;height:auto;background:var(--card);border:1px solid var(--line);border-radius:10px;flex:1 1 320px}
 .det table{font-size:12.5px;flex:1 1 280px;width:auto}
 .det table td,.det table th{padding:5px 8px;position:static}
 .det .msg{margin:8px 0 0}
 @media(max-width:640px){.ctrl select{flex:1 1 100%}}
 @media print{header.top{position:static}.tw.tall{max-height:none}}
+html[data-theme="dark"]{color-scheme:dark;--bg:#0e141d;--card:#161e2a;--ink:#e5eaf1;--mut:#9aa7b8;--line:#2a3545;--acc:#7a9dff;--ok:#34c47a;--okb:#11321f;--warn:#e8a63f;--warnb:#36290f;--bad:#f06464;--badb:#3b1a1d;--na:#7f8c9e;--nab:#222b39;
+--head:rgba(16,22,32,.92);--th:#1b2431;--hov:#1b2432;--okt:#63d99a;--warnt:#f2bf6b;--badt:#ff8f8f;--nat:#aeb9c8;--infob:#1d2a4a;--infot:#a3bcff;--noteb:#152038;--notel:#2a3b63;--vok:#13301f;--vwarn:#33280f;--vwarnt:#f2bf6b;--vbad:#3a1b1e;--vna:#c5cedb;--open:#1a2640;--det:#121923;--grid:#263142;--chok:#143524;--actfg:#0e141d;--hero1:#0b1a31;--hero2:#1c3f9e}
+html[data-theme="dark"] .filters input::placeholder{color:#7f8c9e}
+main a{color:var(--acc)}
+html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
+.tools{display:flex;align-items:center;gap:14px;margin-left:auto;flex:0 0 auto}
+.lang{display:flex;align-items:center;gap:4px;font-size:13.5px;white-space:nowrap}
+.lang button{font:inherit;border:0;background:none;color:var(--mut);cursor:pointer;padding:6px 6px;border-radius:8px}
+.lang button:hover{background:var(--nab);color:var(--ink)}.lang button.on{color:var(--ink);font-weight:700}
+.lang .sep{color:var(--na)}
+@media(max-width:640px){html{scroll-padding-top:136px}.topin{gap:4px 8px;padding:6px 12px;flex-wrap:wrap}.tools{order:-1;margin-left:auto;gap:10px}nav.main{flex:1 1 100%;order:2;flex-wrap:wrap;overflow:visible;gap:2px}nav.main a{padding:6px 10px}.lang{font-size:12.5px}.lang button{padding:5px 3px}}
 </style>
 </head>
 <body>
 <header class="top"><div class="topin">
-<div class="brand">Sérgio F <span>· Cronologia de Exames de Sangue</span></div>
 <nav class="main" id="nav">
-<a href="#resumo">Resumo</a><a href="#sangue">Análises</a><a href="#genetica">Genética</a>
-</nav></div></header>
+<a href="#resumo" data-en="Summary">Resumo</a><a href="#sangue" data-en="Tests">Análises</a><a href="#intolerancias" data-en="Food Intolerances">Intolerâncias Alimentares</a><a href="#genetica" data-en="Genetics">Genética</a>
+</nav>
+<div class="tools">
+<div class="lang" id="lang" role="group" aria-label="Idioma / Language"><button type="button" data-l="pt" lang="pt-PT">Português</button><span class="sep" aria-hidden="true">|</span><button type="button" data-l="en" lang="en">English</button></div>
+<div class="lang" id="theme" role="group" aria-label="Tema" data-al-en="Theme"><button type="button" data-t="dark" data-en="Dark">Escuro</button><span class="sep" aria-hidden="true">|</span><button type="button" data-t="light" data-en="Light">Claro</button></div>
+</div>
+</div></header>
 <main>
 
 <div class="hero">
-<div><h1>Cronologia de Exames de Sangue</h1>
-<p>Sérgio F · 27 anos · M</p></div>
-<div class="meta" id="heroMeta">Análises ao sangue<br>Compilado a 02-10-2026 (PT)</div>
+<div><h1><span class="l-pt">Cronologia de Exames de Sangue</span><span class="l-en">Blood Test Timeline</span></h1>
+<p>Sérgio F · <span class="l-pt">27 anos</span><span class="l-en">27 years</span> · M</p></div>
+<div class="meta" id="heroMeta"><span class="l-pt">Análises ao sangue</span><span class="l-en">Blood tests</span></div>
 </div>
 
 <!-- ============ RESUMO ============ -->
 <section id="resumo">
 <div class="card">
-<h3 style="margin-top:0" id="bsTitle">Análises em números</h3>
-<div id="bloodSummary"><span class="mut">A carregar…</span></div>
+<h3 style="margin-top:0" id="bsTitle"><span class="l-pt">Análises em números</span><span class="l-en">Tests in numbers</span></h3>
+<div id="bloodSummary"><span class="mut"><span class="l-pt">A carregar…</span><span class="l-en">Loading…</span></span></div>
 </div>
 </section>
 
 <!-- ============ SANGUE ============ -->
 <section id="sangue">
-<h2>Análises ao sangue e à urina</h2>
-<p class="src">Fonte: data/sangue.json · <span id="sSrc">AIWO e Thyrocare 25-08-2026, Lipomic 27-08-2026</span>. Jejum e hora não documentados no painel AIWO (aminoácidos às 08:38).</p>
+<h2><span class="l-pt">Análises ao sangue e à urina</span><span class="l-en">Blood and urine tests</span></h2>
+<p class="src"><span class="l-pt">Fonte</span><span class="l-en">Source</span>: data/sangue.json · <span id="sSrc"></span></p>
 <div class="ctrl" id="sCtrl">
-<b>Datas</b>
-<label>Data <select id="sA" aria-label="Data principal"></select></label>
-<label>comparar com <select id="sB" aria-label="Data de comparação"></select></label>
-<label><input type="checkbox" id="sAll" checked> Mostrar todas as datas em colunas</label>
+<b><span class="l-pt">Datas</span><span class="l-en">Dates</span></b>
+<label><span class="l-pt">Data</span><span class="l-en">Date</span> <select id="sA" aria-label="Data principal" data-al-en="Main date"></select></label>
+<label><span class="l-pt">comparar com</span><span class="l-en">compare with</span> <select id="sB" aria-label="Data de comparação" data-al-en="Comparison date"></select></label>
+<label><input type="checkbox" id="sAll" checked> <span class="l-pt">Mostrar todas as datas em colunas</span><span class="l-en">Show all dates as columns</span></label>
 <span id="sAwait"></span>
 </div>
 <div class="filters">
-<input id="q" type="search" placeholder="Procurar marcador…" aria-label="Procurar marcador">
-<select id="cat" aria-label="Categoria"><option value="">Todas as categorias</option></select>
-<select id="st" aria-label="Estado"><option value="">Todos os estados</option><option value="bad">Fora da referência</option><option value="warn">Fora do ótimo / aceitável</option><option value="ok">Ótimo</option><option value="na">Sem alvo</option></select>
-<select id="sTr" aria-label="Tendência"><option value="">Todas as tendências</option><option value="good">Melhoraram</option><option value="bad">Pioraram</option><option value="chg">Mudaram de estado</option></select>
-<label><input type="checkbox" id="flagged"> Só os que não estão no ótimo</label>
+<input id="q" type="search" placeholder="Procurar marcador…" data-ph-en="Search marker…" aria-label="Procurar marcador" data-al-en="Search marker">
+<select id="cat" aria-label="Categoria" data-al-en="Category"><option value="">Todas as categorias</option></select>
+<select id="st" aria-label="Estado" data-al-en="Status"><option value="" data-en="All statuses">Todos os estados</option><option value="bad" data-en="Out of range">Fora da referência</option><option value="warn" data-en="Outside optimal / acceptable">Fora do ótimo / aceitável</option><option value="ok" data-en="Optimal">Ótimo</option><option value="na" data-en="No target">Sem alvo</option></select>
+<select id="sTr" aria-label="Tendência" data-al-en="Trend"><option value="" data-en="All trends">Todas as tendências</option><option value="good" data-en="Improved">Melhoraram</option><option value="bad" data-en="Worsened">Pioraram</option><option value="chg" data-en="Changed status">Mudaram de estado</option></select>
+<label><input type="checkbox" id="flagged"> <span class="l-pt">Só os que não estão no ótimo</span><span class="l-en">Only those not optimal</span></label>
 <span class="mut small" id="count"></span>
 </div>
-<div class="legend" style="margin-bottom:10px"><span class="pill ok">Ótimo</span><span class="pill warn">Aceitável</span><span class="pill warn">Fora do ótimo</span><span class="pill bad">Fora da referência</span><span class="pill na">Sem alvo</span><span>· “Alvo” = alvo ótimo de longevidade · Δ = data principal vs data de comparação (verde = aproxima-se do ótimo) · clique num marcador para ver a evolução</span></div>
-<div class="tw tall"><table id="bt"><thead></thead><tbody><tr><td class="mut">A carregar data/sangue.json…</td></tr></tbody></table></div>
-<p class="small mut">Sem resultado no painel de 25-08-2026: bicarbonato, VDRL, lítio. As IgG alimentares indicam exposição, não intolerância.</p>
+<div class="legend" style="margin-bottom:10px"><span class="pill ok"><span class="l-pt">Ótimo</span><span class="l-en">Optimal</span></span><span class="pill warn"><span class="l-pt">Aceitável</span><span class="l-en">Acceptable</span></span><span class="pill warn"><span class="l-pt">Fora do ótimo</span><span class="l-en">Outside optimal</span></span><span class="pill bad"><span class="l-pt">Fora da referência</span><span class="l-en">Out of range</span></span><span class="pill na"><span class="l-pt">Sem alvo</span><span class="l-en">No target</span></span><span><span class="l-pt">· “Alvo” = alvo ótimo de longevidade · Δ = data principal vs data de comparação (verde = aproxima-se do ótimo) · clique num marcador para ver a evolução</span><span class="l-en">· “Target” = optimal longevity target · Δ = main date vs comparison date (green = moving towards optimal) · click a marker to see its trend</span></span></div>
+<div class="tw tall"><table id="bt"><thead></thead><tbody><tr><td class="mut"><span class="l-pt">A carregar data/sangue.json…</span><span class="l-en">Loading data/sangue.json…</span></td></tr></tbody></table></div>
+<p class="small mut"><span class="l-pt">Sem resultado no painel de 25-08-2026: bicarbonato, VDRL, lítio. As intolerâncias alimentares estão na secção própria, abaixo.</span><span class="l-en">No result in the 25-08-2026 panel: bicarbonate, VDRL, lithium. Food intolerances are in their own section, below.</span></p>
+</section>
+
+<!-- ============ INTOLERÂNCIAS ALIMENTARES ============ -->
+<section id="intolerancias">
+<h2><span class="l-pt">Intolerâncias Alimentares</span><span class="l-en">Food Intolerances</span></h2>
+<p class="src"><span class="l-pt">Fonte</span><span class="l-en">Source</span>: data/sangue.json (<span class="l-pt">lista</span><span class="l-en">list</span> “intolerancias”) · <span id="iSrc"></span></p>
+<div class="note"><span class="l-pt">IgG específicas para alimentos: indicam exposição/contacto com o alimento, não intolerância nem alergia. Por isso não têm alvo (“Sem alvo”) e não entram nas contagens das análises ao sangue. A referência é a classificação do laboratório.</span><span class="l-en">Food-specific IgG: indicates exposure to the food, not intolerance or allergy. They therefore have no target (“No target”) and are not counted with the blood tests. The reference is the lab’s classification.</span></div>
+<div class="ctrl" id="iCtrl">
+<b><span class="l-pt">Datas</span><span class="l-en">Dates</span></b>
+<label><span class="l-pt">Data</span><span class="l-en">Date</span> <select id="iA" aria-label="Data principal" data-al-en="Main date"></select></label>
+<label><span class="l-pt">comparar com</span><span class="l-en">compare with</span> <select id="iB" aria-label="Data de comparação" data-al-en="Comparison date"></select></label>
+<label><input type="checkbox" id="iAll" checked> <span class="l-pt">Mostrar todas as datas em colunas</span><span class="l-en">Show all dates as columns</span></label>
+<span id="iAwait"></span>
+</div>
+<div class="filters">
+<input id="iq" type="search" placeholder="Procurar alimento…" data-ph-en="Search food…" aria-label="Procurar alimento" data-al-en="Search food">
+<span class="mut small" id="icount"></span>
+</div>
+<div class="tw tall"><table id="it"><thead></thead><tbody><tr><td class="mut"><span class="l-pt">A carregar data/sangue.json…</span><span class="l-en">Loading data/sangue.json…</span></td></tr></tbody></table></div>
+<p class="small mut"><span class="l-pt">Δ = data principal vs data de comparação · clique num alimento para ver a evolução.</span><span class="l-en">Δ = main date vs comparison date · click a food to see its trend.</span></p>
 </section>
 
 <!-- ============ GENÉTICA ============ -->
 <section id="genetica">
+<div class="l-pt">
 <h2>Genética</h2>
-<p class="src">Fonte: <b>Genetica</b> · sergio_perfil_genetico.md (30-09-2026, revisto a 01-10-2026 01:00), sergio_variantes.csv (2448 linhas), sergio_genetica_x_sangue.md (01-10-2026 00:25) · 6 relatórios SelfDecode de 25-08-2026 (array + imputação; não diagnóstico)</p>
+<p class="src">Fonte: <b>Genetica</b> · sergio_perfil_genetico.md (30-09-2026, revisto a 01-10-2026 01:00), sergio_variantes.csv (2448 linhas), sergio_genetica_x_sangue.md (01-10-2026 00:25) · 6 relatórios genéticos de 25-08-2026 (array + imputação; não diagnóstico)</p>
 <div class="note">Sem variantes ClinVar patogénicas ou provavelmente patogénicas reportadas. Não foram analisados: BRCA/Lynch, hipercolesterolemia familiar, CYP2D6, HLA, G6PD, GSTM1/GSTT1.</div>
 <div class="grid g2">
 <div class="card"><h3 style="margin-top:0">Cardiometabólico</h3><div class="tw"><table class="gv"><tbody>
@@ -215,23 +253,86 @@ tr.det:hover td{background:#fbfcfe}
 <tr><td>Não testados</td><td>CYP2D6 · HLA · G6PD</td><td><span class="pill na">Lacuna</span></td></tr>
 </tbody></table></div></div>
 </div>
+</div>
+<div class="l-en">
+<h2>Genetics</h2>
+<p class="src">Source: <b>Genetica</b> · sergio_perfil_genetico.md (30-09-2026, revised 01-10-2026 01:00), sergio_variantes.csv (2448 rows), sergio_genetica_x_sangue.md (01-10-2026 00:25) · 6 genetic reports of 25-08-2026 (array + imputation; not diagnostic)</p>
+<div class="note">No pathogenic or likely pathogenic ClinVar variants reported. Not analysed: BRCA/Lynch, familial hypercholesterolaemia, CYP2D6, HLA, G6PD, GSTM1/GSTT1.</div>
+<div class="grid g2">
+<div class="card"><h3 style="margin-top:0">Cardiometabolic</h3><div class="tw"><table class="gv"><tbody>
+<tr><td>9p21 (CDKN2B/2A)</td><td>rs10757278 GG, rs4977574 GG, rs9632884 CC: homozygous for coronary risk, independent of lipids</td><td><span class="pill bad">Risk</span></td></tr>
+<tr><td>CV scores</td><td>Polygenic ApoB P67 · CVD P47 · atherosclerosis P2</td><td><span class="pill na">Typical</span></td></tr>
+<tr><td>CETP</td><td>rs708272 GG + rs5882 AA: high activity → low HDL (confirmed: HDL 41)</td><td><span class="pill warn">Confirmed</span></td></tr>
+<tr><td>LDLR / SORT1</td><td>rs6511720 TG, rs12740374 TG: lower-LDL alleles</td><td><span class="pill ok">Favourable</span></td></tr>
+<tr><td>LPA</td><td>rs3798220 TT (rs10455872 and KIV-2 not tested); measured Lp(a) 2 mg/dL</td><td><span class="pill ok">Low risk</span></td></tr>
+<tr><td>APOC3</td><td>Low activity (rs5128 CC, rs2542052 CC): favourable for TG</td><td><span class="pill ok">Favourable</span></td></tr>
+<tr><td>Salt</td><td>AGT rs699 GA, ACE rs4343 GA: high salt sensitivity</td><td><span class="pill warn">Caution</span></td></tr>
+<tr><td>PNPLA3</td><td>rs738409 GC (I148M het): fatty liver; TM6SF2 CC (non-carrier)</td><td><span class="pill bad">Confirmed</span></td></tr>
+<tr><td>TCF7L2</td><td>rs7903146 TC + rs12255372 TG: T2D risk (masked by medication)</td><td><span class="pill warn">Risk</span></td></tr>
+<tr><td>FTO</td><td>rs9939609 TA + rs1421085 TC: more hunger/intake</td><td><span class="pill warn">Risk</span></td></tr>
+<tr><td>MTNR1B</td><td>rs10830963 CG: higher fasting glucose; melatonin worsens glucose tolerance</td><td><span class="pill warn">Risk</span></td></tr>
+<tr><td>Others</td><td>MC4R TT · PPARG CC · GCKR TC · KCNJ11 TT · SLC30A8 CC</td><td><span class="pill na">Neutral</span></td></tr>
+</tbody></table></div></div>
+
+<div class="card"><h3 style="margin-top:0">Longevity and brain</h3><div class="tw"><table class="gv"><tbody>
+<tr><td>APOE</td><td>ε3/ε3 (inferred: rs429358 TT, rs7412 CC), no ε4</td><td><span class="pill ok">Favourable</span></td></tr>
+<tr><td>Cognition</td><td>Alzheimer's P40 · cognitive decline P1 · TREM2 non-carrier</td><td><span class="pill ok">Favourable</span></td></tr>
+<tr><td>FOXO3</td><td>rs2802292 GG + rs2764264 CC: longevity alleles</td><td><span class="pill ok">Favourable</span></td></tr>
+<tr><td>Telomeres</td><td>“Shorter” score; TERT rs2736100 CC</td><td><span class="pill warn">Unfavourable</span></td></tr>
+<tr><td>Klotho</td><td>rs9536314 TT (no KL-VS): typical</td><td><span class="pill na">Typical</span></td></tr>
+<tr><td>BDNF / COMT</td><td>Val66Met CT · COMT GG (Val/Val)</td><td><span class="pill na">Info</span></td></tr>
+<tr><td>Muscle</td><td>Frailty P82 · sarcopenia “more likely” · ACTN3 TC · PPARGC1A CC (currently contradicted by phenotype)</td><td><span class="pill warn">Risk</span></td></tr>
+<tr><td>Cancer</td><td>Colorectal P76 (“more likely”) · prostate P79 · HOXB13 CC · pancreas “less likely”</td><td><span class="pill warn">Caution</span></td></tr>
+<tr><td>Ageing</td><td>Healthy aging “higher” · facial wrinkles “more” · typical greying · presbyopia P4</td><td><span class="pill na">Info</span></td></tr>
+<tr><td>Caffeine</td><td>High sensitivity · CYP1A2 rs762551 AC</td><td><span class="pill warn">Caution</span></td></tr>
+</tbody></table></div></div>
+
+<div class="card"><h3 style="margin-top:0">Nutrients and metabolism</h3><div class="tw"><table class="gv"><tbody>
+<tr><td>Methylation</td><td>MTHFR C677T AG + A1298C TG (probable compound heterozygote) · MTR AA · BHMT AG · MAT1A AG · GNMT TT; predicted low betaine. Homocysteine 18.4 confirms</td><td><span class="pill bad">Confirmed</span></td></tr>
+<tr><td>Iron</td><td>HFE H63D het (rs1799945 CG), no C282Y · TMPRSS6 GA</td><td><span class="pill warn">Carrier</span></td></tr>
+<tr><td>Vitamin D</td><td>GC rs2282679 TT, rs7041 CC, rs4588 GG: higher predicted 25(OH)D (contradicted: 37.4)</td><td><span class="pill warn">Contradicted</span></td></tr>
+<tr><td>Omega-3</td><td>DHA: increased need · FADS1/2 high activity (index 5.4% confirms)</td><td><span class="pill bad">Confirmed</span></td></tr>
+<tr><td>Minerals</td><td>Zinc and potassium: increased need (zinc 42 confirms)</td><td><span class="pill warn">Confirmed</span></td></tr>
+<tr><td>Amino acids</td><td>Histidine: increased need; leucine and valine “higher”</td><td><span class="pill na">Info</span></td></tr>
+<tr><td>Digestion</td><td>Lactose tolerant (LCT AG) · low coeliac risk (DQ2.5 tag CC; DQ8 not assessed)</td><td><span class="pill ok">Favourable</span></td></tr>
+<tr><td>Report diet</td><td>Mediterranean (30% fat, 30% protein, 40% carbohydrate)</td><td><span class="pill na">Info</span></td></tr>
+</tbody></table></div></div>
+
+<div class="card"><h3 style="margin-top:0">Pharmacogenomics</h3><div class="tw"><table class="gv"><tbody>
+<tr><td>CYP2C9</td><td>*1/*3 (intermediate metaboliser): NSAIDs with caution</td><td><span class="pill bad">Caution</span></td></tr>
+<tr><td>VKORC1 + CYP4F2</td><td>rs9923231 TT + CYP4F2 CC: high sensitivity to warfarin/acenocoumarol</td><td><span class="pill bad">Caution</span></td></tr>
+<tr><td>SLCO1B1</td><td>*1/*14 (increased function): statins well tolerated, favourable for pitavastatin</td><td><span class="pill ok">Favourable</span></td></tr>
+<tr><td>ABCG2</td><td>rs2231142 GG: normal</td><td><span class="pill ok">Normal</span></td></tr>
+<tr><td>CYP3A4 / CYP3A5</td><td>*1/*1 / *1/*3 (expresser): rapamycin exposure tends to be lower</td><td><span class="pill na">Info</span></td></tr>
+<tr><td>CYP2C19 · CYP2B6</td><td>*1/*1 normal · *2/*4 rapid</td><td><span class="pill na">Info</span></td></tr>
+<tr><td>UGT1A1</td><td>*28 possible (ambiguous call); bilirubin shows no Gilbert pattern</td><td><span class="pill na">Ambiguous</span></td></tr>
+<tr><td>No variants</td><td>DPYD · TPMT · NUDT15 · RYR1 · CACNA1S</td><td><span class="pill ok">Normal</span></td></tr>
+<tr><td>Not tested</td><td>CYP2D6 · HLA · G6PD</td><td><span class="pill na">Gap</span></td></tr>
+</tbody></table></div></div>
+</div>
+</div>
 </section>
 </main>
-<footer>Painel compilado a 02-10-2026 (PT) só com resultados de análises e dados genéticos registados. Documento de apoio: não substitui o médico. Dados em data/sangue.json (mesmo site); sem pedidos a serviços externos.</footer>
+<footer><span class="l-pt">Compilado a 02-10-2026 (PT) só com resultados de análises e dados genéticos registados. Documento de apoio: não substitui o médico. Dados em data/sangue.json (mesmo site); sem pedidos a serviços externos.</span><span class="l-en">Compiled on 02-10-2026 (PT) only from recorded test results and genetic data. Supporting document: not a substitute for a doctor. Data in data/sangue.json (same site); no requests to external services.</span></footer>
 
 <script>
-const SL={otimo:['ok','Ótimo'],aceitavel:['warn','Aceitável'],fora_do_otimo:['warn','Fora do ótimo'],fora_de_referencia:['bad','Fora da referência'],sem_alvo:['na','Sem alvo']};
+// ===== idioma =====
+let LANG='pt';try{if(localStorage.getItem('lang')==='en')LANG='en'}catch(e){}
+const L=(p,e)=>LANG==='en'?e:p;
+const SL={otimo:['ok','Ótimo','Optimal'],aceitavel:['warn','Aceitável','Acceptable'],fora_do_otimo:['warn','Fora do ótimo','Outside optimal'],fora_de_referencia:['bad','Fora da referência','Out of range'],sem_alvo:['na','Sem alvo','No target']};
+const lab=s=>SL[s][LANG==='en'?2:1];
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const pt=s=>/^-?\d+(\.\d+)?$/.test(s)?s.replace('.',','):s;
-const ptr=s=>String(s).replace(/(\d)\.(\d)/g,'$1,$2');
-// ===== séries temporais (dados em data/*.json) =====
+const pt=s=>LANG==='en'?s:(/^-?\d+(\.\d+)?$/.test(s)?s.replace('.',','):s);
+const ptr=s=>LANG==='en'?String(s):String(s).replace(/(\d)\.(\d)/g,'$1,$2');
+const tx=(o,k)=>LANG==='en'&&o&&o[k+'_en']?o[k+'_en']:(o&&o[k])||'';
+// ===== séries temporais (dados em data/sangue.json) =====
 const has=x=>x!==null&&x!==undefined&&x!=='';
 const isNum=v=>typeof v==='number'||/^\s*-?\d+(\.\d+)?\s*$/.test(String(v));
 const toNum=v=>typeof v==='number'?v:parseFloat(v);
 const fdate=d=>d.split('-').reverse().join('-');
 const decs=v=>{const t=String(v),i=t.indexOf('.');return i<0?0:t.length-i-1};
-const fnum=(x,d)=>x.toLocaleString('pt-PT',{minimumFractionDigits:d,maximumFractionDigits:d,useGrouping:false});
-const fv=v=>typeof v==='number'?String(v).replace('.',','):pt(String(v));
+const fnum=(x,d)=>x.toLocaleString(LANG==='en'?'en-GB':'pt-PT',{minimumFractionDigits:d,maximumFractionDigits:d,useGrouping:false});
+const fv=v=>typeof v==='number'?(LANG==='en'?String(v):String(v).replace('.',',')):pt(String(v));
 // mesma regra que biomarcadores/scripts/comum.py (usada só se o resultado não trouxer "s")
 function estado(v,rmin,rmax,omin,omax,regras){regras=regras||[];if(!isNum(v))return 'sem_alvo';v=toNum(v);
  if(regras.includes('acima_do_otimo_fora')&&has(omax)&&v>=omax)return 'fora_de_referencia';
@@ -240,7 +341,7 @@ function estado(v,rmin,rmax,omin,omax,regras){regras=regras||[];if(!isNum(v))ret
  if(!((!has(rmin)||v>=rmin)&&(!has(rmax)||v<=rmax)))return 'fora_de_referencia';
  const lo=has(omin)?omin:0,marg=has(omax)?0.25*(omax-lo):0.10*Math.abs(omin),dist=(has(omin)&&v<omin)?omin-v:v-omax;
  return dist<=marg?'aceitavel':'fora_do_otimo';}
-const stOf=(row,r)=>r?(SL[r.s]?r.s:estado(r.v,r.ref_min,r.ref_max,row.omin,row.omax,row.regras)):null;
+const stOf=(row,r)=>r?((row.regras||[]).includes('sem_alvo')?'sem_alvo':SL[r.s]?r.s:estado(r.v,r.ref_min,r.ref_max,row.omin,row.omax,row.regras)):null;
 const kOf=s=>s?SL[s][0]:'na';
 // +1 = aproxima-se do ótimo, -1 = afasta-se, 0 = neutro
 function trendDir(row,a,b){const da=distO(row,a),db=distO(row,b);
@@ -252,42 +353,44 @@ function delta(row,ra,rb){if(!ra||!rb||!isNum(ra.v)||!isNum(rb.v))return null;co
  const diff=a-b,pc=b!==0?diff/Math.abs(b)*100:null,dir=trendDir(row,a,b);return {diff,d,pc,dir,arrow:Math.abs(diff)<1e-12?'＝':diff>0?'▲':'▼'}}
 function deltaHtml(x){if(!x)return '<span class="mut">—</span>';const cls=x.dir>0?'good':x.dir<0?'bad':'neu';
  return `<span class="tr ${cls}">${x.arrow} ${x.diff>0?'+':''}${fnum(x.diff,x.d)}${x.pc!==null&&Math.abs(x.diff)>1e-12?`<small>${x.pc>0?'+':''}${fnum(x.pc,Math.abs(x.pc)<10?1:0)}%</small>`:''}</span>`}
+const nm=row=>LANG==='en'&&row.label_en?row.label_en:row.label;
 // gráfico SVG inline
 function chartSVG(row,cols){const pts=cols.slice().sort((a,b)=>a.data<b.data?-1:1).map(c=>({c,r:row.res[c.data]})).filter(p=>p.r&&isNum(p.r.v)).map(p=>({...p,y:toNum(p.r.v),t:Date.parse(p.r.data_real||p.c.data)}));
  if(!pts.length)return '';
- const W=560,H=190,L=54,R=36,T=22,B=34;const ys=pts.map(p=>p.y);let lo=Math.min(...ys),hi=Math.max(...ys);const span0=(hi-lo)||Math.abs(hi)*0.5||1;
- const rr=pts[pts.length-1].r;[row.omin,row.omax,rr.ref_min,rr.ref_max].forEach(b=>{if(has(b)&&b>=lo-span0*3&&b<=hi+span0*3){lo=Math.min(lo,b);hi=Math.max(hi,b)}});
+ const W=560,H=190,Lm=54,R=36,T=22,B=34;const ys=pts.map(p=>p.y);let lo=Math.min(...ys),hi=Math.max(...ys);const span0=(hi-lo)||Math.abs(hi)*0.5||1;
+ const semAlvo=(row.regras||[]).includes('sem_alvo');const rr=pts[pts.length-1].r;[row.omin,row.omax].concat(semAlvo?[]:[rr.ref_min,rr.ref_max]).forEach(b=>{if(has(b)&&b>=lo-span0*3&&b<=hi+span0*3){lo=Math.min(lo,b);hi=Math.max(hi,b)}});
  let pad=(hi-lo)*0.12||Math.abs(hi)*0.1||1;const pos=lo>=0;lo-=pad;hi+=pad;if(pos&&lo<0)lo=0;
- const t0=pts[0].t,t1=pts[pts.length-1].t,X=t=>pts.length<2?L+(W-L-R)/2:L+(t-t0)/(t1-t0||1)*(W-L-R),Y=v=>T+(hi-v)/(hi-lo)*(H-T-B);
+ const t0=pts[0].t,t1=pts[pts.length-1].t,X=t=>pts.length<2?Lm+(W-Lm-R)/2:Lm+(t-t0)/(t1-t0||1)*(W-Lm-R),Y=v=>T+(hi-v)/(hi-lo)*(H-T-B);
  const cl=v=>Math.max(T,Math.min(H-B,Y(v)));let g='';
- if(has(row.omin)||has(row.omax)){const y1=cl(has(row.omax)?row.omax:hi),y2=cl(has(row.omin)?row.omin:lo);if(y2-y1>1)g+=`<rect x="${L}" y="${y1}" width="${W-L-R}" height="${y2-y1}" fill="#e6f6ec"/>`+(y2-y1>13?`<text x="${W-R-4}" y="${y1+12}" text-anchor="end" font-size="10" fill="#0b7a3b">ótimo</text>`:'')}
- [rr.ref_min,rr.ref_max].forEach(b=>{if(has(b)&&b>lo&&b<hi)g+=`<line x1="${L}" x2="${W-R}" y1="${Y(b)}" y2="${Y(b)}" stroke="#d93636" stroke-dasharray="4 3" stroke-width="1"/><text x="${L+4}" y="${Y(b)-3}" font-size="9.5" fill="#b02020">ref. ${fv(b)}</text>`});
- for(let i=0;i<3;i++){const v=lo+(hi-lo)*i/2;g+=`<text x="${L-6}" y="${Y(v)+3}" text-anchor="end" font-size="10" fill="#5b6b7d">${fnum(v,Math.abs(hi-lo)<1?3:Math.abs(hi-lo)<10?2:Math.abs(hi-lo)<100?1:0)}</text><line x1="${L}" x2="${W-R}" y1="${Y(v)}" y2="${Y(v)}" stroke="#eef1f5"/>`}
- if(pts.length>1)g+=`<polyline fill="none" stroke="#1f5eff" stroke-width="2" points="${pts.map(p=>X(p.t)+','+Y(p.y)).join(' ')}"/>`;
- const col={ok:'#12a150',warn:'#d98a00',bad:'#d93636',na:'#8a97a8'};
- pts.forEach(p=>{const k=kOf(stOf(row,p.r));g+=`<circle cx="${X(p.t)}" cy="${Y(p.y)}" r="5" fill="${col[k]}" stroke="#fff" stroke-width="1.5"><title>${esc(fdate(p.r.data_real||p.c.data))}: ${esc(fv(p.r.v))}</title></circle><text x="${X(p.t)}" y="${Y(p.y)-9}" text-anchor="middle" font-size="11" font-weight="700" fill="#14202e">${esc(fv(p.r.v))}</text><text x="${X(p.t)}" y="${H-12}" text-anchor="middle" font-size="10" fill="#5b6b7d">${esc(fdate(p.c.data))}</text>`});
- return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Evolução de ${esc(row.label)}">${g}</svg>`}
+ if(has(row.omin)||has(row.omax)){const y1=cl(has(row.omax)?row.omax:hi),y2=cl(has(row.omin)?row.omin:lo);if(y2-y1>1)g+=`<rect x="${Lm}" y="${y1}" width="${W-Lm-R}" height="${y2-y1}" style="fill:var(--chok)"/>`+(y2-y1>13?`<text x="${W-R-4}" y="${y1+12}" text-anchor="end" font-size="10" style="fill:var(--okt)">${L('ótimo','optimal')}</text>`:'')}
+ [rr.ref_min,rr.ref_max].forEach(b=>{if(!semAlvo&&has(b)&&b>lo&&b<hi)g+=`<line x1="${Lm}" x2="${W-R}" y1="${Y(b)}" y2="${Y(b)}" style="stroke:var(--bad)" stroke-dasharray="4 3" stroke-width="1"/><text x="${Lm+4}" y="${Y(b)-3}" font-size="9.5" style="fill:var(--badt)">ref. ${fv(b)}</text>`});
+ for(let i=0;i<3;i++){const v=lo+(hi-lo)*i/2;g+=`<text x="${Lm-6}" y="${Y(v)+3}" text-anchor="end" font-size="10" style="fill:var(--mut)">${fnum(v,Math.abs(hi-lo)<1?3:Math.abs(hi-lo)<10?2:Math.abs(hi-lo)<100?1:0)}</text><line x1="${Lm}" x2="${W-R}" y1="${Y(v)}" y2="${Y(v)}" style="stroke:var(--grid)"/>`}
+ if(pts.length>1)g+=`<polyline fill="none" style="stroke:var(--acc)" stroke-width="2" points="${pts.map(p=>X(p.t)+','+Y(p.y)).join(' ')}"/>`;
+ const col={ok:'var(--ok)',warn:'var(--warn)',bad:'var(--bad)',na:'var(--na)'};
+ pts.forEach(p=>{const k=kOf(stOf(row,p.r));g+=`<circle cx="${X(p.t)}" cy="${Y(p.y)}" r="5" style="fill:${col[k]};stroke:var(--card)" stroke-width="1.5"><title>${esc(fdate(p.r.data_real||p.c.data))}: ${esc(fv(p.r.v))}</title></circle><text x="${X(p.t)}" y="${Y(p.y)-9}" text-anchor="middle" font-size="11" font-weight="700" style="fill:var(--ink)">${esc(fv(p.r.v))}</text><text x="${X(p.t)}" y="${H-12}" text-anchor="middle" font-size="10" style="fill:var(--mut)">${esc(fdate(p.c.data))}</text>`});
+ return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${L('Evolução de','Trend of')} ${esc(nm(row))}">${g}</svg>`}
 function detailHtml(row,cols){const svg=chartSVG(row,cols),n=cols.filter(c=>row.res[c.data]).length,num=cols.filter(c=>row.res[c.data]&&isNum(row.res[c.data].v)).length;
- let msg='';if(n<2)msg='<span class="await">⏳ Aguarda próximo exame: a tendência aparece quando houver 2 ou mais datas.</span>';else if(!num)msg='<span class="mut small">Resultado qualitativo: sem gráfico.</span>';
- const lst=cols.filter(c=>row.res[c.data]).map(c=>{const r=row.res[c.data],st=stOf(row,r),[k,l]=SL[st];return `<tr><td>${esc(fdate(r.data_real||c.data))}</td><td class="num">${esc(fv(r.v))} <span class="mut">${esc(r.u||row.u||'')}</span></td><td><span class="pill ${k}">${l}</span></td><td class="mut">${esc(ptr(r.ref||row.ref||''))}${r.lab?' · '+esc(r.lab):''}${r.nota?'<br>'+esc(r.nota):''}</td></tr>`}).join('');
- return `<div class="in"><div class="chartwrap">${svg}<table><thead><tr><th>Data</th><th>Valor</th><th>Estado</th><th>Ref. · nota</th></tr></thead><tbody>${lst}</tbody></table></div>${msg?`<div class="msg">${msg}</div>`:''}</div>`}
-// tabela genérica
+ let msg='';if(n<2)msg=`<span class="await">⏳ ${L('Aguarda próximo exame: a tendência aparece quando houver 2 ou mais datas.','Awaiting next test: the trend appears once there are 2 or more dates.')}</span>`;else if(!num)msg=`<span class="mut small">${L('Resultado qualitativo: sem gráfico.','Qualitative result: no chart.')}</span>`;
+ const lst=cols.filter(c=>row.res[c.data]).map(c=>{const r=row.res[c.data],st=stOf(row,r),k=kOf(st);const nt=tx(r,'nota');return `<tr><td>${esc(fdate(r.data_real||c.data))}</td><td class="num">${esc(fv(r.v))} <span class="mut">${esc(r.u||row.u||'')}</span></td><td><span class="pill ${k}">${lab(st)}</span></td><td class="mut">${esc(ptr(tx(r,'ref')||row.ref||''))}${nt?'<br>'+esc(nt):''}</td></tr>`}).join('');
+ return `<div class="in"><div class="chartwrap">${svg}<table><thead><tr><th>${L('Data','Date')}</th><th>${L('Valor','Value')}</th><th>${L('Estado','Status')}</th><th>${L('Ref. · nota','Ref. · note')}</th></tr></thead><tbody>${lst}</tbody></table></div>${msg?`<div class="msg">${msg}</div>`:''}</div>`}
+// tabela
 function Series(o){const cols=o.colheitas.slice().sort((a,b)=>a.data<b.data?1:-1);const A=document.getElementById(o.ids.A),Bs=document.getElementById(o.ids.B),All=document.getElementById(o.ids.all);
- A.innerHTML=cols.map(c=>`<option value="${c.data}">${esc(fdate(c.data))} · ${esc(c.rotulo||'')}</option>`).join('');
- const fillB=()=>{const others=cols.filter(c=>c.data!==A.value),prev=others.find(c=>c.data<A.value)||others[0];
-  Bs.innerHTML=others.length?others.map(c=>`<option value="${c.data}"${prev&&c.data===prev.data?' selected':''}>${esc(fdate(c.data))} · ${esc(c.rotulo||'')}</option>`).join(''):'<option value="">— sem outra data —</option>';Bs.disabled=!others.length};
- fillB();const aw=document.getElementById(o.ids.await);
- if(cols.length<2){aw.innerHTML='<span class="await">⏳ Só há 1 data ('+esc(fdate(cols[0].data))+'): aguarda próximo exame para comparar e ver tendências.</span>';All.disabled=true}
+ const optTxt=c=>`${esc(fdate(c.data))} · ${esc(tx(c,'rotulo'))}`;
+ const fillA=()=>{const v=A.value;A.innerHTML=cols.map(c=>`<option value="${c.data}">${optTxt(c)}</option>`).join('');if(v)A.value=v};
+ const fillB=keep=>{const v=Bs.value,others=cols.filter(c=>c.data!==A.value),prev=others.find(c=>c.data<A.value)||others[0];
+  Bs.innerHTML=others.length?others.map(c=>`<option value="${c.data}"${prev&&c.data===prev.data?' selected':''}>${optTxt(c)}</option>`).join(''):`<option value="">${L('— sem outra data —','— no other date —')}</option>`;Bs.disabled=!others.length;if(keep&&v&&others.some(c=>c.data===v))Bs.value=v};
+ const aw=document.getElementById(o.ids.await);
+ const awaitMsg=()=>{aw.innerHTML=cols.length<2?`<span class="await">⏳ ${L('Só há 1 data','Only 1 date')} (${esc(fdate(cols[0].data))}): ${L('aguarda próximo exame para comparar e ver tendências.','awaiting next test to compare and see trends.')}</span>`:''};
+ fillA();fillB();awaitMsg();if(cols.length<2)All.disabled=true;
  let openK=null;const isOpen=k=>openK===k;const tb=document.querySelector('#'+o.ids.table+' tbody'),th=document.querySelector('#'+o.ids.table+' thead');
- const api={cols,row:null,A:()=>A.value,B:()=>Bs.value,render};
  function shown(){if(All.checked||!Bs.value)return cols;return cols.filter(c=>c.data===A.value||c.data===Bs.value)}
- function render(){const sc=shown(),a=A.value,b=Bs.value,ncol=o.before.length+sc.length+1+o.after.length;
-  th.innerHTML='<tr>'+o.before.map(h=>`<th>${h}</th>`).join('')+sc.map(c=>`<th class="dcol${c.data===a?' a':''}">${esc(fdate(c.data))}<small>${c.data===a?'principal':c.data===b?'comparação':esc(c.rotulo||'')}</small></th>`).join('')+`<th class="dcol" title="${b?'Data principal vs data de comparação':'Aguarda próximo exame'}">Δ${b?`<small>${esc(fdate(a))} vs ${esc(fdate(b))}</small>`:'<small>aguarda</small>'}</th>`+o.after.map(h=>`<th>${h}</th>`).join('')+'</tr>';
+ function render(){const sc=shown(),a=A.value,b=Bs.value,bef=o.before(),aft=o.after(),ncol=bef.length+sc.length+1+aft.length;
+  th.innerHTML='<tr>'+bef.map(h=>`<th>${h}</th>`).join('')+sc.map(c=>`<th class="dcol${c.data===a?' a':''}">${esc(fdate(c.data))}<small>${c.data===a?L('principal','main'):c.data===b?L('comparação','comparison'):esc(tx(c,'rotulo'))}</small></th>`).join('')+`<th class="dcol" title="${b?L('Data principal vs data de comparação','Main date vs comparison date'):L('Aguarda próximo exame','Awaiting next test')}">Δ${b?`<small>${esc(fdate(a))} vs ${esc(fdate(b))}</small>`:`<small>${L('aguarda','awaiting')}</small>`}</th>`+aft.map(h=>`<th>${h}</th>`).join('')+'</tr>';
   const rs=o.rows.filter(r=>o.filter(r,a,b));let h='';
-  rs.forEach(r=>{const ra=r.res[a],rb=b?r.res[b]:null;h+=`<tr class="mk${isOpen(r.key)?' open':''}" data-k="${esc(r.key)}" tabindex="0" aria-expanded="${isOpen(r.key)}">`+o.cellsBefore(r,ra)+sc.map(c=>{const x=r.res[c.data];if(!x)return '<td class="v miss" title="Sem resultado nesta data">—</td>';const k=kOf(stOf(r,x));return `<td class="v ${k}" title="${esc(SL[stOf(r,x)][1])}">${esc(fv(x.v))}</td>`}).join('')+`<td class="dl">${deltaHtml(delta(r,ra,rb))}</td>`+o.cellsAfter(r,ra)+'</tr>';
+  rs.forEach(r=>{const ra=r.res[a],rb=b?r.res[b]:null;h+=`<tr class="mk${isOpen(r.key)?' open':''}" data-k="${esc(r.key)}" tabindex="0" aria-expanded="${isOpen(r.key)}">`+o.cellsBefore(r,ra)+sc.map(c=>{const x=r.res[c.data];if(!x)return `<td class="v miss" title="${L('Sem resultado nesta data','No result on this date')}">—</td>`;const st=stOf(r,x);return `<td class="v ${kOf(st)}" title="${esc(lab(st))}">${esc(fv(x.v))}</td>`}).join('')+`<td class="dl">${deltaHtml(delta(r,ra,rb))}</td>`+o.cellsAfter(r,ra)+'</tr>';
    if(isOpen(r.key))h+=`<tr class="det"><td colspan="${ncol}">${detailHtml(r,cols)}</td></tr>`});
-  tb.innerHTML=h||`<tr><td colspan="${ncol}" class="mut">Nenhum resultado com estes filtros.</td></tr>`;
-  document.getElementById(o.ids.count).textContent=rs.length+' de '+o.rows.length;if(o.onRender)o.onRender(a,b)}
+  tb.innerHTML=h||`<tr><td colspan="${ncol}" class="mut">${L('Nenhum resultado com estes filtros.','No results with these filters.')}</td></tr>`;
+  document.getElementById(o.ids.count).textContent=rs.length+L(' de ',' of ')+o.rows.length;if(o.onRender)o.onRender(a,b)}
  // um gráfico aberto de cada vez: o mesmo marcador alterna; outro marcador troca; clique fora do painel ou Esc fecha
  const close=()=>{if(openK===null)return false;const k=openK;openK=null;render();return k};
  tb.addEventListener('click',e=>{const tr=e.target.closest('tr.mk');if(!tr||!tb.contains(tr))return;const k=tr.dataset.k;openK=(openK===k)?null:k;render();if(openK!==null){const n=tb.querySelector('tr.mk.open');if(n)n.focus({preventScroll:true})}});
@@ -295,33 +398,67 @@ function Series(o){const cols=o.colheitas.slice().sort((a,b)=>a.data<b.data?1:-1
  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&openK!==null){const k=close();const n=tb.querySelector(`tr.mk[data-k="${k}"]`);if(n)n.focus({preventScroll:true})}});
  tb.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('tr.mk')){e.preventDefault();e.target.click()}});
  A.addEventListener('input',()=>{fillB();render()});Bs.addEventListener('input',render);All.addEventListener('input',render);
- (o.inputs||[]).forEach(id=>document.getElementById(id).addEventListener('input',render));render();return api}
-function mkRows(list,extra){return list.map((m,i)=>{const res={};(m.resultados||[]).forEach(r=>{res[r.data]=r});return Object.assign({key:String(i),label:m.m,omin:m.otimo_min,omax:m.otimo_max,regras:m.regras||[],melhor:m.melhor||null,u:m.u||'',ref:m.ref||'',res},extra?extra(m):{})})}
-function alvoTxt(m){if(has(m.alvo))return m.alvo;const a=m.otimo_min,b=m.otimo_max;return has(a)&&has(b)?a+'–'+b:has(b)?'< '+b:has(a)?'> '+a:'—'}
+ (o.inputs||[]).forEach(id=>document.getElementById(id).addEventListener('input',render));render();
+ return {cols,render,relabel(){fillA();fillB(true);awaitMsg();render()}}}
+function mkRows(list,extra){return list.map((m,i)=>{const res={};(m.resultados||[]).forEach(r=>{res[r.data]=r});return Object.assign({key:String(i),label:m.m,label_en:m.m_en||'',omin:m.otimo_min,omax:m.otimo_max,regras:m.regras||[],melhor:m.melhor||null,u:m.u||'',ref:m.ref||'',res},extra?extra(m):{})})}
+function alvoTxt(m){const a=m.otimo_min,b=m.otimo_max;return has(a)&&has(b)?a+'–'+b:has(b)?'< '+b:has(a)?'> '+a:'—'}
 function loadJSON(u){return fetch(u,{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error(u+': HTTP '+r.status);return r.json()})}
-function failMsg(id,u,e){document.querySelector('#'+id+' tbody').innerHTML=`<tr><td class="mut">Não foi possível carregar ${esc(u)} (${esc(e.message)}). Se abriu o ficheiro localmente, sirva a pasta com <code>python3 -m http.server</code>.</td></tr>`}
-let SS=null;
-function heroMeta(){if(!SS)return;const c=SS.cols;document.getElementById('heroMeta').innerHTML=`Análises: ${c.length} data${c.length>1?'s':''} (última ${esc(fdate(c[0].data))}${c.length>1?', anterior '+esc(fdate(c[1].data)):''})`+(c.length<2?' · tendências a partir da próxima colheita':'')+'<br>Compilado a 02-10-2026 (PT)'}
+let LOADERR=null;
+function failMsg(){if(!LOADERR)return;const ti=document.querySelector('#it tbody');if(ti)ti.innerHTML=`<tr><td class="mut">${L('Não foi possível carregar','Could not load')} data/sangue.json.</td></tr>`;document.querySelector('#bt tbody').innerHTML=`<tr><td class="mut">${L('Não foi possível carregar','Could not load')} data/sangue.json (${esc(LOADERR.message)}). ${L('Se abriu o ficheiro localmente, sirva a pasta com','If you opened the file locally, serve the folder with')} <code>python3 -m http.server</code>.</td></tr>`}
+let SS=null,SD=null,SROWS=null,IS=null,IROWS=null;
+function heroMeta(){const el=document.getElementById('heroMeta');if(!SS){el.innerHTML=L('Análises ao sangue','Blood tests')+'<br>'+L('Compilado a 02-10-2026 (PT)','Compiled on 02-10-2026 (PT)');return}const c=SS.cols;
+ el.innerHTML=`${L('Análises','Tests')}: ${c.length} ${c.length>1?L('datas','dates'):L('data','date')} (${L('última','latest')} ${esc(fdate(c[0].data))}${c.length>1?', '+L('anterior','previous')+' '+esc(fdate(c[1].data)):''})`+(c.length<2?' · '+L('tendências a partir da próxima colheita','trends from the next test onwards'):'')+'<br>'+L('Compilado a 02-10-2026 (PT)','Compiled on 02-10-2026 (PT)')}
+function fillCats(){if(!SROWS)return;const cs=document.getElementById('cat'),v=cs.value,seen=new Set();cs.innerHTML=`<option value="">${L('Todas as categorias','All categories')}</option>`;
+ SROWS.forEach(r=>{if(seen.has(r.c))return;seen.add(r.c);const op=document.createElement('option');op.value=r.c;op.textContent=LANG==='en'&&r.c_en?r.c_en:r.c;cs.appendChild(op)});cs.value=v}
+function iSrcTxt(){if(!SD||!IROWS)return;const ds=[...new Set(IROWS.flatMap(r=>Object.values(r.res).map(x=>x.data_real||x.data)))].sort();document.getElementById('iSrc').textContent=(ds.length?ds.map(fdate).join(' | '):'—')+' · '+IROWS.length+' '+L('marcadores','markers')}
+function srcTxt(){iSrcTxt();if(!SD)return;document.getElementById('sSrc').textContent=SD.colheitas.map(c=>tx(c,'descricao')||fdate(c.data)).join(' | ')+' · '+SROWS.length+' '+L('marcadores','markers')+'. '+SD.colheitas.map(c=>tx(c,'nota')).filter(Boolean).join(' ')}
 // ---- sangue ----
-loadJSON('data/sangue.json').then(D=>{const rows=mkRows(D.marcadores,m=>({c:m.c,alvo:alvoTxt(m)}));
- const cats=[...new Set(rows.map(r=>r.c))];const cs=document.getElementById('cat');cats.forEach(c=>{const op=document.createElement('option');op.value=c;op.textContent=c;cs.appendChild(op)});
- document.getElementById('sSrc').textContent=D.colheitas.map(c=>c.descricao||fdate(c.data)).join(' | ')+' · '+rows.length+' marcadores';
+loadJSON('data/sangue.json').then(D=>{SD=D;const rows=mkRows(D.marcadores,m=>({c:m.c,c_en:m.c_en||'',alvo:has(m.alvo)?m.alvo:alvoTxt(m),alvo_en:m.alvo_en||''}));SROWS=rows;
+ fillCats();srcTxt();const cs=document.getElementById('cat');
  if(D.colheitas.length<2)document.getElementById('sTr').disabled=true;
  SS=Series({colheitas:D.colheitas,rows,ids:{A:'sA',B:'sB',all:'sAll',await:'sAwait',table:'bt',count:'count'},inputs:['q','cat','st','flagged','sTr'],
-  before:['Marcador'],after:['Unidade','Referência do lab.','Alvo','Estado','Categoria','Nota'],
+  before:()=>[L('Marcador','Marker')],after:()=>[L('Unidade','Unit'),L('Referência do lab.','Lab reference'),L('Alvo','Target'),L('Estado','Status'),L('Categoria','Category'),L('Nota','Note')],
   filter:(r,a,b)=>{const q=document.getElementById('q').value.trim().toLowerCase(),c=cs.value,s=document.getElementById('st').value,f=document.getElementById('flagged').checked,t=document.getElementById('sTr').value;const ra=r.res[a],st=stOf(r,ra);
-   if(q&&!r.label.toLowerCase().includes(q))return false;if(c&&r.c!==c)return false;if(s&&(!st||SL[st][0]!==s))return false;if(f&&!(st==='fora_do_otimo'||st==='fora_de_referencia'||st==='aceitavel'))return false;
+   if(q&&!(r.label.toLowerCase().includes(q)||r.label_en.toLowerCase().includes(q)))return false;if(c&&r.c!==c)return false;if(s&&(!st||SL[st][0]!==s))return false;if(f&&!(st==='fora_do_otimo'||st==='fora_de_referencia'||st==='aceitavel'))return false;
    if(t){const rb=b?r.res[b]:null;if(t==='chg')return !!(ra&&rb&&stOf(r,ra)!==stOf(r,rb));const d=delta(r,ra,rb);if(!d)return false;return t==='good'?d.dir>0:d.dir<0}return true},
-  cellsBefore:(r,ra)=>`<td><b>${esc(r.label)}</b>${ra&&((ra.lab&&ra.lab!=='AIWO')||ra.data_real)?`<div class="small mut">${esc(ra.lab||'')}${ra.data_real?' · '+esc(fdate(ra.data_real)):''}</div>`:''}</td>`,
-  cellsAfter:(r,ra)=>{if(!ra)return `<td></td><td></td><td class="small">${esc(ptr(r.alvo))}</td><td><span class="mut small">sem resultado</span></td><td class="small mut">${esc(r.c)}</td><td></td>`;const [k,l]=SL[stOf(r,ra)];return `<td class="mut small">${esc(ra.u||'')}</td><td class="small">${esc(ptr(ra.ref||''))}</td><td class="small">${esc(ptr(r.alvo))}</td><td><span class="pill ${k}">${l}</span></td><td class="small mut">${esc(r.c)}</td><td class="small">${esc(ra.nota||'')}</td>`},
-  onRender:(a,b)=>summary(rows,a,b,D.colheitas)});heroMeta()}).catch(e=>{console.warn(e);failMsg('bt','data/sangue.json',e)});
+  cellsBefore:(r,ra)=>`<td><b>${esc(nm(r))}</b>${ra&&ra.data_real?`<div class="small mut">${esc(fdate(ra.data_real))}</div>`:''}</td>`,
+  cellsAfter:(r,ra)=>{const al=LANG==='en'&&r.alvo_en?r.alvo_en:r.alvo,ct=LANG==='en'&&r.c_en?r.c_en:r.c;if(!ra)return `<td></td><td></td><td class="small">${esc(ptr(al))}</td><td><span class="mut small">${L('sem resultado','no result')}</span></td><td class="small mut">${esc(ct)}</td><td></td>`;const st=stOf(r,ra);return `<td class="mut small">${esc(ra.u||'')}</td><td class="small">${esc(ptr(tx(ra,'ref')))}</td><td class="small">${esc(ptr(al))}</td><td><span class="pill ${kOf(st)}">${lab(st)}</span></td><td class="small mut">${esc(ct)}</td><td class="small">${esc(tx(ra,'nota'))}</td>`},
+  onRender:(a,b)=>summary(rows,a,b,D.colheitas)});heroMeta();intol(D)}).catch(e=>{console.warn(e);LOADERR=e;failMsg()});
+// ---- intolerâncias alimentares (secção própria; estado sempre "Sem alvo") ----
+function intol(D){const list=D.intolerancias||[];IROWS=mkRows(list,m=>({c:m.c,c_en:m.c_en||''}));iSrcTxt();
+ const ds=new Set(list.flatMap(m=>(m.resultados||[]).map(r=>r.data))),cols=D.colheitas.filter(c=>ds.has(c.data));
+ if(!cols.length){document.querySelector('#it tbody').innerHTML=`<tr><td class="mut">${L('Sem resultados de intolerâncias alimentares.','No food intolerance results.')}</td></tr>`;return}
+ IS=Series({colheitas:cols,rows:IROWS,ids:{A:'iA',B:'iB',all:'iAll',await:'iAwait',table:'it',count:'icount'},inputs:['iq'],
+  before:()=>[L('Alimento','Food')],after:()=>[L('Unidade','Unit'),L('Referência do lab.','Lab reference'),L('Estado','Status'),L('Nota','Note')],
+  filter:r=>{const q=document.getElementById('iq').value.trim().toLowerCase();return !q||r.label.toLowerCase().includes(q)||r.label_en.toLowerCase().includes(q)},
+  cellsBefore:(r,ra)=>`<td><b>${esc(nm(r))}</b>${ra&&ra.data_real?`<div class="small mut">${esc(fdate(ra.data_real))}</div>`:''}</td>`,
+  cellsAfter:(r,ra)=>{if(!ra)return `<td></td><td></td><td><span class="mut small">${L('sem resultado','no result')}</span></td><td></td>`;const st=stOf(r,ra);return `<td class="mut small">${esc(ra.u||'')}</td><td class="small">${esc(ptr(tx(ra,'ref')))}</td><td><span class="pill ${kOf(st)}">${lab(st)}</span></td><td class="small">${esc(tx(ra,'nota'))}</td>`}});
+ if(SS)SS.render()}
 function summary(rows,a,b,cols){const c={ok:0,warn:0,bad:0,na:0};let t=0,good=0,bad=0,chg=0;rows.forEach(r=>{const ra=r.res[a];if(!ra)return;t++;c[kOf(stOf(r,ra))]++;if(b){const rb=r.res[b],d=delta(r,ra,rb);if(d&&d.dir>0)good++;if(d&&d.dir<0)bad++;if(rb&&stOf(r,ra)!==stOf(r,rb))chg++}});
  const col={ok:'var(--ok)',warn:'var(--warn)',bad:'var(--bad)',na:'var(--na)'};const ca=cols.find(x=>x.data===a);
- document.getElementById('bsTitle').textContent='Análises de '+fdate(a)+' em números';
- document.getElementById('bloodSummary').innerHTML=`<div><span class="num" style="font-size:22px">${t}</span> <span class="mut small">marcadores · ${esc(ca&&ca.descricao||fdate(a))}</span></div><div class="bar">`+['ok','warn','bad','na'].map(k=>`<span style="width:${t?c[k]/t*100:0}%;background:${col[k]}"></span>`).join('')+'</div>'+
- `<div class="legend"><span class="pill ok">${c.ok} ótimo</span><span class="pill warn">${c.warn} aceitável/fora do ótimo</span><span class="pill bad">${c.bad} fora da referência</span><span class="pill na">${c.na} sem alvo</span></div>`+
- (b?`<div class="legend" style="margin-top:8px"><span>vs ${esc(fdate(b))}:</span><span class="pill ok">${good} melhoraram</span><span class="pill bad">${bad} pioraram</span><span class="pill info">${chg} mudaram de estado</span></div>`:'<div style="margin-top:10px"><span class="await">⏳ Aguarda próximo exame para comparar com esta data</span></div>')}
+ document.getElementById('bsTitle').textContent=L('Análises de '+fdate(a)+' em números','Tests of '+fdate(a)+' in numbers');
+ document.getElementById('bloodSummary').innerHTML=`<div><span class="num" style="font-size:22px">${t}</span> <span class="mut small">${L('marcadores','markers')} · ${esc(tx(ca,'descricao')||fdate(a))}</span></div><div class="bar">`+['ok','warn','bad','na'].map(k=>`<span style="width:${t?c[k]/t*100:0}%;background:${col[k]}"></span>`).join('')+'</div>'+
+ `<div class="legend"><span class="pill ok">${c.ok} ${L('ótimo','optimal')}</span><span class="pill warn">${c.warn} ${L('aceitável/fora do ótimo','acceptable/outside optimal')}</span><span class="pill bad">${c.bad} ${L('fora da referência','out of range')}</span><span class="pill na">${c.na} ${L('sem alvo','no target')}</span></div>`+
+ (b?`<div class="legend" style="margin-top:8px"><span>vs ${esc(fdate(b))}:</span><span class="pill ok">${good} ${L('melhoraram','improved')}</span><span class="pill bad">${bad} ${L('pioraram','worsened')}</span><span class="pill info">${chg} ${L('mudaram de estado','changed status')}</span></div>`:`<div style="margin-top:10px"><span class="await">⏳ ${L('Aguarda próximo exame para comparar com esta data','Awaiting next test to compare with this date')}</span></div>`)+
+ (IROWS&&IROWS.length?`<div class="small mut" style="margin-top:10px">${L('Estas contagens não incluem as','These counts exclude the')} ${IROWS.length} ${L('análises de intolerâncias alimentares, que têm secção própria:','food intolerance tests, which have their own section:')} <a href="#intolerancias">${L('Intolerâncias Alimentares','Food Intolerances')}</a>.</div>`:'')}
+// ---- alternar idioma (estático: .l-pt/.l-en; atributos e opções: data-pt/data-en) ----
+function applyLang(){const en=LANG==='en';document.documentElement.lang=en?'en':'pt-PT';document.title=en?'Sérgio F · Blood Test Timeline':'Sérgio F · Cronologia de Exames de Sangue';
+ document.querySelectorAll('[data-en]').forEach(el=>{if(!el.hasAttribute('data-pt'))el.setAttribute('data-pt',el.textContent);el.textContent=en?el.dataset.en:el.dataset.pt});
+ document.querySelectorAll('[data-ph-en]').forEach(el=>{if(!el.hasAttribute('data-ph-pt'))el.setAttribute('data-ph-pt',el.placeholder);el.placeholder=en?el.dataset.phEn:el.dataset.phPt});
+ document.querySelectorAll('[data-al-en]').forEach(el=>{if(!el.hasAttribute('data-al-pt'))el.setAttribute('data-al-pt',el.getAttribute('aria-label'));el.setAttribute('aria-label',en?el.dataset.alEn:el.dataset.alPt)});
+ document.querySelectorAll('#lang button').forEach(b=>{const on=b.dataset.l===LANG;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});
+ heroMeta();fillCats();srcTxt();failMsg();if(SS)SS.relabel();if(IS)IS.relabel()}
+document.querySelectorAll('#lang button').forEach(b=>b.addEventListener('click',()=>{if(LANG===b.dataset.l)return;LANG=b.dataset.l;try{localStorage.setItem('lang',LANG)}catch(e){}applyLang()}));
+applyLang();
 
+// ===== tema (escuro/claro): escolha guardada em localStorage 'theme'; sem escolha, segue o sistema =====
+const mqD=window.matchMedia?matchMedia('(prefers-color-scheme: dark)'):null;
+let THEME=null;try{THEME=localStorage.getItem('theme')}catch(e){}
+const curTheme=()=>THEME==='dark'||THEME==='light'?THEME:(mqD&&mqD.matches?'dark':'light');
+function applyTheme(){const t=curTheme();document.documentElement.setAttribute('data-theme',t);document.querySelectorAll('#theme button').forEach(b=>{const on=b.dataset.t===t;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)})}
+document.querySelectorAll('#theme button').forEach(b=>b.addEventListener('click',()=>{THEME=b.dataset.t;try{localStorage.setItem('theme',THEME)}catch(e){}applyTheme()}));
+if(mqD){const f=()=>{if(THEME!=='dark'&&THEME!=='light')applyTheme()};mqD.addEventListener?mqD.addEventListener('change',f):mqD.addListener(f)}
+applyTheme();
 // navegação ativa
 const links=[...document.querySelectorAll('#nav a')];const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id))}})},{rootMargin:'-40% 0px -55% 0px'});
 document.querySelectorAll('main section').forEach(s=>obs.observe(s));
