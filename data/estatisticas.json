@@ -1,15 +1,15 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-03T20:53:21Z",
+ "atualizado_em": "2026-10-03T21:03:18Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
-  "visitas": 11,
-  "visitas_30d": 11,
-  "visitas_90d": 11,
+  "visitas": 12,
+  "visitas_30d": 12,
+  "visitas_90d": 12,
   "aberturas_pdf": 11,
-  "visitas_hoje": 11,
-  "visitas_7d": 11,
+  "visitas_hoje": 12,
+  "visitas_7d": 12,
   "aberturas_hoje": 11,
   "aberturas_7d": 11,
   "aberturas_30d": 11,
@@ -31,7 +31,7 @@
   },
   {
    "dia": "2026-10-03",
-   "visitas": 11,
+   "visitas": 12,
    "aberturas": 11
   }
  ],
@@ -41,16 +41,16 @@
    "visitas": 4
   },
   {
+   "path": "/imortalistas",
+   "visitas": 2
+  },
+  {
    "path": "/imortalistas/genetica.html",
    "visitas": 2
   },
   {
    "path": "/imortalistas/teste-worker",
    "visitas": 2
-  },
-  {
-   "path": "/imortalistas",
-   "visitas": 1
   },
   {
    "path": "/imortalistas/genetica-boa.html",
@@ -145,6 +145,13 @@
    "visitas": 1
   },
   {
+   "id": "computador/windows-10-11-chrome",
+   "tipo": "computador",
+   "nome": "Windows 10/11 · Chrome",
+   "estimativa": false,
+   "visitas": 1
+  },
+  {
    "id": "computador/windows-11-chrome",
    "tipo": "computador",
    "nome": "Windows 11 · Chrome",
@@ -161,14 +168,14 @@
   {
    "id": "US",
    "nome": "United States",
-   "visitas": 1
+   "visitas": 2
   }
  ],
  "browsers": [
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 13
+   "visitas": 14
   },
   {
    "id": "Firefox",
@@ -185,7 +192,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 14
+   "visitas": 15
   },
   {
    "id": "Linux",
@@ -210,6 +217,11 @@
    "visitas": 1
   },
   {
+   "id": "tablet",
+   "nome": "tablet",
+   "visitas": 1
+  },
+  {
    "id": "desktop",
    "nome": "desktop",
    "visitas": 11
@@ -224,7 +236,7 @@
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 22
+   "visitas": 23
   }
  ],
  "aparelhos_desde": "2026-10-03"
