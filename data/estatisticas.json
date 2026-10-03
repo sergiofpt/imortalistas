@@ -1,6 +1,6 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-03T20:22:15Z",
+ "atualizado_em": "2026-10-03T20:25:51Z",
  "desde": "2026-10-01",
  "total": {
   "visitas": 5,
@@ -70,7 +70,15 @@
    "total": 1
   }
  ],
- "aparelhos": [],
+ "aparelhos": [
+  {
+   "id": "computador/linux-chrome",
+   "tipo": "computador",
+   "nome": "Linux · Chrome",
+   "estimativa": false,
+   "visitas": 1
+  }
+ ],
  "paises": [
   {
    "id": "PT",
@@ -135,5 +143,6 @@
    "nome": "(desconhecido)",
    "visitas": 12
   }
- ]
+ ],
+ "aparelhos_desde": "2026-10-03"
 }
