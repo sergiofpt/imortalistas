@@ -7,7 +7,7 @@ GOATCOUNTER_TOKEN (variável de ambiente; nunca é escrito em lado nenhum). Só 
 - API v0: /stats/total, /stats/hits (páginas e eventos), /stats/locations, /stats/browsers, /stats/systems, /stats/sizes, /stats/toprefs.
 - Sem IPs nem dados pessoais: só contagens agregadas, nomes de páginas, ficheiros de relatórios, países, browsers, sistemas,
   tamanhos de ecrã e nomes de sites de origem (sem caminhos nem parâmetros).
-- Tolerante: conta sem dados = JSON com zeros; erro na API ou token em falta = aviso e saída 0, sem tocar no JSON anterior;
+- Tolerante: conta sem dados = JSON com zeros (a API responde 404 a /stats/* enquanto o site não tem dados: conta como "sem dados"); erro na API ou token em falta = aviso e saída 0, sem tocar no JSON anterior;
   uma secção opcional que falhe fica com o valor anterior.
 - Respeita o rate limit (4 pedidos/s): pausa entre pedidos e, num 429, espera o X-Rate-Limit-Reset.
 - Só grava se os dados mudarem (o campo atualizado_em não conta), para o workflow só fazer commit quando há novidades.
@@ -27,7 +27,9 @@ VAZIO = {'versao': 1, 'atualizado_em': None, 'desde': None,
 def aviso(msg):
     print(f'::warning::{msg}' if os.environ.get('GITHUB_ACTIONS') else f'AVISO: {msg}')
 
-class ErroAPI(Exception): pass
+class ErroAPI(Exception):
+    def __init__(self, msg, codigo=None): super().__init__(msg); self.codigo = codigo
+class SemDados(Exception): pass  # 404 em /stats/*: o site ainda não tem dados (não é erro)
 
 _ultimo = [0.0]
 def pedido(caminho, token, **q):
@@ -48,7 +50,8 @@ def pedido(caminho, token, **q):
                 try: pausa = float(e.headers.get('X-Rate-Limit-Reset') or 0)
                 except ValueError: pausa = 0
                 time.sleep(min(10.0, max(pausa, 1.5 * (tent + 1)))); continue
-            raise ErroAPI(f'{caminho}: HTTP {e.code}')
+            if e.code == 404: raise SemDados(caminho)
+            raise ErroAPI(f'{caminho}: HTTP {e.code}', e.code)
         except (urllib.error.URLError, TimeoutError, OSError, ValueError) as e:
             time.sleep(1.5 * (tent + 1)); continue
     raise ErroAPI(f'{caminho}: sem resposta válida depois de 4 tentativas')
@@ -69,18 +72,42 @@ def lista_stats(token, pagina, ini, fim, origem=False):
     return [{'id': nome_limpo(s.get('id'))[:40], 'nome': nome_limpo(s.get('name'), origem), 'visitas': inteiro(s.get('count'))}
             for s in (d.get('stats') or []) if inteiro(s.get('count')) > 0]
 
+def periodo(agora=None):
+    """(início, fins): início = 01-10-2026 ou há 366 dias, à hora; fins = [hora atual arredondada para baixo + 1 h (nunca mais
+    de 1 h no futuro), hora atual arredondada para baixo] — o segundo só é usado se a API rejeitar o primeiro."""
+    base = (agora or dt.datetime.now(dt.timezone.utc)).replace(minute=0, second=0, microsecond=0)
+    ini_dt = max(INICIO, base - dt.timedelta(days=366))
+    f = lambda x: x.strftime('%Y-%m-%dT%H:%M:%SZ')
+    return ini_dt, f(ini_dt), [f(base + dt.timedelta(hours=1)), f(base)]
+
 def recolher(token, hoje):
-    agora = dt.datetime.now(dt.timezone.utc).replace(minute=0, second=0, microsecond=0) + dt.timedelta(hours=1)
-    ini_dt = max(INICIO, agora - dt.timedelta(days=366))
-    ini, fim = ini_dt.strftime('%Y-%m-%dT%H:%M:%SZ'), agora.strftime('%Y-%m-%dT%H:%M:%SZ')
+    ini_dt, ini, fins = periodo()
+    for n, fim in enumerate(fins):
+        try: return _recolher(token, hoje, ini_dt, ini, fim)
+        except (ErroAPI, SemDados) as e:
+            # fim no futuro rejeitado (400/422) ou 404: repetir uma vez com a hora atual arredondada para baixo
+            if n == 0 and (isinstance(e, SemDados) or e.codigo in (400, 422)): continue
+            if isinstance(e, SemDados): return _vazio(hoje, ini_dt), ini, fim
+            raise
+
+def _vazio(hoje, ini_dt):
+    out = json.loads(json.dumps(VAZIO)); out['desde'] = ini_dt.date().isoformat()
+    out['dias'] = [{'dia': d, 'visitas': 0} for d in ((hoje - dt.timedelta(days=i)).isoformat() for i in range(89, -1, -1)) if d >= INICIO.date().isoformat()]
+    return out
+
+def _recolher(token, hoje, ini_dt, ini, fim):
     # todos os caminhos (páginas e eventos), 100 de cada vez
     hits, vistos = [], []
-    for _ in range(20):
-        d = pedido('/stats/hits', token, start=ini, end=fim, limit=100, exclude_paths=','.join(map(str, vistos)) or None)
+    for k in range(20):
+        try: d = pedido('/stats/hits', token, start=ini, end=fim, limit=100, exclude_paths=','.join(map(str, vistos)) or None)
+        except SemDados:
+            if k == 0: raise  # site sem dados
+            break  # página seguinte sem dados: fica o que já veio
         novos = d.get('hits') or []
         hits += novos; vistos += [h.get('path_id') for h in novos if h.get('path_id') is not None]
         if not d.get('more') or not novos: break
-    tot = pedido('/stats/total', token, start=ini, end=fim)
+    try: tot = pedido('/stats/total', token, start=ini, end=fim)
+    except SemDados: tot = {}
     # relatórios: ficheiro → id (data/reports.json do próprio repositório)
     fich = {}
     try:
@@ -137,6 +164,7 @@ def main():
         aviso(f'API do GoatCounter: {e}. data/estatisticas.json fica como estava.'); return 0
     for chave, pagina, origem in (('paises', 'locations', False), ('browsers', 'browsers', False), ('sistemas', 'systems', False), ('tamanhos', 'sizes', False), ('origens', 'toprefs', True)):
         try: novo[chave] = lista_stats(token, pagina, ini, fim, origem)
+        except SemDados: novo[chave] = []
         except ErroAPI as e:
             aviso(f'{pagina}: {e}; fica o valor anterior.'); novo[chave] = anterior.get(chave) if isinstance(anterior.get(chave), list) else []
     sem = lambda d: {k: v for k, v in d.items() if k != 'atualizado_em'}
