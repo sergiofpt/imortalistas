@@ -1,0 +1,45 @@
+# Estatísticas do GoatCounter para a página escondida: atualiza data/estatisticas.json de hora a hora
+# (token só de leitura no secret GOATCOUNTER_TOKEN) e só faz commit quando o JSON muda.
+name: Estatísticas GoatCounter
+
+on:
+  schedule:
+    - cron: '17 * * * *'   # de hora a hora, ao minuto 17 (UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: goatcounter-stats
+  cancel-in-progress: false
+
+jobs:
+  estatisticas:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Atualizar data/estatisticas.json
+        env:
+          GOATCOUNTER_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
+        run: python3 ferramentas/estatisticas_goatcounter.py
+
+      - name: Commit (só se o JSON mudou)
+        run: |
+          if git diff --quiet -- data/estatisticas.json; then
+            echo "Sem mudanças em data/estatisticas.json."
+            exit 0
+          fi
+          python3 -c "import json; json.load(open('data/estatisticas.json', encoding='utf-8'))"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/estatisticas.json
+          git commit -m "estatísticas: atualização automática"
+          for i in 1 2 3; do
+            if git push origin HEAD:${{ github.ref_name }}; then exit 0; fi
+            sleep $((i * 5))
+            git pull --rebase origin ${{ github.ref_name }} || { git rebase --abort || true; break; }
+          done
+          echo "::warning::Não foi possível enviar data/estatisticas.json; fica para a próxima execução."

@@ -61,6 +61,14 @@ PDF_PESSOAL = re.compile('|'.join([
     r'\bgrand(?:father|mother|parents?)\b|\bav[ôó]s?\b', r'\b(?:his|my|sérgio\'s|o seu|a sua) (?:father|mother|brother|sister|uncle|aunt|cousin|pai|mãe|irmão|irmã|tio|tia|primo|prima)\b',
     r'https?://|www\.|\.(?:com|org|gov|net)\b|/home/|/workspace|(?<![a-z])file:|fontes/|dados/|scripts/|\b[a-z0-9_]+\.(?:py|tsv|csv|vcf|json)\b|ficheiro privado|private source file',
 ]), re.I)
+# idade e ano/data de nascimento nunca podem aparecer em nenhum ficheiro publicado (HTML, JSON, README, ferramentas, PDFs; pedido do Sérgio F, 03-10-2026).
+# IDADE procura nos textos (e no texto dos PDFs); ANO_BYTES procura a sequência do ano (e o utilizador antigo do GitHub) nos bytes de todos os ficheiros,
+# incluindo os PDFs; as sequências são montadas por partes para que este ficheiro não as contenha
+ANO_BYTES = [b'19' + b'99', b'sergiofrei' + b'tas']
+IDADE = re.compile('|'.join([
+    r'\b27\s*(?:anos|years?\b|-year)|\baged?\s+27\b', r's[ée]rgio f[^<\n]{0,5}(?:<[^>]*>\s*)*\d{1,3}\s*(?:anos|years?)\b',
+    r'\b\d{1,3}\s*(?:anos de idade|years? old\b|-years?-old\b)', r'\b(?:idade|age)\s*[:=]\s*\d', r'\b(?:data|ano) de nascimento\s*[:=]|\b(?:date|year) of birth\s*[:=]|\bbirth ?date\s*[:=]|\bd\.?o\.?b\.?\s*[:=]',
+    r'\bnascid[oa] (?:em|a) \d|\bborn (?:in|on) \d', r'(?<![\d:])19' + r'99(?!\d)']), re.I)
 # painéis de intolerância/sensibilidade alimentar (IgG/IgE específicas para alimentos): lista 'intolerancias'
 INTOL = re.compile(r'aliment|intoler|food', re.I)
 def e_intolerancia(nome, cat, lab):
@@ -183,11 +191,24 @@ def privacidade_pdf(caminho):
     if not shutil.which('pdftotext'): return None
     t = subprocess.run(['pdftotext', '-q', caminho, '-'], capture_output=True, text=True).stdout
     t2 = PDF_PERMITIDO.sub(' ', re.sub(r'\s+', ' ', t))
-    achados = [m.group(0) for rx in (PROIBIDO, PDF_EXTRA, PDF_POP, PDF_PESSOAL) for m in rx.finditer(t2)]
+    achados = [m.group(0) for rx in (PROIBIDO, PDF_EXTRA, PDF_POP, PDF_PESSOAL, IDADE) for m in rx.finditer(t2)]
+    raw = open(caminho, 'rb').read(); achados += [f'bytes {b.decode()[:2]}…' for b in ANO_BYTES if b in raw]
     if shutil.which('pdfinfo'):
         info = subprocess.run(['pdfinfo', caminho], capture_output=True, text=True).stdout
         achados += [f'metadado {k}' for k in ('Title', 'Author', 'Subject', 'Keywords') if re.search(rf'^{k}:\s*\S', info, re.M)]
     return achados
+
+# página escondida de estatísticas: data/estatisticas.json (placeholder vazio ou gerado por ferramentas/estatisticas_goatcounter.py)
+F_ESTAT = os.path.join(RAIZ, 'data', 'estatisticas.json')
+def verificar_estatisticas():
+    if not os.path.exists(F_ESTAT): print('ERRO data/estatisticas.json em falta'); return False
+    try: d = json.load(open(F_ESTAT, encoding='utf-8'))
+    except ValueError as e: print(f'ERRO data/estatisticas.json: JSON inválido ({e})'); return False
+    chaves = {'versao', 'atualizado_em', 'desde', 'total', 'dias', 'paginas', 'relatorios', 'paises', 'browsers', 'sistemas', 'tamanhos', 'origens'}
+    ok = isinstance(d, dict) and set(d) == chaves and isinstance(d.get('total'), dict) and all(isinstance(d[k], list) for k in chaves - {'versao', 'atualizado_em', 'desde', 'total'})
+    if not ok: print('ERRO data/estatisticas.json: estrutura inesperada'); return False
+    print(f"estatisticas.json: {d['total'].get('visitas', 0)} visitas, {len(d['relatorios'])} relatórios com aberturas, atualizado_em {d['atualizado_em']}")
+    return True
 
 RE_FICH = re.compile(r'reports/[A-Za-z0-9._-]+\.pdf')
 RE_FICH_EN = re.compile(r'reports/[A-Za-z0-9._-]+_en\.pdf')
@@ -388,13 +409,25 @@ def cmd_verificar(a):
                 if r.get('s') and r['s'] not in ESTADOS: ok = False; print(f'ERRO {p}: estado inválido {r["s"]} em {i["m"]}')
         print(f'{os.path.basename(p)}: {len(d["marcadores"])} marcadores + {len(d.get("intolerancias", []))} intolerâncias alimentares, datas {sorted(datas)}')
     ok = verificar_genetica() and ok
+    ok = verificar_estatisticas() and ok
+    # data/estatisticas.json é gerado de hora a hora pelo workflow (só contagens agregadas): não entra nas procuras de texto/bytes
+    AUTO = os.path.join(RAIZ, 'data', 'estatisticas.json')
     for base, _, fs in os.walk(RAIZ):
-        if '.git' in base: continue
+        if '.git' in base.split(os.sep): continue
         for f in fs:
-            if not f.endswith(('.html', '.json', '.md', '.py', '.txt')) : continue
+            if not f.endswith(('.html', '.json', '.md', '.py', '.txt', '.yml')) or os.path.join(base, f) == AUTO: continue
             t = open(os.path.join(base, f), encoding='utf-8').read().replace('font-weight', '')
             for mt in PROIBIDO.finditer(t):
                 ok = False; print(f'PROIBIDO em {f}: …{t[max(0, mt.start()-30):mt.end()+30]}…')
+            for mt in IDADE.finditer(t):
+                ok = False; print(f'IDADE/NASCIMENTO em {f}: …{t[max(0, mt.start()-30):mt.end()+30]}…')
+    for base, _, fs in os.walk(RAIZ):
+        if '.git' in base.split(os.sep): continue
+        for f in fs:
+            if os.path.join(base, f) == AUTO: continue
+            raw = open(os.path.join(base, f), 'rb').read()
+            for b in ANO_BYTES:
+                if b in raw: ok = False; print(f'ANO/UTILIZADOR ANTIGO nos bytes de {os.path.relpath(os.path.join(base, f), RAIZ)} (sequência {b[:2].decode()}…)')
     print('OK' if ok else 'FALHOU'); sys.exit(0 if ok else 1)
 
 ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)

@@ -3,7 +3,7 @@
 Cronologia de Exames de Sangue do Sérgio F: resultados de análises ao sangue (e urina do mesmo painel), para registo e comparação entre datas, e a secção Intolerâncias Alimentares (`index.html`). A genética tem três páginas próprias: `genetica.html` (“Genética Má”: só resultados desfavoráveis), `genetica-boa.html` (“Genética Boa”: só resultados favoráveis) e `genetica-reports.html` (“Genética Reports”: relatórios completos em PDF). Site estático em GitHub Pages, `noindex` nas quatro páginas.
 
 ```
-index.html                         análises ao sangue + Intolerâncias Alimentares (HTML + CSS + JS, sem bibliotecas nem pedidos externos)
+index.html                         análises ao sangue + Intolerâncias Alimentares (HTML + CSS + JS, sem bibliotecas; o único pedido externo é a contagem anónima de visitas, ver “Contagem de visitas e de PDFs”)
 genetica.html                      Genética Má: só resultados desfavoráveis (mesmo cabeçalho, idioma e tema); conteúdo em data/genetica.json
 genetica-boa.html                  Genética Boa: só resultados favoráveis; conteúdo em data/genetica_boa.json
 data/sangue.json                   resultados por marcador e por data (sangue/urina em "marcadores", intolerâncias alimentares em "intolerancias")
@@ -14,6 +14,10 @@ genetica-reports.html              Genética Reports: lista de relatórios em PD
 data/reports.json                  lista dos relatórios (título PT/EN, data, ficheiro em reports/)
 reports/*.pdf                      os PDFs dos relatórios (já verificados quanto à privacidade)
 ferramentas/adicionar_colheita.py  acrescenta uma data ou um relatório e verifica os ficheiros (sangue.json, genetica*.json, reports.json + PDFs e termos proibidos)
+ferramentas/estatisticas_goatcounter.py  gera data/estatisticas.json a partir da API do GoatCounter (corre no GitHub Actions)
+data/estatisticas.json             estatísticas agregadas para a página escondida (atualizado sozinho, de hora a hora)
+.github/workflows/goatcounter-stats.yml  workflow de hora a hora que atualiza data/estatisticas.json
+robots.txt                         regras para robôs (não lista nenhuma página)
 .nojekyll
 ```
 
@@ -131,12 +135,31 @@ Como acrescentar um relatório novo:
 
 A página só aceita ficheiros `reports/<nome>.pdf` (e `reports/<nome>_en.pdf` para `ficheiro_en`); uma entrada inválida aparece marcada como “Ficheiro inválido”, sem link; um `ficheiro_en` inválido é ignorado (fica o PDF em português).
 
+## Contagem de visitas e de PDFs (GoatCounter)
+
+- As quatro páginas têm, antes de `</body>`, o snippet oficial do GoatCounter (conta `imortalistas`), com `https://` explícito:
+  `<script data-goatcounter="https://imortalistas.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>`.
+  Conta cada visita à página. Não usa cookies nem guarda dados pessoais (as páginas enviam `no-referrer`).
+- Logo a seguir, um script pequeno (igual nas quatro páginas) conta cada abertura ou download de um PDF de `reports/` como evento: um listener delegado em `document` (`click` e `auxclick`, por isso apanha o clique normal, Ctrl/Cmd/Shift + clique, o botão do meio e os cartões criados depois) chama `window.goatcounter.count({path, title, event: true})` com
+  `path` = o ficheiro (ex. `reports/esofago_en.pdf`) e `title` = o título PT do relatório + a língua do PDF (ex. “Esófago (EN)”), tirado de `data/reports.json` (`gcTitulos`). No painel fica uma linha por relatório e por língua.
+  Inclui os botões Descarregar/Abrir dos cartões, o documento-mestre Imortalidade, as ligações “PDF: PT | EN” e as ligações de fonte das páginas Genética Má/Boa.
+- Nunca chama `preventDefault` nem espera pela contagem: o PDF abre/descarrega logo. Se o script estiver bloqueado (adblocker), a contagem simplesmente não acontece e o site funciona igual.
+- Para não contar as próprias visitas, usar o endereço `#toggle-goatcounter` uma vez nesse browser (função do próprio GoatCounter).
+- Os testes usam um `count.js` falso: nenhum teste contacta o GoatCounter nem conta visitas.
+
+## Página escondida de estatísticas
+
+- Uma página com nome difícil de adivinhar (o nome não está escrito em nenhum ficheiro do site), fora do menu, sem ligações a partir das outras páginas, com `noindex,nofollow` e **sem** o snippet do GoatCounter (as visitas a ela não contam). Mesmo visual do site (PT/EN, escuro por omissão): cartões com totais, gráfico de visitas por dia (30/90 dias), relatórios mais abertos (PT, EN e total; títulos de `data/reports.json`), páginas, países, aparelhos, browsers, sistemas e origens, e “Atualizado em” na hora de Portugal. Sem dados, mostra um estado vazio.
+- Os dados vêm de `data/estatisticas.json`, que o workflow `.github/workflows/goatcounter-stats.yml` atualiza de hora a hora (minuto 17, e também à mão em Actions → “Estatísticas GoatCounter” → Run workflow). O workflow corre `ferramentas/estatisticas_goatcounter.py` com o token só de leitura do secret `GOATCOUNTER_TOKEN` (API v0: `/stats/hits`, `/stats/total`, `/stats/locations`, `/stats/browsers`, `/stats/systems`, `/stats/sizes`, `/stats/toprefs`) e só faz commit (“estatísticas: atualização automática”, utilizador github-actions[bot]) quando o JSON muda.
+- Só contagens agregadas, sem IPs nem dados pessoais; das origens fica só o nome do site. Conta sem dados = zeros; erro da API ou token em falta = aviso no log, o JSON anterior fica igual. Os números do GoatCounter contam visitantes por sessão (a mesma pessoa a abrir o mesmo PDF várias vezes seguidas pode contar só uma vez).
+- O `data/estatisticas.json` muda sozinho: fica fora das procuras do `verificar` (que só confirma a estrutura) e da verificação do site no ar. O JSON é público como o resto do site: a página escondida não é secreta, só não está à vista.
+
 ## Regras permanentes do painel
 
 - Só análises + Intolerâncias Alimentares (secção própria) em `index.html` + Genética Má (`genetica.html`), Genética Boa (`genetica-boa.html`) e Genética Reports (`genetica-reports.html`, relatórios em PDF): nada de outros exames, medicação/stack, suplementos, prioridades, questões ou sugestões dos bots em `index.html`. Exceção (pedido do Sérgio F, 02-10-2026): nas páginas de genética, os blocos Evitar/Priorizar e o Protocolo genético podem ter fármacos, suplementos com doses, dieta, exercício e rastreio ligados aos genes, sempre como sugestão a validar pelo médico e sem valores de outros bots além dos usados nas regras de consistência.
-- Identificação: só “Sérgio F” e a idade; sem data de nascimento nem cidade.
+- Identificação: só “Sérgio F” (cabeçalho “Sérgio F · M”); sem idade, ano ou data de nascimento, nem cidade, nos HTML, JSON, README e PDFs publicados (o `verificar` recusa).
 - Privacidade: nunca publicar a medida da balança, o índice de massa do corpo (nem pela sigla), índices por altura² nem nada que permita deduzir aquela medida.
 - Sem nomes de laboratórios ou fornecedores em lado nenhum, nas duas línguas: só datas.
 - Títulos: “Cronologia de Exames de Sangue” / “Blood Test Timeline” (`index.html`) e os títulos acima nas páginas de genética. Cabeçalho sem marca, igual nas quatro páginas: Resumo · Análises · Intolerâncias Alimentares (âncoras de `index.html`) · Genética Má (`genetica.html`) · Genética Boa (`genetica-boa.html`) · Genética Reports (`genetica-reports.html`), com o seletor “Português | English” no canto superior direito (guardado em `localStorage`, chave `lang`, partilhada pelas quatro páginas; por omissão português).
-- Tema: seletor “Escuro | Claro” / “Dark | Light” ao lado do idioma (guardado em `localStorage`, chave `theme`, partilhada pelas quatro páginas; sem escolha, segue o tema do sistema). Cores só por variáveis CSS, incluindo os gráficos.
+- Tema: seletor “Escuro | Claro” / “Dark | Light” ao lado do idioma (guardado em `localStorage`, chave `theme`, partilhada pelas quatro páginas; sem escolha, escuro: é o default para quem entra pela primeira vez, seja qual for o tema do sistema, e é aplicado por um script no `<head>` antes do primeiro desenho, para não piscar em branco; quem escolher Claro fica com o claro). Cores só por variáveis CSS, incluindo os gráficos.
 - `meta robots noindex` nas quatro páginas.

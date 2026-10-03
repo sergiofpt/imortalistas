@@ -1,0 +1,19 @@
+{
+ "versao": 1,
+ "atualizado_em": null,
+ "desde": null,
+ "total": {
+  "visitas": 0,
+  "visitas_30d": 0,
+  "visitas_90d": 0,
+  "aberturas_pdf": 0
+ },
+ "dias": [],
+ "paginas": [],
+ "relatorios": [],
+ "paises": [],
+ "browsers": [],
+ "sistemas": [],
+ "tamanhos": [],
+ "origens": []
+}

@@ -8,7 +8,7 @@
 <link rel="icon" href="data:,">
 <title>Sérgio F · Genética - Apenas bons resultados</title>
 <meta name="color-scheme" content="light dark">
-<script>(function(){var d=document.documentElement,t=null;try{if(localStorage.getItem('lang')==='en')d.lang='en';t=localStorage.getItem('theme')}catch(e){}if(t!=='dark'&&t!=='light')t=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';d.setAttribute('data-theme',t)})()</script>
+<script>(function(){var d=document.documentElement,t=null;try{if(localStorage.getItem('lang')==='en')d.lang='en';t=localStorage.getItem('theme')}catch(e){}if(t!=='dark'&&t!=='light')t='dark';d.setAttribute('data-theme',t)})()</script>
 <style>
 :root{--bg:#f5f7fa;--card:#fff;--ink:#14202e;--mut:#5b6b7d;--line:#e3e8ef;--acc:#1f5eff;--ok:#12a150;--okb:#e6f6ec;--warn:#d98a00;--warnb:#fff4dc;--bad:#d93636;--badb:#fde9e9;--na:#8a97a8;--nab:#eef1f5;--r:14px;--head:rgba(255,255,255,.94);--th:#fafbfd;--hov:#fafcff;--okt:#0b7a3b;--warnt:#9a5f00;--badt:#b02020;--nat:#56657a;--infob:#e8efff;--infot:#1f45b5;--noteb:#f0f5ff;--notel:#d7e3ff;--vok:#eefaf2;--vwarn:#fff6e3;--vwarnt:#8f5800;--vbad:#fdeeee;--vna:#3b4a5c;--open:#f3f7ff;--det:#fbfcfe;--grid:#eef1f5;--chok:#e6f6ec;--actfg:#fff;--hero1:#0f2747;--hero2:#1f5eff;color-scheme:light}
 *{box-sizing:border-box}
@@ -162,7 +162,7 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 
 <div class="hero">
 <div><h1><span class="l-pt">Genética - Apenas bons resultados</span><span class="l-en">Genetics - Favourable results only</span></h1>
-<p>Sérgio F · <span class="l-pt">27 anos</span><span class="l-en">27 years</span> · M</p></div>
+<p>Sérgio F · M</p></div>
 <div class="meta" id="genMeta"><span class="l-pt">Genética</span><span class="l-en">Genetics</span></div>
 </div>
 
@@ -177,7 +177,7 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 <div id="gFarm"></div>
 </section>
 </main>
-<footer><span class="l-pt">Compilado a 03-10-2026 (PT) só com dados genéticos registados. As análises ao sangue estão na página principal: <a href="index.html">Cronologia de Exames de Sangue</a>. Documento de apoio: não substitui o médico. Dados em data/genetica_boa.json, data/genetica_protocolo.json e data/reports.json (mesmo site); relatórios em PDF em <a href="genetica-reports.html">Genética Reports</a>; sem pedidos a serviços externos. Evitar, Ajustar, Monitorizar, Priorizar e o Protocolo genético são sugestões que precisam de validação médica.</span><span class="l-en">Compiled on 03-10-2026 (PT) only from recorded genetic data. Blood tests are on the main page: <a href="index.html">Blood Test Timeline</a>. Supporting document: not a substitute for a doctor. Data in data/genetica_boa.json, data/genetica_protocolo.json and data/reports.json (same site); PDF reports under <a href="genetica-reports.html">Genetics Reports</a>; no requests to external services. Avoid, Adjust, Monitor, Prioritize and the Genetic protocol are suggestions that need medical validation.</span></footer>
+<footer><span class="l-pt">Compilado a 03-10-2026 (PT) só com dados genéticos registados. As análises ao sangue estão na página principal: <a href="index.html">Cronologia de Exames de Sangue</a>. Documento de apoio: não substitui o médico. Dados em data/genetica_boa.json, data/genetica_protocolo.json e data/reports.json (mesmo site); relatórios em PDF em <a href="genetica-reports.html">Genética Reports</a>; sem cookies; só uma contagem anónima de visitas e de PDFs abertos. Evitar, Ajustar, Monitorizar, Priorizar e o Protocolo genético são sugestões que precisam de validação médica.</span><span class="l-en">Compiled on 03-10-2026 (PT) only from recorded genetic data. Blood tests are on the main page: <a href="index.html">Blood Test Timeline</a>. Supporting document: not a substitute for a doctor. Data in data/genetica_boa.json, data/genetica_protocolo.json and data/reports.json (same site); PDF reports under <a href="genetica-reports.html">Genetics Reports</a>; no cookies; only an anonymous count of visits and opened PDFs. Avoid, Adjust, Monitor, Prioritize and the Genetic protocol are suggestions that need medical validation.</span></footer>
 
 <script>
 // ===== páginas de genética: conteúdo no JSON indicado em <body data-json> (PT/EN); mesmas chaves localStorage que index.html =====
@@ -252,16 +252,28 @@ document.querySelectorAll('#lang button').forEach(b=>b.addEventListener('click',
 applyLang();
 loadJSON(SRC).then(d=>{GD=d;render()}).catch(e=>{console.warn(e);GERR=e;render()});
 loadJSON(PSRC).then(d=>{PD=d;render()}).catch(e=>{console.warn(e);PERR=e;render()});
-loadJSON('data/reports.json').then(d=>{RD=d;render()}).catch(e=>{console.warn(e);RERR=e;RD={relatorios:[]};render()});
+loadJSON('data/reports.json').then(d=>{RD=d;if(window.gcTitulos)gcTitulos(d.relatorios);render()}).catch(e=>{console.warn(e);RERR=e;RD={relatorios:[]};render()});
 
-// ===== tema (escuro/claro): escolha guardada em localStorage 'theme'; sem escolha, segue o sistema =====
-const mqD=window.matchMedia?matchMedia('(prefers-color-scheme: dark)'):null;
+// ===== tema (escuro/claro): escolha guardada em localStorage 'theme'; sem escolha, escuro (o default, seja qual for o tema do sistema; aplicado no <head> antes do primeiro desenho) =====
 let THEME=null;try{THEME=localStorage.getItem('theme')}catch(e){}
-const curTheme=()=>THEME==='dark'||THEME==='light'?THEME:(mqD&&mqD.matches?'dark':'light');
+const curTheme=()=>THEME==='dark'||THEME==='light'?THEME:'dark';
 function applyTheme(){const t=curTheme();document.documentElement.setAttribute('data-theme',t);document.querySelectorAll('#theme button').forEach(b=>{const on=b.dataset.t===t;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)})}
 document.querySelectorAll('#theme button').forEach(b=>b.addEventListener('click',()=>{THEME=b.dataset.t;try{localStorage.setItem('theme',THEME)}catch(e){}applyTheme()}));
-if(mqD){const f=()=>{if(THEME!=='dark'&&THEME!=='light')applyTheme()};mqD.addEventListener?mqD.addEventListener('change',f):mqD.addListener(f)}
 applyTheme();
+</script>
+<script data-goatcounter="https://imortalistas.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script>
+// Contagem anónima de visitas (GoatCounter, sem cookies). Cada abertura ou download de um PDF de reports/ conta como evento: path = ficheiro (ex. reports/esofago_en.pdf), título = título PT do relatório + língua do PDF.
+// Listener delegado (apanha cartões criados depois, clique normal, Ctrl/Cmd/Shift e botão do meio); nunca chama preventDefault e não espera pela contagem; se o script de contagem estiver bloqueado não faz nada.
+(function(){var T={},Q=[];
+window.gcTitulos=function(rs){(rs||[]).forEach(function(r){var t=r&&r.titulo&&(r.titulo.pt||r.titulo.en);if(!t)return;if(typeof r.ficheiro==='string')T[r.ficheiro]=t+' (PT)';if(typeof r.ficheiro_en==='string')T[r.ficheiro_en]=t+' (EN)'})};
+function send(o){try{var g=window.goatcounter;if(!g||typeof g.count!=='function')return false;g.count(o)}catch(_){}return true}
+function flush(){while(Q.length&&send(Q[0]))Q.shift()}
+function pdf(e){try{if(e.type==='auxclick'&&e.button!==1)return;var el=e.target;if(el&&el.nodeType!==1)el=el.parentElement;var a=el&&el.closest?el.closest('a[href]'):null;if(!a)return;
+ var u=new URL(a.getAttribute('href'),location.href);if(u.origin!==location.origin)return;var m=/\/(reports\/[A-Za-z0-9._-]+\.pdf)$/.exec(u.pathname);if(!m)return;
+ var p=m[1],o={path:p,title:T[p]||(p.split('/').pop()+(/_en\.pdf$/.test(p)?' (EN)':' (PT)')),event:true};if(!send(o)&&Q.length<20)Q.push(o)}catch(_){}}
+document.addEventListener('click',pdf,true);document.addEventListener('auxclick',pdf,true);
+var s=document.querySelector('script[data-goatcounter]');if(s)s.addEventListener('load',flush)})();
 </script>
 </body>
 </html>
