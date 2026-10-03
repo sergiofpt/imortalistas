@@ -1,12 +1,12 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-03T18:32:02Z",
+ "atualizado_em": "2026-10-03T18:34:10Z",
  "desde": "2026-10-01",
  "total": {
   "visitas": 5,
   "visitas_30d": 5,
   "visitas_90d": 5,
-  "aberturas_pdf": 4
+  "aberturas_pdf": 5
  },
  "dias": [
   {
@@ -42,6 +42,13 @@
   },
   {
    "id": "anestesia-cirurgia",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 0,
+   "total": 1
+  },
+  {
+   "id": "avc-pequenos-vasos-cerebrais",
    "ficheiro": null,
    "pt": 1,
    "en": 0,
