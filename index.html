@@ -8,7 +8,7 @@
 <link rel="icon" href="data:,">
 <title>Sérgio F · Cronologia de Exames de Sangue</title>
 <meta name="color-scheme" content="light dark">
-<script>(function(){var d=document.documentElement,t=null;try{if(localStorage.getItem('lang')==='en')d.lang='en';t=localStorage.getItem('theme')}catch(e){}if(t!=='dark'&&t!=='light')t='dark';d.setAttribute('data-theme',t)})()</script>
+<script>(function(){var d=document.documentElement,t=null,l=null,q=/[?&]lang=(en|pt)(?:&|#|$)/i.exec(location.search);q=q&&q[1].toLowerCase();try{if(q)localStorage.setItem('lang',q);l=localStorage.getItem('lang');t=localStorage.getItem('theme')}catch(e){}if(q)l=q;if(l==='en')d.lang='en';if(t!=='dark'&&t!=='light')t='dark';d.setAttribute('data-theme',t)})()</script>
 <script src="sf.js"></script>
 <style>
 :root{--bg:#f5f7fa;--card:#fff;--ink:#14202e;--mut:#5b6b7d;--line:#e3e8ef;--acc:#1f5eff;--ok:#12a150;--okb:#e6f6ec;--warn:#d98a00;--warnb:#fff4dc;--bad:#d93636;--badb:#fde9e9;--na:#8a97a8;--nab:#eef1f5;--r:14px;--head:rgba(255,255,255,.94);--th:#fafbfd;--hov:#fafcff;--okt:#0b7a3b;--warnt:#9a5f00;--badt:#b02020;--nat:#56657a;--infob:#e8efff;--infot:#1f45b5;--noteb:#f0f5ff;--notel:#d7e3ff;--vok:#eefaf2;--vwarn:#fff6e3;--vwarnt:#8f5800;--vbad:#fdeeee;--vna:#3b4a5c;--open:#f3f7ff;--det:#fbfcfe;--grid:#eef1f5;--chok:#e6f6ec;--actfg:#fff;--hero1:#0f2747;--hero2:#1f5eff;color-scheme:light}
@@ -206,6 +206,7 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 <script>
 // ===== idioma =====
 let LANG='pt';try{if(localStorage.getItem('lang')==='en')LANG='en'}catch(e){}
+{const q=/[?&]lang=(en|pt)(?:&|#|$)/i.exec(location.search);if(q)LANG=q[1].toLowerCase()}  // ?lang=en|pt na URL (link para partilhar): manda e fica gravado (o <head> já o guardou em localStorage)
 const L=(p,e)=>LANG==='en'?e:p;
 const SL={otimo:['ok','Ótimo','Optimal'],aceitavel:['warn','Aceitável','Acceptable'],fora_do_otimo:['warn','Fora do ótimo','Outside optimal'],fora_de_referencia:['bad','Fora da referência','Out of range'],sem_alvo:['na','Sem alvo','No target'],intolerante:['bad','Intolerante','Intolerant'],nao_intolerante:['ok','Não intolerante','Not intolerant']};
 const lab=s=>SL[s][LANG==='en'?2:1];
@@ -372,7 +373,7 @@ function applyLang(){const en=LANG==='en';document.documentElement.lang=en?'en':
  document.querySelectorAll('[data-al-en]').forEach(el=>{if(!el.hasAttribute('data-al-pt'))el.setAttribute('data-al-pt',el.getAttribute('aria-label'));el.setAttribute('aria-label',en?el.dataset.alEn:el.dataset.alPt)});
  document.querySelectorAll('#lang button').forEach(b=>{const on=b.dataset.l===LANG;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});
  heroMeta();fillCats();srcTxt();failMsg();if(SS)SS.relabel();if(IS)IS.relabel()}
-document.querySelectorAll('#lang button').forEach(b=>b.addEventListener('click',()=>{if(LANG===b.dataset.l)return;LANG=b.dataset.l;try{localStorage.setItem('lang',LANG)}catch(e){}applyLang()}));
+document.querySelectorAll('#lang button').forEach(b=>b.addEventListener('click',()=>{if(LANG===b.dataset.l)return;LANG=b.dataset.l;try{localStorage.setItem('lang',LANG)}catch(e){}try{if(/[?&]lang=/i.test(location.search)){const u=new URL(location.href);u.searchParams.set('lang',LANG);history.replaceState(history.state,'',u)}}catch(e){}applyLang()}));
 applyLang();
 
 // ===== tema (escuro/claro): escolha guardada em localStorage 'theme'; sem escolha, escuro (o default, seja qual for o tema do sistema; aplicado no <head> antes do primeiro desenho) =====

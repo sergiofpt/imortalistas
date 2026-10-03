@@ -11,6 +11,9 @@ GOATCOUNTER_TOKEN (variável de ambiente; nunca é escrito em lado nenhum). Só 
   uma secção opcional que falhe fica com o valor anterior.
 - Respeita o rate limit (4 pedidos/s): pausa entre pedidos e, num 429, espera o X-Rate-Limit-Reset.
 - Só grava se os dados mudarem (o campo atualizado_em não conta), para o workflow só fazer commit quando há novidades.
+- Contagens = todas as visitas e aberturas: a API só expõe "count" (visitantes), mas o Worker do site envia no_sessions:true, por isso
+  cada pedido conta como um novo visitante (= cada visita e cada abertura de PDF). Dados anteriores a essa mudança contavam por sessão.
+- Além dos totais, grava hoje / 7 dias / 30 dias (visitas e aberturas) e as aberturas de PDFs por dia (dias[].aberturas).
 
 Uso: GOATCOUNTER_TOKEN=... python3 ferramentas/estatisticas_goatcounter.py [--saida data/estatisticas.json] [--hoje AAAA-MM-DD]
 """
@@ -21,7 +24,8 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INICIO = dt.datetime(2026, 10, 1, tzinfo=dt.timezone.utc)  # a contagem começou em outubro de 2026
 RE_PDF = re.compile(r'^/?(reports/[A-Za-z0-9._-]+\.pdf)$')
 VAZIO = {'versao': 1, 'atualizado_em': None, 'desde': None,
-         'total': {'visitas': 0, 'visitas_30d': 0, 'visitas_90d': 0, 'aberturas_pdf': 0},
+         'total': {'visitas': 0, 'visitas_30d': 0, 'visitas_90d': 0, 'aberturas_pdf': 0,
+                   'visitas_hoje': 0, 'visitas_7d': 0, 'aberturas_hoje': 0, 'aberturas_7d': 0, 'aberturas_30d': 0},
          'dias': [], 'paginas': [], 'relatorios': [], 'paises': [], 'browsers': [], 'sistemas': [], 'tamanhos': [], 'origens': []}
 
 def aviso(msg):
@@ -69,7 +73,7 @@ def inteiro(x):
 
 def lista_stats(token, pagina, ini, fim, origem=False):
     d = pedido(f'/stats/{pagina}', token, start=ini, end=fim, limit=20)
-    return [{'id': nome_limpo(s.get('id'))[:40], 'nome': nome_limpo(s.get('name'), origem), 'visitas': inteiro(s.get('count'))}
+    return [{'id': nome_limpo(s.get('id'))[:40], 'nome': nome_limpo(s.get('name') or ('' if origem else s.get('id')), origem), 'visitas': inteiro(s.get('count'))}
             for s in (d.get('stats') or []) if inteiro(s.get('count')) > 0]
 
 def periodo(agora=None):
@@ -92,7 +96,7 @@ def recolher(token, hoje):
 
 def _vazio(hoje, ini_dt):
     out = json.loads(json.dumps(VAZIO)); out['desde'] = ini_dt.date().isoformat()
-    out['dias'] = [{'dia': d, 'visitas': 0} for d in ((hoje - dt.timedelta(days=i)).isoformat() for i in range(89, -1, -1)) if d >= INICIO.date().isoformat()]
+    out['dias'] = [{'dia': d, 'visitas': 0, 'aberturas': 0} for d in ((hoje - dt.timedelta(days=i)).isoformat() for i in range(89, -1, -1)) if d >= INICIO.date().isoformat()]
     return out
 
 def _recolher(token, hoje, ini_dt, ini, fim):
@@ -115,7 +119,7 @@ def _recolher(token, hoje, ini_dt, ini, fim):
             if r.get('ficheiro'): fich[r['ficheiro']] = (r.get('id'), 'pt')
             if r.get('ficheiro_en'): fich[r['ficheiro_en']] = (r.get('id'), 'en')
     except (OSError, ValueError): pass
-    paginas, rel, por_dia = {}, {}, {}
+    paginas, rel, por_dia, pdf_dia = {}, {}, {}, {}
     for h in hits:
         path, n = str(h.get('path') or ''), inteiro(h.get('count'))
         if h.get('event'):
@@ -125,6 +129,9 @@ def _recolher(token, hoje, ini_dt, ini, fim):
             chave = rid or f
             e = rel.setdefault(chave, {'id': rid, 'ficheiro': None if rid else f, 'pt': 0, 'en': 0, 'total': 0})
             e[lng] += n; e['total'] += n
+            for s in h.get('stats') or []:
+                dia = str(s.get('day') or '')[:10]
+                if re.match(r'^\d{4}-\d{2}-\d{2}$', dia): pdf_dia[dia] = pdf_dia.get(dia, 0) + inteiro(s.get('daily'))
         else:
             p = nome_limpo(path.split('?')[0].split('#')[0])
             paginas[p] = paginas.get(p, 0) + n
@@ -132,14 +139,17 @@ def _recolher(token, hoje, ini_dt, ini, fim):
                 dia = str(s.get('day') or '')[:10]
                 if re.match(r'^\d{4}-\d{2}-\d{2}$', dia): por_dia[dia] = por_dia.get(dia, 0) + inteiro(s.get('daily'))
     dias = [(hoje - dt.timedelta(days=i)).isoformat() for i in range(89, -1, -1)]
-    serie = [{'dia': d, 'visitas': por_dia.get(d, 0)} for d in dias if d >= INICIO.date().isoformat()]
+    serie = [{'dia': d, 'visitas': por_dia.get(d, 0), 'aberturas': pdf_dia.get(d, 0)} for d in dias if d >= INICIO.date().isoformat()]
     out = json.loads(json.dumps(VAZIO))
     out['desde'] = ini_dt.date().isoformat()
     out['dias'] = serie
     out['paginas'] = sorted(({'path': p, 'visitas': n} for p, n in paginas.items() if n > 0), key=lambda x: (-x['visitas'], x['path']))[:50]
     out['relatorios'] = sorted((v for v in rel.values() if v['total'] > 0), key=lambda x: (-x['total'], x['id'] or x['ficheiro']))
     out['total'] = {'visitas': sum(paginas.values()), 'visitas_30d': sum(x['visitas'] for x in serie[-30:]),
-                    'visitas_90d': sum(x['visitas'] for x in serie), 'aberturas_pdf': sum(v['total'] for v in rel.values())}
+                    'visitas_90d': sum(x['visitas'] for x in serie), 'aberturas_pdf': sum(v['total'] for v in rel.values()),
+                    'visitas_hoje': sum(x['visitas'] for x in serie[-1:]), 'visitas_7d': sum(x['visitas'] for x in serie[-7:]),
+                    'aberturas_hoje': sum(x['aberturas'] for x in serie[-1:]), 'aberturas_7d': sum(x['aberturas'] for x in serie[-7:]),
+                    'aberturas_30d': sum(x['aberturas'] for x in serie[-30:])}
     if inteiro(tot.get('total')) and not out['total']['visitas'] and not out['total']['aberturas_pdf']:
         out['total']['visitas'] = max(0, inteiro(tot.get('total')) - inteiro(tot.get('total_events')))
     return out, ini, fim
