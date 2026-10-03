@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Atualiza data/estatisticas.json com as estatísticas do GoatCounter (conta imortalistas), para a página escondida de estatísticas.
 
-Corre de hora a hora no GitHub Actions (.github/workflows/goatcounter-stats.yml) com o token só de leitura no secret
+Corre de 15 em 15 minutos no GitHub Actions (.github/workflows/goatcounter-stats.yml) com o token só de leitura no secret
 GOATCOUNTER_TOKEN (variável de ambiente; nunca é escrito em lado nenhum). Só usa a biblioteca padrão do Python.
 
 - API v0: /stats/total, /stats/hits (páginas e eventos), /stats/locations, /stats/browsers, /stats/systems, /stats/sizes, /stats/toprefs.

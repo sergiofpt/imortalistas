@@ -410,7 +410,7 @@ def cmd_verificar(a):
         print(f'{os.path.basename(p)}: {len(d["marcadores"])} marcadores + {len(d.get("intolerancias", []))} intolerâncias alimentares, datas {sorted(datas)}')
     ok = verificar_genetica() and ok
     ok = verificar_estatisticas() and ok
-    # data/estatisticas.json é gerado de hora a hora pelo workflow (só contagens agregadas): não entra nas procuras de texto/bytes
+    # data/estatisticas.json é gerado de 15 em 15 minutos pelo workflow (só contagens agregadas): não entra nas procuras de texto/bytes
     AUTO = os.path.join(RAIZ, 'data', 'estatisticas.json')
     for base, _, fs in os.walk(RAIZ):
         if '.git' in base.split(os.sep): continue

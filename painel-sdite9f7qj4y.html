@@ -113,7 +113,7 @@ h3{font-size:16px;margin:0;letter-spacing:-.1px}
 </style>
 </head>
 <body data-title-pt="Sérgio F · Estatísticas" data-title-en="Sérgio F · Statistics">
-<!-- página escondida: fora do menu, sem ligações a partir das outras páginas, sem contagem de visitas; dados em data/estatisticas.json (atualizado de hora a hora pelo workflow das estatísticas) -->
+<!-- página escondida: fora do menu, sem ligações a partir das outras páginas, sem contagem de visitas; dados em data/estatisticas.json (atualizado de 15 em 15 minutos pelo workflow das estatísticas) -->
 <header class="top"><div class="topin">
 <nav class="main" id="nav">
 <a href="index.html#resumo" data-en="Summary">Resumo</a><a href="index.html#sangue" data-en="Tests">Análises</a><a href="index.html#intolerancias" data-en="Food Intolerances">Intolerâncias Alimentares</a><a href="genetica.html" data-en="Bad Genetics">Genética Má</a><a href="genetica-boa.html" data-en="Good Genetics">Genética Boa</a><a href="genetica-reports.html" data-en="Genetics Reports">Genética Reports</a>
@@ -191,7 +191,7 @@ function render(){const box=document.getElementById('sBody'),meta=document.getEl
  meta.innerHTML=S.atualizado_em?`<span class="dot${velho?' old':''}"></span>${L('Atualizado em','Updated on')} ${esc(horaPT(S.atualizado_em))} (PT)`:L('Ainda sem dados','No data yet');
  desde.textContent=S.desde&&S.atualizado_em?`${L('Contagem desde','Counting since')} ${fdia(S.desde)}`:'';
  const temDados=!!S.atualizado_em&&(num(tt.visitas)>0||num(tt.aberturas_pdf)>0||rel.length>0);
- if(!temDados){box.innerHTML=`<div class="card empty"><div class="big" aria-hidden="true">📊</div><b>${L('Ainda não há estatísticas','No statistics yet')}</b><span class="err">${L('Os números aparecem aqui depois das primeiras visitas; a atualização é automática, de hora a hora.','The numbers show up here after the first visits; they are updated automatically every hour.')}</span></div>`;return}
+ if(!temDados){box.innerHTML=`<div class="card empty"><div class="big" aria-hidden="true">📊</div><b>${L('Ainda não há estatísticas','No statistics yet')}</b><span class="err">${L('Os números aparecem aqui depois das primeiras visitas; a atualização é automática, de 15 em 15 minutos.','The numbers show up here after the first visits; they are updated automatically every 15 minutes.')}</span></div>`;return}
  // hoje / 7 dias: do JSON (versões novas) ou somados de dias[] (o último dia é o dia da atualização, em UTC)
  const soma=(k,n)=>dias.slice(-n).reduce((a,x)=>a+num(x[k]),0),temA=dias.some(x=>'aberturas' in x);
  const vH='visitas_hoje' in tt?num(tt.visitas_hoje):soma('visitas',1),v7='visitas_7d' in tt?num(tt.visitas_7d):soma('visitas',7);

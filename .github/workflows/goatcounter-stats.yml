@@ -1,10 +1,10 @@
-# Estatísticas do GoatCounter para a página escondida: atualiza data/estatisticas.json de hora a hora
+# Estatísticas do GoatCounter para a página escondida: atualiza data/estatisticas.json de 15 em 15 minutos
 # (token só de leitura no secret GOATCOUNTER_TOKEN) e só faz commit quando o JSON muda.
 name: Estatísticas GoatCounter
 
 on:
   schedule:
-    - cron: '17 * * * *'   # de hora a hora, ao minuto 17 (UTC)
+    - cron: '2,17,32,47 * * * *'   # de 15 em 15 minutos (aos minutos 2, 17, 32 e 47, UTC; o GitHub pode atrasar alguns minutos)
   workflow_dispatch:
 
 permissions:
