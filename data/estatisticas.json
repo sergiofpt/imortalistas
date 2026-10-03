@@ -1,15 +1,15 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-03T22:27:01Z",
+ "atualizado_em": "2026-10-03T23:04:02Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
-  "visitas": 13,
-  "visitas_30d": 13,
-  "visitas_90d": 13,
+  "visitas": 17,
+  "visitas_30d": 17,
+  "visitas_90d": 17,
   "aberturas_pdf": 11,
-  "visitas_hoje": 13,
-  "visitas_7d": 13,
+  "visitas_hoje": 17,
+  "visitas_7d": 17,
   "aberturas_hoje": 11,
   "aberturas_7d": 11,
   "aberturas_30d": 11,
@@ -31,13 +31,17 @@
   },
   {
    "dia": "2026-10-03",
-   "visitas": 13,
+   "visitas": 17,
    "aberturas": 11
   }
  ],
  "paginas": [
   {
    "path": "/imortalistas/genetica-reports.html",
+   "visitas": 5
+  },
+  {
+   "path": "/imortalistas",
    "visitas": 4
   },
   {
@@ -45,16 +49,12 @@
    "visitas": 3
   },
   {
-   "path": "/imortalistas",
+   "path": "/imortalistas/genetica-boa.html",
    "visitas": 2
   },
   {
    "path": "/imortalistas/genetica.html",
    "visitas": 2
-  },
-  {
-   "path": "/imortalistas/genetica-boa.html",
-   "visitas": 1
   },
   {
    "path": "/imortalistas/index.html",
@@ -168,19 +168,19 @@
   {
    "id": "(unknown)",
    "nome": "(unknown)",
-   "visitas": 2
+   "visitas": 6
   },
   {
    "id": "US",
    "nome": "United States",
-   "visitas": 2
+   "visitas": 6
   }
  ],
  "browsers": [
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 15
+   "visitas": 19
   },
   {
    "id": "Firefox",
@@ -190,7 +190,7 @@
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 2
+   "visitas": 6
   },
   {
    "id": "Safari",
@@ -202,17 +202,17 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 16
+   "visitas": 20
+  },
+  {
+   "id": "(desconhecido)",
+   "nome": "(desconhecido)",
+   "visitas": 6
   },
   {
    "id": "Linux",
    "nome": "Linux",
    "visitas": 6
-  },
-  {
-   "id": "(desconhecido)",
-   "nome": "(desconhecido)",
-   "visitas": 2
   },
   {
    "id": "Android",
@@ -239,19 +239,19 @@
   {
    "id": "desktop",
    "nome": "desktop",
-   "visitas": 12
+   "visitas": 16
   },
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 12
+   "visitas": 16
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 26
+   "visitas": 34
   }
  ],
  "aparelhos_desde": "2026-10-03"
