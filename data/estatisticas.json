@@ -1,12 +1,12 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-03T17:21:40Z",
+ "atualizado_em": "2026-10-03T17:25:03Z",
  "desde": "2026-10-01",
  "total": {
-  "visitas": 0,
-  "visitas_30d": 0,
-  "visitas_90d": 0,
-  "aberturas_pdf": 0
+  "visitas": 1,
+  "visitas_30d": 1,
+  "visitas_90d": 1,
+  "aberturas_pdf": 1
  },
  "dias": [
   {
@@ -19,14 +19,57 @@
   },
   {
    "dia": "2026-10-03",
-   "visitas": 0
+   "visitas": 1
   }
  ],
- "paginas": [],
- "relatorios": [],
- "paises": [],
- "browsers": [],
- "sistemas": [],
- "tamanhos": [],
- "origens": []
+ "paginas": [
+  {
+   "path": "/imortalistas/genetica-reports.html",
+   "visitas": 1
+  }
+ ],
+ "relatorios": [
+  {
+   "id": "imortalidade",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 0,
+   "total": 1
+  }
+ ],
+ "paises": [
+  {
+   "id": "PT",
+   "nome": "Portugal",
+   "visitas": 2
+  }
+ ],
+ "browsers": [
+  {
+   "id": "Chrome",
+   "nome": "Chrome",
+   "visitas": 2
+  }
+ ],
+ "sistemas": [
+  {
+   "id": "Linux",
+   "nome": "Linux",
+   "visitas": 2
+  }
+ ],
+ "tamanhos": [
+  {
+   "id": "desktop",
+   "nome": "(desconhecido)",
+   "visitas": 2
+  }
+ ],
+ "origens": [
+  {
+   "id": "(desconhecido)",
+   "nome": "(desconhecido)",
+   "visitas": 2
+  }
+ ]
 }
