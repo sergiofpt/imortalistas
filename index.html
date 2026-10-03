@@ -9,6 +9,7 @@
 <title>Sérgio F · Cronologia de Exames de Sangue</title>
 <meta name="color-scheme" content="light dark">
 <script>(function(){var d=document.documentElement,t=null;try{if(localStorage.getItem('lang')==='en')d.lang='en';t=localStorage.getItem('theme')}catch(e){}if(t!=='dark'&&t!=='light')t='dark';d.setAttribute('data-theme',t)})()</script>
+<script src="sf.js"></script>
 <style>
 :root{--bg:#f5f7fa;--card:#fff;--ink:#14202e;--mut:#5b6b7d;--line:#e3e8ef;--acc:#1f5eff;--ok:#12a150;--okb:#e6f6ec;--warn:#d98a00;--warnb:#fff4dc;--bad:#d93636;--badb:#fde9e9;--na:#8a97a8;--nab:#eef1f5;--r:14px;--head:rgba(255,255,255,.94);--th:#fafbfd;--hov:#fafcff;--okt:#0b7a3b;--warnt:#9a5f00;--badt:#b02020;--nat:#56657a;--infob:#e8efff;--infot:#1f45b5;--noteb:#f0f5ff;--notel:#d7e3ff;--vok:#eefaf2;--vwarn:#fff6e3;--vwarnt:#8f5800;--vbad:#fdeeee;--vna:#3b4a5c;--open:#f3f7ff;--det:#fbfcfe;--grid:#eef1f5;--chok:#e6f6ec;--actfg:#fff;--hero1:#0f2747;--hero2:#1f5eff;color-scheme:light}
 *{box-sizing:border-box}
@@ -384,19 +385,17 @@ applyTheme();
 const links=[...document.querySelectorAll('#nav a')];const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id))}})},{rootMargin:'-40% 0px -55% 0px'});
 document.querySelectorAll('main section[id]').forEach(s=>obs.observe(s));
 </script>
-<script data-goatcounter="https://imortalistas.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <script>
-// Contagem anónima de visitas (GoatCounter, sem cookies). Cada abertura ou download de um PDF de reports/ conta como evento: path = ficheiro (ex. reports/esofago_en.pdf), título = título PT do relatório + língua do PDF.
-// Listener delegado (apanha cartões criados depois, clique normal, Ctrl/Cmd/Shift e botão do meio); nunca chama preventDefault e não espera pela contagem; se o script de contagem estiver bloqueado não faz nada.
-(function(){var T={},Q=[];
-window.gcTitulos=function(rs){(rs||[]).forEach(function(r){var t=r&&r.titulo&&(r.titulo.pt||r.titulo.en);if(!t)return;if(typeof r.ficheiro==='string')T[r.ficheiro]=t+' (PT)';if(typeof r.ficheiro_en==='string')T[r.ficheiro_en]=t+' (EN)'})};
-function send(o){try{var g=window.goatcounter;if(!g||typeof g.count!=='function')return false;g.count(o)}catch(_){}return true}
-function flush(){while(Q.length&&send(Q[0]))Q.shift()}
-function pdf(e){try{if(e.type==='auxclick'&&e.button!==1)return;var el=e.target;if(el&&el.nodeType!==1)el=el.parentElement;var a=el&&el.closest?el.closest('a[href]'):null;if(!a)return;
- var u=new URL(a.getAttribute('href'),location.href);if(u.origin!==location.origin)return;var m=/\/(reports\/[A-Za-z0-9._-]+\.pdf)$/.exec(u.pathname);if(!m)return;
- var p=m[1],o={path:p,title:T[p]||(p.split('/').pop()+(/_en\.pdf$/.test(p)?' (EN)':' (PT)')),event:true};if(!send(o)&&Q.length<20)Q.push(o)}catch(_){}}
-document.addEventListener('click',pdf,true);document.addEventListener('auxclick',pdf,true);
-var s=document.querySelector('script[data-goatcounter]');if(s)s.addEventListener('load',flush)})();
+// Contagem anónima de visitas (sem cookies): esta visita é enviada ao serviço próprio do site (window.SF_W, definido em sf.js), que a passa ao GoatCounter
+// com o mesmo caminho de sempre (ex. /imortalistas/genetica.html). Os PDFs contam-se no próprio serviço quando se abrem (ligações …/r/<ficheiro>.pdf).
+// Não conta em localhost, em iframes, em browsers automatizados nem depois de #toggle-goatcounter; se o serviço falhar ou estiver bloqueado, o site funciona igual.
+(function(){try{var W=window.SF_W;if(!W)return;W=String(W).replace(/\/+$/,'');
+ if(location.hash==='#toggle-goatcounter'){var off=localStorage.getItem('skipgc')==='t';if(off)localStorage.removeItem('skipgc');else localStorage.setItem('skipgc','t');alert(off?'Contagem ligada neste browser.':'Contagem desligada neste browser.')}
+ if(localStorage.getItem('skipgc')==='t'||navigator.webdriver||window!==window.top||location.protocol==='file:'||/^(localhost|127\.|10\.|192\.168\.|0\.0\.0\.0$|\[::1\]$)/.test(location.hostname))return;
+ var send=function(){try{var d=JSON.stringify({p:location.pathname,t:document.title,r:document.referrer||'',s:(window.screen&&screen.width)||0}),u=W+'/e';
+  if(navigator.sendBeacon&&navigator.sendBeacon(u,d))return;fetch(u,{method:'POST',body:d,keepalive:true,mode:'no-cors',credentials:'omit'}).catch(function(){})}catch(_){}};
+ if(document.visibilityState==='prerender')document.addEventListener('visibilitychange',function f(){if(document.visibilityState!=='prerender'){document.removeEventListener('visibilitychange',f);send()}});
+ else if(document.readyState==='complete')send();else addEventListener('load',send)}catch(_){}})();
 </script>
 </body>
 </html>
