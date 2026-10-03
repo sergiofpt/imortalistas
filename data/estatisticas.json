@@ -1,25 +1,33 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-03T18:34:10Z",
+ "atualizado_em": "2026-10-03T20:22:15Z",
  "desde": "2026-10-01",
  "total": {
   "visitas": 5,
   "visitas_30d": 5,
   "visitas_90d": 5,
-  "aberturas_pdf": 5
+  "aberturas_pdf": 7,
+  "visitas_hoje": 5,
+  "visitas_7d": 5,
+  "aberturas_hoje": 7,
+  "aberturas_7d": 7,
+  "aberturas_30d": 7
  },
  "dias": [
   {
    "dia": "2026-10-01",
-   "visitas": 0
+   "visitas": 0,
+   "aberturas": 0
   },
   {
    "dia": "2026-10-02",
-   "visitas": 0
+   "visitas": 0,
+   "aberturas": 0
   },
   {
    "dia": "2026-10-03",
-   "visitas": 5
+   "visitas": 5,
+   "aberturas": 7
   }
  ],
  "paginas": [
@@ -37,8 +45,8 @@
    "id": "imortalidade",
    "ficheiro": null,
    "pt": 2,
-   "en": 0,
-   "total": 2
+   "en": 2,
+   "total": 4
   },
   {
    "id": "anestesia-cirurgia",
@@ -62,11 +70,17 @@
    "total": 1
   }
  ],
+ "aparelhos": [],
  "paises": [
   {
    "id": "PT",
    "nome": "Portugal",
-   "visitas": 10
+   "visitas": 11
+  },
+  {
+   "id": "US",
+   "nome": "United States",
+   "visitas": 1
   }
  ],
  "browsers": [
@@ -78,7 +92,12 @@
   {
    "id": "Firefox",
    "nome": "Firefox",
-   "visitas": 4
+   "visitas": 5
+  },
+  {
+   "id": "Safari",
+   "nome": "Safari",
+   "visitas": 1
   }
  ],
  "sistemas": [
@@ -90,26 +109,31 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 4
+   "visitas": 5
+  },
+  {
+   "id": "macOS",
+   "nome": "macOS",
+   "visitas": 1
   }
  ],
  "tamanhos": [
   {
    "id": "desktop",
-   "nome": "(desconhecido)",
+   "nome": "desktop",
    "visitas": 6
   },
   {
    "id": "unknown",
-   "nome": "(desconhecido)",
-   "visitas": 4
+   "nome": "unknown",
+   "visitas": 6
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 10
+   "visitas": 12
   }
  ]
 }
