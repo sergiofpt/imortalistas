@@ -1,6 +1,6 @@
 {
  "_leia_me": "Lista de relatórios da página genetica-reports.html (reports.js). Para acrescentar um relatório: copiar o PDF (já verificado quanto à privacidade) para reports/ e juntar uma entrada a \"relatorios\". Campos: id (único, letras/números/hífens), titulo {pt,en}, data AAAA-MM-DD, ficheiro \"reports/<nome>.pdf\" (obrigatórios); descricao {pt,en}, paginas, tamanho_kb, lingua {pt,en}, etiquetas [..] (opcionais). A página ordena por data (mais recente primeiro). Ver README.md, secção \"Genética Reports\".",
- "atualizado_em": "2026-10-02",
+ "atualizado_em": "2026-10-03",
  "intro": {
   "pt": "Relatórios completos da genética em PDF, para guardar ou levar ao médico. Cada relatório novo é só uma entrada em <b>data/reports.json</b>. <b>Tudo é sugestão (não aplicada) e precisa de validação médica.</b>",
   "en": "Full genetics reports as PDFs, to keep or take to the doctor. Each new report is just one entry in <b>data/reports.json</b>. <b>Everything is a suggestion (not applied) and needs medical validation.</b>"
@@ -577,6 +577,1146 @@
    },
    "paginas": 17,
    "tamanho_kb": 72,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "alergias-asma-atopia",
+   "titulo": {
+    "pt": "Alergias, Asma e Atopia",
+    "en": "Allergies, Asthma and Atopy"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/alergias-asma-atopia.pdf",
+   "descricao": {
+    "pt": "23 variantes e 13 scores: genética da atopia favorável (asma, eczema e doença alérgica com scores baixos); o ponto fraco é a sinusite crónica com pólipos.",
+    "en": "23 variants and 13 scores: favourable atopy genetics (low asthma, eczema and allergic-disease scores); the weak point is chronic sinusitis with polyps."
+   },
+   "paginas": 13,
+   "tamanho_kb": 71,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "enxaqueca-cefaleias",
+   "titulo": {
+    "pt": "Enxaqueca e Cefaleias",
+    "en": "Migraine and Headaches"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/enxaqueca-cefaleias.pdf",
+   "descricao": {
+    "pt": "26 variantes e 6 scores: predisposição para enxaqueca no lado baixo do típico (scores nos percentis 29 e 32); loci mistos, sem indicação genética para prevenção.",
+    "en": "26 variants and 6 scores: migraine predisposition on the low side of typical (scores at the 29th and 32nd percentiles); mixed loci, no genetic case for prevention."
+   },
+   "paginas": 14,
+   "tamanho_kb": 66,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "coagulacao-trombose-veias",
+   "titulo": {
+    "pt": "Coagulação, Trombose e Veias",
+    "en": "Coagulation, Thrombosis and Veins"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/coagulacao-trombose-veias.pdf",
+   "descricao": {
+    "pt": "30 variantes e 11 scores: sem trombofilia major (fator V Leiden e protrombina negativos), mas predisposição poligénica moderada para trombose venosa, em parte compensada pelo provável grupo O.",
+    "en": "30 variants and 11 scores: no major thrombophilia (factor V Leiden and prothrombin negative), but a moderate polygenic predisposition to venous thrombosis, partly offset by likely blood group O."
+   },
+   "paginas": 13,
+   "tamanho_kb": 72,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "coluna-disco-dor-lombar",
+   "titulo": {
+    "pt": "Coluna, Disco e Dor Lombar",
+    "en": "Spine, Disc and Low Back Pain"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/coluna-disco-dor-lombar.pdf",
+   "descricao": {
+    "pt": "23 variantes e 9 scores: genética da coluna claramente favorável (doença do disco no percentil 17, sem os alelos Trp2/Trp3 do COL9A2/COL9A3); único ponto contra no COL11A1, de evidência fraca.",
+    "en": "23 variants and 9 scores: clearly favourable spine genetics (disc disease at the 17th percentile, no COL9A2/COL9A3 Trp2/Trp3 alleles); the only point against is COL11A1, with weak evidence."
+   },
+   "paginas": 13,
+   "tamanho_kb": 71,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "figado-gordura-hepatica",
+   "titulo": {
+    "pt": "Fígado e Gordura Hepática",
+    "en": "Liver and Fatty Liver"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/figado-gordura-hepatica.pdf",
+   "descricao": {
+    "pt": "Sem TM6SF2 E167K, com 1 alelo protetor do HSD17B13 e score de cirrose no percentil 15,2; contra: PNPLA3 I148M heterozigoto, alfa-1 antitripsina PiMZ e enzimas hepáticas geneticamente mais altas.",
+    "en": "No TM6SF2 E167K, one protective HSD17B13 allele and a cirrhosis score at the 15.2th percentile; against: heterozygous PNPLA3 I148M, alpha-1 antitrypsin PiMZ and genetically higher liver enzymes."
+   },
+   "paginas": 18,
+   "tamanho_kb": 65,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "glicose-insulina-diabetes",
+   "titulo": {
+    "pt": "Glicose, Insulina e Diabetes",
+    "en": "Glucose, Insulin and Diabetes"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/glicose-insulina-diabetes.pdf",
+   "descricao": {
+    "pt": "HbA1c e glicose em jejum geneticamente baixas (percentis 6,6 a 9,5); risco poligénico de diabetes tipo 2 típico, com vários alelos de risco na célula beta (TCF7L2, SLC30A8, KCNJ11).",
+    "en": "Genetically low HbA1c and fasting glucose (6.6th to 9.5th percentiles); typical type 2 diabetes polygenic risk, with several beta-cell risk alleles (TCF7L2, SLC30A8, KCNJ11)."
+   },
+   "paginas": 15,
+   "tamanho_kb": 56,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "lipidos-detalhe",
+   "titulo": {
+    "pt": "Lípidos em Detalhe",
+    "en": "Lipids in Detail"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/lipidos-detalhe.pdf",
+   "descricao": {
+    "pt": "APOE ε3/ε3, LDL genético abaixo da mediana, sem os alelos de Lp(a) muito alta e boa tolerância às estatinas (SLCO1B1 T/T); triglicéridos geneticamente acima da mediana e HDL baixo.",
+    "en": "APOE ε3/ε3, genetic LDL below the median, no very-high-Lp(a) alleles and good statin tolerance (SLCO1B1 T/T); genetically above-median triglycerides and low HDL."
+   },
+   "paginas": 16,
+   "tamanho_kb": 62,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "vitaminas-minerais",
+   "titulo": {
+    "pt": "Vitaminas e Minerais",
+    "en": "Vitamins and Minerals"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/vitaminas-minerais.pdf",
+   "descricao": {
+    "pt": "Vitamina D genética alta e boa conversão de ómega-3 (FADS1, ELOVL2); pontos fracos no MTHFR (heterozigoto composto), na B12 (TCN2) e na vitamina A (BCO1); VKORC1 sensível à varfarina.",
+    "en": "High genetic vitamin D and efficient omega-3 conversion (FADS1, ELOVL2); weak points in MTHFR (compound heterozygous), B12 (TCN2) and vitamin A (BCO1); VKORC1 warfarin-sensitive."
+   },
+   "paginas": 16,
+   "tamanho_kb": 59,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "pancreas-pancreatite",
+   "titulo": {
+    "pt": "Pâncreas e Pancreatite",
+    "en": "Pancreas and Pancreatitis"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/pancreas-pancreatite.pdf",
+   "descricao": {
+    "pt": "Travões da tripsina intactos (SPINK1, CTRC), alelo protetor no CLDN2 e cancro do pâncreas típico; o ponto mais relevante são os cálculos biliares (score no percentil 88,8).",
+    "en": "Intact trypsin brakes (SPINK1, CTRC), a protective CLDN2 allele and typical pancreatic cancer risk; the most relevant point is gallstones (score at the 88.8th percentile)."
+   },
+   "paginas": 18,
+   "tamanho_kb": 67,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "estomago-refluxo-helicobacter",
+   "titulo": {
+    "pt": "Estômago, Refluxo e Helicobacter",
+    "en": "Stomach, Reflux and Helicobacter"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/estomago-refluxo-helicobacter.pdf",
+   "descricao": {
+    "pt": "Refluxo, hérnia do hiato e esófago de Barrett com predisposição genética baixa e CYP2C19 *1/*1; pontos mistos no PSCA T/T e no grupo O (mais úlcera duodenal, menos cancro gástrico).",
+    "en": "Low genetic predisposition to reflux, hiatal hernia and Barrett's oesophagus, CYP2C19 *1/*1; mixed points in PSCA T/T and blood group O (more duodenal ulcer, less gastric cancer)."
+   },
+   "paginas": 17,
+   "tamanho_kb": 62,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "globulos-vermelhos-hemoglobina-plaquetas",
+   "titulo": {
+    "pt": "Glóbulos Vermelhos, Hemoglobina e Plaquetas",
+    "en": "Red Blood Cells, Haemoglobin and Platelets"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/globulos-vermelhos-hemoglobina-plaquetas.pdf",
+   "descricao": {
+    "pt": "Sem as hemoglobinopatias nem o défice de G6PD testados, sem JAK2 46/1 e RDW genético baixo; padrão genético de menos glóbulos vermelhos mas maiores (hemoglobina no percentil 11,7).",
+    "en": "None of the tested haemoglobinopathies or G6PD deficiency, no JAK2 46/1 and low genetic RDW; genetic pattern of fewer but larger red blood cells (haemoglobin at the 11.7th percentile)."
+   },
+   "paginas": 17,
+   "tamanho_kb": 67,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "prostata",
+   "titulo": {
+    "pt": "Próstata",
+    "en": "Prostate"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/prostata.pdf",
+   "descricao": {
+    "pt": "Predisposição poligénica muito baixa para cancro da próstata (5 de 6 scores abaixo do percentil 10, sem HOXB13 G84E); PSA geneticamente baixo, o que muda a leitura do PSA.",
+    "en": "Very low polygenic predisposition to prostate cancer (5 of 6 scores below the 10th percentile, no HOXB13 G84E); genetically low PSA, which changes how PSA results should be read."
+   },
+   "paginas": 17,
+   "tamanho_kb": 61,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "termogenese-gordura-castanha",
+   "titulo": {
+    "pt": "Termogénese e Gordura Castanha",
+    "en": "Thermogenesis and Brown Fat"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/termogenese-gordura-castanha.pdf",
+   "descricao": {
+    "pt": "20 variantes e 7 scores: termogénese favorável a típica (ADRB3, PPARGC1A e UCP1 a favor); o ponto desfavorável é a distribuição da gordura (gordura do tronco no percentil 98).",
+    "en": "20 variants and 7 scores: favourable-to-typical thermogenesis (ADRB3, PPARGC1A and UCP1 in favour); the unfavourable point is fat distribution (trunk fat at the 98th percentile)."
+   },
+   "paginas": 13,
+   "tamanho_kb": 66,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "apetite-saciedade-comportamento-alimentar",
+   "titulo": {
+    "pt": "Apetite, Saciedade e Comportamento Alimentar",
+    "en": "Appetite, Satiety and Eating Behaviour"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/apetite-saciedade-comportamento-alimentar.pdf",
+   "descricao": {
+    "pt": "23 variantes e 9 scores: controlo do apetite favorável (MC4R sem alelos de risco, SH2B1 e GNPDA2 a favor, BDNF Met); sinais contraditórios no gosto por doces.",
+    "en": "23 variants and 9 scores: favourable appetite control (MC4R without risk alleles, SH2B1 and GNPDA2 in favour, BDNF Met); contradictory signals on sweet preference."
+   },
+   "paginas": 13,
+   "tamanho_kb": 67,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "cafeina-estimulantes",
+   "titulo": {
+    "pt": "Cafeína e Estimulantes",
+    "en": "Caffeine and Stimulants"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/cafeina-estimulantes.pdf",
+   "descricao": {
+    "pt": "20 variantes e 7 scores: relação favorável a típica com a cafeína (eliminação normal; ADORA2A C/C, o genótipo menos associado a insónia com cafeína); predisposição genética baixa para fumar.",
+    "en": "20 variants and 7 scores: favourable-to-typical caffeine profile (normal clearance; ADORA2A C/C, the genotype least linked to caffeine-related insomnia); low genetic predisposition to smoking."
+   },
+   "paginas": 12,
+   "tamanho_kb": 64,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "sal-agua-eletrolitos",
+   "titulo": {
+    "pt": "Sal, Água e Eletrólitos",
+    "en": "Salt, Water and Electrolytes"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/sal-agua-eletrolitos.pdf",
+   "descricao": {
+    "pt": "16 variantes e 10 scores: genética típica do sal e dos eletrólitos (sensibilidade ao sal no percentil 49); pontos a vigiar no magnésio (MUC1 C/C) e no potássio da dieta.",
+    "en": "16 variants and 10 scores: typical salt and electrolyte genetics (salt sensitivity at the 49th percentile); points to watch in magnesium (MUC1 C/C) and dietary potassium."
+   },
+   "paginas": 13,
+   "tamanho_kb": 65,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "oxitocina-comportamento-social",
+   "titulo": {
+    "pt": "Oxitocina e Comportamento Social",
+    "en": "Oxytocin and Social Behaviour"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/oxitocina-comportamento-social.pdf",
+   "descricao": {
+    "pt": "11 SNPs e 4 scores: perfil poligénico social muito favorável (pouca solidão e muita sociabilidade); os genótipos do recetor da oxitocina (OXTR) são descritos sem juízo.",
+    "en": "11 SNPs and 4 scores: very favourable social polygenic profile (low loneliness and high sociability); oxytocin receptor (OXTR) genotypes are described without judgement."
+   },
+   "paginas": 13,
+   "tamanho_kb": 52,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "relogio-epigenetico-idade-biologica",
+   "titulo": {
+    "pt": "Relógio Epigenético e Idade Biológica",
+    "en": "Epigenetic Clock and Biological Age"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/relogio-epigenetico-idade-biologica.pdf",
+   "descricao": {
+    "pt": "17 SNPs e 5 scores: ponto de partida genético típico a favorável (relógio intrínseco no percentil 48, sem os alelos do TERT que aceleram o relógio); fragilidade no percentil 75.",
+    "en": "17 SNPs and 5 scores: typical-to-favourable genetic starting point (intrinsic clock at the 48th percentile, no clock-accelerating TERT alleles); frailty at the 75th percentile."
+   },
+   "paginas": 13,
+   "tamanho_kb": 56,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "andropausa-envelhecimento-reprodutivo",
+   "titulo": {
+    "pt": "Andropausa e Envelhecimento Reprodutivo",
+    "en": "Andropause and Reproductive Ageing"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/andropausa-envelhecimento-reprodutivo.pdf",
+   "descricao": {
+    "pt": "17 SNPs e 6 scores: reserva genética de testosterona alta (percentil 89), com SHBG também alta (87); perda do cromossoma Y no percentil 37 e puberdade genética tardia.",
+    "en": "17 SNPs and 6 scores: high genetic testosterone reserve (89th percentile), with high SHBG too (87th); loss of chromosome Y at the 37th percentile and genetically late puberty."
+   },
+   "paginas": 13,
+   "tamanho_kb": 57,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "fertilidade-masculina",
+   "titulo": {
+    "pt": "Fertilidade Masculina",
+    "en": "Male Fertility"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/fertilidade-masculina.pdf",
+   "descricao": {
+    "pt": "16 SNPs e 2 scores: sem sinais genéticos de infertilidade estrutural visíveis no chip e risco de tumor do testículo baixo (percentil 24); FSHB -211G>T heterozigoto como ponto desfavorável.",
+    "en": "16 SNPs and 2 scores: no genetic signs of structural infertility visible on the chip and low testicular cancer risk (24th percentile); heterozygous FSHB -211G>T as the unfavourable point."
+   },
+   "paginas": 13,
+   "tamanho_kb": 54,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "humor-risco-depressao",
+   "titulo": {
+    "pt": "Humor e Risco de Depressão",
+    "en": "Mood and Depression Risk"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/humor-risco-depressao.pdf",
+   "descricao": {
+    "pt": "23 variantes e 6 scores: o risco genético de depressão é o ponto de atenção do relatório, com sinais mistos nos loci fortes; a insónia é o fator modificável que mais conta.",
+    "en": "23 variants and 6 scores: genetic depression risk is the report's point of attention, with mixed signals at the strong loci; insomnia is the modifiable factor that matters most."
+   },
+   "paginas": 13,
+   "tamanho_kb": 67,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "ansiedade-resiliencia-stress",
+   "titulo": {
+    "pt": "Ansiedade e Resiliência ao Stress",
+    "en": "Anxiety and Stress Resilience"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/ansiedade-resiliencia-stress.pdf",
+   "descricao": {
+    "pt": "22 variantes e 10 scores: ansiedade típica a favorável e eixo do stress favorável (FKBP5 sem o alelo T); o ponto contra está nos loci do trauma.",
+    "en": "22 variants and 10 scores: typical-to-favourable anxiety and a favourable stress axis (FKBP5 without the T allele); the point against lies in the trauma loci."
+   },
+   "paginas": 13,
+   "tamanho_kb": 70,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "personalidade-tracos-psicologicos",
+   "titulo": {
+    "pt": "Personalidade e Traços Psicológicos",
+    "en": "Personality and Psychological Traits"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/personalidade-tracos-psicologicos.pdf",
+   "descricao": {
+    "pt": "16 variantes e 11 scores: perfil social e estável a moderadamente emotivo; as relações são o ponto mais favorável e a tomada de risco dá sinais divergentes.",
+    "en": "16 variants and 11 scores: a social, stable-to-moderately-emotional profile; relationships are the most favourable point and risk-taking gives diverging signals."
+   },
+   "paginas": 13,
+   "tamanho_kb": 67,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "atencao-phda",
+   "titulo": {
+    "pt": "Atenção e PHDA",
+    "en": "Attention and ADHD"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/atencao-phda.pdf",
+   "descricao": {
+    "pt": "19 variantes e 3 scores: predisposição genética para PHDA acima da média, com os três scores concordantes; não é diagnóstico (mede traços contínuos de atenção e impulsividade).",
+    "en": "19 variants and 3 scores: above-average genetic predisposition to ADHD, with all three scores agreeing; not a diagnosis (it measures continuous traits of attention and impulsivity)."
+   },
+   "paginas": 12,
+   "tamanho_kb": 62,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "perfil-desportivo-resistencia-forca",
+   "titulo": {
+    "pt": "Perfil Desportivo - Resistência e Força",
+    "en": "Sports Profile - Endurance and Strength"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/perfil-desportivo-resistencia-forca.pdf",
+   "descricao": {
+    "pt": "Bom motor aeróbio (PPARGC1A Gly482/Gly482, AMPD1 normal) e força de preensão típica; perfil de fibra misto (ACTN3 RX); o ponto a compensar é a massa muscular de base, geneticamente baixa.",
+    "en": "Good aerobic engine (PPARGC1A Gly482/Gly482, normal AMPD1) and typical grip strength; mixed fibre profile (ACTN3 RX); the point to compensate is genetically low baseline muscle mass."
+   },
+   "paginas": 14,
+   "tamanho_kb": 47,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "resposta-treino-vo2max",
+   "titulo": {
+    "pt": "Resposta ao Treino e VO2max",
+    "en": "Training Response and VO2max"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/resposta-treino-vo2max.pdf",
+   "descricao": {
+    "pt": "Genética do VO2max mal mapeada; frequência cardíaca em repouso típica a baixa e carga de loci de VO2max no percentil 80,6; inclinação genética baixa para a atividade física (comportamento, não capacidade).",
+    "en": "Poorly mapped VO2max genetics; typical-to-low resting heart rate and VO2max locus load at the 80.6th percentile; low genetic inclination to physical activity (behaviour, not capacity)."
+   },
+   "paginas": 14,
+   "tamanho_kb": 47,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "tendoes-ligamentos-lesoes",
+   "titulo": {
+    "pt": "Tendões, Ligamentos e Lesões",
+    "en": "Tendons, Ligaments and Injuries"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/tendoes-ligamentos-lesoes.pdf",
+   "descricao": {
+    "pt": "Tecidos moles com scores típicos a baixos (GDF5 favorável, sem COL3A1 Ala698Thr); único sinal clássico desfavorável no COL5A1 T/T (evidência fraca); o risco vem sobretudo da progressão da carga.",
+    "en": "Typical-to-low soft-tissue scores (favourable GDF5, no COL3A1 Ala698Thr); the only classic unfavourable signal is COL5A1 T/T (weak evidence); risk comes mostly from load progression."
+   },
+   "paginas": 14,
+   "tamanho_kb": 46,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "pulmao-funcao-respiratoria",
+   "titulo": {
+    "pt": "Pulmão e Função Respiratória",
+    "en": "Lung and Respiratory Function"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/pulmao-funcao-respiratoria.pdf",
+   "descricao": {
+    "pt": "Função pulmonar genética típica a favorável e sem o alelo de fibrose do MUC5B; alfa-1 antitripsina PiMZ (enfisema e DPOC sobem sobretudo com tabaco ou fumo) e FVC abaixo da mediana.",
+    "en": "Typical-to-favourable genetic lung function and no MUC5B fibrosis allele; alpha-1 antitrypsin PiMZ (emphysema and COPD risk rises mainly with smoke) and below-median FVC."
+   },
+   "paginas": 14,
+   "tamanho_kb": 49,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "estado-portador",
+   "titulo": {
+    "pt": "Estado de Portador",
+    "en": "Carrier Status"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/estado-portador.pdf",
+   "descricao": {
+    "pt": "Das 45 variantes de portador procuradas, 42 foram lidas: dois estados de portador já conhecidos (alfa-1 antitripsina PiMZ e HFE H63D) e nenhum novo (fibrose quística, hemoglobinopatias e outras).",
+    "en": "Of 45 carrier variants searched, 42 were read: two already-known carrier states (alpha-1 antitrypsin PiMZ and HFE H63D) and no new ones (cystic fibrosis, haemoglobinopathies and others)."
+   },
+   "paginas": 17,
+   "tamanho_kb": 76,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "doenca-arterial-periferica",
+   "titulo": {
+    "pt": "Doença Arterial Periférica",
+    "en": "Peripheral Artery Disease"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/doenca-arterial-periferica.pdf",
+   "descricao": {
+    "pt": "18 variantes e 4 scores: risco baixo a típico nos scores mais completos (multi-traço no percentil 22) e sem Lp(a) alta; o ponto desfavorável claro é o 9p21 em homozigotia de risco.",
+    "en": "18 variants and 4 scores: low-to-typical risk in the most complete scores (multi-trait at the 22nd percentile) and no high Lp(a); the clear unfavourable point is homozygous risk at 9p21."
+   },
+   "paginas": 13,
+   "tamanho_kb": 66,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "cetose-corpos-cetonicos",
+   "titulo": {
+    "pt": "Cetose e Corpos Cetónicos",
+    "en": "Ketosis and Ketone Bodies"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/cetose-corpos-cetonicos.pdf",
+   "descricao": {
+    "pt": "11 variantes e 3 scores, informativos: acetoacetato e acetona geneticamente altos e beta-hidroxibutirato baixo (OXCT1 C/C); insulina em jejum genética baixa, por isso entra em cetose com facilidade.",
+    "en": "11 variants and 3 scores, informative: genetically high acetoacetate and acetone and low beta-hydroxybutyrate (OXCT1 C/C); low genetic fasting insulin, so ketosis comes easily."
+   },
+   "paginas": 10,
+   "tamanho_kb": 55,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "proteina-aminoacidos",
+   "titulo": {
+    "pt": "Proteína e Aminoácidos",
+    "en": "Protein and Amino Acids"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/proteina-aminoacidos.pdf",
+   "descricao": {
+    "pt": "12 variantes e 11 scores: aminoácidos sobretudo típicos (BCAA no percentil 35, sem catabolismo lento dos BCAA); BCAT2 C/C desfavorável de efeito pequeno; a genética não informa sobre a taurina.",
+    "en": "12 variants and 11 scores: mostly typical amino acids (BCAA at the 35th percentile, no slow BCAA catabolism); BCAT2 C/C unfavourable with a small effect; genetics says nothing about taurine."
+   },
+   "paginas": 13,
+   "tamanho_kb": 67,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "doencas-geneticas-hereditarias",
+   "titulo": {
+    "pt": "Doenças Genéticas Hereditárias",
+    "en": "Hereditary Genetic Diseases"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/doencas-geneticas-hereditarias.pdf",
+   "descricao": {
+    "pt": "Nenhuma variante patogénica ou provavelmente patogénica plausível nos 81 genes acionáveis da lista ACMG SF v3.2 nem nos 39 genes extra; as variantes fundadoras lidas (BRCA1, CHEK2, APC, LRRK2…) estão ausentes.",
+    "en": "No plausible pathogenic or likely pathogenic variant in the 81 actionable genes of the ACMG SF v3.2 list or in 39 extra genes; the founder variants read (BRCA1, CHEK2, APC, LRRK2…) are absent."
+   },
+   "paginas": 19,
+   "tamanho_kb": 87,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "bexiga-funcao-urinaria",
+   "titulo": {
+    "pt": "Bexiga e Função Urinária",
+    "en": "Bladder and Urinary Function"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/bexiga-funcao-urinaria.pdf",
+   "descricao": {
+    "pt": "Cancro da bexiga com predisposição acima da média nos scores de loci e NAT2 lento (risco absoluto baixo sem tabaco); função urinária com pouca predisposição (infeções e incontinência baixas).",
+    "en": "Above-average bladder cancer predisposition in the locus-based scores and slow NAT2 (low absolute risk without smoking); little predisposition for urinary problems (low infections and incontinence)."
+   },
+   "paginas": 16,
+   "tamanho_kb": 59,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "dermatite-seborreica-microbioma-pele",
+   "titulo": {
+    "pt": "Dermatite Seborreica e Microbioma da Pele",
+    "en": "Seborrhoeic Dermatitis and Skin Microbiome"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/dermatite-seborreica-microbioma-pele.pdf",
+   "descricao": {
+    "pt": "Predisposição genética baixa para dermatite seborreica (carga de loci no percentil 6,3) e imunidade antifúngica intacta; score de eczema e dermatite no percentil 90,4 (barreira mais reativa).",
+    "en": "Low genetic predisposition to seborrhoeic dermatitis (locus load at the 6.3th percentile) and intact antifungal immunity; eczema and dermatitis score at the 90.4th percentile (more reactive barrier)."
+   },
+   "paginas": 18,
+   "tamanho_kb": 67,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "acne-glandulas-sebaceas",
+   "titulo": {
+    "pt": "Acne e Glândulas Sebáceas",
+    "en": "Acne and Sebaceous Glands"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/acne-glandulas-sebaceas.pdf",
+   "descricao": {
+    "pt": "Acne com predisposição típica e eixo hormonal favorável (SHBG genética alta); homozigotia de risco em três loci do folículo; hidradenite supurativa com carga de loci no percentil 92,9.",
+    "en": "Typical acne predisposition and a favourable hormonal axis (high genetic SHBG); homozygous risk at three follicle loci; hidradenitis suppurativa locus load at the 92.9th percentile."
+   },
+   "paginas": 16,
+   "tamanho_kb": 58,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "termorregulacao-sudorese",
+   "titulo": {
+    "pt": "Termorregulação e Sudorese",
+    "en": "Thermoregulation and Sweating"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/termorregulacao-sudorese.pdf",
+   "descricao": {
+    "pt": "Variantes lidas de hipertermia maligna ausentes e boa produção de calor (DIO2, ADRB3, PGC-1α); termostato da tiroide desviado (TSH genética baixa, T4 livre alta), o que muda a leitura das análises.",
+    "en": "Read malignant hyperthermia variants absent and good heat production (DIO2, ADRB3, PGC-1α); shifted thyroid set point (low genetic TSH, high free T4), which changes how thyroid tests are read."
+   },
+   "paginas": 15,
+   "tamanho_kb": 54,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "funcao-sexual-eretil",
+   "titulo": {
+    "pt": "Função Sexual e Erétil",
+    "en": "Sexual and Erectile Function"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/funcao-sexual-eretil.pdf",
+   "descricao": {
+    "pt": "11 SNPs e 5 scores: perfil favorável (SIM1 sem alelos de risco, score de disfunção erétil no percentil 15, testosterona genética alta); óxido nítrico endotelial um pouco abaixo (NOS3).",
+    "en": "11 SNPs and 5 scores: favourable profile (SIM1 without risk alleles, erectile dysfunction score at the 15th percentile, high genetic testosterone); endothelial nitric oxide slightly lower (NOS3)."
+   },
+   "paginas": 13,
+   "tamanho_kb": 56,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "oxido-nitrico-endotelio",
+   "titulo": {
+    "pt": "Óxido Nítrico e Endotélio",
+    "en": "Nitric Oxide and Endothelium"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/oxido-nitrico-endotelio.pdf",
+   "descricao": {
+    "pt": "11 SNPs e 3 scores: travão ADMA geneticamente baixo (DDAH1) e risco coronário geral baixo; produção de NO pela NOS3 um pouco abaixo do ótimo e 1 alelo de mais endotelina-1.",
+    "en": "11 SNPs and 3 scores: genetically low ADMA brake (DDAH1) and low overall coronary risk; NOS3 nitric oxide production slightly below optimal and one allele for more endothelin-1."
+   },
+   "paginas": 13,
+   "tamanho_kb": 55,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "paladar-olfato",
+   "titulo": {
+    "pt": "Paladar e Olfato",
+    "en": "Taste and Smell"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/paladar-olfato.pdf",
+   "descricao": {
+    "pt": "Provador médio do amargo (TAS2R38 PAV/AVI), sensibilidade alta à gordura (CD36 GG) e gosto genético pelo doce acima da média (percentil 82); 1 alelo OR6A2 que dá o sabor \"a sabão\" aos coentros.",
+    "en": "Medium bitter taster (TAS2R38 PAV/AVI), high fat sensitivity (CD36 GG) and above-average genetic sweet preference (82nd percentile); one OR6A2 allele that makes coriander taste \"soapy\"."
+   },
+   "paginas": 13,
+   "tamanho_kb": 56,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "aorta-aneurismas",
+   "titulo": {
+    "pt": "Aorta e Aneurismas",
+    "en": "Aorta and Aneurysms"
+   },
+   "data": "2026-10-02",
+   "ficheiro": "reports/aorta-aneurismas.pdf",
+   "descricao": {
+    "pt": "Aorta abdominal com risco genético médio (percentil 42) e fatores protetores (IL6R, Lp(a) baixa) contra o 9p21; ponto desfavorável: aorta torácica ascendente geneticamente mais larga (percentil 79).",
+    "en": "Average genetic abdominal aortic risk (42nd percentile), with protective factors (IL6R, low Lp(a)) against 9p21; unfavourable point: genetically wider ascending thoracic aorta (79th percentile)."
+   },
+   "paginas": 14,
+   "tamanho_kb": 66,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "saude-oral-dentes-periodontite",
+   "titulo": {
+    "pt": "Saúde Oral, Dentes e Periodontite",
+    "en": "Oral Health, Teeth and Periodontitis"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/saude-oral-dentes-periodontite.pdf",
+   "descricao": {
+    "pt": "Genótipo IL-1 composto negativo e cáries com carga de loci muito baixa; gengivite genética alta (percentil 89,7) e periodontite típica-alta: o controlo diário da placa é a prioridade.",
+    "en": "Negative composite IL-1 genotype and very low caries locus load; high genetic gingivitis (89.7th percentile) and typical-to-high periodontitis: daily plaque control is the priority."
+   },
+   "paginas": 14,
+   "tamanho_kb": 46,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "dor-analgesia",
+   "titulo": {
+    "pt": "Dor e Analgesia",
+    "en": "Pain and Analgesia"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/dor-analgesia.pdf",
+   "descricao": {
+    "pt": "Baixa sensibilidade genética à dor aguda (COMT Val/Val, FAAH C385A) e CYP2D6 normal (codeína, tramadol); tendência para dor lombar crónica e CYP2C9 *1/*3 (os AINEs ficam mais tempo no sangue).",
+    "en": "Low genetic sensitivity to acute pain (COMT Val/Val, FAAH C385A) and normal CYP2D6 (codeine, tramadol); tendency to chronic low back pain and CYP2C9 *1/*3 (NSAIDs stay longer in the blood)."
+   },
+   "paginas": 15,
+   "tamanho_kb": 54,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "anestesia-cirurgia",
+   "titulo": {
+    "pt": "Anestesia e Cirurgia",
+    "en": "Anaesthesia and Surgery"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/anestesia-cirurgia.pdf",
+   "descricao": {
+    "pt": "Sem variantes de hipertermia maligna detetadas e BCHE normal (succinilcolina com duração normal); a ter em conta: trombose venosa (profilaxia), CYP2C9 *1/*3 e sensibilidade alta à varfarina (VKORC1).",
+    "en": "No malignant hyperthermia variants detected and normal BCHE (normal succinylcholine duration); to note: venous thrombosis (prophylaxis), CYP2C9 *1/*3 and high warfarin sensitivity (VKORC1)."
+   },
+   "paginas": 14,
+   "tamanho_kb": 52,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "impulsividade-recompensa-vicio",
+   "titulo": {
+    "pt": "Impulsividade, Recompensa e Vício",
+    "en": "Impulsivity, Reward and Addiction"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/impulsividade-recompensa-vicio.pdf",
+   "descricao": {
+    "pt": "Fator genético comum das adições baixo e sem o DRD2 Taq1A A1; sinais contra no consumo de álcool por semana e na canábis, que só contam com exposição.",
+    "en": "Low common genetic addiction factor and no DRD2 Taq1A A1; signals against in weekly alcohol intake and cannabis, which only matter with exposure."
+   },
+   "paginas": 14,
+   "tamanho_kb": 51,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "hipoxia-altitude",
+   "titulo": {
+    "pt": "Hipóxia e Altitude",
+    "en": "Hypoxia and Altitude"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/hipoxia-altitude.pdf",
+   "descricao": {
+    "pt": "Tolerância genética à altitude média, sem sinais de excesso de glóbulos vermelhos nem variantes do HIF1A; hemoglobina genética baixa (menos reserva de oxigénio à chegada à altitude).",
+    "en": "Average genetic altitude tolerance, no signs of excess red blood cells or HIF1A variants; low genetic haemoglobin (less oxygen reserve on arrival at altitude)."
+   },
+   "paginas": 15,
+   "tamanho_kb": 51,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "disruptores-endocrinos-poluentes",
+   "titulo": {
+    "pt": "Disruptores Endócrinos e Poluentes",
+    "en": "Endocrine Disruptors and Pollutants"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/disruptores-endocrinos-poluentes.pdf",
+   "descricao": {
+    "pt": "Sensibilidade genética baixa a média aos poluentes do ar e ao benzeno (NQO1 e NRF2 intactos); maior vulnerabilidade nos pesticidas organofosforados (PON1) e nas aminas aromáticas (NAT2 lento).",
+    "en": "Low-to-average genetic sensitivity to air pollutants and benzene (intact NQO1 and NRF2); greatest vulnerability to organophosphate pesticides (PON1) and aromatic amines (slow NAT2)."
+   },
+   "paginas": 16,
+   "tamanho_kb": 59,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "sensibilidade-radiacao",
+   "titulo": {
+    "pt": "Sensibilidade à Radiação",
+    "en": "Radiation Sensitivity"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/sensibilidade-radiacao.pdf",
+   "descricao": {
+    "pt": "Pele protegida da radiação UV (sem variantes do MC1R; melanoma e carcinomas com scores baixos); sensibilidade genética à radiação ionizante e da tiroide ligeiramente acima da média (ATM D1853N).",
+    "en": "Skin protected against UV radiation (no MC1R variants; low melanoma and carcinoma scores); slightly above-average genetic sensitivity to ionising radiation and of the thyroid (ATM D1853N)."
+   },
+   "paginas": 15,
+   "tamanho_kb": 57,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "valvulas-cardiacas",
+   "titulo": {
+    "pt": "Válvulas Cardíacas",
+    "en": "Heart Valves"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/valvulas-cardiacas.pdf",
+   "descricao": {
+    "pt": "Sem os alelos de Lp(a) alta do LPA e prolapso mitral típico; a calcificação da válvula aórtica tem carga poligénica acima da média (492 loci no percentil 95,1).",
+    "en": "No high-Lp(a) LPA alleles and typical mitral prolapse; aortic valve calcification has an above-average polygenic load (492 loci at the 95.1th percentile)."
+   },
+   "paginas": 18,
+   "tamanho_kb": 64,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "velocidade-processamento-tempo-reacao",
+   "titulo": {
+    "pt": "Velocidade de Processamento e Tempo de Reação",
+    "en": "Processing Speed and Reaction Time"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/velocidade-processamento-tempo-reacao.pdf",
+   "descricao": {
+    "pt": "APOE ε3/ε3 sem o alelo de risco do TOMM40, inteligência fluida no limite superior do típico e alelos de reação mais rápida no KANSL1 e no FOXO3; BDNF Val66Met heterozigoto.",
+    "en": "APOE ε3/ε3 without the TOMM40 risk allele, fluid intelligence at the upper end of typical and faster-reaction alleles in KANSL1 and FOXO3; heterozygous BDNF Val66Met."
+   },
+   "paginas": 15,
+   "tamanho_kb": 55,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "inflamacao-senescencia-placa",
+   "titulo": {
+    "pt": "Inflamação, Senescência e Placa",
+    "en": "Inflammation, Senescence and Plaque"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/inflamacao-senescencia-placa.pdf",
+   "descricao": {
+    "pt": "Eixo IL-6/PCR favorável (PCR genética baixa a típica, IL6R Asp358Ala) e doença coronária poligénica baixa; contra: 9p21 G/G e cargas de loci altas da GlycA e do GDF-15.",
+    "en": "Favourable IL-6/CRP axis (low-to-typical genetic CRP, IL6R Asp358Ala) and low polygenic coronary disease; against: 9p21 G/G and high GlycA and GDF-15 locus loads."
+   },
+   "paginas": 15,
+   "tamanho_kb": 55,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "gordura-inflamatoria-lipolise",
+   "titulo": {
+    "pt": "Gordura Inflamatória e Lipólise",
+    "en": "Inflammatory Fat and Lipolysis"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/gordura-inflamatoria-lipolise.pdf",
+   "descricao": {
+    "pt": "Gordura glúteo-femoral (\"segura\") com score alto e gordura visceral ajustada típica; contra: gordura do tronco no percentil 98,4 e os achados hepáticos conhecidos (PNPLA3 I148M, PiMZ).",
+    "en": "High score for gluteofemoral (\"safe\") fat and typical adjusted visceral fat; against: trunk fat at the 98.4th percentile and the known liver findings (PNPLA3 I148M, PiMZ)."
+   },
+   "paginas": 17,
+   "tamanho_kb": 63,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "ritmo-cardiaco-arritmias",
+   "titulo": {
+    "pt": "Ritmo Cardíaco e Arritmias",
+    "en": "Heart Rhythm and Arrhythmias"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/ritmo-cardiaco-arritmias.pdf",
+   "descricao": {
+    "pt": "18 SNPs e 10 scores: frequência cardíaca de repouso geneticamente baixa, condução e Brugada favoráveis e fibrilhação auricular com risco muito baixo (percentil 2); variabilidade cardíaca média.",
+    "en": "18 SNPs and 10 scores: genetically low resting heart rate, favourable conduction and Brugada and very low atrial fibrillation risk (2nd percentile); average heart rate variability."
+   },
+   "paginas": 13,
+   "tamanho_kb": 61,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "avc-pequenos-vasos-cerebrais",
+   "titulo": {
+    "pt": "AVC e Pequenos Vasos Cerebrais",
+    "en": "Stroke and Cerebral Small Vessels"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/avc-pequenos-vasos-cerebrais.pdf",
+   "descricao": {
+    "pt": "Quadro misto: scores de AVC baixos e loci fortes das lesões favoráveis, mas lesões da substância branca com score alto (percentil 92); o ponto mais fraco são os espaços perivasculares (drenagem glinfática).",
+    "en": "Mixed picture: low stroke scores and favourable strong lesion loci, but a high white-matter lesion score (92nd percentile); the weakest point is perivascular spaces (glymphatic drainage)."
+   },
+   "paginas": 13,
+   "tamanho_kb": 56,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "insuficiencia-cardiaca-cardiomiopatias",
+   "titulo": {
+    "pt": "Insuficiência Cardíaca e Cardiomiopatias",
+    "en": "Heart Failure and Cardiomyopathies"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/insuficiencia-cardiaca-cardiomiopatias.pdf",
+   "descricao": {
+    "pt": "Cardiomiopatia dilatada com risco genético muito baixo (percentil 2) e insuficiência cardíaca global baixa (22); cardiomiopatia hipertrófica com score acima da média, sem os alelos de risco do MYBPC3.",
+    "en": "Very low genetic risk of dilated cardiomyopathy (2nd percentile) and low overall heart failure (22nd); above-average hypertrophic cardiomyopathy score, without the MYBPC3 risk alleles."
+   },
+   "paginas": 13,
+   "tamanho_kb": 59,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "polipos-colorretais",
+   "titulo": {
+    "pt": "Pólipos Colorretais",
+    "en": "Colorectal Polyps"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/polipos-colorretais.pdf",
+   "descricao": {
+    "pt": "Sem variantes de alto efeito (APC I1307K, MUTYH e CHEK2 ausentes); risco poligénico moderadamente aumentado nos scores mais completos (95 variantes no percentil 94,3), relevante para a colonoscopia.",
+    "en": "No high-effect variants (APC I1307K, MUTYH and CHEK2 absent); moderately increased polygenic risk in the most complete scores (95 variants at the 94.3th percentile), relevant for colonoscopy."
+   },
+   "paginas": 15,
+   "tamanho_kb": 53,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "pneumococo-imunossenescencia",
+   "titulo": {
+    "pt": "Pneumococo e Imunossenescência",
+    "en": "Pneumococcus and Immunosenescence"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/pneumococo-imunossenescencia.pdf",
+   "descricao": {
+    "pt": "Boa defesa inata (MBL intermédia, sem TLR4 Asp299Gly; COVID-19 grave no percentil 4,7); tendência poligénica para infeções bacterianas das mucosas (pneumonia no 84,2), o que torna as vacinas importantes.",
+    "en": "Good innate defence (intermediate MBL, no TLR4 Asp299Gly; severe COVID-19 at the 4.7th percentile); polygenic tendency to bacterial mucosal infections (pneumonia at the 84.2th), which makes vaccines matter."
+   },
+   "paginas": 14,
+   "tamanho_kb": 48,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "audicao-zumbido",
+   "titulo": {
+    "pt": "Audição e Zumbido",
+    "en": "Hearing and Tinnitus"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/audicao-zumbido.pdf",
+   "descricao": {
+    "pt": "Perda auditiva da idade típica, GJB2 normal e sem o alelo de ototoxicidade da cisplatina; o zumbido é o ponto fraco (score genómico no percentil 89,7), por isso proteger do ruído é o que mais compensa.",
+    "en": "Typical age-related hearing loss, normal GJB2 and no cisplatin ototoxicity allele; tinnitus is the weak point (genomic score at the 89.7th percentile), so noise protection pays off most."
+   },
+   "paginas": 14,
+   "tamanho_kb": 49,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "hipertensao-pulmonar-circulacao-pulmao",
+   "titulo": {
+    "pt": "Hipertensão Pulmonar e Circulação do Pulmão",
+    "en": "Pulmonary Hypertension and Pulmonary Circulation"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/hipertensao-pulmonar-circulacao-pulmao.pdf",
+   "descricao": {
+    "pt": "Sem variantes patogénicas nos genes lidos com segurança (o BMPR2 não é avaliável pelo chip) e SOX17 com menos alelos de risco; tromboembolismo venoso alto (scores nos percentis 86,3 e 84,4).",
+    "en": "No pathogenic variants in the reliably read genes (BMPR2 cannot be assessed by the chip) and SOX17 with fewer risk alleles; high venous thromboembolism (scores at the 86.3th and 84.4th percentiles)."
+   },
+   "paginas": 15,
+   "tamanho_kb": 54,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   }
+  },
+  {
+   "id": "longevidade-maxima-sintese-genetica",
+   "titulo": {
+    "pt": "Longevidade Máxima – Síntese Genética",
+    "en": "Maximum Longevity – Genetic Synthesis"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/longevidade-maxima-sintese-genetica.pdf",
+   "descricao": {
+    "pt": "42 variantes e 5 scores: FOXO3 homozigoto para os 4 alelos de longevidade, APOE ε3/ε3 e score de longevidade no percentil 92; o ponto desfavorável mais forte é o 9p21 em homozigotia de risco.",
+    "en": "42 variants and 5 scores: FOXO3 homozygous for all 4 longevity alleles, APOE ε3/ε3 and a longevity score at the 92nd percentile; the strongest unfavourable point is homozygous risk at 9p21."
+   },
+   "paginas": 28,
+   "tamanho_kb": 139,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
