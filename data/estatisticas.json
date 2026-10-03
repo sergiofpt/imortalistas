@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-03T20:34:57Z",
+ "atualizado_em": "2026-10-03T20:53:21Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
-  "visitas": 10,
-  "visitas_30d": 10,
-  "visitas_90d": 10,
-  "aberturas_pdf": 10,
-  "visitas_hoje": 10,
-  "visitas_7d": 10,
-  "aberturas_hoje": 10,
-  "aberturas_7d": 10,
-  "aberturas_30d": 10,
-  "pdf_abertos": 10,
+  "visitas": 11,
+  "visitas_30d": 11,
+  "visitas_90d": 11,
+  "aberturas_pdf": 11,
+  "visitas_hoje": 11,
+  "visitas_7d": 11,
+  "aberturas_hoje": 11,
+  "aberturas_7d": 11,
+  "aberturas_30d": 11,
+  "pdf_abertos": 11,
   "pdf_descarregados": 0,
-  "pdf_pt": 8,
+  "pdf_pt": 9,
   "pdf_en": 2
  },
  "dias": [
@@ -31,14 +31,18 @@
   },
   {
    "dia": "2026-10-03",
-   "visitas": 10,
-   "aberturas": 10
+   "visitas": 11,
+   "aberturas": 11
   }
  ],
  "paginas": [
   {
    "path": "/imortalistas/genetica-reports.html",
    "visitas": 4
+  },
+  {
+   "path": "/imortalistas/genetica.html",
+   "visitas": 2
   },
   {
    "path": "/imortalistas/teste-worker",
@@ -50,10 +54,6 @@
   },
   {
    "path": "/imortalistas/genetica-boa.html",
-   "visitas": 1
-  },
-  {
-   "path": "/imortalistas/genetica.html",
    "visitas": 1
   },
   {
@@ -107,6 +107,17 @@
    "descarregados_en": 0
   },
   {
+   "id": "farmacogenomica-632",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 0,
+   "total": 1,
+   "abertos_pt": 1,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
    "id": "resposta-treino-vo2max",
    "ficheiro": null,
    "pt": 1,
@@ -127,6 +138,13 @@
    "visitas": 1
   },
   {
+   "id": "android/samsung-sm-a566b",
+   "tipo": "android",
+   "nome": "Samsung SM-A566B",
+   "estimativa": false,
+   "visitas": 1
+  },
+  {
    "id": "computador/windows-11-chrome",
    "tipo": "computador",
    "nome": "Windows 11 · Chrome",
@@ -138,7 +156,7 @@
   {
    "id": "PT",
    "nome": "Portugal",
-   "visitas": 19
+   "visitas": 21
   },
   {
    "id": "US",
@@ -150,12 +168,12 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 12
+   "visitas": 13
   },
   {
    "id": "Firefox",
    "nome": "Firefox",
-   "visitas": 7
+   "visitas": 8
   },
   {
    "id": "Safari",
@@ -167,12 +185,17 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 13
+   "visitas": 14
   },
   {
    "id": "Linux",
    "nome": "Linux",
    "visitas": 6
+  },
+  {
+   "id": "Android",
+   "nome": "Android",
+   "visitas": 1
   },
   {
    "id": "macOS",
@@ -182,6 +205,11 @@
  ],
  "tamanhos": [
   {
+   "id": "phone",
+   "nome": "phone",
+   "visitas": 1
+  },
+  {
    "id": "desktop",
    "nome": "desktop",
    "visitas": 11
@@ -189,14 +217,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 9
+   "visitas": 10
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 20
+   "visitas": 22
   }
  ],
  "aparelhos_desde": "2026-10-03"
