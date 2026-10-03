@@ -1,14 +1,27 @@
 {
  "versao": 1,
- "atualizado_em": null,
- "desde": null,
+ "atualizado_em": "2026-10-03T17:21:40Z",
+ "desde": "2026-10-01",
  "total": {
   "visitas": 0,
   "visitas_30d": 0,
   "visitas_90d": 0,
   "aberturas_pdf": 0
  },
- "dias": [],
+ "dias": [
+  {
+   "dia": "2026-10-01",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-02",
+   "visitas": 0
+  },
+  {
+   "dia": "2026-10-03",
+   "visitas": 0
+  }
+ ],
  "paginas": [],
  "relatorios": [],
  "paises": [],
