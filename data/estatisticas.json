@@ -1,6 +1,6 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-03T18:28:14Z",
+ "atualizado_em": "2026-10-03T18:32:02Z",
  "desde": "2026-10-01",
  "total": {
   "visitas": 5,
@@ -59,7 +59,7 @@
   {
    "id": "PT",
    "nome": "Portugal",
-   "visitas": 9
+   "visitas": 10
   }
  ],
  "browsers": [
@@ -71,7 +71,7 @@
   {
    "id": "Firefox",
    "nome": "Firefox",
-   "visitas": 3
+   "visitas": 4
   }
  ],
  "sistemas": [
@@ -83,7 +83,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 3
+   "visitas": 4
   }
  ],
  "tamanhos": [
@@ -95,14 +95,14 @@
   {
    "id": "unknown",
    "nome": "(desconhecido)",
-   "visitas": 3
+   "visitas": 4
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 9
+   "visitas": 10
   }
  ]
 }
