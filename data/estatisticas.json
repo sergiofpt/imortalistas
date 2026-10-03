@@ -1,12 +1,12 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-03T17:25:03Z",
+ "atualizado_em": "2026-10-03T17:31:56Z",
  "desde": "2026-10-01",
  "total": {
-  "visitas": 1,
-  "visitas_30d": 1,
-  "visitas_90d": 1,
-  "aberturas_pdf": 1
+  "visitas": 2,
+  "visitas_30d": 2,
+  "visitas_90d": 2,
+  "aberturas_pdf": 2
  },
  "dias": [
   {
@@ -19,16 +19,23 @@
   },
   {
    "dia": "2026-10-03",
-   "visitas": 1
+   "visitas": 2
   }
  ],
  "paginas": [
   {
    "path": "/imortalistas/genetica-reports.html",
-   "visitas": 1
+   "visitas": 2
   }
  ],
  "relatorios": [
+  {
+   "id": "anestesia-cirurgia",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 0,
+   "total": 1
+  },
   {
    "id": "imortalidade",
    "ficheiro": null,
@@ -41,13 +48,18 @@
   {
    "id": "PT",
    "nome": "Portugal",
-   "visitas": 2
+   "visitas": 4
   }
  ],
  "browsers": [
   {
    "id": "Chrome",
    "nome": "Chrome",
+   "visitas": 2
+  },
+  {
+   "id": "Firefox",
+   "nome": "Firefox",
    "visitas": 2
   }
  ],
@@ -56,20 +68,25 @@
    "id": "Linux",
    "nome": "Linux",
    "visitas": 2
+  },
+  {
+   "id": "Windows",
+   "nome": "Windows",
+   "visitas": 2
   }
  ],
  "tamanhos": [
   {
    "id": "desktop",
    "nome": "(desconhecido)",
-   "visitas": 2
+   "visitas": 4
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 2
+   "visitas": 4
   }
  ]
 }
