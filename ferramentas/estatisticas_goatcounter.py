@@ -14,6 +14,9 @@ GOATCOUNTER_TOKEN (variável de ambiente; nunca é escrito em lado nenhum). Só 
 - Contagens = todas as visitas e aberturas: a API só expõe "count" (visitantes), mas o Worker do site envia no_sessions:true, por isso
   cada pedido conta como um novo visitante (= cada visita e cada abertura de PDF). Dados anteriores a essa mudança contavam por sessão.
 - Além dos totais, grava hoje / 7 dias / 30 dias (visitas e aberturas) e as aberturas de PDFs por dia (dias[].aberturas).
+- Aparelhos: com cada visita o Worker envia o evento aparelho/<tipo>/<slug> (título = rótulo, ex. "iPhone XR / 11"; sem IP nem user-agent).
+  Ficam em "aparelhos" (+ "aparelhos_desde", o 1.º dia com eventos) (contagem por rótulo; iPhone/iPad = estimativa pelo ecrã), não contam como visitas nem aberturas, e os países /
+  browsers / sistemas / tamanhos / origens são pedidos só para as páginas e PDFs (include_paths), para os eventos de aparelho não os somarem.
 
 Uso: GOATCOUNTER_TOKEN=... python3 ferramentas/estatisticas_goatcounter.py [--saida data/estatisticas.json] [--hoje AAAA-MM-DD]
 """
@@ -23,10 +26,11 @@ API = os.environ.get('GOATCOUNTER_API', 'https://imortalistas.goatcounter.com/ap
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INICIO = dt.datetime(2026, 10, 1, tzinfo=dt.timezone.utc)  # a contagem começou em outubro de 2026
 RE_PDF = re.compile(r'^/?(reports/[A-Za-z0-9._-]+\.pdf)$')
+RE_AP = re.compile(r'^/?aparelho/(iphone|ipad|android|android-tablet|computador|outro)/([a-z0-9-]{1,60})$')  # evento do aparelho (Worker)
 VAZIO = {'versao': 1, 'atualizado_em': None, 'desde': None,
          'total': {'visitas': 0, 'visitas_30d': 0, 'visitas_90d': 0, 'aberturas_pdf': 0,
                    'visitas_hoje': 0, 'visitas_7d': 0, 'aberturas_hoje': 0, 'aberturas_7d': 0, 'aberturas_30d': 0},
-         'dias': [], 'paginas': [], 'relatorios': [], 'paises': [], 'browsers': [], 'sistemas': [], 'tamanhos': [], 'origens': []}
+         'dias': [], 'paginas': [], 'relatorios': [], 'aparelhos': [], 'paises': [], 'browsers': [], 'sistemas': [], 'tamanhos': [], 'origens': []}
 
 def aviso(msg):
     print(f'::warning::{msg}' if os.environ.get('GITHUB_ACTIONS') else f'AVISO: {msg}')
@@ -71,8 +75,8 @@ def inteiro(x):
     try: return max(0, int(x))
     except (TypeError, ValueError): return 0
 
-def lista_stats(token, pagina, ini, fim, origem=False):
-    d = pedido(f'/stats/{pagina}', token, start=ini, end=fim, limit=20)
+def lista_stats(token, pagina, ini, fim, origem=False, incluir=None):
+    d = pedido(f'/stats/{pagina}', token, start=ini, end=fim, limit=20, include_paths=','.join(map(str, incluir)) if incluir else None)
     return [{'id': nome_limpo(s.get('id'))[:40], 'nome': nome_limpo(s.get('name') or ('' if origem else s.get('id')), origem), 'visitas': inteiro(s.get('count'))}
             for s in (d.get('stats') or []) if inteiro(s.get('count')) > 0]
 
@@ -119,9 +123,20 @@ def _recolher(token, hoje, ini_dt, ini, fim):
             if r.get('ficheiro'): fich[r['ficheiro']] = (r.get('id'), 'pt')
             if r.get('ficheiro_en'): fich[r['ficheiro_en']] = (r.get('id'), 'en')
     except (OSError, ValueError): pass
-    paginas, rel, por_dia, pdf_dia = {}, {}, {}, {}
+    paginas, rel, por_dia, pdf_dia, aps, incluir, n_ap, ap_dias = {}, {}, {}, {}, {}, [], 0, set()
     for h in hits:
         path, n = str(h.get('path') or ''), inteiro(h.get('count'))
+        ma = RE_AP.match(path) if h.get('event') else None
+        if ma:
+            n_ap += 1; k = ma.group(1) + '/' + ma.group(2)
+            nome = nome_limpo(h.get('title') or ma.group(2))[:60]
+            a = aps.setdefault(k, {'id': k, 'tipo': ma.group(1), 'nome': nome, 'estimativa': ma.group(1) in ('iphone', 'ipad') and nome not in ('iPhone', 'iPad'), 'visitas': 0})
+            a['visitas'] += n
+            for s in h.get('stats') or []:
+                dia = str(s.get('day') or '')[:10]
+                if re.match(r'^\d{4}-\d{2}-\d{2}$', dia) and inteiro(s.get('daily')) > 0: ap_dias.add(dia)
+            continue
+        if h.get('path_id') is not None: incluir.append(h.get('path_id'))
         if h.get('event'):
             m = RE_PDF.match(path)
             if not m: continue
@@ -144,6 +159,9 @@ def _recolher(token, hoje, ini_dt, ini, fim):
     out['desde'] = ini_dt.date().isoformat()
     out['dias'] = serie
     out['paginas'] = sorted(({'path': p, 'visitas': n} for p, n in paginas.items() if n > 0), key=lambda x: (-x['visitas'], x['path']))[:50]
+    out['aparelhos'] = sorted((v for v in aps.values() if v['visitas'] > 0), key=lambda x: (-x['visitas'], x['nome']))[:50]
+    if out['aparelhos'] and ap_dias: out['aparelhos_desde'] = min(ap_dias)  # 1.º dia com eventos de aparelho
+    out['_incluir'] = incluir if n_ap and incluir else None  # só se houver eventos de aparelho
     out['relatorios'] = sorted((v for v in rel.values() if v['total'] > 0), key=lambda x: (-x['total'], x['id'] or x['ficheiro']))
     out['total'] = {'visitas': sum(paginas.values()), 'visitas_30d': sum(x['visitas'] for x in serie[-30:]),
                     'visitas_90d': sum(x['visitas'] for x in serie), 'aberturas_pdf': sum(v['total'] for v in rel.values()),
@@ -172,8 +190,9 @@ def main():
         novo, ini, fim = recolher(token, hoje)
     except ErroAPI as e:
         aviso(f'API do GoatCounter: {e}. data/estatisticas.json fica como estava.'); return 0
+    incluir = novo.pop('_incluir', None)
     for chave, pagina, origem in (('paises', 'locations', False), ('browsers', 'browsers', False), ('sistemas', 'systems', False), ('tamanhos', 'sizes', False), ('origens', 'toprefs', True)):
-        try: novo[chave] = lista_stats(token, pagina, ini, fim, origem)
+        try: novo[chave] = lista_stats(token, pagina, ini, fim, origem, incluir)
         except SemDados: novo[chave] = []
         except ErroAPI as e:
             aviso(f'{pagina}: {e}; fica o valor anterior.'); novo[chave] = anterior.get(chave) if isinstance(anterior.get(chave), list) else []

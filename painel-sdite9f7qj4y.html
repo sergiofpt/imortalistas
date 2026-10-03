@@ -74,6 +74,7 @@ h3{font-size:16px;margin:0;letter-spacing:-.1px}
 .rk .track i{display:block;height:100%}.rk .track .pt{background:var(--acc)}.rk .track .en{background:var(--acc2)}
 .tag{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:999px;white-space:nowrap;font-variant-numeric:tabular-nums}
 .tag.pt{background:var(--accs);color:var(--acc)}.tag.en{background:var(--acc2s);color:var(--acc2)}
+.tag.est{background:var(--card2);color:var(--mut);border:1px solid var(--line);font-weight:600;margin-left:6px;vertical-align:1px}
 .more{margin-top:10px;font:inherit;font-size:13px;font-weight:600;border:1px solid var(--line);background:var(--card2);color:var(--ink);border-radius:10px;padding:7px 14px;cursor:pointer}
 .bl{list-style:none;margin:0;padding:0}
 .bl li{display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:3px 10px;align-items:center;padding:8px 0}
@@ -143,6 +144,10 @@ const flag=id=>{const c=iso2(id);return c?String.fromCodePoint(...[...c].map(ch=
 let DN=null;function pais(id,nome){try{if(!DN||DN.l!==LANG){DN=new Intl.DisplayNames([LANG==='en'?'en':'pt-PT'],{type:'region'});DN.l=LANG}const c=iso2(id);if(c){const n=DN.of(c);if(n&&n!==c)return n}}catch(e){}return nm(nome||id||'(desconhecido)')}
 const nm=n=>{n=String(n||'').trim();return !n||n==='(desconhecido)'||n==='(unknown)'||/^unknown$/i.test(n)?L('(desconhecido)','(unknown)'):n==='(oculto)'?L('(oculto)','(hidden)'):n};
 const TAM={phone:['📱','Telemóveis','Phones'],largephone:['📱','Telemóveis grandes / tablets pequenos','Large phones / small tablets'],tablet:['📲','Tablets e portáteis pequenos','Tablets and small laptops'],desktop:['💻','Computadores','Computers'],desktophd:['🖥️','Computadores (ecrã grande)','Computers (large screen)'],unknown:['❔','(desconhecido)','(unknown)']};
+// aparelhos (eventos do Worker): ícone e tipo; nos iPhone/iPad o modelo é estimado pelo ecrã (o browser não diz o modelo)
+const APT={iphone:['📱','iPhone','iPhone'],ipad:['📲','iPad','iPad'],android:['📱','Telemóvel Android','Android phone'],'android-tablet':['📲','Tablet Android','Android tablet'],computador:['💻','Computador','Computer'],outro:['❔','Outro','Other']};
+function aparelhos(){const a=arr(S.aparelhos);if(!('aparelhos' in S)||!a.length)return `<p class="nd">${L('Ainda sem dados de aparelhos.','No device data yet.')}</p>`;
+ return lista(a.map(x=>{const t=APT[x.tipo]||APT.outro,n=x.nome==='Outro'?L('Outro','Other'):nm(x.nome);return {ic:t[0],n:esc(n)+(x.estimativa?`<span class="tag est" title="${L('estimado pelo tamanho do ecrã','estimated from the screen size')}">≈ ${L('estimativa','estimate')}</span>`:''),sub:L(t[1],t[2])===n?'':esc(L(t[1],t[2])),v:x.visitas}}),{c3:1})}
 const SIS=[[/windows/i,'🪟'],[/mac ?os|os x|ios|ipad|iphone/i,'🍎'],[/android/i,'🤖'],[/chrome ?os/i,'💻'],[/linux|ubuntu|debian|fedora|bsd/i,'🐧']];
 const BRW=[[/edge/i,'E','#0c7bd6'],[/samsung/i,'S','#1428a0'],[/opera/i,'O','#e81c2e'],[/firefox/i,'F','#ff7139'],[/safari/i,'S','#1b88ca'],[/chrom/i,'C','#2f9e44'],[/brave/i,'B','#fb542b'],[/vivaldi/i,'V','#ef3939']];
 const PAG={'':['Análises ao sangue','Blood tests'],'index.html':['Análises ao sangue','Blood tests'],'genetica.html':['Genética Má','Bad Genetics'],'genetica-boa.html':['Genética Boa','Good Genetics'],'genetica-reports.html':['Genética Reports','Genetics Reports']};
@@ -194,15 +199,16 @@ function render(){const box=document.getElementById('sBody'),meta=document.getEl
   kp('week','📅',L('Últimos 7 dias','Last 7 days'),N(v7),`${v7===1?L('visita','visit'):L('visitas','visits')}${pdfs(a7)}`)+`</div></section>`+
   `<section><div class="card chart"><div class="chead"><h3>${L('Por dia','Per day')}</h3>${leg}${seg}</div>${grafico()}</div></section>`+
   `<section>`+card(L('PDFs mais abertos','Most opened PDFs'),rank,`<div class="legend"><span><i></i>PT</span><span><i class="p"></i>EN</span></div>`)+`</section>`+
+  `<section>`+card(L('Aparelhos','Devices'),aparelhos()+`<p class="note">${L('Modelos de iPhone/iPad estimados pelo ecrã (≈); Android mostra o modelo quando o browser o indica; nos computadores, sistema e browser.','iPhone/iPad models are estimated from the screen (≈); Android shows the model when the browser reports it; for computers, system and browser.')}${S.aparelhos_desde?` ${L('Contagem desde','Counting since')} ${fdia(S.aparelhos_desde)}.`:''}</p>`)+`</section>`+
   `<section><div class="grid g2">`+
   card(L('Países','Countries'),lista(arr(S.paises).map(p=>{const c=iso2(p.id);return {ic:SEMFLAG&&c?c:flag(p.id),cls:SEMFLAG&&c?'cc':'',n:esc(pais(p.id,p.nome)),v:p.visitas}})))+
   card(L('Páginas mais vistas','Most viewed pages'),lista(arr(S.paginas).map(p=>{const n=pagNome(p.path);return {ic:'📄',n:esc(n||p.path),sub:n?esc(p.path):'',v:p.visitas}}),{c3:1}))+
   `</div></section><section><div class="grid g3">`+
   card('Browsers',lista(arr(S.browsers).map(p=>{const n=nm(p.nome),m=BRW.find(x=>x[0].test(n));return m?{ic:m[1],cls:'lt',bg:m[2],n:esc(n),v:p.visitas}:{ic:'🌐',n:esc(n),v:p.visitas}})))+
   card(L('Sistemas','Systems'),lista(arr(S.sistemas).map(p=>{const n=nm(p.nome),m=SIS.find(x=>x[0].test(n));return {ic:m?m[1]:'❔',n:esc(n),v:p.visitas}}),{c3:1}))+
-  card(L('Aparelhos (ecrã)','Devices (screen)'),lista(arr(S.tamanhos).map(p=>{const t=TAM[p.id];return {ic:t?t[0]:'❔',n:esc(t?L(t[1],t[2]):nm(p.nome)),v:p.visitas}})))+
+  card(L('Tamanho do ecrã','Screen size'),lista(arr(S.tamanhos).map(p=>{const t=TAM[p.id];return {ic:t?t[0]:'❔',n:esc(t?L(t[1],t[2]):nm(p.nome)),v:p.visitas}})))+
   `</div></section><section>`+card(L('De onde vêm','Where visitors come from'),lista(arr(S.origens).map(p=>{const n=nm(p.nome),d=n===L('(desconhecido)','(unknown)');return {ic:d?'↩️':'🔗',n:esc(d?L('Direto / desconhecido','Direct / unknown'):n),v:p.visitas}}),{c3:1}))+`</section>`+
-  `<p class="note">${L('Fonte','Source')}: data/estatisticas.json · ${L('contagem anónima, sem cookies; cada visita e cada abertura de PDF conta (são aberturas e visitas totais, não visitantes únicos); países, browsers, sistemas e aparelhos somam visitas e aberturas; esta página não é contada.','anonymous count, no cookies; every visit and every PDF open counts (total visits and opens, not unique visitors); countries, browsers, systems and devices add up visits and opens; this page is not counted.')}</p>`;
+  `<p class="note">${L('Fonte','Source')}: data/estatisticas.json · ${L('contagem anónima, sem cookies; cada visita e cada abertura de PDF conta (são aberturas e visitas totais, não visitantes únicos); países, browsers, sistemas e tamanhos de ecrã somam visitas e aberturas; aparelhos somam só visitas; esta página não é contada.','anonymous count, no cookies; every visit and every PDF open counts (total visits and opens, not unique visitors); countries, browsers, systems and screen sizes add up visits and opens; devices add up visits only; this page is not counted.')}</p>`;
  document.querySelectorAll('#sDias button').forEach(b=>b.addEventListener('click',()=>{DIAS=Number(b.dataset.d);render()}));
  const bt=document.getElementById('sTodos');if(bt)bt.addEventListener('click',()=>{TODOS=!TODOS;render()})}
 function applyLang(){const en=LANG==='en';document.documentElement.lang=en?'en':'pt-PT';document.title=en?document.body.dataset.titleEn:document.body.dataset.titlePt;

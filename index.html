@@ -393,8 +393,11 @@ document.querySelectorAll('main section[id]').forEach(s=>obs.observe(s));
 (function(){try{var W=window.SF_W;if(!W)return;W=String(W).replace(/\/+$/,'');
  if(location.hash==='#toggle-goatcounter'){var off=localStorage.getItem('skipgc')==='t';if(off)localStorage.removeItem('skipgc');else localStorage.setItem('skipgc','t');alert(off?'Contagem ligada neste browser.':'Contagem desligada neste browser.')}
  if(localStorage.getItem('skipgc')==='t'||navigator.webdriver||window!==window.top||location.protocol==='file:'||/^(localhost|127\.|10\.|192\.168\.|0\.0\.0\.0$|\[::1\]$)/.test(location.hostname))return;
- var send=function(){try{var d=JSON.stringify({p:location.pathname,t:document.title,r:document.referrer||'',s:(window.screen&&screen.width)||0}),u=W+'/e';
-  if(navigator.sendBeacon&&navigator.sendBeacon(u,d))return;fetch(u,{method:'POST',body:d,keepalive:true,mode:'no-cors',credentials:'omit'}).catch(function(){})}catch(_){}};
+ // + ecrã (largura, altura, devicePixelRatio, toque) e, no Chrome/Edge, modelo e versão do sistema (Client Hints): o serviço só tira daí o rótulo do aparelho (ex. “iPhone 12 / 13 / 14”, “Windows 11 · Chrome”)
+ var send=function(){try{var sc=window.screen||{},x={p:location.pathname,t:document.title,r:document.referrer||'',s:sc.width||0,w:sc.width||0,h:sc.height||0,d:window.devicePixelRatio||0,m:navigator.maxTouchPoints||0},u=W+'/e',ok=0,
+  go=function(){if(ok)return;ok=1;var d=JSON.stringify(x);if(navigator.sendBeacon&&navigator.sendBeacon(u,d))return;fetch(u,{method:'POST',body:d,keepalive:true,mode:'no-cors',credentials:'omit'}).catch(function(){})},
+  ud=navigator.userAgentData;
+  if(ud&&ud.getHighEntropyValues){setTimeout(go,800);ud.getHighEntropyValues(['model','platformVersion']).then(function(v){if(v&&v.model)x.mo=String(v.model).slice(0,40);if(v&&v.platformVersion)x.pv=String(v.platformVersion).slice(0,20);go()},go)}else go()}catch(_){}};
  if(document.visibilityState==='prerender')document.addEventListener('visibilitychange',function f(){if(document.visibilityState!=='prerender'){document.removeEventListener('visibilitychange',f);send()}});
  else if(document.readyState==='complete')send();else addEventListener('load',send)}catch(_){}})();
 </script>
