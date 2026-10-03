@@ -10,8 +10,8 @@
 <meta name="color-scheme" content="light dark">
 <script>(function(){var d=document.documentElement,t=null,l=null,q=/[?&]lang=(en|pt)(?:&|#|$)/i.exec(location.search);q=q&&q[1].toLowerCase();try{if(q)localStorage.setItem('lang',q);l=localStorage.getItem('lang');t=localStorage.getItem('theme')}catch(e){}if(q)l=q;if(l==='en')d.lang='en';if(t!=='dark'&&t!=='light')t='dark';d.setAttribute('data-theme',t)})()</script>
 <style>
-:root{--bg:#f4f6fb;--card:#fff;--card2:#f8fafd;--ink:#14202e;--mut:#5b6b7d;--line:#e3e8ef;--acc:#1f5eff;--acc2:#7c4dff;--acc3:#0ea5a4;--accs:rgba(31,94,255,.12);--acc2s:rgba(124,77,255,.13);--acc3s:rgba(14,165,164,.13);--track:#eef1f6;--ok:#12a150;--warn:#d98a00;--na:#8a97a8;--nab:#eef1f5;--head:rgba(255,255,255,.94);--actfg:#fff;--hero1:#0f2747;--hero2:#1f5eff;--hero3:#7c4dff;--sh:0 1px 2px rgba(16,24,40,.05),0 6px 20px rgba(16,24,40,.06);--r:16px;color-scheme:light}
-html[data-theme="dark"]{color-scheme:dark;--bg:#0b1119;--card:#141c27;--card2:#18212e;--ink:#e5eaf1;--mut:#9aa7b8;--line:#253041;--acc:#7a9dff;--acc2:#b39dff;--acc3:#4fd1c5;--accs:rgba(122,157,255,.16);--acc2s:rgba(179,157,255,.16);--acc3s:rgba(79,209,197,.15);--track:#1f2836;--ok:#34c47a;--warn:#e8a63f;--na:#7f8c9e;--nab:#222b39;--head:rgba(14,20,29,.92);--actfg:#0e141d;--hero1:#0b1a31;--hero2:#1c3f9e;--hero3:#4b2aa8;--sh:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.25)}
+:root{--bg:#f4f6fb;--card:#fff;--card2:#f8fafd;--ink:#14202e;--mut:#5b6b7d;--line:#e3e8ef;--acc:#1f5eff;--acc2:#7c4dff;--acc3:#0ea5a4;--accs:rgba(31,94,255,.12);--acc2s:rgba(124,77,255,.13);--acc3s:rgba(14,165,164,.13);--warns:rgba(217,138,0,.13);--track:#eef1f6;--ok:#12a150;--warn:#d98a00;--na:#8a97a8;--nab:#eef1f5;--head:rgba(255,255,255,.94);--actfg:#fff;--hero1:#0f2747;--hero2:#1f5eff;--hero3:#7c4dff;--sh:0 1px 2px rgba(16,24,40,.05),0 6px 20px rgba(16,24,40,.06);--r:16px;color-scheme:light}
+html[data-theme="dark"]{color-scheme:dark;--bg:#0b1119;--card:#141c27;--card2:#18212e;--ink:#e5eaf1;--mut:#9aa7b8;--line:#253041;--acc:#7a9dff;--acc2:#b39dff;--acc3:#4fd1c5;--accs:rgba(122,157,255,.16);--acc2s:rgba(179,157,255,.16);--acc3s:rgba(79,209,197,.15);--warns:rgba(232,166,63,.15);--track:#1f2836;--ok:#34c47a;--warn:#e8a63f;--na:#7f8c9e;--nab:#222b39;--head:rgba(14,20,29,.92);--actfg:#0e141d;--hero1:#0b1a31;--hero2:#1c3f9e;--hero3:#4b2aa8;--sh:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.25)}
 *{box-sizing:border-box}
 body{margin:0;font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
 header.top{position:sticky;top:0;z-index:50;background:var(--head);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
@@ -75,6 +75,21 @@ h3{font-size:16px;margin:0;letter-spacing:-.1px}
 .tag{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:999px;white-space:nowrap;font-variant-numeric:tabular-nums}
 .tag.pt{background:var(--accs);color:var(--acc)}.tag.en{background:var(--acc2s);color:var(--acc2)}
 .tag.est{background:var(--card2);color:var(--mut);border:1px solid var(--line);font-weight:600;margin-left:6px;vertical-align:1px}
+.rk .ad{grid-column:2/4;display:flex;flex-wrap:wrap;gap:6px}
+.tag small{font-weight:600;opacity:.8;margin-left:2px}
+.tag.op{background:var(--acc3s);color:var(--acc3)}.tag.dl{background:var(--warns);color:var(--warn)}
+.dn{display:flex;align-items:center;gap:18px 22px;flex-wrap:wrap}
+.donut{width:150px;height:150px;flex:0 0 auto;transform:none}
+.donut circle{fill:none;stroke-width:6}.donut .dtrack{stroke:var(--track)}
+.donut .s-pt{stroke:var(--acc)}.donut .s-en{stroke:var(--acc2)}.donut .s-op{stroke:var(--acc3)}.donut .s-dl{stroke:var(--warn)}
+.donut .dc{font-size:8.5px;font-weight:800;fill:var(--ink);text-anchor:middle;font-variant-numeric:tabular-nums}.donut .ds{font-size:3.8px;font-weight:700;fill:var(--mut);text-anchor:middle;text-transform:uppercase;letter-spacing:.2px}
+.dleg{flex:1 1 200px;min-width:0;display:grid;gap:10px}
+.dleg .row{display:grid;grid-template-columns:14px minmax(0,1fr) auto;gap:2px 10px;align-items:center}
+.dleg .sw{width:12px;height:12px;border-radius:4px;background:var(--acc)}.dleg .sw.en{background:var(--acc2)}.dleg .sw.op{background:var(--acc3)}.dleg .sw.dl{background:var(--warn)}
+.dleg b{font-size:14px}.dleg .pc{font-size:20px;font-weight:800;font-variant-numeric:tabular-nums;text-align:right}
+.dleg small{grid-column:2/4;color:var(--mut);font-size:12px}
+.hint{font-size:12px;color:var(--mut);margin:12px 0 0;padding:8px 11px;border-radius:10px;background:var(--card2);border:1px dashed var(--line)}
+@media(max-width:640px){.donut{width:120px;height:120px}.dn{gap:14px}}
 .more{margin-top:10px;font:inherit;font-size:13px;font-weight:600;border:1px solid var(--line);background:var(--card2);color:var(--ink);border-radius:10px;padding:7px 14px;cursor:pointer}
 .bl{list-style:none;margin:0;padding:0}
 .bl li{display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:3px 10px;align-items:center;padding:8px 0}
@@ -181,24 +196,39 @@ function render(){const box=document.getElementById('sBody'),meta=document.getEl
  const soma=(k,n)=>dias.slice(-n).reduce((a,x)=>a+num(x[k]),0),temA=dias.some(x=>'aberturas' in x);
  const vH='visitas_hoje' in tt?num(tt.visitas_hoje):soma('visitas',1),v7='visitas_7d' in tt?num(tt.visitas_7d):soma('visitas',7);
  const aH='aberturas_hoje' in tt?num(tt.aberturas_hoje):temA?soma('aberturas',1):null,a7='aberturas_7d' in tt?num(tt.aberturas_7d):temA?soma('aberturas',7):null;
- const pdfs=a=>a===null?'':` · <b>${N(a)}</b> ${a===1?L('abertura de PDF','PDF open'):L('aberturas de PDFs','PDF opens')}`;
+ const pdfs=a=>a===null?'':` · <b>${N(a)}</b> PDF${a===1?'':'s'}`;
  const kp=(cls,ic,k,v,s)=>`<div class="card kpi ${cls}"><div class="top"><span class="ico" aria-hidden="true">${ic}</span><span class="k">${k}</span></div><div class="v">${v}</div><div class="s">${s}</div></div>`;
  const M={};arr(RD&&RD.relatorios).forEach(r=>{if(r&&r.id)M[r.id]=r});
  const legivel=f=>{const b=String(f||'').replace(/^reports\//,'').replace(/(_en)?\.pdf$/i,'').replace(/[-_]+/g,' ').trim();return b?b.charAt(0).toUpperCase()+b.slice(1):'?'};
  const tit=r=>r.id&&M[r.id]?T(M[r.id].titulo):legivel(r.ficheiro||r.id);
  const fich=r=>{const m=r.id&&M[r.id];const fs=m?[m.ficheiro,m.ficheiro_en].filter(Boolean):[r.ficheiro].filter(Boolean);return fs.map(f=>String(f).replace(/^reports\//,'')).join(' · ')};
- const rs=rel.slice().sort((a,b)=>num(b.total)-num(a.total)||tit(a).localeCompare(tit(b))),mxr=Math.max(1,...rs.map(r=>num(r.total)));
+ // abertos vs descarregados (o Worker separa-os desde descarregados_desde); formato antigo = tudo aberto
+ const rv=r=>'abertos_pt' in r?{ap:num(r.abertos_pt),ae:num(r.abertos_en),dp:num(r.descarregados_pt),de:num(r.descarregados_en)}:{ap:num(r.pt),ae:num(r.en),dp:0,de:0};
+ const G=rel.reduce((g,r)=>{const v=rv(r);g.ap+=v.ap;g.ae+=v.ae;g.dp+=v.dp;g.de+=v.de;return g},{ap:0,ae:0,dp:0,de:0}),GP=G.ap+G.dp,GE=G.ae+G.de,GT=GP+GE,GA=G.ap+G.ae,GD=G.dp+G.de;
+ const DLD=S.descarregados_desde||'2026-10-03';
+ const pc=(v,t)=>t>0?Math.round(100*v/t)+'%':'—';
+ function donut(parts,centro,sub,al){const t=parts.reduce((a,x)=>a+x.v,0);let off=25;
+  const sg=t?parts.filter(x=>x.v>0).map(x=>{const len=100*x.v/t,c=`<circle class="${x.cls}" cx="21" cy="21" r="15.915" stroke-dasharray="${len.toFixed(2)} ${(100-len).toFixed(2)}" stroke-dashoffset="${off.toFixed(2)}"><title>${x.t}: ${N(x.v)} (${pc(x.v,t)})</title></circle>`;off-=len;return c}).join(''):'';
+  return `<svg class="donut" viewBox="0 0 42 42" role="img" aria-label="${esc(al)}"><circle class="dtrack" cx="21" cy="21" r="15.915"/>${sg}<text class="dc" x="21" y="22.5">${centro}</text><text class="ds" x="21" y="28">${sub}</text></svg>`}
+ const drow=(sw,nome,v,t,det)=>`<div class="row"><i class="sw ${sw}"></i><b>${nome} · ${N(v)}</b><span class="pc">${pc(v,t)}</span><small>${det}</small></div>`;
+ const lng=GT?`<div class="dn">${donut([{v:GP,cls:'s-pt',t:'PT'},{v:GE,cls:'s-en',t:'EN'}],pc(GP,GT),L('em PT','in PT'),L('Português vs inglês','Portuguese vs English'))}<div class="dleg">`+
+  drow('pt',L('Português (PT)','Portuguese (PT)'),GP,GT,`${L('abertos','opened')} ${N(G.ap)} · ${L('descarregados','downloaded')} ${N(G.dp)}`)+drow('en',L('Inglês (EN)','English (EN)'),GE,GT,`${L('abertos','opened')} ${N(G.ae)} · ${L('descarregados','downloaded')} ${N(G.de)}`)+`</div></div>`:`<p class="nd">${L('Ainda nenhum PDF aberto.','No PDF opened yet.')}</p>`;
+ const tip=GT?`<div class="dn">${donut([{v:GA,cls:'s-op',t:L('Abertos','Opened')},{v:GD,cls:'s-dl',t:L('Descarregados','Downloaded')}],pc(GA,GT),L('abertos','opened'),L('Abertos vs descarregados','Opened vs downloaded'))}<div class="dleg">`+
+  drow('op','👁 '+L('Abertos no browser','Opened in the browser'),GA,GT,`PT ${N(G.ap)} · EN ${N(G.ae)}`)+drow('dl','⬇ '+L('Descarregados','Downloaded'),GD,GT,`PT ${N(G.dp)} · EN ${N(G.de)}`)+`</div></div>`:`<p class="nd">${L('Ainda nenhum PDF aberto.','No PDF opened yet.')}</p>`;
+ const nota=`<p class="hint">${L(`Os downloads (botão Descarregar) só se distinguem a partir de ${fdia(DLD)}; antes contavam como abertos.`,`Downloads (Download button) are only told apart from ${fdia(DLD)}; before that they were counted as opened.`)}</p>`;
+ const rs=rel.slice().sort((a,b)=>num(b.total)-num(a.total)||tit(a).localeCompare(tit(b))),mxr=Math.max(1,...rs.map(r=>{const v=rv(r);return v.ap+v.ae+v.dp+v.de}));
  const vis=TODOS?rs:rs.slice(0,10);
- const rank=rs.length?`<ol class="rk">`+vis.map((r,i)=>{const p=num(r.pt),e=num(r.en),t=num(r.total);return `<li><span class="pos">${i+1}</span><div><div class="t">${esc(tit(r))}</div><div class="f">${esc(fich(r))}</div></div><div class="tot">${N(t)}<small>${t===1?L('abertura','open'):L('aberturas','opens')}</small></div><div class="bar"><span class="track"><i class="pt" style="width:${(100*p/mxr).toFixed(1)}%"></i><i class="en" style="width:${(100*e/mxr).toFixed(1)}%"></i></span><span class="tag pt">PT ${N(p)}</span><span class="tag en">EN ${N(e)}</span></div></li>`}).join('')+`</ol>`+(rs.length>10?`<button type="button" class="more" id="sTodos">${TODOS?L('Mostrar só os 10 primeiros','Show top 10 only'):L(`Ver todos (${rs.length})`,`Show all (${rs.length})`)}</button>`:''):`<p class="nd">${L('Ainda nenhum PDF aberto.','No PDF opened yet.')}</p>`;
+ const rank=rs.length?`<ol class="rk">`+vis.map((r,i)=>{const v=rv(r),p=v.ap+v.dp,e=v.ae+v.de,t=p+e;return `<li><span class="pos">${i+1}</span><div><div class="t">${esc(tit(r))}</div><div class="f">${esc(fich(r))}</div></div><div class="tot">${N(t)}<small>${L('no total','in total')}</small></div><div class="bar"><span class="track"><i class="pt" style="width:${(100*p/mxr).toFixed(1)}%"></i><i class="en" style="width:${(100*e/mxr).toFixed(1)}%"></i></span><span class="tag pt">PT ${N(p)}<small>${pc(p,t)}</small></span><span class="tag en">EN ${N(e)}<small>${pc(e,t)}</small></span></div><div class="ad"><span class="tag op">👁 ${L('Abertos','Opened')} ${N(v.ap+v.ae)}<small>PT ${N(v.ap)} · EN ${N(v.ae)}</small></span><span class="tag dl">⬇ ${L('Descarregados','Downloaded')} ${N(v.dp+v.de)}<small>PT ${N(v.dp)} · EN ${N(v.de)}</small></span></div></li>`}).join('')+`</ol>`+(rs.length>10?`<button type="button" class="more" id="sTodos">${TODOS?L('Mostrar só os 10 primeiros','Show top 10 only'):L(`Ver todos (${rs.length})`,`Show all (${rs.length})`)}</button>`:''):`<p class="nd">${L('Ainda nenhum PDF aberto.','No PDF opened yet.')}</p>`;
  const seg=`<div class="seg" id="sDias" role="group" aria-label="${L('Período','Period')}">${[7,30,90].map(d=>`<button type="button" data-d="${d}" class="${DIAS===d?'on':''}" aria-pressed="${DIAS===d}">${d} ${L('dias','days')}</button>`).join('')}</div>`;
- const leg=`<div class="legend"><span><i></i>${L('Visitas','Visits')}</span>${temA?`<span><i class="p"></i>${L('Aberturas de PDFs','PDF opens')}</span>`:''}</div>`;
+ const leg=`<div class="legend"><span><i></i>${L('Visitas','Visits')}</span>${temA?`<span><i class="p"></i>${L('PDFs (abertos + descarregados)','PDFs (opened + downloaded)')}</span>`:''}</div>`;
  box.innerHTML=`<section><div class="grid g4">`+
   kp('vis','👁️',L('Visitas','Visits'),N(tt.visitas),`${L('30 dias','30 days')}: <b>${N(tt.visitas_30d)}</b> · ${L('90 dias','90 days')}: <b>${N(tt.visitas_90d)}</b>`)+
-  kp('pdf','📄',L('Aberturas de PDFs','PDF opens'),N(tt.aberturas_pdf),`<b>${N(rs.length)}</b> ${rs.length===1?L('relatório diferente','different report'):L('relatórios diferentes','different reports')}`)+
+  kp('pdf','📄','PDFs',N(GT||tt.aberturas_pdf),`<b>${N(GA)}</b> ${L('abertos','opened')} · <b>${N(GD)}</b> ${L('descarregados','downloaded')} · <b>${N(rs.length)}</b> ${rs.length===1?L('relatório','report'):L('relatórios','reports')}`)+
   kp('today','☀️',L('Hoje','Today'),N(vH),`${vH===1?L('visita','visit'):L('visitas','visits')}${pdfs(aH)}`)+
   kp('week','📅',L('Últimos 7 dias','Last 7 days'),N(v7),`${v7===1?L('visita','visit'):L('visitas','visits')}${pdfs(a7)}`)+`</div></section>`+
   `<section><div class="card chart"><div class="chead"><h3>${L('Por dia','Per day')}</h3>${leg}${seg}</div>${grafico()}</div></section>`+
-  `<section>`+card(L('PDFs mais abertos','Most opened PDFs'),rank,`<div class="legend"><span><i></i>PT</span><span><i class="p"></i>EN</span></div>`)+`</section>`+
+  `<section><div class="grid g2">`+card(L('Português vs inglês','Portuguese vs English'),lng)+card(L('Abertos vs descarregados','Opened vs downloaded'),tip+nota)+`</div></section>`+
+  `<section>`+card(L('PDFs mais abertos e descarregados','Most opened and downloaded PDFs'),rank,`<div class="legend"><span><i></i>PT</span><span><i class="p"></i>EN</span></div>`)+`</section>`+
   `<section>`+card(L('Aparelhos','Devices'),aparelhos()+`<p class="note">${L('Modelos de iPhone/iPad estimados pelo ecrã (≈); Android mostra o modelo quando o browser o indica; nos computadores, sistema e browser.','iPhone/iPad models are estimated from the screen (≈); Android shows the model when the browser reports it; for computers, system and browser.')}${S.aparelhos_desde?` ${L('Contagem desde','Counting since')} ${fdia(S.aparelhos_desde)}.`:''}</p>`)+`</section>`+
   `<section><div class="grid g2">`+
   card(L('Países','Countries'),lista(arr(S.paises).map(p=>{const c=iso2(p.id);return {ic:SEMFLAG&&c?c:flag(p.id),cls:SEMFLAG&&c?'cc':'',n:esc(pais(p.id,p.nome)),v:p.visitas}})))+

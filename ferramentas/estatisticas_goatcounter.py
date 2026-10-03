@@ -17,6 +17,9 @@ GOATCOUNTER_TOKEN (variável de ambiente; nunca é escrito em lado nenhum). Só 
 - Aparelhos: com cada visita o Worker envia o evento aparelho/<tipo>/<slug> (título = rótulo, ex. "iPhone XR / 11"; sem IP nem user-agent).
   Ficam em "aparelhos" (+ "aparelhos_desde", o 1.º dia com eventos) (contagem por rótulo; iPhone/iPad = estimativa pelo ecrã), não contam como visitas nem aberturas, e os países /
   browsers / sistemas / tamanhos / origens são pedidos só para as páginas e PDFs (include_paths), para os eventos de aparelho não os somarem.
+- PDFs abertos vs descarregados: o Worker conta a abertura como o evento reports/<f>.pdf (formato de sempre) e o botão Descarregar
+  (?dl=1) como download/<f>.pdf (desde DL_DESDE; antes, os downloads contavam como aberturas). Por relatório: abertos_pt/en,
+  descarregados_pt/en, pt, en e total (pt/en/total = abertos + descarregados); totais pdf_abertos, pdf_descarregados, pdf_pt, pdf_en.
 
 Uso: GOATCOUNTER_TOKEN=... python3 ferramentas/estatisticas_goatcounter.py [--saida data/estatisticas.json] [--hoje AAAA-MM-DD]
 """
@@ -25,11 +28,14 @@ import argparse, datetime as dt, json, os, re, sys, time, urllib.error, urllib.p
 API = os.environ.get('GOATCOUNTER_API', 'https://imortalistas.goatcounter.com/api/v0')  # GOATCOUNTER_API só para testes locais
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INICIO = dt.datetime(2026, 10, 1, tzinfo=dt.timezone.utc)  # a contagem começou em outubro de 2026
-RE_PDF = re.compile(r'^/?(reports/[A-Za-z0-9._-]+\.pdf)$')
+RE_PDF = re.compile(r'^/?(reports/[A-Za-z0-9._-]+\.pdf)$')      # abertura (formato de sempre)
+RE_DL = re.compile(r'^/?download/([A-Za-z0-9._-]+\.pdf)$')      # download (botão Descarregar, ?dl=1 no Worker)
 RE_AP = re.compile(r'^/?aparelho/(iphone|ipad|android|android-tablet|computador|outro)/([a-z0-9-]{1,60})$')  # evento do aparelho (Worker)
-VAZIO = {'versao': 1, 'atualizado_em': None, 'desde': None,
+DL_DESDE = '2026-10-03'  # a partir deste dia os downloads contam à parte; antes contavam como aberturas
+VAZIO = {'versao': 1, 'atualizado_em': None, 'desde': None, 'descarregados_desde': DL_DESDE,
          'total': {'visitas': 0, 'visitas_30d': 0, 'visitas_90d': 0, 'aberturas_pdf': 0,
-                   'visitas_hoje': 0, 'visitas_7d': 0, 'aberturas_hoje': 0, 'aberturas_7d': 0, 'aberturas_30d': 0},
+                   'visitas_hoje': 0, 'visitas_7d': 0, 'aberturas_hoje': 0, 'aberturas_7d': 0, 'aberturas_30d': 0,
+                   'pdf_abertos': 0, 'pdf_descarregados': 0, 'pdf_pt': 0, 'pdf_en': 0},
          'dias': [], 'paginas': [], 'relatorios': [], 'aparelhos': [], 'paises': [], 'browsers': [], 'sistemas': [], 'tamanhos': [], 'origens': []}
 
 def aviso(msg):
@@ -138,12 +144,17 @@ def _recolher(token, hoje, ini_dt, ini, fim):
             continue
         if h.get('path_id') is not None: incluir.append(h.get('path_id'))
         if h.get('event'):
-            m = RE_PDF.match(path)
-            if not m: continue
-            f = m.group(1); rid, lng = fich.get(f, (None, 'en' if f.endswith('_en.pdf') else 'pt'))
+            m, tipo = RE_PDF.match(path), 'abertos'
+            if m: f = m.group(1)
+            else:
+                m, tipo = RE_DL.match(path), 'descarregados'
+                if not m: continue
+                f = 'reports/' + m.group(1)
+            rid, lng = fich.get(f, (None, 'en' if f.endswith('_en.pdf') else 'pt'))
             chave = rid or f
-            e = rel.setdefault(chave, {'id': rid, 'ficheiro': None if rid else f, 'pt': 0, 'en': 0, 'total': 0})
-            e[lng] += n; e['total'] += n
+            e = rel.setdefault(chave, {'id': rid, 'ficheiro': None if rid else f, 'pt': 0, 'en': 0, 'total': 0,
+                                       'abertos_pt': 0, 'abertos_en': 0, 'descarregados_pt': 0, 'descarregados_en': 0})
+            e[lng] += n; e['total'] += n; e[f'{tipo}_{lng}'] += n
             for s in h.get('stats') or []:
                 dia = str(s.get('day') or '')[:10]
                 if re.match(r'^\d{4}-\d{2}-\d{2}$', dia): pdf_dia[dia] = pdf_dia.get(dia, 0) + inteiro(s.get('daily'))
@@ -167,7 +178,9 @@ def _recolher(token, hoje, ini_dt, ini, fim):
                     'visitas_90d': sum(x['visitas'] for x in serie), 'aberturas_pdf': sum(v['total'] for v in rel.values()),
                     'visitas_hoje': sum(x['visitas'] for x in serie[-1:]), 'visitas_7d': sum(x['visitas'] for x in serie[-7:]),
                     'aberturas_hoje': sum(x['aberturas'] for x in serie[-1:]), 'aberturas_7d': sum(x['aberturas'] for x in serie[-7:]),
-                    'aberturas_30d': sum(x['aberturas'] for x in serie[-30:])}
+                    'aberturas_30d': sum(x['aberturas'] for x in serie[-30:]),
+                    'pdf_abertos': sum(v['abertos_pt'] + v['abertos_en'] for v in rel.values()), 'pdf_descarregados': sum(v['descarregados_pt'] + v['descarregados_en'] for v in rel.values()),
+                    'pdf_pt': sum(v['pt'] for v in rel.values()), 'pdf_en': sum(v['en'] for v in rel.values())}
     if inteiro(tot.get('total')) and not out['total']['visitas'] and not out['total']['aberturas_pdf']:
         out['total']['visitas'] = max(0, inteiro(tot.get('total')) - inteiro(tot.get('total_events')))
     return out, ini, fim
