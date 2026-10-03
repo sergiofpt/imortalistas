@@ -2362,6 +2362,204 @@
    "ficheiro_en": "reports/resumo-clinico-medico_en.pdf",
    "paginas_en": 11,
    "tamanho_kb_en": 43
+  },
+  {
+   "id": "vesicula-biliar-calculos",
+   "titulo": {
+    "pt": "Vesícula Biliar e Cálculos Biliares",
+    "en": "Gallbladder and Gallstones"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/vesicula-biliar-calculos.pdf",
+   "descricao": {
+    "pt": "Risco genético de cálculos biliares típico: o maior gene comum (ABCG8 D19H) está ausente e os scores genómicos recentes ficam nos percentis 32–34 (consenso 51,6). Alelos de efeito pequeno no transporte do colesterol e dos sais biliares (ABCG8, ABCB4, CYP7A1, ABCB11), Gilbert (UGT1A1*28) e PiZ heterozigóticos; colecistite com carga de loci alta mas só 11 loci.",
+    "en": "Typical genetic gallstone risk: the largest common gene (ABCG8 D19H) is absent and the recent genomic scores are at percentiles 32–34 (consensus 51.6). Small-effect alleles in cholesterol and bile-salt transport (ABCG8, ABCB4, CYP7A1, ABCB11), heterozygous Gilbert (UGT1A1*28) and PiZ; cholecystitis with a high loci burden but only 11 loci."
+   },
+   "paginas": 16,
+   "tamanho_kb": 58,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   },
+   "ficheiro_en": "reports/vesicula-biliar-calculos_en.pdf",
+   "paginas_en": 15,
+   "tamanho_kb_en": 56
+  },
+  {
+   "id": "suprarrenais-cortisol",
+   "titulo": {
+    "pt": "Glândulas Suprarrenais e Cortisol",
+    "en": "Adrenal Glands and Cortisol"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/suprarrenais-cortisol.pdf",
+   "descricao": {
+    "pt": "Doença de Addison com predisposição baixa (carga de loci no percentil 6,5; sem o alelo de risco do HLA-DQ, AIRE, PTPN22 ou CTLA4). Eixo do stress favorável: FKBP5 sem os alelos de recuperação lenta do cortisol e NR3C1 9β ausente. Descritivo: DHEA-S geneticamente alta (90,0), cortisol típico e CYP11B2 −344T em 2 cópias.",
+    "en": "Low predisposition to Addison's disease (loci burden at percentile 6.5; no risk allele in HLA-DQ, AIRE, PTPN22 or CTLA4). Favourable stress axis: FKBP5 without the slow cortisol-recovery alleles and NR3C1 9β absent. Descriptive: genetically high DHEA-S (90.0), typical cortisol and CYP11B2 −344T in 2 copies."
+   },
+   "paginas": 16,
+   "tamanho_kb": 56,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   },
+   "ficheiro_en": "reports/suprarrenais-cortisol_en.pdf",
+   "paginas_en": 16,
+   "tamanho_kb_en": 55
+  },
+  {
+   "id": "hipofise-eixo-hormonal",
+   "titulo": {
+    "pt": "Hipófise e Eixo Hormonal",
+    "en": "Pituitary and Hormonal Axis"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/hipofise-eixo-hormonal.pdf",
+   "descricao": {
+    "pt": "Eixo GH–IGF-1 do lado mais lento (IGF-1 genético no percentil 32 de consenso; locus do IGF1 sem o alelo de aumento; FOXO3 com 2 alelos de longevidade), o perfil associado a vida mais longa, com menos estímulo anabólico. Testosterona típica a alta (consenso 58,0), AIP R304Q ausente, prolactina inconclusiva e FSHB −211T em 1 cópia.",
+    "en": "GH–IGF-1 axis on the slower side (genetic IGF-1 at a consensus percentile of 32; IGF1 locus without the raising allele; FOXO3 with 2 longevity alleles), the profile linked to longer life, with less anabolic drive. Typical-to-high testosterone (consensus 58.0), AIP R304Q absent, inconclusive prolactin and FSHB −211T in 1 copy."
+   },
+   "paginas": 15,
+   "tamanho_kb": 55,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   },
+   "ficheiro_en": "reports/hipofise-eixo-hormonal_en.pdf",
+   "paginas_en": 15,
+   "tamanho_kb_en": 54
+  },
+  {
+   "id": "baco-sistema-linfatico",
+   "titulo": {
+    "pt": "Baço e Sistema Linfático",
+    "en": "Spleen and Lymphatic System"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/baco-sistema-linfatico.pdf",
+   "descricao": {
+    "pt": "Perfil favorável: linfomas não Hodgkin muito pouco prováveis (score no percentil 1,1; folicular 0,2; sem alelos de risco no HLA de classe II), Hodgkin pouco provável e JAK2 46/1 ausente (sem a predisposição herdada à JAK2 V617F). A vigiar: leucemia linfocítica crónica no 78,4 (típico, lado alto). Linfócitos geneticamente típicos a altos.",
+    "en": "Favourable profile: non-Hodgkin lymphomas very unlikely (score at percentile 1.1; follicular 0.2; no class II HLA risk alleles), Hodgkin unlikely and JAK2 46/1 absent (no inherited predisposition to JAK2 V617F). To watch: chronic lymphocytic leukaemia at 78.4 (typical, upper side). Genetically typical-to-high lymphocyte count."
+   },
+   "paginas": 15,
+   "tamanho_kb": 54,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   },
+   "ficheiro_en": "reports/baco-sistema-linfatico_en.pdf",
+   "paginas_en": 15,
+   "tamanho_kb_en": 53
+  },
+  {
+   "id": "esofago",
+   "titulo": {
+    "pt": "Esófago",
+    "en": "Oesophagus"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/esofago.pdf",
+   "descricao": {
+    "pt": "Perfil típico a favorável: Barrett e adenocarcinoma baixos a típicos (genómico no percentil 14,1), esofagite eosinofílica sem os alelos de risco do TSLP e EMSY, ALDH2*2 ausente. O ponto a vigiar é o refluxo: scores discordantes (83,1 no genómico de 2024; 6,8 e 10,4 nos de 2022) e carga de loci no 75,0.",
+    "en": "Typical-to-favourable profile: Barrett's oesophagus and adenocarcinoma low to typical (genomic at percentile 14.1), eosinophilic oesophagitis without the TSLP and EMSY risk alleles, ALDH2*2 absent. The point to watch is reflux: discordant scores (83.1 in the 2024 genomic score; 6.8 and 10.4 in the 2022 ones) and a loci burden at 75.0."
+   },
+   "paginas": 17,
+   "tamanho_kb": 60,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   },
+   "ficheiro_en": "reports/esofago_en.pdf",
+   "paginas_en": 17,
+   "tamanho_kb_en": 58
+  },
+  {
+   "id": "testiculos",
+   "titulo": {
+    "pt": "Testículos",
+    "en": "Testes"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/testiculos.pdf",
+   "descricao": {
+    "pt": "Tumor de células germinativas do testículo com predisposição poligénica baixa (consenso no percentil 13,7; KITLG rs995030 e TERT sem alelos de risco), embora alguns loci de efeito grande deixem a carga de loci no 74,9. Função testicular típica: testosterona típica a alta, SHBG geneticamente alta e FSH ligeiramente mais baixa (FSHB −211T).",
+    "en": "Low polygenic predisposition to testicular germ cell tumour (consensus at percentile 13.7; KITLG rs995030 and TERT without risk alleles), although some large-effect loci leave the loci burden at 74.9. Typical testicular function: typical-to-high testosterone, genetically high SHBG and slightly lower FSH (FSHB −211T)."
+   },
+   "paginas": 15,
+   "tamanho_kb": 53,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   },
+   "ficheiro_en": "reports/testiculos_en.pdf",
+   "paginas_en": 15,
+   "tamanho_kb_en": 51
+  },
+  {
+   "id": "nariz-seios-perinasais",
+   "titulo": {
+    "pt": "Nariz e Seios Perinasais",
+    "en": "Nose and Paranasal Sinuses"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/nariz-seios-perinasais.pdf",
+   "descricao": {
+    "pt": "A sinusite crónica com pólipos nasais é o ponto fraco (genómico no percentil 98,3, carga de loci no 86,4, consenso 39,3: sinal misto a pender para o risco; TSLP e GIGYF2 com 2 alelos). Rinite alérgica com predisposição baixa (loci no 18,0). Olfato descritivo: OR5A1, OR6A2 (coentros) e OR7D4.",
+    "en": "Chronic sinusitis with nasal polyps is the weak point (genomic at percentile 98.3, loci burden at 86.4, consensus 39.3: a mixed signal leaning towards risk; TSLP and GIGYF2 with 2 alleles). Low predisposition to allergic rhinitis (loci at 18.0). Descriptive smell genes: OR5A1, OR6A2 (coriander) and OR7D4."
+   },
+   "paginas": 16,
+   "tamanho_kb": 57,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   },
+   "ficheiro_en": "reports/nariz-seios-perinasais_en.pdf",
+   "paginas_en": 16,
+   "tamanho_kb_en": 56
+  },
+  {
+   "id": "laringe-voz",
+   "titulo": {
+    "pt": "Laringe e Voz",
+    "en": "Larynx and Voice"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/laringe-voz.pdf",
+   "descricao": {
+    "pt": "Risco genético de cancro da laringe e da cabeça e pescoço típico (consenso no percentil 48,5), quase todo condicional ao álcool e ao tabaco: ALDH2*2 ausente, mas ADH1B*2 protetor ausente, ADH7 com 2 alelos e CHRNA5 D398N com 1. Faringe e amígdalas com carga de loci baixa (2,8); refluxo com scores discordantes.",
+    "en": "Typical genetic risk of laryngeal and head and neck cancer (consensus at percentile 48.5), almost all conditional on alcohol and tobacco: ALDH2*2 absent, but protective ADH1B*2 absent, ADH7 with 2 alleles and CHRNA5 D398N with 1. Pharynx and tonsils with a low loci burden (2.8); reflux with discordant scores."
+   },
+   "paginas": 15,
+   "tamanho_kb": 53,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   },
+   "ficheiro_en": "reports/laringe-voz_en.pdf",
+   "paginas_en": 15,
+   "tamanho_kb_en": 52
+  },
+  {
+   "id": "intestino-grosso",
+   "titulo": {
+    "pt": "Intestino Grosso – Diverticulose, Hemorroidas e Apendicite",
+    "en": "Large Intestine – Diverticular Disease, Haemorrhoids and Appendicitis"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/intestino-grosso.pdf",
+   "descricao": {
+    "pt": "Perfil misto: apendicite (consenso no percentil 15,0), hemorroidas (18,9) e intestino irritável (loci 24,0) pouco prováveis, mas doença diverticular moderadamente alta (carga de 214 loci no 97,8; consenso 68,7; GPR158 T/T, ARHGAP15, COLQ, EFEMP1, COL6A1). Trânsito intestinal geneticamente mais rápido (loci 99,2).",
+    "en": "Mixed profile: appendicitis (consensus at percentile 15.0), haemorrhoids (18.9) and irritable bowel (loci 24.0) unlikely, but moderately high diverticular disease (214-locus burden at 97.8; consensus 68.7; GPR158 T/T, ARHGAP15, COLQ, EFEMP1, COL6A1). Genetically faster bowel transit (loci 99.2)."
+   },
+   "paginas": 16,
+   "tamanho_kb": 56,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   },
+   "ficheiro_en": "reports/intestino-grosso_en.pdf",
+   "paginas_en": 15,
+   "tamanho_kb_en": 54
   }
  ]
 }

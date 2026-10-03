@@ -346,6 +346,23 @@ def verificar_genetica_json(F):
             bi(l.get('f'), f'farmacos.linhas[{k}].f'); bi(l.get('genes'), f'farmacos.linhas[{k}].genes'); bi(l.get('rec'), f'farmacos.linhas[{k}].rec')
             if l.get('acao') not in ('evitar', 'ajustar', 'monitorizar', 'indeterminado'): err(f'farmacos.linhas[{k}]: acao {l.get("acao")!r} (evitar, ajustar, monitorizar, indeterminado)')
         print(f'{nome}: tabela farmacos com {len(F2.get("linhas") or [])} fármacos')
+    # lista ordenada opcional (achados por ordem de impacto; cada linha cita os relatórios de origem publicados em data/reports.json)
+    Li = d.get('lista')
+    if Li is not None:
+        bi(Li.get('titulo'), 'lista.titulo'); bi(Li.get('intro'), 'lista.intro', False)
+        if (Li.get('id') or 'lista') in ids: err('lista.id repete o id de uma secção')
+        rel = {r.get('id') for r in (ler(F_REPORTS).get('relatorios') or [])} if os.path.exists(F_REPORTS) else set()
+        if not Li.get('linhas'): err('lista: sem "linhas"')
+        for k, r in enumerate(Li.get('linhas') or []):
+            if r.get('n') != k + 1: err(f'lista.linhas[{k}]: n={r.get("n")!r} (tem de ser {k + 1})')
+            bi(r.get('texto'), f'lista.linhas[{k}].texto'); bi(r.get('evidencia'), f'lista.linhas[{k}].evidencia'); bi(r.get('analise'), f'lista.linhas[{k}].analise', False)
+            if r.get('estado', 'na') not in ('ok', 'warn', 'bad', 'na', 'info'): err(f'lista.linhas[{k}]: estado {r.get("estado")!r} (ok, warn, bad, na, info)')
+            if not isinstance(r.get('fraca', False), bool): err(f'lista.linhas[{k}]: "fraca" tem de ser true/false')
+            if not isinstance(r.get('origem', []), list): err(f'lista.linhas[{k}]: "origem" tem de ser uma lista de ids de data/reports.json')
+            for x in r.get('origem') or []:
+                if x not in rel: err(f'lista.linhas[{k}]: origem {x!r} não é um relatório publicado em data/reports.json')
+        nl = Li.get('linhas') or []
+        print(f'{nome}: lista ordenada com {len(nl)} linhas ({sum(1 for r in nl if r.get("fraca"))} com evidência fraca)')
     print(f'{nome}: {len(ids)} secções, {n} linhas')
     return ok
 

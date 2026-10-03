@@ -1,14 +1,18 @@
 {
  "_leia_me": "Página genetica-boa.html: SÓ resultados favoráveis. Ver README.md, secção \"Páginas de genética\". estado: ok | warn | bad | na | info. Texto: HTML simples (b, i, em, strong, br, small, sub, sup). Cada secção tem \"evitar\" e \"priorizar\" (listas de textos PT/EN) e pode ter \"ajustar\" e \"monitorizar\" (opcionais; usados na Farmacogenómica) e \"intro\". \"farmacos\" (só em genetica.json): tabela pesquisável dos fármacos acionáveis do relatório PGx (gerada de pgx632.py). O protocolo consolidado está em data/genetica_protocolo.json.",
- "atualizado_em": "2026-10-02",
+ "atualizado_em": "2026-10-03",
  "fonte": {
-  "pt": "Fonte principal: <b>Genetica</b> · ficheiro bruto de genótipos (array de 684 967 marcadores, analisado localmente) + imputação genómica de 02-10-2026 (painel 1000G 30x; só genótipos com DR2 ≥ 0,8) · complementar: resumo favorável/desfavorável (22 temas), sergio_perfil_genetico.md §1–§20, raw_analise/ (stress oxidativo, mitocôndrias, inflamação e autoimunidade, histamina, metilação, farmacogenómica, scores poligénicos, ClinVar) e plano_genetico/plano_completo.md · não diagnóstico",
-  "en": "Primary source: <b>Genetica</b> · raw genotype file (array of 684,967 markers, analysed locally) + genomic imputation of 02-10-2026 (1000G 30x panel; only genotypes with DR2 ≥ 0.8) · supplementary: favourable/unfavourable summary (22 themes), sergio_perfil_genetico.md §1–§20, raw_analise/ (oxidative stress, mitochondria, inflammation and autoimmunity, histamine, methylation, pharmacogenomics, polygenic scores, ClinVar) and plano_genetico/plano_completo.md · not a diagnosis"
+  "pt": "Fonte principal: <b>Genetica</b> · lista ordenada de 03-10-2026 a partir dos relatórios genéticos (scores poligénicos recalculados a 03-10-2026) · genótipos do array (684 967 marcadores, analisado localmente) + imputação genómica (só genótipos com DR2 ≥ 0,8) · análises ao sangue de 25-08-2026 onde se cruzam com a genética · não diagnóstico",
+  "en": "Primary source: <b>Genetica</b> · ranked list of 03-10-2026 built from the genetic reports (polygenic scores recalculated on 03-10-2026) · array genotypes (684,967 markers, analysed locally) + genomic imputation (only genotypes with DR2 ≥ 0.8) · blood tests of 25-08-2026 where they meet the genetics · not a diagnosis"
  },
  "notas": [
   {
-   "pt": "Só os resultados <b>favoráveis</b> (variantes protetoras, alelos de longevidade, scores abaixo da média, função normal com significado clínico tranquilizador). Os desfavoráveis estão em <b>Genética Má</b>; os neutros, médios ou sem conclusão não aparecem. Aqui, <b>Priorizar</b> serve para aproveitar ou manter a vantagem.",
-   "en": "Only the <b>favourable</b> results (protective variants, longevity alleles, below-average scores, normal function with reassuring clinical meaning). Unfavourable ones are under <b>Bad Genetics</b>; neutral, average or inconclusive ones are not shown. Here, <b>Prioritize</b> is about using or keeping the advantage."
+   "pt": "Só os resultados <b>favoráveis</b> (variantes protetoras, alelos de longevidade, scores abaixo da média, função normal com significado clínico tranquilizador), numa <b>lista ordenada</b> do maior para o menor impacto provável na saúde e na longevidade (67 achados; a ordem é um juízo, não um cálculo). Cada linha cita o relatório de origem, com ligação ao PDF em <b>Genética Reports</b>. Os desfavoráveis estão em <b>Genética Má</b>; os neutros, médios ou sem conclusão não aparecem. Aqui, <b>Priorizar</b> serve para aproveitar ou manter a vantagem.",
+   "en": "Only the <b>favourable</b> results (protective variants, longevity alleles, below-average scores, normal function with reassuring clinical meaning), in a <b>ranked list</b> from the largest to the smallest likely impact on health and longevity (67 findings; the order is a judgement, not a calculation). Each row cites its source report, linked to the PDF under <b>Genetics Reports</b>. Unfavourable ones are under <b>Bad Genetics</b>; neutral, average or inconclusive ones are not shown. Here, <b>Prioritize</b> is about using or keeping the advantage."
+  },
+  {
+   "pt": "<b>Scores poligénicos</b>: valores do recálculo de 03-10-2026 (consenso = mediana dos scores com boa cobertura); quando um relatório mais antigo cita outro valor, prevalece o recálculo. <b>As análises ao sangue prevalecem sobre a genética</b> quando há conflito: nas linhas em que há análise relevante, o valor medido aparece por baixo do achado.",
+   "en": "<b>Polygenic scores</b>: values from the recalculation of 03-10-2026 (consensus = median of the scores with good coverage); when an older report quotes another value, the recalculation prevails. <b>Blood tests take precedence over genetics</b> when they conflict: in rows with a relevant test, the measured value is shown below the finding."
   },
   {
    "pt": "Cada categoria tem um bloco <b>Evitar</b> e um bloco <b>Priorizar</b> ligados aos genes dessa categoria; o <b>Protocolo genético</b> (no topo) junta tudo sem contradições, com o cartão PGx e as análises de confirmação. Os valores das análises prevalecem sobre doses baseadas só na genética. <b>Tudo é sugestão (não aplicada) e precisa de validação médica.</b>",
@@ -26,105 +30,10 @@
     "pt": "Cardiovascular e lípidos",
     "en": "Cardiovascular and lipids"
    },
-   "linhas": [
-    {
-     "item": "LPA",
-     "texto": {
-      "pt": "rs10455872 AA + rs3798220 TT: sem os alelos principais de risco de Lp(a); Lp(a) medida 2 mg/dL (o PGS genómico de Lp(a) está na Genética Má)",
-      "en": "rs10455872 AA + rs3798220 TT: none of the main Lp(a) risk alleles; measured Lp(a) 2 mg/dL (the genomic Lp(a) PGS is under Bad Genetics)"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Sem risco",
-      "en": "No risk"
-     }
-    },
-    {
-     "item": {
-      "pt": "Scores CV",
-      "en": "CV scores"
-     },
-     "texto": {
-      "pt": "PGS de doença coronária com a imputação (cobertura alta): metaGRS <b>P5</b> e GPS_Mult P30 (antes P32–38 com cobertura baixa) · PGS de LDL (PRS-CS) P20",
-      "en": "Coronary disease PGS with imputation (high coverage): metaGRS <b>P5</b> and GPS_Mult P30 (previously P32–38 with low coverage) · LDL PGS (PRS-CS) P20"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Abaixo da média",
-      "en": "Below average"
-     }
-    },
-    {
-     "item": "LDLR / SORT1",
-     "texto": {
-      "pt": "rs6511720 GT, rs12740374 GT: 1 alelo redutor de LDL em cada",
-      "en": "rs6511720 GT, rs12740374 GT: 1 LDL-lowering allele in each"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Favorável",
-      "en": "Favourable"
-     }
-    },
-    {
-     "item": "APOC3",
-     "texto": {
-      "pt": "Baixa atividade (rs5128 CC, rs2542052 CC): favorável aos triglicerídeos",
-      "en": "Low activity (rs5128 CC, rs2542052 CC): favourable for triglycerides"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Favorável",
-      "en": "Favourable"
-     }
-    },
-    {
-     "item": "SH2B3 · PHACTR1 · IL6R",
-     "texto": {
-      "pt": "SH2B3 R262 homozigoto (rs3184504 CC) · PHACTR1 rs9349379 AA (menor risco coronário) · IL6R Asp358Ala heterozigoto (menos sinalização IL-6, menos doença coronária)",
-      "en": "SH2B3 R262 homozygous (rs3184504 CC) · PHACTR1 rs9349379 AA (lower coronary risk) · IL6R Asp358Ala heterozygous (less IL-6 signalling, less coronary disease)"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Favorável",
-      "en": "Favourable"
-     }
-    },
-    {
-     "item": {
-      "pt": "Trombose",
-      "en": "Thrombosis"
-     },
-     "texto": {
-      "pt": "Fator V Leiden e protrombina G20210A negativos · ABO rs505922 TT: grupo O provável (menos tromboembolismo venoso; confirmar com tipagem)",
-      "en": "Factor V Leiden and prothrombin G20210A negative · ABO rs505922 TT: probable blood group O (less venous thromboembolism; confirm by typing)"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Negativo",
-      "en": "Negative"
-     }
-    },
-    {
-     "item": {
-      "pt": "Resposta aos hipolipemiantes",
-      "en": "Lipid-lowering response"
-     },
-     "texto": {
-      "pt": "HMGCR sem o haplótipo H7 (resposta normal às estatinas) · ABCG5/8 e ABCG8 D19H sem hiperabsorção de esteróis · APOB R3527Q ausente (sem FDB)",
-      "en": "HMGCR without the H7 haplotype (normal statin response) · ABCG5/8 and ABCG8 D19H without sterol hyperabsorption · APOB R3527Q absent (no FDB)"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Favorável",
-      "en": "Favourable"
-     }
-    }
-   ],
    "evitar": [
     {
-     "pt": "Ler o PGS coronário baixo como licença para relaxar: o 9p21 homozigoto, o CETP e o ApoB P67 (Genética Má) mantêm a prioridade cardiovascular",
-     "en": "Reading the low coronary PGS as a licence to relax: the homozygous 9p21, CETP and ApoB P67 (Bad Genetics) keep cardiovascular disease a priority"
+     "pt": "Ler o PGS coronário baixo como licença para relaxar: o 9p21 homozigoto e o CETP (Genética Má) mantêm a prioridade cardiovascular",
+     "en": "Reading the low coronary PGS as a licence to relax: the homozygous 9p21 and CETP (Bad Genetics) keep cardiovascular disease a priority"
     },
     {
      "pt": "Parar ou baixar a terapêutica hipolipemiante por a genética ser favorável; aspirina sem indicação",
@@ -152,83 +61,6 @@
     "pt": "Fígado e metabolismo",
     "en": "Liver and metabolism"
    },
-   "linhas": [
-    {
-     "item": "HSD17B13",
-     "texto": {
-      "pt": "rs72613567 T/TA (confirmado pela imputação, DR2 1,00): alelo protetor do fígado (menos inflamação e fibrose; atenua o PNPLA3 I148M)",
-      "en": "rs72613567 T/TA (confirmed by imputation, DR2 1.00): liver-protective allele (less inflammation and fibrosis; attenuates PNPLA3 I148M)"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Protetor",
-      "en": "Protective"
-     }
-    },
-    {
-     "item": "TM6SF2",
-     "texto": {
-      "pt": "rs58542926 CC (E167K): não portador",
-      "en": "rs58542926 CC (E167K): non-carrier"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Favorável",
-      "en": "Favourable"
-     }
-    },
-    {
-     "item": {
-      "pt": "MASLD (PGS)",
-      "en": "MASLD (PGS)"
-     },
-     "texto": {
-      "pt": "PGS de MASLD com 68 variantes P24 com a imputação (antes P31)",
-      "en": "68-variant MASLD PGS P24 with imputation (previously P31)"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Abaixo da média",
-      "en": "Below average"
-     }
-    },
-    {
-     "item": "ALDH2",
-     "texto": {
-      "pt": "rs671 GG: função normal (sem o alelo asiático de deficiência)",
-      "en": "rs671 GG: normal function (no Asian deficiency allele)"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Normal",
-      "en": "Normal"
-     }
-    },
-    {
-     "item": "DIO2",
-     "texto": {
-      "pt": "rs225014 TT (Thr92Thr): sem o alelo Ala92 associado a pior conversão de T4 em T3",
-      "en": "rs225014 TT (Thr92Thr): no Ala92 allele linked to poorer T4-to-T3 conversion"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Favorável",
-      "en": "Favourable"
-     }
-    },
-    {
-     "item": "MC4R · HNF4A",
-     "texto": {
-      "pt": "MC4R rs17782313 TT (sem o alelo de mais apetite) · HNF4A T130I ausente",
-      "en": "MC4R rs17782313 TT (no increased-appetite allele) · HNF4A T130I absent"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Favorável",
-      "en": "Favourable"
-     }
-    }
-   ],
    "evitar": [
     {
      "pt": "Álcool, mesmo com o ALDH2 normal (PNPLA3 + Pi*MZ na Genética Má)",
@@ -260,63 +92,10 @@
     "pt": "Longevidade e cérebro",
     "en": "Longevity and brain"
    },
-   "linhas": [
-    {
-     "item": "APOE",
-     "texto": {
-      "pt": "ε3/ε3: rs7412 CC genotipado + rs429358 TT (agora genótipo direto na imputação, DR2 0,99); sem ε4",
-      "en": "ε3/ε3: rs7412 CC genotyped + rs429358 TT (now a direct genotype on imputation, DR2 0.99); no ε4"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Favorável",
-      "en": "Favourable"
-     }
-    },
-    {
-     "item": "FOXO3",
-     "texto": {
-      "pt": "rs2802292 GG + rs2764264 CC + rs13217795 CC: homozigoto para os alelos de longevidade mais replicados · PGS de longevidade P92 com a imputação (antes P89)",
-      "en": "rs2802292 GG + rs2764264 CC + rs13217795 CC: homozygous for the most replicated longevity alleles · longevity PGS P92 with imputation (previously P89)"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Favorável",
-      "en": "Favourable"
-     }
-    },
-    {
-     "item": "TREM2 · C9orf72",
-     "texto": {
-      "pt": "TREM2 R47H e R62H ausentes · C9orf72 sem o haplótipo de risco",
-      "en": "TREM2 R47H and R62H absent · C9orf72 without the risk haplotype"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Favorável",
-      "en": "Favourable"
-     }
-    },
-    {
-     "item": {
-      "pt": "Envelhecimento",
-      "en": "Ageing"
-     },
-     "texto": {
-      "pt": "Healthy aging “higher” · presbiopia P4 (relatórios de 25-08-2026)",
-      "en": "Healthy aging “higher” · presbyopia P4 (reports of 25-08-2026)"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Favorável",
-      "en": "Favourable"
-     }
-    }
-   ],
    "evitar": [
     {
-     "pt": "Ativadores da telomerase “para a longevidade” (epitalon, TA-65, astrágalo): o TERT e o melanoma pesam mais",
-     "en": "Telomerase activators “for longevity” (epitalon, TA-65, astragalus): TERT and melanoma weigh more"
+     "pt": "Ativadores da telomerase “para a longevidade” (epitalon, TA-65, astrágalo): os alelos TERT de risco (glioma, hematopoiese clonal) pesam mais",
+     "en": "Telomerase activators “for longevity” (epitalon, TA-65, astragalus): the TERT risk alleles (glioma, clonal haematopoiesis) weigh more"
     },
     {
      "pt": "Estimular o eixo GH/IGF-1 (secretagogos, IGF-1): vai contra a via FOXO3",
@@ -344,59 +123,6 @@
     "pt": "Mitocôndrias e defesa antioxidante",
     "en": "Mitochondria and antioxidant defence"
    },
-   "linhas": [
-    {
-     "item": "PPARGC1A",
-     "texto": {
-      "pt": "Gly482Gly (rs8192678 CC): boa biogénese mitocondrial e boa resposta ao treino aeróbio",
-      "en": "Gly482Gly (rs8192678 CC): good mitochondrial biogenesis and good response to aerobic training"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Favorável",
-      "en": "Favourable"
-     }
-    },
-    {
-     "item": "NRF2 · NQO1 · GCLC",
-     "texto": {
-      "pt": "NFE2L2 −617 C/C (genótipo direto na imputação) · NQO1 *1/*1 · GCLC −129 C/C: regulação antioxidante forte",
-      "en": "NFE2L2 −617 C/C (direct genotype on imputation) · NQO1 *1/*1 · GCLC −129 C/C: strong antioxidant regulation"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Favorável",
-      "en": "Favourable"
-     }
-    },
-    {
-     "item": "SOD2 · SOD3 · HMOX1 · PON1",
-     "texto": {
-      "pt": "SOD2 Ala16Ala · SOD3 Arg213Arg · HMOX1 −413 A/A · PON1 Q192Q (isoforma boa)",
-      "en": "SOD2 Ala16Ala · SOD3 Arg213Arg · HMOX1 −413 A/A · PON1 Q192Q (good isoform)"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Favorável",
-      "en": "Favourable"
-     }
-    },
-    {
-     "item": {
-      "pt": "Energia",
-      "en": "Energy"
-     },
-     "texto": {
-      "pt": "NDUFB6 sem alelos de risco · ACADM K329E e CPT1A P479L/A275T ausentes (β-oxidação normal) · COQ2 sem V393A · mtDNA HV sem mutações patogénicas clássicas",
-      "en": "NDUFB6 without risk alleles · ACADM K329E and CPT1A P479L/A275T absent (normal β-oxidation) · COQ2 without V393A · mtDNA HV without classic pathogenic mutations"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Favorável",
-      "en": "Favourable"
-     }
-    }
-   ],
    "evitar": [
     {
      "pt": "CoQ10 sem indicação (COQ2 e NQO1 normais); antioxidantes em dose alta logo antes ou depois do treino (NAC longe do treino)",
@@ -428,68 +154,6 @@
     "pt": "Cancro",
     "en": "Cancer"
    },
-   "linhas": [
-    {
-     "item": {
-      "pt": "Pele não-melanoma",
-      "en": "Non-melanoma skin"
-     },
-     "texto": {
-      "pt": "Carcinoma espinocelular P3 · basocelular “less likely”",
-      "en": "Squamous cell carcinoma P3 · basal cell “less likely”"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Abaixo da média",
-      "en": "Below average"
-     }
-    },
-    {
-     "item": {
-      "pt": "Scores de cancro",
-      "en": "Cancer scores"
-     },
-     "texto": {
-      "pt": "18 dos 29 scores do relatório de cancro de 02-10-2026 “less likely”, incluindo pâncreas, fígado e estômago",
-      "en": "18 of the 29 scores in the cancer report of 02-10-2026 “less likely”, including pancreas, liver and stomach"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Abaixo da média",
-      "en": "Below average"
-     }
-    },
-    {
-     "item": {
-      "pt": "Genes de risco",
-      "en": "Risk genes"
-     },
-     "texto": {
-      "pt": "HOXB13 G84E · MUTYH (G396D, Y179C), CHEK2 I157T e APC I1307K: não portador · TP53 Arg72/Arg72 (evidência fraca)",
-      "en": "HOXB13 G84E · MUTYH (G396D, Y179C), CHEK2 I157T and APC I1307K: non-carrier · TP53 Arg72/Arg72 (weak evidence)"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Negativo",
-      "en": "Negative"
-     }
-    },
-    {
-     "item": {
-      "pt": "Pigmentação",
-      "en": "Pigmentation"
-     },
-     "texto": {
-      "pt": "MC1R R151C, R160W, D294H, V60L e restantes variantes principais de referência (sem variantes “ruivas”) · IRF4 CC · SLC45A2 com 1 alelo escuro",
-      "en": "MC1R R151C, R160W, D294H, V60L and the other main variants all reference (no “red hair” variants) · IRF4 CC · SLC45A2 with 1 dark allele"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Sem risco",
-      "en": "No risk"
-     }
-    }
-   ],
    "evitar": [
     {
      "pt": "Tratar o risco baixo como proteção: tabaco, álcool, carne processada ou carbonizada e sol sem proteção anulam a vantagem",
@@ -498,12 +162,12 @@
    ],
    "priorizar": [
     {
-     "pt": "Manter a dermatoscopia anual (o melanoma P89 está na Genética Má) e o protetor solar diário",
-     "en": "Keep the annual dermatoscopy (melanoma P89 is under Bad Genetics) and daily sunscreen"
+     "pt": "Manter a dermatoscopia anual (o número de nevos no percentil 88 está na Genética Má) e o protetor solar diário",
+     "en": "Keep the annual dermatoscopy (the naevus count at percentile 88 is under Bad Genetics) and daily sunscreen"
     },
     {
-     "pt": "Rastreio colorretal precoce mesmo assim (o array não cobre Lynch); fibra sem máximo e crucíferas",
-     "en": "Early colorectal screening anyway (the array does not cover Lynch); fibre with no maximum and cruciferous vegetables"
+     "pt": "Rastreio colorretal precoce (cancro colorretal no percentil 80, na Genética Má; o array não cobre Lynch); fibra sem máximo e crucíferas",
+     "en": "Early colorectal screening (colorectal cancer at percentile 80, under Bad Genetics; the array does not cover Lynch); fibre with no maximum and cruciferous vegetables"
     }
    ]
   },
@@ -513,92 +177,6 @@
     "pt": "Imunidade e autoimunidade",
     "en": "Immunity and autoimmunity"
    },
-   "linhas": [
-    {
-     "item": {
-      "pt": "HLA autoimune",
-      "en": "Autoimmune HLA"
-     },
-     "texto": {
-      "pt": "Sem B*27, C*06:02, DRB1*15:01, DR3, DR4, DQ2 nem DQ8 (confirmado por tags imputadas): espondilite, uveíte anterior, psoríase, esclerose múltipla, diabetes tipo 1 e celíaca muito improváveis",
-      "en": "No B*27, C*06:02, DRB1*15:01, DR3, DR4, DQ2 or DQ8 (confirmed by imputed tags): spondylitis, anterior uveitis, psoriasis, multiple sclerosis, type 1 diabetes and coeliac disease very unlikely"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Negativo",
-      "en": "Negative"
-     }
-    },
-    {
-     "item": {
-      "pt": "Scores autoimunes",
-      "en": "Autoimmune scores"
-     },
-     "texto": {
-      "pt": "Celíaca P4 · doença inflamatória intestinal P2–9 · psoríase P6 · eczema P10 · Sjögren P3 · alergia P19 · colite ulcerosa P27 (imputação)",
-      "en": "Coeliac P4 · inflammatory bowel disease P2–9 · psoriasis P6 · eczema P10 · Sjögren P3 · allergy P19 · ulcerative colitis P27 (imputation)"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Abaixo da média",
-      "en": "Below average"
-     }
-    },
-    {
-     "item": "NOD2 · CLEC7A",
-     "texto": {
-      "pt": "NOD2 sem R702W, G908R nem 1007fs (variantes de Crohn) · CLEC7A sem o stop Y238X de Dectin-1",
-      "en": "NOD2 without R702W, G908R or 1007fs (Crohn’s variants) · CLEC7A without the Dectin-1 Y238X stop"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Negativo",
-      "en": "Negative"
-     }
-    },
-    {
-     "item": "PTPN22 · STAT4 · CTLA4",
-     "texto": {
-      "pt": "PTPN22 sem 620W (rs2476601 GG) · STAT4 rs7574865 GG · CTLA4 +49 AA · sem epítopo partilhado da artrite reumatoide",
-      "en": "PTPN22 without 620W (rs2476601 GG) · STAT4 rs7574865 GG · CTLA4 +49 AA · no rheumatoid arthritis shared epitope"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Negativo",
-      "en": "Negative"
-     }
-    },
-    {
-     "item": {
-      "pt": "Citocinas",
-      "en": "Cytokines"
-     },
-     "texto": {
-      "pt": "TNF −308 GG · IL17A GG · NLRP3 sem Q705K · IL-10 sem o haplótipo ATA · JAK2 sem 46/1",
-      "en": "TNF −308 GG · IL17A GG · NLRP3 without Q705K · IL-10 without the ATA haplotype · JAK2 without 46/1"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Favorável",
-      "en": "Favourable"
-     }
-    },
-    {
-     "item": {
-      "pt": "Pulmão e rim",
-      "en": "Lung and kidney"
-     },
-     "texto": {
-      "pt": "MUC5B G/G (sem o principal risco de fibrose pulmonar) · APOL1 sem G1 · CFHR3/1 com 1 alelo protetor (nefropatia IgA)",
-      "en": "MUC5B G/G (without the main pulmonary fibrosis risk) · APOL1 without G1 · CFHR3/1 with 1 protective allele (IgA nephropathy)"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Favorável",
-      "en": "Favourable"
-     }
-    }
-   ],
    "evitar": [
     {
      "pt": "Dieta sem glúten “por precaução” (celíaca muito improvável)",
@@ -626,83 +204,6 @@
     "pt": "Nutrientes, osso e intestino",
     "en": "Nutrients, bone and gut"
    },
-   "linhas": [
-    {
-     "item": {
-      "pt": "Vitamina D",
-      "en": "Vitamin D"
-     },
-     "texto": {
-      "pt": "GC rs2282679 TT, rs7041 CC, rs4588 GG · DHCR7 rs12785878 TT: genótipos de 25(OH)D mais alta (a dose decide-se pela análise)",
-      "en": "GC rs2282679 TT, rs7041 CC, rs4588 GG · DHCR7 rs12785878 TT: higher-25(OH)D genotypes (the dose is decided by the blood test)"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Favorável",
-      "en": "Favourable"
-     }
-    },
-    {
-     "item": {
-      "pt": "Ómega-3",
-      "en": "Omega-3"
-     },
-     "texto": {
-      "pt": "FADS1 rs174546 CC, FADS1/2 rs174537 GG, FADS2 rs1535 AA: dessaturases de alta atividade, conversão eficiente",
-      "en": "FADS1 rs174546 CC, FADS1/2 rs174537 GG, FADS2 rs1535 AA: high-activity desaturases, efficient conversion"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Favorável",
-      "en": "Favourable"
-     }
-    },
-    {
-     "item": {
-      "pt": "Lactose",
-      "en": "Lactose"
-     },
-     "texto": {
-      "pt": "LCT AG: tolerante à lactose",
-      "en": "LCT AG: lactose tolerant"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Favorável",
-      "en": "Favourable"
-     }
-    },
-    {
-     "item": {
-      "pt": "B12 e folato",
-      "en": "B12 and folate"
-     },
-     "texto": {
-      "pt": "MTR, MTRR, CUBN, CLYBL e TCN2 sem risco relevante de B12 · FUT2 secretor · CBS rs234709 com 1 alelo que baixa a homocisteína",
-      "en": "MTR, MTRR, CUBN, CLYBL and TCN2 without relevant B12 risk · FUT2 secretor · CBS rs234709 with 1 homocysteine-lowering allele"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Favorável",
-      "en": "Favourable"
-     }
-    },
-    {
-     "item": {
-      "pt": "Osso e músculo",
-      "en": "Bone and muscle"
-     },
-     "texto": {
-      "pt": "COL1A1 rs1800012 CC (sem o alelo “s” de osteoporose) · LRP5 e ESR1 sem alelos de baixa densidade óssea · MSTN rs1805086 TT",
-      "en": "COL1A1 rs1800012 CC (no “s” osteoporosis allele) · LRP5 and ESR1 without low bone density alleles · MSTN rs1805086 TT"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Favorável",
-      "en": "Favourable"
-     }
-    }
-   ],
    "evitar": [
     {
      "pt": "Baixar a vitamina D3 para 4000 UI só pela genética: a 25(OH)D está em 37 com 10 000 UI",
@@ -738,134 +239,6 @@
     "pt": "Farmacogenómica",
     "en": "Pharmacogenomics"
    },
-   "linhas": [
-    {
-     "item": {
-      "pt": "632 fármacos",
-      "en": "632 drugs"
-     },
-     "texto": {
-      "pt": "<b>226 com genótipo normal</b> (dose padrão) + <b>345 sem interação PGx conhecida</b>; a medicação atual não tem nenhum fármaco a evitar nem com mudança de dose (só sirolímus e isotretinoína a monitorizar; pitavastatina na dose desejada)",
-      "en": "<b>226 with a normal genotype</b> (standard dose) + <b>345 with no known PGx interaction</b>; current medication has no drug to avoid and no dose change (only sirolimus and isotretinoin to monitor; pitavastatin at the desired dose)"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Compatível",
-      "en": "Compatible"
-     }
-    },
-    {
-     "item": "SLCO1B1",
-     "texto": {
-      "pt": "*1/*14 (função aumentada): estatinas bem toleradas, favorável à pitavastatina",
-      "en": "*1/*14 (increased function): statins well tolerated, favourable for pitavastatin"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Favorável",
-      "en": "Favourable"
-     }
-    },
-    {
-     "item": "CYP2D6",
-     "texto": {
-      "pt": "*1/*2 provável: metabolizador normal (o array não vê duplicações)",
-      "en": "Probable *1/*2: normal metaboliser (the array cannot see duplications)"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Normal",
-      "en": "Normal"
-     }
-    },
-    {
-     "item": "CYP2C19 · CYP3A4 · CYP2C8",
-     "texto": {
-      "pt": "CYP2C19 <b>*1/*1</b> (sem *2, *3, *4 nem *17: clopidogrel, IBP, citalopram e voriconazol em dose padrão) · CYP3A4 *1/*1 (sem *22) · CYP2C8*3 ausente (imputação; via principal da isotretinoína normal): metabolizadores normais",
-      "en": "CYP2C19 <b>*1/*1</b> (no *2, *3, *4 or *17: clopidogrel, PPIs, citalopram and voriconazole at standard dose) · CYP3A4 *1/*1 (no *22) · CYP2C8*3 absent (imputation; normal main isotretinoin pathway): normal metabolisers"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Normal",
-      "en": "Normal"
-     }
-    },
-    {
-     "item": "OCT1 (SLC22A1)",
-     "texto": {
-      "pt": "Sem R61C, G401S, M420del nem G465R: função normal (captação normal da metformina e exposição normal ao metabolito ativo do tramadol e da morfina da codeína)",
-      "en": "No R61C, G401S, M420del or G465R: normal function (normal metformin uptake and normal exposure to the active metabolite of tramadol and to morphine from codeine)"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Normal",
-      "en": "Normal"
-     }
-    },
-    {
-     "item": "ABCG2",
-     "texto": {
-      "pt": "rs2231142 GG: função normal (rosuvastatina na dose desejada)",
-      "en": "rs2231142 GG: normal function (rosuvastatin at the desired dose)"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Normal",
-      "en": "Normal"
-     }
-    },
-    {
-     "item": "HLA",
-     "texto": {
-      "pt": "<b>B*57:01 negativo</b> (abacavir; pazopanib e flucloxacilina sem o HLA de lesão hepática), B*35:01 e DRB1*15:01 negativos · <b>B*58:01</b> e A*31:01 não portadores prováveis (tags imputadas; tipar antes de alopurinol)",
-      "en": "<b>B*57:01 negative</b> (abacavir; pazopanib and flucloxacillin without the liver-injury HLA), B*35:01 and DRB1*15:01 negative · <b>B*58:01</b> and A*31:01 probable non-carriers (imputed tags; type before allopurinol)"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Negativo",
-      "en": "Negative"
-     }
-    },
-    {
-     "item": "DPYD · TPMT · NUDT15",
-     "texto": {
-      "pt": "DPYD sem nenhuma das 13 variantes testadas (atividade 2: fluoropirimidinas na dose do rótulo) · TPMT *1/*1 e NUDT15 *1/*1 (tiopurinas na dose inicial padrão)",
-      "en": "DPYD with none of the 13 variants tested (activity score 2: fluoropyrimidines at label dose) · TPMT *1/*1 and NUDT15 *1/*1 (thiopurines at standard starting dose)"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Normal",
-      "en": "Normal"
-     }
-    },
-    {
-     "item": "G6PD · POLG",
-     "texto": {
-      "pt": "G6PD B (normal): dapsona, primaquina, rasburicase e sulfonamidas sem restrição por hemólise · POLG sem A467T nem W748S (valproato sem a contraindicação POLG)",
-      "en": "G6PD B (normal): dapsone, primaquine, rasburicase and sulfonamides with no haemolysis restriction · POLG without A467T or W748S (valproate without the POLG contraindication)"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Normal",
-      "en": "Normal"
-     }
-    },
-    {
-     "item": {
-      "pt": "Outros sem variantes",
-      "en": "Others without variants"
-     },
-     "texto": {
-      "pt": "IFNL3/IFNL4 rs12979860 CC (genótipo favorável) · UGT1A9 · RYR1 · CACNA1S (anestesia com precauções padrão) · BCHE",
-      "en": "IFNL3/IFNL4 rs12979860 CC (favourable genotype) · UGT1A9 · RYR1 · CACNA1S (anaesthesia with standard precautions) · BCHE"
-     },
-     "estado": "ok",
-     "rotulo": {
-      "pt": "Normal",
-      "en": "Normal"
-     }
-    }
-   ],
    "evitar": [
     {
      "pt": "Assumir o HLA-B*58:01 negativo sem tipagem antes de alopurinol (a calibração assenta em poucos portadores)",
@@ -895,5 +268,1174 @@
     }
    ]
   }
- ]
+ ],
+ "lista": {
+  "id": "lista",
+  "titulo": {
+   "pt": "Genética Boa: lista ordenada (67)",
+   "en": "Good Genetics: ranked list (67)"
+  },
+  "intro": {
+   "pt": "Do maior para o menor impacto provável (tamanho do efeito × força da evidência × relevância prática). As 7 linhas marcadas <b>⚠ (evidência fraca)</b> (estudos pequenos, poucos loci, sinais discordantes ou cobertura baixa) contam menos do que a posição sugere.",
+   "en": "From the largest to the smallest likely impact (effect size × strength of evidence × practical relevance). The 7 rows marked <b>⚠ (weak evidence)</b> (small studies, few loci, discordant signals or low coverage) count for less than their position suggests."
+  },
+  "linhas": [
+   {
+    "n": 1,
+    "texto": {
+     "pt": "APOE ε3/ε3 (sem ε4) e TOMM40 A/A: sem o maior fator genético comum de Alzheimer e de mortalidade.",
+     "en": "APOE ε3/ε3 (no ε4) and TOMM40 A/A: without the largest common genetic factor for Alzheimer’s disease and mortality."
+    },
+    "evidencia": {
+     "pt": "Forte",
+     "en": "Strong"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "cerebro-neurodegeneracao",
+     "capacidade-cognitiva-plasticidade",
+     "proteostase",
+     "imortalidade",
+     "resumo-clinico-medico"
+    ]
+   },
+   {
+    "n": 2,
+    "texto": {
+     "pt": "FOXO3 homozigoto para os 4 alelos de longevidade (rs2802292 GG, rs2764264 CC, rs13217795 CC, rs2802288 AA).",
+     "en": "FOXO3 homozygous for the 4 longevity alleles (rs2802292 GG, rs2764264 CC, rs13217795 CC, rs2802288 AA)."
+    },
+    "evidencia": {
+     "pt": "Forte",
+     "en": "Strong"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "longevidade-excecional",
+     "sensores-nutrientes-autofagia",
+     "stress-oxidativo-defesa-antioxidante",
+     "imortalidade"
+    ]
+   },
+   {
+    "n": 3,
+    "texto": {
+     "pt": "Score de longevidade no percentil 92 (330 variantes).",
+     "en": "Longevity score at percentile 92 (330 variants)."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "longevidade-excecional",
+     "longevidade-maxima-sintese-genetica"
+    ]
+   },
+   {
+    "n": 4,
+    "texto": {
+     "pt": "HLA autoimune limpo: B*27, C*06:02, DRB1*15:01, DQ2.5, DQ8 e epítopo partilhado negativos; doença celíaca muito improvável (valor preditivo negativo > 99%).",
+     "en": "Clean autoimmune HLA: B*27, C*06:02, DRB1*15:01, DQ2.5, DQ8 and shared epitope negative; coeliac disease very unlikely (negative predictive value > 99%)."
+    },
+    "evidencia": {
+     "pt": "Forte",
+     "en": "Strong"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "doencas-autoimunes",
+     "inflamacao-autoimunidade"
+    ]
+   },
+   {
+    "n": 5,
+    "texto": {
+     "pt": "Sem variantes patogénicas confirmadas nos genes de cancro hereditário lidos (BRCA1/2, Lynch, APC, MUTYH, CHEK2, HOXB13, TP53, PALB2, ATM) nem nos genes ACMG. Evidência forte para as variantes lidas.",
+     "en": "No confirmed pathogenic variants in the hereditary cancer genes read (BRCA1/2, Lynch, APC, MUTYH, CHEK2, HOXB13, TP53, PALB2, ATM) or in the ACMG genes. Strong evidence for the variants read."
+    },
+    "evidencia": {
+     "pt": "Forte",
+     "en": "Strong"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "risco-cancro-scores-poligenicos",
+     "doencas-geneticas-hereditarias",
+     "estado-portador",
+     "reparacao-adn-estabilidade-genoma"
+    ]
+   },
+   {
+    "n": 6,
+    "texto": {
+     "pt": "Cancro da próstata muito pouco provável: consenso no percentil 5,5, HOXB13 G84E ausente e os 3 loci 8q24 de maior efeito sem alelos de risco.",
+     "en": "Prostate cancer very unlikely: consensus at percentile 5.5, HOXB13 G84E absent and the 3 largest-effect 8q24 loci without risk alleles."
+    },
+    "evidencia": {
+     "pt": "Forte",
+     "en": "Strong"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "prostata",
+     "risco-cancro-scores-poligenicos"
+    ]
+   },
+   {
+    "n": 7,
+    "texto": {
+     "pt": "Lp(a): sem nenhum dos alelos LPA de grande efeito (rs10455872 AA, rs3798220 TT), o maior fator genético de estenose aórtica e de aterosclerose precoce.",
+     "en": "Lp(a): none of the large-effect LPA alleles (rs10455872 AA, rs3798220 TT), the largest genetic factor for aortic stenosis and early atherosclerosis."
+    },
+    "evidencia": {
+     "pt": "Moderada a forte",
+     "en": "Moderate to strong"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "cardiovascular-avancado",
+     "valvulas-cardiacas",
+     "aorta-aneurismas"
+    ],
+    "analise": {
+     "pt": "Análise de 25-08-2026: Lp(a) 2 mg/dL (baixa), coerente com a genética.",
+     "en": "Test of 25-08-2026: Lp(a) 2 mg/dL (low), consistent with the genetics."
+    }
+   },
+   {
+    "n": 8,
+    "texto": {
+     "pt": "Doença coronária poligénica baixa: consenso no percentil 18; PHACTR1 rs9349379 AA e IL6R Asp358Ala heterozigoto (menos sinalização de IL-6).",
+     "en": "Low polygenic coronary disease: consensus at percentile 18; PHACTR1 rs9349379 AA and heterozygous IL6R Asp358Ala (less IL-6 signalling)."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "cardiovascular-avancado",
+     "inflamacao-senescencia-placa",
+     "oxido-nitrico-endotelio"
+    ]
+   },
+   {
+    "n": 9,
+    "texto": {
+     "pt": "Fibrilhação auricular pouco provável: consenso no percentil 9; PITX2, ZFHX3 e TBX5 sem alelos de risco.",
+     "en": "Atrial fibrillation unlikely: consensus at percentile 9; PITX2, ZFHX3 and TBX5 without risk alleles."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "ritmo-cardiaco-arritmias",
+     "cardiovascular-avancado"
+    ]
+   },
+   {
+    "n": 10,
+    "texto": {
+     "pt": "Linfomas muito pouco prováveis: não-Hodgkin com consenso no percentil 13,8 e carga de loci no 0,0; folicular no 0,2; Hodgkin baixo (32,3; loci 18).",
+     "en": "Lymphomas very unlikely: non-Hodgkin with a consensus at percentile 13.8 and a loci burden at 0.0; follicular at 0.2; Hodgkin low (32.3; loci 18)."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "baco-sistema-linfatico",
+     "cancros-um-a-um"
+    ]
+   },
+   {
+    "n": 11,
+    "texto": {
+     "pt": "Cancros de pele com fundo baixo: espinocelular no percentil 3, basocelular baixo, melanoma com consenso no 18; MC1R sem nenhuma das variantes R/r testadas.",
+     "en": "Low background for skin cancers: squamous cell at percentile 3, basal cell low, melanoma with a consensus at 18; MC1R without any of the R/r variants tested."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "cancros-um-a-um",
+     "sensibilidade-radiacao",
+     "pele-skin-care"
+    ]
+   },
+   {
+    "n": 12,
+    "texto": {
+     "pt": "Rim: doença renal crónica com consenso no percentil 13; 1 cópia do haplótipo protetor da UMOD; APOL1 G1 ausente; cancro do rim no percentil 0,8.",
+     "en": "Kidney: chronic kidney disease with a consensus at percentile 13; 1 copy of the protective UMOD haplotype; APOL1 G1 absent; kidney cancer at percentile 0.8."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "rim-acido-urico",
+     "sal-agua-eletrolitos",
+     "cancros-um-a-um"
+    ]
+   },
+   {
+    "n": 13,
+    "texto": {
+     "pt": "AVC pouco provável: consenso no percentil 19; 17q25 (TRIM65) e SH3PXD2A sem os alelos de lesões da substância branca.",
+     "en": "Stroke unlikely: consensus at percentile 19; 17q25 (TRIM65) and SH3PXD2A without the white matter lesion alleles."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "avc-pequenos-vasos-cerebrais"
+    ]
+   },
+   {
+    "n": 14,
+    "texto": {
+     "pt": "Farmacogenómica favorável: CYP2C19 *1/*1, SLCO1B1 sem *5 (estatinas bem toleradas), DPYD, TPMT, NUDT15, G6PD e BCHE normais; HLA-B*57:01 e HLA-A*31:01 negativos.",
+     "en": "Favourable pharmacogenomics: CYP2C19 *1/*1, SLCO1B1 without *5 (statins well tolerated), normal DPYD, TPMT, NUDT15, G6PD and BCHE; HLA-B*57:01 and HLA-A*31:01 negative."
+    },
+    "evidencia": {
+     "pt": "Forte",
+     "en": "Strong"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "cartao-farmacogenetico",
+     "farmacogenomica-632",
+     "epilepsia-excitabilidade-neuronal"
+    ]
+   },
+   {
+    "n": 15,
+    "texto": {
+     "pt": "Trombofilias hereditárias clássicas negativas (fator V Leiden e protrombina G20210A) e grupo O provável (menos fator VIII e von Willebrand).",
+     "en": "Classic inherited thrombophilias negative (factor V Leiden and prothrombin G20210A) and probable blood group O (less factor VIII and von Willebrand factor)."
+    },
+    "evidencia": {
+     "pt": "Forte",
+     "en": "Strong"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "coagulacao-trombose-veias",
+     "anestesia-cirurgia"
+    ]
+   },
+   {
+    "n": 16,
+    "texto": {
+     "pt": "Hepatite C: IFNL4 rs12979860 C/C e rs8099917 T/T (~2× mais eliminação espontânea); hepatite B com HLA-DP/DQ do lado da eliminação; COVID-19 grave no percentil 4,7.",
+     "en": "Hepatitis C: IFNL4 rs12979860 C/C and rs8099917 T/T (~2× more spontaneous clearance); hepatitis B with HLA-DP/DQ on the clearance side; severe COVID-19 at percentile 4.7."
+    },
+    "evidencia": {
+     "pt": "Forte",
+     "en": "Strong"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "infecoes",
+     "pneumococo-imunossenescencia"
+    ]
+   },
+   {
+    "n": 17,
+    "texto": {
+     "pt": "Hipertermia maligna: RYR1 e CACNA1S sem as variantes testadas; BCHE normal (succinilcolina com duração normal). Evidência forte para as variantes testadas.",
+     "en": "Malignant hyperthermia: RYR1 and CACNA1S without the variants tested; normal BCHE (succinylcholine with normal duration). Strong evidence for the variants tested."
+    },
+    "evidencia": {
+     "pt": "Forte",
+     "en": "Strong"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "anestesia-cirurgia",
+     "termorregulacao-sudorese"
+    ]
+   },
+   {
+    "n": 18,
+    "texto": {
+     "pt": "Parkinson com fundo baixo (percentil 7,7) e MAPT H2/H2 (menos tau); LRRK2 G2019S e GBA1 ausentes.",
+     "en": "Low Parkinson’s background (percentile 7.7) and MAPT H2/H2 (less tau); LRRK2 G2019S and GBA1 absent."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "cerebro-neurodegeneracao",
+     "proteostase"
+    ]
+   },
+   {
+    "n": 19,
+    "texto": {
+     "pt": "Fígado: HSD17B13 protetor (atenua o PNPLA3), TM6SF2 E167K ausente e cirrose genómica no percentil 15.",
+     "en": "Liver: protective HSD17B13 (attenuates PNPLA3), TM6SF2 E167K absent and genomic cirrhosis at percentile 15."
+    },
+    "evidencia": {
+     "pt": "Moderada a forte",
+     "en": "Moderate to strong"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "figado-gordura-hepatica",
+     "gordura-inflamatoria-lipolise"
+    ],
+    "analise": {
+     "pt": "Análise de 25-08-2026: ALT 67,9 U/L, acima da referência. <b>Prevalece a análise</b>: a proteção genética é parcial e não desvaloriza a ALT alta.",
+     "en": "Test of 25-08-2026: ALT 67.9 U/L, above the reference range. <b>The test prevails</b>: the genetic protection is partial and does not make the high ALT less important."
+    }
+   },
+   {
+    "n": 20,
+    "texto": {
+     "pt": "Glicemia geneticamente baixa: HbA1c nos percentis 6,6 e 8,4 e glicose em jejum no 9,5 (menos glicação ao longo da vida).",
+     "en": "Genetically low blood glucose: HbA1c at percentiles 6.6 and 8.4 and fasting glucose at 9.5 (less glycation over a lifetime)."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "glicose-insulina-diabetes",
+     "matriz-extracelular-glicacao",
+     "cetose-corpos-cetonicos"
+    ],
+    "analise": {
+     "pt": "Análise de 25-08-2026: HbA1c 4,8% e glicose em jejum 73,3 mg/dL, coerentes com a genética.",
+     "en": "Test of 25-08-2026: HbA1c 4.8% and fasting glucose 73.3 mg/dL, consistent with the genetics."
+    }
+   },
+   {
+    "n": 21,
+    "texto": {
+     "pt": "Defesa antioxidante forte: NRF2 −617C/C, NQO1 *1/*1, SOD2 Ala/Ala, GCLC −129C/C e HMOX1 −413A/A.",
+     "en": "Strong antioxidant defence: NRF2 −617C/C, NQO1 *1/*1, SOD2 Ala/Ala, GCLC −129C/C and HMOX1 −413A/A."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "stress-oxidativo-defesa-antioxidante",
+     "destoxificacao-fase-i-ii"
+    ]
+   },
+   {
+    "n": 22,
+    "texto": {
+     "pt": "Mitocôndrias: PGC-1α Gly482Gly e sem doença mitocondrial nem da β-oxidação.",
+     "en": "Mitochondria: PGC-1α Gly482Gly and no mitochondrial or β-oxidation disease."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "mitocondrias-energia",
+     "perfil-desportivo-resistencia-forca"
+    ]
+   },
+   {
+    "n": 23,
+    "texto": {
+     "pt": "Número de cópias do ADN mitocondrial com carga de loci no percentil 91,5 (mais cópias associam-se a menos mortalidade e fragilidade); mutações mitocondriais patogénicas testadas ausentes.",
+     "en": "Mitochondrial DNA copy number with a loci burden at percentile 91.5 (more copies are linked to lower mortality and frailty); pathogenic mitochondrial mutations tested absent."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": []
+   },
+   {
+    "n": 24,
+    "texto": {
+     "pt": "Gota pouco provável: score genómico no percentil 12,3 e ABCG2 Q141K ausente.",
+     "en": "Gout unlikely: genomic score at percentile 12.3 and ABCG2 Q141K absent."
+    },
+    "evidencia": {
+     "pt": "Moderada a forte",
+     "en": "Moderate to strong"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "articulacoes-artrose",
+     "rim-acido-urico"
+    ]
+   },
+   {
+    "n": 25,
+    "texto": {
+     "pt": "Artrose geral no percentil 15,8; disco intervertebral (17) e hérnia discal (3) baixos; GDF5 rs143383 G/G.",
+     "en": "General osteoarthritis at percentile 15.8; intervertebral disc (17) and disc herniation (3) low; GDF5 rs143383 G/G."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "articulacoes-artrose",
+     "coluna-disco-dor-lombar",
+     "tendoes-ligamentos-lesoes",
+     "musculo-osso-sarcopenia"
+    ]
+   },
+   {
+    "n": 26,
+    "texto": {
+     "pt": "Pancreatite: SPINK1 N34S e CTRC ausentes e CLDN2-MORC4 com o alelo protetor (o locus mais forte nos homens).",
+     "en": "Pancreatitis: SPINK1 N34S and CTRC absent and CLDN2-MORC4 with the protective allele (the strongest locus in men)."
+    },
+    "evidencia": {
+     "pt": "Forte",
+     "en": "Strong"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "pancreas-pancreatite"
+    ]
+   },
+   {
+    "n": 27,
+    "texto": {
+     "pt": "Doença inflamatória intestinal muito pouco provável (percentis 1,7 a 9,3; NOD2 sem R702W, G908R) e lactase persistente.",
+     "en": "Inflammatory bowel disease very unlikely (percentiles 1.7 to 9.3; NOD2 without R702W, G908R) and lactase persistence."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "microbioma-intestino",
+     "inflamacao-autoimunidade"
+    ]
+   },
+   {
+    "n": 28,
+    "texto": {
+     "pt": "Atopia baixa: asma no percentil 4, eczema no 10, doença atópica no 14; rinite alérgica com carga de loci no 18; IL13 R130Q ausente.",
+     "en": "Low atopy: asthma at percentile 4, eczema at 10, atopic disease at 14; allergic rhinitis with a loci burden at 18; IL13 R130Q absent."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "alergias-asma-atopia",
+     "nariz-seios-perinasais",
+     "histamina-mastocitos-ige"
+    ]
+   },
+   {
+    "n": 29,
+    "texto": {
+     "pt": "Pulmão: MUC5B G/G (sem o principal risco de fibrose pulmonar), PiS ausente, FEV1/FVC típico.",
+     "en": "Lung: MUC5B G/G (without the main pulmonary fibrosis risk), PiS absent, typical FEV1/FVC."
+    },
+    "evidencia": {
+     "pt": "Forte",
+     "en": "Strong"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "pulmao-funcao-respiratoria",
+     "matriz-extracelular-glicacao"
+    ]
+   },
+   {
+    "n": 30,
+    "texto": {
+     "pt": "Hemoglobinopatias testadas ausentes, G6PD normal, JAK2 46/1 e SH2B3 R262W ausentes; RDW genético no percentil 3,9.",
+     "en": "Haemoglobinopathies tested absent, normal G6PD, JAK2 46/1 and SH2B3 R262W absent; genetic RDW at percentile 3.9."
+    },
+    "evidencia": {
+     "pt": "Moderada a forte",
+     "en": "Moderate to strong"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "globulos-vermelhos-hemoglobina-plaquetas",
+     "celulas-estaminais-regeneracao",
+     "baco-sistema-linfatico"
+    ]
+   },
+   {
+    "n": 31,
+    "texto": {
+     "pt": "Hemocromatose clássica excluída na variante principal (HFE C282Y ausente); Wilson sem H1069Q.",
+     "en": "Classic haemochromatosis excluded for the main variant (HFE C282Y absent); Wilson’s disease without H1069Q."
+    },
+    "evidencia": {
+     "pt": "Forte",
+     "en": "Strong"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "ferro-metais",
+     "cabelo"
+    ]
+   },
+   {
+    "n": 32,
+    "texto": {
+     "pt": "Cardiomiopatia dilatada no percentil 2 e insuficiência cardíaca com consenso no 30.",
+     "en": "Dilated cardiomyopathy at percentile 2 and heart failure with a consensus at 30."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "insuficiencia-cardiaca-cardiomiopatias"
+    ]
+   },
+   {
+    "n": 33,
+    "texto": {
+     "pt": "Apendicite pouco provável (consenso no percentil 15,0) e hemorroidas pouco prováveis (consenso no 18,9; loci no 19,3).",
+     "en": "Appendicitis unlikely (consensus at percentile 15.0) and haemorrhoids unlikely (consensus at 18.9; loci at 19.3)."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "intestino-grosso"
+    ]
+   },
+   {
+    "n": 34,
+    "texto": {
+     "pt": "Doença de Addison autoimune pouco provável: carga de loci no percentil 6,5; HLA-DQ, AIRE e PTPN22 sem risco.",
+     "en": "Autoimmune Addison’s disease unlikely: loci burden at percentile 6.5; HLA-DQ, AIRE and PTPN22 without risk."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "suprarrenais-cortisol"
+    ]
+   },
+   {
+    "n": 35,
+    "texto": {
+     "pt": "Eixo do stress: FKBP5 sem os alelos de recuperação lenta do cortisol e NR3C1 9β ausente.",
+     "en": "Stress axis: FKBP5 without the slow cortisol-recovery alleles and NR3C1 9β absent."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "suprarrenais-cortisol",
+     "ansiedade-resiliencia-stress",
+     "hormonas"
+    ]
+   },
+   {
+    "n": 36,
+    "texto": {
+     "pt": "Doença de Graves com score genómico no percentil 3,3; autoimunidade tiroideia sem alelos de risco (PTPN22, HLA-DR3); DIO2 Thr92Thr.",
+     "en": "Graves’ disease with a genomic score at percentile 3.3; thyroid autoimmunity without risk alleles (PTPN22, HLA-DR3); DIO2 Thr92Thr."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "tiroide",
+     "hormonas",
+     "termorregulacao-sudorese"
+    ]
+   },
+   {
+    "n": 37,
+    "texto": {
+     "pt": "Psoríase muito pouco provável (percentis 2,4 a 6,3) e dermatite seborreica com carga de loci no 6,3; urticária no 3.",
+     "en": "Psoriasis very unlikely (percentiles 2.4 to 6.3) and seborrhoeic dermatitis with a loci burden at 6.3; urticaria at 3."
+    },
+    "evidencia": {
+     "pt": "Moderada a forte",
+     "en": "Moderate to strong"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "dermatite-seborreica-microbioma-pele",
+     "unhas-cicatrizacao-inflamacao-pele"
+    ]
+   },
+   {
+    "n": 38,
+    "texto": {
+     "pt": "Esófago de Barrett e adenocarcinoma do esófago com score genómico no percentil 14,1; esofagite eosinofílica sem os alelos de risco de TSLP, EMSY e SMAD3; ALDH2 normal.",
+     "en": "Barrett’s oesophagus and oesophageal adenocarcinoma with a genomic score at percentile 14.1; eosinophilic oesophagitis without the TSLP, EMSY and SMAD3 risk alleles; normal ALDH2."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "esofago",
+     "estomago-refluxo-helicobacter"
+    ]
+   },
+   {
+    "n": 39,
+    "texto": {
+     "pt": "Tumor do testículo com consenso no percentil 13,7; KITLG rs995030 sem o alelo de risco mais forte.",
+     "en": "Testicular tumour with a consensus at percentile 13.7; KITLG rs995030 without the strongest risk allele."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "testiculos",
+     "fertilidade-masculina"
+    ]
+   },
+   {
+    "n": 40,
+    "texto": {
+     "pt": "Faringe e amígdalas com carga de loci no percentil 2,8; carcinoma da cabeça e pescoço típico.",
+     "en": "Pharynx and tonsils with a loci burden at percentile 2.8; typical head and neck carcinoma."
+    },
+    "evidencia": {
+     "pt": "Fraca a moderada",
+     "en": "Weak to moderate"
+    },
+    "estado": "na",
+    "fraca": true,
+    "origem": [
+     "laringe-voz"
+    ]
+   },
+   {
+    "n": 41,
+    "texto": {
+     "pt": "Vitamina D genética alta (percentis 84 a 91) e conversão eficiente de ómega-3 (FADS1 G/G, ELOVL2 G/G).",
+     "en": "Genetically high vitamin D (percentiles 84 to 91) and efficient omega-3 conversion (FADS1 G/G, ELOVL2 G/G)."
+    },
+    "evidencia": {
+     "pt": "Moderada a forte",
+     "en": "Moderate to strong"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "vitaminas-minerais",
+     "imunidade-envelhecimento-imunitario"
+    ],
+    "analise": {
+     "pt": "Análise de 25-08-2026: 25(OH)D 37,4 ng/mL com 10 000 UI/dia. <b>Prevalece a análise</b>: a dose decide-se pela 25(OH)D, não pela genética.",
+     "en": "Test of 25-08-2026: 25(OH)D 37.4 ng/mL on 10,000 IU/day. <b>The test prevails</b>: the dose is set by the 25(OH)D level, not by the genetics."
+    }
+   },
+   {
+    "n": 42,
+    "texto": {
+     "pt": "LDL poligénico baixo (percentis 20,5 e 24,0), sem as variantes de triglicéridos muito altos (APOA5, LPL) e APOC3 de baixa atividade.",
+     "en": "Low polygenic LDL (percentiles 20.5 and 24.0), without the very-high-triglyceride variants (APOA5, LPL) and low-activity APOC3."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "lipidos-detalhe",
+     "doenca-arterial-periferica"
+    ]
+   },
+   {
+    "n": 43,
+    "texto": {
+     "pt": "PCR genética baixa (percentil 12) e neutrófilos no 20; artrite reumatoide nos percentis 2,4 e 5,4.",
+     "en": "Genetically low CRP (percentile 12) and neutrophils at 20; rheumatoid arthritis at percentiles 2.4 and 5.4."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "imunidade-envelhecimento-imunitario",
+     "doencas-autoimunes",
+     "inflamacao-senescencia-placa"
+    ]
+   },
+   {
+    "n": 44,
+    "texto": {
+     "pt": "Fator genético comum das adições no percentil 20; álcool e tabaco com cargas de loci baixas; \"já ter fumado\" no percentil 2.",
+     "en": "Common genetic factor for addictions at percentile 20; alcohol and tobacco with low loci burdens; “ever smoked” at percentile 2."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "impulsividade-recompensa-vicio",
+     "cafeina-estimulantes"
+    ]
+   },
+   {
+    "n": 45,
+    "texto": {
+     "pt": "Sonolência diurna no percentil 1 e cronótipo matutino no 86.",
+     "en": "Daytime sleepiness at percentile 1 and morning chronotype at 86."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "ritmo-circadiano-sono",
+     "atencao-phda"
+    ]
+   },
+   {
+    "n": 46,
+    "texto": {
+     "pt": "Cáries e perda de dentes com carga de loci no percentil 2,7; genótipo IL-1 composto negativo.",
+     "en": "Caries and tooth loss with a loci burden at percentile 2.7; composite IL-1 genotype negative."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "saude-oral-dentes-periodontite"
+    ]
+   },
+   {
+    "n": 47,
+    "texto": {
+     "pt": "Fibromialgia no percentil 16 e COMT Val/Val (menos sensibilidade à dor); CYP2D6 normal provável (codeína e tramadol ativados normalmente).",
+     "en": "Fibromyalgia at percentile 16 and COMT Val/Val (less pain sensitivity); probable normal CYP2D6 (codeine and tramadol activated normally)."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "dor-analgesia",
+     "anestesia-cirurgia"
+    ]
+   },
+   {
+    "n": 48,
+    "texto": {
+     "pt": "Bexiga: sintomas urinários pouco prováveis (percentil 10,3; incontinência e retenção com loci no 4,3); TACC3/FGFR3 sem risco.",
+     "en": "Bladder: urinary symptoms unlikely (percentile 10.3; incontinence and retention with loci at 4.3); TACC3/FGFR3 without risk."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "bexiga-funcao-urinaria"
+    ]
+   },
+   {
+    "n": 49,
+    "texto": {
+     "pt": "Frequência cardíaca de repouso geneticamente baixa (percentil 4 no score de 80 variantes) e condução favorável (SCN10A, Brugada no 22).",
+     "en": "Genetically low resting heart rate (percentile 4 in the 80-variant score) and favourable conduction (SCN10A, Brugada at 22)."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "ritmo-cardiaco-arritmias",
+     "resposta-treino-vo2max"
+    ]
+   },
+   {
+    "n": 50,
+    "texto": {
+     "pt": "Gordura glúteo-femoral genética alta (percentil 95) e adiponectina alta: gordura guardada fora do abdómen e do fígado.",
+     "en": "Genetically high gluteofemoral fat (percentile 95) and high adiponectin: fat stored outside the abdomen and the liver."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "gordura-inflamatoria-lipolise"
+    ]
+   },
+   {
+    "n": 51,
+    "texto": {
+     "pt": "Disfunção erétil no percentil 15; SIM1 sem alelos de risco.",
+     "en": "Erectile dysfunction at percentile 15; SIM1 without risk alleles."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "funcao-sexual-eretil"
+    ]
+   },
+   {
+    "n": 52,
+    "texto": {
+     "pt": "Epilepsia generalizada com carga de loci no percentil 9,3; convulsões febris no 24.",
+     "en": "Generalised epilepsy with a loci burden at percentile 9.3; febrile seizures at 24."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "epilepsia-excitabilidade-neuronal"
+    ]
+   },
+   {
+    "n": 53,
+    "texto": {
+     "pt": "Exposição ao benzeno e a hidrocarbonetos com perfil favorável: NQO1 ativa, CYP1A1 e CYP1B1 sem os alelos de mais ativação.",
+     "en": "Favourable profile for benzene and hydrocarbon exposure: active NQO1, CYP1A1 and CYP1B1 without the higher-activation alleles."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "disruptores-endocrinos-poluentes",
+     "destoxificacao-fase-i-ii"
+    ]
+   },
+   {
+    "n": 54,
+    "texto": {
+     "pt": "Aneurismas: aorta abdominal no percentil 26 e intracraniano no 10; prolapso mitral típico (LMCD1 e TNS1 sem risco).",
+     "en": "Aneurysms: abdominal aorta at percentile 26 and intracranial at 10; typical mitral valve prolapse (LMCD1 and TNS1 without risk)."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "aorta-aneurismas",
+     "valvulas-cardiacas"
+    ]
+   },
+   {
+    "n": 55,
+    "texto": {
+     "pt": "Vesícula: ABCG8 D19H ausente e colelitíase com consenso típico (51,6; genómico 33,8); bilirrubina antioxidante mais alta (UGT1A1*28 heterozigoto).",
+     "en": "Gallbladder: ABCG8 D19H absent and gallstones with a typical consensus (51.6; genomic 33.8); higher antioxidant bilirubin (heterozygous UGT1A1*28)."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "vesicula-biliar-calculos",
+     "destoxificacao-fase-i-ii"
+    ]
+   },
+   {
+    "n": 56,
+    "texto": {
+     "pt": "Reparação do ADN sem alelos comuns de menor eficiência (XRCC1, XRCC3, ERCC2, XPC, MLH1).",
+     "en": "DNA repair without the common lower-efficiency alleles (XRCC1, XRCC3, ERCC2, XPC, MLH1)."
+    },
+    "evidencia": {
+     "pt": "Fraca a moderada",
+     "en": "Weak to moderate"
+    },
+    "estado": "na",
+    "fraca": true,
+    "origem": [
+     "reparacao-adn-estabilidade-genoma",
+     "sensibilidade-radiacao"
+    ]
+   },
+   {
+    "n": 57,
+    "texto": {
+     "pt": "Hematopoiese clonal: score de CHIP no percentil 30 e JAK2 46/1 ausente.",
+     "en": "Clonal haematopoiesis: CHIP score at percentile 30 and JAK2 46/1 absent."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "celulas-estaminais-regeneracao"
+    ]
+   },
+   {
+    "n": 58,
+    "texto": {
+     "pt": "IGF-1 genético mais baixo (consenso no percentil 32,1; loci no 21,6), o eixo associado a longevidade nos modelos.",
+     "en": "Lower genetic IGF-1 (consensus at percentile 32.1; loci at 21.6), the axis linked to longevity in the models."
+    },
+    "evidencia": {
+     "pt": "Fraca a moderada",
+     "en": "Weak to moderate"
+    },
+    "estado": "na",
+    "fraca": false,
+    "origem": [
+     "hipofise-eixo-hormonal",
+     "sensores-nutrientes-autofagia",
+     "acne-glandulas-sebaceas"
+    ]
+   },
+   {
+    "n": 59,
+    "texto": {
+     "pt": "Policitemia vera no percentil 24 e eritropoietina típica.",
+     "en": "Polycythaemia vera at percentile 24 and typical erythropoietin."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "hipoxia-altitude"
+    ]
+   },
+   {
+    "n": 60,
+    "texto": {
+     "pt": "Solidão no percentil 8 e sociabilidade no 94.",
+     "en": "Loneliness at percentile 8 and sociability at 94."
+    },
+    "evidencia": {
+     "pt": "Fraca a moderada",
+     "en": "Weak to moderate"
+    },
+    "estado": "na",
+    "fraca": true,
+    "origem": [
+     "oxitocina-comportamento-social",
+     "personalidade-tracos-psicologicos"
+    ]
+   },
+   {
+    "n": 61,
+    "texto": {
+     "pt": "Inteligência fluida nos percentis 79 e 79 e KIBRA com 1 alelo de melhor memória. Evidência moderada para a direção e fraca para o indivíduo.",
+     "en": "Fluid intelligence at percentiles 79 and 79 and KIBRA with 1 better-memory allele. Evidence moderate for the direction and weak for the individual."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "capacidade-cognitiva-plasticidade",
+     "velocidade-processamento-tempo-reacao"
+    ]
+   },
+   {
+    "n": 62,
+    "texto": {
+     "pt": "Embolia pulmonar com score genómico no percentil 1,4 (as cargas de loci discordam).",
+     "en": "Pulmonary embolism with a genomic score at percentile 1.4 (the loci burdens disagree)."
+    },
+    "evidencia": {
+     "pt": "Fraca a moderada",
+     "en": "Weak to moderate"
+    },
+    "estado": "na",
+    "fraca": true,
+    "origem": [
+     "hipertensao-pulmonar-circulacao-pulmao"
+    ]
+   },
+   {
+    "n": 63,
+    "texto": {
+     "pt": "Vertigem e doença de Ménière com carga de loci no percentil 0,2; GJB2 sem M34T nem V37I.",
+     "en": "Vertigo and Ménière’s disease with a loci burden at percentile 0.2; GJB2 without M34T or V37I."
+    },
+    "evidencia": {
+     "pt": "Fraca a moderada",
+     "en": "Weak to moderate"
+    },
+    "estado": "na",
+    "fraca": true,
+    "origem": [
+     "audicao-zumbido",
+     "visao-audicao"
+    ]
+   },
+   {
+    "n": 64,
+    "texto": {
+     "pt": "Fertilidade: FSHR N680/N680 (recetor mais sensível à FSH) e CFTR R117H ausente.",
+     "en": "Fertility: FSHR N680/N680 (more FSH-sensitive receptor) and CFTR R117H absent."
+    },
+    "evidencia": {
+     "pt": "Fraca",
+     "en": "Weak"
+    },
+    "estado": "na",
+    "fraca": true,
+    "origem": [
+     "fertilidade-masculina"
+    ]
+   },
+   {
+    "n": 65,
+    "texto": {
+     "pt": "Exposição típica a psicadélicos e antidepressivos: CYP2D6 *1/*2, CYP2C19 *1/*1 e CYP3A4 *1/*1.",
+     "en": "Typical exposure to psychedelics and antidepressants: CYP2D6 *1/*2, CYP2C19 *1/*1 and CYP3A4 *1/*1."
+    },
+    "evidencia": {
+     "pt": "Moderada",
+     "en": "Moderate"
+    },
+    "estado": "ok",
+    "fraca": false,
+    "origem": [
+     "psicadelicos"
+    ]
+   },
+   {
+    "n": 66,
+    "texto": {
+     "pt": "Alimentação: preferência genética baixa por carne processada (percentil 10) e MC4R sem os alelos de mais apetite.",
+     "en": "Diet: low genetic preference for processed meat (percentile 10) and MC4R without the higher-appetite alleles."
+    },
+    "evidencia": {
+     "pt": "Fraca a moderada",
+     "en": "Weak to moderate"
+    },
+    "estado": "na",
+    "fraca": false,
+    "origem": [
+     "apetite-saciedade-comportamento-alimentar"
+    ]
+   },
+   {
+    "n": 67,
+    "texto": {
+     "pt": "Gordura castanha sem as variantes de menor função testadas (UCP1 Ala64Thr, ADRB3 Trp64Arg ausentes).",
+     "en": "Brown fat without the lower-function variants tested (UCP1 Ala64Thr, ADRB3 Trp64Arg absent)."
+    },
+    "evidencia": {
+     "pt": "Fraca",
+     "en": "Weak"
+    },
+    "estado": "na",
+    "fraca": true,
+    "origem": [
+     "termogenese-gordura-castanha",
+     "termorregulacao-sudorese"
+    ]
+   }
+  ]
+ }
 }

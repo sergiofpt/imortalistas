@@ -1,6 +1,6 @@
 {
  "_leia_me": "Protocolo genético consolidado, mostrado no topo de genetica.html e genetica-boa.html (genetica.js). blocos[].itens: textos PT/EN; só HTML simples. Os valores das análises prevalecem sobre doses só genéticas.",
- "atualizado_em": "2026-10-02",
+ "atualizado_em": "2026-10-03",
  "titulo": {
   "pt": "Protocolo genético",
   "en": "Genetic protocol"
@@ -73,20 +73,20 @@
      "en": "<b>Sirolimus level 24–48 h after the dose</b>, with no polyphenols or azoles in the preceding days"
     },
     {
-     "pt": "<b>Lp(a)</b> 1× (PGS genómico P75 contra SNPs principais sem risco)",
-     "en": "<b>Lp(a)</b> once (genomic PGS P75 versus main SNPs without risk)"
+     "pt": "<b>Lp(a)</b> já medida (2 mg/dL a 25-08-2026): não é preciso repetir; a análise prevalece sobre o PGS",
+     "en": "<b>Lp(a)</b> already measured (2 mg/dL on 25-08-2026): no need to repeat; the test prevails over the PGS"
     },
     {
      "pt": "<b>Sequenciação do FLG</b> (nulo possível; dermatite seborreica e pele seca com a isotretinoína)",
      "en": "<b>FLG sequencing</b> (possible null; seborrhoeic dermatitis and dry skin on isotretinoin)"
     },
     {
-     "pt": "<b>Dermatoscopia anual da pele toda</b> + autoexame mensal (melanoma P89)",
-     "en": "<b>Annual full-skin dermatoscopy</b> + monthly self-check (melanoma P89)"
+     "pt": "<b>Dermatoscopia anual da pele toda</b> + autoexame mensal (número de nevos no percentil 88; isotretinoína)",
+     "en": "<b>Annual full-skin dermatoscopy</b> + monthly self-check (naevus count at percentile 88; isotretinoin)"
     },
     {
-     "pt": "<b>Rastreio colorretal precoce</b> (FIT ou colonoscopia, com o médico)",
-     "en": "<b>Early colorectal screening</b> (FIT or colonoscopy, with the doctor)"
+     "pt": "<b>Rastreio colorretal precoce</b> (cancro colorretal: consenso no percentil 80; FIT ou colonoscopia, com o médico)",
+     "en": "<b>Early colorectal screening</b> (colorectal cancer: consensus at percentile 80; FIT or colonoscopy, with the doctor)"
     },
     {
      "pt": "Elastografia hepática + ALT/AST/GGT (PNPLA3 + MBOAT7 + Pi*MZ); pesquisa de H. pylori (PSCA TT + grupo O)",
@@ -153,8 +153,8 @@
      "en": "<b>Pioglitazone</b> · only as a substitute for imeglimin and/or part of acarbose, never on top of them"
     },
     {
-     "pt": "<b>Evitar</b> · epitalon, TA-65 e astrágalo (TERT + melanoma) · Melanotan II, bremelanotide · secretagogos de GH, IGF-1/PEG-MGF, folistatina · BPC-157, TB-500 · 5-amino-1MQ (pausa) · metformina (redundante) · aspirina sem indicação · AINE crónico",
-     "en": "<b>Avoid</b> · epitalon, TA-65 and astragalus (TERT + melanoma) · Melanotan II, bremelanotide · GH secretagogues, IGF-1/PEG-MGF, follistatin · BPC-157, TB-500 · 5-amino-1MQ (paused) · metformin (redundant) · aspirin without an indication · chronic NSAIDs"
+     "pt": "<b>Evitar</b> · epitalon, TA-65 e astrágalo (alelos TERT de risco) · Melanotan II, bremelanotide · secretagogos de GH, IGF-1/PEG-MGF, folistatina · BPC-157, TB-500 · 5-amino-1MQ (pausa) · metformina (redundante) · aspirina sem indicação · AINE crónico",
+     "en": "<b>Avoid</b> · epitalon, TA-65 and astragalus (TERT risk alleles) · Melanotan II, bremelanotide · GH secretagogues, IGF-1/PEG-MGF, follistatin · BPC-157, TB-500 · 5-amino-1MQ (paused) · metformin (redundant) · aspirin without an indication · chronic NSAIDs"
     },
     {
      "pt": "<b>Janela da rapamicina</b> (3 dias antes a 7 dias depois) · sem toranja, polifenóis concentrados nem berberina; fluconazol oral só fora das 2 semanas depois de uma toma (preferir antifúngicos tópicos); senolíticos e FOXO4-DRI sem sobreposição",
@@ -197,8 +197,8 @@
    },
    "itens": [
     {
-     "pt": "Aeróbio zona 2 + intervalos (PGC-1α, NOS3, TCF7L2) e força 3×/semana com proteína e creatina (fragilidade P82)",
-     "en": "Zone 2 + interval aerobic training (PGC-1α, NOS3, TCF7L2) and strength 3×/week with protein and creatine (frailty P82)"
+     "pt": "Aeróbio zona 2 + intervalos (PGC-1α, NOS3, TCF7L2) e força 3×/semana com proteína e creatina (massa magra no percentil 27)",
+     "en": "Zone 2 + interval aerobic training (PGC-1α, NOS3, TCF7L2) and strength 3×/week with protein and creatine (lean mass at percentile 27)"
     },
     {
      "pt": "Protetor solar diário e emolientes com ceramidas; sem solários",
