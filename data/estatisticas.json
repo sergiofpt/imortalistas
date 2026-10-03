@@ -1,12 +1,12 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-03T18:25:37Z",
+ "atualizado_em": "2026-10-03T18:28:14Z",
  "desde": "2026-10-01",
  "total": {
-  "visitas": 3,
-  "visitas_30d": 3,
-  "visitas_90d": 3,
-  "aberturas_pdf": 2
+  "visitas": 5,
+  "visitas_30d": 5,
+  "visitas_90d": 5,
+  "aberturas_pdf": 4
  },
  "dias": [
   {
@@ -19,20 +19,27 @@
   },
   {
    "dia": "2026-10-03",
-   "visitas": 3
+   "visitas": 5
   }
  ],
  "paginas": [
   {
    "path": "/imortalistas/genetica-reports.html",
-   "visitas": 2
+   "visitas": 3
   },
   {
    "path": "/imortalistas/teste-worker",
-   "visitas": 1
+   "visitas": 2
   }
  ],
  "relatorios": [
+  {
+   "id": "imortalidade",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 0,
+   "total": 2
+  },
   {
    "id": "anestesia-cirurgia",
    "ficheiro": null,
@@ -41,7 +48,7 @@
    "total": 1
   },
   {
-   "id": "imortalidade",
+   "id": "doencas-geneticas-hereditarias",
    "ficheiro": null,
    "pt": 1,
    "en": 0,
@@ -52,50 +59,50 @@
   {
    "id": "PT",
    "nome": "Portugal",
-   "visitas": 5
+   "visitas": 9
   }
  ],
  "browsers": [
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 3
+   "visitas": 6
   },
   {
    "id": "Firefox",
    "nome": "Firefox",
-   "visitas": 2
+   "visitas": 3
   }
  ],
  "sistemas": [
   {
    "id": "Linux",
    "nome": "Linux",
-   "visitas": 3
+   "visitas": 6
   },
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 2
+   "visitas": 3
   }
  ],
  "tamanhos": [
   {
    "id": "desktop",
    "nome": "(desconhecido)",
-   "visitas": 4
+   "visitas": 6
   },
   {
    "id": "unknown",
    "nome": "(desconhecido)",
-   "visitas": 1
+   "visitas": 3
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 5
+   "visitas": 9
   }
  ]
 }
