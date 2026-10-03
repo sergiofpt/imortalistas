@@ -146,7 +146,7 @@ h3{font-size:16px;margin:0;letter-spacing:-.1px}
 
 <script>
 // ===== página de estatísticas (escondida): lê data/estatisticas.json (GoatCounter, agregado, sem dados pessoais) e data/reports.json (títulos) =====
-// Sem bibliotecas nem pedidos externos, sem cookies e sem contagem (não carrega o script de contagem do site). Cada visita e cada abertura de PDF conta (o Worker envia no_sessions:true).
+// Sem bibliotecas nem pedidos externos, sem cookies e sem contagem (não carrega o script de contagem do site). Cada visita, abertura de PDF e aparelho conta (o Worker envia uma sessão aleatória nova em cada pedido).
 let LANG='pt';try{if(localStorage.getItem('lang')==='en')LANG='en'}catch(e){}
 {const q=/[?&]lang=(en|pt)(?:&|#|$)/i.exec(location.search);if(q)LANG=q[1].toLowerCase()}  // ?lang=en|pt na URL (link para partilhar): manda e fica gravado (o <head> já o guardou em localStorage)
 const L=(p,e)=>LANG==='en'?e:p;

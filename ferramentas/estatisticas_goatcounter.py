@@ -16,8 +16,10 @@ GOATCOUNTER_TOKEN (variável de ambiente; nunca é escrito em lado nenhum). Só 
   uma secção opcional que falhe fica com o valor anterior.
 - Respeita o rate limit (4 pedidos/s): pausa entre pedidos e, num 429, espera o X-Rate-Limit-Reset.
 - Só grava se os dados mudarem (o campo atualizado_em não conta), para o workflow só fazer commit quando há novidades.
-- Contagens = todas as visitas e aberturas: a API só expõe "count" (visitantes), mas o Worker do site envia no_sessions:true, por isso
-  cada pedido conta como um novo visitante (= cada visita e cada abertura de PDF). Dados anteriores a essa mudança contavam por sessão.
+- Contagens = todas as visitas e aberturas: a API só expõe "count" (visitantes), mas o Worker do site envia uma sessão aleatória nova
+  (UUID) em cada pedido, por isso cada pedido conta como um novo visitante (= cada visita, abertura de PDF, aparelho e cópia de origem).
+  O no_sessions:true sozinho não chegava (o GoatCounter conta cada caminho 1 vez por sessão de 8 h): até 04-10-2026 os aparelhos e as
+  origens/* (sem IP nem user-agent = uma só sessão partilhada) ficavam presos a 1 por caminho, e visitas repetidas do mesmo IP+browser não contavam.
 - Além dos totais, grava hoje / 7 dias / 30 dias (visitas e aberturas) e as aberturas de PDFs por dia (dias[].aberturas).
 - Aparelhos: com cada visita o Worker envia o evento aparelho/<tipo>/<slug> (título = rótulo, ex. "iPhone XR / 11"; sem IP nem user-agent).
   Ficam em "aparelhos" (+ "aparelhos_desde", o 1.º dia com eventos) (contagem por rótulo; iPhone/iPad = estimativa pelo ecrã), não contam como visitas nem aberturas, e os países /
