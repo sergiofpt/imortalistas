@@ -40,7 +40,7 @@
     "en": "Only the foods with a genetic predisposition: 0 to avoid, 140 to limit and 162 to watch."
    },
    "paginas": 36,
-   "tamanho_kb": 223,
+   "tamanho_kb": 220,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -68,17 +68,17 @@
   {
    "id": "suplementos-1002",
    "titulo": {
-    "pt": "Resposta genética a suplementos (1002 suplementos)",
-    "en": "Genetic response to supplements (1002 supplements)"
+    "pt": "Resposta genética a suplementos (999 suplementos)",
+    "en": "Genetic response to supplements (999 supplements)"
    },
    "data": "2026-10-02",
    "ficheiro": "reports/suplementos-1002.pdf",
    "descricao": {
-    "pt": "55 a evitar ou pausar, 66 a ajustar, 111 a monitorizar, 221 normais, 11 indeterminados e 538 sem relevância genética.",
-    "en": "55 to avoid or pause, 66 to adjust, 111 to monitor, 221 normal, 11 undetermined and 538 with no genetic relevance."
+    "pt": "53 a evitar ou pausar, 66 a ajustar, 111 a monitorizar, 221 normais, 11 indeterminados e 537 sem relevância genética.",
+    "en": "53 to avoid or pause, 66 to adjust, 111 to monitor, 221 normal, 11 undetermined and 537 with no genetic relevance."
    },
    "paginas": 92,
-   "tamanho_kb": 508,
+   "tamanho_kb": 514,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -116,7 +116,7 @@
     "en": "141 of 173 foods with a favourable genetic indication (73 moderate, 68 weak); 32 neutral."
    },
    "paginas": 32,
-   "tamanho_kb": 184,
+   "tamanho_kb": 193,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -268,7 +268,7 @@
     "en": "50 SNPs and 11 scores: favourable kidney genetics (eGFR at the 94th percentile, no APOL1 G1 or ABCG2 Q141K); typical uric acid."
    },
    "paginas": 17,
-   "tamanho_kb": 87,
+   "tamanho_kb": 86,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -1731,7 +1731,7 @@
     "en": "A synthesis of all genetics reports and 5 new DNA analyses, with the 10 actions that change the outcome most, the genetically predicted causes of death, a map of the 84 ageing mechanisms, the pharmacogenetic card and the screening calendar."
    },
    "paginas": 28,
-   "tamanho_kb": 154,
+   "tamanho_kb": 152,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
