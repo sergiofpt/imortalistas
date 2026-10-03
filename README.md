@@ -105,6 +105,8 @@ Resultados neutros, médios ou não confirmados não entram em nenhuma das duas.
 
 `genetica-reports.html` mostra a lista de `data/reports.json` (mais recente primeiro, com pesquisa); cada relatório tem o título, a data, uma descrição opcional e os botões **Descarregar PDF** / **Abrir no browser** (**Download PDF** / **Open in browser**).
 
+Versão inglesa: cada relatório tem também um PDF em inglês (`ficheiro_en`, sempre `reports/<nome>_en.pdf`, com `paginas_en` e `tamanho_kb_en`). No modo **English** o cartão mostra o título EN, as páginas/tamanho do PDF inglês e “Language: English”, e os botões apontam para o PDF inglês; no modo **Português** fica tudo como antes (PDF em português). Por baixo dos botões, a ligação pequena **PDF: PT | EN** descarrega diretamente cada versão (a da língua da página fica marcada). O cartão em destaque (Imortalidade) funciona da mesma forma. Hoje: 107 relatórios, 107 com versão inglesa (os Haplogrupos Materno e Paterno nunca são publicados, nem em PT nem em EN).
+
 ```json
 {"atualizado_em": "2026-10-02",
  "relatorios": [
@@ -113,19 +115,20 @@ Resultados neutros, médios ou não confirmados não entram em nenhuma das duas.
    "data": "2026-10-02",
    "ficheiro": "reports/farmacogenomica-632-medicamentos.pdf",
    "descricao": {"pt": "…", "en": "…"}, "paginas": 49, "tamanho_kb": 272,
-   "lingua": {"pt": "português", "en": "Portuguese"}, "etiquetas": ["PGx", "CPIC"]}
+   "lingua": {"pt": "português", "en": "Portuguese"}, "etiquetas": ["PGx", "CPIC"],
+   "ficheiro_en": "reports/farmacogenomica-632-medicamentos_en.pdf", "paginas_en": 48, "tamanho_kb_en": 275}
  ]}
 ```
 
 Documento-mestre: uma entrada com `"destaque": true` (hoje, `imortalidade`, o relatório **Imortalidade** / **Immortality**) aparece num cartão em destaque por cima da pesquisa e da lista, com a etiqueta **Documento-mestre** / **Master document**; conta no total de relatórios, não se repete na grelha e fica sempre visível durante a pesquisa (o contador só o inclui se corresponder). A página não tem parágrafo de introdução.
 
 Como acrescentar um relatório novo:
-1. **Privacidade primeiro:** `pdftotext relatorio.pdf - | grep -i -E '…'` não pode encontrar o nome completo (só “Sérgio F”), a medida da balança, a data de nascimento, a cidade, o país nem nomes de laboratórios ou fornecedores. Se encontrar, gerar uma versão limpa a partir da fonte (HTML/MD) do relatório.
-2. Mais simples: `python3 ferramentas/adicionar_colheita.py relatorio --pdf relatorio.pdf --id novo-relatorio --data 2026-12-03 --titulo-pt "…" --titulo-en "…" [--descricao-pt "…" --descricao-en "…" --paginas 12 --lingua-pt português --lingua-en Portuguese --nome nome-no-site.pdf]`. Faz a verificação de privacidade com `pdftotext` (recusa o PDF se tiver termos proibidos), copia-o para `reports/` e junta a entrada em `data/reports.json`.
+1. **Privacidade primeiro:** `pdftotext relatorio.pdf - | grep -i -E '…'` não pode encontrar o nome completo (só “Sérgio F”), a medida da balança, a data de nascimento, a idade, a família, a cidade, o país, nomes de laboratórios ou fornecedores, URLs, nomes de ficheiros/pastas privadas nem rótulos de ascendência ou população (PT e EN: “1000 Genomes”, europeu/European, africano/African, asiático/Asian, Ashkenazi, judeu/Jewish, nacionalidades de coortes como britânico, japonês, finlandês, dinamarquês, italiano…; países de estudos). Nomes de bases de dados (UK Biobank, FinnGen, GWAS Catalog, PGS Catalog, gnomAD), a dieta mediterrânica, a febre mediterrânica familiar, a medicina tradicional chinesa e nomes de plantas são permitidos. O metadado Title/Author do PDF tem de estar vazio. Se encontrar, gerar uma versão limpa a partir da fonte (HTML/MD) do relatório.
+2. Mais simples: `python3 ferramentas/adicionar_colheita.py relatorio --pdf relatorio.pdf --id novo-relatorio --data 2026-12-03 --titulo-pt "…" --titulo-en "…" [--descricao-pt "…" --descricao-en "…" --paginas 12 --lingua-pt português --lingua-en Portuguese --nome nome-no-site.pdf]`. Faz a verificação de privacidade com `pdftotext` e `pdfinfo` (recusa o PDF se tiver termos proibidos ou Title/Author preenchidos), copia-o para `reports/` e junta a entrada em `data/reports.json`. A versão inglesa junta-se depois com `python3 ferramentas/adicionar_colheita.py relatorio-en --pdf relatorio_EN.pdf --id novo-relatorio` (mesma verificação; copia para `reports/<nome>_en.pdf` e grava `ficheiro_en`, `paginas_en`, `tamanho_kb_en`).
 3. Ou à mão: copiar o PDF para `reports/` (nome só com letras, números, `.`, `-`, `_`) e acrescentar um objeto a `relatorios` (`id`, `titulo` PT/EN, `data` AAAA-MM-DD e `ficheiro` `reports/<nome>.pdf` são obrigatórios).
-4. `python3 ferramentas/adicionar_colheita.py verificar` (confirma o JSON, que o PDF existe, que é PDF e que não tem termos proibidos; avisa de PDFs em `reports/` que não estão na lista) e abrir `genetica-reports.html` por `http.server`.
+4. `python3 ferramentas/adicionar_colheita.py verificar` (confirma o JSON, que os PDFs PT e EN existem, que são PDF e que não têm termos proibidos; avisa de PDFs em `reports/` que não estão na lista) e abrir `genetica-reports.html` por `http.server`.
 
-A página só aceita ficheiros `reports/<nome>.pdf`; uma entrada inválida aparece marcada como “Ficheiro inválido”, sem link.
+A página só aceita ficheiros `reports/<nome>.pdf` (e `reports/<nome>_en.pdf` para `ficheiro_en`); uma entrada inválida aparece marcada como “Ficheiro inválido”, sem link; um `ficheiro_en` inválido é ignorado (fica o PDF em português).
 
 ## Regras permanentes do painel
 

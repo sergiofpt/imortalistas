@@ -1,5 +1,5 @@
 {
- "_leia_me": "Lista de relatórios da página genetica-reports.html (reports.js). Para acrescentar um relatório: copiar o PDF (já verificado quanto à privacidade) para reports/ e juntar uma entrada a \"relatorios\". Campos: id (único, letras/números/hífens), titulo {pt,en}, data AAAA-MM-DD, ficheiro \"reports/<nome>.pdf\" (obrigatórios); descricao {pt,en}, paginas, tamanho_kb, lingua {pt,en}, etiquetas [..], destaque true (opcionais; destaque = documento-mestre num cartão em destaque por cima da lista, conta no total e não se repete na grelha). A página ordena por data (mais recente primeiro). Ver README.md, secção \"Genética Reports\".",
+ "_leia_me": "Lista de relatórios da página genetica-reports.html (reports.js). Para acrescentar um relatório: copiar o PDF (já verificado quanto à privacidade) para reports/ e juntar uma entrada a \"relatorios\". Campos: id (único, letras/números/hífens), titulo {pt,en}, data AAAA-MM-DD, ficheiro \"reports/<nome>.pdf\" (obrigatórios); descricao {pt,en}, paginas, tamanho_kb, lingua {pt,en}, etiquetas [..], destaque true, ficheiro_en \"reports/<nome>_en.pdf\" + paginas_en + tamanho_kb_en (versão inglesa: no modo English os botões usam-na) (opcionais; destaque = documento-mestre num cartão em destaque por cima da lista, conta no total e não se repete na grelha). A página ordena por data (mais recente primeiro). Ver README.md, secção \"Genética Reports\".",
  "atualizado_em": "2026-10-03",
  "relatorios": [
   {
@@ -25,7 +25,10 @@
     "CPIC",
     "DPWG",
     "FDA"
-   ]
+   ],
+   "ficheiro_en": "reports/farmacogenomica-632-medicamentos_en.pdf",
+   "paginas_en": 48,
+   "tamanho_kb_en": 275
   },
   {
    "id": "intolerancias-alimentares-626",
@@ -40,11 +43,14 @@
     "en": "Only the foods with a genetic predisposition: 0 to avoid, 140 to limit and 162 to watch."
    },
    "paginas": 36,
-   "tamanho_kb": 220,
+   "tamanho_kb": 226,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/intolerancias-alimentares-626-alimentos_en.pdf",
+   "paginas_en": 33,
+   "tamanho_kb_en": 212
   },
   {
    "id": "dopamina-noradrenalina",
@@ -59,11 +65,14 @@
     "en": "47 of 48 SNPs (6 imputed); a faster-than-typical dopamine turnover is more likely."
    },
    "paginas": 24,
-   "tamanho_kb": 149,
+   "tamanho_kb": 155,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/dopamina-noradrenalina_en.pdf",
+   "paginas_en": 23,
+   "tamanho_kb_en": 145
   },
   {
    "id": "suplementos-1002",
@@ -78,11 +87,14 @@
     "en": "53 to avoid or pause, 66 to adjust, 111 to monitor, 221 normal, 11 undetermined and 537 with no genetic relevance."
    },
    "paginas": 92,
-   "tamanho_kb": 514,
+   "tamanho_kb": 515,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/suplementos-1002_en.pdf",
+   "paginas_en": 90,
+   "tamanho_kb_en": 499
   },
   {
    "id": "psicadelicos",
@@ -97,11 +109,14 @@
     "en": "22 traits (response, metabolism and mental health); 312 of 330 SNPs (142 imputed)."
    },
    "paginas": 41,
-   "tamanho_kb": 218,
+   "tamanho_kb": 219,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/psicadelicos_en.pdf",
+   "paginas_en": 42,
+   "tamanho_kb_en": 214
   },
   {
    "id": "alimentos-longevidade-173",
@@ -120,7 +135,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/alimentos-longevidade-173-alimentos_en.pdf",
+   "paginas_en": 30,
+   "tamanho_kb_en": 180
   },
   {
    "id": "health-report-72",
@@ -139,7 +157,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/health-report-72-tracos_en.pdf",
+   "paginas_en": 92,
+   "tamanho_kb_en": 492
   },
   {
    "id": "musculo-osso-sarcopenia",
@@ -154,11 +175,14 @@
     "en": "35 variants and 10 scores: favourable joints and typical bone density; muscle mass and strength are the weak point."
    },
    "paginas": 14,
-   "tamanho_kb": 77,
+   "tamanho_kb": 78,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/musculo-osso-sarcopenia_en.pdf",
+   "paginas_en": 14,
+   "tamanho_kb_en": 76
   },
   {
    "id": "matriz-extracelular-glicacao",
@@ -177,7 +201,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/matriz-extracelular-glicacao_en.pdf",
+   "paginas_en": 16,
+   "tamanho_kb_en": 79
   },
   {
    "id": "pele-skin-care",
@@ -196,7 +223,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/pele-skin-care_en.pdf",
+   "paginas_en": 21,
+   "tamanho_kb_en": 95
   },
   {
    "id": "cabelo",
@@ -211,11 +241,14 @@
     "en": "31 variants and 4 scores: average genetic risk of male-pattern baldness; no IRF4 early-greying allele."
    },
    "paginas": 16,
-   "tamanho_kb": 72,
+   "tamanho_kb": 73,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/cabelo_en.pdf",
+   "paginas_en": 16,
+   "tamanho_kb_en": 70
   },
   {
    "id": "unhas-cicatrizacao-inflamacao-pele",
@@ -234,7 +267,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/unhas-cicatrizacao-inflamacao-pele_en.pdf",
+   "paginas_en": 17,
+   "tamanho_kb_en": 82
   },
   {
    "id": "cardiovascular-avancado",
@@ -248,12 +284,15 @@
     "pt": "83 SNPs e 12 scores: genética vascular mista; 9p21 de risco e trombose venosa moderada, sem Lp(a) alta e com scores coronário e de fibrilhação auricular baixos.",
     "en": "83 SNPs and 12 scores: mixed vascular genetics; 9p21 risk and moderate venous thrombosis, no high Lp(a), low coronary and atrial-fibrillation scores."
    },
-   "paginas": 20,
-   "tamanho_kb": 110,
+   "paginas": 21,
+   "tamanho_kb": 103,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/cardiovascular-avancado_en.pdf",
+   "paginas_en": 21,
+   "tamanho_kb_en": 98
   },
   {
    "id": "rim-acido-urico",
@@ -272,7 +311,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/rim-acido-urico_en.pdf",
+   "paginas_en": 17,
+   "tamanho_kb_en": 83
   },
   {
    "id": "ferro-metais",
@@ -291,7 +333,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/ferro-metais_en.pdf",
+   "paginas_en": 16,
+   "tamanho_kb_en": 78
   },
   {
    "id": "destoxificacao-fase-i-ii",
@@ -310,7 +355,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/destoxificacao-fase-i-ii_en.pdf",
+   "paginas_en": 14,
+   "tamanho_kb_en": 73
   },
   {
    "id": "reparacao-adn-estabilidade-genoma",
@@ -325,11 +373,14 @@
     "en": "DNA repair as a relative strength: common pathways without lower-efficiency alleles and no plausible pathogenic variant in the 63-gene panel."
    },
    "paginas": 9,
-   "tamanho_kb": 55,
+   "tamanho_kb": 61,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/reparacao-adn-estabilidade-genoma_en.pdf",
+   "paginas_en": 9,
+   "tamanho_kb_en": 58
   },
   {
    "id": "telomeros-senescencia-celular",
@@ -344,11 +395,14 @@
     "en": "Genetic telomere reserve slightly below average (~25th percentile), with TERT pulling both ways; typical epigenetic age."
    },
    "paginas": 9,
-   "tamanho_kb": 57,
+   "tamanho_kb": 63,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/telomeros-senescencia-celular_en.pdf",
+   "paginas_en": 9,
+   "tamanho_kb_en": 60
   },
   {
    "id": "sensores-nutrientes-autofagia",
@@ -363,11 +417,14 @@
     "en": "One of the most favourable axes: FOXO3 longevity homozygote and genetically low IGF-1 (7th percentile), no strong autophagy weaknesses."
    },
    "paginas": 8,
-   "tamanho_kb": 49,
+   "tamanho_kb": 55,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/sensores-nutrientes-autofagia_en.pdf",
+   "paginas_en": 8,
+   "tamanho_kb_en": 53
   },
   {
    "id": "proteostase",
@@ -382,11 +439,14 @@
     "en": "Favourable neuronal proteostasis (APOE ε3/ε3, MAPT H2/H2, no lysosomal Parkinson variants); weakness in alpha-1 antitrypsin Z (liver and lung)."
    },
    "paginas": 10,
-   "tamanho_kb": 62,
+   "tamanho_kb": 68,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/proteostase_en.pdf",
+   "paginas_en": 10,
+   "tamanho_kb_en": 65
   },
   {
    "id": "celulas-estaminais-regeneracao",
@@ -401,11 +461,14 @@
     "en": "Low-to-typical predisposition to clonal expansion (no JAK2 46/1, favourable SH2B3), with telomere reserve slightly below average."
    },
    "paginas": 8,
-   "tamanho_kb": 50,
+   "tamanho_kb": 57,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/celulas-estaminais-regeneracao_en.pdf",
+   "paginas_en": 8,
+   "tamanho_kb_en": 54
   },
   {
    "id": "risco-cancro-scores-poligenicos",
@@ -420,11 +483,14 @@
     "en": "22 scores and 57 SNPs: no confirmed pathogenic variants in the classic hereditary cancer genes covered by the chip; low-to-medium polygenic background for most."
    },
    "paginas": 21,
-   "tamanho_kb": 114,
+   "tamanho_kb": 115,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/risco-cancro-scores-poligenicos_en.pdf",
+   "paginas_en": 21,
+   "tamanho_kb_en": 112
   },
   {
    "id": "cerebro-neurodegeneracao",
@@ -443,7 +509,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/cerebro-neurodegeneracao_en.pdf",
+   "paginas_en": 16,
+   "tamanho_kb_en": 87
   },
   {
    "id": "capacidade-cognitiva-plasticidade",
@@ -458,11 +527,14 @@
     "en": "Favourable base (APOE ε3/ε3, MAPT H2/H2, fluid-intelligence scores at the upper end of typical); BDNF Val/Met: plasticity relies more on exercise and sleep."
    },
    "paginas": 15,
-   "tamanho_kb": 59,
+   "tamanho_kb": 66,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/capacidade-cognitiva-plasticidade_en.pdf",
+   "paginas_en": 15,
+   "tamanho_kb_en": 64
   },
   {
    "id": "ritmo-circadiano-sono",
@@ -481,7 +553,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/ritmo-circadiano-sono_en.pdf",
+   "paginas_en": 14,
+   "tamanho_kb_en": 75
   },
   {
    "id": "imunidade-envelhecimento-imunitario",
@@ -500,7 +575,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/imunidade-envelhecimento-imunitario_en.pdf",
+   "paginas_en": 17,
+   "tamanho_kb_en": 85
   },
   {
    "id": "hormonas",
@@ -519,7 +597,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/hormonas_en.pdf",
+   "paginas_en": 15,
+   "tamanho_kb_en": 74
   },
   {
    "id": "microbioma-intestino",
@@ -534,11 +615,14 @@
     "en": "31 SNPs and 11 scores: very favourable gut terrain (coeliac disease practically ruled out, very low inflammatory bowel disease risk, FUT2 secretor)."
    },
    "paginas": 16,
-   "tamanho_kb": 79,
+   "tamanho_kb": 72,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/microbioma-intestino_en.pdf",
+   "paginas_en": 16,
+   "tamanho_kb_en": 69
   },
   {
    "id": "longevidade-excecional",
@@ -553,11 +637,14 @@
     "en": "29 SNPs and 4 scores: good genetic base (APOE ε3/ε3, FOXO3 homozygote, longevity score at the 92nd percentile); modifiable vascular and inflammatory weaknesses."
    },
    "paginas": 14,
-   "tamanho_kb": 70,
+   "tamanho_kb": 64,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/longevidade-excecional_en.pdf",
+   "paginas_en": 14,
+   "tamanho_kb_en": 61
   },
   {
    "id": "visao-audicao",
@@ -572,11 +659,14 @@
     "en": "Macula, lens and hearing typical; the least favourable point is glaucoma (open-angle score at the 97.9th percentile)."
    },
    "paginas": 17,
-   "tamanho_kb": 72,
+   "tamanho_kb": 78,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/visao-audicao_en.pdf",
+   "paginas_en": 17,
+   "tamanho_kb_en": 75
   },
   {
    "id": "alergias-asma-atopia",
@@ -595,7 +685,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/alergias-asma-atopia_en.pdf",
+   "paginas_en": 13,
+   "tamanho_kb_en": 69
   },
   {
    "id": "enxaqueca-cefaleias",
@@ -614,7 +707,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/enxaqueca-cefaleias_en.pdf",
+   "paginas_en": 13,
+   "tamanho_kb_en": 64
   },
   {
    "id": "coagulacao-trombose-veias",
@@ -629,11 +725,14 @@
     "en": "30 variants and 11 scores: no major thrombophilia (factor V Leiden and prothrombin negative), but a moderate polygenic predisposition to venous thrombosis, partly offset by likely blood group O."
    },
    "paginas": 13,
-   "tamanho_kb": 72,
+   "tamanho_kb": 73,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/coagulacao-trombose-veias_en.pdf",
+   "paginas_en": 14,
+   "tamanho_kb_en": 71
   },
   {
    "id": "coluna-disco-dor-lombar",
@@ -652,7 +751,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/coluna-disco-dor-lombar_en.pdf",
+   "paginas_en": 13,
+   "tamanho_kb_en": 69
   },
   {
    "id": "figado-gordura-hepatica",
@@ -671,7 +773,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/figado-gordura-hepatica_en.pdf",
+   "paginas_en": 15,
+   "tamanho_kb_en": 60
   },
   {
    "id": "glicose-insulina-diabetes",
@@ -690,7 +795,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/glicose-insulina-diabetes_en.pdf",
+   "paginas_en": 15,
+   "tamanho_kb_en": 54
   },
   {
    "id": "lipidos-detalhe",
@@ -705,11 +813,14 @@
     "en": "APOE ε3/ε3, genetic LDL below the median, no very-high-Lp(a) alleles and good statin tolerance (SLCO1B1 T/T); genetically above-median triglycerides and low HDL."
    },
    "paginas": 16,
-   "tamanho_kb": 60,
+   "tamanho_kb": 61,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/lipidos-detalhe_en.pdf",
+   "paginas_en": 15,
+   "tamanho_kb_en": 57
   },
   {
    "id": "vitaminas-minerais",
@@ -728,7 +839,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/vitaminas-minerais_en.pdf",
+   "paginas_en": 15,
+   "tamanho_kb_en": 56
   },
   {
    "id": "pancreas-pancreatite",
@@ -747,7 +861,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/pancreas-pancreatite_en.pdf",
+   "paginas_en": 18,
+   "tamanho_kb_en": 64
   },
   {
    "id": "estomago-refluxo-helicobacter",
@@ -766,7 +883,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/estomago-refluxo-helicobacter_en.pdf",
+   "paginas_en": 17,
+   "tamanho_kb_en": 60
   },
   {
    "id": "globulos-vermelhos-hemoglobina-plaquetas",
@@ -785,7 +905,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/globulos-vermelhos-hemoglobina-plaquetas_en.pdf",
+   "paginas_en": 17,
+   "tamanho_kb_en": 65
   },
   {
    "id": "prostata",
@@ -800,11 +923,14 @@
     "en": "Very low polygenic predisposition to prostate cancer (5 of 6 scores below the 10th percentile, no HOXB13 G84E); genetically low PSA, which changes how PSA results should be read."
    },
    "paginas": 17,
-   "tamanho_kb": 61,
+   "tamanho_kb": 62,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/prostata_en.pdf",
+   "paginas_en": 17,
+   "tamanho_kb_en": 59
   },
   {
    "id": "termogenese-gordura-castanha",
@@ -823,7 +949,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/termogenese-gordura-castanha_en.pdf",
+   "paginas_en": 13,
+   "tamanho_kb_en": 64
   },
   {
    "id": "apetite-saciedade-comportamento-alimentar",
@@ -842,7 +971,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/apetite-saciedade-comportamento-alimentar_en.pdf",
+   "paginas_en": 13,
+   "tamanho_kb_en": 65
   },
   {
    "id": "cafeina-estimulantes",
@@ -861,7 +993,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/cafeina-estimulantes_en.pdf",
+   "paginas_en": 12,
+   "tamanho_kb_en": 62
   },
   {
    "id": "sal-agua-eletrolitos",
@@ -880,7 +1015,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/sal-agua-eletrolitos_en.pdf",
+   "paginas_en": 13,
+   "tamanho_kb_en": 63
   },
   {
    "id": "oxitocina-comportamento-social",
@@ -899,7 +1037,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/oxitocina-comportamento-social_en.pdf",
+   "paginas_en": 13,
+   "tamanho_kb_en": 50
   },
   {
    "id": "relogio-epigenetico-idade-biologica",
@@ -918,7 +1059,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/relogio-epigenetico-idade-biologica_en.pdf",
+   "paginas_en": 13,
+   "tamanho_kb_en": 53
   },
   {
    "id": "andropausa-envelhecimento-reprodutivo",
@@ -937,7 +1081,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/andropausa-envelhecimento-reprodutivo_en.pdf",
+   "paginas_en": 13,
+   "tamanho_kb_en": 55
   },
   {
    "id": "fertilidade-masculina",
@@ -956,7 +1103,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/fertilidade-masculina_en.pdf",
+   "paginas_en": 13,
+   "tamanho_kb_en": 51
   },
   {
    "id": "humor-risco-depressao",
@@ -975,7 +1125,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/humor-risco-depressao_en.pdf",
+   "paginas_en": 13,
+   "tamanho_kb_en": 65
   },
   {
    "id": "ansiedade-resiliencia-stress",
@@ -994,7 +1147,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/ansiedade-resiliencia-stress_en.pdf",
+   "paginas_en": 13,
+   "tamanho_kb_en": 68
   },
   {
    "id": "personalidade-tracos-psicologicos",
@@ -1013,7 +1169,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/personalidade-tracos-psicologicos_en.pdf",
+   "paginas_en": 13,
+   "tamanho_kb_en": 64
   },
   {
    "id": "atencao-phda",
@@ -1032,7 +1191,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/atencao-phda_en.pdf",
+   "paginas_en": 12,
+   "tamanho_kb_en": 60
   },
   {
    "id": "perfil-desportivo-resistencia-forca",
@@ -1051,7 +1213,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/perfil-desportivo-resistencia-forca_en.pdf",
+   "paginas_en": 14,
+   "tamanho_kb_en": 45
   },
   {
    "id": "resposta-treino-vo2max",
@@ -1070,7 +1235,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/resposta-treino-vo2max_en.pdf",
+   "paginas_en": 14,
+   "tamanho_kb_en": 44
   },
   {
    "id": "tendoes-ligamentos-lesoes",
@@ -1089,7 +1257,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/tendoes-ligamentos-lesoes_en.pdf",
+   "paginas_en": 14,
+   "tamanho_kb_en": 44
   },
   {
    "id": "pulmao-funcao-respiratoria",
@@ -1108,7 +1279,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/pulmao-funcao-respiratoria_en.pdf",
+   "paginas_en": 14,
+   "tamanho_kb_en": 47
   },
   {
    "id": "estado-portador",
@@ -1127,7 +1301,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/estado-portador_en.pdf",
+   "paginas_en": 17,
+   "tamanho_kb_en": 73
   },
   {
    "id": "doenca-arterial-periferica",
@@ -1146,7 +1323,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/doenca-arterial-periferica_en.pdf",
+   "paginas_en": 13,
+   "tamanho_kb_en": 64
   },
   {
    "id": "cetose-corpos-cetonicos",
@@ -1165,7 +1345,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/cetose-corpos-cetonicos_en.pdf",
+   "paginas_en": 10,
+   "tamanho_kb_en": 54
   },
   {
    "id": "proteina-aminoacidos",
@@ -1184,7 +1367,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/proteina-aminoacidos_en.pdf",
+   "paginas_en": 13,
+   "tamanho_kb_en": 65
   },
   {
    "id": "doencas-geneticas-hereditarias",
@@ -1203,7 +1389,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/doencas-geneticas-hereditarias_en.pdf",
+   "paginas_en": 18,
+   "tamanho_kb_en": 83
   },
   {
    "id": "bexiga-funcao-urinaria",
@@ -1222,7 +1411,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/bexiga-funcao-urinaria_en.pdf",
+   "paginas_en": 16,
+   "tamanho_kb_en": 57
   },
   {
    "id": "dermatite-seborreica-microbioma-pele",
@@ -1241,7 +1433,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/dermatite-seborreica-microbioma-pele_en.pdf",
+   "paginas_en": 18,
+   "tamanho_kb_en": 64
   },
   {
    "id": "acne-glandulas-sebaceas",
@@ -1260,7 +1455,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/acne-glandulas-sebaceas_en.pdf",
+   "paginas_en": 16,
+   "tamanho_kb_en": 56
   },
   {
    "id": "termorregulacao-sudorese",
@@ -1279,7 +1477,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/termorregulacao-sudorese_en.pdf",
+   "paginas_en": 15,
+   "tamanho_kb_en": 51
   },
   {
    "id": "funcao-sexual-eretil",
@@ -1298,7 +1499,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/funcao-sexual-eretil_en.pdf",
+   "paginas_en": 13,
+   "tamanho_kb_en": 53
   },
   {
    "id": "oxido-nitrico-endotelio",
@@ -1317,7 +1521,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/oxido-nitrico-endotelio_en.pdf",
+   "paginas_en": 13,
+   "tamanho_kb_en": 52
   },
   {
    "id": "paladar-olfato",
@@ -1336,7 +1543,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/paladar-olfato_en.pdf",
+   "paginas_en": 13,
+   "tamanho_kb_en": 54
   },
   {
    "id": "aorta-aneurismas",
@@ -1355,7 +1565,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/aorta-aneurismas_en.pdf",
+   "paginas_en": 14,
+   "tamanho_kb_en": 63
   },
   {
    "id": "saude-oral-dentes-periodontite",
@@ -1370,11 +1583,14 @@
     "en": "Negative composite IL-1 genotype and very low caries locus load; high genetic gingivitis (89.7th percentile) and typical-to-high periodontitis: daily plaque control is the priority."
    },
    "paginas": 14,
-   "tamanho_kb": 46,
+   "tamanho_kb": 47,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/saude-oral-dentes-periodontite_en.pdf",
+   "paginas_en": 14,
+   "tamanho_kb_en": 45
   },
   {
    "id": "dor-analgesia",
@@ -1393,7 +1609,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/dor-analgesia_en.pdf",
+   "paginas_en": 15,
+   "tamanho_kb_en": 49
   },
   {
    "id": "anestesia-cirurgia",
@@ -1408,11 +1627,14 @@
     "en": "No malignant hyperthermia variants detected and normal BCHE (normal succinylcholine duration); to note: venous thrombosis (prophylaxis), CYP2C9 *1/*3 and high warfarin sensitivity (VKORC1)."
    },
    "paginas": 14,
-   "tamanho_kb": 52,
+   "tamanho_kb": 53,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/anestesia-cirurgia_en.pdf",
+   "paginas_en": 14,
+   "tamanho_kb_en": 50
   },
   {
    "id": "impulsividade-recompensa-vicio",
@@ -1431,7 +1653,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/impulsividade-recompensa-vicio_en.pdf",
+   "paginas_en": 14,
+   "tamanho_kb_en": 50
   },
   {
    "id": "hipoxia-altitude",
@@ -1450,7 +1675,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/hipoxia-altitude_en.pdf",
+   "paginas_en": 15,
+   "tamanho_kb_en": 49
   },
   {
    "id": "disruptores-endocrinos-poluentes",
@@ -1469,7 +1697,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/disruptores-endocrinos-poluentes_en.pdf",
+   "paginas_en": 16,
+   "tamanho_kb_en": 57
   },
   {
    "id": "sensibilidade-radiacao",
@@ -1484,11 +1715,14 @@
     "en": "Skin protected against UV radiation (no MC1R variants; low melanoma and carcinoma scores); slightly above-average genetic sensitivity to ionising radiation and of the thyroid (ATM D1853N)."
    },
    "paginas": 15,
-   "tamanho_kb": 57,
+   "tamanho_kb": 58,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/sensibilidade-radiacao_en.pdf",
+   "paginas_en": 15,
+   "tamanho_kb_en": 55
   },
   {
    "id": "valvulas-cardiacas",
@@ -1507,7 +1741,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/valvulas-cardiacas_en.pdf",
+   "paginas_en": 18,
+   "tamanho_kb_en": 61
   },
   {
    "id": "velocidade-processamento-tempo-reacao",
@@ -1526,7 +1763,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/velocidade-processamento-tempo-reacao_en.pdf",
+   "paginas_en": 15,
+   "tamanho_kb_en": 52
   },
   {
    "id": "inflamacao-senescencia-placa",
@@ -1541,11 +1781,14 @@
     "en": "Favourable IL-6/CRP axis (low-to-typical genetic CRP, IL6R Asp358Ala) and low polygenic coronary disease; against: 9p21 G/G and high GlycA and GDF-15 locus loads."
    },
    "paginas": 15,
-   "tamanho_kb": 55,
+   "tamanho_kb": 56,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/inflamacao-senescencia-placa_en.pdf",
+   "paginas_en": 15,
+   "tamanho_kb_en": 53
   },
   {
    "id": "gordura-inflamatoria-lipolise",
@@ -1564,7 +1807,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/gordura-inflamatoria-lipolise_en.pdf",
+   "paginas_en": 17,
+   "tamanho_kb_en": 61
   },
   {
    "id": "ritmo-cardiaco-arritmias",
@@ -1583,7 +1829,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/ritmo-cardiaco-arritmias_en.pdf",
+   "paginas_en": 13,
+   "tamanho_kb_en": 59
   },
   {
    "id": "avc-pequenos-vasos-cerebrais",
@@ -1602,7 +1851,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/avc-pequenos-vasos-cerebrais_en.pdf",
+   "paginas_en": 13,
+   "tamanho_kb_en": 54
   },
   {
    "id": "insuficiencia-cardiaca-cardiomiopatias",
@@ -1621,7 +1873,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/insuficiencia-cardiaca-cardiomiopatias_en.pdf",
+   "paginas_en": 13,
+   "tamanho_kb_en": 56
   },
   {
    "id": "polipos-colorretais",
@@ -1640,7 +1895,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/polipos-colorretais_en.pdf",
+   "paginas_en": 15,
+   "tamanho_kb_en": 50
   },
   {
    "id": "pneumococo-imunossenescencia",
@@ -1659,7 +1917,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/pneumococo-imunossenescencia_en.pdf",
+   "paginas_en": 14,
+   "tamanho_kb_en": 46
   },
   {
    "id": "audicao-zumbido",
@@ -1678,7 +1939,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/audicao-zumbido_en.pdf",
+   "paginas_en": 14,
+   "tamanho_kb_en": 47
   },
   {
    "id": "hipertensao-pulmonar-circulacao-pulmao",
@@ -1697,7 +1961,10 @@
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/hipertensao-pulmonar-circulacao-pulmao_en.pdf",
+   "paginas_en": 15,
+   "tamanho_kb_en": 52
   },
   {
    "id": "longevidade-maxima-sintese-genetica",
@@ -1711,12 +1978,15 @@
     "pt": "42 variantes e 5 scores: FOXO3 homozigoto para os 4 alelos de longevidade, APOE ε3/ε3 e score de longevidade no percentil 92; o ponto desfavorável mais forte é o 9p21 em homozigotia de risco.",
     "en": "42 variants and 5 scores: FOXO3 homozygous for all 4 longevity alleles, APOE ε3/ε3 and a longevity score at the 92nd percentile; the strongest unfavourable point is homozygous risk at 9p21."
    },
-   "paginas": 28,
-   "tamanho_kb": 139,
+   "paginas": 29,
+   "tamanho_kb": 141,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
-   }
+   },
+   "ficheiro_en": "reports/longevidade-maxima-sintese-genetica_en.pdf",
+   "paginas_en": 28,
+   "tamanho_kb_en": 138
   },
   {
    "id": "imortalidade",
@@ -1730,13 +2000,368 @@
     "pt": "Síntese de todos os relatórios genéticos e de 5 análises novas ao ADN, com as 10 ações que mais mudam o desfecho, as causas de morte previstas pelos genes, o mapa dos 84 mecanismos de envelhecimento, o cartão farmacogenético e o calendário de rastreios.",
     "en": "A synthesis of all genetics reports and 5 new DNA analyses, with the 10 actions that change the outcome most, the genetically predicted causes of death, a map of the 84 ageing mechanisms, the pharmacogenetic card and the screening calendar."
    },
-   "paginas": 28,
-   "tamanho_kb": 152,
+   "paginas": 29,
+   "tamanho_kb": 155,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
    },
-   "destaque": true
+   "destaque": true,
+   "ficheiro_en": "reports/imortalidade_en.pdf",
+   "paginas_en": 29,
+   "tamanho_kb_en": 146
+  },
+  {
+   "id": "tiroide",
+   "titulo": {
+    "pt": "Tiroide",
+    "en": "Thyroid"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/tiroide.pdf",
+   "descricao": {
+    "pt": "Autoimunidade da tiroide do lado baixo (Graves no percentil 3,3; sem PTPN22 R620W nem HLA-DR3/DQ2.5) e conversão de T4 em T3 preservada (DIO2 sem Ala92). O ponto fraco é estrutural: bócio nodular nos percentis 91–93 e cancro da tiroide acima do 79 em todos os scores (NRG1, TERT, FOXE1). Termostato genético de TSH baixa e T4 livre alta.",
+    "en": "Thyroid autoimmunity on the low side (Graves' disease at percentile 3.3; no PTPN22 R620W or HLA-DR3/DQ2.5) and preserved T4-to-T3 conversion (DIO2 without Ala92). The weak point is structural: nodular goitre at percentiles 91–93 and thyroid cancer above the 79th in every score (NRG1, TERT, FOXE1). Genetic set point of low TSH and high free T4."
+   },
+   "paginas": 17,
+   "tamanho_kb": 62,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   },
+   "ficheiro_en": "reports/tiroide_en.pdf",
+   "paginas_en": 17,
+   "tamanho_kb_en": 60
+  },
+  {
+   "id": "infecoes",
+   "titulo": {
+    "pt": "Infeções",
+    "en": "Infections"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/infecoes.pdf",
+   "descricao": {
+    "pt": "Defesa antiviral clássica boa: IFNL4 com o genótipo de mais eliminação da hepatite C, HLA do lado da eliminação da hepatite B, OAS1 antiviral e COVID-19 grave no percentil 4,7; sem HLA-B*57:01. Sinais altos na tuberculose (loci 94,0; ASAP1 A/A), na hepatite B (loci 88,2), no herpes zóster (74,9) e na infeção urinária (93,8). Secretor FUT2 e sem CCR5-Δ32.",
+    "en": "Good classic antiviral defence: IFNL4 with the genotype of highest hepatitis C clearance, HLA on the hepatitis B clearance side, antiviral OAS1 and severe COVID-19 at percentile 4.7; no HLA-B*57:01. High signals for tuberculosis (loci 94.0; ASAP1 A/A), hepatitis B (loci 88.2), herpes zoster (74.9) and urinary infection (93.8). FUT2 secretor and no CCR5-Δ32."
+   },
+   "paginas": 15,
+   "tamanho_kb": 57,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   },
+   "ficheiro_en": "reports/infecoes_en.pdf",
+   "paginas_en": 15,
+   "tamanho_kb_en": 54
+  },
+  {
+   "id": "cancros-um-a-um",
+   "titulo": {
+    "pt": "Cancros Um a Um",
+    "en": "Cancers One by One"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/cancros-um-a-um.pdf",
+   "descricao": {
+    "pt": "Mapa de risco órgão a órgão, sem nenhum risco monogénico (TP53 e BRCA2 K3326X normais). Abaixo da média: linfomas, rim, pele não-melanoma, testículo e estômago. Sinais altos: bexiga (scores 86–95, NAT2 lento, PSCA), glioma (90,8), pâncreas no score pequeno (83,1), esófago (84,8) e tiroide (79–81), com prevenção por órgão.",
+    "en": "Organ-by-organ risk map with no monogenic risk (TP53 and BRCA2 K3326X normal). Below average: lymphomas, kidney, non-melanoma skin, testis and stomach. High signals: bladder (scores 86–95, slow NAT2, PSCA), glioma (90.8), pancreas in the small score (83.1), oesophagus (84.8) and thyroid (79–81), with prevention by organ."
+   },
+   "paginas": 19,
+   "tamanho_kb": 76,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   },
+   "ficheiro_en": "reports/cancros-um-a-um_en.pdf",
+   "paginas_en": 19,
+   "tamanho_kb_en": 74
+  },
+  {
+   "id": "epilepsia-excitabilidade-neuronal",
+   "titulo": {
+    "pt": "Epilepsia e Excitabilidade Neuronal",
+    "en": "Epilepsy and Neuronal Excitability"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/epilepsia-excitabilidade-neuronal.pdf",
+   "descricao": {
+    "pt": "Risco poligénico de epilepsia típico; a forma generalizada fica baixa (loci no percentil 9,3), apesar do SCN1A T/T (efeito pequeno). Farmacogenética: sem HLA-A*31:01 (a carbamazepina não tem essa contraindicação), CYP2C19 normal e CYP2C9 *1/*3 (fenitoína com dose de manutenção mais baixa).",
+    "en": "Typical polygenic epilepsy risk; the generalised form is low (loci at percentile 9.3) despite SCN1A T/T (small effect). Pharmacogenetics: no HLA-A*31:01 (carbamazepine without that contraindication), normal CYP2C19 and CYP2C9 *1/*3 (lower maintenance dose of phenytoin)."
+   },
+   "paginas": 15,
+   "tamanho_kb": 52,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   },
+   "ficheiro_en": "reports/epilepsia-excitabilidade-neuronal_en.pdf",
+   "paginas_en": 15,
+   "tamanho_kb_en": 50
+  },
+  {
+   "id": "doencas-autoimunes",
+   "titulo": {
+    "pt": "Doenças Autoimunes",
+    "en": "Autoimmune Diseases"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/doencas-autoimunes.pdf",
+   "descricao": {
+    "pt": "Os sete marcadores HLA de maior efeito são negativos e o PTPN22 R620W está ausente: artrite reumatoide, psoríase, doença celíaca, diabetes tipo 1 e esclerose múltipla ficam baixas. O sinal mais alto é o vitiligo (percentil 89,9; TYR R402 G/G); lúpus e espondilite ficam típicos.",
+    "en": "The seven highest-effect HLA markers are negative and PTPN22 R620W is absent: rheumatoid arthritis, psoriasis, coeliac disease, type 1 diabetes and multiple sclerosis are low. The highest signal is vitiligo (percentile 89.9; TYR R402 G/G); lupus and spondylitis are typical."
+   },
+   "paginas": 17,
+   "tamanho_kb": 64,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   },
+   "ficheiro_en": "reports/doencas-autoimunes_en.pdf",
+   "paginas_en": 17,
+   "tamanho_kb_en": 61
+  },
+  {
+   "id": "olhos-em-detalhe",
+   "titulo": {
+    "pt": "Olhos em Detalhe",
+    "en": "Eyes in Detail"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/olhos-em-detalhe.pdf",
+   "descricao": {
+    "pt": "O glaucoma é a prioridade ocular: ângulo aberto até ao percentil 97,9, pressão intraocular geneticamente alta (94,0) e genes do nervo ótico (CDKN2B-AS1, SIX6, TXNRD2). Miopia genómica no 99,2 e cataratas no 86,6. A mácula está protegida (ARMS2 G/G, degenerescência macular típica).",
+    "en": "Glaucoma is the eye priority: open-angle up to percentile 97.9, genetically high intraocular pressure (94.0) and optic-nerve genes (CDKN2B-AS1, SIX6, TXNRD2). Genomic myopia at 99.2 and cataracts at 86.6. The macula is protected (ARMS2 G/G, typical macular degeneration)."
+   },
+   "paginas": 17,
+   "tamanho_kb": 63,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   },
+   "ficheiro_en": "reports/olhos-em-detalhe_en.pdf",
+   "paginas_en": 17,
+   "tamanho_kb_en": 61
+  },
+  {
+   "id": "articulacoes-artrose",
+   "titulo": {
+    "pt": "Articulações e Artrose",
+    "en": "Joints and Osteoarthritis"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/articulacoes-artrose.pdf",
+   "descricao": {
+    "pt": "Artrose das grandes articulações baixa a típica (qualquer local no percentil 15,8; joelho e anca típicos; GDF5 sem o alelo de risco) e gota pouco provável (12,3; ABCG2 Q141K ausente). A exceção é a mão: carga de loci no 97,6, com ALDH1A2 e MCF2L.",
+    "en": "Low-to-typical osteoarthritis of the large joints (any site at percentile 15.8; knee and hip typical; GDF5 without the risk allele) and gout unlikely (12.3; ABCG2 Q141K absent). The exception is the hand: loci burden at 97.6, with ALDH1A2 and MCF2L."
+   },
+   "paginas": 15,
+   "tamanho_kb": 53,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   },
+   "ficheiro_en": "reports/articulacoes-artrose_en.pdf",
+   "paginas_en": 15,
+   "tamanho_kb_en": 50
+  },
+  {
+   "id": "serotonina-melatonina",
+   "titulo": {
+    "pt": "Serotonina e Melatonina",
+    "en": "Serotonin and Melatonin"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/serotonina-melatonina.pdf",
+   "descricao": {
+    "pt": "Descritivo, sem juízo: 46 SNPs em 27 genes. Recetores da serotonina tendencialmente Reduced (HTR2A, HTR2C, HTR1B), TPH2 com 1 alelo Increased e transportador SLC6A4 contraditório; relógio com variantes em ARNTL, CLOCK, PER2 e MTNR1B (melatonina mais tardia). Luz de manhã, horários regulares, exercício e sono são o que mais modula estas vias.",
+    "en": "Descriptive, without judgement: 46 SNPs in 27 genes. Serotonin receptors tending to Reduced (HTR2A, HTR2C, HTR1B), TPH2 with 1 Increased allele and a contradictory SLC6A4 transporter; clock with variants in ARNTL, CLOCK, PER2 and MTNR1B (later melatonin). Morning light, regular hours, exercise and sleep are what most modulate these pathways."
+   },
+   "paginas": 16,
+   "tamanho_kb": 63,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   },
+   "ficheiro_en": "reports/serotonina-melatonina_en.pdf",
+   "paginas_en": 16,
+   "tamanho_kb_en": 61
+  },
+  {
+   "id": "gaba-glutamato",
+   "titulo": {
+    "pt": "GABA e Glutamato",
+    "en": "GABA and Glutamate"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/gaba-glutamato.pdf",
+   "descricao": {
+    "pt": "Descritivo, sem juízo: 34 SNPs em 22 genes. Sinalização NMDA/AMPA com etiquetas Increased (GRIN2B, GRIA1) e GRM3 Reduced; remoção do glutamato pelos astrócitos preservada (SLC1A3). No GABA, o GAD1 Reduced é compensado por um ABAT mais lento e por vários recetores GABA-A Increased.",
+    "en": "Descriptive, without judgement: 34 SNPs in 22 genes. NMDA/AMPA signalling with Increased labels (GRIN2B, GRIA1) and Reduced GRM3; glutamate clearance by astrocytes preserved (SLC1A3). On the GABA side, Reduced GAD1 is offset by slower ABAT and several Increased GABA-A receptors."
+   },
+   "paginas": 15,
+   "tamanho_kb": 57,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   },
+   "ficheiro_en": "reports/gaba-glutamato_en.pdf",
+   "paginas_en": 15,
+   "tamanho_kb_en": 54
+  },
+  {
+   "id": "histamina-mastocitos-ige",
+   "titulo": {
+    "pt": "Histamina, Mastócitos e IgE",
+    "en": "Histamine, Mast Cells and IgE"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/histamina-mastocitos-ige.pdf",
+   "descricao": {
+    "pt": "Degradação da histamina ligeiramente reduzida (3 heterozigotos funcionais na DAO e na HNMT, nenhum homozigoto), só relevante com sintomas. Sem os marcadores de triptase alta ou de mastocitose (o TPSAB1 não se lê no chip). IgE e atopia com alelos comuns mistos, mas scores típicos ou baixos (asma, dermatite atópica).",
+    "en": "Slightly reduced histamine breakdown (3 functional heterozygotes in DAO and HNMT, no homozygote), relevant only with symptoms. No markers of high tryptase or mastocytosis (TPSAB1 cannot be read on the chip). IgE and atopy with mixed common alleles but typical or low scores (asthma, atopic dermatitis)."
+   },
+   "paginas": 18,
+   "tamanho_kb": 68,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   },
+   "ficheiro_en": "reports/histamina-mastocitos-ige_en.pdf",
+   "paginas_en": 17,
+   "tamanho_kb_en": 65
+  },
+  {
+   "id": "metilacao-homocisteina-colina",
+   "titulo": {
+    "pt": "Metilação, Homocisteína e Colina",
+    "en": "Methylation, Homocysteine and Choline"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/metilacao-homocisteina-colina.pdf",
+   "descricao": {
+    "pt": "MTHFR heterozigoto composto (C677T + A1298C, cerca de 50–60% da atividade): a razão para o folato ser sempre 5-MTHF. Homocisteína geneticamente um pouco mais alta (score de 4 loci no percentil 92, cerca de +0,6–0,8 µmol/L), com CBS protetor; B12 sem risco relevante; necessidade de colina ligeiramente maior (PEMT, BHMT) e COMT Val/Val.",
+    "en": "Compound heterozygous MTHFR (C677T + A1298C, about 50–60% of activity): the reason folate is always 5-MTHF. Genetically slightly higher homocysteine (4-locus score at percentile 92, about +0.6–0.8 µmol/L), with protective CBS; no relevant B12 risk; slightly higher choline need (PEMT, BHMT) and COMT Val/Val."
+   },
+   "paginas": 17,
+   "tamanho_kb": 58,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   },
+   "ficheiro_en": "reports/metilacao-homocisteina-colina_en.pdf",
+   "paginas_en": 17,
+   "tamanho_kb_en": 57
+  },
+  {
+   "id": "inflamacao-autoimunidade",
+   "titulo": {
+    "pt": "Inflamação e Autoimunidade",
+    "en": "Inflammation and Autoimmunity"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/inflamacao-autoimunidade.pdf",
+   "descricao": {
+    "pt": "70 SNPs e 29 scores: perfil autoimune baixo a típico, com HLA invulgarmente limpo e PTPN22 e STAT4 sem alelos de risco. Exceções ligeiras: sarcoidose (percentil 92,3), vitiligo (89,9) e uveíte (84,5). Imunidade inata com SERPINA1 Pi*MZ provável e MBL2 heterozigótico; via gástrica mais reativa (PSCA, IL1B).",
+    "en": "70 SNPs and 29 scores: low-to-typical autoimmune profile, with an unusually clean HLA and PTPN22 and STAT4 without risk alleles. Mild exceptions: sarcoidosis (percentile 92.3), vitiligo (89.9) and uveitis (84.5). Innate immunity with probable SERPINA1 Pi*MZ and heterozygous MBL2; more reactive gastric pathway (PSCA, IL1B)."
+   },
+   "paginas": 21,
+   "tamanho_kb": 85,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   },
+   "ficheiro_en": "reports/inflamacao-autoimunidade_en.pdf",
+   "paginas_en": 21,
+   "tamanho_kb_en": 82
+  },
+  {
+   "id": "stress-oxidativo-defesa-antioxidante",
+   "titulo": {
+    "pt": "Stress Oxidativo e Defesa Antioxidante",
+    "en": "Oxidative Stress and Antioxidant Defence"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/stress-oxidativo-defesa-antioxidante.pdf",
+   "descricao": {
+    "pt": "Reguladores mestres fortes: FOXO3 homozigótico para o alelo de longevidade, NRF2 sem o alelo fraco, SOD2 Ala/Ala, GCLC e NQO1 com atividade plena. Pontos fracos na desintoxicação de fase II e na paraoxonase: GSTM1 nulo provável, GSTA1 *B/*B e PON1 de baixa expressão, com GPX1 Pro198Leu e MPO −463G/G.",
+    "en": "Strong master regulators: FOXO3 homozygous for the longevity allele, NRF2 without the weak allele, SOD2 Ala/Ala, GCLC and NQO1 at full activity. Weak points in phase II detoxification and paraoxonase: probable GSTM1 null, GSTA1 *B/*B and low-expression PON1, with GPX1 Pro198Leu and MPO −463G/G."
+   },
+   "paginas": 16,
+   "tamanho_kb": 62,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   },
+   "ficheiro_en": "reports/stress-oxidativo-defesa-antioxidante_en.pdf",
+   "paginas_en": 16,
+   "tamanho_kb_en": 60
+  },
+  {
+   "id": "mitocondrias-energia",
+   "titulo": {
+    "pt": "Mitocôndrias e Energia",
+    "en": "Mitochondria and Energy"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/mitocondrias-energia.pdf",
+   "descricao": {
+    "pt": "Sem doença metabólica mitocondrial (ACADM, CPT1A e ADN mitocondrial sem as mutações clássicas). Biogénese com o melhor genótipo (PGC-1α Gly482Gly, o que mais responde ao treino aeróbio) e defesa forte (SOD2, FOXO3); pontos ligeiros em SIRT3, UCP1, MCT1, PPARA e CPT2 (1 cópia cada).",
+    "en": "No mitochondrial metabolic disease (ACADM, CPT1A and mitochondrial DNA without the classic mutations). Biogenesis with the best genotype (PGC-1α Gly482Gly, the one that responds most to aerobic training) and strong defence (SOD2, FOXO3); mild points in SIRT3, UCP1, MCT1, PPARA and CPT2 (1 copy each)."
+   },
+   "paginas": 17,
+   "tamanho_kb": 60,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   },
+   "ficheiro_en": "reports/mitocondrias-energia_en.pdf",
+   "paginas_en": 17,
+   "tamanho_kb_en": 58
+  },
+  {
+   "id": "cartao-farmacogenetico",
+   "titulo": {
+    "pt": "Cartão Farmacogenético",
+    "en": "Pharmacogenetic Card"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/cartao-farmacogenetico.pdf",
+   "descricao": {
+    "pt": "Cartão de 2 páginas para mostrar ao médico, farmacêutico ou anestesista: CYP2C9 *1/*3, VKORC1 T/T, NAT2 lento, CYP3A5 expressor, UGT1A1 *28, CYP2D6 normal provável e HLA-B*58:01 a tipar, com o que evitar ou ajustar (AINE, anticoagulantes, fenitoína, isoniazida…). Confirmar com um teste farmacogenético clínico.",
+    "en": "Two-page card to show the doctor, pharmacist or anaesthetist: CYP2C9 *1/*3, VKORC1 T/T, slow NAT2, CYP3A5 expressor, UGT1A1 *28, probable normal CYP2D6 and HLA-B*58:01 to be typed, with what to avoid or adjust (NSAIDs, anticoagulants, phenytoin, isoniazid…). Confirm with a clinical pharmacogenetic test."
+   },
+   "paginas": 2,
+   "tamanho_kb": 29,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   },
+   "ficheiro_en": "reports/cartao-farmacogenetico_en.pdf",
+   "paginas_en": 2,
+   "tamanho_kb_en": 26
+  },
+  {
+   "id": "resumo-clinico-medico",
+   "titulo": {
+    "pt": "Resumo Clínico para o Médico",
+    "en": "Clinical Summary for the Doctor"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/resumo-clinico-medico.pdf",
+   "descricao": {
+    "pt": "Resumo para levar à consulta: o único achado de tipo patogénico plausível (SERPINA1 Pi*MZ, a confirmar), fígado, cardiovascular (9p21, CETP), scores altos a vigiar (glaucoma, enfisema, colorretal, bexiga…), farmacogenética acionável e a lista exata de análises, exames, vacinas e rastreios a discutir.",
+    "en": "Summary to take to the appointment: the only plausible pathogenic-type finding (SERPINA1 Pi*MZ, to be confirmed), liver, cardiovascular (9p21, CETP), high scores to watch (glaucoma, emphysema, colorectal, bladder…), actionable pharmacogenetics and the exact list of tests, exams, vaccines and screenings to discuss."
+   },
+   "paginas": 11,
+   "tamanho_kb": 44,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   },
+   "ficheiro_en": "reports/resumo-clinico-medico_en.pdf",
+   "paginas_en": 11,
+   "tamanho_kb_en": 43
   }
  ]
 }

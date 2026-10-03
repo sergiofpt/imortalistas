@@ -10,6 +10,8 @@ Uso (a partir da raiz do repositório):
       --titulo-pt "Título" --titulo-en "Title" [--descricao-pt "..." --descricao-en "..."] [--paginas 12]
       [--lingua-pt português --lingua-en Portuguese] [--nome nome-no-site.pdf]
       (verifica a privacidade do PDF com pdftotext, copia-o para reports/ e junta a entrada em data/reports.json)
+  python3 ferramentas/adicionar_colheita.py relatorio-en --pdf report_EN.pdf --id meu-relatorio [--paginas 12]
+      (versão inglesa: verifica, copia para reports/<nome>_en.pdf e grava ficheiro_en/paginas_en/tamanho_kb_en)
 
 É idempotente: voltar a correr com a mesma data substitui os resultados dessa data.
 Não grava o nome do laboratório (a página mostra só datas).
@@ -31,11 +33,34 @@ D_REPORTS = os.path.join(RAIZ, 'reports')
 # (os termos são montados por partes para que o próprio ficheiro não os contenha literalmente)
 _T = ['ger' + 'mano', 'sou' + 'sa', 'cu' + 'f', 'coim' + 'bra', 'pe' + 'so', 'i' + 'mc', 'b' + 'mi', 'f' + 'mi', 'l' + 'mi', '19' + '99', 'lis' + 'boa', 'lis' + 'bon', 'chen' + 'nai']
 PROIBIDO = re.compile('|'.join(r'\b%s\b' % t for t in _T) + '|' + '|'.join([
-    'we' + r'ight(?!:)', 'massa ' + 'corporal', 'frei' + 'tas', r'\d\s?' + r'kg\b', 'kg' + '/m', 'har' + 'ris',
+    r'(?<![a-z])' + 'we' + r'ight(?!:|ed\b|ing\b| loss)', 'massa ' + 'corporal', 'frei' + 'tas', r'\d\s?' + r'kg\b', 'kg' + '/m', 'har' + 'ris',
     # nomes de laboratórios/fornecedores: a página mostra só datas
     'ai' + 'wo', 'thyro' + 'care', 'lipo' + 'mic', 'food' + 'print', 'self' + 'decode', 'omics' + 'edge']), re.I)
 # nos PDFs também não pode aparecer o país nem a ascendência regional (texto extraído com pdftotext)
 PDF_EXTRA = re.compile(r'\bportugal\b|ib[ée]ric|s[ée]rgio(?!\s+f\b)', re.I)
+# nos PDFs (PT e EN) também não pode aparecer ascendência/população, nacionalidade de coortes nem dados pessoais (nascimento, idade, família;
+# o ano, a cidade e o apelido já estão em PROIBIDO);
+# antes da procura retiram-se as expressões permitidas de PDF_PERMITIDO (nomes de plantas, dietas, doenças, bases de dados, sociedades)
+PDF_PERMITIDO = re.compile('|'.join([
+    r'dieta[s]? mediterr[âa]nic[ao]s?|padr[ãa]o mediterr[âa]nico|ensaio mediterr[âa]nico|febre mediterr[âa]nica familiar|mediterranean[- ](?:diet|style|pattern|eating)\w*|(?:familial )?mediterranean fever',
+    r'medicina tradicional chinesa|traditional chinese medicine|couve-chinesa|chinese (?:cabbage|kale|angelic\w*|mantle|pestiler)|angélica chinesa|escutelária chinesa|pilriteiro chinês|chinesas?/kampo|chinese/kampo',
+    r'ginseng (?:vermelho )?(?:coreano|asiático)|korean red ginseng|asian ginseng|(?:plantas )?das américas e de áfrica|americas and africas?|pygeum africano|manga-africana|african mango|batata-africana',
+    r'multi-?(?:[ée]tnic|ethnic)\w*', r'consenso EAS', r'UK Biobank|FinnGen|GWAS Catalog|PGS Catalog|gnomAD',
+]), re.I)
+PDF_POP = re.compile('|'.join([
+    r'\beurop(?:eu|eia|eus|eias|e|ean|eans)\b', r'\bafrican[oa]s?\b|\bafricans?\b|\b[áa]frica\b', r'\basi[áa]tic[oa]s?\b|\b[áa]sia\b|\basians?\b', r'ashkenaz|asquenaz',
+    r'\bjud(?:eu|eus|ia|ias|aic[oa]s?)\b|\bjewish\b', r'\bn[óo]rdic[oa]s?\b', r'\bfinland[eê]s\w*|\bfinlandesa|\bfinn(?:ish|s)\b', r'\bjapon[eê]s\w*|\bjaponesa|\bjapanese\b',
+    r'\bchines[ae]s?\b|\bchin[eê]s\b|\bchinese\b', r'\bcorean[oa]s?\b|\bkoreans?\b', r'\bitalian[oa]s\b|\bitalians\b', r'\bdinamarqu[eê]s\w*|\bdinamarquesa|\bdan(?:ish|es)\b',
+    r'\bbrit[âa]nic[oa]s?\b|\bbritish\b', r'\bisland[eê]s\w*|\bicelandic\b', r'\bsardos\b|sardenh|\bsardinian', r'\bhisp[âa]nic\w*|\bhispanics?\b', r'latino-?american\w*|latin american',
+    r'afro-?american\w*', r'\bcaucasian\w*', r'\bascend[eê]ncia|\bancestralidade|\bancestr(?:y|al|ies)\b', r'\betnia\b|\b[eé]tnic[oa]s?\b|\bethnic\w*', r'\bmediterr[âa]ne\w*|\bmediterranean\b',
+    r'1000\s?genomes|\b1000G\b|\b1K(?:G)\b', r'(?-i:\b(?:EUR|CEU|NFE|AFR)\b)', r'\bportugu[eê]s\w*|\bportuguesa|\bportuguese\b',
+    r'reino unido|united kingdom|estados unidos|united states|áfrica do sul|south africa',
+]), re.I)
+PDF_PESSOAL = re.compile('|'.join([
+    r'\b05-06|06-05-|06/05/', r'\bnascid[oa]\b|\bnasceu\b|\bborn\b(?! (?:from|in the))', r'\b27\s*(?:anos|years?\b|-year)|\baged?\s+27\b',
+    r'\bgrand(?:father|mother|parents?)\b|\bav[ôó]s?\b', r'\b(?:his|my|sérgio\'s|o seu|a sua) (?:father|mother|brother|sister|uncle|aunt|cousin|pai|mãe|irmão|irmã|tio|tia|primo|prima)\b',
+    r'https?://|www\.|\.(?:com|org|gov|net)\b|/home/|/workspace|(?<![a-z])file:|fontes/|dados/|scripts/|\b[a-z0-9_]+\.(?:py|tsv|csv|vcf|json)\b|ficheiro privado|private source file',
+]), re.I)
 # painéis de intolerância/sensibilidade alimentar (IgG/IgE específicas para alimentos): lista 'intolerancias'
 INTOL = re.compile(r'aliment|intoler|food', re.I)
 def e_intolerancia(nome, cat, lab):
@@ -157,9 +182,15 @@ def privacidade_pdf(caminho):
     import shutil, subprocess
     if not shutil.which('pdftotext'): return None
     t = subprocess.run(['pdftotext', '-q', caminho, '-'], capture_output=True, text=True).stdout
-    return [m.group(0) for m in PROIBIDO.finditer(t)] + [m.group(0) for m in PDF_EXTRA.finditer(t)]
+    t2 = PDF_PERMITIDO.sub(' ', re.sub(r'\s+', ' ', t))
+    achados = [m.group(0) for rx in (PROIBIDO, PDF_EXTRA, PDF_POP, PDF_PESSOAL) for m in rx.finditer(t2)]
+    if shutil.which('pdfinfo'):
+        info = subprocess.run(['pdfinfo', caminho], capture_output=True, text=True).stdout
+        achados += [f'metadado {k}' for k in ('Title', 'Author', 'Subject', 'Keywords') if re.search(rf'^{k}:\s*\S', info, re.M)]
+    return achados
 
 RE_FICH = re.compile(r'reports/[A-Za-z0-9._-]+\.pdf')
+RE_FICH_EN = re.compile(r'reports/[A-Za-z0-9._-]+_en\.pdf')
 def verificar_reports_json(F):
     """data/reports.json: relatorios[{id, titulo{pt,en}, data AAAA-MM-DD, ficheiro reports/<nome>.pdf}] + PDF existente e sem termos proibidos."""
     ok = True; d = ler(F); nome = os.path.basename(F); ids = set()
@@ -183,11 +214,22 @@ def verificar_reports_json(F):
         achados = privacidade_pdf(cam)
         if achados is None: print(f'AVISO {nome}: sem pdftotext, não verifiquei a privacidade de {fich}')
         elif achados: err(f'{rid}: {fich} tem termos proibidos: {sorted(set(achados))}')
+        # versão inglesa opcional (ficheiro_en = reports/<nome>_en.pdf; a página usa-a no modo EN)
+        fen = r.get('ficheiro_en')
+        if fen is None: continue
+        if not RE_FICH_EN.fullmatch(fen or '') or '..' in fen: err(f'{rid}: ficheiro_en {fen!r} (tem de ser reports/<nome>_en.pdf)'); continue
+        cam = os.path.join(RAIZ, fen)
+        if not os.path.exists(cam): err(f'{rid}: falta o ficheiro {fen}'); continue
+        if open(cam, 'rb').read(5) != b'%PDF-': err(f'{rid}: {fen} não é um PDF')
+        for c in ('paginas_en', 'tamanho_kb_en'):
+            if c in r and not (isinstance(r[c], int) and r[c] > 0): err(f'{rid}: {c} tem de ser um inteiro positivo')
+        achados = privacidade_pdf(cam)
+        if achados: err(f'{rid}: {fen} tem termos proibidos: {sorted(set(achados))}')
     if os.path.isdir(D_REPORTS):
-        usados = {r.get('ficheiro') for r in d['relatorios']}
+        usados = {r.get('ficheiro') for r in d['relatorios']} | {r.get('ficheiro_en') for r in d['relatorios'] if r.get('ficheiro_en')}
         for f in sorted(os.listdir(D_REPORTS)):
             if 'reports/' + f not in usados: print(f'AVISO {nome}: reports/{f} não está em reports.json (não aparece na página)')
-    print(f'{nome}: {len(d["relatorios"])} relatórios')
+    print(f'{nome}: {len(d["relatorios"])} relatórios, {sum(1 for r in d["relatorios"] if r.get("ficheiro_en"))} com versão inglesa')
     return ok
 
 def cmd_relatorio(a):
@@ -212,6 +254,27 @@ def cmd_relatorio(a):
     if a.lingua_pt and a.lingua_en: r['lingua'] = {'pt': a.lingua_pt, 'en': a.lingua_en}
     d['relatorios'].append(r); d['atualizado_em'] = a.hoje; gravar(F_REPORTS, d)
     print(f'relatório {a.id!r} acrescentado: reports/{nomef} ({len(d["relatorios"])} relatórios); corra "verificar" antes de publicar')
+
+def cmd_relatorio_en(a):
+    """Junta a versão inglesa (PDF) a um relatório já existente: verifica a privacidade, copia para reports/<nome>_en.pdf
+    e grava ficheiro_en, paginas_en e tamanho_kb_en na entrada (a página mostra-a no modo EN)."""
+    import shutil, subprocess
+    if not os.path.exists(a.pdf): sys.exit(f'Não encontro {a.pdf}')
+    achados = privacidade_pdf(a.pdf)
+    if achados is None: sys.exit('É preciso o pdftotext (poppler-utils) para verificar a privacidade do PDF')
+    if achados: sys.exit(f'PDF com termos proibidos {sorted(set(achados))}: gere uma versão limpa primeiro')
+    d = ler(F_REPORTS); r = next((x for x in d['relatorios'] if x.get('id') == a.id), None)
+    if r is None: sys.exit(f'Não existe nenhum relatório com id {a.id!r}')
+    nomef = os.path.basename(r['ficheiro'])[:-4] + '_en.pdf'
+    shutil.copyfile(a.pdf, os.path.join(D_REPORTS, nomef))
+    pag = a.paginas
+    if not pag and shutil.which('pdfinfo'):
+        m = re.search(r'^Pages:\s+(\d+)', subprocess.run(['pdfinfo', a.pdf], capture_output=True, text=True).stdout, re.M); pag = int(m.group(1)) if m else None
+    r['ficheiro_en'] = 'reports/' + nomef
+    if pag: r['paginas_en'] = pag
+    r['tamanho_kb_en'] = round(os.path.getsize(a.pdf) / 1024)
+    d['atualizado_em'] = a.hoje; gravar(F_REPORTS, d)
+    print(f'versão inglesa de {a.id!r}: reports/{nomef}')
 
 def _bi_check(o, onde, err, obrig=True):
     if o is None or o == '':
@@ -329,4 +392,6 @@ p.add_argument('--pdf', required=True); p.add_argument('--id', required=True); p
 p.add_argument('--titulo-pt', required=True); p.add_argument('--titulo-en', required=True)
 p.add_argument('--descricao-pt'); p.add_argument('--descricao-en'); p.add_argument('--lingua-pt'); p.add_argument('--lingua-en')
 p.add_argument('--paginas', type=int); p.add_argument('--nome', help='nome do ficheiro em reports/ (por omissão, o do PDF)'); p.set_defaults(f=cmd_relatorio)
+p = sp.add_parser('relatorio-en', help='juntar a versão inglesa (PDF) a um relatório já existente')
+p.add_argument('--pdf', required=True); p.add_argument('--id', required=True); p.add_argument('--paginas', type=int); p.set_defaults(f=cmd_relatorio_en)
 a = ap.parse_args(); a.f(a)
