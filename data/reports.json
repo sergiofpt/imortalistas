@@ -2560,6 +2560,50 @@
    "ficheiro_en": "reports/intestino-grosso_en.pdf",
    "paginas_en": 15,
    "tamanho_kb_en": 54
+  },
+  {
+   "id": "forca-hipertrofia-potencia",
+   "titulo": {
+    "pt": "Relatório Genético: Força, Hipertrofia e Potência",
+    "en": "Genetic Report: Strength, Hypertrophy and Power"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/forca-hipertrofia-potencia.pdf",
+   "descricao": {
+    "pt": "Força treinável dentro do normal e motor aeróbio e recuperação favoráveis (PPARGC1A Gly/Gly, AMPD1 normal, TNF −308 G/G), mas massa magra poligénica baixa (apendicular p9,5; corpo inteiro p28) e tendão como elo fraco (COL5A1 rs12722 T/T). 73 SNPs e 61 scores poligénicos: a hipertrofia pede mais volume, consistência e uma progressão de carga mais lenta para os tendões.",
+    "en": "Normally trainable strength and a favourable aerobic engine and recovery (PPARGC1A Gly/Gly, normal AMPD1, TNF −308 G/G), but low polygenic lean mass (appendicular p9.5; whole body p28) and tendon as the weak link (COL5A1 rs12722 T/T). 73 SNPs and 61 polygenic scores: hypertrophy needs more volume, consistency and slower load progression for the tendons."
+   },
+   "paginas": 25,
+   "tamanho_kb": 155,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   },
+   "ficheiro_en": "reports/forca-hipertrofia-potencia_en.pdf",
+   "paginas_en": 25,
+   "tamanho_kb_en": 149
+  },
+  {
+   "id": "referencia-via-forca-hipertrofia-potencia",
+   "titulo": {
+    "pt": "Referência da Via Genética: Força, Hipertrofia e Potência",
+    "en": "Genetic Pathway Reference: Strength, Hypertrophy and Power"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/referencia-via-forca-hipertrofia-potencia.pdf",
+   "descricao": {
+    "pt": "Documento educativo e genérico, sem dados pessoais: biologia da via (carga mecânica, IGF-1, mTORC1, miostatina), mapa das 10 categorias funcionais (do tipo de fibra aos tendões, ao coração, ao cérebro e às hormonas), tabela de pesquisa de SNPs em GRCh38 e evidência controversa e limites.",
+    "en": "Educational, generic document with no personal data: pathway biology (mechanical load, IGF-1, mTORC1, myostatin), map of the 10 functional categories (from fibre type to tendons, heart, brain and hormones), GRCh38 SNP lookup table, and controversial evidence and limits."
+   },
+   "paginas": 25,
+   "tamanho_kb": 307,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   },
+   "ficheiro_en": "reports/referencia-via-forca-hipertrofia-potencia_en.pdf",
+   "paginas_en": 24,
+   "tamanho_kb_en": 306
   }
  ]
 }

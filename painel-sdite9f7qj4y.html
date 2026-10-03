@@ -35,6 +35,9 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 .chip{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:5px 12px;font-weight:600;white-space:nowrap}
 .chip .dot{width:8px;height:8px;border-radius:50%;background:#7ef0b0;box-shadow:0 0 0 3px rgba(126,240,176,.25)}
 .chip .dot.old{background:#ffd27a;box-shadow:0 0 0 3px rgba(255,210,122,.25)}
+.chip .dot.live{animation:sfpulse 2s ease-in-out infinite}
+@keyframes sfpulse{50%{box-shadow:0 0 0 6px rgba(126,240,176,.08)}}
+@media (prefers-reduced-motion:reduce){.chip .dot.live{animation:none}}
 .hero .since{opacity:.8}
 section{margin:0 0 22px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;box-shadow:var(--sh);min-width:0}
@@ -95,12 +98,21 @@ h3{font-size:16px;margin:0;letter-spacing:-.1px}
 .bl li{display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:3px 10px;align-items:center;padding:8px 0}
 .bl .ic{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;font-size:17px;background:var(--card2);border:1px solid var(--line);font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif;line-height:1}
 .bl .ic.lt{font:800 13px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#fff;border:0}
+.bl .ic.fl{overflow:hidden;padding:0}
+.bl .ic.fl img{display:block;width:22px;height:16.5px;border-radius:3px;object-fit:cover;box-shadow:0 0 0 1px rgba(127,127,127,.35)}
 .bl .ic.cc{font:800 11px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--mut)}
 .bl .nm{font-weight:600;font-size:14px;overflow-wrap:anywhere;line-height:1.3}.bl .nm small{display:block;font-weight:500;font-size:11.5px;color:var(--mut)}
 .bl .ct{font-weight:700;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}.bl .ct small{font-weight:600;color:var(--mut);font-size:11.5px;margin-left:6px}
 .bl .track{grid-column:2/4;height:6px;border-radius:999px;background:var(--track);overflow:hidden}
 .bl .track i{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,var(--acc),var(--acc2))}
 .bl.c3 .track i{background:linear-gradient(90deg,var(--acc3),var(--acc))}
+.rk.scroll{max-height:760px;overflow-y:auto;overscroll-behavior:contain;padding-right:8px;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.rk.scroll:focus-visible{outline:2px solid var(--acc);outline-offset:2px;border-radius:8px}
+.bl.scroll{max-height:540px;overflow-y:auto;overscroll-behavior:contain;padding-right:8px;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.bl.scroll:focus-visible{outline:2px solid var(--acc);outline-offset:2px;border-radius:8px}
+.shint{font-size:12px;color:var(--mut);margin:8px 2px 0}
+.fbar{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px}.fbar .hint{margin:0;flex:1 1 280px}
+.fbar .seg button{font-size:13.5px;padding:8px 16px}
 .nd{color:var(--mut);font-size:13.5px;margin:4px 0}
 .empty{text-align:center;padding:44px 20px}.empty .big{font-size:42px;line-height:1;margin-bottom:10px}.empty b{display:block;font-size:18px;margin-bottom:6px}
 .err{color:var(--mut)}
@@ -113,7 +125,7 @@ h3{font-size:16px;margin:0;letter-spacing:-.1px}
 </style>
 </head>
 <body data-title-pt="Sérgio F · Estatísticas" data-title-en="Sérgio F · Statistics">
-<!-- página escondida: fora do menu, sem ligações a partir das outras páginas, sem contagem de visitas; dados em data/estatisticas.json (atualizado de 15 em 15 minutos pelo workflow das estatísticas) -->
+<!-- página escondida: fora do menu, sem ligações a partir das outras páginas, sem contagem de visitas; dados AO VIVO do Worker sf-site (GET /s/<chave>, cache de 60 s; só no site publicado) e, se falhar, data/estatisticas.json (workflow de 15 em 15 minutos, reserva) -->
 <header class="top"><div class="topin">
 <nav class="main" id="nav">
 <a href="index.html#resumo" data-en="Summary">Resumo</a><a href="index.html#sangue" data-en="Tests">Análises</a><a href="index.html#intolerancias" data-en="Food Intolerances">Intolerâncias Alimentares</a><a href="genetica.html" data-en="Bad Genetics">Genética Má</a><a href="genetica-boa.html" data-en="Good Genetics">Genética Boa</a><a href="genetica-reports.html" data-en="Genetics Reports">Genética Reports</a>
@@ -141,7 +153,10 @@ const L=(p,e)=>LANG==='en'?e:p;
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const T=o=>o==null?'':typeof o==='string'?o:(LANG==='en'&&o.en?o.en:(o.pt||''));
 const SRC='data/estatisticas.json',RSRC='data/reports.json';
-let S=null,SERR=null,RD=null,DIAS=30,TODOS=false;
+// ao vivo: o Worker sf-site calcula o mesmo JSON na hora (GoatCounter, token só de leitura; cache de 60 s); só no site publicado (CORS); falha = data/estatisticas.json
+const LIVE_URL=window.SF_LIVE_URL||(location.origin==='https://sergiofpt.github.io'?'https://sf-site.sergiofpt.workers.dev/s/s8ETMTbaarexyQxlCqYsIPflwGC49axbbO3L3r1h':'');
+let LIVE=false;
+let S=null,RAW=null,SERR=null,RD=null,DIAS=30,ORIG='tudo';  // ORIG: tudo | pt | fora (Portugal / outros países, de por_origem)
 const num=n=>Math.max(0,Math.round(Number(n)||0));
 const N=n=>num(n).toLocaleString(LANG==='en'?'en-GB':'pt-PT');
 const arr=x=>Array.isArray(x)?x:[];
@@ -152,11 +167,12 @@ function horaPT(iso){const d=new Date(iso);if(!iso||isNaN(d))return '';const y=d
  const t=new Date(d.getTime()+(d>=ult(2)&&d<ult(9)?3600e3:0)),p=n=>String(n).padStart(2,'0');
  return `${p(t.getUTCDate())}-${p(t.getUTCMonth()+1)}-${t.getUTCFullYear()} ${p(t.getUTCHours())}:${p(t.getUTCMinutes())}`}
 const fdia=d=>String(d).slice(0,10).split('-').reverse().join('-');
-// bandeira: código ISO de 2 letras → emoji (letras regionais); desconhecido → 🌐. No Windows (sem emojis de bandeira) mostra o código.
-const SEMFLAG=/Windows/.test(navigator.userAgent);
+// bandeira: imagem SVG local assets/flags/<cc>.svg (flag-icons, MIT; o Windows não desenha emojis de bandeira); código sem imagem → as 2 letras;
+// país desconhecido (vazio, "Unknown", XX/ZZ) → globo (assets/flags/desconhecido.svg) e "País desconhecido"
+const FLAGS=new Set('ad ae af ag ai al am ao aq ar as at au aw ax az ba bb bd be bf bg bh bi bj bl bm bn bo bq br bs bt bv bw by bz ca cc cd cf cg ch ci ck cl cm cn co cp cr cu cv cw cx cy cz de dg dj dk dm do dz ec ee eg eh er es et eu fi fj fk fm fo fr ga gb gd ge gf gg gh gi gl gm gn gp gq gr gs gt gu gw gy hk hm hn hr ht hu ic id ie il im in io iq ir is it je jm jo jp ke kg kh ki km kn kp kr kw ky kz la lb lc li lk lr ls lt lu lv ly ma mc md me mf mg mh mk ml mm mn mo mp mq mr ms mt mu mv mw mx my mz na nc ne nf ng ni nl no np nr nu nz om pa pc pe pf pg ph pk pl pm pn pr ps pt pw py qa re ro rs ru rw sa sb sc sd se sg sh si sj sk sl sm sn so sr ss st sv sx sy sz tc td tf tg th tj tk tl tm tn to tr tt tv tw tz ua ug um un us uy uz va vc ve vg vi vn vu wf ws xk ye yt za zm zw'.split(' '));
 const iso2=id=>{const c=String(id||'').toUpperCase().slice(0,2);return /^[A-Z]{2}$/.test(c)&&!['XX','ZZ','EU','UN'].includes(c)?c:''};
-const flag=id=>{const c=iso2(id);return c?String.fromCodePoint(...[...c].map(ch=>0x1F1E6+ch.charCodeAt(0)-65)):'🌐'};
-let DN=null;function pais(id,nome){try{if(!DN||DN.l!==LANG){DN=new Intl.DisplayNames([LANG==='en'?'en':'pt-PT'],{type:'region'});DN.l=LANG}const c=iso2(id);if(c){const n=DN.of(c);if(n&&n!==c)return n}}catch(e){}return nm(nome||id||'(desconhecido)')}
+const flag=id=>{const c=iso2(id),f=c.toLowerCase();return !c?{ic:'<img src="assets/flags/desconhecido.svg" alt="" width="22" height="16" loading="lazy" decoding="async">',cls:'fl'}:FLAGS.has(f)?{ic:`<img src="assets/flags/${f}.svg" alt="" width="22" height="16" loading="lazy" decoding="async">`,cls:'fl'}:{ic:c,cls:'cc'}};
+let DN=null;function pais(id,nome){if(!iso2(id))return L('País desconhecido','Unknown country');try{if(!DN||DN.l!==LANG){DN=new Intl.DisplayNames([LANG==='en'?'en':'pt-PT'],{type:'region'});DN.l=LANG}const c=iso2(id);if(c){const n=DN.of(c);if(n&&n!==c)return n}}catch(e){}return nm(nome||id||'(desconhecido)')}
 const nm=n=>{n=String(n||'').trim();return !n||n==='(desconhecido)'||n==='(unknown)'||/^unknown$/i.test(n)?L('(desconhecido)','(unknown)'):n==='(oculto)'?L('(oculto)','(hidden)'):n};
 const TAM={phone:['📱','Telemóveis','Phones'],largephone:['📱','Telemóveis grandes / tablets pequenos','Large phones / small tablets'],tablet:['📲','Tablets e portáteis pequenos','Tablets and small laptops'],desktop:['💻','Computadores','Computers'],desktophd:['🖥️','Computadores (ecrã grande)','Computers (large screen)'],unknown:['❔','(desconhecido)','(unknown)']};
 // aparelhos (eventos do Worker): ícone e tipo; nos iPhone/iPad o modelo é estimado pelo ecrã (o browser não diz o modelo)
@@ -170,7 +186,8 @@ function pagNome(p){const m=/^\/imortalistas\/(.*)$/.exec(String(p||''));const k
 // lista com ícone + nome + número + % + barra
 function lista(items,o){const tot=items.reduce((a,x)=>a+num(x.v),0),mx=Math.max(1,...items.map(x=>num(x.v)));
  if(!items.length)return `<p class="nd">${L('Sem dados.','No data.')}</p>`;
- return `<ul class="bl${o&&o.c3?' c3':''}">`+items.map(x=>`<li><span class="ic${x.cls?' '+x.cls:''}"${x.bg?` style="background:${x.bg}"`:''} aria-hidden="true">${x.ic}</span><span class="nm">${x.n}${x.sub?`<small>${x.sub}</small>`:''}</span><span class="ct">${N(x.v)}<small>${pct(num(x.v),tot)}</small></span><span class="track"><i style="width:${(100*num(x.v)/mx).toFixed(1)}%"></i></span></li>`).join('')+`</ul>`}
+ const sc=items.length>12;  // listas compridas: todas as linhas, com scroll dentro do cartão
+ return `<ul class="bl${o&&o.c3?' c3':''}${sc?' scroll':''}"${sc?' tabindex="0"':''}>`+items.map(x=>`<li><span class="ic${x.cls?' '+x.cls:''}"${x.bg?` style="background:${x.bg}"`:''} aria-hidden="true">${x.ic}</span><span class="nm">${x.n}${x.sub?`<small>${x.sub}</small>`:''}</span><span class="ct">${N(x.v)}<small>${pct(num(x.v),tot)}</small></span><span class="track"><i style="width:${(100*num(x.v)/mx).toFixed(1)}%"></i></span></li>`).join('')+`</ul>`+(sc?`<p class="shint">${L(`Todos (${N(items.length)}); percorre a lista para ver o resto.`,`All ${N(items.length)}; scroll the list to see the rest.`)}</p>`:'')}
 const card=(t,inner,extra)=>`<div class="card"><div class="chead"><h3>${t}</h3>${extra||''}</div>${inner}</div>`;
 function grafico(){const all=arr(S.dias).filter(x=>x&&x.dia),ds=all.slice(-DIAS);if(!ds.length)return `<p class="nd">${L('Sem dados.','No data.')}</p>`;
  const dupla=ds.some(x=>'aberturas' in x);
@@ -186,12 +203,21 @@ function grafico(){const all=arr(S.dias).filter(x=>x&&x.dia),ds=all.slice(-DIAS)
  return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${L('Visitas por dia','Visits per day')}">${g}${b}${lx}</svg>`}
 function render(){const box=document.getElementById('sBody'),meta=document.getElementById('sMeta'),desde=document.getElementById('sDesde');
  if(SERR){meta.textContent=L('Sem dados','No data');desde.textContent='';box.innerHTML=`<div class="card err">${L('Não foi possível carregar','Could not load')} ${esc(SRC)} (${esc(SERR.message)}).</div>`;return}
- if(!S)return;const tt=S.total||{},rel=arr(S.relatorios),dias=arr(S.dias).filter(x=>x&&x.dia);
+ if(!S)return;
+ // filtro de origem: Tudo | Portugal | Outros países (os cartões usam o bloco por_origem do JSON; browsers/sistemas/ecrã/origens só existem no geral)
+ const PO=RAW&&RAW.por_origem&&typeof RAW.por_origem==='object'?RAW.por_origem:null,OD=RAW&&RAW.origem_desde||'2026-10-03T22:00:00Z',FIL=ORIG!=='tudo';
+ if(RAW)S=FIL&&PO&&PO[ORIG]?Object.assign({},RAW,PO[ORIG],{atualizado_em:RAW.atualizado_em,desde:RAW.desde,descarregados_desde:RAW.descarregados_desde}):RAW;
+ const obar=`<section class="fbar"><div class="seg" id="sOrig" role="group" aria-label="${L('Origem das visitas','Visitor origin')}">${[['tudo',L('Tudo','All')],['pt','Portugal'],['fora',L('Outros países','Other countries')]].map(([k,t])=>`<button type="button" data-o="${k}" class="${ORIG===k?'on':''}" aria-pressed="${ORIG===k}">${t}</button>`).join('')}</div>`+
+  (FIL?`<p class="hint" id="sOrigNota">${L('Separação por origem desde','Split by origin since')} ${esc(horaPT(OD))} (PT)${String(RAW&&RAW.desde||'')<String(OD).slice(0,10)||!PO?L('; antes disso as visitas e os PDFs só contam em “Tudo”.','; before that, visits and PDFs only count under “All”.'):''} ${L('Browsers, sistemas, tamanho do ecrã e origens: só em “Tudo”.','Browsers, systems, screen size and referrers: only under “All”.')}</p>`:'')+`</section>`;
+ const ligar=()=>document.querySelectorAll('#sOrig button').forEach(b=>b.addEventListener('click',()=>{if(ORIG===b.dataset.o)return;ORIG=b.dataset.o;render()}));
+ const tt=S.total||{},rel=arr(S.relatorios),dias=arr(S.dias).filter(x=>x&&x.dia);
  const velho=S.atualizado_em&&(Date.now()-new Date(S.atualizado_em).getTime())>3*3600e3;
- meta.innerHTML=S.atualizado_em?`<span class="dot${velho?' old':''}"></span>${L('Atualizado em','Updated on')} ${esc(horaPT(S.atualizado_em))} (PT)`:L('Ainda sem dados','No data yet');
+ meta.innerHTML=S.atualizado_em?(LIVE?`<span class="dot live"></span>${L('Atualizado ao vivo','Live update')} · ${L('consulta','fetched')} ${esc(horaPT(S.atualizado_em))} (PT)`:`<span class="dot${velho?' old':''}"></span>${L('Atualizado em','Updated on')} ${esc(horaPT(S.atualizado_em))} (PT)`):L('Ainda sem dados','No data yet');
+ meta.dataset.fonte=LIVE?'live':'json';
  desde.textContent=S.desde&&S.atualizado_em?`${L('Contagem desde','Counting since')} ${fdia(S.desde)}`:'';
  const temDados=!!S.atualizado_em&&(num(tt.visitas)>0||num(tt.aberturas_pdf)>0||rel.length>0);
- if(!temDados){box.innerHTML=`<div class="card empty"><div class="big" aria-hidden="true">📊</div><b>${L('Ainda não há estatísticas','No statistics yet')}</b><span class="err">${L('Os números aparecem aqui depois das primeiras visitas; a atualização é automática, de 15 em 15 minutos.','The numbers show up here after the first visits; they are updated automatically every 15 minutes.')}</span></div>`;return}
+ if(FIL&&!PO&&S.atualizado_em){box.innerHTML=obar+`<div class="card empty"><div class="big" aria-hidden="true">🌍</div><b>${L('Ainda sem dados por origem','No data by origin yet')}</b><span class="err">${L('A separação Portugal / outros países começa a aparecer com as próximas visitas.','The Portugal / other countries split shows up with the next visits.')}</span></div>`;ligar();return}
+ if(!temDados){box.innerHTML=(S.atualizado_em?obar:'')+`<div class="card empty"><div class="big" aria-hidden="true">📊</div><b>${L('Ainda não há estatísticas','No statistics yet')}</b><span class="err">${L('Os números aparecem aqui depois das primeiras visitas; a atualização é automática, de 15 em 15 minutos.','The numbers show up here after the first visits; they are updated automatically every 15 minutes.')}</span></div>`;ligar();return}
  // hoje / 7 dias: do JSON (versões novas) ou somados de dias[] (o último dia é o dia da atualização, em UTC)
  const soma=(k,n)=>dias.slice(-n).reduce((a,x)=>a+num(x[k]),0),temA=dias.some(x=>'aberturas' in x);
  const vH='visitas_hoje' in tt?num(tt.visitas_hoje):soma('visitas',1),v7='visitas_7d' in tt?num(tt.visitas_7d):soma('visitas',7);
@@ -217,11 +243,11 @@ function render(){const box=document.getElementById('sBody'),meta=document.getEl
   drow('op','👁 '+L('Abertos no browser','Opened in the browser'),GA,GT,`PT ${N(G.ap)} · EN ${N(G.ae)}`)+drow('dl','⬇ '+L('Descarregados','Downloaded'),GD,GT,`PT ${N(G.dp)} · EN ${N(G.de)}`)+`</div></div>`:`<p class="nd">${L('Ainda nenhum PDF aberto.','No PDF opened yet.')}</p>`;
  const nota=`<p class="hint">${L(`Os downloads (botão Descarregar) só se distinguem a partir de ${fdia(DLD)}; antes contavam como abertos.`,`Downloads (Download button) are only told apart from ${fdia(DLD)}; before that they were counted as opened.`)}</p>`;
  const rs=rel.slice().sort((a,b)=>num(b.total)-num(a.total)||tit(a).localeCompare(tit(b))),mxr=Math.max(1,...rs.map(r=>{const v=rv(r);return v.ap+v.ae+v.dp+v.de}));
- const vis=TODOS?rs:rs.slice(0,10);
- const rank=rs.length?`<ol class="rk">`+vis.map((r,i)=>{const v=rv(r),p=v.ap+v.dp,e=v.ae+v.de,t=p+e;return `<li><span class="pos">${i+1}</span><div><div class="t">${esc(tit(r))}</div><div class="f">${esc(fich(r))}</div></div><div class="tot">${N(t)}<small>${L('no total','in total')}</small></div><div class="bar"><span class="track"><i class="pt" style="width:${(100*p/mxr).toFixed(1)}%"></i><i class="en" style="width:${(100*e/mxr).toFixed(1)}%"></i></span><span class="tag pt">PT ${N(p)}<small>${pc(p,t)}</small></span><span class="tag en">EN ${N(e)}<small>${pc(e,t)}</small></span></div><div class="ad"><span class="tag op">👁 ${L('Abertos','Opened')} ${N(v.ap+v.ae)}<small>PT ${N(v.ap)} · EN ${N(v.ae)}</small></span><span class="tag dl">⬇ ${L('Descarregados','Downloaded')} ${N(v.dp+v.de)}<small>PT ${N(v.dp)} · EN ${N(v.de)}</small></span></div></li>`}).join('')+`</ol>`+(rs.length>10?`<button type="button" class="more" id="sTodos">${TODOS?L('Mostrar só os 10 primeiros','Show top 10 only'):L(`Ver todos (${rs.length})`,`Show all (${rs.length})`)}</button>`:''):`<p class="nd">${L('Ainda nenhum PDF aberto.','No PDF opened yet.')}</p>`;
+ const vis=rs;  // todos os relatórios (lista com scroll se for comprida)
+ const rank=rs.length?`<ol class="rk${rs.length>10?' scroll':''}"${rs.length>10?' tabindex="0"':''}>`+vis.map((r,i)=>{const v=rv(r),p=v.ap+v.dp,e=v.ae+v.de,t=p+e;return `<li><span class="pos">${i+1}</span><div><div class="t">${esc(tit(r))}</div><div class="f">${esc(fich(r))}</div></div><div class="tot">${N(t)}<small>${L('no total','in total')}</small></div><div class="bar"><span class="track"><i class="pt" style="width:${(100*p/mxr).toFixed(1)}%"></i><i class="en" style="width:${(100*e/mxr).toFixed(1)}%"></i></span><span class="tag pt">PT ${N(p)}<small>${pc(p,t)}</small></span><span class="tag en">EN ${N(e)}<small>${pc(e,t)}</small></span></div><div class="ad"><span class="tag op">👁 ${L('Abertos','Opened')} ${N(v.ap+v.ae)}<small>PT ${N(v.ap)} · EN ${N(v.ae)}</small></span><span class="tag dl">⬇ ${L('Descarregados','Downloaded')} ${N(v.dp+v.de)}<small>PT ${N(v.dp)} · EN ${N(v.de)}</small></span></div></li>`}).join('')+`</ol>`+(rs.length>10?`<p class="shint">${L(`Todos (${N(rs.length)}); percorre a lista para ver o resto.`,`All ${N(rs.length)}; scroll the list to see the rest.`)}</p>`:''):`<p class="nd">${L('Ainda nenhum PDF aberto.','No PDF opened yet.')}</p>`;
  const seg=`<div class="seg" id="sDias" role="group" aria-label="${L('Período','Period')}">${[7,30,90].map(d=>`<button type="button" data-d="${d}" class="${DIAS===d?'on':''}" aria-pressed="${DIAS===d}">${d} ${L('dias','days')}</button>`).join('')}</div>`;
  const leg=`<div class="legend"><span><i></i>${L('Visitas','Visits')}</span>${temA?`<span><i class="p"></i>${L('PDFs (abertos + descarregados)','PDFs (opened + downloaded)')}</span>`:''}</div>`;
- box.innerHTML=`<section><div class="grid g4">`+
+ box.innerHTML=obar+`<section><div class="grid g4">`+
   kp('vis','👁️',L('Visitas','Visits'),N(tt.visitas),`${L('30 dias','30 days')}: <b>${N(tt.visitas_30d)}</b> · ${L('90 dias','90 days')}: <b>${N(tt.visitas_90d)}</b>`)+
   kp('pdf','📄','PDFs',N(GT||tt.aberturas_pdf),`<b>${N(GA)}</b> ${L('abertos','opened')} · <b>${N(GD)}</b> ${L('descarregados','downloaded')} · <b>${N(rs.length)}</b> ${rs.length===1?L('relatório','report'):L('relatórios','reports')}`)+
   kp('today','☀️',L('Hoje','Today'),N(vH),`${vH===1?L('visita','visit'):L('visitas','visits')}${pdfs(aH)}`)+
@@ -229,18 +255,18 @@ function render(){const box=document.getElementById('sBody'),meta=document.getEl
   `<section><div class="card chart"><div class="chead"><h3>${L('Por dia','Per day')}</h3>${leg}${seg}</div>${grafico()}</div></section>`+
   `<section><div class="grid g2">`+card(L('Português vs inglês','Portuguese vs English'),lng)+card(L('Abertos vs descarregados','Opened vs downloaded'),tip+nota)+`</div></section>`+
   `<section>`+card(L('PDFs mais abertos e descarregados','Most opened and downloaded PDFs'),rank,`<div class="legend"><span><i></i>PT</span><span><i class="p"></i>EN</span></div>`)+`</section>`+
-  `<section>`+card(L('Aparelhos','Devices'),aparelhos()+`<p class="note">${L('Modelos de iPhone/iPad estimados pelo ecrã (≈); Android mostra o modelo quando o browser o indica; nos computadores, sistema e browser.','iPhone/iPad models are estimated from the screen (≈); Android shows the model when the browser reports it; for computers, system and browser.')}${S.aparelhos_desde?` ${L('Contagem desde','Counting since')} ${fdia(S.aparelhos_desde)}.`:''}</p>`)+`</section>`+
+  `<section>`+card(L('Aparelhos','Devices')+(arr(S.aparelhos).length?` <span class="sub">(${N(arr(S.aparelhos).length)} ${L(arr(S.aparelhos).length===1?'distinto':'distintos','distinct')})</span>`:''),aparelhos()+`<p class="note">${L('Modelos de iPhone/iPad estimados pelo ecrã (≈); Android mostra o modelo quando o browser o indica; nos computadores, sistema e browser.','iPhone/iPad models are estimated from the screen (≈); Android shows the model when the browser reports it; for computers, system and browser.')}${S.aparelhos_desde?` ${L('Contagem desde','Counting since')} ${fdia(S.aparelhos_desde)}.`:''}</p>`)+`</section>`+
   `<section><div class="grid g2">`+
-  card(L('Países','Countries'),lista(arr(S.paises).map(p=>{const c=iso2(p.id);return {ic:SEMFLAG&&c?c:flag(p.id),cls:SEMFLAG&&c?'cc':'',n:esc(pais(p.id,p.nome)),v:p.visitas}})))+
+  card(L('Países','Countries'),lista(arr(S.paises).map(p=>{const f=flag(p.id);return {ic:f.ic,cls:f.cls,n:esc(pais(p.id,p.nome)),v:p.visitas}})))+
   card(L('Páginas mais vistas','Most viewed pages'),lista(arr(S.paginas).map(p=>{const n=pagNome(p.path);return {ic:'📄',n:esc(n||p.path),sub:n?esc(p.path):'',v:p.visitas}}),{c3:1}))+
-  `</div></section><section><div class="grid g3">`+
+  `</div></section>`+(FIL?'':`<section><div class="grid g3">`+
   card('Browsers',lista(arr(S.browsers).map(p=>{const n=nm(p.nome),m=BRW.find(x=>x[0].test(n));return m?{ic:m[1],cls:'lt',bg:m[2],n:esc(n),v:p.visitas}:{ic:'🌐',n:esc(n),v:p.visitas}})))+
   card(L('Sistemas','Systems'),lista(arr(S.sistemas).map(p=>{const n=nm(p.nome),m=SIS.find(x=>x[0].test(n));return {ic:m?m[1]:'❔',n:esc(n),v:p.visitas}}),{c3:1}))+
   card(L('Tamanho do ecrã','Screen size'),lista(arr(S.tamanhos).map(p=>{const t=TAM[p.id];return {ic:t?t[0]:'❔',n:esc(t?L(t[1],t[2]):nm(p.nome)),v:p.visitas}})))+
-  `</div></section><section>`+card(L('De onde vêm','Where visitors come from'),lista(arr(S.origens).map(p=>{const n=nm(p.nome),d=n===L('(desconhecido)','(unknown)');return {ic:d?'↩️':'🔗',n:esc(d?L('Direto / desconhecido','Direct / unknown'):n),v:p.visitas}}),{c3:1}))+`</section>`+
-  `<p class="note">${L('Fonte','Source')}: data/estatisticas.json · ${L('contagem anónima, sem cookies; cada visita e cada abertura de PDF conta (são aberturas e visitas totais, não visitantes únicos); países, browsers, sistemas e tamanhos de ecrã somam visitas e aberturas; aparelhos somam só visitas; esta página não é contada.','anonymous count, no cookies; every visit and every PDF open counts (total visits and opens, not unique visitors); countries, browsers, systems and screen sizes add up visits and opens; devices add up visits only; this page is not counted.')}</p>`;
- document.querySelectorAll('#sDias button').forEach(b=>b.addEventListener('click',()=>{DIAS=Number(b.dataset.d);render()}));
- const bt=document.getElementById('sTodos');if(bt)bt.addEventListener('click',()=>{TODOS=!TODOS;render()})}
+  `</div></section><section>`+card(L('De onde vêm','Where visitors come from'),lista(arr(S.origens).map(p=>{const n=nm(p.nome),d=n===L('(desconhecido)','(unknown)');return {ic:d?'↩️':'🔗',n:esc(d?L('Direto / desconhecido','Direct / unknown'):n),v:p.visitas}}),{c3:1}))+`</section>`)+
+  `<p class="note">${L('Fonte','Source')}: ${LIVE?L('ao vivo (Worker sf-site, cache de 60 s)','live (sf-site Worker, 60 s cache)'):'data/estatisticas.json'} · ${L('contagem anónima, sem cookies; cada visita e cada abertura de PDF conta (são aberturas e visitas totais, não visitantes únicos); países, browsers, sistemas e tamanhos de ecrã somam visitas e aberturas; aparelhos somam só visitas; esta página não é contada.','anonymous count, no cookies; every visit and every PDF open counts (total visits and opens, not unique visitors); countries, browsers, systems and screen sizes add up visits and opens; devices add up visits only; this page is not counted.')}</p>`;
+ document.querySelectorAll('#sDias button').forEach(b=>b.addEventListener('click',()=>{DIAS=Number(b.dataset.d);render()}));ligar();
+}
 function applyLang(){const en=LANG==='en';document.documentElement.lang=en?'en':'pt-PT';document.title=en?document.body.dataset.titleEn:document.body.dataset.titlePt;
  document.querySelectorAll('[data-en]').forEach(el=>{if(!el.hasAttribute('data-pt'))el.setAttribute('data-pt',el.textContent);el.textContent=en?el.dataset.en:el.dataset.pt});
  document.querySelectorAll('[data-al-en]').forEach(el=>{if(!el.hasAttribute('data-al-pt'))el.setAttribute('data-al-pt',el.getAttribute('aria-label'));el.setAttribute('aria-label',en?el.dataset.alEn:el.dataset.alPt)});
@@ -249,7 +275,11 @@ document.querySelectorAll('#lang button').forEach(b=>b.addEventListener('click',
 applyLang();
 let ESTR=innerWidth<640;addEventListener('resize',()=>{const e=innerWidth<640;if(e!==ESTR){ESTR=e;render()}});  // gráfico mais alto em ecrãs estreitos
 const get=u=>fetch(u,{cache:'no-cache',credentials:'omit'}).then(r=>{if(!r.ok)throw new Error(u+': HTTP '+r.status);return r.json()});
-get(RSRC).then(d=>{RD=d}).catch(e=>{RD={relatorios:[]}}).then(()=>get(SRC)).then(d=>{if(!d||typeof d!=='object')throw new Error(SRC+': JSON');S=d;render()}).catch(e=>{if(!S){SERR=e;render()}});
+const ok=d=>!!d&&typeof d==='object'&&!Array.isArray(d)&&d.versao===1&&!!d.total&&typeof d.total==='object';
+// ao vivo primeiro (até 20 s); se falhar (sem rede, CORS, 502/503, JSON estranho), data/estatisticas.json
+function getLive(){if(!LIVE_URL)return Promise.reject(new Error('sem ao vivo'));const ac=typeof AbortController!=='undefined'?new AbortController():null;const t=setTimeout(()=>ac&&ac.abort(),20000);
+ return fetch(LIVE_URL,{cache:'no-store',credentials:'omit',mode:'cors',signal:ac?ac.signal:undefined}).then(r=>{if(!r.ok)throw new Error('ao vivo: HTTP '+r.status);return r.json()}).then(d=>{if(!ok(d))throw new Error('ao vivo: JSON');return d}).finally(()=>clearTimeout(t))}
+get(RSRC).then(d=>{RD=d}).catch(e=>{RD={relatorios:[]}}).then(()=>getLive().then(d=>{LIVE=true;return d},()=>{LIVE=false;return get(SRC)})).then(d=>{if(!d||typeof d!=='object')throw new Error(SRC+': JSON');RAW=d;S=d;render()}).catch(e=>{if(!S){SERR=e;render()}});
 
 // ===== tema (escuro/claro): escolha guardada em localStorage 'theme'; sem escolha, escuro (o default, seja qual for o tema do sistema; aplicado no <head> antes do primeiro desenho) =====
 let THEME=null;try{THEME=localStorage.getItem('theme')}catch(e){}

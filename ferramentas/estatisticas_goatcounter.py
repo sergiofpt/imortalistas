@@ -5,6 +5,11 @@ Corre de 15 em 15 minutos no GitHub Actions (.github/workflows/goatcounter-stats
 GOATCOUNTER_TOKEN (variável de ambiente; nunca é escrito em lado nenhum). Só usa a biblioteca padrão do Python.
 
 - API v0: /stats/total, /stats/hits (páginas e eventos), /stats/locations, /stats/browsers, /stats/systems, /stats/sizes, /stats/toprefs.
+- Portugal vs outros países: o Worker manda, de cada hit, uma cópia origem/<pt|fora>/<caminho> (país do Cloudflare; sem IP nem UA). Ficam em
+  "por_origem": {"pt": {...}, "fora": {...}} com total, dias, paginas, relatorios, aparelhos e paises (PT / os outros), e "origem_desde"
+  (03-10-2026 23:00 PT; antes disso as visitas não têm origem e só contam no geral). Os totais gerais não mudam (origem/… é ignorado).
+- Sem cortes: todos os caminhos (hits, paginação com exclude_paths até more=false) e listas completas de países / browsers / sistemas /
+  tamanhos / origens (offset até more=false); páginas e aparelhos ficam todos no JSON, desde 01-10-2026 (sem janela de 366 dias).
 - Sem IPs nem dados pessoais: só contagens agregadas, nomes de páginas, ficheiros de relatórios, países, browsers, sistemas,
   tamanhos de ecrã e nomes de sites de origem (sem caminhos nem parâmetros).
 - Tolerante: conta sem dados = JSON com zeros (a API responde 404 a /stats/* enquanto o site não tem dados: conta como "sem dados"); erro na API ou token em falta = aviso e saída 0, sem tocar no JSON anterior;
@@ -21,6 +26,9 @@ GOATCOUNTER_TOKEN (variável de ambiente; nunca é escrito em lado nenhum). Só 
   (?dl=1) como download/<f>.pdf (desde DL_DESDE; antes, os downloads contavam como aberturas). Por relatório: abertos_pt/en,
   descarregados_pt/en, pt, en e total (pt/en/total = abertos + descarregados); totais pdf_abertos, pdf_descarregados, pdf_pt, pdf_en.
 
+- Ao vivo: o Worker sf-site (cf_worker/src/stats.js, GET /s/<chave>) calcula o MESMO JSON na hora (mesma lógica; testes de paridade); o painel lê
+  primeiro o Worker e este ficheiro/workflow fica como reserva. Qualquer mudança aqui tem de ir também para o stats.js do Worker.
+
 Uso: GOATCOUNTER_TOKEN=... python3 ferramentas/estatisticas_goatcounter.py [--saida data/estatisticas.json] [--hoje AAAA-MM-DD]
 """
 import argparse, datetime as dt, json, os, re, sys, time, urllib.error, urllib.parse, urllib.request
@@ -31,6 +39,8 @@ INICIO = dt.datetime(2026, 10, 1, tzinfo=dt.timezone.utc)  # a contagem começou
 RE_PDF = re.compile(r'^/?(reports/[A-Za-z0-9._-]+\.pdf)$')      # abertura (formato de sempre)
 RE_DL = re.compile(r'^/?download/([A-Za-z0-9._-]+\.pdf)$')      # download (botão Descarregar, ?dl=1 no Worker)
 RE_AP = re.compile(r'^/?aparelho/(iphone|ipad|android|android-tablet|computador|outro)/([a-z0-9-]{1,60})$')  # evento do aparelho (Worker)
+RE_OR = re.compile(r'^/?origem/(pt|fora)/(.{1,1000})$')  # cópia do Worker com o grupo de origem (Portugal / outros países)
+ORIGEM_DESDE = '2026-10-03T22:00:00Z'  # 03-10-2026 23:00 (PT): a partir daqui as visitas têm origem
 DL_DESDE = '2026-10-03'  # a partir deste dia os downloads contam à parte; antes contavam como aberturas
 VAZIO = {'versao': 1, 'atualizado_em': None, 'desde': None, 'descarregados_desde': DL_DESDE,
          'total': {'visitas': 0, 'visitas_30d': 0, 'visitas_90d': 0, 'aberturas_pdf': 0,
@@ -82,15 +92,21 @@ def inteiro(x):
     except (TypeError, ValueError): return 0
 
 def lista_stats(token, pagina, ini, fim, origem=False, incluir=None):
-    d = pedido(f'/stats/{pagina}', token, start=ini, end=fim, limit=20, include_paths=','.join(map(str, incluir)) if incluir else None)
+    """Lista completa (sem corte): 100 de cada vez, com offset, até a API dizer more=false."""
+    todos, off = [], 0
+    while True:
+        d = pedido(f'/stats/{pagina}', token, start=ini, end=fim, limit=100, offset=off or None, include_paths=','.join(map(str, incluir)) if incluir else None)
+        st = d.get('stats') or []
+        todos += st; off += len(st)
+        if not d.get('more') or not st: break
     return [{'id': nome_limpo(s.get('id'))[:40], 'nome': nome_limpo(s.get('name') or ('' if origem else s.get('id')), origem), 'visitas': inteiro(s.get('count'))}
-            for s in (d.get('stats') or []) if inteiro(s.get('count')) > 0]
+            for s in todos if inteiro(s.get('count')) > 0]
 
 def periodo(agora=None):
-    """(início, fins): início = 01-10-2026 ou há 366 dias, à hora; fins = [hora atual arredondada para baixo + 1 h (nunca mais
+    """(início, fins): início = 01-10-2026 (início da contagem: tudo o que já passou, sem janela); fins = [hora atual arredondada para baixo + 1 h (nunca mais
     de 1 h no futuro), hora atual arredondada para baixo] — o segundo só é usado se a API rejeitar o primeiro."""
     base = (agora or dt.datetime.now(dt.timezone.utc)).replace(minute=0, second=0, microsecond=0)
-    ini_dt = max(INICIO, base - dt.timedelta(days=366))
+    ini_dt = INICIO
     f = lambda x: x.strftime('%Y-%m-%dT%H:%M:%SZ')
     return ini_dt, f(ini_dt), [f(base + dt.timedelta(hours=1)), f(base)]
 
@@ -110,16 +126,18 @@ def _vazio(hoje, ini_dt):
     return out
 
 def _recolher(token, hoje, ini_dt, ini, fim):
-    # todos os caminhos (páginas e eventos), 100 de cada vez
-    hits, vistos = [], []
-    for k in range(20):
+    # todos os caminhos (páginas e eventos), 100 de cada vez, até more=false (sem limite de páginas)
+    hits, vistos, k = [], [], -1
+    while True:
+        k += 1
         try: d = pedido('/stats/hits', token, start=ini, end=fim, limit=100, exclude_paths=','.join(map(str, vistos)) or None)
         except SemDados:
             if k == 0: raise  # site sem dados
             break  # página seguinte sem dados: fica o que já veio
-        novos = d.get('hits') or []
-        hits += novos; vistos += [h.get('path_id') for h in novos if h.get('path_id') is not None]
-        if not d.get('more') or not novos: break
+        ja = set(vistos); novos = [h for h in (d.get('hits') or []) if h.get('path_id') is None or h.get('path_id') not in ja]
+        ids = [h.get('path_id') for h in novos if h.get('path_id') is not None]
+        hits += novos; vistos += ids
+        if not d.get('more') or not ids: break  # fim, ou sem caminhos novos (evita ciclo infinito)
     try: tot = pedido('/stats/total', token, start=ini, end=fim)
     except SemDados: tot = {}
     # relatórios: ficheiro → id (data/reports.json do próprio repositório)
@@ -129,12 +147,37 @@ def _recolher(token, hoje, ini_dt, ini, fim):
             if r.get('ficheiro'): fich[r['ficheiro']] = (r.get('id'), 'pt')
             if r.get('ficheiro_en'): fich[r['ficheiro_en']] = (r.get('id'), 'en')
     except (OSError, ValueError): pass
-    paginas, rel, por_dia, pdf_dia, aps, incluir, n_ap, ap_dias = {}, {}, {}, {}, {}, [], 0, set()
+    extra = any(RE_AP.match(str(h.get('path') or '')) or RE_OR.match(str(h.get('path') or '')) for h in hits if h.get('event'))
+    incluir = [h.get('path_id') for h in hits if h.get('path_id') is not None and not (h.get('event') and (RE_AP.match(str(h.get('path') or '')) or RE_OR.match(str(h.get('path') or ''))))]
+    out = json.loads(json.dumps(VAZIO))
+    out['desde'] = ini_dt.date().isoformat()
+    out.update(agregar([h for h in hits if not (h.get('event') and RE_OR.match(str(h.get('path') or '')))], fich, hoje))
+    # Portugal vs outros países: as cópias origem/<pt|fora>/<caminho> do Worker, com o caminho original
+    grupos, or_dias = {'pt': [], 'fora': []}, set()
+    for h in hits:
+        mo = RE_OR.match(str(h.get('path') or '')) if h.get('event') else None
+        if not mo: continue
+        resto = mo.group(2); pag = resto.startswith('imortalistas/')
+        grupos[mo.group(1)].append(dict(h, path=('/' + resto) if pag else resto, event=not pag))
+        for x in h.get('stats') or []:
+            dia = str(x.get('day') or '')[:10]
+            if re.match(r'^\d{4}-\d{2}-\d{2}$', dia) and inteiro(x.get('daily')) > 0: or_dias.add(dia)
+    if grupos['pt'] or grupos['fora']:
+        out['por_origem'] = {g: agregar(grupos[g], fich, hoje) for g in ('pt', 'fora')}
+        out['origem_desde'] = ORIGEM_DESDE
+    if inteiro(tot.get('total')) and not out['total']['visitas'] and not out['total']['aberturas_pdf']:
+        out['total']['visitas'] = max(0, inteiro(tot.get('total')) - inteiro(tot.get('total_events')))
+    out['_incluir'] = incluir if extra and incluir else None  # só se houver eventos de aparelho/origem (sem IP nem UA)
+    return out, ini, fim
+
+def agregar(hits, fich, hoje):
+    """Páginas, relatórios (abertos/descarregados, PT/EN), aparelhos, série diária e totais de uma lista de hits."""
+    paginas, rel, por_dia, pdf_dia, aps, ap_dias = {}, {}, {}, {}, {}, set()
     for h in hits:
         path, n = str(h.get('path') or ''), inteiro(h.get('count'))
         ma = RE_AP.match(path) if h.get('event') else None
         if ma:
-            n_ap += 1; k = ma.group(1) + '/' + ma.group(2)
+            k = ma.group(1) + '/' + ma.group(2)
             nome = nome_limpo(h.get('title') or ma.group(2))[:60]
             a = aps.setdefault(k, {'id': k, 'tipo': ma.group(1), 'nome': nome, 'estimativa': ma.group(1) in ('iphone', 'ipad') and nome not in ('iPhone', 'iPad'), 'visitas': 0})
             a['visitas'] += n
@@ -142,7 +185,6 @@ def _recolher(token, hoje, ini_dt, ini, fim):
                 dia = str(s.get('day') or '')[:10]
                 if re.match(r'^\d{4}-\d{2}-\d{2}$', dia) and inteiro(s.get('daily')) > 0: ap_dias.add(dia)
             continue
-        if h.get('path_id') is not None: incluir.append(h.get('path_id'))
         if h.get('event'):
             m, tipo = RE_PDF.match(path), 'abertos'
             if m: f = m.group(1)
@@ -166,14 +208,11 @@ def _recolher(token, hoje, ini_dt, ini, fim):
                 if re.match(r'^\d{4}-\d{2}-\d{2}$', dia): por_dia[dia] = por_dia.get(dia, 0) + inteiro(s.get('daily'))
     dias = [(hoje - dt.timedelta(days=i)).isoformat() for i in range(89, -1, -1)]
     serie = [{'dia': d, 'visitas': por_dia.get(d, 0), 'aberturas': pdf_dia.get(d, 0)} for d in dias if d >= INICIO.date().isoformat()]
-    out = json.loads(json.dumps(VAZIO))
-    out['desde'] = ini_dt.date().isoformat()
-    out['dias'] = serie
-    out['paginas'] = sorted(({'path': p, 'visitas': n} for p, n in paginas.items() if n > 0), key=lambda x: (-x['visitas'], x['path']))[:50]
-    out['aparelhos'] = sorted((v for v in aps.values() if v['visitas'] > 0), key=lambda x: (-x['visitas'], x['nome']))[:50]
-    if out['aparelhos'] and ap_dias: out['aparelhos_desde'] = min(ap_dias)  # 1.º dia com eventos de aparelho
-    out['_incluir'] = incluir if n_ap and incluir else None  # só se houver eventos de aparelho
+    out = {'dias': serie}
+    out['paginas'] = sorted(({'path': p, 'visitas': n} for p, n in paginas.items() if n > 0), key=lambda x: (-x['visitas'], x['path']))  # todas
     out['relatorios'] = sorted((v for v in rel.values() if v['total'] > 0), key=lambda x: (-x['total'], x['id'] or x['ficheiro']))
+    out['aparelhos'] = sorted((v for v in aps.values() if v['visitas'] > 0), key=lambda x: (-x['visitas'], x['nome']))  # todos
+    if out['aparelhos'] and ap_dias: out['aparelhos_desde'] = min(ap_dias)  # 1.º dia com eventos de aparelho
     out['total'] = {'visitas': sum(paginas.values()), 'visitas_30d': sum(x['visitas'] for x in serie[-30:]),
                     'visitas_90d': sum(x['visitas'] for x in serie), 'aberturas_pdf': sum(v['total'] for v in rel.values()),
                     'visitas_hoje': sum(x['visitas'] for x in serie[-1:]), 'visitas_7d': sum(x['visitas'] for x in serie[-7:]),
@@ -181,9 +220,7 @@ def _recolher(token, hoje, ini_dt, ini, fim):
                     'aberturas_30d': sum(x['aberturas'] for x in serie[-30:]),
                     'pdf_abertos': sum(v['abertos_pt'] + v['abertos_en'] for v in rel.values()), 'pdf_descarregados': sum(v['descarregados_pt'] + v['descarregados_en'] for v in rel.values()),
                     'pdf_pt': sum(v['pt'] for v in rel.values()), 'pdf_en': sum(v['en'] for v in rel.values())}
-    if inteiro(tot.get('total')) and not out['total']['visitas'] and not out['total']['aberturas_pdf']:
-        out['total']['visitas'] = max(0, inteiro(tot.get('total')) - inteiro(tot.get('total_events')))
-    return out, ini, fim
+    return out
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -209,6 +246,9 @@ def main():
         except SemDados: novo[chave] = []
         except ErroAPI as e:
             aviso(f'{pagina}: {e}; fica o valor anterior.'); novo[chave] = anterior.get(chave) if isinstance(anterior.get(chave), list) else []
+    if isinstance(novo.get('por_origem'), dict):  # países: Portugal / todos os outros (da lista de países do GoatCounter)
+        novo['por_origem']['pt']['paises'] = [p for p in novo.get('paises', []) if str(p.get('id', '')).upper() == 'PT']
+        novo['por_origem']['fora']['paises'] = [p for p in novo.get('paises', []) if str(p.get('id', '')).upper() != 'PT']
     sem = lambda d: {k: v for k, v in d.items() if k != 'atualizado_em'}
     if sem(novo) == sem(anterior) and anterior.get('atualizado_em'):
         print('Sem mudanças nas estatísticas.'); return 0

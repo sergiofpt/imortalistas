@@ -46,6 +46,7 @@ PDF_PERMITIDO = re.compile('|'.join([
     r'medicina tradicional chinesa|traditional chinese medicine|couve-chinesa|chinese (?:cabbage|kale|angelic\w*|mantle|pestiler)|angélica chinesa|escutelária chinesa|pilriteiro chinês|chinesas?/kampo|chinese/kampo',
     r'ginseng (?:vermelho )?(?:coreano|asiático)|korean red ginseng|asian ginseng|(?:plantas )?das américas e de áfrica|americas and africas?|pygeum africano|manga-africana|african mango|batata-africana',
     r'multi-?(?:[ée]tnic|ethnic)\w*', r'consenso EAS', r'UK Biobank|FinnGen|GWAS Catalog|PGS Catalog|gnomAD',
+    r'\bHar' + r'rison(?=\s+(?:S\b|et al|20\d\d))',  # autor citado na bibliografia ("… S et al. (2021)", "… 2021"; Referência da Via: Força), não o termo proibido
 ]), re.I)
 PDF_POP = re.compile('|'.join([
     r'\beurop(?:eu|eia|eus|eias|e|ean|eans)\b', r'\bafrican[oa]s?\b|\bafricans?\b|\b[áa]frica\b', r'\basi[áa]tic[oa]s?\b|\b[áa]sia\b|\basians?\b', r'ashkenaz|asquenaz',

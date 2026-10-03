@@ -664,8 +664,8 @@
    {
     "n": 22,
     "texto": {
-     "pt": "Mitocôndrias: PGC-1α Gly482Gly e sem doença mitocondrial nem da β-oxidação.",
-     "en": "Mitochondria: PGC-1α Gly482Gly and no mitochondrial or β-oxidation disease."
+     "pt": "Mitocôndrias: PGC-1α (PPARGC1A) Gly482Gly com AMPD1 normal (boa tolerância ao volume de treino e regeneração rápida de ATP) e sem doença mitocondrial nem da β-oxidação.",
+     "en": "Mitochondria: PGC-1α (PPARGC1A) Gly482Gly with normal AMPD1 (good tolerance of training volume and rapid ATP regeneration) and no mitochondrial or β-oxidation disease."
     },
     "evidencia": {
      "pt": "Moderada",
@@ -675,7 +675,8 @@
     "fraca": false,
     "origem": [
      "mitocondrias-energia",
-     "perfil-desportivo-resistencia-forca"
+     "perfil-desportivo-resistencia-forca",
+     "forca-hipertrofia-potencia"
     ]
    },
    {

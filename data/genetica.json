@@ -1806,8 +1806,8 @@
    {
     "n": 20,
     "texto": {
-     "pt": "Massa magra abaixo da mediana (consenso no percentil 27) e carga de loci de força de preensão no 2,4; inclinação genética para pouca atividade física (percentis 7 a 14).",
-     "en": "Lean mass below the median (consensus at percentile 27) and grip strength loci burden at 2.4; genetic tilt towards low physical activity (percentiles 7 to 14)."
+     "pt": "Massa magra abaixo da mediana (consenso no percentil 27; apendicular no 9,5; IGF-1 genética no 32, IGF1 sem o alelo T) e carga de loci de força de preensão no 2,4; inclinação genética para pouca atividade física (percentis 7 a 14).",
+     "en": "Lean mass below the median (consensus at percentile 27; appendicular at 9.5; genetic IGF-1 at 32, IGF1 without the T allele) and grip strength loci burden at 2.4; genetic tilt towards low physical activity (percentiles 7 to 14)."
     },
     "evidencia": {
      "pt": "Moderada",
@@ -1818,7 +1818,8 @@
     "origem": [
      "musculo-osso-sarcopenia",
      "perfil-desportivo-resistencia-forca",
-     "resposta-treino-vo2max"
+     "resposta-treino-vo2max",
+     "forca-hipertrofia-potencia"
     ]
    },
    {
@@ -2367,8 +2368,8 @@
    {
     "n": 52,
     "texto": {
-     "pt": "Tendões: COL5A1 rs12722 T/T (tendinopatia e roturas em estudos pequenos).",
-     "en": "Tendons: COL5A1 rs12722 T/T (tendinopathy and ruptures in small studies)."
+     "pt": "Tendões: COL5A1 rs12722 T/T, homozigoto de risco (tendão mais rígido; tendinopatia de Aquiles e roturas em estudos pequenos).",
+     "en": "Tendons: COL5A1 rs12722 T/T, homozygous for risk (stiffer tendon; Achilles tendinopathy and ruptures in small studies)."
     },
     "evidencia": {
      "pt": "Fraca",
@@ -2378,7 +2379,8 @@
     "fraca": true,
     "origem": [
      "tendoes-ligamentos-lesoes",
-     "musculo-osso-sarcopenia"
+     "musculo-osso-sarcopenia",
+     "forca-hipertrofia-potencia"
     ]
    },
    {
