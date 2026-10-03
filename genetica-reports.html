@@ -135,6 +135,10 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 .btn:hover{background:var(--nab)}main a.btn{color:var(--ink)}
 main a.btn.pri{background:var(--acc);border-color:var(--acc);color:var(--actfg)}main a.btn.pri:hover{filter:brightness(1.08)}
 .rbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:4px 0 14px}
+.rep.feat{border:2px solid var(--acc);margin:4px 0 16px;padding:20px 22px}
+.rep.feat h3{font-size:20px;margin:2px 0 4px}
+.rep.feat .rico{background:var(--acc);color:var(--actfg);border-color:var(--acc)}
+.fkick{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--acc);margin-bottom:2px}
 </style>
 </head>
 <body data-json="data/reports.json" data-title-pt="Sérgio F · Genética Reports" data-title-en="Sérgio F · Genetics Reports">
@@ -158,7 +162,7 @@ main a.btn.pri{background:var(--acc);border-color:var(--acc);color:var(--actfg)}
 <!-- lista gerada a partir de data/reports.json (reports.js) -->
 <section id="reports">
 <p class="src"><span class="l-pt">Fonte</span><span class="l-en">Source</span>: data/reports.json · <span class="l-pt">ficheiros em</span><span class="l-en">files in</span> reports/</p>
-<div class="note" id="rIntro"></div>
+<div id="rFeat"></div>
 <div class="rbar filters"><input id="rq" type="search" placeholder="Procurar relatório…" data-ph-en="Search report…" aria-label="Procurar relatório" data-al-en="Search report"><span class="mut small" id="rCount"></span></div>
 <div class="rlist" id="rList"><div class="card mut"><span class="l-pt">A carregar data/reports.json…</span><span class="l-en">Loading data/reports.json…</span></div></div>
 </section>
@@ -180,20 +184,25 @@ const okFile=f=>typeof f==='string'&&/^reports\/[A-Za-z0-9._-]+\.pdf$/.test(f)&&
 let RD=null,RERR=null,Q='';
 const norm=s=>String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
 function render(){const box=document.getElementById('rList'),meta=document.getElementById('rMeta'),cnt=document.getElementById('rCount');
- if(RERR){box.innerHTML=`<div class="card mut">${L('Não foi possível carregar','Could not load')} ${esc(SRC)} (${esc(RERR.message)}). ${L('Se abriu o ficheiro localmente, sirva a pasta com','If you opened the file locally, serve the folder with')} <code>python3 -m http.server</code>.</div>`;return}
+ if(RERR){document.getElementById('rFeat').innerHTML='';box.innerHTML=`<div class="card mut">${L('Não foi possível carregar','Could not load')} ${esc(SRC)} (${esc(RERR.message)}). ${L('Se abriu o ficheiro localmente, sirva a pasta com','If you opened the file locally, serve the folder with')} <code>python3 -m http.server</code>.</div>`;return}
  if(!RD)return;
- const R=(RD.relatorios||[]).slice().sort((a,b)=>String(b.data||'').localeCompare(String(a.data||''))||T(a.titulo).localeCompare(T(b.titulo)));
- document.getElementById('rIntro').innerHTML=H(RD.intro);
+ const ALL=(RD.relatorios||[]).slice().sort((a,b)=>String(b.data||'').localeCompare(String(a.data||''))||T(a.titulo).localeCompare(T(b.titulo)));
+ // "destaque": true = documento-mestre, mostrado só no cartão em destaque por cima da lista (conta no total; não se repete na grelha)
+ const F=ALL.filter(r=>r.destaque===true),R=ALL.filter(r=>r.destaque!==true);
  const q=norm(Q.trim());
- const vis=R.filter(r=>!q||norm([r.titulo&&r.titulo.pt,r.titulo&&r.titulo.en,r.descricao&&r.descricao.pt,r.descricao&&r.descricao.en,(r.etiquetas||[]).join(' '),fdate(r.data||'')].join(' ')).includes(q));
- box.innerHTML=vis.length?vis.map(r=>{const ok=okFile(r.ficheiro);const nome=ok?r.ficheiro.split('/').pop():'';
+ const hit=r=>!q||norm([r.titulo&&r.titulo.pt,r.titulo&&r.titulo.en,r.descricao&&r.descricao.pt,r.descricao&&r.descricao.en,(r.etiquetas||[]).join(' '),fdate(r.data||'')].join(' ')).includes(q);
+ const vis=R.filter(hit),fhit=F.filter(hit).length;
+ const card=(r,feat)=>{const ok=okFile(r.ficheiro);const nome=ok?r.ficheiro.split('/').pop():'';
   const info=[r.data?`${L('Data','Date')}: ${esc(fdate(r.data))}`:'',r.paginas?`${esc(r.paginas)} ${L('páginas','pages')}`:'',r.tamanho_kb?`${esc(r.tamanho_kb)} KB`:'',r.lingua?`${L('Idioma','Language')}: ${H(r.lingua)}`:''].filter(Boolean).join(' · ');
-  return `<article class="card rep" id="${esc(r.id||'')}"><div class="rhead"><span class="rico" aria-hidden="true">PDF</span><div><h3>${H(r.titulo)}</h3><p class="small mut">${info}</p></div></div>`+
+  return `<article class="card rep${feat?' feat':''}" id="${esc(r.id||'')}"><div class="rhead"><span class="rico" aria-hidden="true">PDF</span><div>${feat?`<span class="fkick">${L('Documento-mestre','Master document')}</span>`:''}<h3>${H(r.titulo)}</h3><p class="small mut">${info}</p></div></div>`+
    (r.descricao?`<p class="small">${H(r.descricao)}</p>`:'')+((r.etiquetas||[]).length?`<div class="rtags">${r.etiquetas.map(t=>`<span class="pill na">${esc(t)}</span>`).join('')}</div>`:'')+
-   `<div class="rbtns">`+(ok?`<a class="btn pri" href="${esc(r.ficheiro)}" download="${esc(nome)}">${L('Descarregar PDF','Download PDF')}</a><a class="btn" href="${esc(r.ficheiro)}" target="_blank" rel="noopener">${L('Abrir no browser','Open in browser')}</a>`:`<span class="pill bad">${L('Ficheiro inválido','Invalid file')}</span>`)+`</div></article>`}).join('')
-  :`<div class="card mut">${L('Nenhum relatório corresponde à pesquisa.','No report matches the search.')}</div>`;
- cnt.textContent=q?`${vis.length} / ${R.length}`:`${R.length} ${L(R.length===1?'relatório':'relatórios',R.length===1?'report':'reports')}`;
- meta.innerHTML=`${R.length} ${L(R.length===1?'relatório':'relatórios',R.length===1?'report':'reports')} PDF<br>${L('Atualizado a','Updated on')} ${esc(fdate(RD.atualizado_em||''))} (PT)`;
+   `<div class="rbtns">`+(ok?`<a class="btn pri" href="${esc(r.ficheiro)}" download="${esc(nome)}">${L('Descarregar PDF','Download PDF')}</a><a class="btn" href="${esc(r.ficheiro)}" target="_blank" rel="noopener">${L('Abrir no browser','Open in browser')}</a>`:`<span class="pill bad">${L('Ficheiro inválido','Invalid file')}</span>`)+`</div></article>`};
+ document.getElementById('rFeat').innerHTML=F.map(r=>card(r,true)).join('');
+ box.innerHTML=vis.length?vis.map(r=>card(r,false)).join('')
+  :`<div class="card mut">${fhit?L('Nenhum outro relatório corresponde à pesquisa.','No other report matches the search.'):L('Nenhum relatório corresponde à pesquisa.','No report matches the search.')}</div>`;
+ const N=ALL.length;
+ cnt.textContent=q?`${vis.length+fhit} / ${N}`:`${N} ${L(N===1?'relatório':'relatórios',N===1?'report':'reports')}`;
+ meta.innerHTML=`${N} ${L(N===1?'relatório':'relatórios',N===1?'report':'reports')} PDF<br>${L('Atualizado a','Updated on')} ${esc(fdate(RD.atualizado_em||''))} (PT)`;
  if(location.hash&&!render.done){render.done=true;const t=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(t)t.scrollIntoView()}}
 function applyLang(){const en=LANG==='en';document.documentElement.lang=en?'en':'pt-PT';document.title=en?document.body.dataset.titleEn:document.body.dataset.titlePt;
  document.querySelectorAll('[data-en]').forEach(el=>{if(!el.hasAttribute('data-pt'))el.setAttribute('data-pt',el.textContent);el.textContent=en?el.dataset.en:el.dataset.pt});

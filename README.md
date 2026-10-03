@@ -107,7 +107,6 @@ Resultados neutros, médios ou não confirmados não entram em nenhuma das duas.
 
 ```json
 {"atualizado_em": "2026-10-02",
- "intro": {"pt": "…", "en": "…"},
  "relatorios": [
   {"id": "farmacogenomica-632",
    "titulo": {"pt": "Farmacogenómica: resposta prevista a 632 medicamentos", "en": "Pharmacogenomics: predicted response to 632 drugs"},
@@ -117,6 +116,8 @@ Resultados neutros, médios ou não confirmados não entram em nenhuma das duas.
    "lingua": {"pt": "português", "en": "Portuguese"}, "etiquetas": ["PGx", "CPIC"]}
  ]}
 ```
+
+Documento-mestre: uma entrada com `"destaque": true` (hoje, `imortalidade`, o relatório **Imortalidade** / **Immortality**) aparece num cartão em destaque por cima da pesquisa e da lista, com a etiqueta **Documento-mestre** / **Master document**; conta no total de relatórios, não se repete na grelha e fica sempre visível durante a pesquisa (o contador só o inclui se corresponder). A página não tem parágrafo de introdução.
 
 Como acrescentar um relatório novo:
 1. **Privacidade primeiro:** `pdftotext relatorio.pdf - | grep -i -E '…'` não pode encontrar o nome completo (só “Sérgio F”), a medida da balança, a data de nascimento, a cidade, o país nem nomes de laboratórios ou fornecedores. Se encontrar, gerar uma versão limpa a partir da fonte (HTML/MD) do relatório.

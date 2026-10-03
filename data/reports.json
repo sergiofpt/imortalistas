@@ -1,10 +1,6 @@
 {
- "_leia_me": "Lista de relatórios da página genetica-reports.html (reports.js). Para acrescentar um relatório: copiar o PDF (já verificado quanto à privacidade) para reports/ e juntar uma entrada a \"relatorios\". Campos: id (único, letras/números/hífens), titulo {pt,en}, data AAAA-MM-DD, ficheiro \"reports/<nome>.pdf\" (obrigatórios); descricao {pt,en}, paginas, tamanho_kb, lingua {pt,en}, etiquetas [..] (opcionais). A página ordena por data (mais recente primeiro). Ver README.md, secção \"Genética Reports\".",
+ "_leia_me": "Lista de relatórios da página genetica-reports.html (reports.js). Para acrescentar um relatório: copiar o PDF (já verificado quanto à privacidade) para reports/ e juntar uma entrada a \"relatorios\". Campos: id (único, letras/números/hífens), titulo {pt,en}, data AAAA-MM-DD, ficheiro \"reports/<nome>.pdf\" (obrigatórios); descricao {pt,en}, paginas, tamanho_kb, lingua {pt,en}, etiquetas [..], destaque true (opcionais; destaque = documento-mestre num cartão em destaque por cima da lista, conta no total e não se repete na grelha). A página ordena por data (mais recente primeiro). Ver README.md, secção \"Genética Reports\".",
  "atualizado_em": "2026-10-03",
- "intro": {
-  "pt": "Relatórios completos da genética em PDF, para guardar ou levar ao médico. Cada relatório novo é só uma entrada em <b>data/reports.json</b>. <b>Tudo é sugestão (não aplicada) e precisa de validação médica.</b>",
-  "en": "Full genetics reports as PDFs, to keep or take to the doctor. Each new report is just one entry in <b>data/reports.json</b>. <b>Everything is a suggestion (not applied) and needs medical validation.</b>"
- },
  "relatorios": [
   {
    "id": "farmacogenomica-632",
@@ -1721,6 +1717,26 @@
     "pt": "português",
     "en": "Portuguese"
    }
+  },
+  {
+   "id": "imortalidade",
+   "titulo": {
+    "pt": "Imortalidade",
+    "en": "Immortality"
+   },
+   "data": "2026-10-03",
+   "ficheiro": "reports/imortalidade.pdf",
+   "descricao": {
+    "pt": "Síntese de todos os relatórios genéticos e de 5 análises novas ao ADN, com as 10 ações que mais mudam o desfecho, as causas de morte previstas pelos genes, o mapa dos 84 mecanismos de envelhecimento, o cartão farmacogenético e o calendário de rastreios.",
+    "en": "A synthesis of all genetics reports and 5 new DNA analyses, with the 10 actions that change the outcome most, the genetically predicted causes of death, a map of the 84 ageing mechanisms, the pharmacogenetic card and the screening calendar."
+   },
+   "paginas": 28,
+   "tamanho_kb": 154,
+   "lingua": {
+    "pt": "português",
+    "en": "Portuguese"
+   },
+   "destaque": true
   }
  ]
 }
