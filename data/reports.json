@@ -15,7 +15,7 @@
     "en": "Chip + imputation, with CPIC, DPWG and FDA labels, organised by therapeutic category: 2 to avoid (piroxicam, tenoxicam), 16 needing a dose adjustment, 35 to monitor, 8 undetermined, 226 normal and 345 with no known PGx interaction. Current medication has no drug to avoid and no dose change. Confirm the actionable findings with a clinical PGx test (CYP2D6 with CNV + HLA)."
    },
    "paginas": 49,
-   "tamanho_kb": 272,
+   "tamanho_kb": 281,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -705,7 +705,7 @@
     "en": "APOE ε3/ε3, genetic LDL below the median, no very-high-Lp(a) alleles and good statin tolerance (SLCO1B1 T/T); genetically above-median triglycerides and low HDL."
    },
    "paginas": 16,
-   "tamanho_kb": 62,
+   "tamanho_kb": 60,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
