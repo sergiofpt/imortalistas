@@ -1,17 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-03T20:25:51Z",
+ "atualizado_em": "2026-10-03T20:32:17Z",
  "desde": "2026-10-01",
+ "descarregados_desde": "2026-10-03",
  "total": {
-  "visitas": 5,
-  "visitas_30d": 5,
-  "visitas_90d": 5,
-  "aberturas_pdf": 7,
-  "visitas_hoje": 5,
-  "visitas_7d": 5,
-  "aberturas_hoje": 7,
-  "aberturas_7d": 7,
-  "aberturas_30d": 7
+  "visitas": 8,
+  "visitas_30d": 8,
+  "visitas_90d": 8,
+  "aberturas_pdf": 10,
+  "visitas_hoje": 8,
+  "visitas_7d": 8,
+  "aberturas_hoje": 10,
+  "aberturas_7d": 10,
+  "aberturas_30d": 10,
+  "pdf_abertos": 10,
+  "pdf_descarregados": 0,
+  "pdf_pt": 8,
+  "pdf_en": 2
  },
  "dias": [
   {
@@ -26,48 +31,83 @@
   },
   {
    "dia": "2026-10-03",
-   "visitas": 5,
-   "aberturas": 7
+   "visitas": 8,
+   "aberturas": 10
   }
  ],
  "paginas": [
   {
    "path": "/imortalistas/genetica-reports.html",
-   "visitas": 3
+   "visitas": 4
   },
   {
    "path": "/imortalistas/teste-worker",
    "visitas": 2
+  },
+  {
+   "path": "/imortalistas/genetica.html",
+   "visitas": 1
+  },
+  {
+   "path": "/imortalistas/index.html",
+   "visitas": 1
   }
  ],
  "relatorios": [
   {
    "id": "imortalidade",
    "ficheiro": null,
-   "pt": 2,
+   "pt": 4,
    "en": 2,
-   "total": 4
+   "total": 6,
+   "abertos_pt": 4,
+   "abertos_en": 2,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
   },
   {
    "id": "anestesia-cirurgia",
    "ficheiro": null,
    "pt": 1,
    "en": 0,
-   "total": 1
+   "total": 1,
+   "abertos_pt": 1,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
   },
   {
    "id": "avc-pequenos-vasos-cerebrais",
    "ficheiro": null,
    "pt": 1,
    "en": 0,
-   "total": 1
+   "total": 1,
+   "abertos_pt": 1,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
   },
   {
    "id": "doencas-geneticas-hereditarias",
    "ficheiro": null,
    "pt": 1,
    "en": 0,
-   "total": 1
+   "total": 1,
+   "abertos_pt": 1,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
+   "id": "resposta-treino-vo2max",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 0,
+   "total": 1,
+   "abertos_pt": 1,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
   }
  ],
  "aparelhos": [
@@ -77,13 +117,20 @@
    "nome": "Linux · Chrome",
    "estimativa": false,
    "visitas": 1
+  },
+  {
+   "id": "computador/windows-11-chrome",
+   "tipo": "computador",
+   "nome": "Windows 11 · Chrome",
+   "estimativa": false,
+   "visitas": 1
   }
  ],
  "paises": [
   {
    "id": "PT",
    "nome": "Portugal",
-   "visitas": 11
+   "visitas": 17
   },
   {
    "id": "US",
@@ -95,12 +142,12 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 6
+   "visitas": 10
   },
   {
    "id": "Firefox",
    "nome": "Firefox",
-   "visitas": 5
+   "visitas": 7
   },
   {
    "id": "Safari",
@@ -110,14 +157,14 @@
  ],
  "sistemas": [
   {
+   "id": "Windows",
+   "nome": "Windows",
+   "visitas": 11
+  },
+  {
    "id": "Linux",
    "nome": "Linux",
    "visitas": 6
-  },
-  {
-   "id": "Windows",
-   "nome": "Windows",
-   "visitas": 5
   },
   {
    "id": "macOS",
@@ -129,19 +176,19 @@
   {
    "id": "desktop",
    "nome": "desktop",
-   "visitas": 6
+   "visitas": 9
   },
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 6
+   "visitas": 9
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 12
+   "visitas": 18
   }
  ],
  "aparelhos_desde": "2026-10-03"
