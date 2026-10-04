@@ -140,6 +140,23 @@ main a.btn.pri{background:var(--acc);border-color:var(--acc);color:var(--actfg)}
 .rep.feat h3{font-size:20px;margin:2px 0 4px}
 .rep.feat .rico{background:var(--acc);color:var(--actfg);border-color:var(--acc)}
 .fkick{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--acc);margin-bottom:2px}
+.rsearch{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:4px 0 10px}
+.rsearch input[type=search]{flex:1 1 340px;max-width:560px;font:inherit;font-size:15px;padding:10px 13px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink)}
+.rsearch input[type=search]:focus{outline:2px solid var(--acc);outline-offset:1px;border-color:var(--acc)}
+.rcount{font-size:13.5px;color:var(--mut);font-variant-numeric:tabular-nums}.rcount b{color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 16px}
+.chip{font:inherit;font-size:13px;line-height:1.2;padding:6px 11px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);cursor:pointer;white-space:nowrap}
+.chip:hover{background:var(--nab)}.chip .n{margin-left:5px;color:var(--mut);font-variant-numeric:tabular-nums;font-size:12px}
+.chip[aria-pressed="true"]{background:var(--acc);border-color:var(--acc);color:var(--actfg)}.chip[aria-pressed="true"] .n{color:inherit;opacity:.85}
+.chip.zero:not([aria-pressed="true"]){opacity:.55}
+.chip:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.rtit{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 8px}
+.pill.new{background:var(--okb);color:var(--okt);text-transform:uppercase;letter-spacing:.04em;font-size:10.5px}
+.rsum{margin:2px 0 4px;font-size:14px;color:var(--ink);opacity:.92}
+.rep .pill.area{background:var(--infob);color:var(--infot);font-weight:600}
+.rgenes{margin:4px 0 0}.rgenes b{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;color:var(--ink)}
+/* telemóvel: as áreas ficam numa linha que desliza na horizontal (a lista começa logo a seguir; a orla direita esbatida mostra que há mais) */
+@media(max-width:640px){.rsearch input[type=search]{flex:1 1 100%;max-width:none}.chips{flex-wrap:nowrap;gap:6px;overflow-x:auto;scrollbar-width:none;overscroll-behavior-x:contain;margin:0 -12px 14px;padding:0 28px 2px 12px;scroll-padding:0 12px;-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 36px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 36px),transparent)}.chips::-webkit-scrollbar{display:none}.chip{flex:0 0 auto;font-size:12.5px;padding:6px 10px}}
 .rlangs{margin:8px 0 0;font-size:12.5px;color:var(--mut)}.rlangs a{font-weight:600;padding:2px 4px;border-radius:6px}.rlangs a.cur{color:var(--ink);text-decoration:none;background:var(--nab)}.rlangs .sep{color:var(--na);margin:0 2px}
 </style>
 </head>
@@ -164,12 +181,13 @@ main a.btn.pri{background:var(--acc);border-color:var(--acc);color:var(--actfg)}
 <!-- lista gerada a partir de data/reports.json (reports.js) -->
 <section id="reports">
 <p class="src"><span class="l-pt">Fonte</span><span class="l-en">Source</span>: data/reports.json · <span class="l-pt">ficheiros em</span><span class="l-en">files in</span> reports/</p>
+<div class="rsearch" role="search"><input id="rq" type="search" autocomplete="off" spellcheck="false" placeholder="Procurar por título, tema, gene…" data-ph-en="Search by title, topic, gene…" aria-label="Procurar relatórios por título, resumo, genes ou palavras-chave" data-al-en="Search reports by title, summary, genes or keywords" aria-controls="rList"><span class="rcount" id="rCount" role="status" aria-live="polite"></span></div>
+<div class="chips" id="rAreas" role="group" aria-label="Filtrar por área" data-al-en="Filter by area"></div>
 <div id="rFeat"></div>
-<div class="rbar filters"><input id="rq" type="search" placeholder="Procurar relatório…" data-ph-en="Search report…" aria-label="Procurar relatório" data-al-en="Search report"><span class="mut small" id="rCount"></span></div>
 <div class="rlist" id="rList"><div class="card mut"><span class="l-pt">A carregar data/reports.json…</span><span class="l-en">Loading data/reports.json…</span></div></div>
 </section>
 </main>
-<footer><span class="l-pt">Compilado a 03-10-2026 (PT). Relatórios genéticos completos em PDF, em português e em inglês (no modo English os botões descarregam a versão inglesa; a ligação PT | EN de cada cartão dá as duas); cada novo relatório é uma entrada em data/reports.json com o PDF em reports/ (mesmo site); sem cookies; só uma contagem anónima de visitas e de PDFs abertos. Documento de apoio: não substitui o médico; tudo é sugestão que precisa de validação médica. Ver também <a href="genetica.html">Genética Má</a>, <a href="genetica-boa.html">Genética Boa</a> e <a href="index.html">Cronologia de Exames de Sangue</a>.</span><span class="l-en">Compiled on 03-10-2026 (PT). Full genetics reports as PDFs, in Portuguese and in English (in English mode the buttons download the English version; each card's PT | EN link gives both); each new report is one entry in data/reports.json with the PDF in reports/ (same site); no cookies; only an anonymous count of visits and opened PDFs. Supporting document: not a substitute for a doctor; everything is a suggestion that needs medical validation. See also <a href="genetica.html">Bad Genetics</a>, <a href="genetica-boa.html">Good Genetics</a> and <a href="index.html">Blood Test Timeline</a>.</span></footer>
+<footer><span class="l-pt">Compilado a 04-10-2026 (PT). Relatórios genéticos completos em PDF, em português e em inglês (no modo English os botões descarregam a versão inglesa; a ligação PT | EN de cada cartão dá as duas); pesquisa por título, resumo, genes e palavras-chave e filtros por área; etiqueta Novo nos 14 dias a seguir à publicação; cada novo relatório é uma entrada em data/reports.json com o PDF em reports/ (mesmo site); sem cookies; só uma contagem anónima de visitas e de PDFs abertos. Documento de apoio: não substitui o médico; tudo é sugestão que precisa de validação médica. Ver também <a href="genetica.html">Genética Má</a>, <a href="genetica-boa.html">Genética Boa</a> e <a href="index.html">Cronologia de Exames de Sangue</a>.</span><span class="l-en">Compiled on 04-10-2026 (PT). Full genetics reports as PDFs, in Portuguese and in English (in English mode the buttons download the English version; each card's PT | EN link gives both); search by title, summary, genes and keywords, and filters by area; a New label for 14 days after publication; each new report is one entry in data/reports.json with the PDF in reports/ (same site); no cookies; only an anonymous count of visits and opened PDFs. Supporting document: not a substitute for a doctor; everything is a suggestion that needs medical validation. See also <a href="genetica.html">Bad Genetics</a>, <a href="genetica-boa.html">Good Genetics</a> and <a href="index.html">Blood Test Timeline</a>.</span></footer>
 
 <script>
 // ===== página Genética Reports: lista de relatórios em PDF lida de data/reports.json (PT/EN); mesmas chaves localStorage que as outras páginas =====
@@ -188,32 +206,61 @@ const okFile=f=>typeof f==='string'&&/^reports\/[A-Za-z0-9._-]+\.pdf$/.test(f)&&
 const okFileEn=f=>okFile(f)&&/_en\.pdf$/.test(f);
 // ligações dos PDFs pelo serviço de contagem (window.SF_W, em sf.js): …/r/<ficheiro>.pdf conta a abertura e devolve o PDF do site (?dl=1 = descarregar); sem serviço, reports/<ficheiro>.pdf
 const PDFU=(f,dl)=>{const W=window.SF_W;return W&&/^reports\/[a-z0-9][a-z0-9_-]*\.pdf$/.test(f)?String(W).replace(/\/+$/,'')+'/r/'+f.slice(8)+(dl?'?dl=1':''):f};
-let RD=null,RERR=null,Q='';
+let RD=null,RERR=null,Q='';const SEL=new Set();  // Q = pesquisa; SEL = áreas escolhidas (ids de data/reports.json "areas"; várias = qualquer uma delas)
 const norm=s=>String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
-function render(){const box=document.getElementById('rList'),meta=document.getElementById('rMeta'),cnt=document.getElementById('rCount');
- if(RERR){document.getElementById('rFeat').innerHTML='';box.innerHTML=`<div class="card mut">${L('Não foi possível carregar','Could not load')} ${esc(SRC)} (${esc(RERR.message)}). ${L('Se abriu o ficheiro localmente, sirva a pasta com','If you opened the file locally, serve the folder with')} <code>python3 -m http.server</code>.</div>`;return}
+const NOVO_DIAS=14;  // etiqueta Novo/New: publicado há menos de 14 dias (contados no browser, pela data local de quem visita)
+const okDate=s=>typeof s==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(s);
+const dias=s=>{const p=s.split('-').map(Number),h=new Date();return Math.floor((Date.UTC(h.getFullYear(),h.getMonth(),h.getDate())-Date.UTC(p[0],p[1]-1,p[2]))/864e5)};
+const isNew=r=>okDate(r.publicado)&&dias(r.publicado)<NOVO_DIAS;
+const AREAS=()=>(Array.isArray(RD&&RD.areas)?RD.areas:[]).filter(a=>a&&typeof a.id==='string'&&/^[a-z0-9-]+$/.test(a.id)&&a.pt);
+const areaOf=id=>AREAS().find(a=>a.id===id);
+const rAreas=r=>(Array.isArray(r.areas)?r.areas:[]).filter(id=>areaOf(id));
+const both=o=>o==null?'':typeof o==='string'?o:[o.pt||'',o.en||''].join(' ');
+const list=x=>Array.isArray(x)?x.filter(v=>typeof v==='string'):[];
+// texto onde a pesquisa procura (PT+EN, sem acentos/maiúsculas): título, resumo, descrição, etiquetas, palavras-chave, genes e datas (as áreas filtram-se nos botões)
+const HAY=new WeakMap();
+const hay=r=>{let h=HAY.get(r);if(h==null){h=norm([both(r.titulo),both(r.resumo),both(r.descricao),list(r.etiquetas).join(' '),list(r.palavras).join(' '),list(r.genes).join(' '),fdate(r.data||''),okDate(r.publicado)?fdate(r.publicado):''].join(' \u2002 '));HAY.set(r,h)}return h};
+const toks=()=>norm(Q.trim()).split(/\s+/).filter(Boolean);
+const hitQ=(r,tk)=>{if(!tk.length)return true;const h=hay(r);return tk.every(t=>h.includes(t))};  // todas as palavras da pesquisa têm de aparecer
+const hitA=r=>!SEL.size||rAreas(r).some(id=>SEL.has(id));
+// genes que a pesquisa encontrou (mostrados no cartão, para se perceber porque aparece)
+const genesHit=(r,tk)=>tk.length?list(r.genes).filter(g=>{const n=norm(g);return tk.some(t=>n===t||(t.length>=3&&n.startsWith(t)))}).slice(0,8):[];
+function render(){const box=document.getElementById('rList'),meta=document.getElementById('rMeta'),cnt=document.getElementById('rCount'),chips=document.getElementById('rAreas');
+ if(RERR){document.getElementById('rFeat').innerHTML='';chips.innerHTML='';box.innerHTML=`<div class="card mut">${L('Não foi possível carregar','Could not load')} ${esc(SRC)} (${esc(RERR.message)}). ${L('Se abriu o ficheiro localmente, sirva a pasta com','If you opened the file locally, serve the folder with')} <code>python3 -m http.server</code>.</div>`;return}
  if(!RD)return;
- const ALL=(RD.relatorios||[]).slice().sort((a,b)=>String(b.data||'').localeCompare(String(a.data||''))||T(a.titulo).localeCompare(T(b.titulo)));
- // "destaque": true = documento-mestre, mostrado só no cartão em destaque por cima da lista (conta no total; não se repete na grelha)
+ // mais recente primeiro: data de publicação (ou a data do relatório), depois o título
+ const when=r=>okDate(r.publicado)?r.publicado:String(r.data||'');
+ const ALL=(RD.relatorios||[]).slice().sort((a,b)=>when(b).localeCompare(when(a))||String(b.data||'').localeCompare(String(a.data||''))||T(a.titulo).localeCompare(T(b.titulo)));
+ // "destaque": true = documento-mestre, mostrado só no cartão em destaque por cima da grelha (conta no total; não se repete na grelha; some se não corresponder à pesquisa/áreas)
  const F=ALL.filter(r=>r.destaque===true),R=ALL.filter(r=>r.destaque!==true);
- const q=norm(Q.trim());
- const hit=r=>!q||norm([r.titulo&&r.titulo.pt,r.titulo&&r.titulo.en,r.descricao&&r.descricao.pt,r.descricao&&r.descricao.en,(r.etiquetas||[]).join(' '),fdate(r.data||'')].join(' ')).includes(q);
+ const tk=toks(),hit=r=>hitQ(r,tk)&&hitA(r);
  const vis=R.filter(hit),fhit=F.filter(hit).length;
+ // botões das áreas (com quantos relatórios dão a pesquisa atual em cada área)
+ const AA=AREAS();for(const id of [...SEL])if(!areaOf(id))SEL.delete(id);
+ const nq=ALL.filter(r=>hitQ(r,tk));
+ chips.innerHTML=AA.length?`<button type="button" class="chip" data-a="" aria-pressed="${!SEL.size}">${L('Todas','All')}<span class="n">${nq.length}</span></button>`+AA.map(a=>{const n=nq.filter(r=>rAreas(r).includes(a.id)).length;return `<button type="button" class="chip${n?'':' zero'}" data-a="${esc(a.id)}" aria-pressed="${SEL.has(a.id)}">${H(a)}<span class="n">${n}</span></button>`}).join(''):'';
  const card=(r,feat)=>{const okPt=okFile(r.ficheiro),okEn=okFileEn(r.ficheiro_en);const useEn=LANG==='en'&&okEn;
   const f=useEn?r.ficheiro_en:(okPt?r.ficheiro:''),ok=!!f,nome=ok?f.split('/').pop():'';
   const pag=useEn?(r.paginas_en||r.paginas):r.paginas,kb=useEn?(r.tamanho_kb_en||''):r.tamanho_kb,lng=useEn?'English':(r.lingua?H(r.lingua):'');
-  const info=[r.data?`${L('Data','Date')}: ${esc(fdate(r.data))}`:'',pag?`${esc(pag)} ${L('páginas','pages')}`:'',kb?`${esc(kb)} KB`:'',lng?`${L('Idioma','Language')}: ${lng}`:''].filter(Boolean).join(' · ');
+  const dt=okDate(r.publicado)?`${L('Publicado','Published')}: ${esc(fdate(r.publicado))}`:(r.data?`${L('Data','Date')}: ${esc(fdate(r.data))}`:'');
+  const info=[dt,pag?`${esc(pag)} ${L('páginas','pages')}`:'',kb?`${esc(kb)} KB`:'',lng?`${L('Idioma','Language')}: ${lng}`:''].filter(Boolean).join(' · ');
+  const nov=isNew(r)?`<span class="pill new" title="${L('Publicado nos últimos 14 dias','Published in the last 14 days')}">${L('Novo','New')}</span>`:'';
+  const gh=genesHit(r,tk);
+  const tags=rAreas(r).map(id=>`<span class="pill area">${H(areaOf(id))}</span>`).join('')+list(r.etiquetas).map(t=>`<span class="pill na">${esc(t)}</span>`).join('');
   // ligação secundária PT | EN: descarrega diretamente cada versão (a da língua da página fica marcada)
   const lk=(g,code,cur,hl)=>`<a href="${esc(PDFU(g,1))}" download="${esc(g.split('/').pop())}" hreflang="${hl}" lang="${hl}"${cur?' class="cur" aria-current="true"':''} title="${code==='PT'?L('PDF em português','PDF in Portuguese'):L('PDF em inglês','PDF in English')}">${code}</a>`;
   const langs=okPt&&okEn?`<p class="rlangs">PDF: ${lk(r.ficheiro,'PT',!useEn,'pt-PT')}<span class="sep" aria-hidden="true">|</span>${lk(r.ficheiro_en,'EN',useEn,'en')}</p>`:'';
-  return `<article class="card rep${feat?' feat':''}" id="${esc(r.id||'')}"><div class="rhead"><span class="rico" aria-hidden="true">PDF</span><div>${feat?`<span class="fkick">${L('Documento-mestre','Master document')}</span>`:''}<h3>${H(r.titulo)}</h3><p class="small mut">${info}</p></div></div>`+
-   (r.descricao?`<p class="small">${H(r.descricao)}</p>`:'')+((r.etiquetas||[]).length?`<div class="rtags">${r.etiquetas.map(t=>`<span class="pill na">${esc(t)}</span>`).join('')}</div>`:'')+
+  return `<article class="card rep${feat?' feat':''}${isNew(r)?' new':''}" id="${esc(r.id||'')}"><div class="rhead"><span class="rico" aria-hidden="true">PDF</span><div>${feat?`<span class="fkick">${L('Documento-mestre','Master document')}</span>`:''}<div class="rtit"><h3>${H(r.titulo)}</h3>${nov}</div>`+
+   (r.resumo?`<p class="rsum">${H(r.resumo)}</p>`:'')+`<p class="small mut">${info}</p></div></div>`+
+   (r.descricao?`<p class="small">${H(r.descricao)}</p>`:'')+(tags?`<div class="rtags">${tags}</div>`:'')+
+   (gh.length?`<p class="rgenes small mut">${L(gh.length===1?'Gene encontrado':'Genes encontrados',gh.length===1?'Matching gene':'Matching genes')}: ${gh.map(g=>`<b>${esc(g)}</b>`).join(', ')}</p>`:'')+
    `<div class="rbtns">`+(ok?`<a class="btn pri" href="${esc(PDFU(f,1))}" download="${esc(nome)}">${L('Descarregar PDF','Download PDF')}</a><a class="btn" href="${esc(PDFU(f))}" target="_blank" rel="noopener">${L('Abrir no browser','Open in browser')}</a>`:`<span class="pill bad">${L('Ficheiro inválido','Invalid file')}</span>`)+`</div>`+langs+`</article>`};
- document.getElementById('rFeat').innerHTML=F.map(r=>card(r,true)).join('');
+ document.getElementById('rFeat').innerHTML=F.filter(hit).map(r=>card(r,true)).join('');  // o documento-mestre também segue a pesquisa e as áreas
+ const why=SEL.size?(tk.length?L('à pesquisa e às áreas escolhidas','the search and the chosen areas'):L('às áreas escolhidas','the chosen areas')):L('à pesquisa','the search');
  box.innerHTML=vis.length?vis.map(r=>card(r,false)).join('')
-  :`<div class="card mut">${fhit?L('Nenhum outro relatório corresponde à pesquisa.','No other report matches the search.'):L('Nenhum relatório corresponde à pesquisa.','No report matches the search.')}</div>`;
- const N=ALL.length;
- cnt.textContent=q?`${vis.length+fhit} / ${N}`:`${N} ${L(N===1?'relatório':'relatórios',N===1?'report':'reports')}`;
+  :`<div class="card mut">${fhit?L(`Nenhum outro relatório corresponde ${why}.`,`No other report matches ${why}.`):L(`Nenhum relatório corresponde ${why}.`,`No report matches ${why}.`)}</div>`;
+ const N=ALL.length,n=vis.length+fhit;
+ cnt.innerHTML=`<b>${n}</b> ${L('de','of')} ${N} ${L(N===1?'relatório':'relatórios',N===1?'report':'reports')}`;
  meta.innerHTML=`${N} ${L(N===1?'relatório':'relatórios',N===1?'report':'reports')} PDF<br>${L('Atualizado a','Updated on')} ${esc(fdate(RD.atualizado_em||''))} (PT)`;
  if(location.hash&&!render.done){render.done=true;const t=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(t)t.scrollIntoView()}}
 function applyLang(){const en=LANG==='en';document.documentElement.lang=en?'en':'pt-PT';document.title=en?document.body.dataset.titleEn:document.body.dataset.titlePt;
@@ -223,6 +270,8 @@ function applyLang(){const en=LANG==='en';document.documentElement.lang=en?'en':
  document.querySelectorAll('#lang button').forEach(b=>{const on=b.dataset.l===LANG;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});render()}
 document.querySelectorAll('#lang button').forEach(b=>b.addEventListener('click',()=>{if(LANG===b.dataset.l)return;LANG=b.dataset.l;try{localStorage.setItem('lang',LANG)}catch(e){}try{if(/[?&]lang=/i.test(location.search)){const u=new URL(location.href);u.searchParams.set('lang',LANG);history.replaceState(history.state,'',u)}}catch(e){}applyLang()}));
 document.getElementById('rq').addEventListener('input',e=>{Q=e.target.value;render()});
+// áreas: clicar liga/desliga (várias = qualquer uma delas); "Todas" limpa
+document.getElementById('rAreas').addEventListener('click',e=>{const b=e.target.closest('button[data-a]');if(!b)return;const id=b.dataset.a;if(!id)SEL.clear();else if(SEL.has(id))SEL.delete(id);else SEL.add(id);render();const nb=document.querySelector(`#rAreas button[data-a="${CSS.escape(id)}"]`);if(nb)nb.focus()});
 applyLang();
 fetch(SRC,{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error(SRC+': HTTP '+r.status);return r.json()}).then(d=>{RD=d;render()}).catch(e=>{console.warn(e);RERR=e;render()});
 

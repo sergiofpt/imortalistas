@@ -109,30 +109,40 @@ Resultados neutros, médios ou não confirmados não entram em nenhuma das duas.
 
 ## Genética Reports (relatórios em PDF)
 
-`genetica-reports.html` mostra a lista de `data/reports.json` (mais recente primeiro, com pesquisa); cada relatório tem o título, a data, uma descrição opcional e os botões **Descarregar PDF** / **Abrir no browser** (**Download PDF** / **Open in browser**).
+`genetica-reports.html` mostra a lista de `data/reports.json` (mais recente primeiro); cada relatório tem o título, um resumo de uma linha, a data de publicação, uma descrição opcional, as suas áreas e os botões **Descarregar PDF** / **Abrir no browser** (**Download PDF** / **Open in browser**).
 
-Versão inglesa: cada relatório tem também um PDF em inglês (`ficheiro_en`, sempre `reports/<nome>_en.pdf`, com `paginas_en` e `tamanho_kb_en`). No modo **English** o cartão mostra o título EN, as páginas/tamanho do PDF inglês e “Language: English”, e os botões apontam para o PDF inglês; no modo **Português** fica tudo como antes (PDF em português). Por baixo dos botões, a ligação pequena **PDF: PT | EN** descarrega diretamente cada versão (a da língua da página fica marcada). O cartão em destaque (Imortalidade) funciona da mesma forma. Hoje: 116 relatórios, 116 com versão inglesa (os Haplogrupos Materno e Paterno nunca são publicados, nem em PT nem em EN).
+Pesquisa, filtros e Novo (desde 04-10-2026):
+- **Pesquisa** no topo, ao vivo, sem acentos nem maiúsculas (ex. `figado` encontra “Fígado”, `COL5A1` encontra os relatórios que citam o gene): procura no título, no `resumo`, na descrição e nas etiquetas (PT e EN), nas `palavras` (palavras-chave) e nos `genes`, e nas datas; com várias palavras, têm de aparecer todas. Mostra “N de 118 relatórios” / “N of 118 reports”; quando a pesquisa encontra um gene, o cartão mostra “Gene encontrado: …”.
+- **Áreas**: botões por baixo da pesquisa (lista `areas` no topo de `data/reports.json`, com `id`, `pt` e `en`; cada relatório tem 1 ou 2 em `areas`). Hoje: Coração e Vasos, Cérebro e Mente, Fígado e Metabolismo, Digestão e Intestino, Nutrição e Suplementos, Desporto e Músculo, Cancro, Farmacogenómica e Medicamentos, Imunidade e Inflamação, Hormonas e Reprodução, Órgãos e Sentidos, Longevidade e Envelhecimento e Outros. Cada botão mostra quantos relatórios dão a pesquisa atual nessa área; vários botões = relatórios de qualquer uma delas; **Todas** limpa. Combinam com a pesquisa. No telemóvel ficam numa linha que desliza na horizontal.
+- **Data de publicação** (`publicado`, AAAA-MM-DD): a data em Portugal do primeiro commit que adicionou o PDF (português) ao repositório; o cartão mostra “Publicado: DD-MM-AAAA” e a lista ordena por ela. Etiqueta **Novo** / **New** nos relatórios publicados há menos de 14 dias, calculada no browser pela data de quem visita (não é preciso mudar o JSON para ela desaparecer).
+- **Resumo** (`resumo` PT/EN): uma linha (até 120 caracteres), genérica sobre o tema do PDF público; nunca dados pessoais nem resultados pessoais (percentis, genótipos). A ferramenta recusa resumos maiores ou com percentis/genótipos/rsIDs.
+- O documento-mestre também segue a pesquisa e as áreas (some quando não corresponde).
+
+Versão inglesa: cada relatório tem também um PDF em inglês (`ficheiro_en`, sempre `reports/<nome>_en.pdf`, com `paginas_en` e `tamanho_kb_en`). No modo **English** o cartão mostra o título EN, as páginas/tamanho do PDF inglês e “Language: English”, e os botões apontam para o PDF inglês; no modo **Português** fica tudo como antes (PDF em português). Por baixo dos botões, a ligação pequena **PDF: PT | EN** descarrega diretamente cada versão (a da língua da página fica marcada). O cartão em destaque (Imortalidade) funciona da mesma forma. Hoje: 118 relatórios, 118 com versão inglesa (os Haplogrupos Materno e Paterno nunca são publicados, nem em PT nem em EN).
 
 ```json
 {"atualizado_em": "2026-10-02",
  "relatorios": [
   {"id": "farmacogenomica-632",
    "titulo": {"pt": "Farmacogenómica: resposta prevista a 632 medicamentos", "en": "Pharmacogenomics: predicted response to 632 drugs"},
-   "data": "2026-10-02",
+   "resumo": {"pt": "Como os genes podem mudar o efeito e a dose de centenas de medicamentos, por área terapêutica.", "en": "…"},
+   "data": "2026-10-02", "publicado": "2026-10-02",
    "ficheiro": "reports/farmacogenomica-632-medicamentos.pdf",
    "descricao": {"pt": "…", "en": "…"}, "paginas": 49, "tamanho_kb": 272,
    "lingua": {"pt": "português", "en": "Portuguese"}, "etiquetas": ["PGx", "CPIC"],
-   "ficheiro_en": "reports/farmacogenomica-632-medicamentos_en.pdf", "paginas_en": 48, "tamanho_kb_en": 275}
- ]}
+   "ficheiro_en": "reports/farmacogenomica-632-medicamentos_en.pdf", "paginas_en": 48, "tamanho_kb_en": 275,
+   "areas": ["farmaco"], "palavras": ["PGx", "fármacos", "drugs", "…"], "genes": ["ABCG2", "CYP2C19", "CYP2D6", "…"]}
+ ],
+ "areas": [{"id": "farmaco", "pt": "Farmacogenómica e Medicamentos", "en": "Pharmacogenomics and Drugs"}, "…"]}
 ```
 
-Documento-mestre: uma entrada com `"destaque": true` (hoje, `imortalidade`, o relatório **Imortalidade** / **Immortality**) aparece num cartão em destaque por cima da pesquisa e da lista, com a etiqueta **Documento-mestre** / **Master document**; conta no total de relatórios, não se repete na grelha e fica sempre visível durante a pesquisa (o contador só o inclui se corresponder). A página não tem parágrafo de introdução.
+Documento-mestre: uma entrada com `"destaque": true` (hoje, `imortalidade`, o relatório **Imortalidade** / **Immortality**) aparece num cartão em destaque por baixo da pesquisa e das áreas, por cima da grelha, com a etiqueta **Documento-mestre** / **Master document**; conta no total de relatórios, não se repete na grelha e, como os outros, só aparece se corresponder à pesquisa e às áreas escolhidas. A página não tem parágrafo de introdução.
 
 Como acrescentar um relatório novo:
 1. **Privacidade primeiro:** `pdftotext relatorio.pdf - | grep -i -E '…'` não pode encontrar o nome completo (só “Sérgio F”), a medida da balança, a data de nascimento, a idade, a família, a cidade, o país, nomes de laboratórios ou fornecedores, URLs, nomes de ficheiros/pastas privadas nem rótulos de ascendência ou população (PT e EN: “1000 Genomes”, europeu/European, africano/African, asiático/Asian, Ashkenazi, judeu/Jewish, nacionalidades de coortes como britânico, japonês, finlandês, dinamarquês, italiano…; países de estudos). Nomes de bases de dados (UK Biobank, FinnGen, GWAS Catalog, PGS Catalog, gnomAD), a dieta mediterrânica, a febre mediterrânica familiar, a medicina tradicional chinesa, nomes de plantas e autores citados na bibliografia (apelidos de autores de estudos, com “et al.” ou o ano) são permitidos. As Referências da Via são genéricas e não levam o nome. O metadado Title/Author do PDF tem de estar vazio. Se encontrar, gerar uma versão limpa a partir da fonte (HTML/MD) do relatório.
-2. Mais simples: `python3 ferramentas/adicionar_colheita.py relatorio --pdf relatorio.pdf --id novo-relatorio --data 2026-12-03 --titulo-pt "…" --titulo-en "…" [--descricao-pt "…" --descricao-en "…" --paginas 12 --lingua-pt português --lingua-en Portuguese --nome nome-no-site.pdf]`. Faz a verificação de privacidade com `pdftotext` e `pdfinfo` (recusa o PDF se tiver termos proibidos ou Title/Author preenchidos), copia-o para `reports/` e junta a entrada em `data/reports.json`. A versão inglesa junta-se depois com `python3 ferramentas/adicionar_colheita.py relatorio-en --pdf relatorio_EN.pdf --id novo-relatorio` (mesma verificação; copia para `reports/<nome>_en.pdf` e grava `ficheiro_en`, `paginas_en`, `tamanho_kb_en`).
-3. Ou à mão: copiar o PDF para `reports/` (nome só com letras, números, `.`, `-`, `_`) e acrescentar um objeto a `relatorios` (`id`, `titulo` PT/EN, `data` AAAA-MM-DD e `ficheiro` `reports/<nome>.pdf` são obrigatórios).
-4. `python3 ferramentas/adicionar_colheita.py verificar` (confirma o JSON, que os PDFs PT e EN existem, que são PDF e que não têm termos proibidos; avisa de PDFs em `reports/` que não estão na lista) e abrir `genetica-reports.html` por `http.server`.
+2. Mais simples: `python3 ferramentas/adicionar_colheita.py relatorio --pdf relatorio.pdf --id novo-relatorio --data 2026-12-03 --titulo-pt "…" --titulo-en "…" --resumo-pt "…" --resumo-en "…" --areas cerebro[,longevidade] [--palavras "sono,sleep" --genes "CLOCK,PER2" --publicado 2026-12-03] [--descricao-pt "…" --descricao-en "…" --paginas 12 --lingua-pt português --lingua-en Portuguese --nome nome-no-site.pdf]`. Faz a verificação de privacidade com `pdftotext` e `pdfinfo` (recusa o PDF se tiver termos proibidos ou Title/Author preenchidos), copia-o para `reports/` e junta a entrada em `data/reports.json`. A versão inglesa junta-se depois com `python3 ferramentas/adicionar_colheita.py relatorio-en --pdf relatorio_EN.pdf --id novo-relatorio` (mesma verificação; copia para `reports/<nome>_en.pdf` e grava `ficheiro_en`, `paginas_en`, `tamanho_kb_en`).
+3. Ou à mão: copiar o PDF para `reports/` (nome só com letras, números, `.`, `-`, `_`) e acrescentar um objeto a `relatorios` (`id`, `titulo` PT/EN, `resumo` PT/EN, `data` AAAA-MM-DD, `publicado` AAAA-MM-DD, `areas` e `ficheiro` `reports/<nome>.pdf` são obrigatórios; `palavras` e `genes` são listas opcionais só para a pesquisa).
+4. `python3 ferramentas/adicionar_colheita.py verificar` (confirma o JSON, incluindo resumos (tamanho, sem resultados pessoais), áreas e datas de publicação, que os PDFs PT e EN existem, que são PDF e que não têm termos proibidos; avisa de PDFs em `reports/` que não estão na lista) e abrir `genetica-reports.html` por `http.server`.
 
 A página só aceita ficheiros `reports/<nome>.pdf` (e `reports/<nome>_en.pdf` para `ficheiro_en`); uma entrada inválida aparece marcada como “Ficheiro inválido”, sem link; um `ficheiro_en` inválido é ignorado (fica o PDF em português).
 

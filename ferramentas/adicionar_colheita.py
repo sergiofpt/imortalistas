@@ -7,9 +7,12 @@ Uso (a partir da raiz do repositório):
       [--nota "..." --nota-en "..."] [--datas-csv 2026-12-03,2026-12-05]
   python3 ferramentas/adicionar_colheita.py verificar
   python3 ferramentas/adicionar_colheita.py relatorio --pdf novo.pdf --id meu-relatorio --data 2026-12-03 \
-      --titulo-pt "Título" --titulo-en "Title" [--descricao-pt "..." --descricao-en "..."] [--paginas 12]
-      [--lingua-pt português --lingua-en Portuguese] [--nome nome-no-site.pdf]
-      (verifica a privacidade do PDF com pdftotext, copia-o para reports/ e junta a entrada em data/reports.json)
+      --titulo-pt "Título" --titulo-en "Title" --resumo-pt "Uma linha genérica" --resumo-en "One generic line" \
+      --areas cerebro[,longevidade] [--palavras "sono,sleep"] [--genes "CLOCK,PER2"] [--publicado 2026-12-03]
+      [--descricao-pt "..." --descricao-en "..."] [--paginas 12] [--lingua-pt português --lingua-en Portuguese] [--nome nome-no-site.pdf]
+      (verifica a privacidade do PDF com pdftotext, copia-o para reports/ e junta a entrada em data/reports.json;
+       resumo = uma linha, até 120 caracteres, sem resultados pessoais; areas = ids da lista "areas" de reports.json (1 ou 2);
+       publicado = data de publicação, por omissão hoje (dá a etiqueta Novo nos 14 dias seguintes); palavras e genes só para a pesquisa)
   python3 ferramentas/adicionar_colheita.py relatorio-en --pdf report_EN.pdf --id meu-relatorio [--paginas 12]
       (versão inglesa: verifica, copia para reports/<nome>_en.pdf e grava ficheiro_en/paginas_en/tamanho_kb_en)
 
@@ -211,6 +214,34 @@ def verificar_estatisticas():
     print(f"estatisticas.json: {d['total'].get('visitas', 0)} visitas, {len(d['relatorios'])} relatórios com aberturas, atualizado_em {d['atualizado_em']}")
     return True
 
+# resumo de uma linha (Genética Reports): genérico, nunca resultados pessoais (percentis, genótipos, rsIDs, scores com valores)
+RESUMO_MAX = 120
+RESUMO_PESSOAL = re.compile(r'percentil|percentile|\bp\d|\b[ACGT]/[ACGT]\b|\b(?:hetero|homo)zig|\brs\d+|\*\d|\d+[,.]\d+\s*%|s[ée]rgio', re.I)
+RE_GENE = re.compile(r'[A-Z0-9][A-Z0-9-]{1,14}')
+def verificar_areas_relatorio(d, r, rid, err):
+    """Campos da pesquisa/filtros da Genética Reports: resumo {pt,en}, areas [1-2 ids], publicado AAAA-MM-DD, genes [..], palavras [..]."""
+    ids = {a.get('id') for a in d.get('areas') or [] if isinstance(a, dict)}
+    res = r.get('resumo')
+    _bi_check(res, f'{rid}.resumo', err)
+    for v in ([res['pt'], res['en']] if isinstance(res, dict) and res.get('pt') and res.get('en') else [res] if isinstance(res, str) else []):
+        if len(v) > RESUMO_MAX: err(f'{rid}.resumo: {len(v)} caracteres (máximo {RESUMO_MAX}) em {v[:50]!r}…')
+        if RESUMO_PESSOAL.search(v): err(f'{rid}.resumo: parece ter resultados ou dados pessoais ({RESUMO_PESSOAL.search(v).group(0)!r}); o resumo é genérico sobre o tema')
+        if PROIBIDO.search(v) or IDADE.search(v): err(f'{rid}.resumo: termo proibido em {v[:60]!r}')
+    ar = r.get('areas')
+    if not (isinstance(ar, list) and 1 <= len(ar) <= 2 and len(set(ar)) == len(ar)): err(f'{rid}.areas: tem de ser uma lista com 1 ou 2 áreas diferentes ({ar!r})')
+    else:
+        for x in ar:
+            if x not in ids: err(f'{rid}.areas: {x!r} não está na lista "areas" de reports.json')
+    if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', str(r.get('publicado', ''))): err(f'{rid}: publicado {r.get("publicado")!r} (AAAA-MM-DD, data de publicação)')
+    for c in ('genes', 'palavras'):
+        v = r.get(c, [])
+        if not (isinstance(v, list) and all(isinstance(x, str) and x.strip() for x in v)): err(f'{rid}.{c}: tem de ser uma lista de textos'); continue
+        if c == 'genes':
+            mau = [x for x in v if not RE_GENE.fullmatch(x)]
+            if mau: err(f'{rid}.genes: símbolos inválidos {mau[:5]}')
+        for x in v:
+            if PROIBIDO.search(x) or IDADE.search(x): err(f'{rid}.{c}: termo proibido em {x!r}')
+
 RE_FICH = re.compile(r'reports/[A-Za-z0-9._-]+\.pdf')
 RE_FICH_EN = re.compile(r'reports/[A-Za-z0-9._-]+_en\.pdf')
 def verificar_reports_json(F):
@@ -220,12 +251,20 @@ def verificar_reports_json(F):
         nonlocal ok; ok = False; print(f'ERRO {nome}: ' + m)
     _bi_check(d.get('intro'), 'intro', err, False)
     if not isinstance(d.get('relatorios'), list): err('falta a lista "relatorios"'); return ok
+    # áreas da Genética Reports (botões de filtro): [{id, pt, en}], ids únicos
+    A = d.get('areas')
+    if not (isinstance(A, list) and A): err('falta a lista "areas" (botões de filtro da página)'); A = []
+    aids = [a.get('id') if isinstance(a, dict) else None for a in A]
+    for a in A:
+        if not (isinstance(a, dict) and re.fullmatch(r'[a-z0-9][a-z0-9-]*', str(a.get('id', ''))) and a.get('pt') and a.get('en')): err(f'areas: entrada inválida {a!r} (precisa de id, pt e en)')
+    if len(set(aids)) != len(aids): err('areas: ids repetidos')
     for k, r in enumerate(d['relatorios']):
         rid = r.get('id', '')
         if not re.fullmatch(r'[a-z0-9][a-z0-9-]*', rid or ''): err(f'relatorios[{k}]: id inválido {rid!r}')
         if rid in ids or rid in ('reports', 'nav', 'lang', 'theme'): err(f'relatorios[{k}]: id repetido ou reservado {rid!r}')
         ids.add(rid)
         _bi_check(r.get('titulo'), f'{rid}.titulo', err); _bi_check(r.get('descricao'), f'{rid}.descricao', err, False)
+        verificar_areas_relatorio(d, r, rid, err)
         if r.get('lingua') is not None: _bi_check(r.get('lingua'), f'{rid}.lingua', err)
         if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', str(r.get('data', ''))): err(f'{rid}: data {r.get("data")!r} (AAAA-MM-DD)')
         fich = r.get('ficheiro', '')
@@ -251,7 +290,10 @@ def verificar_reports_json(F):
         usados = {r.get('ficheiro') for r in d['relatorios']} | {r.get('ficheiro_en') for r in d['relatorios'] if r.get('ficheiro_en')}
         for f in sorted(os.listdir(D_REPORTS)):
             if 'reports/' + f not in usados: print(f'AVISO {nome}: reports/{f} não está em reports.json (não aparece na página)')
-    print(f'{nome}: {len(d["relatorios"])} relatórios, {sum(1 for r in d["relatorios"] if r.get("ficheiro_en"))} com versão inglesa')
+    if A:
+        vazias = [a.get('id') for a in A if isinstance(a, dict) and not any(a.get('id') in (r.get('areas') or []) for r in d['relatorios'])]
+        if vazias: print(f'AVISO {nome}: áreas sem nenhum relatório (o botão fica a 0): {vazias}')
+    print(f'{nome}: {len(d["relatorios"])} relatórios, {sum(1 for r in d["relatorios"] if r.get("ficheiro_en"))} com versão inglesa, {len(A)} áreas')
     return ok
 
 def cmd_relatorio(a):
@@ -264,16 +306,22 @@ def cmd_relatorio(a):
     if achados is None: sys.exit('É preciso o pdftotext (poppler-utils) para verificar a privacidade do PDF')
     if achados: sys.exit(f'PDF com termos proibidos {sorted(set(achados))}: gere uma versão limpa primeiro')
     if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', a.data): sys.exit('--data no formato AAAA-MM-DD')
-    for t in (a.titulo_pt, a.titulo_en, a.descricao_pt or '', a.descricao_en or ''):
+    for t in (a.titulo_pt, a.titulo_en, a.descricao_pt or '', a.descricao_en or '', a.resumo_pt, a.resumo_en):
         if PROIBIDO.search(t): sys.exit(f'Texto com termo proibido: {t!r}')
-    d = ler(F_REPORTS) if os.path.exists(F_REPORTS) else {'atualizado_em': a.hoje, 'relatorios': []}
+    d = ler(F_REPORTS) if os.path.exists(F_REPORTS) else {'atualizado_em': a.hoje, 'areas': [], 'relatorios': []}
     if any(r.get('id') == a.id for r in d['relatorios']): sys.exit(f'Já existe um relatório com id {a.id!r}')
+    lista = lambda s: [x.strip() for x in (s or '').split(',') if x.strip()]
+    pub = a.publicado or a.hoje
+    extra = {'resumo': {'pt': a.resumo_pt, 'en': a.resumo_en}, 'areas': lista(a.areas), 'publicado': pub, 'palavras': lista(a.palavras), 'genes': lista(a.genes)}
+    erros = []; verificar_areas_relatorio(d, extra, a.id, erros.append)
+    if erros: sys.exit('\n'.join(erros))
     os.makedirs(D_REPORTS, exist_ok=True); shutil.copyfile(a.pdf, os.path.join(D_REPORTS, nomef))
-    r = {'id': a.id, 'titulo': {'pt': a.titulo_pt, 'en': a.titulo_en}, 'data': a.data, 'ficheiro': 'reports/' + nomef}
+    r = {'id': a.id, 'titulo': {'pt': a.titulo_pt, 'en': a.titulo_en}, 'resumo': extra['resumo'], 'data': a.data, 'publicado': pub, 'ficheiro': 'reports/' + nomef}
     if a.descricao_pt and a.descricao_en: r['descricao'] = {'pt': a.descricao_pt, 'en': a.descricao_en}
     if a.paginas: r['paginas'] = a.paginas
     r['tamanho_kb'] = round(os.path.getsize(a.pdf) / 1024)
     if a.lingua_pt and a.lingua_en: r['lingua'] = {'pt': a.lingua_pt, 'en': a.lingua_en}
+    r['areas'] = extra['areas']; r['palavras'] = extra['palavras']; r['genes'] = extra['genes']
     d['relatorios'].append(r); d['atualizado_em'] = a.hoje; gravar(F_REPORTS, d)
     print(f'relatório {a.id!r} acrescentado: reports/{nomef} ({len(d["relatorios"])} relatórios); corra "verificar" antes de publicar')
 
@@ -442,6 +490,10 @@ p = sp.add_parser('relatorio', help='juntar um relatório PDF à página Genéti
 p.add_argument('--pdf', required=True); p.add_argument('--id', required=True); p.add_argument('--data', required=True)
 p.add_argument('--titulo-pt', required=True); p.add_argument('--titulo-en', required=True)
 p.add_argument('--descricao-pt'); p.add_argument('--descricao-en'); p.add_argument('--lingua-pt'); p.add_argument('--lingua-en')
+p.add_argument('--resumo-pt', required=True, help='uma linha genérica (até 120 caracteres, sem resultados pessoais)'); p.add_argument('--resumo-en', required=True)
+p.add_argument('--areas', required=True, help='1 ou 2 ids da lista "areas" de data/reports.json, separados por vírgula')
+p.add_argument('--palavras', help='palavras-chave PT/EN para a pesquisa, separadas por vírgula'); p.add_argument('--genes', help='genes citados no PDF, separados por vírgula')
+p.add_argument('--publicado', help='data de publicação AAAA-MM-DD (por omissão, hoje)')
 p.add_argument('--paginas', type=int); p.add_argument('--nome', help='nome do ficheiro em reports/ (por omissão, o do PDF)'); p.set_defaults(f=cmd_relatorio)
 p = sp.add_parser('relatorio-en', help='juntar a versão inglesa (PDF) a um relatório já existente')
 p.add_argument('--pdf', required=True); p.add_argument('--id', required=True); p.add_argument('--paginas', type=int); p.set_defaults(f=cmd_relatorio_en)

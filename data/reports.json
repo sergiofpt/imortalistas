@@ -1,6 +1,73 @@
 {
- "_leia_me": "Lista de relatórios da página genetica-reports.html (reports.js). Para acrescentar um relatório: copiar o PDF (já verificado quanto à privacidade) para reports/ e juntar uma entrada a \"relatorios\". Campos: id (único, letras/números/hífens), titulo {pt,en}, data AAAA-MM-DD, ficheiro \"reports/<nome>.pdf\" (obrigatórios); descricao {pt,en}, paginas, tamanho_kb, lingua {pt,en}, etiquetas [..], destaque true, ficheiro_en \"reports/<nome>_en.pdf\" + paginas_en + tamanho_kb_en (versão inglesa: no modo English os botões usam-na) (opcionais; destaque = documento-mestre num cartão em destaque por cima da lista, conta no total e não se repete na grelha). A página ordena por data (mais recente primeiro). Ver README.md, secção \"Genética Reports\".",
- "atualizado_em": "2026-10-03",
+ "_leia_me": "Lista de relatórios da página genetica-reports.html (reports.js). Para acrescentar um relatório: copiar o PDF (já verificado quanto à privacidade) para reports/ e juntar uma entrada a \"relatorios\". Campos: id (único, letras/números/hífens), titulo {pt,en}, data AAAA-MM-DD, ficheiro \"reports/<nome>.pdf\" (obrigatórios); descricao {pt,en}, paginas, tamanho_kb, lingua {pt,en}, etiquetas [..], destaque true, ficheiro_en \"reports/<nome>_en.pdf\" + paginas_en + tamanho_kb_en (versão inglesa: no modo English os botões usam-na), resumo {pt,en} (uma linha, até 120 caracteres, genérica: sem resultados pessoais), areas [ids da lista \"areas\" do topo, 1 ou 2], publicado AAAA-MM-DD (data em Portugal do 1.º commit que adicionou o PDF; dá a etiqueta Novo nos 14 dias seguintes), genes [símbolos citados no PDF] e palavras [palavras-chave PT/EN] (estes dois só para a pesquisa) (opcionais; destaque = documento-mestre num cartão em destaque por cima da lista, conta no total e não se repete na grelha). A página ordena por publicado (ou data), mais recente primeiro, e filtra pela pesquisa (título, resumo, descrição, genes, palavras-chave, áreas; sem acentos nem maiúsculas) e pelas áreas. Ver README.md, secção \"Genética Reports\".",
+ "atualizado_em": "2026-10-04",
+ "areas": [
+  {
+   "id": "coracao",
+   "pt": "Coração e Vasos",
+   "en": "Heart and Vessels"
+  },
+  {
+   "id": "cerebro",
+   "pt": "Cérebro e Mente",
+   "en": "Brain and Mind"
+  },
+  {
+   "id": "metabolismo",
+   "pt": "Fígado e Metabolismo",
+   "en": "Liver and Metabolism"
+  },
+  {
+   "id": "digestao",
+   "pt": "Digestão e Intestino",
+   "en": "Digestion and Gut"
+  },
+  {
+   "id": "nutricao",
+   "pt": "Nutrição e Suplementos",
+   "en": "Nutrition and Supplements"
+  },
+  {
+   "id": "desporto",
+   "pt": "Desporto e Músculo",
+   "en": "Sport and Muscle"
+  },
+  {
+   "id": "cancro",
+   "pt": "Cancro",
+   "en": "Cancer"
+  },
+  {
+   "id": "farmaco",
+   "pt": "Farmacogenómica e Medicamentos",
+   "en": "Pharmacogenomics and Drugs"
+  },
+  {
+   "id": "imunidade",
+   "pt": "Imunidade e Inflamação",
+   "en": "Immunity and Inflammation"
+  },
+  {
+   "id": "hormonas",
+   "pt": "Hormonas e Reprodução",
+   "en": "Hormones and Reproduction"
+  },
+  {
+   "id": "orgaos",
+   "pt": "Órgãos e Sentidos",
+   "en": "Organs and Senses"
+  },
+  {
+   "id": "longevidade",
+   "pt": "Longevidade e Envelhecimento",
+   "en": "Longevity and Ageing"
+  },
+  {
+   "id": "outros",
+   "pt": "Outros",
+   "en": "Other"
+  }
+ ],
  "relatorios": [
   {
    "id": "farmacogenomica-632",
@@ -8,7 +75,12 @@
     "pt": "Farmacogenómica: resposta prevista a 632 medicamentos",
     "en": "Pharmacogenomics: predicted response to 632 drugs"
    },
+   "resumo": {
+    "pt": "Como os genes podem mudar o efeito e a dose de centenas de medicamentos, por área terapêutica.",
+    "en": "How genes can change the effect and dose of hundreds of drugs, organised by therapeutic area."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-02",
    "ficheiro": "reports/farmacogenomica-632-medicamentos.pdf",
    "descricao": {
     "pt": "Chip + imputação, com CPIC, DPWG e rótulos FDA, organizado por categoria terapêutica: 2 a evitar (piroxicam, tenoxicam), 16 com ajuste de dose, 35 a monitorizar, 8 indeterminados, 226 normais e 345 sem interação PGx conhecida. A medicação atual não tem nenhum fármaco a evitar nem com mudança de dose. Confirmar os achados acionáveis com um teste PGx clínico (CYP2D6 com CNV + HLA).",
@@ -28,7 +100,83 @@
    ],
    "ficheiro_en": "reports/farmacogenomica-632-medicamentos_en.pdf",
    "paginas_en": 48,
-   "tamanho_kb_en": 275
+   "tamanho_kb_en": 275,
+   "areas": [
+    "farmaco"
+   ],
+   "palavras": [
+    "PGx",
+    "fármacos",
+    "drugs",
+    "dose",
+    "citocromo P450",
+    "cytochrome P450",
+    "CPIC",
+    "DPWG"
+   ],
+   "genes": [
+    "ABCG2",
+    "BCHE",
+    "CACNA1S",
+    "CES1",
+    "CFTR",
+    "COMT",
+    "CYP1A2",
+    "CYP24A1",
+    "CYP27B1",
+    "CYP2A6",
+    "CYP2B6",
+    "CYP2C19",
+    "CYP2C8",
+    "CYP2C9",
+    "CYP2D6",
+    "CYP2E1",
+    "CYP2J2",
+    "CYP2R1",
+    "CYP3A4",
+    "CYP3A5",
+    "CYP4F2",
+    "DDC",
+    "DHFR",
+    "DPYD",
+    "FOXO4",
+    "G6PD",
+    "GLP1R",
+    "GSTM1",
+    "GSTT1",
+    "HPRT1",
+    "IFNL3",
+    "IFNL4",
+    "MBOAT7",
+    "MTHFR",
+    "NAT1",
+    "NAT2",
+    "NUDT15",
+    "OPRM1",
+    "OXTR",
+    "PCSK9",
+    "PNPLA3",
+    "POLG",
+    "RYR1",
+    "SERPINA1",
+    "SLC22A1",
+    "SLC22A2",
+    "SLCO1B1",
+    "SULT1A1",
+    "SULT1A3",
+    "SULT2A1",
+    "TERT",
+    "TPMT",
+    "UGT1A1",
+    "UGT1A3",
+    "UGT1A4",
+    "UGT1A9",
+    "UGT2B10",
+    "UGT2B15",
+    "UGT2B17",
+    "UGT2B7",
+    "VKORC1"
+   ]
   },
   {
    "id": "intolerancias-alimentares-626",
@@ -36,7 +184,12 @@
     "pt": "Intolerâncias alimentares genéticas (626 alimentos)",
     "en": "Genetic food intolerances (626 foods)"
    },
+   "resumo": {
+    "pt": "Alimentos a limitar ou vigiar segundo a genética da digestão: lactose, frutose, histamina e outros.",
+    "en": "Foods to limit or watch based on digestive genetics: lactose, fructose, histamine and more."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-02",
    "ficheiro": "reports/intolerancias-alimentares-626-alimentos.pdf",
    "descricao": {
     "pt": "Só os alimentos com predisposição genética: 0 a evitar, 140 a limitar e 162 a vigiar.",
@@ -50,7 +203,76 @@
    },
    "ficheiro_en": "reports/intolerancias-alimentares-626-alimentos_en.pdf",
    "paginas_en": 33,
-   "tamanho_kb_en": 212
+   "tamanho_kb_en": 212,
+   "areas": [
+    "nutricao",
+    "digestao"
+   ],
+   "palavras": [
+    "intolerância",
+    "intolerance",
+    "lactose",
+    "frutose",
+    "fructose",
+    "histamina",
+    "histamine",
+    "dieta",
+    "diet"
+   ],
+   "genes": [
+    "ABCG2",
+    "ABO",
+    "ACE",
+    "ADD1",
+    "ADH1B",
+    "ADORA2A",
+    "AGT",
+    "AGXT",
+    "ALDH2",
+    "ALDOB",
+    "AOC1",
+    "APOA2",
+    "APOE",
+    "CYP11B2",
+    "CYP1A1",
+    "CYP1A2",
+    "CYP2C9",
+    "CYP3A4",
+    "DAO",
+    "FABP2",
+    "FADS1",
+    "FLG",
+    "FTO",
+    "FUT2",
+    "G6PD",
+    "GALT",
+    "GNB3",
+    "GSTA1",
+    "GSTM1",
+    "GSTT1",
+    "HFE",
+    "HNMT",
+    "HSD17B13",
+    "IL4R",
+    "LCT",
+    "LIPC",
+    "MBOAT7",
+    "MCM6",
+    "MTHFR",
+    "MTNR1B",
+    "NAT2",
+    "OR6A2",
+    "PAH",
+    "PNPLA3",
+    "SERPINA1",
+    "SLC22A12",
+    "SLC2A9",
+    "TAS2R38",
+    "TCF7L2",
+    "TMPRSS6",
+    "TPSAB1",
+    "VKORC1"
+   ]
   },
   {
    "id": "dopamina-noradrenalina",
@@ -58,7 +280,12 @@
     "pt": "Dopamina e Noradrenalina",
     "en": "Dopamine & Noradrenaline"
    },
+   "resumo": {
+    "pt": "Genes da produção, recaptação e degradação da dopamina e da noradrenalina, e o que influenciam.",
+    "en": "Genes for dopamine and noradrenaline synthesis, reuptake and breakdown, and what they influence."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-02",
    "ficheiro": "reports/dopamina-noradrenalina.pdf",
    "descricao": {
     "pt": "47 de 48 SNPs (6 imputados); mais provável um turnover de dopamina mais rápido do que o típico.",
@@ -72,7 +299,56 @@
    },
    "ficheiro_en": "reports/dopamina-noradrenalina_en.pdf",
    "paginas_en": 23,
-   "tamanho_kb_en": 145
+   "tamanho_kb_en": 145,
+   "areas": [
+    "cerebro"
+   ],
+   "palavras": [
+    "neurotransmissores",
+    "neurotransmitters",
+    "motivação",
+    "motivation",
+    "foco",
+    "focus",
+    "norepinefrina",
+    "norepinephrine"
+   ],
+   "genes": [
+    "ADRA1A",
+    "ADRA2A",
+    "ADRB1",
+    "ADRB2",
+    "ADRB3",
+    "ALDH2",
+    "ANKK1",
+    "COMT",
+    "CYP1A2",
+    "CYP2C19",
+    "CYP2C9",
+    "CYP2D6",
+    "CYP3A4",
+    "CYP3A5",
+    "DBH",
+    "DDC",
+    "DRD1",
+    "DRD2",
+    "DRD3",
+    "DRD4",
+    "DRD5",
+    "GNMT",
+    "HFE",
+    "MAOA",
+    "MAOB",
+    "MBOAT7",
+    "PAH",
+    "PNPLA3",
+    "SLC18A1",
+    "SLC18A2",
+    "SLC6A2",
+    "SLC6A3",
+    "TRPM6",
+    "UGT1A1"
+   ]
   },
   {
    "id": "suplementos-1002",
@@ -80,7 +356,12 @@
     "pt": "Resposta genética a suplementos (999 suplementos)",
     "en": "Genetic response to supplements (999 supplements)"
    },
+   "resumo": {
+    "pt": "Resposta genética prevista a cerca de mil suplementos: quais evitar, ajustar ou vigiar.",
+    "en": "Predicted genetic response to about a thousand supplements: which to avoid, adjust or monitor."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-02",
    "ficheiro": "reports/suplementos-1002.pdf",
    "descricao": {
     "pt": "53 a evitar ou pausar, 66 a ajustar, 111 a monitorizar, 221 normais, 11 indeterminados e 537 sem relevância genética.",
@@ -94,7 +375,131 @@
    },
    "ficheiro_en": "reports/suplementos-1002_en.pdf",
    "paginas_en": 90,
-   "tamanho_kb_en": 498
+   "tamanho_kb_en": 498,
+   "areas": [
+    "nutricao"
+   ],
+   "palavras": [
+    "suplementação",
+    "supplementation",
+    "vitaminas",
+    "vitamins",
+    "nutracêuticos",
+    "nutraceuticals",
+    "minerais",
+    "minerals"
+   ],
+   "genes": [
+    "ABCG5",
+    "ABCG8",
+    "ACE",
+    "ACTN3",
+    "ADD1",
+    "ADORA2A",
+    "AGT",
+    "AHR",
+    "ALPL",
+    "AMPD1",
+    "AOC1",
+    "APOB",
+    "APOE",
+    "ARMS2",
+    "BCO1",
+    "BHMT",
+    "CAT",
+    "CBS",
+    "CDKN2A",
+    "CETP",
+    "CFH",
+    "CNDP1",
+    "COL1A1",
+    "COL5A1",
+    "COMT",
+    "COQ2",
+    "CPS1",
+    "CPT2",
+    "CYP11B2",
+    "CYP1A2",
+    "CYP2A6",
+    "CYP2C19",
+    "CYP2C9",
+    "CYP2D6",
+    "CYP2E1",
+    "CYP2R1",
+    "CYP3A4",
+    "CYP3A5",
+    "CYP4F2",
+    "DAO",
+    "DBP",
+    "DHCR7",
+    "DHFR",
+    "ELOVL2",
+    "EPHX1",
+    "FAAH",
+    "FADS1",
+    "FADS2",
+    "FMO3",
+    "FOXO4",
+    "FTO",
+    "FUT2",
+    "G6PD",
+    "GAMT",
+    "GCKR",
+    "GCLM",
+    "GGCX",
+    "GNB3",
+    "GNMT",
+    "GPX1",
+    "GSTA1",
+    "GSTM1",
+    "GSTT1",
+    "HDC",
+    "HFE",
+    "HNMT",
+    "HSD11B2",
+    "HSD17B13",
+    "KEAP1",
+    "LCT",
+    "MBOAT7",
+    "MTHFR",
+    "MTNR1B",
+    "MTR",
+    "MTRR",
+    "NAAA",
+    "NAT2",
+    "NBPF3",
+    "NFE2L2",
+    "NOS3",
+    "NQO1",
+    "OPRM1",
+    "PAH",
+    "PDXK",
+    "PEMT",
+    "PHGDH",
+    "PNPLA3",
+    "PON1",
+    "SERPINA1",
+    "SLC19A2",
+    "SLC22A4",
+    "SLC22A5",
+    "SLC23A1",
+    "SLC23A2",
+    "SLC30A8",
+    "SLC39A8",
+    "SLCO1B1",
+    "SOD2",
+    "SULT2A1",
+    "TCF7L2",
+    "TCN1",
+    "TCN2",
+    "TERT",
+    "TMPRSS6",
+    "TRPM6",
+    "UGT1A1",
+    "UGT1A6",
+    "VDR",
+    "VKORC1"
+   ]
   },
   {
    "id": "psicadelicos",
@@ -102,7 +507,12 @@
     "pt": "Psicadélicos",
     "en": "Psychedelics"
    },
+   "resumo": {
+    "pt": "Genética da resposta, do metabolismo e dos riscos para a saúde mental associados aos psicadélicos.",
+    "en": "Genetics of response, metabolism and mental-health risks linked to psychedelics."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-02",
    "ficheiro": "reports/psicadelicos.pdf",
    "descricao": {
     "pt": "22 traços (resposta, metabolismo e saúde mental); 312 de 330 SNPs (142 imputados).",
@@ -116,7 +526,262 @@
    },
    "ficheiro_en": "reports/psicadelicos_en.pdf",
    "paginas_en": 42,
-   "tamanho_kb_en": 214
+   "tamanho_kb_en": 214,
+   "areas": [
+    "cerebro",
+    "farmaco"
+   ],
+   "palavras": [
+    "psilocibina",
+    "psilocybin",
+    "LSD",
+    "MDMA",
+    "cetamina",
+    "ketamine",
+    "saúde mental",
+    "mental health"
+   ],
+   "genes": [
+    "ACE",
+    "ACVR2A",
+    "ADRB1",
+    "ADRB2",
+    "AGPAT4",
+    "AKAP6",
+    "AKT1",
+    "ANKK1",
+    "ANKRD36",
+    "ARHGAP27",
+    "ARL5B",
+    "ARSA",
+    "ARVCF",
+    "ATP10B",
+    "ATP5MC3",
+    "ATP8B4",
+    "ATXN1",
+    "BCR",
+    "BDNF",
+    "BICRAL",
+    "BLMH",
+    "CAMTA1",
+    "CBLN3",
+    "CCDC198",
+    "CCDC68",
+    "CCDC85A",
+    "CCK",
+    "CCNY",
+    "CDC25B",
+    "CDK5RAP3",
+    "CERS5",
+    "CES1",
+    "CHD9",
+    "CHRNA7",
+    "CLEC4C",
+    "CLOCK",
+    "CMTM8",
+    "CNR1",
+    "COMT",
+    "COPZ2",
+    "COX7B2",
+    "CRHR2",
+    "CRIM1",
+    "CSMD1",
+    "CSMD2",
+    "CXXC4",
+    "CYP1A2",
+    "CYP1B1",
+    "CYP2B6",
+    "CYP2C19",
+    "CYP2C9",
+    "CYP2D6",
+    "CYP3A4",
+    "CYP3A43",
+    "CYP3A5",
+    "DCTN5",
+    "DDT",
+    "DISC1",
+    "DLC1",
+    "DMD",
+    "DNAH8",
+    "DPP10",
+    "DPRX",
+    "DPYD",
+    "DRD2",
+    "DSCAM",
+    "DUSP18",
+    "DUSP23",
+    "DUSP28",
+    "EDEM3",
+    "EFCAB6",
+    "EFNA5",
+    "EIF3M",
+    "ELAPOR2",
+    "EME1",
+    "ENOX1",
+    "EPHX2",
+    "ERCC6L2",
+    "ESR1",
+    "FAAH",
+    "FAM120AOS",
+    "FBLL1",
+    "FKBP4",
+    "FMN2",
+    "FOXK1",
+    "FTCDNL1",
+    "FUT9",
+    "GABRA2",
+    "GABRG2",
+    "GAD1",
+    "GAP43",
+    "GAS1",
+    "GDF6",
+    "GGH",
+    "GIP",
+    "GOLIM4",
+    "GRIN3A",
+    "GRM3",
+    "H4C13",
+    "HES6",
+    "HFE",
+    "HTR2A",
+    "IL18R1",
+    "IL1B",
+    "IL20RB",
+    "IL6",
+    "IQCM",
+    "IRAK3",
+    "IRX6",
+    "KCNH2",
+    "KCNQ1",
+    "KLF9",
+    "LGSN",
+    "LRRC46",
+    "LRRC4C",
+    "MAML3",
+    "MANBA",
+    "MAOA",
+    "MAPK1",
+    "MAPT",
+    "MARCHF4",
+    "MAST4",
+    "MC4R",
+    "METTL21C",
+    "MLKL",
+    "MMP8",
+    "MYCN",
+    "MYH15",
+    "NAT16",
+    "NEMP2",
+    "NFIA",
+    "NFKB1",
+    "NOC3L",
+    "NOS1",
+    "NOS1AP",
+    "NOX4",
+    "NPAS2",
+    "NRG1",
+    "NRN1",
+    "NT5C2",
+    "NUP107",
+    "OLFM4",
+    "OPRM1",
+    "OR4C12",
+    "OR5P3",
+    "OSCP1",
+    "OXTR",
+    "PCDH7",
+    "PID1",
+    "PILRB",
+    "PLXNB2",
+    "PNPLA3",
+    "POGK",
+    "POU3F3",
+    "PPARGC1B",
+    "PREPL",
+    "PRTFDC1",
+    "PSAPL1",
+    "PTGS2",
+    "PTPN7",
+    "RARRES1",
+    "RBFOX1",
+    "RD3",
+    "RELN",
+    "REX1BD",
+    "RGS2",
+    "RNF180",
+    "RNF220",
+    "RORA",
+    "SCN1A",
+    "SCN5A",
+    "SDCCAG8",
+    "SEC11A",
+    "SERPING1",
+    "SFXN2",
+    "SH2B3",
+    "SH2D1B",
+    "SH3YL1",
+    "SIX3",
+    "SKP2",
+    "SLC22A15",
+    "SLC6A2",
+    "SMAD1",
+    "SNURF",
+    "SNX9",
+    "SORCS3",
+    "SOX5",
+    "SOX6",
+    "SP3",
+    "SPATS2L",
+    "SPPL3",
+    "SRBD1",
+    "SRR",
+    "SSH2",
+    "STAT6",
+    "SUSD1",
+    "SYT1",
+    "TACR1",
+    "TBC1D2",
+    "TBL1X",
+    "TCF4",
+    "TDRD3",
+    "TDRD9",
+    "TEF",
+    "TERT",
+    "TFAP2C",
+    "TGFA",
+    "THAP8",
+    "THEMIS",
+    "THRA",
+    "TMBIM4",
+    "TMEM132D",
+    "TNF",
+    "TPH1",
+    "TPH2",
+    "TRDN",
+    "TRIB2",
+    "TRIM27",
+    "TRIM36",
+    "TRIM4",
+    "TSPAN14",
+    "TTC12",
+    "TTC21B",
+    "TULP1",
+    "TWIST1",
+    "UBXN2A",
+    "UGT1A1",
+    "UGT1A10",
+    "UGT1A9",
+    "UNC13C",
+    "UST",
+    "VRK2",
+    "WHRN",
+    "ZBTB14",
+    "ZEB2",
+    "ZFP69",
+    "ZNF365",
+    "ZNF804A",
+    "ZPLD1"
+   ]
   },
   {
    "id": "alimentos-longevidade-173",
@@ -124,7 +789,12 @@
     "pt": "Alimentos favoráveis à longevidade",
     "en": "Longevity-favourable foods"
    },
+   "resumo": {
+    "pt": "Que alimentos a genética indica para a longevidade, com o grau de evidência de cada um.",
+    "en": "Which foods genetics points to for longevity, with the strength of evidence for each."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-02",
    "ficheiro": "reports/alimentos-longevidade-173-alimentos.pdf",
    "descricao": {
     "pt": "141 de 173 alimentos com indicação genética favorável (73 moderada, 68 fraca); 32 neutros.",
@@ -138,7 +808,86 @@
    },
    "ficheiro_en": "reports/alimentos-longevidade-173-alimentos_en.pdf",
    "paginas_en": 30,
-   "tamanho_kb_en": 180
+   "tamanho_kb_en": 180,
+   "areas": [
+    "nutricao",
+    "longevidade"
+   ],
+   "palavras": [
+    "dieta",
+    "diet",
+    "alimentação",
+    "food",
+    "nutrição",
+    "nutrition"
+   ],
+   "genes": [
+    "ABCG2",
+    "ACTN3",
+    "ADD1",
+    "ADORA2A",
+    "AGT",
+    "AGXT",
+    "AHR",
+    "APOA2",
+    "APOB",
+    "APOE",
+    "ARMS2",
+    "BCO1",
+    "BHMT",
+    "CDKN2A",
+    "CDKN2B-AS1",
+    "CETP",
+    "CFH",
+    "CHDH",
+    "COMT",
+    "CYP11B2",
+    "CYP1A2",
+    "CYP3A4",
+    "CYP3A5",
+    "DAO",
+    "ELOVL2",
+    "FADS1",
+    "FADS2",
+    "FUT2",
+    "G6PD",
+    "GCKR",
+    "GNB3",
+    "GNMT",
+    "GPX1",
+    "GSTA1",
+    "GSTM1",
+    "GSTP1",
+    "GSTT1",
+    "HFE",
+    "HNMT",
+    "HSD17B13",
+    "IL6",
+    "LCT",
+    "LIPC",
+    "MBOAT7",
+    "MCM6",
+    "MTHFR",
+    "MTNR1B",
+    "MTR",
+    "NFE2L2",
+    "NOS3",
+    "NQO1",
+    "PEMT",
+    "PNPLA3",
+    "PON1",
+    "PPARG",
+    "SELENOP",
+    "SERPINA1",
+    "SLC19A1",
+    "SLC22A4",
+    "SLC30A8",
+    "SOD2",
+    "TAS2R38",
+    "TCF7L2",
+    "TMPRSS6",
+    "UGT1A1"
+   ]
   },
   {
    "id": "health-report-72",
@@ -146,7 +895,12 @@
     "pt": "Health Report genético",
     "en": "Genetic Health Report"
    },
+   "resumo": {
+    "pt": "Painel de dezenas de traços de saúde, nutrição, vitaminas e exercício lidos a partir do ADN.",
+    "en": "Panel of dozens of health, nutrition, vitamin and exercise traits read from DNA."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-02",
    "ficheiro": "reports/health-report-72-tracos.pdf",
    "descricao": {
     "pt": "72 traços: 17 favoráveis, 10 desfavoráveis e os restantes típicos; 826 de 931 SNPs (241 imputados).",
@@ -160,7 +914,618 @@
    },
    "ficheiro_en": "reports/health-report-72-tracos_en.pdf",
    "paginas_en": 92,
-   "tamanho_kb_en": 492
+   "tamanho_kb_en": 492,
+   "areas": [
+    "outros",
+    "nutricao"
+   ],
+   "palavras": [
+    "traços",
+    "traits",
+    "saúde geral",
+    "general health",
+    "vitaminas",
+    "vitamins",
+    "exercício",
+    "exercise"
+   ],
+   "genes": [
+    "A1CF",
+    "ABCA1",
+    "ABCA6",
+    "ABCA8",
+    "ABCC8",
+    "ABCD4",
+    "ABCG1",
+    "ABCG5",
+    "ABTB1",
+    "ACACB",
+    "ACAD10",
+    "ACE",
+    "ACE2",
+    "ACSL5",
+    "ACTN3",
+    "ACTRT3",
+    "ACVR1B",
+    "ADAM10",
+    "ADAM17",
+    "ADCY5",
+    "ADGRE1",
+    "ADGRL2",
+    "ADGRL3",
+    "ADH1B",
+    "ADIPOQ",
+    "ADORA2A",
+    "ADRA2A",
+    "ADRB2",
+    "ADRB3",
+    "AGMO",
+    "AGT",
+    "AGTR2",
+    "AGXT2",
+    "AHCY",
+    "AHR",
+    "AHSG",
+    "AKAIN1",
+    "AKT1",
+    "ALDH2",
+    "ALDH3B1",
+    "ALDH5A1",
+    "ALDH7A1",
+    "ALDH8A1",
+    "ALPK2",
+    "ALPL",
+    "AMPD1",
+    "AMT",
+    "AMY2B",
+    "ANGPTL4",
+    "ANKK1",
+    "ANO3",
+    "AOC1",
+    "APEX1",
+    "APOA1",
+    "APOA2",
+    "APOA4",
+    "APOA5",
+    "APOB",
+    "APOC1",
+    "APOC3",
+    "APOC4",
+    "APOE",
+    "ARAP2",
+    "ARID1A",
+    "ARL4C",
+    "ARMC2",
+    "ARRDC3",
+    "ASAH1",
+    "ATG16L1",
+    "ATP10B",
+    "BACE1",
+    "BCAM",
+    "BCAT1",
+    "BCL2",
+    "BCL3",
+    "BCO1",
+    "BDKRB2",
+    "BDNF",
+    "BHLHE23",
+    "BHMT",
+    "BHMT2",
+    "BLVRA",
+    "BMP2",
+    "BORCS7",
+    "BPTF",
+    "BTNL8",
+    "BUD13",
+    "C1QL3",
+    "CACNA2D3",
+    "CADM2",
+    "CAT",
+    "CBS",
+    "CC2D2A",
+    "CCDC170",
+    "CCDC68",
+    "CCL2",
+    "CCL8",
+    "CCND2",
+    "CCR2",
+    "CD28",
+    "CD300LG",
+    "CD36",
+    "CDC42SE1",
+    "CDH20",
+    "CDH6",
+    "CDKAL1",
+    "CDKN2A",
+    "CEACAM20",
+    "CENPF",
+    "CETP",
+    "CFAP299",
+    "CFH",
+    "CFHR2",
+    "CGRRF1",
+    "CHDH",
+    "CHKA",
+    "CHMP4B",
+    "CHODL",
+    "CHRNA5",
+    "CHRNB3",
+    "CKM",
+    "CLEC18C",
+    "CLGN",
+    "CLMP",
+    "CLOCK",
+    "CLPTM1",
+    "CLYBL",
+    "CNDP1",
+    "CNDP2",
+    "CNIH4",
+    "CNR1",
+    "COL12A1",
+    "COL1A1",
+    "COL2A1",
+    "COL3A1",
+    "COL5A1",
+    "COMT",
+    "COPB1",
+    "COX15",
+    "CPA3",
+    "CPED1",
+    "CPNE1",
+    "CPS1",
+    "CRISPLD2",
+    "CRP",
+    "CSK",
+    "CST7",
+    "CSTF2T",
+    "CTH",
+    "CTLA4",
+    "CTNNB1",
+    "CUBN",
+    "CYBA",
+    "CYFIP1",
+    "CYP1A1",
+    "CYP1A2",
+    "CYP1B1",
+    "CYP24A1",
+    "CYP27A1",
+    "CYP2A6",
+    "CYP2C19",
+    "CYP2C9",
+    "CYP2D6",
+    "CYP2E1",
+    "CYP2R1",
+    "CYP3A4",
+    "CYP4B1",
+    "DACT1",
+    "DBP",
+    "DCC",
+    "DCHS2",
+    "DEF6",
+    "DES",
+    "DGAT2",
+    "DGKB",
+    "DHCR7",
+    "DHFR",
+    "DIO2",
+    "DNAJA4",
+    "DNAJC30",
+    "DOK6",
+    "DRD2",
+    "DSEL",
+    "DUOX2",
+    "EEF1AKMT3",
+    "EFHC1",
+    "EGLN2",
+    "EIF3J",
+    "EPHX1",
+    "EPS8L2",
+    "ERCC5",
+    "ERICH1",
+    "ETS2",
+    "ETV5",
+    "FAAH",
+    "FABP1",
+    "FABP2",
+    "FADS1",
+    "FADS2",
+    "FAM13A",
+    "FAM193B",
+    "FAM216B",
+    "FAM240C",
+    "FCER1G",
+    "FCHSD2",
+    "FFAR4",
+    "FGF21",
+    "FGF5",
+    "FKBP11",
+    "FLT3",
+    "FMO3",
+    "FOLH1",
+    "FOLR3",
+    "FOXK1",
+    "FOXO3",
+    "FPGS",
+    "FSCB",
+    "FTO",
+    "FUCA1",
+    "FUT2",
+    "FUT3",
+    "FUT5",
+    "GABPB1",
+    "GAL",
+    "GALNT3",
+    "GALNTL6",
+    "GANC",
+    "GBA2",
+    "GBP3",
+    "GBP7",
+    "GCKR",
+    "GCLC",
+    "GCLM",
+    "GDF5",
+    "GIPR",
+    "GLB1L",
+    "GLCE",
+    "GLP1R",
+    "GNB3",
+    "GNMT",
+    "GNPDA2",
+    "GOLGA8B",
+    "GP2",
+    "GPAM",
+    "GPX1",
+    "GPX3",
+    "GPX4",
+    "GSDMB",
+    "GSKIP",
+    "GSTA1",
+    "GSTM1",
+    "GSTM3",
+    "GSTO2",
+    "GSTP1",
+    "GTF2E1",
+    "GTF3C2",
+    "HACE1",
+    "HBZ",
+    "HES6",
+    "HFE",
+    "HGF",
+    "HIF1A",
+    "HMGA2",
+    "HNF1A",
+    "HNF4A",
+    "HNRNPA3",
+    "HOXC6",
+    "HSPB7",
+    "HTR5A",
+    "HYAL1",
+    "IDH3A",
+    "IFIH1",
+    "IGF2",
+    "IGF2BP2",
+    "IKZF2",
+    "IL13",
+    "IL19",
+    "IL1A",
+    "IL1B",
+    "IL1RN",
+    "IL21",
+    "IL4R",
+    "IL6",
+    "IL6R",
+    "IMPDH1",
+    "INS",
+    "IQCH",
+    "IQCJ",
+    "IRS1",
+    "IRX3",
+    "IRX5",
+    "ITCH",
+    "ITGA4",
+    "JAZF1",
+    "JMY",
+    "KANSL1",
+    "KCNA4",
+    "KCNJ11",
+    "KCNK2",
+    "KCNMB3",
+    "KCTD15",
+    "KCTD18",
+    "KDR",
+    "KISS1R",
+    "KLC1",
+    "KLF9",
+    "KRT6A",
+    "LAMA4",
+    "LCT",
+    "LDLR",
+    "LEP",
+    "LEPR",
+    "LGALS9",
+    "LIN7C",
+    "LIPG",
+    "LMAN1L",
+    "LMO7",
+    "LPA",
+    "LPCAT2",
+    "LPL",
+    "LRIT3",
+    "LRP6",
+    "LRRC4",
+    "LRTM1",
+    "LTA4H",
+    "MAF",
+    "MAFB",
+    "MAP1A",
+    "MARCO",
+    "MAT1A",
+    "MAU2",
+    "MC4R",
+    "MCM10",
+    "MCUB",
+    "MDFIC2",
+    "MECOM",
+    "MED24",
+    "MGLL",
+    "MICA",
+    "MICB",
+    "MLLT3",
+    "MLXIPL",
+    "MMAA",
+    "MMAB",
+    "MMUT",
+    "MN1",
+    "MPO",
+    "MRPL20",
+    "MRPS31",
+    "MRPS34",
+    "MS4A6A",
+    "MSH3",
+    "MSI2",
+    "MTCH2",
+    "MTDH",
+    "MTG1",
+    "MTHFD1",
+    "MTHFD1L",
+    "MTHFR",
+    "MTHFS",
+    "MTNR1B",
+    "MTR",
+    "MTRR",
+    "MTTP",
+    "MTX3",
+    "MVD",
+    "MYB",
+    "MYBPC3",
+    "MYLK",
+    "NADSYN1",
+    "NAT1",
+    "NAT2",
+    "NBPF3",
+    "NCR3",
+    "NEB",
+    "NEBL",
+    "NECTIN2",
+    "NEDD1",
+    "NEDD4L",
+    "NEGR1",
+    "NELFCD",
+    "NFE2L2",
+    "NFIA",
+    "NLRC5",
+    "NLRP3",
+    "NOC3L",
+    "NOS1",
+    "NOS2",
+    "NOS3",
+    "NOTCH1",
+    "NPC1",
+    "NPFFR2",
+    "NPY",
+    "NQO1",
+    "NR1H3",
+    "NR2F2",
+    "NSMAF",
+    "NTN5",
+    "NUDT2",
+    "NXPH1",
+    "OBSCN",
+    "OGG1",
+    "OLR1",
+    "OR51T1",
+    "ORC5",
+    "PABPC4",
+    "PAFAH1B2",
+    "PAH",
+    "PCDHA3",
+    "PCSK2",
+    "PCSK5",
+    "PCSK7",
+    "PCSK9",
+    "PDE3B",
+    "PDLIM5",
+    "PDXK",
+    "PEMT",
+    "PER2",
+    "PEX11A",
+    "PGS1",
+    "PHACTR4",
+    "PKDREJ",
+    "PLA2G12A",
+    "PLG",
+    "PLTP",
+    "PNLIPRP3",
+    "PNPLA3",
+    "POC1B",
+    "PODXL2",
+    "POMC",
+    "PON1",
+    "POU3F3",
+    "PPARA",
+    "PPARG",
+    "PPARGC1A",
+    "PRDM1",
+    "PRIMA1",
+    "PRKG1",
+    "PRSS3",
+    "PSCA",
+    "PSD3",
+    "PSMA1",
+    "PSMD3",
+    "PTGS2",
+    "PTK7",
+    "PTPRZ1",
+    "PVR",
+    "PYY",
+    "QSER1",
+    "RAB21",
+    "RAD50",
+    "RAD52",
+    "RARB",
+    "RBFOX1",
+    "RBM11",
+    "RELN",
+    "RENBP",
+    "RER1",
+    "RFC4",
+    "RFX7",
+    "RGS14",
+    "RGS18",
+    "RGS7",
+    "RNASEH2A",
+    "ROBO1",
+    "RRAS2",
+    "RSPO3",
+    "SATB1",
+    "SCARB1",
+    "SCNN1A",
+    "SCNN1G",
+    "SEC16B",
+    "SEC24D",
+    "SEM1",
+    "SERPINA1",
+    "SGK1",
+    "SH2B1",
+    "SH3YL1",
+    "SHMT1",
+    "SIDT2",
+    "SIRT1",
+    "SLC16A1",
+    "SLC19A1",
+    "SLC20A1",
+    "SLC22A3",
+    "SLC22A5",
+    "SLC23A1",
+    "SLC24A3",
+    "SLC25A2",
+    "SLC2A2",
+    "SLC30A3",
+    "SLC30A8",
+    "SLC36A2",
+    "SLC38A11",
+    "SLC39A8",
+    "SLC4A4",
+    "SLC4A5",
+    "SLC7A1",
+    "SLC8A1",
+    "SLCO1B1",
+    "SMOC1",
+    "SMYD3",
+    "SNX8",
+    "SOCS3",
+    "SOD1",
+    "SOD2",
+    "SOD3",
+    "SOST",
+    "SP7",
+    "SPATA18",
+    "SPATA22",
+    "SPG11",
+    "SPP1",
+    "SPRY1",
+    "SRA1",
+    "SRRM4",
+    "ST3GAL4",
+    "ST6GAL1",
+    "ST6GAL2",
+    "ST8SIA6",
+    "STAT3",
+    "STAT4",
+    "STAT6",
+    "STEAP1B",
+    "STK32A",
+    "STK39",
+    "STMN4",
+    "STT3B",
+    "SULT1A1",
+    "SYCE1",
+    "SYCP3",
+    "TAP2",
+    "TARS1",
+    "TAS1R2",
+    "TAS2R38",
+    "TBC1D4",
+    "TBX2",
+    "TCF15",
+    "TCF7L2",
+    "TCN1",
+    "TCN2",
+    "TENM2",
+    "TFAM",
+    "TFAP2B",
+    "THBS3",
+    "THSD7A",
+    "TIMP4",
+    "TLR4",
+    "TMC3",
+    "TMC8",
+    "TMEM179",
+    "TMEM248",
+    "TMEM51",
+    "TMEM63C",
+    "TMEM71",
+    "TNF",
+    "TNFRSF11B",
+    "TNFRSF1A",
+    "TOM1",
+    "TOMM40",
+    "TPRA1",
+    "TRDMT1",
+    "TRIB2",
+    "TRIM4",
+    "TSC22D2",
+    "TSHR",
+    "TSPAN3",
+    "TTC23",
+    "TTN",
+    "TYMS",
+    "UBE2L3",
+    "UCP1",
+    "UCP2",
+    "UCP3",
+    "UGT1A1",
+    "UGT1A6",
+    "UGT2A1",
+    "UGT2B7",
+    "USP24",
+    "VARS2",
+    "VDR",
+    "VEGFA",
+    "WDR11",
+    "WLS",
+    "WNK1",
+    "WSB2",
+    "WSCD1",
+    "XIRP2",
+    "XPC",
+    "XRCC1",
+    "XRCC4",
+    "YTHDF2",
+    "ZBTB40",
+    "ZC3H11B",
+    "ZNF653"
+   ]
   },
   {
    "id": "musculo-osso-sarcopenia",
@@ -168,7 +1533,12 @@
     "pt": "Músculo, Osso e Sarcopenia",
     "en": "Muscle, Bone and Sarcopenia"
    },
+   "resumo": {
+    "pt": "Genética da massa e da força muscular, da densidade óssea, da osteoporose e da sarcopenia.",
+    "en": "Genetics of muscle mass and strength, bone density, osteoporosis and sarcopenia."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-02",
    "ficheiro": "reports/musculo-osso-sarcopenia.pdf",
    "descricao": {
     "pt": "35 variantes e 10 scores: articulações favoráveis e densidade óssea típica; o ponto fraco é a massa e a força muscular.",
@@ -182,7 +1552,55 @@
    },
    "ficheiro_en": "reports/musculo-osso-sarcopenia_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 76
+   "tamanho_kb_en": 76,
+   "areas": [
+    "desporto",
+    "longevidade"
+   ],
+   "palavras": [
+    "osteoporose",
+    "osteoporosis",
+    "densidade óssea",
+    "bone density",
+    "força",
+    "strength",
+    "osso",
+    "bone"
+   ],
+   "genes": [
+    "ACE",
+    "ACTN3",
+    "AMPD1",
+    "AXIN1",
+    "CKM",
+    "COL1A1",
+    "COL5A1",
+    "DKK1",
+    "ESR1",
+    "FTO",
+    "GDF5",
+    "HIF1A",
+    "IGF1",
+    "JAG1",
+    "LRP5",
+    "LRP6",
+    "MEF2C",
+    "MSTN",
+    "PPARGC1A",
+    "RSPO3",
+    "SMAD3",
+    "SOST",
+    "SOX6",
+    "SPTBN1",
+    "TNFRSF11A",
+    "TNFRSF11B",
+    "TNFSF11",
+    "VDR",
+    "WLS",
+    "WNT16",
+    "WNT4",
+    "ZBTB40"
+   ]
   },
   {
    "id": "matriz-extracelular-glicacao",
@@ -190,7 +1608,12 @@
     "pt": "Matriz Extracelular e Glicação",
     "en": "Extracellular Matrix and Glycation"
    },
+   "resumo": {
+    "pt": "Colagénio, elastina e glicação: genes da rigidez arterial e do envelhecimento dos tecidos.",
+    "en": "Collagen, elastin and glycation: genes behind arterial stiffness and tissue ageing."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-02",
    "ficheiro": "reports/matriz-extracelular-glicacao.pdf",
    "descricao": {
     "pt": "31 variantes e 8 scores: glicação e rigidez arterial favoráveis; o ponto fraco é a elastina (alfa-1 antitripsina PiMZ).",
@@ -204,7 +1627,53 @@
    },
    "ficheiro_en": "reports/matriz-extracelular-glicacao_en.pdf",
    "paginas_en": 16,
-   "tamanho_kb_en": 79
+   "tamanho_kb_en": 79,
+   "areas": [
+    "longevidade",
+    "coracao"
+   ],
+   "palavras": [
+    "colagénio",
+    "collagen",
+    "elastina",
+    "elastin",
+    "AGEs",
+    "HbA1c",
+    "rigidez arterial",
+    "arterial stiffness"
+   ],
+   "genes": [
+    "ADAMTS6",
+    "AGER",
+    "AKR1B1",
+    "COL1A1",
+    "COL1A2",
+    "COL3A1",
+    "COL4A1",
+    "COL5A1",
+    "EFEMP1",
+    "ELN",
+    "FBN1",
+    "FN3K",
+    "GLO1",
+    "LOX",
+    "LOXL1",
+    "LRP1",
+    "MBOAT7",
+    "MGP",
+    "MMP1",
+    "MMP12",
+    "MMP2",
+    "MMP3",
+    "MMP9",
+    "MUC5B",
+    "PNPLA3",
+    "SERPINA1",
+    "TGFB1",
+    "TOLLIP",
+    "VDR",
+    "WT1"
+   ]
   },
   {
    "id": "pele-skin-care",
@@ -212,7 +1681,12 @@
     "pt": "Pele e Skin Care",
     "en": "Skin and Skin Care"
    },
+   "resumo": {
+    "pt": "Genética da pele (sol, rugas, pigmentação, cancro de pele) e os ativos tópicos que fazem sentido.",
+    "en": "Skin genetics (sun, wrinkles, pigmentation, skin cancer) and the topical actives that make sense."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-02",
    "ficheiro": "reports/pele-skin-care.pdf",
    "descricao": {
     "pt": "46 variantes e 16 scores: genética da pele favorável no conjunto (resposta ao sol, cancro de pele, rugas) e ativos tópicos.",
@@ -226,7 +1700,62 @@
    },
    "ficheiro_en": "reports/pele-skin-care_en.pdf",
    "paginas_en": 21,
-   "tamanho_kb_en": 95
+   "tamanho_kb_en": 95,
+   "areas": [
+    "orgaos"
+   ],
+   "palavras": [
+    "dermatologia",
+    "dermatology",
+    "rugas",
+    "wrinkles",
+    "protetor solar",
+    "sunscreen",
+    "retinoides",
+    "retinoids"
+   ],
+   "genes": [
+    "AGER",
+    "AQP3",
+    "ASIP",
+    "BNC2",
+    "CARD9",
+    "CASP8",
+    "CAT",
+    "CDKN2A",
+    "CLEC7A",
+    "COL1A1",
+    "FLG",
+    "FST",
+    "GPX1",
+    "GSTP1",
+    "HERC2",
+    "IRF4",
+    "MC1R",
+    "MITF",
+    "MMP1",
+    "MMP3",
+    "MTAP",
+    "MX2",
+    "NQO1",
+    "OCA2",
+    "OVOL1",
+    "PARP1",
+    "PLA2G6",
+    "SEMA4B",
+    "SLC24A5",
+    "SLC45A2",
+    "SOD2",
+    "SPINK5",
+    "STXBP5L",
+    "TERT",
+    "TFAP2A",
+    "TGFB2",
+    "TLR2",
+    "TYR",
+    "VDR",
+    "WNT10A"
+   ]
   },
   {
    "id": "cabelo",
@@ -234,7 +1763,12 @@
     "pt": "Cabelo",
     "en": "Hair"
    },
+   "resumo": {
+    "pt": "Genética da calvície, dos cabelos brancos e da forma do cabelo.",
+    "en": "Genetics of hair loss, greying and hair shape."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-02",
    "ficheiro": "reports/cabelo.pdf",
    "descricao": {
     "pt": "31 variantes e 4 scores: risco genético médio de calvície de padrão masculino; sem o alelo do IRF4 dos cabelos brancos precoces.",
@@ -248,7 +1782,51 @@
    },
    "ficheiro_en": "reports/cabelo_en.pdf",
    "paginas_en": 16,
-   "tamanho_kb_en": 70
+   "tamanho_kb_en": 70,
+   "areas": [
+    "orgaos"
+   ],
+   "palavras": [
+    "calvície",
+    "baldness",
+    "alopecia",
+    "cabelos brancos",
+    "grey hair",
+    "queda de cabelo",
+    "hair loss"
+   ],
+   "genes": [
+    "BTD",
+    "CARD9",
+    "COL1A1",
+    "CTLA4",
+    "CYP3A4",
+    "EBF1",
+    "EDA2R",
+    "EDAR",
+    "FAM53B",
+    "FOXA2",
+    "FUT2",
+    "HDAC9",
+    "HFE",
+    "IKZF4",
+    "IL2RA",
+    "IRF4",
+    "LINC01432",
+    "MTHFR",
+    "OPHN1",
+    "PAX1",
+    "PRDX5",
+    "RAET1M",
+    "RUNX3",
+    "SRD5A2",
+    "SULT1A1",
+    "TCHH",
+    "TMPRSS6",
+    "TWIST2",
+    "VDR",
+    "WNT10A"
+   ]
   },
   {
    "id": "unhas-cicatrizacao-inflamacao-pele",
@@ -256,7 +1834,12 @@
     "pt": "Unhas, Cicatrização e Inflamação da Pele",
     "en": "Nails, Wound Healing and Skin Inflammation"
    },
+   "resumo": {
+    "pt": "Genética das unhas, da cicatrização e de doenças inflamatórias da pele como psoríase e eczema.",
+    "en": "Genetics of nails, wound healing and inflammatory skin diseases such as psoriasis and eczema."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-02",
    "ficheiro": "reports/unhas-cicatrizacao-inflamacao-pele.pdf",
    "descricao": {
     "pt": "31 variantes e 6 scores: inflamação da pele favorável (psoríase, eczema, urticária); sinais contra no vitiligo e na hidradenite.",
@@ -270,7 +1853,58 @@
    },
    "ficheiro_en": "reports/unhas-cicatrizacao-inflamacao-pele_en.pdf",
    "paginas_en": 17,
-   "tamanho_kb_en": 82
+   "tamanho_kb_en": 82,
+   "areas": [
+    "orgaos",
+    "imunidade"
+   ],
+   "palavras": [
+    "psoríase",
+    "psoriasis",
+    "eczema",
+    "vitiligo",
+    "urticária",
+    "urticaria",
+    "cicatriz",
+    "scar"
+   ],
+   "genes": [
+    "BTNL2",
+    "CARD14",
+    "CARD9",
+    "CLEC7A",
+    "COL1A1",
+    "CYP3A4",
+    "EMSY",
+    "ERAP1",
+    "FLG",
+    "IFIH1",
+    "IL12B",
+    "IL13",
+    "IL18R1",
+    "IL23R",
+    "IL4R",
+    "KIF3A",
+    "KLF5",
+    "LCE3B",
+    "LCE3C",
+    "LRRC32",
+    "NEDD4",
+    "NLRP1",
+    "OVOL1",
+    "PTPN22",
+    "RORA",
+    "SOX9",
+    "TGFB1",
+    "TNF",
+    "TNFAIP3",
+    "TNIP1",
+    "TRAF3IP2",
+    "TSLP",
+    "TYK2",
+    "TYR",
+    "VDR"
+   ]
   },
   {
    "id": "cardiovascular-avancado",
@@ -278,7 +1912,12 @@
     "pt": "Cardiovascular Avançado",
     "en": "Advanced Cardiovascular"
    },
+   "resumo": {
+    "pt": "Visão alargada do risco cardiovascular: doença coronária, Lp(a), trombose e fibrilhação auricular.",
+    "en": "Broad view of cardiovascular risk: coronary disease, Lp(a), thrombosis and atrial fibrillation."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-02",
    "ficheiro": "reports/cardiovascular-avancado.pdf",
    "descricao": {
     "pt": "83 SNPs e 12 scores: genética vascular mista; 9p21 de risco e trombose venosa moderada, sem Lp(a) alta e com scores coronário e de fibrilhação auricular baixos.",
@@ -292,7 +1931,90 @@
    },
    "ficheiro_en": "reports/cardiovascular-avancado_en.pdf",
    "paginas_en": 21,
-   "tamanho_kb_en": 98
+   "tamanho_kb_en": 98,
+   "areas": [
+    "coracao"
+   ],
+   "palavras": [
+    "coração",
+    "heart",
+    "enfarte",
+    "heart attack",
+    "aterosclerose",
+    "atherosclerosis",
+    "9p21",
+    "colesterol"
+   ],
+   "genes": [
+    "ABO",
+    "ADAMTS7",
+    "ANGPTL4",
+    "APOA5",
+    "APOB",
+    "APOC3",
+    "APOE",
+    "ATP1B1",
+    "BAG3",
+    "CDKN2A",
+    "CDKN2B",
+    "CDKN2B-AS1",
+    "CELSR2",
+    "CLCNKA",
+    "COL4A1",
+    "COL4A2",
+    "CXCL12",
+    "CYP2C9",
+    "DAB2IP",
+    "EDN1",
+    "F11",
+    "F13A1",
+    "FGA",
+    "FGB",
+    "FGG",
+    "FHOD3",
+    "GUCY1A1",
+    "HDAC9",
+    "HSPB7",
+    "IL6R",
+    "KCNE1",
+    "KCNH2",
+    "KCNN3",
+    "KCNQ1",
+    "KLHL3",
+    "LDLR",
+    "LINC00540",
+    "LITAF",
+    "LPA",
+    "LPAL2",
+    "LPL",
+    "LRP1",
+    "MIA3",
+    "MTHFR",
+    "NEURL1",
+    "NINJ2",
+    "NOS1AP",
+    "PCSK9",
+    "PHACTR1",
+    "PITX2",
+    "PLN",
+    "PROC",
+    "PROS1",
+    "PRRX1",
+    "SCN5A",
+    "SERPINC1",
+    "SERPINE1",
+    "SH2B3",
+    "SMAD3",
+    "SORT1",
+    "SYNE2",
+    "SYNPO2L",
+    "TCF21",
+    "TTN",
+    "TTR",
+    "ZC3HC1",
+    "ZFHX3",
+    "ZPR1"
+   ]
   },
   {
    "id": "rim-acido-urico",
@@ -300,7 +2022,12 @@
     "pt": "Rim e Ácido Úrico",
     "en": "Kidney and Uric Acid"
    },
+   "resumo": {
+    "pt": "Genética da função renal, do ácido úrico, da gota e dos cálculos renais.",
+    "en": "Genetics of kidney function, uric acid, gout and kidney stones."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-02",
    "ficheiro": "reports/rim-acido-urico.pdf",
    "descricao": {
     "pt": "50 SNPs e 11 scores: genética renal favorável (eGFR no percentil 94, sem APOL1 G1 nem ABCG2 Q141K); ácido úrico típico.",
@@ -314,7 +2041,68 @@
    },
    "ficheiro_en": "reports/rim-acido-urico_en.pdf",
    "paginas_en": 17,
-   "tamanho_kb_en": 83
+   "tamanho_kb_en": 83,
+   "areas": [
+    "orgaos",
+    "metabolismo"
+   ],
+   "palavras": [
+    "rins",
+    "kidney",
+    "gota",
+    "gout",
+    "eGFR",
+    "cálculos renais",
+    "kidney stones",
+    "nefrologia"
+   ],
+   "genes": [
+    "A1CF",
+    "ABCG2",
+    "AGT",
+    "AGXT",
+    "ALDH2",
+    "ALPL",
+    "APOL1",
+    "AQP1",
+    "CARD8",
+    "CASR",
+    "CERS2",
+    "CLDN14",
+    "CNIH2",
+    "CST3",
+    "CUBN",
+    "CYP24A1",
+    "CYP2C9",
+    "DAB2",
+    "DGKH",
+    "EGFR",
+    "GATM",
+    "GCKR",
+    "HNF4G",
+    "HS6ST1",
+    "IL1B",
+    "MAF",
+    "MTHFR",
+    "MYH9",
+    "NLRP3",
+    "PDILT",
+    "PDZK1",
+    "PKD1",
+    "PKD2",
+    "PRKAG2",
+    "SHROOM3",
+    "SLC16A9",
+    "SLC17A1",
+    "SLC22A11",
+    "SLC22A12",
+    "SLC26A6",
+    "SLC2A9",
+    "SLC34A1",
+    "SLC47A1",
+    "TRPV5",
+    "UMOD"
+   ]
   },
   {
    "id": "ferro-metais",
@@ -322,7 +2110,12 @@
     "pt": "Ferro e Metais",
     "en": "Iron and Metals"
    },
+   "resumo": {
+    "pt": "Genética do ferro e da ferritina, da hemocromatose e de metais como o cobre, o zinco e o chumbo.",
+    "en": "Genetics of iron and ferritin, haemochromatosis and metals such as copper, zinc and lead."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-02",
    "ficheiro": "reports/ferro-metais.pdf",
    "descricao": {
     "pt": "46 SNPs e 3 scores: a genética puxa o ferro para cima (HFE H63D, ferritina genética no percentil 80); sem hemocromatose clássica nem Wilson.",
@@ -336,7 +2129,66 @@
    },
    "ficheiro_en": "reports/ferro-metais_en.pdf",
    "paginas_en": 16,
-   "tamanho_kb_en": 78
+   "tamanho_kb_en": 78,
+   "areas": [
+    "metabolismo",
+    "nutricao"
+   ],
+   "palavras": [
+    "ferritina",
+    "ferritin",
+    "hemocromatose",
+    "haemochromatosis",
+    "anemia",
+    "cobre",
+    "copper",
+    "Wilson"
+   ],
+   "genes": [
+    "ABCC2",
+    "ALAD",
+    "AS3MT",
+    "ATP2B1",
+    "ATP7B",
+    "BHMT",
+    "BMAL1",
+    "CA1",
+    "CNNM2",
+    "DAO",
+    "DMGDH",
+    "FADS2",
+    "GPX1",
+    "GSTM1",
+    "GSTO1",
+    "GSTP1",
+    "GSTT1",
+    "HAMP",
+    "HFE",
+    "HJV",
+    "MT1A",
+    "MT2A",
+    "MTHFR",
+    "MUC1",
+    "NAT2",
+    "PCSK7",
+    "PPCDC",
+    "SELENBP1",
+    "SELENOF",
+    "SELENOP",
+    "SHROOM3",
+    "SLC11A2",
+    "SLC30A10",
+    "SLC30A8",
+    "SLC39A8",
+    "SLC40A1",
+    "SMIM1",
+    "SOD1",
+    "TEX14",
+    "TFR2",
+    "TMPRSS6",
+    "TRIM46",
+    "TRPM6"
+   ]
   },
   {
    "id": "destoxificacao-fase-i-ii",
@@ -344,7 +2196,12 @@
     "pt": "Destoxificação Fase I e II",
     "en": "Detoxification Phase I and II"
    },
+   "resumo": {
+    "pt": "Enzimas de destoxificação de fase I e II (CYP, GST, NAT2) e como lidam com tóxicos e fármacos.",
+    "en": "Phase I and II detox enzymes (CYP, GST, NAT2) and how they handle toxins and drugs."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-02",
    "ficheiro": "reports/destoxificacao-fase-i-ii.pdf",
    "descricao": {
     "pt": "39 SNPs: fase I favorável; pontos fracos na fase II (NAT2 lento, GSTA1, GCLM) e na PON1; CYP2C9*3 e CYP3A5 expressor.",
@@ -358,7 +2215,55 @@
    },
    "ficheiro_en": "reports/destoxificacao-fase-i-ii_en.pdf",
    "paginas_en": 14,
-   "tamanho_kb_en": 73
+   "tamanho_kb_en": 73,
+   "areas": [
+    "metabolismo",
+    "farmaco"
+   ],
+   "palavras": [
+    "detox",
+    "destoxificação",
+    "glutationa",
+    "glutathione",
+    "acetilação",
+    "acetylation",
+    "fígado",
+    "liver"
+   ],
+   "genes": [
+    "ABCB1",
+    "AHR",
+    "CAT",
+    "CYP1A1",
+    "CYP1A2",
+    "CYP1B1",
+    "CYP2C19",
+    "CYP2C8",
+    "CYP2C9",
+    "CYP2D6",
+    "CYP2E1",
+    "CYP3A4",
+    "CYP3A5",
+    "EPHX1",
+    "GCLC",
+    "GCLM",
+    "GSTA1",
+    "GSTM1",
+    "GSTM2",
+    "GSTP1",
+    "GSTT1",
+    "MPO",
+    "MTHFR",
+    "NAT2",
+    "NFE2L2",
+    "NQO1",
+    "PON1",
+    "SLCO1B1",
+    "SOD2",
+    "SULT1A1",
+    "UGT1A1",
+    "UGT2B17"
+   ]
   },
   {
    "id": "reparacao-adn-estabilidade-genoma",
@@ -366,7 +2271,12 @@
     "pt": "Reparação do ADN e Estabilidade do Genoma",
     "en": "DNA Repair and Genome Stability"
    },
+   "resumo": {
+    "pt": "Genes que reparam o ADN e mantêm o genoma estável, base da proteção contra cancro e envelhecimento.",
+    "en": "Genes that repair DNA and keep the genome stable, key to protection against cancer and ageing."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-02",
    "ficheiro": "reports/reparacao-adn-estabilidade-genoma.pdf",
    "descricao": {
     "pt": "Reparação do ADN como ponto forte relativo: vias comuns sem alelos de menor eficiência e nenhuma variante patogénica plausível no painel de 63 genes.",
@@ -380,7 +2290,95 @@
    },
    "ficheiro_en": "reports/reparacao-adn-estabilidade-genoma_en.pdf",
    "paginas_en": 9,
-   "tamanho_kb_en": 58
+   "tamanho_kb_en": 58,
+   "areas": [
+    "longevidade",
+    "cancro"
+   ],
+   "palavras": [
+    "DNA",
+    "ADN",
+    "reparação",
+    "DNA repair",
+    "mutações",
+    "mutations",
+    "genoma",
+    "genome"
+   ],
+   "genes": [
+    "APEX1",
+    "ATM",
+    "ATR",
+    "BARD1",
+    "BLM",
+    "BRCA1",
+    "BRCA2",
+    "BRIP1",
+    "CHEK2",
+    "DCLRE1C",
+    "EPCAM",
+    "ERCC1",
+    "ERCC2",
+    "ERCC3",
+    "ERCC4",
+    "ERCC5",
+    "ERCC6",
+    "ERCC8",
+    "FAM117A",
+    "FANCA",
+    "FANCB",
+    "FANCC",
+    "FANCD2",
+    "FANCE",
+    "FANCF",
+    "FANCG",
+    "FANCI",
+    "FANCL",
+    "FANCM",
+    "FBXW12",
+    "LIG1",
+    "LIG4",
+    "MDM2",
+    "MGMT",
+    "MLH1",
+    "MRE11",
+    "MSH2",
+    "MSH3",
+    "MSH6",
+    "MUTYH",
+    "NBN",
+    "NHEJ1",
+    "NPAT",
+    "NREP",
+    "NTHL1",
+    "OGG1",
+    "PALB2",
+    "PARP1",
+    "PMF1",
+    "PMS2",
+    "POLD1",
+    "POLE",
+    "POLH",
+    "PRKDC",
+    "RAD50",
+    "RAD51C",
+    "RAD51D",
+    "RECQL4",
+    "RN7SL366P",
+    "RNF168",
+    "SLX4",
+    "SMARCAL1",
+    "SPINK8",
+    "STARD4-AS1",
+    "TP53",
+    "WRN",
+    "XPA",
+    "XPC",
+    "XRCC1",
+    "XRCC2",
+    "XRCC3",
+    "XRCC4"
+   ]
   },
   {
    "id": "telomeros-senescencia-celular",
@@ -388,7 +2386,12 @@
     "pt": "Telómeros e Senescência Celular",
     "en": "Telomeres and Cellular Senescence"
    },
+   "resumo": {
+    "pt": "Genética do comprimento dos telómeros, da senescência celular e da idade epigenética.",
+    "en": "Genetics of telomere length, cellular senescence and epigenetic age."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-02",
    "ficheiro": "reports/telomeros-senescencia-celular.pdf",
    "descricao": {
     "pt": "Reserva telomérica genética um pouco abaixo da média (percentil ~25), com o TERT a puxar nos dois sentidos; idade epigenética típica.",
@@ -402,7 +2405,112 @@
    },
    "ficheiro_en": "reports/telomeros-senescencia-celular_en.pdf",
    "paginas_en": 9,
-   "tamanho_kb_en": 60
+   "tamanho_kb_en": 60,
+   "areas": [
+    "longevidade"
+   ],
+   "palavras": [
+    "telómeros",
+    "telomeres",
+    "senolíticos",
+    "senolytics",
+    "envelhecimento celular",
+    "cellular ageing"
+   ],
+   "genes": [
+    "ACD",
+    "ACTRT3",
+    "ACYP2",
+    "AKIRIN1",
+    "AP4B1",
+    "ASB3",
+    "ATP8B4",
+    "BCAR4",
+    "BET1L",
+    "BLM",
+    "CARMIL1",
+    "CASTOR3P",
+    "CBX3P9",
+    "CDKN1A",
+    "CDKN2A",
+    "CDKN2B",
+    "CDKN2B-AS1",
+    "CEBPA",
+    "CLIP1",
+    "CTC1",
+    "DCLRE1B",
+    "DDX19A",
+    "DEFB125",
+    "DIP2C",
+    "DKC1",
+    "FRG2FP",
+    "GATA2-AS1",
+    "IKZF1",
+    "IL6",
+    "KLF7P1",
+    "KRT18P22",
+    "LARP4B",
+    "LINC00910",
+    "LINC01664",
+    "LINC03043",
+    "LMNA",
+    "MGA",
+    "MPHOSPH6",
+    "MSI2",
+    "MXD4",
+    "MYNN",
+    "NAF1",
+    "NHP2",
+    "NOP10",
+    "PARN",
+    "PERPP1",
+    "PML",
+    "POLR1HASP",
+    "POT1",
+    "PPP1R36",
+    "PPRC1",
+    "PRAM1",
+    "PTP4A2",
+    "RAD54B",
+    "RIC8A",
+    "RPA1",
+    "RPL30P12",
+    "RPN1",
+    "RTEL1",
+    "SCGN",
+    "SHQ1",
+    "SKIL",
+    "SLC7A10",
+    "SMARCC1",
+    "SMC1B",
+    "SPMIP7",
+    "SPOCD1",
+    "STN1",
+    "TENT4B",
+    "TERC",
+    "TERF1",
+    "TERF2",
+    "TERF2IP",
+    "TERT",
+    "TINF2",
+    "TK1",
+    "TMEM121B",
+    "TMEM263",
+    "TNPO3",
+    "TRIM59",
+    "TUBB8P8",
+    "UBE2D2",
+    "VIRMA",
+    "WRAP53",
+    "WRN",
+    "XPO7",
+    "ZCCHC8",
+    "ZFHX3",
+    "ZMPSTE24",
+    "ZNF208",
+    "ZNF257",
+    "ZSCAN5A"
+   ]
   },
   {
    "id": "sensores-nutrientes-autofagia",
@@ -410,7 +2518,12 @@
     "pt": "Sensores de Nutrientes e Autofagia",
     "en": "Nutrient Sensing and Autophagy"
    },
+   "resumo": {
+    "pt": "Vias de sensores de nutrientes (IGF-1, mTOR, AMPK, FOXO3) e autofagia ligadas à longevidade.",
+    "en": "Nutrient-sensing pathways (IGF-1, mTOR, AMPK, FOXO3) and autophagy linked to longevity."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-02",
    "ficheiro": "reports/sensores-nutrientes-autofagia.pdf",
    "descricao": {
     "pt": "Um dos eixos mais favoráveis: FOXO3 homozigoto de longevidade e IGF-1 geneticamente baixo (percentil 7), sem fraquezas fortes na autofagia.",
@@ -424,7 +2537,96 @@
    },
    "ficheiro_en": "reports/sensores-nutrientes-autofagia_en.pdf",
    "paginas_en": 8,
-   "tamanho_kb_en": 53
+   "tamanho_kb_en": 53,
+   "areas": [
+    "longevidade",
+    "metabolismo"
+   ],
+   "palavras": [
+    "jejum",
+    "fasting",
+    "restrição calórica",
+    "caloric restriction",
+    "sirtuínas",
+    "sirtuins",
+    "autofagia",
+    "autophagy"
+   ],
+   "genes": [
+    "ABHD14A",
+    "ACY1",
+    "AKT1",
+    "AKT2",
+    "APOH",
+    "ATG16L1",
+    "ATG5",
+    "ATG7",
+    "BECN1",
+    "BTBD9",
+    "CBR3-AS1",
+    "CYP3A4",
+    "CYP3A5",
+    "DEPDC5",
+    "DGKB",
+    "EPG5",
+    "EPS15P1",
+    "FOXO1",
+    "FOXO3",
+    "FTO",
+    "GH1",
+    "GHR",
+    "HMGN1P19",
+    "HNF1A",
+    "HNF1A-AS1",
+    "IGF1",
+    "IGF1R",
+    "IGFALS",
+    "IGFBP3",
+    "INSR",
+    "IRGM",
+    "IRS1",
+    "IRS2",
+    "KPTN",
+    "LAMTOR2",
+    "LIMASI",
+    "LINC00513",
+    "MTOR",
+    "NDUFA3P6",
+    "NPRL2",
+    "NPRL3",
+    "PAPPA2",
+    "PDIK1L",
+    "PIK3CA",
+    "PPARG",
+    "PRELID1P1",
+    "PRKAA1",
+    "PRKAA2",
+    "PRKAG2",
+    "PRSS36",
+    "PTEN",
+    "RBFOX1",
+    "RICTOR",
+    "RPL32P7",
+    "RPS4XP9",
+    "RPTOR",
+    "S1PR2",
+    "SIRT1",
+    "SIRT6",
+    "SQSTM1",
+    "STK11",
+    "SZT2",
+    "TBX3",
+    "TCF7L2",
+    "TECPR2",
+    "TEF",
+    "TFEB",
+    "TMPRSS11E",
+    "TRIM63",
+    "TSC1",
+    "TSC2",
+    "ULK1",
+    "WDR45"
+   ]
   },
   {
    "id": "proteostase",
@@ -432,7 +2634,12 @@
     "pt": "Proteostase",
     "en": "Proteostasis"
    },
+   "resumo": {
+    "pt": "Controlo de qualidade das proteínas (dobragem, chaperones, lisossomas) e o elo à neurodegeneração.",
+    "en": "Protein quality control (folding, chaperones, lysosomes) and its link to neurodegeneration."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-02",
    "ficheiro": "reports/proteostase.pdf",
    "descricao": {
     "pt": "Proteostase neuronal favorável (APOE ε3/ε3, MAPT H2/H2, sem variantes lisossomais de Parkinson); fraqueza na alfa-1 antitripsina Z (fígado e pulmão).",
@@ -446,7 +2653,132 @@
    },
    "ficheiro_en": "reports/proteostase_en.pdf",
    "paginas_en": 10,
-   "tamanho_kb_en": 65
+   "tamanho_kb_en": 65,
+   "areas": [
+    "longevidade",
+    "cerebro"
+   ],
+   "palavras": [
+    "proteínas",
+    "proteins",
+    "chaperones",
+    "Parkinson",
+    "Alzheimer",
+    "lisossomas",
+    "lysosomes"
+   ],
+   "genes": [
+    "ABCA7",
+    "ABI3",
+    "ADAMTS1",
+    "APOE",
+    "APP",
+    "ATP13A2",
+    "BAG3",
+    "BCKDK",
+    "BIN3",
+    "BST1",
+    "CD2AP",
+    "CHCHD10",
+    "CRYAB",
+    "CTSB",
+    "CTSD",
+    "CYYR1",
+    "DLG2",
+    "DNAJB6",
+    "DOC2A",
+    "ECHDC3",
+    "EGFR",
+    "EIF2AK3",
+    "EPHA1-AS1",
+    "FENDRR",
+    "FUS",
+    "GAA",
+    "GBA1",
+    "GPNMB",
+    "GPR141",
+    "GRN",
+    "HDAC2",
+    "HEXA",
+    "HMGN2P18",
+    "HS3ST5",
+    "HSPA1B",
+    "HSPA1L",
+    "HSPB1",
+    "HSPB8",
+    "HSPD1",
+    "HTT",
+    "IDUA",
+    "IL34",
+    "INPP5D",
+    "INPP5F",
+    "IP6K2",
+    "ITIH1",
+    "ITPKB",
+    "KRTCAP2",
+    "LAMP2",
+    "LILRB2",
+    "LINC00917",
+    "LINC02498",
+    "LRRK2",
+    "MAP4K4",
+    "MAPT",
+    "MCCC1",
+    "MINDY2",
+    "MIR572",
+    "MME",
+    "MS4A4A",
+    "MSR1",
+    "NCK2",
+    "NDUFAF2",
+    "NME8",
+    "NPC1",
+    "NPC2",
+    "NUCKS1",
+    "OPTN",
+    "PARK7",
+    "PINK1",
+    "PLCG2",
+    "PMS2P1",
+    "PNPLA3",
+    "PRKD3",
+    "PRKN",
+    "PRNP",
+    "PSEN1",
+    "PSEN2",
+    "PSMB8",
+    "RAB29",
+    "RIT2",
+    "RN7SL474P",
+    "SCIMP",
+    "SEC61G",
+    "SERPINA1",
+    "SH3GL2",
+    "SLC24A4",
+    "SLC26A1",
+    "SLC2A4RG",
+    "SNCA",
+    "SOD1",
+    "SORL1",
+    "SORT1",
+    "SQSTM1",
+    "SYT17",
+    "TARDBP",
+    "TBK1",
+    "TMEM106B",
+    "TMEM175",
+    "TNIP1",
+    "TREM2",
+    "TTR",
+    "UBA1",
+    "UBQLN2",
+    "UMAD1",
+    "USP6NL-AS1",
+    "VCP",
+    "VPS35",
+    "WNT3",
+    "ZNF594"
+   ]
   },
   {
    "id": "celulas-estaminais-regeneracao",
@@ -454,7 +2786,12 @@
     "pt": "Células Estaminais e Regeneração",
     "en": "Stem Cells and Regeneration"
    },
+   "resumo": {
+    "pt": "Genética das células estaminais, da regeneração dos tecidos e das expansões clonais do sangue.",
+    "en": "Genetics of stem cells, tissue regeneration and clonal expansions in the blood."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-02",
    "ficheiro": "reports/celulas-estaminais-regeneracao.pdf",
    "descricao": {
     "pt": "Predisposição baixa a típica para expansões clonais (sem JAK2 46/1, SH2B3 favorável), com reserva telomérica um pouco abaixo da média.",
@@ -468,7 +2805,77 @@
    },
    "ficheiro_en": "reports/celulas-estaminais-regeneracao_en.pdf",
    "paginas_en": 8,
-   "tamanho_kb_en": 54
+   "tamanho_kb_en": 54,
+   "areas": [
+    "longevidade"
+   ],
+   "palavras": [
+    "estaminais",
+    "stem cells",
+    "CHIP",
+    "hematopoiese",
+    "haematopoiesis",
+    "regeneração",
+    "regeneration"
+   ],
+   "genes": [
+    "ABCC10",
+    "ACTG1P25",
+    "ANKRD26",
+    "ASXL1",
+    "ATM",
+    "CD164",
+    "CEBPA",
+    "CHEK2",
+    "CXCR4",
+    "DDX41",
+    "DKC1",
+    "DNMT3A",
+    "ELANE",
+    "ERCC6L2",
+    "ETV6",
+    "FAM117A",
+    "FANCA",
+    "FANCC",
+    "FBXW12",
+    "GATA2",
+    "HAX1",
+    "IFT80",
+    "ITPR2",
+    "JAK2",
+    "LINC03141",
+    "MECOM",
+    "MPL",
+    "NPAT",
+    "NREP",
+    "PARP11-AS1",
+    "PMF1",
+    "POGLUT3",
+    "PPM1D",
+    "RN7SL366P",
+    "RPL11",
+    "RPL5",
+    "RPS19",
+    "RTEL1",
+    "RUNX1",
+    "SAMD9",
+    "SAMD9L",
+    "SBDS",
+    "SBDSP1",
+    "SH2B3",
+    "SPINK8",
+    "SPNS3",
+    "SRP72",
+    "STARD4-AS1",
+    "TCL1A",
+    "TERC",
+    "TERT",
+    "TET2",
+    "TP53",
+    "TRIM59",
+    "UBE2G1",
+    "ZNF318"
+   ]
   },
   {
    "id": "risco-cancro-scores-poligenicos",
@@ -476,7 +2883,12 @@
     "pt": "Risco de Cancro (Scores Poligénicos)",
     "en": "Cancer Risk (Polygenic Scores)"
    },
+   "resumo": {
+    "pt": "Scores poligénicos e genes clássicos de cancro hereditário para vários tipos de cancro.",
+    "en": "Polygenic scores and classic hereditary cancer genes across several cancer types."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-02",
    "ficheiro": "reports/risco-cancro-scores-poligenicos.pdf",
    "descricao": {
     "pt": "22 scores e 57 SNPs: sem variantes patogénicas confirmadas nos genes clássicos de cancro hereditário cobertos pelo chip; fundo poligénico baixo a médio na maioria.",
@@ -490,7 +2902,80 @@
    },
    "ficheiro_en": "reports/risco-cancro-scores-poligenicos_en.pdf",
    "paginas_en": 21,
-   "tamanho_kb_en": 112
+   "tamanho_kb_en": 112,
+   "areas": [
+    "cancro"
+   ],
+   "palavras": [
+    "PRS",
+    "oncologia",
+    "oncology",
+    "BRCA",
+    "Lynch",
+    "rastreio",
+    "screening",
+    "tumor"
+   ],
+   "genes": [
+    "ABO",
+    "APC",
+    "ASIP",
+    "ATM",
+    "BMP2",
+    "BMP4",
+    "BRCA1",
+    "BRCA2",
+    "CCAT2",
+    "CCDC26",
+    "CDKN2A",
+    "CHEK2",
+    "CHRNA5",
+    "CLPTM1L",
+    "EIF3H",
+    "FOXE1",
+    "GREM1",
+    "GSTM1",
+    "HERC2",
+    "HNF1B",
+    "HOXB13",
+    "IRF4",
+    "KITLG",
+    "KLF5",
+    "KLK2",
+    "KLK3",
+    "LAMA5",
+    "MC1R",
+    "MLH1",
+    "MSH2",
+    "MSH6",
+    "MSMB",
+    "MTAP",
+    "MUTYH",
+    "MX2",
+    "MYC",
+    "NAT2",
+    "NF1",
+    "NR5A2",
+    "NUDT11",
+    "OCA2",
+    "PALB2",
+    "PIGU",
+    "PMS2",
+    "PSCA",
+    "PTCSC2",
+    "PTCSC3",
+    "RTEL1",
+    "SCG5",
+    "SERPINA1",
+    "SLC45A2",
+    "SMAD7",
+    "TCF4",
+    "TERT",
+    "TP53",
+    "TP63",
+    "TSC2",
+    "TYR"
+   ]
   },
   {
    "id": "cerebro-neurodegeneracao",
@@ -498,7 +2983,12 @@
     "pt": "Cérebro e Neurodegeneração",
     "en": "Brain and Neurodegeneration"
    },
+   "resumo": {
+    "pt": "Risco genético de Alzheimer, Parkinson e AVC, e o papel dos pequenos vasos e do sono.",
+    "en": "Genetic risk of Alzheimer’s, Parkinson’s and stroke, and the role of small vessels and sleep."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-02",
    "ficheiro": "reports/cerebro-neurodegeneracao.pdf",
    "descricao": {
     "pt": "43 SNPs e 10 scores: APOE ε3/ε3; Parkinson e AVC com risco poligénico baixo; a prioridade são os pequenos vasos e o sono.",
@@ -512,7 +3002,64 @@
    },
    "ficheiro_en": "reports/cerebro-neurodegeneracao_en.pdf",
    "paginas_en": 16,
-   "tamanho_kb_en": 87
+   "tamanho_kb_en": 87,
+   "areas": [
+    "cerebro",
+    "longevidade"
+   ],
+   "palavras": [
+    "demência",
+    "dementia",
+    "Alzheimer",
+    "Parkinson",
+    "memória",
+    "memory",
+    "neurologia",
+    "neurology"
+   ],
+   "genes": [
+    "ABCA7",
+    "ABI3",
+    "APOC1",
+    "APOE",
+    "APP",
+    "BDNF",
+    "BIN1",
+    "BST1",
+    "CD2AP",
+    "CD33",
+    "CLU",
+    "CR1",
+    "EPHA1",
+    "FERMT2",
+    "GBA1",
+    "GPNMB",
+    "GRN",
+    "HDAC9",
+    "LRRK2",
+    "MAPT",
+    "MCCC1",
+    "MS4A6A",
+    "MTHFR",
+    "PICALM",
+    "PITX2",
+    "PLCG2",
+    "PMF1",
+    "PSEN1",
+    "PSEN2",
+    "PTK2B",
+    "RGN",
+    "SLC24A4",
+    "SLC25A44",
+    "SNCA",
+    "SORL1",
+    "TMEM106B",
+    "TMEM175",
+    "TOMM40",
+    "TREM2",
+    "TWIST1",
+    "UNC13A"
+   ]
   },
   {
    "id": "capacidade-cognitiva-plasticidade",
@@ -520,7 +3067,12 @@
     "pt": "Capacidade Cognitiva e Plasticidade",
     "en": "Cognitive Capacity and Plasticity"
    },
+   "resumo": {
+    "pt": "Genética da cognição, da memória e da plasticidade cerebral, e o que a reforça no dia a dia.",
+    "en": "Genetics of cognition, memory and brain plasticity, and what strengthens it day to day."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-02",
    "ficheiro": "reports/capacidade-cognitiva-plasticidade.pdf",
    "descricao": {
     "pt": "Base favorável (APOE ε3/ε3, MAPT H2/H2, scores de inteligência fluida no limite superior do típico); BDNF Val/Met: a plasticidade depende mais do exercício e do sono.",
@@ -534,7 +3086,42 @@
    },
    "ficheiro_en": "reports/capacidade-cognitiva-plasticidade_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 64
+   "tamanho_kb_en": 64,
+   "areas": [
+    "cerebro"
+   ],
+   "palavras": [
+    "inteligência",
+    "intelligence",
+    "memória",
+    "memory",
+    "aprendizagem",
+    "learning",
+    "cognição",
+    "cognition"
+   ],
+   "genes": [
+    "ANKK1",
+    "APOE",
+    "APP",
+    "BDNF",
+    "BIN1",
+    "CHRNA4",
+    "CHRNA5",
+    "CLU",
+    "COMT",
+    "DRD2",
+    "FADS1",
+    "FOXO3",
+    "MAPT",
+    "MTHFR",
+    "PICALM",
+    "POU3F2",
+    "PSEN1",
+    "TOMM40",
+    "TREM2",
+    "WWC1"
+   ]
   },
   {
    "id": "ritmo-circadiano-sono",
@@ -542,7 +3129,12 @@
     "pt": "Ritmo Circadiano e Sono",
     "en": "Circadian Rhythm and Sleep"
    },
+   "resumo": {
+    "pt": "Cronótipo, necessidade de sono e insónia: genes do relógio biológico e higiene do sono.",
+    "en": "Chronotype, sleep need and insomnia: body-clock genes and sleep hygiene."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-02",
    "ficheiro": "reports/ritmo-circadiano-sono.pdf",
    "descricao": {
     "pt": "28 variantes e 11 scores: relógio geneticamente matutino e necessidade de sono típica; a insónia é o ponto mais desfavorável.",
@@ -556,7 +3148,52 @@
    },
    "ficheiro_en": "reports/ritmo-circadiano-sono_en.pdf",
    "paginas_en": 14,
-   "tamanho_kb_en": 75
+   "tamanho_kb_en": 75,
+   "areas": [
+    "cerebro"
+   ],
+   "palavras": [
+    "sono",
+    "sleep",
+    "insónia",
+    "insomnia",
+    "melatonina",
+    "melatonin",
+    "cronótipo",
+    "chronotype"
+   ],
+   "genes": [
+    "ADA",
+    "ADORA2A",
+    "AHR",
+    "AK5",
+    "BHLHE41",
+    "BMAL1",
+    "BTBD9",
+    "CACNA1A",
+    "CLOCK",
+    "COL1A1",
+    "CRY1",
+    "CRY2",
+    "CYP1A2",
+    "CYP2C19",
+    "FBXL13",
+    "HCRTR2",
+    "MAP2K5",
+    "MED27",
+    "MEIS1",
+    "MTNR1B",
+    "PAX8",
+    "PER1",
+    "PER2",
+    "PER3",
+    "PTPRD",
+    "RGS16",
+    "SKOR1",
+    "TOX3",
+    "VDR",
+    "VIP"
+   ]
   },
   {
    "id": "imunidade-envelhecimento-imunitario",
@@ -564,7 +3201,12 @@
     "pt": "Imunidade e Envelhecimento Imunitário",
     "en": "Immunity and Immune Ageing"
    },
+   "resumo": {
+    "pt": "Genética da defesa imunitária, da inflamação de base (PCR) e do envelhecimento do sistema imune.",
+    "en": "Genetics of immune defence, baseline inflammation (CRP) and ageing of the immune system."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-02",
    "ficheiro": "reports/imunidade-envelhecimento-imunitario.pdf",
    "descricao": {
     "pt": "28 variantes e 20 scores: genética imunitária favorável no conjunto (PCR genética baixa, boa defesa antiviral, sem JAK2 46/1).",
@@ -578,7 +3220,52 @@
    },
    "ficheiro_en": "reports/imunidade-envelhecimento-imunitario_en.pdf",
    "paginas_en": 17,
-   "tamanho_kb_en": 85
+   "tamanho_kb_en": 85,
+   "areas": [
+    "imunidade",
+    "longevidade"
+   ],
+   "palavras": [
+    "imunossenescência",
+    "immunosenescence",
+    "PCR",
+    "CRP",
+    "antiviral",
+    "inflammaging",
+    "imunidade",
+    "immunity"
+   ],
+   "genes": [
+    "ACKR1",
+    "APOC1",
+    "APOE",
+    "BCL2",
+    "CD247",
+    "COL1A1",
+    "CRP",
+    "CTLA4",
+    "HNF1A",
+    "IFITM3",
+    "IFNL4",
+    "IL10",
+    "IL1B",
+    "IL1RN",
+    "IL6",
+    "IL6R",
+    "IRF5",
+    "JAK2",
+    "LZTFL1",
+    "MBL2",
+    "NLN",
+    "NLRP3",
+    "OAS1",
+    "PTPN22",
+    "STAT4",
+    "TLR2",
+    "TLR4",
+    "TNF",
+    "VDR"
+   ]
   },
   {
    "id": "hormonas",
@@ -586,7 +3273,12 @@
     "pt": "Hormonas",
     "en": "Hormones"
    },
+   "resumo": {
+    "pt": "Genética da testosterona, SHBG, estradiol, tiroide e cortisol, e como ler as análises hormonais.",
+    "en": "Genetics of testosterone, SHBG, oestradiol, thyroid and cortisol, and how to read hormone tests."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-02",
    "ficheiro": "reports/hormonas.pdf",
    "descricao": {
     "pt": "27 variantes e 11 scores: genética hormonal equilibrada (testosterona e SHBG típicas, tiroide e cortisol normais); estradiol genético no lado baixo.",
@@ -600,7 +3292,50 @@
    },
    "ficheiro_en": "reports/hormonas_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 74
+   "tamanho_kb_en": 74,
+   "areas": [
+    "hormonas"
+   ],
+   "palavras": [
+    "endocrinologia",
+    "endocrinology",
+    "testosterona",
+    "testosterone",
+    "estrogénio",
+    "oestrogen",
+    "cortisol"
+   ],
+   "genes": [
+    "AADAT",
+    "ANKK1",
+    "CAPZB",
+    "COL1A1",
+    "CRHR1",
+    "CYP17A1",
+    "CYP19A1",
+    "DIO1",
+    "DIO2",
+    "DRD2",
+    "ESR1",
+    "FAM9B",
+    "FKBP5",
+    "FOXE1",
+    "GHR",
+    "IGF1",
+    "IGF1R",
+    "IGFBP3",
+    "JMJD1C",
+    "NR3C1",
+    "NR3C2",
+    "PDE8B",
+    "SERPINA1",
+    "SERPINA6",
+    "SHBG",
+    "SLC17A4",
+    "SRD5A2",
+    "TSHR",
+    "VDR"
+   ]
   },
   {
    "id": "microbioma-intestino",
@@ -608,7 +3343,12 @@
     "pt": "Microbioma e Intestino",
     "en": "Microbiome and Gut"
    },
+   "resumo": {
+    "pt": "Genética do intestino: doença celíaca, doença inflamatória intestinal, FUT2 e microbioma.",
+    "en": "Gut genetics: coeliac disease, inflammatory bowel disease, FUT2 and the microbiome."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-02",
    "ficheiro": "reports/microbioma-intestino.pdf",
    "descricao": {
     "pt": "31 SNPs e 11 scores: terreno intestinal muito favorável (doença celíaca praticamente excluída, risco muito baixo de doença inflamatória intestinal, secretor FUT2).",
@@ -622,7 +3362,50 @@
    },
    "ficheiro_en": "reports/microbioma-intestino_en.pdf",
    "paginas_en": 16,
-   "tamanho_kb_en": 69
+   "tamanho_kb_en": 69,
+   "areas": [
+    "digestao",
+    "imunidade"
+   ],
+   "palavras": [
+    "celíaca",
+    "coeliac",
+    "Crohn",
+    "colite",
+    "colitis",
+    "probióticos",
+    "probiotics",
+    "flora intestinal"
+   ],
+   "genes": [
+    "ABCB11",
+    "ABCG5",
+    "ABCG8",
+    "ABO",
+    "AOC1",
+    "ATG16L1",
+    "CARD9",
+    "CYP7A1",
+    "DAO",
+    "FMO3",
+    "FUT2",
+    "HNF4A",
+    "HNMT",
+    "IL23R",
+    "IRGM",
+    "LCT",
+    "MCM6",
+    "MTHFR",
+    "MYO9B",
+    "NOD2",
+    "PTGER4",
+    "SLC22A4",
+    "SLC44A1",
+    "SULT2A1",
+    "TLR4",
+    "TLR5",
+    "UGT1A1"
+   ]
   },
   {
    "id": "longevidade-excecional",
@@ -630,7 +3413,12 @@
     "pt": "Longevidade Excecional",
     "en": "Exceptional Longevity"
    },
+   "resumo": {
+    "pt": "Genes associados a viver muito (FOXO3, APOE) e os fatores modificáveis que mais pesam.",
+    "en": "Genes linked to exceptional lifespan (FOXO3, APOE) and the modifiable factors that matter most."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-02",
    "ficheiro": "reports/longevidade-excecional.pdf",
    "descricao": {
     "pt": "29 SNPs e 4 scores: boa base genética (APOE ε3/ε3, FOXO3 homozigoto, score de longevidade no percentil 92); fraquezas vasculares e inflamatórias modificáveis.",
@@ -644,7 +3432,46 @@
    },
    "ficheiro_en": "reports/longevidade-excecional_en.pdf",
    "paginas_en": 14,
-   "tamanho_kb_en": 61
+   "tamanho_kb_en": 61,
+   "areas": [
+    "longevidade"
+   ],
+   "palavras": [
+    "centenários",
+    "centenarians",
+    "esperança de vida",
+    "lifespan",
+    "longevidade",
+    "longevity"
+   ],
+   "genes": [
+    "ACE",
+    "ADIPOQ",
+    "ANGPTL4",
+    "APOC1",
+    "APOE",
+    "ATXN2",
+    "CDKN2A",
+    "CELSR2",
+    "CETP",
+    "FOXO3",
+    "GHR",
+    "HFE",
+    "IGF1R",
+    "IL10",
+    "IL6",
+    "LDLR",
+    "LPA",
+    "MTHFR",
+    "PCSK9",
+    "SH2B3",
+    "SIRT1",
+    "SIRT3",
+    "SIRT6",
+    "SORT1",
+    "TOMM40",
+    "TP53"
+   ]
   },
   {
    "id": "visao-audicao",
@@ -652,7 +3479,12 @@
     "pt": "Visão e Audição",
     "en": "Vision and Hearing"
    },
+   "resumo": {
+    "pt": "Genética da mácula, do cristalino, do glaucoma e da audição.",
+    "en": "Genetics of the macula, lens, glaucoma and hearing."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-02",
    "ficheiro": "reports/visao-audicao.pdf",
    "descricao": {
     "pt": "Mácula, cristalino e audição típicos; o ponto mais desfavorável é o glaucoma (score de ângulo aberto no percentil 97,9).",
@@ -666,7 +3498,62 @@
    },
    "ficheiro_en": "reports/visao-audicao_en.pdf",
    "paginas_en": 17,
-   "tamanho_kb_en": 75
+   "tamanho_kb_en": 75,
+   "areas": [
+    "orgaos"
+   ],
+   "palavras": [
+    "olhos",
+    "eyes",
+    "DMI",
+    "AMD",
+    "cataratas",
+    "cataracts",
+    "surdez",
+    "deafness"
+   ],
+   "genes": [
+    "ABCA1",
+    "ABCA4",
+    "ACAN",
+    "AFAP1",
+    "APOE",
+    "ARMS2",
+    "BCO1",
+    "CAV1",
+    "CAV2",
+    "CDKN2B-AS1",
+    "CETP",
+    "CFB",
+    "CFH",
+    "CFI",
+    "CTBP2",
+    "CYP1B1",
+    "GAS7",
+    "GJB2",
+    "GJD2",
+    "HTRA1",
+    "ILDR1",
+    "ISG20",
+    "KCNQ5",
+    "KLHDC7B",
+    "LAMA2",
+    "LOXL1",
+    "MYOC",
+    "OPTN",
+    "PRSS56",
+    "RPGR",
+    "SIX6",
+    "SLC24A3",
+    "SYN3",
+    "TBK1",
+    "TIMP3",
+    "TMCO1",
+    "TXNRD2",
+    "USH2A",
+    "VEGFA",
+    "ZNF619P1"
+   ]
   },
   {
    "id": "alergias-asma-atopia",
@@ -674,7 +3561,12 @@
     "pt": "Alergias, Asma e Atopia",
     "en": "Allergies, Asthma and Atopy"
    },
+   "resumo": {
+    "pt": "Genética da asma, do eczema, da rinite e de outras doenças alérgicas.",
+    "en": "Genetics of asthma, eczema, rhinitis and other allergic diseases."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/alergias-asma-atopia.pdf",
    "descricao": {
     "pt": "23 variantes e 13 scores: genética da atopia favorável (asma, eczema e doença alérgica com scores baixos); o ponto fraco é a sinusite crónica com pólipos.",
@@ -688,7 +3580,49 @@
    },
    "ficheiro_en": "reports/alergias-asma-atopia_en.pdf",
    "paginas_en": 13,
-   "tamanho_kb_en": 69
+   "tamanho_kb_en": 69,
+   "areas": [
+    "imunidade"
+   ],
+   "palavras": [
+    "alergia",
+    "allergy",
+    "IgE",
+    "sinusite",
+    "sinusitis",
+    "atópico",
+    "atopic",
+    "rinite"
+   ],
+   "genes": [
+    "ADRB2",
+    "ALOX15",
+    "AOC1",
+    "COL1A1",
+    "DAO",
+    "EMSY",
+    "FCER1A",
+    "FLG",
+    "GSDMB",
+    "GSTM1",
+    "GSTP1",
+    "HNMT",
+    "IL13",
+    "IL2RA",
+    "IL33",
+    "IL4R",
+    "IL5",
+    "LRRC32",
+    "LTC4S",
+    "ORMDL3",
+    "RAD50",
+    "RORA",
+    "SMAD3",
+    "TPSAB1",
+    "TSLP",
+    "VDR",
+    "ZBTB10"
+   ]
   },
   {
    "id": "enxaqueca-cefaleias",
@@ -696,7 +3630,12 @@
     "pt": "Enxaqueca e Cefaleias",
     "en": "Migraine and Headaches"
    },
+   "resumo": {
+    "pt": "Genética da enxaqueca e de outras cefaleias, e o que ajuda a preveni-las.",
+    "en": "Genetics of migraine and other headaches, and what helps prevent them."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/enxaqueca-cefaleias.pdf",
    "descricao": {
     "pt": "26 variantes e 6 scores: predisposição para enxaqueca no lado baixo do típico (scores nos percentis 29 e 32); loci mistos, sem indicação genética para prevenção.",
@@ -710,7 +3649,56 @@
    },
    "ficheiro_en": "reports/enxaqueca-cefaleias_en.pdf",
    "paginas_en": 13,
-   "tamanho_kb_en": 64
+   "tamanho_kb_en": 64,
+   "areas": [
+    "cerebro"
+   ],
+   "palavras": [
+    "dor de cabeça",
+    "headache",
+    "cefaleia",
+    "aura",
+    "neurologia",
+    "neurology"
+   ],
+   "genes": [
+    "ADAMTSL4",
+    "ADORA2A",
+    "ASTN2",
+    "ATP1A2",
+    "BCAR1",
+    "CACNA1A",
+    "CFDP1",
+    "COL1A1",
+    "COMT",
+    "CYP1A2",
+    "DUSP10",
+    "EDN1",
+    "FHL5",
+    "FTCDNL1",
+    "GNB3",
+    "HPSE2",
+    "ITPK1",
+    "KCNK18",
+    "KCNK5",
+    "LINC01877",
+    "LRP1",
+    "MEF2D",
+    "MERTK",
+    "MTHFR",
+    "NOTCH3",
+    "NRP1",
+    "PHACTR1",
+    "PLCE1",
+    "PRDM16",
+    "SCN1A",
+    "SLC24A3",
+    "TRPM8",
+    "TSPAN2",
+    "UFL1",
+    "VDR",
+    "ZCCHC14"
+   ]
   },
   {
    "id": "coagulacao-trombose-veias",
@@ -718,7 +3706,12 @@
     "pt": "Coagulação, Trombose e Veias",
     "en": "Coagulation, Thrombosis and Veins"
    },
+   "resumo": {
+    "pt": "Trombofilias, fatores de coagulação, grupo sanguíneo e risco de trombose venosa e varizes.",
+    "en": "Thrombophilias, clotting factors, blood group and the risk of venous thrombosis and varicose veins."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/coagulacao-trombose-veias.pdf",
    "descricao": {
     "pt": "30 variantes e 11 scores: sem trombofilia major (fator V Leiden e protrombina negativos), mas predisposição poligénica moderada para trombose venosa, em parte compensada pelo provável grupo O.",
@@ -732,7 +3725,52 @@
    },
    "ficheiro_en": "reports/coagulacao-trombose-veias_en.pdf",
    "paginas_en": 14,
-   "tamanho_kb_en": 71
+   "tamanho_kb_en": 71,
+   "areas": [
+    "coracao"
+   ],
+   "palavras": [
+    "fator V Leiden",
+    "factor V Leiden",
+    "TVP",
+    "DVT",
+    "embolia",
+    "embolism",
+    "varizes",
+    "coágulo"
+   ],
+   "genes": [
+    "ABO",
+    "CASZ1",
+    "CES1",
+    "CLEC4M",
+    "COL1A1",
+    "CYP2C19",
+    "CYP2C9",
+    "CYP4F2",
+    "EBF1",
+    "EPO",
+    "F11",
+    "F13A1",
+    "FGA",
+    "FGG",
+    "GP6",
+    "HFE",
+    "KNG1",
+    "PIEZO1",
+    "PROCR",
+    "SERPINC1",
+    "SERPINE1",
+    "SLC44A2",
+    "SOX17",
+    "STXBP5",
+    "THBD",
+    "TSPAN15",
+    "VDR",
+    "VKORC1",
+    "VWF",
+    "ZFPM2"
+   ]
   },
   {
    "id": "coluna-disco-dor-lombar",
@@ -740,7 +3778,12 @@
     "pt": "Coluna, Disco e Dor Lombar",
     "en": "Spine, Disc and Low Back Pain"
    },
+   "resumo": {
+    "pt": "Genética da degeneração do disco, da dor lombar e da ciática.",
+    "en": "Genetics of disc degeneration, low back pain and sciatica."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/coluna-disco-dor-lombar.pdf",
    "descricao": {
     "pt": "23 variantes e 9 scores: genética da coluna claramente favorável (doença do disco no percentil 17, sem os alelos Trp2/Trp3 do COL9A2/COL9A3); único ponto contra no COL11A1, de evidência fraca.",
@@ -754,7 +3797,49 @@
    },
    "ficheiro_en": "reports/coluna-disco-dor-lombar_en.pdf",
    "paginas_en": 13,
-   "tamanho_kb_en": 69
+   "tamanho_kb_en": 69,
+   "areas": [
+    "desporto",
+    "orgaos"
+   ],
+   "palavras": [
+    "coluna",
+    "spine",
+    "hérnia discal",
+    "herniated disc",
+    "costas",
+    "back",
+    "ciática",
+    "sciatica"
+   ],
+   "genes": [
+    "ACAN",
+    "ADGRG6",
+    "CCDC26",
+    "CHST3",
+    "CILP",
+    "COL11A1",
+    "COL1A1",
+    "COL9A2",
+    "COL9A3",
+    "COMT",
+    "CYP2C9",
+    "DCC",
+    "ERAP1",
+    "FAM20C",
+    "GDF5",
+    "GSDMC",
+    "IL23R",
+    "LBX1",
+    "MMP3",
+    "OPRM1",
+    "SCN9A",
+    "SLC13A1",
+    "SLC26A2",
+    "SOX5",
+    "SPOCK2",
+    "VDR"
+   ]
   },
   {
    "id": "figado-gordura-hepatica",
@@ -762,7 +3847,12 @@
     "pt": "Fígado e Gordura Hepática",
     "en": "Liver and Fatty Liver"
    },
+   "resumo": {
+    "pt": "Genética do fígado gordo, das enzimas hepáticas e da cirrose (PNPLA3, TM6SF2, HSD17B13).",
+    "en": "Genetics of fatty liver, liver enzymes and cirrhosis (PNPLA3, TM6SF2, HSD17B13)."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/figado-gordura-hepatica.pdf",
    "descricao": {
     "pt": "Sem TM6SF2 E167K, com 1 alelo protetor do HSD17B13 e score de cirrose no percentil 15,2; contra: PNPLA3 I148M heterozigoto, alfa-1 antitripsina PiMZ e enzimas hepáticas geneticamente mais altas.",
@@ -776,7 +3866,42 @@
    },
    "ficheiro_en": "reports/figado-gordura-hepatica_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 60
+   "tamanho_kb_en": 60,
+   "areas": [
+    "metabolismo"
+   ],
+   "palavras": [
+    "esteatose",
+    "steatosis",
+    "NAFLD",
+    "MASLD",
+    "cirrose",
+    "cirrhosis",
+    "hepático",
+    "hepatic"
+   ],
+   "genes": [
+    "ABCB11",
+    "ABCB4",
+    "ABCG8",
+    "ADH1B",
+    "ALDH2",
+    "APOB",
+    "ATP8B1",
+    "CYP7A1",
+    "GCKR",
+    "GPAM",
+    "HFE",
+    "HSD17B13",
+    "LIPA",
+    "MBOAT7",
+    "MTARC1",
+    "PEMT",
+    "PNPLA3",
+    "SERPINA1",
+    "TM6SF2",
+    "UGT1A1"
+   ]
   },
   {
    "id": "glicose-insulina-diabetes",
@@ -784,7 +3909,12 @@
     "pt": "Glicose, Insulina e Diabetes",
     "en": "Glucose, Insulin and Diabetes"
    },
+   "resumo": {
+    "pt": "Genética da glicose, da insulina, da HbA1c e do risco de diabetes tipo 2.",
+    "en": "Genetics of glucose, insulin, HbA1c and type 2 diabetes risk."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/glicose-insulina-diabetes.pdf",
    "descricao": {
     "pt": "HbA1c e glicose em jejum geneticamente baixas (percentis 6,6 a 9,5); risco poligénico de diabetes tipo 2 típico, com vários alelos de risco na célula beta (TCF7L2, SLC30A8, KCNJ11).",
@@ -798,7 +3928,43 @@
    },
    "ficheiro_en": "reports/glicose-insulina-diabetes_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 54
+   "tamanho_kb_en": 54,
+   "areas": [
+    "metabolismo"
+   ],
+   "palavras": [
+    "açúcar",
+    "sugar",
+    "glicemia",
+    "blood sugar",
+    "resistência à insulina",
+    "insulin resistance",
+    "diabetes"
+   ],
+   "genes": [
+    "ADCY5",
+    "ADIPOQ",
+    "CDKAL1",
+    "CDKN2A",
+    "FTO",
+    "G6PC2",
+    "GCK",
+    "GCKR",
+    "HHEX",
+    "HNF1A",
+    "HNF4A",
+    "IDE",
+    "IGF2BP2",
+    "IRS1",
+    "KCNJ11",
+    "KLF14",
+    "MC4R",
+    "MTNR1B",
+    "PPARG",
+    "PTPN22",
+    "SLC30A8",
+    "TCF7L2"
+   ]
   },
   {
    "id": "lipidos-detalhe",
@@ -806,7 +3972,12 @@
     "pt": "Lípidos em Detalhe",
     "en": "Lipids in Detail"
    },
+   "resumo": {
+    "pt": "Genética do LDL, HDL, triglicéridos e Lp(a), e da resposta às estatinas.",
+    "en": "Genetics of LDL, HDL, triglycerides and Lp(a), and of statin response."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/lipidos-detalhe.pdf",
    "descricao": {
     "pt": "APOE ε3/ε3, LDL genético abaixo da mediana, sem os alelos de Lp(a) muito alta e boa tolerância às estatinas (SLCO1B1 T/T); triglicéridos geneticamente acima da mediana e HDL baixo.",
@@ -820,7 +3991,43 @@
    },
    "ficheiro_en": "reports/lipidos-detalhe_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 57
+   "tamanho_kb_en": 57,
+   "areas": [
+    "metabolismo",
+    "coracao"
+   ],
+   "palavras": [
+    "colesterol",
+    "cholesterol",
+    "estatinas",
+    "statins",
+    "dislipidemia",
+    "dyslipidaemia",
+    "gorduras",
+    "lipids"
+   ],
+   "genes": [
+    "ABCG2",
+    "ABCG5",
+    "ABCG8",
+    "ANGPTL3",
+    "APOA5",
+    "APOB",
+    "APOE",
+    "CELSR2",
+    "CETP",
+    "DOCK7",
+    "GCKR",
+    "HMGCR",
+    "LDLR",
+    "LIPC",
+    "LPA",
+    "LPL",
+    "PCSK9",
+    "SLCO1B1",
+    "SORT1",
+    "TRIB1"
+   ]
   },
   {
    "id": "vitaminas-minerais",
@@ -828,7 +4035,12 @@
     "pt": "Vitaminas e Minerais",
     "en": "Vitamins and Minerals"
    },
+   "resumo": {
+    "pt": "Genética das vitaminas D, B12, folato e A e do ómega-3, e as formas mais úteis de cada uma.",
+    "en": "Genetics of vitamins D, B12, folate and A and of omega-3, and the most useful forms of each."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/vitaminas-minerais.pdf",
    "descricao": {
     "pt": "Vitamina D genética alta e boa conversão de ómega-3 (FADS1, ELOVL2); pontos fracos no MTHFR (heterozigoto composto), na B12 (TCN2) e na vitamina A (BCO1); VKORC1 sensível à varfarina.",
@@ -842,7 +4054,41 @@
    },
    "ficheiro_en": "reports/vitaminas-minerais_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 56
+   "tamanho_kb_en": 56,
+   "areas": [
+    "nutricao"
+   ],
+   "palavras": [
+    "vitaminas",
+    "vitamins",
+    "minerais",
+    "minerals",
+    "folato",
+    "folate",
+    "magnésio",
+    "magnesium"
+   ],
+   "genes": [
+    "ALPL",
+    "APOA5",
+    "BCO1",
+    "CASR",
+    "CUBN",
+    "CYP24A1",
+    "CYP2R1",
+    "CYP4F2",
+    "DHCR7",
+    "ELOVL2",
+    "FADS1",
+    "FUT2",
+    "MTHFR",
+    "MTRR",
+    "PEMT",
+    "SLC23A1",
+    "TCN2",
+    "VDR",
+    "VKORC1"
+   ]
   },
   {
    "id": "pancreas-pancreatite",
@@ -850,7 +4096,12 @@
     "pt": "Pâncreas e Pancreatite",
     "en": "Pancreas and Pancreatitis"
    },
+   "resumo": {
+    "pt": "Genética da pancreatite, do cancro do pâncreas e dos cálculos biliares.",
+    "en": "Genetics of pancreatitis, pancreatic cancer and gallstones."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/pancreas-pancreatite.pdf",
    "descricao": {
     "pt": "Travões da tripsina intactos (SPINK1, CTRC), alelo protetor no CLDN2 e cancro do pâncreas típico; o ponto mais relevante são os cálculos biliares (score no percentil 88,8).",
@@ -864,7 +4115,47 @@
    },
    "ficheiro_en": "reports/pancreas-pancreatite_en.pdf",
    "paginas_en": 18,
-   "tamanho_kb_en": 64
+   "tamanho_kb_en": 64,
+   "areas": [
+    "digestao",
+    "cancro"
+   ],
+   "palavras": [
+    "pâncreas",
+    "pancreas",
+    "pancreatite",
+    "pancreatitis",
+    "enzimas pancreáticas",
+    "pancreatic enzymes"
+   ],
+   "genes": [
+    "ABCG5",
+    "ABCG8",
+    "ABO",
+    "APOA5",
+    "APOC3",
+    "CASR",
+    "CEL",
+    "CFTR",
+    "CLDN2",
+    "CLPTM1L",
+    "CPA1",
+    "CTRB1",
+    "CTRC",
+    "CYP7A1",
+    "GCKR",
+    "LINC00673",
+    "LPL",
+    "NR5A2",
+    "PDX1",
+    "PNPLA3",
+    "PRSS1",
+    "SPINK1",
+    "TP63",
+    "TRIB1",
+    "UGT1A1",
+    "ZNRF3"
+   ]
   },
   {
    "id": "estomago-refluxo-helicobacter",
@@ -872,7 +4163,12 @@
     "pt": "Estômago, Refluxo e Helicobacter",
     "en": "Stomach, Reflux and Helicobacter"
    },
+   "resumo": {
+    "pt": "Genética do refluxo, da hérnia do hiato, das úlceras e do cancro gástrico, e o Helicobacter.",
+    "en": "Genetics of reflux, hiatus hernia, ulcers and gastric cancer, and Helicobacter."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/estomago-refluxo-helicobacter.pdf",
    "descricao": {
     "pt": "Refluxo, hérnia do hiato e esófago de Barrett com predisposição genética baixa e CYP2C19 *1/*1; pontos mistos no PSCA T/T e no grupo O (mais úlcera duodenal, menos cancro gástrico).",
@@ -886,7 +4182,43 @@
    },
    "ficheiro_en": "reports/estomago-refluxo-helicobacter_en.pdf",
    "paginas_en": 17,
-   "tamanho_kb_en": 60
+   "tamanho_kb_en": 60,
+   "areas": [
+    "digestao",
+    "cancro"
+   ],
+   "palavras": [
+    "azia",
+    "heartburn",
+    "gastrite",
+    "gastritis",
+    "H. pylori",
+    "úlcera",
+    "ulcer",
+    "estômago"
+   ],
+   "genes": [
+    "ABO",
+    "BARX1",
+    "CDH1",
+    "CYP2C19",
+    "CYP3A4",
+    "FCGR2A",
+    "FOXF1",
+    "FOXP1",
+    "FUT2",
+    "GDF7",
+    "IL1B",
+    "LINC00208",
+    "MUC1",
+    "PLCE1",
+    "PRKAA1",
+    "PSCA",
+    "TLR1",
+    "TLR10",
+    "TLR6",
+    "TNF"
+   ]
   },
   {
    "id": "globulos-vermelhos-hemoglobina-plaquetas",
@@ -894,7 +4226,12 @@
     "pt": "Glóbulos Vermelhos, Hemoglobina e Plaquetas",
     "en": "Red Blood Cells, Haemoglobin and Platelets"
    },
+   "resumo": {
+    "pt": "Genética da hemoglobina, dos glóbulos vermelhos e das plaquetas; hemoglobinopatias e G6PD.",
+    "en": "Genetics of haemoglobin, red blood cells and platelets; haemoglobinopathies and G6PD."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/globulos-vermelhos-hemoglobina-plaquetas.pdf",
    "descricao": {
     "pt": "Sem as hemoglobinopatias nem o défice de G6PD testados, sem JAK2 46/1 e RDW genético baixo; padrão genético de menos glóbulos vermelhos mas maiores (hemoglobina no percentil 11,7).",
@@ -908,7 +4245,45 @@
    },
    "ficheiro_en": "reports/globulos-vermelhos-hemoglobina-plaquetas_en.pdf",
    "paginas_en": 17,
-   "tamanho_kb_en": 65
+   "tamanho_kb_en": 65,
+   "areas": [
+    "outros"
+   ],
+   "palavras": [
+    "sangue",
+    "blood",
+    "anemia",
+    "anaemia",
+    "talassemia",
+    "thalassaemia",
+    "hemograma",
+    "blood count"
+   ],
+   "genes": [
+    "ANK1",
+    "ARHGEF3",
+    "BAK1",
+    "BCL11A",
+    "CCND3",
+    "EPO",
+    "G6PD",
+    "GP6",
+    "HBB",
+    "HBG2",
+    "HBS1L",
+    "HFE",
+    "HK1",
+    "ITGB3",
+    "JAK2",
+    "JMJD1C",
+    "PEAR1",
+    "SH2B3",
+    "TFR2",
+    "TFRC",
+    "TMPRSS6",
+    "TPM4",
+    "TPO"
+   ]
   },
   {
    "id": "prostata",
@@ -916,7 +4291,12 @@
     "pt": "Próstata",
     "en": "Prostate"
    },
+   "resumo": {
+    "pt": "Genética do cancro e do aumento benigno da próstata, e do PSA, que muda a forma de o ler.",
+    "en": "Genetics of prostate cancer, benign enlargement and PSA, which changes how PSA is read."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/prostata.pdf",
    "descricao": {
     "pt": "Predisposição poligénica muito baixa para cancro da próstata (5 de 6 scores abaixo do percentil 10, sem HOXB13 G84E); PSA geneticamente baixo, o que muda a leitura do PSA.",
@@ -930,7 +4310,40 @@
    },
    "ficheiro_en": "reports/prostata_en.pdf",
    "paginas_en": 17,
-   "tamanho_kb_en": 59
+   "tamanho_kb_en": 59,
+   "areas": [
+    "hormonas",
+    "cancro"
+   ],
+   "palavras": [
+    "PSA",
+    "urologia",
+    "urology",
+    "hiperplasia",
+    "hyperplasia",
+    "próstata",
+    "prostate"
+   ],
+   "genes": [
+    "ATM",
+    "BRCA1",
+    "BRCA2",
+    "CASC8",
+    "CHEK2",
+    "CYP17A1",
+    "HNF1B",
+    "HOXB13",
+    "JAZF1",
+    "KLK2",
+    "KLK3",
+    "MSMB",
+    "MYC",
+    "POU5F1B",
+    "RNASEL",
+    "SLC22A3",
+    "SRD5A2",
+    "TERT"
+   ]
   },
   {
    "id": "termogenese-gordura-castanha",
@@ -938,7 +4351,12 @@
     "pt": "Termogénese e Gordura Castanha",
     "en": "Thermogenesis and Brown Fat"
    },
+   "resumo": {
+    "pt": "Genética da gordura castanha, da termogénese e da distribuição da gordura corporal.",
+    "en": "Genetics of brown fat, thermogenesis and body-fat distribution."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/termogenese-gordura-castanha.pdf",
    "descricao": {
     "pt": "20 variantes e 7 scores: termogénese favorável a típica (ADRB3, PPARGC1A e UCP1 a favor); o ponto desfavorável é a distribuição da gordura (gordura do tronco no percentil 98).",
@@ -952,7 +4370,45 @@
    },
    "ficheiro_en": "reports/termogenese-gordura-castanha_en.pdf",
    "paginas_en": 13,
-   "tamanho_kb_en": 64
+   "tamanho_kb_en": 64,
+   "areas": [
+    "metabolismo"
+   ],
+   "palavras": [
+    "UCP1",
+    "frio",
+    "cold",
+    "gordura",
+    "fat",
+    "metabolismo basal",
+    "energy expenditure"
+   ],
+   "genes": [
+    "ACTN3",
+    "ADAMTS9",
+    "ADIPOQ",
+    "ADRB2",
+    "ADRB3",
+    "CDH13",
+    "COBLL1",
+    "COL1A1",
+    "DIO2",
+    "FTO",
+    "GRB14",
+    "IRX3",
+    "IRX5",
+    "LYPLAL1",
+    "PPARGC1A",
+    "RSPO3",
+    "TBX15",
+    "TRPM8",
+    "UCP1",
+    "UCP2",
+    "UCP3",
+    "VDR",
+    "VEGFA",
+    "WARS2"
+   ]
   },
   {
    "id": "apetite-saciedade-comportamento-alimentar",
@@ -960,7 +4416,12 @@
     "pt": "Apetite, Saciedade e Comportamento Alimentar",
     "en": "Appetite, Satiety and Eating Behaviour"
    },
+   "resumo": {
+    "pt": "Genética do apetite, da saciedade e do gosto por doces (MC4R, FTO, BDNF).",
+    "en": "Genetics of appetite, satiety and sweet preference (MC4R, FTO, BDNF)."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/apetite-saciedade-comportamento-alimentar.pdf",
    "descricao": {
     "pt": "23 variantes e 9 scores: controlo do apetite favorável (MC4R sem alelos de risco, SH2B1 e GNPDA2 a favor, BDNF Met); sinais contraditórios no gosto por doces.",
@@ -974,7 +4435,47 @@
    },
    "ficheiro_en": "reports/apetite-saciedade-comportamento-alimentar_en.pdf",
    "paginas_en": 13,
-   "tamanho_kb_en": 65
+   "tamanho_kb_en": 65,
+   "areas": [
+    "metabolismo",
+    "nutricao"
+   ],
+   "palavras": [
+    "fome",
+    "hunger",
+    "obesidade",
+    "obesity",
+    "comer",
+    "eating",
+    "doces",
+    "sweets"
+   ],
+   "genes": [
+    "ANKK1",
+    "BDNF",
+    "CADM1",
+    "CD36",
+    "CNR1",
+    "COL1A1",
+    "DRD2",
+    "FGF21",
+    "FTO",
+    "GIP",
+    "GIPR",
+    "GLP1R",
+    "GNPDA2",
+    "LEP",
+    "LEPR",
+    "MC4R",
+    "NCAM1",
+    "NEGR1",
+    "POMC",
+    "SH2B1",
+    "TAS1R2",
+    "TAS2R38",
+    "TMEM18",
+    "VDR"
+   ]
   },
   {
    "id": "cafeina-estimulantes",
@@ -982,7 +4483,12 @@
     "pt": "Cafeína e Estimulantes",
     "en": "Caffeine and Stimulants"
    },
+   "resumo": {
+    "pt": "Como os genes mudam a eliminação da cafeína, o sono e a resposta a estimulantes como a nicotina.",
+    "en": "How genes change caffeine clearance, sleep and the response to stimulants such as nicotine."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/cafeina-estimulantes.pdf",
    "descricao": {
     "pt": "20 variantes e 7 scores: relação favorável a típica com a cafeína (eliminação normal; ADORA2A C/C, o genótipo menos associado a insónia com cafeína); predisposição genética baixa para fumar.",
@@ -996,7 +4502,46 @@
    },
    "ficheiro_en": "reports/cafeina-estimulantes_en.pdf",
    "paginas_en": 12,
-   "tamanho_kb_en": 62
+   "tamanho_kb_en": 62,
+   "areas": [
+    "nutricao",
+    "cerebro"
+   ],
+   "palavras": [
+    "café",
+    "coffee",
+    "cafeína",
+    "caffeine",
+    "nicotina",
+    "nicotine",
+    "tabaco",
+    "tobacco"
+   ],
+   "genes": [
+    "ABCG2",
+    "ADA",
+    "ADORA2A",
+    "AHR",
+    "BDNF",
+    "CES1",
+    "CHRNA5",
+    "COL1A1",
+    "COMT",
+    "CYP1A1",
+    "CYP1A2",
+    "CYP2A6",
+    "CYP3A4",
+    "DRD2",
+    "DRD4",
+    "EFCAB5",
+    "GCKR",
+    "MLXIPL",
+    "NRCAM",
+    "POR",
+    "SEC16B",
+    "SLC6A3",
+    "VDR"
+   ]
   },
   {
    "id": "sal-agua-eletrolitos",
@@ -1004,7 +4549,12 @@
     "pt": "Sal, Água e Eletrólitos",
     "en": "Salt, Water and Electrolytes"
    },
+   "resumo": {
+    "pt": "Genética da sensibilidade ao sal, da água e do sódio, potássio, magnésio e cálcio no sangue.",
+    "en": "Genetics of salt sensitivity, water balance and blood sodium, potassium, magnesium and calcium."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/sal-agua-eletrolitos.pdf",
    "descricao": {
     "pt": "16 variantes e 10 scores: genética típica do sal e dos eletrólitos (sensibilidade ao sal no percentil 49); pontos a vigiar no magnésio (MUC1 C/C) e no potássio da dieta.",
@@ -1018,7 +4568,41 @@
    },
    "ficheiro_en": "reports/sal-agua-eletrolitos_en.pdf",
    "paginas_en": 13,
-   "tamanho_kb_en": 63
+   "tamanho_kb_en": 63,
+   "areas": [
+    "nutricao",
+    "orgaos"
+   ],
+   "palavras": [
+    "sódio",
+    "sodium",
+    "potássio",
+    "potassium",
+    "hidratação",
+    "hydration",
+    "eletrólitos",
+    "electrolytes"
+   ],
+   "genes": [
+    "ACE",
+    "ADD1",
+    "AGT",
+    "CASR",
+    "CNNM2",
+    "COL1A1",
+    "CYP11B2",
+    "FGF21",
+    "GNB3",
+    "KCNJ1",
+    "MUC1",
+    "NEDD4L",
+    "NFAT5",
+    "SHROOM3",
+    "SLC4A10",
+    "TRPM6",
+    "UMOD",
+    "VDR"
+   ]
   },
   {
    "id": "oxitocina-comportamento-social",
@@ -1026,7 +4610,12 @@
     "pt": "Oxitocina e Comportamento Social",
     "en": "Oxytocin and Social Behaviour"
    },
+   "resumo": {
+    "pt": "Genética da oxitocina, da vasopressina e de traços sociais como a empatia e a sociabilidade.",
+    "en": "Genetics of oxytocin, vasopressin and social traits such as empathy and sociability."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/oxitocina-comportamento-social.pdf",
    "descricao": {
     "pt": "11 SNPs e 4 scores: perfil poligénico social muito favorável (pouca solidão e muita sociabilidade); os genótipos do recetor da oxitocina (OXTR) são descritos sem juízo.",
@@ -1040,7 +4629,27 @@
    },
    "ficheiro_en": "reports/oxitocina-comportamento-social_en.pdf",
    "paginas_en": 13,
-   "tamanho_kb_en": 50
+   "tamanho_kb_en": 50,
+   "areas": [
+    "cerebro"
+   ],
+   "palavras": [
+    "empatia",
+    "empathy",
+    "solidão",
+    "loneliness",
+    "social",
+    "vasopressina",
+    "vasopressin"
+   ],
+   "genes": [
+    "AVPR1A",
+    "AVPR1B",
+    "CD38",
+    "MTHFR",
+    "OXT",
+    "OXTR"
+   ]
   },
   {
    "id": "relogio-epigenetico-idade-biologica",
@@ -1048,7 +4657,12 @@
     "pt": "Relógio Epigenético e Idade Biológica",
     "en": "Epigenetic Clock and Biological Age"
    },
+   "resumo": {
+    "pt": "Relógios epigenéticos e idade biológica: o que a genética explica e o que se pode mudar.",
+    "en": "Epigenetic clocks and biological age: what genetics explains and what can be changed."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/relogio-epigenetico-idade-biologica.pdf",
    "descricao": {
     "pt": "17 SNPs e 5 scores: ponto de partida genético típico a favorável (relógio intrínseco no percentil 48, sem os alelos do TERT que aceleram o relógio); fragilidade no percentil 75.",
@@ -1062,7 +4676,42 @@
    },
    "ficheiro_en": "reports/relogio-epigenetico-idade-biologica_en.pdf",
    "paginas_en": 13,
-   "tamanho_kb_en": 53
+   "tamanho_kb_en": 53,
+   "areas": [
+    "longevidade"
+   ],
+   "palavras": [
+    "metilação do ADN",
+    "DNA methylation",
+    "GrimAge",
+    "fragilidade",
+    "frailty",
+    "epigenética",
+    "epigenetics"
+   ],
+   "genes": [
+    "APRG1",
+    "ASXL1",
+    "BLNK",
+    "CREB3L3",
+    "DNMT3A",
+    "DNTT",
+    "F2RL3",
+    "KIF13A",
+    "KPNA4",
+    "MTHFR",
+    "MYO18A",
+    "NHLRC1",
+    "PIPOX",
+    "SELP",
+    "SIN3B",
+    "TCL1A",
+    "TERT",
+    "TET2",
+    "TPMT",
+    "TRIM59",
+    "ZNF106"
+   ]
   },
   {
    "id": "andropausa-envelhecimento-reprodutivo",
@@ -1070,7 +4719,12 @@
     "pt": "Andropausa e Envelhecimento Reprodutivo",
     "en": "Andropause and Reproductive Ageing"
    },
+   "resumo": {
+    "pt": "Genética da testosterona, da SHBG e do envelhecimento reprodutivo masculino.",
+    "en": "Genetics of testosterone, SHBG and male reproductive ageing."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/andropausa-envelhecimento-reprodutivo.pdf",
    "descricao": {
     "pt": "17 SNPs e 6 scores: reserva genética de testosterona alta (percentil 89), com SHBG também alta (87); perda do cromossoma Y no percentil 37 e puberdade genética tardia.",
@@ -1084,7 +4738,45 @@
    },
    "ficheiro_en": "reports/andropausa-envelhecimento-reprodutivo_en.pdf",
    "paginas_en": 13,
-   "tamanho_kb_en": 55
+   "tamanho_kb_en": 55,
+   "areas": [
+    "hormonas",
+    "longevidade"
+   ],
+   "palavras": [
+    "testosterona",
+    "testosterone",
+    "hipogonadismo",
+    "hypogonadism",
+    "cromossoma Y",
+    "Y chromosome"
+   ],
+   "genes": [
+    "CHEK2",
+    "CYP17A1",
+    "CYP19A1",
+    "CYP3A7",
+    "ESR1",
+    "FSHB",
+    "GCKR",
+    "GNRHR",
+    "KISS1R",
+    "LHB",
+    "LHCGR",
+    "LIN28B",
+    "MAGEL2",
+    "MKRN3",
+    "MTHFR",
+    "MTOR",
+    "NT5C2",
+    "SETBP1",
+    "SHBG",
+    "SULT2A1",
+    "TCL1A",
+    "TERT",
+    "TMEM18",
+    "ZKSCAN5"
+   ]
   },
   {
    "id": "fertilidade-masculina",
@@ -1092,7 +4784,12 @@
     "pt": "Fertilidade Masculina",
     "en": "Male Fertility"
    },
+   "resumo": {
+    "pt": "Genética da fertilidade masculina, da FSH e da saúde dos testículos.",
+    "en": "Genetics of male fertility, FSH and testicular health."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/fertilidade-masculina.pdf",
    "descricao": {
     "pt": "16 SNPs e 2 scores: sem sinais genéticos de infertilidade estrutural visíveis no chip e risco de tumor do testículo baixo (percentil 24); FSHB -211G>T heterozigoto como ponto desfavorável.",
@@ -1106,7 +4803,33 @@
    },
    "ficheiro_en": "reports/fertilidade-masculina_en.pdf",
    "paginas_en": 13,
-   "tamanho_kb_en": 51
+   "tamanho_kb_en": 51,
+   "areas": [
+    "hormonas"
+   ],
+   "palavras": [
+    "esperma",
+    "sperm",
+    "infertilidade",
+    "infertility",
+    "FSH",
+    "reprodução",
+    "reproduction"
+   ],
+   "genes": [
+    "CFTR",
+    "DNAH1",
+    "FSHB",
+    "FSHR",
+    "GSTP1",
+    "KITLG",
+    "LHCGR",
+    "MTHFR",
+    "PRM1",
+    "SOD2",
+    "SPRY4",
+    "TERT"
+   ]
   },
   {
    "id": "humor-risco-depressao",
@@ -1114,7 +4837,12 @@
     "pt": "Humor e Risco de Depressão",
     "en": "Mood and Depression Risk"
    },
+   "resumo": {
+    "pt": "Genética do humor e do risco de depressão, e os fatores modificáveis mais importantes.",
+    "en": "Genetics of mood and depression risk, and the most important modifiable factors."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/humor-risco-depressao.pdf",
    "descricao": {
     "pt": "23 variantes e 6 scores: o risco genético de depressão é o ponto de atenção do relatório, com sinais mistos nos loci fortes; a insónia é o fator modificável que mais conta.",
@@ -1128,7 +4856,46 @@
    },
    "ficheiro_en": "reports/humor-risco-depressao_en.pdf",
    "paginas_en": 13,
-   "tamanho_kb_en": 65
+   "tamanho_kb_en": 65,
+   "areas": [
+    "cerebro"
+   ],
+   "palavras": [
+    "depressão",
+    "depression",
+    "saúde mental",
+    "mental health",
+    "humor",
+    "mood"
+   ],
+   "genes": [
+    "ANK3",
+    "BDNF",
+    "CACNA1C",
+    "COL1A1",
+    "COMT",
+    "CYP2C19",
+    "CYP2D6",
+    "CYP3A4",
+    "DRD2",
+    "FADS2",
+    "GSK3B",
+    "HTR1A",
+    "HTR2A",
+    "LRFN5",
+    "MAD1L1",
+    "MTHFR",
+    "NEGR1",
+    "OPRM1",
+    "PCLO",
+    "RERE",
+    "SLC6A4",
+    "SORCS3",
+    "TMEM161B",
+    "TPH2",
+    "TRANK1",
+    "VDR"
+   ]
   },
   {
    "id": "ansiedade-resiliencia-stress",
@@ -1136,7 +4903,12 @@
     "pt": "Ansiedade e Resiliência ao Stress",
     "en": "Anxiety and Stress Resilience"
    },
+   "resumo": {
+    "pt": "Genética da ansiedade, do eixo do stress (FKBP5) e da resiliência.",
+    "en": "Genetics of anxiety, the stress axis (FKBP5) and resilience."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/ansiedade-resiliencia-stress.pdf",
    "descricao": {
     "pt": "22 variantes e 10 scores: ansiedade típica a favorável e eixo do stress favorável (FKBP5 sem o alelo T); o ponto contra está nos loci do trauma.",
@@ -1150,7 +4922,47 @@
    },
    "ficheiro_en": "reports/ansiedade-resiliencia-stress_en.pdf",
    "paginas_en": 13,
-   "tamanho_kb_en": 68
+   "tamanho_kb_en": 68,
+   "areas": [
+    "cerebro"
+   ],
+   "palavras": [
+    "stress",
+    "cortisol",
+    "trauma",
+    "saúde mental",
+    "mental health",
+    "ansiedade",
+    "anxiety"
+   ],
+   "genes": [
+    "ADCYAP1R1",
+    "ADORA2A",
+    "CADM2",
+    "CELF4",
+    "COL1A1",
+    "COMT",
+    "CRHR1",
+    "CYP2C9",
+    "CYP3A4",
+    "DENND1B",
+    "ESR1",
+    "FKBP5",
+    "FOXP2",
+    "GABBR1",
+    "GABRA2",
+    "GAD1",
+    "GRM8",
+    "L3MBTL2",
+    "NCAM1",
+    "NPY",
+    "NR3C1",
+    "PTCH1",
+    "RGS2",
+    "SERPINA6",
+    "TMEM132D",
+    "VDR"
+   ]
   },
   {
    "id": "personalidade-tracos-psicologicos",
@@ -1158,7 +4970,12 @@
     "pt": "Personalidade e Traços Psicológicos",
     "en": "Personality and Psychological Traits"
    },
+   "resumo": {
+    "pt": "Genética de traços de personalidade como a extroversão, a emotividade e a tomada de risco.",
+    "en": "Genetics of personality traits such as extraversion, emotionality and risk taking."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/personalidade-tracos-psicologicos.pdf",
    "descricao": {
     "pt": "16 variantes e 11 scores: perfil social e estável a moderadamente emotivo; as relações são o ponto mais favorável e a tomada de risco dá sinais divergentes.",
@@ -1172,7 +4989,41 @@
    },
    "ficheiro_en": "reports/personalidade-tracos-psicologicos_en.pdf",
    "paginas_en": 13,
-   "tamanho_kb_en": 64
+   "tamanho_kb_en": 64,
+   "areas": [
+    "cerebro"
+   ],
+   "palavras": [
+    "Big Five",
+    "temperamento",
+    "temperament",
+    "psicologia",
+    "psychology",
+    "extroversão",
+    "extraversion"
+   ],
+   "genes": [
+    "ANKK1",
+    "CADM2",
+    "CELF4",
+    "COL1A1",
+    "COMT",
+    "CRHR1",
+    "DCC",
+    "DRD2",
+    "DRD4",
+    "FOXP2",
+    "GRM5",
+    "KANSL1",
+    "MAOA",
+    "MAPT",
+    "MSRA",
+    "OXTR",
+    "PCDH15",
+    "VDR",
+    "WSCD2",
+    "XKR6"
+   ]
   },
   {
    "id": "atencao-phda",
@@ -1180,7 +5031,12 @@
     "pt": "Atenção e PHDA",
     "en": "Attention and ADHD"
    },
+   "resumo": {
+    "pt": "Genética da atenção e da impulsividade, e da predisposição para a PHDA (não é diagnóstico).",
+    "en": "Genetics of attention and impulsivity, and of ADHD predisposition (not a diagnosis)."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/atencao-phda.pdf",
    "descricao": {
     "pt": "19 variantes e 3 scores: predisposição genética para PHDA acima da média, com os três scores concordantes; não é diagnóstico (mede traços contínuos de atenção e impulsividade).",
@@ -1194,7 +5050,41 @@
    },
    "ficheiro_en": "reports/atencao-phda_en.pdf",
    "paginas_en": 12,
-   "tamanho_kb_en": 60
+   "tamanho_kb_en": 60,
+   "areas": [
+    "cerebro"
+   ],
+   "palavras": [
+    "PHDA",
+    "ADHD",
+    "TDAH",
+    "concentração",
+    "concentration",
+    "impulsividade",
+    "impulsivity"
+   ],
+   "genes": [
+    "ADGRL3",
+    "ADRA2A",
+    "CES1",
+    "COL1A1",
+    "COMT",
+    "CYP2D6",
+    "CYP3A4",
+    "DBH",
+    "DRD4",
+    "DUSP6",
+    "FOXP2",
+    "MEF2C",
+    "PTPRF",
+    "SEMA6D",
+    "SLC6A2",
+    "SLC6A3",
+    "SNAP25",
+    "SORCS3",
+    "ST3GAL3",
+    "VDR"
+   ]
   },
   {
    "id": "perfil-desportivo-resistencia-forca",
@@ -1202,7 +5092,12 @@
     "pt": "Perfil Desportivo - Resistência e Força",
     "en": "Sports Profile - Endurance and Strength"
    },
+   "resumo": {
+    "pt": "Perfil genético para resistência e força: tipo de fibra, motor aeróbio e massa muscular.",
+    "en": "Genetic profile for endurance and strength: fibre type, aerobic engine and muscle mass."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/perfil-desportivo-resistencia-forca.pdf",
    "descricao": {
     "pt": "Bom motor aeróbio (PPARGC1A Gly482/Gly482, AMPD1 normal) e força de preensão típica; perfil de fibra misto (ACTN3 RX); o ponto a compensar é a massa muscular de base, geneticamente baixa.",
@@ -1216,7 +5111,28 @@
    },
    "ficheiro_en": "reports/perfil-desportivo-resistencia-forca_en.pdf",
    "paginas_en": 14,
-   "tamanho_kb_en": 45
+   "tamanho_kb_en": 45,
+   "areas": [
+    "desporto"
+   ],
+   "palavras": [
+    "ACTN3",
+    "atletismo",
+    "athletics",
+    "treino",
+    "training",
+    "desporto",
+    "sport",
+    "fibras musculares"
+   ],
+   "genes": [
+    "ACE",
+    "ACTN3",
+    "AMPD1",
+    "HIF1A",
+    "NOS3",
+    "PPARGC1A"
+   ]
   },
   {
    "id": "resposta-treino-vo2max",
@@ -1224,7 +5140,12 @@
     "pt": "Resposta ao Treino e VO2max",
     "en": "Training Response and VO2max"
    },
+   "resumo": {
+    "pt": "Genética do VO2max, da frequência cardíaca e da resposta ao treino aeróbio.",
+    "en": "Genetics of VO2max, heart rate and the response to aerobic training."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/resposta-treino-vo2max.pdf",
    "descricao": {
     "pt": "Genética do VO2max mal mapeada; frequência cardíaca em repouso típica a baixa e carga de loci de VO2max no percentil 80,6; inclinação genética baixa para a atividade física (comportamento, não capacidade).",
@@ -1238,7 +5159,26 @@
    },
    "ficheiro_en": "reports/resposta-treino-vo2max_en.pdf",
    "paginas_en": 14,
-   "tamanho_kb_en": 44
+   "tamanho_kb_en": 44,
+   "areas": [
+    "desporto"
+   ],
+   "palavras": [
+    "cardio",
+    "aeróbio",
+    "aerobic",
+    "resistência",
+    "endurance",
+    "exercício",
+    "exercise"
+   ],
+   "genes": [
+    "AMPD1",
+    "BDNF",
+    "HFE",
+    "PPARD",
+    "PPARGC1A"
+   ]
   },
   {
    "id": "tendoes-ligamentos-lesoes",
@@ -1246,7 +5186,12 @@
     "pt": "Tendões, Ligamentos e Lesões",
     "en": "Tendons, Ligaments and Injuries"
    },
+   "resumo": {
+    "pt": "Genética do colagénio dos tendões e ligamentos, e o risco de lesões desportivas.",
+    "en": "Genetics of tendon and ligament collagen, and the risk of sports injuries."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/tendoes-ligamentos-lesoes.pdf",
    "descricao": {
     "pt": "Tecidos moles com scores típicos a baixos (GDF5 favorável, sem COL3A1 Ala698Thr); único sinal clássico desfavorável no COL5A1 T/T (evidência fraca); o risco vem sobretudo da progressão da carga.",
@@ -1260,7 +5205,26 @@
    },
    "ficheiro_en": "reports/tendoes-ligamentos-lesoes_en.pdf",
    "paginas_en": 14,
-   "tamanho_kb_en": 44
+   "tamanho_kb_en": 44,
+   "areas": [
+    "desporto"
+   ],
+   "palavras": [
+    "tendinite",
+    "tendinopathy",
+    "ligamento cruzado",
+    "ACL",
+    "lesão",
+    "injury",
+    "colagénio",
+    "collagen"
+   ],
+   "genes": [
+    "COL1A1",
+    "COL3A1",
+    "COL5A1",
+    "GDF5"
+   ]
   },
   {
    "id": "pulmao-funcao-respiratoria",
@@ -1268,7 +5232,12 @@
     "pt": "Pulmão e Função Respiratória",
     "en": "Lung and Respiratory Function"
    },
+   "resumo": {
+    "pt": "Genética da função pulmonar, da DPOC, do enfisema e da fibrose pulmonar.",
+    "en": "Genetics of lung function, COPD, emphysema and pulmonary fibrosis."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/pulmao-funcao-respiratoria.pdf",
    "descricao": {
     "pt": "Função pulmonar genética típica a favorável e sem o alelo de fibrose do MUC5B; alfa-1 antitripsina PiMZ (enfisema e DPOC sobem sobretudo com tabaco ou fumo) e FVC abaixo da mediana.",
@@ -1282,7 +5251,26 @@
    },
    "ficheiro_en": "reports/pulmao-funcao-respiratoria_en.pdf",
    "paginas_en": 14,
-   "tamanho_kb_en": 47
+   "tamanho_kb_en": 47,
+   "areas": [
+    "orgaos"
+   ],
+   "palavras": [
+    "respiração",
+    "breathing",
+    "DPOC",
+    "COPD",
+    "enfisema",
+    "emphysema",
+    "pulmões",
+    "lungs"
+   ],
+   "genes": [
+    "AGER",
+    "CHRNA5",
+    "MUC5B",
+    "SERPINA1"
+   ]
   },
   {
    "id": "estado-portador",
@@ -1290,7 +5278,12 @@
     "pt": "Estado de Portador",
     "en": "Carrier Status"
    },
+   "resumo": {
+    "pt": "Variantes de portador de doenças recessivas, como a fibrose quística e as hemoglobinopatias.",
+    "en": "Carrier variants for recessive diseases such as cystic fibrosis and haemoglobinopathies."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/estado-portador.pdf",
    "descricao": {
     "pt": "Das 45 variantes de portador procuradas, 42 foram lidas: dois estados de portador já conhecidos (alfa-1 antitripsina PiMZ e HFE H63D) e nenhum novo (fibrose quística, hemoglobinopatias e outras).",
@@ -1304,7 +5297,49 @@
    },
    "ficheiro_en": "reports/estado-portador_en.pdf",
    "paginas_en": 17,
-   "tamanho_kb_en": 73
+   "tamanho_kb_en": 73,
+   "areas": [
+    "outros"
+   ],
+   "palavras": [
+    "portador",
+    "carrier",
+    "recessivo",
+    "recessive",
+    "fibrose quística",
+    "cystic fibrosis"
+   ],
+   "genes": [
+    "ACADM",
+    "ALDOB",
+    "AMPD1",
+    "ATP7B",
+    "BCHE",
+    "BTD",
+    "CFTR",
+    "COL1A1",
+    "CPT2",
+    "CYP21A2",
+    "DHCR7",
+    "FLG",
+    "FMR1",
+    "G6PD",
+    "GBA1",
+    "GJB2",
+    "HBA1",
+    "HBA2",
+    "HBB",
+    "HEXA",
+    "HFE",
+    "MEFV",
+    "MUTYH",
+    "PAH",
+    "PYGM",
+    "SERPINA1",
+    "SMN1",
+    "UGT1A1",
+    "VDR"
+   ]
   },
   {
    "id": "doenca-arterial-periferica",
@@ -1312,7 +5347,12 @@
     "pt": "Doença Arterial Periférica",
     "en": "Peripheral Artery Disease"
    },
+   "resumo": {
+    "pt": "Genética da aterosclerose das artérias das pernas e dos fatores que a agravam.",
+    "en": "Genetics of atherosclerosis in the leg arteries and the factors that worsen it."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/doenca-arterial-periferica.pdf",
    "descricao": {
     "pt": "18 variantes e 4 scores: risco baixo a típico nos scores mais completos (multi-traço no percentil 22) e sem Lp(a) alta; o ponto desfavorável claro é o 9p21 em homozigotia de risco.",
@@ -1326,7 +5366,41 @@
    },
    "ficheiro_en": "reports/doenca-arterial-periferica_en.pdf",
    "paginas_en": 13,
-   "tamanho_kb_en": 64
+   "tamanho_kb_en": 64,
+   "areas": [
+    "coracao"
+   ],
+   "palavras": [
+    "DAP",
+    "PAD",
+    "claudicação",
+    "claudication",
+    "circulação",
+    "circulation",
+    "pernas",
+    "legs"
+   ],
+   "genes": [
+    "ABO",
+    "ATXN2",
+    "CDKN2B-AS1",
+    "CELSR2",
+    "CHRNA3",
+    "CHRNA5",
+    "COL1A1",
+    "COL4A1",
+    "EDNRA",
+    "HDAC9",
+    "IL6R",
+    "LPA",
+    "NFAT5",
+    "PTPN11",
+    "SERPINA1",
+    "SH2B3",
+    "SORT1",
+    "TCF7L2",
+    "VDR"
+   ]
   },
   {
    "id": "cetose-corpos-cetonicos",
@@ -1334,7 +5408,12 @@
     "pt": "Cetose e Corpos Cetónicos",
     "en": "Ketosis and Ketone Bodies"
    },
+   "resumo": {
+    "pt": "Genética dos corpos cetónicos e da facilidade em entrar em cetose com jejum ou dieta cetogénica.",
+    "en": "Genetics of ketone bodies and how easily ketosis is reached with fasting or a ketogenic diet."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/cetose-corpos-cetonicos.pdf",
    "descricao": {
     "pt": "11 variantes e 3 scores, informativos: acetoacetato e acetona geneticamente altos e beta-hidroxibutirato baixo (OXCT1 C/C); insulina em jejum genética baixa, por isso entra em cetose com facilidade.",
@@ -1348,7 +5427,38 @@
    },
    "ficheiro_en": "reports/cetose-corpos-cetonicos_en.pdf",
    "paginas_en": 10,
-   "tamanho_kb_en": 54
+   "tamanho_kb_en": 54,
+   "areas": [
+    "metabolismo",
+    "nutricao"
+   ],
+   "palavras": [
+    "keto",
+    "cetogénica",
+    "ketogenic",
+    "jejum",
+    "fasting",
+    "beta-hidroxibutirato",
+    "beta-hydroxybutyrate"
+   ],
+   "genes": [
+    "ACAT1",
+    "APOE",
+    "COL1A1",
+    "CPT1A",
+    "GCKR",
+    "HMGCL",
+    "HMGCS2",
+    "MPC1",
+    "NLRP3",
+    "OXCT1",
+    "PPARA",
+    "SLC16A1",
+    "SLC2A4",
+    "TRIB1",
+    "UGT1A9",
+    "VDR"
+   ]
   },
   {
    "id": "proteina-aminoacidos",
@@ -1356,7 +5466,12 @@
     "pt": "Proteína e Aminoácidos",
     "en": "Protein and Amino Acids"
    },
+   "resumo": {
+    "pt": "Genética do metabolismo das proteínas e dos aminoácidos, incluindo BCAA, taurina e creatina.",
+    "en": "Genetics of protein and amino-acid metabolism, including BCAAs, taurine and creatine."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/proteina-aminoacidos.pdf",
    "descricao": {
     "pt": "12 variantes e 11 scores: aminoácidos sobretudo típicos (BCAA no percentil 35, sem catabolismo lento dos BCAA); BCAT2 C/C desfavorável de efeito pequeno; a genética não informa sobre a taurina.",
@@ -1370,7 +5485,45 @@
    },
    "ficheiro_en": "reports/proteina-aminoacidos_en.pdf",
    "paginas_en": 13,
-   "tamanho_kb_en": 65
+   "tamanho_kb_en": 65,
+   "areas": [
+    "nutricao",
+    "desporto"
+   ],
+   "palavras": [
+    "BCAA",
+    "leucina",
+    "leucine",
+    "creatina",
+    "creatine",
+    "taurina",
+    "taurine",
+    "proteína"
+   ],
+   "genes": [
+    "BCAT2",
+    "BHMT",
+    "CDO1",
+    "COL1A1",
+    "CPS1",
+    "CSAD",
+    "DBT",
+    "F12",
+    "FGF21",
+    "GAMT",
+    "GATM",
+    "GCKR",
+    "GLDC",
+    "GLS2",
+    "GRK6",
+    "MTHFR",
+    "NLRP12",
+    "PAH",
+    "PPM1K",
+    "SLC2A4",
+    "SLC6A6",
+    "VDR"
+   ]
   },
   {
    "id": "doencas-geneticas-hereditarias",
@@ -1378,7 +5531,12 @@
     "pt": "Doenças Genéticas Hereditárias",
     "en": "Hereditary Genetic Diseases"
    },
+   "resumo": {
+    "pt": "Pesquisa de variantes patogénicas em genes acionáveis de doenças hereditárias graves.",
+    "en": "Search for pathogenic variants in actionable genes for serious hereditary diseases."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/doencas-geneticas-hereditarias.pdf",
    "descricao": {
     "pt": "Nenhuma variante patogénica ou provavelmente patogénica plausível nos 81 genes acionáveis da lista ACMG SF v3.2 nem nos 39 genes extra; as variantes fundadoras lidas (BRCA1, CHEK2, APC, LRRK2…) estão ausentes.",
@@ -1392,7 +5550,143 @@
    },
    "ficheiro_en": "reports/doencas-geneticas-hereditarias_en.pdf",
    "paginas_en": 18,
-   "tamanho_kb_en": 83
+   "tamanho_kb_en": 83,
+   "areas": [
+    "outros"
+   ],
+   "palavras": [
+    "ACMG",
+    "monogénico",
+    "monogenic",
+    "ClinVar",
+    "hereditário",
+    "hereditary",
+    "mutações",
+    "mutations"
+   ],
+   "genes": [
+    "ABCG5",
+    "ABCG8",
+    "ACTA2",
+    "ACTC1",
+    "ACVRL1",
+    "APC",
+    "APOA5",
+    "APOB",
+    "APP",
+    "ATM",
+    "ATP7B",
+    "BAG3",
+    "BARD1",
+    "BCHE",
+    "BMPR1A",
+    "BRCA1",
+    "BRCA2",
+    "BRIP1",
+    "BTD",
+    "CACNA1S",
+    "CALM1",
+    "CALM2",
+    "CALM3",
+    "CASQ2",
+    "CDH1",
+    "CDKN2A",
+    "CHEK2",
+    "COL1A1",
+    "COL3A1",
+    "DES",
+    "DSC2",
+    "DSG2",
+    "DSP",
+    "ENG",
+    "EPCAM",
+    "FBN1",
+    "FLNC",
+    "GAA",
+    "GCK",
+    "GRN",
+    "HFE",
+    "HNF1A",
+    "HNF1B",
+    "HNF4A",
+    "HOXB13",
+    "KCNE1",
+    "KCNH2",
+    "KCNJ2",
+    "KCNQ1",
+    "LDLR",
+    "LIPA",
+    "LMNA",
+    "LPL",
+    "LRRK2",
+    "MAPT",
+    "MAX",
+    "MEN1",
+    "MITF",
+    "MLH1",
+    "MSH2",
+    "MSH6",
+    "MUTYH",
+    "MYBPC3",
+    "MYH11",
+    "MYH7",
+    "MYL2",
+    "MYL3",
+    "NF1",
+    "NF2",
+    "NOTCH3",
+    "NTHL1",
+    "PALB2",
+    "PCSK9",
+    "PKD1",
+    "PKD2",
+    "PKP2",
+    "PMS2",
+    "POLD1",
+    "POLE",
+    "PRKAG2",
+    "PROC",
+    "PROS1",
+    "PSEN1",
+    "PSEN2",
+    "PTEN",
+    "RAD51C",
+    "RAD51D",
+    "RB1",
+    "RBM20",
+    "RET",
+    "RPE65",
+    "RYR1",
+    "RYR2",
+    "SCN5A",
+    "SDHAF2",
+    "SDHB",
+    "SDHC",
+    "SDHD",
+    "SERPINA1",
+    "SERPINC1",
+    "SMAD3",
+    "SMAD4",
+    "SNCA",
+    "STK11",
+    "TGFBR1",
+    "TGFBR2",
+    "TMEM127",
+    "TMEM43",
+    "TNNC1",
+    "TNNI3",
+    "TNNT2",
+    "TP53",
+    "TPM1",
+    "TRDN",
+    "TSC1",
+    "TSC2",
+    "TTN",
+    "TTR",
+    "VDR",
+    "VHL",
+    "WT1"
+   ]
   },
   {
    "id": "bexiga-funcao-urinaria",
@@ -1400,7 +5694,12 @@
     "pt": "Bexiga e Função Urinária",
     "en": "Bladder and Urinary Function"
    },
+   "resumo": {
+    "pt": "Genética da bexiga e da função urinária: incontinência, infeções urinárias e cancro da bexiga.",
+    "en": "Genetics of the bladder and urinary function: incontinence, urinary infections and bladder cancer."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/bexiga-funcao-urinaria.pdf",
    "descricao": {
     "pt": "Cancro da bexiga com predisposição acima da média nos scores de loci e NAT2 lento (risco absoluto baixo sem tabaco); função urinária com pouca predisposição (infeções e incontinência baixas).",
@@ -1414,7 +5713,44 @@
    },
    "ficheiro_en": "reports/bexiga-funcao-urinaria_en.pdf",
    "paginas_en": 16,
-   "tamanho_kb_en": 57
+   "tamanho_kb_en": 57,
+   "areas": [
+    "orgaos",
+    "cancro"
+   ],
+   "palavras": [
+    "urina",
+    "urine",
+    "incontinência",
+    "incontinence",
+    "cistite",
+    "cystitis",
+    "urologia",
+    "urology"
+   ],
+   "genes": [
+    "APOBEC3A",
+    "CASC11",
+    "CBX6",
+    "CCNE1",
+    "CYP2D6",
+    "CYP3A5",
+    "FGFR3",
+    "GSTM1",
+    "GSTP1",
+    "GSTT1",
+    "MCHR2",
+    "MYC",
+    "NAT2",
+    "NQO1",
+    "PSCA",
+    "SLC14A1",
+    "TACC3",
+    "TERT",
+    "TLR4",
+    "TP63",
+    "UGT1A"
+   ]
   },
   {
    "id": "dermatite-seborreica-microbioma-pele",
@@ -1422,7 +5758,12 @@
     "pt": "Dermatite Seborreica e Microbioma da Pele",
     "en": "Seborrhoeic Dermatitis and Skin Microbiome"
    },
+   "resumo": {
+    "pt": "Genética da dermatite seborreica, da barreira da pele e do microbioma cutâneo (Malassezia).",
+    "en": "Genetics of seborrhoeic dermatitis, the skin barrier and the skin microbiome (Malassezia)."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/dermatite-seborreica-microbioma-pele.pdf",
    "descricao": {
     "pt": "Predisposição genética baixa para dermatite seborreica (carga de loci no percentil 6,3) e imunidade antifúngica intacta; score de eczema e dermatite no percentil 90,4 (barreira mais reativa).",
@@ -1436,7 +5777,47 @@
    },
    "ficheiro_en": "reports/dermatite-seborreica-microbioma-pele_en.pdf",
    "paginas_en": 18,
-   "tamanho_kb_en": 64
+   "tamanho_kb_en": 64,
+   "areas": [
+    "orgaos",
+    "imunidade"
+   ],
+   "palavras": [
+    "caspa",
+    "dandruff",
+    "Malassezia",
+    "pele",
+    "skin",
+    "dermatite",
+    "dermatitis"
+   ],
+   "genes": [
+    "CARD14",
+    "CARD9",
+    "CLEC7A",
+    "CYP2C8",
+    "CYP2C9",
+    "CYP3A4",
+    "CYP3A5",
+    "ERAP1",
+    "FLG",
+    "IL12B",
+    "IL13",
+    "IL23R",
+    "IL2RA",
+    "IRF4",
+    "KLK6",
+    "KLK7",
+    "MBL2",
+    "MC1R",
+    "SPINK5",
+    "TAP2",
+    "TLR1",
+    "TLR2",
+    "TNIP1",
+    "TYK2",
+    "ZMIZ1"
+   ]
   },
   {
    "id": "acne-glandulas-sebaceas",
@@ -1444,7 +5825,12 @@
     "pt": "Acne e Glândulas Sebáceas",
     "en": "Acne and Sebaceous Glands"
    },
+   "resumo": {
+    "pt": "Genética da acne e das glândulas sebáceas, com o papel dos androgénios e dos retinoides.",
+    "en": "Genetics of acne and sebaceous glands, and the role of androgens and retinoids."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/acne-glandulas-sebaceas.pdf",
    "descricao": {
     "pt": "Acne com predisposição típica e eixo hormonal favorável (SHBG genética alta); homozigotia de risco em três loci do folículo; hidradenite supurativa com carga de loci no percentil 92,9.",
@@ -1458,7 +5844,41 @@
    },
    "ficheiro_en": "reports/acne-glandulas-sebaceas_en.pdf",
    "paginas_en": 16,
-   "tamanho_kb_en": 56
+   "tamanho_kb_en": 56,
+   "areas": [
+    "orgaos"
+   ],
+   "palavras": [
+    "acne",
+    "borbulhas",
+    "pimples",
+    "sebo",
+    "sebum",
+    "pele",
+    "skin",
+    "isotretinoína"
+   ],
+   "genes": [
+    "BMAL1",
+    "CLEC16A",
+    "CYP17A1",
+    "CYP2C8",
+    "FGF10",
+    "FGFR2",
+    "FST",
+    "FTO",
+    "HERC2",
+    "IL1A",
+    "IRF1",
+    "LYPLAL1",
+    "RASSF10",
+    "SEMA4B",
+    "SHBG",
+    "SOX9",
+    "SRD5A2",
+    "TNF",
+    "WNT10A"
+   ]
   },
   {
    "id": "termorregulacao-sudorese",
@@ -1466,7 +5886,12 @@
     "pt": "Termorregulação e Sudorese",
     "en": "Thermoregulation and Sweating"
    },
+   "resumo": {
+    "pt": "Genética da transpiração e da regulação da temperatura do corpo, no calor e no frio.",
+    "en": "Genetics of sweating and body-temperature regulation in heat and cold."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/termorregulacao-sudorese.pdf",
    "descricao": {
     "pt": "Variantes lidas de hipertermia maligna ausentes e boa produção de calor (DIO2, ADRB3, PGC-1α); termostato da tiroide desviado (TSH genética baixa, T4 livre alta), o que muda a leitura das análises.",
@@ -1480,7 +5905,35 @@
    },
    "ficheiro_en": "reports/termorregulacao-sudorese_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 51
+   "tamanho_kb_en": 51,
+   "areas": [
+    "orgaos"
+   ],
+   "palavras": [
+    "suor",
+    "sweat",
+    "calor",
+    "heat",
+    "frio",
+    "cold",
+    "temperatura",
+    "temperature"
+   ],
+   "genes": [
+    "ABCC11",
+    "ACTN3",
+    "ADRB3",
+    "CACNA1S",
+    "DIO2",
+    "EDAR",
+    "LONP2",
+    "PLB1",
+    "PPARGC1A",
+    "RYR1",
+    "TRPM8",
+    "TRPV1",
+    "UCP1"
+   ]
   },
   {
    "id": "funcao-sexual-eretil",
@@ -1488,7 +5941,12 @@
     "pt": "Função Sexual e Erétil",
     "en": "Sexual and Erectile Function"
    },
+   "resumo": {
+    "pt": "Genética da função erétil e sexual, ligada aos vasos, às hormonas e ao óxido nítrico.",
+    "en": "Genetics of erectile and sexual function, linked to blood vessels, hormones and nitric oxide."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/funcao-sexual-eretil.pdf",
    "descricao": {
     "pt": "11 SNPs e 5 scores: perfil favorável (SIM1 sem alelos de risco, score de disfunção erétil no percentil 15, testosterona genética alta); óxido nítrico endotelial um pouco abaixo (NOS3).",
@@ -1502,7 +5960,32 @@
    },
    "ficheiro_en": "reports/funcao-sexual-eretil_en.pdf",
    "paginas_en": 13,
-   "tamanho_kb_en": 53
+   "tamanho_kb_en": 53,
+   "areas": [
+    "hormonas",
+    "coracao"
+   ],
+   "palavras": [
+    "disfunção erétil",
+    "erectile dysfunction",
+    "libido",
+    "sexualidade",
+    "sexuality",
+    "urologia",
+    "urology"
+   ],
+   "genes": [
+    "AGTR1",
+    "CYP3A4",
+    "CYP3A5",
+    "MTHFR",
+    "NOS3",
+    "PHF21B",
+    "SHBG",
+    "SIM1",
+    "SLC39A8",
+    "ZC3HC1"
+   ]
   },
   {
    "id": "oxido-nitrico-endotelio",
@@ -1510,7 +5993,12 @@
     "pt": "Óxido Nítrico e Endotélio",
     "en": "Nitric Oxide and Endothelium"
    },
+   "resumo": {
+    "pt": "Genética do óxido nítrico (NOS3) e da saúde do endotélio dos vasos sanguíneos.",
+    "en": "Genetics of nitric oxide (NOS3) and the health of the blood-vessel endothelium."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/oxido-nitrico-endotelio.pdf",
    "descricao": {
     "pt": "11 SNPs e 3 scores: travão ADMA geneticamente baixo (DDAH1) e risco coronário geral baixo; produção de NO pela NOS3 um pouco abaixo do ótimo e 1 alelo de mais endotelina-1.",
@@ -1524,7 +6012,35 @@
    },
    "ficheiro_en": "reports/oxido-nitrico-endotelio_en.pdf",
    "paginas_en": 13,
-   "tamanho_kb_en": 52
+   "tamanho_kb_en": 52,
+   "areas": [
+    "coracao"
+   ],
+   "palavras": [
+    "óxido nítrico",
+    "nitric oxide",
+    "vasos",
+    "vessels",
+    "endotélio",
+    "endothelium",
+    "circulação",
+    "circulation",
+    "nitratos"
+   ],
+   "genes": [
+    "AGXT2",
+    "CYBA",
+    "DDAH1",
+    "EDN1",
+    "GCH1",
+    "GUCY1A1",
+    "GUCY1B1",
+    "LOXL4",
+    "MTHFR",
+    "NOS3",
+    "PYROXD2",
+    "VEGFA"
+   ]
   },
   {
    "id": "paladar-olfato",
@@ -1532,7 +6048,12 @@
     "pt": "Paladar e Olfato",
     "en": "Taste and Smell"
    },
+   "resumo": {
+    "pt": "Genética do paladar (amargo, doce, coentros) e do olfato.",
+    "en": "Genetics of taste (bitter, sweet, coriander) and smell."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/paladar-olfato.pdf",
    "descricao": {
     "pt": "Provador médio do amargo (TAS2R38 PAV/AVI), sensibilidade alta à gordura (CD36 GG) e gosto genético pelo doce acima da média (percentil 82); 1 alelo OR6A2 que dá o sabor \"a sabão\" aos coentros.",
@@ -1546,7 +6067,40 @@
    },
    "ficheiro_en": "reports/paladar-olfato_en.pdf",
    "paginas_en": 13,
-   "tamanho_kb_en": 54
+   "tamanho_kb_en": 54,
+   "areas": [
+    "orgaos"
+   ],
+   "palavras": [
+    "sabor",
+    "flavour",
+    "amargo",
+    "bitter",
+    "cheiro",
+    "smell",
+    "coentros",
+    "coriander"
+   ],
+   "genes": [
+    "CA6",
+    "CD36",
+    "MTHFR",
+    "OR2J3",
+    "OR5A1",
+    "OR6A2",
+    "OR7D4",
+    "PRH1",
+    "SCNN1B",
+    "TAS1R1",
+    "TAS1R2",
+    "TAS1R3",
+    "TAS2R14",
+    "TAS2R19",
+    "TAS2R38",
+    "TRPV1",
+    "UGT2A1",
+    "UGT2A2"
+   ]
   },
   {
    "id": "aorta-aneurismas",
@@ -1554,7 +6108,12 @@
     "pt": "Aorta e Aneurismas",
     "en": "Aorta and Aneurysms"
    },
+   "resumo": {
+    "pt": "Genética da aorta e do risco de aneurismas e de dissecção.",
+    "en": "Genetics of the aorta and the risk of aneurysms and dissection."
+   },
    "data": "2026-10-02",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/aorta-aneurismas.pdf",
    "descricao": {
     "pt": "Aorta abdominal com risco genético médio (percentil 42) e fatores protetores (IL6R, Lp(a) baixa) contra o 9p21; ponto desfavorável: aorta torácica ascendente geneticamente mais larga (percentil 79).",
@@ -1568,7 +6127,55 @@
    },
    "ficheiro_en": "reports/aorta-aneurismas_en.pdf",
    "paginas_en": 14,
-   "tamanho_kb_en": 63
+   "tamanho_kb_en": 63,
+   "areas": [
+    "coracao"
+   ],
+   "palavras": [
+    "aneurisma",
+    "aneurysm",
+    "dissecção",
+    "dissection",
+    "artéria",
+    "artery"
+   ],
+   "genes": [
+    "ACTA2",
+    "ADAMTS8",
+    "ALPK3",
+    "BAG3",
+    "CDKN2B",
+    "CDKN2B-AS1",
+    "CELSR2",
+    "COL3A1",
+    "DAB2IP",
+    "EDN1",
+    "EDNRA",
+    "ELN",
+    "FBN1",
+    "HDAC9",
+    "IL6",
+    "IL6R",
+    "LDLR",
+    "LMCD1",
+    "LOX",
+    "LPA",
+    "LRP1",
+    "MTHFR",
+    "MYH11",
+    "PALMD",
+    "PHACTR1",
+    "RBBP8",
+    "SMAD3",
+    "SORT1",
+    "SOX17",
+    "TESHL",
+    "TEX41",
+    "TGFBR1",
+    "TNS1",
+    "ULK4",
+    "ZNF592"
+   ]
   },
   {
    "id": "saude-oral-dentes-periodontite",
@@ -1576,7 +6183,12 @@
     "pt": "Saúde Oral, Dentes e Periodontite",
     "en": "Oral Health, Teeth and Periodontitis"
    },
+   "resumo": {
+    "pt": "Genética das cáries, da periodontite e da saúde das gengivas e dos dentes.",
+    "en": "Genetics of tooth decay, periodontitis and gum and tooth health."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/saude-oral-dentes-periodontite.pdf",
    "descricao": {
     "pt": "Genótipo IL-1 composto negativo e cáries com carga de loci muito baixa; gengivite genética alta (percentil 89,7) e periodontite típica-alta: o controlo diário da placa é a prioridade.",
@@ -1590,7 +6202,27 @@
    },
    "ficheiro_en": "reports/saude-oral-dentes-periodontite_en.pdf",
    "paginas_en": 14,
-   "tamanho_kb_en": 45
+   "tamanho_kb_en": 45,
+   "areas": [
+    "orgaos"
+   ],
+   "palavras": [
+    "dentes",
+    "teeth",
+    "gengivas",
+    "gums",
+    "cáries",
+    "caries",
+    "dentista",
+    "dentist"
+   ],
+   "genes": [
+    "ATM",
+    "CRP",
+    "GLT6D1",
+    "IL1A",
+    "IL1B"
+   ]
   },
   {
    "id": "dor-analgesia",
@@ -1598,7 +6230,12 @@
     "pt": "Dor e Analgesia",
     "en": "Pain and Analgesia"
    },
+   "resumo": {
+    "pt": "Genética da sensibilidade à dor e da resposta a analgésicos como opioides e anti-inflamatórios.",
+    "en": "Genetics of pain sensitivity and response to painkillers such as opioids and anti-inflammatories."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/dor-analgesia.pdf",
    "descricao": {
     "pt": "Baixa sensibilidade genética à dor aguda (COMT Val/Val, FAAH C385A) e CYP2D6 normal (codeína, tramadol); tendência para dor lombar crónica e CYP2C9 *1/*3 (os AINEs ficam mais tempo no sangue).",
@@ -1612,7 +6249,33 @@
    },
    "ficheiro_en": "reports/dor-analgesia_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 49
+   "tamanho_kb_en": 49,
+   "areas": [
+    "farmaco",
+    "cerebro"
+   ],
+   "palavras": [
+    "dor",
+    "pain",
+    "opioides",
+    "opioids",
+    "AINE",
+    "NSAID",
+    "analgésicos",
+    "painkillers"
+   ],
+   "genes": [
+    "ABCB1",
+    "COMT",
+    "CYP2B6",
+    "CYP2C9",
+    "CYP2D6",
+    "CYP3A4",
+    "CYP3A5",
+    "FAAH",
+    "OPRM1",
+    "SCN9A"
+   ]
   },
   {
    "id": "anestesia-cirurgia",
@@ -1620,7 +6283,12 @@
     "pt": "Anestesia e Cirurgia",
     "en": "Anaesthesia and Surgery"
    },
+   "resumo": {
+    "pt": "Genética da resposta à anestesia e dos riscos cirúrgicos, como hipertermia maligna e trombose.",
+    "en": "Genetics of anaesthesia response and surgical risks such as malignant hyperthermia and thrombosis."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/anestesia-cirurgia.pdf",
    "descricao": {
     "pt": "Sem variantes de hipertermia maligna detetadas e BCHE normal (succinilcolina com duração normal); a ter em conta: trombose venosa (profilaxia), CYP2C9 *1/*3 e sensibilidade alta à varfarina (VKORC1).",
@@ -1634,7 +6302,33 @@
    },
    "ficheiro_en": "reports/anestesia-cirurgia_en.pdf",
    "paginas_en": 14,
-   "tamanho_kb_en": 50
+   "tamanho_kb_en": 50,
+   "areas": [
+    "farmaco"
+   ],
+   "palavras": [
+    "anestesia",
+    "anaesthesia",
+    "cirurgia",
+    "surgery",
+    "hipertermia maligna",
+    "malignant hyperthermia"
+   ],
+   "genes": [
+    "BCHE",
+    "CACNA1S",
+    "CHRM3",
+    "COMT",
+    "CYP2B6",
+    "CYP2C9",
+    "CYP2D6",
+    "G6PD",
+    "MC1R",
+    "OPRM1",
+    "RYR1",
+    "UGT1A1",
+    "VKORC1"
+   ]
   },
   {
    "id": "impulsividade-recompensa-vicio",
@@ -1642,7 +6336,12 @@
     "pt": "Impulsividade, Recompensa e Vício",
     "en": "Impulsivity, Reward and Addiction"
    },
+   "resumo": {
+    "pt": "Genética da impulsividade, do sistema de recompensa e da vulnerabilidade às adições.",
+    "en": "Genetics of impulsivity, the reward system and vulnerability to addiction."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/impulsividade-recompensa-vicio.pdf",
    "descricao": {
     "pt": "Fator genético comum das adições baixo e sem o DRD2 Taq1A A1; sinais contra no consumo de álcool por semana e na canábis, que só contam com exposição.",
@@ -1656,7 +6355,31 @@
    },
    "ficheiro_en": "reports/impulsividade-recompensa-vicio_en.pdf",
    "paginas_en": 14,
-   "tamanho_kb_en": 50
+   "tamanho_kb_en": 50,
+   "areas": [
+    "cerebro"
+   ],
+   "palavras": [
+    "adição",
+    "addiction",
+    "álcool",
+    "alcohol",
+    "dependência",
+    "dependence",
+    "recompensa",
+    "reward"
+   ],
+   "genes": [
+    "ADH1B",
+    "ALDH2",
+    "ANKK1",
+    "CHRNA5",
+    "COMT",
+    "DRD2",
+    "FAAH",
+    "GABRA2",
+    "OPRM1"
+   ]
   },
   {
    "id": "hipoxia-altitude",
@@ -1664,7 +6387,12 @@
     "pt": "Hipóxia e Altitude",
     "en": "Hypoxia and Altitude"
    },
+   "resumo": {
+    "pt": "Genética da adaptação à altitude e à falta de oxigénio, do mal de altitude e da apneia.",
+    "en": "Genetics of adapting to altitude and low oxygen, altitude sickness and apnoea."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/hipoxia-altitude.pdf",
    "descricao": {
     "pt": "Tolerância genética à altitude média, sem sinais de excesso de glóbulos vermelhos nem variantes do HIF1A; hemoglobina genética baixa (menos reserva de oxigénio à chegada à altitude).",
@@ -1678,7 +6406,31 @@
    },
    "ficheiro_en": "reports/hipoxia-altitude_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 49
+   "tamanho_kb_en": 49,
+   "areas": [
+    "desporto",
+    "orgaos"
+   ],
+   "palavras": [
+    "altitude",
+    "oxigénio",
+    "oxygen",
+    "hipóxia",
+    "hypoxia",
+    "montanha",
+    "mountain",
+    "apneia"
+   ],
+   "genes": [
+    "ACE",
+    "EDN1",
+    "EGLN1",
+    "EPAS1",
+    "EPO",
+    "HIF1A",
+    "NOS3",
+    "TMPRSS6"
+   ]
   },
   {
    "id": "disruptores-endocrinos-poluentes",
@@ -1686,7 +6438,12 @@
     "pt": "Disruptores Endócrinos e Poluentes",
     "en": "Endocrine Disruptors and Pollutants"
    },
+   "resumo": {
+    "pt": "Sensibilidade genética a poluentes, pesticidas, bisfenóis e ftalatos, e as principais fontes de exposição.",
+    "en": "Genetic sensitivity to pollutants, pesticides, bisphenols and phthalates, and the main exposure sources."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/disruptores-endocrinos-poluentes.pdf",
    "descricao": {
     "pt": "Sensibilidade genética baixa a média aos poluentes do ar e ao benzeno (NQO1 e NRF2 intactos); maior vulnerabilidade nos pesticidas organofosforados (PON1) e nas aminas aromáticas (NAT2 lento).",
@@ -1700,7 +6457,43 @@
    },
    "ficheiro_en": "reports/disruptores-endocrinos-poluentes_en.pdf",
    "paginas_en": 16,
-   "tamanho_kb_en": 57
+   "tamanho_kb_en": 57,
+   "areas": [
+    "hormonas",
+    "outros"
+   ],
+   "palavras": [
+    "poluição",
+    "pollution",
+    "tóxicos",
+    "toxins",
+    "BPA",
+    "plásticos",
+    "plastics",
+    "pesticidas"
+   ],
+   "genes": [
+    "ABCB1",
+    "AHR",
+    "AS3MT",
+    "BCHE",
+    "CYP1A1",
+    "CYP2E1",
+    "EPHX1",
+    "ESR1",
+    "GSTM1",
+    "GSTP1",
+    "GSTT1",
+    "MPO",
+    "NAT2",
+    "NFE2L2",
+    "NQO1",
+    "PAH",
+    "PON1",
+    "SOD2",
+    "UGT1A1",
+    "UGT2B15"
+   ]
   },
   {
    "id": "sensibilidade-radiacao",
@@ -1708,7 +6501,12 @@
     "pt": "Sensibilidade à Radiação",
     "en": "Radiation Sensitivity"
    },
+   "resumo": {
+    "pt": "Genética da sensibilidade à radiação UV e ionizante, incluindo a dos exames de imagem.",
+    "en": "Genetics of sensitivity to UV and ionising radiation, including from imaging tests."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/sensibilidade-radiacao.pdf",
    "descricao": {
     "pt": "Pele protegida da radiação UV (sem variantes do MC1R; melanoma e carcinomas com scores baixos); sensibilidade genética à radiação ionizante e da tiroide ligeiramente acima da média (ATM D1853N).",
@@ -1722,7 +6520,42 @@
    },
    "ficheiro_en": "reports/sensibilidade-radiacao_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 55
+   "tamanho_kb_en": 55,
+   "areas": [
+    "cancro",
+    "outros"
+   ],
+   "palavras": [
+    "radiação",
+    "radiation",
+    "UV",
+    "TAC",
+    "CT scan",
+    "raios X",
+    "X-rays",
+    "sol"
+   ],
+   "genes": [
+    "ASIP",
+    "ATM",
+    "BAP1",
+    "CDK4",
+    "CDKN2A",
+    "ERCC2",
+    "FOXE1",
+    "HERC2",
+    "IRF4",
+    "MBIP",
+    "MC1R",
+    "OCA2",
+    "POT1",
+    "SLC45A2",
+    "TGFB1",
+    "TP53",
+    "TYR",
+    "XRCC1",
+    "XRCC3"
+   ]
   },
   {
    "id": "valvulas-cardiacas",
@@ -1730,7 +6563,12 @@
     "pt": "Válvulas Cardíacas",
     "en": "Heart Valves"
    },
+   "resumo": {
+    "pt": "Genética das válvulas do coração: estenose aórtica, calcificação e prolapso mitral.",
+    "en": "Genetics of heart valves: aortic stenosis, calcification and mitral prolapse."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/valvulas-cardiacas.pdf",
    "descricao": {
     "pt": "Sem os alelos de Lp(a) alta do LPA e prolapso mitral típico; a calcificação da válvula aórtica tem carga poligénica acima da média (492 loci no percentil 95,1).",
@@ -1744,7 +6582,56 @@
    },
    "ficheiro_en": "reports/valvulas-cardiacas_en.pdf",
    "paginas_en": 18,
-   "tamanho_kb_en": 61
+   "tamanho_kb_en": 61,
+   "areas": [
+    "coracao"
+   ],
+   "palavras": [
+    "válvula aórtica",
+    "aortic valve",
+    "válvula mitral",
+    "mitral valve",
+    "estenose",
+    "stenosis",
+    "sopro"
+   ],
+   "genes": [
+    "ADAMTS7",
+    "ALPK3",
+    "ALPL",
+    "ATXN2",
+    "BAG3",
+    "CELSR2",
+    "DCHS1",
+    "DZIP1",
+    "FADS1",
+    "FADS2",
+    "FGF23",
+    "FLNA",
+    "HMGA2",
+    "IL6",
+    "LINC01708",
+    "LMCD1",
+    "LPA",
+    "LTBP2",
+    "MUC4",
+    "NAV1",
+    "NOTCH1",
+    "PALMD",
+    "PSRC1",
+    "RBM20",
+    "SCARB1",
+    "SH2B3",
+    "SLC22A2",
+    "SLC22A3",
+    "SMG6",
+    "SORT1",
+    "SPTBN1",
+    "TBX5",
+    "TEX41",
+    "TNS1",
+    "ZNF592"
+   ]
   },
   {
    "id": "velocidade-processamento-tempo-reacao",
@@ -1752,7 +6639,12 @@
     "pt": "Velocidade de Processamento e Tempo de Reação",
     "en": "Processing Speed and Reaction Time"
    },
+   "resumo": {
+    "pt": "Genética da velocidade de processamento mental e do tempo de reação.",
+    "en": "Genetics of mental processing speed and reaction time."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/velocidade-processamento-tempo-reacao.pdf",
    "descricao": {
     "pt": "APOE ε3/ε3 sem o alelo de risco do TOMM40, inteligência fluida no limite superior do típico e alelos de reação mais rápida no KANSL1 e no FOXO3; BDNF Val66Met heterozigoto.",
@@ -1766,7 +6658,39 @@
    },
    "ficheiro_en": "reports/velocidade-processamento-tempo-reacao_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 52
+   "tamanho_kb_en": 52,
+   "areas": [
+    "cerebro"
+   ],
+   "palavras": [
+    "reflexos",
+    "reflexes",
+    "cognição",
+    "cognition",
+    "rapidez",
+    "speed"
+   ],
+   "genes": [
+    "APC",
+    "APOE",
+    "APP",
+    "BDNF",
+    "CHRNA4",
+    "COMT",
+    "FOXO3",
+    "GRN",
+    "KANSL1",
+    "LINC02200",
+    "MAPT",
+    "PRDM11",
+    "PSEN1",
+    "PSEN2",
+    "RORB",
+    "SEMA6D",
+    "TOMM40",
+    "WWC1",
+    "ZNF184"
+   ]
   },
   {
    "id": "inflamacao-senescencia-placa",
@@ -1774,7 +6698,12 @@
     "pt": "Inflamação, Senescência e Placa",
     "en": "Inflammation, Senescence and Plaque"
    },
+   "resumo": {
+    "pt": "Inflamação crónica, senescência e placa nas artérias: genes do eixo IL-6/PCR e aterosclerose.",
+    "en": "Chronic inflammation, senescence and arterial plaque: IL-6/CRP axis genes and atherosclerosis."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/inflamacao-senescencia-placa.pdf",
    "descricao": {
     "pt": "Eixo IL-6/PCR favorável (PCR genética baixa a típica, IL6R Asp358Ala) e doença coronária poligénica baixa; contra: 9p21 G/G e cargas de loci altas da GlycA e do GDF-15.",
@@ -1788,7 +6717,37 @@
    },
    "ficheiro_en": "reports/inflamacao-senescencia-placa_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 53
+   "tamanho_kb_en": 53,
+   "areas": [
+    "coracao",
+    "imunidade"
+   ],
+   "palavras": [
+    "aterosclerose",
+    "atherosclerosis",
+    "PCR",
+    "CRP",
+    "IL-6",
+    "placa",
+    "plaque",
+    "inflamação"
+   ],
+   "genes": [
+    "ACKR1",
+    "CCL2",
+    "CDKN2A",
+    "CDKN2B-AS1",
+    "CRP",
+    "CXCL8",
+    "GDF15",
+    "HMGB1",
+    "IL6",
+    "IL6R",
+    "NLRP12",
+    "NLRP3",
+    "PLA2G7",
+    "TNF"
+   ]
   },
   {
    "id": "gordura-inflamatoria-lipolise",
@@ -1796,7 +6755,12 @@
     "pt": "Gordura Inflamatória e Lipólise",
     "en": "Inflammatory Fat and Lipolysis"
    },
+   "resumo": {
+    "pt": "Genética da gordura visceral e da lipólise, e da inflamação que a gordura pode causar.",
+    "en": "Genetics of visceral fat and lipolysis, and of the inflammation fat can drive."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/gordura-inflamatoria-lipolise.pdf",
    "descricao": {
     "pt": "Gordura glúteo-femoral (\"segura\") com score alto e gordura visceral ajustada típica; contra: gordura do tronco no percentil 98,4 e os achados hepáticos conhecidos (PNPLA3 I148M, PiMZ).",
@@ -1810,7 +6774,50 @@
    },
    "ficheiro_en": "reports/gordura-inflamatoria-lipolise_en.pdf",
    "paginas_en": 17,
-   "tamanho_kb_en": 61
+   "tamanho_kb_en": 61,
+   "areas": [
+    "metabolismo",
+    "imunidade"
+   ],
+   "palavras": [
+    "gordura visceral",
+    "visceral fat",
+    "gordura abdominal",
+    "belly fat",
+    "lipólise",
+    "lipolysis",
+    "obesidade"
+   ],
+   "genes": [
+    "ACSL1",
+    "ADIPOQ",
+    "COBLL1",
+    "FABP4",
+    "FADS1",
+    "FTO",
+    "GCGR",
+    "GCKR",
+    "GIP",
+    "GIPR",
+    "GLP1R",
+    "GRB14",
+    "HSD17B13",
+    "IRX3",
+    "IRX5",
+    "KLF14",
+    "LYPLAL1",
+    "MBOAT7",
+    "OLMALINC",
+    "PLIN1",
+    "PNPLA3",
+    "PPARG",
+    "RSPO3",
+    "SCD",
+    "SERPINA1",
+    "TLR4",
+    "TM6SF2",
+    "TNF"
+   ]
   },
   {
    "id": "ritmo-cardiaco-arritmias",
@@ -1818,7 +6825,12 @@
     "pt": "Ritmo Cardíaco e Arritmias",
     "en": "Heart Rhythm and Arrhythmias"
    },
+   "resumo": {
+    "pt": "Genética da frequência cardíaca, da condução elétrica e de arritmias como a fibrilhação auricular.",
+    "en": "Genetics of heart rate, electrical conduction and arrhythmias such as atrial fibrillation."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/ritmo-cardiaco-arritmias.pdf",
    "descricao": {
     "pt": "18 SNPs e 10 scores: frequência cardíaca de repouso geneticamente baixa, condução e Brugada favoráveis e fibrilhação auricular com risco muito baixo (percentil 2); variabilidade cardíaca média.",
@@ -1832,7 +6844,43 @@
    },
    "ficheiro_en": "reports/ritmo-cardiaco-arritmias_en.pdf",
    "paginas_en": 13,
-   "tamanho_kb_en": 59
+   "tamanho_kb_en": 59,
+   "areas": [
+    "coracao"
+   ],
+   "palavras": [
+    "arritmia",
+    "arrhythmia",
+    "fibrilhação auricular",
+    "atrial fibrillation",
+    "ECG",
+    "QT",
+    "palpitações"
+   ],
+   "genes": [
+    "BAZ2B",
+    "CAV1",
+    "CDKN1A",
+    "CPNE5",
+    "GNG11",
+    "HCN4",
+    "HEY2",
+    "KCNE1",
+    "KCNH2",
+    "KCNJ5",
+    "KCNQ1",
+    "KIAA1755",
+    "MTHFR",
+    "MYH6",
+    "NDUFA11",
+    "PPIL1",
+    "RGS6",
+    "RYR2",
+    "SCN10A",
+    "SCN5A",
+    "SYT10",
+    "TBX5"
+   ]
   },
   {
    "id": "avc-pequenos-vasos-cerebrais",
@@ -1840,7 +6888,12 @@
     "pt": "AVC e Pequenos Vasos Cerebrais",
     "en": "Stroke and Cerebral Small Vessels"
    },
+   "resumo": {
+    "pt": "Genética do AVC, das lesões da substância branca e da doença dos pequenos vasos do cérebro.",
+    "en": "Genetics of stroke, white-matter lesions and cerebral small-vessel disease."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/avc-pequenos-vasos-cerebrais.pdf",
    "descricao": {
     "pt": "Quadro misto: scores de AVC baixos e loci fortes das lesões favoráveis, mas lesões da substância branca com score alto (percentil 92); o ponto mais fraco são os espaços perivasculares (drenagem glinfática).",
@@ -1854,7 +6907,39 @@
    },
    "ficheiro_en": "reports/avc-pequenos-vasos-cerebrais_en.pdf",
    "paginas_en": 13,
-   "tamanho_kb_en": 53
+   "tamanho_kb_en": 53,
+   "areas": [
+    "coracao",
+    "cerebro"
+   ],
+   "palavras": [
+    "AVC",
+    "stroke",
+    "substância branca",
+    "white matter",
+    "glinfático",
+    "glymphatic",
+    "cérebro"
+   ],
+   "genes": [
+    "APOE",
+    "COL4A1",
+    "COL4A2",
+    "FOXF2",
+    "HDAC9",
+    "HTRA1",
+    "LPAR1",
+    "MTHFR",
+    "NOTCH3",
+    "PMF1",
+    "SEMA4A",
+    "SH3PXD2A",
+    "SLC13A3",
+    "TRIM47",
+    "TRIM65",
+    "TSPAN2",
+    "WNT7A"
+   ]
   },
   {
    "id": "insuficiencia-cardiaca-cardiomiopatias",
@@ -1862,7 +6947,12 @@
     "pt": "Insuficiência Cardíaca e Cardiomiopatias",
     "en": "Heart Failure and Cardiomyopathies"
    },
+   "resumo": {
+    "pt": "Genética da insuficiência cardíaca e das cardiomiopatias dilatada e hipertrófica.",
+    "en": "Genetics of heart failure and dilated and hypertrophic cardiomyopathies."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/insuficiencia-cardiaca-cardiomiopatias.pdf",
    "descricao": {
     "pt": "Cardiomiopatia dilatada com risco genético muito baixo (percentil 2) e insuficiência cardíaca global baixa (22); cardiomiopatia hipertrófica com score acima da média, sem os alelos de risco do MYBPC3.",
@@ -1876,7 +6966,42 @@
    },
    "ficheiro_en": "reports/insuficiencia-cardiaca-cardiomiopatias_en.pdf",
    "paginas_en": 13,
-   "tamanho_kb_en": 56
+   "tamanho_kb_en": 56,
+   "areas": [
+    "coracao"
+   ],
+   "palavras": [
+    "cardiomiopatia",
+    "cardiomyopathy",
+    "coração",
+    "heart",
+    "insuficiência cardíaca",
+    "heart failure"
+   ],
+   "genes": [
+    "ACE",
+    "AGT",
+    "AGTR1",
+    "BAG3",
+    "CCDC136",
+    "CDKN1A",
+    "CYP11B2",
+    "DSP",
+    "FHOD3",
+    "FLNC",
+    "HSPB7",
+    "LMNA",
+    "LSM3",
+    "MTHFR",
+    "MYBPC3",
+    "MYH7",
+    "NPPA",
+    "NPPB",
+    "SMARCB1",
+    "TTN",
+    "TTR",
+    "ZBTB17"
+   ]
   },
   {
    "id": "polipos-colorretais",
@@ -1884,7 +7009,12 @@
     "pt": "Pólipos Colorretais",
     "en": "Colorectal Polyps"
    },
+   "resumo": {
+    "pt": "Genética dos pólipos e do cancro colorretal, útil para decidir o rastreio por colonoscopia.",
+    "en": "Genetics of colorectal polyps and cancer, useful for deciding on colonoscopy screening."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/polipos-colorretais.pdf",
    "descricao": {
     "pt": "Sem variantes de alto efeito (APC I1307K, MUTYH e CHEK2 ausentes); risco poligénico moderadamente aumentado nos scores mais completos (95 variantes no percentil 94,3), relevante para a colonoscopia.",
@@ -1898,7 +7028,42 @@
    },
    "ficheiro_en": "reports/polipos-colorretais_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 50
+   "tamanho_kb_en": 50,
+   "areas": [
+    "cancro",
+    "digestao"
+   ],
+   "palavras": [
+    "cólon",
+    "colon",
+    "colonoscopia",
+    "colonoscopy",
+    "cancro colorretal",
+    "colorectal cancer",
+    "rastreio"
+   ],
+   "genes": [
+    "APC",
+    "BMP2",
+    "BMP4",
+    "CCAT2",
+    "CHEK2",
+    "EIF3H",
+    "EPCAM",
+    "GREM1",
+    "KRAS",
+    "MLH1",
+    "MSH2",
+    "MSH6",
+    "MTHFR",
+    "MUTYH",
+    "MYC",
+    "NAT2",
+    "PMS2",
+    "SCG5",
+    "SMAD7",
+    "TCF4"
+   ]
   },
   {
    "id": "pneumococo-imunossenescencia",
@@ -1906,7 +7071,12 @@
     "pt": "Pneumococo e Imunossenescência",
     "en": "Pneumococcus and Immunosenescence"
    },
+   "resumo": {
+    "pt": "Genética da defesa contra o pneumococo e outras infeções, e porque as vacinas contam.",
+    "en": "Genetics of defence against pneumococcus and other infections, and why vaccines matter."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/pneumococo-imunossenescencia.pdf",
    "descricao": {
     "pt": "Boa defesa inata (MBL intermédia, sem TLR4 Asp299Gly; COVID-19 grave no percentil 4,7); tendência poligénica para infeções bacterianas das mucosas (pneumonia no 84,2), o que torna as vacinas importantes.",
@@ -1920,7 +7090,28 @@
    },
    "ficheiro_en": "reports/pneumococo-imunossenescencia_en.pdf",
    "paginas_en": 14,
-   "tamanho_kb_en": 46
+   "tamanho_kb_en": 46,
+   "areas": [
+    "imunidade",
+    "longevidade"
+   ],
+   "palavras": [
+    "pneumonia",
+    "vacinas",
+    "vaccines",
+    "infeções",
+    "infections",
+    "imunossenescência",
+    "immunosenescence"
+   ],
+   "genes": [
+    "CRP",
+    "FCGR2A",
+    "MBL2",
+    "TIRAP",
+    "TLR2",
+    "TLR4"
+   ]
   },
   {
    "id": "audicao-zumbido",
@@ -1928,7 +7119,12 @@
     "pt": "Audição e Zumbido",
     "en": "Hearing and Tinnitus"
    },
+   "resumo": {
+    "pt": "Genética da perda auditiva, da ototoxicidade e do zumbido, e como proteger a audição.",
+    "en": "Genetics of hearing loss, ototoxicity and tinnitus, and how to protect hearing."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/audicao-zumbido.pdf",
    "descricao": {
     "pt": "Perda auditiva da idade típica, GJB2 normal e sem o alelo de ototoxicidade da cisplatina; o zumbido é o ponto fraco (score genómico no percentil 89,7), por isso proteger do ruído é o que mais compensa.",
@@ -1942,7 +7138,32 @@
    },
    "ficheiro_en": "reports/audicao-zumbido_en.pdf",
    "paginas_en": 14,
-   "tamanho_kb_en": 47
+   "tamanho_kb_en": 47,
+   "areas": [
+    "orgaos"
+   ],
+   "palavras": [
+    "ouvidos",
+    "ears",
+    "surdez",
+    "deafness",
+    "acufenos",
+    "ruído",
+    "noise",
+    "audição"
+   ],
+   "genes": [
+    "ACAN",
+    "ACYP2",
+    "CTBP2",
+    "EYA4",
+    "GJB2",
+    "ILDR1",
+    "ISG20",
+    "KLHDC7B",
+    "LMX1A",
+    "TRIOBP"
+   ]
   },
   {
    "id": "hipertensao-pulmonar-circulacao-pulmao",
@@ -1950,7 +7171,12 @@
     "pt": "Hipertensão Pulmonar e Circulação do Pulmão",
     "en": "Pulmonary Hypertension and Pulmonary Circulation"
    },
+   "resumo": {
+    "pt": "Genética da hipertensão pulmonar, da circulação do pulmão e do tromboembolismo.",
+    "en": "Genetics of pulmonary hypertension, lung circulation and thromboembolism."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/hipertensao-pulmonar-circulacao-pulmao.pdf",
    "descricao": {
     "pt": "Sem variantes patogénicas nos genes lidos com segurança (o BMPR2 não é avaliável pelo chip) e SOX17 com menos alelos de risco; tromboembolismo venoso alto (scores nos percentis 86,3 e 84,4).",
@@ -1964,7 +7190,40 @@
    },
    "ficheiro_en": "reports/hipertensao-pulmonar-circulacao-pulmao_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 52
+   "tamanho_kb_en": 52,
+   "areas": [
+    "coracao",
+    "orgaos"
+   ],
+   "palavras": [
+    "pulmão",
+    "lung",
+    "embolia pulmonar",
+    "pulmonary embolism",
+    "tromboembolismo",
+    "thromboembolism"
+   ],
+   "genes": [
+    "ABO",
+    "ACVRL1",
+    "AQP1",
+    "ATP13A3",
+    "BMPR2",
+    "CAV1",
+    "CBLN2",
+    "DNAJC10",
+    "EIF2AK4",
+    "ENG",
+    "F11",
+    "FGG",
+    "GDF2",
+    "KCNK3",
+    "PDE1A",
+    "SERPINA1",
+    "SMAD9",
+    "SOX17",
+    "TBX4"
+   ]
   },
   {
    "id": "longevidade-maxima-sintese-genetica",
@@ -1972,7 +7231,12 @@
     "pt": "Longevidade Máxima – Síntese Genética",
     "en": "Maximum Longevity – Genetic Synthesis"
    },
+   "resumo": {
+    "pt": "Variantes de centenários, scores de longevidade e síntese dos mecanismos de envelhecimento de maior impacto.",
+    "en": "Centenarian variants, longevity scores and a synthesis of the highest-impact ageing mechanisms."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/longevidade-maxima-sintese-genetica.pdf",
    "descricao": {
     "pt": "42 variantes e 5 scores: FOXO3 homozigoto para os 4 alelos de longevidade, APOE ε3/ε3 e score de longevidade no percentil 92; o ponto desfavorável mais forte é o 9p21 em homozigotia de risco.",
@@ -1986,7 +7250,170 @@
    },
    "ficheiro_en": "reports/longevidade-maxima-sintese-genetica_en.pdf",
    "paginas_en": 28,
-   "tamanho_kb_en": 138
+   "tamanho_kb_en": 138,
+   "areas": [
+    "longevidade"
+   ],
+   "palavras": [
+    "centenários",
+    "centenarians",
+    "esperança de vida",
+    "lifespan",
+    "síntese",
+    "synthesis",
+    "envelhecimento"
+   ],
+   "genes": [
+    "ABCG2",
+    "ACTN3",
+    "ADRB3",
+    "ALPL",
+    "ANGPTL3",
+    "ANGPTL4",
+    "ANGPTL8",
+    "APC",
+    "APOC1",
+    "APOC3",
+    "APOE",
+    "APOL1",
+    "ASXL1",
+    "ATG16L1",
+    "ATM",
+    "AXIN1",
+    "BCAT2",
+    "BDNF",
+    "BMP4",
+    "BMPR2",
+    "BRCA1",
+    "CARD9",
+    "CDKN1A",
+    "CDKN2A",
+    "CDKN2B",
+    "CDKN2B-AS1",
+    "CETP",
+    "CHEK2",
+    "CHRNA3",
+    "CHRNA5",
+    "CLOCK",
+    "COL1A1",
+    "COL3A1",
+    "COL4A2",
+    "COL5A1",
+    "COQ2",
+    "CRP",
+    "CYP1A2",
+    "CYP2C9",
+    "CYP2D6",
+    "CYP3A5",
+    "DIO2",
+    "DNMT3A",
+    "EBF1",
+    "ELN",
+    "EPCAM",
+    "EPHA1",
+    "ERCC2",
+    "ESR1",
+    "F11",
+    "FABP4",
+    "FBN1",
+    "FCGR2A",
+    "FGG",
+    "FMO3",
+    "FMR1",
+    "FOXO3",
+    "FTO",
+    "FURIN",
+    "FUT2",
+    "GBA1",
+    "GCKR",
+    "GCLC",
+    "GCLM",
+    "GDF5",
+    "GHR",
+    "GPNMB",
+    "GSTA1",
+    "GSTM1",
+    "GSTT1",
+    "HFE",
+    "HMGB1",
+    "HOXB13",
+    "HTT",
+    "HYKK",
+    "IGF1R",
+    "IL6",
+    "IL6R",
+    "IRS1",
+    "JAK2",
+    "KCNJ11",
+    "KLF14",
+    "LDLR",
+    "LMNA",
+    "LOXL1",
+    "LPA",
+    "LPAR1",
+    "LRRK2",
+    "MAPT",
+    "MBL2",
+    "MBOAT7",
+    "MMP9",
+    "MPO",
+    "MS4A6A",
+    "MSH2",
+    "MSTN",
+    "MTHFR",
+    "MTNR1B",
+    "MTOR",
+    "MUTYH",
+    "NAT2",
+    "NDUFB6",
+    "NOD2",
+    "NQO1",
+    "PCSK9",
+    "PMF1",
+    "PNPLA3",
+    "PON1",
+    "PROCR",
+    "PTK2B",
+    "RSPO3",
+    "SERPINA1",
+    "SH2B3",
+    "SHBG",
+    "SIRT3",
+    "SIRT6",
+    "SIX6",
+    "SLC13A3",
+    "SLC30A8",
+    "SMAD3",
+    "SMAD7",
+    "SMN1",
+    "SOD2",
+    "SOX17",
+    "TBX15",
+    "TCF7L2",
+    "TCL1A",
+    "TERT",
+    "TET2",
+    "TEX41",
+    "TLR4",
+    "TMEM175",
+    "TNF",
+    "TOMM40",
+    "TP53",
+    "TREM2",
+    "TTR",
+    "TXNRD2",
+    "UCP1",
+    "UGT1A1",
+    "ULK4",
+    "UMOD",
+    "VDR",
+    "VKORC1",
+    "WLS",
+    "XPC",
+    "XRCC1",
+    "XRCC3",
+    "ZBTB40"
+   ]
   },
   {
    "id": "imortalidade",
@@ -1994,7 +7421,12 @@
     "pt": "Imortalidade",
     "en": "Immortality"
    },
+   "resumo": {
+    "pt": "Documento-mestre: síntese de todos os relatórios, com as ações que mais mudam o desfecho.",
+    "en": "Master document: a synthesis of all reports, with the actions that most change the outcome."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/imortalidade.pdf",
    "descricao": {
     "pt": "Síntese de todos os relatórios genéticos e de 5 análises novas ao ADN, com as 10 ações que mais mudam o desfecho, as causas de morte previstas pelos genes, o mapa dos 84 mecanismos de envelhecimento, o cartão farmacogenético e o calendário de rastreios.",
@@ -2009,7 +7441,194 @@
    "destaque": true,
    "ficheiro_en": "reports/imortalidade_en.pdf",
    "paginas_en": 29,
-   "tamanho_kb_en": 146
+   "tamanho_kb_en": 146,
+   "areas": [
+    "longevidade"
+   ],
+   "palavras": [
+    "síntese",
+    "synthesis",
+    "mecanismos de envelhecimento",
+    "ageing mechanisms",
+    "plano",
+    "plan",
+    "longevidade"
+   ],
+   "genes": [
+    "ABCG2",
+    "ABO",
+    "ACTN3",
+    "ADH1C",
+    "ADORA2A",
+    "ADRB3",
+    "ALG1",
+    "ANGPTL3",
+    "ANGPTL4",
+    "ANGPTL8",
+    "APC",
+    "APOC3",
+    "APOE",
+    "APOL1",
+    "ASXL1",
+    "ATG16L1",
+    "ATM",
+    "AXIN1",
+    "BCAT2",
+    "BCHE",
+    "BHMT",
+    "BMAL2",
+    "BMPR2",
+    "BRCA1",
+    "CACNA1S",
+    "CARD9",
+    "CASP8",
+    "CCR5",
+    "CD209",
+    "CDKN1A",
+    "CDKN2A",
+    "CETP",
+    "CFH",
+    "CLOCK",
+    "COL1A1",
+    "COL3A1",
+    "COL4A2",
+    "COL5A1",
+    "COQ2",
+    "CPS1",
+    "CRP",
+    "CYP1A2",
+    "CYP2B6",
+    "CYP2C19",
+    "CYP2C9",
+    "CYP2D6",
+    "CYP3A4",
+    "CYP3A5",
+    "CYP46A1",
+    "CYP4F2",
+    "DHCR7",
+    "DIO2",
+    "DNMT3A",
+    "DPYD",
+    "ELN",
+    "EPCAM",
+    "EPHA1",
+    "ERCC2",
+    "ESR1",
+    "F11",
+    "FABP4",
+    "FADS1",
+    "FBN1",
+    "FCGR2A",
+    "FCGR2B",
+    "FHOD3",
+    "FLG",
+    "FMO3",
+    "FMR1",
+    "FOXO3",
+    "FOXO4",
+    "FTO",
+    "FUT2",
+    "G6PD",
+    "GBA1",
+    "GCLC",
+    "GCLM",
+    "GDF5",
+    "GHR",
+    "GNMT",
+    "GOSR2",
+    "GPNMB",
+    "GSTA1",
+    "GSTM1",
+    "GSTT1",
+    "HFE",
+    "HMGB1",
+    "HSD17B13",
+    "HTT",
+    "IDUA",
+    "IGF1R",
+    "IL6",
+    "IL6R",
+    "IRS1",
+    "JAK2",
+    "KCNH2",
+    "KCNJ11",
+    "KLF14",
+    "LCT",
+    "LDLR",
+    "LMNA",
+    "LOXL1",
+    "LPA",
+    "LPAR1",
+    "LRRK2",
+    "MAPT",
+    "MBL2",
+    "MBOAT7",
+    "MC1R",
+    "MMP9",
+    "MPO",
+    "MS4A6A",
+    "MSH2",
+    "MSTN",
+    "MTHFR",
+    "MTNR1B",
+    "MTOR",
+    "MUTYH",
+    "NAT2",
+    "NDUFB6",
+    "NF1",
+    "NOD2",
+    "NOS3",
+    "NQO1",
+    "NUDT15",
+    "OFD1",
+    "OPRM1",
+    "PCSK9",
+    "PDXK",
+    "PMF1",
+    "PNPLA3",
+    "PON1",
+    "PTK2B",
+    "RSPO3",
+    "RYR1",
+    "SBDS",
+    "SERPINA1",
+    "SH2B3",
+    "SHBG",
+    "SIRT3",
+    "SIRT6",
+    "SLC13A3",
+    "SLC30A8",
+    "SLCO1B1",
+    "SMAD3",
+    "SMN1",
+    "SOD2",
+    "TBX15",
+    "TCF7L2",
+    "TCL1A",
+    "TERT",
+    "TET2",
+    "TLR1",
+    "TLR2",
+    "TLR4",
+    "TM6SF2",
+    "TMEM175",
+    "TNF",
+    "TOMM40",
+    "TP53",
+    "TPMT",
+    "TREM2",
+    "TTR",
+    "UCP1",
+    "UGT1A1",
+    "UGT1A9",
+    "ULK4",
+    "VKORC1",
+    "WLS",
+    "XPC",
+    "XRCC1",
+    "XRCC3",
+    "ZBTB40"
+   ]
   },
   {
    "id": "tiroide",
@@ -2017,7 +7636,12 @@
     "pt": "Tiroide",
     "en": "Thyroid"
    },
+   "resumo": {
+    "pt": "Genética da autoimunidade da tiroide, da conversão de T4 em T3, dos nódulos e do cancro.",
+    "en": "Genetics of thyroid autoimmunity, T4-to-T3 conversion, nodules and cancer."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/tiroide.pdf",
    "descricao": {
     "pt": "Autoimunidade da tiroide do lado baixo (Graves no percentil 3,3; sem PTPN22 R620W nem HLA-DR3/DQ2.5) e conversão de T4 em T3 preservada (DIO2 sem Ala92). O ponto fraco é estrutural: bócio nodular nos percentis 91–93 e cancro da tiroide acima do 79 em todos os scores (NRG1, TERT, FOXE1). Termostato genético de TSH baixa e T4 livre alta.",
@@ -2031,7 +7655,47 @@
    },
    "ficheiro_en": "reports/tiroide_en.pdf",
    "paginas_en": 17,
-   "tamanho_kb_en": 60
+   "tamanho_kb_en": 60,
+   "areas": [
+    "hormonas"
+   ],
+   "palavras": [
+    "tireoide",
+    "thyroid",
+    "Hashimoto",
+    "Graves",
+    "bócio",
+    "goitre",
+    "TSH"
+   ],
+   "genes": [
+    "APC",
+    "BRAF",
+    "CAPZB",
+    "CHEK2",
+    "CTLA4",
+    "DICER1",
+    "DIO1",
+    "DIO2",
+    "DIRC3",
+    "FLT3",
+    "FOXE1",
+    "ITPK1",
+    "MBIP",
+    "NRG1",
+    "PDE10A",
+    "PDE8B",
+    "PTCSC3",
+    "PTEN",
+    "PTPN22",
+    "RET",
+    "SH2B3",
+    "TERT",
+    "TPO",
+    "TSHR",
+    "VAV3",
+    "VEGFA"
+   ]
   },
   {
    "id": "infecoes",
@@ -2039,7 +7703,12 @@
     "pt": "Infeções",
     "en": "Infections"
    },
+   "resumo": {
+    "pt": "Genética da defesa contra vírus e bactérias: hepatites, COVID-19, tuberculose e outras infeções.",
+    "en": "Genetics of defence against viruses and bacteria: hepatitis, COVID-19, tuberculosis and more."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/infecoes.pdf",
    "descricao": {
     "pt": "Defesa antiviral clássica boa: IFNL4 com o genótipo de mais eliminação da hepatite C, HLA do lado da eliminação da hepatite B, OAS1 antiviral e COVID-19 grave no percentil 4,7; sem HLA-B*57:01. Sinais altos na tuberculose (loci 94,0; ASAP1 A/A), na hepatite B (loci 88,2), no herpes zóster (74,9) e na infeção urinária (93,8). Secretor FUT2 e sem CCR5-Δ32.",
@@ -2053,7 +7722,33 @@
    },
    "ficheiro_en": "reports/infecoes_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 54
+   "tamanho_kb_en": 54,
+   "areas": [
+    "imunidade"
+   ],
+   "palavras": [
+    "vírus",
+    "virus",
+    "bactérias",
+    "bacteria",
+    "hepatite",
+    "hepatitis",
+    "COVID-19",
+    "tuberculose"
+   ],
+   "genes": [
+    "ABO",
+    "ASAP1",
+    "CCR5",
+    "FUT2",
+    "HCP5",
+    "IFITM3",
+    "IFNL4",
+    "MBL2",
+    "OAS1",
+    "TLR2",
+    "TLR4"
+   ]
   },
   {
    "id": "cancros-um-a-um",
@@ -2061,7 +7756,12 @@
     "pt": "Cancros Um a Um",
     "en": "Cancers One by One"
    },
+   "resumo": {
+    "pt": "Mapa do risco genético de cancro órgão a órgão, com os rastreios a considerar.",
+    "en": "Organ-by-organ map of genetic cancer risk, with the screenings to consider."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/cancros-um-a-um.pdf",
    "descricao": {
     "pt": "Mapa de risco órgão a órgão, sem nenhum risco monogénico (TP53 e BRCA2 K3326X normais). Abaixo da média: linfomas, rim, pele não-melanoma, testículo e estômago. Sinais altos: bexiga (scores 86–95, NAT2 lento, PSCA), glioma (90,8), pâncreas no score pequeno (83,1), esófago (84,8) e tiroide (79–81), com prevenção por órgão.",
@@ -2075,7 +7775,67 @@
    },
    "ficheiro_en": "reports/cancros-um-a-um_en.pdf",
    "paginas_en": 19,
-   "tamanho_kb_en": 74
+   "tamanho_kb_en": 74,
+   "areas": [
+    "cancro"
+   ],
+   "palavras": [
+    "oncologia",
+    "oncology",
+    "tumores",
+    "tumours",
+    "rastreio",
+    "screening",
+    "cancro",
+    "cancer"
+   ],
+   "genes": [
+    "ABO",
+    "ADH1B",
+    "APOM",
+    "ARID5B",
+    "BAG6",
+    "BAK1",
+    "BRCA1",
+    "BRCA2",
+    "CCDC26",
+    "CCND1",
+    "CDH1",
+    "CDKN2A",
+    "CDKN2B-AS1",
+    "CHEK2",
+    "CHRNA5",
+    "CLPTM1L",
+    "EGFR",
+    "FGFR3",
+    "FOXE1",
+    "FOXF1",
+    "HERC2",
+    "IKZF1",
+    "IRF4",
+    "KIT",
+    "KITLG",
+    "KLF5",
+    "MBIP",
+    "MC1R",
+    "MUC1",
+    "MYC",
+    "NAT2",
+    "NR5A2",
+    "OCA2",
+    "PHLDB1",
+    "PLCE1",
+    "PSCA",
+    "RTEL1",
+    "SCARB1",
+    "SLC45A2",
+    "SPRY4",
+    "TACC3",
+    "TERT",
+    "TP53",
+    "UGT1A",
+    "VHL"
+   ]
   },
   {
    "id": "epilepsia-excitabilidade-neuronal",
@@ -2083,7 +7843,12 @@
     "pt": "Epilepsia e Excitabilidade Neuronal",
     "en": "Epilepsy and Neuronal Excitability"
    },
+   "resumo": {
+    "pt": "Genética da epilepsia e da excitabilidade neuronal, e farmacogenética dos antiepiléticos.",
+    "en": "Genetics of epilepsy and neuronal excitability, and pharmacogenetics of anti-seizure drugs."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/epilepsia-excitabilidade-neuronal.pdf",
    "descricao": {
     "pt": "Risco poligénico de epilepsia típico; a forma generalizada fica baixa (loci no percentil 9,3), apesar do SCN1A T/T (efeito pequeno). Farmacogenética: sem HLA-A*31:01 (a carbamazepina não tem essa contraindicação), CYP2C19 normal e CYP2C9 *1/*3 (fenitoína com dose de manutenção mais baixa).",
@@ -2097,7 +7862,36 @@
    },
    "ficheiro_en": "reports/epilepsia-excitabilidade-neuronal_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 50
+   "tamanho_kb_en": 50,
+   "areas": [
+    "cerebro",
+    "farmaco"
+   ],
+   "palavras": [
+    "convulsões",
+    "seizures",
+    "antiepiléticos",
+    "anti-seizure",
+    "carbamazepina",
+    "carbamazepine",
+    "neurologia"
+   ],
+   "genes": [
+    "BDNF",
+    "CHRM3",
+    "CYP2C19",
+    "CYP2C9",
+    "DEPDC5",
+    "EPHX1",
+    "FANCL",
+    "KCNQ2",
+    "PCDH7",
+    "SCN1A",
+    "SCN2A",
+    "STX1B",
+    "VRK2",
+    "ZEB2"
+   ]
   },
   {
    "id": "doencas-autoimunes",
@@ -2105,7 +7899,12 @@
     "pt": "Doenças Autoimunes",
     "en": "Autoimmune Diseases"
    },
+   "resumo": {
+    "pt": "Genética das doenças autoimunes (HLA, PTPN22): artrite reumatoide, celíaca, psoríase e outras.",
+    "en": "Genetics of autoimmune diseases (HLA, PTPN22): rheumatoid arthritis, coeliac, psoriasis and more."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/doencas-autoimunes.pdf",
    "descricao": {
     "pt": "Os sete marcadores HLA de maior efeito são negativos e o PTPN22 R620W está ausente: artrite reumatoide, psoríase, doença celíaca, diabetes tipo 1 e esclerose múltipla ficam baixas. O sinal mais alto é o vitiligo (percentil 89,9; TYR R402 G/G); lúpus e espondilite ficam típicos.",
@@ -2119,7 +7918,38 @@
    },
    "ficheiro_en": "reports/doencas-autoimunes_en.pdf",
    "paginas_en": 17,
-   "tamanho_kb_en": 61
+   "tamanho_kb_en": 61,
+   "areas": [
+    "imunidade"
+   ],
+   "palavras": [
+    "autoimunidade",
+    "autoimmunity",
+    "lúpus",
+    "lupus",
+    "esclerose múltipla",
+    "multiple sclerosis",
+    "reumatologia"
+   ],
+   "genes": [
+    "CTLA4",
+    "ERAP1",
+    "IFIH1",
+    "IL2",
+    "IL21",
+    "IL23R",
+    "IL2RA",
+    "IL7R",
+    "INS",
+    "IRF5",
+    "ITGAM",
+    "PTPN22",
+    "SH2B3",
+    "STAT4",
+    "TNFAIP3",
+    "TYK2",
+    "TYR"
+   ]
   },
   {
    "id": "olhos-em-detalhe",
@@ -2127,7 +7957,12 @@
     "pt": "Olhos em Detalhe",
     "en": "Eyes in Detail"
    },
+   "resumo": {
+    "pt": "Os olhos em detalhe: glaucoma, miopia, cataratas, mácula e outras doenças oculares.",
+    "en": "The eyes in detail: glaucoma, myopia, cataracts, macula and other eye diseases."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/olhos-em-detalhe.pdf",
    "descricao": {
     "pt": "O glaucoma é a prioridade ocular: ângulo aberto até ao percentil 97,9, pressão intraocular geneticamente alta (94,0) e genes do nervo ótico (CDKN2B-AS1, SIX6, TXNRD2). Miopia genómica no 99,2 e cataratas no 86,6. A mácula está protegida (ARMS2 G/G, degenerescência macular típica).",
@@ -2141,7 +7976,49 @@
    },
    "ficheiro_en": "reports/olhos-em-detalhe_en.pdf",
    "paginas_en": 17,
-   "tamanho_kb_en": 61
+   "tamanho_kb_en": 61,
+   "areas": [
+    "orgaos"
+   ],
+   "palavras": [
+    "visão",
+    "vision",
+    "oftalmologia",
+    "ophthalmology",
+    "miopia",
+    "myopia",
+    "retina"
+   ],
+   "genes": [
+    "ABCA1",
+    "AFAP1",
+    "ARMS2",
+    "ATOH7",
+    "CAV1",
+    "CAV2",
+    "CDKN2B-AS1",
+    "CETP",
+    "CFB",
+    "CFH",
+    "GAS7",
+    "GJD2",
+    "HTRA1",
+    "KCNQ5",
+    "LAMA2",
+    "LIPC",
+    "LOXL1",
+    "MYOC",
+    "OPTN",
+    "PRSS56",
+    "RBFOX1",
+    "SIX6",
+    "SLC24A3",
+    "SOX2",
+    "TBK1",
+    "TIMP3",
+    "TMCO1",
+    "TXNRD2"
+   ]
   },
   {
    "id": "articulacoes-artrose",
@@ -2149,7 +8026,12 @@
     "pt": "Articulações e Artrose",
     "en": "Joints and Osteoarthritis"
    },
+   "resumo": {
+    "pt": "Genética da artrose do joelho, da anca e da mão, e da gota.",
+    "en": "Genetics of knee, hip and hand osteoarthritis, and of gout."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/articulacoes-artrose.pdf",
    "descricao": {
     "pt": "Artrose das grandes articulações baixa a típica (qualquer local no percentil 15,8; joelho e anca típicos; GDF5 sem o alelo de risco) e gota pouco provável (12,3; ABCG2 Q141K ausente). A exceção é a mão: carga de loci no 97,6, com ALDH1A2 e MCF2L.",
@@ -2163,7 +8045,42 @@
    },
    "ficheiro_en": "reports/articulacoes-artrose_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 50
+   "tamanho_kb_en": 50,
+   "areas": [
+    "desporto",
+    "orgaos"
+   ],
+   "palavras": [
+    "artrose",
+    "osteoartrite",
+    "joelho",
+    "knee",
+    "anca",
+    "hip",
+    "gota",
+    "gout"
+   ],
+   "genes": [
+    "ABCG2",
+    "ALDH1A2",
+    "ASTN2",
+    "COL2A1",
+    "COMP",
+    "DOT1L",
+    "FILIP1",
+    "GDF5",
+    "GLT8D1",
+    "GNL3",
+    "MCF2L",
+    "NRXN2",
+    "RUNX2",
+    "SENP6",
+    "SLC22A12",
+    "SLC2A9",
+    "SMAD3",
+    "SUPT3H",
+    "TGFA"
+   ]
   },
   {
    "id": "serotonina-melatonina",
@@ -2171,7 +8088,12 @@
     "pt": "Serotonina e Melatonina",
     "en": "Serotonin and Melatonin"
    },
+   "resumo": {
+    "pt": "Genes da serotonina e da melatonina: recetores, transportador e relógio, descritos sem juízo.",
+    "en": "Serotonin and melatonin genes: receptors, transporter and clock, described without judgement."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/serotonina-melatonina.pdf",
    "descricao": {
     "pt": "Descritivo, sem juízo: 46 SNPs em 27 genes. Recetores da serotonina tendencialmente Reduced (HTR2A, HTR2C, HTR1B), TPH2 com 1 alelo Increased e transportador SLC6A4 contraditório; relógio com variantes em ARNTL, CLOCK, PER2 e MTNR1B (melatonina mais tardia). Luz de manhã, horários regulares, exercício e sono são o que mais modula estas vias.",
@@ -2185,7 +8107,51 @@
    },
    "ficheiro_en": "reports/serotonina-melatonina_en.pdf",
    "paginas_en": 16,
-   "tamanho_kb_en": 61
+   "tamanho_kb_en": 61,
+   "areas": [
+    "cerebro"
+   ],
+   "palavras": [
+    "5-HT",
+    "humor",
+    "mood",
+    "sono",
+    "sleep",
+    "neurotransmissores",
+    "neurotransmitters"
+   ],
+   "genes": [
+    "AANAT",
+    "ALDH2",
+    "ASMT",
+    "BDNF",
+    "BMAL1",
+    "CLOCK",
+    "COMT",
+    "CRY2",
+    "CYP1A2",
+    "CYP2C19",
+    "CYP2D6",
+    "DDC",
+    "GSK3B",
+    "HTR1A",
+    "HTR1B",
+    "HTR1D",
+    "HTR2A",
+    "HTR2C",
+    "HTR3A",
+    "HTR4",
+    "HTR6",
+    "MAOA",
+    "MTNR1A",
+    "MTNR1B",
+    "PER2",
+    "SLC18A1",
+    "SLC18A2",
+    "SLC6A4",
+    "SULT1A1",
+    "TPH2"
+   ]
   },
   {
    "id": "gaba-glutamato",
@@ -2193,7 +8159,12 @@
     "pt": "GABA e Glutamato",
     "en": "GABA and Glutamate"
    },
+   "resumo": {
+    "pt": "Genes do GABA e do glutamato, o travão e o acelerador do cérebro, descritos sem juízo.",
+    "en": "GABA and glutamate genes, the brain’s brake and accelerator, described without judgement."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/gaba-glutamato.pdf",
    "descricao": {
     "pt": "Descritivo, sem juízo: 34 SNPs em 22 genes. Sinalização NMDA/AMPA com etiquetas Increased (GRIN2B, GRIA1) e GRM3 Reduced; remoção do glutamato pelos astrócitos preservada (SLC1A3). No GABA, o GAD1 Reduced é compensado por um ABAT mais lento e por vários recetores GABA-A Increased.",
@@ -2207,7 +8178,44 @@
    },
    "ficheiro_en": "reports/gaba-glutamato_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 54
+   "tamanho_kb_en": 54,
+   "areas": [
+    "cerebro"
+   ],
+   "palavras": [
+    "NMDA",
+    "neurotransmissores",
+    "neurotransmitters",
+    "calma",
+    "calm",
+    "excitação",
+    "excitation"
+   ],
+   "genes": [
+    "ABAT",
+    "ALDH5A1",
+    "CACNA1C",
+    "GABRA1",
+    "GABRA2",
+    "GABRA6",
+    "GABRB2",
+    "GABRB3",
+    "GABRG2",
+    "GAD1",
+    "GAD2",
+    "GLS",
+    "GLUL",
+    "GRIA1",
+    "GRIA3",
+    "GRIN2A",
+    "GRIN2B",
+    "GRM3",
+    "GRM7",
+    "SLC1A2",
+    "SLC1A3",
+    "SLC6A1",
+    "SLC6A15"
+   ]
   },
   {
    "id": "histamina-mastocitos-ige",
@@ -2215,7 +8223,12 @@
     "pt": "Histamina, Mastócitos e IgE",
     "en": "Histamine, Mast Cells and IgE"
    },
+   "resumo": {
+    "pt": "Genética da degradação da histamina (DAO, HNMT), dos mastócitos e da IgE.",
+    "en": "Genetics of histamine breakdown (DAO, HNMT), mast cells and IgE."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/histamina-mastocitos-ige.pdf",
    "descricao": {
     "pt": "Degradação da histamina ligeiramente reduzida (3 heterozigotos funcionais na DAO e na HNMT, nenhum homozigoto), só relevante com sintomas. Sem os marcadores de triptase alta ou de mastocitose (o TPSAB1 não se lê no chip). IgE e atopia com alelos comuns mistos, mas scores típicos ou baixos (asma, dermatite atópica).",
@@ -2229,7 +8242,51 @@
    },
    "ficheiro_en": "reports/histamina-mastocitos-ige_en.pdf",
    "paginas_en": 17,
-   "tamanho_kb_en": 65
+   "tamanho_kb_en": 65,
+   "areas": [
+    "imunidade"
+   ],
+   "palavras": [
+    "histamina",
+    "histamine",
+    "alergia",
+    "allergy",
+    "mastocitose",
+    "mastocytosis",
+    "intolerância à histamina"
+   ],
+   "genes": [
+    "ALDH2",
+    "AOC1",
+    "CEBPA",
+    "DAO",
+    "EMSY",
+    "ERMP1",
+    "FCER1A",
+    "FLG",
+    "GCSAML",
+    "HDC",
+    "HNMT",
+    "HRH1",
+    "HRH2",
+    "HRH4",
+    "HRNR",
+    "IL13",
+    "IL33",
+    "IL4",
+    "IL4R",
+    "KCNH2",
+    "KIT",
+    "LPP",
+    "NAT2",
+    "STAT6",
+    "TPSAB1",
+    "TPSB2",
+    "TPSD1",
+    "TPSG1",
+    "TSLP",
+    "WDR36"
+   ]
   },
   {
    "id": "metilacao-homocisteina-colina",
@@ -2237,7 +8294,12 @@
     "pt": "Metilação, Homocisteína e Colina",
     "en": "Methylation, Homocysteine and Choline"
    },
+   "resumo": {
+    "pt": "Genética da metilação (MTHFR), da homocisteína e da colina, e as formas de folato a preferir.",
+    "en": "Genetics of methylation (MTHFR), homocysteine and choline, and the folate forms to prefer."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/metilacao-homocisteina-colina.pdf",
    "descricao": {
     "pt": "MTHFR heterozigoto composto (C677T + A1298C, cerca de 50–60% da atividade): a razão para o folato ser sempre 5-MTHF. Homocisteína geneticamente um pouco mais alta (score de 4 loci no percentil 92, cerca de +0,6–0,8 µmol/L), com CBS protetor; B12 sem risco relevante; necessidade de colina ligeiramente maior (PEMT, BHMT) e COMT Val/Val.",
@@ -2251,7 +8313,43 @@
    },
    "ficheiro_en": "reports/metilacao-homocisteina-colina_en.pdf",
    "paginas_en": 17,
-   "tamanho_kb_en": 57
+   "tamanho_kb_en": 57,
+   "areas": [
+    "metabolismo",
+    "nutricao"
+   ],
+   "palavras": [
+    "metilação",
+    "methylation",
+    "folato",
+    "folate",
+    "B12",
+    "metilfolato",
+    "methylfolate",
+    "colina"
+   ],
+   "genes": [
+    "BHMT",
+    "CBS",
+    "CLYBL",
+    "COMT",
+    "CPS1",
+    "CUBN",
+    "DPEP1",
+    "FUT2",
+    "GNMT",
+    "MAT1A",
+    "MMUT",
+    "MTHFD1",
+    "MTHFR",
+    "MTR",
+    "MTRR",
+    "PEMT",
+    "RFC1",
+    "SHMT1",
+    "SLC19A1",
+    "TCN2"
+   ]
   },
   {
    "id": "inflamacao-autoimunidade",
@@ -2259,7 +8357,12 @@
     "pt": "Inflamação e Autoimunidade",
     "en": "Inflammation and Autoimmunity"
    },
+   "resumo": {
+    "pt": "Genética da inflamação crónica e da autoimunidade, da imunidade inata ao HLA.",
+    "en": "Genetics of chronic inflammation and autoimmunity, from innate immunity to HLA."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/inflamacao-autoimunidade.pdf",
    "descricao": {
     "pt": "70 SNPs e 29 scores: perfil autoimune baixo a típico, com HLA invulgarmente limpo e PTPN22 e STAT4 sem alelos de risco. Exceções ligeiras: sarcoidose (percentil 92,3), vitiligo (89,9) e uveíte (84,5). Imunidade inata com SERPINA1 Pi*MZ provável e MBL2 heterozigótico; via gástrica mais reativa (PSCA, IL1B).",
@@ -2273,7 +8376,78 @@
    },
    "ficheiro_en": "reports/inflamacao-autoimunidade_en.pdf",
    "paginas_en": 21,
-   "tamanho_kb_en": 82
+   "tamanho_kb_en": 82,
+   "areas": [
+    "imunidade"
+   ],
+   "palavras": [
+    "inflamação",
+    "inflammation",
+    "autoimunidade",
+    "autoimmunity",
+    "citocinas",
+    "cytokines",
+    "sarcoidose"
+   ],
+   "genes": [
+    "ABO",
+    "ANXA11",
+    "ATG16L1",
+    "BLK",
+    "BTNL2",
+    "CARD9",
+    "CLEC16A",
+    "CRP",
+    "CTLA4",
+    "CXCL8",
+    "DSP",
+    "ERAP1",
+    "FOXE1",
+    "FUT2",
+    "IFIH1",
+    "IL10",
+    "IL17A",
+    "IL19",
+    "IL1B",
+    "IL2",
+    "IL23R",
+    "IL2RA",
+    "IL6",
+    "IL6R",
+    "IL7R",
+    "IRF5",
+    "IRGM",
+    "ITGAM",
+    "JAK2",
+    "LCE3B",
+    "LCE3C",
+    "LTA",
+    "MBL2",
+    "MST1",
+    "MUC5B",
+    "NCF2",
+    "NLRP3",
+    "NOD2",
+    "PSCA",
+    "PTGER4",
+    "PTPN2",
+    "PTPN22",
+    "SERPINA1",
+    "SH2B3",
+    "STAT4",
+    "TLR1",
+    "TLR10",
+    "TNF",
+    "TNFAIP3",
+    "TNFRSF1A",
+    "TNFSF4",
+    "TNIP1",
+    "TRAF1",
+    "TRAF3IP2",
+    "TSHR",
+    "TYK2",
+    "UBASH3A"
+   ]
   },
   {
    "id": "stress-oxidativo-defesa-antioxidante",
@@ -2281,7 +8455,12 @@
     "pt": "Stress Oxidativo e Defesa Antioxidante",
     "en": "Oxidative Stress and Antioxidant Defence"
    },
+   "resumo": {
+    "pt": "Genes antioxidantes (NRF2, SOD2, GST) e da destoxificação, e o equilíbrio do stress oxidativo.",
+    "en": "Antioxidant genes (NRF2, SOD2, GST) and detoxification, and the oxidative-stress balance."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/stress-oxidativo-defesa-antioxidante.pdf",
    "descricao": {
     "pt": "Reguladores mestres fortes: FOXO3 homozigótico para o alelo de longevidade, NRF2 sem o alelo fraco, SOD2 Ala/Ala, GCLC e NQO1 com atividade plena. Pontos fracos na desintoxicação de fase II e na paraoxonase: GSTM1 nulo provável, GSTA1 *B/*B e PON1 de baixa expressão, com GPX1 Pro198Leu e MPO −463G/G.",
@@ -2295,7 +8474,46 @@
    },
    "ficheiro_en": "reports/stress-oxidativo-defesa-antioxidante_en.pdf",
    "paginas_en": 16,
-   "tamanho_kb_en": 60
+   "tamanho_kb_en": 60,
+   "areas": [
+    "longevidade",
+    "metabolismo"
+   ],
+   "palavras": [
+    "antioxidantes",
+    "antioxidants",
+    "radicais livres",
+    "free radicals",
+    "glutationa",
+    "glutathione"
+   ],
+   "genes": [
+    "APOE",
+    "CAT",
+    "COMT",
+    "CYBA",
+    "FOXO3",
+    "GCLC",
+    "GCLM",
+    "GPX1",
+    "GPX4",
+    "GSTA1",
+    "GSTM1",
+    "GSTP1",
+    "GSTT1",
+    "HMOX1",
+    "MPO",
+    "MTHFR",
+    "NFE2L2",
+    "NOS3",
+    "NQO1",
+    "PAH",
+    "PON1",
+    "SOD2",
+    "SOD3",
+    "TNF",
+    "UGT1A1"
+   ]
   },
   {
    "id": "mitocondrias-energia",
@@ -2303,7 +8521,12 @@
     "pt": "Mitocôndrias e Energia",
     "en": "Mitochondria and Energy"
    },
+   "resumo": {
+    "pt": "Genética das mitocôndrias: produção de energia, biogénese (PGC-1α) e doenças mitocondriais.",
+    "en": "Mitochondrial genetics: energy production, biogenesis (PGC-1α) and mitochondrial diseases."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/mitocondrias-energia.pdf",
    "descricao": {
     "pt": "Sem doença metabólica mitocondrial (ACADM, CPT1A e ADN mitocondrial sem as mutações clássicas). Biogénese com o melhor genótipo (PGC-1α Gly482Gly, o que mais responde ao treino aeróbio) e defesa forte (SOD2, FOXO3); pontos ligeiros em SIRT3, UCP1, MCT1, PPARA e CPT2 (1 cópia cada).",
@@ -2317,7 +8540,41 @@
    },
    "ficheiro_en": "reports/mitocondrias-energia_en.pdf",
    "paginas_en": 17,
-   "tamanho_kb_en": 58
+   "tamanho_kb_en": 58,
+   "areas": [
+    "metabolismo",
+    "longevidade"
+   ],
+   "palavras": [
+    "energia",
+    "energy",
+    "fadiga",
+    "fatigue",
+    "ATP",
+    "mitocôndria",
+    "mitochondria"
+   ],
+   "genes": [
+    "ACADM",
+    "COQ2",
+    "CPT1A",
+    "CPT2",
+    "FOXO3",
+    "NDUFB6",
+    "NQO1",
+    "PINK1",
+    "PPARA",
+    "PPARGC1A",
+    "SIRT1",
+    "SIRT3",
+    "SIRT6",
+    "SLC16A1",
+    "SOD2",
+    "TFAM",
+    "UCP1",
+    "UCP2",
+    "UCP3"
+   ]
   },
   {
    "id": "cartao-farmacogenetico",
@@ -2325,7 +8582,12 @@
     "pt": "Cartão Farmacogenético",
     "en": "Pharmacogenetic Card"
    },
+   "resumo": {
+    "pt": "Cartão resumido para mostrar ao médico, farmacêutico ou anestesista antes de prescrever.",
+    "en": "Short card to show the doctor, pharmacist or anaesthetist before prescribing."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/cartao-farmacogenetico.pdf",
    "descricao": {
     "pt": "Cartão de 2 páginas para mostrar ao médico, farmacêutico ou anestesista: CYP2C9 *1/*3, VKORC1 T/T, NAT2 lento, CYP3A5 expressor, UGT1A1 *28, CYP2D6 normal provável e HLA-B*58:01 a tipar, com o que evitar ou ajustar (AINE, anticoagulantes, fenitoína, isoniazida…). Confirmar com um teste farmacogenético clínico.",
@@ -2339,7 +8601,49 @@
    },
    "ficheiro_en": "reports/cartao-farmacogenetico_en.pdf",
    "paginas_en": 2,
-   "tamanho_kb_en": 26
+   "tamanho_kb_en": 26,
+   "areas": [
+    "farmaco"
+   ],
+   "palavras": [
+    "PGx",
+    "farmacogenética",
+    "pharmacogenetics",
+    "medicamentos",
+    "medicines",
+    "prescrição",
+    "prescription"
+   ],
+   "genes": [
+    "ABCG2",
+    "BCHE",
+    "CACNA1S",
+    "CHRM3",
+    "COMT",
+    "CYP1A2",
+    "CYP2B6",
+    "CYP2C19",
+    "CYP2C9",
+    "CYP2D6",
+    "CYP3A4",
+    "CYP3A5",
+    "CYP4F2",
+    "DPYD",
+    "G6PD",
+    "IFNL3",
+    "IFNL4",
+    "MTHFR",
+    "NAT2",
+    "NUDT15",
+    "OPRM1",
+    "POLG",
+    "RYR1",
+    "SLC22A1",
+    "SLCO1B1",
+    "TPMT",
+    "UGT1A1",
+    "VKORC1"
+   ]
   },
   {
    "id": "resumo-clinico-medico",
@@ -2347,7 +8651,12 @@
     "pt": "Resumo Clínico para o Médico",
     "en": "Clinical Summary for the Doctor"
    },
+   "resumo": {
+    "pt": "Achados principais, farmacogenética e lista de análises, exames, vacinas e rastreios a discutir com o médico.",
+    "en": "Main findings, pharmacogenetics and a list of tests, exams, vaccines and screenings to discuss with the doctor."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/resumo-clinico-medico.pdf",
    "descricao": {
     "pt": "Resumo para levar à consulta: o único achado de tipo patogénico plausível (SERPINA1 Pi*MZ, a confirmar), fígado, cardiovascular (9p21, CETP), scores altos a vigiar (glaucoma, enfisema, colorretal, bexiga…), farmacogenética acionável e a lista exata de análises, exames, vacinas e rastreios a discutir.",
@@ -2361,7 +8670,65 @@
    },
    "ficheiro_en": "reports/resumo-clinico-medico_en.pdf",
    "paginas_en": 11,
-   "tamanho_kb_en": 43
+   "tamanho_kb_en": 43,
+   "areas": [
+    "outros"
+   ],
+   "palavras": [
+    "consulta",
+    "médico",
+    "doctor",
+    "clínico",
+    "clinical",
+    "rastreios",
+    "screenings"
+   ],
+   "genes": [
+    "ALG1",
+    "APOE",
+    "BCHE",
+    "CACNA1S",
+    "CARD9",
+    "CETP",
+    "CXCL8",
+    "CYP2C19",
+    "CYP2C9",
+    "CYP2D6",
+    "CYP3A5",
+    "DPYD",
+    "F11",
+    "FOXO3",
+    "G6PD",
+    "GBA1",
+    "GOSR2",
+    "GSTA1",
+    "GSTM1",
+    "GSTT1",
+    "HSD17B13",
+    "IDUA",
+    "IFIH1",
+    "IL1B",
+    "LPA",
+    "MBL2",
+    "MBOAT7",
+    "MTHFR",
+    "NAT2",
+    "NF1",
+    "NQO1",
+    "NUDT15",
+    "OFD1",
+    "PNPLA3",
+    "PSCA",
+    "PTPN22",
+    "RYR1",
+    "SERPINA1",
+    "SLCO1B1",
+    "SOD2",
+    "STAT4",
+    "TPMT",
+    "UGT1A1",
+    "VKORC1"
+   ]
   },
   {
    "id": "vesicula-biliar-calculos",
@@ -2369,7 +8736,12 @@
     "pt": "Vesícula Biliar e Cálculos Biliares",
     "en": "Gallbladder and Gallstones"
    },
+   "resumo": {
+    "pt": "Genética dos cálculos biliares e do transporte do colesterol e dos sais biliares.",
+    "en": "Genetics of gallstones and of cholesterol and bile-salt transport."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/vesicula-biliar-calculos.pdf",
    "descricao": {
     "pt": "Risco genético de cálculos biliares típico: o maior gene comum (ABCG8 D19H) está ausente e os scores genómicos recentes ficam nos percentis 32–34 (consenso 51,6). Alelos de efeito pequeno no transporte do colesterol e dos sais biliares (ABCG8, ABCB4, CYP7A1, ABCB11), Gilbert (UGT1A1*28) e PiZ heterozigóticos; colecistite com carga de loci alta mas só 11 loci.",
@@ -2383,7 +8755,40 @@
    },
    "ficheiro_en": "reports/vesicula-biliar-calculos_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 56
+   "tamanho_kb_en": 56,
+   "areas": [
+    "digestao"
+   ],
+   "palavras": [
+    "vesícula",
+    "gallbladder",
+    "pedra na vesícula",
+    "bílis",
+    "bile",
+    "colecistite"
+   ],
+   "genes": [
+    "ABCB1",
+    "ABCB11",
+    "ABCB4",
+    "ABCG5",
+    "ABCG8",
+    "CYP7A1",
+    "FUT2",
+    "GCKR",
+    "GIP",
+    "HNF1A",
+    "HNF4A",
+    "LRBA",
+    "MAB21L2",
+    "MARCHF8",
+    "SERPINA1",
+    "SLCO1B1",
+    "TM4SF1",
+    "TM4SF4",
+    "TTC39B",
+    "UGT1A1"
+   ]
   },
   {
    "id": "suprarrenais-cortisol",
@@ -2391,7 +8796,12 @@
     "pt": "Glândulas Suprarrenais e Cortisol",
     "en": "Adrenal Glands and Cortisol"
    },
+   "resumo": {
+    "pt": "Genética das suprarrenais, do cortisol, do eixo do stress e da doença de Addison.",
+    "en": "Genetics of the adrenal glands, cortisol, the stress axis and Addison’s disease."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/suprarrenais-cortisol.pdf",
    "descricao": {
     "pt": "Doença de Addison com predisposição baixa (carga de loci no percentil 6,5; sem o alelo de risco do HLA-DQ, AIRE, PTPN22 ou CTLA4). Eixo do stress favorável: FKBP5 sem os alelos de recuperação lenta do cortisol e NR3C1 9β ausente. Descritivo: DHEA-S geneticamente alta (90,0), cortisol típico e CYP11B2 −344T em 2 cópias.",
@@ -2405,7 +8815,42 @@
    },
    "ficheiro_en": "reports/suprarrenais-cortisol_en.pdf",
    "paginas_en": 16,
-   "tamanho_kb_en": 55
+   "tamanho_kb_en": 55,
+   "areas": [
+    "hormonas"
+   ],
+   "palavras": [
+    "adrenais",
+    "adrenal",
+    "cortisol",
+    "stress",
+    "Addison",
+    "aldosterona",
+    "aldosterone"
+   ],
+   "genes": [
+    "AIRE",
+    "AKR1D1",
+    "BACH2",
+    "CRH",
+    "CRHR1",
+    "CTLA4",
+    "CYP11B1",
+    "CYP11B2",
+    "CYP21A2",
+    "CYP3A7",
+    "FKBP5",
+    "HSD11B1",
+    "LPP",
+    "MC2R",
+    "NR0B1",
+    "NR3C1",
+    "PTPN22",
+    "SERPINA1",
+    "SERPINA6",
+    "SULT2A1",
+    "ZKSCAN5"
+   ]
   },
   {
    "id": "hipofise-eixo-hormonal",
@@ -2413,7 +8858,12 @@
     "pt": "Hipófise e Eixo Hormonal",
     "en": "Pituitary and Hormonal Axis"
    },
+   "resumo": {
+    "pt": "Genética da hipófise e dos eixos hormonais: GH e IGF-1, prolactina e eixo gonadal.",
+    "en": "Genetics of the pituitary and hormonal axes: GH and IGF-1, prolactin and the gonadal axis."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/hipofise-eixo-hormonal.pdf",
    "descricao": {
     "pt": "Eixo GH–IGF-1 do lado mais lento (IGF-1 genético no percentil 32 de consenso; locus do IGF1 sem o alelo de aumento; FOXO3 com 2 alelos de longevidade), o perfil associado a vida mais longa, com menos estímulo anabólico. Testosterona típica a alta (consenso 58,0), AIP R304Q ausente, prolactina inconclusiva e FSHB −211T em 1 cópia.",
@@ -2427,7 +8877,39 @@
    },
    "ficheiro_en": "reports/hipofise-eixo-hormonal_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 54
+   "tamanho_kb_en": 54,
+   "areas": [
+    "hormonas"
+   ],
+   "palavras": [
+    "pituitária",
+    "pituitary",
+    "hormona de crescimento",
+    "growth hormone",
+    "prolactina",
+    "prolactin"
+   ],
+   "genes": [
+    "AIP",
+    "ANKK1",
+    "CDKN1B",
+    "DRD2",
+    "FOXO3",
+    "FSHB",
+    "FSHR",
+    "GH1",
+    "GHR",
+    "GHSR",
+    "GNAS",
+    "IGF1",
+    "IGFBP3",
+    "JAK2",
+    "LHCGR",
+    "MEN1",
+    "PRL",
+    "SHBG",
+    "USP8"
+   ]
   },
   {
    "id": "baco-sistema-linfatico",
@@ -2435,7 +8917,12 @@
     "pt": "Baço e Sistema Linfático",
     "en": "Spleen and Lymphatic System"
    },
+   "resumo": {
+    "pt": "Genética do baço e do sistema linfático, incluindo o risco de linfomas.",
+    "en": "Genetics of the spleen and lymphatic system, including lymphoma risk."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/baco-sistema-linfatico.pdf",
    "descricao": {
     "pt": "Perfil favorável: linfomas não Hodgkin muito pouco prováveis (score no percentil 1,1; folicular 0,2; sem alelos de risco no HLA de classe II), Hodgkin pouco provável e JAK2 46/1 ausente (sem a predisposição herdada à JAK2 V617F). A vigiar: leucemia linfocítica crónica no 78,4 (típico, lado alto). Linfócitos geneticamente típicos a altos.",
@@ -2449,7 +8936,40 @@
    },
    "ficheiro_en": "reports/baco-sistema-linfatico_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 53
+   "tamanho_kb_en": 53,
+   "areas": [
+    "imunidade",
+    "cancro"
+   ],
+   "palavras": [
+    "baço",
+    "spleen",
+    "linfático",
+    "lymphatic",
+    "linfoma",
+    "lymphoma",
+    "gânglios"
+   ],
+   "genes": [
+    "ACOXL",
+    "B4GALT1",
+    "BCL2L11",
+    "EXOC2",
+    "FLT4",
+    "FOXC2",
+    "GATA3",
+    "GJC2",
+    "GRAMD1B",
+    "IRAG1",
+    "IRF4",
+    "JAK2",
+    "LYVE1",
+    "MYC",
+    "PIEZO1",
+    "PVT1",
+    "REL",
+    "SP140"
+   ]
   },
   {
    "id": "esofago",
@@ -2457,7 +8977,12 @@
     "pt": "Esófago",
     "en": "Oesophagus"
    },
+   "resumo": {
+    "pt": "Genética do refluxo, do esófago de Barrett, da esofagite eosinofílica e do cancro do esófago.",
+    "en": "Genetics of reflux, Barrett’s oesophagus, eosinophilic oesophagitis and oesophageal cancer."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/esofago.pdf",
    "descricao": {
     "pt": "Perfil típico a favorável: Barrett e adenocarcinoma baixos a típicos (genómico no percentil 14,1), esofagite eosinofílica sem os alelos de risco do TSLP e EMSY, ALDH2*2 ausente. O ponto a vigiar é o refluxo: scores discordantes (83,1 no genómico de 2024; 6,8 e 10,4 nos de 2022) e carga de loci no 75,0.",
@@ -2471,7 +8996,46 @@
    },
    "ficheiro_en": "reports/esofago_en.pdf",
    "paginas_en": 17,
-   "tamanho_kb_en": 58
+   "tamanho_kb_en": 58,
+   "areas": [
+    "digestao",
+    "cancro"
+   ],
+   "palavras": [
+    "esófago",
+    "esophagus",
+    "Barrett",
+    "azia",
+    "heartburn",
+    "refluxo",
+    "reflux"
+   ],
+   "genes": [
+    "ADH1B",
+    "ALDH2",
+    "ANKRD27",
+    "ATXN2",
+    "BARX1",
+    "CDKN2B-AS1",
+    "CFTR",
+    "CHEK2",
+    "CRTC1",
+    "CYP2C19",
+    "EMSY",
+    "FOXF1",
+    "FOXP1",
+    "KLF13",
+    "LRRC32",
+    "NNT",
+    "PLCE1",
+    "SH2B3",
+    "SLC22A3",
+    "SLC39A8",
+    "SMAD3",
+    "TSLP",
+    "WDR36",
+    "WT1"
+   ]
   },
   {
    "id": "testiculos",
@@ -2479,7 +9043,12 @@
     "pt": "Testículos",
     "en": "Testes"
    },
+   "resumo": {
+    "pt": "Genética dos testículos: função testicular, testosterona e tumores de células germinativas.",
+    "en": "Genetics of the testes: testicular function, testosterone and germ-cell tumours."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/testiculos.pdf",
    "descricao": {
     "pt": "Tumor de células germinativas do testículo com predisposição poligénica baixa (consenso no percentil 13,7; KITLG rs995030 e TERT sem alelos de risco), embora alguns loci de efeito grande deixem a carga de loci no 74,9. Função testicular típica: testosterona típica a alta, SHBG geneticamente alta e FSH ligeiramente mais baixa (FSHB −211T).",
@@ -2493,7 +9062,36 @@
    },
    "ficheiro_en": "reports/testiculos_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 51
+   "tamanho_kb_en": 51,
+   "areas": [
+    "hormonas",
+    "cancro"
+   ],
+   "palavras": [
+    "testículo",
+    "testicle",
+    "testosterona",
+    "testosterone",
+    "tumor",
+    "urologia",
+    "urology"
+   ],
+   "genes": [
+    "ATF7IP",
+    "BAK1",
+    "CLPTM1L",
+    "DMRT1",
+    "FSHB",
+    "INHBB",
+    "KIT",
+    "KITLG",
+    "PAX8",
+    "SEPTIN4",
+    "SHBG",
+    "SPRY4",
+    "TERT",
+    "TEX14"
+   ]
   },
   {
    "id": "nariz-seios-perinasais",
@@ -2501,7 +9099,12 @@
     "pt": "Nariz e Seios Perinasais",
     "en": "Nose and Paranasal Sinuses"
    },
+   "resumo": {
+    "pt": "Genética da sinusite crónica, dos pólipos nasais, da rinite e do olfato.",
+    "en": "Genetics of chronic sinusitis, nasal polyps, rhinitis and smell."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/nariz-seios-perinasais.pdf",
    "descricao": {
     "pt": "A sinusite crónica com pólipos nasais é o ponto fraco (genómico no percentil 98,3, carga de loci no 86,4, consenso 39,3: sinal misto a pender para o risco; TSLP e GIGYF2 com 2 alelos). Rinite alérgica com predisposição baixa (loci no 18,0). Olfato descritivo: OR5A1, OR6A2 (coentros) e OR7D4.",
@@ -2515,7 +9118,44 @@
    },
    "ficheiro_en": "reports/nariz-seios-perinasais_en.pdf",
    "paginas_en": 16,
-   "tamanho_kb_en": 56
+   "tamanho_kb_en": 56,
+   "areas": [
+    "orgaos",
+    "imunidade"
+   ],
+   "palavras": [
+    "nariz",
+    "nose",
+    "sinusite",
+    "sinusitis",
+    "rinite",
+    "rhinitis",
+    "pólipos nasais"
+   ],
+   "genes": [
+    "ALOX15",
+    "BACH2",
+    "CLEC16A",
+    "D2HGDH",
+    "EMSY",
+    "GIGYF2",
+    "GPX4",
+    "IL18R1",
+    "IL33",
+    "IRF4",
+    "LRRC32",
+    "LTC4S",
+    "OR2J3",
+    "OR5A1",
+    "OR6A2",
+    "OR7D4",
+    "TBX1",
+    "TLR1",
+    "TSLP",
+    "UGT2A1",
+    "UGT2A2",
+    "WDR36"
+   ]
   },
   {
    "id": "laringe-voz",
@@ -2523,7 +9163,12 @@
     "pt": "Laringe e Voz",
     "en": "Larynx and Voice"
    },
+   "resumo": {
+    "pt": "Genética da laringe e da voz, e do risco de cancro da cabeça e pescoço ligado ao álcool e ao tabaco.",
+    "en": "Genetics of the larynx and voice, and head and neck cancer risk linked to alcohol and tobacco."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/laringe-voz.pdf",
    "descricao": {
     "pt": "Risco genético de cancro da laringe e da cabeça e pescoço típico (consenso no percentil 48,5), quase todo condicional ao álcool e ao tabaco: ALDH2*2 ausente, mas ADH1B*2 protetor ausente, ADH7 com 2 alelos e CHRNA5 D398N com 1. Faringe e amígdalas com carga de loci baixa (2,8); refluxo com scores discordantes.",
@@ -2537,7 +9182,36 @@
    },
    "ficheiro_en": "reports/laringe-voz_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 52
+   "tamanho_kb_en": 52,
+   "areas": [
+    "orgaos",
+    "cancro"
+   ],
+   "palavras": [
+    "voz",
+    "voice",
+    "garganta",
+    "throat",
+    "cordas vocais",
+    "vocal cords",
+    "faringe"
+   ],
+   "genes": [
+    "ABCC9",
+    "ADH1B",
+    "ADH7",
+    "ALDH2",
+    "ATXN2",
+    "CHRNA5",
+    "CLPTM1L",
+    "CRTC1",
+    "CYP2C19",
+    "HORMAD2",
+    "LIF",
+    "LTBR",
+    "SH2B3",
+    "TERT"
+   ]
   },
   {
    "id": "intestino-grosso",
@@ -2545,7 +9219,12 @@
     "pt": "Intestino Grosso – Diverticulose, Hemorroidas e Apendicite",
     "en": "Large Intestine – Diverticular Disease, Haemorrhoids and Appendicitis"
    },
+   "resumo": {
+    "pt": "Genética da doença diverticular, das hemorroidas, da apendicite e do intestino irritável.",
+    "en": "Genetics of diverticular disease, haemorrhoids, appendicitis and irritable bowel."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-03",
    "ficheiro": "reports/intestino-grosso.pdf",
    "descricao": {
     "pt": "Perfil misto: apendicite (consenso no percentil 15,0), hemorroidas (18,9) e intestino irritável (loci 24,0) pouco prováveis, mas doença diverticular moderadamente alta (carga de 214 loci no 97,8; consenso 68,7; GPR158 T/T, ARHGAP15, COLQ, EFEMP1, COL6A1). Trânsito intestinal geneticamente mais rápido (loci 99,2).",
@@ -2559,7 +9238,39 @@
    },
    "ficheiro_en": "reports/intestino-grosso_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 54
+   "tamanho_kb_en": 54,
+   "areas": [
+    "digestao"
+   ],
+   "palavras": [
+    "cólon",
+    "colon",
+    "diverticulite",
+    "diverticulitis",
+    "hemorroidas",
+    "haemorrhoids",
+    "apendicite"
+   ],
+   "genes": [
+    "ARHGAP15",
+    "BDNF",
+    "CADM2",
+    "CALCB",
+    "CDKN2B-AS1",
+    "COL6A1",
+    "COLQ",
+    "CYP2C9",
+    "EFEMP1",
+    "ELN",
+    "GPR158",
+    "HMGA2",
+    "MUC12",
+    "PITX2",
+    "SFMBT1",
+    "SLC35F3",
+    "SMAD3",
+    "XKR9"
+   ]
   },
   {
    "id": "forca-hipertrofia-potencia",
@@ -2567,7 +9278,12 @@
     "pt": "Relatório Genético: Força, Hipertrofia e Potência",
     "en": "Genetic Report: Strength, Hypertrophy and Power"
    },
+   "resumo": {
+    "pt": "Genética da força, da hipertrofia e da potência muscular, da recuperação e dos tendões.",
+    "en": "Genetics of muscle strength, hypertrophy and power, recovery and tendons."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-04",
    "ficheiro": "reports/forca-hipertrofia-potencia.pdf",
    "descricao": {
     "pt": "Força treinável dentro do normal e motor aeróbio e recuperação favoráveis (PPARGC1A Gly/Gly, AMPD1 normal, TNF −308 G/G), mas massa magra poligénica baixa (apendicular p9,5; corpo inteiro p28) e tendão como elo fraco (COL5A1 rs12722 T/T). 73 SNPs e 61 scores poligénicos: a hipertrofia pede mais volume, consistência e uma progressão de carga mais lenta para os tendões.",
@@ -2581,7 +9297,94 @@
    },
    "ficheiro_en": "reports/forca-hipertrofia-potencia_en.pdf",
    "paginas_en": 25,
-   "tamanho_kb_en": 149
+   "tamanho_kb_en": 149,
+   "areas": [
+    "desporto"
+   ],
+   "palavras": [
+    "musculação",
+    "bodybuilding",
+    "ginásio",
+    "gym",
+    "massa muscular",
+    "muscle mass",
+    "treino de força"
+   ],
+   "genes": [
+    "ABCB1",
+    "ABCG2",
+    "ACE",
+    "ACSL1",
+    "ACTN3",
+    "ADRB1",
+    "ADRB3",
+    "AGT",
+    "AGTR1",
+    "AMPD1",
+    "ANKK1",
+    "BDNF",
+    "CADM2",
+    "CCL2",
+    "CKM",
+    "CNTF",
+    "COL1A1",
+    "COL3A1",
+    "COL5A1",
+    "COMT",
+    "CRP",
+    "CYP2C9",
+    "CYP3A4",
+    "CYP3A5",
+    "DBP",
+    "EDN1",
+    "FAM9B",
+    "FOXO3",
+    "FOXO4",
+    "FST",
+    "FTO",
+    "GALNTL6",
+    "GDF5",
+    "GLIS1",
+    "HFE",
+    "HIF1A",
+    "HOXB3",
+    "IGF1",
+    "IGF1R",
+    "IL15RA",
+    "IL6",
+    "KANSL1",
+    "LILRB5",
+    "LRPPRC",
+    "MC4R",
+    "MMP3",
+    "MPP7",
+    "MSTN",
+    "MTNR1B",
+    "MTOR",
+    "MYLK",
+    "NNMT",
+    "NOS3",
+    "PEX14",
+    "POLD3",
+    "PPARA",
+    "PPARD",
+    "PPARG",
+    "PPARGC1A",
+    "PTH",
+    "SHBG",
+    "SLC16A1",
+    "SLCO1B1",
+    "SOD2",
+    "SRD5A2",
+    "TCF7L2",
+    "TFAM",
+    "TGFA",
+    "TNF",
+    "TRHR",
+    "UCP2",
+    "VDR",
+    "VEGFA"
+   ]
   },
   {
    "id": "referencia-via-forca-hipertrofia-potencia",
@@ -2589,7 +9392,12 @@
     "pt": "Referência da Via Genética: Força, Hipertrofia e Potência",
     "en": "Genetic Pathway Reference: Strength, Hypertrophy and Power"
    },
+   "resumo": {
+    "pt": "Guia educativo da via genética do músculo: mTOR, IGF-1, miostatina e tabela de SNPs.",
+    "en": "Educational guide to the muscle genetic pathway: mTOR, IGF-1, myostatin and a SNP table."
+   },
    "data": "2026-10-03",
+   "publicado": "2026-10-04",
    "ficheiro": "reports/referencia-via-forca-hipertrofia-potencia.pdf",
    "descricao": {
     "pt": "Documento educativo e genérico, sem dados pessoais: biologia da via (carga mecânica, IGF-1, mTORC1, miostatina), mapa das 10 categorias funcionais (do tipo de fibra aos tendões, ao coração, ao cérebro e às hormonas), tabela de pesquisa de SNPs em GRCh38 e evidência controversa e limites.",
@@ -2603,7 +9411,95 @@
    },
    "ficheiro_en": "reports/referencia-via-forca-hipertrofia-potencia_en.pdf",
    "paginas_en": 24,
-   "tamanho_kb_en": 306
+   "tamanho_kb_en": 306,
+   "areas": [
+    "desporto"
+   ],
+   "palavras": [
+    "musculação",
+    "bodybuilding",
+    "miostatina",
+    "myostatin",
+    "mTOR",
+    "guia",
+    "guide"
+   ],
+   "genes": [
+    "ABCB1",
+    "ABCG2",
+    "ACE",
+    "ACSL1",
+    "ACTN3",
+    "ADRB1",
+    "ADRB3",
+    "AGT",
+    "AGTR1",
+    "AMPD1",
+    "ANKK1",
+    "BDNF",
+    "CADM2",
+    "CCL2",
+    "CKM",
+    "CNTF",
+    "COL1A1",
+    "COL3A1",
+    "COL5A1",
+    "COMT",
+    "CYP2C9",
+    "CYP3A4",
+    "CYP3A5",
+    "DBP",
+    "DRD2",
+    "EDN1",
+    "FAM9B",
+    "FOXO3",
+    "FST",
+    "FTO",
+    "GALNTL6",
+    "GDF5",
+    "GLIS1",
+    "HFE",
+    "HIF1A",
+    "HOXB3",
+    "IGF1",
+    "IGF1R",
+    "IL15RA",
+    "IL6",
+    "IRX3",
+    "IRX5",
+    "KANSL1",
+    "LILRB5",
+    "LRPPRC",
+    "MC4R",
+    "MMP3",
+    "MPP7",
+    "MSTN",
+    "MTNR1B",
+    "MTOR",
+    "MYLK",
+    "NOS3",
+    "PEX14",
+    "POLD3",
+    "PPARA",
+    "PPARD",
+    "PPARG",
+    "PPARGC1A",
+    "SHBG",
+    "SLC16A1",
+    "SLCO1B1",
+    "SMAD2",
+    "SOD2",
+    "SRD5A2",
+    "TCF7L2",
+    "TFAM",
+    "TGFA",
+    "TNF",
+    "TRH",
+    "TRHR",
+    "UCP2",
+    "VDR",
+    "VEGFA"
+   ]
   }
  ]
 }
