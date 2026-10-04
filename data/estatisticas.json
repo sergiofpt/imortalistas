@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-04T11:05:09Z",
+ "atualizado_em": "2026-10-04T18:02:07Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
-  "visitas": 22,
-  "visitas_30d": 22,
-  "visitas_90d": 22,
-  "aberturas_pdf": 13,
-  "visitas_hoje": 5,
-  "visitas_7d": 22,
-  "aberturas_hoje": 2,
-  "aberturas_7d": 13,
-  "aberturas_30d": 13,
-  "pdf_abertos": 13,
-  "pdf_descarregados": 0,
+  "visitas": 25,
+  "visitas_30d": 25,
+  "visitas_90d": 25,
+  "aberturas_pdf": 15,
+  "visitas_hoje": 8,
+  "visitas_7d": 25,
+  "aberturas_hoje": 4,
+  "aberturas_7d": 15,
+  "aberturas_30d": 15,
+  "pdf_abertos": 14,
+  "pdf_descarregados": 1,
   "pdf_pt": 10,
-  "pdf_en": 3
+  "pdf_en": 5
  },
  "dias": [
   {
@@ -36,18 +36,18 @@
   },
   {
    "dia": "2026-10-04",
-   "visitas": 5,
-   "aberturas": 2
+   "visitas": 8,
+   "aberturas": 4
   }
  ],
  "paginas": [
   {
-   "path": "/imortalistas/teste-worker",
+   "path": "/imortalistas/genetica-reports.html",
    "visitas": 8
   },
   {
-   "path": "/imortalistas/genetica-reports.html",
-   "visitas": 5
+   "path": "/imortalistas/teste-worker",
+   "visitas": 8
   },
   {
    "path": "/imortalistas",
@@ -79,18 +79,18 @@
    "descarregados_en": 0
   },
   {
-   "id": "anestesia-cirurgia",
+   "id": "avc-pequenos-vasos-cerebrais",
    "ficheiro": null,
    "pt": 1,
-   "en": 0,
-   "total": 1,
+   "en": 1,
+   "total": 2,
    "abertos_pt": 1,
    "abertos_en": 0,
    "descarregados_pt": 0,
-   "descarregados_en": 0
+   "descarregados_en": 1
   },
   {
-   "id": "avc-pequenos-vasos-cerebrais",
+   "id": "anestesia-cirurgia",
    "ficheiro": null,
    "pt": 1,
    "en": 0,
@@ -145,6 +145,17 @@
    "descarregados_en": 0
   },
   {
+   "id": "referencia-via-forca-hipertrofia-potencia",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
    "id": "resposta-treino-vo2max",
    "ficheiro": null,
    "pt": 1,
@@ -172,9 +183,30 @@
    "visitas": 2
   },
   {
+   "id": "computador/chromeos-chrome",
+   "tipo": "computador",
+   "nome": "ChromeOS · Chrome",
+   "estimativa": false,
+   "visitas": 1
+  },
+  {
+   "id": "android/google-pixel-8-pro",
+   "tipo": "android",
+   "nome": "Google Pixel 8 Pro",
+   "estimativa": false,
+   "visitas": 1
+  },
+  {
    "id": "computador/linux-chrome",
    "tipo": "computador",
    "nome": "Linux · Chrome",
+   "estimativa": false,
+   "visitas": 1
+  },
+  {
+   "id": "android/samsung-galaxy-a54",
+   "tipo": "android",
+   "nome": "Samsung Galaxy A54",
    "estimativa": false,
    "visitas": 1
   },
@@ -202,7 +234,22 @@
   {
    "id": "US",
    "nome": "United States",
-   "visitas": 6
+   "visitas": 8
+  },
+  {
+   "id": "BR",
+   "nome": "Brazil",
+   "visitas": 1
+  },
+  {
+   "id": "CO",
+   "nome": "Colombia",
+   "visitas": 1
+  },
+  {
+   "id": "GG",
+   "nome": "Guernsey",
+   "visitas": 1
   },
   {
    "id": "PL",
@@ -214,7 +261,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 21
+   "visitas": 25
   },
   {
    "id": "Firefox",
@@ -224,7 +271,7 @@
   {
    "id": "Safari",
    "nome": "Safari",
-   "visitas": 1
+   "visitas": 2
   }
  ],
  "sistemas": [
@@ -241,6 +288,16 @@
   {
    "id": "Android",
    "nome": "Android",
+   "visitas": 3
+  },
+  {
+   "id": "Chrome OS",
+   "nome": "Chrome OS",
+   "visitas": 2
+  },
+  {
+   "id": "iOS",
+   "nome": "iOS",
    "visitas": 1
   },
   {
@@ -253,7 +310,7 @@
   {
    "id": "phone",
    "nome": "phone",
-   "visitas": 1
+   "visitas": 3
   },
   {
    "id": "tablet",
@@ -263,19 +320,29 @@
   {
    "id": "desktop",
    "nome": "desktop",
-   "visitas": 21
+   "visitas": 22
   },
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 12
+   "visitas": 14
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 35
+   "visitas": 37
+  },
+  {
+   "id": "https://www.rapamycin.news",
+   "nome": "www.rapamycin.news",
+   "visitas": 2
+  },
+  {
+   "id": "https://l.instagram.com",
+   "nome": "l.instagram.com",
+   "visitas": 1
   }
  ],
  "aparelhos_desde": "2026-10-03",
@@ -381,11 +448,15 @@
     },
     {
      "dia": "2026-10-04",
-     "visitas": 0,
-     "aberturas": 1
+     "visitas": 3,
+     "aberturas": 3
     }
    ],
    "paginas": [
+    {
+     "path": "/imortalistas/genetica-reports.html",
+     "visitas": 4
+    },
     {
      "path": "/imortalistas/",
      "visitas": 1
@@ -393,15 +464,33 @@
     {
      "path": "/imortalistas/genetica-boa.html",
      "visitas": 1
-    },
-    {
-     "path": "/imortalistas/genetica-reports.html",
-     "visitas": 1
     }
    ],
    "relatorios": [
     {
+     "id": "avc-pequenos-vasos-cerebrais",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "longevidade-excecional",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
+     "id": "referencia-via-forca-hipertrofia-potencia",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -414,6 +503,27 @@
    ],
    "aparelhos": [
     {
+     "id": "computador/chromeos-chrome",
+     "tipo": "computador",
+     "nome": "ChromeOS · Chrome",
+     "estimativa": false,
+     "visitas": 1
+    },
+    {
+     "id": "android/google-pixel-8-pro",
+     "tipo": "android",
+     "nome": "Google Pixel 8 Pro",
+     "estimativa": false,
+     "visitas": 1
+    },
+    {
+     "id": "android/samsung-galaxy-a54",
+     "tipo": "android",
+     "nome": "Samsung Galaxy A54",
+     "estimativa": false,
+     "visitas": 1
+    },
+    {
      "id": "computador/windows-11-chrome",
      "tipo": "computador",
      "nome": "Windows 11 · Chrome",
@@ -423,25 +533,40 @@
    ],
    "aparelhos_desde": "2026-10-03",
    "total": {
-    "visitas": 3,
-    "visitas_30d": 3,
-    "visitas_90d": 3,
-    "aberturas_pdf": 1,
-    "visitas_hoje": 0,
-    "visitas_7d": 3,
-    "aberturas_hoje": 1,
-    "aberturas_7d": 1,
-    "aberturas_30d": 1,
-    "pdf_abertos": 1,
-    "pdf_descarregados": 0,
+    "visitas": 6,
+    "visitas_30d": 6,
+    "visitas_90d": 6,
+    "aberturas_pdf": 3,
+    "visitas_hoje": 3,
+    "visitas_7d": 6,
+    "aberturas_hoje": 3,
+    "aberturas_7d": 3,
+    "aberturas_30d": 3,
+    "pdf_abertos": 2,
+    "pdf_descarregados": 1,
     "pdf_pt": 0,
-    "pdf_en": 1
+    "pdf_en": 3
    },
    "paises": [
     {
      "id": "US",
      "nome": "United States",
-     "visitas": 6
+     "visitas": 8
+    },
+    {
+     "id": "BR",
+     "nome": "Brazil",
+     "visitas": 1
+    },
+    {
+     "id": "CO",
+     "nome": "Colombia",
+     "visitas": 1
+    },
+    {
+     "id": "GG",
+     "nome": "Guernsey",
+     "visitas": 1
     },
     {
      "id": "PL",
