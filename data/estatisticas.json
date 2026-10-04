@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-03T23:04:02Z",
+ "atualizado_em": "2026-10-04T02:49:40Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
-  "visitas": 17,
-  "visitas_30d": 17,
-  "visitas_90d": 17,
-  "aberturas_pdf": 11,
-  "visitas_hoje": 17,
-  "visitas_7d": 17,
-  "aberturas_hoje": 11,
-  "aberturas_7d": 11,
-  "aberturas_30d": 11,
-  "pdf_abertos": 11,
+  "visitas": 22,
+  "visitas_30d": 22,
+  "visitas_90d": 22,
+  "aberturas_pdf": 12,
+  "visitas_hoje": 5,
+  "visitas_7d": 22,
+  "aberturas_hoje": 1,
+  "aberturas_7d": 12,
+  "aberturas_30d": 12,
+  "pdf_abertos": 12,
   "pdf_descarregados": 0,
-  "pdf_pt": 9,
+  "pdf_pt": 10,
   "pdf_en": 2
  },
  "dias": [
@@ -33,9 +33,18 @@
    "dia": "2026-10-03",
    "visitas": 17,
    "aberturas": 11
+  },
+  {
+   "dia": "2026-10-04",
+   "visitas": 5,
+   "aberturas": 1
   }
  ],
  "paginas": [
+  {
+   "path": "/imortalistas/teste-worker",
+   "visitas": 8
+  },
   {
    "path": "/imortalistas/genetica-reports.html",
    "visitas": 5
@@ -43,10 +52,6 @@
   {
    "path": "/imortalistas",
    "visitas": 4
-  },
-  {
-   "path": "/imortalistas/teste-worker",
-   "visitas": 3
   },
   {
    "path": "/imortalistas/genetica-boa.html",
@@ -96,6 +101,17 @@
    "descarregados_en": 0
   },
   {
+   "id": "cancros-um-a-um",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 0,
+   "total": 1,
+   "abertos_pt": 1,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
    "id": "doencas-geneticas-hereditarias",
    "ficheiro": null,
    "pt": 1,
@@ -131,6 +147,20 @@
  ],
  "aparelhos": [
   {
+   "id": "computador/linux-firefox",
+   "tipo": "computador",
+   "nome": "Linux · Firefox",
+   "estimativa": false,
+   "visitas": 3
+  },
+  {
+   "id": "computador/windows-10-11-chrome",
+   "tipo": "computador",
+   "nome": "Windows 10/11 · Chrome",
+   "estimativa": false,
+   "visitas": 2
+  },
+  {
    "id": "computador/linux-chrome",
    "tipo": "computador",
    "nome": "Linux · Chrome",
@@ -141,13 +171,6 @@
    "id": "android/samsung-sm-a566b",
    "tipo": "android",
    "nome": "Samsung SM-A566B",
-   "estimativa": false,
-   "visitas": 1
-  },
-  {
-   "id": "computador/windows-10-11-chrome",
-   "tipo": "computador",
-   "nome": "Windows 10/11 · Chrome",
    "estimativa": false,
    "visitas": 1
   },
@@ -163,12 +186,7 @@
   {
    "id": "PT",
    "nome": "Portugal",
-   "visitas": 22
-  },
-  {
-   "id": "(unknown)",
-   "nome": "(unknown)",
-   "visitas": 6
+   "visitas": 28
   },
   {
    "id": "US",
@@ -180,17 +198,12 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 19
+   "visitas": 21
   },
   {
    "id": "Firefox",
    "nome": "Firefox",
-   "visitas": 8
-  },
-  {
-   "id": "(desconhecido)",
-   "nome": "(desconhecido)",
-   "visitas": 6
+   "visitas": 12
   },
   {
    "id": "Safari",
@@ -202,17 +215,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 20
-  },
-  {
-   "id": "(desconhecido)",
-   "nome": "(desconhecido)",
-   "visitas": 6
+   "visitas": 23
   },
   {
    "id": "Linux",
    "nome": "Linux",
-   "visitas": 6
+   "visitas": 9
   },
   {
    "id": "Android",
@@ -239,12 +247,12 @@
   {
    "id": "desktop",
    "nome": "desktop",
-   "visitas": 16
+   "visitas": 21
   },
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 16
+   "visitas": 11
   }
  ],
  "origens": [
@@ -254,5 +262,161 @@
    "visitas": 34
   }
  ],
- "aparelhos_desde": "2026-10-03"
+ "aparelhos_desde": "2026-10-03",
+ "por_origem": {
+  "pt": {
+   "dias": [
+    {
+     "dia": "2026-10-01",
+     "visitas": 0,
+     "aberturas": 0
+    },
+    {
+     "dia": "2026-10-02",
+     "visitas": 0,
+     "aberturas": 0
+    },
+    {
+     "dia": "2026-10-03",
+     "visitas": 1,
+     "aberturas": 0
+    },
+    {
+     "dia": "2026-10-04",
+     "visitas": 4,
+     "aberturas": 1
+    }
+   ],
+   "paginas": [
+    {
+     "path": "/imortalistas/teste-worker",
+     "visitas": 5
+    }
+   ],
+   "relatorios": [
+    {
+     "id": "cancros-um-a-um",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 0,
+     "total": 1,
+     "abertos_pt": 1,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    }
+   ],
+   "aparelhos": [
+    {
+     "id": "computador/linux-firefox",
+     "tipo": "computador",
+     "nome": "Linux · Firefox",
+     "estimativa": false,
+     "visitas": 3
+    },
+    {
+     "id": "computador/windows-10-11-chrome",
+     "tipo": "computador",
+     "nome": "Windows 10/11 · Chrome",
+     "estimativa": false,
+     "visitas": 2
+    }
+   ],
+   "aparelhos_desde": "2026-10-03",
+   "total": {
+    "visitas": 5,
+    "visitas_30d": 5,
+    "visitas_90d": 5,
+    "aberturas_pdf": 1,
+    "visitas_hoje": 4,
+    "visitas_7d": 5,
+    "aberturas_hoje": 1,
+    "aberturas_7d": 1,
+    "aberturas_30d": 1,
+    "pdf_abertos": 1,
+    "pdf_descarregados": 0,
+    "pdf_pt": 1,
+    "pdf_en": 0
+   },
+   "paises": [
+    {
+     "id": "PT",
+     "nome": "Portugal",
+     "visitas": 28
+    }
+   ]
+  },
+  "fora": {
+   "dias": [
+    {
+     "dia": "2026-10-01",
+     "visitas": 0,
+     "aberturas": 0
+    },
+    {
+     "dia": "2026-10-02",
+     "visitas": 0,
+     "aberturas": 0
+    },
+    {
+     "dia": "2026-10-03",
+     "visitas": 3,
+     "aberturas": 0
+    },
+    {
+     "dia": "2026-10-04",
+     "visitas": 0,
+     "aberturas": 0
+    }
+   ],
+   "paginas": [
+    {
+     "path": "/imortalistas/",
+     "visitas": 1
+    },
+    {
+     "path": "/imortalistas/genetica-boa.html",
+     "visitas": 1
+    },
+    {
+     "path": "/imortalistas/genetica-reports.html",
+     "visitas": 1
+    }
+   ],
+   "relatorios": [],
+   "aparelhos": [
+    {
+     "id": "computador/windows-11-chrome",
+     "tipo": "computador",
+     "nome": "Windows 11 · Chrome",
+     "estimativa": false,
+     "visitas": 1
+    }
+   ],
+   "aparelhos_desde": "2026-10-03",
+   "total": {
+    "visitas": 3,
+    "visitas_30d": 3,
+    "visitas_90d": 3,
+    "aberturas_pdf": 0,
+    "visitas_hoje": 0,
+    "visitas_7d": 3,
+    "aberturas_hoje": 0,
+    "aberturas_7d": 0,
+    "aberturas_30d": 0,
+    "pdf_abertos": 0,
+    "pdf_descarregados": 0,
+    "pdf_pt": 0,
+    "pdf_en": 0
+   },
+   "paises": [
+    {
+     "id": "US",
+     "nome": "United States",
+     "visitas": 6
+    }
+   ]
+  }
+ },
+ "origem_desde": "2026-10-03T22:00:00Z"
 }
