@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-04T02:49:40Z",
+ "atualizado_em": "2026-10-04T11:05:09Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 22,
   "visitas_30d": 22,
   "visitas_90d": 22,
-  "aberturas_pdf": 12,
+  "aberturas_pdf": 13,
   "visitas_hoje": 5,
   "visitas_7d": 22,
-  "aberturas_hoje": 1,
-  "aberturas_7d": 12,
-  "aberturas_30d": 12,
-  "pdf_abertos": 12,
+  "aberturas_hoje": 2,
+  "aberturas_7d": 13,
+  "aberturas_30d": 13,
+  "pdf_abertos": 13,
   "pdf_descarregados": 0,
   "pdf_pt": 10,
-  "pdf_en": 2
+  "pdf_en": 3
  },
  "dias": [
   {
@@ -37,7 +37,7 @@
   {
    "dia": "2026-10-04",
    "visitas": 5,
-   "aberturas": 1
+   "aberturas": 2
   }
  ],
  "paginas": [
@@ -134,6 +134,17 @@
    "descarregados_en": 0
   },
   {
+   "id": "longevidade-excecional",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
    "id": "resposta-treino-vo2max",
    "ficheiro": null,
    "pt": 1,
@@ -192,6 +203,11 @@
    "id": "US",
    "nome": "United States",
    "visitas": 6
+  },
+  {
+   "id": "PL",
+   "nome": "Poland",
+   "visitas": 1
   }
  ],
  "browsers": [
@@ -203,7 +219,7 @@
   {
    "id": "Firefox",
    "nome": "Firefox",
-   "visitas": 12
+   "visitas": 13
   },
   {
    "id": "Safari",
@@ -215,7 +231,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 23
+   "visitas": 24
   },
   {
    "id": "Linux",
@@ -252,14 +268,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 11
+   "visitas": 12
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 34
+   "visitas": 35
   }
  ],
  "aparelhos_desde": "2026-10-03",
@@ -366,7 +382,7 @@
     {
      "dia": "2026-10-04",
      "visitas": 0,
-     "aberturas": 0
+     "aberturas": 1
     }
    ],
    "paginas": [
@@ -383,7 +399,19 @@
      "visitas": 1
     }
    ],
-   "relatorios": [],
+   "relatorios": [
+    {
+     "id": "longevidade-excecional",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    }
+   ],
    "aparelhos": [
     {
      "id": "computador/windows-11-chrome",
@@ -398,22 +426,27 @@
     "visitas": 3,
     "visitas_30d": 3,
     "visitas_90d": 3,
-    "aberturas_pdf": 0,
+    "aberturas_pdf": 1,
     "visitas_hoje": 0,
     "visitas_7d": 3,
-    "aberturas_hoje": 0,
-    "aberturas_7d": 0,
-    "aberturas_30d": 0,
-    "pdf_abertos": 0,
+    "aberturas_hoje": 1,
+    "aberturas_7d": 1,
+    "aberturas_30d": 1,
+    "pdf_abertos": 1,
     "pdf_descarregados": 0,
     "pdf_pt": 0,
-    "pdf_en": 0
+    "pdf_en": 1
    },
    "paises": [
     {
      "id": "US",
      "nome": "United States",
      "visitas": 6
+    },
+    {
+     "id": "PL",
+     "nome": "Poland",
+     "visitas": 1
     }
    ]
   }
