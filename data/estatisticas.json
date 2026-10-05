@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-05T22:18:24Z",
+ "atualizado_em": "2026-10-05T22:45:12Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 25,
   "visitas_30d": 25,
   "visitas_90d": 25,
-  "aberturas_pdf": 21,
+  "aberturas_pdf": 22,
   "visitas_hoje": 0,
   "visitas_7d": 25,
-  "aberturas_hoje": 6,
-  "aberturas_7d": 21,
-  "aberturas_30d": 21,
-  "pdf_abertos": 20,
+  "aberturas_hoje": 7,
+  "aberturas_7d": 22,
+  "aberturas_30d": 22,
+  "pdf_abertos": 21,
   "pdf_descarregados": 1,
-  "pdf_pt": 12,
+  "pdf_pt": 13,
   "pdf_en": 9
  },
  "dias": [
@@ -42,7 +42,7 @@
   {
    "dia": "2026-10-05",
    "visitas": 0,
-   "aberturas": 6
+   "aberturas": 7
   }
  ],
  "paginas": [
@@ -95,6 +95,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "doencas-geneticas-hereditarias",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 0,
+   "total": 2,
+   "abertos_pt": 2,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
    "id": "nariz-seios-perinasais",
    "ficheiro": null,
    "pt": 0,
@@ -118,17 +129,6 @@
   },
   {
    "id": "cancros-um-a-um",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 0,
-   "total": 1,
-   "abertos_pt": 1,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
-   "id": "doencas-geneticas-hereditarias",
    "ficheiro": null,
    "pt": 1,
    "en": 0,
@@ -278,7 +278,7 @@
   {
    "id": "PT",
    "nome": "Portugal",
-   "visitas": 30
+   "visitas": 31
   },
   {
    "id": "US",
@@ -315,7 +315,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 28
+   "visitas": 29
   },
   {
    "id": "Firefox",
@@ -342,7 +342,7 @@
   {
    "id": "Android",
    "nome": "Android",
-   "visitas": 3
+   "visitas": 4
   },
   {
    "id": "Chrome OS",
@@ -379,14 +379,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 20
+   "visitas": 21
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 43
+   "visitas": 44
   },
   {
    "id": "https://www.rapamycin.news",
@@ -426,7 +426,7 @@
     {
      "dia": "2026-10-05",
      "visitas": 0,
-     "aberturas": 2
+     "aberturas": 3
     }
    ],
    "paginas": [
@@ -438,6 +438,17 @@
    "relatorios": [
     {
      "id": "cancros-um-a-um",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 0,
+     "total": 1,
+     "abertos_pt": 1,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
+     "id": "doencas-geneticas-hereditarias",
      "ficheiro": null,
      "pt": 1,
      "en": 0,
@@ -491,22 +502,22 @@
     "visitas": 5,
     "visitas_30d": 5,
     "visitas_90d": 5,
-    "aberturas_pdf": 3,
+    "aberturas_pdf": 4,
     "visitas_hoje": 0,
     "visitas_7d": 5,
-    "aberturas_hoje": 2,
-    "aberturas_7d": 3,
-    "aberturas_30d": 3,
-    "pdf_abertos": 3,
+    "aberturas_hoje": 3,
+    "aberturas_7d": 4,
+    "aberturas_30d": 4,
+    "pdf_abertos": 4,
     "pdf_descarregados": 0,
-    "pdf_pt": 3,
+    "pdf_pt": 4,
     "pdf_en": 0
    },
    "paises": [
     {
      "id": "PT",
      "nome": "Portugal",
-     "visitas": 30
+     "visitas": 31
     }
    ]
   },
