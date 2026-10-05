@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-05T03:21:08Z",
+ "atualizado_em": "2026-10-05T04:21:16Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 25,
   "visitas_30d": 25,
   "visitas_90d": 25,
-  "aberturas_pdf": 16,
+  "aberturas_pdf": 17,
   "visitas_hoje": 0,
   "visitas_7d": 25,
-  "aberturas_hoje": 1,
-  "aberturas_7d": 16,
-  "aberturas_30d": 16,
-  "pdf_abertos": 15,
+  "aberturas_hoje": 2,
+  "aberturas_7d": 17,
+  "aberturas_30d": 17,
+  "pdf_abertos": 16,
   "pdf_descarregados": 1,
   "pdf_pt": 10,
-  "pdf_en": 6
+  "pdf_en": 7
  },
  "dias": [
   {
@@ -42,7 +42,7 @@
   {
    "dia": "2026-10-05",
    "visitas": 0,
-   "aberturas": 1
+   "aberturas": 2
   }
  ],
  "paginas": [
@@ -135,6 +135,17 @@
    "total": 1,
    "abertos_pt": 1,
    "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
+   "id": "infecoes",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 0
   },
@@ -250,7 +261,7 @@
   {
    "id": "US",
    "nome": "United States",
-   "visitas": 9
+   "visitas": 10
   },
   {
    "id": "BR",
@@ -277,7 +288,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 26
+   "visitas": 27
   },
   {
    "id": "Firefox",
@@ -294,7 +305,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 25
+   "visitas": 26
   },
   {
    "id": "Linux",
@@ -341,14 +352,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 15
+   "visitas": 16
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 38
+   "visitas": 39
   },
   {
    "id": "https://www.rapamycin.news",
@@ -475,7 +486,7 @@
     {
      "dia": "2026-10-05",
      "visitas": 0,
-     "aberturas": 1
+     "aberturas": 2
     }
    ],
    "paginas": [
@@ -503,6 +514,17 @@
      "abertos_en": 0,
      "descarregados_pt": 0,
      "descarregados_en": 1
+    },
+    {
+     "id": "infecoes",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
     },
     {
      "id": "longevidade-excecional",
@@ -573,22 +595,22 @@
     "visitas": 6,
     "visitas_30d": 6,
     "visitas_90d": 6,
-    "aberturas_pdf": 4,
+    "aberturas_pdf": 5,
     "visitas_hoje": 0,
     "visitas_7d": 6,
-    "aberturas_hoje": 1,
-    "aberturas_7d": 4,
-    "aberturas_30d": 4,
-    "pdf_abertos": 3,
+    "aberturas_hoje": 2,
+    "aberturas_7d": 5,
+    "aberturas_30d": 5,
+    "pdf_abertos": 4,
     "pdf_descarregados": 1,
     "pdf_pt": 0,
-    "pdf_en": 4
+    "pdf_en": 5
    },
    "paises": [
     {
      "id": "US",
      "nome": "United States",
-     "visitas": 9
+     "visitas": 10
     },
     {
      "id": "BR",
