@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-05T21:31:59Z",
+ "atualizado_em": "2026-10-05T22:18:24Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 25,
   "visitas_30d": 25,
   "visitas_90d": 25,
-  "aberturas_pdf": 20,
+  "aberturas_pdf": 21,
   "visitas_hoje": 0,
   "visitas_7d": 25,
-  "aberturas_hoje": 5,
-  "aberturas_7d": 20,
-  "aberturas_30d": 20,
-  "pdf_abertos": 19,
+  "aberturas_hoje": 6,
+  "aberturas_7d": 21,
+  "aberturas_30d": 21,
+  "pdf_abertos": 20,
   "pdf_descarregados": 1,
-  "pdf_pt": 11,
+  "pdf_pt": 12,
   "pdf_en": 9
  },
  "dias": [
@@ -42,7 +42,7 @@
   {
    "dia": "2026-10-05",
    "visitas": 0,
-   "aberturas": 5
+   "aberturas": 6
   }
  ],
  "paginas": [
@@ -172,6 +172,17 @@
    "descarregados_en": 0
   },
   {
+   "id": "longevidade-maxima-sintese-genetica",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 0,
+   "total": 1,
+   "abertos_pt": 1,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
    "id": "referencia-via-forca-hipertrofia-potencia",
    "ficheiro": null,
    "pt": 0,
@@ -267,7 +278,7 @@
   {
    "id": "PT",
    "nome": "Portugal",
-   "visitas": 29
+   "visitas": 30
   },
   {
    "id": "US",
@@ -309,7 +320,7 @@
   {
    "id": "Firefox",
    "nome": "Firefox",
-   "visitas": 14
+   "visitas": 15
   },
   {
    "id": "Safari",
@@ -321,7 +332,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 28
+   "visitas": 29
   },
   {
    "id": "Linux",
@@ -368,14 +379,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 19
+   "visitas": 20
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 42
+   "visitas": 43
   },
   {
    "id": "https://www.rapamycin.news",
@@ -415,7 +426,7 @@
     {
      "dia": "2026-10-05",
      "visitas": 0,
-     "aberturas": 1
+     "aberturas": 2
     }
    ],
    "paginas": [
@@ -427,6 +438,17 @@
    "relatorios": [
     {
      "id": "cancros-um-a-um",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 0,
+     "total": 1,
+     "abertos_pt": 1,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
+     "id": "longevidade-maxima-sintese-genetica",
      "ficheiro": null,
      "pt": 1,
      "en": 0,
@@ -469,22 +491,22 @@
     "visitas": 5,
     "visitas_30d": 5,
     "visitas_90d": 5,
-    "aberturas_pdf": 2,
+    "aberturas_pdf": 3,
     "visitas_hoje": 0,
     "visitas_7d": 5,
-    "aberturas_hoje": 1,
-    "aberturas_7d": 2,
-    "aberturas_30d": 2,
-    "pdf_abertos": 2,
+    "aberturas_hoje": 2,
+    "aberturas_7d": 3,
+    "aberturas_30d": 3,
+    "pdf_abertos": 3,
     "pdf_descarregados": 0,
-    "pdf_pt": 2,
+    "pdf_pt": 3,
     "pdf_en": 0
    },
    "paises": [
     {
      "id": "PT",
      "nome": "Portugal",
-     "visitas": 29
+     "visitas": 30
     }
    ]
   },
