@@ -182,12 +182,6 @@ main a.btn.pri{background:var(--acc);border-color:var(--acc);color:var(--actfg)}
 </div></header>
 <main>
 
-<div class="hero">
-<div><h1><span class="l-pt">Genética Reports</span><span class="l-en">Genetics Reports</span></h1>
-<p>Sérgio F · M</p></div>
-<div class="meta" id="rMeta"><span class="l-pt">Relatórios em PDF</span><span class="l-en">PDF reports</span></div>
-</div>
-
 <!-- lista gerada a partir de data/reports.json (reports.js) -->
 <section id="reports">
 <p class="src"><span class="l-pt">Fonte</span><span class="l-en">Source</span>: data/reports.json · <span class="l-pt">ficheiros em</span><span class="l-en">files in</span> reports/</p>
@@ -238,7 +232,7 @@ const hitQ=(r,tk)=>{if(!tk.length)return true;const h=hay(r);return tk.every(t=>
 const hitA=r=>!SEL.size||rAreas(r).some(id=>SEL.has(id));
 // genes que a pesquisa encontrou (mostrados no cartão, para se perceber porque aparece)
 const genesHit=(r,tk)=>tk.length?list(r.genes).filter(g=>{const n=norm(g);return tk.some(t=>n===t||(t.length>=3&&n.startsWith(t)))}).slice(0,8):[];
-function render(){const box=document.getElementById('rList'),meta=document.getElementById('rMeta'),cnt=document.getElementById('rCount'),chips=document.getElementById('rAreas'),pager=document.getElementById('rPager');
+function render(){const box=document.getElementById('rList'),cnt=document.getElementById('rCount'),chips=document.getElementById('rAreas'),pager=document.getElementById('rPager');
  if(RERR){document.getElementById('rFeat').innerHTML='';chips.innerHTML='';pager.hidden=true;pager.innerHTML='';box.innerHTML=`<div class="card mut">${L('Não foi possível carregar','Could not load')} ${esc(SRC)} (${esc(RERR.message)}). ${L('Se abriu o ficheiro localmente, sirva a pasta com','If you opened the file locally, serve the folder with')} <code>python3 -m http.server</code>.</div>`;return}
  if(!RD)return;
  // mais recente primeiro: data de publicação (ou a data do relatório), depois o título
@@ -296,7 +290,6 @@ function render(){const box=document.getElementById('rList'),meta=document.getEl
  cnt.innerHTML=vis.length>PAGE_SIZE
   ?`<b>${from}–${to}</b> ${L('de','of')} <b>${vis.length}</b> ${L('na grelha','in grid')} · <b>${n}</b> ${L('de','of')} ${N} ${L('no total','total')}`
   :`<b>${n}</b> ${L('de','of')} ${N} ${L(N===1?'relatório':'relatórios',N===1?'report':'reports')}`;
- meta.innerHTML=`${N} ${L(N===1?'relatório':'relatórios',N===1?'report':'reports')} PDF<br>${L('Atualizado a','Updated on')} ${esc(fdate(RD.atualizado_em||''))} (PT)`;
  if(location.hash&&!render.scrolled){render.scrolled=true;const t=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(t)t.scrollIntoView()}}
 function applyLang(){const en=LANG==='en';document.documentElement.lang=en?'en':'pt-PT';document.title=en?document.body.dataset.titleEn:document.body.dataset.titlePt;
  document.querySelectorAll('[data-en]').forEach(el=>{if(!el.hasAttribute('data-pt'))el.setAttribute('data-pt',el.textContent);el.textContent=en?el.dataset.en:el.dataset.pt});
