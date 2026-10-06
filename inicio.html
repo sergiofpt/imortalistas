@@ -34,7 +34,11 @@ nav.main a.active{background:var(--ink);color:var(--actfg)}
 .ddmenu a{display:block;border-radius:10px}
 main{max-width:980px;margin:0 auto;padding:22px 20px 72px}
 h1{margin:0 0 6px;font-size:28px;letter-spacing:-.3px}
-.lead{margin:0 0 16px;color:var(--mut)}
+.lead{margin:0 0 4px;color:var(--mut)}
+.quiet{margin:0 0 18px;color:var(--mut);font-size:13.5px}
+h2 .n{display:inline-grid;place-items:center;width:1.65em;height:1.65em;margin-right:8px;border-radius:999px;background:var(--nab);color:var(--acc);font-size:12px;font-weight:700;vertical-align:1px}
+.objs{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.objs li{margin:0;padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);font-size:14px;line-height:1.4}
 .secnav{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 22px}
 .secnav a{padding:5px 11px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);text-decoration:none;font-size:13px}
 .secnav a:hover{background:var(--nab)}
@@ -54,7 +58,7 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 .lang button:hover{background:var(--nab);color:var(--ink)}.lang button.on{color:var(--ink);font-weight:700}
 .lang .sep{color:var(--na,#8a97a8)}
 main a{color:var(--acc)}
-@media(max-width:640px){html{scroll-padding-top:148px}.topin{gap:4px 8px;padding:6px 12px;flex-wrap:wrap}.tools{order:-1;margin-left:auto;gap:10px}nav.main{flex:1 1 100%;order:2;flex-wrap:wrap;gap:2px}nav.main a,.dd summary{padding:6px 10px}.stack li{flex-direction:column;gap:2px}.dose{text-align:left}h1{font-size:24px}}
+@media(max-width:640px){html{scroll-padding-top:148px}.topin{gap:4px 8px;padding:6px 12px;flex-wrap:wrap}.tools{order:-1;margin-left:auto;gap:10px}nav.main{flex:1 1 100%;order:2;flex-wrap:wrap;gap:2px}nav.main a,.dd summary{padding:6px 10px}.stack li{flex-direction:column;gap:2px}.dose{text-align:left}h1{font-size:24px}.objs{grid-template-columns:1fr}.card{padding:16px 14px}}
 </style>
 </head>
 <body data-title-pt="Sérgio F · Início" data-title-en="Sérgio F · Home">
@@ -66,7 +70,145 @@ main a{color:var(--acc)}
 <div class="lang" id="theme" role="group" aria-label="Tema" data-al-en="Theme"><button type="button" data-t="dark" data-en="Dark">Escuro</button><span class="sep" aria-hidden="true">|</span><button type="button" data-t="light" data-en="Light">Claro</button></div>
 </div>
 </div></header>
-<main></main>
+<main>
+<h1 data-en="Objectives">Objetivos</h1>
+<p class="lead" data-en="These are the main targets of the whole protocol.">Estes são os principais alvos de todo o protocolo.</p>
+<p class="quiet" data-en="Personal record of Sérgio F, not a recommendation.">Registo pessoal de Sérgio F, não uma recomendação.</p>
+<nav class="secnav" aria-label="Grupos" data-al-en="Groups">
+<a href="#instabilidade-genomica" data-en="Genomic instability">Instabilidade genómica</a>
+<a href="#epigenetica" data-en="Epigenetics">Epigenética</a>
+<a href="#rna-proteostase" data-en="RNA and proteostasis">RNA e proteostase</a>
+<a href="#mitocondrias" data-en="Mitochondria">Mitocôndrias</a>
+<a href="#metabolismo" data-en="Metabolism">Metabolismo</a>
+<a href="#inflamacao-matriz" data-en="Inflammation and matrix">Inflamação e matriz</a>
+<a href="#circadiano-cerebro" data-en="Circadian rhythm and brain">Ritmo circadiano e cérebro</a>
+<a href="#musculo-osso" data-en="Muscle and bone">Músculo e osso</a>
+</nav>
+<section class="card" id="instabilidade-genomica">
+<h2><span class="n" aria-hidden="true">1</span><span data-en="Genomic instability">Instabilidade genómica</span></h2>
+<ul class="objs">
+<li>Instabilidade Genómica</li>
+<li>Danos ao DNA e Défice de Reparação do DNA</li>
+<li>Telómeros e Limite de Hayflick</li>
+<li>Alterações Epigenéticas</li>
+<li>Perda de Proteostase</li>
+<li>Autofagia / Macroautofagia Desregulada</li>
+<li>Desregulação do Sensoriamento de Nutrientes</li>
+<li>Disfunção Mitocondrial</li>
+<li>Senescência Celular</li>
+<li>Exaustão de Células Estaminais</li>
+<li>Alteração da Comunicação Intercelular</li>
+<li>Inflamação Crónica</li>
+<li>Disbiose</li>
+</ul>
+</section>
+<section class="card" id="epigenetica">
+<h2><span class="n" aria-hidden="true">2</span><span data-en="Epigenetics">Epigenética</span></h2>
+<ul class="objs">
+<li>Deriva Epigenética</li>
+<li>Perda de Fidelidade Epigenética</li>
+<li>Perda de Heterocromatina</li>
+<li>Desregulação da Memória Epigenética</li>
+<li>Alterações de Nucleossomas e Histonas</li>
+<li>Reprogramação Transcricional Aberrante</li>
+<li>Desorganização da Arquitetura Nuclear</li>
+<li>Deterioração da Lâmina Nuclear e dos Domínios Associados à Lâmina</li>
+<li>Ativação de Retrotransposões</li>
+<li>Desregulação de Retrovírus Endógenos</li>
+<li>Acumulação de Mutações Somáticas</li>
+<li>Mosaicismo Somático / Tecidual</li>
+<li>Hematopoiese Clonal (CHIP)</li>
+<li>Disfunção dos Cílios Primários</li>
+</ul>
+</section>
+<section class="card" id="rna-proteostase">
+<h2><span class="n" aria-hidden="true">3</span><span data-en="RNA and proteostasis">RNA e proteostase</span></h2>
+<ul class="objs">
+<li>Desregulação do RNA</li>
+<li>Transcrição Críptica</li>
+<li>Erros de Splicing</li>
+<li>Aumento da Velocidade de Elongação Transcricional</li>
+<li>Declínio Transcricional Dependente do Tamanho do Gene</li>
+<li>Agregação Proteica</li>
+<li>Falha das Chaperonas Moleculares</li>
+<li>Disfunção do Proteassoma</li>
+<li>Disfunção Lisossomal</li>
+<li>Autofagia Mediada por Chaperonas Reduzida</li>
+<li>ER-fagia Defeituosa</li>
+<li>Remodelação do Retículo Endoplasmático</li>
+<li>Disfunção do Retículo Endoplasmático</li>
+</ul>
+</section>
+<section class="card" id="mitocondrias">
+<h2><span class="n" aria-hidden="true">4</span><span data-en="Mitochondria">Mitocôndrias</span></h2>
+<ul class="objs">
+<li>Declínio da Fosforilação Oxidativa</li>
+<li>Alterações da Dinâmica Mitocondrial</li>
+<li>Controlo de Qualidade Mitocondrial Defeituoso</li>
+<li>Desregulação do Cálcio Mitocondrial</li>
+<li>Mutações no DNA Mitocondrial</li>
+<li>Libertação de DAMPs Mitocondriais</li>
+<li>Declínio do NAD+</li>
+<li>Desequilíbrio Redox</li>
+<li>Stress Oxidativo</li>
+<li>Disfunção Peroxissomal</li>
+<li>Falha na Comunicação Peroxissoma-Mitocôndria</li>
+</ul>
+</section>
+<section class="card" id="metabolismo">
+<h2><span class="n" aria-hidden="true">5</span><span data-en="Metabolism">Metabolismo</span></h2>
+<ul class="objs">
+<li>Declínio da Homeostase Metabólica</li>
+<li>Resistência à Insulina</li>
+<li>Hiperglicemia e Intolerância à Glicose</li>
+<li>Disfunção do Tecido Adiposo</li>
+<li>Declínio da Termogénese</li>
+<li>Desregulação Endócrina</li>
+<li>Declínio do Sinal Estrogénico</li>
+<li>Alterações da Tiroide</li>
+<li>Acumulação de Produtos Finais de Glicação Avançada (AGEs)</li>
+</ul>
+</section>
+<section class="card" id="inflamacao-matriz">
+<h2><span class="n" aria-hidden="true">6</span><span data-en="Inflammation and matrix">Inflamação e matriz</span></h2>
+<ul class="objs">
+<li>Inflammaging</li>
+<li>Imunossenescência</li>
+<li>Involução Tímica</li>
+<li>Perda de Células T Naive</li>
+<li>Restrição do Repertório TCR</li>
+<li>Disfunção da Barreira Intestinal</li>
+<li>Remodelação da Matriz Extracelular</li>
+<li>Rigidez da Matriz Extracelular</li>
+<li>Fragmentação da Elastina</li>
+<li>Envelhecimento Vascular</li>
+<li>Rigidez Arterial</li>
+</ul>
+</section>
+<section class="card" id="circadiano-cerebro">
+<h2><span class="n" aria-hidden="true">7</span><span data-en="Circadian rhythm and brain">Ritmo circadiano e cérebro</span></h2>
+<ul class="objs">
+<li>Perturbações Circadianas</li>
+<li>Desincronização dos Relógios Biológicos</li>
+<li>Perturbação do Sono</li>
+<li>Disfunção Glinfática</li>
+<li>Neuroinflamação</li>
+<li>Disfunção da Barreira Hematoencefálica</li>
+</ul>
+</section>
+<section class="card" id="musculo-osso">
+<h2><span class="n" aria-hidden="true">8</span><span data-en="Muscle and bone">Músculo e osso</span></h2>
+<ul class="objs">
+<li>Sarcopenia</li>
+<li>Perda de Massa Magra</li>
+<li>Perda de Força Muscular</li>
+<li>Atrofia Muscular</li>
+<li>Disfunção da Junção Neuromuscular</li>
+<li>Osteoporose</li>
+<li>Fragilidade</li>
+</ul>
+</section>
+</main>
 <script>
 let LANG='pt';try{if(localStorage.getItem('lang')==='en')LANG='en'}catch(e){}
 {const q=/[?&]lang=(en|pt)(?:&|#|$)/i.exec(location.search);if(q)LANG=q[1].toLowerCase()}
