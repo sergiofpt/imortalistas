@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex,nofollow">
 <meta name="referrer" content="no-referrer">
 <link rel="icon" href="data:,">
-<title>Editar suplementos</title>
+<title>Editar páginas</title>
 <meta name="color-scheme" content="light dark">
 <script>(function(){var d=document.documentElement,t=null;try{t=localStorage.getItem('theme')}catch(e){}if(t!=='dark'&&t!=='light')t='dark';d.setAttribute('data-theme',t)})()</script>
 <style>
@@ -19,7 +19,8 @@ h1{font-size:22px;margin:0 0 8px}
 p{color:var(--mut);margin:0 0 14px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
 label{display:block;font-size:13px;font-weight:650;margin:0 0 6px}
-input,textarea{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+input,textarea,select{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+select{margin:0 0 12px}
 textarea{min-height:70vh;font:14px/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;resize:vertical}
 .row{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
 button,a.btn{font:inherit;font-weight:650;border:0;border-radius:10px;padding:10px 14px;background:var(--acc);color:#fff;cursor:pointer;text-decoration:none}
@@ -44,36 +45,53 @@ button.ghost,a.ghost{background:transparent;color:var(--ink);border:1px solid va
 </form>
 </div>
 <div id="app">
-<h1>Suplementos + Medicação</h1>
+<h1>Editar páginas</h1>
 <p>Bloco de notas. Uma linha por item. Um título começa com <b>#</b>. A dose, se houver, vai depois de <b>—</b>. Guardar altera a página só neste browser.</p>
+<label for="page">Página</label>
+<select id="page">
+<option value="sf-suplementos-notepad" data-file="data/suplementos.txt" data-href="suplementos.html">Suplementos + Medicação</option>
+<option value="sf-pele-cabelo-notepad" data-file="data/pele-cabelo.txt" data-href="pele-cabelo.html">Pele e Cabelo</option>
+<option value="sf-sono-notepad" data-file="data/sono.txt" data-href="sono.html">Sono</option>
+<option value="sf-dieta-notepad" data-file="data/dieta.txt" data-href="dieta.html">Dieta</option>
+<option value="sf-terapias-notepad" data-file="data/terapias.txt" data-href="terapias.html">Terapias</option>
+<option value="sf-treino-notepad" data-file="data/treino.txt" data-href="treino.html">Treino</option>
+</select>
 <textarea id="note" spellcheck="false" aria-label="Texto da página"></textarea>
 <div class="row">
 <button type="button" id="save">Guardar</button>
 <button type="button" class="ghost" id="reset">Repor o texto original</button>
-<a class="btn ghost" href="suplementos.html">Ver página</a>
+<a class="btn ghost" id="view" href="suplementos.html">Ver página</a>
 <button type="button" class="ghost" id="out">Sair</button>
 </div>
 <p class="ok" id="msg" role="status"></p>
 </div>
 </main>
 <script>
-const KEY='sf-suplementos-notepad';
 const AUTH='sf-sup-auth';
 const gate=document.getElementById('gate');
 const app=document.getElementById('app');
 const note=document.getElementById('note');
 const msg=document.getElementById('msg');
-let original='';
+const sel=document.getElementById('page');
+const view=document.getElementById('view');
+const originals={};
+let req=0;
 
 function logged(){try{return sessionStorage.getItem(AUTH)==='1'}catch(e){return false}}
 function show(on){gate.style.display=on?'none':'block';app.style.display=on?'block':'none'}
-
-async function loadOriginal(){
-  const r=await fetch('data/suplementos.txt',{cache:'no-cache'});
-  if(!r.ok) throw new Error('texto original');
-  original=(await r.text()).replace(/\s+$/,'')+'\n';
+function current(){
+  const o=sel.options[sel.selectedIndex];
+  return {key:o.value,file:o.getAttribute('data-file'),href:o.getAttribute('data-href'),label:o.textContent};
 }
-function savedText(){try{return localStorage.getItem(KEY)}catch(e){return null}}
+async function loadOriginal(page){
+  if(originals[page.key]!=null) return originals[page.key];
+  const r=await fetch(page.file,{cache:'no-cache'});
+  if(!r.ok) throw new Error('texto original');
+  const text=(await r.text()).replace(/\s+$/,'')+'\n';
+  originals[page.key]=text;
+  return text;
+}
+function savedText(page){try{return localStorage.getItem(page.key)}catch(e){return null}}
 
 document.getElementById('login').addEventListener('submit',function(e){
   e.preventDefault();
@@ -88,22 +106,40 @@ document.getElementById('login').addEventListener('submit',function(e){
   }
 });
 
-async function openEditor(){
-  show(true);
-  if(!original){try{await loadOriginal()}catch(e){msg.textContent='Não foi possível ler o texto original.';}}
-  const saved=savedText();
-  note.value=(saved&&saved.trim())?saved:original;
-}
-document.getElementById('save').addEventListener('click',function(){
+async function showPage(page){
+  const n=++req;
+  view.href=page.href;
+  msg.textContent='';
   try{
-    localStorage.setItem(KEY,note.value);
-    msg.textContent='Guardado neste browser. Abre Suplementos + Medicação aqui para ver.';
+    const original=await loadOriginal(page);
+    if(n!==req) return;
+    const saved=savedText(page);
+    note.value=(saved&&saved.trim())?saved:original;
+  }catch(e){
+    if(n!==req) return;
+    note.value='';
+    msg.textContent='Não foi possível ler o texto original.';
+  }
+}
+function openEditor(){
+  show(true);
+  showPage(current());
+}
+sel.addEventListener('change',function(){showPage(current())});
+document.getElementById('save').addEventListener('click',function(){
+  const page=current();
+  try{
+    localStorage.setItem(page.key,note.value);
+    msg.textContent='Guardado neste browser. A alteração só aparece neste browser.';
   }catch(e){msg.textContent='Não foi possível guardar.';}
 });
-document.getElementById('reset').addEventListener('click',function(){
-  try{localStorage.removeItem(KEY)}catch(e){}
-  note.value=original;
-  msg.textContent='Reposto o texto do site. A página pública neste browser volta ao original.';
+document.getElementById('reset').addEventListener('click',async function(){
+  const page=current();
+  try{localStorage.removeItem(page.key)}catch(e){}
+  try{
+    note.value=await loadOriginal(page);
+    msg.textContent='Reposto o texto do site. A página pública neste browser volta ao original.';
+  }catch(e){msg.textContent='Não foi possível ler o texto original.';}
 });
 document.getElementById('out').addEventListener('click',function(){
   try{sessionStorage.removeItem(AUTH)}catch(e){}

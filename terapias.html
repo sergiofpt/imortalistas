@@ -37,7 +37,7 @@ h1{margin:0 0 6px;font-size:28px;letter-spacing:-.3px}
 .lead{margin:0 0 16px;color:var(--mut)}
 .secnav{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 22px}
 .secnav a{padding:5px 11px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);text-decoration:none;font-size:13px}
-.secnav a:hover{background:var(--nab)}
+.secnav a:hover{background:var(--nab)}.secnav:empty{display:none}
 section{margin:0 0 18px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px}
 h2{font-size:20px;margin:0 0 12px;letter-spacing:-.2px}
@@ -68,8 +68,7 @@ main a{color:var(--acc)}
 <body data-title-pt="Sérgio F · Terapias" data-title-en="Sérgio F · Therapies">
 <header class="top"><div class="topin">
 <nav class="main" id="nav">
-<a href="inicio.html" data-en="Home">Início</a><a href="index.html#sangue" data-en="Tests">Análises</a><details class="dd"><summary data-en="Genetics">Genética</summary><div class="ddmenu"><a href="genetica-reports.html" data-en="Genetics Reports">Genética Reports</a><a href="genetica-boa.html" data-en="Good Genetics">Genética Boa</a><a href="genetica.html" data-en="Bad Genetics">Genética Má</a></div></details><a href="suplementos.html" data-en="Supplements + Medication">Suplementos + Medicação</a>
-<a href="pele-cabelo.html" data-en="Skin and Hair">Pele e Cabelo</a><a href="sono.html" data-en="Sleep">Sono</a><a href="dieta.html" data-en="Diet">Dieta</a><a href="terapias.html" class="active" aria-current="page" data-en="Therapies">Terapias</a><a href="treino.html" data-en="Training">Treino</a></nav>
+<a href="inicio.html" data-en="Home">Início</a><a href="index.html#sangue" data-en="Tests">Análises</a><details class="dd"><summary data-en="Genetics">Genética</summary><div class="ddmenu"><a href="genetica-reports.html" data-en="Genetics Reports">Genética Reports</a><a href="genetica-boa.html" data-en="Good Genetics">Genética Boa</a><a href="genetica.html" data-en="Bad Genetics">Genética Má</a></div></details><details class="dd on"><summary data-en="Protocol">Protocolo</summary><div class="ddmenu"><a href="pele-cabelo.html" data-en="Skin and Hair">Pele e Cabelo</a><a href="sono.html" data-en="Sleep">Sono</a><a href="dieta.html" data-en="Diet">Dieta</a><a href="terapias.html" class="active" aria-current="page" data-en="Therapies">Terapias</a><a href="treino.html" data-en="Training">Treino</a><a href="suplementos.html" data-en="Supplements + Medication">Suplementos + Medicação</a></div></details></nav>
 <div class="tools">
 <div class="lang" id="lang" role="group" aria-label="Idioma / Language"><button type="button" data-l="pt" lang="pt-PT">Português</button><span class="sep" aria-hidden="true">|</span><button type="button" data-l="en" lang="en">English</button></div>
 <div class="lang" id="theme" role="group" aria-label="Tema" data-al-en="Theme"><button type="button" data-t="dark" data-en="Dark">Escuro</button><span class="sep" aria-hidden="true">|</span><button type="button" data-t="light" data-en="Light">Claro</button></div>
@@ -78,19 +77,49 @@ main a{color:var(--acc)}
 <main>
 <h1>Terapias</h1>
 <p class="lead">Apenas terapias fixas na rotina, constantemente a testar outras. Registo pessoal de Sérgio F. Não é uma recomendação.</p>
-<section class="card"><ul class="stack">
-<li><span class="nm">Troca plasmática terapêutica (plasmaférese)</span></li>
-<li><span class="nm">Red Light 820 nm + 620 nm – 10 min, 3x por semana</span></li>
-<li><span class="nm">10000 LUX (circadiano)</span></li>
-<li><span class="nm">HBOT (Oxigenoterapia Hiperbárica) – uso diário</span></li>
-<li><span class="nm">Sauna seca 90 °C 20min – 4x por semana</span></li>
-<li><span class="nm">Pulsetto – uso diário 20min (estimulação do nervo vago)</span></li>
-<li><span class="nm">Apollo Neuro – uso diário 2h (regulação do sistema nervoso autónomo)</span></li>
-<li><span class="nm">Pulsate – uso diário 10min (estimulação neuromuscular / recuperação / Meditação)</span></li>
-<li><span class="nm">Meditação – 20-40 minutos todos os dias</span></li>
-<li><span class="nm">Água com acrescimo de Hidrogenio 1L por dia (Echo Water)</span></li>
-</ul></section>
+<nav class="secnav" id="secnav" aria-label="Secções"></nav>
+<div id="out"></div>
 </main>
+<script>
+(function(){
+const KEY='sf-terapias-notepad';
+const FILE='data/terapias.txt';
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function slug(s){return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,40)||'sec'}
+function render(text){
+  const lines=String(text||'').replace(/\r\n/g,'\n').split('\n');
+  const secs=[];
+  let cur=null;
+  lines.forEach(function(raw){
+    const line=raw.trim();
+    if(!line) return;
+    if(line.charAt(0)==='#'){
+      cur={title:line.replace(/^#+\s*/,''),items:[]};
+      secs.push(cur);
+      return;
+    }
+    if(!cur){cur={title:'',items:[]};secs.push(cur)}
+    const i=line.indexOf(' — ');
+    if(i===-1) cur.items.push({name:line,dose:''});
+    else cur.items.push({name:line.slice(0,i).trim(),dose:line.slice(i+3).trim()});
+  });
+  const used={};
+  const nav=document.getElementById('secnav');
+  nav.innerHTML=secs.filter(function(s){return s.title}).map(function(s){
+    let id=slug(s.title); if(used[id]) id=id+'-'+(++used[id]); else used[id]=1; s.id=id;
+    return '<a href="#'+id+'">'+esc(s.title)+'</a>';
+  }).join('');
+  document.getElementById('out').innerHTML=secs.map(function(s){
+    const lis=s.items.map(function(it){return '<li><span class="nm">'+esc(it.name)+'</span>'+(it.dose?'<span class="dose">'+esc(it.dose)+'</span>':'')+'</li>'}).join('');
+    return '<section'+(s.id?' id="'+s.id+'"':'')+' class="card">'+(s.title?'<h2>'+esc(s.title)+'</h2>':'')+'<ul class="stack">'+lis+'</ul></section>';
+  }).join('');
+}
+let saved=null; try{saved=localStorage.getItem(KEY)}catch(e){}
+if(saved&&saved.trim()) render(saved);
+else fetch(FILE,{cache:'no-cache'}).then(function(r){if(!r.ok)throw 0;return r.text()}).then(render).catch(function(){document.getElementById('out').innerHTML='<p class="lead">Não foi possível ler a lista.</p>'});
+})();
+</script>
+
 <script>
 let LANG='pt';try{if(localStorage.getItem('lang')==='en')LANG='en'}catch(e){}
 {const q=/[?&]lang=(en|pt)(?:&|#|$)/i.exec(location.search);if(q)LANG=q[1].toLowerCase()}
