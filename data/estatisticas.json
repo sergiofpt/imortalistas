@@ -1,15 +1,15 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-06T20:22:13Z",
+ "atualizado_em": "2026-10-06T20:47:47Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
-  "visitas": 41,
-  "visitas_30d": 41,
-  "visitas_90d": 41,
+  "visitas": 47,
+  "visitas_30d": 47,
+  "visitas_90d": 47,
   "aberturas_pdf": 25,
-  "visitas_hoje": 16,
-  "visitas_7d": 41,
+  "visitas_hoje": 22,
+  "visitas_7d": 47,
   "aberturas_hoje": 1,
   "aberturas_7d": 25,
   "aberturas_30d": 25,
@@ -46,14 +46,14 @@
   },
   {
    "dia": "2026-10-06",
-   "visitas": 16,
+   "visitas": 22,
    "aberturas": 1
   }
  ],
  "paginas": [
   {
    "path": "/imortalistas/genetica-reports.html",
-   "visitas": 22
+   "visitas": 26
   },
   {
    "path": "/imortalistas/teste-worker",
@@ -73,6 +73,10 @@
   },
   {
    "path": "/imortalistas/index.html",
+   "visitas": 2
+  },
+  {
+   "path": "/imortalistas/inicio.html",
    "visitas": 2
   }
  ],
@@ -238,14 +242,14 @@
    "tipo": "android",
    "nome": "Samsung Galaxy S24",
    "estimativa": false,
-   "visitas": 5
+   "visitas": 7
   },
   {
    "id": "computador/linux-chrome",
    "tipo": "computador",
    "nome": "Linux · Chrome",
    "estimativa": false,
-   "visitas": 4
+   "visitas": 6
   },
   {
    "id": "computador/linux-firefox",
@@ -269,6 +273,13 @@
    "visitas": 2
   },
   {
+   "id": "android/android",
+   "tipo": "android",
+   "nome": "Android",
+   "estimativa": false,
+   "visitas": 1
+  },
+  {
    "id": "computador/chromeos-chrome",
    "tipo": "computador",
    "nome": "ChromeOS · Chrome",
@@ -286,6 +297,13 @@
    "id": "android/samsung-galaxy-a54",
    "tipo": "android",
    "nome": "Samsung Galaxy A54",
+   "estimativa": false,
+   "visitas": 1
+  },
+  {
+   "id": "android/samsung-galaxy-a55",
+   "tipo": "android",
+   "nome": "Samsung Galaxy A55",
    "estimativa": false,
    "visitas": 1
   },
@@ -329,12 +347,12 @@
   {
    "id": "PT",
    "nome": "Portugal",
-   "visitas": 34
+   "visitas": 36
   },
   {
    "id": "US",
    "nome": "United States",
-   "visitas": 26
+   "visitas": 30
   },
   {
    "id": "BR",
@@ -371,7 +389,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 44
+   "visitas": 50
   },
   {
    "id": "Firefox",
@@ -391,14 +409,14 @@
    "visitas": 35
   },
   {
-   "id": "Linux",
-   "nome": "Linux",
-   "visitas": 13
-  },
-  {
    "id": "Android",
    "nome": "Android",
-   "visitas": 12
+   "visitas": 16
+  },
+  {
+   "id": "Linux",
+   "nome": "Linux",
+   "visitas": 15
   },
   {
    "id": "Chrome OS",
@@ -420,7 +438,7 @@
   {
    "id": "phone",
    "nome": "phone",
-   "visitas": 8
+   "visitas": 12
   },
   {
    "id": "tablet",
@@ -430,7 +448,7 @@
   {
    "id": "desktop",
    "nome": "desktop",
-   "visitas": 27
+   "visitas": 29
   },
   {
    "id": "unknown",
@@ -442,7 +460,7 @@
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 59
+   "visitas": 65
   },
   {
    "id": "https://bing.com",
@@ -491,7 +509,7 @@
     },
     {
      "dia": "2026-10-06",
-     "visitas": 0,
+     "visitas": 2,
      "aberturas": 1
     }
    ],
@@ -499,6 +517,10 @@
     {
      "path": "/imortalistas/teste-worker",
      "visitas": 5
+    },
+    {
+     "path": "/imortalistas/inicio.html",
+     "visitas": 2
     }
    ],
    "relatorios": [
@@ -583,16 +605,30 @@
      "nome": "Windows 10/11 · Chrome",
      "estimativa": false,
      "visitas": 2
+    },
+    {
+     "id": "android/android",
+     "tipo": "android",
+     "nome": "Android",
+     "estimativa": false,
+     "visitas": 1
+    },
+    {
+     "id": "android/samsung-galaxy-a55",
+     "tipo": "android",
+     "nome": "Samsung Galaxy A55",
+     "estimativa": false,
+     "visitas": 1
     }
    ],
    "aparelhos_desde": "2026-10-03",
    "total": {
-    "visitas": 5,
-    "visitas_30d": 5,
-    "visitas_90d": 5,
+    "visitas": 7,
+    "visitas_30d": 7,
+    "visitas_90d": 7,
     "aberturas_pdf": 7,
-    "visitas_hoje": 0,
-    "visitas_7d": 5,
+    "visitas_hoje": 2,
+    "visitas_7d": 7,
     "aberturas_hoje": 1,
     "aberturas_7d": 7,
     "aberturas_30d": 7,
@@ -605,7 +641,7 @@
     {
      "id": "PT",
      "nome": "Portugal",
-     "visitas": 34
+     "visitas": 36
     }
    ]
   },
@@ -638,14 +674,14 @@
     },
     {
      "dia": "2026-10-06",
-     "visitas": 16,
+     "visitas": 20,
      "aberturas": 0
     }
    ],
    "paginas": [
     {
      "path": "/imortalistas/genetica-reports.html",
-     "visitas": 18
+     "visitas": 22
     },
     {
      "path": "/imortalistas/",
@@ -734,14 +770,14 @@
      "tipo": "android",
      "nome": "Samsung Galaxy S24",
      "estimativa": false,
-     "visitas": 5
+     "visitas": 7
     },
     {
      "id": "computador/linux-chrome",
      "tipo": "computador",
      "nome": "Linux · Chrome",
      "estimativa": false,
-     "visitas": 3
+     "visitas": 5
     },
     {
      "id": "computador/windows-10-11-chrome",
@@ -816,12 +852,12 @@
    ],
    "aparelhos_desde": "2026-10-03",
    "total": {
-    "visitas": 22,
-    "visitas_30d": 22,
-    "visitas_90d": 22,
+    "visitas": 26,
+    "visitas_30d": 26,
+    "visitas_90d": 26,
     "aberturas_pdf": 7,
-    "visitas_hoje": 16,
-    "visitas_7d": 22,
+    "visitas_hoje": 20,
+    "visitas_7d": 26,
     "aberturas_hoje": 0,
     "aberturas_7d": 7,
     "aberturas_30d": 7,
@@ -834,7 +870,7 @@
     {
      "id": "US",
      "nome": "United States",
-     "visitas": 26
+     "visitas": 30
     },
     {
      "id": "BR",
