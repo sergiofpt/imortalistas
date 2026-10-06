@@ -1,15 +1,15 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-06T00:29:09Z",
+ "atualizado_em": "2026-10-06T01:18:39Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
-  "visitas": 25,
-  "visitas_30d": 25,
-  "visitas_90d": 25,
+  "visitas": 28,
+  "visitas_30d": 28,
+  "visitas_90d": 28,
   "aberturas_pdf": 24,
-  "visitas_hoje": 0,
-  "visitas_7d": 25,
+  "visitas_hoje": 3,
+  "visitas_7d": 28,
   "aberturas_hoje": 0,
   "aberturas_7d": 24,
   "aberturas_30d": 24,
@@ -46,14 +46,14 @@
   },
   {
    "dia": "2026-10-06",
-   "visitas": 0,
+   "visitas": 3,
    "aberturas": 0
   }
  ],
  "paginas": [
   {
    "path": "/imortalistas/genetica-reports.html",
-   "visitas": 8
+   "visitas": 10
   },
   {
    "path": "/imortalistas/teste-worker",
@@ -73,7 +73,7 @@
   },
   {
    "path": "/imortalistas/index.html",
-   "visitas": 1
+   "visitas": 2
   }
  ],
  "relatorios": [
@@ -241,6 +241,13 @@
    "visitas": 3
   },
   {
+   "id": "android/samsung-galaxy-s24",
+   "tipo": "android",
+   "nome": "Samsung Galaxy S24",
+   "estimativa": false,
+   "visitas": 3
+  },
+  {
    "id": "computador/windows-10-11-chrome",
    "tipo": "computador",
    "nome": "Windows 10/11 · Chrome",
@@ -299,7 +306,7 @@
   {
    "id": "US",
    "nome": "United States",
-   "visitas": 11
+   "visitas": 14
   },
   {
    "id": "BR",
@@ -331,7 +338,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 31
+   "visitas": 34
   },
   {
    "id": "Firefox",
@@ -351,14 +358,14 @@
    "visitas": 29
   },
   {
-   "id": "Linux",
-   "nome": "Linux",
+   "id": "Android",
+   "nome": "Android",
    "visitas": 9
   },
   {
-   "id": "Android",
-   "nome": "Android",
-   "visitas": 6
+   "id": "Linux",
+   "nome": "Linux",
+   "visitas": 9
   },
   {
    "id": "Chrome OS",
@@ -380,7 +387,7 @@
   {
    "id": "phone",
    "nome": "phone",
-   "visitas": 3
+   "visitas": 6
   },
   {
    "id": "tablet",
@@ -402,7 +409,7 @@
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 46
+   "visitas": 49
   },
   {
    "id": "https://www.rapamycin.news",
@@ -593,14 +600,14 @@
     },
     {
      "dia": "2026-10-06",
-     "visitas": 0,
+     "visitas": 3,
      "aberturas": 0
     }
    ],
    "paginas": [
     {
      "path": "/imortalistas/genetica-reports.html",
-     "visitas": 4
+     "visitas": 6
     },
     {
      "path": "/imortalistas/",
@@ -608,6 +615,10 @@
     },
     {
      "path": "/imortalistas/genetica-boa.html",
+     "visitas": 1
+    },
+    {
+     "path": "/imortalistas/index.html",
      "visitas": 1
     }
    ],
@@ -681,6 +692,13 @@
    ],
    "aparelhos": [
     {
+     "id": "android/samsung-galaxy-s24",
+     "tipo": "android",
+     "nome": "Samsung Galaxy S24",
+     "estimativa": false,
+     "visitas": 3
+    },
+    {
      "id": "computador/chromeos-chrome",
      "tipo": "computador",
      "nome": "ChromeOS · Chrome",
@@ -711,12 +729,12 @@
    ],
    "aparelhos_desde": "2026-10-03",
    "total": {
-    "visitas": 6,
-    "visitas_30d": 6,
-    "visitas_90d": 6,
+    "visitas": 9,
+    "visitas_30d": 9,
+    "visitas_90d": 9,
     "aberturas_pdf": 7,
-    "visitas_hoje": 0,
-    "visitas_7d": 6,
+    "visitas_hoje": 3,
+    "visitas_7d": 9,
     "aberturas_hoje": 0,
     "aberturas_7d": 7,
     "aberturas_30d": 7,
@@ -729,7 +747,7 @@
     {
      "id": "US",
      "nome": "United States",
-     "visitas": 11
+     "visitas": 14
     },
     {
      "id": "BR",
