@@ -158,6 +158,16 @@ main a.btn.pri{background:var(--acc);border-color:var(--acc);color:var(--actfg)}
 /* telemóvel: as áreas ficam numa linha que desliza na horizontal (a lista começa logo a seguir; a orla direita esbatida mostra que há mais) */
 @media(max-width:640px){.rsearch input[type=search]{flex:1 1 100%;max-width:none}.chips{flex-wrap:nowrap;gap:6px;overflow-x:auto;scrollbar-width:none;overscroll-behavior-x:contain;margin:0 -12px 14px;padding:0 28px 2px 12px;scroll-padding:0 12px;-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 36px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 36px),transparent)}.chips::-webkit-scrollbar{display:none}.chip{flex:0 0 auto;font-size:12.5px;padding:6px 10px}}
 .rlangs{margin:8px 0 0;font-size:12.5px;color:var(--mut)}.rlangs a{font-weight:600;padding:2px 4px;border-radius:6px}.rlangs a.cur{color:var(--ink);text-decoration:none;background:var(--nab)}.rlangs .sep{color:var(--na);margin:0 2px}
+.rpager{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:center;margin:18px 0 4px}
+.rpager[hidden]{display:none}
+.rpager .pinfo{font-size:13.5px;color:var(--mut);font-variant-numeric:tabular-nums;margin-right:4px}
+.rpager .pinfo b{color:var(--ink)}
+.rpager button{font:inherit;font-size:13.5px;font-weight:600;min-width:38px;padding:8px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);cursor:pointer}
+.rpager button:hover:not(:disabled){background:var(--nab)}
+.rpager button:disabled{opacity:.4;cursor:default}
+.rpager button[aria-current="page"]{background:var(--acc);border-color:var(--acc);color:var(--actfg)}
+.rpager button:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+@media(max-width:640px){.rpager{gap:6px}.rpager button{min-width:34px;padding:7px 10px;font-size:13px}}
 </style>
 </head>
 <body data-json="data/reports.json" data-title-pt="Sérgio F · Genética Reports" data-title-en="Sérgio F · Genetics Reports">
@@ -185,6 +195,7 @@ main a.btn.pri{background:var(--acc);border-color:var(--acc);color:var(--actfg)}
 <div class="chips" id="rAreas" role="group" aria-label="Filtrar por área" data-al-en="Filter by area"></div>
 <div id="rFeat"></div>
 <div class="rlist" id="rList"><div class="card mut"><span class="l-pt">A carregar data/reports.json…</span><span class="l-en">Loading data/reports.json…</span></div></div>
+<nav class="rpager" id="rPager" hidden aria-label="Paginação dos relatórios" data-al-en="Report pagination"></nav>
 </section>
 </main>
 <footer><span class="l-pt">Compilado a 04-10-2026 (PT). Relatórios genéticos completos em PDF, em português e em inglês (no modo English os botões descarregam a versão inglesa; a ligação PT | EN de cada cartão dá as duas); pesquisa por título, resumo, genes e palavras-chave e filtros por área; etiqueta Novo nos 14 dias a seguir à publicação; cada novo relatório é uma entrada em data/reports.json com o PDF em reports/ (mesmo site); sem cookies; só uma contagem anónima de visitas e de PDFs abertos. Documento de apoio: não substitui o médico; tudo é sugestão que precisa de validação médica. Ver também <a href="genetica.html">Genética Má</a>, <a href="genetica-boa.html">Genética Boa</a> e <a href="index.html">Cronologia de Exames de Sangue</a>.</span><span class="l-en">Compiled on 04-10-2026 (PT). Full genetics reports as PDFs, in Portuguese and in English (in English mode the buttons download the English version; each card's PT | EN link gives both); search by title, summary, genes and keywords, and filters by area; a New label for 14 days after publication; each new report is one entry in data/reports.json with the PDF in reports/ (same site); no cookies; only an anonymous count of visits and opened PDFs. Supporting document: not a substitute for a doctor; everything is a suggestion that needs medical validation. See also <a href="genetica.html">Bad Genetics</a>, <a href="genetica-boa.html">Good Genetics</a> and <a href="index.html">Blood Test Timeline</a>.</span></footer>
@@ -207,6 +218,8 @@ const okFileEn=f=>okFile(f)&&/_en\.pdf$/.test(f);
 // ligações dos PDFs pelo serviço de contagem (window.SF_W, em sf.js): …/r/<ficheiro>.pdf conta a abertura e devolve o PDF do site (?dl=1 = descarregar); sem serviço, reports/<ficheiro>.pdf
 const PDFU=(f,dl)=>{const W=window.SF_W;return W&&/^reports\/[a-z0-9][a-z0-9_-]*\.pdf$/.test(f)?String(W).replace(/\/+$/,'')+'/r/'+f.slice(8)+(dl?'?dl=1':''):f};
 let RD=null,RERR=null,Q='';const SEL=new Set();  // Q = pesquisa; SEL = áreas escolhidas (ids de data/reports.json "areas"; várias = qualquer uma delas)
+const PAGE_SIZE=9;  // grelha: no máximo 9 reports por página (+ documento-mestre em cima, fora da paginação)
+let PAGE=1;
 const norm=s=>String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
 const NOVO_DIAS=14;  // etiqueta Novo/New: publicado há menos de 14 dias (contados no browser, pela data local de quem visita)
 const okDate=s=>typeof s==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(s);
@@ -225,8 +238,8 @@ const hitQ=(r,tk)=>{if(!tk.length)return true;const h=hay(r);return tk.every(t=>
 const hitA=r=>!SEL.size||rAreas(r).some(id=>SEL.has(id));
 // genes que a pesquisa encontrou (mostrados no cartão, para se perceber porque aparece)
 const genesHit=(r,tk)=>tk.length?list(r.genes).filter(g=>{const n=norm(g);return tk.some(t=>n===t||(t.length>=3&&n.startsWith(t)))}).slice(0,8):[];
-function render(){const box=document.getElementById('rList'),meta=document.getElementById('rMeta'),cnt=document.getElementById('rCount'),chips=document.getElementById('rAreas');
- if(RERR){document.getElementById('rFeat').innerHTML='';chips.innerHTML='';box.innerHTML=`<div class="card mut">${L('Não foi possível carregar','Could not load')} ${esc(SRC)} (${esc(RERR.message)}). ${L('Se abriu o ficheiro localmente, sirva a pasta com','If you opened the file locally, serve the folder with')} <code>python3 -m http.server</code>.</div>`;return}
+function render(){const box=document.getElementById('rList'),meta=document.getElementById('rMeta'),cnt=document.getElementById('rCount'),chips=document.getElementById('rAreas'),pager=document.getElementById('rPager');
+ if(RERR){document.getElementById('rFeat').innerHTML='';chips.innerHTML='';pager.hidden=true;pager.innerHTML='';box.innerHTML=`<div class="card mut">${L('Não foi possível carregar','Could not load')} ${esc(SRC)} (${esc(RERR.message)}). ${L('Se abriu o ficheiro localmente, sirva a pasta com','If you opened the file locally, serve the folder with')} <code>python3 -m http.server</code>.</div>`;return}
  if(!RD)return;
  // mais recente primeiro: data de publicação (ou a data do relatório), depois o título
  const when=r=>okDate(r.publicado)?r.publicado:String(r.data||'');
@@ -235,6 +248,12 @@ function render(){const box=document.getElementById('rList'),meta=document.getEl
  const F=ALL.filter(r=>r.destaque===true),R=ALL.filter(r=>r.destaque!==true);
  const tk=toks(),hit=r=>hitQ(r,tk)&&hitA(r);
  const vis=R.filter(hit),fhit=F.filter(hit).length;
+ // Se o hash aponta para um report da grelha, saltar para a página certa (uma vez, ou quando o hash muda)
+ const hashId=location.hash?decodeURIComponent(location.hash.slice(1)):'';
+ if(hashId&&hashId!==render.lastHash){const ix=vis.findIndex(r=>r.id===hashId);if(ix>=0)PAGE=Math.floor(ix/PAGE_SIZE)+1;render.lastHash=hashId}
+ const pages=Math.max(1,Math.ceil(vis.length/PAGE_SIZE));
+ if(PAGE>pages)PAGE=pages;if(PAGE<1)PAGE=1;
+ const slice=vis.slice((PAGE-1)*PAGE_SIZE,PAGE*PAGE_SIZE);
  // botões das áreas (com quantos relatórios dão a pesquisa atual em cada área)
  const AA=AREAS();for(const id of [...SEL])if(!areaOf(id))SEL.delete(id);
  const nq=ALL.filter(r=>hitQ(r,tk));
@@ -257,21 +276,39 @@ function render(){const box=document.getElementById('rList'),meta=document.getEl
    `<div class="rbtns">`+(ok?`<a class="btn pri" href="${esc(PDFU(f,1))}" download="${esc(nome)}">${L('Descarregar PDF','Download PDF')}</a><a class="btn" href="${esc(PDFU(f))}" target="_blank" rel="noopener">${L('Abrir no browser','Open in browser')}</a>`:`<span class="pill bad">${L('Ficheiro inválido','Invalid file')}</span>`)+`</div>`+langs+`</article>`};
  document.getElementById('rFeat').innerHTML=F.filter(hit).map(r=>card(r,true)).join('');  // o documento-mestre também segue a pesquisa e as áreas
  const why=SEL.size?(tk.length?L('à pesquisa e às áreas escolhidas','the search and the chosen areas'):L('às áreas escolhidas','the chosen areas')):L('à pesquisa','the search');
- box.innerHTML=vis.length?vis.map(r=>card(r,false)).join('')
+ box.innerHTML=vis.length?slice.map(r=>card(r,false)).join('')
   :`<div class="card mut">${fhit?L(`Nenhum outro relatório corresponde ${why}.`,`No other report matches ${why}.`):L(`Nenhum relatório corresponde ${why}.`,`No report matches ${why}.`)}</div>`;
+ // Paginação da grelha (não inclui o mestre): Anterior / 1 2 3… / Seguinte
+ if(vis.length>PAGE_SIZE){
+  const nums=[];for(let i=1;i<=pages;i++){
+   const near=i===1||i===pages||Math.abs(i-PAGE)<=1;
+   if(!near){if(nums[nums.length-1]!=='…')nums.push('…');continue}
+   nums.push(i);
+  }
+  pager.hidden=false;
+  pager.innerHTML=`<span class="pinfo">${L('Página','Page')} <b>${PAGE}</b> ${L('de','of')} <b>${pages}</b> · ${vis.length} ${L('na lista','in list')}</span>`+
+   `<button type="button" data-p="prev" ${PAGE<=1?'disabled':''} aria-label="${L('Página anterior','Previous page')}">${L('Anterior','Prev')}</button>`+
+   nums.map(n=>n==='…'?`<span class="pinfo" aria-hidden="true">…</span>`:`<button type="button" data-p="${n}" aria-label="${L('Página','Page')} ${n}"${n===PAGE?' aria-current="page"':''}>${n}</button>`).join('')+
+   `<button type="button" data-p="next" ${PAGE>=pages?'disabled':''} aria-label="${L('Página seguinte','Next page')}">${L('Seguinte','Next')}</button>`;
+ }else{pager.hidden=true;pager.innerHTML=''}
  const N=ALL.length,n=vis.length+fhit;
- cnt.innerHTML=`<b>${n}</b> ${L('de','of')} ${N} ${L(N===1?'relatório':'relatórios',N===1?'report':'reports')}`;
+ const from=vis.length?(PAGE-1)*PAGE_SIZE+1:0,to=Math.min(PAGE*PAGE_SIZE,vis.length);
+ cnt.innerHTML=vis.length>PAGE_SIZE
+  ?`<b>${from}–${to}</b> ${L('de','of')} <b>${vis.length}</b> ${L('na grelha','in grid')} · <b>${n}</b> ${L('de','of')} ${N} ${L('no total','total')}`
+  :`<b>${n}</b> ${L('de','of')} ${N} ${L(N===1?'relatório':'relatórios',N===1?'report':'reports')}`;
  meta.innerHTML=`${N} ${L(N===1?'relatório':'relatórios',N===1?'report':'reports')} PDF<br>${L('Atualizado a','Updated on')} ${esc(fdate(RD.atualizado_em||''))} (PT)`;
- if(location.hash&&!render.done){render.done=true;const t=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(t)t.scrollIntoView()}}
+ if(location.hash&&!render.scrolled){render.scrolled=true;const t=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(t)t.scrollIntoView()}}
 function applyLang(){const en=LANG==='en';document.documentElement.lang=en?'en':'pt-PT';document.title=en?document.body.dataset.titleEn:document.body.dataset.titlePt;
  document.querySelectorAll('[data-en]').forEach(el=>{if(!el.hasAttribute('data-pt'))el.setAttribute('data-pt',el.textContent);el.textContent=en?el.dataset.en:el.dataset.pt});
  document.querySelectorAll('[data-al-en]').forEach(el=>{if(!el.hasAttribute('data-al-pt'))el.setAttribute('data-al-pt',el.getAttribute('aria-label'));el.setAttribute('aria-label',en?el.dataset.alEn:el.dataset.alPt)});
  document.querySelectorAll('[data-ph-en]').forEach(el=>{if(!el.hasAttribute('data-ph-pt'))el.setAttribute('data-ph-pt',el.getAttribute('placeholder'));el.setAttribute('placeholder',en?el.dataset.phEn:el.dataset.phPt)});
  document.querySelectorAll('#lang button').forEach(b=>{const on=b.dataset.l===LANG;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});render()}
 document.querySelectorAll('#lang button').forEach(b=>b.addEventListener('click',()=>{if(LANG===b.dataset.l)return;LANG=b.dataset.l;try{localStorage.setItem('lang',LANG)}catch(e){}try{if(/[?&]lang=/i.test(location.search)){const u=new URL(location.href);u.searchParams.set('lang',LANG);history.replaceState(history.state,'',u)}}catch(e){}applyLang()}));
-document.getElementById('rq').addEventListener('input',e=>{Q=e.target.value;render()});
+document.getElementById('rq').addEventListener('input',e=>{Q=e.target.value;PAGE=1;render.scrolled=false;render()});
 // áreas: clicar liga/desliga (várias = qualquer uma delas); "Todas" limpa
-document.getElementById('rAreas').addEventListener('click',e=>{const b=e.target.closest('button[data-a]');if(!b)return;const id=b.dataset.a;if(!id)SEL.clear();else if(SEL.has(id))SEL.delete(id);else SEL.add(id);render();const nb=document.querySelector(`#rAreas button[data-a="${CSS.escape(id)}"]`);if(nb)nb.focus()});
+document.getElementById('rAreas').addEventListener('click',e=>{const b=e.target.closest('button[data-a]');if(!b)return;const id=b.dataset.a;if(!id)SEL.clear();else if(SEL.has(id))SEL.delete(id);else SEL.add(id);PAGE=1;render.scrolled=false;render();const nb=document.querySelector(`#rAreas button[data-a="${CSS.escape(id)}"]`);if(nb)nb.focus()});
+document.getElementById('rPager').addEventListener('click',e=>{const b=e.target.closest('button[data-p]');if(!b||b.disabled)return;const v=b.dataset.p;if(v==='prev')PAGE--;else if(v==='next')PAGE++;else PAGE=+v||1;render.scrolled=false;render();document.getElementById('rList').scrollIntoView({behavior:'smooth',block:'start'})});
+addEventListener('hashchange',()=>{render.lastHash='';render.scrolled=false;render()});
 applyLang();
 fetch(SRC,{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error(SRC+': HTTP '+r.status);return r.json()}).then(d=>{RD=d;render()}).catch(e=>{console.warn(e);RERR=e;render()});
 
