@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="data:,">
+<title>Editar suplementos</title>
+<meta name="color-scheme" content="light dark">
+<script>(function(){var d=document.documentElement,t=null;try{t=localStorage.getItem('theme')}catch(e){}if(t!=='dark'&&t!=='light')t='dark';d.setAttribute('data-theme',t)})()</script>
+<style>
+:root{--bg:#f5f7fa;--card:#fff;--ink:#14202e;--mut:#5b6b7d;--line:#e3e8ef;--acc:#1f5eff;--nab:#eef1f5;--bad:#d93636;--ok:#0b7a3b;color-scheme:light}
+*{box-sizing:border-box}
+body{margin:0;font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+html[data-theme="dark"]{color-scheme:dark;--bg:#0e141d;--card:#161e2a;--ink:#e5eaf1;--mut:#9aa7b8;--line:#2a3545;--acc:#7a9dff;--nab:#222b39;--bad:#f06464;--ok:#63d99a}
+main{max-width:860px;margin:0 auto;padding:28px 16px 40px}
+h1{font-size:22px;margin:0 0 8px}
+p{color:var(--mut);margin:0 0 14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+label{display:block;font-size:13px;font-weight:650;margin:0 0 6px}
+input,textarea{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+textarea{min-height:70vh;font:14px/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;resize:vertical}
+.row{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+button,a.btn{font:inherit;font-weight:650;border:0;border-radius:10px;padding:10px 14px;background:var(--acc);color:#fff;cursor:pointer;text-decoration:none}
+button.ghost,a.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.err{color:var(--bad);font-size:13.5px;min-height:1.2em;margin:8px 0 0}
+.ok{color:var(--ok);font-size:13.5px;margin:8px 0 0}
+#app{display:none}
+</style>
+</head>
+<body>
+<main>
+<div id="gate" class="card">
+<h1>Entrar</h1>
+<p>Página de edição. Não está no menu.</p>
+<form id="login">
+<label for="user">Utilizador</label>
+<input id="user" name="user" autocomplete="username" required>
+<label for="pass" style="margin-top:10px">Palavra-passe</label>
+<input id="pass" name="pass" type="password" autocomplete="current-password" required>
+<p class="err" id="err" role="alert"></p>
+<div class="row"><button type="submit">Entrar</button></div>
+</form>
+</div>
+<div id="app">
+<h1>Suplementos + Medicação</h1>
+<p>Bloco de notas. Uma linha por item. Um título começa com <b>#</b>. A dose, se houver, vai depois de <b>—</b>. Guardar altera a página só neste browser.</p>
+<textarea id="note" spellcheck="false" aria-label="Texto da página"></textarea>
+<div class="row">
+<button type="button" id="save">Guardar</button>
+<button type="button" class="ghost" id="reset">Repor o texto original</button>
+<a class="btn ghost" href="suplementos.html">Ver página</a>
+<button type="button" class="ghost" id="out">Sair</button>
+</div>
+<p class="ok" id="msg" role="status"></p>
+</div>
+</main>
+<script>
+const KEY='sf-suplementos-notepad';
+const AUTH='sf-sup-auth';
+const gate=document.getElementById('gate');
+const app=document.getElementById('app');
+const note=document.getElementById('note');
+const msg=document.getElementById('msg');
+let original='';
+
+function logged(){try{return sessionStorage.getItem(AUTH)==='1'}catch(e){return false}}
+function show(on){gate.style.display=on?'none':'block';app.style.display=on?'block':'none'}
+
+async function loadOriginal(){
+  const r=await fetch('data/suplementos.txt',{cache:'no-cache'});
+  if(!r.ok) throw new Error('texto original');
+  original=(await r.text()).replace(/\s+$/,'')+'\n';
+}
+function savedText(){try{return localStorage.getItem(KEY)}catch(e){return null}}
+
+document.getElementById('login').addEventListener('submit',function(e){
+  e.preventDefault();
+  const u=document.getElementById('user').value.trim();
+  const p=document.getElementById('pass').value;
+  if(u==='admin'&&p==='admin'){
+    try{sessionStorage.setItem(AUTH,'1')}catch(err){}
+    document.getElementById('err').textContent='';
+    openEditor();
+  }else{
+    document.getElementById('err').textContent='Utilizador ou palavra-passe errados.';
+  }
+});
+
+async function openEditor(){
+  show(true);
+  if(!original){try{await loadOriginal()}catch(e){msg.textContent='Não foi possível ler o texto original.';}}
+  const saved=savedText();
+  note.value=(saved&&saved.trim())?saved:original;
+}
+document.getElementById('save').addEventListener('click',function(){
+  try{
+    localStorage.setItem(KEY,note.value);
+    msg.textContent='Guardado neste browser. Abre Suplementos + Medicação aqui para ver.';
+  }catch(e){msg.textContent='Não foi possível guardar.';}
+});
+document.getElementById('reset').addEventListener('click',function(){
+  try{localStorage.removeItem(KEY)}catch(e){}
+  note.value=original;
+  msg.textContent='Reposto o texto do site. A página pública neste browser volta ao original.';
+});
+document.getElementById('out').addEventListener('click',function(){
+  try{sessionStorage.removeItem(AUTH)}catch(e){}
+  show(false);
+  msg.textContent='';
+});
+if(logged()) openEditor();
+</script>
+</body>
+</html>
