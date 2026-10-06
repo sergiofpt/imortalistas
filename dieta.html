@@ -37,7 +37,7 @@ h1{margin:0 0 6px;font-size:28px;letter-spacing:-.3px}
 .lead{margin:0 0 16px;color:var(--mut)}
 .secnav{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 22px}
 .secnav a{padding:5px 11px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);text-decoration:none;font-size:13px}
-.secnav a:hover{background:var(--nab)}
+.secnav a:hover{background:var(--nab)}.secnav:empty{display:none}
 section{margin:0 0 18px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px}
 h2{font-size:20px;margin:0 0 12px;letter-spacing:-.2px}
@@ -78,53 +78,49 @@ main a{color:var(--acc)}
 <main>
 <h1>Dieta</h1>
 <p class="lead">Registo pessoal de Sérgio F. Não é uma recomendação.</p>
-<section class="card"><ul class="stack">
-<li><span class="nm">Jejum intermitente 23h (12h–13h)</span><span class="dose">Jejum de 72h 1×/mês</span></li>
-<li><span class="nm">3 litros de água</span><span class="dose">1 litro nos primeiros 10 minutos após acordar, 1 litro de chá</span></li>
-</ul></section>
-<section class="card">
-<h2>1st Meal</h2>
-<ul class="stack">
-<li><span class="nm">Shrimp (150 g)</span><span class="dose">148.5 kcal – 0 g C, 0.45 g F, 36 g P</span></li>
-<li><span class="nm">Jasmine Rice / Batata (150 g raw)</span><span class="dose">540 kcal – 118.5 g C, 0.9 g F, 10.5 g P</span></li>
-<li><span class="nm">Extra Virgin Olive Oil (45 ml)</span><span class="dose">382.5 kcal – 0 g C, 42.8 g F, 0 g P</span></li>
-<li><span class="nm">Avocado Oil (10 ml)</span><span class="dose">82 kcal – 0 g C, 9.1 g F, 0 g P</span></li>
-<li><span class="nm">Shiitake Mushrooms (100 g)</span><span class="dose">34.7 kcal – 6.8 g C, 0.4 g F, 2.2 g P, 2.4 g fiber</span></li>
-<li><span class="nm">Asparagus (200 g)</span><span class="dose">40 kcal – 7.8 g C, 0.24 g F, 4.4 g P, 4.2 g fiber</span></li>
-<li><span class="nm tot">Total 1st Meal</span><span class="dose">1,227.7 kcal – 133.6 g C, 53.69 g F, 53.1 g P, 6.6 g fiber</span></li>
-</ul>
-</section><section class="card">
-<h2>2nd Meal</h2>
-<ul class="stack">
-<li><span class="nm">Blueberries (60 g)</span><span class="dose">34.2 kcal – 8.7 g C, 0.18 g F, 0.42 g P, 1.44 g fiber</span></li>
-<li><span class="nm">Blackberries (60 g)</span><span class="dose">25.8 kcal – 5.8 g C, 0.3 g F, 0.84 g P, 3.2 g fiber</span></li>
-<li><span class="nm">Açaí (14 g freeze-dried)</span><span class="dose">86 kcal – 11.4 g C, 4.6 g F, 0.8 g P, 5.6 g fiber</span></li>
-<li><span class="nm">Pomegranate (100 g)</span><span class="dose">83 kcal – 19 g C, 1.2 g F, 1.7 g P, 4 g fiber</span></li>
-<li><span class="nm">Walnuts (25 g)</span><span class="dose">163.3 kcal – 3.25 g C, 16.33 g F, 3.83 g P, 1.67 g fiber</span></li>
-<li><span class="nm">Macadamia Nuts (25 g)</span><span class="dose">179.5 kcal – 3.5 g C, 19.0 g F, 2.0 g P, 2.15 g fiber</span></li>
-<li><span class="nm">Greek Yogurt (240 g)</span><span class="dose">132 kcal – 9.36 g C, 0.24 g F, 22.56 g P</span></li>
-<li><span class="nm tot">Total 2nd Meal</span><span class="dose">704.6 kcal – 60.01 g C, 41.85 g F, 31.15 g P, 17.26 g fiber</span></li>
-</ul>
-</section><section class="card">
-<h2>Others</h2>
-<ul class="stack">
-<li><span class="nm">Kimchi, Chili, Limão, Pimenta, Cominhos</span></li>
-</ul>
-</section><section class="card">
-<h2>Supplements</h2>
-<ul class="stack">
-<li><span class="nm">Total</span><span class="dose">213 kcal – 20.4 g C, 4.1 g F, 23.9 g P, 15 g fiber</span></li>
-</ul>
-</section><section class="card">
-<h2>Daily Totals</h2>
-<ul class="stack">
-<li><span class="nm">Calories</span><span class="dose">2,145.3 kcal</span></li>
-<li><span class="nm">Carbohydrates</span><span class="dose">213.61 g</span></li>
-<li><span class="nm">Fats</span><span class="dose">99.64 g</span></li>
-<li><span class="nm">Proteins</span><span class="dose">108.15 g</span></li>
-<li><span class="nm">Fiber</span><span class="dose">38.86 g</span></li>
-</ul>
-</section></main>
+<nav class="secnav" id="secnav" aria-label="Secções"></nav>
+<div id="out"></div>
+</main>
+<script>
+(function(){
+const KEY='sf-dieta-notepad';
+const FILE='data/dieta.txt';
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function slug(s){return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,40)||'sec'}
+function render(text){
+  const lines=String(text||'').replace(/\r\n/g,'\n').split('\n');
+  const secs=[];
+  let cur=null;
+  lines.forEach(function(raw){
+    const line=raw.trim();
+    if(!line) return;
+    if(line.charAt(0)==='#'){
+      cur={title:line.replace(/^#+\s*/,''),items:[]};
+      secs.push(cur);
+      return;
+    }
+    if(!cur){cur={title:'',items:[]};secs.push(cur)}
+    const i=line.indexOf(' — ');
+    if(i===-1) cur.items.push({name:line,dose:''});
+    else cur.items.push({name:line.slice(0,i).trim(),dose:line.slice(i+3).trim()});
+  });
+  const used={};
+  const nav=document.getElementById('secnav');
+  nav.innerHTML=secs.filter(function(s){return s.title}).map(function(s){
+    let id=slug(s.title); if(used[id]) id=id+'-'+(++used[id]); else used[id]=1; s.id=id;
+    return '<a href="#'+id+'">'+esc(s.title)+'</a>';
+  }).join('');
+  document.getElementById('out').innerHTML=secs.map(function(s){
+    const lis=s.items.map(function(it){return '<li><span class="nm">'+esc(it.name)+'</span>'+(it.dose?'<span class="dose">'+esc(it.dose)+'</span>':'')+'</li>'}).join('');
+    return '<section'+(s.id?' id="'+s.id+'"':'')+' class="card">'+(s.title?'<h2>'+esc(s.title)+'</h2>':'')+'<ul class="stack">'+lis+'</ul></section>';
+  }).join('');
+}
+let saved=null; try{saved=localStorage.getItem(KEY)}catch(e){}
+if(saved&&saved.trim()) render(saved);
+else fetch(FILE,{cache:'no-cache'}).then(function(r){if(!r.ok)throw 0;return r.text()}).then(render).catch(function(){document.getElementById('out').innerHTML='<p class="lead">Não foi possível ler a lista.</p>'});
+})();
+</script>
+
 <script>
 let LANG='pt';try{if(localStorage.getItem('lang')==='en')LANG='en'}catch(e){}
 {const q=/[?&]lang=(en|pt)(?:&|#|$)/i.exec(location.search);if(q)LANG=q[1].toLowerCase()}

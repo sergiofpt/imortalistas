@@ -37,7 +37,7 @@ h1{margin:0 0 6px;font-size:28px;letter-spacing:-.3px}
 .lead{margin:0 0 16px;color:var(--mut)}
 .secnav{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 22px}
 .secnav a{padding:5px 11px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);text-decoration:none;font-size:13px}
-.secnav a:hover{background:var(--nab)}
+.secnav a:hover{background:var(--nab)}.secnav:empty{display:none}
 section{margin:0 0 18px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px}
 h2{font-size:20px;margin:0 0 12px;letter-spacing:-.2px}
@@ -78,15 +78,49 @@ main a{color:var(--acc)}
 <main>
 <h1>Treino</h1>
 <p class="lead">Registo pessoal de Sérgio F. Não é uma recomendação.</p>
-<section class="card"><ul class="stack">
-<li><span class="nm">Rapamycin sábado de manhã</span><span class="dose">sem atividade relevante sábado, domingo e segunda</span></li>
-<li><span class="nm">Terça</span><span class="dose">Hipertrofia (Full body) + 90m Zona 2</span></li>
-<li><span class="nm">Quarta</span><span class="dose">Protocolo Norueguês 4×4</span></li>
-<li><span class="nm">Quinta</span><span class="dose">Treino Funcional + 90m Zone 2</span></li>
-<li><span class="nm">Sexta</span><span class="dose">Hipertrofia (Full body) + 90m Zona 2</span></li>
-<li><span class="nm">Todos os dias</span><span class="dose">+20 mil passos</span></li>
-</ul></section>
+<nav class="secnav" id="secnav" aria-label="Secções"></nav>
+<div id="out"></div>
 </main>
+<script>
+(function(){
+const KEY='sf-treino-notepad';
+const FILE='data/treino.txt';
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function slug(s){return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,40)||'sec'}
+function render(text){
+  const lines=String(text||'').replace(/\r\n/g,'\n').split('\n');
+  const secs=[];
+  let cur=null;
+  lines.forEach(function(raw){
+    const line=raw.trim();
+    if(!line) return;
+    if(line.charAt(0)==='#'){
+      cur={title:line.replace(/^#+\s*/,''),items:[]};
+      secs.push(cur);
+      return;
+    }
+    if(!cur){cur={title:'',items:[]};secs.push(cur)}
+    const i=line.indexOf(' — ');
+    if(i===-1) cur.items.push({name:line,dose:''});
+    else cur.items.push({name:line.slice(0,i).trim(),dose:line.slice(i+3).trim()});
+  });
+  const used={};
+  const nav=document.getElementById('secnav');
+  nav.innerHTML=secs.filter(function(s){return s.title}).map(function(s){
+    let id=slug(s.title); if(used[id]) id=id+'-'+(++used[id]); else used[id]=1; s.id=id;
+    return '<a href="#'+id+'">'+esc(s.title)+'</a>';
+  }).join('');
+  document.getElementById('out').innerHTML=secs.map(function(s){
+    const lis=s.items.map(function(it){return '<li><span class="nm">'+esc(it.name)+'</span>'+(it.dose?'<span class="dose">'+esc(it.dose)+'</span>':'')+'</li>'}).join('');
+    return '<section'+(s.id?' id="'+s.id+'"':'')+' class="card">'+(s.title?'<h2>'+esc(s.title)+'</h2>':'')+'<ul class="stack">'+lis+'</ul></section>';
+  }).join('');
+}
+let saved=null; try{saved=localStorage.getItem(KEY)}catch(e){}
+if(saved&&saved.trim()) render(saved);
+else fetch(FILE,{cache:'no-cache'}).then(function(r){if(!r.ok)throw 0;return r.text()}).then(render).catch(function(){document.getElementById('out').innerHTML='<p class="lead">Não foi possível ler a lista.</p>'});
+})();
+</script>
+
 <script>
 let LANG='pt';try{if(localStorage.getItem('lang')==='en')LANG='en'}catch(e){}
 {const q=/[?&]lang=(en|pt)(?:&|#|$)/i.exec(location.search);if(q)LANG=q[1].toLowerCase()}
