@@ -114,9 +114,15 @@ function card(s){
 function render(text){
   const secs=parse(text);
   const used={};
+  function nid(title){
+    let base=slug(title), id=base, n=2;
+    while(used[id]||document.getElementById(id)){id=base+'-'+(n++);}
+    used[id]=1;
+    return id;
+  }
   secs.forEach(function(s){
     if(!s.title) return;
-    let id=slug(s.title); if(used[id]) id=id+'-'+(++used[id]); else used[id]=1; s.id=id;
+    s.id=nid(s.title);
   });
   const blocks=[];
   const nav=[];

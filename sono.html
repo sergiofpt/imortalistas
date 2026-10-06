@@ -104,10 +104,16 @@ function render(text){
     else cur.items.push({name:line.slice(0,i).trim(),dose:line.slice(i+3).trim()});
   });
   const used={};
+  function nid(title){
+    let base=slug(title), id=base, n=2;
+    while(used[id]||document.getElementById(id)){id=base+'-'+(n++);}
+    used[id]=1;
+    return id;
+  }
   const nav=document.getElementById('secnav');
   nav.innerHTML=secs.filter(function(s){return s.title}).map(function(s){
-    let id=slug(s.title); if(used[id]) id=id+'-'+(++used[id]); else used[id]=1; s.id=id;
-    return '<a href="#'+id+'">'+esc(s.title)+'</a>';
+    s.id=nid(s.title);
+    return '<a href="#'+s.id+'">'+esc(s.title)+'</a>';
   }).join('');
   document.getElementById('out').innerHTML=secs.map(function(s){
     const lis=s.items.map(function(it){return '<li><span class="nm">'+esc(it.name)+'</span>'+(it.dose?'<span class="dose">'+esc(it.dose)+'</span>':'')+'</li>'}).join('');
