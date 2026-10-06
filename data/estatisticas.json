@@ -1,15 +1,15 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-06T16:49:57Z",
+ "atualizado_em": "2026-10-06T19:18:06Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
-  "visitas": 28,
-  "visitas_30d": 28,
-  "visitas_90d": 28,
+  "visitas": 31,
+  "visitas_30d": 31,
+  "visitas_90d": 31,
   "aberturas_pdf": 25,
-  "visitas_hoje": 3,
-  "visitas_7d": 28,
+  "visitas_hoje": 6,
+  "visitas_7d": 31,
   "aberturas_hoje": 1,
   "aberturas_7d": 25,
   "aberturas_30d": 25,
@@ -46,14 +46,14 @@
   },
   {
    "dia": "2026-10-06",
-   "visitas": 3,
+   "visitas": 6,
    "aberturas": 1
   }
  ],
  "paginas": [
   {
    "path": "/imortalistas/genetica-reports.html",
-   "visitas": 10
+   "visitas": 12
   },
   {
    "path": "/imortalistas/teste-worker",
@@ -61,7 +61,7 @@
   },
   {
    "path": "/imortalistas",
-   "visitas": 4
+   "visitas": 5
   },
   {
    "path": "/imortalistas/genetica-boa.html",
@@ -238,7 +238,7 @@
    "tipo": "computador",
    "nome": "Linux · Firefox",
    "estimativa": false,
-   "visitas": 3
+   "visitas": 4
   },
   {
    "id": "android/samsung-galaxy-s24",
@@ -290,9 +290,23 @@
    "visitas": 1
   },
   {
+   "id": "computador/windows-10-11-firefox",
+   "tipo": "computador",
+   "nome": "Windows 10/11 · Firefox",
+   "estimativa": false,
+   "visitas": 1
+  },
+  {
    "id": "computador/windows-11-chrome",
    "tipo": "computador",
    "nome": "Windows 11 · Chrome",
+   "estimativa": false,
+   "visitas": 1
+  },
+  {
+   "id": "computador/windows-chrome",
+   "tipo": "computador",
+   "nome": "Windows · Chrome",
    "estimativa": false,
    "visitas": 1
   }
@@ -306,7 +320,7 @@
   {
    "id": "US",
    "nome": "United States",
-   "visitas": 14
+   "visitas": 16
   },
   {
    "id": "BR",
@@ -329,6 +343,11 @@
    "visitas": 1
   },
   {
+   "id": "NL",
+   "nome": "Netherlands",
+   "visitas": 1
+  },
+  {
    "id": "PL",
    "nome": "Poland",
    "visitas": 1
@@ -338,12 +357,12 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 34
+   "visitas": 35
   },
   {
    "id": "Firefox",
    "nome": "Firefox",
-   "visitas": 16
+   "visitas": 18
   },
   {
    "id": "Safari",
@@ -355,16 +374,16 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 30
-  },
-  {
-   "id": "Android",
-   "nome": "Android",
-   "visitas": 9
+   "visitas": 32
   },
   {
    "id": "Linux",
    "nome": "Linux",
+   "visitas": 10
+  },
+  {
+   "id": "Android",
+   "nome": "Android",
    "visitas": 9
   },
   {
@@ -392,7 +411,7 @@
   {
    "id": "tablet",
    "nome": "tablet",
-   "visitas": 1
+   "visitas": 4
   },
   {
    "id": "desktop",
@@ -409,7 +428,7 @@
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 50
+   "visitas": 53
   },
   {
    "id": "https://www.rapamycin.news",
@@ -600,18 +619,18 @@
     },
     {
      "dia": "2026-10-06",
-     "visitas": 3,
+     "visitas": 6,
      "aberturas": 0
     }
    ],
    "paginas": [
     {
      "path": "/imortalistas/genetica-reports.html",
-     "visitas": 6
+     "visitas": 8
     },
     {
      "path": "/imortalistas/",
-     "visitas": 1
+     "visitas": 2
     },
     {
      "path": "/imortalistas/genetica-boa.html",
@@ -713,9 +732,23 @@
      "visitas": 1
     },
     {
+     "id": "computador/linux-firefox",
+     "tipo": "computador",
+     "nome": "Linux · Firefox",
+     "estimativa": false,
+     "visitas": 1
+    },
+    {
      "id": "android/samsung-galaxy-a54",
      "tipo": "android",
      "nome": "Samsung Galaxy A54",
+     "estimativa": false,
+     "visitas": 1
+    },
+    {
+     "id": "computador/windows-10-11-firefox",
+     "tipo": "computador",
+     "nome": "Windows 10/11 · Firefox",
      "estimativa": false,
      "visitas": 1
     },
@@ -725,16 +758,23 @@
      "nome": "Windows 11 · Chrome",
      "estimativa": false,
      "visitas": 1
+    },
+    {
+     "id": "computador/windows-chrome",
+     "tipo": "computador",
+     "nome": "Windows · Chrome",
+     "estimativa": false,
+     "visitas": 1
     }
    ],
    "aparelhos_desde": "2026-10-03",
    "total": {
-    "visitas": 9,
-    "visitas_30d": 9,
-    "visitas_90d": 9,
+    "visitas": 12,
+    "visitas_30d": 12,
+    "visitas_90d": 12,
     "aberturas_pdf": 7,
-    "visitas_hoje": 3,
-    "visitas_7d": 9,
+    "visitas_hoje": 6,
+    "visitas_7d": 12,
     "aberturas_hoje": 0,
     "aberturas_7d": 7,
     "aberturas_30d": 7,
@@ -747,7 +787,7 @@
     {
      "id": "US",
      "nome": "United States",
-     "visitas": 14
+     "visitas": 16
     },
     {
      "id": "BR",
@@ -767,6 +807,11 @@
     {
      "id": "GG",
      "nome": "Guernsey",
+     "visitas": 1
+    },
+    {
+     "id": "NL",
+     "nome": "Netherlands",
      "visitas": 1
     },
     {
