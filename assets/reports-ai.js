@@ -461,8 +461,6 @@
     addMsg("bot", lang() === "en" ? HELLO_EN : HELLO_PT);
     // Preload index so first answer is faster
     loadIndex().catch(function () {});
-    // Open by default once so it’s obvious the widget is there
-    setOpen(true);
   }
 
   if (document.readyState === "loading") {
