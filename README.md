@@ -12,6 +12,7 @@ data/genetica.json                 conteúdo de genetica.html (lista ordenada, s
 data/genetica_boa.json             conteúdo de genetica-boa.html (mesmo formato)
 data/genetica_protocolo.json       Protocolo genético consolidado, mostrado no topo das duas páginas de genética
 genetica-reports.html              Genética Reports: lista de relatórios em PDF; conteúdo em data/reports.json
+suplementos.html                   Suplementos + Medicação: registo pessoal (menu principal)
 data/reports.json                  lista dos relatórios (título PT/EN, data, ficheiro em reports/)
 reports/*.pdf                      os PDFs dos relatórios (já verificados quanto à privacidade)
 ferramentas/adicionar_colheita.py  acrescenta uma data ou um relatório e verifica os ficheiros (sangue.json, genetica*.json, reports.json + PDFs e termos proibidos)
