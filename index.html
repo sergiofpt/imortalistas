@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex,nofollow">
 <meta name="referrer" content="no-referrer">
 <link rel="icon" href="data:,">
-<title>Sérgio F · Cronologia de Exames de Sangue</title>
+<title>Sérgio F · Análises</title>
 <meta name="color-scheme" content="light dark">
 <script>(function(){var d=document.documentElement,t=null,l=null,q=/[?&]lang=(en|pt)(?:&|#|$)/i.exec(location.search);q=q&&q[1].toLowerCase();try{if(q)localStorage.setItem('lang',q);l=localStorage.getItem('lang');t=localStorage.getItem('theme')}catch(e){}if(q)l=q;if(l==='en')d.lang='en';if(t!=='dark'&&t!=='light')t='dark';d.setAttribute('data-theme',t)})()</script>
 <script src="sf.js"></script>
@@ -138,12 +138,6 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 </div>
 </div></header>
 <main>
-
-<div class="hero">
-<div><h1><span class="l-pt">Cronologia de Exames de Sangue</span><span class="l-en">Blood Test Timeline</span></h1>
-<p>Sérgio F · M</p></div>
-<div class="meta" id="heroMeta"><span class="l-pt">Análises ao sangue</span><span class="l-en">Blood tests</span></div>
-</div>
 
 <!-- ============ RESUMO ============ -->
 <section id="resumo">
@@ -326,8 +320,6 @@ function loadJSON(u){return fetch(u,{cache:'no-cache'}).then(r=>{if(!r.ok)throw 
 let LOADERR=null;
 function failMsg(){if(!LOADERR)return;const ti=document.querySelector('#it tbody');if(ti)ti.innerHTML=`<tr><td class="mut">${L('Não foi possível carregar','Could not load')} data/sangue.json.</td></tr>`;document.querySelector('#bt tbody').innerHTML=`<tr><td class="mut">${L('Não foi possível carregar','Could not load')} data/sangue.json (${esc(LOADERR.message)}). ${L('Se abriu o ficheiro localmente, sirva a pasta com','If you opened the file locally, serve the folder with')} <code>python3 -m http.server</code>.</td></tr>`}
 let SS=null,SD=null,SROWS=null,IS=null,IROWS=null;
-function heroMeta(){const el=document.getElementById('heroMeta');if(!SS){el.innerHTML=L('Análises ao sangue','Blood tests')+'<br>'+L('Compilado a 02-10-2026 (PT)','Compiled on 02-10-2026 (PT)');return}const c=SS.cols;
- el.innerHTML=`${L('Análises','Tests')}: ${c.length} ${c.length>1?L('datas','dates'):L('data','date')} (${L('última','latest')} ${esc(fdate(c[0].data))}${c.length>1?', '+L('anterior','previous')+' '+esc(fdate(c[1].data)):''})`+(c.length<2?' · '+L('tendências a partir da próxima colheita','trends from the next test onwards'):'')+'<br>'+L('Compilado a 02-10-2026 (PT)','Compiled on 02-10-2026 (PT)')}
 function fillCats(){if(!SROWS)return;const cs=document.getElementById('cat'),v=cs.value,seen=new Set();cs.innerHTML=`<option value="">${L('Todas as categorias','All categories')}</option>`;
  SROWS.forEach(r=>{if(seen.has(r.c))return;seen.add(r.c);const op=document.createElement('option');op.value=r.c;op.textContent=LANG==='en'&&r.c_en?r.c_en:r.c;cs.appendChild(op)});cs.value=v}
 function iSrcTxt(){if(!SD||!IROWS)return;const ds=[...new Set(IROWS.flatMap(r=>Object.values(r.res).map(x=>x.data_real||x.data)))].sort();document.getElementById('iSrc').textContent=(ds.length?ds.map(fdate).join(' | '):'—')+' · '+IROWS.length+' '+L('marcadores','markers')}
@@ -342,7 +334,7 @@ loadJSON('data/sangue.json').then(D=>{SD=D;const rows=mkRows(D.marcadores,m=>({c
    if(t&&b){const rb=r.res[b];if(t==='chg')return !!(ra&&rb&&stOf(r,ra)!==stOf(r,rb));const d=delta(r,ra,rb);if(!d)return false;return t==='good'?d.dir>0:d.dir<0}return true},
   cellsBefore:(r,ra)=>`<td><b>${esc(nm(r))}</b>${ra&&ra.data_real?`<div class="small mut">${esc(fdate(ra.data_real))}</div>`:''}</td>`,
   cellsAfter:(r,ra)=>{const al=LANG==='en'&&r.alvo_en?r.alvo_en:r.alvo,ct=LANG==='en'&&r.c_en?r.c_en:r.c;if(!ra)return `<td></td><td></td><td class="small">${esc(ptr(al))}</td><td><span class="mut small">${L('sem resultado','no result')}</span></td><td class="small mut">${esc(ct)}</td><td></td>`;const st=stOf(r,ra);return `<td class="mut small">${esc(ra.u||'')}</td><td class="small">${esc(ptr(tx(ra,'ref')))}</td><td class="small">${esc(ptr(al))}</td><td><span class="pill ${kOf(st)}">${lab(st)}</span></td><td class="small mut">${esc(ct)}</td><td class="small">${esc(tx(ra,'nota'))}</td>`},
-  onRender:(a,b)=>summary(rows,a,b,D.colheitas),onCmp:b=>{const tr=document.getElementById('sTr');tr.disabled=!b;tr.title=b?'':L('Escolha uma data de comparação para filtrar por tendência','Pick a comparison date to filter by trend')}});heroMeta();intol(D);if(location.hash){const t=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(t)t.scrollIntoView()}}).catch(e=>{console.warn(e);LOADERR=e;failMsg()});
+  onRender:(a,b)=>summary(rows,a,b,D.colheitas),onCmp:b=>{const tr=document.getElementById('sTr');tr.disabled=!b;tr.title=b?'':L('Escolha uma data de comparação para filtrar por tendência','Pick a comparison date to filter by trend')}});intol(D);if(location.hash){const t=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(t)t.scrollIntoView()}}).catch(e=>{console.warn(e);LOADERR=e;failMsg()});
 // ---- intolerâncias alimentares (secção própria; estado sempre "Sem alvo") ----
 function intol(D){const list=D.intolerancias||[];IROWS=mkRows(list,m=>({c:m.c,c_en:m.c_en||''}));iSrcTxt();
  const ds=new Set(list.flatMap(m=>(m.resultados||[]).map(r=>r.data))),cols=D.colheitas.filter(c=>ds.has(c.data));
@@ -365,12 +357,12 @@ function summary(rows,a,b,cols){const c={ok:0,warn:0,bad:0,na:0};let t=0,good=0,
  (b?`<div class="legend" style="margin-top:8px"><span>vs ${esc(fdate(b))}:</span><span class="pill ok">${good} ${L('melhoraram','improved')}</span><span class="pill bad">${bad} ${L('pioraram','worsened')}</span><span class="pill info">${chg} ${L('mudaram de estado','changed status')}</span></div>`:cols.length<2?`<div style="margin-top:10px"><span class="await">⏳ ${L('Aguarda próximo exame para comparar com esta data','Awaiting next test to compare with this date')}</span></div>`:'')+
  (IROWS&&IROWS.length?(()=>{const ia=IS?IS.cols[0].data:a,ic=iCounts(ia);return `<div class="small mut" style="margin-top:10px">${L('Estas contagens não incluem as','These counts exclude the')} ${IROWS.length} ${L('análises de intolerâncias alimentares, que têm secção própria','food intolerance tests, which have their own section')} (<a href="#intolerancias">${L('Intolerâncias Alimentares','Food Intolerances')}</a>: ${ic.intolerante.length} ${L('intolerante','intolerant')}, ${ic.nao_intolerante.length} ${L('não intolerante','not intolerant')}).</div>`})():'')}
 // ---- alternar idioma (estático: .l-pt/.l-en; atributos e opções: data-pt/data-en) ----
-function applyLang(){const en=LANG==='en';document.documentElement.lang=en?'en':'pt-PT';document.title=en?'Sérgio F · Blood Test Timeline':'Sérgio F · Cronologia de Exames de Sangue';
+function applyLang(){const en=LANG==='en';document.documentElement.lang=en?'en':'pt-PT';document.title=en?'Sérgio F · Tests':'Sérgio F · Análises';
  document.querySelectorAll('[data-en]').forEach(el=>{if(!el.hasAttribute('data-pt'))el.setAttribute('data-pt',el.textContent);el.textContent=en?el.dataset.en:el.dataset.pt});
  document.querySelectorAll('[data-ph-en]').forEach(el=>{if(!el.hasAttribute('data-ph-pt'))el.setAttribute('data-ph-pt',el.placeholder);el.placeholder=en?el.dataset.phEn:el.dataset.phPt});
  document.querySelectorAll('[data-al-en]').forEach(el=>{if(!el.hasAttribute('data-al-pt'))el.setAttribute('data-al-pt',el.getAttribute('aria-label'));el.setAttribute('aria-label',en?el.dataset.alEn:el.dataset.alPt)});
  document.querySelectorAll('#lang button').forEach(b=>{const on=b.dataset.l===LANG;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});
- heroMeta();fillCats();srcTxt();failMsg();if(SS)SS.relabel();if(IS)IS.relabel()}
+ fillCats();srcTxt();failMsg();if(SS)SS.relabel();if(IS)IS.relabel()}
 document.querySelectorAll('#lang button').forEach(b=>b.addEventListener('click',()=>{if(LANG===b.dataset.l)return;LANG=b.dataset.l;try{localStorage.setItem('lang',LANG)}catch(e){}try{if(/[?&]lang=/i.test(location.search)){const u=new URL(location.href);u.searchParams.set('lang',LANG);history.replaceState(history.state,'',u)}}catch(e){}applyLang()}));
 applyLang();
 
