@@ -1,103 +1,101 @@
-/*! Genetica Reports AI — assistente só sobre os relatórios desta página.
- * Usa data/reports.json (já carregado pela página quando possível).
- * Sem cookies, sem API paga: respostas locais a partir do catálogo.
+/*! Ask Sergio AI — responde só com base no texto extraído dos Genética Reports.
+ * Carrega data/kb/index.json e, para os reports relevantes, data/kb/<id>.paras.json.
  */
 (function () {
   "use strict";
-  if (window.__RAI_LOADED) return;
-  window.__RAI_LOADED = true;
+  if (window.__ASK_SERGIO_AI__) return;
+  window.__ASK_SERGIO_AI__ = true;
 
-  const SRC = (document.body && document.body.dataset.json) || "data/reports.json";
-  const OFF_PT =
-    "Só consigo ajudar com perguntas sobre os Genética Reports deste site (títulos, temas, áreas, genes e como encontrar um PDF). Reformula a pergunta com um tema ou gene dos teus relatórios.";
-  const OFF_EN =
-    "I can only help with questions about the Genetics Reports on this site (titles, topics, areas, genes, and finding a PDF). Rephrase with a topic or gene from your reports.";
-  const HELLO_PT =
-    "Olá! Sou o assistente dos Genética Reports. Pergunta-me por um tema (ex.: dopamina, suplementos, cancro) ou por um gene — eu aponto o relatório certo. Não leio o conteúdo clínico dos PDFs nem substituo o médico.";
-  const HELLO_EN =
-    "Hi! I’m the Genetics Reports assistant. Ask about a topic (e.g. dopamine, supplements, cancer) or a gene — I’ll point you to the right report. I don’t read clinical PDF contents and I’m not a doctor.";
+  var INDEX_URL = "data/kb/index.json";
+  var OFF_PT =
+    "Só respondo com base nos Genética Reports deste site. Pergunta sobre um tema, gene, medicamento, suplemento ou achado dos teus relatórios.";
+  var OFF_EN =
+    "I only answer from the Genetics Reports on this site. Ask about a topic, gene, medicine, supplement, or finding from your reports.";
+  var HELLO_PT =
+    "Olá — sou o Ask Sergio AI. Li os teus Genética Reports e respondo só com o que neles está. Pergunta o que quiseres sobre esses relatórios (não substituo o médico).";
+  var HELLO_EN =
+    "Hi — I’m Ask Sergio AI. I’ve read your Genetics Reports and I only answer from what’s in them. Ask about those reports (I’m not a doctor).";
 
-  const SCOPE = [
-    "genetica",
-    "genetics",
-    "report",
-    "relatorio",
-    "pdf",
-    "gene",
-    "adn",
-    "dna",
-    "farmaco",
-    "medicamento",
-    "suplemento",
-    "dopamina",
-    "nutricao",
-    "desporto",
-    "cancro",
-    "cancer",
-    "metabolismo",
-    "intestino",
-    "longevidade",
-    "musculo",
-    "imunidade",
-    "hormona",
-    "vitamina",
-    "intolerancia",
-    "alzheimer",
-    "avc",
-    "coracao",
-    "cerebro",
-  ];
+  var STOP = {
+    a: 1, o: 1, e: 1, de: 1, da: 1, do: 1, das: 1, dos: 1, um: 1, uma: 1,
+    em: 1, no: 1, na: 1, nos: 1, nas: 1, por: 1, para: 1, com: 1, sem: 1,
+    que: 1, se: 1, ou: 1, as: 1, os: 1, ao: 1, aos: 1, à: 1, the: 1, and: 1,
+    of: 1, to: 1, in: 1, on: 1, for: 1, is: 1, are: 1, what: 1, which: 1,
+    about: 1, me: 1, my: 1, meu: 1, minha: 1, over: 1, from: 1, with: 1,
+    this: 1, that: 1, como: 1, qual: 1, quais: 1, sobre: 1, tem: 1, há: 1,
+    ha: 1, ser: 1, ter: 1, foi: 1, são: 1, sao: 1, mais: 1, menos: 1,
+  };
 
-  const OFF = [
+  var OFF = [
     /\b(bitcoin|crypto|forex|apostas?)\b/i,
     /\b(receita de bolo|futebol|politica|eleic)\b/i,
     /\b(escreve codigo|hacke|namoro|horoscopo)\b/i,
-    /\b(capital de fran[cç]a|weather|tempo em)\b/i,
+    /\b(capital de fran)/i,
   ];
 
-  const norm = (s) =>
-    String(s || "")
+  function norm(s) {
+    return String(s || "")
       .toLowerCase()
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "")
-      .replace(/[^\p{L}\p{N}\s-]/gu, " ")
+      .replace(/[^a-z0-9\s-]/g, " ")
       .replace(/\s+/g, " ")
       .trim();
+  }
 
-  const lang = () =>
-    (document.documentElement.lang || "").toLowerCase().startsWith("en")
+  function tokens(q) {
+    return norm(q)
+      .split(" ")
+      .filter(function (t) {
+        return t.length > 2 && !STOP[t];
+      });
+  }
+
+  function lang() {
+    return (document.documentElement.lang || "").toLowerCase().indexOf("en") === 0
       ? "en"
       : "pt";
+  }
 
-  const T = (o) => {
+  function T(o) {
     if (o == null) return "";
     if (typeof o === "string") return o;
-    const L = lang();
+    var L = lang();
     return (L === "en" ? o.en || o.pt : o.pt || o.en) || "";
-  };
+  }
 
-  const both = (o) =>
-    o == null
-      ? ""
-      : typeof o === "string"
-        ? o
-        : [o.pt || "", o.en || ""].join(" ");
+  function both(o) {
+    if (o == null) return "";
+    if (typeof o === "string") return o;
+    return [o.pt || "", o.en || ""].join(" ");
+  }
 
-  let catalog = null;
-  let pending = false;
+  var indexData = null;
+  var parasCache = {};
+  var pending = false;
 
-  function ensureCatalog() {
-    if (catalog) return Promise.resolve(catalog);
-    // A página principal guarda RD em scope local; tentamos re-fetch (cache HTTP).
-    return fetch(SRC, { cache: "force-cache" })
-      .then((r) => {
-        if (!r.ok) throw new Error("HTTP " + r.status);
-        return r.json();
-      })
-      .then((d) => {
-        catalog = d;
-        return d;
-      });
+  function loadIndex() {
+    if (indexData) return Promise.resolve(indexData);
+    return fetch(INDEX_URL, { cache: "no-cache" }).then(function (r) {
+      if (!r.ok) throw new Error("index " + r.status);
+      return r.json();
+    }).then(function (d) {
+      indexData = d;
+      return d;
+    });
+  }
+
+  function loadParas(rep) {
+    var id = rep.id;
+    if (parasCache[id]) return Promise.resolve(parasCache[id]);
+    var url = rep.paras_file || ("data/kb/" + id + ".paras.json");
+    return fetch(url, { cache: "force-cache" }).then(function (r) {
+      if (!r.ok) throw new Error(id + " " + r.status);
+      return r.json();
+    }).then(function (paras) {
+      parasCache[id] = Array.isArray(paras) ? paras : [];
+      return parasCache[id];
+    });
   }
 
   function isGreeting(q) {
@@ -106,261 +104,303 @@
     );
   }
 
-  function areaNames(d) {
-    return (d.areas || [])
-      .map((a) => norm([a.id, a.pt, a.en].join(" ")))
-      .join(" ");
-  }
-
-  function hay(r) {
-    return norm(
-      [
-        both(r.titulo),
-        both(r.resumo),
-        both(r.descricao),
-        (r.etiquetas || []).join(" "),
-        (r.palavras || []).join(" "),
-        (r.genes || []).join(" "),
-        (r.areas || []).join(" "),
-        r.id || "",
-      ].join(" "),
-    );
-  }
-
   function inScope(q, d) {
-    const n = norm(q);
+    var n = norm(q);
     if (!n) return false;
     if (isGreeting(q)) return true;
-    if (OFF.some((re) => re.test(q))) return false;
-    if (SCOPE.some((k) => n.includes(norm(k)))) return true;
-    const tokens = n.split(" ").filter((t) => t.length > 2);
-    const areas = areaNames(d);
-    if (tokens.some((t) => areas.includes(t))) return true;
-    return (d.relatorios || []).some((r) => {
-      const h = hay(r);
-      return tokens.some((t) => h.includes(t));
+    if (OFF.some(function (re) { return re.test(q); })) return false;
+    var tk = tokens(q);
+    if (!tk.length) return false;
+    // Any overlap with catalogue text / genes / areas / preview counts as in-scope.
+    return (d.reports || []).some(function (r) {
+      var hay = norm(
+        [
+          both(r.titulo),
+          both(r.resumo),
+          both(r.descricao),
+          (r.palavras || []).join(" "),
+          (r.genes || []).join(" "),
+          (r.areas || []).join(" "),
+          r.preview || "",
+          r.id || "",
+        ].join(" "),
+      );
+      return tk.some(function (t) {
+        return hay.indexOf(t) !== -1;
+      });
     });
   }
 
-  function score(q, r) {
-    const tokens = norm(q)
-      .split(" ")
-      .filter((t) => t.length > 2);
-    if (!tokens.length) return 0;
-    const title = norm(both(r.titulo) + " " + (r.id || ""));
-    const tags = norm(
-      [(r.palavras || []).join(" "), (r.areas || []).join(" ")].join(" "),
+  function scoreReport(tk, r) {
+    if (!tk.length) return 0;
+    var title = norm(both(r.titulo) + " " + (r.id || ""));
+    var meta = norm(
+      [both(r.resumo), both(r.descricao), (r.palavras || []).join(" "), (r.areas || []).join(" ")].join(" "),
     );
-    const genes = norm((r.genes || []).join(" "));
-    const body = hay(r);
-    let s = 0;
-    for (const t of tokens) {
-      if (title.includes(t)) s += 5;
-      if (genes.split(" ").some((g) => g === t || g.startsWith(t))) s += 4;
-      if (tags.includes(t)) s += 3;
-      if (body.includes(t)) s += 1;
+    var genes = norm((r.genes || []).join(" "));
+    var preview = norm(r.preview || "");
+    var s = 0;
+    for (var i = 0; i < tk.length; i++) {
+      var t = tk[i];
+      if (title.indexOf(t) !== -1) s += 6;
+      if ((" " + genes + " ").indexOf(" " + t + " ") !== -1) s += 5;
+      else if (genes.indexOf(t) !== -1) s += 3;
+      if (meta.indexOf(t) !== -1) s += 3;
+      if (preview.indexOf(t) !== -1) s += 2;
     }
-    if (r.destaque) s += 0.5;
+    if (r.destaque) s += 0.3;
     return s;
   }
 
-  function retrieve(q, d, limit) {
-    return (d.relatorios || [])
-      .map((r) => ({ r, s: score(q, r) }))
-      .filter((x) => x.s > 0)
-      .sort((a, b) => b.s - a.s)
-      .slice(0, limit || 4)
-      .map((x) => x.r);
+  function scorePara(tk, para) {
+    var h = norm(para);
+    if (!h) return 0;
+    var s = 0;
+    var hits = 0;
+    for (var i = 0; i < tk.length; i++) {
+      var t = tk[i];
+      var re = new RegExp("(?:^|\\s)" + t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g");
+      var m = h.match(re);
+      if (m) {
+        hits += 1;
+        s += 2 + Math.min(3, m.length);
+      } else if (h.indexOf(t) !== -1) {
+        hits += 1;
+        s += 1;
+      }
+    }
+    if (!hits) return 0;
+    // Prefer denser, mid-length evidence paragraphs.
+    var lenBonus = para.length > 80 && para.length < 900 ? 1.2 : 1;
+    return (s * (1 + hits / tk.length)) * lenBonus;
   }
 
-  function answer(q, d) {
-    const L = lang();
-    if (isGreeting(q)) return L === "en" ? HELLO_EN : HELLO_PT;
-    if (!inScope(q, d)) return L === "en" ? OFF_EN : OFF_PT;
+  function clip(s, n) {
+    s = String(s || "").replace(/\s+/g, " ").trim();
+    if (s.length <= n) return s;
+    return s.slice(0, n - 1).replace(/\s+\S*$/, "") + "…";
+  }
 
-    const hits = retrieve(q, d, 4);
-    if (!hits.length) {
+  function compose(q, ranked, evidence) {
+    var L = lang();
+    if (!evidence.length) {
+      var names = ranked
+        .slice(0, 3)
+        .map(function (r) { return T(r.titulo) || r.id; })
+        .join("; ");
       return L === "en"
-        ? "I didn’t find a matching report in the catalogue. Try another topic, area, or gene — or use the search box above."
-        : "Não encontrei um relatório correspondente no catálogo. Experimenta outro tema, área ou gene — ou usa a pesquisa em cima.";
+        ? "I found related reports (" + names + ") but no clear excerpt for that exact question. Try a more specific term (gene, trait, or medicine)."
+        : "Encontrei relatórios relacionados (" + names + "), mas sem um excerto claro para essa pergunta exacta. Experimenta um termo mais específico (gene, traço ou medicamento).";
     }
 
-    const lines = hits.map((r, i) => {
-      const title = T(r.titulo) || r.id;
-      const sum = T(r.resumo);
-      const areas = (r.areas || [])
-        .map((id) => {
-          const a = (d.areas || []).find((x) => x.id === id);
-          return a ? T(a) : id;
-        })
-        .filter(Boolean)
-        .join(", ");
-      const file = typeof r.ficheiro === "string" ? r.ficheiro : "";
-      const anchor = r.id ? `#${r.id}` : "";
-      let block = `${i + 1}. **${title}**`;
-      if (sum) block += `\n${sum}`;
-      if (areas)
-        block +=
-          L === "en" ? `\nAreas: ${areas}` : `\nÁreas: ${areas}`;
-      if (anchor)
-        block +=
-          L === "en"
-            ? `\nOpen on page: ${anchor}`
-            : `\nAbrir na página: ${anchor}`;
-      if (file) block += `\nPDF: ${file}`;
-      return block;
+    var byReport = {};
+    evidence.forEach(function (e) {
+      if (!byReport[e.id]) byReport[e.id] = { rep: e.rep, paras: [] };
+      if (byReport[e.id].paras.length < 3) byReport[e.id].paras.push(e.para);
     });
 
-    const head =
+    var ids = Object.keys(byReport);
+    var head =
       L === "en"
-        ? "Based on your Genetics Reports catalogue:"
-        : "Com base no catálogo dos teus Genética Reports:";
-    const foot =
-      L === "en"
-        ? "\n\n_Supporting info only — not medical advice. Open the PDF for full detail._"
-        : "\n\n_Documento de apoio — não substitui o médico. Abre o PDF para o detalhe completo._";
+        ? "From your Genetics Reports (Ask Sergio AI):"
+        : "Com base nos teus Genética Reports (Ask Sergio AI):";
+    var parts = [head];
 
-    return head + "\n\n" + lines.join("\n\n") + foot;
+    ids.forEach(function (id, idx) {
+      var block = byReport[id];
+      var title = T(block.rep.titulo) || id;
+      parts.push((idx + 1) + ". **" + title + "**");
+      block.paras.forEach(function (p) {
+        parts.push("«" + clip(p, 420) + "»");
+      });
+      parts.push(L === "en" ? "Source on page: #" + id : "Fonte na página: #" + id);
+    });
+
+    parts.push(
+      L === "en"
+        ? "_Supporting excerpts only — not medical advice. Open the PDF for full context._"
+        : "_Excertos de apoio — não substituem o médico. Abre o PDF para o contexto completo._",
+    );
+    return parts.join("\n\n");
+  }
+
+  function answerQuestion(q, d) {
+    var L = lang();
+    if (isGreeting(q)) return Promise.resolve(L === "en" ? HELLO_EN : HELLO_PT);
+    if (!inScope(q, d)) return Promise.resolve(L === "en" ? OFF_EN : OFF_PT);
+
+    var tk = tokens(q);
+    var ranked = (d.reports || [])
+      .map(function (r) { return { r: r, s: scoreReport(tk, r) }; })
+      .filter(function (x) { return x.s > 0; })
+      .sort(function (a, b) { return b.s - a.s; })
+      .slice(0, 5)
+      .map(function (x) { return x.r; });
+
+    if (!ranked.length) {
+      return Promise.resolve(
+        L === "en"
+          ? "I couldn’t match that to any of your reports. Try a topic, gene, or report title from this page."
+          : "Não consegui associar isso a nenhum dos teus relatórios. Experimenta um tema, gene ou título desta página.",
+      );
+    }
+
+    return Promise.all(
+      ranked.slice(0, 3).map(function (r) {
+        return loadParas(r).then(
+          function (paras) { return { r: r, paras: paras }; },
+          function () { return { r: r, paras: [] }; },
+        );
+      }),
+    ).then(function (loaded) {
+      var evidence = [];
+      loaded.forEach(function (item) {
+        item.paras.forEach(function (para) {
+          var s = scorePara(tk, para);
+          if (s > 0) evidence.push({ id: item.r.id, rep: item.r, para: para, s: s });
+        });
+      });
+      evidence.sort(function (a, b) { return b.s - a.s; });
+      // Diversify: take best paras, max 3 per report, max 6 overall
+      var picked = [];
+      var per = {};
+      for (var i = 0; i < evidence.length && picked.length < 6; i++) {
+        var e = evidence[i];
+        per[e.id] = (per[e.id] || 0) + 1;
+        if (per[e.id] <= 2) picked.push(e);
+      }
+      return compose(q, ranked, picked);
+    });
   }
 
   function renderText(el, text) {
     el.textContent = "";
-    const parts = String(text).split(/(\*\*[^*]+\*\*|_[^_]+_)/g);
-    for (const part of parts) {
-      if (!part) continue;
-      if (part.startsWith("**") && part.endsWith("**")) {
-        const s = document.createElement("strong");
+    String(text).split(/(\*\*[^*]+\*\*|_[^_]+_)/g).forEach(function (part) {
+      if (!part) return;
+      if (part.indexOf("**") === 0 && part.slice(-2) === "**") {
+        var s = document.createElement("strong");
         s.textContent = part.slice(2, -2);
         el.appendChild(s);
-      } else if (part.startsWith("_") && part.endsWith("_")) {
-        const e = document.createElement("em");
-        e.textContent = part.slice(1, -1);
-        el.appendChild(e);
+      } else if (part.charAt(0) === "_" && part.slice(-1) === "_") {
+        var em = document.createElement("em");
+        em.textContent = part.slice(1, -1);
+        el.appendChild(em);
       } else {
         el.appendChild(document.createTextNode(part));
       }
-    }
+    });
   }
 
   function injectStyles() {
-    if (document.getElementById("rai-style")) return;
-    const s = document.createElement("style");
-    s.id = "rai-style";
-    s.textContent = `
-#rai-root{position:fixed;right:16px;bottom:16px;z-index:80;font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-#rai-toggle{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:999px;padding:12px 16px;background:var(--ink,#14202e);color:var(--actfg,#fff);font-weight:600;cursor:pointer;box-shadow:0 10px 28px rgba(15,30,50,.28)}
-#rai-toggle:hover{filter:brightness(1.08)}
-#rai-panel{display:none;flex-direction:column;width:min(380px,calc(100vw - 24px));height:min(560px,70vh);margin-bottom:10px;border:1px solid var(--line,#e3e8ef);border-radius:16px;background:var(--card,#fff);color:var(--ink,#14202e);overflow:hidden;box-shadow:0 18px 50px rgba(15,30,50,.28)}
-#rai-root.open #rai-panel{display:flex}
-#rai-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;padding:14px 14px 12px;background:linear-gradient(135deg,var(--hero1,#0f2747),var(--hero2,#1f5eff));color:#fff}
-#rai-head h2{margin:0;font-size:16px;letter-spacing:-.2px}
-#rai-head p{margin:3px 0 0;font-size:12px;opacity:.88}
-#rai-close{border:0;background:transparent;color:#fff;font-size:20px;line-height:1;cursor:pointer;padding:2px 6px;border-radius:8px}
-#rai-close:hover{background:rgba(255,255,255,.14)}
-#rai-msgs{flex:1;overflow:auto;padding:12px;display:flex;flex-direction:column;gap:8px;background:var(--bg,#f5f7fa)}
-.rai-msg{max-width:92%;padding:9px 11px;border-radius:14px;white-space:pre-wrap;word-break:break-word}
-.rai-msg.bot{align-self:flex-start;background:var(--card,#fff);border:1px solid var(--line,#e3e8ef);border-bottom-left-radius:5px}
-.rai-msg.user{align-self:flex-end;background:var(--acc,#1f5eff);color:#fff;border-bottom-right-radius:5px}
-.rai-msg.sys{align-self:center;background:var(--warnb,#fff4dc);color:var(--warnt,#9a5f00);border:1px solid var(--line,#e3e8ef);font-size:12.5px}
-#rai-chips{display:flex;flex-wrap:wrap;gap:6px;padding:0 12px 8px;background:var(--bg,#f5f7fa)}
-#rai-chips button{border:1px solid var(--line,#e3e8ef);background:var(--card,#fff);color:var(--ink,#14202e);border-radius:999px;padding:5px 10px;font-size:11.5px;cursor:pointer}
-#rai-chips button:hover{border-color:var(--acc,#1f5eff)}
-#rai-form{display:flex;gap:8px;padding:10px;border-top:1px solid var(--line,#e3e8ef);background:var(--card,#fff)}
-#rai-input{flex:1;min-width:0;border:1px solid var(--line,#e3e8ef);border-radius:10px;padding:9px 11px;font:inherit;background:var(--bg,#f5f7fa);color:var(--ink,#14202e)}
-#rai-send{border:0;border-radius:10px;padding:0 14px;background:var(--acc,#1f5eff);color:#fff;font-weight:600;cursor:pointer}
-#rai-send:disabled{opacity:.5;cursor:default}
-@media(max-width:640px){#rai-root{right:10px;bottom:10px}#rai-panel{width:min(100vw - 16px,380px)}}
-`;
+    if (document.getElementById("ask-sergio-style")) return;
+    var s = document.createElement("style");
+    s.id = "ask-sergio-style";
+    s.textContent =
+      "#ask-sergio-root{position:fixed;right:16px;bottom:16px;z-index:9999;font:14px/1.45 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}" +
+      "#ask-sergio-toggle{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:999px;padding:12px 16px;background:#0f2747;color:#fff;font-weight:700;cursor:pointer;box-shadow:0 10px 28px rgba(15,30,50,.35)}" +
+      "#ask-sergio-toggle:hover{filter:brightness(1.08)}" +
+      "#ask-sergio-panel{display:none;flex-direction:column;width:min(400px,calc(100vw - 20px));height:min(580px,72vh);margin-bottom:10px;border:1px solid rgba(20,32,46,.18);border-radius:16px;background:var(--card,#fff);color:var(--ink,#14202e);overflow:hidden;box-shadow:0 18px 50px rgba(15,30,50,.35)}" +
+      "#ask-sergio-root.open #ask-sergio-panel{display:flex}" +
+      "#ask-sergio-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;padding:14px;background:linear-gradient(135deg,#0f2747,#1f5eff);color:#fff}" +
+      "#ask-sergio-head h2{margin:0;font-size:17px;letter-spacing:-.2px}" +
+      "#ask-sergio-head p{margin:4px 0 0;font-size:12px;opacity:.9}" +
+      "#ask-sergio-close{border:0;background:transparent;color:#fff;font-size:22px;line-height:1;cursor:pointer;padding:2px 8px;border-radius:8px}" +
+      "#ask-sergio-msgs{flex:1;overflow:auto;padding:12px;display:flex;flex-direction:column;gap:8px;background:var(--bg,#f5f7fa)}" +
+      ".ask-msg{max-width:94%;padding:9px 11px;border-radius:14px;white-space:pre-wrap;word-break:break-word}" +
+      ".ask-msg.bot{align-self:flex-start;background:var(--card,#fff);border:1px solid rgba(20,32,46,.12);border-bottom-left-radius:5px}" +
+      ".ask-msg.user{align-self:flex-end;background:#1f5eff;color:#fff;border-bottom-right-radius:5px}" +
+      ".ask-msg.sys{align-self:center;background:#fff4dc;color:#9a5f00;border:1px solid rgba(20,32,46,.1);font-size:12.5px}" +
+      "#ask-sergio-chips{display:flex;flex-wrap:wrap;gap:6px;padding:0 12px 8px;background:var(--bg,#f5f7fa)}" +
+      "#ask-sergio-chips button{border:1px solid rgba(20,32,46,.14);background:var(--card,#fff);color:inherit;border-radius:999px;padding:5px 10px;font-size:11.5px;cursor:pointer}" +
+      "#ask-sergio-form{display:flex;gap:8px;padding:10px;border-top:1px solid rgba(20,32,46,.12);background:var(--card,#fff)}" +
+      "#ask-sergio-input{flex:1;min-width:0;border:1px solid rgba(20,32,46,.16);border-radius:10px;padding:9px 11px;font:inherit;background:var(--bg,#f5f7fa);color:inherit}" +
+      "#ask-sergio-send{border:0;border-radius:10px;padding:0 14px;background:#1f5eff;color:#fff;font-weight:700;cursor:pointer}" +
+      "#ask-sergio-send:disabled{opacity:.5;cursor:default}" +
+      "@media(max-width:640px){#ask-sergio-root{right:10px;bottom:10px}}";
     document.head.appendChild(s);
   }
 
   function mount() {
     injectStyles();
-    const root = document.createElement("div");
-    root.id = "rai-root";
-    root.innerHTML = `
-      <div id="rai-panel" role="dialog" aria-label="Genética Reports AI">
-        <div id="rai-head">
-          <div>
-            <h2 data-rai-pt="Genética Reports AI" data-rai-en="Genetics Reports AI">Genética Reports AI</h2>
-            <p data-rai-pt="Só sobre os teus relatórios PDF" data-rai-en="Only about your PDF reports">Só sobre os teus relatórios PDF</p>
-          </div>
-          <button type="button" id="rai-close" aria-label="Fechar">×</button>
-        </div>
-        <div id="rai-msgs" aria-live="polite"></div>
-        <div id="rai-chips"></div>
-        <form id="rai-form">
-          <input id="rai-input" autocomplete="off" spellcheck="false" placeholder="Pergunta sobre um report…" />
-          <button type="submit" id="rai-send">OK</button>
-        </form>
-      </div>
-      <button type="button" id="rai-toggle" aria-expanded="false">
-        <span aria-hidden="true">💬</span>
-        <span data-rai-pt="Reports AI" data-rai-en="Reports AI">Reports AI</span>
-      </button>`;
+    var root = document.createElement("div");
+    root.id = "ask-sergio-root";
+    root.innerHTML =
+      '<div id="ask-sergio-panel" role="dialog" aria-label="Ask Sergio AI">' +
+      '<div id="ask-sergio-head"><div>' +
+      "<h2>Ask Sergio AI</h2>" +
+      '<p data-pt="Respostas só a partir dos teus reports" data-en="Answers only from your reports">Respostas só a partir dos teus reports</p>' +
+      "</div>" +
+      '<button type="button" id="ask-sergio-close" aria-label="Close">×</button></div>' +
+      '<div id="ask-sergio-msgs" aria-live="polite"></div>' +
+      '<div id="ask-sergio-chips"></div>' +
+      '<form id="ask-sergio-form">' +
+      '<input id="ask-sergio-input" autocomplete="off" spellcheck="false" />' +
+      '<button type="submit" id="ask-sergio-send">OK</button>' +
+      "</form></div>" +
+      '<button type="button" id="ask-sergio-toggle" aria-expanded="false">' +
+      "<span>Ask Sergio AI</span></button>";
     document.body.appendChild(root);
 
-    const panel = root.querySelector("#rai-panel");
-    const msgs = root.querySelector("#rai-msgs");
-    const chips = root.querySelector("#rai-chips");
-    const form = root.querySelector("#rai-form");
-    const input = root.querySelector("#rai-input");
-    const sendBtn = root.querySelector("#rai-send");
-    const toggle = root.querySelector("#rai-toggle");
-    const close = root.querySelector("#rai-close");
+    var msgs = root.querySelector("#ask-sergio-msgs");
+    var chips = root.querySelector("#ask-sergio-chips");
+    var form = root.querySelector("#ask-sergio-form");
+    var input = root.querySelector("#ask-sergio-input");
+    var sendBtn = root.querySelector("#ask-sergio-send");
+    var toggle = root.querySelector("#ask-sergio-toggle");
+    var close = root.querySelector("#ask-sergio-close");
+    var sub = root.querySelector("#ask-sergio-head p");
 
     function applyUiLang() {
-      const L = lang();
-      root.querySelectorAll("[data-rai-pt]").forEach((el) => {
-        el.textContent = L === "en" ? el.dataset.raiEn : el.dataset.raiPt;
-      });
+      var L = lang();
+      sub.textContent = L === "en" ? sub.getAttribute("data-en") : sub.getAttribute("data-pt");
       input.placeholder =
-        L === "en" ? "Ask about a report…" : "Pergunta sobre um report…";
+        L === "en" ? "Ask about your reports…" : "Pergunta sobre os teus reports…";
       sendBtn.textContent = L === "en" ? "Send" : "Enviar";
-      const sug =
+      var sug =
         L === "en"
           ? [
-              "Which report covers dopamine?",
-              "Reports about supplements",
-              "Anything on cancer risk?",
-              "Pharmacogenomics medicines",
+              "What do my reports say about dopamine?",
+              "Any findings on supplements?",
+              "Cancer-related reports?",
+              "Pharmacogenomics summary",
             ]
           : [
-              "Que relatório fala de dopamina?",
-              "Reports sobre suplementos",
-              "Há algo sobre risco de cancro?",
-              "Farmacogenómica e medicamentos",
+              "O que dizem os reports sobre dopamina?",
+              "Há achados sobre suplementos?",
+              "Relatórios ligados a cancro?",
+              "Resumo de farmacogenómica",
             ];
       chips.innerHTML = "";
-      sug.forEach((text) => {
-        const b = document.createElement("button");
+      sug.forEach(function (text) {
+        var b = document.createElement("button");
         b.type = "button";
         b.textContent = text;
-        b.addEventListener("click", () => send(text));
+        b.addEventListener("click", function () { send(text); });
         chips.appendChild(b);
       });
     }
 
     function addMsg(role, text) {
-      const div = document.createElement("div");
-      div.className = "rai-msg " + role;
+      var div = document.createElement("div");
+      div.className = "ask-msg " + role;
       if (role === "bot") renderText(div, text);
       else div.textContent = text;
       msgs.appendChild(div);
-      msgs.scrollTop = msgs.scrollHeight;
-      // Se a resposta apontar para #id, torna clicável o scroll
+      // Deep-link report anchors
       if (role === "bot") {
-        div.querySelectorAll("strong").forEach(() => {});
-        const m = text.match(/#[a-z0-9-]+/gi) || [];
-        m.forEach((hash) => {
-          const a = document.createElement("a");
+        var hashes = String(text).match(/#[a-z0-9-]+/gi) || [];
+        var seen = {};
+        hashes.forEach(function (hash) {
+          if (seen[hash]) return;
+          seen[hash] = 1;
+          var a = document.createElement("a");
           a.href = hash;
-          a.textContent =
-            lang() === "en" ? ` → ${hash}` : ` → ir para ${hash}`;
+          a.textContent = lang() === "en" ? "Open " + hash : "Abrir " + hash;
           a.style.display = "inline-block";
-          a.style.marginTop = "4px";
-          a.addEventListener("click", (e) => {
-            const el = document.getElementById(hash.slice(1));
+          a.style.marginTop = "6px";
+          a.style.marginRight = "8px";
+          a.addEventListener("click", function (e) {
+            var el = document.getElementById(hash.slice(1));
             if (el) {
               e.preventDefault();
               el.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -370,61 +410,59 @@
           div.appendChild(a);
         });
       }
+      msgs.scrollTop = msgs.scrollHeight;
     }
 
     function setOpen(on) {
-      root.classList.toggle("open", on);
+      root.classList.toggle("open", !!on);
       toggle.setAttribute("aria-expanded", on ? "true" : "false");
       if (on) input.focus();
     }
 
-    async function send(text) {
-      const q = String(text || "").trim();
+    function send(text) {
+      var q = String(text || "").trim();
       if (!q || pending) return;
       pending = true;
       sendBtn.disabled = true;
       chips.style.display = "none";
       addMsg("user", q);
       input.value = "";
-      try {
-        const d = await ensureCatalog();
-        addMsg("bot", answer(q, d));
-      } catch (err) {
-        addMsg(
-          "sys",
-          lang() === "en"
-            ? "Could not load the reports catalogue."
-            : "Não foi possível carregar o catálogo de relatórios.",
-        );
-      } finally {
-        pending = false;
-        sendBtn.disabled = false;
-        input.focus();
-      }
+      loadIndex()
+        .then(function (d) { return answerQuestion(q, d); })
+        .then(function (reply) { addMsg("bot", reply); })
+        .catch(function () {
+          addMsg(
+            "sys",
+            lang() === "en"
+              ? "Could not load the report knowledge base."
+              : "Não foi possível carregar a base dos relatórios.",
+          );
+        })
+        .then(function () {
+          pending = false;
+          sendBtn.disabled = false;
+          input.focus();
+        });
     }
 
-    toggle.addEventListener("click", () =>
-      setOpen(!root.classList.contains("open")),
-    );
-    close.addEventListener("click", () => setOpen(false));
-    form.addEventListener("submit", (e) => {
+    toggle.addEventListener("click", function () {
+      setOpen(!root.classList.contains("open"));
+    });
+    close.addEventListener("click", function () { setOpen(false); });
+    form.addEventListener("submit", function (e) {
       e.preventDefault();
       send(input.value);
     });
-
-    // Reagir a mudanças de idioma da página
-    const mo = new MutationObserver(applyUiLang);
-    mo.observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ["lang"],
+    document.querySelectorAll("#lang button").forEach(function (b) {
+      b.addEventListener("click", function () { setTimeout(applyUiLang, 0); });
     });
-    document.querySelectorAll("#lang button").forEach((b) =>
-      b.addEventListener("click", () => setTimeout(applyUiLang, 0)),
-    );
 
     applyUiLang();
     addMsg("bot", lang() === "en" ? HELLO_EN : HELLO_PT);
-    ensureCatalog().catch(() => {});
+    // Preload index so first answer is faster
+    loadIndex().catch(function () {});
+    // Open by default once so it’s obvious the widget is there
+    setOpen(true);
   }
 
   if (document.readyState === "loading") {
