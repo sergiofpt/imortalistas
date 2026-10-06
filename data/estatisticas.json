@@ -1,15 +1,15 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-06T19:18:06Z",
+ "atualizado_em": "2026-10-06T20:22:13Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
-  "visitas": 31,
-  "visitas_30d": 31,
-  "visitas_90d": 31,
+  "visitas": 41,
+  "visitas_30d": 41,
+  "visitas_90d": 41,
   "aberturas_pdf": 25,
-  "visitas_hoje": 6,
-  "visitas_7d": 31,
+  "visitas_hoje": 16,
+  "visitas_7d": 41,
   "aberturas_hoje": 1,
   "aberturas_7d": 25,
   "aberturas_30d": 25,
@@ -46,14 +46,14 @@
   },
   {
    "dia": "2026-10-06",
-   "visitas": 6,
+   "visitas": 16,
    "aberturas": 1
   }
  ],
  "paginas": [
   {
    "path": "/imortalistas/genetica-reports.html",
-   "visitas": 12
+   "visitas": 22
   },
   {
    "path": "/imortalistas/teste-worker",
@@ -234,6 +234,20 @@
  ],
  "aparelhos": [
   {
+   "id": "android/samsung-galaxy-s24",
+   "tipo": "android",
+   "nome": "Samsung Galaxy S24",
+   "estimativa": false,
+   "visitas": 5
+  },
+  {
+   "id": "computador/linux-chrome",
+   "tipo": "computador",
+   "nome": "Linux · Chrome",
+   "estimativa": false,
+   "visitas": 4
+  },
+  {
    "id": "computador/linux-firefox",
    "tipo": "computador",
    "nome": "Linux · Firefox",
@@ -241,16 +255,16 @@
    "visitas": 4
   },
   {
-   "id": "android/samsung-galaxy-s24",
-   "tipo": "android",
-   "nome": "Samsung Galaxy S24",
-   "estimativa": false,
-   "visitas": 3
-  },
-  {
    "id": "computador/windows-10-11-chrome",
    "tipo": "computador",
    "nome": "Windows 10/11 · Chrome",
+   "estimativa": false,
+   "visitas": 4
+  },
+  {
+   "id": "computador/windows-11-chrome",
+   "tipo": "computador",
+   "nome": "Windows 11 · Chrome",
    "estimativa": false,
    "visitas": 2
   },
@@ -269,13 +283,6 @@
    "visitas": 1
   },
   {
-   "id": "computador/linux-chrome",
-   "tipo": "computador",
-   "nome": "Linux · Chrome",
-   "estimativa": false,
-   "visitas": 1
-  },
-  {
    "id": "android/samsung-galaxy-a54",
    "tipo": "android",
    "nome": "Samsung Galaxy A54",
@@ -290,6 +297,13 @@
    "visitas": 1
   },
   {
+   "id": "android/samsung-sm-g930v",
+   "tipo": "android",
+   "nome": "Samsung SM-G930V",
+   "estimativa": false,
+   "visitas": 1
+  },
+  {
    "id": "computador/windows-10-11-firefox",
    "tipo": "computador",
    "nome": "Windows 10/11 · Firefox",
@@ -297,16 +311,16 @@
    "visitas": 1
   },
   {
-   "id": "computador/windows-11-chrome",
+   "id": "computador/windows-chrome",
    "tipo": "computador",
-   "nome": "Windows 11 · Chrome",
+   "nome": "Windows · Chrome",
    "estimativa": false,
    "visitas": 1
   },
   {
-   "id": "computador/windows-chrome",
-   "tipo": "computador",
-   "nome": "Windows · Chrome",
+   "id": "iphone/iphone",
+   "tipo": "iphone",
+   "nome": "iPhone",
    "estimativa": false,
    "visitas": 1
   }
@@ -320,7 +334,7 @@
   {
    "id": "US",
    "nome": "United States",
-   "visitas": 16
+   "visitas": 26
   },
   {
    "id": "BR",
@@ -357,7 +371,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 35
+   "visitas": 44
   },
   {
    "id": "Firefox",
@@ -367,24 +381,24 @@
   {
    "id": "Safari",
    "nome": "Safari",
-   "visitas": 3
+   "visitas": 4
   }
  ],
  "sistemas": [
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 32
+   "visitas": 35
   },
   {
    "id": "Linux",
    "nome": "Linux",
-   "visitas": 10
+   "visitas": 13
   },
   {
    "id": "Android",
    "nome": "Android",
-   "visitas": 9
+   "visitas": 12
   },
   {
    "id": "Chrome OS",
@@ -392,31 +406,31 @@
    "visitas": 2
   },
   {
-   "id": "macOS",
-   "nome": "macOS",
+   "id": "iOS",
+   "nome": "iOS",
    "visitas": 2
   },
   {
-   "id": "iOS",
-   "nome": "iOS",
-   "visitas": 1
+   "id": "macOS",
+   "nome": "macOS",
+   "visitas": 2
   }
  ],
  "tamanhos": [
   {
    "id": "phone",
    "nome": "phone",
-   "visitas": 6
+   "visitas": 8
   },
   {
    "id": "tablet",
    "nome": "tablet",
-   "visitas": 4
+   "visitas": 7
   },
   {
    "id": "desktop",
    "nome": "desktop",
-   "visitas": 22
+   "visitas": 27
   },
   {
    "id": "unknown",
@@ -428,7 +442,12 @@
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 53
+   "visitas": 59
+  },
+  {
+   "id": "https://bing.com",
+   "nome": "bing.com",
+   "visitas": 4
   },
   {
    "id": "https://www.rapamycin.news",
@@ -619,14 +638,14 @@
     },
     {
      "dia": "2026-10-06",
-     "visitas": 6,
+     "visitas": 16,
      "aberturas": 0
     }
    ],
    "paginas": [
     {
      "path": "/imortalistas/genetica-reports.html",
-     "visitas": 8
+     "visitas": 18
     },
     {
      "path": "/imortalistas/",
@@ -715,7 +734,28 @@
      "tipo": "android",
      "nome": "Samsung Galaxy S24",
      "estimativa": false,
+     "visitas": 5
+    },
+    {
+     "id": "computador/linux-chrome",
+     "tipo": "computador",
+     "nome": "Linux · Chrome",
+     "estimativa": false,
      "visitas": 3
+    },
+    {
+     "id": "computador/windows-10-11-chrome",
+     "tipo": "computador",
+     "nome": "Windows 10/11 · Chrome",
+     "estimativa": false,
+     "visitas": 2
+    },
+    {
+     "id": "computador/windows-11-chrome",
+     "tipo": "computador",
+     "nome": "Windows 11 · Chrome",
+     "estimativa": false,
+     "visitas": 2
     },
     {
      "id": "computador/chromeos-chrome",
@@ -746,16 +786,16 @@
      "visitas": 1
     },
     {
-     "id": "computador/windows-10-11-firefox",
-     "tipo": "computador",
-     "nome": "Windows 10/11 · Firefox",
+     "id": "android/samsung-sm-g930v",
+     "tipo": "android",
+     "nome": "Samsung SM-G930V",
      "estimativa": false,
      "visitas": 1
     },
     {
-     "id": "computador/windows-11-chrome",
+     "id": "computador/windows-10-11-firefox",
      "tipo": "computador",
-     "nome": "Windows 11 · Chrome",
+     "nome": "Windows 10/11 · Firefox",
      "estimativa": false,
      "visitas": 1
     },
@@ -765,16 +805,23 @@
      "nome": "Windows · Chrome",
      "estimativa": false,
      "visitas": 1
+    },
+    {
+     "id": "iphone/iphone",
+     "tipo": "iphone",
+     "nome": "iPhone",
+     "estimativa": false,
+     "visitas": 1
     }
    ],
    "aparelhos_desde": "2026-10-03",
    "total": {
-    "visitas": 12,
-    "visitas_30d": 12,
-    "visitas_90d": 12,
+    "visitas": 22,
+    "visitas_30d": 22,
+    "visitas_90d": 22,
     "aberturas_pdf": 7,
-    "visitas_hoje": 6,
-    "visitas_7d": 12,
+    "visitas_hoje": 16,
+    "visitas_7d": 22,
     "aberturas_hoje": 0,
     "aberturas_7d": 7,
     "aberturas_30d": 7,
@@ -787,7 +834,7 @@
     {
      "id": "US",
      "nome": "United States",
-     "visitas": 16
+     "visitas": 26
     },
     {
      "id": "BR",
