@@ -169,7 +169,6 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 
 <!-- conteúdo gerado a partir de data/genetica.json (genetica.js) -->
 <section id="genetica">
-<p class="src" id="gSrc"></p>
 <div id="gNotas"></div>
 <nav class="secnav" id="gNav" aria-label="Secções" data-al-en="Sections"></nav>
 <div id="gProto"></div>
@@ -178,7 +177,6 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 <div id="gFarm"></div>
 </section>
 </main>
-<footer><span class="l-pt">Compilado a 03-10-2026 (PT) só com dados genéticos registados. As análises ao sangue estão na página principal: <a href="index.html">Cronologia de Exames de Sangue</a>. Documento de apoio: não substitui o médico. Dados em data/genetica.json, data/genetica_protocolo.json e data/reports.json (mesmo site); relatórios em PDF em <a href="genetica-reports.html">Genética Reports</a>; sem cookies; só uma contagem anónima de visitas e de PDFs abertos. Evitar, Ajustar, Monitorizar, Priorizar e o Protocolo genético são sugestões que precisam de validação médica.</span><span class="l-en">Compiled on 03-10-2026 (PT) only from recorded genetic data. Blood tests are on the main page: <a href="index.html">Blood Test Timeline</a>. Supporting document: not a substitute for a doctor. Data in data/genetica.json, data/genetica_protocolo.json and data/reports.json (same site); PDF reports under <a href="genetica-reports.html">Genetics Reports</a>; no cookies; only an anonymous count of visits and opened PDFs. Avoid, Adjust, Monitor, Prioritize and the Genetic protocol are suggestions that need medical validation.</span></footer>
 
 <script>
 // ===== páginas de genética: conteúdo no JSON indicado em <body data-json> (PT/EN); mesmas chaves localStorage que index.html =====
@@ -237,7 +235,6 @@ function loadJSON(u){return fetch(u,{cache:'no-cache'}).then(r=>{if(!r.ok)throw 
 function render(){const g=document.getElementById('gen'),meta=document.getElementById('genMeta');
  if(GERR){g.innerHTML=`<div class="card mut">${L('Não foi possível carregar','Could not load')} ${esc(SRC)} (${esc(GERR.message)}). ${L('Se abriu o ficheiro localmente, sirva a pasta com','If you opened the file locally, serve the folder with')} <code>python3 -m http.server</code>.</div>`;return}
  if(!GD)return;const S=GD.seccoes||[],n=S.reduce((a,s)=>a+(s.linhas||[]).length,0);
- document.getElementById('gSrc').innerHTML=H(GD.fonte);
  document.getElementById('gNotas').innerHTML=(GD.notas||[]).map(x=>`<div class="note">${H(x)}</div>`).join('');
  document.getElementById('gNav').innerHTML=(PD?`<a href="#protocolo" class="pnav">${H(PD.titulo)}</a>`:'')+(GD.lista?`<a href="#${esc(GD.lista.id||'lista')}" class="pnav">${L('Lista ordenada','Ranked list')} (${(GD.lista.linhas||[]).length})</a>`:'')+S.map(s=>`<a href="#${esc(s.id)}">${H(s.titulo)}</a>`).join('')+(GD.farmacos?`<a href="#${esc(GD.farmacos.id||'farmacos')}" class="fnav">${H(GD.farmacos.titulo)}</a>`:'');
  renderProto();

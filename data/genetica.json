@@ -1,10 +1,6 @@
 {
  "_leia_me": "Página genetica.html: SÓ resultados desfavoráveis. Ver README.md, secção \"Páginas de genética\". estado: ok | warn | bad | na | info. Texto: HTML simples (b, i, em, strong, br, small, sub, sup). Cada secção tem \"evitar\" e \"priorizar\" (listas de textos PT/EN) e pode ter \"ajustar\" e \"monitorizar\" (opcionais; usados na Farmacogenómica) e \"intro\". \"farmacos\" (só em genetica.json): tabela pesquisável dos fármacos acionáveis do relatório PGx (gerada de pgx632.py). O protocolo consolidado está em data/genetica_protocolo.json.",
  "atualizado_em": "2026-10-03",
- "fonte": {
-  "pt": "Fonte principal: <b>Genetica</b> · lista ordenada de 03-10-2026 a partir dos relatórios genéticos (scores poligénicos recalculados a 03-10-2026) · genótipos do array (684 967 marcadores, analisado localmente) + imputação genómica (só genótipos com DR2 ≥ 0,8) · análises ao sangue de 25-08-2026 onde se cruzam com a genética · não diagnóstico",
-  "en": "Primary source: <b>Genetica</b> · ranked list of 03-10-2026 built from the genetic reports (polygenic scores recalculated on 03-10-2026) · array genotypes (684,967 markers, analysed locally) + genomic imputation (only genotypes with DR2 ≥ 0.8) · blood tests of 25-08-2026 where they meet the genetics · not a diagnosis"
- },
  "notas": [
   {
    "pt": "Só os resultados <b>desfavoráveis</b> ou de <b>atenção</b>, numa <b>lista ordenada</b> do maior para o menor impacto provável na saúde e na longevidade (66 achados; a ordem é um juízo, não um cálculo). Cada linha cita o relatório de origem, com ligação ao PDF em <b>Genética Reports</b>. Os favoráveis estão em <b>Genética Boa</b>; os neutros, médios ou sem conclusão não aparecem (incluindo os genes de neurotransmissores, sem juízo favorável/desfavorável). Achado ClinVar a confirmar em laboratório clínico: <b>SERPINA1 Pi*MZ</b> (apoiado pela imputação; AAT sérica + fenótipo Pi).",
