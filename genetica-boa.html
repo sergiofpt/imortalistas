@@ -23,7 +23,7 @@ nav.main{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;flex:1;min-wi
 nav.main::-webkit-scrollbar{display:none}
 nav.main a{white-space:nowrap;text-decoration:none;color:var(--mut);font-size:13.5px;padding:7px 11px;border-radius:999px;font-weight:500}
 nav.main a:hover{background:var(--nab);color:var(--ink)}
-nav.main a.active{background:var(--ink);color:var(--actfg)}
+nav.main a.active{background:var(--ink);color:var(--actfg)}nav.main{overflow:visible}.dd{position:relative;flex:0 0 auto}.dd summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;white-space:nowrap;color:var(--mut);font:inherit;font-size:13.5px;font-weight:500;padding:7px 11px;border-radius:999px}.dd summary::-webkit-details-marker{display:none}.dd summary::marker{content:''}.dd summary:hover,.dd[open]>summary{background:var(--nab);color:var(--ink)}.dd.on>summary{background:var(--ink);color:var(--actfg)}.dd summary:after{content:' ▾';font-size:.72em;opacity:.75}.dd[open]>summary:after{content:' ▴'}.ddmenu{position:absolute;top:calc(100% + 6px);right:0;min-width:210px;padding:6px;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:0 14px 36px rgba(15,30,50,.18);z-index:80;display:flex;flex-direction:column;gap:2px}.ddmenu a{display:block;border-radius:10px}@media(max-width:640px){.dd summary{padding:6px 10px}.ddmenu{right:0}}
 main{max-width:1240px;margin:0 auto;padding:22px 20px 60px}
 section{margin:0 0 34px}
 .hero{background:linear-gradient(135deg,var(--hero1),var(--hero2));color:#fff;border-radius:20px;padding:28px 30px;margin-bottom:26px;display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:flex-end}
@@ -152,7 +152,7 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 <body data-json="data/genetica_boa.json" data-proto="data/genetica_protocolo.json" data-title-pt="Sérgio F · Genética - Apenas bons resultados" data-title-en="Sérgio F · Genetics - Favourable results only">
 <header class="top"><div class="topin">
 <nav class="main" id="nav">
-<a href="index.html#resumo" data-en="Summary">Resumo</a><a href="index.html#sangue" data-en="Tests">Análises</a><a href="index.html#intolerancias" data-en="Food Intolerances">Intolerâncias Alimentares</a><a href="genetica.html" data-en="Bad Genetics">Genética Má</a><a href="genetica-boa.html" class="active" aria-current="page" data-en="Good Genetics">Genética Boa</a><a href="genetica-reports.html" data-en="Genetics Reports">Genética Reports</a>
+<a href="index.html#resumo" data-en="Summary">Resumo</a><a href="index.html#sangue" data-en="Tests">Análises</a><a href="index.html#intolerancias" data-en="Food Intolerances">Intolerâncias Alimentares</a><details class="dd on"><summary data-en="Genetics">Genética</summary><div class="ddmenu"><a href="genetica-reports.html" data-en="Genetics Reports">Genética Reports</a><a href="genetica-boa.html" class="active" aria-current="page" data-en="Good Genetics">Genética Boa</a><a href="genetica.html" data-en="Bad Genetics">Genética Má</a></div></details>
 </nav>
 <div class="tools">
 <div class="lang" id="lang" role="group" aria-label="Idioma / Language"><button type="button" data-l="pt" lang="pt-PT">Português</button><span class="sep" aria-hidden="true">|</span><button type="button" data-l="en" lang="en">English</button></div>
@@ -280,5 +280,6 @@ applyTheme();
  if(document.visibilityState==='prerender')document.addEventListener('visibilitychange',function f(){if(document.visibilityState!=='prerender'){document.removeEventListener('visibilitychange',f);send()}});
  else if(document.readyState==='complete')send();else addEventListener('load',send)}catch(_){}})();
 </script>
+<script>document.addEventListener('click',function(e){document.querySelectorAll('details.dd[open]').forEach(function(d){if(!d.contains(e.target))d.removeAttribute('open')})});</script>
 </body>
 </html>
