@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-06T01:18:39Z",
+ "atualizado_em": "2026-10-06T16:49:57Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 28,
   "visitas_30d": 28,
   "visitas_90d": 28,
-  "aberturas_pdf": 24,
+  "aberturas_pdf": 25,
   "visitas_hoje": 3,
   "visitas_7d": 28,
-  "aberturas_hoje": 0,
-  "aberturas_7d": 24,
-  "aberturas_30d": 24,
-  "pdf_abertos": 23,
+  "aberturas_hoje": 1,
+  "aberturas_7d": 25,
+  "aberturas_30d": 25,
+  "pdf_abertos": 24,
   "pdf_descarregados": 1,
-  "pdf_pt": 15,
+  "pdf_pt": 16,
   "pdf_en": 9
  },
  "dias": [
@@ -47,7 +47,7 @@
   {
    "dia": "2026-10-06",
    "visitas": 3,
-   "aberturas": 0
+   "aberturas": 1
   }
  ],
  "paginas": [
@@ -80,10 +80,10 @@
   {
    "id": "imortalidade",
    "ficheiro": null,
-   "pt": 5,
+   "pt": 6,
    "en": 3,
-   "total": 8,
-   "abertos_pt": 5,
+   "total": 9,
+   "abertos_pt": 6,
    "abertos_en": 3,
    "descarregados_pt": 0,
    "descarregados_en": 0
@@ -301,7 +301,7 @@
   {
    "id": "PT",
    "nome": "Portugal",
-   "visitas": 33
+   "visitas": 34
   },
   {
    "id": "US",
@@ -343,7 +343,7 @@
   {
    "id": "Firefox",
    "nome": "Firefox",
-   "visitas": 15
+   "visitas": 16
   },
   {
    "id": "Safari",
@@ -355,7 +355,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 29
+   "visitas": 30
   },
   {
    "id": "Android",
@@ -402,14 +402,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 23
+   "visitas": 24
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 49
+   "visitas": 50
   },
   {
    "id": "https://www.rapamycin.news",
@@ -454,7 +454,7 @@
     {
      "dia": "2026-10-06",
      "visitas": 0,
-     "aberturas": 0
+     "aberturas": 1
     }
    ],
    "paginas": [
@@ -464,6 +464,17 @@
     }
    ],
    "relatorios": [
+    {
+     "id": "imortalidade",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 0,
+     "total": 2,
+     "abertos_pt": 2,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
     {
      "id": "cancros-um-a-um",
      "ficheiro": null,
@@ -488,17 +499,6 @@
     },
     {
      "id": "doencas-geneticas-hereditarias",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 0,
-     "total": 1,
-     "abertos_pt": 1,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
-     "id": "imortalidade",
      "ficheiro": null,
      "pt": 1,
      "en": 0,
@@ -552,22 +552,22 @@
     "visitas": 5,
     "visitas_30d": 5,
     "visitas_90d": 5,
-    "aberturas_pdf": 6,
+    "aberturas_pdf": 7,
     "visitas_hoje": 0,
     "visitas_7d": 5,
-    "aberturas_hoje": 0,
-    "aberturas_7d": 6,
-    "aberturas_30d": 6,
-    "pdf_abertos": 6,
+    "aberturas_hoje": 1,
+    "aberturas_7d": 7,
+    "aberturas_30d": 7,
+    "pdf_abertos": 7,
     "pdf_descarregados": 0,
-    "pdf_pt": 6,
+    "pdf_pt": 7,
     "pdf_en": 0
    },
    "paises": [
     {
      "id": "PT",
      "nome": "Portugal",
-     "visitas": 33
+     "visitas": 34
     }
    ]
   },
