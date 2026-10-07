@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-07T21:48:18Z",
+ "atualizado_em": "2026-10-07T22:16:57Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 50,
   "visitas_30d": 50,
   "visitas_90d": 50,
-  "aberturas_pdf": 158,
+  "aberturas_pdf": 159,
   "visitas_hoje": 3,
   "visitas_7d": 50,
-  "aberturas_hoje": 133,
-  "aberturas_7d": 158,
-  "aberturas_30d": 158,
+  "aberturas_hoje": 134,
+  "aberturas_7d": 159,
+  "aberturas_30d": 159,
   "pdf_abertos": 81,
-  "pdf_descarregados": 77,
-  "pdf_pt": 53,
+  "pdf_descarregados": 78,
+  "pdf_pt": 54,
   "pdf_en": 105
  },
  "dias": [
@@ -52,7 +52,7 @@
   {
    "dia": "2026-10-07",
    "visitas": 3,
-   "aberturas": 133
+   "aberturas": 134
   }
  ],
  "paginas": [
@@ -98,6 +98,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "cancros-um-a-um",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "doencas-geneticas-hereditarias",
    "ficheiro": null,
    "pt": 2,
@@ -139,17 +150,6 @@
    "abertos_pt": 1,
    "abertos_en": 0,
    "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "cancros-um-a-um",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -1275,7 +1275,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 124
+   "visitas": 125
   },
   {
    "id": "PT",
@@ -1322,7 +1322,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 178
+   "visitas": 179
   },
   {
    "id": "Firefox",
@@ -1344,7 +1344,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 60
+   "visitas": 61
   },
   {
    "id": "Android",
@@ -1386,14 +1386,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 157
+   "visitas": 158
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 199
+   "visitas": 200
   },
   {
    "id": "https://bing.com",
@@ -1706,7 +1706,7 @@
     {
      "dia": "2026-10-07",
      "visitas": 3,
-     "aberturas": 125
+     "aberturas": 126
     }
    ],
    "paginas": [
@@ -1728,6 +1728,17 @@
     }
    ],
    "relatorios": [
+    {
+     "id": "cancros-um-a-um",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
     {
      "id": "fertilidade-masculina",
      "ficheiro": null,
@@ -1826,17 +1837,6 @@
      "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 0
-    },
-    {
-     "id": "cancros-um-a-um",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
     },
     {
      "id": "capacidade-cognitiva-plasticidade",
@@ -2864,22 +2864,22 @@
     "visitas": 29,
     "visitas_30d": 29,
     "visitas_90d": 29,
-    "aberturas_pdf": 132,
+    "aberturas_pdf": 133,
     "visitas_hoje": 3,
     "visitas_7d": 29,
-    "aberturas_hoje": 125,
-    "aberturas_7d": 132,
-    "aberturas_30d": 132,
+    "aberturas_hoje": 126,
+    "aberturas_7d": 133,
+    "aberturas_30d": 133,
     "pdf_abertos": 55,
-    "pdf_descarregados": 77,
-    "pdf_pt": 29,
+    "pdf_descarregados": 78,
+    "pdf_pt": 30,
     "pdf_en": 103
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 124
+     "visitas": 125
     },
     {
      "id": "US",
