@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-07T21:19:35Z",
+ "atualizado_em": "2026-10-07T21:48:18Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 50,
   "visitas_30d": 50,
   "visitas_90d": 50,
-  "aberturas_pdf": 148,
+  "aberturas_pdf": 158,
   "visitas_hoje": 3,
   "visitas_7d": 50,
-  "aberturas_hoje": 123,
-  "aberturas_7d": 148,
-  "aberturas_30d": 148,
-  "pdf_abertos": 72,
-  "pdf_descarregados": 76,
-  "pdf_pt": 52,
-  "pdf_en": 96
+  "aberturas_hoje": 133,
+  "aberturas_7d": 158,
+  "aberturas_30d": 158,
+  "pdf_abertos": 81,
+  "pdf_descarregados": 77,
+  "pdf_pt": 53,
+  "pdf_en": 105
  },
  "dias": [
   {
@@ -52,7 +52,7 @@
   {
    "dia": "2026-10-07",
    "visitas": 3,
-   "aberturas": 123
+   "aberturas": 133
   }
  ],
  "paginas": [
@@ -153,6 +153,28 @@
    "descarregados_en": 1
   },
   {
+   "id": "funcao-sexual-eretil",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "hormonas",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "longevidade-maxima-sintese-genetica",
    "ficheiro": null,
    "pt": 2,
@@ -197,6 +219,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "anestesia-cirurgia",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
    "id": "ansiedade-resiliencia-stress",
    "ficheiro": null,
    "pt": 0,
@@ -206,6 +239,17 @@
    "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 1
+  },
+  {
+   "id": "cabelo",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
   },
   {
    "id": "capacidade-cognitiva-plasticidade",
@@ -241,6 +285,17 @@
    "descarregados_en": 0
   },
   {
+   "id": "dor-analgesia",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 2,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "estado-portador",
    "ficheiro": null,
    "pt": 1,
@@ -249,6 +304,17 @@
    "abertos_pt": 0,
    "abertos_en": 0,
    "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "estomago-refluxo-helicobacter",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 2,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -263,18 +329,7 @@
    "descarregados_en": 0
   },
   {
-   "id": "funcao-sexual-eretil",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 1,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "glicose-insulina-diabetes",
+   "id": "ferro-metais",
    "ficheiro": null,
    "pt": 1,
    "en": 1,
@@ -285,7 +340,7 @@
    "descarregados_en": 1
   },
   {
-   "id": "hormonas",
+   "id": "glicose-insulina-diabetes",
    "ficheiro": null,
    "pt": 1,
    "en": 1,
@@ -327,6 +382,17 @@
    "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 0
+  },
+  {
+   "id": "mitocondrias-energia",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 2,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
   },
   {
    "id": "oxitocina-comportamento-social",
@@ -483,17 +549,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "anestesia-cirurgia",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 0,
-   "total": 1,
-   "abertos_pt": 1,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
    "id": "aorta-aneurismas",
    "ficheiro": null,
    "pt": 0,
@@ -546,17 +601,6 @@
    "abertos_pt": 0,
    "abertos_en": 1,
    "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
-   "id": "cabelo",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 0,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
    "descarregados_en": 0
   },
   {
@@ -637,17 +681,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "dor-analgesia",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "enxaqueca-cefaleias",
    "ficheiro": null,
    "pt": 0,
@@ -660,28 +693,6 @@
   },
   {
    "id": "esofago",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "estomago-refluxo-helicobacter",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "ferro-metais",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -802,6 +813,17 @@
    "descarregados_en": 0
   },
   {
+   "id": "lipidos-detalhe",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
    "id": "longevidade-excecional",
    "ficheiro": null,
    "pt": 0,
@@ -833,17 +855,6 @@
    "abertos_en": 0,
    "descarregados_pt": 1,
    "descarregados_en": 0
-  },
-  {
-   "id": "mitocondrias-energia",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
   },
   {
    "id": "musculo-osso-sarcopenia",
@@ -975,6 +986,17 @@
    "abertos_pt": 0,
    "abertos_en": 0,
    "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
+   "id": "ritmo-cardiaco-arritmias",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
    "descarregados_en": 0
   },
   {
@@ -1253,7 +1275,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 114
+   "visitas": 124
   },
   {
    "id": "PT",
@@ -1300,7 +1322,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 168
+   "visitas": 178
   },
   {
    "id": "Firefox",
@@ -1317,12 +1339,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 106
+   "visitas": 112
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 56
+   "visitas": 60
   },
   {
    "id": "Android",
@@ -1364,14 +1386,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 147
+   "visitas": 157
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 189
+   "visitas": 199
   },
   {
    "id": "https://bing.com",
@@ -1684,7 +1706,7 @@
     {
      "dia": "2026-10-07",
      "visitas": 3,
-     "aberturas": 115
+     "aberturas": 125
     }
    ],
    "paginas": [
@@ -1708,6 +1730,17 @@
    "relatorios": [
     {
      "id": "fertilidade-masculina",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "hormonas",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -1784,6 +1817,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "cabelo",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
      "id": "cancros-um-a-um",
      "ficheiro": null,
      "pt": 0,
@@ -1828,6 +1872,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "dor-analgesia",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "estado-portador",
      "ficheiro": null,
      "pt": 1,
@@ -1839,7 +1894,18 @@
      "descarregados_en": 1
     },
     {
-     "id": "glicose-insulina-diabetes",
+     "id": "estomago-refluxo-helicobacter",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "ferro-metais",
      "ficheiro": null,
      "pt": 1,
      "en": 1,
@@ -1850,7 +1916,18 @@
      "descarregados_en": 1
     },
     {
-     "id": "hormonas",
+     "id": "funcao-sexual-eretil",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "glicose-insulina-diabetes",
      "ficheiro": null,
      "pt": 1,
      "en": 1,
@@ -1902,6 +1979,17 @@
      "abertos_pt": 0,
      "abertos_en": 0,
      "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "mitocondrias-energia",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
      "descarregados_en": 1
     },
     {
@@ -2037,6 +2125,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "anestesia-cirurgia",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
      "id": "aorta-aneurismas",
      "ficheiro": null,
      "pt": 0,
@@ -2078,17 +2177,6 @@
      "abertos_pt": 0,
      "abertos_en": 1,
      "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
-     "id": "cabelo",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 0,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
      "descarregados_en": 0
     },
     {
@@ -2180,17 +2268,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "dor-analgesia",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "enxaqueca-cefaleias",
      "ficheiro": null,
      "pt": 0,
@@ -2213,28 +2290,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "estomago-refluxo-helicobacter",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "ferro-metais",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "figado-gordura-hepatica",
      "ficheiro": null,
      "pt": 0,
@@ -2247,17 +2302,6 @@
     },
     {
      "id": "forca-hipertrofia-potencia",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "funcao-sexual-eretil",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -2356,6 +2400,17 @@
      "descarregados_en": 0
     },
     {
+     "id": "lipidos-detalhe",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
      "id": "longevidade-excecional",
      "ficheiro": null,
      "pt": 0,
@@ -2387,17 +2442,6 @@
      "abertos_en": 0,
      "descarregados_pt": 1,
      "descarregados_en": 0
-    },
-    {
-     "id": "mitocondrias-energia",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
     },
     {
      "id": "musculo-osso-sarcopenia",
@@ -2540,6 +2584,17 @@
      "abertos_pt": 0,
      "abertos_en": 0,
      "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
+     "id": "ritmo-cardiaco-arritmias",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
      "descarregados_en": 0
     },
     {
@@ -2809,22 +2864,22 @@
     "visitas": 29,
     "visitas_30d": 29,
     "visitas_90d": 29,
-    "aberturas_pdf": 122,
+    "aberturas_pdf": 132,
     "visitas_hoje": 3,
     "visitas_7d": 29,
-    "aberturas_hoje": 115,
-    "aberturas_7d": 122,
-    "aberturas_30d": 122,
-    "pdf_abertos": 46,
-    "pdf_descarregados": 76,
-    "pdf_pt": 28,
-    "pdf_en": 94
+    "aberturas_hoje": 125,
+    "aberturas_7d": 132,
+    "aberturas_30d": 132,
+    "pdf_abertos": 55,
+    "pdf_descarregados": 77,
+    "pdf_pt": 29,
+    "pdf_en": 103
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 114
+     "visitas": 124
     },
     {
      "id": "US",
