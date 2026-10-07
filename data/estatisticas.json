@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-07T17:23:26Z",
+ "atualizado_em": "2026-10-07T17:49:02Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 49,
   "visitas_30d": 49,
   "visitas_90d": 49,
-  "aberturas_pdf": 47,
+  "aberturas_pdf": 56,
   "visitas_hoje": 2,
   "visitas_7d": 49,
-  "aberturas_hoje": 22,
-  "aberturas_7d": 47,
-  "aberturas_30d": 47,
-  "pdf_abertos": 34,
-  "pdf_descarregados": 13,
-  "pdf_pt": 19,
-  "pdf_en": 28
+  "aberturas_hoje": 31,
+  "aberturas_7d": 56,
+  "aberturas_30d": 56,
+  "pdf_abertos": 37,
+  "pdf_descarregados": 19,
+  "pdf_pt": 22,
+  "pdf_en": 34
  },
  "dias": [
   {
@@ -52,7 +52,7 @@
   {
    "dia": "2026-10-07",
    "visitas": 2,
-   "aberturas": 22
+   "aberturas": 31
   }
  ],
  "paginas": [
@@ -107,6 +107,17 @@
    "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 0
+  },
+  {
+   "id": "fertilidade-masculina",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
   },
   {
    "id": "avc-pequenos-vasos-cerebrais",
@@ -285,17 +296,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "fertilidade-masculina",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "glicose-insulina-diabetes",
    "ficheiro": null,
    "pt": 0,
@@ -340,6 +340,17 @@
    "descarregados_en": 0
   },
   {
+   "id": "metilacao-homocisteina-colina",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "microbioma-intestino",
    "ficheiro": null,
    "pt": 1,
@@ -362,6 +373,28 @@
    "descarregados_en": 0
   },
   {
+   "id": "personalidade-tracos-psicologicos",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 0,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
+   "id": "pneumococo-imunossenescencia",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "psicadelicos",
    "ficheiro": null,
    "pt": 1,
@@ -374,6 +407,17 @@
   },
   {
    "id": "relogio-epigenetico-idade-biologica",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
+   "id": "rim-acido-urico",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -406,6 +450,28 @@
    "descarregados_en": 1
   },
   {
+   "id": "suplementos-1002",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
+   "id": "testiculos",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 0,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
    "id": "unhas-cicatrizacao-inflamacao-pele",
    "ficheiro": null,
    "pt": 0,
@@ -415,6 +481,17 @@
    "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 0
+  },
+  {
+   "id": "vesicula-biliar-calculos",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
   }
  ],
  "aparelhos": [
@@ -552,7 +629,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 19
+   "visitas": 28
   },
   {
    "id": "CA",
@@ -589,7 +666,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 73
+   "visitas": 82
   },
   {
    "id": "Firefox",
@@ -606,17 +683,17 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 44
+   "visitas": 51
+  },
+  {
+   "id": "macOS",
+   "nome": "macOS",
+   "visitas": 18
   },
   {
    "id": "Android",
    "nome": "Android",
    "visitas": 17
-  },
-  {
-   "id": "macOS",
-   "nome": "macOS",
-   "visitas": 16
   },
   {
    "id": "Linux",
@@ -653,14 +730,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 46
+   "visitas": 55
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 87
+   "visitas": 96
   },
   {
    "id": "https://bing.com",
@@ -896,7 +973,7 @@
     {
      "dia": "2026-10-07",
      "visitas": 2,
-     "aberturas": 21
+     "aberturas": 30
     }
    ],
    "paginas": [
@@ -918,6 +995,17 @@
     }
    ],
    "relatorios": [
+    {
+     "id": "fertilidade-masculina",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
     {
      "id": "infecoes",
      "ficheiro": null,
@@ -1062,17 +1150,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "fertilidade-masculina",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "glicose-insulina-diabetes",
      "ficheiro": null,
      "pt": 0,
@@ -1117,6 +1194,17 @@
      "descarregados_en": 0
     },
     {
+     "id": "metilacao-homocisteina-colina",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "microbioma-intestino",
      "ficheiro": null,
      "pt": 1,
@@ -1137,6 +1225,28 @@
      "abertos_en": 1,
      "descarregados_pt": 0,
      "descarregados_en": 0
+    },
+    {
+     "id": "personalidade-tracos-psicologicos",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 0,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
+     "id": "pneumococo-imunossenescencia",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
     },
     {
      "id": "relogio-epigenetico-idade-biologica",
@@ -1161,6 +1271,17 @@
      "descarregados_en": 0
     },
     {
+     "id": "rim-acido-urico",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
      "id": "stress-oxidativo-defesa-antioxidante",
      "ficheiro": null,
      "pt": 0,
@@ -1172,6 +1293,28 @@
      "descarregados_en": 1
     },
     {
+     "id": "suplementos-1002",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
+     "id": "testiculos",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 0,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
      "id": "unhas-cicatrizacao-inflamacao-pele",
      "ficheiro": null,
      "pt": 0,
@@ -1181,6 +1324,17 @@
      "abertos_en": 1,
      "descarregados_pt": 0,
      "descarregados_en": 0
+    },
+    {
+     "id": "vesicula-biliar-calculos",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
     }
    ],
    "aparelhos": [
@@ -1288,16 +1442,16 @@
     "visitas": 28,
     "visitas_30d": 28,
     "visitas_90d": 28,
-    "aberturas_pdf": 28,
+    "aberturas_pdf": 37,
     "visitas_hoje": 2,
     "visitas_7d": 28,
-    "aberturas_hoje": 21,
-    "aberturas_7d": 28,
-    "aberturas_30d": 28,
-    "pdf_abertos": 15,
-    "pdf_descarregados": 13,
-    "pdf_pt": 2,
-    "pdf_en": 26
+    "aberturas_hoje": 30,
+    "aberturas_7d": 37,
+    "aberturas_30d": 37,
+    "pdf_abertos": 18,
+    "pdf_descarregados": 19,
+    "pdf_pt": 5,
+    "pdf_en": 32
    },
    "paises": [
     {
@@ -1308,7 +1462,7 @@
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 19
+     "visitas": 28
     },
     {
      "id": "CA",
