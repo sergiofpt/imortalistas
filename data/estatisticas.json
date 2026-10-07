@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-07T17:49:02Z",
+ "atualizado_em": "2026-10-07T18:23:16Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 49,
   "visitas_30d": 49,
   "visitas_90d": 49,
-  "aberturas_pdf": 56,
+  "aberturas_pdf": 80,
   "visitas_hoje": 2,
   "visitas_7d": 49,
-  "aberturas_hoje": 31,
-  "aberturas_7d": 56,
-  "aberturas_30d": 56,
-  "pdf_abertos": 37,
-  "pdf_descarregados": 19,
-  "pdf_pt": 22,
-  "pdf_en": 34
+  "aberturas_hoje": 55,
+  "aberturas_7d": 80,
+  "aberturas_30d": 80,
+  "pdf_abertos": 44,
+  "pdf_descarregados": 36,
+  "pdf_pt": 29,
+  "pdf_en": 51
  },
  "dias": [
   {
@@ -52,7 +52,7 @@
   {
    "dia": "2026-10-07",
    "visitas": 2,
-   "aberturas": 31
+   "aberturas": 55
   }
  ],
  "paginas": [
@@ -98,6 +98,28 @@
    "descarregados_en": 0
   },
   {
+   "id": "avc-pequenos-vasos-cerebrais",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 1,
+   "total": 3,
+   "abertos_pt": 1,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "cancros-um-a-um",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "doencas-geneticas-hereditarias",
    "ficheiro": null,
    "pt": 2,
@@ -120,25 +142,14 @@
    "descarregados_en": 1
   },
   {
-   "id": "avc-pequenos-vasos-cerebrais",
+   "id": "resposta-treino-vo2max",
    "ficheiro": null,
-   "pt": 1,
+   "pt": 2,
    "en": 1,
-   "total": 2,
-   "abertos_pt": 1,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "cancros-um-a-um",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
+   "total": 3,
    "abertos_pt": 1,
    "abertos_en": 1,
-   "descarregados_pt": 0,
+   "descarregados_pt": 1,
    "descarregados_en": 0
   },
   {
@@ -151,6 +162,17 @@
    "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 1
+  },
+  {
+   "id": "longevidade-maxima-sintese-genetica",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 0,
+   "total": 2,
+   "abertos_pt": 1,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
   },
   {
    "id": "nariz-seios-perinasais",
@@ -175,17 +197,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "resposta-treino-vo2max",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
    "id": "vitaminas-minerais",
    "ficheiro": null,
    "pt": 1,
@@ -194,6 +205,28 @@
    "abertos_pt": 0,
    "abertos_en": 0,
    "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "acne-glandulas-sebaceas",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "andropausa-envelhecimento-reprodutivo",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -230,6 +263,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "capacidade-cognitiva-plasticidade",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
    "id": "cardiovascular-avancado",
    "ficheiro": null,
    "pt": 0,
@@ -248,6 +292,39 @@
    "total": 1,
    "abertos_pt": 1,
    "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
+   "id": "cerebro-neurodegeneracao",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "dermatite-seborreica-microbioma-pele",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "destoxificacao-fase-i-ii",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 0
   },
@@ -296,6 +373,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "forca-hipertrofia-potencia",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "glicose-insulina-diabetes",
    "ficheiro": null,
    "pt": 0,
@@ -305,6 +393,39 @@
    "abertos_en": 0,
    "descarregados_pt": 0,
    "descarregados_en": 1
+  },
+  {
+   "id": "gordura-inflamatoria-lipolise",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
+   "id": "hormonas",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 0,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
+   "id": "inflamacao-senescencia-placa",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
   },
   {
    "id": "intolerancias-alimentares-626",
@@ -329,17 +450,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "longevidade-maxima-sintese-genetica",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 0,
-   "total": 1,
-   "abertos_pt": 1,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
    "id": "metilacao-homocisteina-colina",
    "ficheiro": null,
    "pt": 0,
@@ -359,6 +469,17 @@
    "abertos_pt": 0,
    "abertos_en": 0,
    "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
+   "id": "oxido-nitrico-endotelio",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
    "descarregados_en": 0
   },
   {
@@ -395,6 +516,39 @@
    "descarregados_en": 1
   },
   {
+   "id": "prostata",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "proteina-aminoacidos",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
+   "id": "proteostase",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "psicadelicos",
    "ficheiro": null,
    "pt": 1,
@@ -417,7 +571,40 @@
    "descarregados_en": 0
   },
   {
+   "id": "reparacao-adn-estabilidade-genoma",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 0,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
+   "id": "resumo-clinico-medico",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 0,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
    "id": "rim-acido-urico",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
+   "id": "risco-cancro-scores-poligenicos",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -436,6 +623,17 @@
    "abertos_pt": 1,
    "abertos_en": 0,
    "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
+   "id": "sensibilidade-radiacao",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 0,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
    "descarregados_en": 0
   },
   {
@@ -481,6 +679,28 @@
    "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 0
+  },
+  {
+   "id": "valvulas-cardiacas",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "velocidade-processamento-tempo-reacao",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
   },
   {
    "id": "vesicula-biliar-calculos",
@@ -617,6 +837,11 @@
  ],
  "paises": [
   {
+   "id": "SG",
+   "nome": "Singapore",
+   "visitas": 52
+  },
+  {
    "id": "PT",
    "nome": "Portugal",
    "visitas": 37
@@ -625,11 +850,6 @@
    "id": "US",
    "nome": "United States",
    "visitas": 31
-  },
-  {
-   "id": "SG",
-   "nome": "Singapore",
-   "visitas": 28
   },
   {
    "id": "CA",
@@ -666,7 +886,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 82
+   "visitas": 106
   },
   {
    "id": "Firefox",
@@ -683,12 +903,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 51
+   "visitas": 63
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 18
+   "visitas": 30
   },
   {
    "id": "Android",
@@ -730,14 +950,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 55
+   "visitas": 79
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 96
+   "visitas": 120
   },
   {
    "id": "https://bing.com",
@@ -973,7 +1193,7 @@
     {
      "dia": "2026-10-07",
      "visitas": 2,
-     "aberturas": 30
+     "aberturas": 54
     }
    ],
    "paginas": [
@@ -1004,6 +1224,28 @@
      "abertos_pt": 0,
      "abertos_en": 1,
      "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "avc-pequenos-vasos-cerebrais",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "cancros-um-a-um",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
      "descarregados_en": 1
     },
     {
@@ -1040,6 +1282,17 @@
      "descarregados_en": 0
     },
     {
+     "id": "resposta-treino-vo2max",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
      "id": "vitaminas-minerais",
      "ficheiro": null,
      "pt": 1,
@@ -1048,6 +1301,28 @@
      "abertos_pt": 0,
      "abertos_en": 0,
      "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "acne-glandulas-sebaceas",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "andropausa-envelhecimento-reprodutivo",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
      "descarregados_en": 1
     },
     {
@@ -1073,18 +1348,7 @@
      "descarregados_en": 1
     },
     {
-     "id": "avc-pequenos-vasos-cerebrais",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "cancros-um-a-um",
+     "id": "capacidade-cognitiva-plasticidade",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -1104,6 +1368,39 @@
      "abertos_en": 0,
      "descarregados_pt": 0,
      "descarregados_en": 1
+    },
+    {
+     "id": "cerebro-neurodegeneracao",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "dermatite-seborreica-microbioma-pele",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "destoxificacao-fase-i-ii",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
     },
     {
      "id": "doencas-autoimunes",
@@ -1150,6 +1447,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "forca-hipertrofia-potencia",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "glicose-insulina-diabetes",
      "ficheiro": null,
      "pt": 0,
@@ -1161,7 +1469,40 @@
      "descarregados_en": 1
     },
     {
+     "id": "gordura-inflamatoria-lipolise",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
+     "id": "hormonas",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 0,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
      "id": "imortalidade",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
+     "id": "inflamacao-senescencia-placa",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -1194,6 +1535,17 @@
      "descarregados_en": 0
     },
     {
+     "id": "longevidade-maxima-sintese-genetica",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 0,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
      "id": "metilacao-homocisteina-colina",
      "ficheiro": null,
      "pt": 0,
@@ -1213,6 +1565,17 @@
      "abertos_pt": 0,
      "abertos_en": 0,
      "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
+     "id": "oxido-nitrico-endotelio",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
      "descarregados_en": 0
     },
     {
@@ -1249,6 +1612,39 @@
      "descarregados_en": 1
     },
     {
+     "id": "prostata",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "proteina-aminoacidos",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
+     "id": "proteostase",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "relogio-epigenetico-idade-biologica",
      "ficheiro": null,
      "pt": 0,
@@ -1260,14 +1656,25 @@
      "descarregados_en": 0
     },
     {
-     "id": "resposta-treino-vo2max",
+     "id": "reparacao-adn-estabilidade-genoma",
      "ficheiro": null,
-     "pt": 0,
-     "en": 1,
+     "pt": 1,
+     "en": 0,
      "total": 1,
      "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
+     "id": "resumo-clinico-medico",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 0,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
      "descarregados_en": 0
     },
     {
@@ -1279,6 +1686,28 @@
      "abertos_pt": 0,
      "abertos_en": 1,
      "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
+     "id": "risco-cancro-scores-poligenicos",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
+     "id": "sensibilidade-radiacao",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 0,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
      "descarregados_en": 0
     },
     {
@@ -1324,6 +1753,28 @@
      "abertos_en": 1,
      "descarregados_pt": 0,
      "descarregados_en": 0
+    },
+    {
+     "id": "valvulas-cardiacas",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "velocidade-processamento-tempo-reacao",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
     },
     {
      "id": "vesicula-biliar-calculos",
@@ -1442,27 +1893,27 @@
     "visitas": 28,
     "visitas_30d": 28,
     "visitas_90d": 28,
-    "aberturas_pdf": 37,
+    "aberturas_pdf": 61,
     "visitas_hoje": 2,
     "visitas_7d": 28,
-    "aberturas_hoje": 30,
-    "aberturas_7d": 37,
-    "aberturas_30d": 37,
-    "pdf_abertos": 18,
-    "pdf_descarregados": 19,
-    "pdf_pt": 5,
-    "pdf_en": 32
+    "aberturas_hoje": 54,
+    "aberturas_7d": 61,
+    "aberturas_30d": 61,
+    "pdf_abertos": 25,
+    "pdf_descarregados": 36,
+    "pdf_pt": 12,
+    "pdf_en": 49
    },
    "paises": [
+    {
+     "id": "SG",
+     "nome": "Singapore",
+     "visitas": 52
+    },
     {
      "id": "US",
      "nome": "United States",
      "visitas": 31
-    },
-    {
-     "id": "SG",
-     "nome": "Singapore",
-     "visitas": 28
     },
     {
      "id": "CA",
