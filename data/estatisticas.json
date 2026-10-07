@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-07T22:35:54Z",
+ "atualizado_em": "2026-10-07T22:57:48Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 50,
   "visitas_30d": 50,
   "visitas_90d": 50,
-  "aberturas_pdf": 175,
+  "aberturas_pdf": 185,
   "visitas_hoje": 3,
   "visitas_7d": 50,
-  "aberturas_hoje": 150,
-  "aberturas_7d": 175,
-  "aberturas_30d": 175,
-  "pdf_abertos": 84,
-  "pdf_descarregados": 91,
-  "pdf_pt": 60,
-  "pdf_en": 115
+  "aberturas_hoje": 160,
+  "aberturas_7d": 185,
+  "aberturas_30d": 185,
+  "pdf_abertos": 88,
+  "pdf_descarregados": 97,
+  "pdf_pt": 64,
+  "pdf_en": 121
  },
  "dias": [
   {
@@ -52,7 +52,7 @@
   {
    "dia": "2026-10-07",
    "visitas": 3,
-   "aberturas": 150
+   "aberturas": 160
   }
  ],
  "paginas": [
@@ -230,6 +230,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "oxitocina-comportamento-social",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "rim-acido-urico",
    "ficheiro": null,
    "pt": 1,
@@ -327,6 +338,17 @@
    "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 0
+  },
+  {
+   "id": "disruptores-endocrinos-poluentes",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
   },
   {
    "id": "estado-portador",
@@ -450,17 +472,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "oxitocina-comportamento-social",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 2,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "paladar-olfato",
    "ficheiro": null,
    "pt": 1,
@@ -484,6 +495,17 @@
   },
   {
    "id": "prostata",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 2,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "proteostase",
    "ficheiro": null,
    "pt": 0,
    "en": 2,
@@ -572,6 +594,28 @@
   },
   {
    "id": "termogenese-gordura-castanha",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
+   "id": "termorregulacao-sudorese",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
+   "id": "testiculos",
    "ficheiro": null,
    "pt": 1,
    "en": 1,
@@ -714,6 +758,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "cetose-corpos-cetonicos",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
    "id": "dermatite-seborreica-microbioma-pele",
    "ficheiro": null,
    "pt": 0,
@@ -736,15 +791,15 @@
    "descarregados_en": 0
   },
   {
-   "id": "disruptores-endocrinos-poluentes",
+   "id": "doenca-arterial-periferica",
    "ficheiro": null,
-   "pt": 0,
-   "en": 1,
+   "pt": 1,
+   "en": 0,
    "total": 1,
    "abertos_pt": 0,
    "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
+   "descarregados_pt": 1,
+   "descarregados_en": 0
   },
   {
    "id": "doencas-autoimunes",
@@ -833,6 +888,17 @@
    "abertos_en": 0,
    "descarregados_pt": 1,
    "descarregados_en": 0
+  },
+  {
+   "id": "hipertensao-pulmonar-circulacao-pulmao",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
   },
   {
    "id": "impulsividade-recompensa-vicio",
@@ -956,6 +1022,17 @@
    "descarregados_en": 0
   },
   {
+   "id": "pancreas-pancreatite",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "pele-skin-care",
    "ficheiro": null,
    "pt": 0,
@@ -989,7 +1066,7 @@
    "descarregados_en": 1
   },
   {
-   "id": "proteina-aminoacidos",
+   "id": "polipos-colorretais",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -1000,15 +1077,15 @@
    "descarregados_en": 0
   },
   {
-   "id": "proteostase",
+   "id": "proteina-aminoacidos",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
    "total": 1,
    "abertos_pt": 0,
-   "abertos_en": 0,
+   "abertos_en": 1,
    "descarregados_pt": 0,
-   "descarregados_en": 1
+   "descarregados_en": 0
   },
   {
    "id": "relogio-epigenetico-idade-biologica",
@@ -1118,28 +1195,6 @@
    "abertos_pt": 0,
    "abertos_en": 1,
    "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
-   "id": "termorregulacao-sudorese",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
-   "id": "testiculos",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 0,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
    "descarregados_en": 0
   },
   {
@@ -1330,7 +1385,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 141
+   "visitas": 151
   },
   {
    "id": "PT",
@@ -1377,7 +1432,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 195
+   "visitas": 205
   },
   {
    "id": "Firefox",
@@ -1394,12 +1449,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 122
+   "visitas": 131
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 67
+   "visitas": 68
   },
   {
    "id": "Android",
@@ -1441,14 +1496,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 174
+   "visitas": 184
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 216
+   "visitas": 226
   },
   {
    "id": "https://bing.com",
@@ -1761,7 +1816,7 @@
     {
      "dia": "2026-10-07",
      "visitas": 3,
-     "aberturas": 142
+     "aberturas": 152
     }
    ],
    "paginas": [
@@ -1847,6 +1902,17 @@
      "abertos_pt": 0,
      "abertos_en": 2,
      "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "oxitocina-comportamento-social",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
      "descarregados_en": 1
     },
     {
@@ -1939,6 +2005,17 @@
     },
     {
      "id": "cardiovascular-avancado",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "disruptores-endocrinos-poluentes",
      "ficheiro": null,
      "pt": 1,
      "en": 1,
@@ -2103,17 +2180,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "oxitocina-comportamento-social",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "paladar-olfato",
      "ficheiro": null,
      "pt": 1,
@@ -2137,6 +2203,17 @@
     },
     {
      "id": "prostata",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "proteostase",
      "ficheiro": null,
      "pt": 0,
      "en": 2,
@@ -2203,6 +2280,28 @@
     },
     {
      "id": "termogenese-gordura-castanha",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
+     "id": "termorregulacao-sudorese",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
+     "id": "testiculos",
      "ficheiro": null,
      "pt": 1,
      "en": 1,
@@ -2356,6 +2455,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "cetose-corpos-cetonicos",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
      "id": "dermatite-seborreica-microbioma-pele",
      "ficheiro": null,
      "pt": 0,
@@ -2378,15 +2488,15 @@
      "descarregados_en": 0
     },
     {
-     "id": "disruptores-endocrinos-poluentes",
+     "id": "doenca-arterial-periferica",
      "ficheiro": null,
-     "pt": 0,
-     "en": 1,
+     "pt": 1,
+     "en": 0,
      "total": 1,
      "abertos_pt": 0,
      "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
+     "descarregados_pt": 1,
+     "descarregados_en": 0
     },
     {
      "id": "doencas-autoimunes",
@@ -2486,6 +2596,17 @@
      "abertos_en": 0,
      "descarregados_pt": 1,
      "descarregados_en": 0
+    },
+    {
+     "id": "hipertensao-pulmonar-circulacao-pulmao",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
     },
     {
      "id": "impulsividade-recompensa-vicio",
@@ -2609,6 +2730,17 @@
      "descarregados_en": 0
     },
     {
+     "id": "pancreas-pancreatite",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "pele-skin-care",
      "ficheiro": null,
      "pt": 0,
@@ -2642,7 +2774,7 @@
      "descarregados_en": 1
     },
     {
-     "id": "proteina-aminoacidos",
+     "id": "polipos-colorretais",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -2653,15 +2785,15 @@
      "descarregados_en": 0
     },
     {
-     "id": "proteostase",
+     "id": "proteina-aminoacidos",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
      "total": 1,
      "abertos_pt": 0,
-     "abertos_en": 0,
+     "abertos_en": 1,
      "descarregados_pt": 0,
-     "descarregados_en": 1
+     "descarregados_en": 0
     },
     {
      "id": "psicadelicos",
@@ -2793,28 +2925,6 @@
      "abertos_pt": 0,
      "abertos_en": 1,
      "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
-     "id": "termorregulacao-sudorese",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
-     "id": "testiculos",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 0,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
      "descarregados_en": 0
     },
     {
@@ -2985,22 +3095,22 @@
     "visitas": 29,
     "visitas_30d": 29,
     "visitas_90d": 29,
-    "aberturas_pdf": 149,
+    "aberturas_pdf": 159,
     "visitas_hoje": 3,
     "visitas_7d": 29,
-    "aberturas_hoje": 142,
-    "aberturas_7d": 149,
-    "aberturas_30d": 149,
-    "pdf_abertos": 58,
-    "pdf_descarregados": 91,
-    "pdf_pt": 36,
-    "pdf_en": 113
+    "aberturas_hoje": 152,
+    "aberturas_7d": 159,
+    "aberturas_30d": 159,
+    "pdf_abertos": 62,
+    "pdf_descarregados": 97,
+    "pdf_pt": 40,
+    "pdf_en": 119
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 141
+     "visitas": 151
     },
     {
      "id": "US",
