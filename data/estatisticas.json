@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-07T00:31:20Z",
+ "atualizado_em": "2026-10-07T01:20:54Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
-  "visitas": 47,
-  "visitas_30d": 47,
-  "visitas_90d": 47,
-  "aberturas_pdf": 25,
-  "visitas_hoje": 0,
-  "visitas_7d": 47,
-  "aberturas_hoje": 0,
-  "aberturas_7d": 25,
-  "aberturas_30d": 25,
-  "pdf_abertos": 24,
+  "visitas": 48,
+  "visitas_30d": 48,
+  "visitas_90d": 48,
+  "aberturas_pdf": 27,
+  "visitas_hoje": 1,
+  "visitas_7d": 48,
+  "aberturas_hoje": 2,
+  "aberturas_7d": 27,
+  "aberturas_30d": 27,
+  "pdf_abertos": 26,
   "pdf_descarregados": 1,
   "pdf_pt": 16,
-  "pdf_en": 9
+  "pdf_en": 11
  },
  "dias": [
   {
@@ -51,14 +51,14 @@
   },
   {
    "dia": "2026-10-07",
-   "visitas": 0,
-   "aberturas": 0
+   "visitas": 1,
+   "aberturas": 2
   }
  ],
  "paginas": [
   {
    "path": "/imortalistas/genetica-reports.html",
-   "visitas": 26
+   "visitas": 27
   },
   {
    "path": "/imortalistas/teste-worker",
@@ -109,6 +109,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "cancros-um-a-um",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
    "id": "doencas-geneticas-hereditarias",
    "ficheiro": null,
    "pt": 2,
@@ -131,18 +142,18 @@
    "descarregados_en": 0
   },
   {
-   "id": "anestesia-cirurgia",
+   "id": "referencia-via-forca-hipertrofia-potencia",
    "ficheiro": null,
-   "pt": 1,
-   "en": 0,
-   "total": 1,
-   "abertos_pt": 1,
-   "abertos_en": 0,
+   "pt": 0,
+   "en": 2,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 2,
    "descarregados_pt": 0,
    "descarregados_en": 0
   },
   {
-   "id": "cancros-um-a-um",
+   "id": "anestesia-cirurgia",
    "ficheiro": null,
    "pt": 1,
    "en": 0,
@@ -204,17 +215,6 @@
    "total": 1,
    "abertos_pt": 1,
    "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
-   "id": "referencia-via-forca-hipertrofia-potencia",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 0
   },
@@ -299,6 +299,13 @@
    "visitas": 1
   },
   {
+   "id": "computador/mac-chrome",
+   "tipo": "computador",
+   "nome": "Mac · Chrome",
+   "estimativa": false,
+   "visitas": 1
+  },
+  {
    "id": "android/samsung-galaxy-a54",
    "tipo": "android",
    "nome": "Samsung Galaxy A54",
@@ -360,13 +367,13 @@
    "visitas": 30
   },
   {
-   "id": "BR",
-   "nome": "Brazil",
-   "visitas": 1
-  },
-  {
    "id": "CA",
    "nome": "Canada",
+   "visitas": 4
+  },
+  {
+   "id": "BR",
+   "nome": "Brazil",
    "visitas": 1
   },
   {
@@ -394,7 +401,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 50
+   "visitas": 53
   },
   {
    "id": "Firefox",
@@ -424,6 +431,11 @@
    "visitas": 15
   },
   {
+   "id": "macOS",
+   "nome": "macOS",
+   "visitas": 5
+  },
+  {
    "id": "Chrome OS",
    "nome": "Chrome OS",
    "visitas": 2
@@ -431,11 +443,6 @@
   {
    "id": "iOS",
    "nome": "iOS",
-   "visitas": 2
-  },
-  {
-   "id": "macOS",
-   "nome": "macOS",
    "visitas": 2
   }
  ],
@@ -453,19 +460,19 @@
   {
    "id": "desktop",
    "nome": "desktop",
-   "visitas": 29
+   "visitas": 30
   },
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 24
+   "visitas": 26
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 65
+   "visitas": 67
   },
   {
    "id": "https://bing.com",
@@ -475,7 +482,7 @@
   {
    "id": "https://www.rapamycin.news",
    "nome": "www.rapamycin.news",
-   "visitas": 2
+   "visitas": 3
   },
   {
    "id": "https://l.instagram.com",
@@ -689,14 +696,14 @@
     },
     {
      "dia": "2026-10-07",
-     "visitas": 0,
-     "aberturas": 0
+     "visitas": 1,
+     "aberturas": 2
     }
    ],
    "paginas": [
     {
      "path": "/imortalistas/genetica-reports.html",
-     "visitas": 22
+     "visitas": 23
     },
     {
      "path": "/imortalistas/",
@@ -724,6 +731,17 @@
      "descarregados_en": 0
     },
     {
+     "id": "referencia-via-forca-hipertrofia-potencia",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 2,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
      "id": "avc-pequenos-vasos-cerebrais",
      "ficheiro": null,
      "pt": 0,
@@ -733,6 +751,17 @@
      "abertos_en": 0,
      "descarregados_pt": 0,
      "descarregados_en": 1
+    },
+    {
+     "id": "cancros-um-a-um",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
     },
     {
      "id": "imortalidade",
@@ -758,17 +787,6 @@
     },
     {
      "id": "longevidade-excecional",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
-     "id": "referencia-via-forca-hipertrofia-potencia",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -830,6 +848,13 @@
      "visitas": 1
     },
     {
+     "id": "computador/mac-chrome",
+     "tipo": "computador",
+     "nome": "Mac · Chrome",
+     "estimativa": false,
+     "visitas": 1
+    },
+    {
      "id": "android/samsung-galaxy-a54",
      "tipo": "android",
      "nome": "Samsung Galaxy A54",
@@ -867,19 +892,19 @@
    ],
    "aparelhos_desde": "2026-10-03",
    "total": {
-    "visitas": 26,
-    "visitas_30d": 26,
-    "visitas_90d": 26,
-    "aberturas_pdf": 7,
-    "visitas_hoje": 0,
-    "visitas_7d": 26,
-    "aberturas_hoje": 0,
-    "aberturas_7d": 7,
-    "aberturas_30d": 7,
-    "pdf_abertos": 6,
+    "visitas": 27,
+    "visitas_30d": 27,
+    "visitas_90d": 27,
+    "aberturas_pdf": 9,
+    "visitas_hoje": 1,
+    "visitas_7d": 27,
+    "aberturas_hoje": 2,
+    "aberturas_7d": 9,
+    "aberturas_30d": 9,
+    "pdf_abertos": 8,
     "pdf_descarregados": 1,
     "pdf_pt": 0,
-    "pdf_en": 7
+    "pdf_en": 9
    },
    "paises": [
     {
@@ -888,13 +913,13 @@
      "visitas": 30
     },
     {
-     "id": "BR",
-     "nome": "Brazil",
-     "visitas": 1
-    },
-    {
      "id": "CA",
      "nome": "Canada",
+     "visitas": 4
+    },
+    {
+     "id": "BR",
+     "nome": "Brazil",
      "visitas": 1
     },
     {
