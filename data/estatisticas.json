@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-07T08:21:48Z",
+ "atualizado_em": "2026-10-07T17:23:26Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 49,
   "visitas_30d": 49,
   "visitas_90d": 49,
-  "aberturas_pdf": 28,
+  "aberturas_pdf": 47,
   "visitas_hoje": 2,
   "visitas_7d": 49,
-  "aberturas_hoje": 3,
-  "aberturas_7d": 28,
-  "aberturas_30d": 28,
-  "pdf_abertos": 27,
-  "pdf_descarregados": 1,
-  "pdf_pt": 17,
-  "pdf_en": 11
+  "aberturas_hoje": 22,
+  "aberturas_7d": 47,
+  "aberturas_30d": 47,
+  "pdf_abertos": 34,
+  "pdf_descarregados": 13,
+  "pdf_pt": 19,
+  "pdf_en": 28
  },
  "dias": [
   {
@@ -52,7 +52,7 @@
   {
    "dia": "2026-10-07",
    "visitas": 2,
-   "aberturas": 3
+   "aberturas": 22
   }
  ],
  "paginas": [
@@ -98,6 +98,17 @@
    "descarregados_en": 0
   },
   {
+   "id": "doencas-geneticas-hereditarias",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 1,
+   "total": 3,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
    "id": "avc-pequenos-vasos-cerebrais",
    "ficheiro": null,
    "pt": 1,
@@ -120,15 +131,15 @@
    "descarregados_en": 0
   },
   {
-   "id": "doencas-geneticas-hereditarias",
+   "id": "infecoes",
    "ficheiro": null,
-   "pt": 2,
-   "en": 0,
+   "pt": 0,
+   "en": 2,
    "total": 2,
-   "abertos_pt": 2,
-   "abertos_en": 0,
+   "abertos_pt": 0,
+   "abertos_en": 1,
    "descarregados_pt": 0,
-   "descarregados_en": 0
+   "descarregados_en": 1
   },
   {
    "id": "nariz-seios-perinasais",
@@ -153,6 +164,28 @@
    "descarregados_en": 0
   },
   {
+   "id": "resposta-treino-vo2max",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
+   "id": "vitaminas-minerais",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "anestesia-cirurgia",
    "ficheiro": null,
    "pt": 1,
@@ -162,6 +195,39 @@
    "abertos_en": 0,
    "descarregados_pt": 0,
    "descarregados_en": 0
+  },
+  {
+   "id": "ansiedade-resiliencia-stress",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
+   "id": "articulacoes-artrose",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "cardiovascular-avancado",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
   },
   {
    "id": "cartao-farmacogenetico",
@@ -175,6 +241,28 @@
    "descarregados_en": 0
   },
   {
+   "id": "doencas-autoimunes",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "estomago-refluxo-helicobacter",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "farmacogenomica-632",
    "ficheiro": null,
    "pt": 1,
@@ -186,7 +274,40 @@
    "descarregados_en": 0
   },
   {
-   "id": "infecoes",
+   "id": "ferro-metais",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "fertilidade-masculina",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "glicose-insulina-diabetes",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "intolerancias-alimentares-626",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -219,6 +340,28 @@
    "descarregados_en": 0
   },
   {
+   "id": "microbioma-intestino",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 0,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
+   "id": "pele-skin-care",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
    "id": "psicadelicos",
    "ficheiro": null,
    "pt": 1,
@@ -230,13 +373,13 @@
    "descarregados_en": 0
   },
   {
-   "id": "resposta-treino-vo2max",
+   "id": "relogio-epigenetico-idade-biologica",
    "ficheiro": null,
-   "pt": 1,
-   "en": 0,
+   "pt": 0,
+   "en": 1,
    "total": 1,
-   "abertos_pt": 1,
-   "abertos_en": 0,
+   "abertos_pt": 0,
+   "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 0
   },
@@ -248,6 +391,28 @@
    "total": 1,
    "abertos_pt": 1,
    "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
+   "id": "stress-oxidativo-defesa-antioxidante",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "unhas-cicatrizacao-inflamacao-pele",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 0
   }
@@ -385,6 +550,11 @@
    "visitas": 31
   },
   {
+   "id": "SG",
+   "nome": "Singapore",
+   "visitas": 19
+  },
+  {
    "id": "CA",
    "nome": "Canada",
    "visitas": 4
@@ -419,7 +589,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 54
+   "visitas": 73
   },
   {
    "id": "Firefox",
@@ -436,7 +606,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 36
+   "visitas": 44
   },
   {
    "id": "Android",
@@ -444,14 +614,14 @@
    "visitas": 17
   },
   {
+   "id": "macOS",
+   "nome": "macOS",
+   "visitas": 16
+  },
+  {
    "id": "Linux",
    "nome": "Linux",
    "visitas": 15
-  },
-  {
-   "id": "macOS",
-   "nome": "macOS",
-   "visitas": 5
   },
   {
    "id": "Chrome OS",
@@ -483,14 +653,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 27
+   "visitas": 46
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 68
+   "visitas": 87
   },
   {
    "id": "https://bing.com",
@@ -726,7 +896,7 @@
     {
      "dia": "2026-10-07",
      "visitas": 2,
-     "aberturas": 2
+     "aberturas": 21
     }
    ],
    "paginas": [
@@ -749,6 +919,17 @@
    ],
    "relatorios": [
     {
+     "id": "infecoes",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "nariz-seios-perinasais",
      "ficheiro": null,
      "pt": 0,
@@ -769,6 +950,39 @@
      "abertos_en": 2,
      "descarregados_pt": 0,
      "descarregados_en": 0
+    },
+    {
+     "id": "vitaminas-minerais",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "ansiedade-resiliencia-stress",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
+     "id": "articulacoes-artrose",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
     },
     {
      "id": "avc-pequenos-vasos-cerebrais",
@@ -793,6 +1007,83 @@
      "descarregados_en": 0
     },
     {
+     "id": "cardiovascular-avancado",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "doencas-autoimunes",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "doencas-geneticas-hereditarias",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
+     "id": "estomago-refluxo-helicobacter",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "ferro-metais",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "fertilidade-masculina",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "glicose-insulina-diabetes",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "imortalidade",
      "ficheiro": null,
      "pt": 0,
@@ -804,7 +1095,7 @@
      "descarregados_en": 0
     },
     {
-     "id": "infecoes",
+     "id": "intolerancias-alimentares-626",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -816,6 +1107,72 @@
     },
     {
      "id": "longevidade-excecional",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
+     "id": "microbioma-intestino",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 0,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
+     "id": "pele-skin-care",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
+     "id": "relogio-epigenetico-idade-biologica",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
+     "id": "resposta-treino-vo2max",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
+     "id": "stress-oxidativo-defesa-antioxidante",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "unhas-cicatrizacao-inflamacao-pele",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -931,22 +1288,27 @@
     "visitas": 28,
     "visitas_30d": 28,
     "visitas_90d": 28,
-    "aberturas_pdf": 9,
+    "aberturas_pdf": 28,
     "visitas_hoje": 2,
     "visitas_7d": 28,
-    "aberturas_hoje": 2,
-    "aberturas_7d": 9,
-    "aberturas_30d": 9,
-    "pdf_abertos": 8,
-    "pdf_descarregados": 1,
-    "pdf_pt": 0,
-    "pdf_en": 9
+    "aberturas_hoje": 21,
+    "aberturas_7d": 28,
+    "aberturas_30d": 28,
+    "pdf_abertos": 15,
+    "pdf_descarregados": 13,
+    "pdf_pt": 2,
+    "pdf_en": 26
    },
    "paises": [
     {
      "id": "US",
      "nome": "United States",
      "visitas": 31
+    },
+    {
+     "id": "SG",
+     "nome": "Singapore",
+     "visitas": 19
     },
     {
      "id": "CA",
