@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-07T23:33:47Z",
+ "atualizado_em": "2026-10-07T23:56:19Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 50,
   "visitas_30d": 50,
   "visitas_90d": 50,
-  "aberturas_pdf": 191,
+  "aberturas_pdf": 197,
   "visitas_hoje": 3,
   "visitas_7d": 50,
   "aberturas_hoje": 161,
   "aberturas_7d": 186,
   "aberturas_30d": 186,
-  "pdf_abertos": 89,
-  "pdf_descarregados": 102,
-  "pdf_pt": 68,
-  "pdf_en": 123
+  "pdf_abertos": 92,
+  "pdf_descarregados": 105,
+  "pdf_pt": 71,
+  "pdf_en": 126
  },
  "dias": [
   {
@@ -373,7 +373,29 @@
    "descarregados_en": 0
   },
   {
+   "id": "dermatite-seborreica-microbioma-pele",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 2,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "disruptores-endocrinos-poluentes",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "esofago",
    "ficheiro": null,
    "pt": 1,
    "en": 1,
@@ -461,6 +483,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "health-report-72",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
    "id": "imunidade-envelhecimento-imunitario",
    "ficheiro": null,
    "pt": 0,
@@ -492,6 +525,17 @@
    "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 1
+  },
+  {
+   "id": "musculo-osso-sarcopenia",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
   },
   {
    "id": "paladar-olfato",
@@ -579,6 +623,17 @@
    "abertos_pt": 0,
    "abertos_en": 1,
    "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "sensores-nutrientes-autofagia",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
    "descarregados_en": 1
   },
   {
@@ -791,17 +846,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "dermatite-seborreica-microbioma-pele",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "destoxificacao-fase-i-ii",
    "ficheiro": null,
    "pt": 0,
@@ -857,17 +901,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "esofago",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "forca-hipertrofia-potencia",
    "ficheiro": null,
    "pt": 0,
@@ -887,17 +920,6 @@
    "abertos_pt": 0,
    "abertos_en": 1,
    "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
-   "id": "health-report-72",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 0,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
    "descarregados_en": 0
   },
   {
@@ -1011,17 +1033,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "musculo-osso-sarcopenia",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 0,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
    "id": "olhos-em-detalhe",
    "ficheiro": null,
    "pt": 0,
@@ -1110,6 +1121,17 @@
    "descarregados_en": 0
   },
   {
+   "id": "pulmao-funcao-respiratoria",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 0,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
    "id": "relogio-epigenetico-idade-biologica",
    "ficheiro": null,
    "pt": 0,
@@ -1163,17 +1185,6 @@
    "abertos_en": 0,
    "descarregados_pt": 1,
    "descarregados_en": 0
-  },
-  {
-   "id": "sensores-nutrientes-autofagia",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
   },
   {
    "id": "stress-oxidativo-defesa-antioxidante",
@@ -1396,7 +1407,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 157
+   "visitas": 163
   },
   {
    "id": "PT",
@@ -1443,7 +1454,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 211
+   "visitas": 217
   },
   {
    "id": "Firefox",
@@ -1460,12 +1471,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 133
+   "visitas": 138
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 72
+   "visitas": 73
   },
   {
    "id": "Android",
@@ -1507,14 +1518,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 190
+   "visitas": 196
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 232
+   "visitas": 238
   },
   {
    "id": "https://bing.com",
@@ -2048,6 +2059,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "dermatite-seborreica-microbioma-pele",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "disruptores-endocrinos-poluentes",
      "ficheiro": null,
      "pt": 1,
@@ -2067,6 +2089,17 @@
      "abertos_pt": 0,
      "abertos_en": 1,
      "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "esofago",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
      "descarregados_en": 1
     },
     {
@@ -2158,6 +2191,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "health-report-72",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
      "id": "imunidade-envelhecimento-imunitario",
      "ficheiro": null,
      "pt": 0,
@@ -2224,6 +2268,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "musculo-osso-sarcopenia",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
      "id": "paladar-olfato",
      "ficheiro": null,
      "pt": 1,
@@ -2287,6 +2342,17 @@
      "abertos_pt": 0,
      "abertos_en": 1,
      "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "sensores-nutrientes-autofagia",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
      "descarregados_en": 1
     },
     {
@@ -2510,17 +2576,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "dermatite-seborreica-microbioma-pele",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "destoxificacao-fase-i-ii",
      "ficheiro": null,
      "pt": 0,
@@ -2576,17 +2631,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "esofago",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "farmacogenomica-632",
      "ficheiro": null,
      "pt": 0,
@@ -2617,17 +2661,6 @@
      "abertos_pt": 0,
      "abertos_en": 1,
      "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
-     "id": "health-report-72",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 0,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
      "descarregados_en": 0
     },
     {
@@ -2720,17 +2753,6 @@
     },
     {
      "id": "microbioma-intestino",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 0,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
-     "id": "musculo-osso-sarcopenia",
      "ficheiro": null,
      "pt": 1,
      "en": 0,
@@ -2840,6 +2862,17 @@
      "descarregados_en": 0
     },
     {
+     "id": "pulmao-funcao-respiratoria",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 0,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
      "id": "relogio-epigenetico-idade-biologica",
      "ficheiro": null,
      "pt": 0,
@@ -2904,17 +2937,6 @@
      "abertos_en": 0,
      "descarregados_pt": 1,
      "descarregados_en": 0
-    },
-    {
-     "id": "sensores-nutrientes-autofagia",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
     },
     {
      "id": "stress-oxidativo-defesa-antioxidante",
@@ -3117,22 +3139,22 @@
     "visitas": 29,
     "visitas_30d": 29,
     "visitas_90d": 29,
-    "aberturas_pdf": 165,
+    "aberturas_pdf": 171,
     "visitas_hoje": 3,
     "visitas_7d": 29,
     "aberturas_hoje": 153,
     "aberturas_7d": 160,
     "aberturas_30d": 160,
-    "pdf_abertos": 63,
-    "pdf_descarregados": 102,
-    "pdf_pt": 44,
-    "pdf_en": 121
+    "pdf_abertos": 66,
+    "pdf_descarregados": 105,
+    "pdf_pt": 47,
+    "pdf_en": 124
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 157
+     "visitas": 163
     },
     {
      "id": "US",
