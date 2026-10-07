@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-07T20:48:06Z",
+ "atualizado_em": "2026-10-07T21:19:35Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 50,
   "visitas_30d": 50,
   "visitas_90d": 50,
-  "aberturas_pdf": 144,
+  "aberturas_pdf": 148,
   "visitas_hoje": 3,
   "visitas_7d": 50,
-  "aberturas_hoje": 119,
-  "aberturas_7d": 144,
-  "aberturas_30d": 144,
-  "pdf_abertos": 68,
+  "aberturas_hoje": 123,
+  "aberturas_7d": 148,
+  "aberturas_30d": 148,
+  "pdf_abertos": 72,
   "pdf_descarregados": 76,
-  "pdf_pt": 48,
+  "pdf_pt": 52,
   "pdf_en": 96
  },
  "dias": [
@@ -52,7 +52,7 @@
   {
    "dia": "2026-10-07",
    "visitas": 3,
-   "aberturas": 119
+   "aberturas": 123
   }
  ],
  "paginas": [
@@ -162,6 +162,17 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 0
+  },
+  {
+   "id": "metilacao-homocisteina-colina",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 1,
+   "total": 3,
+   "abertos_pt": 1,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
   },
   {
    "id": "nariz-seios-perinasais",
@@ -307,15 +318,15 @@
    "descarregados_en": 1
   },
   {
-   "id": "metilacao-homocisteina-colina",
+   "id": "intolerancias-alimentares-626",
    "ficheiro": null,
    "pt": 1,
    "en": 1,
    "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
   },
   {
    "id": "oxitocina-comportamento-social",
@@ -490,6 +501,17 @@
    "total": 1,
    "abertos_pt": 0,
    "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
+   "id": "apetite-saciedade-comportamento-alimentar",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 0,
+   "total": 1,
+   "abertos_pt": 1,
+   "abertos_en": 0,
    "descarregados_pt": 0,
    "descarregados_en": 0
   },
@@ -769,13 +791,13 @@
    "descarregados_en": 1
   },
   {
-   "id": "intolerancias-alimentares-626",
+   "id": "intestino-grosso",
    "ficheiro": null,
-   "pt": 0,
-   "en": 1,
+   "pt": 1,
+   "en": 0,
    "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 1,
+   "abertos_pt": 1,
+   "abertos_en": 0,
    "descarregados_pt": 0,
    "descarregados_en": 0
   },
@@ -1236,7 +1258,7 @@
   {
    "id": "PT",
    "nome": "Portugal",
-   "visitas": 40
+   "visitas": 44
   },
   {
    "id": "US",
@@ -1283,7 +1305,7 @@
   {
    "id": "Firefox",
    "nome": "Firefox",
-   "visitas": 22
+   "visitas": 26
   },
   {
    "id": "Safari",
@@ -1295,7 +1317,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 102
+   "visitas": 106
   },
   {
    "id": "macOS",
@@ -1342,14 +1364,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 143
+   "visitas": 147
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 185
+   "visitas": 189
   },
   {
    "id": "https://bing.com",
@@ -1404,7 +1426,7 @@
     {
      "dia": "2026-10-07",
      "visitas": 0,
-     "aberturas": 4
+     "aberturas": 8
     }
    ],
    "paginas": [
@@ -1425,6 +1447,17 @@
      "en": 0,
      "total": 2,
      "abertos_pt": 2,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
+     "id": "apetite-saciedade-comportamento-alimentar",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 0,
+     "total": 1,
+     "abertos_pt": 1,
      "abertos_en": 0,
      "descarregados_pt": 0,
      "descarregados_en": 0
@@ -1496,7 +1529,40 @@
      "descarregados_en": 0
     },
     {
+     "id": "intestino-grosso",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 0,
+     "total": 1,
+     "abertos_pt": 1,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
+     "id": "intolerancias-alimentares-626",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 0,
+     "total": 1,
+     "abertos_pt": 1,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
      "id": "longevidade-maxima-sintese-genetica",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 0,
+     "total": 1,
+     "abertos_pt": 1,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
+     "id": "metilacao-homocisteina-colina",
      "ficheiro": null,
      "pt": 1,
      "en": 0,
@@ -1564,22 +1630,22 @@
     "visitas": 7,
     "visitas_30d": 7,
     "visitas_90d": 7,
-    "aberturas_pdf": 11,
+    "aberturas_pdf": 15,
     "visitas_hoje": 0,
     "visitas_7d": 7,
-    "aberturas_hoje": 4,
-    "aberturas_7d": 11,
-    "aberturas_30d": 11,
-    "pdf_abertos": 11,
+    "aberturas_hoje": 8,
+    "aberturas_7d": 15,
+    "aberturas_30d": 15,
+    "pdf_abertos": 15,
     "pdf_descarregados": 0,
-    "pdf_pt": 11,
+    "pdf_pt": 15,
     "pdf_en": 0
    },
    "paises": [
     {
      "id": "PT",
      "nome": "Portugal",
-     "visitas": 40
+     "visitas": 44
     }
    ]
   },
