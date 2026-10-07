@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-07T20:23:10Z",
+ "atualizado_em": "2026-10-07T20:48:06Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 50,
   "visitas_30d": 50,
   "visitas_90d": 50,
-  "aberturas_pdf": 134,
+  "aberturas_pdf": 144,
   "visitas_hoje": 3,
   "visitas_7d": 50,
-  "aberturas_hoje": 109,
-  "aberturas_7d": 134,
-  "aberturas_30d": 134,
-  "pdf_abertos": 62,
-  "pdf_descarregados": 72,
-  "pdf_pt": 41,
-  "pdf_en": 93
+  "aberturas_hoje": 119,
+  "aberturas_7d": 144,
+  "aberturas_30d": 144,
+  "pdf_abertos": 68,
+  "pdf_descarregados": 76,
+  "pdf_pt": 48,
+  "pdf_en": 96
  },
  "dias": [
   {
@@ -52,7 +52,7 @@
   {
    "dia": "2026-10-07",
    "visitas": 3,
-   "aberturas": 109
+   "aberturas": 119
   }
  ],
  "paginas": [
@@ -109,6 +109,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "fertilidade-masculina",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "resposta-treino-vo2max",
    "ficheiro": null,
    "pt": 2,
@@ -139,17 +150,6 @@
    "abertos_pt": 1,
    "abertos_en": 1,
    "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "fertilidade-masculina",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
    "descarregados_en": 1
   },
   {
@@ -197,6 +197,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "capacidade-cognitiva-plasticidade",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
    "id": "cardiovascular-avancado",
    "ficheiro": null,
    "pt": 1,
@@ -208,6 +219,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "cartao-farmacogenetico",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
    "id": "estado-portador",
    "ficheiro": null,
    "pt": 1,
@@ -216,6 +238,28 @@
    "abertos_pt": 0,
    "abertos_en": 0,
    "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "farmacogenomica-632",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 0,
+   "total": 2,
+   "abertos_pt": 2,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
+   "id": "funcao-sexual-eretil",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 1,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -241,6 +285,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "imunidade-envelhecimento-imunitario",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 2,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "infecoes",
    "ficheiro": null,
    "pt": 0,
@@ -249,6 +304,17 @@
    "abertos_pt": 0,
    "abertos_en": 1,
    "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "metilacao-homocisteina-colina",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
    "descarregados_en": 1
   },
   {
@@ -272,6 +338,17 @@
    "abertos_en": 0,
    "descarregados_pt": 1,
    "descarregados_en": 1
+  },
+  {
+   "id": "perfil-desportivo-resistencia-forca",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
   },
   {
    "id": "psicadelicos",
@@ -472,28 +549,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "capacidade-cognitiva-plasticidade",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
-   "id": "cartao-farmacogenetico",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 0,
-   "total": 1,
-   "abertos_pt": 1,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
    "id": "celulas-estaminais-regeneracao",
    "ficheiro": null,
    "pt": 0,
@@ -604,17 +659,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "farmacogenomica-632",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 0,
-   "total": 1,
-   "abertos_pt": 1,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
    "id": "ferro-metais",
    "ficheiro": null,
    "pt": 0,
@@ -648,17 +692,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "funcao-sexual-eretil",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "gaba-glutamato",
    "ficheiro": null,
    "pt": 1,
@@ -667,6 +700,17 @@
    "abertos_pt": 0,
    "abertos_en": 0,
    "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
+   "id": "globulos-vermelhos-hemoglobina-plaquetas",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
    "descarregados_en": 0
   },
   {
@@ -692,15 +736,15 @@
    "descarregados_en": 0
   },
   {
-   "id": "imunidade-envelhecimento-imunitario",
+   "id": "impulsividade-recompensa-vicio",
    "ficheiro": null,
-   "pt": 0,
-   "en": 1,
+   "pt": 1,
+   "en": 0,
    "total": 1,
    "abertos_pt": 0,
    "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
+   "descarregados_pt": 1,
+   "descarregados_en": 0
   },
   {
    "id": "inflamacao-senescencia-placa",
@@ -756,17 +800,6 @@
    "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 0
-  },
-  {
-   "id": "metilacao-homocisteina-colina",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
   },
   {
    "id": "microbioma-intestino",
@@ -825,17 +858,6 @@
   },
   {
    "id": "pele-skin-care",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
-   "id": "perfil-desportivo-resistencia-forca",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -1209,12 +1231,12 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 107
+   "visitas": 114
   },
   {
    "id": "PT",
    "nome": "Portugal",
-   "visitas": 37
+   "visitas": 40
   },
   {
    "id": "US",
@@ -1256,12 +1278,12 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 161
+   "visitas": 168
   },
   {
    "id": "Firefox",
    "nome": "Firefox",
-   "visitas": 19
+   "visitas": 22
   },
   {
    "id": "Safari",
@@ -1273,12 +1295,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 95
+   "visitas": 102
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 53
+   "visitas": 56
   },
   {
    "id": "Android",
@@ -1320,14 +1342,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 133
+   "visitas": 143
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 175
+   "visitas": 185
   },
   {
    "id": "https://bing.com",
@@ -1382,7 +1404,7 @@
     {
      "dia": "2026-10-07",
      "visitas": 0,
-     "aberturas": 1
+     "aberturas": 4
     }
    ],
    "paginas": [
@@ -1431,6 +1453,39 @@
     },
     {
      "id": "doencas-geneticas-hereditarias",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 0,
+     "total": 1,
+     "abertos_pt": 1,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
+     "id": "farmacogenomica-632",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 0,
+     "total": 1,
+     "abertos_pt": 1,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
+     "id": "fertilidade-masculina",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 0,
+     "total": 1,
+     "abertos_pt": 1,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
+     "id": "funcao-sexual-eretil",
      "ficheiro": null,
      "pt": 1,
      "en": 0,
@@ -1509,22 +1564,22 @@
     "visitas": 7,
     "visitas_30d": 7,
     "visitas_90d": 7,
-    "aberturas_pdf": 8,
+    "aberturas_pdf": 11,
     "visitas_hoje": 0,
     "visitas_7d": 7,
-    "aberturas_hoje": 1,
-    "aberturas_7d": 8,
-    "aberturas_30d": 8,
-    "pdf_abertos": 8,
+    "aberturas_hoje": 4,
+    "aberturas_7d": 11,
+    "aberturas_30d": 11,
+    "pdf_abertos": 11,
     "pdf_descarregados": 0,
-    "pdf_pt": 8,
+    "pdf_pt": 11,
     "pdf_en": 0
    },
    "paises": [
     {
      "id": "PT",
      "nome": "Portugal",
-     "visitas": 37
+     "visitas": 40
     }
    ]
   },
@@ -1563,7 +1618,7 @@
     {
      "dia": "2026-10-07",
      "visitas": 3,
-     "aberturas": 108
+     "aberturas": 115
     }
    ],
    "paginas": [
@@ -1674,6 +1729,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "capacidade-cognitiva-plasticidade",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
      "id": "cardiovascular-avancado",
      "ficheiro": null,
      "pt": 1,
@@ -1729,6 +1795,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "imunidade-envelhecimento-imunitario",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "infecoes",
      "ficheiro": null,
      "pt": 0,
@@ -1751,6 +1828,17 @@
      "descarregados_en": 0
     },
     {
+     "id": "metilacao-homocisteina-colina",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "oxitocina-comportamento-social",
      "ficheiro": null,
      "pt": 0,
@@ -1771,6 +1859,17 @@
      "abertos_en": 0,
      "descarregados_pt": 1,
      "descarregados_en": 1
+    },
+    {
+     "id": "perfil-desportivo-resistencia-forca",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
     },
     {
      "id": "referencia-via-forca-hipertrofia-potencia",
@@ -1938,7 +2037,7 @@
      "descarregados_en": 0
     },
     {
-     "id": "capacidade-cognitiva-plasticidade",
+     "id": "cartao-farmacogenetico",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -2114,6 +2213,17 @@
      "descarregados_en": 0
     },
     {
+     "id": "globulos-vermelhos-hemoglobina-plaquetas",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
      "id": "gordura-inflamatoria-lipolise",
      "ficheiro": null,
      "pt": 0,
@@ -2136,15 +2246,15 @@
      "descarregados_en": 0
     },
     {
-     "id": "imunidade-envelhecimento-imunitario",
+     "id": "impulsividade-recompensa-vicio",
      "ficheiro": null,
-     "pt": 0,
-     "en": 1,
+     "pt": 1,
+     "en": 0,
      "total": 1,
      "abertos_pt": 0,
      "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
+     "descarregados_pt": 1,
+     "descarregados_en": 0
     },
     {
      "id": "inflamacao-senescencia-placa",
@@ -2200,17 +2310,6 @@
      "abertos_en": 1,
      "descarregados_pt": 0,
      "descarregados_en": 0
-    },
-    {
-     "id": "metilacao-homocisteina-colina",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
     },
     {
      "id": "microbioma-intestino",
@@ -2269,17 +2368,6 @@
     },
     {
      "id": "pele-skin-care",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
-     "id": "perfil-desportivo-resistencia-forca",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -2655,22 +2743,22 @@
     "visitas": 29,
     "visitas_30d": 29,
     "visitas_90d": 29,
-    "aberturas_pdf": 115,
+    "aberturas_pdf": 122,
     "visitas_hoje": 3,
     "visitas_7d": 29,
-    "aberturas_hoje": 108,
-    "aberturas_7d": 115,
-    "aberturas_30d": 115,
-    "pdf_abertos": 43,
-    "pdf_descarregados": 72,
-    "pdf_pt": 24,
-    "pdf_en": 91
+    "aberturas_hoje": 115,
+    "aberturas_7d": 122,
+    "aberturas_30d": 122,
+    "pdf_abertos": 46,
+    "pdf_descarregados": 76,
+    "pdf_pt": 28,
+    "pdf_en": 94
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 107
+     "visitas": 114
     },
     {
      "id": "US",
