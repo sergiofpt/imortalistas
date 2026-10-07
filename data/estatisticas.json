@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-07T22:57:48Z",
+ "atualizado_em": "2026-10-07T23:16:10Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 50,
   "visitas_30d": 50,
   "visitas_90d": 50,
-  "aberturas_pdf": 185,
+  "aberturas_pdf": 186,
   "visitas_hoje": 3,
   "visitas_7d": 50,
-  "aberturas_hoje": 160,
-  "aberturas_7d": 185,
-  "aberturas_30d": 185,
+  "aberturas_hoje": 161,
+  "aberturas_7d": 186,
+  "aberturas_30d": 186,
   "pdf_abertos": 88,
-  "pdf_descarregados": 97,
-  "pdf_pt": 64,
+  "pdf_descarregados": 98,
+  "pdf_pt": 65,
   "pdf_en": 121
  },
  "dias": [
@@ -52,7 +52,7 @@
   {
    "dia": "2026-10-07",
    "visitas": 3,
-   "aberturas": 160
+   "aberturas": 161
   }
  ],
  "paginas": [
@@ -956,6 +956,17 @@
    "descarregados_en": 0
   },
   {
+   "id": "laringe-voz",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 0,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
    "id": "lipidos-detalhe",
    "ficheiro": null,
    "pt": 0,
@@ -1385,7 +1396,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 151
+   "visitas": 152
   },
   {
    "id": "PT",
@@ -1432,7 +1443,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 205
+   "visitas": 206
   },
   {
    "id": "Firefox",
@@ -1449,7 +1460,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 131
+   "visitas": 132
   },
   {
    "id": "macOS",
@@ -1496,14 +1507,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 184
+   "visitas": 185
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 226
+   "visitas": 227
   },
   {
    "id": "https://bing.com",
@@ -1816,7 +1827,7 @@
     {
      "dia": "2026-10-07",
      "visitas": 3,
-     "aberturas": 152
+     "aberturas": 153
     }
    ],
    "paginas": [
@@ -2664,6 +2675,17 @@
      "descarregados_en": 0
     },
     {
+     "id": "laringe-voz",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 0,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
      "id": "lipidos-detalhe",
      "ficheiro": null,
      "pt": 0,
@@ -3095,22 +3117,22 @@
     "visitas": 29,
     "visitas_30d": 29,
     "visitas_90d": 29,
-    "aberturas_pdf": 159,
+    "aberturas_pdf": 160,
     "visitas_hoje": 3,
     "visitas_7d": 29,
-    "aberturas_hoje": 152,
-    "aberturas_7d": 159,
-    "aberturas_30d": 159,
+    "aberturas_hoje": 153,
+    "aberturas_7d": 160,
+    "aberturas_30d": 160,
     "pdf_abertos": 62,
-    "pdf_descarregados": 97,
-    "pdf_pt": 40,
+    "pdf_descarregados": 98,
+    "pdf_pt": 41,
     "pdf_en": 119
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 151
+     "visitas": 152
     },
     {
      "id": "US",
