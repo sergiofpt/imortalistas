@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-07T19:46:33Z",
+ "atualizado_em": "2026-10-07T20:23:10Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 50,
   "visitas_30d": 50,
   "visitas_90d": 50,
-  "aberturas_pdf": 123,
+  "aberturas_pdf": 134,
   "visitas_hoje": 3,
   "visitas_7d": 50,
-  "aberturas_hoje": 98,
-  "aberturas_7d": 123,
-  "aberturas_30d": 123,
-  "pdf_abertos": 60,
-  "pdf_descarregados": 63,
-  "pdf_pt": 36,
-  "pdf_en": 87
+  "aberturas_hoje": 109,
+  "aberturas_7d": 134,
+  "aberturas_30d": 134,
+  "pdf_abertos": 62,
+  "pdf_descarregados": 72,
+  "pdf_pt": 41,
+  "pdf_en": 93
  },
  "dias": [
   {
@@ -52,7 +52,7 @@
   {
    "dia": "2026-10-07",
    "visitas": 3,
-   "aberturas": 98
+   "aberturas": 109
   }
  ],
  "paginas": [
@@ -90,12 +90,12 @@
    "id": "imortalidade",
    "ficheiro": null,
    "pt": 6,
-   "en": 4,
-   "total": 10,
+   "en": 5,
+   "total": 11,
    "abertos_pt": 6,
    "abertos_en": 4,
    "descarregados_pt": 0,
-   "descarregados_en": 0
+   "descarregados_en": 1
   },
   {
    "id": "doencas-geneticas-hereditarias",
@@ -263,6 +263,28 @@
    "descarregados_en": 1
   },
   {
+   "id": "paladar-olfato",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "psicadelicos",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 0,
+   "total": 2,
+   "abertos_pt": 1,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
    "id": "referencia-via-forca-hipertrofia-potencia",
    "ficheiro": null,
    "pt": 0,
@@ -274,6 +296,17 @@
    "descarregados_en": 0
   },
   {
+   "id": "risco-cancro-scores-poligenicos",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
    "id": "ritmo-circadiano-sono",
    "ficheiro": null,
    "pt": 1,
@@ -282,6 +315,17 @@
    "abertos_pt": 1,
    "abertos_en": 0,
    "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "serotonina-melatonina",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
    "descarregados_en": 1
   },
   {
@@ -406,6 +450,17 @@
    "descarregados_en": 0
   },
   {
+   "id": "cabelo",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 0,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
    "id": "cafeina-estimulantes",
    "ficheiro": null,
    "pt": 0,
@@ -435,6 +490,17 @@
    "total": 1,
    "abertos_pt": 1,
    "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
+   "id": "celulas-estaminais-regeneracao",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 0
   },
@@ -593,6 +659,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "gaba-glutamato",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 0,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
    "id": "gordura-inflamatoria-lipolise",
    "ficheiro": null,
    "pt": 0,
@@ -747,17 +824,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "paladar-olfato",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 0,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
    "id": "pele-skin-care",
    "ficheiro": null,
    "pt": 0,
@@ -835,17 +901,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "psicadelicos",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 0,
-   "total": 1,
-   "abertos_pt": 1,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
    "id": "relogio-epigenetico-idade-biologica",
    "ficheiro": null,
    "pt": 0,
@@ -876,17 +931,6 @@
    "abertos_pt": 0,
    "abertos_en": 0,
    "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
-   "id": "risco-cancro-scores-poligenicos",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
    "descarregados_en": 0
   },
   {
@@ -923,6 +967,17 @@
    "descarregados_en": 0
   },
   {
+   "id": "telomeros-senescencia-celular",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "tendoes-ligamentos-lesoes",
    "ficheiro": null,
    "pt": 0,
@@ -935,6 +990,17 @@
   },
   {
    "id": "termogenese-gordura-castanha",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
+   "id": "termorregulacao-sudorese",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -1143,7 +1209,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 96
+   "visitas": 107
   },
   {
    "id": "PT",
@@ -1190,7 +1256,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 150
+   "visitas": 161
   },
   {
    "id": "Firefox",
@@ -1207,12 +1273,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 88
+   "visitas": 95
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 49
+   "visitas": 53
   },
   {
    "id": "Android",
@@ -1254,14 +1320,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 122
+   "visitas": 133
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 164
+   "visitas": 175
   },
   {
    "id": "https://bing.com",
@@ -1497,7 +1563,7 @@
     {
      "dia": "2026-10-07",
      "visitas": 3,
-     "aberturas": 97
+     "aberturas": 108
     }
    ],
    "paginas": [
@@ -1528,6 +1594,17 @@
      "abertos_pt": 0,
      "abertos_en": 1,
      "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "imortalidade",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 3,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 2,
+     "descarregados_pt": 0,
      "descarregados_en": 1
     },
     {
@@ -1652,17 +1729,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "imortalidade",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 2,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
      "id": "infecoes",
      "ficheiro": null,
      "pt": 0,
@@ -1696,6 +1762,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "paladar-olfato",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "referencia-via-forca-hipertrofia-potencia",
      "ficheiro": null,
      "pt": 0,
@@ -1705,6 +1782,28 @@
      "abertos_en": 2,
      "descarregados_pt": 0,
      "descarregados_en": 0
+    },
+    {
+     "id": "risco-cancro-scores-poligenicos",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
+     "id": "serotonina-melatonina",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
     },
     {
      "id": "suprarrenais-cortisol",
@@ -1817,6 +1916,17 @@
      "descarregados_en": 0
     },
     {
+     "id": "cabelo",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 0,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
      "id": "cafeina-estimulantes",
      "ficheiro": null,
      "pt": 0,
@@ -1829,6 +1939,17 @@
     },
     {
      "id": "capacidade-cognitiva-plasticidade",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
+     "id": "celulas-estaminais-regeneracao",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -1980,6 +2101,17 @@
      "abertos_en": 0,
      "descarregados_pt": 0,
      "descarregados_en": 1
+    },
+    {
+     "id": "gaba-glutamato",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 0,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
     },
     {
      "id": "gordura-inflamatoria-lipolise",
@@ -2136,17 +2268,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "paladar-olfato",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 0,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
      "id": "pele-skin-care",
      "ficheiro": null,
      "pt": 0,
@@ -2224,6 +2345,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "psicadelicos",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 0,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
      "id": "relogio-epigenetico-idade-biologica",
      "ficheiro": null,
      "pt": 0,
@@ -2254,17 +2386,6 @@
      "abertos_pt": 0,
      "abertos_en": 0,
      "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
-     "id": "risco-cancro-scores-poligenicos",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
      "descarregados_en": 0
     },
     {
@@ -2312,6 +2433,17 @@
      "descarregados_en": 0
     },
     {
+     "id": "telomeros-senescencia-celular",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "tendoes-ligamentos-lesoes",
      "ficheiro": null,
      "pt": 0,
@@ -2324,6 +2456,17 @@
     },
     {
      "id": "termogenese-gordura-castanha",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
+     "id": "termorregulacao-sudorese",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -2512,22 +2655,22 @@
     "visitas": 29,
     "visitas_30d": 29,
     "visitas_90d": 29,
-    "aberturas_pdf": 104,
+    "aberturas_pdf": 115,
     "visitas_hoje": 3,
     "visitas_7d": 29,
-    "aberturas_hoje": 97,
-    "aberturas_7d": 104,
-    "aberturas_30d": 104,
-    "pdf_abertos": 41,
-    "pdf_descarregados": 63,
-    "pdf_pt": 19,
-    "pdf_en": 85
+    "aberturas_hoje": 108,
+    "aberturas_7d": 115,
+    "aberturas_30d": 115,
+    "pdf_abertos": 43,
+    "pdf_descarregados": 72,
+    "pdf_pt": 24,
+    "pdf_en": 91
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 96
+     "visitas": 107
     },
     {
      "id": "US",
