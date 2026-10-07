@@ -76,7 +76,6 @@ main a{color:var(--acc)}
 </div></header>
 <main>
 <h1>Terapias</h1>
-<nav class="secnav" id="secnav" aria-label="Secções"></nav>
 <div id="out"></div>
 </main>
 <script>
@@ -109,11 +108,7 @@ function render(text){
     used[id]=1;
     return id;
   }
-  const nav=document.getElementById('secnav');
-  nav.innerHTML=secs.filter(function(s){return s.title}).map(function(s){
-    s.id=nid(s.title);
-    return '<a href="#'+s.id+'">'+esc(s.title)+'</a>';
-  }).join('');
+  secs.forEach(function(s){if(s.title) s.id=nid(s.title)});
   document.getElementById('out').innerHTML=secs.map(function(s){
     const lis=s.items.map(function(it){return '<li><span class="nm">'+esc(it.name)+'</span>'+(it.dose?'<span class="dose">'+esc(it.dose)+'</span>':'')+'</li>'}).join('');
     return '<section'+(s.id?' id="'+s.id+'"':'')+' class="card">'+(s.title?'<h2>'+esc(s.title)+'</h2>':'')+'<ul class="stack">'+lis+'</ul></section>';

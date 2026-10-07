@@ -75,7 +75,6 @@ main a{color:var(--acc)}
 </div></header>
 <main>
 <h1>Pele e Cabelo</h1>
-<nav class="secnav" id="secnav" aria-label="Secções"></nav>
 <div id="out"></div>
 </main>
 <script>
@@ -123,7 +122,6 @@ function render(text){
     s.id=nid(s.title);
   });
   const blocks=[];
-  const nav=[];
   let i=0;
   while(i<secs.length){
     if(MONTH.test(String(secs[i].title||'').trim())){
@@ -131,12 +129,9 @@ function render(text){
       const prev=blocks.length?blocks[blocks.length-1]:null;
       if(prev && prev.sec && prev.sec.title && !prev.sec.items.length && prev.sec.title.indexOf('\u2013')===-1 && prev.sec.title.indexOf('\u2014')===-1){
         head=blocks.pop().sec;
-        nav.pop();
       }
       const months=[];
       while(i<secs.length && MONTH.test(String(secs[i].title||'').trim())) months.push(secs[i++]);
-      if(head) nav.push('<a href="#'+head.id+'">'+esc(head.title)+'</a>');
-      months.forEach(function(m){nav.push('<a href="#'+m.id+'">'+esc(m.title)+'</a>')});
       const arts=months.map(function(m){
         const lis=m.items.map(function(it){return '<li>'+esc(it.dose?it.name+' \u2014 '+it.dose:it.name)+'</li>'}).join('');
         return '<article id="'+m.id+'"><h3>'+esc(m.title)+'</h3><ul>'+lis+'</ul></article>';
@@ -145,10 +140,8 @@ function render(text){
       continue;
     }
     blocks.push({sec:secs[i], html:card(secs[i])});
-    if(secs[i].title) nav.push('<a href="#'+secs[i].id+'">'+esc(secs[i].title)+'</a>');
     i++;
   }
-  document.getElementById('secnav').innerHTML=nav.join('');
   document.getElementById('out').innerHTML=blocks.map(function(b){return b.html}).join('');
 }
 let saved=null; try{saved=localStorage.getItem(KEY)}catch(e){}
