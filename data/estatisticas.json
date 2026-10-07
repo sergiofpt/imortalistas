@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-07T18:53:28Z",
+ "atualizado_em": "2026-10-07T19:20:01Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
-  "visitas": 49,
-  "visitas_30d": 49,
-  "visitas_90d": 49,
-  "aberturas_pdf": 95,
-  "visitas_hoje": 2,
-  "visitas_7d": 49,
-  "aberturas_hoje": 70,
-  "aberturas_7d": 95,
-  "aberturas_30d": 95,
-  "pdf_abertos": 48,
-  "pdf_descarregados": 47,
-  "pdf_pt": 32,
-  "pdf_en": 63
+  "visitas": 50,
+  "visitas_30d": 50,
+  "visitas_90d": 50,
+  "aberturas_pdf": 111,
+  "visitas_hoje": 3,
+  "visitas_7d": 50,
+  "aberturas_hoje": 86,
+  "aberturas_7d": 111,
+  "aberturas_30d": 111,
+  "pdf_abertos": 55,
+  "pdf_descarregados": 56,
+  "pdf_pt": 35,
+  "pdf_en": 76
  },
  "dias": [
   {
@@ -51,8 +51,8 @@
   },
   {
    "dia": "2026-10-07",
-   "visitas": 2,
-   "aberturas": 70
+   "visitas": 3,
+   "aberturas": 86
   }
  ],
  "paginas": [
@@ -70,7 +70,7 @@
   },
   {
    "path": "/imortalistas/genetica-boa.html",
-   "visitas": 2
+   "visitas": 3
   },
   {
    "path": "/imortalistas/genetica.html",
@@ -90,10 +90,10 @@
    "id": "imortalidade",
    "ficheiro": null,
    "pt": 6,
-   "en": 3,
-   "total": 9,
+   "en": 4,
+   "total": 10,
    "abertos_pt": 6,
-   "abertos_en": 3,
+   "abertos_en": 4,
    "descarregados_pt": 0,
    "descarregados_en": 0
   },
@@ -153,6 +153,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "rim-acido-urico",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "ansiedade-resiliencia-stress",
    "ficheiro": null,
    "pt": 0,
@@ -161,6 +172,39 @@
    "abertos_pt": 0,
    "abertos_en": 1,
    "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "cardiovascular-avancado",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "estado-portador",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "hormonas",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
    "descarregados_en": 1
   },
   {
@@ -197,6 +241,17 @@
    "descarregados_en": 0
   },
   {
+   "id": "oxitocina-comportamento-social",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 2,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "referencia-via-forca-hipertrofia-potencia",
    "ficheiro": null,
    "pt": 0,
@@ -205,17 +260,6 @@
    "abertos_pt": 0,
    "abertos_en": 2,
    "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
-   "id": "rim-acido-urico",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
    "descarregados_en": 0
   },
   {
@@ -329,17 +373,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "cardiovascular-avancado",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "cartao-farmacogenetico",
    "ficheiro": null,
    "pt": 1,
@@ -417,7 +450,7 @@
    "descarregados_en": 1
   },
   {
-   "id": "estado-portador",
+   "id": "esofago",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -461,7 +494,29 @@
    "descarregados_en": 1
   },
   {
+   "id": "figado-gordura-hepatica",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
    "id": "forca-hipertrofia-potencia",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "funcao-sexual-eretil",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -505,17 +560,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "hormonas",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 0,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
    "id": "inflamacao-senescencia-placa",
    "ficheiro": null,
    "pt": 0,
@@ -525,6 +569,17 @@
    "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 0
+  },
+  {
+   "id": "insuficiencia-cardiaca-cardiomiopatias",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
   },
   {
    "id": "intolerancias-alimentares-626",
@@ -539,6 +594,17 @@
   },
   {
    "id": "longevidade-excecional",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
+   "id": "matriz-extracelular-glicacao",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -571,6 +637,17 @@
    "descarregados_en": 0
   },
   {
+   "id": "musculo-osso-sarcopenia",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 0,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
    "id": "olhos-em-detalhe",
    "ficheiro": null,
    "pt": 0,
@@ -593,17 +670,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "oxitocina-comportamento-social",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "paladar-olfato",
    "ficheiro": null,
    "pt": 1,
@@ -616,6 +682,17 @@
   },
   {
    "id": "pele-skin-care",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
+   "id": "perfil-desportivo-resistencia-forca",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -780,6 +857,17 @@
    "descarregados_en": 0
   },
   {
+   "id": "termogenese-gordura-castanha",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
    "id": "testiculos",
    "ficheiro": null,
    "pt": 1,
@@ -789,6 +877,17 @@
    "abertos_en": 0,
    "descarregados_pt": 1,
    "descarregados_en": 0
+  },
+  {
+   "id": "tiroide",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
   },
   {
    "id": "unhas-cicatrizacao-inflamacao-pele",
@@ -833,6 +932,17 @@
    "abertos_en": 0,
    "descarregados_pt": 0,
    "descarregados_en": 1
+  },
+  {
+   "id": "visao-audicao",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
   }
  ],
  "aparelhos": [
@@ -935,6 +1045,13 @@
    "visitas": 1
   },
   {
+   "id": "computador/windows-10-chrome",
+   "tipo": "computador",
+   "nome": "Windows 10 · Chrome",
+   "estimativa": false,
+   "visitas": 1
+  },
+  {
    "id": "computador/windows-10-11-firefox",
    "tipo": "computador",
    "nome": "Windows 10/11 · Firefox",
@@ -960,7 +1077,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 67
+   "visitas": 84
   },
   {
    "id": "PT",
@@ -1007,7 +1124,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 121
+   "visitas": 138
   },
   {
    "id": "Firefox",
@@ -1024,12 +1141,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 72
+   "visitas": 81
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 36
+   "visitas": 44
   },
   {
    "id": "Android",
@@ -1066,19 +1183,19 @@
   {
    "id": "desktop",
    "nome": "desktop",
-   "visitas": 30
+   "visitas": 31
   },
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 94
+   "visitas": 110
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 135
+   "visitas": 152
   },
   {
    "id": "https://bing.com",
@@ -1313,8 +1430,8 @@
     },
     {
      "dia": "2026-10-07",
-     "visitas": 2,
-     "aberturas": 69
+     "visitas": 3,
+     "aberturas": 85
     }
    ],
    "paginas": [
@@ -1328,7 +1445,7 @@
     },
     {
      "path": "/imortalistas/genetica-boa.html",
-     "visitas": 1
+     "visitas": 2
     },
     {
      "path": "/imortalistas/index.html",
@@ -1349,6 +1466,17 @@
     },
     {
      "id": "resposta-treino-vo2max",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "rim-acido-urico",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -1392,6 +1520,50 @@
      "descarregados_en": 1
     },
     {
+     "id": "cardiovascular-avancado",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "estado-portador",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "hormonas",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "imortalidade",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 2,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
      "id": "infecoes",
      "ficheiro": null,
      "pt": 0,
@@ -1414,6 +1586,17 @@
      "descarregados_en": 0
     },
     {
+     "id": "oxitocina-comportamento-social",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "referencia-via-forca-hipertrofia-potencia",
      "ficheiro": null,
      "pt": 0,
@@ -1422,17 +1605,6 @@
      "abertos_pt": 0,
      "abertos_en": 2,
      "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
-     "id": "rim-acido-urico",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
      "descarregados_en": 0
     },
     {
@@ -1524,17 +1696,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "cardiovascular-avancado",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "cerebro-neurodegeneracao",
      "ficheiro": null,
      "pt": 0,
@@ -1612,7 +1773,7 @@
      "descarregados_en": 1
     },
     {
-     "id": "estado-portador",
+     "id": "esofago",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -1645,7 +1806,29 @@
      "descarregados_en": 1
     },
     {
+     "id": "figado-gordura-hepatica",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
      "id": "forca-hipertrofia-potencia",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "funcao-sexual-eretil",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -1689,28 +1872,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "hormonas",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 0,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
-     "id": "imortalidade",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
      "id": "inflamacao-senescencia-placa",
      "ficheiro": null,
      "pt": 0,
@@ -1720,6 +1881,17 @@
      "abertos_en": 1,
      "descarregados_pt": 0,
      "descarregados_en": 0
+    },
+    {
+     "id": "insuficiencia-cardiaca-cardiomiopatias",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
     },
     {
      "id": "intolerancias-alimentares-626",
@@ -1755,6 +1927,17 @@
      "descarregados_en": 0
     },
     {
+     "id": "matriz-extracelular-glicacao",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
      "id": "metilacao-homocisteina-colina",
      "ficheiro": null,
      "pt": 0,
@@ -1767,6 +1950,17 @@
     },
     {
      "id": "microbioma-intestino",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 0,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
+     "id": "musculo-osso-sarcopenia",
      "ficheiro": null,
      "pt": 1,
      "en": 0,
@@ -1799,17 +1993,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "oxitocina-comportamento-social",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "paladar-olfato",
      "ficheiro": null,
      "pt": 1,
@@ -1822,6 +2005,17 @@
     },
     {
      "id": "pele-skin-care",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
+     "id": "perfil-desportivo-resistencia-forca",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -1986,6 +2180,17 @@
      "descarregados_en": 0
     },
     {
+     "id": "termogenese-gordura-castanha",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
      "id": "testiculos",
      "ficheiro": null,
      "pt": 1,
@@ -1995,6 +2200,17 @@
      "abertos_en": 0,
      "descarregados_pt": 1,
      "descarregados_en": 0
+    },
+    {
+     "id": "tiroide",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
     },
     {
      "id": "unhas-cicatrizacao-inflamacao-pele",
@@ -2039,6 +2255,17 @@
      "abertos_en": 0,
      "descarregados_pt": 0,
      "descarregados_en": 1
+    },
+    {
+     "id": "visao-audicao",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
     }
    ],
    "aparelhos": [
@@ -2120,6 +2347,13 @@
      "visitas": 1
     },
     {
+     "id": "computador/windows-10-chrome",
+     "tipo": "computador",
+     "nome": "Windows 10 · Chrome",
+     "estimativa": false,
+     "visitas": 1
+    },
+    {
      "id": "computador/windows-10-11-firefox",
      "tipo": "computador",
      "nome": "Windows 10/11 · Firefox",
@@ -2143,25 +2377,25 @@
    ],
    "aparelhos_desde": "2026-10-03",
    "total": {
-    "visitas": 28,
-    "visitas_30d": 28,
-    "visitas_90d": 28,
-    "aberturas_pdf": 76,
-    "visitas_hoje": 2,
-    "visitas_7d": 28,
-    "aberturas_hoje": 69,
-    "aberturas_7d": 76,
-    "aberturas_30d": 76,
-    "pdf_abertos": 29,
-    "pdf_descarregados": 47,
-    "pdf_pt": 15,
-    "pdf_en": 61
+    "visitas": 29,
+    "visitas_30d": 29,
+    "visitas_90d": 29,
+    "aberturas_pdf": 92,
+    "visitas_hoje": 3,
+    "visitas_7d": 29,
+    "aberturas_hoje": 85,
+    "aberturas_7d": 92,
+    "aberturas_30d": 92,
+    "pdf_abertos": 36,
+    "pdf_descarregados": 56,
+    "pdf_pt": 18,
+    "pdf_en": 74
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 67
+     "visitas": 84
     },
     {
      "id": "US",
