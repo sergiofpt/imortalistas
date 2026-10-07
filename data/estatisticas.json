@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-07T18:23:16Z",
+ "atualizado_em": "2026-10-07T18:53:28Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 49,
   "visitas_30d": 49,
   "visitas_90d": 49,
-  "aberturas_pdf": 80,
+  "aberturas_pdf": 95,
   "visitas_hoje": 2,
   "visitas_7d": 49,
-  "aberturas_hoje": 55,
-  "aberturas_7d": 80,
-  "aberturas_30d": 80,
-  "pdf_abertos": 44,
-  "pdf_descarregados": 36,
-  "pdf_pt": 29,
-  "pdf_en": 51
+  "aberturas_hoje": 70,
+  "aberturas_7d": 95,
+  "aberturas_30d": 95,
+  "pdf_abertos": 48,
+  "pdf_descarregados": 47,
+  "pdf_pt": 32,
+  "pdf_en": 63
  },
  "dias": [
   {
@@ -52,7 +52,7 @@
   {
    "dia": "2026-10-07",
    "visitas": 2,
-   "aberturas": 55
+   "aberturas": 70
   }
  ],
  "paginas": [
@@ -96,6 +96,17 @@
    "abertos_en": 3,
    "descarregados_pt": 0,
    "descarregados_en": 0
+  },
+  {
+   "id": "resposta-treino-vo2max",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
   },
   {
    "id": "avc-pequenos-vasos-cerebrais",
@@ -142,15 +153,15 @@
    "descarregados_en": 1
   },
   {
-   "id": "resposta-treino-vo2max",
+   "id": "ansiedade-resiliencia-stress",
    "ficheiro": null,
-   "pt": 2,
-   "en": 1,
-   "total": 3,
-   "abertos_pt": 1,
+   "pt": 0,
+   "en": 2,
+   "total": 2,
+   "abertos_pt": 0,
    "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
+   "descarregados_pt": 0,
+   "descarregados_en": 1
   },
   {
    "id": "infecoes",
@@ -197,6 +208,28 @@
    "descarregados_en": 0
   },
   {
+   "id": "rim-acido-urico",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
+   "id": "ritmo-circadiano-sono",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 1,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "vitaminas-minerais",
    "ficheiro": null,
    "pt": 1,
@@ -241,7 +274,7 @@
    "descarregados_en": 0
   },
   {
-   "id": "ansiedade-resiliencia-stress",
+   "id": "aorta-aneurismas",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -261,6 +294,28 @@
    "abertos_en": 0,
    "descarregados_pt": 0,
    "descarregados_en": 1
+  },
+  {
+   "id": "bexiga-funcao-urinaria",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
+   "id": "cafeina-estimulantes",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
   },
   {
    "id": "capacidade-cognitiva-plasticidade",
@@ -329,7 +384,40 @@
    "descarregados_en": 0
   },
   {
+   "id": "disruptores-endocrinos-poluentes",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "doencas-autoimunes",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "dor-analgesia",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "estado-portador",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -406,6 +494,17 @@
    "descarregados_en": 0
   },
   {
+   "id": "health-report-72",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 0,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
    "id": "hormonas",
    "ficheiro": null,
    "pt": 1,
@@ -472,6 +571,17 @@
    "descarregados_en": 0
   },
   {
+   "id": "olhos-em-detalhe",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "oxido-nitrico-endotelio",
    "ficheiro": null,
    "pt": 0,
@@ -480,6 +590,28 @@
    "abertos_pt": 0,
    "abertos_en": 1,
    "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
+   "id": "oxitocina-comportamento-social",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "paladar-olfato",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 0,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
    "descarregados_en": 0
   },
   {
@@ -593,17 +725,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "rim-acido-urico",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
    "id": "risco-cancro-scores-poligenicos",
    "ficheiro": null,
    "pt": 0,
@@ -611,17 +732,6 @@
    "total": 1,
    "abertos_pt": 0,
    "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
-   "id": "ritmo-circadiano-sono",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 0,
-   "total": 1,
-   "abertos_pt": 1,
-   "abertos_en": 0,
    "descarregados_pt": 0,
    "descarregados_en": 0
   },
@@ -649,6 +759,17 @@
   },
   {
    "id": "suplementos-1002",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
+   "id": "suprarrenais-cortisol",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -839,7 +960,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 52
+   "visitas": 67
   },
   {
    "id": "PT",
@@ -886,7 +1007,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 106
+   "visitas": 121
   },
   {
    "id": "Firefox",
@@ -903,12 +1024,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 63
+   "visitas": 72
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 30
+   "visitas": 36
   },
   {
    "id": "Android",
@@ -950,14 +1071,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 79
+   "visitas": 94
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 120
+   "visitas": 135
   },
   {
    "id": "https://bing.com",
@@ -1193,7 +1314,7 @@
     {
      "dia": "2026-10-07",
      "visitas": 2,
-     "aberturas": 54
+     "aberturas": 69
     }
    ],
    "paginas": [
@@ -1224,6 +1345,28 @@
      "abertos_pt": 0,
      "abertos_en": 1,
      "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "resposta-treino-vo2max",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "ansiedade-resiliencia-stress",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
      "descarregados_en": 1
     },
     {
@@ -1282,7 +1425,7 @@
      "descarregados_en": 0
     },
     {
-     "id": "resposta-treino-vo2max",
+     "id": "rim-acido-urico",
      "ficheiro": null,
      "pt": 1,
      "en": 1,
@@ -1326,7 +1469,7 @@
      "descarregados_en": 1
     },
     {
-     "id": "ansiedade-resiliencia-stress",
+     "id": "aorta-aneurismas",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -1346,6 +1489,28 @@
      "abertos_en": 0,
      "descarregados_pt": 0,
      "descarregados_en": 1
+    },
+    {
+     "id": "bexiga-funcao-urinaria",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
+     "id": "cafeina-estimulantes",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
     },
     {
      "id": "capacidade-cognitiva-plasticidade",
@@ -1403,6 +1568,17 @@
      "descarregados_en": 0
     },
     {
+     "id": "disruptores-endocrinos-poluentes",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "doencas-autoimunes",
      "ficheiro": null,
      "pt": 0,
@@ -1423,6 +1599,28 @@
      "abertos_en": 1,
      "descarregados_pt": 0,
      "descarregados_en": 0
+    },
+    {
+     "id": "dor-analgesia",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "estado-portador",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
     },
     {
      "id": "estomago-refluxo-helicobacter",
@@ -1477,6 +1675,17 @@
      "abertos_pt": 0,
      "abertos_en": 1,
      "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
+     "id": "health-report-72",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 0,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
      "descarregados_en": 0
     },
     {
@@ -1568,6 +1777,17 @@
      "descarregados_en": 0
     },
     {
+     "id": "olhos-em-detalhe",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "oxido-nitrico-endotelio",
      "ficheiro": null,
      "pt": 0,
@@ -1576,6 +1796,28 @@
      "abertos_pt": 0,
      "abertos_en": 1,
      "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
+     "id": "oxitocina-comportamento-social",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "paladar-olfato",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 0,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
      "descarregados_en": 0
     },
     {
@@ -1678,7 +1920,7 @@
      "descarregados_en": 0
     },
     {
-     "id": "rim-acido-urico",
+     "id": "risco-cancro-scores-poligenicos",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -1689,15 +1931,15 @@
      "descarregados_en": 0
     },
     {
-     "id": "risco-cancro-scores-poligenicos",
+     "id": "ritmo-circadiano-sono",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
      "total": 1,
      "abertos_pt": 0,
-     "abertos_en": 1,
+     "abertos_en": 0,
      "descarregados_pt": 0,
-     "descarregados_en": 0
+     "descarregados_en": 1
     },
     {
      "id": "sensibilidade-radiacao",
@@ -1723,6 +1965,17 @@
     },
     {
      "id": "suplementos-1002",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
+     "id": "suprarrenais-cortisol",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -1893,22 +2146,22 @@
     "visitas": 28,
     "visitas_30d": 28,
     "visitas_90d": 28,
-    "aberturas_pdf": 61,
+    "aberturas_pdf": 76,
     "visitas_hoje": 2,
     "visitas_7d": 28,
-    "aberturas_hoje": 54,
-    "aberturas_7d": 61,
-    "aberturas_30d": 61,
-    "pdf_abertos": 25,
-    "pdf_descarregados": 36,
-    "pdf_pt": 12,
-    "pdf_en": 49
+    "aberturas_hoje": 69,
+    "aberturas_7d": 76,
+    "aberturas_30d": 76,
+    "pdf_abertos": 29,
+    "pdf_descarregados": 47,
+    "pdf_pt": 15,
+    "pdf_en": 61
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 52
+     "visitas": 67
     },
     {
      "id": "US",
