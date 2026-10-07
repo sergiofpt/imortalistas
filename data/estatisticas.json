@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-07T22:16:57Z",
+ "atualizado_em": "2026-10-07T22:35:54Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 50,
   "visitas_30d": 50,
   "visitas_90d": 50,
-  "aberturas_pdf": 159,
+  "aberturas_pdf": 175,
   "visitas_hoje": 3,
   "visitas_7d": 50,
-  "aberturas_hoje": 134,
-  "aberturas_7d": 159,
-  "aberturas_30d": 159,
-  "pdf_abertos": 81,
-  "pdf_descarregados": 78,
-  "pdf_pt": 54,
-  "pdf_en": 105
+  "aberturas_hoje": 150,
+  "aberturas_7d": 175,
+  "aberturas_30d": 175,
+  "pdf_abertos": 84,
+  "pdf_descarregados": 91,
+  "pdf_pt": 60,
+  "pdf_en": 115
  },
  "dias": [
   {
@@ -52,7 +52,7 @@
   {
    "dia": "2026-10-07",
    "visitas": 3,
-   "aberturas": 134
+   "aberturas": 150
   }
  ],
  "paginas": [
@@ -89,12 +89,12 @@
   {
    "id": "imortalidade",
    "ficheiro": null,
-   "pt": 6,
+   "pt": 7,
    "en": 5,
-   "total": 11,
+   "total": 12,
    "abertos_pt": 6,
    "abertos_en": 4,
-   "descarregados_pt": 0,
+   "descarregados_pt": 1,
    "descarregados_en": 1
   },
   {
@@ -150,6 +150,28 @@
    "abertos_pt": 1,
    "abertos_en": 0,
    "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "dor-analgesia",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "farmacogenomica-632",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 1,
+   "total": 3,
+   "abertos_pt": 2,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -219,6 +241,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "alimentos-longevidade-173",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "anestesia-cirurgia",
    "ficheiro": null,
    "pt": 1,
@@ -239,6 +272,17 @@
    "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 1
+  },
+  {
+   "id": "atencao-phda",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
   },
   {
    "id": "cabelo",
@@ -285,17 +329,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "dor-analgesia",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 2,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "estado-portador",
    "ficheiro": null,
    "pt": 1,
@@ -318,18 +351,18 @@
    "descarregados_en": 1
   },
   {
-   "id": "farmacogenomica-632",
+   "id": "ferro-metais",
    "ficheiro": null,
-   "pt": 2,
-   "en": 0,
+   "pt": 1,
+   "en": 1,
    "total": 2,
-   "abertos_pt": 2,
+   "abertos_pt": 0,
    "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
+   "descarregados_pt": 1,
+   "descarregados_en": 1
   },
   {
-   "id": "ferro-metais",
+   "id": "gaba-glutamato",
    "ficheiro": null,
    "pt": 1,
    "en": 1,
@@ -348,6 +381,17 @@
    "abertos_pt": 0,
    "abertos_en": 0,
    "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "gordura-inflamatoria-lipolise",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 2,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -381,6 +425,17 @@
    "abertos_pt": 1,
    "abertos_en": 1,
    "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
+   "id": "matriz-extracelular-glicacao",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
    "descarregados_en": 0
   },
   {
@@ -428,6 +483,17 @@
    "descarregados_en": 0
   },
   {
+   "id": "prostata",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 2,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "psicadelicos",
    "ficheiro": null,
    "pt": 2,
@@ -472,6 +538,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "sal-agua-eletrolitos",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 2,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "serotonina-melatonina",
    "ficheiro": null,
    "pt": 1,
@@ -492,6 +569,17 @@
    "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 1
+  },
+  {
+   "id": "termogenese-gordura-castanha",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
   },
   {
    "id": "valvulas-cardiacas",
@@ -517,17 +605,6 @@
   },
   {
    "id": "acne-glandulas-sebaceas",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "alimentos-longevidade-173",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -582,15 +659,15 @@
    "descarregados_en": 1
   },
   {
-   "id": "atencao-phda",
+   "id": "audicao-zumbido",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
    "total": 1,
    "abertos_pt": 0,
-   "abertos_en": 1,
+   "abertos_en": 0,
    "descarregados_pt": 0,
-   "descarregados_en": 0
+   "descarregados_en": 1
   },
   {
    "id": "bexiga-funcao-urinaria",
@@ -692,6 +769,17 @@
    "descarregados_en": 0
   },
   {
+   "id": "epilepsia-excitabilidade-neuronal",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "esofago",
    "ficheiro": null,
    "pt": 0,
@@ -725,29 +813,7 @@
    "descarregados_en": 1
   },
   {
-   "id": "gaba-glutamato",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 0,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
    "id": "globulos-vermelhos-hemoglobina-plaquetas",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
-   "id": "gordura-inflamatoria-lipolise",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -777,6 +843,17 @@
    "abertos_pt": 0,
    "abertos_en": 0,
    "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
+   "id": "inflamacao-autoimunidade",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
    "descarregados_en": 0
   },
   {
@@ -825,17 +902,6 @@
   },
   {
    "id": "longevidade-excecional",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
-   "id": "matriz-extracelular-glicacao",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -923,17 +989,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "prostata",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "proteina-aminoacidos",
    "ficheiro": null,
    "pt": 0,
@@ -1011,6 +1066,17 @@
    "descarregados_en": 0
   },
   {
+   "id": "sensores-nutrientes-autofagia",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "stress-oxidativo-defesa-antioxidante",
    "ficheiro": null,
    "pt": 0,
@@ -1045,17 +1111,6 @@
   },
   {
    "id": "tendoes-ligamentos-lesoes",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
-   "id": "termogenese-gordura-castanha",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -1275,7 +1330,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 125
+   "visitas": 141
   },
   {
    "id": "PT",
@@ -1322,7 +1377,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 179
+   "visitas": 195
   },
   {
    "id": "Firefox",
@@ -1339,12 +1394,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 112
+   "visitas": 122
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 61
+   "visitas": 67
   },
   {
    "id": "Android",
@@ -1386,14 +1441,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 158
+   "visitas": 174
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 200
+   "visitas": 216
   },
   {
    "id": "https://bing.com",
@@ -1706,7 +1761,7 @@
     {
      "dia": "2026-10-07",
      "visitas": 3,
-     "aberturas": 126
+     "aberturas": 142
     }
    ],
    "paginas": [
@@ -1729,7 +1784,29 @@
    ],
    "relatorios": [
     {
+     "id": "imortalidade",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 3,
+     "total": 4,
+     "abertos_pt": 0,
+     "abertos_en": 2,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "cancros-um-a-um",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "dor-analgesia",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -1759,17 +1836,6 @@
      "abertos_pt": 0,
      "abertos_en": 1,
      "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "imortalidade",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 3,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 2,
-     "descarregados_pt": 0,
      "descarregados_en": 1
     },
     {
@@ -1806,6 +1872,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "alimentos-longevidade-173",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "ansiedade-resiliencia-stress",
      "ficheiro": null,
      "pt": 0,
@@ -1815,6 +1892,17 @@
      "abertos_en": 1,
      "descarregados_pt": 0,
      "descarregados_en": 1
+    },
+    {
+     "id": "atencao-phda",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
     },
     {
      "id": "avc-pequenos-vasos-cerebrais",
@@ -1872,17 +1960,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "dor-analgesia",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "estado-portador",
      "ficheiro": null,
      "pt": 1,
@@ -1927,6 +2004,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "gaba-glutamato",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "glicose-insulina-diabetes",
      "ficheiro": null,
      "pt": 1,
@@ -1935,6 +2023,17 @@
      "abertos_pt": 0,
      "abertos_en": 0,
      "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "gordura-inflamatoria-lipolise",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
      "descarregados_en": 1
     },
     {
@@ -1961,6 +2060,17 @@
     },
     {
      "id": "longevidade-maxima-sintese-genetica",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
+     "id": "matriz-extracelular-glicacao",
      "ficheiro": null,
      "pt": 1,
      "en": 1,
@@ -2026,6 +2136,17 @@
      "descarregados_en": 0
     },
     {
+     "id": "prostata",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "referencia-via-forca-hipertrofia-potencia",
      "ficheiro": null,
      "pt": 0,
@@ -2048,6 +2169,17 @@
      "descarregados_en": 0
     },
     {
+     "id": "sal-agua-eletrolitos",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "serotonina-melatonina",
      "ficheiro": null,
      "pt": 1,
@@ -2068,6 +2200,17 @@
      "abertos_en": 1,
      "descarregados_pt": 0,
      "descarregados_en": 1
+    },
+    {
+     "id": "termogenese-gordura-castanha",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
     },
     {
      "id": "valvulas-cardiacas",
@@ -2093,17 +2236,6 @@
     },
     {
      "id": "acne-glandulas-sebaceas",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "alimentos-longevidade-173",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -2158,15 +2290,15 @@
      "descarregados_en": 1
     },
     {
-     "id": "atencao-phda",
+     "id": "audicao-zumbido",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
      "total": 1,
      "abertos_pt": 0,
-     "abertos_en": 1,
+     "abertos_en": 0,
      "descarregados_pt": 0,
-     "descarregados_en": 0
+     "descarregados_en": 1
     },
     {
      "id": "bexiga-funcao-urinaria",
@@ -2279,7 +2411,29 @@
      "descarregados_en": 0
     },
     {
+     "id": "epilepsia-excitabilidade-neuronal",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "esofago",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "farmacogenomica-632",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -2312,29 +2466,7 @@
      "descarregados_en": 1
     },
     {
-     "id": "gaba-glutamato",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 0,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
      "id": "globulos-vermelhos-hemoglobina-plaquetas",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
-     "id": "gordura-inflamatoria-lipolise",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -2364,6 +2496,17 @@
      "abertos_pt": 0,
      "abertos_en": 0,
      "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
+     "id": "inflamacao-autoimunidade",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
      "descarregados_en": 0
     },
     {
@@ -2412,17 +2555,6 @@
     },
     {
      "id": "longevidade-excecional",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
-     "id": "matriz-extracelular-glicacao",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -2500,17 +2632,6 @@
     },
     {
      "id": "pneumococo-imunossenescencia",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "prostata",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -2620,6 +2741,17 @@
      "descarregados_en": 0
     },
     {
+     "id": "sensores-nutrientes-autofagia",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "stress-oxidativo-defesa-antioxidante",
      "ficheiro": null,
      "pt": 0,
@@ -2654,17 +2786,6 @@
     },
     {
      "id": "tendoes-ligamentos-lesoes",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
-     "id": "termogenese-gordura-castanha",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -2864,22 +2985,22 @@
     "visitas": 29,
     "visitas_30d": 29,
     "visitas_90d": 29,
-    "aberturas_pdf": 133,
+    "aberturas_pdf": 149,
     "visitas_hoje": 3,
     "visitas_7d": 29,
-    "aberturas_hoje": 126,
-    "aberturas_7d": 133,
-    "aberturas_30d": 133,
-    "pdf_abertos": 55,
-    "pdf_descarregados": 78,
-    "pdf_pt": 30,
-    "pdf_en": 103
+    "aberturas_hoje": 142,
+    "aberturas_7d": 149,
+    "aberturas_30d": 149,
+    "pdf_abertos": 58,
+    "pdf_descarregados": 91,
+    "pdf_pt": 36,
+    "pdf_en": 113
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 125
+     "visitas": 141
     },
     {
      "id": "US",
