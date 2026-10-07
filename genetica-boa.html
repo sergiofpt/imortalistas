@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex,nofollow">
 <meta name="referrer" content="no-referrer">
 <link rel="icon" href="data:,">
-<title>Sérgio F · Genética - Apenas bons resultados</title>
+<title>Sérgio F · Genética Boa</title>
 <meta name="color-scheme" content="light dark">
 <script>(function(){var d=document.documentElement,t=null,l=null,q=/[?&]lang=(en|pt)(?:&|#|$)/i.exec(location.search);q=q&&q[1].toLowerCase();try{if(q)localStorage.setItem('lang',q);l=localStorage.getItem('lang');t=localStorage.getItem('theme')}catch(e){}if(q)l=q;if(l==='en')d.lang='en';if(t!=='dark'&&t!=='light')t='dark';d.setAttribute('data-theme',t)})()</script>
 <script src="sf.js"></script>
@@ -149,7 +149,7 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 @media(max-width:640px){.pgrid{grid-template-columns:1fr}.farmt thead{display:none}.farmt,.farmt tbody{display:block}.farmt tr{display:block;padding:8px 10px;border-bottom:1px solid var(--line)}.farmt td{display:block;border:0;padding:2px 0}.farmt td:first-child{min-width:0}.farmt td:nth-child(2){white-space:normal}}
 </style>
 </head>
-<body data-json="data/genetica_boa.json" data-proto="data/genetica_protocolo.json" data-title-pt="Sérgio F · Genética - Apenas bons resultados" data-title-en="Sérgio F · Genetics - Favourable results only">
+<body data-json="data/genetica_boa.json" data-proto="data/genetica_protocolo.json" data-title-pt="Sérgio F · Genética Boa" data-title-en="Sérgio F · Good Genetics">
 <header class="top"><div class="topin">
 <nav class="main" id="nav">
 <a href="inicio.html" data-en="Home">Início</a><a href="analises.html#sangue" data-en="Tests">Análises</a><details class="dd on"><summary data-en="Genetics">Genética</summary><div class="ddmenu"><a href="genetica-reports.html" data-en="Genetics Reports">Genética Reports</a><a href="genetica-boa.html" class="active" aria-current="page" data-en="Good Genetics">Genética Boa</a><a href="genetica.html" data-en="Bad Genetics">Genética Má</a></div></details><details class="dd"><summary data-en="Protocol">Protocolo</summary><div class="ddmenu"><a href="pele-cabelo.html" data-en="Skin and Hair">Pele e Cabelo</a><a href="sono.html" data-en="Sleep">Sono</a><a href="dieta.html" data-en="Diet">Dieta</a><a href="terapias.html" data-en="Therapies">Terapias</a><a href="treino.html" data-en="Training">Treino</a><a href="suplementos.html" data-en="Supplements + Medication">Suplementos + Medicação</a></div></details></nav>
@@ -160,11 +160,6 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 </div></header>
 <main>
 
-<div class="hero">
-<div><h1><span class="l-pt">Genética - Apenas bons resultados</span><span class="l-en">Genetics - Favourable results only</span></h1>
-<p>Sérgio F · M</p></div>
-<div class="meta" id="genMeta"><span class="l-pt">Genética</span><span class="l-en">Genetics</span></div>
-</div>
 
 <!-- conteúdo gerado a partir de data/genetica_boa.json (genetica.js) -->
 <section id="genetica">
@@ -242,7 +237,7 @@ function render(){const g=document.getElementById('gen'),meta=document.getElemen
   s.linhas.map(r=>`<tr><td>${H(r.item)}</td><td>${H(r.texto)}</td><td>${r.rotulo?`<span class="pill ${ESTADOS.includes(r.estado)?r.estado:'na'}">${H(r.rotulo)}</span>`:''}</td></tr>`).join('')+`</tbody></table></div>`:''}${ap(s)}</article>`).join('');
  renderFarm();
  const nl=GD.lista?(GD.lista.linhas||[]).length:0;
- meta.innerHTML=`${nl?`${nl} ${L('achados','findings')} · `:''}${S.length} ${L(S.length===1?'secção':'secções',S.length===1?'section':'sections')}${n?` · ${n} ${L('linhas','rows')}`:''}<br>${L('Atualizado a','Updated on')} ${esc(fdate(GD.atualizado_em||''))} (PT)`;
+ if(meta) meta.innerHTML=`${nl?`${nl} ${L('achados','findings')} · `:''}${S.length} ${L(S.length===1?'secção':'secções',S.length===1?'section':'sections')}${n?` · ${n} ${L('linhas','rows')}`:''}<br>${L('Atualizado a','Updated on')} ${esc(fdate(GD.atualizado_em||''))} (PT)`;
  if(!scrolled&&location.hash&&(PD||PERR)){scrolled=true;const t=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(t)t.scrollIntoView()}}
 function applyLang(){const en=LANG==='en';document.documentElement.lang=en?'en':'pt-PT';document.title=en?document.body.dataset.titleEn:document.body.dataset.titlePt;
  document.querySelectorAll('[data-en]').forEach(el=>{if(!el.hasAttribute('data-pt'))el.setAttribute('data-pt',el.textContent);el.textContent=en?el.dataset.en:el.dataset.pt});
