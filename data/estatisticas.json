@@ -1,15 +1,15 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-07T01:20:54Z",
+ "atualizado_em": "2026-10-07T02:48:12Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
-  "visitas": 48,
-  "visitas_30d": 48,
-  "visitas_90d": 48,
+  "visitas": 49,
+  "visitas_30d": 49,
+  "visitas_90d": 49,
   "aberturas_pdf": 27,
-  "visitas_hoje": 1,
-  "visitas_7d": 48,
+  "visitas_hoje": 2,
+  "visitas_7d": 49,
   "aberturas_hoje": 2,
   "aberturas_7d": 27,
   "aberturas_30d": 27,
@@ -51,14 +51,14 @@
   },
   {
    "dia": "2026-10-07",
-   "visitas": 1,
+   "visitas": 2,
    "aberturas": 2
   }
  ],
  "paginas": [
   {
    "path": "/imortalistas/genetica-reports.html",
-   "visitas": 27
+   "visitas": 28
   },
   {
    "path": "/imortalistas/teste-worker",
@@ -292,6 +292,13 @@
    "visitas": 1
   },
   {
+   "id": "android/google-pixel-11-pro",
+   "tipo": "android",
+   "nome": "Google Pixel 11 Pro",
+   "estimativa": false,
+   "visitas": 1
+  },
+  {
    "id": "android/google-pixel-8-pro",
    "tipo": "android",
    "nome": "Google Pixel 8 Pro",
@@ -364,7 +371,7 @@
   {
    "id": "US",
    "nome": "United States",
-   "visitas": 30
+   "visitas": 31
   },
   {
    "id": "CA",
@@ -401,7 +408,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 53
+   "visitas": 54
   },
   {
    "id": "Firefox",
@@ -423,7 +430,7 @@
   {
    "id": "Android",
    "nome": "Android",
-   "visitas": 16
+   "visitas": 17
   },
   {
    "id": "Linux",
@@ -450,7 +457,7 @@
   {
    "id": "phone",
    "nome": "phone",
-   "visitas": 12
+   "visitas": 13
   },
   {
    "id": "tablet",
@@ -482,7 +489,7 @@
   {
    "id": "https://www.rapamycin.news",
    "nome": "www.rapamycin.news",
-   "visitas": 3
+   "visitas": 4
   },
   {
    "id": "https://l.instagram.com",
@@ -696,14 +703,14 @@
     },
     {
      "dia": "2026-10-07",
-     "visitas": 1,
+     "visitas": 2,
      "aberturas": 2
     }
    ],
    "paginas": [
     {
      "path": "/imortalistas/genetica-reports.html",
-     "visitas": 23
+     "visitas": 24
     },
     {
      "path": "/imortalistas/",
@@ -834,6 +841,13 @@
      "visitas": 1
     },
     {
+     "id": "android/google-pixel-11-pro",
+     "tipo": "android",
+     "nome": "Google Pixel 11 Pro",
+     "estimativa": false,
+     "visitas": 1
+    },
+    {
      "id": "android/google-pixel-8-pro",
      "tipo": "android",
      "nome": "Google Pixel 8 Pro",
@@ -892,12 +906,12 @@
    ],
    "aparelhos_desde": "2026-10-03",
    "total": {
-    "visitas": 27,
-    "visitas_30d": 27,
-    "visitas_90d": 27,
+    "visitas": 28,
+    "visitas_30d": 28,
+    "visitas_90d": 28,
     "aberturas_pdf": 9,
-    "visitas_hoje": 1,
-    "visitas_7d": 27,
+    "visitas_hoje": 2,
+    "visitas_7d": 28,
     "aberturas_hoje": 2,
     "aberturas_7d": 9,
     "aberturas_30d": 9,
@@ -910,7 +924,7 @@
     {
      "id": "US",
      "nome": "United States",
-     "visitas": 30
+     "visitas": 31
     },
     {
      "id": "CA",
