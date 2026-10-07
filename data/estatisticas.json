@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-07T19:20:01Z",
+ "atualizado_em": "2026-10-07T19:46:33Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 50,
   "visitas_30d": 50,
   "visitas_90d": 50,
-  "aberturas_pdf": 111,
+  "aberturas_pdf": 123,
   "visitas_hoje": 3,
   "visitas_7d": 50,
-  "aberturas_hoje": 86,
-  "aberturas_7d": 111,
-  "aberturas_30d": 111,
-  "pdf_abertos": 55,
-  "pdf_descarregados": 56,
-  "pdf_pt": 35,
-  "pdf_en": 76
+  "aberturas_hoje": 98,
+  "aberturas_7d": 123,
+  "aberturas_30d": 123,
+  "pdf_abertos": 60,
+  "pdf_descarregados": 63,
+  "pdf_pt": 36,
+  "pdf_en": 87
  },
  "dias": [
   {
@@ -52,7 +52,7 @@
   {
    "dia": "2026-10-07",
    "visitas": 3,
-   "aberturas": 86
+   "aberturas": 98
   }
  ],
  "paginas": [
@@ -98,6 +98,17 @@
    "descarregados_en": 0
   },
   {
+   "id": "doencas-geneticas-hereditarias",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "resposta-treino-vo2max",
    "ficheiro": null,
    "pt": 2,
@@ -131,17 +142,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "doencas-geneticas-hereditarias",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 1,
-   "total": 3,
-   "abertos_pt": 2,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
    "id": "fertilidade-masculina",
    "ficheiro": null,
    "pt": 1,
@@ -150,6 +150,28 @@
    "abertos_pt": 0,
    "abertos_en": 1,
    "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "longevidade-maxima-sintese-genetica",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 1,
+   "total": 3,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
+   "id": "nariz-seios-perinasais",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 3,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 2,
+   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -197,6 +219,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "glicose-insulina-diabetes",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "hormonas",
    "ficheiro": null,
    "pt": 1,
@@ -217,28 +250,6 @@
    "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 1
-  },
-  {
-   "id": "longevidade-maxima-sintese-genetica",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 0,
-   "total": 2,
-   "abertos_pt": 1,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
-   "id": "nariz-seios-perinasais",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 2,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 2,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
   },
   {
    "id": "oxitocina-comportamento-social",
@@ -274,6 +285,28 @@
    "descarregados_en": 1
   },
   {
+   "id": "suprarrenais-cortisol",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 2,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "valvulas-cardiacas",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 2,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "vitaminas-minerais",
    "ficheiro": null,
    "pt": 1,
@@ -286,6 +319,17 @@
   },
   {
    "id": "acne-glandulas-sebaceas",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "alimentos-longevidade-173",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -338,6 +382,17 @@
    "abertos_en": 0,
    "descarregados_pt": 0,
    "descarregados_en": 1
+  },
+  {
+   "id": "atencao-phda",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
   },
   {
    "id": "bexiga-funcao-urinaria",
@@ -450,6 +505,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "enxaqueca-cefaleias",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
    "id": "esofago",
    "ficheiro": null,
    "pt": 0,
@@ -527,17 +593,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "glicose-insulina-diabetes",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "gordura-inflamatoria-lipolise",
    "ficheiro": null,
    "pt": 0,
@@ -558,6 +613,17 @@
    "abertos_en": 0,
    "descarregados_pt": 1,
    "descarregados_en": 0
+  },
+  {
+   "id": "imunidade-envelhecimento-imunitario",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
   },
   {
    "id": "inflamacao-senescencia-placa",
@@ -635,6 +701,17 @@
    "abertos_en": 0,
    "descarregados_pt": 1,
    "descarregados_en": 0
+  },
+  {
+   "id": "mitocondrias-energia",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
   },
   {
    "id": "musculo-osso-sarcopenia",
@@ -846,7 +923,7 @@
    "descarregados_en": 0
   },
   {
-   "id": "suprarrenais-cortisol",
+   "id": "tendoes-ligamentos-lesoes",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -899,17 +976,6 @@
    "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 0
-  },
-  {
-   "id": "valvulas-cardiacas",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
   },
   {
    "id": "velocidade-processamento-tempo-reacao",
@@ -1077,7 +1143,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 84
+   "visitas": 96
   },
   {
    "id": "PT",
@@ -1124,7 +1190,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 138
+   "visitas": 150
   },
   {
    "id": "Firefox",
@@ -1141,12 +1207,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 81
+   "visitas": 88
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 44
+   "visitas": 49
   },
   {
    "id": "Android",
@@ -1188,14 +1254,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 110
+   "visitas": 122
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 152
+   "visitas": 164
   },
   {
    "id": "https://bing.com",
@@ -1431,7 +1497,7 @@
     {
      "dia": "2026-10-07",
      "visitas": 3,
-     "aberturas": 85
+     "aberturas": 97
     }
    ],
    "paginas": [
@@ -1462,6 +1528,17 @@
      "abertos_pt": 0,
      "abertos_en": 1,
      "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "nariz-seios-perinasais",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 3,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 2,
+     "descarregados_pt": 0,
      "descarregados_en": 1
     },
     {
@@ -1531,7 +1608,29 @@
      "descarregados_en": 1
     },
     {
+     "id": "doencas-geneticas-hereditarias",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "estado-portador",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "glicose-insulina-diabetes",
      "ficheiro": null,
      "pt": 1,
      "en": 1,
@@ -1575,14 +1674,14 @@
      "descarregados_en": 1
     },
     {
-     "id": "nariz-seios-perinasais",
+     "id": "longevidade-maxima-sintese-genetica",
      "ficheiro": null,
-     "pt": 0,
-     "en": 2,
+     "pt": 1,
+     "en": 1,
      "total": 2,
      "abertos_pt": 0,
-     "abertos_en": 2,
-     "descarregados_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
      "descarregados_en": 0
     },
     {
@@ -1608,6 +1707,28 @@
      "descarregados_en": 0
     },
     {
+     "id": "suprarrenais-cortisol",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "valvulas-cardiacas",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "vitaminas-minerais",
      "ficheiro": null,
      "pt": 1,
@@ -1620,6 +1741,17 @@
     },
     {
      "id": "acne-glandulas-sebaceas",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "alimentos-longevidade-173",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -1661,6 +1793,17 @@
      "abertos_en": 0,
      "descarregados_pt": 0,
      "descarregados_en": 1
+    },
+    {
+     "id": "atencao-phda",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
     },
     {
      "id": "bexiga-funcao-urinaria",
@@ -1751,17 +1894,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "doencas-geneticas-hereditarias",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
      "id": "dor-analgesia",
      "ficheiro": null,
      "pt": 0,
@@ -1771,6 +1903,17 @@
      "abertos_en": 0,
      "descarregados_pt": 0,
      "descarregados_en": 1
+    },
+    {
+     "id": "enxaqueca-cefaleias",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
     },
     {
      "id": "esofago",
@@ -1839,17 +1982,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "glicose-insulina-diabetes",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "gordura-inflamatoria-lipolise",
      "ficheiro": null,
      "pt": 0,
@@ -1870,6 +2002,17 @@
      "abertos_en": 0,
      "descarregados_pt": 1,
      "descarregados_en": 0
+    },
+    {
+     "id": "imunidade-envelhecimento-imunitario",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
     },
     {
      "id": "inflamacao-senescencia-placa",
@@ -1916,17 +2059,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "longevidade-maxima-sintese-genetica",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 0,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
      "id": "matriz-extracelular-glicacao",
      "ficheiro": null,
      "pt": 0,
@@ -1958,6 +2090,17 @@
      "abertos_en": 0,
      "descarregados_pt": 1,
      "descarregados_en": 0
+    },
+    {
+     "id": "mitocondrias-energia",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
     },
     {
      "id": "musculo-osso-sarcopenia",
@@ -2169,7 +2312,7 @@
      "descarregados_en": 0
     },
     {
-     "id": "suprarrenais-cortisol",
+     "id": "tendoes-ligamentos-lesoes",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -2222,17 +2365,6 @@
      "abertos_en": 1,
      "descarregados_pt": 0,
      "descarregados_en": 0
-    },
-    {
-     "id": "valvulas-cardiacas",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
     },
     {
      "id": "velocidade-processamento-tempo-reacao",
@@ -2380,22 +2512,22 @@
     "visitas": 29,
     "visitas_30d": 29,
     "visitas_90d": 29,
-    "aberturas_pdf": 92,
+    "aberturas_pdf": 104,
     "visitas_hoje": 3,
     "visitas_7d": 29,
-    "aberturas_hoje": 85,
-    "aberturas_7d": 92,
-    "aberturas_30d": 92,
-    "pdf_abertos": 36,
-    "pdf_descarregados": 56,
-    "pdf_pt": 18,
-    "pdf_en": 74
+    "aberturas_hoje": 97,
+    "aberturas_7d": 104,
+    "aberturas_30d": 104,
+    "pdf_abertos": 41,
+    "pdf_descarregados": 63,
+    "pdf_pt": 19,
+    "pdf_en": 85
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 84
+     "visitas": 96
     },
     {
      "id": "US",
