@@ -150,7 +150,6 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 <!-- ============ SANGUE ============ -->
 <section id="sangue">
 <h2><span class="l-pt">Análises ao sangue e à urina</span><span class="l-en">Blood and urine tests</span></h2>
-<p class="src"><span class="l-pt">Fonte</span><span class="l-en">Source</span>: data/sangue.json · <span id="sSrc"></span></p>
 <div class="ctrl" id="sCtrl">
 <b><span class="l-pt">Datas</span><span class="l-en">Dates</span></b>
 <label><span class="l-pt">Data</span><span class="l-en">Date</span> <select id="sA" aria-label="Data principal" data-al-en="Main date"></select></label>
@@ -167,14 +166,14 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 <span class="mut small" id="count"></span>
 </div>
 <div class="legend" style="margin-bottom:10px"><span class="pill ok"><span class="l-pt">Ótimo</span><span class="l-en">Optimal</span></span><span class="pill warn"><span class="l-pt">Aceitável</span><span class="l-en">Acceptable</span></span><span class="pill warn"><span class="l-pt">Fora do ótimo</span><span class="l-en">Outside optimal</span></span><span class="pill bad"><span class="l-pt">Fora da referência</span><span class="l-en">Out of range</span></span><span class="pill na"><span class="l-pt">Sem alvo</span><span class="l-en">No target</span></span><span><span class="l-pt">· “Alvo” = alvo ótimo de longevidade · Δ = data principal vs data de comparação, quando escolhida (verde = aproxima-se do ótimo) · clique num marcador para ver a evolução</span><span class="l-en">· “Target” = optimal longevity target · Δ = main date vs comparison date, when one is chosen (green = moving towards optimal) · click a marker to see its trend</span></span></div>
-<div class="tw tall"><table id="bt"><thead></thead><tbody><tr><td class="mut"><span class="l-pt">A carregar data/sangue.json…</span><span class="l-en">Loading data/sangue.json…</span></td></tr></tbody></table></div>
+<div class="tw tall"><table id="bt"><thead></thead><tbody><tr><td class="mut"><span class="l-pt">A carregar…</span><span class="l-en">Loading…</span></td></tr></tbody></table></div>
 <p class="small mut"><span class="l-pt">Sem resultado no painel de 25-08-2026: bicarbonato, VDRL, lítio. As intolerâncias alimentares estão na secção própria, abaixo.</span><span class="l-en">No result in the 25-08-2026 panel: bicarbonate, VDRL, lithium. Food intolerances are in their own section, below.</span></p>
 </section>
 
 <!-- ============ INTOLERÂNCIAS ALIMENTARES ============ -->
 <section id="intolerancias">
 <h2><span class="l-pt">Intolerâncias Alimentares</span><span class="l-en">Food Intolerances</span></h2>
-<p class="src"><span class="l-pt">Fonte</span><span class="l-en">Source</span>: data/sangue.json (<span class="l-pt">lista</span><span class="l-en">list</span> “intolerancias”) · <span id="iSrc"></span></p>
+<p class="src"><span class="l-pt">Fonte</span><span class="l-en">Source</span>: <span class="l-pt">lista</span><span class="l-en">list</span> “intolerancias” · <span id="iSrc"></span></p>
 <div class="note"><span class="l-pt">Classificação de cada alimento pelo limite do próprio laboratório (IgG específicas, normal ≤ 23 U/ml): <b>acima do limite = Intolerante</b> (vermelho), incluindo a faixa limítrofe 24–29; <b>igual ou abaixo = Não intolerante</b> (verde). Estas análises não entram nas contagens das análises ao sangue.</span><span class="l-en">Each food is classified against the lab’s own cut-off (specific IgG, normal ≤ 23 U/ml): <b>above the cut-off = Intolerant</b> (red), including the 24–29 borderline band; <b>at or below = Not intolerant</b> (green). These tests are not counted with the blood tests.</span></div>
 <div class="legend" id="iSum" style="margin-bottom:10px"></div>
 <div class="ctrl" id="iCtrl">
@@ -189,7 +188,7 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 <select id="ist" aria-label="Classificação" data-al-en="Classification"><option value="" data-en="All">Todos</option><option value="intolerante" data-en="Intolerant">Intolerante</option><option value="nao_intolerante" data-en="Not intolerant">Não intolerante</option></select>
 <span class="mut small" id="icount"></span>
 </div>
-<div class="tw tall"><table id="it"><thead></thead><tbody><tr><td class="mut"><span class="l-pt">A carregar data/sangue.json…</span><span class="l-en">Loading data/sangue.json…</span></td></tr></tbody></table></div>
+<div class="tw tall"><table id="it"><thead></thead><tbody><tr><td class="mut"><span class="l-pt">A carregar…</span><span class="l-en">Loading…</span></td></tr></tbody></table></div>
 <p class="small mut"><span class="l-pt">Δ = data principal vs data de comparação, quando escolhida (verde = desceu) · clique num alimento para ver a evolução; no gráfico, a faixa verde vai até ao limite.</span><span class="l-en">Δ = main date vs comparison date, when one is chosen (green = went down) · click a food to see its trend; in the chart, the green band runs up to the cut-off.</span></p>
 </section>
 
@@ -206,7 +205,7 @@ const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',
 const pt=s=>LANG==='en'?s:(/^-?\d+(\.\d+)?$/.test(s)?s.replace('.',','):s);
 const ptr=s=>LANG==='en'?String(s):String(s).replace(/(\d)\.(\d)/g,'$1,$2');
 const tx=(o,k)=>LANG==='en'&&o&&o[k+'_en']?o[k+'_en']:(o&&o[k])||'';
-// ===== séries temporais (dados em data/sangue.json) =====
+// ===== séries temporais =====
 const has=x=>x!==null&&x!==undefined&&x!=='';
 const isNum=v=>typeof v==='number'||/^\s*-?\d+(\.\d+)?\s*$/.test(String(v));
 const toNum=v=>typeof v==='number'?v:parseFloat(v);
@@ -318,14 +317,14 @@ function mkRows(list,extra){return list.map((m,i)=>{const res={};(m.resultados||
 function alvoTxt(m){const a=m.otimo_min,b=m.otimo_max;return has(a)&&has(b)?a+'–'+b:has(b)?'< '+b:has(a)?'> '+a:'—'}
 function loadJSON(u){return fetch(u,{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error(u+': HTTP '+r.status);return r.json()})}
 let LOADERR=null;
-function failMsg(){if(!LOADERR)return;const ti=document.querySelector('#it tbody');if(ti)ti.innerHTML=`<tr><td class="mut">${L('Não foi possível carregar','Could not load')} data/sangue.json.</td></tr>`;document.querySelector('#bt tbody').innerHTML=`<tr><td class="mut">${L('Não foi possível carregar','Could not load')} data/sangue.json (${esc(LOADERR.message)}). ${L('Se abriu o ficheiro localmente, sirva a pasta com','If you opened the file locally, serve the folder with')} <code>python3 -m http.server</code>.</td></tr>`}
+function failMsg(){if(!LOADERR)return;const ti=document.querySelector('#it tbody');if(ti)ti.innerHTML=`<tr><td class="mut">${L('Não foi possível carregar os dados.','Could not load the data.')}</td></tr>`;const tb=document.querySelector('#bt tbody');if(tb)tb.innerHTML=`<tr><td class="mut">${L('Não foi possível carregar os dados','Could not load the data')} (${esc(LOADERR.message)}). ${L('Se abriu o ficheiro localmente, sirva a pasta com','If you opened the file locally, serve the folder with')} <code>python3 -m http.server</code>.</td></tr>`}
 let SS=null,SD=null,SROWS=null,IS=null,IROWS=null;
 function fillCats(){if(!SROWS)return;const cs=document.getElementById('cat'),v=cs.value,seen=new Set();cs.innerHTML=`<option value="">${L('Todas as categorias','All categories')}</option>`;
  SROWS.forEach(r=>{if(seen.has(r.c))return;seen.add(r.c);const op=document.createElement('option');op.value=r.c;op.textContent=LANG==='en'&&r.c_en?r.c_en:r.c;cs.appendChild(op)});cs.value=v}
 function iSrcTxt(){if(!SD||!IROWS)return;const ds=[...new Set(IROWS.flatMap(r=>Object.values(r.res).map(x=>x.data_real||x.data)))].sort();document.getElementById('iSrc').textContent=(ds.length?ds.map(fdate).join(' | '):'—')+' · '+IROWS.length+' '+L('marcadores','markers')}
-function srcTxt(){iSrcTxt();if(!SD)return;document.getElementById('sSrc').textContent=SD.colheitas.map(c=>tx(c,'descricao')||fdate(c.data)).join(' | ')+' · '+SROWS.length+' '+L('marcadores','markers')+'. '+[...new Set(SD.colheitas.map(c=>tx(c,'nota')).filter(Boolean))].join(' ')}
+function srcTxt(){iSrcTxt();if(!SD)return;const el=document.getElementById('sSrc');if(!el)return;el.textContent=SD.colheitas.map(c=>tx(c,'descricao')||fdate(c.data)).join(' | ')+' · '+SROWS.length+' '+L('marcadores','markers')+'. '+[...new Set(SD.colheitas.map(c=>tx(c,'nota')).filter(Boolean))].join(' ')}
 // ---- sangue ----
-loadJSON('data/sangue.json').then(D=>{SD=D;const rows=mkRows(D.marcadores,m=>({c:m.c,c_en:m.c_en||'',alvo:has(m.alvo)?m.alvo:alvoTxt(m),alvo_en:m.alvo_en||''}));SROWS=rows;
+loadJSON('data/'+'sangue'+'.json').then(D=>{SD=D;const rows=mkRows(D.marcadores,m=>({c:m.c,c_en:m.c_en||'',alvo:has(m.alvo)?m.alvo:alvoTxt(m),alvo_en:m.alvo_en||''}));SROWS=rows;
  fillCats();srcTxt();const cs=document.getElementById('cat');
   SS=Series({colheitas:D.colheitas,rows,ids:{A:'sA',B:'sB',all:'sAll',await:'sAwait',table:'bt',count:'count'},inputs:['q','cat','st','flagged','sTr'],
   before:()=>[L('Marcador','Marker')],after:()=>[L('Unidade','Unit'),L('Referência do lab.','Lab reference'),L('Alvo','Target'),L('Estado','Status'),L('Categoria','Category'),L('Nota','Note')],
