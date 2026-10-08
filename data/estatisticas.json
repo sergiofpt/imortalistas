@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-08T04:20:23Z",
+ "atualizado_em": "2026-10-08T04:49:39Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 52,
   "visitas_30d": 52,
   "visitas_90d": 52,
-  "aberturas_pdf": 279,
+  "aberturas_pdf": 291,
   "visitas_hoje": 2,
   "visitas_7d": 52,
-  "aberturas_hoje": 93,
-  "aberturas_7d": 279,
-  "aberturas_30d": 279,
-  "pdf_abertos": 124,
-  "pdf_descarregados": 155,
-  "pdf_pt": 99,
-  "pdf_en": 180
+  "aberturas_hoje": 105,
+  "aberturas_7d": 291,
+  "aberturas_30d": 291,
+  "pdf_abertos": 128,
+  "pdf_descarregados": 163,
+  "pdf_pt": 101,
+  "pdf_en": 190
  },
  "dias": [
   {
@@ -57,7 +57,7 @@
   {
    "dia": "2026-10-08",
    "visitas": 2,
-   "aberturas": 93
+   "aberturas": 105
   }
  ],
  "paginas": [
@@ -103,6 +103,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "avc-pequenos-vasos-cerebrais",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 3,
+   "total": 5,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 2
+  },
+  {
    "id": "cancros-um-a-um",
    "ficheiro": null,
    "pt": 2,
@@ -110,17 +121,6 @@
    "total": 5,
    "abertos_pt": 1,
    "abertos_en": 2,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "avc-pequenos-vasos-cerebrais",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 1
   },
@@ -154,6 +154,17 @@
    "total": 4,
    "abertos_pt": 0,
    "abertos_en": 2,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "intestino-grosso",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 1
   },
@@ -254,6 +265,17 @@
    "abertos_pt": 0,
    "abertos_en": 1,
    "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "cartao-farmacogenetico",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -378,17 +400,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "intestino-grosso",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 1,
-   "total": 3,
-   "abertos_pt": 1,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "longevidade-maxima-sintese-genetica",
    "ficheiro": null,
    "pt": 2,
@@ -398,6 +409,17 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 0
+  },
+  {
+   "id": "matriz-extracelular-glicacao",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
   },
   {
    "id": "metilacao-homocisteina-colina",
@@ -477,6 +499,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "polipos-colorretais",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "prostata",
    "ficheiro": null,
    "pt": 1,
@@ -544,6 +577,17 @@
   },
   {
    "id": "serotonina-melatonina",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "suprarrenais-cortisol",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -719,17 +763,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "cartao-farmacogenetico",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
    "id": "celulas-estaminais-regeneracao",
    "ficheiro": null,
    "pt": 1,
@@ -742,6 +775,17 @@
   },
   {
    "id": "cetose-corpos-cetonicos",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
+   "id": "coluna-disco-dor-lombar",
    "ficheiro": null,
    "pt": 1,
    "en": 1,
@@ -793,6 +837,28 @@
    "abertos_pt": 0,
    "abertos_en": 0,
    "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "enxaqueca-cefaleias",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 2,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "epilepsia-excitabilidade-neuronal",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 2,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -884,6 +950,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "inflamacao-autoimunidade",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
    "id": "insuficiencia-cardiaca-cardiomiopatias",
    "ficheiro": null,
    "pt": 0,
@@ -895,7 +972,7 @@
    "descarregados_en": 1
   },
   {
-   "id": "lipidos-detalhe",
+   "id": "laringe-voz",
    "ficheiro": null,
    "pt": 1,
    "en": 1,
@@ -906,7 +983,7 @@
    "descarregados_en": 0
   },
   {
-   "id": "matriz-extracelular-glicacao",
+   "id": "lipidos-detalhe",
    "ficheiro": null,
    "pt": 1,
    "en": 1,
@@ -981,17 +1058,6 @@
    "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 1
-  },
-  {
-   "id": "polipos-colorretais",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
   },
   {
    "id": "proteina-aminoacidos",
@@ -1093,7 +1159,7 @@
    "descarregados_en": 0
   },
   {
-   "id": "suprarrenais-cortisol",
+   "id": "telomeros-senescencia-celular",
    "ficheiro": null,
    "pt": 0,
    "en": 2,
@@ -1104,7 +1170,7 @@
    "descarregados_en": 1
   },
   {
-   "id": "telomeros-senescencia-celular",
+   "id": "tendoes-ligamentos-lesoes",
    "ficheiro": null,
    "pt": 0,
    "en": 2,
@@ -1192,40 +1258,7 @@
    "descarregados_en": 0
   },
   {
-   "id": "coluna-disco-dor-lombar",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 0,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
    "id": "doencas-autoimunes",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "enxaqueca-cefaleias",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
-   "id": "epilepsia-excitabilidade-neuronal",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -1280,28 +1313,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "inflamacao-autoimunidade",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
-   "id": "laringe-voz",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 0,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
    "id": "longevidade-excecional",
    "ficheiro": null,
    "pt": 0,
@@ -1347,17 +1358,6 @@
   },
   {
    "id": "saude-oral-dentes-periodontite",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
-   "id": "tendoes-ligamentos-lesoes",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -1511,7 +1511,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 247
+   "visitas": 259
   },
   {
    "id": "PT",
@@ -1558,7 +1558,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 301
+   "visitas": 313
   },
   {
    "id": "Firefox",
@@ -1575,12 +1575,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 186
+   "visitas": 190
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 109
+   "visitas": 117
   },
   {
    "id": "Android",
@@ -1622,14 +1622,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 278
+   "visitas": 290
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 322
+   "visitas": 334
   },
   {
    "id": "https://bing.com",
@@ -1952,7 +1952,7 @@
     {
      "dia": "2026-10-08",
      "visitas": 2,
-     "aberturas": 93
+     "aberturas": 105
     }
    ],
    "paginas": [
@@ -1978,6 +1978,17 @@
     }
    ],
    "relatorios": [
+    {
+     "id": "avc-pequenos-vasos-cerebrais",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 3,
+     "total": 4,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 2
+    },
     {
      "id": "cancros-um-a-um",
      "ficheiro": null,
@@ -2046,17 +2057,6 @@
     },
     {
      "id": "atencao-phda",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "avc-pequenos-vasos-cerebrais",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2188,7 +2188,29 @@
      "descarregados_en": 1
     },
     {
+     "id": "intestino-grosso",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "intolerancias-alimentares-626",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "matriz-extracelular-glicacao",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2255,6 +2277,17 @@
     },
     {
      "id": "pancreas-pancreatite",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "polipos-colorretais",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2354,6 +2387,17 @@
     },
     {
      "id": "serotonina-melatonina",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "suprarrenais-cortisol",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2540,6 +2584,17 @@
      "descarregados_en": 0
     },
     {
+     "id": "cartao-farmacogenetico",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "celulas-estaminais-regeneracao",
      "ficheiro": null,
      "pt": 1,
@@ -2552,6 +2607,17 @@
     },
     {
      "id": "cetose-corpos-cetonicos",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
+     "id": "coluna-disco-dor-lombar",
      "ficheiro": null,
      "pt": 1,
      "en": 1,
@@ -2614,6 +2680,28 @@
      "abertos_pt": 0,
      "abertos_en": 0,
      "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "enxaqueca-cefaleias",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "epilepsia-excitabilidade-neuronal",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
      "descarregados_en": 1
     },
     {
@@ -2716,6 +2804,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "inflamacao-autoimunidade",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
      "id": "insuficiencia-cardiaca-cardiomiopatias",
      "ficheiro": null,
      "pt": 0,
@@ -2727,15 +2826,15 @@
      "descarregados_en": 1
     },
     {
-     "id": "intestino-grosso",
+     "id": "laringe-voz",
      "ficheiro": null,
      "pt": 1,
      "en": 1,
      "total": 2,
      "abertos_pt": 0,
-     "abertos_en": 0,
+     "abertos_en": 1,
      "descarregados_pt": 1,
-     "descarregados_en": 1
+     "descarregados_en": 0
     },
     {
      "id": "lipidos-detalhe",
@@ -2750,17 +2849,6 @@
     },
     {
      "id": "longevidade-maxima-sintese-genetica",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
-     "id": "matriz-extracelular-glicacao",
      "ficheiro": null,
      "pt": 1,
      "en": 1,
@@ -2846,17 +2934,6 @@
      "abertos_en": 1,
      "descarregados_pt": 0,
      "descarregados_en": 1
-    },
-    {
-     "id": "polipos-colorretais",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
     },
     {
      "id": "proteina-aminoacidos",
@@ -2947,7 +3024,7 @@
      "descarregados_en": 0
     },
     {
-     "id": "suprarrenais-cortisol",
+     "id": "telomeros-senescencia-celular",
      "ficheiro": null,
      "pt": 0,
      "en": 2,
@@ -2958,7 +3035,7 @@
      "descarregados_en": 1
     },
     {
-     "id": "telomeros-senescencia-celular",
+     "id": "tendoes-ligamentos-lesoes",
      "ficheiro": null,
      "pt": 0,
      "en": 2,
@@ -3013,17 +3090,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "cartao-farmacogenetico",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
      "id": "cerebro-neurodegeneracao",
      "ficheiro": null,
      "pt": 0,
@@ -3046,40 +3112,7 @@
      "descarregados_en": 0
     },
     {
-     "id": "coluna-disco-dor-lombar",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 0,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
      "id": "doencas-autoimunes",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "enxaqueca-cefaleias",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
-     "id": "epilepsia-excitabilidade-neuronal",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -3145,28 +3178,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "inflamacao-autoimunidade",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
-     "id": "laringe-voz",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 0,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
      "id": "longevidade-excecional",
      "ficheiro": null,
      "pt": 0,
@@ -3223,17 +3234,6 @@
     },
     {
      "id": "saude-oral-dentes-periodontite",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
-     "id": "tendoes-ligamentos-lesoes",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -3367,22 +3367,22 @@
     "visitas": 31,
     "visitas_30d": 31,
     "visitas_90d": 31,
-    "aberturas_pdf": 253,
+    "aberturas_pdf": 265,
     "visitas_hoje": 2,
     "visitas_7d": 31,
-    "aberturas_hoje": 93,
-    "aberturas_7d": 253,
-    "aberturas_30d": 253,
-    "pdf_abertos": 98,
-    "pdf_descarregados": 155,
-    "pdf_pt": 75,
-    "pdf_en": 178
+    "aberturas_hoje": 105,
+    "aberturas_7d": 265,
+    "aberturas_30d": 265,
+    "pdf_abertos": 102,
+    "pdf_descarregados": 163,
+    "pdf_pt": 77,
+    "pdf_en": 188
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 247
+     "visitas": 259
     },
     {
      "id": "US",
