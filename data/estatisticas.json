@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-08T01:49:07Z",
+ "atualizado_em": "2026-10-08T02:46:56Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 51,
   "visitas_30d": 51,
   "visitas_90d": 51,
-  "aberturas_pdf": 225,
+  "aberturas_pdf": 241,
   "visitas_hoje": 1,
   "visitas_7d": 51,
-  "aberturas_hoje": 39,
-  "aberturas_7d": 225,
-  "aberturas_30d": 225,
-  "pdf_abertos": 102,
-  "pdf_descarregados": 123,
-  "pdf_pt": 82,
-  "pdf_en": 143
+  "aberturas_hoje": 55,
+  "aberturas_7d": 241,
+  "aberturas_30d": 241,
+  "pdf_abertos": 109,
+  "pdf_descarregados": 132,
+  "pdf_pt": 86,
+  "pdf_en": 155
  },
  "dias": [
   {
@@ -57,7 +57,7 @@
   {
    "dia": "2026-10-08",
    "visitas": 1,
-   "aberturas": 39
+   "aberturas": 55
   }
  ],
  "paginas": [
@@ -99,6 +99,17 @@
    "total": 12,
    "abertos_pt": 6,
    "abertos_en": 4,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "avc-pequenos-vasos-cerebrais",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 1
   },
@@ -158,6 +169,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "anestesia-cirurgia",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 1,
+   "total": 3,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
    "id": "ansiedade-resiliencia-stress",
    "ficheiro": null,
    "pt": 1,
@@ -176,17 +198,6 @@
    "total": 3,
    "abertos_pt": 0,
    "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "avc-pequenos-vasos-cerebrais",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 1,
-   "total": 3,
-   "abertos_pt": 1,
-   "abertos_en": 0,
    "descarregados_pt": 1,
    "descarregados_en": 1
   },
@@ -253,6 +264,28 @@
    "total": 3,
    "abertos_pt": 0,
    "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "inflamacao-senescencia-placa",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "intestino-grosso",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 1,
+   "total": 3,
+   "abertos_pt": 1,
+   "abertos_en": 0,
    "descarregados_pt": 1,
    "descarregados_en": 1
   },
@@ -334,7 +367,29 @@
    "descarregados_en": 1
   },
   {
+   "id": "resumo-clinico-medico",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "rim-acido-urico",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "sensores-nutrientes-autofagia",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -389,17 +444,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "anestesia-cirurgia",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
    "id": "aorta-aneurismas",
    "ficheiro": null,
    "pt": 1,
@@ -419,6 +463,17 @@
    "abertos_pt": 0,
    "abertos_en": 0,
    "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "audicao-zumbido",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 2,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -499,6 +554,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "doenca-arterial-periferica",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "esofago",
    "ficheiro": null,
    "pt": 1,
@@ -552,6 +618,17 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 0
+  },
+  {
+   "id": "forca-hipertrofia-potencia",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 2,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
   },
   {
    "id": "gaba-glutamato",
@@ -609,17 +686,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "inflamacao-senescencia-placa",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
    "id": "matriz-extracelular-glicacao",
    "ficheiro": null,
    "pt": 1,
@@ -675,7 +741,40 @@
    "descarregados_en": 1
   },
   {
+   "id": "pancreas-pancreatite",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "perfil-desportivo-resistencia-forca",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
+   "id": "pneumococo-imunossenescencia",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 2,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "polipos-colorretais",
    "ficheiro": null,
    "pt": 1,
    "en": 1,
@@ -741,17 +840,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "resumo-clinico-medico",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
    "id": "risco-cancro-scores-poligenicos",
    "ficheiro": null,
    "pt": 1,
@@ -785,7 +873,7 @@
    "descarregados_en": 0
   },
   {
-   "id": "sensores-nutrientes-autofagia",
+   "id": "serotonina-melatonina",
    "ficheiro": null,
    "pt": 1,
    "en": 1,
@@ -796,14 +884,14 @@
    "descarregados_en": 1
   },
   {
-   "id": "serotonina-melatonina",
+   "id": "stress-oxidativo-defesa-antioxidante",
    "ficheiro": null,
-   "pt": 1,
-   "en": 1,
+   "pt": 0,
+   "en": 2,
    "total": 2,
    "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -917,17 +1005,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "audicao-zumbido",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "baco-sistema-linfatico",
    "ficheiro": null,
    "pt": 1,
@@ -1005,18 +1082,18 @@
    "descarregados_en": 0
   },
   {
-   "id": "doenca-arterial-periferica",
+   "id": "doencas-autoimunes",
    "ficheiro": null,
-   "pt": 1,
-   "en": 0,
+   "pt": 0,
+   "en": 1,
    "total": 1,
    "abertos_pt": 0,
    "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
+   "descarregados_pt": 0,
+   "descarregados_en": 1
   },
   {
-   "id": "doencas-autoimunes",
+   "id": "dopamina-noradrenalina",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -1039,17 +1116,6 @@
   },
   {
    "id": "epilepsia-excitabilidade-neuronal",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "forca-hipertrofia-potencia",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -1137,17 +1203,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "intestino-grosso",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 0,
-   "total": 1,
-   "abertos_pt": 1,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
    "id": "laringe-voz",
    "ficheiro": null,
    "pt": 1,
@@ -1192,17 +1247,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "pancreas-pancreatite",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "pele-skin-care",
    "ficheiro": null,
    "pt": 0,
@@ -1222,28 +1266,6 @@
    "abertos_pt": 0,
    "abertos_en": 0,
    "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
-   "id": "pneumococo-imunossenescencia",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "polipos-colorretais",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
    "descarregados_en": 0
   },
   {
@@ -1280,15 +1302,15 @@
    "descarregados_en": 0
   },
   {
-   "id": "stress-oxidativo-defesa-antioxidante",
+   "id": "saude-oral-dentes-periodontite",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
    "total": 1,
    "abertos_pt": 0,
-   "abertos_en": 0,
+   "abertos_en": 1,
    "descarregados_pt": 0,
-   "descarregados_en": 1
+   "descarregados_en": 0
   },
   {
    "id": "suplementos-1002",
@@ -1478,7 +1500,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 192
+   "visitas": 208
   },
   {
    "id": "PT",
@@ -1525,7 +1547,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 246
+   "visitas": 262
   },
   {
    "id": "Firefox",
@@ -1542,12 +1564,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 155
+   "visitas": 166
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 85
+   "visitas": 90
   },
   {
    "id": "Android",
@@ -1589,14 +1611,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 224
+   "visitas": 240
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 267
+   "visitas": 283
   },
   {
    "id": "https://bing.com",
@@ -1919,7 +1941,7 @@
     {
      "dia": "2026-10-08",
      "visitas": 1,
-     "aberturas": 39
+     "aberturas": 55
     }
    ],
    "paginas": [
@@ -1969,6 +1991,17 @@
     },
     {
      "id": "atencao-phda",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "avc-pequenos-vasos-cerebrais",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2045,6 +2078,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "inflamacao-senescencia-placa",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "nariz-seios-perinasais",
      "ficheiro": null,
      "pt": 0,
@@ -2100,6 +2144,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "resumo-clinico-medico",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "rim-acido-urico",
      "ficheiro": null,
      "pt": 1,
@@ -2112,6 +2167,17 @@
     },
     {
      "id": "ritmo-circadiano-sono",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "sensores-nutrientes-autofagia",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2166,6 +2232,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "anestesia-cirurgia",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
      "id": "aorta-aneurismas",
      "ficheiro": null,
      "pt": 1,
@@ -2188,14 +2265,14 @@
      "descarregados_en": 1
     },
     {
-     "id": "avc-pequenos-vasos-cerebrais",
+     "id": "audicao-zumbido",
      "ficheiro": null,
-     "pt": 1,
-     "en": 1,
+     "pt": 0,
+     "en": 2,
      "total": 2,
      "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
      "descarregados_en": 1
     },
     {
@@ -2255,6 +2332,17 @@
     },
     {
      "id": "disruptores-endocrinos-poluentes",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "doenca-arterial-periferica",
      "ficheiro": null,
      "pt": 1,
      "en": 1,
@@ -2331,6 +2419,17 @@
      "descarregados_en": 0
     },
     {
+     "id": "forca-hipertrofia-potencia",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "funcao-sexual-eretil",
      "ficheiro": null,
      "pt": 0,
@@ -2397,15 +2496,15 @@
      "descarregados_en": 1
     },
     {
-     "id": "inflamacao-senescencia-placa",
+     "id": "intestino-grosso",
      "ficheiro": null,
      "pt": 1,
      "en": 1,
      "total": 2,
      "abertos_pt": 0,
-     "abertos_en": 1,
+     "abertos_en": 0,
      "descarregados_pt": 1,
-     "descarregados_en": 0
+     "descarregados_en": 1
     },
     {
      "id": "intolerancias-alimentares-626",
@@ -2496,7 +2595,40 @@
      "descarregados_en": 1
     },
     {
+     "id": "pancreas-pancreatite",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "perfil-desportivo-resistencia-forca",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
+     "id": "pneumococo-imunossenescencia",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "polipos-colorretais",
      "ficheiro": null,
      "pt": 1,
      "en": 1,
@@ -2551,17 +2683,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "resumo-clinico-medico",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
      "id": "risco-cancro-scores-poligenicos",
      "ficheiro": null,
      "pt": 1,
@@ -2595,7 +2716,7 @@
      "descarregados_en": 0
     },
     {
-     "id": "sensores-nutrientes-autofagia",
+     "id": "serotonina-melatonina",
      "ficheiro": null,
      "pt": 1,
      "en": 1,
@@ -2606,14 +2727,14 @@
      "descarregados_en": 1
     },
     {
-     "id": "serotonina-melatonina",
+     "id": "stress-oxidativo-defesa-antioxidante",
      "ficheiro": null,
-     "pt": 1,
-     "en": 1,
+     "pt": 0,
+     "en": 2,
      "total": 2,
      "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
      "descarregados_en": 1
     },
     {
@@ -2716,28 +2837,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "anestesia-cirurgia",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
-     "id": "audicao-zumbido",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "baco-sistema-linfatico",
      "ficheiro": null,
      "pt": 1,
@@ -2826,18 +2925,18 @@
      "descarregados_en": 0
     },
     {
-     "id": "doenca-arterial-periferica",
+     "id": "doencas-autoimunes",
      "ficheiro": null,
-     "pt": 1,
-     "en": 0,
+     "pt": 0,
+     "en": 1,
      "total": 1,
      "abertos_pt": 0,
      "abertos_en": 0,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
+     "descarregados_pt": 0,
+     "descarregados_en": 1
     },
     {
-     "id": "doencas-autoimunes",
+     "id": "dopamina-noradrenalina",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -2871,17 +2970,6 @@
     },
     {
      "id": "farmacogenomica-632",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "forca-hipertrofia-potencia",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -3013,17 +3101,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "pancreas-pancreatite",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "pele-skin-care",
      "ficheiro": null,
      "pt": 0,
@@ -3043,28 +3120,6 @@
      "abertos_pt": 0,
      "abertos_en": 0,
      "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
-     "id": "pneumococo-imunossenescencia",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "polipos-colorretais",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
      "descarregados_en": 0
     },
     {
@@ -3112,15 +3167,15 @@
      "descarregados_en": 0
     },
     {
-     "id": "stress-oxidativo-defesa-antioxidante",
+     "id": "saude-oral-dentes-periodontite",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
      "total": 1,
      "abertos_pt": 0,
-     "abertos_en": 0,
+     "abertos_en": 1,
      "descarregados_pt": 0,
-     "descarregados_en": 1
+     "descarregados_en": 0
     },
     {
      "id": "suplementos-1002",
@@ -3290,22 +3345,22 @@
     "visitas": 30,
     "visitas_30d": 30,
     "visitas_90d": 30,
-    "aberturas_pdf": 199,
+    "aberturas_pdf": 215,
     "visitas_hoje": 1,
     "visitas_7d": 30,
-    "aberturas_hoje": 39,
-    "aberturas_7d": 199,
-    "aberturas_30d": 199,
-    "pdf_abertos": 76,
-    "pdf_descarregados": 123,
-    "pdf_pt": 58,
-    "pdf_en": 141
+    "aberturas_hoje": 55,
+    "aberturas_7d": 215,
+    "aberturas_30d": 215,
+    "pdf_abertos": 83,
+    "pdf_descarregados": 132,
+    "pdf_pt": 62,
+    "pdf_en": 153
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 192
+     "visitas": 208
     },
     {
      "id": "US",
