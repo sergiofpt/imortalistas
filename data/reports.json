@@ -100,7 +100,7 @@
    ],
    "ficheiro_en": "reports/farmacogenomica-632-medicamentos_en.pdf",
    "paginas_en": 48,
-   "tamanho_kb_en": 275,
+   "tamanho_kb_en": 274,
    "areas": [
     "farmaco"
    ],
@@ -292,7 +292,7 @@
     "en": "47 of 48 SNPs (6 imputed); a faster-than-typical dopamine turnover is more likely."
    },
    "paginas": 24,
-   "tamanho_kb": 155,
+   "tamanho_kb": 156,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -368,7 +368,7 @@
     "en": "53 to avoid or pause, 66 to adjust, 111 to monitor, 221 normal, 11 undetermined and 537 with no genetic relevance."
    },
    "paginas": 92,
-   "tamanho_kb": 515,
+   "tamanho_kb": 516,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -1545,14 +1545,14 @@
     "en": "35 variants and 10 scores: favourable joints and typical bone density; muscle mass and strength are the weak point."
    },
    "paginas": 14,
-   "tamanho_kb": 78,
+   "tamanho_kb": 79,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
    },
    "ficheiro_en": "reports/musculo-osso-sarcopenia_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 76,
+   "tamanho_kb_en": 77,
    "areas": [
     "desporto",
     "longevidade"
@@ -1620,7 +1620,7 @@
     "en": "31 variants and 8 scores: favourable glycation and arterial stiffness; the weak point is elastin (alpha-1 antitrypsin PiMZ)."
    },
    "paginas": 16,
-   "tamanho_kb": 81,
+   "tamanho_kb": 82,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -1693,7 +1693,7 @@
     "en": "46 variants and 16 scores: skin genetics favourable overall (sun response, skin cancer, wrinkles) and topical actives."
    },
    "paginas": 21,
-   "tamanho_kb": 97,
+   "tamanho_kb": 98,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -2034,7 +2034,7 @@
     "en": "50 SNPs and 11 scores: favourable kidney genetics (eGFR at the 94th percentile, no APOL1 G1 or ABCG2 Q141K); typical uric acid."
    },
    "paginas": 17,
-   "tamanho_kb": 86,
+   "tamanho_kb": 87,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -2122,7 +2122,7 @@
     "en": "46 SNPs and 3 scores: genetics pushes iron up (HFE H63D, genetic ferritin at the 80th percentile); no classic haemochromatosis or Wilson disease."
    },
    "paginas": 16,
-   "tamanho_kb": 80,
+   "tamanho_kb": 81,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -2208,7 +2208,7 @@
     "en": "39 SNPs: favourable phase I; weak points in phase II (slow NAT2, GSTA1, GCLM) and PON1; CYP2C9*3 and CYP3A5 expresser."
    },
    "paginas": 14,
-   "tamanho_kb": 75,
+   "tamanho_kb": 76,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -2290,7 +2290,7 @@
    },
    "ficheiro_en": "reports/reparacao-adn-estabilidade-genoma_en.pdf",
    "paginas_en": 9,
-   "tamanho_kb_en": 58,
+   "tamanho_kb_en": 59,
    "areas": [
     "longevidade",
     "cancro"
@@ -2398,7 +2398,7 @@
     "en": "Genetic telomere reserve slightly below average (~25th percentile), with TERT pulling both ways; typical epigenetic age."
    },
    "paginas": 9,
-   "tamanho_kb": 63,
+   "tamanho_kb": 64,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -2530,7 +2530,7 @@
     "en": "One of the most favourable axes: FOXO3 longevity homozygote and genetically low IGF-1 (7th percentile), no strong autophagy weaknesses."
    },
    "paginas": 8,
-   "tamanho_kb": 55,
+   "tamanho_kb": 56,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -2646,7 +2646,7 @@
     "en": "Favourable neuronal proteostasis (APOE ε3/ε3, MAPT H2/H2, no lysosomal Parkinson variants); weakness in alpha-1 antitrypsin Z (liver and lung)."
    },
    "paginas": 10,
-   "tamanho_kb": 68,
+   "tamanho_kb": 69,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -2895,7 +2895,7 @@
     "en": "22 scores and 57 SNPs: no confirmed pathogenic variants in the classic hereditary cancer genes covered by the chip; low-to-medium polygenic background for most."
    },
    "paginas": 21,
-   "tamanho_kb": 115,
+   "tamanho_kb": 116,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -3355,7 +3355,7 @@
     "en": "31 SNPs and 11 scores: very favourable gut terrain (coeliac disease practically ruled out, very low inflammatory bowel disease risk, FUT2 secretor)."
    },
    "paginas": 16,
-   "tamanho_kb": 72,
+   "tamanho_kb": 73,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -3491,7 +3491,7 @@
     "en": "Macula, lens and hearing typical; the least favourable point is glaucoma (open-angle score at the 97.9th percentile)."
    },
    "paginas": 17,
-   "tamanho_kb": 78,
+   "tamanho_kb": 79,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -3642,7 +3642,7 @@
     "en": "26 variants and 6 scores: migraine predisposition on the low side of typical (scores at the 29th and 32nd percentiles); mixed loci, no genetic case for prevention."
    },
    "paginas": 14,
-   "tamanho_kb": 66,
+   "tamanho_kb": 67,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -3718,13 +3718,13 @@
     "en": "30 variants and 11 scores: no major thrombophilia (factor V Leiden and prothrombin negative), but a moderate polygenic predisposition to venous thrombosis, partly offset by likely blood group O."
    },
    "paginas": 13,
-   "tamanho_kb": 73,
+   "tamanho_kb": 74,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
    },
    "ficheiro_en": "reports/coagulacao-trombose-veias_en.pdf",
-   "paginas_en": 14,
+   "paginas_en": 13,
    "tamanho_kb_en": 71,
    "areas": [
     "coracao"
@@ -3921,7 +3921,7 @@
     "en": "Genetically low HbA1c and fasting glucose (6.6th to 9.5th percentiles); typical type 2 diabetes polygenic risk, with several beta-cell risk alleles (TCF7L2, SLC30A8, KCNJ11)."
    },
    "paginas": 15,
-   "tamanho_kb": 56,
+   "tamanho_kb": 57,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -3991,7 +3991,7 @@
    },
    "ficheiro_en": "reports/lipidos-detalhe_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 57,
+   "tamanho_kb_en": 58,
    "areas": [
     "metabolismo",
     "coracao"
@@ -4108,7 +4108,7 @@
     "en": "Intact trypsin brakes (SPINK1, CTRC), a protective CLDN2 allele and typical pancreatic cancer risk; the most relevant point is gallstones (score at the 88.8th percentile)."
    },
    "paginas": 18,
-   "tamanho_kb": 67,
+   "tamanho_kb": 68,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -4435,7 +4435,7 @@
    },
    "ficheiro_en": "reports/apetite-saciedade-comportamento-alimentar_en.pdf",
    "paginas_en": 13,
-   "tamanho_kb_en": 65,
+   "tamanho_kb_en": 66,
    "areas": [
     "metabolismo",
     "nutricao"
@@ -4622,7 +4622,7 @@
     "en": "11 SNPs and 4 scores: very favourable social polygenic profile (low loneliness and high sociability); oxytocin receptor (OXTR) genotypes are described without judgement."
    },
    "paginas": 13,
-   "tamanho_kb": 52,
+   "tamanho_kb": 53,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -4669,14 +4669,14 @@
     "en": "17 SNPs and 5 scores: typical-to-favourable genetic starting point (intrinsic clock at the 48th percentile, no clock-accelerating TERT alleles); frailty at the 75th percentile."
    },
    "paginas": 13,
-   "tamanho_kb": 56,
+   "tamanho_kb": 57,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
    },
    "ficheiro_en": "reports/relogio-epigenetico-idade-biologica_en.pdf",
    "paginas_en": 13,
-   "tamanho_kb_en": 53,
+   "tamanho_kb_en": 54,
    "areas": [
     "longevidade"
    ],
@@ -4731,7 +4731,7 @@
     "en": "17 SNPs and 6 scores: high genetic testosterone reserve (89th percentile), with high SHBG too (87th); loss of chromosome Y at the 37th percentile and genetically late puberty."
    },
    "paginas": 13,
-   "tamanho_kb": 57,
+   "tamanho_kb": 58,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -4796,14 +4796,14 @@
     "en": "16 SNPs and 2 scores: no genetic signs of structural infertility visible on the chip and low testicular cancer risk (24th percentile); heterozygous FSHB -211G>T as the unfavourable point."
    },
    "paginas": 13,
-   "tamanho_kb": 54,
+   "tamanho_kb": 55,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
    },
    "ficheiro_en": "reports/fertilidade-masculina_en.pdf",
    "paginas_en": 13,
-   "tamanho_kb_en": 51,
+   "tamanho_kb_en": 52,
    "areas": [
     "hormonas"
    ],
@@ -4849,7 +4849,7 @@
     "en": "23 variants and 6 scores: genetic depression risk is the report's point of attention, with mixed signals at the strong loci; insomnia is the modifiable factor that matters most."
    },
    "paginas": 13,
-   "tamanho_kb": 67,
+   "tamanho_kb": 68,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -4915,7 +4915,7 @@
     "en": "22 variants and 10 scores: typical-to-favourable anxiety and a favourable stress axis (FKBP5 without the T allele); the point against lies in the trauma loci."
    },
    "paginas": 13,
-   "tamanho_kb": 70,
+   "tamanho_kb": 71,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -4989,7 +4989,7 @@
    },
    "ficheiro_en": "reports/personalidade-tracos-psicologicos_en.pdf",
    "paginas_en": 13,
-   "tamanho_kb_en": 64,
+   "tamanho_kb_en": 65,
    "areas": [
     "cerebro"
    ],
@@ -5111,7 +5111,7 @@
    },
    "ficheiro_en": "reports/perfil-desportivo-resistencia-forca_en.pdf",
    "paginas_en": 14,
-   "tamanho_kb_en": 45,
+   "tamanho_kb_en": 46,
    "areas": [
     "desporto"
    ],
@@ -5159,7 +5159,7 @@
    },
    "ficheiro_en": "reports/resposta-treino-vo2max_en.pdf",
    "paginas_en": 14,
-   "tamanho_kb_en": 44,
+   "tamanho_kb_en": 45,
    "areas": [
     "desporto"
    ],
@@ -5290,14 +5290,14 @@
     "en": "Of 45 carrier variants searched, 42 were read: two already-known carrier states (alpha-1 antitrypsin PiMZ and HFE H63D) and no new ones (cystic fibrosis, haemoglobinopathies and others)."
    },
    "paginas": 17,
-   "tamanho_kb": 76,
+   "tamanho_kb": 77,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
    },
    "ficheiro_en": "reports/estado-portador_en.pdf",
    "paginas_en": 17,
-   "tamanho_kb_en": 73,
+   "tamanho_kb_en": 74,
    "areas": [
     "outros"
    ],
@@ -5420,7 +5420,7 @@
     "en": "11 variants and 3 scores, informative: genetically high acetoacetate and acetone and low beta-hydroxybutyrate (OXCT1 C/C); low genetic fasting insulin, so ketosis comes easily."
    },
    "paginas": 10,
-   "tamanho_kb": 55,
+   "tamanho_kb": 56,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -5837,7 +5837,7 @@
     "en": "Typical acne predisposition and a favourable hormonal axis (high genetic SHBG); homozygous risk at three follicle loci; hidradenitis suppurativa locus load at the 92.9th percentile."
    },
    "paginas": 16,
-   "tamanho_kb": 58,
+   "tamanho_kb": 59,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -5905,7 +5905,7 @@
    },
    "ficheiro_en": "reports/termorregulacao-sudorese_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 51,
+   "tamanho_kb_en": 52,
    "areas": [
     "orgaos"
    ],
@@ -5960,7 +5960,7 @@
    },
    "ficheiro_en": "reports/funcao-sexual-eretil_en.pdf",
    "paginas_en": 13,
-   "tamanho_kb_en": 53,
+   "tamanho_kb_en": 54,
    "areas": [
     "hormonas",
     "coracao"
@@ -6012,7 +6012,7 @@
    },
    "ficheiro_en": "reports/oxido-nitrico-endotelio_en.pdf",
    "paginas_en": 13,
-   "tamanho_kb_en": 52,
+   "tamanho_kb_en": 53,
    "areas": [
     "coracao"
    ],
@@ -6127,7 +6127,7 @@
    },
    "ficheiro_en": "reports/aorta-aneurismas_en.pdf",
    "paginas_en": 14,
-   "tamanho_kb_en": 63,
+   "tamanho_kb_en": 64,
    "areas": [
     "coracao"
    ],
@@ -6249,7 +6249,7 @@
    },
    "ficheiro_en": "reports/dor-analgesia_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 49,
+   "tamanho_kb_en": 50,
    "areas": [
     "farmaco",
     "cerebro"
@@ -6348,14 +6348,14 @@
     "en": "Low common genetic addiction factor and no DRD2 Taq1A A1; signals against in weekly alcohol intake and cannabis, which only matter with exposure."
    },
    "paginas": 14,
-   "tamanho_kb": 51,
+   "tamanho_kb": 52,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
    },
    "ficheiro_en": "reports/impulsividade-recompensa-vicio_en.pdf",
    "paginas_en": 14,
-   "tamanho_kb_en": 50,
+   "tamanho_kb_en": 51,
    "areas": [
     "cerebro"
    ],
@@ -6575,14 +6575,14 @@
     "en": "No high-Lp(a) LPA alleles and typical mitral prolapse; aortic valve calcification has an above-average polygenic load (492 loci at the 95.1th percentile)."
    },
    "paginas": 18,
-   "tamanho_kb": 64,
+   "tamanho_kb": 65,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
    },
    "ficheiro_en": "reports/valvulas-cardiacas_en.pdf",
    "paginas_en": 18,
-   "tamanho_kb_en": 61,
+   "tamanho_kb_en": 62,
    "areas": [
     "coracao"
    ],
@@ -6658,7 +6658,7 @@
    },
    "ficheiro_en": "reports/velocidade-processamento-tempo-reacao_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 52,
+   "tamanho_kb_en": 53,
    "areas": [
     "cerebro"
    ],
@@ -6717,7 +6717,7 @@
    },
    "ficheiro_en": "reports/inflamacao-senescencia-placa_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 53,
+   "tamanho_kb_en": 54,
    "areas": [
     "coracao",
     "imunidade"
@@ -6900,14 +6900,14 @@
     "en": "Mixed picture: low stroke scores and favourable strong lesion loci, but a high white-matter lesion score (92nd percentile); the weakest point is perivascular spaces (glymphatic drainage)."
    },
    "paginas": 13,
-   "tamanho_kb": 56,
+   "tamanho_kb": 57,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
    },
    "ficheiro_en": "reports/avc-pequenos-vasos-cerebrais_en.pdf",
    "paginas_en": 13,
-   "tamanho_kb_en": 53,
+   "tamanho_kb_en": 54,
    "areas": [
     "coracao",
     "cerebro"
@@ -6959,14 +6959,14 @@
     "en": "Very low genetic risk of dilated cardiomyopathy (2nd percentile) and low overall heart failure (22nd); above-average hypertrophic cardiomyopathy score, without the MYBPC3 risk alleles."
    },
    "paginas": 13,
-   "tamanho_kb": 59,
+   "tamanho_kb": 60,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
    },
    "ficheiro_en": "reports/insuficiencia-cardiaca-cardiomiopatias_en.pdf",
    "paginas_en": 13,
-   "tamanho_kb_en": 56,
+   "tamanho_kb_en": 57,
    "areas": [
     "coracao"
    ],
@@ -7083,7 +7083,7 @@
     "en": "Good innate defence (intermediate MBL, no TLR4 Asp299Gly; severe COVID-19 at the 4.7th percentile); polygenic tendency to bacterial mucosal infections (pneumonia at the 84.2th), which makes vaccines matter."
    },
    "paginas": 14,
-   "tamanho_kb": 48,
+   "tamanho_kb": 49,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -7131,7 +7131,7 @@
     "en": "Typical age-related hearing loss, normal GJB2 and no cisplatin ototoxicity allele; tinnitus is the weak point (genomic score at the 89.7th percentile), so noise protection pays off most."
    },
    "paginas": 14,
-   "tamanho_kb": 49,
+   "tamanho_kb": 50,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -7190,7 +7190,7 @@
    },
    "ficheiro_en": "reports/hipertensao-pulmonar-circulacao-pulmao_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 52,
+   "tamanho_kb_en": 53,
    "areas": [
     "coracao",
     "orgaos"
@@ -7243,14 +7243,14 @@
     "en": "42 variants and 5 scores: FOXO3 homozygous for all 4 longevity alleles, APOE ε3/ε3 and a longevity score at the 92nd percentile; the strongest unfavourable point is homozygous risk at 9p21."
    },
    "paginas": 29,
-   "tamanho_kb": 141,
+   "tamanho_kb": 142,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
    },
    "ficheiro_en": "reports/longevidade-maxima-sintese-genetica_en.pdf",
    "paginas_en": 28,
-   "tamanho_kb_en": 138,
+   "tamanho_kb_en": 139,
    "areas": [
     "longevidade"
    ],
@@ -7768,7 +7768,7 @@
     "en": "Organ-by-organ risk map with no monogenic risk (TP53 and BRCA2 K3326X normal). Below average: lymphomas, kidney, non-melanoma skin, testis and stomach. High signals: bladder (scores 86–95, slow NAT2, PSCA), glioma (90.8), pancreas in the small score (83.1), oesophagus (84.8) and thyroid (79–81), with prevention by organ."
    },
    "paginas": 19,
-   "tamanho_kb": 76,
+   "tamanho_kb": 77,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -7911,7 +7911,7 @@
     "en": "The seven highest-effect HLA markers are negative and PTPN22 R620W is absent: rheumatoid arthritis, psoriasis, coeliac disease, type 1 diabetes and multiple sclerosis are low. The highest signal is vitiligo (percentile 89.9; TYR R402 G/G); lupus and spondylitis are typical."
    },
    "paginas": 17,
-   "tamanho_kb": 64,
+   "tamanho_kb": 65,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -7969,7 +7969,7 @@
     "en": "Glaucoma is the eye priority: open-angle up to percentile 97.9, genetically high intraocular pressure (94.0) and optic-nerve genes (CDKN2B-AS1, SIX6, TXNRD2). Genomic myopia at 99.2 and cataracts at 86.6. The macula is protected (ARMS2 G/G, typical macular degeneration)."
    },
    "paginas": 17,
-   "tamanho_kb": 63,
+   "tamanho_kb": 64,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -8045,7 +8045,7 @@
    },
    "ficheiro_en": "reports/articulacoes-artrose_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 50,
+   "tamanho_kb_en": 51,
    "areas": [
     "desporto",
     "orgaos"
@@ -8100,7 +8100,7 @@
     "en": "Descriptive, without judgement: 46 SNPs in 27 genes. Serotonin receptors tending to Reduced (HTR2A, HTR2C, HTR1B), TPH2 with 1 Increased allele and a contradictory SLC6A4 transporter; clock with variants in ARNTL, CLOCK, PER2 and MTNR1B (later melatonin). Morning light, regular hours, exercise and sleep are what most modulate these pathways."
    },
    "paginas": 16,
-   "tamanho_kb": 63,
+   "tamanho_kb": 64,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -8178,7 +8178,7 @@
    },
    "ficheiro_en": "reports/gaba-glutamato_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 54,
+   "tamanho_kb_en": 55,
    "areas": [
     "cerebro"
    ],
@@ -8306,7 +8306,7 @@
     "en": "Compound heterozygous MTHFR (C677T + A1298C, about 50–60% of activity): the reason folate is always 5-MTHF. Genetically slightly higher homocysteine (4-locus score at percentile 92, about +0.6–0.8 µmol/L), with protective CBS; no relevant B12 risk; slightly higher choline need (PEMT, BHMT) and COMT Val/Val."
    },
    "paginas": 17,
-   "tamanho_kb": 58,
+   "tamanho_kb": 59,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -8594,7 +8594,7 @@
     "en": "Two-page card to show the doctor, pharmacist or anaesthetist: CYP2C9 *1/*3, VKORC1 T/T, slow NAT2, CYP3A5 expressor, UGT1A1 *28, probable normal CYP2D6 and HLA-B*58:01 to be typed, with what to avoid or adjust (NSAIDs, anticoagulants, phenytoin, isoniazid…). Confirm with a clinical pharmacogenetic test."
    },
    "paginas": 2,
-   "tamanho_kb": 29,
+   "tamanho_kb": 30,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -8663,7 +8663,7 @@
     "en": "Summary to take to the appointment: the only plausible pathogenic-type finding (SERPINA1 Pi*MZ, to be confirmed), liver, cardiovascular (9p21, CETP), high scores to watch (glaucoma, emphysema, colorectal, bladder…), actionable pharmacogenetics and the exact list of tests, exams, vaccines and screenings to discuss."
    },
    "paginas": 11,
-   "tamanho_kb": 44,
+   "tamanho_kb": 45,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -8748,7 +8748,7 @@
     "en": "Typical genetic gallstone risk: the largest common gene (ABCG8 D19H) is absent and the recent genomic scores are at percentiles 32–34 (consensus 51.6). Small-effect alleles in cholesterol and bile-salt transport (ABCG8, ABCB4, CYP7A1, ABCB11), heterozygous Gilbert (UGT1A1*28) and PiZ; cholecystitis with a high loci burden but only 11 loci."
    },
    "paginas": 16,
-   "tamanho_kb": 58,
+   "tamanho_kb": 59,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -9055,7 +9055,7 @@
     "en": "Low polygenic predisposition to testicular germ cell tumour (consensus at percentile 13.7; KITLG rs995030 and TERT without risk alleles), although some large-effect loci leave the loci burden at 74.9. Typical testicular function: typical-to-high testosterone, genetically high SHBG and slightly lower FSH (FSHB −211T)."
    },
    "paginas": 15,
-   "tamanho_kb": 53,
+   "tamanho_kb": 54,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -9111,7 +9111,7 @@
     "en": "Chronic sinusitis with nasal polyps is the weak point (genomic at percentile 98.3, loci burden at 86.4, consensus 39.3: a mixed signal leaning towards risk; TSLP and GIGYF2 with 2 alleles). Low predisposition to allergic rhinitis (loci at 18.0). Descriptive smell genes: OR5A1, OR6A2 (coriander) and OR7D4."
    },
    "paginas": 16,
-   "tamanho_kb": 57,
+   "tamanho_kb": 58,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -9175,7 +9175,7 @@
     "en": "Typical genetic risk of laryngeal and head and neck cancer (consensus at percentile 48.5), almost all conditional on alcohol and tobacco: ALDH2*2 absent, but protective ADH1B*2 absent, ADH7 with 2 alleles and CHRNA5 D398N with 1. Pharynx and tonsils with a low loci burden (2.8); reflux with discordant scores."
    },
    "paginas": 15,
-   "tamanho_kb": 53,
+   "tamanho_kb": 54,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
@@ -9238,7 +9238,7 @@
    },
    "ficheiro_en": "reports/intestino-grosso_en.pdf",
    "paginas_en": 15,
-   "tamanho_kb_en": 54,
+   "tamanho_kb_en": 55,
    "areas": [
     "digestao"
    ],
@@ -9290,14 +9290,14 @@
     "en": "Normally trainable strength and a favourable aerobic engine and recovery (PPARGC1A Gly/Gly, normal AMPD1, TNF −308 G/G), but low polygenic lean mass (appendicular p9.5; whole body p28) and tendon as the weak link (COL5A1 rs12722 T/T). 73 SNPs and 61 polygenic scores: hypertrophy needs more volume, consistency and slower load progression for the tendons."
    },
    "paginas": 25,
-   "tamanho_kb": 155,
+   "tamanho_kb": 157,
    "lingua": {
     "pt": "português",
     "en": "Portuguese"
    },
    "ficheiro_en": "reports/forca-hipertrofia-potencia_en.pdf",
    "paginas_en": 25,
-   "tamanho_kb_en": 149,
+   "tamanho_kb_en": 151,
    "areas": [
     "desporto"
    ],
