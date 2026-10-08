@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-08T04:49:39Z",
+ "atualizado_em": "2026-10-08T05:19:58Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 52,
   "visitas_30d": 52,
   "visitas_90d": 52,
-  "aberturas_pdf": 291,
+  "aberturas_pdf": 296,
   "visitas_hoje": 2,
   "visitas_7d": 52,
-  "aberturas_hoje": 105,
-  "aberturas_7d": 291,
-  "aberturas_30d": 291,
-  "pdf_abertos": 128,
-  "pdf_descarregados": 163,
-  "pdf_pt": 101,
-  "pdf_en": 190
+  "aberturas_hoje": 110,
+  "aberturas_7d": 296,
+  "aberturas_30d": 296,
+  "pdf_abertos": 129,
+  "pdf_descarregados": 167,
+  "pdf_pt": 103,
+  "pdf_en": 193
  },
  "dias": [
   {
@@ -57,7 +57,7 @@
   {
    "dia": "2026-10-08",
    "visitas": 2,
-   "aberturas": 105
+   "aberturas": 110
   }
  ],
  "paginas": [
@@ -279,6 +279,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "cerebro-neurodegeneracao",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "destoxificacao-fase-i-ii",
    "ficheiro": null,
    "pt": 1,
@@ -331,6 +342,17 @@
    "abertos_pt": 2,
    "abertos_en": 0,
    "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "figado-gordura-hepatica",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
    "descarregados_en": 1
   },
   {
@@ -529,6 +551,17 @@
    "abertos_pt": 0,
    "abertos_en": 2,
    "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "reparacao-adn-estabilidade-genoma",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
    "descarregados_en": 1
   },
   {
@@ -884,17 +917,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "figado-gordura-hepatica",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
    "id": "forca-hipertrofia-potencia",
    "ficheiro": null,
    "pt": 0,
@@ -915,6 +937,17 @@
    "abertos_en": 0,
    "descarregados_pt": 1,
    "descarregados_en": 1
+  },
+  {
+   "id": "globulos-vermelhos-hemoglobina-plaquetas",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
   },
   {
    "id": "gordura-inflamatoria-lipolise",
@@ -1104,17 +1137,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "reparacao-adn-estabilidade-genoma",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
    "id": "risco-cancro-scores-poligenicos",
    "ficheiro": null,
    "pt": 1,
@@ -1236,17 +1258,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "cerebro-neurodegeneracao",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "coagulacao-trombose-veias",
    "ficheiro": null,
    "pt": 1,
@@ -1267,17 +1278,6 @@
    "abertos_en": 0,
    "descarregados_pt": 0,
    "descarregados_en": 1
-  },
-  {
-   "id": "globulos-vermelhos-hemoglobina-plaquetas",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
   },
   {
    "id": "hipertensao-pulmonar-circulacao-pulmao",
@@ -1511,7 +1511,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 259
+   "visitas": 264
   },
   {
    "id": "PT",
@@ -1558,7 +1558,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 313
+   "visitas": 318
   },
   {
    "id": "Firefox",
@@ -1575,12 +1575,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 190
+   "visitas": 193
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 117
+   "visitas": 119
   },
   {
    "id": "Android",
@@ -1622,14 +1622,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 290
+   "visitas": 295
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 334
+   "visitas": 339
   },
   {
    "id": "https://bing.com",
@@ -1952,7 +1952,7 @@
     {
      "dia": "2026-10-08",
      "visitas": 2,
-     "aberturas": 105
+     "aberturas": 110
     }
    ],
    "paginas": [
@@ -2078,6 +2078,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "cerebro-neurodegeneracao",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "destoxificacao-fase-i-ii",
      "ficheiro": null,
      "pt": 1,
@@ -2123,6 +2134,17 @@
     },
     {
      "id": "fertilidade-masculina",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "figado-gordura-hepatica",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2317,6 +2339,17 @@
      "abertos_pt": 0,
      "abertos_en": 2,
      "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "reparacao-adn-estabilidade-genoma",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
      "descarregados_en": 1
     },
     {
@@ -2727,17 +2760,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "figado-gordura-hepatica",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
      "id": "forca-hipertrofia-potencia",
      "ficheiro": null,
      "pt": 0,
@@ -2769,6 +2791,17 @@
      "abertos_en": 0,
      "descarregados_pt": 1,
      "descarregados_en": 1
+    },
+    {
+     "id": "globulos-vermelhos-hemoglobina-plaquetas",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
     },
     {
      "id": "gordura-inflamatoria-lipolise",
@@ -2969,17 +3002,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "reparacao-adn-estabilidade-genoma",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
      "id": "risco-cancro-scores-poligenicos",
      "ficheiro": null,
      "pt": 1,
@@ -3090,17 +3112,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "cerebro-neurodegeneracao",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "coagulacao-trombose-veias",
      "ficheiro": null,
      "pt": 1,
@@ -3132,17 +3143,6 @@
      "abertos_en": 0,
      "descarregados_pt": 0,
      "descarregados_en": 1
-    },
-    {
-     "id": "globulos-vermelhos-hemoglobina-plaquetas",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
     },
     {
      "id": "hipertensao-pulmonar-circulacao-pulmao",
@@ -3367,22 +3367,22 @@
     "visitas": 31,
     "visitas_30d": 31,
     "visitas_90d": 31,
-    "aberturas_pdf": 265,
+    "aberturas_pdf": 270,
     "visitas_hoje": 2,
     "visitas_7d": 31,
-    "aberturas_hoje": 105,
-    "aberturas_7d": 265,
-    "aberturas_30d": 265,
-    "pdf_abertos": 102,
-    "pdf_descarregados": 163,
-    "pdf_pt": 77,
-    "pdf_en": 188
+    "aberturas_hoje": 110,
+    "aberturas_7d": 270,
+    "aberturas_30d": 270,
+    "pdf_abertos": 103,
+    "pdf_descarregados": 167,
+    "pdf_pt": 79,
+    "pdf_en": 191
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 259
+     "visitas": 264
     },
     {
      "id": "US",
