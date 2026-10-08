@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-08T03:50:20Z",
+ "atualizado_em": "2026-10-08T04:20:23Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
-  "visitas": 51,
-  "visitas_30d": 51,
-  "visitas_90d": 51,
-  "aberturas_pdf": 262,
-  "visitas_hoje": 1,
-  "visitas_7d": 51,
-  "aberturas_hoje": 76,
-  "aberturas_7d": 262,
-  "aberturas_30d": 262,
-  "pdf_abertos": 119,
-  "pdf_descarregados": 143,
-  "pdf_pt": 95,
-  "pdf_en": 167
+  "visitas": 52,
+  "visitas_30d": 52,
+  "visitas_90d": 52,
+  "aberturas_pdf": 279,
+  "visitas_hoje": 2,
+  "visitas_7d": 52,
+  "aberturas_hoje": 93,
+  "aberturas_7d": 279,
+  "aberturas_30d": 279,
+  "pdf_abertos": 124,
+  "pdf_descarregados": 155,
+  "pdf_pt": 99,
+  "pdf_en": 180
  },
  "dias": [
   {
@@ -56,14 +56,14 @@
   },
   {
    "dia": "2026-10-08",
-   "visitas": 1,
-   "aberturas": 76
+   "visitas": 2,
+   "aberturas": 93
   }
  ],
  "paginas": [
   {
    "path": "/imortalistas/genetica-reports.html",
-   "visitas": 28
+   "visitas": 29
   },
   {
    "path": "/imortalistas/teste-worker",
@@ -191,6 +191,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "alimentos-longevidade-173",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "andropausa-envelhecimento-reprodutivo",
    "ficheiro": null,
    "pt": 1,
@@ -246,6 +257,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "destoxificacao-fase-i-ii",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "dor-analgesia",
    "ficheiro": null,
    "pt": 1,
@@ -258,6 +280,17 @@
   },
   {
    "id": "esofago",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "estado-portador",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -323,6 +356,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "impulsividade-recompensa-vicio",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "inflamacao-senescencia-placa",
    "ficheiro": null,
    "pt": 1,
@@ -367,6 +411,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "microbioma-intestino",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "nariz-seios-perinasais",
    "ficheiro": null,
    "pt": 0,
@@ -375,6 +430,17 @@
    "abertos_pt": 0,
    "abertos_en": 2,
    "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "oxido-nitrico-endotelio",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
    "descarregados_en": 1
   },
   {
@@ -400,6 +466,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "pancreas-pancreatite",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "prostata",
    "ficheiro": null,
    "pt": 1,
@@ -408,6 +485,17 @@
    "abertos_pt": 0,
    "abertos_en": 1,
    "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "referencia-via-forca-hipertrofia-potencia",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 3,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 2,
+   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -466,7 +554,40 @@
    "descarregados_en": 1
   },
   {
+   "id": "termogenese-gordura-castanha",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "termorregulacao-sudorese",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "testiculos",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "tiroide",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -510,18 +631,18 @@
    "descarregados_en": 1
   },
   {
-   "id": "alergias-asma-atopia",
+   "id": "acne-glandulas-sebaceas",
    "ficheiro": null,
-   "pt": 1,
-   "en": 1,
+   "pt": 0,
+   "en": 2,
    "total": 2,
    "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
-   "id": "alimentos-longevidade-173",
+   "id": "alergias-asma-atopia",
    "ficheiro": null,
    "pt": 1,
    "en": 1,
@@ -574,6 +695,17 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 0
+  },
+  {
+   "id": "cafeina-estimulantes",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 2,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
   },
   {
    "id": "capacidade-cognitiva-plasticidade",
@@ -631,17 +763,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "destoxificacao-fase-i-ii",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
    "id": "disruptores-endocrinos-poluentes",
    "ficheiro": null,
    "pt": 1,
@@ -665,17 +786,6 @@
   },
   {
    "id": "dopamina-noradrenalina",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "estado-portador",
    "ficheiro": null,
    "pt": 1,
    "en": 1,
@@ -763,18 +873,18 @@
    "descarregados_en": 0
   },
   {
-   "id": "impulsividade-recompensa-vicio",
+   "id": "imunidade-envelhecimento-imunitario",
    "ficheiro": null,
-   "pt": 1,
-   "en": 1,
+   "pt": 0,
+   "en": 2,
    "total": 2,
    "abertos_pt": 0,
    "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
+   "descarregados_pt": 0,
+   "descarregados_en": 1
   },
   {
-   "id": "imunidade-envelhecimento-imunitario",
+   "id": "insuficiencia-cardiaca-cardiomiopatias",
    "ficheiro": null,
    "pt": 0,
    "en": 2,
@@ -797,17 +907,6 @@
   },
   {
    "id": "matriz-extracelular-glicacao",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
-   "id": "microbioma-intestino",
    "ficheiro": null,
    "pt": 1,
    "en": 1,
@@ -851,28 +950,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "oxido-nitrico-endotelio",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 2,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "pancreas-pancreatite",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "perfil-desportivo-resistencia-forca",
    "ficheiro": null,
    "pt": 1,
@@ -882,6 +959,17 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 0
+  },
+  {
+   "id": "personalidade-tracos-psicologicos",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
   },
   {
    "id": "pneumococo-imunossenescencia",
@@ -950,17 +1038,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "referencia-via-forca-hipertrofia-potencia",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 2,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 2,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
    "id": "reparacao-adn-estabilidade-genoma",
    "ficheiro": null,
    "pt": 1,
@@ -1005,6 +1082,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "suplementos-1002",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
    "id": "suprarrenais-cortisol",
    "ficheiro": null,
    "pt": 0,
@@ -1017,39 +1105,6 @@
   },
   {
    "id": "telomeros-senescencia-celular",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 2,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "termogenese-gordura-castanha",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
-   "id": "termorregulacao-sudorese",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
-   "id": "tiroide",
    "ficheiro": null,
    "pt": 0,
    "en": 2,
@@ -1078,17 +1133,6 @@
    "total": 2,
    "abertos_pt": 0,
    "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "acne-glandulas-sebaceas",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
    "descarregados_pt": 0,
    "descarregados_en": 1
   },
@@ -1126,17 +1170,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "cafeina-estimulantes",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
    "id": "cerebro-neurodegeneracao",
    "ficheiro": null,
    "pt": 0,
@@ -1146,6 +1179,17 @@
    "abertos_en": 0,
    "descarregados_pt": 0,
    "descarregados_en": 1
+  },
+  {
+   "id": "coagulacao-trombose-veias",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 0,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
   },
   {
    "id": "coluna-disco-dor-lombar",
@@ -1247,17 +1291,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "insuficiencia-cardiaca-cardiomiopatias",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "laringe-voz",
    "ficheiro": null,
    "pt": 1,
@@ -1291,17 +1324,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "personalidade-tracos-psicologicos",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 0,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
    "id": "relogio-epigenetico-idade-biologica",
    "ficheiro": null,
    "pt": 0,
@@ -1325,17 +1347,6 @@
   },
   {
    "id": "saude-oral-dentes-periodontite",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
-   "id": "suplementos-1002",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -1398,6 +1409,13 @@
    "visitas": 4
   },
   {
+   "id": "computador/mac-chrome",
+   "tipo": "computador",
+   "nome": "Mac · Chrome",
+   "estimativa": false,
+   "visitas": 2
+  },
+  {
    "id": "computador/windows-10-chrome",
    "tipo": "computador",
    "nome": "Windows 10 · Chrome",
@@ -1436,13 +1454,6 @@
    "id": "android/google-pixel-8-pro",
    "tipo": "android",
    "nome": "Google Pixel 8 Pro",
-   "estimativa": false,
-   "visitas": 1
-  },
-  {
-   "id": "computador/mac-chrome",
-   "tipo": "computador",
-   "nome": "Mac · Chrome",
    "estimativa": false,
    "visitas": 1
   },
@@ -1500,7 +1511,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 229
+   "visitas": 247
   },
   {
    "id": "PT",
@@ -1547,7 +1558,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 283
+   "visitas": 301
   },
   {
    "id": "Firefox",
@@ -1564,12 +1575,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 176
+   "visitas": 186
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 101
+   "visitas": 109
   },
   {
    "id": "Android",
@@ -1606,19 +1617,19 @@
   {
    "id": "desktop",
    "nome": "desktop",
-   "visitas": 32
+   "visitas": 33
   },
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 261
+   "visitas": 278
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 304
+   "visitas": 322
   },
   {
    "id": "https://bing.com",
@@ -1940,14 +1951,14 @@
     },
     {
      "dia": "2026-10-08",
-     "visitas": 1,
-     "aberturas": 76
+     "visitas": 2,
+     "aberturas": 93
     }
    ],
    "paginas": [
     {
      "path": "/imortalistas/genetica-reports.html",
-     "visitas": 24
+     "visitas": 25
     },
     {
      "path": "/imortalistas/",
@@ -1997,6 +2008,17 @@
      "total": 4,
      "abertos_pt": 0,
      "abertos_en": 2,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "alimentos-longevidade-173",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 1
     },
@@ -2056,6 +2078,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "destoxificacao-fase-i-ii",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "dor-analgesia",
      "ficheiro": null,
      "pt": 1,
@@ -2068,6 +2101,17 @@
     },
     {
      "id": "esofago",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "estado-portador",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2122,6 +2166,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "impulsividade-recompensa-vicio",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "inflamacao-senescencia-placa",
      "ficheiro": null,
      "pt": 1,
@@ -2144,6 +2199,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "microbioma-intestino",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "nariz-seios-perinasais",
      "ficheiro": null,
      "pt": 0,
@@ -2152,6 +2218,17 @@
      "abertos_pt": 0,
      "abertos_en": 2,
      "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "oxido-nitrico-endotelio",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
      "descarregados_en": 1
     },
     {
@@ -2177,6 +2254,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "pancreas-pancreatite",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "prostata",
      "ficheiro": null,
      "pt": 1,
@@ -2185,6 +2273,17 @@
      "abertos_pt": 0,
      "abertos_en": 1,
      "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "referencia-via-forca-hipertrofia-potencia",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 3,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 2,
+     "descarregados_pt": 0,
      "descarregados_en": 1
     },
     {
@@ -2265,7 +2364,40 @@
      "descarregados_en": 1
     },
     {
+     "id": "termogenese-gordura-castanha",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "termorregulacao-sudorese",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "testiculos",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "tiroide",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2309,18 +2441,18 @@
      "descarregados_en": 1
     },
     {
-     "id": "alergias-asma-atopia",
+     "id": "acne-glandulas-sebaceas",
      "ficheiro": null,
-     "pt": 1,
-     "en": 1,
+     "pt": 0,
+     "en": 2,
      "total": 2,
      "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
      "descarregados_en": 1
     },
     {
-     "id": "alimentos-longevidade-173",
+     "id": "alergias-asma-atopia",
      "ficheiro": null,
      "pt": 1,
      "en": 1,
@@ -2386,6 +2518,17 @@
      "descarregados_en": 0
     },
     {
+     "id": "cafeina-estimulantes",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "capacidade-cognitiva-plasticidade",
      "ficheiro": null,
      "pt": 1,
@@ -2430,17 +2573,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "destoxificacao-fase-i-ii",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
      "id": "disruptores-endocrinos-poluentes",
      "ficheiro": null,
      "pt": 1,
@@ -2475,17 +2607,6 @@
     },
     {
      "id": "dopamina-noradrenalina",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "estado-portador",
      "ficheiro": null,
      "pt": 1,
      "en": 1,
@@ -2584,18 +2705,18 @@
      "descarregados_en": 0
     },
     {
-     "id": "impulsividade-recompensa-vicio",
+     "id": "imunidade-envelhecimento-imunitario",
      "ficheiro": null,
-     "pt": 1,
-     "en": 1,
+     "pt": 0,
+     "en": 2,
      "total": 2,
      "abertos_pt": 0,
      "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
+     "descarregados_pt": 0,
+     "descarregados_en": 1
     },
     {
-     "id": "imunidade-envelhecimento-imunitario",
+     "id": "insuficiencia-cardiaca-cardiomiopatias",
      "ficheiro": null,
      "pt": 0,
      "en": 2,
@@ -2661,17 +2782,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "microbioma-intestino",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
      "id": "mitocondrias-energia",
      "ficheiro": null,
      "pt": 0,
@@ -2705,28 +2815,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "oxido-nitrico-endotelio",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "pancreas-pancreatite",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "perfil-desportivo-resistencia-forca",
      "ficheiro": null,
      "pt": 1,
@@ -2736,6 +2824,17 @@
      "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 0
+    },
+    {
+     "id": "personalidade-tracos-psicologicos",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
     },
     {
      "id": "pneumococo-imunossenescencia",
@@ -2793,17 +2892,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "referencia-via-forca-hipertrofia-potencia",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 2,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
      "id": "reparacao-adn-estabilidade-genoma",
      "ficheiro": null,
      "pt": 1,
@@ -2848,6 +2936,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "suplementos-1002",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
      "id": "suprarrenais-cortisol",
      "ficheiro": null,
      "pt": 0,
@@ -2860,39 +2959,6 @@
     },
     {
      "id": "telomeros-senescencia-celular",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "termogenese-gordura-castanha",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
-     "id": "termorregulacao-sudorese",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
-     "id": "tiroide",
      "ficheiro": null,
      "pt": 0,
      "en": 2,
@@ -2925,17 +2991,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "acne-glandulas-sebaceas",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "baco-sistema-linfatico",
      "ficheiro": null,
      "pt": 1,
@@ -2948,17 +3003,6 @@
     },
     {
      "id": "bexiga-funcao-urinaria",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
-     "id": "cafeina-estimulantes",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -2989,6 +3033,17 @@
      "abertos_en": 0,
      "descarregados_pt": 0,
      "descarregados_en": 1
+    },
+    {
+     "id": "coagulacao-trombose-veias",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 0,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
     },
     {
      "id": "coluna-disco-dor-lombar",
@@ -3101,17 +3156,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "insuficiencia-cardiaca-cardiomiopatias",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "laringe-voz",
      "ficheiro": null,
      "pt": 1,
@@ -3142,17 +3186,6 @@
      "abertos_pt": 0,
      "abertos_en": 1,
      "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
-     "id": "personalidade-tracos-psicologicos",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 0,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
      "descarregados_en": 0
     },
     {
@@ -3200,17 +3233,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "suplementos-1002",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
      "id": "tendoes-ligamentos-lesoes",
      "ficheiro": null,
      "pt": 0,
@@ -3247,6 +3269,13 @@
      "nome": "Linux · Chrome",
      "estimativa": false,
      "visitas": 5
+    },
+    {
+     "id": "computador/mac-chrome",
+     "tipo": "computador",
+     "nome": "Mac · Chrome",
+     "estimativa": false,
+     "visitas": 2
     },
     {
      "id": "computador/windows-10-chrome",
@@ -3298,13 +3327,6 @@
      "visitas": 1
     },
     {
-     "id": "computador/mac-chrome",
-     "tipo": "computador",
-     "nome": "Mac · Chrome",
-     "estimativa": false,
-     "visitas": 1
-    },
-    {
      "id": "android/samsung-galaxy-a54",
      "tipo": "android",
      "nome": "Samsung Galaxy A54",
@@ -3342,25 +3364,25 @@
    ],
    "aparelhos_desde": "2026-10-03",
    "total": {
-    "visitas": 30,
-    "visitas_30d": 30,
-    "visitas_90d": 30,
-    "aberturas_pdf": 236,
-    "visitas_hoje": 1,
-    "visitas_7d": 30,
-    "aberturas_hoje": 76,
-    "aberturas_7d": 236,
-    "aberturas_30d": 236,
-    "pdf_abertos": 93,
-    "pdf_descarregados": 143,
-    "pdf_pt": 71,
-    "pdf_en": 165
+    "visitas": 31,
+    "visitas_30d": 31,
+    "visitas_90d": 31,
+    "aberturas_pdf": 253,
+    "visitas_hoje": 2,
+    "visitas_7d": 31,
+    "aberturas_hoje": 93,
+    "aberturas_7d": 253,
+    "aberturas_30d": 253,
+    "pdf_abertos": 98,
+    "pdf_descarregados": 155,
+    "pdf_pt": 75,
+    "pdf_en": 178
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 229
+     "visitas": 247
     },
     {
      "id": "US",
