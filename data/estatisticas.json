@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-07T23:56:19Z",
+ "atualizado_em": "2026-10-08T00:28:25Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 50,
   "visitas_30d": 50,
   "visitas_90d": 50,
-  "aberturas_pdf": 197,
-  "visitas_hoje": 3,
+  "aberturas_pdf": 201,
+  "visitas_hoje": 0,
   "visitas_7d": 50,
-  "aberturas_hoje": 161,
-  "aberturas_7d": 186,
-  "aberturas_30d": 186,
+  "aberturas_hoje": 15,
+  "aberturas_7d": 201,
+  "aberturas_30d": 201,
   "pdf_abertos": 92,
-  "pdf_descarregados": 105,
-  "pdf_pt": 71,
-  "pdf_en": 126
+  "pdf_descarregados": 109,
+  "pdf_pt": 73,
+  "pdf_en": 128
  },
  "dias": [
   {
@@ -53,6 +53,11 @@
    "dia": "2026-10-07",
    "visitas": 3,
    "aberturas": 161
+  },
+  {
+   "dia": "2026-10-08",
+   "visitas": 0,
+   "aberturas": 15
   }
  ],
  "paginas": [
@@ -137,6 +142,17 @@
    "en": 2,
    "total": 4,
    "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "ansiedade-resiliencia-stress",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 1
@@ -305,17 +321,6 @@
    "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 0
-  },
-  {
-   "id": "ansiedade-resiliencia-stress",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 2,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
   },
   {
    "id": "atencao-phda",
@@ -538,6 +543,17 @@
    "descarregados_en": 0
   },
   {
+   "id": "oxido-nitrico-endotelio",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 2,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "paladar-olfato",
    "ficheiro": null,
    "pt": 1,
@@ -734,6 +750,17 @@
    "abertos_en": 0,
    "descarregados_pt": 0,
    "descarregados_en": 1
+  },
+  {
+   "id": "alergias-asma-atopia",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 0,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
   },
   {
    "id": "andropausa-envelhecimento-reprodutivo",
@@ -934,6 +961,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "histamina-mastocitos-ige",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "impulsividade-recompensa-vicio",
    "ficheiro": null,
    "pt": 1,
@@ -1042,17 +1080,6 @@
    "abertos_en": 0,
    "descarregados_pt": 0,
    "descarregados_en": 1
-  },
-  {
-   "id": "oxido-nitrico-endotelio",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
   },
   {
    "id": "pancreas-pancreatite",
@@ -1407,7 +1434,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 163
+   "visitas": 167
   },
   {
    "id": "PT",
@@ -1454,7 +1481,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 217
+   "visitas": 221
   },
   {
    "id": "Firefox",
@@ -1471,12 +1498,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 138
+   "visitas": 140
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 73
+   "visitas": 75
   },
   {
    "id": "Android",
@@ -1518,14 +1545,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 196
+   "visitas": 200
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 238
+   "visitas": 242
   },
   {
    "id": "https://bing.com",
@@ -1581,6 +1608,11 @@
      "dia": "2026-10-07",
      "visitas": 0,
      "aberturas": 8
+    },
+    {
+     "dia": "2026-10-08",
+     "visitas": 0,
+     "aberturas": 0
     }
    ],
    "paginas": [
@@ -1787,7 +1819,7 @@
     "aberturas_pdf": 15,
     "visitas_hoje": 0,
     "visitas_7d": 7,
-    "aberturas_hoje": 8,
+    "aberturas_hoje": 0,
     "aberturas_7d": 15,
     "aberturas_30d": 15,
     "pdf_abertos": 15,
@@ -1839,6 +1871,11 @@
      "dia": "2026-10-07",
      "visitas": 3,
      "aberturas": 153
+    },
+    {
+     "dia": "2026-10-08",
+     "visitas": 0,
+     "aberturas": 15
     }
    ],
    "paginas": [
@@ -1868,6 +1905,17 @@
      "total": 4,
      "abertos_pt": 0,
      "abertos_en": 2,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "ansiedade-resiliencia-stress",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 1
     },
@@ -1990,17 +2038,6 @@
      "abertos_pt": 0,
      "abertos_en": 0,
      "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "ansiedade-resiliencia-stress",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
      "descarregados_en": 1
     },
     {
@@ -2279,6 +2316,17 @@
      "descarregados_en": 0
     },
     {
+     "id": "oxido-nitrico-endotelio",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "paladar-olfato",
      "ficheiro": null,
      "pt": 1,
@@ -2453,6 +2501,17 @@
      "abertos_en": 0,
      "descarregados_pt": 0,
      "descarregados_en": 1
+    },
+    {
+     "id": "alergias-asma-atopia",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 0,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
     },
     {
      "id": "andropausa-envelhecimento-reprodutivo",
@@ -2675,6 +2734,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "histamina-mastocitos-ige",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "impulsividade-recompensa-vicio",
      "ficheiro": null,
      "pt": 1,
@@ -2772,17 +2842,6 @@
      "abertos_en": 0,
      "descarregados_pt": 0,
      "descarregados_en": 1
-    },
-    {
-     "id": "oxido-nitrico-endotelio",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
     },
     {
      "id": "pancreas-pancreatite",
@@ -3139,22 +3198,22 @@
     "visitas": 29,
     "visitas_30d": 29,
     "visitas_90d": 29,
-    "aberturas_pdf": 171,
-    "visitas_hoje": 3,
+    "aberturas_pdf": 175,
+    "visitas_hoje": 0,
     "visitas_7d": 29,
-    "aberturas_hoje": 153,
-    "aberturas_7d": 160,
-    "aberturas_30d": 160,
+    "aberturas_hoje": 15,
+    "aberturas_7d": 175,
+    "aberturas_30d": 175,
     "pdf_abertos": 66,
-    "pdf_descarregados": 105,
-    "pdf_pt": 47,
-    "pdf_en": 124
+    "pdf_descarregados": 109,
+    "pdf_pt": 49,
+    "pdf_en": 126
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 163
+     "visitas": 167
     },
     {
      "id": "US",
