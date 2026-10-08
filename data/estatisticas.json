@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-08T06:26:32Z",
+ "atualizado_em": "2026-10-08T06:55:39Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 52,
   "visitas_30d": 52,
   "visitas_90d": 52,
-  "aberturas_pdf": 322,
+  "aberturas_pdf": 332,
   "visitas_hoje": 2,
   "visitas_7d": 52,
-  "aberturas_hoje": 136,
-  "aberturas_7d": 322,
-  "aberturas_30d": 322,
-  "pdf_abertos": 138,
-  "pdf_descarregados": 184,
-  "pdf_pt": 112,
-  "pdf_en": 210
+  "aberturas_hoje": 146,
+  "aberturas_7d": 332,
+  "aberturas_30d": 332,
+  "pdf_abertos": 140,
+  "pdf_descarregados": 192,
+  "pdf_pt": 116,
+  "pdf_en": 216
  },
  "dias": [
   {
@@ -57,7 +57,7 @@
   {
    "dia": "2026-10-08",
    "visitas": 2,
-   "aberturas": 136
+   "aberturas": 146
   }
  ],
  "paginas": [
@@ -202,6 +202,28 @@
    "descarregados_en": 1
   },
   {
+   "id": "metilacao-homocisteina-colina",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "referencia-via-forca-hipertrofia-potencia",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 4,
+   "total": 4,
+   "abertos_pt": 0,
+   "abertos_en": 3,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "resposta-treino-vo2max",
    "ficheiro": null,
    "pt": 2,
@@ -258,6 +280,17 @@
   },
   {
    "id": "ansiedade-resiliencia-stress",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "aorta-aneurismas",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -335,6 +368,17 @@
   },
   {
    "id": "cerebro-neurodegeneracao",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "coluna-disco-dor-lombar",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -455,6 +499,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "globulos-vermelhos-hemoglobina-plaquetas",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "histamina-mastocitos-ige",
    "ficheiro": null,
    "pt": 1,
@@ -543,17 +598,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "metilacao-homocisteina-colina",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 1,
-   "total": 3,
-   "abertos_pt": 1,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "microbioma-intestino",
    "ficheiro": null,
    "pt": 1,
@@ -599,6 +643,17 @@
   },
   {
    "id": "pancreas-pancreatite",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "pele-skin-care",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -686,17 +741,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "referencia-via-forca-hipertrofia-potencia",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 3,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 2,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "reparacao-adn-estabilidade-genoma",
    "ficheiro": null,
    "pt": 1,
@@ -720,6 +764,17 @@
   },
   {
    "id": "rim-acido-urico",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "ritmo-cardiaco-arritmias",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -775,6 +830,17 @@
   },
   {
    "id": "suprarrenais-cortisol",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "tendoes-ligamentos-lesoes",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -884,17 +950,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "aorta-aneurismas",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
    "id": "audicao-zumbido",
    "ficheiro": null,
    "pt": 0,
@@ -961,15 +1016,15 @@
    "descarregados_en": 0
   },
   {
-   "id": "coluna-disco-dor-lombar",
+   "id": "coagulacao-trombose-veias",
    "ficheiro": null,
    "pt": 1,
    "en": 1,
    "total": 2,
    "abertos_pt": 0,
-   "abertos_en": 1,
+   "abertos_en": 0,
    "descarregados_pt": 1,
-   "descarregados_en": 0
+   "descarregados_en": 1
   },
   {
    "id": "dermatite-seborreica-microbioma-pele",
@@ -1060,17 +1115,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "globulos-vermelhos-hemoglobina-plaquetas",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
    "id": "gordura-inflamatoria-lipolise",
    "ficheiro": null,
    "pt": 0,
@@ -1102,6 +1146,17 @@
    "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 1
+  },
+  {
+   "id": "hipofise-eixo-hormonal",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
   },
   {
    "id": "imunidade-envelhecimento-imunitario",
@@ -1181,17 +1236,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "pele-skin-care",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 2,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "perfil-desportivo-resistencia-forca",
    "ficheiro": null,
    "pt": 1,
@@ -1236,17 +1280,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "ritmo-cardiaco-arritmias",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 2,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "sensibilidade-radiacao",
    "ficheiro": null,
    "pt": 1,
@@ -1280,17 +1313,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "tendoes-ligamentos-lesoes",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 2,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "velocidade-processamento-tempo-reacao",
    "ficheiro": null,
    "pt": 0,
@@ -1314,28 +1336,6 @@
   },
   {
    "id": "bexiga-funcao-urinaria",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
-   "id": "coagulacao-trombose-veias",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 0,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
-   "id": "hipofise-eixo-hormonal",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -1511,7 +1511,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 290
+   "visitas": 300
   },
   {
    "id": "PT",
@@ -1558,7 +1558,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 344
+   "visitas": 354
   },
   {
    "id": "Firefox",
@@ -1575,12 +1575,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 207
+   "visitas": 211
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 131
+   "visitas": 137
   },
   {
    "id": "Android",
@@ -1622,14 +1622,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 321
+   "visitas": 331
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 365
+   "visitas": 375
   },
   {
    "id": "https://bing.com",
@@ -1952,7 +1952,7 @@
     {
      "dia": "2026-10-08",
      "visitas": 2,
-     "aberturas": 136
+     "aberturas": 146
     }
    ],
    "paginas": [
@@ -2034,6 +2034,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "referencia-via-forca-hipertrofia-potencia",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 4,
+     "total": 4,
+     "abertos_pt": 0,
+     "abertos_en": 3,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "alimentos-longevidade-173",
      "ficheiro": null,
      "pt": 1,
@@ -2057,6 +2068,17 @@
     },
     {
      "id": "ansiedade-resiliencia-stress",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "aorta-aneurismas",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2112,6 +2134,17 @@
     },
     {
      "id": "cerebro-neurodegeneracao",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "coluna-disco-dor-lombar",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2243,6 +2276,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "globulos-vermelhos-hemoglobina-plaquetas",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "histamina-mastocitos-ige",
      "ficheiro": null,
      "pt": 1,
@@ -2342,6 +2386,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "metilacao-homocisteina-colina",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "microbioma-intestino",
      "ficheiro": null,
      "pt": 1,
@@ -2387,6 +2442,17 @@
     },
     {
      "id": "pancreas-pancreatite",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "pele-skin-care",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2463,17 +2529,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "referencia-via-forca-hipertrofia-potencia",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 3,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 2,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "reparacao-adn-estabilidade-genoma",
      "ficheiro": null,
      "pt": 1,
@@ -2508,6 +2563,17 @@
     },
     {
      "id": "rim-acido-urico",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "ritmo-cardiaco-arritmias",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2574,6 +2640,17 @@
     },
     {
      "id": "suprarrenais-cortisol",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "tendoes-ligamentos-lesoes",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2694,17 +2771,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "aorta-aneurismas",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
      "id": "apetite-saciedade-comportamento-alimentar",
      "ficheiro": null,
      "pt": 0,
@@ -2793,15 +2859,15 @@
      "descarregados_en": 0
     },
     {
-     "id": "coluna-disco-dor-lombar",
+     "id": "coagulacao-trombose-veias",
      "ficheiro": null,
      "pt": 1,
      "en": 1,
      "total": 2,
      "abertos_pt": 0,
-     "abertos_en": 1,
+     "abertos_en": 0,
      "descarregados_pt": 1,
-     "descarregados_en": 0
+     "descarregados_en": 1
     },
     {
      "id": "dermatite-seborreica-microbioma-pele",
@@ -2914,17 +2980,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "globulos-vermelhos-hemoglobina-plaquetas",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
      "id": "gordura-inflamatoria-lipolise",
      "ficheiro": null,
      "pt": 0,
@@ -2956,6 +3011,17 @@
      "abertos_en": 1,
      "descarregados_pt": 0,
      "descarregados_en": 1
+    },
+    {
+     "id": "hipofise-eixo-hormonal",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
     },
     {
      "id": "imunidade-envelhecimento-imunitario",
@@ -3013,17 +3079,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "metilacao-homocisteina-colina",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "mitocondrias-energia",
      "ficheiro": null,
      "pt": 0,
@@ -3054,17 +3109,6 @@
      "abertos_pt": 0,
      "abertos_en": 0,
      "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "pele-skin-care",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
      "descarregados_en": 1
     },
     {
@@ -3123,17 +3167,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "ritmo-cardiaco-arritmias",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "sensibilidade-radiacao",
      "ficheiro": null,
      "pt": 1,
@@ -3167,17 +3200,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "tendoes-ligamentos-lesoes",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "velocidade-processamento-tempo-reacao",
      "ficheiro": null,
      "pt": 0,
@@ -3201,28 +3223,6 @@
     },
     {
      "id": "bexiga-funcao-urinaria",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
-     "id": "coagulacao-trombose-veias",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 0,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
-     "id": "hipofise-eixo-hormonal",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -3378,22 +3378,22 @@
     "visitas": 31,
     "visitas_30d": 31,
     "visitas_90d": 31,
-    "aberturas_pdf": 296,
+    "aberturas_pdf": 306,
     "visitas_hoje": 2,
     "visitas_7d": 31,
-    "aberturas_hoje": 136,
-    "aberturas_7d": 296,
-    "aberturas_30d": 296,
-    "pdf_abertos": 112,
-    "pdf_descarregados": 184,
-    "pdf_pt": 88,
-    "pdf_en": 208
+    "aberturas_hoje": 146,
+    "aberturas_7d": 306,
+    "aberturas_30d": 306,
+    "pdf_abertos": 114,
+    "pdf_descarregados": 192,
+    "pdf_pt": 92,
+    "pdf_en": 214
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 290
+     "visitas": 300
     },
     {
      "id": "US",
