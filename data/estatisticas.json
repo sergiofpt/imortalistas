@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-08T03:24:57Z",
+ "atualizado_em": "2026-10-08T03:50:20Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 51,
   "visitas_30d": 51,
   "visitas_90d": 51,
-  "aberturas_pdf": 251,
+  "aberturas_pdf": 262,
   "visitas_hoje": 1,
   "visitas_7d": 51,
-  "aberturas_hoje": 65,
-  "aberturas_7d": 251,
-  "aberturas_30d": 251,
-  "pdf_abertos": 113,
-  "pdf_descarregados": 138,
-  "pdf_pt": 91,
-  "pdf_en": 160
+  "aberturas_hoje": 76,
+  "aberturas_7d": 262,
+  "aberturas_30d": 262,
+  "pdf_abertos": 119,
+  "pdf_descarregados": 143,
+  "pdf_pt": 95,
+  "pdf_en": 167
  },
  "dias": [
   {
@@ -57,7 +57,7 @@
   {
    "dia": "2026-10-08",
    "visitas": 1,
-   "aberturas": 65
+   "aberturas": 76
   }
  ],
  "paginas": [
@@ -103,18 +103,18 @@
    "descarregados_en": 1
   },
   {
-   "id": "avc-pequenos-vasos-cerebrais",
+   "id": "cancros-um-a-um",
    "ficheiro": null,
    "pt": 2,
-   "en": 2,
-   "total": 4,
+   "en": 3,
+   "total": 5,
    "abertos_pt": 1,
-   "abertos_en": 1,
+   "abertos_en": 2,
    "descarregados_pt": 1,
    "descarregados_en": 1
   },
   {
-   "id": "cancros-um-a-um",
+   "id": "avc-pequenos-vasos-cerebrais",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -147,6 +147,28 @@
    "descarregados_en": 1
   },
   {
+   "id": "infecoes",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 3,
+   "total": 4,
+   "abertos_pt": 0,
+   "abertos_en": 2,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "intolerancias-alimentares-626",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "resposta-treino-vo2max",
    "ficheiro": null,
    "pt": 2,
@@ -164,6 +186,17 @@
    "en": 2,
    "total": 4,
    "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "andropausa-envelhecimento-reprodutivo",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 1
@@ -192,6 +225,17 @@
   },
   {
    "id": "atencao-phda",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "cardiovascular-avancado",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -257,7 +301,7 @@
    "descarregados_en": 1
   },
   {
-   "id": "hormonas",
+   "id": "histamina-mastocitos-ige",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -268,7 +312,7 @@
    "descarregados_en": 1
   },
   {
-   "id": "infecoes",
+   "id": "hormonas",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -298,17 +342,6 @@
    "abertos_pt": 1,
    "abertos_en": 0,
    "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "intolerancias-alimentares-626",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -422,6 +455,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "serotonina-melatonina",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "testiculos",
    "ficheiro": null,
    "pt": 1,
@@ -466,7 +510,7 @@
    "descarregados_en": 1
   },
   {
-   "id": "alimentos-longevidade-173",
+   "id": "alergias-asma-atopia",
    "ficheiro": null,
    "pt": 1,
    "en": 1,
@@ -477,7 +521,7 @@
    "descarregados_en": 1
   },
   {
-   "id": "andropausa-envelhecimento-reprodutivo",
+   "id": "alimentos-longevidade-173",
    "ficheiro": null,
    "pt": 1,
    "en": 1,
@@ -543,17 +587,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "cardiovascular-avancado",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "cartao-farmacogenetico",
    "ficheiro": null,
    "pt": 1,
@@ -566,6 +599,17 @@
   },
   {
    "id": "celulas-estaminais-regeneracao",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
+   "id": "cetose-corpos-cetonicos",
    "ficheiro": null,
    "pt": 1,
    "en": 1,
@@ -610,6 +654,17 @@
   },
   {
    "id": "doenca-arterial-periferica",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "dopamina-noradrenalina",
    "ficheiro": null,
    "pt": 1,
    "en": 1,
@@ -706,17 +761,6 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 0
-  },
-  {
-   "id": "histamina-mastocitos-ige",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 2,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
   },
   {
    "id": "impulsividade-recompensa-vicio",
@@ -950,17 +994,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "serotonina-melatonina",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "stress-oxidativo-defesa-antioxidante",
    "ficheiro": null,
    "pt": 0,
@@ -1027,6 +1060,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "velocidade-processamento-tempo-reacao",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 2,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "visao-audicao",
    "ficheiro": null,
    "pt": 0,
@@ -1047,17 +1091,6 @@
    "abertos_en": 0,
    "descarregados_pt": 0,
    "descarregados_en": 1
-  },
-  {
-   "id": "alergias-asma-atopia",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 0,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
   },
   {
    "id": "apetite-saciedade-comportamento-alimentar",
@@ -1115,17 +1148,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "cetose-corpos-cetonicos",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
    "id": "coluna-disco-dor-lombar",
    "ficheiro": null,
    "pt": 1,
@@ -1138,17 +1160,6 @@
   },
   {
    "id": "doencas-autoimunes",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "dopamina-noradrenalina",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -1355,17 +1366,6 @@
    "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 0
-  },
-  {
-   "id": "velocidade-processamento-tempo-reacao",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
   }
  ],
  "aparelhos": [
@@ -1500,7 +1500,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 218
+   "visitas": 229
   },
   {
    "id": "PT",
@@ -1547,7 +1547,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 272
+   "visitas": 283
   },
   {
    "id": "Firefox",
@@ -1564,12 +1564,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 171
+   "visitas": 176
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 95
+   "visitas": 101
   },
   {
    "id": "Android",
@@ -1611,14 +1611,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 250
+   "visitas": 261
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 293
+   "visitas": 304
   },
   {
    "id": "https://bing.com",
@@ -1941,7 +1941,7 @@
     {
      "dia": "2026-10-08",
      "visitas": 1,
-     "aberturas": 65
+     "aberturas": 76
     }
    ],
    "paginas": [
@@ -1968,6 +1968,17 @@
    ],
    "relatorios": [
     {
+     "id": "cancros-um-a-um",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 3,
+     "total": 4,
+     "abertos_pt": 0,
+     "abertos_en": 2,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "imortalidade",
      "ficheiro": null,
      "pt": 1,
@@ -1975,6 +1986,28 @@
      "total": 4,
      "abertos_pt": 0,
      "abertos_en": 2,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "infecoes",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 3,
+     "total": 4,
+     "abertos_pt": 0,
+     "abertos_en": 2,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "andropausa-envelhecimento-reprodutivo",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 1
     },
@@ -2012,7 +2045,7 @@
      "descarregados_en": 1
     },
     {
-     "id": "cancros-um-a-um",
+     "id": "cardiovascular-avancado",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2067,6 +2100,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "histamina-mastocitos-ige",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "hormonas",
      "ficheiro": null,
      "pt": 1,
@@ -2078,7 +2122,7 @@
      "descarregados_en": 1
     },
     {
-     "id": "infecoes",
+     "id": "inflamacao-senescencia-placa",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2089,7 +2133,7 @@
      "descarregados_en": 1
     },
     {
-     "id": "inflamacao-senescencia-placa",
+     "id": "intolerancias-alimentares-626",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2210,6 +2254,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "serotonina-melatonina",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "testiculos",
      "ficheiro": null,
      "pt": 1,
@@ -2254,7 +2309,7 @@
      "descarregados_en": 1
     },
     {
-     "id": "alimentos-longevidade-173",
+     "id": "alergias-asma-atopia",
      "ficheiro": null,
      "pt": 1,
      "en": 1,
@@ -2265,7 +2320,7 @@
      "descarregados_en": 1
     },
     {
-     "id": "andropausa-envelhecimento-reprodutivo",
+     "id": "alimentos-longevidade-173",
      "ficheiro": null,
      "pt": 1,
      "en": 1,
@@ -2342,18 +2397,18 @@
      "descarregados_en": 0
     },
     {
-     "id": "cardiovascular-avancado",
+     "id": "celulas-estaminais-regeneracao",
      "ficheiro": null,
      "pt": 1,
      "en": 1,
      "total": 2,
      "abertos_pt": 0,
-     "abertos_en": 0,
+     "abertos_en": 1,
      "descarregados_pt": 1,
-     "descarregados_en": 1
+     "descarregados_en": 0
     },
     {
-     "id": "celulas-estaminais-regeneracao",
+     "id": "cetose-corpos-cetonicos",
      "ficheiro": null,
      "pt": 1,
      "en": 1,
@@ -2416,6 +2471,17 @@
      "abertos_pt": 0,
      "abertos_en": 1,
      "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "dopamina-noradrenalina",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
      "descarregados_en": 1
     },
     {
@@ -2518,17 +2584,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "histamina-mastocitos-ige",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "impulsividade-recompensa-vicio",
      "ficheiro": null,
      "pt": 1,
@@ -2559,17 +2614,6 @@
      "abertos_pt": 0,
      "abertos_en": 0,
      "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "intolerancias-alimentares-626",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
      "descarregados_en": 1
     },
     {
@@ -2793,17 +2837,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "serotonina-melatonina",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "stress-oxidativo-defesa-antioxidante",
      "ficheiro": null,
      "pt": 0,
@@ -2870,6 +2903,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "velocidade-processamento-tempo-reacao",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "visao-audicao",
      "ficheiro": null,
      "pt": 0,
@@ -2890,17 +2934,6 @@
      "abertos_en": 0,
      "descarregados_pt": 0,
      "descarregados_en": 1
-    },
-    {
-     "id": "alergias-asma-atopia",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 0,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
     },
     {
      "id": "baco-sistema-linfatico",
@@ -2958,17 +2991,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "cetose-corpos-cetonicos",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
      "id": "coluna-disco-dor-lombar",
      "ficheiro": null,
      "pt": 1,
@@ -2981,17 +3003,6 @@
     },
     {
      "id": "doencas-autoimunes",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "dopamina-noradrenalina",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -3220,17 +3231,6 @@
      "abertos_en": 1,
      "descarregados_pt": 0,
      "descarregados_en": 0
-    },
-    {
-     "id": "velocidade-processamento-tempo-reacao",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
     }
    ],
    "aparelhos": [
@@ -3345,22 +3345,22 @@
     "visitas": 30,
     "visitas_30d": 30,
     "visitas_90d": 30,
-    "aberturas_pdf": 225,
+    "aberturas_pdf": 236,
     "visitas_hoje": 1,
     "visitas_7d": 30,
-    "aberturas_hoje": 65,
-    "aberturas_7d": 225,
-    "aberturas_30d": 225,
-    "pdf_abertos": 87,
-    "pdf_descarregados": 138,
-    "pdf_pt": 67,
-    "pdf_en": 158
+    "aberturas_hoje": 76,
+    "aberturas_7d": 236,
+    "aberturas_30d": 236,
+    "pdf_abertos": 93,
+    "pdf_descarregados": 143,
+    "pdf_pt": 71,
+    "pdf_en": 165
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 218
+     "visitas": 229
     },
     {
      "id": "US",
