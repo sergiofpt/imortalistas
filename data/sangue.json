@@ -3603,9 +3603,9 @@
    "m_en": "Selenium",
    "c": "Elementos e metais",
    "c_en": "Trace elements and metals",
-   "alvo": "110–150",
-   "otimo_min": 110,
-   "otimo_max": 150,
+   "alvo": "120–140",
+   "otimo_min": 120,
+   "otimo_max": 140,
    "resultados": [
     {
      "data": "2026-08-25",
