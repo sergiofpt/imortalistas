@@ -36,8 +36,10 @@ main{max-width:980px;margin:0 auto;padding:22px 20px 72px}
 h1{margin:0 0 8px;font-size:28px;letter-spacing:-.3px}
 .lead{margin:0 0 16px;color:var(--mut)}
 .filters{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 14px}
-.filters input[type=search]{flex:1 1 220px;font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 14px}
-.filters input[type=search]:focus{outline:2px solid var(--acc);outline-offset:1px}
+.filters label{font-size:13.5px;color:var(--mut);display:flex;gap:6px;align-items:center}
+.filters input,.filters select{font:inherit;font-size:14px;padding:8px 11px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink)}
+.filters input[type=search]{flex:1 1 220px;border-radius:999px;padding:8px 14px}
+.filters input:focus,.filters select:focus{outline:2px solid var(--acc);outline-offset:1px}
 .count{color:var(--mut);font-size:13px}
 .list{display:grid;gap:10px}
 .study{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px}
@@ -70,9 +72,11 @@ main a{color:var(--acc)}
 <h1 data-en="Studies">Estudos</h1>
 <p class="lead" data-en="Human trials, cohorts and meta-analyses relevant to longevity. Each sentence summarizes what the paper reported.">Ensaios, coortes e meta-análises em humanos com interesse para a longevidade. Cada frase resume o que o artigo descreveu.</p>
 <div class="filters">
-<label class="l-pt" for="q">Pesquisar</label>
-<label class="l-en" for="q">Search</label>
-<input id="q" type="search" autocomplete="off" spellcheck="false" data-ph-pt="Título ou conclusão" data-ph-en="Title or conclusion">
+<label for="fy"><span data-en="Year">Ano</span>
+<select id="fy"></select></label>
+<label for="fa"><span data-en="Area">Área</span>
+<select id="fa"></select></label>
+<input id="q" type="search" autocomplete="off" spellcheck="false" data-ph-pt="Título ou conclusão" data-ph-en="Title or conclusion" aria-label="Pesquisar" data-al-en="Search">
 <span class="count" id="count"></span>
 </div>
 <div class="list" id="list"></div>
@@ -81,35 +85,72 @@ main a{color:var(--acc)}
 let LANG='pt';try{if(localStorage.getItem('lang')==='en')LANG='en'}catch(e){}
 {const q=/[?&]lang=(en|pt)(?:&|#|$)/i.exec(location.search);if(q)LANG=q[1].toLowerCase()}
 let DATA=null;
+const MES={pt:['','jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'],en:['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']};
+const AREAS=[
+ {id:'cardiovascular',pt:'Cardiovascular',en:'Cardiovascular'},
+ {id:'metabolismo',pt:'Metabolismo',en:'Metabolism'},
+ {id:'cancro',pt:'Cancro',en:'Cancer'},
+ {id:'cerebro',pt:'Cérebro',en:'Brain'},
+ {id:'musculo',pt:'Músculo',en:'Muscle'},
+ {id:'sono',pt:'Sono',en:'Sleep'},
+ {id:'olhos',pt:'Olhos',en:'Eyes'},
+ {id:'audicao',pt:'Audição',en:'Hearing'},
+ {id:'figado',pt:'Fígado',en:'Liver'},
+ {id:'rim',pt:'Rim',en:'Kidney'},
+ {id:'inflamacao',pt:'Inflamação',en:'Inflammation'}
+];
 function fold(s){return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')}
+function areaBy(id){return AREAS.find(a=>a.id===id)}
+function whenText(e,en){const m=e.mes;return (m>=1&&m<=12)?MES[en?'en':'pt'][m]+' '+e.ano:String(e.ano)}
+function areaText(e,en){return (e.areas||[]).map(id=>{const a=areaBy(id);return a?a[en?'en':'pt']:''}).filter(Boolean).join(' · ')}
 function applyLang(){const en=LANG==='en';document.documentElement.lang=en?'en':'pt-PT';document.title=en?document.body.dataset.titleEn:document.body.dataset.titlePt;
  document.querySelectorAll('[data-en]').forEach(el=>{if(!el.hasAttribute('data-pt'))el.setAttribute('data-pt',el.textContent);el.textContent=en?el.dataset.en:el.dataset.pt});
  document.querySelectorAll('[data-al-en]').forEach(el=>{if(!el.hasAttribute('data-al-pt'))el.setAttribute('data-al-pt',el.getAttribute('aria-label'));el.setAttribute('aria-label',en?el.dataset.alEn:el.dataset.alPt)});
  document.querySelectorAll('#lang button').forEach(b=>{const on=b.dataset.l===LANG;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});
  const box=document.getElementById('q');if(box)box.placeholder=en?box.dataset.phEn:box.dataset.phPt;
- render()}
+ fillFilters();render()}
 document.querySelectorAll('#lang button').forEach(b=>b.addEventListener('click',()=>{if(LANG===b.dataset.l)return;LANG=b.dataset.l;try{localStorage.setItem('lang',LANG)}catch(e){}try{if(/[?&]lang=/i.test(location.search)){const u=new URL(location.href);u.searchParams.set('lang',LANG);history.replaceState(history.state,'',u)}}catch(e){}applyLang()}));
 let THEME=null;try{THEME=localStorage.getItem('theme')}catch(e){}
 const curTheme=()=>THEME==='dark'||THEME==='light'?THEME:'dark';
 function applyTheme(){const t=curTheme();document.documentElement.setAttribute('data-theme',t);document.querySelectorAll('#theme button').forEach(b=>{const on=b.dataset.t===t;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)})}
 document.querySelectorAll('#theme button').forEach(b=>b.addEventListener('click',()=>{THEME=b.dataset.t;try{localStorage.setItem('theme',THEME)}catch(e){}applyTheme()}));
 applyTheme();
+function opt(sel,value,label){const o=document.createElement('option');o.value=value;o.textContent=label;sel.appendChild(o)}
+function fillFilters(){if(!DATA)return;const en=LANG==='en',fy=document.getElementById('fy'),fa=document.getElementById('fa');
+ const yv=fy.value,av=fa.value,all=DATA.estudos||[];
+ const years=[...new Set(all.map(e=>e.ano))].filter(Boolean).sort((a,b)=>b-a);
+ const used=new Set(all.flatMap(e=>e.areas||[]));
+ fy.replaceChildren();fa.replaceChildren();
+ opt(fy,'',en?'All years':'Todos os anos');
+ years.forEach(y=>opt(fy,String(y),String(y)));
+ opt(fa,'',en?'All areas':'Todas as áreas');
+ AREAS.filter(a=>used.has(a.id)).forEach(a=>opt(fa,a.id,en?a.en:a.pt));
+ fy.value=[...fy.options].some(o=>o.value===yv)?yv:'';
+ fa.value=[...fa.options].some(o=>o.value===av)?av:'';
+}
 function render(){const list=document.getElementById('list'),count=document.getElementById('count'),en=LANG==='en';
  if(!DATA){list.textContent='';return}
- const q=fold(document.getElementById('q').value.trim());
+ const q=fold(document.getElementById('q').value.trim()),year=document.getElementById('fy').value,area=document.getElementById('fa').value;
  const all=DATA.estudos||[];
- const rows=!q?all:all.filter(e=>fold([e.ano,e.titulo.pt,e.titulo.en,e.conclusao.pt,e.conclusao.en,e.link].join(' ')).includes(q));
+ const rows=all.filter(e=>{
+  if(year&&String(e.ano)!==year)return false;
+  if(area&&!(e.areas||[]).includes(area))return false;
+  if(!q)return true;
+  const blob=[e.ano,whenText(e,false),whenText(e,true),areaText(e,false),areaText(e,true),e.titulo.pt,e.titulo.en,e.conclusao.pt,e.conclusao.en].join(' ');
+  return fold(blob).includes(q)});
  count.textContent=en?(rows.length===all.length?all.length+' studies':rows.length+' of '+all.length+' studies'):(rows.length===all.length?all.length+' estudos':rows.length+' de '+all.length+' estudos');
  list.replaceChildren();
  if(!rows.length){const p=document.createElement('p');p.className='empty';p.textContent=en?'No matching studies.':'Nenhum estudo corresponde.';list.appendChild(p);return}
  const linkLabel=en?'Paper':'Artigo';
  for(const e of rows){const art=document.createElement('article');art.className='study';
   const h=document.createElement('h2');h.textContent=en?e.titulo.en:e.titulo.pt;art.appendChild(h);
-  const y=document.createElement('p');y.className='ano';y.textContent=String(e.ano);art.appendChild(y);
+  const y=document.createElement('p');y.className='ano';const areas=areaText(e,en);y.textContent=whenText(e,en)+(areas?' · '+areas:'');art.appendChild(y);
   const c=document.createElement('p');c.textContent=en?e.conclusao.en:e.conclusao.pt;art.appendChild(c);
   const a=document.createElement('a');a.href=e.link;a.target='_blank';a.rel='noopener noreferrer';a.textContent=linkLabel;art.appendChild(a);
   list.appendChild(art)}}
 document.getElementById('q').addEventListener('input',render);
+document.getElementById('fy').addEventListener('change',render);
+document.getElementById('fa').addEventListener('change',render);
 fetch('data/estudos.json').then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(d=>{DATA=d;applyLang()}).catch(()=>{document.getElementById('list').textContent=LANG==='en'?'Could not load the studies.':'Não foi possível ler os estudos.'});
 applyLang();
 </script>
