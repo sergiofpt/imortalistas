@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-08T05:48:54Z",
+ "atualizado_em": "2026-10-08T06:26:32Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 52,
   "visitas_30d": 52,
   "visitas_90d": 52,
-  "aberturas_pdf": 317,
+  "aberturas_pdf": 322,
   "visitas_hoje": 2,
   "visitas_7d": 52,
-  "aberturas_hoje": 131,
-  "aberturas_7d": 317,
-  "aberturas_30d": 317,
-  "pdf_abertos": 137,
-  "pdf_descarregados": 180,
-  "pdf_pt": 110,
-  "pdf_en": 207
+  "aberturas_hoje": 136,
+  "aberturas_7d": 322,
+  "aberturas_30d": 322,
+  "pdf_abertos": 138,
+  "pdf_descarregados": 184,
+  "pdf_pt": 112,
+  "pdf_en": 210
  },
  "dias": [
   {
@@ -57,7 +57,7 @@
   {
    "dia": "2026-10-08",
    "visitas": 2,
-   "aberturas": 131
+   "aberturas": 136
   }
  ],
  "paginas": [
@@ -136,6 +136,28 @@
    "descarregados_en": 1
   },
   {
+   "id": "nariz-seios-perinasais",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 4,
+   "total": 5,
+   "abertos_pt": 0,
+   "abertos_en": 3,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "farmacogenomica-632",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "fertilidade-masculina",
    "ficheiro": null,
    "pt": 2,
@@ -177,17 +199,6 @@
    "abertos_pt": 1,
    "abertos_en": 1,
    "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "nariz-seios-perinasais",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 4,
-   "total": 4,
-   "abertos_pt": 0,
-   "abertos_en": 3,
-   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -254,6 +265,17 @@
    "abertos_pt": 0,
    "abertos_en": 1,
    "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "apetite-saciedade-comportamento-alimentar",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -386,17 +408,6 @@
    "abertos_pt": 0,
    "abertos_en": 1,
    "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "farmacogenomica-632",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 1,
-   "total": 3,
-   "abertos_pt": 2,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -599,6 +610,17 @@
   },
   {
    "id": "personalidade-tracos-psicologicos",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "pneumococo-imunossenescencia",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -870,17 +892,6 @@
    "abertos_pt": 0,
    "abertos_en": 1,
    "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
-   "id": "apetite-saciedade-comportamento-alimentar",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
    "descarregados_en": 0
   },
   {
@@ -1192,17 +1203,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "pneumococo-imunossenescencia",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 2,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "pulmao-funcao-respiratoria",
    "ficheiro": null,
    "pt": 1,
@@ -1234,6 +1234,17 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 0
+  },
+  {
+   "id": "ritmo-cardiaco-arritmias",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 2,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
   },
   {
    "id": "sensibilidade-radiacao",
@@ -1344,17 +1355,6 @@
    "abertos_en": 0,
    "descarregados_pt": 0,
    "descarregados_en": 1
-  },
-  {
-   "id": "ritmo-cardiaco-arritmias",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
   },
   {
    "id": "saude-oral-dentes-periodontite",
@@ -1511,7 +1511,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 285
+   "visitas": 290
   },
   {
    "id": "PT",
@@ -1558,7 +1558,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 339
+   "visitas": 344
   },
   {
    "id": "Firefox",
@@ -1575,7 +1575,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 202
+   "visitas": 207
   },
   {
    "id": "macOS",
@@ -1622,14 +1622,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 316
+   "visitas": 321
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 360
+   "visitas": 365
   },
   {
    "id": "https://bing.com",
@@ -1952,7 +1952,7 @@
     {
      "dia": "2026-10-08",
      "visitas": 2,
-     "aberturas": 131
+     "aberturas": 136
     }
    ],
    "paginas": [
@@ -1978,6 +1978,17 @@
     }
    ],
    "relatorios": [
+    {
+     "id": "nariz-seios-perinasais",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 4,
+     "total": 5,
+     "abertos_pt": 0,
+     "abertos_en": 3,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
     {
      "id": "avc-pequenos-vasos-cerebrais",
      "ficheiro": null,
@@ -2020,17 +2031,6 @@
      "abertos_pt": 0,
      "abertos_en": 2,
      "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "nariz-seios-perinasais",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 4,
-     "total": 4,
-     "abertos_pt": 0,
-     "abertos_en": 3,
-     "descarregados_pt": 0,
      "descarregados_en": 1
     },
     {
@@ -2408,6 +2408,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "pneumococo-imunossenescencia",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "polipos-colorretais",
      "ficheiro": null,
      "pt": 1,
@@ -2694,6 +2705,17 @@
      "descarregados_en": 0
     },
     {
+     "id": "apetite-saciedade-comportamento-alimentar",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "audicao-zumbido",
      "ficheiro": null,
      "pt": 0,
@@ -2838,6 +2860,17 @@
     },
     {
      "id": "estomago-refluxo-helicobacter",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "farmacogenomica-632",
      "ficheiro": null,
      "pt": 0,
      "en": 2,
@@ -3046,17 +3079,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "pneumococo-imunossenescencia",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "psicadelicos",
      "ficheiro": null,
      "pt": 1,
@@ -3099,6 +3121,17 @@
      "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 0
+    },
+    {
+     "id": "ritmo-cardiaco-arritmias",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
     },
     {
      "id": "sensibilidade-radiacao",
@@ -3167,17 +3200,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "apetite-saciedade-comportamento-alimentar",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
      "id": "bexiga-funcao-urinaria",
      "ficheiro": null,
      "pt": 0,
@@ -3200,17 +3222,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "farmacogenomica-632",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "hipofise-eixo-hormonal",
      "ficheiro": null,
      "pt": 0,
@@ -3231,17 +3242,6 @@
      "abertos_en": 0,
      "descarregados_pt": 0,
      "descarregados_en": 1
-    },
-    {
-     "id": "ritmo-cardiaco-arritmias",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
     },
     {
      "id": "saude-oral-dentes-periodontite",
@@ -3378,22 +3378,22 @@
     "visitas": 31,
     "visitas_30d": 31,
     "visitas_90d": 31,
-    "aberturas_pdf": 291,
+    "aberturas_pdf": 296,
     "visitas_hoje": 2,
     "visitas_7d": 31,
-    "aberturas_hoje": 131,
-    "aberturas_7d": 291,
-    "aberturas_30d": 291,
-    "pdf_abertos": 111,
-    "pdf_descarregados": 180,
-    "pdf_pt": 86,
-    "pdf_en": 205
+    "aberturas_hoje": 136,
+    "aberturas_7d": 296,
+    "aberturas_30d": 296,
+    "pdf_abertos": 112,
+    "pdf_descarregados": 184,
+    "pdf_pt": 88,
+    "pdf_en": 208
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 285
+     "visitas": 290
     },
     {
      "id": "US",
