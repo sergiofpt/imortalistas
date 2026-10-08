@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-08T00:56:54Z",
+ "atualizado_em": "2026-10-08T01:49:07Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 51,
   "visitas_30d": 51,
   "visitas_90d": 51,
-  "aberturas_pdf": 210,
+  "aberturas_pdf": 225,
   "visitas_hoje": 1,
   "visitas_7d": 51,
-  "aberturas_hoje": 24,
-  "aberturas_7d": 210,
-  "aberturas_30d": 210,
-  "pdf_abertos": 96,
-  "pdf_descarregados": 114,
-  "pdf_pt": 75,
-  "pdf_en": 135
+  "aberturas_hoje": 39,
+  "aberturas_7d": 225,
+  "aberturas_30d": 225,
+  "pdf_abertos": 102,
+  "pdf_descarregados": 123,
+  "pdf_pt": 82,
+  "pdf_en": 143
  },
  "dias": [
   {
@@ -57,7 +57,7 @@
   {
    "dia": "2026-10-08",
    "visitas": 1,
-   "aberturas": 24
+   "aberturas": 39
   }
  ],
  "paginas": [
@@ -147,7 +147,29 @@
    "descarregados_en": 1
   },
   {
+   "id": "ritmo-circadiano-sono",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "ansiedade-resiliencia-stress",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "atencao-phda",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -199,6 +221,17 @@
    "abertos_pt": 1,
    "abertos_en": 1,
    "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "glicose-insulina-diabetes",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
    "descarregados_en": 1
   },
   {
@@ -312,18 +345,40 @@
    "descarregados_en": 1
   },
   {
-   "id": "ritmo-circadiano-sono",
+   "id": "valvulas-cardiacas",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
    "total": 3,
-   "abertos_pt": 1,
+   "abertos_pt": 0,
    "abertos_en": 1,
-   "descarregados_pt": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "vitaminas-minerais",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
    "descarregados_en": 1
   },
   {
    "id": "alimentos-longevidade-173",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "andropausa-envelhecimento-reprodutivo",
    "ficheiro": null,
    "pt": 1,
    "en": 1,
@@ -345,7 +400,7 @@
    "descarregados_en": 0
   },
   {
-   "id": "atencao-phda",
+   "id": "aorta-aneurismas",
    "ficheiro": null,
    "pt": 1,
    "en": 1,
@@ -354,6 +409,17 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 0
+  },
+  {
+   "id": "articulacoes-artrose",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
   },
   {
    "id": "cabelo",
@@ -499,17 +565,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "glicose-insulina-diabetes",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "gordura-inflamatoria-lipolise",
    "ficheiro": null,
    "pt": 0,
@@ -530,6 +585,17 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 0
+  },
+  {
+   "id": "histamina-mastocitos-ige",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 2,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
   },
   {
    "id": "imunidade-envelhecimento-imunitario",
@@ -555,6 +621,17 @@
   },
   {
    "id": "matriz-extracelular-glicacao",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
+   "id": "microbioma-intestino",
    "ficheiro": null,
    "pt": 1,
    "en": 1,
@@ -609,6 +686,17 @@
    "descarregados_en": 0
   },
   {
+   "id": "proteina-aminoacidos",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 2,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "proteostase",
    "ficheiro": null,
    "pt": 0,
@@ -650,6 +738,17 @@
    "abertos_pt": 0,
    "abertos_en": 2,
    "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
+   "id": "resumo-clinico-medico",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
    "descarregados_en": 0
   },
   {
@@ -763,7 +862,7 @@
    "descarregados_en": 1
   },
   {
-   "id": "valvulas-cardiacas",
+   "id": "vesicula-biliar-calculos",
    "ficheiro": null,
    "pt": 0,
    "en": 2,
@@ -782,17 +881,6 @@
    "abertos_pt": 0,
    "abertos_en": 1,
    "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "vitaminas-minerais",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
    "descarregados_en": 1
   },
   {
@@ -818,28 +906,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "andropausa-envelhecimento-reprodutivo",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "aorta-aneurismas",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
    "id": "apetite-saciedade-comportamento-alimentar",
    "ficheiro": null,
    "pt": 1,
@@ -851,7 +917,7 @@
    "descarregados_en": 0
   },
   {
-   "id": "articulacoes-artrose",
+   "id": "audicao-zumbido",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -862,15 +928,15 @@
    "descarregados_en": 1
   },
   {
-   "id": "audicao-zumbido",
+   "id": "baco-sistema-linfatico",
    "ficheiro": null,
-   "pt": 0,
-   "en": 1,
+   "pt": 1,
+   "en": 0,
    "total": 1,
    "abertos_pt": 0,
    "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
+   "descarregados_pt": 1,
+   "descarregados_en": 0
   },
   {
    "id": "bexiga-funcao-urinaria",
@@ -925,6 +991,17 @@
    "abertos_pt": 0,
    "abertos_en": 1,
    "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
+   "id": "coluna-disco-dor-lombar",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 0,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
    "descarregados_en": 0
   },
   {
@@ -1016,17 +1093,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "histamina-mastocitos-ige",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "humor-risco-depressao",
    "ficheiro": null,
    "pt": 0,
@@ -1115,17 +1181,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "microbioma-intestino",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 0,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
    "id": "olhos-em-detalhe",
    "ficheiro": null,
    "pt": 0,
@@ -1192,17 +1247,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "proteina-aminoacidos",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
    "id": "relogio-epigenetico-idade-biologica",
    "ficheiro": null,
    "pt": 0,
@@ -1215,17 +1259,6 @@
   },
   {
    "id": "reparacao-adn-estabilidade-genoma",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 0,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
-   "id": "resumo-clinico-medico",
    "ficheiro": null,
    "pt": 1,
    "en": 0,
@@ -1303,17 +1336,6 @@
   },
   {
    "id": "velocidade-processamento-tempo-reacao",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "vesicula-biliar-calculos",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -1456,7 +1478,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 177
+   "visitas": 192
   },
   {
    "id": "PT",
@@ -1503,7 +1525,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 231
+   "visitas": 246
   },
   {
    "id": "Firefox",
@@ -1520,12 +1542,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 146
+   "visitas": 155
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 79
+   "visitas": 85
   },
   {
    "id": "Android",
@@ -1567,14 +1589,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 209
+   "visitas": 224
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 252
+   "visitas": 267
   },
   {
    "id": "https://bing.com",
@@ -1897,7 +1919,7 @@
     {
      "dia": "2026-10-08",
      "visitas": 1,
-     "aberturas": 24
+     "aberturas": 39
     }
    ],
    "paginas": [
@@ -1946,6 +1968,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "atencao-phda",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "cancros-um-a-um",
      "ficheiro": null,
      "pt": 1,
@@ -1969,6 +2002,17 @@
     },
     {
      "id": "fertilidade-masculina",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "glicose-insulina-diabetes",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2067,6 +2111,39 @@
      "descarregados_en": 1
     },
     {
+     "id": "ritmo-circadiano-sono",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "valvulas-cardiacas",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "vitaminas-minerais",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "alimentos-longevidade-173",
      "ficheiro": null,
      "pt": 1,
@@ -2078,7 +2155,18 @@
      "descarregados_en": 1
     },
     {
-     "id": "atencao-phda",
+     "id": "andropausa-envelhecimento-reprodutivo",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "aorta-aneurismas",
      "ficheiro": null,
      "pt": 1,
      "en": 1,
@@ -2087,6 +2175,17 @@
      "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 0
+    },
+    {
+     "id": "articulacoes-artrose",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
     },
     {
      "id": "avc-pequenos-vasos-cerebrais",
@@ -2254,17 +2353,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "glicose-insulina-diabetes",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "gordura-inflamatoria-lipolise",
      "ficheiro": null,
      "pt": 0,
@@ -2285,6 +2373,17 @@
      "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 0
+    },
+    {
+     "id": "histamina-mastocitos-ige",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
     },
     {
      "id": "imunidade-envelhecimento-imunitario",
@@ -2353,6 +2452,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "microbioma-intestino",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
      "id": "mitocondrias-energia",
      "ficheiro": null,
      "pt": 0,
@@ -2397,6 +2507,17 @@
      "descarregados_en": 0
     },
     {
+     "id": "proteina-aminoacidos",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "proteostase",
      "ficheiro": null,
      "pt": 0,
@@ -2430,7 +2551,7 @@
      "descarregados_en": 0
     },
     {
-     "id": "risco-cancro-scores-poligenicos",
+     "id": "resumo-clinico-medico",
      "ficheiro": null,
      "pt": 1,
      "en": 1,
@@ -2441,15 +2562,15 @@
      "descarregados_en": 0
     },
     {
-     "id": "ritmo-circadiano-sono",
+     "id": "risco-cancro-scores-poligenicos",
      "ficheiro": null,
-     "pt": 0,
-     "en": 2,
+     "pt": 1,
+     "en": 1,
      "total": 2,
      "abertos_pt": 0,
      "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
+     "descarregados_pt": 1,
+     "descarregados_en": 0
     },
     {
      "id": "sal-agua-eletrolitos",
@@ -2551,7 +2672,7 @@
      "descarregados_en": 1
     },
     {
-     "id": "valvulas-cardiacas",
+     "id": "vesicula-biliar-calculos",
      "ficheiro": null,
      "pt": 0,
      "en": 2,
@@ -2570,17 +2691,6 @@
      "abertos_pt": 0,
      "abertos_en": 1,
      "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "vitaminas-minerais",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
      "descarregados_en": 1
     },
     {
@@ -2606,17 +2716,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "andropausa-envelhecimento-reprodutivo",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "anestesia-cirurgia",
      "ficheiro": null,
      "pt": 0,
@@ -2628,28 +2727,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "aorta-aneurismas",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
-     "id": "articulacoes-artrose",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "audicao-zumbido",
      "ficheiro": null,
      "pt": 0,
@@ -2659,6 +2736,17 @@
      "abertos_en": 0,
      "descarregados_pt": 0,
      "descarregados_en": 1
+    },
+    {
+     "id": "baco-sistema-linfatico",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 0,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
     },
     {
      "id": "bexiga-funcao-urinaria",
@@ -2724,6 +2812,17 @@
      "abertos_pt": 0,
      "abertos_en": 1,
      "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
+     "id": "coluna-disco-dor-lombar",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 0,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
      "descarregados_en": 0
     },
     {
@@ -2826,17 +2925,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "histamina-mastocitos-ige",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "humor-risco-depressao",
      "ficheiro": null,
      "pt": 0,
@@ -2914,17 +3002,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "microbioma-intestino",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 0,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
      "id": "olhos-em-detalhe",
      "ficheiro": null,
      "pt": 0,
@@ -2991,17 +3068,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "proteina-aminoacidos",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
      "id": "psicadelicos",
      "ficheiro": null,
      "pt": 1,
@@ -3025,17 +3091,6 @@
     },
     {
      "id": "reparacao-adn-estabilidade-genoma",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 0,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
-     "id": "resumo-clinico-medico",
      "ficheiro": null,
      "pt": 1,
      "en": 0,
@@ -3113,17 +3168,6 @@
     },
     {
      "id": "velocidade-processamento-tempo-reacao",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "vesicula-biliar-calculos",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -3246,22 +3290,22 @@
     "visitas": 30,
     "visitas_30d": 30,
     "visitas_90d": 30,
-    "aberturas_pdf": 184,
+    "aberturas_pdf": 199,
     "visitas_hoje": 1,
     "visitas_7d": 30,
-    "aberturas_hoje": 24,
-    "aberturas_7d": 184,
-    "aberturas_30d": 184,
-    "pdf_abertos": 70,
-    "pdf_descarregados": 114,
-    "pdf_pt": 51,
-    "pdf_en": 133
+    "aberturas_hoje": 39,
+    "aberturas_7d": 199,
+    "aberturas_30d": 199,
+    "pdf_abertos": 76,
+    "pdf_descarregados": 123,
+    "pdf_pt": 58,
+    "pdf_en": 141
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 177
+     "visitas": 192
     },
     {
      "id": "US",
