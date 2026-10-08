@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="data:,">
+<title>Estudos</title>
+<meta name="color-scheme" content="light dark">
+<script>(function(){var d=document.documentElement,t=null,l=null,q=/[?&]lang=(en|pt)(?:&|#|$)/i.exec(location.search);q=q&&q[1].toLowerCase();try{if(q)localStorage.setItem('lang',q);l=localStorage.getItem('lang');t=localStorage.getItem('theme')}catch(e){}if(q)l=q;if(l==='en')d.lang='en';if(t!=='dark'&&t!=='light')t='dark';d.setAttribute('data-theme',t)})()</script>
+<script src="sf.js"></script>
+<style>
+:root{--bg:#f5f7fa;--card:#fff;--ink:#14202e;--mut:#5b6b7d;--line:#e3e8ef;--acc:#1f5eff;--ok:#12a150;--okb:#e6f6ec;--na:#8a97a8;--nab:#eef1f5;--r:14px;--head:rgba(255,255,255,.94);--actfg:#fff;color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:78px}
+body{margin:0;font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+header.top{position:sticky;top:0;z-index:50;background:var(--head);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
+.topin{max-width:1240px;margin:0 auto;display:flex;align-items:center;gap:18px;padding:10px 20px}
+nav.main{display:flex;gap:4px;overflow:visible;scrollbar-width:none;flex:1;min-width:0}
+nav.main::-webkit-scrollbar{display:none}
+nav.main a{white-space:nowrap;text-decoration:none;color:var(--mut);font-size:13.5px;padding:7px 11px;border-radius:999px;font-weight:500}
+nav.main a:hover{background:var(--nab);color:var(--ink)}
+nav.main a.active{background:var(--ink);color:var(--actfg)}
+.dd{position:relative;flex:0 0 auto}
+.dd summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;white-space:nowrap;color:var(--mut);font:inherit;font-size:13.5px;font-weight:500;padding:7px 11px;border-radius:999px}
+.dd summary::-webkit-details-marker{display:none}
+.dd summary::marker{content:""}
+.dd summary:hover,.dd[open]>summary{background:var(--nab);color:var(--ink)}
+.dd.on>summary{background:var(--ink);color:var(--actfg)}
+.dd summary:after{content:" ▾";font-size:.72em;opacity:.75}
+.dd[open]>summary:after{content:" ▴"}
+.ddmenu{position:absolute;top:calc(100% + 6px);right:0;min-width:210px;padding:6px;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:0 14px 36px rgba(15,30,50,.18);z-index:80;display:flex;flex-direction:column;gap:2px}
+.ddmenu a{display:block;border-radius:10px}
+main{max-width:980px;margin:0 auto;padding:22px 20px 72px}
+h1{margin:0 0 8px;font-size:28px;letter-spacing:-.3px}
+.lead{margin:0 0 8px;color:var(--mut)}
+.rule{margin:0 0 16px;color:var(--mut);font-size:13.5px}
+.filters{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 14px}
+.filters label{font-size:13.5px;color:var(--mut);display:flex;gap:6px;align-items:center}
+.filters input,.filters select{font:inherit;font-size:14px;padding:8px 11px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink)}
+.filters input[type=search]{flex:1 1 220px;border-radius:999px;padding:8px 14px}
+.filters input:focus,.filters select:focus{outline:2px solid var(--acc);outline-offset:1px}
+.count{color:var(--mut);font-size:13px}
+.list{display:grid;gap:10px}
+.study{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px}
+.study h2{font-size:17px;margin:0 0 6px;letter-spacing:-.2px;line-height:1.35}
+.study .ano{margin:0 0 8px;color:var(--mut);font-size:12.5px}
+.study p{margin:0 0 10px}
+.study a{font-weight:600}
+.empty{color:var(--mut);padding:8px 0}
+html[data-theme="dark"]{color-scheme:dark;--bg:#0e141d;--card:#161e2a;--ink:#e5eaf1;--mut:#9aa7b8;--line:#2a3545;--acc:#7a9dff;--nab:#222b39;--head:rgba(16,22,32,.92);--actfg:#0e141d}
+html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
+.tools{display:flex;align-items:center;gap:14px;margin-left:auto;flex:0 0 auto}
+.lang{display:flex;align-items:center;gap:4px;font-size:13.5px;white-space:nowrap}
+.lang button{font:inherit;border:0;background:none;color:var(--mut);cursor:pointer;padding:6px 6px;border-radius:8px}
+.lang button:hover{background:var(--nab);color:var(--ink)}.lang button.on{color:var(--ink);font-weight:700}
+.lang .sep{color:var(--na,#8a97a8)}
+main a{color:var(--acc)}
+@media(max-width:640px){html{scroll-padding-top:148px}.topin{gap:4px 8px;padding:6px 12px;flex-wrap:wrap}.tools{order:-1;margin-left:auto;gap:10px}nav.main{flex:1 1 100%;order:2;flex-wrap:wrap;gap:2px}nav.main a,.dd summary{padding:6px 10px}h1{font-size:24px}.study{padding:14px}}
+</style>
+</head>
+<body data-title-pt="Estudos" data-title-en="Studies">
+<header class="top"><div class="topin">
+<nav class="main" id="nav">
+<a href="inicio.html" data-en="Home">Início</a><a href="analises.html#sangue" data-en="Tests">Análises</a><details class="dd"><summary data-en="Genetics">Genética</summary><div class="ddmenu"><a href="genetica-reports.html" data-en="Genetics Reports">Genética Reports</a><a href="genetica-boa.html" data-en="Good Genetics">Genética Boa</a><a href="genetica.html" data-en="Bad Genetics">Genética Má</a></div></details><details class="dd"><summary data-en="Protocol">Protocolo</summary><div class="ddmenu"><a href="pele-cabelo.html" data-en="Skin and Hair">Pele e Cabelo</a><a href="sono.html" data-en="Sleep">Sono</a><a href="dieta.html" data-en="Diet">Dieta</a><a href="terapias.html" data-en="Therapies">Terapias</a><a href="treino.html" data-en="Training">Treino</a><a href="suplementos.html" data-en="Supplements + Medication">Suplementos + Medicação</a></div></details><a href="estudos.html" class="active" aria-current="page" data-en="Studies">Estudos</a></nav>
+<div class="tools">
+<div class="lang" id="lang" role="group" aria-label="Idioma / Language"><button type="button" data-l="pt" lang="pt-PT">Português</button><span class="sep" aria-hidden="true">|</span><button type="button" data-l="en" lang="en">English</button></div>
+<div class="lang" id="theme" role="group" aria-label="Tema" data-al-en="Theme"><button type="button" data-t="dark" data-en="Dark">Escuro</button><span class="sep" aria-hidden="true">|</span><button type="button" data-t="light" data-en="Light">Claro</button></div>
+</div>
+</div></header>
+<main>
+<h1 data-en="Studies">Estudos</h1>
+<p class="lead" data-en="Human and preclinical studies relevant to longevity. Each sentence summarizes what the paper reported.">Estudos humanos e pré-clínicos com interesse para a longevidade. Cada frase resume o que o artigo descreveu.</p>
+<p class="rule" data-en="Relevant sample: a human study with 100 or more people, or a meta-analysis of human studies; below that, a small sample. An animal study is a small sample unless it is a meta-analysis or a large multi-laboratory programme. If the paper reports no number, the sample stays out of these filters.">Amostra relevante: estudo humano com 100 ou mais pessoas, ou meta-análise de estudos humanos; abaixo disso, amostra pequena. Um estudo animal é amostra pequena, salvo meta-análise ou programa grande em vários laboratórios. Sem número no artigo, a amostra fica de fora destes filtros.</p>
+<div class="filters">
+<label for="fy"><span data-en="Year">Ano</span>
+<select id="fy"></select></label>
+<label for="fa"><span data-en="Area">Área</span>
+<select id="fa"></select></label>
+<label for="fs"><span data-en="Species">Espécie</span>
+<select id="fs"></select></label>
+<label for="fn"><span data-en="Sample">Amostra</span>
+<select id="fn"></select></label>
+<input id="q" type="search" autocomplete="off" spellcheck="false" data-ph-pt="Título ou conclusão" data-ph-en="Title or conclusion" aria-label="Pesquisar" data-al-en="Search">
+<span class="count" id="count"></span>
+</div>
+<div class="list" id="list"></div>
+</main>
+<script>
+let LANG='pt';try{if(localStorage.getItem('lang')==='en')LANG='en'}catch(e){}
+{const q=/[?&]lang=(en|pt)(?:&|#|$)/i.exec(location.search);if(q)LANG=q[1].toLowerCase()}
+let DATA=null;
+const MES={pt:['','jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'],en:['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']};
+const AREAS=[
+ {id:'cardiovascular',pt:'Cardiovascular',en:'Cardiovascular'},
+ {id:'metabolismo',pt:'Metabolismo',en:'Metabolism'},
+ {id:'cancro',pt:'Cancro',en:'Cancer'},
+ {id:'cerebro',pt:'Cérebro',en:'Brain'},
+ {id:'musculo',pt:'Músculo',en:'Muscle'},
+ {id:'sono',pt:'Sono',en:'Sleep'},
+ {id:'olhos',pt:'Olhos',en:'Eyes'},
+ {id:'audicao',pt:'Audição',en:'Hearing'},
+ {id:'figado',pt:'Fígado',en:'Liver'},
+ {id:'rim',pt:'Rim',en:'Kidney'},
+ {id:'inflamacao',pt:'Inflamação',en:'Inflammation'}
+];
+function fold(s){return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')}
+function areaBy(id){return AREAS.find(a=>a.id===id)}
+function whenText(e,en){const m=e.mes;return (m>=1&&m<=12)?MES[en?'en':'pt'][m]+' '+e.ano:String(e.ano)}
+function areaText(e,en){return (e.areas||[]).map(id=>{const a=areaBy(id);return a?a[en?'en':'pt']:''}).filter(Boolean).join(' · ')}
+function specText(e,en){return e.especie==='animal'?(en?'Animal':'Animais'):(en?'Human':'Humanos')}
+function sampleText(e,en){return e.amostra==='relevante'?(en?'Relevant sample':'Amostra relevante'):e.amostra==='pequena'?(en?'Small sample':'Amostra pequena'):''}
+function applyLang(){const en=LANG==='en';document.documentElement.lang=en?'en':'pt-PT';document.title=en?document.body.dataset.titleEn:document.body.dataset.titlePt;
+ document.querySelectorAll('[data-en]').forEach(el=>{if(!el.hasAttribute('data-pt'))el.setAttribute('data-pt',el.textContent);el.textContent=en?el.dataset.en:el.dataset.pt});
+ document.querySelectorAll('[data-al-en]').forEach(el=>{if(!el.hasAttribute('data-al-pt'))el.setAttribute('data-al-pt',el.getAttribute('aria-label'));el.setAttribute('aria-label',en?el.dataset.alEn:el.dataset.alPt)});
+ document.querySelectorAll('#lang button').forEach(b=>{const on=b.dataset.l===LANG;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});
+ const box=document.getElementById('q');if(box)box.placeholder=en?box.dataset.phEn:box.dataset.phPt;
+ fillFilters();render()}
+document.querySelectorAll('#lang button').forEach(b=>b.addEventListener('click',()=>{if(LANG===b.dataset.l)return;LANG=b.dataset.l;try{localStorage.setItem('lang',LANG)}catch(e){}try{if(/[?&]lang=/i.test(location.search)){const u=new URL(location.href);u.searchParams.set('lang',LANG);history.replaceState(history.state,'',u)}}catch(e){}applyLang()}));
+let THEME=null;try{THEME=localStorage.getItem('theme')}catch(e){}
+const curTheme=()=>THEME==='dark'||THEME==='light'?THEME:'dark';
+function applyTheme(){const t=curTheme();document.documentElement.setAttribute('data-theme',t);document.querySelectorAll('#theme button').forEach(b=>{const on=b.dataset.t===t;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)})}
+document.querySelectorAll('#theme button').forEach(b=>b.addEventListener('click',()=>{THEME=b.dataset.t;try{localStorage.setItem('theme',THEME)}catch(e){}applyTheme()}));
+applyTheme();
+function opt(sel,value,label){const o=document.createElement('option');o.value=value;o.textContent=label;sel.appendChild(o)}
+function fillFilters(){if(!DATA)return;const en=LANG==='en',fy=document.getElementById('fy'),fa=document.getElementById('fa'),fs=document.getElementById('fs'),fn=document.getElementById('fn');
+ const yv=fy.value,av=fa.value,sv=fs.value,nv=fn.value,all=DATA.estudos||[];
+ const years=[...new Set(all.map(e=>e.ano))].filter(Boolean).sort((a,b)=>b-a);
+ const used=new Set(all.flatMap(e=>e.areas||[]));
+ fy.replaceChildren();fa.replaceChildren();fs.replaceChildren();fn.replaceChildren();
+ opt(fy,'',en?'All years':'Todos os anos');
+ years.forEach(y=>opt(fy,String(y),String(y)));
+ opt(fa,'',en?'All areas':'Todas as áreas');
+ AREAS.filter(a=>used.has(a.id)).forEach(a=>opt(fa,a.id,en?a.en:a.pt));
+ opt(fs,'',en?'All species':'Todas as espécies');
+ opt(fs,'humano',en?'Human':'Humanos');
+ opt(fs,'animal',en?'Animal':'Animais');
+ opt(fn,'',en?'All samples':'Todas as amostras');
+ opt(fn,'relevante',en?'Relevant sample':'Amostra relevante');
+ opt(fn,'pequena',en?'Small sample':'Amostra pequena');
+ fy.value=[...fy.options].some(o=>o.value===yv)?yv:'';
+ fa.value=[...fa.options].some(o=>o.value===av)?av:'';
+ fs.value=[...fs.options].some(o=>o.value===sv)?sv:'';
+ fn.value=[...fn.options].some(o=>o.value===nv)?nv:'';
+}
+function render(){const list=document.getElementById('list'),count=document.getElementById('count'),en=LANG==='en';
+ if(!DATA){list.textContent='';return}
+ const q=fold(document.getElementById('q').value.trim()),year=document.getElementById('fy').value,area=document.getElementById('fa').value,species=document.getElementById('fs').value,sample=document.getElementById('fn').value;
+ const all=DATA.estudos||[];
+ const rows=all.filter(e=>{
+  if(year&&String(e.ano)!==year)return false;
+  if(area&&!(e.areas||[]).includes(area))return false;
+  if(species&&e.especie!==species)return false;
+  if(sample&&e.amostra!==sample)return false;
+  if(!q)return true;
+  const blob=[e.ano,whenText(e,false),whenText(e,true),specText(e,false),specText(e,true),sampleText(e,false),sampleText(e,true),areaText(e,false),areaText(e,true),e.titulo.pt,e.titulo.en,e.conclusao.pt,e.conclusao.en].join(' ');
+  return fold(blob).includes(q)});
+ count.textContent=en?(rows.length===all.length?all.length+' studies':rows.length+' of '+all.length+' studies'):(rows.length===all.length?all.length+' estudos':rows.length+' de '+all.length+' estudos');
+ list.replaceChildren();
+ if(!rows.length){const p=document.createElement('p');p.className='empty';p.textContent=en?'No matching studies.':'Nenhum estudo corresponde.';list.appendChild(p);return}
+ const linkLabel=en?'Paper':'Artigo';
+ for(const e of rows){const art=document.createElement('article');art.className='study';
+  const h=document.createElement('h2');h.textContent=en?e.titulo.en:e.titulo.pt;art.appendChild(h);
+  const y=document.createElement('p');y.className='ano';const bits=[whenText(e,en),specText(e,en),sampleText(e,en),areaText(e,en)].filter(Boolean);y.textContent=bits.join(' · ');art.appendChild(y);
+  const c=document.createElement('p');c.textContent=en?e.conclusao.en:e.conclusao.pt;art.appendChild(c);
+  const a=document.createElement('a');a.href=e.link;a.target='_blank';a.rel='noopener noreferrer';a.textContent=linkLabel;art.appendChild(a);
+  list.appendChild(art)}}
+document.getElementById('q').addEventListener('input',render);
+document.getElementById('fy').addEventListener('change',render);
+document.getElementById('fa').addEventListener('change',render);
+document.getElementById('fs').addEventListener('change',render);
+document.getElementById('fn').addEventListener('change',render);
+fetch('data/estudos.json').then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(d=>{DATA=d;applyLang()}).catch(()=>{document.getElementById('list').textContent=LANG==='en'?'Could not load the studies.':'Não foi possível ler os estudos.'});
+applyLang();
+</script>
+<script>
+(function(){try{var W=window.SF_W;if(!W)return;W=String(W).replace(/\/+$/,'');
+ if(location.hash==='#toggle-goatcounter'){var off=localStorage.getItem('skipgc')==='t';if(off)localStorage.removeItem('skipgc');else localStorage.setItem('skipgc','t');alert(off?'Contagem ligada neste browser.':'Contagem desligada neste browser.')}
+ if(localStorage.getItem('skipgc')==='t'||navigator.webdriver||window!==window.top||location.protocol==='file:'||/^(localhost|127\.|10\.|192\.168\.|0\.0\.0\.0$|\[::1\]$)/.test(location.hostname))return;
+ var send=function(){try{var sc=window.screen||{},x={p:location.pathname,t:document.title,r:document.referrer||'',s:sc.width||0,w:sc.width||0,h:sc.height||0,d:window.devicePixelRatio||0,m:navigator.maxTouchPoints||0},u=W+'/e',ok=0,
+  go=function(){if(ok)return;ok=1;var d=JSON.stringify(x);if(navigator.sendBeacon&&navigator.sendBeacon(u,d))return;fetch(u,{method:'POST',body:d,keepalive:true,mode:'no-cors',credentials:'omit'}).catch(function(){})},
+  ud=navigator.userAgentData;
+  if(ud&&ud.getHighEntropyValues){setTimeout(go,800);ud.getHighEntropyValues(['model','platformVersion']).then(function(v){if(v&&v.model)x.mo=String(v.model).slice(0,40);if(v&&v.platformVersion)x.pv=String(v.platformVersion).slice(0,20);go()},go)}else go()}catch(_){}};
+ if(document.visibilityState==='prerender')document.addEventListener('visibilitychange',function f(){if(document.visibilityState!=='prerender'){document.removeEventListener('visibilitychange',f);send()}});
+ else if(document.readyState==='complete')send();else addEventListener('load',send)}catch(_){}})();
+</script>
+<script>document.addEventListener('click',function(e){document.querySelectorAll('details.dd[open]').forEach(function(d){if(!d.contains(e.target))d.removeAttribute('open')})});</script>
+</body>
+</html>
