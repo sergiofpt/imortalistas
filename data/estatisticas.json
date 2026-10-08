@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-08T07:21:30Z",
+ "atualizado_em": "2026-10-08T07:50:18Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 53,
   "visitas_30d": 53,
   "visitas_90d": 53,
-  "aberturas_pdf": 336,
+  "aberturas_pdf": 348,
   "visitas_hoje": 3,
   "visitas_7d": 53,
-  "aberturas_hoje": 150,
-  "aberturas_7d": 336,
-  "aberturas_30d": 336,
-  "pdf_abertos": 142,
-  "pdf_descarregados": 194,
-  "pdf_pt": 116,
-  "pdf_en": 220
+  "aberturas_hoje": 162,
+  "aberturas_7d": 348,
+  "aberturas_30d": 348,
+  "pdf_abertos": 145,
+  "pdf_descarregados": 203,
+  "pdf_pt": 119,
+  "pdf_en": 229
  },
  "dias": [
   {
@@ -57,7 +57,7 @@
   {
    "dia": "2026-10-08",
    "visitas": 3,
-   "aberturas": 150
+   "aberturas": 162
   }
  ],
  "paginas": [
@@ -147,6 +147,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "cartao-farmacogenetico",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "farmacogenomica-632",
    "ficheiro": null,
    "pt": 2,
@@ -213,6 +224,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "psicadelicos",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "referencia-via-forca-hipertrofia-potencia",
    "ficheiro": null,
    "pt": 0,
@@ -241,6 +263,28 @@
    "en": 2,
    "total": 4,
    "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "acne-glandulas-sebaceas",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "alergias-asma-atopia",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 1
@@ -356,6 +400,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "capacidade-cognitiva-plasticidade",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "cardiovascular-avancado",
    "ficheiro": null,
    "pt": 1,
@@ -367,18 +422,29 @@
    "descarregados_en": 1
   },
   {
-   "id": "cartao-farmacogenetico",
+   "id": "celulas-estaminais-regeneracao",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
    "total": 3,
-   "abertos_pt": 1,
+   "abertos_pt": 0,
    "abertos_en": 1,
-   "descarregados_pt": 0,
+   "descarregados_pt": 1,
    "descarregados_en": 1
   },
   {
    "id": "cerebro-neurodegeneracao",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "cetose-corpos-cetonicos",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -444,7 +510,29 @@
    "descarregados_en": 1
   },
   {
+   "id": "dopamina-noradrenalina",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "dor-analgesia",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "enxaqueca-cefaleias",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -708,6 +796,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "perfil-desportivo-resistencia-forca",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "personalidade-tracos-psicologicos",
    "ficheiro": null,
    "pt": 1,
@@ -770,17 +869,6 @@
    "total": 3,
    "abertos_pt": 0,
    "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "psicadelicos",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 1,
-   "total": 3,
-   "abertos_pt": 1,
-   "abertos_en": 0,
    "descarregados_pt": 1,
    "descarregados_en": 1
   },
@@ -972,28 +1060,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "acne-glandulas-sebaceas",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 2,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "alergias-asma-atopia",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "audicao-zumbido",
    "ficheiro": null,
    "pt": 0,
@@ -1006,39 +1072,6 @@
   },
   {
    "id": "baco-sistema-linfatico",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
-   "id": "capacidade-cognitiva-plasticidade",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
-   "id": "celulas-estaminais-regeneracao",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
-   "id": "cetose-corpos-cetonicos",
    "ficheiro": null,
    "pt": 1,
    "en": 1,
@@ -1068,28 +1101,6 @@
    "abertos_pt": 0,
    "abertos_en": 0,
    "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "dopamina-noradrenalina",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "enxaqueca-cefaleias",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 2,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -1236,17 +1247,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "perfil-desportivo-resistencia-forca",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
    "id": "pulmao-funcao-respiratoria",
    "ficheiro": null,
    "pt": 1,
@@ -1313,6 +1313,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "unhas-cicatrizacao-inflamacao-pele",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 2,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "velocidade-processamento-tempo-reacao",
    "ficheiro": null,
    "pt": 0,
@@ -1346,6 +1357,17 @@
    "descarregados_en": 0
   },
   {
+   "id": "hipoxia-altitude",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "humor-risco-depressao",
    "ficheiro": null,
    "pt": 0,
@@ -1358,17 +1380,6 @@
   },
   {
    "id": "saude-oral-dentes-periodontite",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
-   "id": "unhas-cicatrizacao-inflamacao-pele",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -1511,7 +1522,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 305
+   "visitas": 317
   },
   {
    "id": "PT",
@@ -1558,7 +1569,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 359
+   "visitas": 371
   },
   {
    "id": "Firefox",
@@ -1575,12 +1586,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 213
+   "visitas": 221
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 140
+   "visitas": 144
   },
   {
    "id": "Android",
@@ -1622,14 +1633,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 335
+   "visitas": 347
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 379
+   "visitas": 391
   },
   {
    "id": "https://bing.com",
@@ -1957,7 +1968,7 @@
     {
      "dia": "2026-10-08",
      "visitas": 3,
-     "aberturas": 150
+     "aberturas": 162
     }
    ],
    "paginas": [
@@ -2054,6 +2065,28 @@
      "descarregados_en": 1
     },
     {
+     "id": "acne-glandulas-sebaceas",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "alergias-asma-atopia",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "alimentos-longevidade-173",
      "ficheiro": null,
      "pt": 1,
@@ -2142,6 +2175,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "capacidade-cognitiva-plasticidade",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "cardiovascular-avancado",
      "ficheiro": null,
      "pt": 1,
@@ -2153,7 +2197,40 @@
      "descarregados_en": 1
     },
     {
+     "id": "cartao-farmacogenetico",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "celulas-estaminais-regeneracao",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "cerebro-neurodegeneracao",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "cetose-corpos-cetonicos",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2230,7 +2307,29 @@
      "descarregados_en": 1
     },
     {
+     "id": "dopamina-noradrenalina",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "dor-analgesia",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "enxaqueca-cefaleias",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2516,6 +2615,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "perfil-desportivo-resistencia-forca",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "personalidade-tracos-psicologicos",
      "ficheiro": null,
      "pt": 1,
@@ -2572,6 +2682,17 @@
     },
     {
      "id": "proteostase",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "psicadelicos",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2791,28 +2912,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "acne-glandulas-sebaceas",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "alergias-asma-atopia",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "anestesia-cirurgia",
      "ficheiro": null,
      "pt": 1,
@@ -2857,50 +2956,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "capacidade-cognitiva-plasticidade",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
-     "id": "cartao-farmacogenetico",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "celulas-estaminais-regeneracao",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
-     "id": "cetose-corpos-cetonicos",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
      "id": "dermatite-seborreica-microbioma-pele",
      "ficheiro": null,
      "pt": 0,
@@ -2920,28 +2975,6 @@
      "abertos_pt": 0,
      "abertos_en": 0,
      "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "dopamina-noradrenalina",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "enxaqueca-cefaleias",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
      "descarregados_en": 1
     },
     {
@@ -3121,28 +3154,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "perfil-desportivo-resistencia-forca",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
-     "id": "psicadelicos",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "pulmao-funcao-respiratoria",
      "ficheiro": null,
      "pt": 1,
@@ -3209,6 +3220,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "unhas-cicatrizacao-inflamacao-pele",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "velocidade-processamento-tempo-reacao",
      "ficheiro": null,
      "pt": 0,
@@ -3242,6 +3264,17 @@
      "descarregados_en": 0
     },
     {
+     "id": "hipoxia-altitude",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "humor-risco-depressao",
      "ficheiro": null,
      "pt": 0,
@@ -3254,17 +3287,6 @@
     },
     {
      "id": "saude-oral-dentes-periodontite",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
-     "id": "unhas-cicatrizacao-inflamacao-pele",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -3387,22 +3409,22 @@
     "visitas": 32,
     "visitas_30d": 32,
     "visitas_90d": 32,
-    "aberturas_pdf": 310,
+    "aberturas_pdf": 322,
     "visitas_hoje": 3,
     "visitas_7d": 32,
-    "aberturas_hoje": 150,
-    "aberturas_7d": 310,
-    "aberturas_30d": 310,
-    "pdf_abertos": 116,
-    "pdf_descarregados": 194,
-    "pdf_pt": 92,
-    "pdf_en": 218
+    "aberturas_hoje": 162,
+    "aberturas_7d": 322,
+    "aberturas_30d": 322,
+    "pdf_abertos": 119,
+    "pdf_descarregados": 203,
+    "pdf_pt": 95,
+    "pdf_en": 227
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 305
+     "visitas": 317
     },
     {
      "id": "US",
