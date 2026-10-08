@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-08T02:46:56Z",
+ "atualizado_em": "2026-10-08T03:24:57Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 51,
   "visitas_30d": 51,
   "visitas_90d": 51,
-  "aberturas_pdf": 241,
+  "aberturas_pdf": 251,
   "visitas_hoje": 1,
   "visitas_7d": 51,
-  "aberturas_hoje": 55,
-  "aberturas_7d": 241,
-  "aberturas_30d": 241,
-  "pdf_abertos": 109,
-  "pdf_descarregados": 132,
-  "pdf_pt": 86,
-  "pdf_en": 155
+  "aberturas_hoje": 65,
+  "aberturas_7d": 251,
+  "aberturas_30d": 251,
+  "pdf_abertos": 113,
+  "pdf_descarregados": 138,
+  "pdf_pt": 91,
+  "pdf_en": 160
  },
  "dias": [
   {
@@ -57,7 +57,7 @@
   {
    "dia": "2026-10-08",
    "visitas": 1,
-   "aberturas": 55
+   "aberturas": 65
   }
  ],
  "paginas": [
@@ -203,6 +203,17 @@
   },
   {
    "id": "dor-analgesia",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "esofago",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -389,6 +400,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "sal-agua-eletrolitos",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "sensores-nutrientes-autofagia",
    "ficheiro": null,
    "pt": 1,
@@ -400,7 +422,29 @@
    "descarregados_en": 1
   },
   {
+   "id": "testiculos",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "valvulas-cardiacas",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "vesicula-biliar-calculos",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -521,6 +565,17 @@
    "descarregados_en": 0
   },
   {
+   "id": "celulas-estaminais-regeneracao",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
    "id": "dermatite-seborreica-microbioma-pele",
    "ficheiro": null,
    "pt": 0,
@@ -555,17 +610,6 @@
   },
   {
    "id": "doenca-arterial-periferica",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "esofago",
    "ficheiro": null,
    "pt": 1,
    "en": 1,
@@ -675,6 +719,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "impulsividade-recompensa-vicio",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
    "id": "imunidade-envelhecimento-imunitario",
    "ficheiro": null,
    "pt": 0,
@@ -684,6 +739,17 @@
    "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 1
+  },
+  {
+   "id": "lipidos-detalhe",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
   },
   {
    "id": "matriz-extracelular-glicacao",
@@ -728,6 +794,17 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 0
+  },
+  {
+   "id": "olhos-em-detalhe",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
   },
   {
    "id": "oxido-nitrico-endotelio",
@@ -840,7 +917,7 @@
    "descarregados_en": 0
   },
   {
-   "id": "risco-cancro-scores-poligenicos",
+   "id": "reparacao-adn-estabilidade-genoma",
    "ficheiro": null,
    "pt": 1,
    "en": 1,
@@ -851,15 +928,15 @@
    "descarregados_en": 0
   },
   {
-   "id": "sal-agua-eletrolitos",
+   "id": "risco-cancro-scores-poligenicos",
    "ficheiro": null,
-   "pt": 0,
-   "en": 2,
+   "pt": 1,
+   "en": 1,
    "total": 2,
    "abertos_pt": 0,
    "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
+   "descarregados_pt": 1,
+   "descarregados_en": 0
   },
   {
    "id": "sensibilidade-radiacao",
@@ -906,6 +983,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "telomeros-senescencia-celular",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 2,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "termogenese-gordura-castanha",
    "ficheiro": null,
    "pt": 1,
@@ -928,29 +1016,7 @@
    "descarregados_en": 0
   },
   {
-   "id": "testiculos",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
    "id": "tiroide",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 2,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "vesicula-biliar-calculos",
    "ficheiro": null,
    "pt": 0,
    "en": 2,
@@ -1028,17 +1094,6 @@
   },
   {
    "id": "cafeina-estimulantes",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
-   "id": "celulas-estaminais-regeneracao",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -1170,17 +1225,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "impulsividade-recompensa-vicio",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 0,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
    "id": "inflamacao-autoimunidade",
    "ficheiro": null,
    "pt": 0,
@@ -1214,17 +1258,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "lipidos-detalhe",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
    "id": "longevidade-excecional",
    "ficheiro": null,
    "pt": 0,
@@ -1234,17 +1267,6 @@
    "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 0
-  },
-  {
-   "id": "olhos-em-detalhe",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
   },
   {
    "id": "pele-skin-care",
@@ -1280,17 +1302,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "reparacao-adn-estabilidade-genoma",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 0,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
    "id": "ritmo-cardiaco-arritmias",
    "ficheiro": null,
    "pt": 0,
@@ -1322,17 +1333,6 @@
    "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 0
-  },
-  {
-   "id": "telomeros-senescencia-celular",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
   },
   {
    "id": "tendoes-ligamentos-lesoes",
@@ -1500,7 +1500,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 208
+   "visitas": 218
   },
   {
    "id": "PT",
@@ -1547,7 +1547,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 262
+   "visitas": 272
   },
   {
    "id": "Firefox",
@@ -1564,12 +1564,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 166
+   "visitas": 171
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 90
+   "visitas": 95
   },
   {
    "id": "Android",
@@ -1611,14 +1611,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 240
+   "visitas": 250
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 283
+   "visitas": 293
   },
   {
    "id": "https://bing.com",
@@ -1941,7 +1941,7 @@
     {
      "dia": "2026-10-08",
      "visitas": 1,
-     "aberturas": 55
+     "aberturas": 65
     }
    ],
    "paginas": [
@@ -2024,6 +2024,17 @@
     },
     {
      "id": "dor-analgesia",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "esofago",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2177,6 +2188,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "sal-agua-eletrolitos",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "sensores-nutrientes-autofagia",
      "ficheiro": null,
      "pt": 1,
@@ -2188,7 +2210,29 @@
      "descarregados_en": 1
     },
     {
+     "id": "testiculos",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "valvulas-cardiacas",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "vesicula-biliar-calculos",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2309,6 +2353,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "celulas-estaminais-regeneracao",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
      "id": "dermatite-seborreica-microbioma-pele",
      "ficheiro": null,
      "pt": 0,
@@ -2361,17 +2416,6 @@
      "abertos_pt": 0,
      "abertos_en": 1,
      "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "esofago",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
      "descarregados_en": 1
     },
     {
@@ -2485,6 +2529,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "impulsividade-recompensa-vicio",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
      "id": "imunidade-envelhecimento-imunitario",
      "ficheiro": null,
      "pt": 0,
@@ -2516,6 +2571,17 @@
      "abertos_en": 1,
      "descarregados_pt": 0,
      "descarregados_en": 1
+    },
+    {
+     "id": "lipidos-detalhe",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
     },
     {
      "id": "longevidade-maxima-sintese-genetica",
@@ -2582,6 +2648,17 @@
      "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 0
+    },
+    {
+     "id": "olhos-em-detalhe",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
     },
     {
      "id": "oxido-nitrico-endotelio",
@@ -2683,7 +2760,7 @@
      "descarregados_en": 0
     },
     {
-     "id": "risco-cancro-scores-poligenicos",
+     "id": "reparacao-adn-estabilidade-genoma",
      "ficheiro": null,
      "pt": 1,
      "en": 1,
@@ -2694,15 +2771,15 @@
      "descarregados_en": 0
     },
     {
-     "id": "sal-agua-eletrolitos",
+     "id": "risco-cancro-scores-poligenicos",
      "ficheiro": null,
-     "pt": 0,
-     "en": 2,
+     "pt": 1,
+     "en": 1,
      "total": 2,
      "abertos_pt": 0,
      "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
+     "descarregados_pt": 1,
+     "descarregados_en": 0
     },
     {
      "id": "sensibilidade-radiacao",
@@ -2749,6 +2826,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "telomeros-senescencia-celular",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "termogenese-gordura-castanha",
      "ficheiro": null,
      "pt": 1,
@@ -2771,29 +2859,7 @@
      "descarregados_en": 0
     },
     {
-     "id": "testiculos",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
      "id": "tiroide",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "vesicula-biliar-calculos",
      "ficheiro": null,
      "pt": 0,
      "en": 2,
@@ -2871,17 +2937,6 @@
     },
     {
      "id": "cartao-farmacogenetico",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
-     "id": "celulas-estaminais-regeneracao",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -3024,17 +3079,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "impulsividade-recompensa-vicio",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 0,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
      "id": "inflamacao-autoimunidade",
      "ficheiro": null,
      "pt": 0,
@@ -3068,17 +3112,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "lipidos-detalhe",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
      "id": "longevidade-excecional",
      "ficheiro": null,
      "pt": 0,
@@ -3088,17 +3121,6 @@
      "abertos_en": 1,
      "descarregados_pt": 0,
      "descarregados_en": 0
-    },
-    {
-     "id": "olhos-em-detalhe",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
     },
     {
      "id": "pele-skin-care",
@@ -3145,17 +3167,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "reparacao-adn-estabilidade-genoma",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 0,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
      "id": "ritmo-cardiaco-arritmias",
      "ficheiro": null,
      "pt": 0,
@@ -3187,17 +3198,6 @@
      "abertos_en": 1,
      "descarregados_pt": 0,
      "descarregados_en": 0
-    },
-    {
-     "id": "telomeros-senescencia-celular",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
     },
     {
      "id": "tendoes-ligamentos-lesoes",
@@ -3345,22 +3345,22 @@
     "visitas": 30,
     "visitas_30d": 30,
     "visitas_90d": 30,
-    "aberturas_pdf": 215,
+    "aberturas_pdf": 225,
     "visitas_hoje": 1,
     "visitas_7d": 30,
-    "aberturas_hoje": 55,
-    "aberturas_7d": 215,
-    "aberturas_30d": 215,
-    "pdf_abertos": 83,
-    "pdf_descarregados": 132,
-    "pdf_pt": 62,
-    "pdf_en": 153
+    "aberturas_hoje": 65,
+    "aberturas_7d": 225,
+    "aberturas_30d": 225,
+    "pdf_abertos": 87,
+    "pdf_descarregados": 138,
+    "pdf_pt": 67,
+    "pdf_en": 158
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 208
+     "visitas": 218
     },
     {
      "id": "US",
