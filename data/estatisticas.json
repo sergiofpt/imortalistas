@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-08T06:55:39Z",
+ "atualizado_em": "2026-10-08T07:21:30Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
-  "visitas": 52,
-  "visitas_30d": 52,
-  "visitas_90d": 52,
-  "aberturas_pdf": 332,
-  "visitas_hoje": 2,
-  "visitas_7d": 52,
-  "aberturas_hoje": 146,
-  "aberturas_7d": 332,
-  "aberturas_30d": 332,
-  "pdf_abertos": 140,
-  "pdf_descarregados": 192,
+  "visitas": 53,
+  "visitas_30d": 53,
+  "visitas_90d": 53,
+  "aberturas_pdf": 336,
+  "visitas_hoje": 3,
+  "visitas_7d": 53,
+  "aberturas_hoje": 150,
+  "aberturas_7d": 336,
+  "aberturas_30d": 336,
+  "pdf_abertos": 142,
+  "pdf_descarregados": 194,
   "pdf_pt": 116,
-  "pdf_en": 216
+  "pdf_en": 220
  },
  "dias": [
   {
@@ -56,8 +56,8 @@
   },
   {
    "dia": "2026-10-08",
-   "visitas": 2,
-   "aberturas": 146
+   "visitas": 3,
+   "aberturas": 150
   }
  ],
  "paginas": [
@@ -82,11 +82,11 @@
    "visitas": 3
   },
   {
-   "path": "/imortalistas/index.html",
-   "visitas": 2
+   "path": "/imortalistas/inicio.html",
+   "visitas": 3
   },
   {
-   "path": "/imortalistas/inicio.html",
+   "path": "/imortalistas/index.html",
    "visitas": 2
   }
  ],
@@ -334,6 +334,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "cabelo",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "cafeina-estimulantes",
    "ficheiro": null,
    "pt": 1,
@@ -368,6 +379,17 @@
   },
   {
    "id": "cerebro-neurodegeneracao",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "coagulacao-trombose-veias",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -510,6 +532,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "health-report-72",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "histamina-mastocitos-ige",
    "ficheiro": null,
    "pt": 1,
@@ -599,6 +632,17 @@
   },
   {
    "id": "microbioma-intestino",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "olhos-em-detalhe",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -972,17 +1016,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "cabelo",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
    "id": "capacidade-cognitiva-plasticidade",
    "ficheiro": null,
    "pt": 1,
@@ -1014,17 +1047,6 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 0
-  },
-  {
-   "id": "coagulacao-trombose-veias",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
   },
   {
    "id": "dermatite-seborreica-microbioma-pele",
@@ -1126,17 +1148,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "health-report-72",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
    "id": "hipertensao-pulmonar-circulacao-pulmao",
    "ficheiro": null,
    "pt": 0,
@@ -1223,17 +1234,6 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 0
-  },
-  {
-   "id": "olhos-em-detalhe",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
   },
   {
    "id": "perfil-desportivo-resistencia-forca",
@@ -1413,7 +1413,7 @@
    "tipo": "computador",
    "nome": "Mac · Chrome",
    "estimativa": false,
-   "visitas": 2
+   "visitas": 3
   },
   {
    "id": "computador/windows-10-chrome",
@@ -1511,7 +1511,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 300
+   "visitas": 305
   },
   {
    "id": "PT",
@@ -1558,7 +1558,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 354
+   "visitas": 359
   },
   {
    "id": "Firefox",
@@ -1575,12 +1575,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 211
+   "visitas": 213
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 137
+   "visitas": 140
   },
   {
    "id": "Android",
@@ -1617,19 +1617,19 @@
   {
    "id": "desktop",
    "nome": "desktop",
-   "visitas": 33
+   "visitas": 34
   },
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 331
+   "visitas": 335
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 375
+   "visitas": 379
   },
   {
    "id": "https://bing.com",
@@ -1644,6 +1644,11 @@
   {
    "id": "https://l.instagram.com",
    "nome": "l.instagram.com",
+   "visitas": 1
+  },
+  {
+   "id": "https://sergiofpt.github.io/imortalistas",
+   "nome": "sergiofpt.github.io",
    "visitas": 1
   }
  ],
@@ -1951,8 +1956,8 @@
     },
     {
      "dia": "2026-10-08",
-     "visitas": 2,
-     "aberturas": 146
+     "visitas": 3,
+     "aberturas": 150
     }
    ],
    "paginas": [
@@ -1974,6 +1979,10 @@
     },
     {
      "path": "/imortalistas/index.html",
+     "visitas": 1
+    },
+    {
+     "path": "/imortalistas/inicio.html",
      "visitas": 1
     }
    ],
@@ -2111,6 +2120,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "cabelo",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "cafeina-estimulantes",
      "ficheiro": null,
      "pt": 1,
@@ -2134,6 +2154,17 @@
     },
     {
      "id": "cerebro-neurodegeneracao",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "coagulacao-trombose-veias",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2287,6 +2318,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "health-report-72",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "histamina-mastocitos-ige",
      "ficheiro": null,
      "pt": 1,
@@ -2398,6 +2440,17 @@
     },
     {
      "id": "microbioma-intestino",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "olhos-em-detalhe",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2804,17 +2857,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "cabelo",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
      "id": "capacidade-cognitiva-plasticidade",
      "ficheiro": null,
      "pt": 1,
@@ -2857,17 +2899,6 @@
      "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 0
-    },
-    {
-     "id": "coagulacao-trombose-veias",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
     },
     {
      "id": "dermatite-seborreica-microbioma-pele",
@@ -2991,17 +3022,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "health-report-72",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
      "id": "hipertensao-pulmonar-circulacao-pulmao",
      "ficheiro": null,
      "pt": 0,
@@ -3099,17 +3119,6 @@
      "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 0
-    },
-    {
-     "id": "olhos-em-detalhe",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
     },
     {
      "id": "perfil-desportivo-resistencia-forca",
@@ -3286,7 +3295,7 @@
      "tipo": "computador",
      "nome": "Mac · Chrome",
      "estimativa": false,
-     "visitas": 2
+     "visitas": 3
     },
     {
      "id": "computador/windows-10-chrome",
@@ -3375,25 +3384,25 @@
    ],
    "aparelhos_desde": "2026-10-03",
    "total": {
-    "visitas": 31,
-    "visitas_30d": 31,
-    "visitas_90d": 31,
-    "aberturas_pdf": 306,
-    "visitas_hoje": 2,
-    "visitas_7d": 31,
-    "aberturas_hoje": 146,
-    "aberturas_7d": 306,
-    "aberturas_30d": 306,
-    "pdf_abertos": 114,
-    "pdf_descarregados": 192,
+    "visitas": 32,
+    "visitas_30d": 32,
+    "visitas_90d": 32,
+    "aberturas_pdf": 310,
+    "visitas_hoje": 3,
+    "visitas_7d": 32,
+    "aberturas_hoje": 150,
+    "aberturas_7d": 310,
+    "aberturas_30d": 310,
+    "pdf_abertos": 116,
+    "pdf_descarregados": 194,
     "pdf_pt": 92,
-    "pdf_en": 214
+    "pdf_en": 218
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 300
+     "visitas": 305
     },
     {
      "id": "US",
