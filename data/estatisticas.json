@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-08T00:28:25Z",
+ "atualizado_em": "2026-10-08T00:56:54Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
-  "visitas": 50,
-  "visitas_30d": 50,
-  "visitas_90d": 50,
-  "aberturas_pdf": 201,
-  "visitas_hoje": 0,
-  "visitas_7d": 50,
-  "aberturas_hoje": 15,
-  "aberturas_7d": 201,
-  "aberturas_30d": 201,
-  "pdf_abertos": 92,
-  "pdf_descarregados": 109,
-  "pdf_pt": 73,
-  "pdf_en": 128
+  "visitas": 51,
+  "visitas_30d": 51,
+  "visitas_90d": 51,
+  "aberturas_pdf": 210,
+  "visitas_hoje": 1,
+  "visitas_7d": 51,
+  "aberturas_hoje": 24,
+  "aberturas_7d": 210,
+  "aberturas_30d": 210,
+  "pdf_abertos": 96,
+  "pdf_descarregados": 114,
+  "pdf_pt": 75,
+  "pdf_en": 135
  },
  "dias": [
   {
@@ -56,8 +56,8 @@
   },
   {
    "dia": "2026-10-08",
-   "visitas": 0,
-   "aberturas": 15
+   "visitas": 1,
+   "aberturas": 24
   }
  ],
  "paginas": [
@@ -79,7 +79,7 @@
   },
   {
    "path": "/imortalistas/genetica.html",
-   "visitas": 2
+   "visitas": 3
   },
   {
    "path": "/imortalistas/index.html",
@@ -279,6 +279,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "paladar-olfato",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "prostata",
    "ficheiro": null,
    "pt": 1,
@@ -298,6 +309,17 @@
    "abertos_pt": 0,
    "abertos_en": 1,
    "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "ritmo-circadiano-sono",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -387,6 +409,17 @@
    "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 1
+  },
+  {
+   "id": "destoxificacao-fase-i-ii",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
   },
   {
    "id": "disruptores-endocrinos-poluentes",
@@ -510,6 +543,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "inflamacao-senescencia-placa",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
    "id": "matriz-extracelular-glicacao",
    "ficheiro": null,
    "pt": 1,
@@ -554,17 +598,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "paladar-olfato",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "perfil-desportivo-resistencia-forca",
    "ficheiro": null,
    "pt": 1,
@@ -598,6 +631,17 @@
    "descarregados_en": 0
   },
   {
+   "id": "pulmao-funcao-respiratoria",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "referencia-via-forca-hipertrofia-potencia",
    "ficheiro": null,
    "pt": 0,
@@ -620,17 +664,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "ritmo-circadiano-sono",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 1,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "sal-agua-eletrolitos",
    "ficheiro": null,
    "pt": 0,
@@ -640,6 +673,17 @@
    "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 1
+  },
+  {
+   "id": "sensibilidade-radiacao",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 1,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
   },
   {
    "id": "sensores-nutrientes-autofagia",
@@ -720,6 +764,17 @@
   },
   {
    "id": "valvulas-cardiacas",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 2,
+   "total": 2,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "visao-audicao",
    "ficheiro": null,
    "pt": 0,
    "en": 2,
@@ -873,17 +928,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "destoxificacao-fase-i-ii",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
    "id": "doenca-arterial-periferica",
    "ficheiro": null,
    "pt": 1,
@@ -961,7 +1005,29 @@
    "descarregados_en": 1
   },
   {
+   "id": "hipofise-eixo-hormonal",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 0
+  },
+  {
    "id": "histamina-mastocitos-ige",
+   "ficheiro": null,
+   "pt": 0,
+   "en": 1,
+   "total": 1,
+   "abertos_pt": 0,
+   "abertos_en": 0,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "humor-risco-depressao",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -984,17 +1050,6 @@
   },
   {
    "id": "inflamacao-autoimunidade",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
-   "id": "inflamacao-senescencia-placa",
    "ficheiro": null,
    "pt": 0,
    "en": 1,
@@ -1148,17 +1203,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "pulmao-funcao-respiratoria",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 0,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
    "id": "relogio-epigenetico-idade-biologica",
    "ficheiro": null,
    "pt": 0,
@@ -1200,17 +1244,6 @@
    "abertos_pt": 0,
    "abertos_en": 1,
    "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
-   "id": "sensibilidade-radiacao",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 0,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
    "descarregados_en": 0
   },
   {
@@ -1289,17 +1322,6 @@
    "abertos_en": 0,
    "descarregados_pt": 0,
    "descarregados_en": 1
-  },
-  {
-   "id": "visao-audicao",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
   }
  ],
  "aparelhos": [
@@ -1330,6 +1352,13 @@
    "nome": "Windows 10/11 · Chrome",
    "estimativa": false,
    "visitas": 4
+  },
+  {
+   "id": "computador/windows-10-chrome",
+   "tipo": "computador",
+   "nome": "Windows 10 · Chrome",
+   "estimativa": false,
+   "visitas": 2
   },
   {
    "id": "computador/windows-11-chrome",
@@ -1402,13 +1431,6 @@
    "visitas": 1
   },
   {
-   "id": "computador/windows-10-chrome",
-   "tipo": "computador",
-   "nome": "Windows 10 · Chrome",
-   "estimativa": false,
-   "visitas": 1
-  },
-  {
    "id": "computador/windows-10-11-firefox",
    "tipo": "computador",
    "nome": "Windows 10/11 · Firefox",
@@ -1434,7 +1456,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 167
+   "visitas": 177
   },
   {
    "id": "PT",
@@ -1481,7 +1503,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 221
+   "visitas": 231
   },
   {
    "id": "Firefox",
@@ -1498,12 +1520,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 140
+   "visitas": 146
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 75
+   "visitas": 79
   },
   {
    "id": "Android",
@@ -1540,19 +1562,19 @@
   {
    "id": "desktop",
    "nome": "desktop",
-   "visitas": 31
+   "visitas": 32
   },
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 200
+   "visitas": 209
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 242
+   "visitas": 252
   },
   {
    "id": "https://bing.com",
@@ -1874,8 +1896,8 @@
     },
     {
      "dia": "2026-10-08",
-     "visitas": 0,
-     "aberturas": 15
+     "visitas": 1,
+     "aberturas": 24
     }
    ],
    "paginas": [
@@ -1890,6 +1912,10 @@
     {
      "path": "/imortalistas/genetica-boa.html",
      "visitas": 2
+    },
+    {
+     "path": "/imortalistas/genetica.html",
+     "visitas": 1
     },
     {
      "path": "/imortalistas/index.html",
@@ -1987,6 +2013,17 @@
     },
     {
      "id": "oxitocina-comportamento-social",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "paladar-olfato",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2105,6 +2142,17 @@
      "abertos_en": 1,
      "descarregados_pt": 0,
      "descarregados_en": 1
+    },
+    {
+     "id": "destoxificacao-fase-i-ii",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
     },
     {
      "id": "disruptores-endocrinos-poluentes",
@@ -2250,6 +2298,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "inflamacao-senescencia-placa",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
      "id": "intolerancias-alimentares-626",
      "ficheiro": null,
      "pt": 0,
@@ -2327,17 +2386,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "paladar-olfato",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "perfil-desportivo-resistencia-forca",
      "ficheiro": null,
      "pt": 1,
@@ -2357,6 +2405,17 @@
      "abertos_pt": 0,
      "abertos_en": 1,
      "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "pulmao-funcao-respiratoria",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 1,
      "descarregados_en": 1
     },
     {
@@ -2382,6 +2441,17 @@
      "descarregados_en": 0
     },
     {
+     "id": "ritmo-circadiano-sono",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "sal-agua-eletrolitos",
      "ficheiro": null,
      "pt": 0,
@@ -2391,6 +2461,17 @@
      "abertos_en": 1,
      "descarregados_pt": 0,
      "descarregados_en": 1
+    },
+    {
+     "id": "sensibilidade-radiacao",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 1,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
     },
     {
      "id": "sensores-nutrientes-autofagia",
@@ -2471,6 +2552,17 @@
     },
     {
      "id": "valvulas-cardiacas",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 2,
+     "total": 2,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "visao-audicao",
      "ficheiro": null,
      "pt": 0,
      "en": 2,
@@ -2635,17 +2727,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "destoxificacao-fase-i-ii",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
      "id": "doenca-arterial-periferica",
      "ficheiro": null,
      "pt": 1,
@@ -2734,7 +2815,29 @@
      "descarregados_en": 1
     },
     {
+     "id": "hipofise-eixo-hormonal",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 0
+    },
+    {
      "id": "histamina-mastocitos-ige",
+     "ficheiro": null,
+     "pt": 0,
+     "en": 1,
+     "total": 1,
+     "abertos_pt": 0,
+     "abertos_en": 0,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "humor-risco-depressao",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -2757,17 +2860,6 @@
     },
     {
      "id": "inflamacao-autoimunidade",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
-     "id": "inflamacao-senescencia-placa",
      "ficheiro": null,
      "pt": 0,
      "en": 1,
@@ -2921,17 +3013,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "pulmao-funcao-respiratoria",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 0,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
      "id": "relogio-epigenetico-idade-biologica",
      "ficheiro": null,
      "pt": 0,
@@ -2973,28 +3054,6 @@
      "abertos_pt": 0,
      "abertos_en": 1,
      "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
-     "id": "ritmo-circadiano-sono",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "sensibilidade-radiacao",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 0,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
      "descarregados_en": 0
     },
     {
@@ -3073,17 +3132,6 @@
      "abertos_en": 0,
      "descarregados_pt": 0,
      "descarregados_en": 1
-    },
-    {
-     "id": "visao-audicao",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
     }
    ],
    "aparelhos": [
@@ -3100,6 +3148,13 @@
      "nome": "Linux · Chrome",
      "estimativa": false,
      "visitas": 5
+    },
+    {
+     "id": "computador/windows-10-chrome",
+     "tipo": "computador",
+     "nome": "Windows 10 · Chrome",
+     "estimativa": false,
+     "visitas": 2
     },
     {
      "id": "computador/windows-10-11-chrome",
@@ -3165,13 +3220,6 @@
      "visitas": 1
     },
     {
-     "id": "computador/windows-10-chrome",
-     "tipo": "computador",
-     "nome": "Windows 10 · Chrome",
-     "estimativa": false,
-     "visitas": 1
-    },
-    {
      "id": "computador/windows-10-11-firefox",
      "tipo": "computador",
      "nome": "Windows 10/11 · Firefox",
@@ -3195,25 +3243,25 @@
    ],
    "aparelhos_desde": "2026-10-03",
    "total": {
-    "visitas": 29,
-    "visitas_30d": 29,
-    "visitas_90d": 29,
-    "aberturas_pdf": 175,
-    "visitas_hoje": 0,
-    "visitas_7d": 29,
-    "aberturas_hoje": 15,
-    "aberturas_7d": 175,
-    "aberturas_30d": 175,
-    "pdf_abertos": 66,
-    "pdf_descarregados": 109,
-    "pdf_pt": 49,
-    "pdf_en": 126
+    "visitas": 30,
+    "visitas_30d": 30,
+    "visitas_90d": 30,
+    "aberturas_pdf": 184,
+    "visitas_hoje": 1,
+    "visitas_7d": 30,
+    "aberturas_hoje": 24,
+    "aberturas_7d": 184,
+    "aberturas_30d": 184,
+    "pdf_abertos": 70,
+    "pdf_descarregados": 114,
+    "pdf_pt": 51,
+    "pdf_en": 133
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 167
+     "visitas": 177
     },
     {
      "id": "US",
