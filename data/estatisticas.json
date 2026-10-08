@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-08T07:50:18Z",
+ "atualizado_em": "2026-10-08T08:21:55Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 53,
   "visitas_30d": 53,
   "visitas_90d": 53,
-  "aberturas_pdf": 348,
+  "aberturas_pdf": 363,
   "visitas_hoje": 3,
   "visitas_7d": 53,
-  "aberturas_hoje": 162,
-  "aberturas_7d": 348,
-  "aberturas_30d": 348,
-  "pdf_abertos": 145,
-  "pdf_descarregados": 203,
-  "pdf_pt": 119,
-  "pdf_en": 229
+  "aberturas_hoje": 177,
+  "aberturas_7d": 363,
+  "aberturas_30d": 363,
+  "pdf_abertos": 150,
+  "pdf_descarregados": 213,
+  "pdf_pt": 125,
+  "pdf_en": 238
  },
  "dias": [
   {
@@ -57,7 +57,7 @@
   {
    "dia": "2026-10-08",
    "visitas": 3,
-   "aberturas": 162
+   "aberturas": 177
   }
  ],
  "paginas": [
@@ -143,6 +143,17 @@
    "total": 5,
    "abertos_pt": 0,
    "abertos_en": 3,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "anestesia-cirurgia",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 1
   },
@@ -312,17 +323,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "anestesia-cirurgia",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 1,
-   "total": 3,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
    "id": "ansiedade-resiliencia-stress",
    "ficheiro": null,
    "pt": 1,
@@ -368,6 +368,39 @@
   },
   {
    "id": "atencao-phda",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "audicao-zumbido",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "baco-sistema-linfatico",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "bexiga-funcao-urinaria",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -510,6 +543,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "doencas-autoimunes",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "dopamina-noradrenalina",
    "ficheiro": null,
    "pt": 1,
@@ -598,6 +642,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "gaba-glutamato",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "glicose-insulina-diabetes",
    "ficheiro": null,
    "pt": 1,
@@ -631,6 +686,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "hipoxia-altitude",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "histamina-mastocitos-ige",
    "ficheiro": null,
    "pt": 1,
@@ -643,6 +709,17 @@
   },
   {
    "id": "hormonas",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "humor-risco-depressao",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -873,6 +950,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "pulmao-funcao-respiratoria",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "reparacao-adn-estabilidade-genoma",
    "ficheiro": null,
    "pt": 1,
@@ -928,6 +1016,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "sensibilidade-radiacao",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "sensores-nutrientes-autofagia",
    "ficheiro": null,
    "pt": 1,
@@ -962,6 +1061,17 @@
   },
   {
    "id": "suprarrenais-cortisol",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "telomeros-senescencia-celular",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -1060,28 +1170,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "audicao-zumbido",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 2,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "baco-sistema-linfatico",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
    "id": "dermatite-seborreica-microbioma-pele",
    "ficheiro": null,
    "pt": 0,
@@ -1090,17 +1178,6 @@
    "abertos_pt": 0,
    "abertos_en": 1,
    "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "doencas-autoimunes",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
    "descarregados_en": 1
   },
   {
@@ -1127,17 +1204,6 @@
   },
   {
    "id": "ferro-metais",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "gaba-glutamato",
    "ficheiro": null,
    "pt": 1,
    "en": 1,
@@ -1247,17 +1313,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "pulmao-funcao-respiratoria",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "relogio-epigenetico-idade-biologica",
    "ficheiro": null,
    "pt": 0,
@@ -1280,7 +1335,7 @@
    "descarregados_en": 0
   },
   {
-   "id": "sensibilidade-radiacao",
+   "id": "saude-oral-dentes-periodontite",
    "ficheiro": null,
    "pt": 1,
    "en": 1,
@@ -1292,17 +1347,6 @@
   },
   {
    "id": "stress-oxidativo-defesa-antioxidante",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 2,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "telomeros-senescencia-celular",
    "ficheiro": null,
    "pt": 0,
    "en": 2,
@@ -1344,50 +1388,6 @@
    "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 1
-  },
-  {
-   "id": "bexiga-funcao-urinaria",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
-  },
-  {
-   "id": "hipoxia-altitude",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "humor-risco-depressao",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 0,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "saude-oral-dentes-periodontite",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 1,
-   "total": 1,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 0
   }
  ],
  "aparelhos": [
@@ -1522,7 +1522,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 317
+   "visitas": 332
   },
   {
    "id": "PT",
@@ -1569,7 +1569,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 371
+   "visitas": 386
   },
   {
    "id": "Firefox",
@@ -1586,12 +1586,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 221
+   "visitas": 230
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 144
+   "visitas": 150
   },
   {
    "id": "Android",
@@ -1633,14 +1633,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 347
+   "visitas": 362
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 391
+   "visitas": 406
   },
   {
    "id": "https://bing.com",
@@ -1968,7 +1968,7 @@
     {
      "dia": "2026-10-08",
      "visitas": 3,
-     "aberturas": 162
+     "aberturas": 177
     }
    ],
    "paginas": [
@@ -2109,6 +2109,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "anestesia-cirurgia",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "ansiedade-resiliencia-stress",
      "ficheiro": null,
      "pt": 1,
@@ -2143,6 +2154,39 @@
     },
     {
      "id": "atencao-phda",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "audicao-zumbido",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "baco-sistema-linfatico",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "bexiga-funcao-urinaria",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2296,6 +2340,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "doencas-autoimunes",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "doencas-geneticas-hereditarias",
      "ficheiro": null,
      "pt": 1,
@@ -2395,6 +2450,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "gaba-glutamato",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "glicose-insulina-diabetes",
      "ficheiro": null,
      "pt": 1,
@@ -2428,6 +2494,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "hipoxia-altitude",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "histamina-mastocitos-ige",
      "ficheiro": null,
      "pt": 1,
@@ -2440,6 +2517,17 @@
     },
     {
      "id": "hormonas",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "humor-risco-depressao",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2703,6 +2791,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "pulmao-funcao-respiratoria",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "reparacao-adn-estabilidade-genoma",
      "ficheiro": null,
      "pt": 1,
@@ -2780,6 +2879,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "sensibilidade-radiacao",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "sensores-nutrientes-autofagia",
      "ficheiro": null,
      "pt": 1,
@@ -2814,6 +2924,17 @@
     },
     {
      "id": "suprarrenais-cortisol",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "telomeros-senescencia-celular",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2912,17 +3033,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "anestesia-cirurgia",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
      "id": "apetite-saciedade-comportamento-alimentar",
      "ficheiro": null,
      "pt": 0,
@@ -2934,28 +3044,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "audicao-zumbido",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "baco-sistema-linfatico",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
      "id": "dermatite-seborreica-microbioma-pele",
      "ficheiro": null,
      "pt": 0,
@@ -2964,17 +3052,6 @@
      "abertos_pt": 0,
      "abertos_en": 1,
      "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "doencas-autoimunes",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
      "descarregados_en": 1
     },
     {
@@ -3030,17 +3107,6 @@
      "abertos_pt": 0,
      "abertos_en": 1,
      "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "gaba-glutamato",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
      "descarregados_en": 1
     },
     {
@@ -3154,17 +3220,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "pulmao-funcao-respiratoria",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "relogio-epigenetico-idade-biologica",
      "ficheiro": null,
      "pt": 0,
@@ -3187,7 +3242,7 @@
      "descarregados_en": 0
     },
     {
-     "id": "sensibilidade-radiacao",
+     "id": "saude-oral-dentes-periodontite",
      "ficheiro": null,
      "pt": 1,
      "en": 1,
@@ -3199,17 +3254,6 @@
     },
     {
      "id": "stress-oxidativo-defesa-antioxidante",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "telomeros-senescencia-celular",
      "ficheiro": null,
      "pt": 0,
      "en": 2,
@@ -3251,50 +3295,6 @@
      "abertos_en": 1,
      "descarregados_pt": 0,
      "descarregados_en": 1
-    },
-    {
-     "id": "bexiga-funcao-urinaria",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
-    },
-    {
-     "id": "hipoxia-altitude",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "humor-risco-depressao",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 0,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "saude-oral-dentes-periodontite",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 1,
-     "total": 1,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 0
     }
    ],
    "aparelhos": [
@@ -3409,22 +3409,22 @@
     "visitas": 32,
     "visitas_30d": 32,
     "visitas_90d": 32,
-    "aberturas_pdf": 322,
+    "aberturas_pdf": 337,
     "visitas_hoje": 3,
     "visitas_7d": 32,
-    "aberturas_hoje": 162,
-    "aberturas_7d": 322,
-    "aberturas_30d": 322,
-    "pdf_abertos": 119,
-    "pdf_descarregados": 203,
-    "pdf_pt": 95,
-    "pdf_en": 227
+    "aberturas_hoje": 177,
+    "aberturas_7d": 337,
+    "aberturas_30d": 337,
+    "pdf_abertos": 124,
+    "pdf_descarregados": 213,
+    "pdf_pt": 101,
+    "pdf_en": 236
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 317
+     "visitas": 332
     },
     {
      "id": "US",
