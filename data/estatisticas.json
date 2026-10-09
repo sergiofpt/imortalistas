@@ -1,15 +1,15 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-09T03:20:18Z",
+ "atualizado_em": "2026-10-09T15:19:32Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
-  "visitas": 53,
-  "visitas_30d": 53,
-  "visitas_90d": 53,
+  "visitas": 56,
+  "visitas_30d": 56,
+  "visitas_90d": 56,
   "aberturas_pdf": 365,
-  "visitas_hoje": 0,
-  "visitas_7d": 53,
+  "visitas_hoje": 3,
+  "visitas_7d": 56,
   "aberturas_hoje": 2,
   "aberturas_7d": 365,
   "aberturas_30d": 365,
@@ -61,7 +61,7 @@
   },
   {
    "dia": "2026-10-09",
-   "visitas": 0,
+   "visitas": 3,
    "aberturas": 2
   }
  ],
@@ -88,6 +88,10 @@
   },
   {
    "path": "/imortalistas/inicio.html",
+   "visitas": 3
+  },
+  {
+   "path": "/imortalistas/origem.html",
    "visitas": 3
   },
   {
@@ -1418,6 +1422,13 @@
    "visitas": 4
   },
   {
+   "id": "android/samsung-galaxy-a55",
+   "tipo": "android",
+   "nome": "Samsung Galaxy A55",
+   "estimativa": false,
+   "visitas": 4
+  },
+  {
    "id": "computador/windows-10-11-chrome",
    "tipo": "computador",
    "nome": "Windows 10/11 · Chrome",
@@ -1481,13 +1492,6 @@
    "visitas": 1
   },
   {
-   "id": "android/samsung-galaxy-a55",
-   "tipo": "android",
-   "nome": "Samsung Galaxy A55",
-   "estimativa": false,
-   "visitas": 1
-  },
-  {
    "id": "android/samsung-sm-a566b",
    "tipo": "android",
    "nome": "Samsung SM-A566B",
@@ -1532,7 +1536,7 @@
   {
    "id": "PT",
    "nome": "Portugal",
-   "visitas": 44
+   "visitas": 47
   },
   {
    "id": "US",
@@ -1574,7 +1578,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 388
+   "visitas": 391
   },
   {
    "id": "Firefox",
@@ -1601,7 +1605,7 @@
   {
    "id": "Android",
    "nome": "Android",
-   "visitas": 17
+   "visitas": 20
   },
   {
    "id": "Linux",
@@ -1623,7 +1627,7 @@
   {
    "id": "phone",
    "nome": "phone",
-   "visitas": 13
+   "visitas": 16
   },
   {
    "id": "tablet",
@@ -1645,7 +1649,7 @@
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 408
+   "visitas": 411
   },
   {
    "id": "https://bing.com",
@@ -1714,7 +1718,7 @@
     },
     {
      "dia": "2026-10-09",
-     "visitas": 0,
+     "visitas": 3,
      "aberturas": 0
     }
    ],
@@ -1722,6 +1726,10 @@
     {
      "path": "/imortalistas/teste-worker",
      "visitas": 5
+    },
+    {
+     "path": "/imortalistas/origem.html",
+     "visitas": 3
     },
     {
      "path": "/imortalistas/inicio.html",
@@ -1886,6 +1894,13 @@
    ],
    "aparelhos": [
     {
+     "id": "android/samsung-galaxy-a55",
+     "tipo": "android",
+     "nome": "Samsung Galaxy A55",
+     "estimativa": false,
+     "visitas": 4
+    },
+    {
      "id": "computador/linux-firefox",
      "tipo": "computador",
      "nome": "Linux · Firefox",
@@ -1905,23 +1920,16 @@
      "nome": "Android",
      "estimativa": false,
      "visitas": 1
-    },
-    {
-     "id": "android/samsung-galaxy-a55",
-     "tipo": "android",
-     "nome": "Samsung Galaxy A55",
-     "estimativa": false,
-     "visitas": 1
     }
    ],
    "aparelhos_desde": "2026-10-03",
    "total": {
-    "visitas": 7,
-    "visitas_30d": 7,
-    "visitas_90d": 7,
+    "visitas": 10,
+    "visitas_30d": 10,
+    "visitas_90d": 10,
     "aberturas_pdf": 15,
-    "visitas_hoje": 0,
-    "visitas_7d": 7,
+    "visitas_hoje": 3,
+    "visitas_7d": 10,
     "aberturas_hoje": 0,
     "aberturas_7d": 15,
     "aberturas_30d": 15,
@@ -1934,7 +1942,7 @@
     {
      "id": "PT",
      "nome": "Portugal",
-     "visitas": 44
+     "visitas": 47
     }
    ]
   },
