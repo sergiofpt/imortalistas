@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-09T20:21:51Z",
+ "atualizado_em": "2026-10-09T20:49:12Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
-  "visitas": 61,
-  "visitas_30d": 61,
-  "visitas_90d": 61,
-  "aberturas_pdf": 395,
-  "visitas_hoje": 8,
-  "visitas_7d": 61,
-  "aberturas_hoje": 32,
-  "aberturas_7d": 395,
-  "aberturas_30d": 395,
-  "pdf_abertos": 180,
+  "visitas": 62,
+  "visitas_30d": 62,
+  "visitas_90d": 62,
+  "aberturas_pdf": 398,
+  "visitas_hoje": 9,
+  "visitas_7d": 62,
+  "aberturas_hoje": 35,
+  "aberturas_7d": 398,
+  "aberturas_30d": 398,
+  "pdf_abertos": 183,
   "pdf_descarregados": 215,
-  "pdf_pt": 157,
+  "pdf_pt": 160,
   "pdf_en": 238
  },
  "dias": [
@@ -61,8 +61,8 @@
   },
   {
    "dia": "2026-10-09",
-   "visitas": 8,
-   "aberturas": 32
+   "visitas": 9,
+   "aberturas": 35
   }
  ],
  "paginas": [
@@ -104,6 +104,10 @@
   },
   {
    "path": "/imortalistas/suplementos.html",
+   "visitas": 1
+  },
+  {
+   "path": "/imortalistas/terapias.html",
    "visitas": 1
   },
   {
@@ -245,6 +249,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "celulas-estaminais-regeneracao",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "disruptores-endocrinos-poluentes",
    "ficheiro": null,
    "pt": 2,
@@ -268,6 +283,17 @@
   },
   {
    "id": "esofago",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "estado-portador",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -389,6 +415,17 @@
   },
   {
    "id": "pele-skin-care",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "pneumococo-imunossenescencia",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -663,17 +700,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "celulas-estaminais-regeneracao",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "cerebro-neurodegeneracao",
    "ficheiro": null,
    "pt": 1,
@@ -781,17 +807,6 @@
    "abertos_pt": 1,
    "abertos_en": 1,
    "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "estado-portador",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
    "descarregados_en": 1
   },
   {
@@ -1071,17 +1086,6 @@
   },
   {
    "id": "personalidade-tracos-psicologicos",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "pneumococo-imunossenescencia",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -1448,18 +1452,18 @@
    "visitas": 4
   },
   {
+   "id": "computador/windows-10-chrome",
+   "tipo": "computador",
+   "nome": "Windows 10 · Chrome",
+   "estimativa": false,
+   "visitas": 4
+  },
+  {
    "id": "computador/windows-10-11-chrome",
    "tipo": "computador",
    "nome": "Windows 10/11 · Chrome",
    "estimativa": false,
    "visitas": 4
-  },
-  {
-   "id": "computador/windows-10-chrome",
-   "tipo": "computador",
-   "nome": "Windows 10 · Chrome",
-   "estimativa": false,
-   "visitas": 3
   },
   {
    "id": "computador/windows-11-chrome",
@@ -1543,7 +1547,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 368
+   "visitas": 372
   },
   {
    "id": "PT",
@@ -1595,7 +1599,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 426
+   "visitas": 430
   },
   {
    "id": "Firefox",
@@ -1612,7 +1616,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 249
+   "visitas": 253
   },
   {
    "id": "macOS",
@@ -1654,19 +1658,19 @@
   {
    "id": "desktop",
    "nome": "desktop",
-   "visitas": 38
+   "visitas": 39
   },
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 394
+   "visitas": 397
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 445
+   "visitas": 449
   },
   {
    "id": "https://bing.com",
@@ -2012,8 +2016,8 @@
     },
     {
      "dia": "2026-10-09",
-     "visitas": 5,
-     "aberturas": 32
+     "visitas": 6,
+     "aberturas": 35
     }
    ],
    "paginas": [
@@ -2047,6 +2051,10 @@
     },
     {
      "path": "/imortalistas/suplementos.html",
+     "visitas": 1
+    },
+    {
+     "path": "/imortalistas/terapias.html",
      "visitas": 1
     },
     {
@@ -2133,6 +2141,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "celulas-estaminais-regeneracao",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "disruptores-endocrinos-poluentes",
      "ficheiro": null,
      "pt": 2,
@@ -2156,6 +2175,17 @@
     },
     {
      "id": "esofago",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "estado-portador",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -2233,6 +2263,17 @@
     },
     {
      "id": "pele-skin-care",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "pneumococo-imunossenescencia",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -2507,17 +2548,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "celulas-estaminais-regeneracao",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "cerebro-neurodegeneracao",
      "ficheiro": null,
      "pt": 1,
@@ -2636,17 +2666,6 @@
      "abertos_pt": 1,
      "abertos_en": 1,
      "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "estado-portador",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
      "descarregados_en": 1
     },
     {
@@ -2948,17 +2967,6 @@
     },
     {
      "id": "personalidade-tracos-psicologicos",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "pneumococo-imunossenescencia",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -3381,7 +3389,7 @@
      "tipo": "computador",
      "nome": "Windows 10 · Chrome",
      "estimativa": false,
-     "visitas": 3
+     "visitas": 4
     },
     {
      "id": "computador/windows-10-11-chrome",
@@ -3463,25 +3471,25 @@
    ],
    "aparelhos_desde": "2026-10-03",
    "total": {
-    "visitas": 37,
-    "visitas_30d": 37,
-    "visitas_90d": 37,
-    "aberturas_pdf": 369,
-    "visitas_hoje": 5,
-    "visitas_7d": 37,
-    "aberturas_hoje": 32,
-    "aberturas_7d": 369,
-    "aberturas_30d": 369,
-    "pdf_abertos": 154,
+    "visitas": 38,
+    "visitas_30d": 38,
+    "visitas_90d": 38,
+    "aberturas_pdf": 372,
+    "visitas_hoje": 6,
+    "visitas_7d": 38,
+    "aberturas_hoje": 35,
+    "aberturas_7d": 372,
+    "aberturas_30d": 372,
+    "pdf_abertos": 157,
     "pdf_descarregados": 215,
-    "pdf_pt": 133,
+    "pdf_pt": 136,
     "pdf_en": 236
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 368
+     "visitas": 372
     },
     {
      "id": "US",
