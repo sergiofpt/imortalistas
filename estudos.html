@@ -49,6 +49,15 @@ h1{margin:0 0 8px;font-size:28px;letter-spacing:-.3px}
 .study p{margin:0 0 10px}
 .study a{font-weight:600}
 .empty{color:var(--mut);padding:8px 0}
+.pager{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:16px 0 0}
+.pager[hidden]{display:none}
+.pager button{font:inherit;font-size:13.5px;padding:6px 11px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);cursor:pointer}
+.pager button:hover{background:var(--nab)}
+.pager button.on{background:var(--ink);color:var(--actfg);border-color:var(--ink)}
+.pager button:disabled{opacity:.45;cursor:default}
+.pager button:focus{outline:2px solid var(--acc);outline-offset:1px}
+.pager .gap{color:var(--mut);padding:0 2px}
+.pager .pstat{color:var(--mut);font-size:13px;margin-left:4px}
 html[data-theme="dark"]{color-scheme:dark;--bg:#0e141d;--card:#161e2a;--ink:#e5eaf1;--mut:#9aa7b8;--line:#2a3545;--acc:#7a9dff;--nab:#222b39;--head:rgba(16,22,32,.92);--actfg:#0e141d}
 html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 .tools{display:flex;align-items:center;gap:14px;margin-left:auto;flex:0 0 auto}
@@ -88,6 +97,7 @@ main a{color:var(--acc)}
 <span class="count" id="count"></span>
 </div>
 <div class="list" id="list"></div>
+<nav class="pager" id="pager" hidden aria-label="Páginas" data-al-en="Pages"></nav>
 </main>
 <script>
 let LANG='pt';try{if(localStorage.getItem('lang')==='en')LANG='en'}catch(e){}
@@ -153,7 +163,23 @@ function fillFilters(){if(!DATA)return;const en=LANG==='en',fy=document.getEleme
  fn.value=[...fn.options].some(o=>o.value===nv)?nv:'';
  fi.value=[...fi.options].some(o=>o.value===iv)?iv:'';
 }
-function render(){const list=document.getElementById('list'),count=document.getElementById('count'),en=LANG==='en';
+let PAGE=1;
+const PER=20;
+function pageItems(cur,total){const want=new Set([1,total,cur-1,cur,cur+1]);
+ const nums=[...want].filter(n=>n>=1&&n<=total).sort((a,b)=>a-b),out=[];
+ let prev=0;for(const n of nums){if(prev&&n-prev>1)out.push(0);out.push(n);prev=n}return out}
+function drawPager(pages){const pager=document.getElementById('pager'),en=LANG==='en';
+ pager.replaceChildren();
+ if(pages<=1){pager.hidden=true;return}
+ pager.hidden=false;
+ const btn=(label,dis,fn)=>{const b=document.createElement('button');b.type='button';b.textContent=label;b.disabled=dis;if(!dis)b.addEventListener('click',fn);return b};
+ const go=n=>{if(n===PAGE||n<1||n>pages)return;PAGE=n;render({scroll:true})};
+ pager.appendChild(btn(en?'Previous':'Anterior',PAGE<=1,()=>go(PAGE-1)));
+ for(const n of pageItems(PAGE,pages)){if(!n){const s=document.createElement('span');s.className='gap';s.setAttribute('aria-hidden','true');s.textContent='…';pager.appendChild(s);continue}
+  const b=btn(String(n),false,()=>go(n));if(n===PAGE){b.className='on';b.setAttribute('aria-current','page')}pager.appendChild(b)}
+ pager.appendChild(btn(en?'Next':'Seguinte',PAGE>=pages,()=>go(PAGE+1)));
+ const st=document.createElement('span');st.className='pstat';st.textContent=en?'Page '+PAGE+' of '+pages:'Página '+PAGE+' de '+pages;pager.appendChild(st)}
+function render(opt){const list=document.getElementById('list'),count=document.getElementById('count'),en=LANG==='en';
  if(!DATA){list.textContent='';return}
  const q=fold(document.getElementById('q').value.trim()),year=document.getElementById('fy').value,area=document.getElementById('fa').value,species=document.getElementById('fs').value,sample=document.getElementById('fn').value,iv=document.getElementById('fi').value;
  const all=DATA.estudos||[];
@@ -167,21 +193,27 @@ function render(){const list=document.getElementById('list'),count=document.getE
   const blob=[e.ano,whenText(e,false),whenText(e,true),specText(e,false),specText(e,true),sampleText(e,false),sampleText(e,true),ivText(e,false),ivText(e,true),areaText(e,false),areaText(e,true),e.titulo.pt,e.titulo.en,e.conclusao.pt,e.conclusao.en].join(' ');
   return fold(blob).includes(q)});
  count.textContent=en?(rows.length===all.length?all.length+' studies':rows.length+' of '+all.length+' studies'):(rows.length===all.length?all.length+' estudos':rows.length+' de '+all.length+' estudos');
+ const pages=Math.ceil(rows.length/PER)||1;
+ if(PAGE>pages)PAGE=pages;if(PAGE<1)PAGE=1;
+ const view=rows.slice((PAGE-1)*PER,PAGE*PER);
  list.replaceChildren();
- if(!rows.length){const p=document.createElement('p');p.className='empty';p.textContent=en?'No matching studies.':'Nenhum estudo corresponde.';list.appendChild(p);return}
+ if(!rows.length){const p=document.createElement('p');p.className='empty';p.textContent=en?'No matching studies.':'Nenhum estudo corresponde.';list.appendChild(p);drawPager(0);return}
  const linkLabel=en?'Paper':'Artigo';
- for(const e of rows){const art=document.createElement('article');art.className='study';
+ for(const e of view){const art=document.createElement('article');art.className='study';
   const h=document.createElement('h2');h.textContent=en?e.titulo.en:e.titulo.pt;art.appendChild(h);
   const y=document.createElement('p');y.className='ano';const bits=[whenText(e,en),specText(e,en),sampleText(e,en),ivText(e,en),areaText(e,en)].filter(Boolean);y.textContent=bits.join(' · ');art.appendChild(y);
   const c=document.createElement('p');c.textContent=en?e.conclusao.en:e.conclusao.pt;art.appendChild(c);
   const a=document.createElement('a');a.href=e.link;a.target='_blank';a.rel='noopener noreferrer';a.textContent=linkLabel;art.appendChild(a);
-  list.appendChild(art)}}
-document.getElementById('q').addEventListener('input',render);
-document.getElementById('fy').addEventListener('change',render);
-document.getElementById('fa').addEventListener('change',render);
-document.getElementById('fs').addEventListener('change',render);
-document.getElementById('fn').addEventListener('change',render);
-document.getElementById('fi').addEventListener('change',render);
+  list.appendChild(art)}
+ drawPager(rows.length?pages:0);
+ if(opt&&opt.scroll)list.scrollIntoView({block:'start'})}
+function onFilter(){PAGE=1;render()}
+document.getElementById('q').addEventListener('input',onFilter);
+document.getElementById('fy').addEventListener('change',onFilter);
+document.getElementById('fa').addEventListener('change',onFilter);
+document.getElementById('fs').addEventListener('change',onFilter);
+document.getElementById('fn').addEventListener('change',onFilter);
+document.getElementById('fi').addEventListener('change',onFilter);
 fetch('data/estudos.json').then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(d=>{DATA=d;applyLang()}).catch(()=>{document.getElementById('list').textContent=LANG==='en'?'Could not load the studies.':'Não foi possível ler os estudos.'});
 applyLang();
 </script>
