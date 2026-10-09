@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-09T17:17:49Z",
+ "atualizado_em": "2026-10-09T17:48:23Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
-  "visitas": 57,
-  "visitas_30d": 57,
-  "visitas_90d": 57,
-  "aberturas_pdf": 370,
-  "visitas_hoje": 4,
-  "visitas_7d": 57,
-  "aberturas_hoje": 7,
-  "aberturas_7d": 370,
-  "aberturas_30d": 370,
-  "pdf_abertos": 155,
+  "visitas": 59,
+  "visitas_30d": 59,
+  "visitas_90d": 59,
+  "aberturas_pdf": 377,
+  "visitas_hoje": 6,
+  "visitas_7d": 59,
+  "aberturas_hoje": 14,
+  "aberturas_7d": 377,
+  "aberturas_30d": 377,
+  "pdf_abertos": 162,
   "pdf_descarregados": 215,
-  "pdf_pt": 132,
+  "pdf_pt": 139,
   "pdf_en": 238
  },
  "dias": [
@@ -61,8 +61,8 @@
   },
   {
    "dia": "2026-10-09",
-   "visitas": 4,
-   "aberturas": 7
+   "visitas": 6,
+   "aberturas": 14
   }
  ],
  "paginas": [
@@ -97,6 +97,14 @@
   {
    "path": "/imortalistas/index.html",
    "visitas": 2
+  },
+  {
+   "path": "/imortalistas/pele-cabelo.html",
+   "visitas": 1
+  },
+  {
+   "path": "/imortalistas/suplementos.html",
+   "visitas": 1
   }
  ],
  "relatorios": [
@@ -112,6 +120,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "cancros-um-a-um",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 3,
+   "total": 6,
+   "abertos_pt": 2,
+   "abertos_en": 2,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "avc-pequenos-vasos-cerebrais",
    "ficheiro": null,
    "pt": 2,
@@ -121,17 +140,6 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 2
-  },
-  {
-   "id": "cancros-um-a-um",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 3,
-   "total": 5,
-   "abertos_pt": 1,
-   "abertos_en": 2,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
   },
   {
    "id": "doencas-geneticas-hereditarias",
@@ -178,7 +186,40 @@
    "descarregados_en": 1
   },
   {
+   "id": "apetite-saciedade-comportamento-alimentar",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "cartao-farmacogenetico",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "doencas-autoimunes",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "esofago",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -256,6 +297,17 @@
   },
   {
    "id": "metilacao-homocisteina-colina",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "oxido-nitrico-endotelio",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -395,17 +447,6 @@
    "abertos_pt": 0,
    "abertos_en": 1,
    "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "apetite-saciedade-comportamento-alimentar",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -596,17 +637,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "doencas-autoimunes",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "dopamina-noradrenalina",
    "ficheiro": null,
    "pt": 1,
@@ -640,14 +670,14 @@
    "descarregados_en": 1
   },
   {
-   "id": "esofago",
+   "id": "epilepsia-excitabilidade-neuronal",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
    "total": 3,
-   "abertos_pt": 0,
+   "abertos_pt": 1,
    "abertos_en": 1,
-   "descarregados_pt": 1,
+   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -736,6 +766,17 @@
    "abertos_pt": 0,
    "abertos_en": 1,
    "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "hipertensao-pulmonar-circulacao-pulmao",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -861,17 +902,6 @@
   },
   {
    "id": "olhos-em-detalhe",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "oxido-nitrico-endotelio",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -1212,17 +1242,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "epilepsia-excitabilidade-neuronal",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 2,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "estomago-refluxo-helicobacter",
    "ficheiro": null,
    "pt": 0,
@@ -1246,17 +1265,6 @@
   },
   {
    "id": "gordura-inflamatoria-lipolise",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 2,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "hipertensao-pulmonar-circulacao-pulmao",
    "ficheiro": null,
    "pt": 0,
    "en": 2,
@@ -1415,6 +1423,13 @@
    "visitas": 7
   },
   {
+   "id": "computador/mac-chrome",
+   "tipo": "computador",
+   "nome": "Mac · Chrome",
+   "estimativa": false,
+   "visitas": 5
+  },
+  {
    "id": "computador/linux-firefox",
    "tipo": "computador",
    "nome": "Linux · Firefox",
@@ -1434,13 +1449,6 @@
    "nome": "Windows 10/11 · Chrome",
    "estimativa": false,
    "visitas": 4
-  },
-  {
-   "id": "computador/mac-chrome",
-   "tipo": "computador",
-   "nome": "Mac · Chrome",
-   "estimativa": false,
-   "visitas": 3
   },
   {
    "id": "computador/windows-10-chrome",
@@ -1531,7 +1539,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 339
+   "visitas": 348
   },
   {
    "id": "PT",
@@ -1583,7 +1591,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 397
+   "visitas": 406
   },
   {
    "id": "Firefox",
@@ -1600,12 +1608,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 234
+   "visitas": 238
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 153
+   "visitas": 158
   },
   {
    "id": "Android",
@@ -1642,19 +1650,19 @@
   {
    "id": "desktop",
    "nome": "desktop",
-   "visitas": 34
+   "visitas": 36
   },
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 369
+   "visitas": 376
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 416
+   "visitas": 425
   },
   {
    "id": "https://bing.com",
@@ -2000,8 +2008,8 @@
     },
     {
      "dia": "2026-10-09",
-     "visitas": 1,
-     "aberturas": 7
+     "visitas": 3,
+     "aberturas": 14
     }
    ],
    "paginas": [
@@ -2028,9 +2036,28 @@
     {
      "path": "/imortalistas/index.html",
      "visitas": 1
+    },
+    {
+     "path": "/imortalistas/pele-cabelo.html",
+     "visitas": 1
+    },
+    {
+     "path": "/imortalistas/suplementos.html",
+     "visitas": 1
     }
    ],
    "relatorios": [
+    {
+     "id": "cancros-um-a-um",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 3,
+     "total": 5,
+     "abertos_pt": 1,
+     "abertos_en": 2,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
     {
      "id": "nariz-seios-perinasais",
      "ficheiro": null,
@@ -2065,13 +2092,24 @@
      "descarregados_en": 2
     },
     {
-     "id": "cancros-um-a-um",
+     "id": "doencas-autoimunes",
      "ficheiro": null,
-     "pt": 1,
-     "en": 3,
+     "pt": 2,
+     "en": 2,
      "total": 4,
-     "abertos_pt": 0,
-     "abertos_en": 2,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "esofago",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 1
     },
@@ -2105,6 +2143,17 @@
      "total": 4,
      "abertos_pt": 0,
      "abertos_en": 2,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "oxido-nitrico-endotelio",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 1
     },
@@ -2216,6 +2265,17 @@
      "abertos_pt": 0,
      "abertos_en": 1,
      "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "apetite-saciedade-comportamento-alimentar",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
      "descarregados_en": 1
     },
     {
@@ -2417,17 +2477,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "doencas-autoimunes",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "doencas-geneticas-hereditarias",
      "ficheiro": null,
      "pt": 1,
@@ -2472,14 +2521,14 @@
      "descarregados_en": 1
     },
     {
-     "id": "esofago",
+     "id": "epilepsia-excitabilidade-neuronal",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
      "total": 3,
-     "abertos_pt": 0,
+     "abertos_pt": 1,
      "abertos_en": 1,
-     "descarregados_pt": 1,
+     "descarregados_pt": 0,
      "descarregados_en": 1
     },
     {
@@ -2568,6 +2617,17 @@
      "abertos_pt": 0,
      "abertos_en": 1,
      "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "hipertensao-pulmonar-circulacao-pulmao",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
      "descarregados_en": 1
     },
     {
@@ -2715,17 +2775,6 @@
     },
     {
      "id": "olhos-em-detalhe",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "oxido-nitrico-endotelio",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -3088,29 +3137,7 @@
      "descarregados_en": 1
     },
     {
-     "id": "apetite-saciedade-comportamento-alimentar",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "dermatite-seborreica-microbioma-pele",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "epilepsia-excitabilidade-neuronal",
      "ficheiro": null,
      "pt": 0,
      "en": 2,
@@ -3166,17 +3193,6 @@
     },
     {
      "id": "gordura-inflamatoria-lipolise",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "hipertensao-pulmonar-circulacao-pulmao",
      "ficheiro": null,
      "pt": 0,
      "en": 2,
@@ -3350,7 +3366,7 @@
      "tipo": "computador",
      "nome": "Mac · Chrome",
      "estimativa": false,
-     "visitas": 3
+     "visitas": 5
     },
     {
      "id": "computador/windows-10-chrome",
@@ -3439,25 +3455,25 @@
    ],
    "aparelhos_desde": "2026-10-03",
    "total": {
-    "visitas": 33,
-    "visitas_30d": 33,
-    "visitas_90d": 33,
-    "aberturas_pdf": 344,
-    "visitas_hoje": 1,
-    "visitas_7d": 33,
-    "aberturas_hoje": 7,
-    "aberturas_7d": 344,
-    "aberturas_30d": 344,
-    "pdf_abertos": 129,
+    "visitas": 35,
+    "visitas_30d": 35,
+    "visitas_90d": 35,
+    "aberturas_pdf": 351,
+    "visitas_hoje": 3,
+    "visitas_7d": 35,
+    "aberturas_hoje": 14,
+    "aberturas_7d": 351,
+    "aberturas_30d": 351,
+    "pdf_abertos": 136,
     "pdf_descarregados": 215,
-    "pdf_pt": 108,
+    "pdf_pt": 115,
     "pdf_en": 236
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 339
+     "visitas": 348
     },
     {
      "id": "US",
