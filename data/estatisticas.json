@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-09T22:48:22Z",
+ "atualizado_em": "2026-10-09T23:17:23Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 62,
   "visitas_30d": 62,
   "visitas_90d": 62,
-  "aberturas_pdf": 405,
+  "aberturas_pdf": 407,
   "visitas_hoje": 9,
   "visitas_7d": 62,
-  "aberturas_hoje": 42,
-  "aberturas_7d": 405,
-  "aberturas_30d": 405,
-  "pdf_abertos": 190,
+  "aberturas_hoje": 43,
+  "aberturas_7d": 406,
+  "aberturas_30d": 406,
+  "pdf_abertos": 192,
   "pdf_descarregados": 215,
-  "pdf_pt": 167,
+  "pdf_pt": 169,
   "pdf_en": 238
  },
  "dias": [
@@ -62,7 +62,7 @@
   {
    "dia": "2026-10-09",
    "visitas": 9,
-   "aberturas": 42
+   "aberturas": 43
   }
  ],
  "paginas": [
@@ -448,6 +448,17 @@
   },
   {
    "id": "metilacao-homocisteina-colina",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "microbioma-intestino",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -1041,17 +1052,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "microbioma-intestino",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "olhos-em-detalhe",
    "ficheiro": null,
    "pt": 1,
@@ -1261,6 +1261,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "unhas-cicatrizacao-inflamacao-pele",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "velocidade-processamento-tempo-reacao",
    "ficheiro": null,
    "pt": 1,
@@ -1383,17 +1394,6 @@
   },
   {
    "id": "stress-oxidativo-defesa-antioxidante",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 2,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "unhas-cicatrizacao-inflamacao-pele",
    "ficheiro": null,
    "pt": 0,
    "en": 2,
@@ -1547,7 +1547,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 379
+   "visitas": 381
   },
   {
    "id": "PT",
@@ -1599,7 +1599,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 437
+   "visitas": 439
   },
   {
    "id": "Firefox",
@@ -1616,7 +1616,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 258
+   "visitas": 260
   },
   {
    "id": "macOS",
@@ -1663,14 +1663,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 404
+   "visitas": 406
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 456
+   "visitas": 458
   },
   {
    "id": "https://bing.com",
@@ -2017,7 +2017,7 @@
     {
      "dia": "2026-10-09",
      "visitas": 6,
-     "aberturas": 42
+     "aberturas": 43
     }
    ],
    "paginas": [
@@ -2296,6 +2296,17 @@
     },
     {
      "id": "lipidos-detalhe",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "microbioma-intestino",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -2922,17 +2933,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "microbioma-intestino",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "olhos-em-detalhe",
      "ficheiro": null,
      "pt": 1,
@@ -3175,6 +3175,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "unhas-cicatrizacao-inflamacao-pele",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "velocidade-processamento-tempo-reacao",
      "ficheiro": null,
      "pt": 1,
@@ -3340,17 +3351,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "unhas-cicatrizacao-inflamacao-pele",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "visao-audicao",
      "ficheiro": null,
      "pt": 0,
@@ -3474,22 +3474,22 @@
     "visitas": 38,
     "visitas_30d": 38,
     "visitas_90d": 38,
-    "aberturas_pdf": 379,
+    "aberturas_pdf": 381,
     "visitas_hoje": 6,
     "visitas_7d": 38,
-    "aberturas_hoje": 42,
-    "aberturas_7d": 379,
-    "aberturas_30d": 379,
-    "pdf_abertos": 164,
+    "aberturas_hoje": 43,
+    "aberturas_7d": 380,
+    "aberturas_30d": 380,
+    "pdf_abertos": 166,
     "pdf_descarregados": 215,
-    "pdf_pt": 143,
+    "pdf_pt": 145,
     "pdf_en": 236
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 379
+     "visitas": 381
     },
     {
      "id": "US",
