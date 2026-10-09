@@ -82,6 +82,8 @@ main a{color:var(--acc)}
 <select id="fs"></select></label>
 <label for="fn"><span data-en="Sample">Amostra</span>
 <select id="fn"></select></label>
+<label for="fi"><span data-en="Intervention">Intervenção</span>
+<select id="fi"></select></label>
 <input id="q" type="search" autocomplete="off" spellcheck="false" data-ph-pt="Título ou conclusão" data-ph-en="Title or conclusion" aria-label="Pesquisar" data-al-en="Search">
 <span class="count" id="count"></span>
 </div>
@@ -112,6 +114,9 @@ function whenText(e,en){const m=e.mes;return (m>=1&&m<=12)?MES[en?'en':'pt'][m]+
 function areaText(e,en){return (e.areas||[]).map(id=>{const a=areaBy(id);return a?a[en?'en':'pt']:''}).filter(Boolean).join(' · ')}
 function specText(e,en){return e.especie==='animal'?(en?'Animal':'Animais'):(en?'Human':'Humanos')}
 function sampleText(e,en){return e.amostra==='relevante'?(en?'Relevant sample':'Amostra relevante'):e.amostra==='pequena'?(en?'Small sample':'Amostra pequena'):''}
+const IV=[{id:'farmaco',pt:'Fármacos',en:'Drugs'},{id:'suplemento',pt:'Suplementos',en:'Supplements'},{id:'estilo',pt:'Estilo de vida',en:'Lifestyle'},{id:'outra',pt:'Outras',en:'Other'}];
+function ivBy(id){return IV.find(a=>a.id===id)}
+function ivText(e,en){return (e.intervencao||[]).map(id=>{const a=ivBy(id);return a?a[en?'en':'pt']:''}).filter(Boolean).join(' · ')}
 function applyLang(){const en=LANG==='en';document.documentElement.lang=en?'en':'pt-PT';document.title=en?document.body.dataset.titleEn:document.body.dataset.titlePt;
  document.querySelectorAll('[data-en]').forEach(el=>{if(!el.hasAttribute('data-pt'))el.setAttribute('data-pt',el.textContent);el.textContent=en?el.dataset.en:el.dataset.pt});
  document.querySelectorAll('[data-al-en]').forEach(el=>{if(!el.hasAttribute('data-al-pt'))el.setAttribute('data-al-pt',el.getAttribute('aria-label'));el.setAttribute('aria-label',en?el.dataset.alEn:el.dataset.alPt)});
@@ -125,11 +130,11 @@ function applyTheme(){const t=curTheme();document.documentElement.setAttribute('
 document.querySelectorAll('#theme button').forEach(b=>b.addEventListener('click',()=>{THEME=b.dataset.t;try{localStorage.setItem('theme',THEME)}catch(e){}applyTheme()}));
 applyTheme();
 function opt(sel,value,label){const o=document.createElement('option');o.value=value;o.textContent=label;sel.appendChild(o)}
-function fillFilters(){if(!DATA)return;const en=LANG==='en',fy=document.getElementById('fy'),fa=document.getElementById('fa'),fs=document.getElementById('fs'),fn=document.getElementById('fn');
- const yv=fy.value,av=fa.value,sv=fs.value,nv=fn.value,all=DATA.estudos||[];
+function fillFilters(){if(!DATA)return;const en=LANG==='en',fy=document.getElementById('fy'),fa=document.getElementById('fa'),fs=document.getElementById('fs'),fn=document.getElementById('fn'),fi=document.getElementById('fi');
+ const yv=fy.value,av=fa.value,sv=fs.value,nv=fn.value,iv=fi.value,all=DATA.estudos||[];
  const years=[...new Set(all.map(e=>e.ano))].filter(Boolean).sort((a,b)=>b-a);
  const used=new Set(all.flatMap(e=>e.areas||[]));
- fy.replaceChildren();fa.replaceChildren();fs.replaceChildren();fn.replaceChildren();
+ fy.replaceChildren();fa.replaceChildren();fs.replaceChildren();fn.replaceChildren();fi.replaceChildren();
  opt(fy,'',en?'All years':'Todos os anos');
  years.forEach(y=>opt(fy,String(y),String(y)));
  opt(fa,'',en?'All areas':'Todas as áreas');
@@ -140,22 +145,26 @@ function fillFilters(){if(!DATA)return;const en=LANG==='en',fy=document.getEleme
  opt(fn,'',en?'All samples':'Todas as amostras');
  opt(fn,'relevante',en?'Relevant sample':'Amostra relevante');
  opt(fn,'pequena',en?'Small sample':'Amostra pequena');
+ opt(fi,'',en?'All':'Todas');
+ IV.forEach(a=>opt(fi,a.id,en?a.en:a.pt));
  fy.value=[...fy.options].some(o=>o.value===yv)?yv:'';
  fa.value=[...fa.options].some(o=>o.value===av)?av:'';
  fs.value=[...fs.options].some(o=>o.value===sv)?sv:'';
  fn.value=[...fn.options].some(o=>o.value===nv)?nv:'';
+ fi.value=[...fi.options].some(o=>o.value===iv)?iv:'';
 }
 function render(){const list=document.getElementById('list'),count=document.getElementById('count'),en=LANG==='en';
  if(!DATA){list.textContent='';return}
- const q=fold(document.getElementById('q').value.trim()),year=document.getElementById('fy').value,area=document.getElementById('fa').value,species=document.getElementById('fs').value,sample=document.getElementById('fn').value;
+ const q=fold(document.getElementById('q').value.trim()),year=document.getElementById('fy').value,area=document.getElementById('fa').value,species=document.getElementById('fs').value,sample=document.getElementById('fn').value,iv=document.getElementById('fi').value;
  const all=DATA.estudos||[];
  const rows=all.filter(e=>{
   if(year&&String(e.ano)!==year)return false;
   if(area&&!(e.areas||[]).includes(area))return false;
   if(species&&e.especie!==species)return false;
   if(sample&&e.amostra!==sample)return false;
+  if(iv&&!(e.intervencao||[]).includes(iv))return false;
   if(!q)return true;
-  const blob=[e.ano,whenText(e,false),whenText(e,true),specText(e,false),specText(e,true),sampleText(e,false),sampleText(e,true),areaText(e,false),areaText(e,true),e.titulo.pt,e.titulo.en,e.conclusao.pt,e.conclusao.en].join(' ');
+  const blob=[e.ano,whenText(e,false),whenText(e,true),specText(e,false),specText(e,true),sampleText(e,false),sampleText(e,true),ivText(e,false),ivText(e,true),areaText(e,false),areaText(e,true),e.titulo.pt,e.titulo.en,e.conclusao.pt,e.conclusao.en].join(' ');
   return fold(blob).includes(q)});
  count.textContent=en?(rows.length===all.length?all.length+' studies':rows.length+' of '+all.length+' studies'):(rows.length===all.length?all.length+' estudos':rows.length+' de '+all.length+' estudos');
  list.replaceChildren();
@@ -163,7 +172,7 @@ function render(){const list=document.getElementById('list'),count=document.getE
  const linkLabel=en?'Paper':'Artigo';
  for(const e of rows){const art=document.createElement('article');art.className='study';
   const h=document.createElement('h2');h.textContent=en?e.titulo.en:e.titulo.pt;art.appendChild(h);
-  const y=document.createElement('p');y.className='ano';const bits=[whenText(e,en),specText(e,en),sampleText(e,en),areaText(e,en)].filter(Boolean);y.textContent=bits.join(' · ');art.appendChild(y);
+  const y=document.createElement('p');y.className='ano';const bits=[whenText(e,en),specText(e,en),sampleText(e,en),ivText(e,en),areaText(e,en)].filter(Boolean);y.textContent=bits.join(' · ');art.appendChild(y);
   const c=document.createElement('p');c.textContent=en?e.conclusao.en:e.conclusao.pt;art.appendChild(c);
   const a=document.createElement('a');a.href=e.link;a.target='_blank';a.rel='noopener noreferrer';a.textContent=linkLabel;art.appendChild(a);
   list.appendChild(art)}}
@@ -172,6 +181,7 @@ document.getElementById('fy').addEventListener('change',render);
 document.getElementById('fa').addEventListener('change',render);
 document.getElementById('fs').addEventListener('change',render);
 document.getElementById('fn').addEventListener('change',render);
+document.getElementById('fi').addEventListener('change',render);
 fetch('data/estudos.json').then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(d=>{DATA=d;applyLang()}).catch(()=>{document.getElementById('list').textContent=LANG==='en'?'Could not load the studies.':'Não foi possível ler os estudos.'});
 applyLang();
 </script>
