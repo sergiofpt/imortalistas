@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-09T19:18:00Z",
+ "atualizado_em": "2026-10-09T19:46:59Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 60,
   "visitas_30d": 60,
   "visitas_90d": 60,
-  "aberturas_pdf": 391,
+  "aberturas_pdf": 395,
   "visitas_hoje": 7,
   "visitas_7d": 60,
-  "aberturas_hoje": 28,
-  "aberturas_7d": 391,
-  "aberturas_30d": 391,
-  "pdf_abertos": 176,
+  "aberturas_hoje": 32,
+  "aberturas_7d": 395,
+  "aberturas_30d": 395,
+  "pdf_abertos": 180,
   "pdf_descarregados": 215,
-  "pdf_pt": 153,
+  "pdf_pt": 157,
   "pdf_en": 238
  },
  "dias": [
@@ -62,7 +62,7 @@
   {
    "dia": "2026-10-09",
    "visitas": 7,
-   "aberturas": 28
+   "aberturas": 32
   }
  ],
  "paginas": [
@@ -131,6 +131,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "referencia-via-forca-hipertrofia-potencia",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 4,
+   "total": 6,
+   "abertos_pt": 1,
+   "abertos_en": 3,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "avc-pequenos-vasos-cerebrais",
    "ficheiro": null,
    "pt": 2,
@@ -164,13 +175,13 @@
    "descarregados_en": 1
   },
   {
-   "id": "referencia-via-forca-hipertrofia-potencia",
+   "id": "alergias-asma-atopia",
    "ficheiro": null,
-   "pt": 1,
-   "en": 4,
-   "total": 5,
-   "abertos_pt": 0,
-   "abertos_en": 3,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 1
   },
@@ -198,6 +209,17 @@
   },
   {
    "id": "bexiga-funcao-urinaria",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "cardiovascular-avancado",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -319,6 +341,17 @@
   },
   {
    "id": "intolerancias-alimentares-626",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "lipidos-detalhe",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -505,17 +538,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "alergias-asma-atopia",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "alimentos-longevidade-173",
    "ficheiro": null,
    "pt": 1,
@@ -627,17 +649,6 @@
   },
   {
    "id": "capacidade-cognitiva-plasticidade",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "cardiovascular-avancado",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -946,17 +957,6 @@
   },
   {
    "id": "laringe-voz",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "lipidos-detalhe",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -1539,7 +1539,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 363
+   "visitas": 367
   },
   {
    "id": "PT",
@@ -1591,7 +1591,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 421
+   "visitas": 425
   },
   {
    "id": "Firefox",
@@ -1608,7 +1608,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 245
+   "visitas": 249
   },
   {
    "id": "macOS",
@@ -1655,14 +1655,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 390
+   "visitas": 394
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 440
+   "visitas": 444
   },
   {
    "id": "https://bing.com",
@@ -2009,7 +2009,7 @@
     {
      "dia": "2026-10-09",
      "visitas": 4,
-     "aberturas": 28
+     "aberturas": 32
     }
    ],
    "paginas": [
@@ -2048,6 +2048,17 @@
    ],
    "relatorios": [
     {
+     "id": "referencia-via-forca-hipertrofia-potencia",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 4,
+     "total": 6,
+     "abertos_pt": 1,
+     "abertos_en": 3,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "cancros-um-a-um",
      "ficheiro": null,
      "pt": 2,
@@ -2070,13 +2081,13 @@
      "descarregados_en": 1
     },
     {
-     "id": "referencia-via-forca-hipertrofia-potencia",
+     "id": "alergias-asma-atopia",
      "ficheiro": null,
-     "pt": 1,
-     "en": 4,
-     "total": 5,
-     "abertos_pt": 0,
-     "abertos_en": 3,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 1
     },
@@ -2093,6 +2104,17 @@
     },
     {
      "id": "bexiga-funcao-urinaria",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "cardiovascular-avancado",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -2176,6 +2198,17 @@
      "total": 4,
      "abertos_pt": 0,
      "abertos_en": 2,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "lipidos-detalhe",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 1
     },
@@ -2302,17 +2335,6 @@
     },
     {
      "id": "acne-glandulas-sebaceas",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "alergias-asma-atopia",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2456,17 +2478,6 @@
     },
     {
      "id": "capacidade-cognitiva-plasticidade",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "cardiovascular-avancado",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2819,17 +2830,6 @@
     },
     {
      "id": "laringe-voz",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "lipidos-detalhe",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -3458,22 +3458,22 @@
     "visitas": 36,
     "visitas_30d": 36,
     "visitas_90d": 36,
-    "aberturas_pdf": 365,
+    "aberturas_pdf": 369,
     "visitas_hoje": 4,
     "visitas_7d": 36,
-    "aberturas_hoje": 28,
-    "aberturas_7d": 365,
-    "aberturas_30d": 365,
-    "pdf_abertos": 150,
+    "aberturas_hoje": 32,
+    "aberturas_7d": 369,
+    "aberturas_30d": 369,
+    "pdf_abertos": 154,
     "pdf_descarregados": 215,
-    "pdf_pt": 129,
+    "pdf_pt": 133,
     "pdf_en": 236
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 363
+     "visitas": 367
     },
     {
      "id": "US",
