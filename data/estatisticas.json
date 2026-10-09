@@ -1,15 +1,15 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-09T19:46:59Z",
+ "atualizado_em": "2026-10-09T20:21:51Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
-  "visitas": 60,
-  "visitas_30d": 60,
-  "visitas_90d": 60,
+  "visitas": 61,
+  "visitas_30d": 61,
+  "visitas_90d": 61,
   "aberturas_pdf": 395,
-  "visitas_hoje": 7,
-  "visitas_7d": 60,
+  "visitas_hoje": 8,
+  "visitas_7d": 61,
   "aberturas_hoje": 32,
   "aberturas_7d": 395,
   "aberturas_30d": 395,
@@ -61,7 +61,7 @@
   },
   {
    "dia": "2026-10-09",
-   "visitas": 7,
+   "visitas": 8,
    "aberturas": 32
   }
  ],
@@ -104,6 +104,10 @@
   },
   {
    "path": "/imortalistas/suplementos.html",
+   "visitas": 1
+  },
+  {
+   "path": "/imortalistas/treino.html",
    "visitas": 1
   }
  ],
@@ -1427,7 +1431,7 @@
    "tipo": "computador",
    "nome": "Mac · Chrome",
    "estimativa": false,
-   "visitas": 5
+   "visitas": 6
   },
   {
    "id": "computador/linux-firefox",
@@ -1539,7 +1543,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 367
+   "visitas": 368
   },
   {
    "id": "PT",
@@ -1591,7 +1595,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 425
+   "visitas": 426
   },
   {
    "id": "Firefox",
@@ -1613,7 +1617,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 166
+   "visitas": 167
   },
   {
    "id": "Android",
@@ -1650,7 +1654,7 @@
   {
    "id": "desktop",
    "nome": "desktop",
-   "visitas": 37
+   "visitas": 38
   },
   {
    "id": "unknown",
@@ -1662,7 +1666,7 @@
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 444
+   "visitas": 445
   },
   {
    "id": "https://bing.com",
@@ -2008,7 +2012,7 @@
     },
     {
      "dia": "2026-10-09",
-     "visitas": 4,
+     "visitas": 5,
      "aberturas": 32
     }
    ],
@@ -2043,6 +2047,10 @@
     },
     {
      "path": "/imortalistas/suplementos.html",
+     "visitas": 1
+    },
+    {
+     "path": "/imortalistas/treino.html",
      "visitas": 1
     }
    ],
@@ -3366,7 +3374,7 @@
      "tipo": "computador",
      "nome": "Mac · Chrome",
      "estimativa": false,
-     "visitas": 5
+     "visitas": 6
     },
     {
      "id": "computador/windows-10-chrome",
@@ -3455,12 +3463,12 @@
    ],
    "aparelhos_desde": "2026-10-03",
    "total": {
-    "visitas": 36,
-    "visitas_30d": 36,
-    "visitas_90d": 36,
+    "visitas": 37,
+    "visitas_30d": 37,
+    "visitas_90d": 37,
     "aberturas_pdf": 369,
-    "visitas_hoje": 4,
-    "visitas_7d": 36,
+    "visitas_hoje": 5,
+    "visitas_7d": 37,
     "aberturas_hoje": 32,
     "aberturas_7d": 369,
     "aberturas_30d": 369,
@@ -3473,7 +3481,7 @@
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 367
+     "visitas": 368
     },
     {
      "id": "US",
