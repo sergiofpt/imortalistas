@@ -1,15 +1,15 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-09T15:19:32Z",
+ "atualizado_em": "2026-10-09T15:51:02Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
-  "visitas": 56,
-  "visitas_30d": 56,
-  "visitas_90d": 56,
+  "visitas": 57,
+  "visitas_30d": 57,
+  "visitas_90d": 57,
   "aberturas_pdf": 365,
-  "visitas_hoje": 3,
-  "visitas_7d": 56,
+  "visitas_hoje": 4,
+  "visitas_7d": 57,
   "aberturas_hoje": 2,
   "aberturas_7d": 365,
   "aberturas_30d": 365,
@@ -61,7 +61,7 @@
   },
   {
    "dia": "2026-10-09",
-   "visitas": 3,
+   "visitas": 4,
    "aberturas": 2
   }
  ],
@@ -79,15 +79,15 @@
    "visitas": 5
   },
   {
+   "path": "/imortalistas/inicio.html",
+   "visitas": 4
+  },
+  {
    "path": "/imortalistas/genetica-boa.html",
    "visitas": 3
   },
   {
    "path": "/imortalistas/genetica.html",
-   "visitas": 3
-  },
-  {
-   "path": "/imortalistas/inicio.html",
    "visitas": 3
   },
   {
@@ -1401,18 +1401,18 @@
  ],
  "aparelhos": [
   {
+   "id": "computador/linux-chrome",
+   "tipo": "computador",
+   "nome": "Linux · Chrome",
+   "estimativa": false,
+   "visitas": 7
+  },
+  {
    "id": "android/samsung-galaxy-s24",
    "tipo": "android",
    "nome": "Samsung Galaxy S24",
    "estimativa": false,
    "visitas": 7
-  },
-  {
-   "id": "computador/linux-chrome",
-   "tipo": "computador",
-   "nome": "Linux · Chrome",
-   "estimativa": false,
-   "visitas": 6
   },
   {
    "id": "computador/linux-firefox",
@@ -1572,13 +1572,18 @@
    "id": "PL",
    "nome": "Poland",
    "visitas": 1
+  },
+  {
+   "id": "RU",
+   "nome": "Russia",
+   "visitas": 1
   }
  ],
  "browsers": [
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 391
+   "visitas": 392
   },
   {
    "id": "Firefox",
@@ -1610,7 +1615,7 @@
   {
    "id": "Linux",
    "nome": "Linux",
-   "visitas": 15
+   "visitas": 16
   },
   {
    "id": "Chrome OS",
@@ -1632,7 +1637,7 @@
   {
    "id": "tablet",
    "nome": "tablet",
-   "visitas": 7
+   "visitas": 8
   },
   {
    "id": "desktop",
@@ -1664,6 +1669,11 @@
   {
    "id": "https://l.instagram.com",
    "nome": "l.instagram.com",
+   "visitas": 1
+  },
+  {
+   "id": "https://sergiofpt.github.io/imortalistas",
+   "nome": "sergiofpt.github.io",
    "visitas": 1
   },
   {
@@ -1990,7 +2000,7 @@
     },
     {
      "dia": "2026-10-09",
-     "visitas": 0,
+     "visitas": 1,
      "aberturas": 2
     }
    ],
@@ -2008,15 +2018,15 @@
      "visitas": 2
     },
     {
+     "path": "/imortalistas/inicio.html",
+     "visitas": 2
+    },
+    {
      "path": "/imortalistas/genetica.html",
      "visitas": 1
     },
     {
      "path": "/imortalistas/index.html",
-     "visitas": 1
-    },
-    {
-     "path": "/imortalistas/inicio.html",
      "visitas": 1
     }
    ],
@@ -3333,7 +3343,7 @@
      "tipo": "computador",
      "nome": "Linux · Chrome",
      "estimativa": false,
-     "visitas": 5
+     "visitas": 6
     },
     {
      "id": "computador/mac-chrome",
@@ -3429,12 +3439,12 @@
    ],
    "aparelhos_desde": "2026-10-03",
    "total": {
-    "visitas": 32,
-    "visitas_30d": 32,
-    "visitas_90d": 32,
+    "visitas": 33,
+    "visitas_30d": 33,
+    "visitas_90d": 33,
     "aberturas_pdf": 339,
-    "visitas_hoje": 0,
-    "visitas_7d": 32,
+    "visitas_hoje": 1,
+    "visitas_7d": 33,
     "aberturas_hoje": 2,
     "aberturas_7d": 339,
     "aberturas_30d": 339,
@@ -3482,6 +3492,11 @@
     {
      "id": "PL",
      "nome": "Poland",
+     "visitas": 1
+    },
+    {
+     "id": "RU",
+     "nome": "Russia",
      "visitas": 1
     }
    ]
