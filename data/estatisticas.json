@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-09T01:36:08Z",
+ "atualizado_em": "2026-10-09T03:20:18Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 53,
   "visitas_30d": 53,
   "visitas_90d": 53,
-  "aberturas_pdf": 364,
+  "aberturas_pdf": 365,
   "visitas_hoje": 0,
   "visitas_7d": 53,
-  "aberturas_hoje": 1,
-  "aberturas_7d": 364,
-  "aberturas_30d": 364,
+  "aberturas_hoje": 2,
+  "aberturas_7d": 365,
+  "aberturas_30d": 365,
   "pdf_abertos": 150,
-  "pdf_descarregados": 214,
-  "pdf_pt": 126,
+  "pdf_descarregados": 215,
+  "pdf_pt": 127,
   "pdf_en": 238
  },
  "dias": [
@@ -62,7 +62,7 @@
   {
    "dia": "2026-10-09",
    "visitas": 0,
-   "aberturas": 1
+   "aberturas": 2
   }
  ],
  "paginas": [
@@ -142,6 +142,17 @@
   },
   {
    "id": "nariz-seios-perinasais",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 4,
+   "total": 5,
+   "abertos_pt": 0,
+   "abertos_en": 3,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "referencia-via-forca-hipertrofia-potencia",
    "ficheiro": null,
    "pt": 1,
    "en": 4,
@@ -248,17 +259,6 @@
    "abertos_pt": 1,
    "abertos_en": 1,
    "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "referencia-via-forca-hipertrofia-potencia",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 4,
-   "total": 4,
-   "abertos_pt": 0,
-   "abertos_en": 3,
-   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -1527,7 +1527,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 333
+   "visitas": 334
   },
   {
    "id": "PT",
@@ -1574,7 +1574,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 387
+   "visitas": 388
   },
   {
    "id": "Firefox",
@@ -1591,7 +1591,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 231
+   "visitas": 232
   },
   {
    "id": "macOS",
@@ -1638,14 +1638,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 363
+   "visitas": 364
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 407
+   "visitas": 408
   },
   {
    "id": "https://bing.com",
@@ -1983,7 +1983,7 @@
     {
      "dia": "2026-10-09",
      "visitas": 0,
-     "aberturas": 1
+     "aberturas": 2
     }
    ],
    "paginas": [
@@ -2015,6 +2015,17 @@
    "relatorios": [
     {
      "id": "nariz-seios-perinasais",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 4,
+     "total": 5,
+     "abertos_pt": 0,
+     "abertos_en": 3,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "referencia-via-forca-hipertrofia-potencia",
      "ficheiro": null,
      "pt": 1,
      "en": 4,
@@ -2066,17 +2077,6 @@
      "abertos_pt": 0,
      "abertos_en": 2,
      "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "referencia-via-forca-hipertrofia-potencia",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 4,
-     "total": 4,
-     "abertos_pt": 0,
-     "abertos_en": 3,
-     "descarregados_pt": 0,
      "descarregados_en": 1
     },
     {
@@ -3424,22 +3424,22 @@
     "visitas": 32,
     "visitas_30d": 32,
     "visitas_90d": 32,
-    "aberturas_pdf": 338,
+    "aberturas_pdf": 339,
     "visitas_hoje": 0,
     "visitas_7d": 32,
-    "aberturas_hoje": 1,
-    "aberturas_7d": 338,
-    "aberturas_30d": 338,
+    "aberturas_hoje": 2,
+    "aberturas_7d": 339,
+    "aberturas_30d": 339,
     "pdf_abertos": 124,
-    "pdf_descarregados": 214,
-    "pdf_pt": 102,
+    "pdf_descarregados": 215,
+    "pdf_pt": 103,
     "pdf_en": 236
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 333
+     "visitas": 334
     },
     {
      "id": "US",
