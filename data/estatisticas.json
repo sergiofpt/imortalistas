@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-09T18:21:38Z",
+ "atualizado_em": "2026-10-09T18:52:26Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 60,
   "visitas_30d": 60,
   "visitas_90d": 60,
-  "aberturas_pdf": 384,
+  "aberturas_pdf": 389,
   "visitas_hoje": 7,
   "visitas_7d": 60,
-  "aberturas_hoje": 21,
-  "aberturas_7d": 384,
-  "aberturas_30d": 384,
-  "pdf_abertos": 169,
+  "aberturas_hoje": 26,
+  "aberturas_7d": 389,
+  "aberturas_30d": 389,
+  "pdf_abertos": 174,
   "pdf_descarregados": 215,
-  "pdf_pt": 146,
+  "pdf_pt": 151,
   "pdf_en": 238
  },
  "dias": [
@@ -62,7 +62,7 @@
   {
    "dia": "2026-10-09",
    "visitas": 7,
-   "aberturas": 21
+   "aberturas": 26
   }
  ],
  "paginas": [
@@ -219,6 +219,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "disruptores-endocrinos-poluentes",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "doencas-autoimunes",
    "ficheiro": null,
    "pt": 2,
@@ -253,6 +264,17 @@
   },
   {
    "id": "fertilidade-masculina",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "globulos-vermelhos-hemoglobina-plaquetas",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -373,6 +395,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "pulmao-funcao-respiratoria",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "resposta-treino-vo2max",
    "ficheiro": null,
    "pt": 2,
@@ -385,6 +418,17 @@
   },
   {
    "id": "ritmo-circadiano-sono",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "sensibilidade-radiacao",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -659,17 +703,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "disruptores-endocrinos-poluentes",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "doenca-arterial-periferica",
    "ficheiro": null,
    "pt": 1,
@@ -781,17 +814,6 @@
   },
   {
    "id": "glicose-insulina-diabetes",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "globulos-vermelhos-hemoglobina-plaquetas",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -1066,17 +1088,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "pulmao-funcao-respiratoria",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "reparacao-adn-estabilidade-genoma",
    "ficheiro": null,
    "pt": 1,
@@ -1110,6 +1121,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "risco-cancro-scores-poligenicos",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 1,
+   "total": 3,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
    "id": "ritmo-cardiaco-arritmias",
    "ficheiro": null,
    "pt": 1,
@@ -1122,17 +1144,6 @@
   },
   {
    "id": "sal-agua-eletrolitos",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "sensibilidade-radiacao",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -1352,17 +1363,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "risco-cancro-scores-poligenicos",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
    "id": "saude-oral-dentes-periodontite",
    "ficheiro": null,
    "pt": 1,
@@ -1539,7 +1539,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 356
+   "visitas": 361
   },
   {
    "id": "PT",
@@ -1591,7 +1591,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 414
+   "visitas": 419
   },
   {
    "id": "Firefox",
@@ -1608,12 +1608,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 242
+   "visitas": 245
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 162
+   "visitas": 164
   },
   {
    "id": "Android",
@@ -1655,14 +1655,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 383
+   "visitas": 388
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 433
+   "visitas": 438
   },
   {
    "id": "https://bing.com",
@@ -2009,7 +2009,7 @@
     {
      "dia": "2026-10-09",
      "visitas": 4,
-     "aberturas": 21
+     "aberturas": 26
     }
    ],
    "paginas": [
@@ -2103,6 +2103,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "disruptores-endocrinos-poluentes",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "doencas-autoimunes",
      "ficheiro": null,
      "pt": 2,
@@ -2115,6 +2126,17 @@
     },
     {
      "id": "esofago",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "globulos-vermelhos-hemoglobina-plaquetas",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -2192,6 +2214,28 @@
     },
     {
      "id": "proteina-aminoacidos",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "pulmao-funcao-respiratoria",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "sensibilidade-radiacao",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -2499,17 +2543,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "disruptores-endocrinos-poluentes",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "doenca-arterial-periferica",
      "ficheiro": null,
      "pt": 1,
@@ -2632,17 +2665,6 @@
     },
     {
      "id": "glicose-insulina-diabetes",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "globulos-vermelhos-hemoglobina-plaquetas",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2950,17 +2972,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "pulmao-funcao-respiratoria",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "reparacao-adn-estabilidade-genoma",
      "ficheiro": null,
      "pt": 1,
@@ -3005,6 +3016,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "risco-cancro-scores-poligenicos",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 1,
+     "total": 3,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
      "id": "ritmo-cardiaco-arritmias",
      "ficheiro": null,
      "pt": 1,
@@ -3028,17 +3050,6 @@
     },
     {
      "id": "sal-agua-eletrolitos",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "sensibilidade-radiacao",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -3291,17 +3302,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "risco-cancro-scores-poligenicos",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
      "id": "saude-oral-dentes-periodontite",
      "ficheiro": null,
      "pt": 1,
@@ -3458,22 +3458,22 @@
     "visitas": 36,
     "visitas_30d": 36,
     "visitas_90d": 36,
-    "aberturas_pdf": 358,
+    "aberturas_pdf": 363,
     "visitas_hoje": 4,
     "visitas_7d": 36,
-    "aberturas_hoje": 21,
-    "aberturas_7d": 358,
-    "aberturas_30d": 358,
-    "pdf_abertos": 143,
+    "aberturas_hoje": 26,
+    "aberturas_7d": 363,
+    "aberturas_30d": 363,
+    "pdf_abertos": 148,
     "pdf_descarregados": 215,
-    "pdf_pt": 122,
+    "pdf_pt": 127,
     "pdf_en": 236
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 356
+     "visitas": 361
     },
     {
      "id": "US",
