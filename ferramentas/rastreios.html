@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-PT"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Linha do tempo de rastreios · Sérgio F</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--ink:#16202c;--mut:#5b6777;--line:#e2e6ee;--acc:#2f5bea;--acc2:#e9efff;
+--ok:#16865a;--okb:#e5f6ee;--warn:#b56a00;--warnb:#fff3df;--bad:#c23b3b;--badb:#fdecec;--info:#5b4bd6;--infob:#efedff}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--acc)}
+header.top{background:linear-gradient(135deg,#1d2b53,#2f5bea);color:#fff;padding:18px 16px 16px}
+header.top .w{max-width:1040px;margin:0 auto}
+header.top .crumb{font-size:13px;opacity:.85}header.top .crumb a{color:#fff}
+header.top h1{margin:6px 0 4px;font-size:clamp(21px,4.6vw,30px);line-height:1.2}
+header.top p{margin:0;opacity:.92;max-width:760px}
+main{max-width:1040px;margin:0 auto;padding:14px 12px 40px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 14px;margin:12px 0;box-shadow:0 1px 2px rgba(20,30,60.04)}
+.card h2{margin:0 0 8px;font-size:18px}.card h3{margin:12px 0 6px;font-size:16px}
+.disc{background:#fff8e6;border:1px solid #f1d48b;border-radius:12px;padding:10px 12px;font-size:13.5px;color:#5a4300}
+.mut{color:var(--mut)}.small{font-size:13px}.tiny{font-size:12px}
+.grid{display:grid;gap:12px;grid-template-columns:1fr}
+.grid>*{min-width:0}.chip{white-space:normal}
+@media(min-width:760px){.grid.g2{grid-template-columns:1fr 1fr}.grid.g3{grid-template-columns:1fr 1fr 1fr}}
+.chip{display:inline-block;border-radius:999px;padding:2px 9px;font-size:12px;font-weight:600;border:1px solid transparent;white-space:nowrap}
+.c-ok{background:var(--okb);color:var(--ok)}.c-warn{background:var(--warnb);color:var(--warn)}.c-bad{background:var(--badb);color:var(--bad)}.c-info{background:var(--infob);color:var(--info)}.c-mut{background:#eef1f5;color:#4b5563}
+.sug{display:inline-block;font-size:11.5px;font-style:italic;color:#7a4b00;background:#fff1d6;border-radius:6px;padding:1px 6px;margin-left:4px}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;padding:7px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12.5px;color:var(--mut);font-weight:600}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+input[type=search],input[type=text],select{width:100%;font:inherit;padding:10px 12px;border:1px solid #c9d1de;border-radius:10px;background:#fff}
+input[type=range]{width:100%}
+button.btn{font:inherit;border:1px solid #c9d1de;background:#fff;border-radius:10px;padding:8px 12px;cursor:pointer}
+button.on.btn.on{background:var(--acc);border-color:var(--acc);color:#fff}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.bar{height:12px;background:#edf0f6;border-radius:8px;position:relative;overflow:hidden}
+.bar>i{position:absolute;left:0;top:0;bottom:0;border-radius:8px}
+.src{font-size:12px;color:var(--mut)}
+footer{max-width:1040px;margin:0 auto;padding:0 14px 30px;color:var(--mut);font-size:12.5px}
+.pill-nav{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px}
+.pill-nav button{white-space:nowrap}
+.kpi{font-size:26px;font-weight:700}
+details summary{cursor:pointer;font-weight:600}
+.hidden{display:none}
+</style></head>
+<body>
+<a href="../genetica.html" style="display:block;padding:6px 14px;font-size:13px;text-decoration:none">← Sérgio F</a>
+<header class="top"><div class="w"><div class="crumb"><a href="index.html">← Ferramentas genéticas</a> · Sérgio F</div><h1>Linha do tempo de rastreios</h1><p>O que medir e quando, segundo o teu ADN: olhos, intestino, fígado, coração, pulmão, audição, osso e fármacos.</p></div></header>
+<main>
+<div class="disc"><b>Não é aconselhamento médico.</b> Ferramenta educativa feita só a partir da genética de Sérgio F e de estudos publicados. Os genes indicam tendências, não destinos. Qualquer alteração a fármacos ou suplementos aparece como <i>sugestão (não aplicada)</i> e é para decidir com o médico.</div>
+
+<div class="card"><h2>Linha do tempo</h2>
+<p class="small">O que medir e quando, segundo o ADN de Sérgio F. Só três fases: <b>Agora</b>, <b>Próximos anos</b> e <b>Mais tarde</b>. Os marcos que aparecem são de guidelines gerais, não um calendário pessoal. Cada linha é <i>sugestão (não aplicada)</i>: a decisão de pedir o exame é do médico.</p>
+<input type="search" id="q" placeholder="Procurar exame ou motivo (ex.: fígado, olho, colonoscopia)" aria-label="Procurar">
+<div class="pill-nav" id="nav" style="margin-top:8px"></div></div>
+<div id="tl"></div>
+
+</main>
+<footer>Sérgio F · versão pública · dados genéticos de 10-10-2026 (scores poligénicos recalculados a 03-10-2026). Não é diagnóstico nem prescrição.</footer>
+<script id="dados-app" type="application/json">{"items": [{"fase": "Agora", "area": "Fígado", "exame": "Alfa-1-antitripsina no sangue + fenótipo Pi", "motivo": "Confirmar a variante provável de défice de alfa-1-antitripsina (gene SERPINA1, uma cópia)", "freq": "Uma vez", "ev": "Alta"}, {"fase": "Agora", "area": "Fígado", "exame": "Elastografia hepática (com CAP)", "motivo": "SERPINA1 + PNPLA3 + MBOAT7 tornam o fígado mais sensível à gordura; o HSD17B13 protege em parte", "freq": "De base, depois periódica conforme o resultado", "ev": "Alta"}, {"fase": "Agora", "area": "Ferro", "exame": "Ferritina e saturação da transferrina", "motivo": "HFE com uma variante de absorção de ferro um pouco maior e ferritina genética no percentil 80; alvo fixo: ferritina abaixo de 100", "freq": "Em cada controlo de análises", "ev": "Moderada"}, {"fase": "Agora", "area": "Coração", "exame": "Lp(a), uma vez na vida", "motivo": "Genética de Lp(a) alta improvável, mas a parte repetitiva do gene não é lida pelo chip", "freq": "Uma vez", "ev": "Moderada"}, {"fase": "Agora", "area": "Coração", "exame": "Ecocardiograma", "motivo": "Score de estenose aórtica nos percentis 89 a 95 e de cardiomiopatia hipertrófica nos 76 a 89", "freq": "De base", "ev": "Moderada"}, {"fase": "Agora", "area": "Olhos", "exame": "OCT do nervo ótico + pressão intraocular", "motivo": "Glaucoma no percentil 85 (consenso) e miopia genética muito alta (percentil 99)", "freq": "De base; repetir conforme o oftalmologista", "ev": "Moderada-alta"}, {"fase": "Agora", "area": "Pulmão", "exame": "Espirometria", "motivo": "Enfisema no percentil 96 (pela variante de alfa-1-antitripsina); DPOC típica", "freq": "De base", "ev": "Moderada"}, {"fase": "Agora", "area": "Audição", "exame": "Audiograma", "motivo": "Zumbido com carga genética no percentil 99,8", "freq": "De base", "ev": "Moderada"}, {"fase": "Agora", "area": "Osso e músculo", "exame": "DEXA (osso e composição corporal)", "motivo": "Risco de fratura incerto (scores discordantes); massa magra abaixo da média (percentil 27)", "freq": "De base; a DEXA decide o risco de fratura", "ev": "Baixa-moderada"}, {"fase": "Agora", "area": "Fármacos", "exame": "Doseamento de sirolímus 24–48 h após uma toma", "motivo": "CYP3A5 expressor: menos sirolímus no sangue por cada mg", "freq": "Uma vez para calibrar", "ev": "Moderada"}, {"fase": "Agora", "area": "Fármacos", "exame": "Tipagem HLA de 2 campos", "motivo": "Confirmar os tipos HLA ligados a reações graves ao alopurinol e à carbamazepina", "freq": "Uma vez", "ev": "Alta (para a decisão)"}, {"fase": "Agora", "area": "Estômago", "exame": "Pesquisa de H. pylori", "motivo": "PSCA, IL1B e CXCL8 com perfil que só pesa se houver H. pylori", "freq": "Uma vez", "ev": "Moderada"}, {"fase": "Agora", "area": "Metilação", "exame": "Homocisteína + folato eritrocitário + ácido metilmalónico", "motivo": "MTHFR com menor função e homocisteína genética no percentil 92", "freq": "Uma vez, depois conforme o valor", "ev": "Moderada"}, {"fase": "Agora", "area": "Vacinas", "exame": "Hepatite B; pneumocócica conjugada; zóster recombinante; gripe e COVID-19", "motivo": "Proteger o fígado; imunomodulação pela rapamicina; pneumonia genética no percentil 84", "freq": "Conforme o plano de vacinação", "ev": "Moderada"}, {"fase": "Próximos anos", "area": "Intestino", "exame": "Pesquisa de sangue oculto nas fezes (FIT)", "motivo": "Cancro colorretal no percentil 80 e pólipos no 92,7", "freq": "Anual a partir dos 40 (guideline geral)", "ev": "Moderada"}, {"fase": "Próximos anos", "area": "Intestino", "exame": "Colonoscopia", "motivo": "Score de cancro colorretal de início precoce no percentil 82", "freq": "Até aos 45 no máximo (guideline geral)", "ev": "Moderada"}, {"fase": "Próximos anos", "area": "Genoma", "exame": "Genoma completo a 30× (clínico)", "motivo": "O que o chip não lê: cópias do CYP2D6, HLA completo, deleções GSTM1/GSTT1, ADN mitocondrial e variantes estruturais", "freq": "Uma vez", "ev": "Alta (para lacunas)"}, {"fase": "Próximos anos", "area": "Vários", "exame": "Repetir elastografia, OCT e audiograma", "motivo": "Conforme o exame de base", "freq": "Intervalo definido pelo médico", "ev": "—"}, {"fase": "Mais tarde", "area": "Coração", "exame": "Score de cálcio coronário", "motivo": "Locus 9p21 em dose dupla e CETP de alta função, apesar do score coronário global baixo", "freq": "Repetir a cada 5 anos se for 0", "ev": "Moderada"}, {"fase": "Mais tarde", "area": "Sangue", "exame": "Painel de hematopoiese clonal (CHIP)", "motivo": "Alteração adquirida que o chip não lê; mais útil mais tarde", "freq": "Uma vez, depois conforme o resultado", "ev": "Baixa-moderada"}, {"fase": "Mais tarde", "area": "Geral", "exame": "Rastreios gerais (por exemplo ecografia da aorta abdominal aos 65 nos homens)", "motivo": "Recomendação geral, sem justificação genética própria", "freq": "Conforme as guidelines", "ev": "—"}]}</script>
+<script>
+const D = (function(){var e=document.getElementById('dados-app');return e?JSON.parse(e.textContent):{};})();
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function fmt(x,d){d=(d==null?2:d);return Number(x).toFixed(d).replace('.',',');}
+
+const PH=['Agora','Próximos anos','Mais tarde'];
+let cur='todas',q='';
+function draw(){
+  document.querySelectorAll('.pill-nav button').forEach(b=>b.classList.toggle('on',b.dataset.f===cur));
+  const box=document.getElementById('tl');box.innerHTML='';
+  PH.forEach((ph,i)=>{
+    const L=D.items.filter(x=>x.fase===ph&&(cur==='todas'||x.area===cur)&&(!q||(x.exame+' '+x.motivo+' '+x.area).toLowerCase().includes(q)));
+    if(!L.length)return;
+    const col=['var(--bad)','var(--warn)','var(--info)'][i];
+    const c=document.createElement('div');c.className='card';c.style.borderLeft='6px solid '+col;
+    c.innerHTML=`<h2>${esc(ph)} <span class="chip c-mut">${L.length}</span></h2>`+L.map(x=>`<div style="padding:8px 0;border-top:1px solid var(--line)">
+      <div class="row" style="justify-content:space-between"><b>${esc(x.exame)}</b><span class="chip c-info">${esc(x.area)}</span></div>
+      <div class="small">Porquê: ${esc(x.motivo)}</div>
+      <div class="small mut">Quando: ${esc(x.freq)} · evidência: ${esc(x.ev)} <span class="sug">sugestão (não aplicada)</span></div></div>`).join('');
+    box.appendChild(c);
+  });
+}
+const areas=['todas',...new Set(D.items.map(x=>x.area))];
+document.getElementById('nav').innerHTML=areas.map(a=>`<button data-f="${esc(a)}">${a==='todas'?'Todas':esc(a)}</button>`).join('');
+document.querySelectorAll('#nav button').forEach(b=>b.addEventListener('click',()=>{cur=b.dataset.f;draw();}));
+document.getElementById('q').addEventListener('input',e=>{q=e.target.value.toLowerCase();draw();});
+draw();
+
+</script>
+</body></html>
