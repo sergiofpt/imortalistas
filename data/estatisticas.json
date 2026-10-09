@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-09T15:51:02Z",
+ "atualizado_em": "2026-10-09T17:17:49Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 57,
   "visitas_30d": 57,
   "visitas_90d": 57,
-  "aberturas_pdf": 365,
+  "aberturas_pdf": 370,
   "visitas_hoje": 4,
   "visitas_7d": 57,
-  "aberturas_hoje": 2,
-  "aberturas_7d": 365,
-  "aberturas_30d": 365,
-  "pdf_abertos": 150,
+  "aberturas_hoje": 7,
+  "aberturas_7d": 370,
+  "aberturas_30d": 370,
+  "pdf_abertos": 155,
   "pdf_descarregados": 215,
-  "pdf_pt": 127,
+  "pdf_pt": 132,
   "pdf_en": 238
  },
  "dias": [
@@ -62,7 +62,7 @@
   {
    "dia": "2026-10-09",
    "visitas": 4,
-   "aberturas": 2
+   "aberturas": 7
   }
  ],
  "paginas": [
@@ -211,6 +211,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "hipoxia-altitude",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "infecoes",
    "ficheiro": null,
    "pt": 1,
@@ -255,6 +266,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "pele-skin-care",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "psicadelicos",
    "ficheiro": null,
    "pt": 2,
@@ -278,6 +300,28 @@
   },
   {
    "id": "ritmo-circadiano-sono",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "sensores-nutrientes-autofagia",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "valvulas-cardiacas",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -695,17 +739,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "hipoxia-altitude",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "histamina-mastocitos-ige",
    "ficheiro": null,
    "pt": 1,
@@ -758,6 +791,17 @@
    "abertos_pt": 0,
    "abertos_en": 1,
    "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "insuficiencia-cardiaca-cardiomiopatias",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -861,17 +905,6 @@
   },
   {
    "id": "pancreas-pancreatite",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "pele-skin-care",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -1036,17 +1069,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "sensores-nutrientes-autofagia",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "serotonina-melatonina",
    "ficheiro": null,
    "pt": 1,
@@ -1136,17 +1158,6 @@
   },
   {
    "id": "tiroide",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "valvulas-cardiacas",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -1287,17 +1298,6 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 0
-  },
-  {
-   "id": "insuficiencia-cardiaca-cardiomiopatias",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 2,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
   },
   {
    "id": "longevidade-excecional",
@@ -1531,7 +1531,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 334
+   "visitas": 339
   },
   {
    "id": "PT",
@@ -1583,7 +1583,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 392
+   "visitas": 397
   },
   {
    "id": "Firefox",
@@ -1600,12 +1600,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 232
+   "visitas": 234
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 150
+   "visitas": 153
   },
   {
    "id": "Android",
@@ -1647,14 +1647,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 364
+   "visitas": 369
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 411
+   "visitas": 416
   },
   {
    "id": "https://bing.com",
@@ -2001,7 +2001,7 @@
     {
      "dia": "2026-10-09",
      "visitas": 1,
-     "aberturas": 2
+     "aberturas": 7
     }
    ],
    "paginas": [
@@ -2076,6 +2076,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "hipoxia-altitude",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "imortalidade",
      "ficheiro": null,
      "pt": 1,
@@ -2094,6 +2105,39 @@
      "total": 4,
      "abertos_pt": 0,
      "abertos_en": 2,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "pele-skin-care",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "sensores-nutrientes-autofagia",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "valvulas-cardiacas",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 1
     },
@@ -2527,17 +2571,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "hipoxia-altitude",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "histamina-mastocitos-ige",
      "ficheiro": null,
      "pt": 1,
@@ -2590,6 +2623,17 @@
      "abertos_pt": 0,
      "abertos_en": 1,
      "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "insuficiencia-cardiaca-cardiomiopatias",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
      "descarregados_en": 1
     },
     {
@@ -2715,17 +2759,6 @@
     },
     {
      "id": "pancreas-pancreatite",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "pele-skin-care",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2923,17 +2956,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "sensores-nutrientes-autofagia",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "serotonina-melatonina",
      "ficheiro": null,
      "pt": 1,
@@ -3023,17 +3045,6 @@
     },
     {
      "id": "tiroide",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "valvulas-cardiacas",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -3207,17 +3218,6 @@
      "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 0
-    },
-    {
-     "id": "insuficiencia-cardiaca-cardiomiopatias",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
     },
     {
      "id": "longevidade-excecional",
@@ -3442,22 +3442,22 @@
     "visitas": 33,
     "visitas_30d": 33,
     "visitas_90d": 33,
-    "aberturas_pdf": 339,
+    "aberturas_pdf": 344,
     "visitas_hoje": 1,
     "visitas_7d": 33,
-    "aberturas_hoje": 2,
-    "aberturas_7d": 339,
-    "aberturas_30d": 339,
-    "pdf_abertos": 124,
+    "aberturas_hoje": 7,
+    "aberturas_7d": 344,
+    "aberturas_30d": 344,
+    "pdf_abertos": 129,
     "pdf_descarregados": 215,
-    "pdf_pt": 103,
+    "pdf_pt": 108,
     "pdf_en": 236
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 334
+     "visitas": 339
     },
     {
      "id": "US",
