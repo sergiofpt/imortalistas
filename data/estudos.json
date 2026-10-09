@@ -2,24 +2,6 @@
  "atualizado_em": "2026-10-08",
  "estudos": [
   {
-   "id": "001",
-   "ano": 2026,
-   "mes": 9,
-   "especie": "humano",
-   "areas": [
-    "figado"
-   ],
-   "titulo": {
-    "pt": "Lactobacillus acidophilus no fígado gordo e na diabetes",
-    "en": "Lactobacillus acidophilus in fatty liver and diabetes"
-   },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42760849/",
-   "conclusao": {
-    "pt": "Depois de um padrão microbiano observado numa coorte clínica, Lactobacillus acidophilus atenuou a esteatose e a lesão inflamatória do fígado em vários modelos de ratinho e melhorou a tolerância à glicose em ratinhos ob/ob.",
-    "en": "After a microbial pattern seen in a clinical cohort, Lactobacillus acidophilus lessened hepatic steatosis and inflammatory injury in several mouse models and improved glucose tolerance in ob/ob mice."
-   }
-  },
-  {
    "id": "002",
    "ano": 2026,
    "mes": 10,
@@ -39,31 +21,14 @@
    }
   },
   {
-   "id": "003",
-   "ano": 2026,
-   "mes": 9,
-   "especie": "humano",
-   "areas": [
-    "cardiovascular"
-   ],
-   "titulo": {
-    "en": "Biological age of transplanted hearts",
-    "pt": "Idade biológica de corações transplantados"
-   },
-   "link": "https://doi.org/10.64898/2026.09.15.751836",
-   "conclusao": {
-    "en": "In people who received a heart across an age gap, the biological age of the transplanted heart tracked the recipient rather than the donor.",
-    "pt": "Em pessoas que receberam um coração com uma diferença de idade, a idade biológica do coração transplantado acompanhou a do recetor e não a do dador."
-   }
-  },
-  {
    "id": "004",
    "ano": 2026,
    "mes": 10,
    "especie": "humano",
    "amostra": "relevante",
    "areas": [
-    "cerebro"
+    "cerebro",
+    "longevidade"
    ],
    "titulo": {
     "en": "Epigenetic clocks and survival to age 90",
@@ -73,6 +38,43 @@
    "conclusao": {
     "en": "In the Women's Health Initiative Memory Study, epigenetic clocks predicted survival to age 90 but did not distinguish survival with preserved cognition from survival with cognitive impairment.",
     "pt": "No Women's Health Initiative Memory Study, os relógios epigenéticos previram a sobrevivência até aos 90 anos, mas não distinguiram quem chegou lá com cognição preservada de quem chegou com défice cognitivo."
+   }
+  },
+  {
+   "id": "001",
+   "ano": 2026,
+   "mes": 9,
+   "especie": "humano",
+   "areas": [
+    "figado"
+   ],
+   "titulo": {
+    "pt": "Lactobacillus acidophilus no fígado gordo e na diabetes",
+    "en": "Lactobacillus acidophilus in fatty liver and diabetes"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42760849/",
+   "conclusao": {
+    "pt": "Depois de um padrão microbiano observado numa coorte clínica, Lactobacillus acidophilus atenuou a esteatose e a lesão inflamatória do fígado em vários modelos de ratinho e melhorou a tolerância à glicose em ratinhos ob/ob.",
+    "en": "After a microbial pattern seen in a clinical cohort, Lactobacillus acidophilus lessened hepatic steatosis and inflammatory injury in several mouse models and improved glucose tolerance in ob/ob mice."
+   }
+  },
+  {
+   "id": "003",
+   "ano": 2026,
+   "mes": 9,
+   "especie": "humano",
+   "areas": [
+    "cardiovascular",
+    "longevidade"
+   ],
+   "titulo": {
+    "en": "Biological age of transplanted hearts",
+    "pt": "Idade biológica de corações transplantados"
+   },
+   "link": "https://doi.org/10.64898/2026.09.15.751836",
+   "conclusao": {
+    "en": "In people who received a heart across an age gap, the biological age of the transplanted heart tracked the recipient rather than the donor.",
+    "pt": "Em pessoas que receberam um coração com uma diferença de idade, a idade biológica do coração transplantado acompanhou a do recetor e não a do dador."
    }
   },
   {
@@ -147,22 +149,23 @@
    }
   },
   {
-   "id": "009",
+   "id": "128",
    "ano": 2026,
-   "mes": 6,
-   "especie": "humano",
-   "amostra": "relevante",
+   "mes": 9,
+   "especie": "animal",
    "areas": [
-    "cancro"
+    "longevidade",
+    "metabolismo",
+    "cerebro"
    ],
    "titulo": {
-    "en": "Biological ageing and early-onset cancer",
-    "pt": "Envelhecimento biológico e cancro de início precoce"
+    "pt": "Semaglutido tardio prolonga a vida de ratinhos fêmea",
+    "en": "Late-life semaglutide extends lifespan in female mice"
    },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42332142/",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42686906/",
    "conclusao": {
-    "en": "In young adults from the UK Biobank, a larger gap between biological and chronological age was associated with a higher risk of early-onset solid cancers.",
-    "pt": "Em adultos jovens do UK Biobank, um maior desvio entre a idade biológica e a idade cronológica associou-se a maior risco de cancros sólidos de início precoce."
+    "pt": "Em ratinhos fêmea C57BL/6 tratados a partir dos 20 meses, o semaglutido melhorou a função física, atenuou marcas de envelhecimento e prolongou a vida, reproduzindo muitos benefícios da restrição calórica.",
+    "en": "In female C57BL/6 mice treated from 20 months of age, semaglutide improved physical function, attenuated ageing hallmarks and extended lifespan, reproducing many benefits of caloric restriction."
    }
   },
   {
@@ -216,7 +219,10 @@
    "conclusao": {
     "en": "Many epigenetic clocks showed only low to moderate biological reliability, and that reliability changed how stable their links to disease and to interventions were.",
     "pt": "Muitos relógios epigenéticos mostraram apenas fiabilidade biológica baixa ou moderada, e essa fiabilidade mudou a estabilidade das ligações à doença e às intervenções."
-   }
+   },
+   "areas": [
+    "longevidade"
+   ]
   },
   {
    "id": "013",
@@ -235,6 +241,25 @@
    "conclusao": {
     "en": "In a multinational cohort of men with lower-urinary-tract symptoms, tadalafil was associated with a higher risk of glaucoma than no PDE5 inhibitor.",
     "pt": "Numa coorte multinacional de homens com sintomas do aparelho urinário baixo, o tadalafil associou-se a maior risco de glaucoma do que a ausência de inibidor da PDE5."
+   }
+  },
+  {
+   "id": "129",
+   "ano": 2026,
+   "mes": 8,
+   "especie": "humano",
+   "areas": [
+    "inflamacao",
+    "cerebro"
+   ],
+   "titulo": {
+    "pt": "Bifidobactéria, inflamação e envelhecimento",
+    "en": "A bifidobacterium, inflammation and ageing"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42642521/",
+   "conclusao": {
+    "pt": "O Bifidobacterium pseudocatenulatum diminuiu com a idade em coortes chinesas e, dado a ratinhos velhos, reduziu a inflamação de vários órgãos e melhorou a cognição e a função motora.",
+    "en": "Bifidobacterium pseudocatenulatum declined with age in Chinese cohorts and, given to old mice, reduced inflammation across organs and improved cognitive and motor function."
    }
   },
   {
@@ -270,76 +295,71 @@
    "conclusao": {
     "en": "In a middle-aged cohort, traditional risk factors predicted incident chronic disease better than epigenetic clocks.",
     "pt": "Numa coorte de meia-idade, os fatores de risco clássicos previram melhor a doença crónica incidente do que os relógios epigenéticos."
+   },
+   "areas": [
+    "longevidade"
+   ]
+  },
+  {
+   "id": "130",
+   "ano": 2026,
+   "mes": 7,
+   "especie": "animal",
+   "areas": [
+    "longevidade",
+    "metabolismo",
+    "cancro"
+   ],
+   "titulo": {
+    "pt": "Restrição de valina e longevidade em ratinhos",
+    "en": "Valine restriction and lifespan in mice"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42498891/",
+   "conclusao": {
+    "pt": "A restrição de valina ao longo da vida melhorou o metabolismo e reduziu a fragilidade, o cancro e as células senescentes em ambos os sexos, e aumentou a vida mediana dos machos em 23%.",
+    "en": "Lifelong valine restriction improved metabolism and reduced frailty, cancer and senescent cells in both sexes, and increased male median lifespan by 23%."
    }
   },
   {
-   "id": "016",
+   "id": "009",
    "ano": 2026,
-   "mes": 4,
+   "mes": 6,
    "especie": "humano",
    "amostra": "relevante",
    "areas": [
-    "cerebro"
+    "cancro",
+    "longevidade"
    ],
    "titulo": {
-    "en": "Omega-3 supplements and cognitive decline in older adults",
-    "pt": "Suplementos de ómega-3 e declínio cognitivo em adultos mais velhos"
+    "en": "Biological ageing and early-onset cancer",
+    "pt": "Envelhecimento biológico e cancro de início precoce"
    },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42000571/",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42332142/",
    "conclusao": {
-    "en": "In the Alzheimer's Disease Neuroimaging Initiative, omega-3 supplementation was associated with faster cognitive decline in older adults.",
-    "pt": "No Alzheimer's Disease Neuroimaging Initiative, a suplementação com ómega-3 associou-se a um declínio cognitivo mais rápido em adultos mais velhos."
+    "en": "In young adults from the UK Biobank, a larger gap between biological and chronological age was associated with a higher risk of early-onset solid cancers.",
+    "pt": "Em adultos jovens do UK Biobank, um maior desvio entre a idade biológica e a idade cronológica associou-se a maior risco de cancros sólidos de início precoce."
    }
   },
   {
-   "id": "017",
+   "id": "131",
    "ano": 2026,
-   "mes": 3,
-   "especie": "animal",
-   "amostra": "relevante",
-   "titulo": {
-    "pt": "Onze compostos sem ganho de longevidade no ITP",
-    "en": "Eleven compounds with no lifespan gain in the ITP"
-   },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/41843349/",
-   "conclusao": {
-    "pt": "No Interventions Testing Program, nenhum de onze compostos testados em ratinhos UM-HET3 aumentou a longevidade, e alguns encurtaram-na nas fêmeas quando os três laboratórios foram analisados em conjunto.",
-    "en": "In the Interventions Testing Program, none of eleven compounds tested in UM-HET3 mice increased lifespan, and some shortened it in females when the three laboratories were pooled."
-   }
-  },
-  {
-   "id": "018",
-   "ano": 2025,
-   "mes": 9,
-   "especie": "animal",
-   "amostra": "relevante",
-   "titulo": {
-    "pt": "Epicatequina, halofuginona e mitoglitazona no ITP",
-    "en": "Epicatechin, halofuginone and mitoglitazone in the ITP"
-   },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/40973907/",
-   "conclusao": {
-    "pt": "No Interventions Testing Program, epicatequina, halofuginona e mitoglitazona prolongaram a vida mediana de ratinhos machos geneticamente heterogéneos, sem o mesmo efeito nas fêmeas.",
-    "en": "In the Interventions Testing Program, epicatechin, halofuginone and mitoglitazone extended median lifespan in genetically heterogeneous male mice, without the same effect in females."
-   }
-  },
-  {
-   "id": "019",
-   "ano": 2026,
-   "mes": 4,
+   "mes": 6,
    "especie": "animal",
    "areas": [
-    "inflamacao"
+    "longevidade",
+    "sono",
+    "metabolismo"
    ],
    "titulo": {
-    "pt": "Memória de obesidade nas células T CD4",
-    "en": "Obesity memory in CD4 T cells"
+    "pt": "Alimentação com horário restrito em ratinhos",
+    "en": "Time-restricted feeding in mice"
    },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42045443/",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42230994/",
    "conclusao": {
-    "pt": "O artigo descreve uma memória de obesidade nas células T CD4, por metilação do ADN, que atrasa o regresso do equilíbrio imunitário depois da perda de gordura, com os candidatos moleculares Stk26 e Cdkn1c.",
-    "en": "The paper describes an obesity memory in CD4 T cells, through DNA methylation, that delays the return of immune balance after fat loss, with the molecular candidates Stk26 and Cdkn1c."
-   }
+    "pt": "Em 264 machos e 264 fêmeas com ração normal, comer numa janela noturna de 8 horas melhorou a saúde em ambos os sexos e aumentou a vida mediana dos machos em 12%, sem efeito significativo nas fêmeas.",
+    "en": "In 264 male and 264 female mice on regular chow, eating within an 8-hour nightly window improved health in both sexes and increased male median lifespan by 12%, with no significant effect in females."
+   },
+   "amostra": "pequena"
   },
   {
    "id": "020",
@@ -367,7 +387,8 @@
    "especie": "humano",
    "amostra": "pequena",
    "areas": [
-    "metabolismo"
+    "metabolismo",
+    "longevidade"
    ],
    "titulo": {
     "en": "Semaglutide and epigenetic clocks",
@@ -398,22 +419,59 @@
    }
   },
   {
-   "id": "023",
+   "id": "132",
    "ano": 2026,
-   "mes": 3,
+   "mes": 5,
+   "especie": "animal",
+   "areas": [
+    "longevidade",
+    "inflamacao"
+   ],
+   "titulo": {
+    "pt": "Degradação do HIF-1α e longevidade em ratinhos",
+    "en": "HIF-1α degradation and lifespan in mice"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42120734/",
+   "conclusao": {
+    "pt": "Um composto semanal que leva o HIF-1α à degradação por autofagia reduziu patologias da idade em ratinhos velhos e prolongou a vida mediana em cerca de 14% e a máxima em cerca de 12%.",
+    "en": "A weekly compound that sends HIF-1α to autophagic degradation reduced age-related pathologies in old mice and extended median lifespan by about 14% and maximum lifespan by about 12%."
+   }
+  },
+  {
+   "id": "016",
+   "ano": 2026,
+   "mes": 4,
    "especie": "humano",
    "amostra": "relevante",
+   "areas": [
+    "cerebro"
+   ],
+   "titulo": {
+    "en": "Omega-3 supplements and cognitive decline in older adults",
+    "pt": "Suplementos de ómega-3 e declínio cognitivo em adultos mais velhos"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42000571/",
+   "conclusao": {
+    "en": "In the Alzheimer's Disease Neuroimaging Initiative, omega-3 supplementation was associated with faster cognitive decline in older adults.",
+    "pt": "No Alzheimer's Disease Neuroimaging Initiative, a suplementação com ómega-3 associou-se a um declínio cognitivo mais rápido em adultos mais velhos."
+   }
+  },
+  {
+   "id": "019",
+   "ano": 2026,
+   "mes": 4,
+   "especie": "animal",
    "areas": [
     "inflamacao"
    ],
    "titulo": {
-    "en": "Thymic health and mortality in adults",
-    "pt": "Saúde tímica e mortalidade em adultos"
+    "pt": "Memória de obesidade nas células T CD4",
+    "en": "Obesity memory in CD4 T cells"
    },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/41851466/",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42045443/",
    "conclusao": {
-    "en": "In adults, a thymic-health score read from routine scans was associated with lower mortality and with modifiable factors including smoking, obesity and physical activity.",
-    "pt": "Em adultos, uma pontuação de saúde tímica lida em exames de rotina associou-se a menor mortalidade e a fatores modificáveis, entre eles o tabaco, a obesidade e a atividade física."
+    "pt": "O artigo descreve uma memória de obesidade nas células T CD4, por metilação do ADN, que atrasa o regresso do equilíbrio imunitário depois da perda de gordura, com os candidatos moleculares Stk26 e Cdkn1c.",
+    "en": "The paper describes an obesity memory in CD4 T cells, through DNA methylation, that delays the return of immune balance after fat loss, with the molecular candidates Stk26 and Cdkn1c."
    }
   },
   {
@@ -436,6 +494,45 @@
    }
   },
   {
+   "id": "017",
+   "ano": 2026,
+   "mes": 3,
+   "especie": "animal",
+   "amostra": "relevante",
+   "titulo": {
+    "pt": "Onze compostos sem ganho de longevidade no ITP",
+    "en": "Eleven compounds with no lifespan gain in the ITP"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41843349/",
+   "conclusao": {
+    "pt": "No Interventions Testing Program, nenhum de onze compostos testados em ratinhos UM-HET3 aumentou a longevidade, e alguns encurtaram-na nas fêmeas quando os três laboratórios foram analisados em conjunto.",
+    "en": "In the Interventions Testing Program, none of eleven compounds tested in UM-HET3 mice increased lifespan, and some shortened it in females when the three laboratories were pooled."
+   },
+   "areas": [
+    "longevidade"
+   ]
+  },
+  {
+   "id": "023",
+   "ano": 2026,
+   "mes": 3,
+   "especie": "humano",
+   "amostra": "relevante",
+   "areas": [
+    "inflamacao",
+    "longevidade"
+   ],
+   "titulo": {
+    "en": "Thymic health and mortality in adults",
+    "pt": "Saúde tímica e mortalidade em adultos"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41851466/",
+   "conclusao": {
+    "en": "In adults, a thymic-health score read from routine scans was associated with lower mortality and with modifiable factors including smoking, obesity and physical activity.",
+    "pt": "Em adultos, uma pontuação de saúde tímica lida em exames de rotina associou-se a menor mortalidade e a fatores modificáveis, entre eles o tabaco, a obesidade e a atividade física."
+   }
+  },
+  {
    "id": "025",
    "ano": 2026,
    "mes": 3,
@@ -449,7 +546,10 @@
    "conclusao": {
     "en": "Among fourteen ageing biomarkers in the Berlin Aging Study II, DunedinPACE had the strongest and most consistent association with mortality.",
     "pt": "Entre catorze biomarcadores de envelhecimento no Berlin Aging Study II, o DunedinPACE teve a associação mais forte e mais consistente com a mortalidade."
-   }
+   },
+   "areas": [
+    "longevidade"
+   ]
   },
   {
    "id": "026",
@@ -501,7 +601,49 @@
    "conclusao": {
     "pt": "Relógios de metilação treinados para senescência, idade e mortalidade não desceram, e por vezes aceleraram, depois de tratamento senolítico em dados in vivo e in vitro.",
     "en": "Methylation clocks trained on senescence, age and mortality did not fall, and sometimes sped up, after senolytic treatment in in vivo and in vitro data."
+   },
+   "areas": [
+    "longevidade"
+   ]
+  },
+  {
+   "id": "133",
+   "ano": 2026,
+   "mes": 3,
+   "especie": "animal",
+   "areas": [
+    "longevidade",
+    "sono"
+   ],
+   "titulo": {
+    "pt": "Ritmo circadiano no hipotálamo e longevidade",
+    "en": "Hypothalamic circadian rhythm and lifespan"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41785851/",
+   "conclusao": {
+    "pt": "A administração de 3-desoxiadenosina na fase circadiana certa reforçou o relógio do núcleo paraventricular, reduziu a idade epigenética e prolongou a vida de ratinhos machos velhos.",
+    "en": "Circadian-timed 3′-deoxyadenosine strengthened the paraventricular nucleus clock, reduced epigenetic age and extended lifespan in old male mice."
    }
+  },
+  {
+   "id": "134",
+   "ano": 2026,
+   "mes": 3,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "inflamacao"
+   ],
+   "titulo": {
+    "pt": "Multivitamínico, cacau e relógios epigenéticos (COSMOS)",
+    "en": "Multivitamin, cocoa and epigenetic clocks (COSMOS)"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41803341/",
+   "conclusao": {
+    "pt": "Em 958 participantes do COSMOS, 2 anos de multivitamínico diário abrandaram ligeiramente o PCGrimAge (-0,113 anos por ano) e o PCPhenoAge, enquanto o extrato de cacau não teve efeito.",
+    "en": "In 958 COSMOS participants, 2 years of a daily multivitamin slightly slowed PCGrimAge (-0.113 years per year) and PCPhenoAge, while cocoa extract had no effect."
+   },
+   "amostra": "relevante"
   },
   {
    "id": "029",
@@ -553,7 +695,10 @@
    "conclusao": {
     "en": "In a US population cohort, shingles vaccination was associated with slower biological ageing across several measured domains.",
     "pt": "Numa coorte populacional, a vacinação contra a zona associou-se a um envelhecimento biológico mais lento em vários domínios medidos."
-   }
+   },
+   "areas": [
+    "longevidade"
+   ]
   },
   {
    "id": "032",
@@ -575,41 +720,21 @@
    }
   },
   {
-   "id": "033",
-   "ano": 2025,
-   "mes": 9,
+   "id": "135",
+   "ano": 2026,
+   "mes": 1,
    "especie": "humano",
-   "amostra": "relevante",
    "areas": [
-    "olhos"
+    "longevidade"
    ],
    "titulo": {
-    "en": "SGLT2 inhibitors, metformin and glaucoma",
-    "pt": "Inibidores do SGLT2, metformina e glaucoma"
+    "pt": "Hereditariedade da duração da vida humana",
+    "en": "Heritability of human lifespan"
    },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/40976317/",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41610249/",
    "conclusao": {
-    "en": "In type 2 diabetes, SGLT2 inhibitors were associated with a lower risk of ocular hypertension and open-angle glaucoma than metformin.",
-    "pt": "Em diabetes tipo 2, os inibidores do SGLT2 associaram-se a menor risco de hipertensão ocular e de glaucoma de ângulo aberto do que a metformina."
-   }
-  },
-  {
-   "id": "034",
-   "ano": 2025,
-   "mes": 10,
-   "especie": "humano",
-   "amostra": "relevante",
-   "areas": [
-    "rim"
-   ],
-   "titulo": {
-    "en": "Empagliflozin and kidney outcomes",
-    "pt": "Empagliflozina e desfechos renais"
-   },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/41082889/",
-   "conclusao": {
-    "en": "An individual-participant meta-analysis found that empagliflozin reduced acute and chronic kidney outcomes regardless of the early dip in filtration rate.",
-    "pt": "Uma meta-análise de dados individuais mostrou que a empagliflozina reduziu desfechos renais agudos e crónicos, independentemente da descida inicial da taxa de filtração."
+    "pt": "Corrigindo as mortes por causas externas, como acidentes e infeções, a análise de gémeos criados juntos e separados estimou que a hereditariedade da duração da vida por causas intrínsecas é superior a 50%.",
+    "en": "After correcting for deaths from external causes such as accidents and infections, analysis of twins raised together and apart estimated the heritability of lifespan from intrinsic causes at above 50%."
    }
   },
   {
@@ -632,22 +757,42 @@
    }
   },
   {
-   "id": "036",
+   "id": "136",
    "ano": 2025,
-   "mes": 9,
-   "especie": "humano",
-   "amostra": "relevante",
+   "mes": 12,
+   "especie": "animal",
    "areas": [
+    "longevidade",
     "metabolismo"
    ],
    "titulo": {
-    "en": "Semaglutide 7.2 mg in obesity with type 2 diabetes",
-    "pt": "Semaglutido 7,2 mg na obesidade com diabetes tipo 2"
+    "pt": "Esterilização, contraceção e longevidade nos vertebrados",
+    "en": "Sterilization, contraception and lifespan across vertebrates"
    },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/40961953/",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41372417/",
    "conclusao": {
-    "en": "In a phase 3b trial, once-weekly semaglutide 7.2 mg was superior to placebo for weight loss and HbA1c, with more dysaesthesia than the 2.4 mg dose.",
-    "pt": "Num ensaio de fase 3b, o semaglutido semanal de 7,2 mg foi superior ao placebo no emagrecimento e na HbA1c, com mais disestesia do que a dose de 2,4 mg."
+    "pt": "Em mamíferos de zoológicos e em meta-análises de vertebrados, a contraceção hormonal e a esterilização cirúrgica associaram-se a maior esperança de vida em machos e fêmeas.",
+    "en": "In zoo mammals and in meta-analyses across vertebrates, hormonal contraception and surgical sterilization were associated with longer life expectancy in males and females."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "137",
+   "ano": 2025,
+   "mes": 12,
+   "especie": "humano",
+   "areas": [
+    "metabolismo",
+    "cerebro"
+   ],
+   "titulo": {
+    "pt": "Sulfureto de hidrogénio e longevidade",
+    "en": "Hydrogen sulfide and lifespan"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41421349/",
+   "conclusao": {
+    "pt": "Compostos dialil sulfurados que aumentam o sulfureto de hidrogénio prolongaram a vida de ratinhos machos e melhoraram glicemia, locomoção e cognição, e em humanos mais persulfuração associou-se a mais força muscular.",
+    "en": "Diallyl sulforated compounds that boost hydrogen sulfide extended lifespan in male mice and improved glucose control, locomotion and cognition, and in humans more persulfidation was linked to greater muscle strength."
    }
   },
   {
@@ -664,6 +809,64 @@
    "conclusao": {
     "en": "A meta-analysis of eight randomized trials found that TA-65 activated telomerase without improving functional measures of ageing.",
     "pt": "Uma meta-análise de oito ensaios aleatorizados mostrou que o TA-65 ativou a telomerase sem melhorar medidas funcionais de envelhecimento."
+   }
+  },
+  {
+   "id": "138",
+   "ano": 2025,
+   "mes": 11,
+   "especie": "humano",
+   "areas": [
+    "cardiovascular"
+   ],
+   "titulo": {
+    "pt": "Evolocumab sem enfarte ou AVC prévio (VESALIUS-CV)",
+    "en": "Evolocumab without prior heart attack or stroke (VESALIUS-CV)"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41211925/",
+   "conclusao": {
+    "pt": "Em 12 257 doentes com aterosclerose ou diabetes sem enfarte ou AVC prévio, o evolocumab reduziu a morte coronária, o enfarte ou o AVC isquémico em 25% (HR 0,75) ao longo de 4,6 anos.",
+    "en": "In 12,257 patients with atherosclerosis or diabetes but no prior heart attack or stroke, evolocumab reduced coronary death, heart attack or ischaemic stroke by 25% (HR 0.75) over 4.6 years."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "139",
+   "ano": 2025,
+   "mes": 11,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "cerebro"
+   ],
+   "titulo": {
+    "pt": "Relógios proteómicos de órgãos em populações diversas",
+    "en": "Organ proteomic clocks across diverse populations"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41299092/",
+   "conclusao": {
+    "pt": "Em 43 616 participantes do UK Biobank, com validação na China e nos EUA, relógios proteómicos de 10 órgãos previram doença e mortalidade, e o envelhecimento cerebral foi o mais ligado à morte.",
+    "en": "In 43,616 UK Biobank participants, validated in China and the US, proteomic clocks for 10 organs predicted disease and mortality, with brain ageing most strongly linked to death."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "034",
+   "ano": 2025,
+   "mes": 10,
+   "especie": "humano",
+   "amostra": "relevante",
+   "areas": [
+    "rim"
+   ],
+   "titulo": {
+    "en": "Empagliflozin and kidney outcomes",
+    "pt": "Empagliflozina e desfechos renais"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41082889/",
+   "conclusao": {
+    "en": "An individual-participant meta-analysis found that empagliflozin reduced acute and chronic kidney outcomes regardless of the early dip in filtration rate.",
+    "pt": "Uma meta-análise de dados individuais mostrou que a empagliflozina reduziu desfechos renais agudos e crónicos, independentemente da descida inicial da taxa de filtração."
    }
   },
   {
@@ -711,7 +914,8 @@
    "especie": "humano",
    "amostra": "relevante",
    "areas": [
-    "musculo"
+    "musculo",
+    "longevidade"
    ],
    "titulo": {
     "en": "Vigorous and moderate activity measured by wearables",
@@ -721,6 +925,63 @@
    "conclusao": {
     "en": "In UK Biobank accelerometer data, one minute of vigorous activity corresponded to several minutes of moderate activity for mortality and cardiometabolic risk.",
     "pt": "Em dados de acelerómetro do UK Biobank, um minuto de atividade vigorosa correspondia a vários minutos de atividade moderada para a mortalidade e o risco cardiometabólico."
+   }
+  },
+  {
+   "id": "018",
+   "ano": 2025,
+   "mes": 9,
+   "especie": "animal",
+   "amostra": "relevante",
+   "titulo": {
+    "pt": "Epicatequina, halofuginona e mitoglitazona no ITP",
+    "en": "Epicatechin, halofuginone and mitoglitazone in the ITP"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/40973907/",
+   "conclusao": {
+    "pt": "No Interventions Testing Program, epicatequina, halofuginona e mitoglitazona prolongaram a vida mediana de ratinhos machos geneticamente heterogéneos, sem o mesmo efeito nas fêmeas.",
+    "en": "In the Interventions Testing Program, epicatechin, halofuginone and mitoglitazone extended median lifespan in genetically heterogeneous male mice, without the same effect in females."
+   },
+   "areas": [
+    "longevidade"
+   ]
+  },
+  {
+   "id": "033",
+   "ano": 2025,
+   "mes": 9,
+   "especie": "humano",
+   "amostra": "relevante",
+   "areas": [
+    "olhos"
+   ],
+   "titulo": {
+    "en": "SGLT2 inhibitors, metformin and glaucoma",
+    "pt": "Inibidores do SGLT2, metformina e glaucoma"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/40976317/",
+   "conclusao": {
+    "en": "In type 2 diabetes, SGLT2 inhibitors were associated with a lower risk of ocular hypertension and open-angle glaucoma than metformin.",
+    "pt": "Em diabetes tipo 2, os inibidores do SGLT2 associaram-se a menor risco de hipertensão ocular e de glaucoma de ângulo aberto do que a metformina."
+   }
+  },
+  {
+   "id": "036",
+   "ano": 2025,
+   "mes": 9,
+   "especie": "humano",
+   "amostra": "relevante",
+   "areas": [
+    "metabolismo"
+   ],
+   "titulo": {
+    "en": "Semaglutide 7.2 mg in obesity with type 2 diabetes",
+    "pt": "Semaglutido 7,2 mg na obesidade com diabetes tipo 2"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/40961953/",
+   "conclusao": {
+    "en": "In a phase 3b trial, once-weekly semaglutide 7.2 mg was superior to placebo for weight loss and HbA1c, with more dysaesthesia than the 2.4 mg dose.",
+    "pt": "Num ensaio de fase 3b, o semaglutido semanal de 7,2 mg foi superior ao placebo no emagrecimento e na HbA1c, com mais disestesia do que a dose de 2,4 mg."
    }
   },
   {
@@ -780,40 +1041,6 @@
    }
   },
   {
-   "id": "044",
-   "ano": 2025,
-   "mes": 7,
-   "especie": "animal",
-   "areas": [
-    "inflamacao"
-   ],
-   "titulo": {
-    "pt": "Rapamicina curta e regeneração do timo",
-    "en": "Short-course rapamycin and thymic regeneration"
-   },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/40691931/",
-   "conclusao": {
-    "pt": "Em ratinhas, um pulso curto de rapamicina fez o timo involuir e, depois da suspensão, regenerar para além do timo dos controlos da mesma idade.",
-    "en": "In female mice, a short course of rapamycin made the thymus involute and, after withdrawal, regenerate beyond the thymus of age-matched controls."
-   }
-  },
-  {
-   "id": "045",
-   "ano": 2025,
-   "mes": 1,
-   "especie": "humano",
-   "amostra": "pequena",
-   "titulo": {
-    "en": "Blood levels of low-dose rapamycin",
-    "pt": "Níveis sanguíneos de rapamicina em dose baixa"
-   },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/39873920/",
-   "conclusao": {
-    "en": "In real-world cohorts using low-dose rapamycin, blood levels varied widely between people but were relatively stable within the same person over repeat tests.",
-    "pt": "Em coortes reais de rapamicina em dose baixa, os níveis no sangue variaram muito entre pessoas, mas mantiveram-se relativamente estáveis na mesma pessoa em medições repetidas."
-   }
-  },
-  {
    "id": "046",
    "ano": 2025,
    "mes": 8,
@@ -833,29 +1060,14 @@
    }
   },
   {
-   "id": "047",
-   "ano": 2025,
-   "mes": 5,
-   "especie": "humano",
-   "amostra": "pequena",
-   "titulo": {
-    "en": "Therapeutic plasma exchange and biological-age clocks",
-    "pt": "Troca terapêutica de plasma e relógios de idade biológica"
-   },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/40424097/",
-   "conclusao": {
-    "en": "In a randomized trial of healthy adults over 50, therapeutic plasma exchange, particularly with intravenous immunoglobulin, was associated with rejuvenation signals on biological-age clocks.",
-    "pt": "Num ensaio aleatorizado de adultos saudáveis com mais de 50 anos, a troca terapêutica de plasma, sobretudo com imunoglobulina intravenosa, associou-se a sinais de rejuvenescimento em relógios de idade biológica."
-   }
-  },
-  {
    "id": "048",
    "ano": 2025,
    "mes": 8,
    "especie": "animal",
    "areas": [
     "musculo",
-    "cerebro"
+    "cerebro",
+    "longevidade"
    ],
    "titulo": {
     "pt": "Oxitocina com inibidor de ALK5 em ratinhos frágeis",
@@ -865,6 +1077,63 @@
    "conclusao": {
     "pt": "Em ratinhos machos já frágeis, oxitocina com um inibidor de ALK5 prolongou a vida restante e melhorou o desempenho físico e a memória de curto prazo, sem o mesmo ganho de longevidade nas fêmeas.",
     "en": "In already frail male mice, oxytocin plus an ALK5 inhibitor extended remaining lifespan and improved physical performance and short-term memory, without the same lifespan gain in females."
+   }
+  },
+  {
+   "id": "140",
+   "ano": 2025,
+   "mes": 8,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "cardiovascular"
+   ],
+   "titulo": {
+    "pt": "Reduzir anti-hipertensores em lares (RETREAT-FRAIL)",
+    "en": "Reducing blood pressure drugs in nursing homes (RETREAT-FRAIL)"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/40879421/",
+   "conclusao": {
+    "pt": "Em 1048 residentes de lares com 80 anos ou mais e tensão sistólica abaixo de 130 mm Hg, reduzir progressivamente os anti-hipertensores não mudou a mortalidade total (HR 1,02).",
+    "en": "In 1,048 nursing home residents aged 80 or older with systolic pressure below 130 mm Hg, stepping down antihypertensive drugs did not change all-cause mortality (HR 1.02)."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "141",
+   "ano": 2025,
+   "mes": 8,
+   "especie": "humano",
+   "areas": [
+    "musculo"
+   ],
+   "titulo": {
+    "pt": "Taurina não acompanha o envelhecimento em homens",
+    "en": "Taurine does not track ageing in men"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41061678/",
+   "conclusao": {
+    "pt": "Em 137 homens de 20 a 93 anos, a taurina no sangue não se associou à idade, à massa muscular, à força, ao desempenho físico nem à função mitocondrial.",
+    "en": "In 137 men aged 20–93, blood taurine was not associated with age, muscle mass, strength, physical performance or mitochondrial function."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "044",
+   "ano": 2025,
+   "mes": 7,
+   "especie": "animal",
+   "areas": [
+    "inflamacao"
+   ],
+   "titulo": {
+    "pt": "Rapamicina curta e regeneração do timo",
+    "en": "Short-course rapamycin and thymic regeneration"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/40691931/",
+   "conclusao": {
+    "pt": "Em ratinhas, um pulso curto de rapamicina fez o timo involuir e, depois da suspensão, regenerar para além do timo dos controlos da mesma idade.",
+    "en": "In female mice, a short course of rapamycin made the thymus involute and, after withdrawal, regenerate beyond the thymus of age-matched controls."
    }
   },
   {
@@ -919,26 +1188,71 @@
    "conclusao": {
     "en": "In 18,859 people, second-generation epigenetic clocks predicted incident disease and all-cause mortality better than first-generation clocks.",
     "pt": "Em 18 859 pessoas, os relógios epigenéticos de segunda geração previram melhor a doença incidente e a mortalidade por todas as causas do que os de primeira geração."
-   }
+   },
+   "areas": [
+    "longevidade"
+   ]
   },
   {
-   "id": "052",
+   "id": "142",
    "ano": 2025,
-   "mes": 4,
+   "mes": 7,
    "especie": "humano",
-   "amostra": "relevante",
    "areas": [
+    "longevidade",
+    "cerebro",
+    "inflamacao"
+   ],
+   "titulo": {
+    "pt": "Envelhecimento do cérebro e do sistema imunitário no plasma",
+    "en": "Brain and immune ageing in plasma proteins"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/40634782/",
+   "conclusao": {
+    "pt": "Em 44 498 participantes do UK Biobank, acumular órgãos envelhecidos aumentou a mortalidade até 8,3 vezes, e um cérebro e sistema imunitário jovens associaram-se a menos 56% de risco de morte.",
+    "en": "In 44,498 UK Biobank participants, accumulating aged organs raised mortality up to 8.3-fold, and a youthful brain and immune system were linked to 56% lower risk of death."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "143",
+   "ano": 2025,
+   "mes": 7,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "cardiovascular",
     "cerebro"
    ],
    "titulo": {
-    "en": "Homocysteine and health outcomes: an umbrella review",
-    "pt": "Homocisteína e desfechos de saúde: revisão guarda-chuva"
+    "pt": "Passos diários e vários desfechos de saúde: meta-análise",
+    "en": "Daily steps and many health outcomes: a meta-analysis"
    },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/40288491/",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/40713949/",
    "conclusao": {
-    "en": "An umbrella review of meta-analyses and Mendelian randomization studies found convincing evidence that homocysteine causes stroke and that lowering it with folic acid may reduce that risk.",
-    "pt": "Uma revisão guarda-chuva de meta-análises e de aleatorizações mendelianas encontrou evidência convincente de que a homocisteína causa acidente vascular cerebral e de que a baixar com ácido fólico pode reduzir esse risco."
-   }
+    "pt": "Em 57 estudos de 35 coortes, 7000 passos por dia, face a 2000, associaram-se a menos 47% de mortalidade total e menos 38% de demência.",
+    "en": "Across 57 studies from 35 cohorts, 7,000 steps a day versus 2,000 were linked to 47% lower all-cause mortality and 38% lower dementia risk."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "047",
+   "ano": 2025,
+   "mes": 5,
+   "especie": "humano",
+   "amostra": "pequena",
+   "titulo": {
+    "en": "Therapeutic plasma exchange and biological-age clocks",
+    "pt": "Troca terapêutica de plasma e relógios de idade biológica"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/40424097/",
+   "conclusao": {
+    "en": "In a randomized trial of healthy adults over 50, therapeutic plasma exchange, particularly with intravenous immunoglobulin, was associated with rejuvenation signals on biological-age clocks.",
+    "pt": "Num ensaio aleatorizado de adultos saudáveis com mais de 50 anos, a troca terapêutica de plasma, sobretudo com imunoglobulina intravenosa, associou-se a sinais de rejuvenescimento em relógios de idade biológica."
+   },
+   "areas": [
+    "longevidade"
+   ]
   },
   {
    "id": "053",
@@ -960,22 +1274,41 @@
    }
   },
   {
-   "id": "054",
+   "id": "144",
    "ano": 2025,
-   "mes": 3,
+   "mes": 5,
+   "especie": "humano",
+   "areas": [
+    "inflamacao"
+   ],
+   "titulo": {
+    "pt": "Vitamina D, ómega-3 e telómeros (VITAL)",
+    "en": "Vitamin D, omega-3 and telomeres (VITAL)"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/40409468/",
+   "conclusao": {
+    "pt": "Em 1031 participantes do VITAL, 2000 UI/dia de vitamina D3 reduziram o encurtamento dos telómeros em 140 pares de bases ao longo de 4 anos, sem efeito do ómega-3.",
+    "en": "In 1,031 VITAL participants, 2000 IU/day of vitamin D3 reduced telomere shortening by 140 base pairs over 4 years, with no effect from omega-3."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "052",
+   "ano": 2025,
+   "mes": 4,
    "especie": "humano",
    "amostra": "relevante",
    "areas": [
-    "olhos"
+    "cerebro"
    ],
    "titulo": {
-    "en": "Semaglutide and non-arteritic anterior ischaemic optic neuropathy",
-    "pt": "Semaglutido e neuropatia ótica isquémica anterior não arterítica"
+    "en": "Homocysteine and health outcomes: an umbrella review",
+    "pt": "Homocisteína e desfechos de saúde: revisão guarda-chuva"
    },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/40098249/",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/40288491/",
    "conclusao": {
-    "en": "In Danish and Norwegian cohorts, semaglutide for type 2 diabetes was associated with a higher risk of non-arteritic anterior ischaemic optic neuropathy than SGLT2 inhibitors, although the absolute risk was low.",
-    "pt": "Em coortes da Dinamarca e da Noruega, o semaglutido na diabetes tipo 2 associou-se a maior risco de neuropatia ótica isquémica anterior não arterítica do que os inibidores do SGLT2, embora o risco absoluto fosse baixo."
+    "en": "An umbrella review of meta-analyses and Mendelian randomization studies found convincing evidence that homocysteine causes stroke and that lowering it with folic acid may reduce that risk.",
+    "pt": "Uma revisão guarda-chuva de meta-análises e de aleatorizações mendelianas encontrou evidência convincente de que a homocisteína causa acidente vascular cerebral e de que a baixar com ácido fólico pode reduzir esse risco."
    }
   },
   {
@@ -991,7 +1324,10 @@
    "conclusao": {
     "en": "A clinical clock trained on survival, LinAge2, predicted mortality more accurately than clocks trained only on chronological age.",
     "pt": "Um relógio clínico treinado na sobrevivência, o LinAge2, previu a mortalidade com mais precisão do que relógios treinados só na idade cronológica."
-   }
+   },
+   "areas": [
+    "longevidade"
+   ]
   },
   {
    "id": "056",
@@ -1032,22 +1368,40 @@
    }
   },
   {
-   "id": "058",
+   "id": "145",
    "ano": 2025,
-   "mes": 2,
-   "especie": "animal",
+   "mes": 4,
+   "especie": "humano",
    "areas": [
-    "musculo",
-    "cerebro"
+    "musculo"
    ],
    "titulo": {
-    "pt": "Klotho secretada e longevidade em ratinhos",
-    "en": "Secreted klotho and lifespan in mice"
+    "pt": "Rapamicina semanal em dose baixa durante um ano (PEARL)",
+    "en": "Low-dose weekly rapamycin for one year (PEARL)"
    },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/39988871/",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/40188830/",
    "conclusao": {
-    "pt": "Em ratinhos de tipo selvagem, um vírus AAV9 que eleva a forma secretada da klotho aumentou a longevidade em 20% e melhorou a condição muscular, óssea e a neurogénese.",
-    "en": "In wild-type mice, an AAV9 virus that raises secreted klotho increased lifespan by 20% and improved muscle, bone and adult neurogenesis."
+    "pt": "Em adultos saudáveis, 48 semanas de rapamicina intermitente (5 ou 10 mg por semana) foram relativamente seguras, sem mudar a gordura visceral, e a dose de 10 mg melhorou a massa magra e a dor nas mulheres.",
+    "en": "In healthy adults, 48 weeks of intermittent rapamycin (5 or 10 mg weekly) was relatively safe without changing visceral fat, and 10 mg improved lean mass and pain in women."
+   }
+  },
+  {
+   "id": "054",
+   "ano": 2025,
+   "mes": 3,
+   "especie": "humano",
+   "amostra": "relevante",
+   "areas": [
+    "olhos"
+   ],
+   "titulo": {
+    "en": "Semaglutide and non-arteritic anterior ischaemic optic neuropathy",
+    "pt": "Semaglutido e neuropatia ótica isquémica anterior não arterítica"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/40098249/",
+   "conclusao": {
+    "en": "In Danish and Norwegian cohorts, semaglutide for type 2 diabetes was associated with a higher risk of non-arteritic anterior ischaemic optic neuropathy than SGLT2 inhibitors, although the absolute risk was low.",
+    "pt": "Em coortes da Dinamarca e da Noruega, o semaglutido na diabetes tipo 2 associou-se a maior risco de neuropatia ótica isquémica anterior não arterítica do que os inibidores do SGLT2, embora o risco absoluto fosse baixo."
    }
   },
   {
@@ -1066,6 +1420,47 @@
    "conclusao": {
     "en": "A Mendelian randomization study linked docosahexaenoic acid and omega-3 fatty acids to a higher risk of colorectal cancer.",
     "pt": "Uma aleatorização mendeliana associou o ácido docosa-hexaenoico e os ácidos gordos ómega-3 a um maior risco de cancro colorretal."
+   }
+  },
+  {
+   "id": "146",
+   "ano": 2025,
+   "mes": 3,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "cerebro",
+    "cardiovascular"
+   ],
+   "titulo": {
+    "pt": "Padrões alimentares e envelhecimento saudável",
+    "en": "Dietary patterns and healthy ageing"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/40128348/",
+   "conclusao": {
+    "pt": "Em 105 015 participantes seguidos até 30 anos, maior adesão a padrões alimentares saudáveis associou-se a mais envelhecimento saudável, sobretudo com o Alternative Healthy Eating Index (OR 1,86).",
+    "en": "In 105,015 participants followed for up to 30 years, closer adherence to healthy dietary patterns was linked to more healthy ageing, especially the Alternative Healthy Eating Index (OR 1.86)."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "058",
+   "ano": 2025,
+   "mes": 2,
+   "especie": "animal",
+   "areas": [
+    "musculo",
+    "cerebro",
+    "longevidade"
+   ],
+   "titulo": {
+    "pt": "Klotho secretada e longevidade em ratinhos",
+    "en": "Secreted klotho and lifespan in mice"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/39988871/",
+   "conclusao": {
+    "pt": "Em ratinhos de tipo selvagem, um vírus AAV9 que eleva a forma secretada da klotho aumentou a longevidade em 20% e melhorou a condição muscular, óssea e a neurogénese.",
+    "en": "In wild-type mice, an AAV9 virus that raises secreted klotho increased lifespan by 20% and improved muscle, bone and adult neurogenesis."
    }
   },
   {
@@ -1101,7 +1496,10 @@
    "conclusao": {
     "en": "In a post hoc analysis of the DO-HEALTH trial, omega-3 slowed several DNA-methylation clocks over three years, with an added effect when vitamin D and exercise were combined.",
     "pt": "Numa análise post hoc do ensaio DO-HEALTH, o ómega-3 abrandou vários relógios de metilação do ADN ao longo de três anos, com um efeito adicional quando se juntaram vitamina D e exercício."
-   }
+   },
+   "areas": [
+    "longevidade"
+   ]
   },
   {
    "id": "062",
@@ -1123,21 +1521,19 @@
    }
   },
   {
-   "id": "063",
-   "ano": 2024,
-   "mes": 8,
+   "id": "045",
+   "ano": 2025,
+   "mes": 1,
    "especie": "humano",
-   "areas": [
-    "cancro"
-   ],
+   "amostra": "pequena",
    "titulo": {
-    "en": "SGLT2 inhibitors and thyroid cancer in Mendelian randomization",
-    "pt": "Inibidores do SGLT2 e cancro da tiroide numa aleatorização mendeliana"
+    "en": "Blood levels of low-dose rapamycin",
+    "pt": "Níveis sanguíneos de rapamicina em dose baixa"
    },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/39153085/",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/39873920/",
    "conclusao": {
-    "en": "Mendelian randomization linked genetically proxied SGLT2 inhibition to a lower risk of thyroid cancer, particularly papillary thyroid cancer.",
-    "pt": "A aleatorização mendeliana associou a inibição do SGLT2, aproximada por genética, a um menor risco de cancro da tiroide, em particular o papilar."
+    "en": "In real-world cohorts using low-dose rapamycin, blood levels varied widely between people but were relatively stable within the same person over repeat tests.",
+    "pt": "Em coortes reais de rapamicina em dose baixa, os níveis no sangue variaram muito entre pessoas, mas mantiveram-se relativamente estáveis na mesma pessoa em medições repetidas."
    }
   },
   {
@@ -1147,7 +1543,8 @@
    "especie": "humano",
    "amostra": "relevante",
    "areas": [
-    "musculo"
+    "musculo",
+    "longevidade"
    ],
    "titulo": {
     "en": "Long-term physical activity, biological ageing and mortality in twins",
@@ -1158,6 +1555,26 @@
     "en": "In a prospective twin study, the link between leisure-time activity and lower mortality largely weakened after accounting for familial factors and reverse causation.",
     "pt": "Num estudo prospetivo de gémeos, a ligação entre a atividade de lazer e a menor mortalidade enfraqueceu em grande parte depois de se ter em conta fatores familiares e causalidade reversa."
    }
+  },
+  {
+   "id": "147",
+   "ano": 2025,
+   "mes": 1,
+   "especie": "humano",
+   "areas": [
+    "cerebro",
+    "metabolismo"
+   ],
+   "titulo": {
+    "pt": "Mapa de benefícios e riscos dos agonistas GLP-1",
+    "en": "Map of GLP-1 agonist benefits and risks"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/39833406/",
+   "conclusao": {
+    "pt": "Em veteranos com diabetes, incluindo 215 970 que iniciaram um agonista GLP-1, o uso associou-se a menos demência, perturbações de consumo de substâncias e doença cardiometabólica, mas a mais problemas gastrointestinais e pancreatite.",
+    "en": "In veterans with diabetes, including 215,970 who started a GLP-1 agonist, use was linked to less dementia, substance-use disorders and cardiometabolic disease, but more gastrointestinal problems and pancreatitis."
+   },
+   "amostra": "relevante"
   },
   {
    "id": "065",
@@ -1192,7 +1609,10 @@
    "conclusao": {
     "en": "In the UK Biobank, most prescribed drugs tracked with higher mortality, while a few, including sildenafil and atorvastatin, were associated with lower all-cause mortality.",
     "pt": "No UK Biobank, a maior parte dos fármacos prescritos acompanhou maior mortalidade, enquanto alguns, entre eles o sildenafil e a atorvastatina, se associaram a menor mortalidade por todas as causas."
-   }
+   },
+   "areas": [
+    "longevidade"
+   ]
   },
   {
    "id": "067",
@@ -1203,28 +1623,107 @@
     "en": "DNA-methylation clocks across 51 human intervention studies",
     "pt": "Relógios de metilação do ADN em 51 estudos de intervenção em humanos"
    },
-   "link": "https://doi.org/10.1101/2024.10.22.619522",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42629466/",
    "conclusao": {
     "en": "Across 51 human intervention studies, DNA-methylation clocks responded to some longevity interventions, with consistent effects for some drug classes and inconsistent effects for senolytics.",
     "pt": "Em 51 estudos de intervenção em humanos, os relógios de metilação do ADN responderam a algumas intervenções de longevidade, com efeitos consistentes nuns grupos de fármacos e inconsistentes nos senolíticos."
-   }
+   },
+   "areas": [
+    "longevidade"
+   ]
   },
   {
-   "id": "068",
+   "id": "148",
    "ano": 2024,
-   "mes": 6,
-   "especie": "humano",
+   "mes": 10,
+   "especie": "animal",
    "areas": [
+    "longevidade",
     "metabolismo"
    ],
    "titulo": {
-    "en": "Homocysteine, epigenetic ageing and B vitamins",
-    "pt": "Homocisteína, envelhecimento epigenético e vitaminas B"
+    "pt": "Restrição calórica e jejum em 960 ratinhos diversos",
+    "en": "Caloric restriction and fasting in 960 diverse mice"
    },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/38937999/",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/39385029/",
    "conclusao": {
-    "en": "In people with mild cognitive impairment, higher homocysteine tracked with faster epigenetic ageing, and B-vitamin treatment was followed by a normalization of that acceleration.",
-    "pt": "Em pessoas com défice cognitivo ligeiro, a homocisteína mais alta acompanhou um envelhecimento epigenético mais rápido, e o tratamento com vitaminas B foi seguido de uma normalização dessa aceleração."
+    "pt": "Em 960 ratinhos fêmea geneticamente diversos, a restrição calórica e o jejum intermitente prolongaram a vida em proporção à restrição, mas a genética pesou mais e a restrição de 40% reduziu a massa magra.",
+    "en": "In 960 genetically diverse female mice, caloric restriction and intermittent fasting extended lifespan in proportion to restriction, but genetics mattered more and 40% restriction reduced lean mass."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "070",
+   "ano": 2024,
+   "mes": 9,
+   "especie": "humano",
+   "amostra": "pequena",
+   "titulo": {
+    "en": "Fisetin and biological age: a pilot study",
+    "pt": "Fisetina e idade biológica: um estudo-piloto"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/39269340/",
+   "conclusao": {
+    "en": "In ten healthy adults over 50, one week of fisetin per month for six months lowered biological age in four, raised it in five and left it unchanged in one, with no statistical change in telomere length.",
+    "pt": "Em dez adultos saudáveis com mais de 50 anos, uma semana de fisetina por mês durante seis meses baixou a idade biológica em quatro, subiu-a em cinco e não a alterou num, sem mudança estatística no comprimento dos telómeros."
+   },
+   "areas": [
+    "longevidade"
+   ]
+  },
+  {
+   "id": "071",
+   "ano": 2024,
+   "mes": 9,
+   "especie": "animal",
+   "areas": [
+    "musculo"
+   ],
+   "titulo": {
+    "pt": "Veículos proteolipídicos para entregar ADN e ARN",
+    "en": "Proteolipid vehicles for DNA and RNA delivery"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/39260374/",
+   "conclusao": {
+    "pt": "Veículos proteolipídicos entregaram ADN e ARN mensageiro em ratinhos e em primatas não humanos, e uma terapia com folistatina por essa via aumentou a massa muscular e a força de preensão.",
+    "en": "Proteolipid vehicles delivered DNA and messenger RNA in mice and non-human primates, and follistatin therapy by that route increased muscle mass and grip strength."
+   }
+  },
+  {
+   "id": "149",
+   "ano": 2024,
+   "mes": 9,
+   "especie": "animal",
+   "areas": [
+    "longevidade",
+    "cerebro"
+   ],
+   "titulo": {
+    "pt": "Metformina e relógios de envelhecimento em macacos",
+    "en": "Metformin and ageing clocks in monkeys"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/39270656/",
+   "conclusao": {
+    "pt": "Em macacos cinomolgos machos tratados durante 40 meses, a metformina abrandou vários relógios de envelhecimento, com uma regressão de cerca de 6 anos no envelhecimento cerebral.",
+    "en": "In male cynomolgus monkeys treated for 40 months, metformin slowed several ageing clocks, with a roughly 6-year regression in brain ageing."
+   }
+  },
+  {
+   "id": "063",
+   "ano": 2024,
+   "mes": 8,
+   "especie": "humano",
+   "areas": [
+    "cancro"
+   ],
+   "titulo": {
+    "en": "SGLT2 inhibitors and thyroid cancer in Mendelian randomization",
+    "pt": "Inibidores do SGLT2 e cancro da tiroide numa aleatorização mendeliana"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/39153085/",
+   "conclusao": {
+    "en": "Mendelian randomization linked genetically proxied SGLT2 inhibition to a lower risk of thyroid cancer, particularly papillary thyroid cancer.",
+    "pt": "A aleatorização mendeliana associou a inibição do SGLT2, aproximada por genética, a um menor risco de cancro da tiroide, em particular o papilar."
    }
   },
   {
@@ -1243,40 +1742,6 @@
    "conclusao": {
     "pt": "Em ratinhos machos idosos, a gordura visceral inflamada acompanhou depósito de ferro e perda de mielina no cérebro, e a remoção dessa gordura atenuou essas alterações.",
     "en": "In aged male mice, inflamed visceral fat accompanied brain iron deposition and myelin loss, and removing that fat lessened those changes."
-   }
-  },
-  {
-   "id": "070",
-   "ano": 2024,
-   "mes": 9,
-   "especie": "humano",
-   "amostra": "pequena",
-   "titulo": {
-    "en": "Fisetin and biological age: a pilot study",
-    "pt": "Fisetina e idade biológica: um estudo-piloto"
-   },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/39269340/",
-   "conclusao": {
-    "en": "In ten healthy adults over 50, one week of fisetin per month for six months lowered biological age in four, raised it in five and left it unchanged in one, with no statistical change in telomere length.",
-    "pt": "Em dez adultos saudáveis com mais de 50 anos, uma semana de fisetina por mês durante seis meses baixou a idade biológica em quatro, subiu-a em cinco e não a alterou num, sem mudança estatística no comprimento dos telómeros."
-   }
-  },
-  {
-   "id": "071",
-   "ano": 2024,
-   "mes": 9,
-   "especie": "animal",
-   "areas": [
-    "musculo"
-   ],
-   "titulo": {
-    "pt": "Veículos proteolipídicos para entregar ADN e ARN",
-    "en": "Proteolipid vehicles for DNA and RNA delivery"
-   },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/39260374/",
-   "conclusao": {
-    "pt": "Veículos proteolipídicos entregaram ADN e ARN mensageiro em ratinhos e em primatas não humanos, e uma terapia com folistatina por essa via aumentou a massa muscular e a força de preensão.",
-    "en": "Proteolipid vehicles delivered DNA and messenger RNA in mice and non-human primates, and follistatin therapy by that route increased muscle mass and grip strength."
    }
   },
   {
@@ -1299,13 +1764,55 @@
    }
   },
   {
+   "id": "150",
+   "ano": 2024,
+   "mes": 8,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "inflamacao"
+   ],
+   "titulo": {
+    "pt": "Relógio proteómico de envelhecimento no UK Biobank",
+    "en": "Proteomic ageing clock in the UK Biobank"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/39117878/",
+   "conclusao": {
+    "pt": "Em 45 441 participantes, um relógio de 204 proteínas previu a idade (r = 0,94) e associou-se a 18 doenças crónicas, multimorbilidade e mortalidade, com validação na China e na Finlândia.",
+    "en": "In 45,441 participants, a 204-protein clock predicted age (r = 0.94) and was linked to 18 chronic diseases, multimorbidity and mortality, with validation in China and Finland."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "151",
+   "ano": 2024,
+   "mes": 8,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "metabolismo",
+    "cardiovascular"
+   ],
+   "titulo": {
+    "pt": "Mudanças não lineares no envelhecimento: 44 e 60 anos",
+    "en": "Nonlinear ageing changes: ages 44 and 60"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/39143318/",
+   "conclusao": {
+    "pt": "Em 108 adultos dos 25 aos 75 anos seguidos com multi-ómicas, as moléculas do envelhecimento mudaram sobretudo em dois períodos, por volta dos 44 e dos 60 anos.",
+    "en": "In 108 adults aged 25–75 followed with multi-omics, ageing molecules changed mostly in two periods, around ages 44 and 60."
+   },
+   "amostra": "relevante"
+  },
+  {
    "id": "073",
    "ano": 2024,
    "mes": 7,
    "especie": "animal",
    "areas": [
     "inflamacao",
-    "musculo"
+    "musculo",
+    "longevidade"
    ],
    "titulo": {
     "pt": "Bloqueio da IL-11 e longevidade em ratinhos",
@@ -1315,39 +1822,6 @@
    "conclusao": {
     "pt": "Em ratinhos, bloquear a IL-11 melhorou o metabolismo e a função muscular e prolongou a vida, tanto por deleção genética como por um anticorpo iniciado numa idade avançada.",
     "en": "In mice, blocking IL-11 improved metabolism and muscle function and extended life, both by genetic deletion and by an antibody started at an older age."
-   }
-  },
-  {
-   "id": "074",
-   "ano": 2024,
-   "mes": 3,
-   "especie": "animal",
-   "areas": [
-    "cerebro"
-   ],
-   "titulo": {
-    "pt": "Ergotioneína e longevidade em ratinhos machos",
-    "en": "Ergothioneine and lifespan in male mice"
-   },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/38446314/",
-   "conclusao": {
-    "pt": "A ergotioneína na água de beber prolongou a vida de ratinhos machos e atenuou o declínio do movimento, da aprendizagem e de marcadores sanguíneos ligados à idade.",
-    "en": "Ergothioneine in drinking water extended the lifespan of male mice and lessened age-related declines in movement, learning and blood markers."
-   }
-  },
-  {
-   "id": "075",
-   "ano": 2024,
-   "mes": 4,
-   "especie": "humano",
-   "titulo": {
-    "en": "Epigenetic age across the day",
-    "pt": "Idade epigenética ao longo do dia"
-   },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/38638005/",
-   "conclusao": {
-    "en": "Several epigenetic clocks oscillated over 24 hours, so the time of the blood draw changes the epigenetic-age estimate.",
-    "pt": "Vários relógios epigenéticos oscilaram ao longo de 24 horas, pelo que a hora da colheita de sangue altera a estimativa de idade epigenética."
    }
   },
   {
@@ -1388,6 +1862,43 @@
    }
   },
   {
+   "id": "080",
+   "ano": 2024,
+   "mes": 7,
+   "especie": "animal",
+   "titulo": {
+    "pt": "Trametinib e rapamicina na longevidade de ratinhos",
+    "en": "Trametinib and rapamycin in mouse lifespan"
+   },
+   "link": "https://doi.org/10.1101/2024.07.25.605097",
+   "conclusao": {
+    "pt": "Em ratinhos, o trametinib prolongou a vida nos dois sexos, e o artigo conclui que a combinação com rapamicina foi mais eficaz do que cada fármaco isoladamente.",
+    "en": "In mice, trametinib extended lifespan in both sexes, and the paper concludes that combining it with rapamycin was more effective than either drug alone."
+   },
+   "areas": [
+    "longevidade"
+   ]
+  },
+  {
+   "id": "068",
+   "ano": 2024,
+   "mes": 6,
+   "especie": "humano",
+   "areas": [
+    "metabolismo",
+    "longevidade"
+   ],
+   "titulo": {
+    "en": "Homocysteine, epigenetic ageing and B vitamins",
+    "pt": "Homocisteína, envelhecimento epigenético e vitaminas B"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/38937999/",
+   "conclusao": {
+    "en": "In people with mild cognitive impairment, higher homocysteine tracked with faster epigenetic ageing, and B-vitamin treatment was followed by a normalization of that acceleration.",
+    "pt": "Em pessoas com défice cognitivo ligeiro, a homocisteína mais alta acompanhou um envelhecimento epigenético mais rápido, e o tratamento com vitaminas B foi seguido de uma normalização dessa aceleração."
+   }
+  },
+  {
    "id": "078",
    "ano": 2024,
    "mes": 6,
@@ -1406,39 +1917,6 @@
    }
   },
   {
-   "id": "079",
-   "ano": 2024,
-   "mes": 5,
-   "especie": "animal",
-   "areas": [
-    "metabolismo"
-   ],
-   "titulo": {
-    "pt": "Inibição do SGLT2 e células senescentes em ratinhos",
-    "en": "SGLT2 inhibition and senescent cells in mice"
-   },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/38816549/",
-   "conclusao": {
-    "pt": "Em ratinhos, a canagliflozina reduziu a carga de células senescentes na gordura visceral e prolongou a vida num modelo de envelhecimento prematuro, ao contrário da normalização da glicose com insulina.",
-    "en": "In mice, canagliflozin reduced the senescent-cell burden in visceral fat and extended life in a premature-ageing model, unlike normalizing glucose with insulin."
-   }
-  },
-  {
-   "id": "080",
-   "ano": 2024,
-   "mes": 7,
-   "especie": "animal",
-   "titulo": {
-    "pt": "Trametinib e rapamicina na longevidade de ratinhos",
-    "en": "Trametinib and rapamycin in mouse lifespan"
-   },
-   "link": "https://doi.org/10.1101/2024.07.25.605097",
-   "conclusao": {
-    "pt": "Em ratinhos, o trametinib prolongou a vida nos dois sexos, e o artigo conclui que a combinação com rapamicina foi mais eficaz do que cada fármaco isoladamente.",
-    "en": "In mice, trametinib extended lifespan in both sexes, and the paper concludes that combining it with rapamycin was more effective than either drug alone."
-   }
-  },
-  {
    "id": "081",
    "ano": 2024,
    "mes": 6,
@@ -1454,6 +1932,44 @@
    "conclusao": {
     "pt": "Em hipocampos post mortem, os agregados proteicos e a interação entre a hexocinase-1 e a 14-3-3G estavam aumentados na demência e na doença cardíaca, e o artigo aponta o ezetimiba como possível interruptor dessa ligação.",
     "en": "In postmortem hippocampi, protein aggregates and the hexokinase-1 interaction with 14-3-3G were higher in dementia and heart disease, and the paper points to ezetimibe as a possible disruptor of that binding."
+   }
+  },
+  {
+   "id": "152",
+   "ano": 2024,
+   "mes": 6,
+   "especie": "humano",
+   "areas": [
+    "sono"
+   ],
+   "titulo": {
+    "pt": "Tirzepatida na apneia do sono com obesidade (SURMOUNT-OSA)",
+    "en": "Tirzepatide in sleep apnoea with obesity (SURMOUNT-OSA)"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/38912654/",
+   "conclusao": {
+    "pt": "Em dois ensaios de 52 semanas em adultos com apneia do sono moderada a grave e obesidade, a tirzepatida reduziu o índice de apneia-hipopneia em 20,0 e 23,8 eventos por hora a mais do que o placebo.",
+    "en": "In two 52-week trials in adults with moderate-to-severe sleep apnoea and obesity, tirzepatide reduced the apnoea-hypopnoea index by 20.0 and 23.8 more events per hour than placebo."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "079",
+   "ano": 2024,
+   "mes": 5,
+   "especie": "animal",
+   "areas": [
+    "metabolismo",
+    "longevidade"
+   ],
+   "titulo": {
+    "pt": "Inibição do SGLT2 e células senescentes em ratinhos",
+    "en": "SGLT2 inhibition and senescent cells in mice"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/38816549/",
+   "conclusao": {
+    "pt": "Em ratinhos, a canagliflozina reduziu a carga de células senescentes na gordura visceral e prolongou a vida num modelo de envelhecimento prematuro, ao contrário da normalização da glicose com insulina.",
+    "en": "In mice, canagliflozin reduced the senescent-cell burden in visceral fat and extended life in a premature-ageing model, unlike normalizing glucose with insulin."
    }
   },
   {
@@ -1494,37 +2010,60 @@
    }
   },
   {
-   "id": "084",
-   "ano": 2023,
-   "mes": 9,
+   "id": "153",
+   "ano": 2024,
+   "mes": 5,
    "especie": "humano",
-   "amostra": "relevante",
-   "titulo": {
-    "en": "Blood biomarkers and survival to 100 years",
-    "pt": "Biomarcadores sanguíneos e sobrevivência até aos 100 anos"
-   },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/37726432/",
-   "conclusao": {
-    "en": "In the AMORIS cohort, people who reached 100 already showed more favourable routine blood profiles from age 65 than people who died earlier.",
-    "pt": "Na coorte AMORIS, quem chegou aos 100 anos já mostrava, desde os 65, perfis sanguíneos de rotina mais favoráveis do que quem morreu mais cedo."
-   }
-  },
-  {
-   "id": "085",
-   "ano": 2023,
-   "mes": 10,
-   "especie": "animal",
    "areas": [
-    "cardiovascular"
+    "longevidade",
+    "rim"
    ],
    "titulo": {
-    "pt": "Órgãos idosos transplantados para recetores jovens",
-    "en": "Old organs transplanted into young recipients"
+    "pt": "Semaglutido na doença renal com diabetes (FLOW)",
+    "en": "Semaglutide in kidney disease with diabetes (FLOW)"
    },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/37913871/",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/38785209/",
    "conclusao": {
-    "pt": "Em ratinhos, transplantar um coração de um dador idoso para um recetor mais novo aumentou células senescentes em vários tecidos e piorou o desempenho físico e a memória espacial.",
-    "en": "In mice, transplanting a heart from an old donor into a younger recipient increased senescent cells in several tissues and worsened physical performance and spatial memory."
+    "pt": "Em 3533 doentes com diabetes tipo 2 e doença renal crónica, o semaglutido reduziu em 24% os eventos renais graves e em 20% a morte por qualquer causa.",
+    "en": "In 3,533 patients with type 2 diabetes and chronic kidney disease, semaglutide reduced major kidney events by 24% and all-cause death by 20%."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "075",
+   "ano": 2024,
+   "mes": 4,
+   "especie": "humano",
+   "titulo": {
+    "en": "Epigenetic age across the day",
+    "pt": "Idade epigenética ao longo do dia"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/38638005/",
+   "conclusao": {
+    "en": "Several epigenetic clocks oscillated over 24 hours, so the time of the blood draw changes the epigenetic-age estimate.",
+    "pt": "Vários relógios epigenéticos oscilaram ao longo de 24 horas, pelo que a hora da colheita de sangue altera a estimativa de idade epigenética."
+   },
+   "areas": [
+    "longevidade"
+   ]
+  },
+  {
+   "id": "074",
+   "ano": 2024,
+   "mes": 3,
+   "especie": "animal",
+   "areas": [
+    "cerebro",
+    "longevidade"
+   ],
+   "titulo": {
+    "pt": "Ergotioneína e longevidade em ratinhos machos",
+    "en": "Ergothioneine and lifespan in male mice"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/38446314/",
+   "conclusao": {
+    "pt": "A ergotioneína na água de beber prolongou a vida de ratinhos machos e atenuou o declínio do movimento, da aprendizagem e de marcadores sanguíneos ligados à idade.",
+    "en": "Ergothioneine in drinking water extended the lifespan of male mice and lessened age-related declines in movement, learning and blood markers."
    }
   },
   {
@@ -1541,7 +2080,31 @@
    "conclusao": {
     "pt": "No Interventions Testing Program, astaxantina e meclizina prolongaram a vida mediana de ratinhos UM-HET3 machos, enquanto a fisetina e outros quatro compostos não o fizeram em nenhum dos sexos.",
     "en": "In the Interventions Testing Program, astaxanthin and meclizine extended median lifespan in male UM-HET3 mice, whereas fisetin and four other compounds did not in either sex."
-   }
+   },
+   "areas": [
+    "longevidade"
+   ]
+  },
+  {
+   "id": "154",
+   "ano": 2023,
+   "mes": 12,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "cardiovascular",
+    "cerebro"
+   ],
+   "titulo": {
+    "pt": "Envelhecimento de órgãos no proteoma do plasma",
+    "en": "Organ ageing in the plasma proteome"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/38057571/",
+   "conclusao": {
+    "pt": "Em 5676 adultos, cerca de 20% tinham um órgão com envelhecimento muito acelerado, o que se associou a mais 20–50% de mortalidade, e o coração envelhecido a mais 250% de risco de insuficiência cardíaca.",
+    "en": "In 5,676 adults, about 20% had one strongly accelerated ageing organ, linked to 20–50% higher mortality, and accelerated heart ageing to a 250% higher heart failure risk."
+   },
+   "amostra": "relevante"
   },
   {
    "id": "087",
@@ -1551,7 +2114,8 @@
    "amostra": "relevante",
    "areas": [
     "cardiovascular",
-    "cancro"
+    "cancro",
+    "longevidade"
    ],
    "titulo": {
     "en": "Dietary fibre and mortality",
@@ -1570,7 +2134,8 @@
    "especie": "humano",
    "amostra": "relevante",
    "areas": [
-    "cancro"
+    "cancro",
+    "longevidade"
    ],
    "titulo": {
     "en": "Cancer screening and lifetime gained",
@@ -1602,6 +2167,62 @@
    }
   },
   {
+   "id": "155",
+   "ano": 2023,
+   "mes": 11,
+   "especie": "humano",
+   "areas": [
+    "cardiovascular"
+   ],
+   "titulo": {
+    "pt": "Semaglutido e eventos cardiovasculares sem diabetes (SELECT)",
+    "en": "Semaglutide and cardiovascular events without diabetes (SELECT)"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/37952131/",
+   "conclusao": {
+    "pt": "Em 17 604 pessoas com doença cardiovascular e excesso de peso sem diabetes, o semaglutido 2,4 mg semanal reduziu em 20% a morte cardiovascular, o enfarte e o AVC não fatais (HR 0,80).",
+    "en": "In 17,604 people with cardiovascular disease and overweight but no diabetes, weekly semaglutide 2.4 mg cut cardiovascular death, nonfatal heart attack and stroke by 20% (HR 0.80)."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "085",
+   "ano": 2023,
+   "mes": 10,
+   "especie": "animal",
+   "areas": [
+    "cardiovascular"
+   ],
+   "titulo": {
+    "pt": "Órgãos idosos transplantados para recetores jovens",
+    "en": "Old organs transplanted into young recipients"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/37913871/",
+   "conclusao": {
+    "pt": "Em ratinhos, transplantar um coração de um dador idoso para um recetor mais novo aumentou células senescentes em vários tecidos e piorou o desempenho físico e a memória espacial.",
+    "en": "In mice, transplanting a heart from an old donor into a younger recipient increased senescent cells in several tissues and worsened physical performance and spatial memory."
+   }
+  },
+  {
+   "id": "084",
+   "ano": 2023,
+   "mes": 9,
+   "especie": "humano",
+   "amostra": "relevante",
+   "titulo": {
+    "en": "Blood biomarkers and survival to 100 years",
+    "pt": "Biomarcadores sanguíneos e sobrevivência até aos 100 anos"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/37726432/",
+   "conclusao": {
+    "en": "In the AMORIS cohort, people who reached 100 already showed more favourable routine blood profiles from age 65 than people who died earlier.",
+    "pt": "Na coorte AMORIS, quem chegou aos 100 anos já mostrava, desde os 65, perfis sanguíneos de rotina mais favoráveis do que quem morreu mais cedo."
+   },
+   "areas": [
+    "longevidade"
+   ]
+  },
+  {
    "id": "090",
    "ano": 2023,
    "mes": 9,
@@ -1615,7 +2236,85 @@
    "conclusao": {
     "en": "In a small human pilot, dasatinib plus quercetin shifted DNA-methylation clocks, and adding fisetin did not produce a clear slowing of epigenetic age.",
     "pt": "Num pequeno piloto em humanos, dasatinib com quercetina alterou os relógios de metilação do ADN, e juntar fisetina não produziu um abrandamento claro da idade epigenética."
+   },
+   "areas": [
+    "longevidade"
+   ]
+  },
+  {
+   "id": "156",
+   "ano": 2023,
+   "mes": 9,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "sono"
+   ],
+   "titulo": {
+    "pt": "Regularidade do sono e mortalidade",
+    "en": "Sleep regularity and mortality"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/37738616/",
+   "conclusao": {
+    "pt": "Em 60 977 participantes do UK Biobank, um sono mais regular associou-se a menos 20–48% de mortalidade total e foi melhor preditor do que a duração do sono.",
+    "en": "In 60,977 UK Biobank participants, more regular sleep was linked to 20–48% lower all-cause mortality and was a stronger predictor than sleep duration."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "093",
+   "ano": 2023,
+   "mes": 7,
+   "especie": "animal",
+   "titulo": {
+    "pt": "Reprogramação química do envelhecimento celular",
+    "en": "Chemical reprogramming of cellular aging"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/37437248/",
+   "conclusao": {
+    "pt": "Seis cocktails químicos restauraram, em menos de uma semana, um perfil de transcrição mais jovem em células humanas envelhecidas, sem apagar a identidade celular.",
+    "en": "Six chemical cocktails restored a younger transcript profile in aged human cells within a week, without erasing cellular identity."
+   },
+   "areas": [
+    "longevidade"
+   ]
+  },
+  {
+   "id": "157",
+   "ano": 2023,
+   "mes": 7,
+   "especie": "animal",
+   "areas": [
+    "cerebro"
+   ],
+   "titulo": {
+    "pt": "Klotho e memória em macacos velhos",
+    "en": "Klotho and memory in old monkeys"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/37400721/",
+   "conclusao": {
+    "pt": "Uma única dose baixa, mas não alta, de klotho melhorou a memória de macacos rhesus idosos.",
+    "en": "A single low dose, but not a high dose, of klotho improved memory in aged rhesus monkeys."
    }
+  },
+  {
+   "id": "158",
+   "ano": 2023,
+   "mes": 7,
+   "especie": "humano",
+   "areas": [
+    "cardiovascular"
+   ],
+   "titulo": {
+    "pt": "Exercício concentrado ao fim de semana e doença cardiovascular",
+    "en": "Weekend-warrior exercise and cardiovascular disease"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/37462704/",
+   "conclusao": {
+    "pt": "Em 89 573 participantes do UK Biobank, concentrar a atividade física em 1–2 dias associou-se a reduções semelhantes de fibrilhação auricular, enfarte, insuficiência cardíaca e AVC às da atividade distribuída.",
+    "en": "In 89,573 UK Biobank participants, concentrating physical activity into 1–2 days was linked to similar reductions in atrial fibrillation, heart attack, heart failure and stroke as evenly spread activity."
+   },
+   "amostra": "relevante"
   },
   {
    "id": "091",
@@ -1637,36 +2336,40 @@
    }
   },
   {
-   "id": "092",
+   "id": "095",
    "ano": 2023,
-   "mes": 3,
-   "especie": "humano",
+   "mes": 6,
+   "especie": "animal",
    "areas": [
-    "musculo"
+    "rim"
    ],
    "titulo": {
-    "en": "Statins plus SGLT2 inhibitors and myotoxicity reports",
-    "pt": "Estatinas com inibidores do SGLT2 e relatos de miotoxicidade"
+    "pt": "Vitrificação e nanowarming de rins de rato",
+    "en": "Vitrification and nanowarming of rat kidneys"
    },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/36912450/",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/37296144/",
    "conclusao": {
-    "en": "In a disproportionality analysis of adverse-event reports, combining statins with SGLT2 inhibitors was not associated with more reports of myopathy or rhabdomyolysis.",
-    "pt": "Numa análise de desproporcionalidade de notificações de efeitos adversos, juntar estatinas a inibidores do SGLT2 não se associou a mais relatos de miopatia ou rabdomiólise."
+    "pt": "Em ratos machos, rins vitrificados e reaquecidos por nanowarming, depois de até 100 dias de armazenamento, recuperaram função renal capaz de sustentar a vida após transplante.",
+    "en": "In male rats, vitrified kidneys rewarmed by nanowarming after up to 100 days of storage recovered life-sustaining renal function after transplantation."
    }
   },
   {
-   "id": "093",
+   "id": "159",
    "ano": 2023,
-   "mes": 7,
-   "especie": "animal",
+   "mes": 6,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "metabolismo"
+   ],
    "titulo": {
-    "pt": "Reprogramação química do envelhecimento celular",
-    "en": "Chemical reprogramming of cellular aging"
+    "pt": "Taurina e envelhecimento",
+    "en": "Taurine and ageing"
    },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/37437248/",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/37289866/",
    "conclusao": {
-    "pt": "Seis cocktails químicos restauraram, em menos de uma semana, um perfil de transcrição mais jovem em células humanas envelhecidas, sem apagar a identidade celular.",
-    "en": "Six chemical cocktails restored a younger transcript profile in aged human cells within a week, without erasing cellular identity."
+    "pt": "A taurina circulante diminuiu com a idade em ratinhos, macacos e humanos, a suplementação prolongou a saúde e a vida em ratinhos e, em humanos, níveis mais baixos associaram-se a várias doenças da idade.",
+    "en": "Circulating taurine fell with age in mice, monkeys and humans; supplementation extended healthspan and lifespan in mice, and in humans lower levels correlated with several age-related diseases."
    }
   },
   {
@@ -1689,24 +2392,6 @@
    }
   },
   {
-   "id": "095",
-   "ano": 2023,
-   "mes": 6,
-   "especie": "animal",
-   "areas": [
-    "rim"
-   ],
-   "titulo": {
-    "pt": "Vitrificação e nanowarming de rins de rato",
-    "en": "Vitrification and nanowarming of rat kidneys"
-   },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/37296144/",
-   "conclusao": {
-    "pt": "Em ratos machos, rins vitrificados e reaquecidos por nanowarming, depois de até 100 dias de armazenamento, recuperaram função renal capaz de sustentar a vida após transplante.",
-    "en": "In male rats, vitrified kidneys rewarmed by nanowarming after up to 100 days of storage recovered life-sustaining renal function after transplantation."
-   }
-  },
-  {
    "id": "096",
    "ano": 2023,
    "mes": 4,
@@ -1726,23 +2411,80 @@
    }
   },
   {
-   "id": "097",
+   "id": "160",
    "ano": 2023,
-   "mes": 1,
+   "mes": 4,
    "especie": "humano",
-   "amostra": "pequena",
+   "areas": [
+    "longevidade",
+    "cerebro"
+   ],
+   "titulo": {
+    "pt": "Envelhecimento heterogéneo de vários órgãos",
+    "en": "Heterogeneous ageing across organ systems"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/37024597/",
+   "conclusao": {
+    "pt": "No UK Biobank, idades biológicas de três sistemas cerebrais e sete corporais revelaram uma rede de envelhecimento entre órgãos, e a idade corporal previu a morte prematura (AUC 0,86).",
+    "en": "In the UK Biobank, biological ages of three brain and seven body systems revealed a multi-organ ageing network, and body age predicted premature death (AUC 0.86)."
+   }
+  },
+  {
+   "id": "092",
+   "ano": 2023,
+   "mes": 3,
+   "especie": "humano",
    "areas": [
     "musculo"
    ],
    "titulo": {
-    "en": "Glycine plus N-acetylcysteine in older adults",
-    "pt": "Glicina com N-acetilcisteína em adultos mais velhos"
+    "en": "Statins plus SGLT2 inhibitors and myotoxicity reports",
+    "pt": "Estatinas com inibidores do SGLT2 e relatos de miotoxicidade"
    },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/35975308/",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/36912450/",
    "conclusao": {
-    "en": "In older adults, 16 weeks of glycine plus N-acetylcysteine improved glutathione deficiency, oxidative stress, mitochondrial function, inflammation and physical function compared with placebo.",
-    "pt": "Em adultos mais velhos, 16 semanas de glicina com N-acetilcisteína melhoraram o défice de glutationa, o stress oxidativo, a função mitocondrial, a inflamação e a função física face a placebo."
+    "en": "In a disproportionality analysis of adverse-event reports, combining statins with SGLT2 inhibitors was not associated with more reports of myopathy or rhabdomyolysis.",
+    "pt": "Numa análise de desproporcionalidade de notificações de efeitos adversos, juntar estatinas a inibidores do SGLT2 não se associou a mais relatos de miopatia ou rabdomiólise."
    }
+  },
+  {
+   "id": "161",
+   "ano": 2023,
+   "mes": 3,
+   "especie": "humano",
+   "areas": [
+    "cardiovascular"
+   ],
+   "titulo": {
+    "pt": "Ácido bempedoico em intolerantes a estatinas (CLEAR Outcomes)",
+    "en": "Bempedoic acid in statin-intolerant patients (CLEAR Outcomes)"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/36876740/",
+   "conclusao": {
+    "pt": "Em 13 970 doentes intolerantes a estatinas, o ácido bempedoico reduziu os eventos cardiovasculares graves em 13% (HR 0,87), sem efeito na morte por qualquer causa e com mais gota e cálculos biliares.",
+    "en": "In 13,970 statin-intolerant patients, bempedoic acid reduced major cardiovascular events by 13% (HR 0.87), with no effect on all-cause death and more gout and gallstones."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "162",
+   "ano": 2023,
+   "mes": 2,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "metabolismo"
+   ],
+   "titulo": {
+    "pt": "Restrição calórica e ritmo de envelhecimento epigenético (CALERIE)",
+    "en": "Caloric restriction and epigenetic pace of ageing (CALERIE)"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/37118425/",
+   "conclusao": {
+    "pt": "Em 220 adultos do CALERIE, 2 anos de restrição calórica abrandaram ligeiramente o ritmo de envelhecimento medido pelo DunedinPACE, sem alterar o PhenoAge nem o GrimAge.",
+    "en": "In 220 CALERIE adults, 2 years of caloric restriction slightly slowed the pace of ageing measured by DunedinPACE, without changing PhenoAge or GrimAge."
+   },
+   "amostra": "relevante"
   },
   {
    "id": "098",
@@ -1757,7 +2499,10 @@
    "conclusao": {
     "pt": "Em ratinhos já idosos, um vírus que entrega de forma controlada os fatores OSK prolongou a vida restante e melhorou vários indicadores de saúde.",
     "en": "In already old mice, a virus delivering controllable OSK factors extended remaining lifespan and improved several health measures."
-   }
+   },
+   "areas": [
+    "longevidade"
+   ]
   },
   {
    "id": "099",
@@ -1773,6 +2518,49 @@
    "conclusao": {
     "en": "Across human cohorts, GrimAge2 tracked mortality and morbidity risk, including markers related to inflammation and diabetes.",
     "pt": "Em coortes humanas, o GrimAge2 acompanhou o risco de mortalidade e de morbilidade, incluindo marcadores ligados à inflamação e à diabetes."
+   },
+   "areas": [
+    "longevidade"
+   ]
+  },
+  {
+   "id": "163",
+   "ano": 2022,
+   "mes": 12,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "cardiovascular",
+    "cancro"
+   ],
+   "titulo": {
+    "pt": "Curtos esforços vigorosos no dia a dia e mortalidade",
+    "en": "Brief vigorous bursts in daily life and mortality"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/36482104/",
+   "conclusao": {
+    "pt": "Em 25 241 não praticantes de exercício, 3 episódios diários de 1–2 minutos de atividade vigorosa associaram-se a menos 38–40% de mortalidade total e por cancro e menos 48–49% por doença cardiovascular.",
+    "en": "In 25,241 non-exercisers, 3 daily bouts of 1–2 minutes of vigorous activity were linked to 38–40% lower all-cause and cancer mortality and 48–49% lower cardiovascular mortality."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "097",
+   "ano": 2022,
+   "mes": 8,
+   "especie": "humano",
+   "amostra": "pequena",
+   "areas": [
+    "musculo"
+   ],
+   "titulo": {
+    "en": "Glycine plus N-acetylcysteine in older adults",
+    "pt": "Glicina com N-acetilcisteína em adultos mais velhos"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/35975308/",
+   "conclusao": {
+    "en": "In older adults, 16 weeks of glycine plus N-acetylcysteine improved glutathione deficiency, oxidative stress, mitochondrial function, inflammation and physical function compared with placebo.",
+    "pt": "Em adultos mais velhos, 16 semanas de glicina com N-acetilcisteína melhoraram o défice de glutationa, o stress oxidativo, a função mitocondrial, a inflamação e a função física face a placebo."
    }
   },
   {
@@ -1792,6 +2580,26 @@
     "pt": "Em canais isolados de músculo esquelético, as estatinas usadas no Reino Unido ativaram o recetor de rianodina RyR1, um efeito separável da inibição da HMG-CoA redutase.",
     "en": "In channels isolated from skeletal muscle, the statins used in the United Kingdom activated the ryanodine receptor RyR1, an effect separable from HMG-CoA reductase inhibition."
    }
+  },
+  {
+   "id": "164",
+   "ano": 2022,
+   "mes": 8,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "cardiovascular"
+   ],
+   "titulo": {
+    "pt": "Aptidão cardiorrespiratória e mortalidade em 750 mil veteranos",
+    "en": "Cardiorespiratory fitness and mortality in 750,000 veterans"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/35926933/",
+   "conclusao": {
+    "pt": "Em 750 302 veteranos americanos, os menos aptos tiveram um risco de morte 4 vezes maior do que os extremamente aptos, sem aumento de risco com aptidão muito alta.",
+    "en": "In 750,302 US veterans, the least fit had a 4-fold higher risk of death than the extremely fit, with no added risk at very high fitness."
+   },
+   "amostra": "relevante"
   },
   {
    "id": "101",
@@ -1831,6 +2639,44 @@
    }
   },
   {
+   "id": "165",
+   "ano": 2022,
+   "mes": 5,
+   "especie": "animal",
+   "areas": [
+    "longevidade",
+    "sono"
+   ],
+   "titulo": {
+    "pt": "Restrição calórica alinhada com o ritmo circadiano",
+    "en": "Circadian-aligned caloric restriction"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/35511946/",
+   "conclusao": {
+    "pt": "A restrição calórica de 30% prolongou a vida de ratinhos machos em 10%, mas combinada com jejum diário e alimentação noturna (alinhada com o ritmo circadiano) prolongou-a em 35%.",
+    "en": "30% caloric restriction extended male mouse lifespan by 10%, but combined with a daily fast and night-time feeding aligned to the circadian cycle it extended lifespan by 35%."
+   }
+  },
+  {
+   "id": "166",
+   "ano": 2022,
+   "mes": 5,
+   "especie": "humano",
+   "areas": [
+    "cerebro"
+   ],
+   "titulo": {
+    "pt": "Suplemento de espermidina e memória (SmartAge)",
+    "en": "Spermidine supplement and memory (SmartAge)"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/35616942/",
+   "conclusao": {
+    "pt": "Em 100 idosos com declínio cognitivo subjetivo, 12 meses de espermidina (0,9 mg/dia) não melhoraram a memória nem os biomarcadores face ao placebo.",
+    "en": "In 100 older adults with subjective cognitive decline, 12 months of spermidine (0.9 mg/day) did not improve memory or biomarkers versus placebo."
+   },
+   "amostra": "relevante"
+  },
+  {
    "id": "103",
    "ano": 2022,
    "mes": 4,
@@ -1844,6 +2690,45 @@
    "conclusao": {
     "en": "In a randomized trial of firefighters, plasma donation and blood donation reduced serum PFAS levels more than observation alone over 12 months.",
     "pt": "Num ensaio aleatorizado de bombeiros, a dádiva de plasma e a dádiva de sangue reduziram mais os níveis séricos de PFAS do que a simples observação, ao longo de 12 meses."
+   }
+  },
+  {
+   "id": "167",
+   "ano": 2022,
+   "mes": 3,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "cardiovascular"
+   ],
+   "titulo": {
+    "pt": "Passos diários e mortalidade: meta-análise",
+    "en": "Daily steps and mortality: a meta-analysis"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/35247352/",
+   "conclusao": {
+    "pt": "Em 47 471 adultos de 15 coortes, mais passos por dia associaram-se a menor mortalidade, com o benefício a estabilizar nos 6000–8000 passos acima dos 60 anos e nos 8000–10 000 abaixo dos 60.",
+    "en": "In 47,471 adults from 15 cohorts, more daily steps were linked to lower mortality, with benefit levelling off at 6,000–8,000 steps over age 60 and 8,000–10,000 under 60."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "168",
+   "ano": 2022,
+   "mes": 3,
+   "especie": "animal",
+   "areas": [
+    "longevidade",
+    "rim"
+   ],
+   "titulo": {
+    "pt": "Reprogramação parcial prolongada em ratinhos normais",
+    "en": "Long-term partial reprogramming in normal mice"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/37118377/",
+   "conclusao": {
+    "pt": "Em ratinhos com envelhecimento normal, a reprogramação parcial de longa duração rejuvenesceu tecidos como o rim e a pele e reverteu o relógio epigenético.",
+    "en": "In normally ageing mice, long-term partial reprogramming rejuvenated tissues such as kidney and skin and reversed the epigenetic clock."
    }
   },
   {
@@ -1866,23 +2751,100 @@
    }
   },
   {
-   "id": "105",
-   "ano": 2021,
-   "mes": 10,
+   "id": "169",
+   "ano": 2022,
+   "mes": 2,
    "especie": "humano",
-   "amostra": "relevante",
    "areas": [
-    "cardiovascular"
+    "longevidade",
+    "inflamacao"
    ],
    "titulo": {
-    "en": "Marine omega-3 supplements and atrial fibrillation",
-    "pt": "Ómega-3 marinho e fibrilhação auricular"
+    "pt": "Restrição calórica, timo e PLA2G7",
+    "en": "Caloric restriction, the thymus and PLA2G7"
    },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/34612056/",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/35143297/",
    "conclusao": {
-    "en": "A meta-analysis of cardiovascular outcome trials linked marine omega-3 supplements to a higher risk of atrial fibrillation, especially at doses above 1 g per day.",
-    "pt": "Uma meta-análise de ensaios de desfechos cardiovasculares associou os suplementos de ómega-3 marinho a maior risco de fibrilhação auricular, sobretudo acima de 1 g por dia."
+    "pt": "Cerca de 14% de restrição calórica durante 2 anos em humanos saudáveis melhorou a produção de células T no timo e reduziu a expressão de PLA2G7, cuja eliminação em ratinhos diminuiu a inflamação da idade.",
+    "en": "About 14% caloric restriction for 2 years in healthy humans improved thymic T-cell output and lowered PLA2G7 expression, whose deletion in mice reduced age-related inflammation."
    }
+  },
+  {
+   "id": "170",
+   "ano": 2022,
+   "mes": 2,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "musculo"
+   ],
+   "titulo": {
+    "pt": "Treino de força e mortalidade: meta-análise",
+    "en": "Muscle-strengthening and mortality: a meta-analysis"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/35228201/",
+   "conclusao": {
+    "pt": "Em 16 estudos de coorte, o treino de força associou-se a menos 10–17% de mortalidade total, doença cardiovascular, cancro e diabetes, com o máximo benefício em cerca de 30–60 minutos por semana.",
+    "en": "Across 16 cohort studies, muscle-strengthening was linked to 10–17% lower all-cause mortality, cardiovascular disease, cancer and diabetes, with maximum benefit at about 30–60 minutes a week."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "171",
+   "ano": 2022,
+   "mes": 1,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "inflamacao"
+   ],
+   "titulo": {
+    "pt": "DunedinPACE, ritmo de envelhecimento no sangue",
+    "en": "DunedinPACE, a blood pace-of-ageing measure"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/35029144/",
+   "conclusao": {
+    "pt": "O DunedinPACE, derivado da coorte de Dunedin, mostrou alta fiabilidade, associou-se a doença, incapacidade e morte e acrescentou previsão para além do GrimAge.",
+    "en": "DunedinPACE, derived from the Dunedin cohort, showed high reliability, was associated with disease, disability and death, and added prediction beyond GrimAge."
+   }
+  },
+  {
+   "id": "172",
+   "ano": 2022,
+   "mes": 1,
+   "especie": "humano",
+   "areas": [
+    "musculo"
+   ],
+   "titulo": {
+    "pt": "Urolitina A e resistência muscular em idosos",
+    "en": "Urolithin A and muscle endurance in older adults"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/35050355/",
+   "conclusao": {
+    "pt": "Em 66 adultos de 65 a 90 anos, 1000 mg/dia de urolitina A durante 4 meses melhoraram a resistência muscular e reduziram a PCR, mas não a distância de marcha em 6 minutos nem a produção de ATP.",
+    "en": "In 66 adults aged 65–90, 1,000 mg/day of urolithin A for 4 months improved muscle endurance and lowered CRP, but not 6-minute walk distance or ATP production."
+   },
+   "amostra": "pequena"
+  },
+  {
+   "id": "173",
+   "ano": 2022,
+   "mes": 1,
+   "especie": "humano",
+   "areas": [
+    "inflamacao"
+   ],
+   "titulo": {
+    "pt": "Vitamina D, ómega-3 e doenças autoimunes (VITAL)",
+    "en": "Vitamin D, omega-3 and autoimmune disease (VITAL)"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/35082139/",
+   "conclusao": {
+    "pt": "Em 25 871 participantes, 5 anos de vitamina D reduziram as doenças autoimunes confirmadas em 22%, enquanto a redução de 15% com ómega-3 não foi significativa.",
+    "en": "In 25,871 participants, 5 years of vitamin D reduced confirmed autoimmune disease by 22%, while the 15% reduction with omega-3 was not significant."
+   },
+   "amostra": "relevante"
   },
   {
    "id": "106",
@@ -1900,6 +2862,25 @@
    "conclusao": {
     "en": "In a general-population sample, sleeping more than 7.5 hours a night was associated with lower serum klotho.",
     "pt": "Numa amostra da população geral, dormir mais de 7,5 horas por noite associou-se a níveis séricos de klotho mais baixos."
+   }
+  },
+  {
+   "id": "105",
+   "ano": 2021,
+   "mes": 10,
+   "especie": "humano",
+   "amostra": "relevante",
+   "areas": [
+    "cardiovascular"
+   ],
+   "titulo": {
+    "en": "Marine omega-3 supplements and atrial fibrillation",
+    "pt": "Ómega-3 marinho e fibrilhação auricular"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/34612056/",
+   "conclusao": {
+    "en": "A meta-analysis of cardiovascular outcome trials linked marine omega-3 supplements to a higher risk of atrial fibrillation, especially at doses above 1 g per day.",
+    "pt": "Uma meta-análise de ensaios de desfechos cardiovasculares associou os suplementos de ómega-3 marinho a maior risco de fibrilhação auricular, sobretudo acima de 1 g por dia."
    }
   },
   {
@@ -1936,6 +2917,27 @@
     "en": "In healthy young adults, EPA-rich oil improved global cognitive function compared with placebo and with DHA-rich oil.",
     "pt": "Em adultos jovens saudáveis, o óleo rico em EPA melhorou a função cognitiva global face ao placebo e face ao óleo rico em DHA."
    }
+  },
+  {
+   "id": "174",
+   "ano": 2021,
+   "mes": 8,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "cardiovascular",
+    "rim"
+   ],
+   "titulo": {
+    "pt": "Agonistas GLP-1, mortalidade e rim: meta-análise",
+    "en": "GLP-1 agonists, mortality and kidney: a meta-analysis"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/34425083/",
+   "conclusao": {
+    "pt": "Em 8 ensaios com 60 080 doentes com diabetes tipo 2, os agonistas GLP-1 reduziram os eventos cardiovasculares graves em 14%, a mortalidade total em 12% e o desfecho renal em 21%.",
+    "en": "In 8 trials with 60,080 patients with type 2 diabetes, GLP-1 agonists reduced major cardiovascular events by 14%, all-cause mortality by 12% and the kidney outcome by 21%."
+   },
+   "amostra": "relevante"
   },
   {
    "id": "109",
@@ -1976,6 +2978,182 @@
    }
   },
   {
+   "id": "175",
+   "ano": 2021,
+   "mes": 7,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "inflamacao",
+    "cardiovascular"
+   ],
+   "titulo": {
+    "pt": "Relógio inflamatório do envelhecimento (iAge)",
+    "en": "Inflammatory ageing clock (iAge)"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/34888528/",
+   "conclusao": {
+    "pt": "A partir do sangue de 1001 pessoas, o iAge acompanhou multimorbilidade, imunossenescência, fragilidade e envelhecimento cardiovascular, com a quimiocina CXCL9 como principal contribuinte.",
+    "en": "From the blood of 1,001 people, iAge tracked multimorbidity, immunosenescence, frailty and cardiovascular ageing, with the chemokine CXCL9 as the main contributor."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "176",
+   "ano": 2021,
+   "mes": 5,
+   "especie": "animal",
+   "areas": [
+    "longevidade",
+    "metabolismo"
+   ],
+   "titulo": {
+    "pt": "SIRT6 e vida saudável em ratinhos",
+    "en": "SIRT6 and healthy lifespan in mice"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/34050173/",
+   "conclusao": {
+    "pt": "A sobre-expressão de SIRT6 reduziu a fragilidade e prolongou a vida de ratinhos machos e fêmeas, preservando a produção de glicose pelo fígado na velhice.",
+    "en": "SIRT6 overexpression reduced frailty and extended lifespan in male and female mice, preserving hepatic glucose output in old age."
+   }
+  },
+  {
+   "id": "177",
+   "ano": 2021,
+   "mes": 4,
+   "especie": "humano",
+   "areas": [
+    "metabolismo"
+   ],
+   "titulo": {
+    "pt": "NMN e sensibilidade à insulina em mulheres com pré-diabetes",
+    "en": "NMN and insulin sensitivity in prediabetic women"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/33888596/",
+   "conclusao": {
+    "pt": "Em mulheres pós-menopáusicas com pré-diabetes e excesso de peso, 10 semanas de NMN aumentaram a sensibilidade muscular à insulina, o que não aconteceu com o placebo.",
+    "en": "In postmenopausal women with prediabetes and overweight, 10 weeks of NMN increased muscle insulin sensitivity, which did not happen with placebo."
+   },
+   "amostra": "pequena"
+  },
+  {
+   "id": "178",
+   "ano": 2021,
+   "mes": 4,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "cardiovascular"
+   ],
+   "titulo": {
+    "pt": "Ómega-3 no sangue e mortalidade em 17 coortes",
+    "en": "Blood omega-3 and mortality in 17 cohorts"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/33888689/",
+   "conclusao": {
+    "pt": "Em 42 466 pessoas de 17 coortes, os níveis mais altos de ómega-3 marinho no sangue associaram-se a menos 15–18% de mortalidade total, sem associação para o ácido alfa-linolénico.",
+    "en": "In 42,466 people from 17 cohorts, the highest blood marine omega-3 levels were linked to 15–18% lower all-cause mortality, with no association for alpha-linolenic acid."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "179",
+   "ano": 2021,
+   "mes": 3,
+   "especie": "animal",
+   "areas": [
+    "longevidade",
+    "metabolismo"
+   ],
+   "titulo": {
+    "pt": "17α-estradiol tardio e ribósido de nicotinamida no ITP",
+    "en": "Late 17α-estradiol and nicotinamide riboside in the ITP"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/33788371/",
+   "conclusao": {
+    "pt": "O 17α-estradiol iniciado aos 16 ou 20 meses aumentou a vida mediana dos machos em 19% e 11%, enquanto o ribósido de nicotinamida e três outros compostos não prolongaram a vida.",
+    "en": "17α-estradiol started at 16 or 20 months extended male median lifespan by 19% and 11%, while nicotinamide riboside and three other compounds did not extend lifespan."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "180",
+   "ano": 2020,
+   "mes": 12,
+   "especie": "animal",
+   "areas": [
+    "olhos"
+   ],
+   "titulo": {
+    "pt": "Reprogramação epigenética restaura a visão",
+    "en": "Epigenetic reprogramming restores vision"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/33268865/",
+   "conclusao": {
+    "pt": "A expressão de OSK nas células ganglionares da retina restaurou padrões jovens de metilação do ADN, regenerou axónios e reverteu a perda de visão num modelo de glaucoma e em ratinhos velhos.",
+    "en": "OSK expression in retinal ganglion cells restored youthful DNA methylation, regenerated axons and reversed vision loss in a glaucoma model and in old mice."
+   }
+  },
+  {
+   "id": "181",
+   "ano": 2020,
+   "mes": 11,
+   "especie": "animal",
+   "areas": [
+    "longevidade",
+    "metabolismo"
+   ],
+   "titulo": {
+    "pt": "Canagliflozina e longevidade no ITP",
+    "en": "Canagliflozin and lifespan in the ITP"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/32990681/",
+   "conclusao": {
+    "pt": "A canagliflozina, um inibidor SGLT2, aumentou a sobrevivência mediana dos machos em 14%, sem benefício na longevidade das fêmeas, apesar de melhorar a glicemia em ambos os sexos.",
+    "en": "The SGLT2 inhibitor canagliflozin increased male median survival by 14%, with no lifespan benefit in females despite better glucose control in both sexes."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "182",
+   "ano": 2020,
+   "mes": 9,
+   "especie": "animal",
+   "areas": [
+    "longevidade",
+    "inflamacao"
+   ],
+   "titulo": {
+    "pt": "Alfa-cetoglutarato e longevidade em ratinhos",
+    "en": "Alpha-ketoglutarate and lifespan in mice"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/32877690/",
+   "conclusao": {
+    "pt": "O alfa-cetoglutarato de cálcio prolongou a vida de ratinhos C57BL/6, reduziu a fragilidade e baixou as citocinas inflamatórias sistémicas.",
+    "en": "Calcium alpha-ketoglutarate extended lifespan in C57BL/6 mice, reduced frailty and lowered systemic inflammatory cytokines."
+   }
+  },
+  {
+   "id": "183",
+   "ano": 2020,
+   "mes": 9,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "rim"
+   ],
+   "titulo": {
+    "pt": "Dapagliflozina na doença renal crónica (DAPA-CKD)",
+    "en": "Dapagliflozin in chronic kidney disease (DAPA-CKD)"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/32970396/",
+   "conclusao": {
+    "pt": "Em 4304 doentes com doença renal crónica, com ou sem diabetes, a dapagliflozina reduziu o desfecho renal e cardiovascular composto (HR 0,61) e a morte (HR 0,69).",
+    "en": "In 4,304 patients with chronic kidney disease, with or without diabetes, dapagliflozin reduced the composite kidney and cardiovascular outcome (HR 0.61) and death (HR 0.69)."
+   },
+   "amostra": "relevante"
+  },
+  {
    "id": "111",
    "ano": 2020,
    "mes": 8,
@@ -1993,6 +3171,61 @@
     "en": "In a nationwide cohort, long-term oral N-acetylcysteine use was associated with a higher incidence of knee osteoarthritis.",
     "pt": "Numa coorte nacional, o uso oral prolongado de N-acetilcisteína associou-se a maior incidência de osteoartrite do joelho."
    }
+  },
+  {
+   "id": "184",
+   "ano": 2020,
+   "mes": 6,
+   "especie": "animal",
+   "areas": [
+    "figado"
+   ],
+   "titulo": {
+    "pt": "Células CAR T senolíticas",
+    "en": "Senolytic CAR T cells"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/32555459/",
+   "conclusao": {
+    "pt": "Células CAR T dirigidas ao uPAR eliminaram células senescentes, prolongaram a sobrevivência em cancro do pulmão tratado e restauraram o fígado em ratinhos com fibrose hepática.",
+    "en": "uPAR-targeted CAR T cells cleared senescent cells, extended survival in treated lung cancer and restored the liver in mice with liver fibrosis."
+   }
+  },
+  {
+   "id": "185",
+   "ano": 2020,
+   "mes": 5,
+   "especie": "humano",
+   "areas": [
+    "figado"
+   ],
+   "titulo": {
+    "pt": "Diluir o plasma velho com soro e albumina",
+    "en": "Diluting old plasma with saline-albumin"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/32474458/",
+   "conclusao": {
+    "pt": "Uma única troca de metade do plasma por soro com 5% de albumina melhorou a reparação muscular, reduziu a gordura e a fibrose do fígado e aumentou a neurogénese em ratinhos velhos, e uma plasmaferese humana teve efeitos semelhantes no soro.",
+    "en": "A single exchange of half the plasma for saline with 5% albumin improved muscle repair, reduced liver fat and fibrosis and increased neurogenesis in old mice, and one human plasma exchange had similar serum effects."
+   }
+  },
+  {
+   "id": "186",
+   "ano": 2020,
+   "mes": 3,
+   "especie": "humano",
+   "areas": [
+    "cardiovascular"
+   ],
+   "titulo": {
+    "pt": "Inclisiran e colesterol LDL (ORION-10 e ORION-11)",
+    "en": "Inclisiran and LDL cholesterol (ORION-10 and ORION-11)"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/32187462/",
+   "conclusao": {
+    "pt": "Em 3178 doentes com LDL elevado apesar de estatina, o inclisiran a cada 6 meses reduziu o colesterol LDL em cerca de 50%, com mais reações no local da injeção.",
+    "en": "In 3,178 patients with high LDL despite statins, inclisiran every 6 months lowered LDL cholesterol by about 50%, with more injection-site reactions."
+   },
+   "amostra": "relevante"
   },
   {
    "id": "112",
@@ -2013,13 +3246,153 @@
    }
   },
   {
+   "id": "187",
+   "ano": 2019,
+   "mes": 12,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "inflamacao"
+   ],
+   "titulo": {
+    "pt": "Ondas de mudança no proteoma ao longo da vida",
+    "en": "Waves of change in the proteome across life"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/31806903/",
+   "conclusao": {
+    "pt": "Em 4263 pessoas dos 18 aos 95 anos, 2925 proteínas do plasma mudaram de forma não linear, com ondas na quarta, sétima e oitava décadas de vida.",
+    "en": "In 4,263 people aged 18–95, 2,925 plasma proteins changed non-linearly, with waves in the fourth, seventh and eighth decades of life."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "188",
+   "ano": 2019,
+   "mes": 9,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "inflamacao"
+   ],
+   "titulo": {
+    "pt": "Regeneração do timo e idade epigenética (TRIIM)",
+    "en": "Thymus regeneration and epigenetic age (TRIIM)"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/31496122/",
+   "conclusao": {
+    "pt": "Com um protocolo para regenerar o timo, a idade epigenética média ficou cerca de 1,5 anos abaixo da inicial após 1 ano, e o GrimAge desceu 2 anos face à idade cronológica.",
+    "en": "With a thymus-regeneration protocol, mean epigenetic age was about 1.5 years below baseline after 1 year, and GrimAge fell 2 years relative to chronological age."
+   },
+   "amostra": "pequena"
+  },
+  {
+   "id": "189",
+   "ano": 2019,
+   "mes": 9,
+   "especie": "humano",
+   "areas": [
+    "rim"
+   ],
+   "titulo": {
+    "pt": "Dasatinib e quercetina reduzem células senescentes em humanos",
+    "en": "Dasatinib and quercetin reduce senescent cells in humans"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/31542391/",
+   "conclusao": {
+    "pt": "Em 9 doentes com doença renal diabética, 3 dias de dasatinib mais quercetina reduziram as células senescentes no tecido adiposo e na pele e os fatores SASP circulantes.",
+    "en": "In 9 patients with diabetic kidney disease, 3 days of dasatinib plus quercetin reduced senescent cells in fat and skin and circulating SASP factors."
+   },
+   "amostra": "pequena"
+  },
+  {
+   "id": "190",
+   "ano": 2019,
+   "mes": 9,
+   "especie": "humano",
+   "areas": [
+    "musculo"
+   ],
+   "titulo": {
+    "pt": "Metformina e hipertrofia com treino de força (MASTERS)",
+    "en": "Metformin and hypertrophy with resistance training (MASTERS)"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/31557380/",
+   "conclusao": {
+    "pt": "Em 94 adultos com 65 anos ou mais, a metformina reduziu o ganho de massa magra e de músculo da coxa com 14 semanas de treino de força face ao placebo.",
+    "en": "In 94 adults aged 65 or older, metformin reduced gains in lean mass and thigh muscle from 14 weeks of resistance training compared with placebo."
+   },
+   "amostra": "pequena"
+  },
+  {
+   "id": "191",
+   "ano": 2019,
+   "mes": 8,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "cerebro"
+   ],
+   "titulo": {
+    "pt": "Genes da longevidade extrema: meta-análise GWAS",
+    "en": "Extreme longevity genes: a GWAS meta-analysis"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/31413261/",
+   "conclusao": {
+    "pt": "Com 11 262 sobreviventes ao percentil 90 e 25 483 controlos, o APOE ε4 associou-se a menor e o ε2 a maior probabilidade de longevidade, e surgiu uma nova variante perto de GPR78.",
+    "en": "With 11,262 survivors to the 90th percentile and 25,483 controls, APOE ε4 was linked to lower and ε2 to higher odds of longevity, and a new variant near GPR78 emerged."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "192",
+   "ano": 2019,
+   "mes": 8,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "cardiovascular"
+   ],
+   "titulo": {
+    "pt": "Atividade física medida por acelerómetro e mortalidade",
+    "en": "Accelerometer-measured activity and mortality"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/31434697/",
+   "conclusao": {
+    "pt": "Em 36 383 adultos de 8 estudos, os mais ativos tiveram menos 73% de mortalidade do que os menos ativos (HR 0,27), e os mais sedentários tiveram um risco 2,63 vezes maior.",
+    "en": "In 36,383 adults from 8 studies, the most active had 73% lower mortality than the least active (HR 0.27), and the most sedentary had 2.63 times higher risk."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "193",
+   "ano": 2019,
+   "mes": 7,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "cardiovascular",
+    "metabolismo"
+   ],
+   "titulo": {
+    "pt": "Dois anos de restrição calórica e risco cardiometabólico (CALERIE)",
+    "en": "Two years of calorie restriction and cardiometabolic risk (CALERIE)"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/31303390/",
+   "conclusao": {
+    "pt": "Em 218 adultos saudáveis não obesos, uma redução média de 11,9% nas calorias durante 2 anos baixou o colesterol LDL, a tensão arterial e a PCR e melhorou a sensibilidade à insulina.",
+    "en": "In 218 healthy non-obese adults, an average 11.9% calorie reduction for 2 years lowered LDL cholesterol, blood pressure and CRP and improved insulin sensitivity."
+   },
+   "amostra": "relevante"
+  },
+  {
    "id": "113",
    "ano": 2019,
    "mes": 5,
    "especie": "humano",
    "amostra": "relevante",
    "areas": [
-    "musculo"
+    "musculo",
+    "longevidade"
    ],
    "titulo": {
     "en": "Resistance training and mortality",
@@ -2029,6 +3402,340 @@
    "conclusao": {
     "en": "A systematic review and meta-analysis associated resistance training with lower mortality, with an added benefit when it was combined with aerobic exercise.",
     "pt": "Uma revisão sistemática e meta-análise associou o treino de força a menor mortalidade, com um benefício adicional quando era combinado com exercício aeróbio."
+   }
+  },
+  {
+   "id": "194",
+   "ano": 2019,
+   "mes": 3,
+   "especie": "animal",
+   "areas": [
+    "longevidade",
+    "metabolismo"
+   ],
+   "titulo": {
+    "pt": "Glicina e longevidade no ITP",
+    "en": "Glycine and lifespan in the ITP"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/30916479/",
+   "conclusao": {
+    "pt": "Uma dieta com 8% de glicina aumentou a longevidade em 4–6% em machos e fêmeas, enquanto a aspirina, a inulina e o TM5441 não tiveram benefício.",
+    "en": "An 8% glycine diet increased lifespan by 4–6% in both sexes, whereas aspirin, inulin and TM5441 showed no benefit."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "195",
+   "ano": 2019,
+   "mes": 2,
+   "especie": "humano",
+   "areas": [
+    "cerebro"
+   ],
+   "titulo": {
+    "pt": "Controlo intensivo da tensão e demência (SPRINT MIND)",
+    "en": "Intensive blood pressure control and dementia (SPRINT MIND)"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/30688979/",
+   "conclusao": {
+    "pt": "Em 9361 adultos hipertensos, o alvo sistólico abaixo de 120 mm Hg não reduziu significativamente a demência provável (HR 0,83), mas reduziu o défice cognitivo ligeiro (HR 0,81).",
+    "en": "In 9,361 hypertensive adults, a systolic target below 120 mm Hg did not significantly reduce probable dementia (HR 0.83) but reduced mild cognitive impairment (HR 0.81)."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "196",
+   "ano": 2019,
+   "mes": 1,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "inflamacao"
+   ],
+   "titulo": {
+    "pt": "GrimAge, relógio epigenético de mortalidade",
+    "en": "GrimAge, an epigenetic mortality clock"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/30669119/",
+   "conclusao": {
+    "pt": "O GrimAge, baseado em sete marcadores de proteínas e no tabagismo estimados por metilação, destacou-se entre os relógios epigenéticos na previsão da morte, doença coronária e cancro.",
+    "en": "GrimAge, built from seven methylation-based protein surrogates and smoking, stood out among epigenetic clocks in predicting death, coronary disease and cancer."
+   }
+  },
+  {
+   "id": "197",
+   "ano": 2019,
+   "mes": 1,
+   "especie": "animal",
+   "areas": [
+    "longevidade",
+    "metabolismo"
+   ],
+   "titulo": {
+    "pt": "Acarbose em três doses no ITP",
+    "en": "Acarbose at three doses in the ITP"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/30688027/",
+   "conclusao": {
+    "pt": "As duas doses mais altas de acarbose aumentaram a longevidade mediana em 16–17% nos machos e 4–5% nas fêmeas, e reduziram tumores do pulmão nos machos.",
+    "en": "The two higher acarbose doses increased median longevity by 16–17% in males and 4–5% in females, and reduced lung tumours in males."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "198",
+   "ano": 2018,
+   "mes": 12,
+   "especie": "humano",
+   "areas": [
+    "musculo",
+    "metabolismo"
+   ],
+   "titulo": {
+    "pt": "Metformina e adaptações ao exercício aeróbio",
+    "en": "Metformin and aerobic exercise adaptations"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/30548390/",
+   "conclusao": {
+    "pt": "Em 53 adultos mais velhos, a metformina atenuou os ganhos de sensibilidade à insulina e de VO2max com 12 semanas de exercício aeróbio e anulou o aumento da respiração mitocondrial do músculo.",
+    "en": "In 53 older adults, metformin blunted gains in insulin sensitivity and VO2max from 12 weeks of aerobic training and abolished the rise in muscle mitochondrial respiration."
+   },
+   "amostra": "pequena"
+  },
+  {
+   "id": "199",
+   "ano": 2018,
+   "mes": 11,
+   "especie": "humano",
+   "areas": [
+    "cardiovascular"
+   ],
+   "titulo": {
+    "pt": "Icosapento de etilo e eventos cardiovasculares (REDUCE-IT)",
+    "en": "Icosapent ethyl and cardiovascular events (REDUCE-IT)"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/30415628/",
+   "conclusao": {
+    "pt": "Em 8179 doentes com triglicéridos altos sob estatina, 4 g/dia de EPA purificado reduziu os eventos isquémicos em 25% (HR 0,75), mas aumentou as hospitalizações por fibrilhação auricular.",
+    "en": "In 8,179 statin-treated patients with high triglycerides, 4 g/day of purified EPA reduced ischaemic events by 25% (HR 0.75) but increased hospitalisations for atrial fibrillation."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "200",
+   "ano": 2018,
+   "mes": 11,
+   "especie": "humano",
+   "areas": [
+    "cancro",
+    "cardiovascular"
+   ],
+   "titulo": {
+    "pt": "Vitamina D, cancro e doença cardiovascular (VITAL)",
+    "en": "Vitamin D, cancer and cardiovascular disease (VITAL)"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/30415629/",
+   "conclusao": {
+    "pt": "Em 25 871 adultos mais velhos seguidos 5,3 anos, 2000 UI/dia de vitamina D3 não reduziu o cancro invasivo (HR 0,96) nem os eventos cardiovasculares graves (HR 0,97).",
+    "en": "In 25,871 older adults followed for 5.3 years, 2000 IU/day of vitamin D3 did not reduce invasive cancer (HR 0.96) or major cardiovascular events (HR 0.97)."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "201",
+   "ano": 2018,
+   "mes": 11,
+   "especie": "humano",
+   "areas": [
+    "cardiovascular",
+    "cancro"
+   ],
+   "titulo": {
+    "pt": "Ómega-3, doença cardiovascular e cancro (VITAL)",
+    "en": "Omega-3, cardiovascular disease and cancer (VITAL)"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/30415637/",
+   "conclusao": {
+    "pt": "Em 25 871 adultos mais velhos, 1 g/dia de ómega-3 marinho não reduziu os eventos cardiovasculares graves nem o cancro, embora o enfarte total tenha sido menor (HR 0,72).",
+    "en": "In 25,871 older adults, 1 g/day of marine omega-3 did not reduce major cardiovascular events or cancer, although total heart attacks were lower (HR 0.72)."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "202",
+   "ano": 2018,
+   "mes": 11,
+   "especie": "humano",
+   "areas": [
+    "cardiovascular",
+    "rim"
+   ],
+   "titulo": {
+    "pt": "Inibidores SGLT2 e desfechos cardiovasculares e renais: meta-análise",
+    "en": "SGLT2 inhibitors and cardiovascular and kidney outcomes: a meta-analysis"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/30424892/",
+   "conclusao": {
+    "pt": "Em 3 ensaios com 34 322 doentes, os inibidores SGLT2 reduziram os eventos cardiovasculares graves em 11%, a morte cardiovascular ou hospitalização por insuficiência cardíaca em 23% e a progressão renal em 45%.",
+    "en": "In 3 trials with 34,322 patients, SGLT2 inhibitors reduced major cardiovascular events by 11%, cardiovascular death or heart failure hospitalisation by 23% and kidney progression by 45%."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "115",
+   "ano": 2018,
+   "mes": 10,
+   "especie": "humano",
+   "amostra": "relevante",
+   "areas": [
+    "cardiovascular",
+    "longevidade"
+   ],
+   "titulo": {
+    "en": "Cardiorespiratory fitness and long-term mortality",
+    "pt": "Aptidão cardiorrespiratória e mortalidade a longo prazo"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/30646252/",
+   "conclusao": {
+    "en": "In adults referred for treadmill testing, higher cardiorespiratory fitness was associated with lower long-term mortality, with no observed upper limit of benefit.",
+    "pt": "Em adultos referidos para prova de esforço, uma maior aptidão cardiorrespiratória associou-se a menor mortalidade a longo prazo, sem um limite superior de benefício observado."
+   }
+  },
+  {
+   "id": "203",
+   "ano": 2018,
+   "mes": 9,
+   "especie": "animal",
+   "areas": [
+    "longevidade",
+    "inflamacao"
+   ],
+   "titulo": {
+    "pt": "Fisetina como senolítico em ratinhos",
+    "en": "Fisetin as a senolytic in mice"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/30279143/",
+   "conclusao": {
+    "pt": "Entre 10 flavonoides, a fisetina foi o senolítico mais potente e, dada tarde na vida, reduziu patologia da idade e prolongou a vida mediana e máxima de ratinhos.",
+    "en": "Of 10 flavonoids, fisetin was the most potent senolytic and, given late in life, reduced age-related pathology and extended median and maximal mouse lifespan."
+   }
+  },
+  {
+   "id": "204",
+   "ano": 2018,
+   "mes": 8,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "cardiovascular"
+   ],
+   "titulo": {
+    "pt": "Espermidina na dieta e mortalidade",
+    "en": "Dietary spermidine and mortality"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/29955838/",
+   "conclusao": {
+    "pt": "Em 829 adultos seguidos 20 anos, cada desvio-padrão a mais de espermidina na dieta associou-se a menos 24% de mortalidade (HR 0,76), resultado confirmado noutra coorte.",
+    "en": "In 829 adults followed for 20 years, each SD higher dietary spermidine was linked to 24% lower mortality (HR 0.76), confirmed in another cohort."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "205",
+   "ano": 2018,
+   "mes": 7,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "cardiovascular",
+    "cancro"
+   ],
+   "titulo": {
+    "pt": "Cinco hábitos saudáveis e esperança de vida",
+    "en": "Five healthy habits and life expectancy"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/29712712/",
+   "conclusao": {
+    "pt": "Em 123 219 adultos americanos, adotar os 5 hábitos de baixo risco associou-se a mais 14,0 anos de esperança de vida aos 50 anos nas mulheres e 12,2 nos homens.",
+    "en": "In 123,219 US adults, adopting all 5 low-risk habits was linked to 14.0 more years of life expectancy at 50 in women and 12.2 in men."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "206",
+   "ano": 2018,
+   "mes": 7,
+   "especie": "animal",
+   "areas": [
+    "longevidade",
+    "musculo"
+   ],
+   "titulo": {
+    "pt": "Senolíticos, função física e sobrevivência",
+    "en": "Senolytics, physical function and survival"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/29988130/",
+   "conclusao": {
+    "pt": "O transplante de células senescentes causou disfunção física em ratinhos, e dasatinib mais quercetina intermitente melhorou a função e aumentou a sobrevivência pós-tratamento em 36% em ratinhos velhos.",
+    "en": "Transplanted senescent cells caused physical dysfunction in mice, and intermittent dasatinib plus quercetin improved function and raised post-treatment survival by 36% in old mice."
+   }
+  },
+  {
+   "id": "207",
+   "ano": 2018,
+   "mes": 7,
+   "especie": "humano",
+   "areas": [
+    "inflamacao"
+   ],
+   "titulo": {
+    "pt": "Inibição de TORC1 e infeções em idosos",
+    "en": "TORC1 inhibition and infections in older adults"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/29997249/",
+   "conclusao": {
+    "pt": "Em 264 idosos, 6 semanas de BEZ235 mais RAD001 em dose baixa foram seguras e reduziram as infeções relatadas no ano seguinte.",
+    "en": "In 264 older adults, 6 weeks of low-dose BEZ235 plus RAD001 was safe and reduced reported infections over the following year."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "116",
+   "ano": 2018,
+   "mes": 4,
+   "especie": "humano",
+   "amostra": "relevante",
+   "areas": [
+    "cardiovascular",
+    "longevidade"
+   ],
+   "titulo": {
+    "en": "Alcohol intake and mortality in current drinkers",
+    "pt": "Consumo de álcool e mortalidade em quem bebe"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/29676281/",
+   "conclusao": {
+    "en": "In a combined analysis of prospective studies, the lowest all-cause mortality among current drinkers was around 100 g of alcohol per week.",
+    "pt": "Numa análise combinada de estudos prospetivos, a menor mortalidade por todas as causas entre quem bebia situou-se perto de 100 g de álcool por semana."
+   }
+  },
+  {
+   "id": "208",
+   "ano": 2018,
+   "mes": 4,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "inflamacao"
+   ],
+   "titulo": {
+    "pt": "PhenoAge, relógio epigenético",
+    "en": "PhenoAge, an epigenetic clock"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/29676998/",
+   "conclusao": {
+    "pt": "O DNAm PhenoAge superou relógios anteriores na previsão de mortalidade, cancro, função física e doença de Alzheimer, e a aceleração associou-se a vias inflamatórias.",
+    "en": "DNAm PhenoAge outperformed earlier clocks in predicting mortality, cancer, physical function and Alzheimer disease, and its acceleration was linked to inflammatory pathways."
    }
   },
   {
@@ -2048,42 +3755,292 @@
    }
   },
   {
-   "id": "115",
-   "ano": 2018,
-   "mes": 10,
+   "id": "209",
+   "ano": 2017,
+   "mes": 9,
    "especie": "humano",
-   "amostra": "relevante",
+   "areas": [
+    "cardiovascular",
+    "metabolismo"
+   ],
+   "titulo": {
+    "pt": "Acarbose na doença coronária com intolerância à glicose (ACE)",
+    "en": "Acarbose in coronary disease with impaired glucose tolerance (ACE)"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/28917545/",
+   "conclusao": {
+    "pt": "Em 6522 doentes chineses, a acarbose não reduziu os eventos cardiovasculares graves (HR 0,98), mas reduziu o aparecimento de diabetes (razão de taxas 0,82).",
+    "en": "In 6,522 Chinese patients, acarbose did not reduce major cardiovascular events (HR 0.98) but reduced new-onset diabetes (rate ratio 0.82)."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "210",
+   "ano": 2017,
+   "mes": 8,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "metabolismo"
+   ],
+   "titulo": {
+    "pt": "Metformina e mortalidade: meta-análise",
+    "en": "Metformin and mortality: a meta-analysis"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/28802803/",
+   "conclusao": {
+    "pt": "Em 53 estudos, diabéticos em metformina tiveram menor mortalidade total do que não diabéticos (HR 0,93) e do que diabéticos com outras terapêuticas (HR 0,72).",
+    "en": "Across 53 studies, diabetics on metformin had lower all-cause mortality than non-diabetics (HR 0.93) and than diabetics on other therapies (HR 0.72)."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "211",
+   "ano": 2017,
+   "mes": 3,
+   "especie": "humano",
    "areas": [
     "cardiovascular"
    ],
    "titulo": {
-    "en": "Cardiorespiratory fitness and long-term mortality",
-    "pt": "Aptidão cardiorrespiratória e mortalidade a longo prazo"
+    "pt": "Evolocumab e eventos cardiovasculares (FOURIER)",
+    "en": "Evolocumab and cardiovascular events (FOURIER)"
    },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/30646252/",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/28304224/",
    "conclusao": {
-    "en": "In adults referred for treadmill testing, higher cardiorespiratory fitness was associated with lower long-term mortality, with no observed upper limit of benefit.",
-    "pt": "Em adultos referidos para prova de esforço, uma maior aptidão cardiorrespiratória associou-se a menor mortalidade a longo prazo, sem um limite superior de benefício observado."
+    "pt": "Em 27 564 doentes com doença aterosclerótica sob estatina, o evolocumab baixou o LDL para uma mediana de 30 mg/dL e reduziu o desfecho cardiovascular principal (HR 0,85).",
+    "en": "In 27,564 statin-treated patients with atherosclerotic disease, evolocumab lowered LDL to a median of 30 mg/dL and reduced the primary cardiovascular outcome (HR 0.85)."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "212",
+   "ano": 2017,
+   "mes": 1,
+   "especie": "animal",
+   "areas": [
+    "longevidade",
+    "metabolismo"
+   ],
+   "titulo": {
+    "pt": "Restrição calórica em macacos: os dois estudos",
+    "en": "Caloric restriction in monkeys: both studies"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/28094793/",
+   "conclusao": {
+    "pt": "A comparação direta dos estudos de Wisconsin e do NIA confirmou benefícios da restrição calórica na saúde de macacos rhesus, com diferenças de desenho a explicar resultados de sobrevivência distintos.",
+    "en": "A direct comparison of the Wisconsin and NIA studies confirmed health benefits of caloric restriction in rhesus monkeys, with design differences explaining divergent survival results."
    }
   },
   {
-   "id": "116",
-   "ano": 2018,
-   "mes": 4,
+   "id": "213",
+   "ano": 2016,
+   "mes": 12,
+   "especie": "animal",
+   "areas": [
+    "longevidade",
+    "musculo"
+   ],
+   "titulo": {
+    "pt": "Reprogramação parcial in vivo",
+    "en": "In vivo partial reprogramming"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/27984723/",
+   "conclusao": {
+    "pt": "A expressão cíclica e breve de OSKM melhorou marcas de envelhecimento e prolongou a vida num modelo de envelhecimento prematuro, e ajudou a recuperação metabólica e muscular em ratinhos velhos.",
+    "en": "Short cyclic OSKM expression improved ageing hallmarks and extended lifespan in a premature-ageing model, and aided metabolic and muscle recovery in old mice."
+   }
+  },
+  {
+   "id": "214",
+   "ano": 2016,
+   "mes": 11,
    "especie": "humano",
-   "amostra": "relevante",
    "areas": [
     "cardiovascular"
    ],
    "titulo": {
-    "en": "Alcohol intake and mortality in current drinkers",
-    "pt": "Consumo de álcool e mortalidade em quem bebe"
+    "pt": "Espermidina, coração e longevidade",
+    "en": "Spermidine, the heart and lifespan"
    },
-   "link": "https://pubmed.ncbi.nlm.nih.gov/29676281/",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/27841876/",
    "conclusao": {
-    "en": "In a combined analysis of prospective studies, the lowest all-cause mortality among current drinkers was around 100 g of alcohol per week.",
-    "pt": "Numa análise combinada de estudos prospetivos, a menor mortalidade por todas as causas entre quem bebia situou-se perto de 100 g de álcool por semana."
+    "pt": "A espermidina oral prolongou a vida de ratinhos e protegeu o coração envelhecido, e em humanos uma maior ingestão de espermidina associou-se a tensão arterial mais baixa e menos doença cardiovascular.",
+    "en": "Oral spermidine extended mouse lifespan and protected the ageing heart, and in humans higher dietary spermidine correlated with lower blood pressure and less cardiovascular disease."
    }
+  },
+  {
+   "id": "215",
+   "ano": 2016,
+   "mes": 10,
+   "especie": "animal",
+   "areas": [
+    "metabolismo"
+   ],
+   "titulo": {
+    "pt": "NMN durante 12 meses em ratinhos",
+    "en": "NMN for 12 months in mice"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/28068222/",
+   "conclusao": {
+    "pt": "Doze meses de NMN oral em ratinhos normais travaram o aumento de peso com a idade e melhoraram o metabolismo energético, a atividade física, a sensibilidade à insulina e a função ocular, sem toxicidade aparente.",
+    "en": "Twelve months of oral NMN in normal mice curbed age-related weight gain and improved energy metabolism, physical activity, insulin sensitivity and eye function, without apparent toxicity."
+   }
+  },
+  {
+   "id": "216",
+   "ano": 2016,
+   "mes": 8,
+   "especie": "animal",
+   "areas": [
+    "longevidade",
+    "cancro"
+   ],
+   "titulo": {
+    "pt": "Rapamicina durante 3 meses na meia-idade",
+    "en": "Three months of rapamycin in middle age"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/27549339/",
+   "conclusao": {
+    "pt": "Três meses de rapamicina em ratinhos de meia-idade aumentaram a esperança de vida até 60% e melhoraram a saúde, mas uma dose nas fêmeas desviou o cancro para formas hematopoiéticas agressivas.",
+    "en": "Three months of rapamycin in middle-aged mice increased life expectancy by up to 60% and improved healthspan, but one dose in females shifted cancers toward aggressive haematopoietic types."
+   }
+  },
+  {
+   "id": "217",
+   "ano": 2016,
+   "mes": 7,
+   "especie": "animal",
+   "areas": [
+    "musculo"
+   ],
+   "titulo": {
+    "pt": "Urolitina A, mitofagia e músculo",
+    "en": "Urolithin A, mitophagy and muscle"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/27400265/",
+   "conclusao": {
+    "pt": "A urolitina A induziu mitofagia, prolongou a vida de C. elegans e melhorou a capacidade de exercício em dois modelos de ratinho de declínio muscular e em ratos jovens.",
+    "en": "Urolithin A induced mitophagy, extended C. elegans lifespan and improved exercise capacity in two mouse models of muscle decline and in young rats."
+   }
+  },
+  {
+   "id": "218",
+   "ano": 2016,
+   "mes": 6,
+   "especie": "animal",
+   "areas": [
+    "longevidade",
+    "metabolismo"
+   ],
+   "titulo": {
+    "pt": "17α-estradiol, Protandim, metformina e outros no ITP",
+    "en": "17α-estradiol, Protandim, metformin and others in the ITP"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/27312235/",
+   "conclusao": {
+    "pt": "O 17α-estradiol em dose mais alta prolongou a vida mediana e máxima dos machos, a metformina isolada não teve efeito significativo e a combinação metformina mais rapamicina prolongou a vida de forma robusta.",
+    "en": "Higher-dose 17α-estradiol extended median and maximal male lifespan, metformin alone had no significant effect, and metformin plus rapamycin robustly extended lifespan."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "219",
+   "ano": 2016,
+   "mes": 4,
+   "especie": "animal",
+   "areas": [
+    "musculo"
+   ],
+   "titulo": {
+    "pt": "Ribósido de nicotinamida e células estaminais",
+    "en": "Nicotinamide riboside and stem cells"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/27127236/",
+   "conclusao": {
+    "pt": "O ribósido de nicotinamida rejuvenesceu as células estaminais musculares de ratinhos velhos, atrasou a senescência de outras células estaminais e aumentou a longevidade dos ratinhos.",
+    "en": "Nicotinamide riboside rejuvenated muscle stem cells in old mice, delayed senescence of other stem cells and increased mouse lifespan."
+   }
+  },
+  {
+   "id": "220",
+   "ano": 2016,
+   "mes": 2,
+   "especie": "animal",
+   "areas": [
+    "longevidade",
+    "rim"
+   ],
+   "titulo": {
+    "pt": "Eliminar células p16 prolonga a vida saudável",
+    "en": "Clearing p16 cells extends healthy lifespan"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/26840489/",
+   "conclusao": {
+    "pt": "Eliminar as células que expressam p16Ink4a a partir de um ano de idade prolongou a vida mediana de ratinhos machos e fêmeas, atrasou tumores e preservou rim, coração e gordura.",
+    "en": "Clearing p16Ink4a-expressing cells from one year of age extended median lifespan in male and female mice, delayed tumours and preserved kidney, heart and fat."
+   }
+  },
+  {
+   "id": "221",
+   "ano": 2015,
+   "mes": 11,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "cardiovascular"
+   ],
+   "titulo": {
+    "pt": "Tensão sistólica abaixo de 120 (SPRINT)",
+    "en": "Systolic pressure below 120 (SPRINT)"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/26551272/",
+   "conclusao": {
+    "pt": "Em 9361 pessoas de alto risco sem diabetes, o alvo de tensão sistólica inferior a 120 mm Hg reduziu os eventos cardiovasculares (HR 0,75) e a mortalidade total (HR 0,73) face a 140 mm Hg.",
+    "en": "In 9,361 high-risk people without diabetes, a systolic target below 120 mm Hg reduced cardiovascular events (HR 0.75) and all-cause mortality (HR 0.73) versus 140 mm Hg."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "222",
+   "ano": 2015,
+   "mes": 9,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "cardiovascular"
+   ],
+   "titulo": {
+    "pt": "Empagliflozina e mortalidade na diabetes (EMPA-REG)",
+    "en": "Empagliflozin and mortality in diabetes (EMPA-REG)"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/26378978/",
+   "conclusao": {
+    "pt": "Em 7020 doentes com diabetes tipo 2 e alto risco cardiovascular, a empagliflozina reduziu o desfecho cardiovascular composto e a morte por qualquer causa em 32%.",
+    "en": "In 7,020 patients with type 2 diabetes at high cardiovascular risk, empagliflozin lowered the composite cardiovascular outcome and cut all-cause death by 32%."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "223",
+   "ano": 2015,
+   "mes": 5,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "musculo",
+    "cardiovascular"
+   ],
+   "titulo": {
+    "pt": "Força de preensão e mortalidade (PURE)",
+    "en": "Grip strength and mortality (PURE)"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/25982160/",
+   "conclusao": {
+    "pt": "Em 139 691 adultos de 17 países, cada 5 kg a menos de força de preensão associou-se a mais 16% de mortalidade total, sendo melhor preditor do que a tensão sistólica.",
+    "en": "In 139,691 adults from 17 countries, each 5 kg lower grip strength was linked to 16% higher all-cause mortality, a stronger predictor than systolic blood pressure."
+   },
+   "amostra": "relevante"
   },
   {
    "id": "117",
@@ -2105,13 +4062,112 @@
    }
   },
   {
+   "id": "224",
+   "ano": 2014,
+   "mes": 7,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "metabolismo"
+   ],
+   "titulo": {
+    "pt": "Metformina, sulfonilureia e sobrevivência",
+    "en": "Metformin, sulphonylurea and survival"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/25041462/",
+   "conclusao": {
+    "pt": "Em dados britânicos com 78 241 tratados com metformina, os diabéticos em metformina viveram mais do que controlos sem diabetes emparelhados, e os tratados com sulfonilureia viveram menos.",
+    "en": "In UK data including 78,241 metformin users, diabetics on metformin survived longer than matched non-diabetic controls, while those on sulphonylurea survived less."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "225",
+   "ano": 2014,
+   "mes": 5,
+   "especie": "animal",
+   "areas": [
+    "cerebro"
+   ],
+   "titulo": {
+    "pt": "Sangue jovem e cognição em ratinhos velhos",
+    "en": "Young blood and cognition in old mice"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/24793238/",
+   "conclusao": {
+    "pt": "A exposição a sangue jovem por parabiose ou plasma melhorou a plasticidade sináptica e a memória de ratinhos velhos, em parte através da ativação de Creb no hipocampo.",
+    "en": "Exposure to young blood via parabiosis or plasma improved synaptic plasticity and memory in old mice, partly through Creb activation in the hippocampus."
+   }
+  },
+  {
+   "id": "226",
+   "ano": 2014,
+   "mes": 2,
+   "especie": "animal",
+   "areas": [
+    "longevidade",
+    "metabolismo"
+   ],
+   "titulo": {
+    "pt": "Dose de rapamicina, sexo e longevidade no ITP",
+    "en": "Rapamycin dose, sex and lifespan in the ITP"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/24341993/",
+   "conclusao": {
+    "pt": "Com uma dose três vezes superior, a rapamicina aumentou a vida mediana em 23% nos machos e 26% nas fêmeas, com efeitos maiores nas fêmeas e um perfil metabólico distinto da restrição alimentar.",
+    "en": "At a threefold higher dose, rapamycin increased median lifespan by 23% in males and 26% in females, with larger effects in females and a metabolic profile distinct from dietary restriction."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "227",
+   "ano": 2013,
+   "mes": 11,
+   "especie": "animal",
+   "areas": [
+    "longevidade",
+    "metabolismo"
+   ],
+   "titulo": {
+    "pt": "Acarbose, 17α-estradiol e NDGA no ITP",
+    "en": "Acarbose, 17α-estradiol and NDGA in the ITP"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/24245565/",
+   "conclusao": {
+    "pt": "A acarbose aumentou a vida mediana em 22% nos machos e 5% nas fêmeas, e o 17α-estradiol (12%) e o NDGA (8–10%) só prolongaram a vida dos machos.",
+    "en": "Acarbose raised median lifespan by 22% in males and 5% in females, while 17α-estradiol (12%) and NDGA (8–10%) extended lifespan only in males."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "228",
+   "ano": 2013,
+   "mes": 10,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "cancro"
+   ],
+   "titulo": {
+    "pt": "Relógio epigenético de Horvath",
+    "en": "The Horvath epigenetic clock"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/24138928/",
+   "conclusao": {
+    "pt": "Com 8000 amostras de 51 tecidos e tipos de células, a idade de metilação do ADN previu a idade em quase todos os tecidos e mostrou aceleração média de 36 anos em tecidos de cancro.",
+    "en": "Using 8,000 samples from 51 tissues and cell types, DNA methylation age predicted age across most tissues and showed an average 36-year acceleration in cancer tissue."
+   },
+   "amostra": "relevante"
+  },
+  {
    "id": "118",
    "ano": 2013,
    "mes": 9,
    "especie": "animal",
    "amostra": "pequena",
    "areas": [
-    "musculo"
+    "musculo",
+    "longevidade"
    ],
    "titulo": {
     "pt": "Exercício espontâneo e longevidade em ratinhos",
@@ -2121,6 +4177,25 @@
    "conclusao": {
     "pt": "Em ratinhos machos, a corrida espontânea ao longo da vida não prolongou a longevidade, mas melhorou a força, a coordenação e a capacidade de exercício.",
     "en": "In male mice, lifelong spontaneous running did not extend lifespan, but it improved strength, coordination and exercise capacity."
+   }
+  },
+  {
+   "id": "229",
+   "ano": 2013,
+   "mes": 7,
+   "especie": "animal",
+   "areas": [
+    "longevidade",
+    "metabolismo"
+   ],
+   "titulo": {
+    "pt": "Metformina e longevidade em ratinhos",
+    "en": "Metformin and lifespan in mice"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/23900241/",
+   "conclusao": {
+    "pt": "A metformina a 0,1% na dieta desde a meia-idade prolongou a saúde e a vida de ratinhos machos, enquanto a dose de 1% foi tóxica.",
+    "en": "Metformin at 0.1% of the diet from middle age extended healthspan and lifespan in male mice, while a 1% dose was toxic."
    }
   },
   {
@@ -2159,6 +4234,25 @@
    }
   },
   {
+   "id": "230",
+   "ano": 2012,
+   "mes": 8,
+   "especie": "animal",
+   "areas": [
+    "longevidade",
+    "metabolismo"
+   ],
+   "titulo": {
+    "pt": "Restrição calórica sem ganho de sobrevivência no NIA",
+    "en": "No survival gain from caloric restriction at NIA"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/22932268/",
+   "conclusao": {
+    "pt": "No estudo do NIA, a restrição calórica iniciada em macacos rhesus jovens ou mais velhos não melhorou a sobrevivência, apesar de benefícios na saúde.",
+    "en": "In the NIA study, caloric restriction started in young or older rhesus monkeys did not improve survival, despite health benefits."
+   }
+  },
+  {
    "id": "121",
    "ano": 2011,
    "mes": 8,
@@ -2180,7 +4274,8 @@
    "especie": "humano",
    "amostra": "relevante",
    "areas": [
-    "metabolismo"
+    "metabolismo",
+    "longevidade"
    ],
    "titulo": {
     "en": "Low HbA1c and mortality in adults without diabetes",
@@ -2190,6 +4285,104 @@
    "conclusao": {
     "en": "In US adults without diabetes, a low HbA1c was associated with higher all-cause mortality.",
     "pt": "Em adultos sem diabetes, uma HbA1c baixa associou-se a maior mortalidade por todas as causas."
+   }
+  },
+  {
+   "id": "231",
+   "ano": 2010,
+   "mes": 10,
+   "especie": "animal",
+   "areas": [
+    "longevidade",
+    "cancro"
+   ],
+   "titulo": {
+    "pt": "Rapamicina, resveratrol e sinvastatina no ITP",
+    "en": "Rapamycin, resveratrol and simvastatin in the ITP"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/20974732/",
+   "conclusao": {
+    "pt": "Iniciada aos 9 meses, a rapamicina aumentou a sobrevivência mediana em 10% nos machos e 18% nas fêmeas nos três centros, enquanto o resveratrol e a sinvastatina não tiveram efeito.",
+    "en": "Started at 9 months, rapamycin raised median survival by 10% in males and 18% in females at all three sites, whereas resveratrol and simvastatin had no effect."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "232",
+   "ano": 2010,
+   "mes": 5,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "sono"
+   ],
+   "titulo": {
+    "pt": "Duração do sono e mortalidade: meta-análise",
+    "en": "Sleep duration and mortality: a meta-analysis"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/20469800/",
+   "conclusao": {
+    "pt": "Em 16 estudos com 1 382 999 participantes, dormir pouco associou-se a mais 12% de mortalidade e dormir muito a mais 30%.",
+    "en": "In 16 studies with 1,382,999 participants, short sleep was linked to 12% higher mortality and long sleep to 30% higher mortality."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "233",
+   "ano": 2009,
+   "mes": 10,
+   "especie": "animal",
+   "areas": [
+    "longevidade",
+    "metabolismo"
+   ],
+   "titulo": {
+    "pt": "S6K1 e longevidade em ratinhos",
+    "en": "S6K1 and lifespan in mice"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/19797661/",
+   "conclusao": {
+    "pt": "A deleção de S6K1, da via mTOR, prolongou a vida de ratinhos e protegeu contra perda óssea, imunitária e motora e contra a resistência à insulina.",
+    "en": "Deleting S6K1, part of the mTOR pathway, extended mouse lifespan and protected against bone, immune and motor decline and insulin resistance."
+   }
+  },
+  {
+   "id": "234",
+   "ano": 2009,
+   "mes": 7,
+   "especie": "animal",
+   "areas": [
+    "longevidade",
+    "cancro"
+   ],
+   "titulo": {
+    "pt": "Rapamicina iniciada tarde prolonga a vida de ratinhos",
+    "en": "Rapamycin started late in life extends mouse lifespan"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/19587680/",
+   "conclusao": {
+    "pt": "No programa ITP, a rapamicina iniciada aos 600 dias de idade prolongou a vida mediana e máxima de machos e fêmeas, com aumentos de 14% nas fêmeas e 9% nos machos na idade de 90% de mortalidade.",
+    "en": "In the ITP, rapamycin started at 600 days of age extended median and maximal lifespan in both sexes, with 14% (females) and 9% (males) gains in age at 90% mortality."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "235",
+   "ano": 2009,
+   "mes": 7,
+   "especie": "animal",
+   "areas": [
+    "longevidade",
+    "metabolismo"
+   ],
+   "titulo": {
+    "pt": "Restrição calórica atrasa doença em macacos",
+    "en": "Caloric restriction delays disease in monkeys"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/19590001/",
+   "conclusao": {
+    "pt": "Após 20 anos, 80% dos macacos rhesus em restrição calórica moderada estavam vivos contra 50% dos controlos, com menos diabetes, cancro, doença cardiovascular e atrofia cerebral.",
+    "en": "After 20 years, 80% of rhesus monkeys on moderate caloric restriction were alive versus 50% of controls, with less diabetes, cancer, cardiovascular disease and brain atrophy."
    }
   },
   {
@@ -2210,6 +4403,47 @@
     "en": "Lower serum bilirubin was associated with more coronary artery calcification.",
     "pt": "Uma bilirrubina sérica mais baixa associou-se a maior calcificação das artérias coronárias."
    }
+  },
+  {
+   "id": "236",
+   "ano": 2008,
+   "mes": 11,
+   "especie": "humano",
+   "areas": [
+    "longevidade",
+    "cardiovascular",
+    "inflamacao"
+   ],
+   "titulo": {
+    "pt": "Rosuvastatina com PCR elevada e LDL normal (JUPITER)",
+    "en": "Rosuvastatin with high CRP and normal LDL (JUPITER)"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/18997196/",
+   "conclusao": {
+    "pt": "Em 17 802 pessoas saudáveis com LDL abaixo de 130 mg/dL e PCR elevada, a rosuvastatina reduziu os eventos cardiovasculares graves em 44% (HR 0,56) e a morte por qualquer causa (HR 0,80).",
+    "en": "In 17,802 healthy people with LDL below 130 mg/dL and high CRP, rosuvastatin reduced major cardiovascular events by 44% (HR 0.56) and all-cause death (HR 0.80)."
+   },
+   "amostra": "relevante"
+  },
+  {
+   "id": "237",
+   "ano": 2008,
+   "mes": 9,
+   "especie": "animal",
+   "areas": [
+    "longevidade",
+    "inflamacao"
+   ],
+   "titulo": {
+    "pt": "Aspirina e NDGA no primeiro estudo do ITP",
+    "en": "Aspirin and NDGA in the first ITP cohort"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/18631321/",
+   "conclusao": {
+    "pt": "Na primeira coorte do ITP, o NDGA e a aspirina aumentaram a longevidade dos machos, sem efeito significativo na sobrevivência máxima nem nas fêmeas.",
+    "en": "In the first ITP cohort, NDGA and aspirin increased male lifespan, with no significant effect on maximal survival or in females."
+   },
+   "amostra": "relevante"
   },
   {
    "id": "124",
@@ -2264,6 +4498,25 @@
    "conclusao": {
     "pt": "Em ratos, a glicina ou a serina na dieta suprimiram a hiper-homocisteinemia provocada por um excesso de metionina.",
     "en": "In rats, dietary glycine or serine suppressed the hyperhomocysteinemia caused by excess methionine."
+   }
+  },
+  {
+   "id": "238",
+   "ano": 2005,
+   "mes": 8,
+   "especie": "animal",
+   "areas": [
+    "longevidade",
+    "metabolismo"
+   ],
+   "titulo": {
+    "pt": "Klotho e longevidade em ratinhos",
+    "en": "Klotho and lifespan in mice"
+   },
+   "link": "https://pubmed.ncbi.nlm.nih.gov/16123266/",
+   "conclusao": {
+    "pt": "A sobre-expressão de Klotho prolongou a vida de ratinhos, atuando como hormona que reprime a sinalização da insulina e do IGF-1.",
+    "en": "Klotho overexpression extended mouse lifespan, acting as a hormone that represses insulin and IGF-1 signalling."
    }
   },
   {
