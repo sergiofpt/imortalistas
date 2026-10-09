@@ -1,52 +1,96 @@
 <!doctype html>
-<html lang="pt-PT"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex">
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="data:,">
 <title>Treino genético · Sérgio F</title>
+<meta name="color-scheme" content="light dark">
+<script>(function(){var d=document.documentElement,t=null,l=null,q=/[?&]lang=(en|pt)(?:&|#|$)/i.exec(location.search);q=q&&q[1].toLowerCase();try{if(q)localStorage.setItem('lang',q);l=localStorage.getItem('lang');t=localStorage.getItem('theme')}catch(e){}if(q)l=q;if(l==='en')d.lang='en';if(t!=='dark'&&t!=='light')t='dark';d.setAttribute('data-theme',t)})()</script>
+<script src="../sf.js"></script>
 <style>
-:root{--bg:#f6f7fb;--card:#fff;--ink:#16202c;--mut:#5b6777;--line:#e2e6ee;--acc:#2f5bea;--acc2:#e9efff;
---ok:#16865a;--okb:#e5f6ee;--warn:#b56a00;--warnb:#fff3df;--bad:#c23b3b;--badb:#fdecec;--info:#5b4bd6;--infob:#efedff}
-*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
-body{margin:0;font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
-a{color:var(--acc)}
-header.top{background:linear-gradient(135deg,#1d2b53,#2f5bea);color:#fff;padding:18px 16px 16px}
-header.top .w{max-width:1040px;margin:0 auto}
-header.top .crumb{font-size:13px;opacity:.85}header.top .crumb a{color:#fff}
-header.top h1{margin:6px 0 4px;font-size:clamp(21px,4.6vw,30px);line-height:1.2}
-header.top p{margin:0;opacity:.92;max-width:760px}
-main{max-width:1040px;margin:0 auto;padding:14px 12px 40px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 14px;margin:12px 0;box-shadow:0 1px 2px rgba(20,30,60.04)}
-.card h2{margin:0 0 8px;font-size:18px}.card h3{margin:12px 0 6px;font-size:16px}
-.disc{background:#fff8e6;border:1px solid #f1d48b;border-radius:12px;padding:10px 12px;font-size:13.5px;color:#5a4300}
+:root{--bg:#f5f7fa;--card:#fff;--ink:#14202e;--mut:#5b6b7d;--line:#e3e8ef;--acc:#1f5eff;--ok:#12a150;--okb:#e6f6ec;--na:#8a97a8;--nab:#eef1f5;--r:14px;--head:rgba(255,255,255,.94);--actfg:#fff;--acc2:#e9efff;--warn:#b56a00;--warnb:#fff3df;--bad:#c23b3b;--badb:#fdecec;--info:#5b4bd6;--infob:#efedff;--disc-line:#f1d48b;--band:rgba(31,94,255,.22);color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:78px;-webkit-text-size-adjust:100%}
+body{margin:0;font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+header.top{position:sticky;top:0;z-index:50;background:var(--head);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
+.topin{max-width:1240px;margin:0 auto;display:flex;align-items:center;gap:18px;padding:10px 20px}
+nav.main{display:flex;gap:4px;overflow:visible;scrollbar-width:none;flex:1;min-width:0}
+nav.main::-webkit-scrollbar{display:none}
+nav.main a{white-space:nowrap;text-decoration:none;color:var(--mut);font-size:13.5px;padding:7px 11px;border-radius:999px;font-weight:500}
+nav.main a:hover{background:var(--nab);color:var(--ink)}
+nav.main a.active{background:var(--ink);color:var(--actfg)}
+.dd{position:relative;flex:0 0 auto}
+.dd summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;white-space:nowrap;color:var(--mut);font:inherit;font-size:13.5px;font-weight:500;padding:7px 11px;border-radius:999px}
+.dd summary::-webkit-details-marker{display:none}
+.dd summary::marker{content:""}
+.dd summary:hover,.dd[open]>summary{background:var(--nab);color:var(--ink)}
+.dd.on>summary{background:var(--ink);color:var(--actfg)}
+.dd summary:after{content:" ▾";font-size:.72em;opacity:.75}
+.dd[open]>summary:after{content:" ▴"}
+.ddmenu{position:absolute;top:calc(100% + 6px);right:0;min-width:210px;padding:6px;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:0 14px 36px rgba(15,30,50,.18);z-index:80;display:flex;flex-direction:column;gap:2px}
+.ddmenu a{display:block;border-radius:10px}
+main{max-width:980px;margin:0 auto;padding:22px 20px 28px}
+h1{margin:0 0 8px;font-size:28px;letter-spacing:-.3px}
+.lead{margin:0 0 8px;color:var(--mut)}
+.back{margin:0 0 12px;font-size:13.5px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;margin:12px 0}
+.card h2{margin:0 0 8px;font-size:18px;letter-spacing:-.2px}.card h3{margin:12px 0 6px;font-size:16px}
+.disc{background:var(--warnb);border:1px solid var(--disc-line);border-radius:var(--r);padding:12px 14px;font-size:13.5px;color:var(--warn)}
 .mut{color:var(--mut)}.small{font-size:13px}.tiny{font-size:12px}
 .grid{display:grid;gap:12px;grid-template-columns:1fr}
 .grid>*{min-width:0}.chip{white-space:normal}
 @media(min-width:760px){.grid.g2{grid-template-columns:1fr 1fr}.grid.g3{grid-template-columns:1fr 1fr 1fr}}
 .chip{display:inline-block;border-radius:999px;padding:2px 9px;font-size:12px;font-weight:600;border:1px solid transparent;white-space:nowrap}
-.c-ok{background:var(--okb);color:var(--ok)}.c-warn{background:var(--warnb);color:var(--warn)}.c-bad{background:var(--badb);color:var(--bad)}.c-info{background:var(--infob);color:var(--info)}.c-mut{background:#eef1f5;color:#4b5563}
-.sug{display:inline-block;font-size:11.5px;font-style:italic;color:#7a4b00;background:#fff1d6;border-radius:6px;padding:1px 6px;margin-left:4px}
+.c-ok{background:var(--okb);color:var(--ok)}.c-warn{background:var(--warnb);color:var(--warn)}.c-bad{background:var(--badb);color:var(--bad)}.c-info{background:var(--infob);color:var(--info)}.c-mut{background:var(--nab);color:var(--mut)}
+.sug{display:inline-block;font-size:11.5px;font-style:italic;color:var(--warn);background:var(--warnb);border-radius:6px;padding:1px 6px;margin-left:4px}
 table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;padding:7px 6px;border-bottom:1px solid var(--line);vertical-align:top}
 th{font-size:12.5px;color:var(--mut);font-weight:600}
 .tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
-input[type=search],input[type=text],select{width:100%;font:inherit;padding:10px 12px;border:1px solid #c9d1de;border-radius:10px;background:#fff}
-input[type=range]{width:100%}
-button.btn{font:inherit;border:1px solid #c9d1de;background:#fff;border-radius:10px;padding:8px 12px;cursor:pointer}
-button.on.btn.on{background:var(--acc);border-color:var(--acc);color:#fff}
+main input[type=search],main input[type=text],main select{width:100%;font:inherit;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink)}
+main input[type=range]{width:100%;accent-color:var(--acc)}
+main input:focus,main select:focus{outline:2px solid var(--acc);outline-offset:1px}
+main button,main .btn{font:inherit;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;padding:8px 12px;cursor:pointer}
+main button.on,main .btn.on{background:var(--acc);border-color:var(--acc);color:var(--actfg)}
+main button:focus{outline:2px solid var(--acc);outline-offset:1px}
 .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-.bar{height:12px;background:#edf0f6;border-radius:8px;position:relative;overflow:hidden}
+.bar{height:12px;background:var(--nab);border-radius:8px;position:relative;overflow:hidden}
 .bar>i{position:absolute;left:0;top:0;bottom:0;border-radius:8px}
 .src{font-size:12px;color:var(--mut)}
-footer{max-width:1040px;margin:0 auto;padding:0 14px 30px;color:var(--mut);font-size:12.5px}
+footer{max-width:980px;margin:0 auto;padding:0 20px 72px;color:var(--mut);font-size:12.5px}
 .pill-nav{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px}
 .pill-nav button{white-space:nowrap}
 .kpi{font-size:26px;font-weight:700}
-details summary{cursor:pointer;font-weight:600}
+main details summary{cursor:pointer;font-weight:600}
 .hidden{display:none}
-</style></head>
-<body>
-<a href="../genetica.html" style="display:block;padding:6px 14px;font-size:13px;text-decoration:none">← Sérgio F</a>
-<header class="top"><div class="w"><div class="crumb"><a href="index.html">← Ferramentas genéticas</a> · Sérgio F</div><h1>Treino genético</h1><p>O relatório de força, hipertrofia e potência junto com os riscos de tendões, articulações e fraturas, num modelo de semana.</p></div></header>
+html[data-theme="dark"]{color-scheme:dark;--bg:#0e141d;--card:#161e2a;--ink:#e5eaf1;--mut:#9aa7b8;--line:#2a3545;--acc:#7a9dff;--nab:#222b39;--head:rgba(16,22,32,.92);--actfg:#0e141d;--ok:#3dce86;--okb:#143226;--warn:#e0a040;--warnb:#3a2c12;--bad:#f07171;--badb:#3a1c1c;--info:#b0a6ff;--infob:#241f45;--acc2:#1c2744;--disc-line:#6a5428;--band:rgba(122,157,255,.40)}
+html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
+.tools{display:flex;align-items:center;gap:14px;margin-left:auto;flex:0 0 auto}
+.lang{display:flex;align-items:center;gap:4px;font-size:13.5px;white-space:nowrap}
+.lang button{font:inherit;border:0;background:none;color:var(--mut);cursor:pointer;padding:6px 6px;border-radius:8px}
+.lang button:hover{background:var(--nab);color:var(--ink)}.lang button.on{color:var(--ink);font-weight:700}
+.lang .sep{color:var(--na,#8a97a8)}
+main a{color:var(--acc)}
+@media(max-width:640px){html{scroll-padding-top:148px}.topin{gap:4px 8px;padding:6px 12px;flex-wrap:wrap}.tools{order:-1;margin-left:auto;gap:10px}nav.main{flex:1 1 100%;order:2;flex-wrap:wrap;gap:2px}nav.main a,.dd summary{padding:6px 10px}h1{font-size:24px}.card{padding:14px}}
+</style>
+
+</head>
+<body data-title-pt="Treino genético · Sérgio F" data-title-en="Treino genético · Sérgio F">
+<header class="top"><div class="topin">
+<nav class="main">
+<a href="../inicio.html" data-en="Home">Início</a><a href="../analises.html#sangue" data-en="Tests">Análises</a><details class="dd on"><summary data-en="Genetics">Genética</summary><div class="ddmenu"><a href="../genetica-reports.html" data-en="Genetics Reports">Genética Reports</a><a href="../genetica-boa.html" data-en="Good Genetics">Genética Boa</a><a href="../genetica.html" data-en="Bad Genetics">Genética Má</a><a href="index.html" class="active" aria-current="page" data-en="Genetic tools">Ferramentas genéticas</a></div></details><details class="dd"><summary data-en="Protocol">Protocolo</summary><div class="ddmenu"><a href="../pele-cabelo.html" data-en="Skin and Hair">Pele e Cabelo</a><a href="../sono.html" data-en="Sleep">Sono</a><a href="../dieta.html" data-en="Diet">Dieta</a><a href="../terapias.html" data-en="Therapies">Terapias</a><a href="../treino.html" data-en="Training">Treino</a><a href="../suplementos.html" data-en="Supplements + Medication">Suplementos + Medicação</a></div></details><a href="../origem.html" data-en="Origin">Origem</a><a href="../estudos.html" data-en="Studies">Estudos</a></nav>
+<div class="tools">
+<div class="lang" id="lang" role="group" aria-label="Idioma / Language"><button type="button" data-l="pt" lang="pt-PT">Português</button><span class="sep" aria-hidden="true">|</span><button type="button" data-l="en" lang="en">English</button></div>
+<div class="lang" id="theme" role="group" aria-label="Tema" data-al-en="Theme"><button type="button" data-t="dark" data-en="Dark">Escuro</button><span class="sep" aria-hidden="true">|</span><button type="button" data-t="light" data-en="Light">Claro</button></div>
+</div>
+</div></header>
 <main>
+<p class="back"><a href="index.html">← Ferramentas genéticas</a></p>
+<h1>Treino genético</h1>
+<p class="lead">O relatório de força, hipertrofia e potência junto com os riscos de tendões, articulações e fraturas, num modelo de semana.</p>
+
 <div class="disc"><b>Não é aconselhamento médico.</b> Ferramenta educativa feita só a partir da genética de Sérgio F e de estudos publicados. Os genes indicam tendências, não destinos. Qualquer alteração a fármacos ou suplementos aparece como <i>sugestão (não aplicada)</i> e é para decidir com o médico.</div>
 
 <div class="card"><h2>Modelo semanal <span class="sug">sugestão (não aplicada)</span></h2>
@@ -77,10 +121,37 @@ function sem(){
   document.getElementById('sm').innerHTML=D.semana.map((d,i)=>{
     let t=d[1],x=d[2],k=d[3];
     if(rapa&&i<4&&k==='forca'){t='Leve (semana da toma)';x='Dia da toma e 3 dias seguintes: técnica, amplitude de movimento, isométricos leves, zona 2. Sem sessões pesadas de hipertrofia.';k='leve';}
-    const col={forca:'var(--acc)',z2:'var(--ok)',leve:'#8a94a6'}[k];
+    const col={forca:'var(--acc)',z2:'var(--ok)',leve:'var(--mut)'}[k];
     return `<div class="card" style="margin:0;border-top:5px solid ${col}"><b>${esc(d[0])}</b><div class="small"><b>${esc(t)}</b></div><div class="small mut">${esc(x)}</div></div>`;}).join('');
 }
 document.getElementById('rb').addEventListener('click',()=>{rapa=!rapa;sem();});sem();
 
 </script>
+<script>
+let LANG='pt';try{if(localStorage.getItem('lang')==='en')LANG='en'}catch(e){}
+{const q=/[?&]lang=(en|pt)(?:&|#|$)/i.exec(location.search);if(q)LANG=q[1].toLowerCase()}
+function applyLang(){const en=LANG==='en';document.documentElement.lang=en?'en':'pt-PT';document.title=en?document.body.dataset.titleEn:document.body.dataset.titlePt;
+ document.querySelectorAll('[data-en]').forEach(el=>{if(!el.hasAttribute('data-pt'))el.setAttribute('data-pt',el.textContent);el.textContent=en?el.dataset.en:el.dataset.pt});
+ document.querySelectorAll('[data-al-en]').forEach(el=>{if(!el.hasAttribute('data-al-pt'))el.setAttribute('data-al-pt',el.getAttribute('aria-label'));el.setAttribute('aria-label',en?el.dataset.alEn:el.dataset.alPt)});
+ document.querySelectorAll('#lang button').forEach(b=>{const on=b.dataset.l===LANG;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});}
+document.querySelectorAll('#lang button').forEach(b=>b.addEventListener('click',()=>{if(LANG===b.dataset.l)return;LANG=b.dataset.l;try{localStorage.setItem('lang',LANG)}catch(e){}try{if(/[?&]lang=/i.test(location.search)){const u=new URL(location.href);u.searchParams.set('lang',LANG);history.replaceState(history.state,'',u)}}catch(e){}applyLang()}));
+let THEME=null;try{THEME=localStorage.getItem('theme')}catch(e){}
+const curTheme=()=>THEME==='dark'||THEME==='light'?THEME:'dark';
+function applyTheme(){const t=curTheme();document.documentElement.setAttribute('data-theme',t);document.querySelectorAll('#theme button').forEach(b=>{const on=b.dataset.t===t;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)})}
+document.querySelectorAll('#theme button').forEach(b=>b.addEventListener('click',()=>{THEME=b.dataset.t;try{localStorage.setItem('theme',THEME)}catch(e){}applyTheme()}));
+applyTheme();
+applyLang();
+</script>
+<script>
+(function(){try{var W=window.SF_W;if(!W)return;W=String(W).replace(/\/+$/,'');
+ if(location.hash==='#toggle-goatcounter'){var off=localStorage.getItem('skipgc')==='t';if(off)localStorage.removeItem('skipgc');else localStorage.setItem('skipgc','t');alert(off?'Contagem ligada neste browser.':'Contagem desligada neste browser.')}
+ if(localStorage.getItem('skipgc')==='t'||navigator.webdriver||window!==window.top||location.protocol==='file:'||/^(localhost|127\.|10\.|192\.168\.|0\.0\.0\.0$|\[::1\]$)/.test(location.hostname))return;
+ var send=function(){try{var sc=window.screen||{},x={p:location.pathname,t:document.title,r:document.referrer||'',s:sc.width||0,w:sc.width||0,h:sc.height||0,d:window.devicePixelRatio||0,m:navigator.maxTouchPoints||0},u=W+'/e',ok=0,
+  go=function(){if(ok)return;ok=1;var d=JSON.stringify(x);if(navigator.sendBeacon&&navigator.sendBeacon(u,d))return;fetch(u,{method:'POST',body:d,keepalive:true,mode:'no-cors',credentials:'omit'}).catch(function(){})},
+  ud=navigator.userAgentData;
+  if(ud&&ud.getHighEntropyValues){setTimeout(go,800);ud.getHighEntropyValues(['model','platformVersion']).then(function(v){if(v&&v.model)x.mo=String(v.model).slice(0,40);if(v&&v.platformVersion)x.pv=String(v.platformVersion).slice(0,20);go()},go)}else go()}catch(_){}};
+ if(document.visibilityState==='prerender')document.addEventListener('visibilitychange',function f(){if(document.visibilityState!=='prerender'){document.removeEventListener('visibilitychange',f);send()}});
+ else if(document.readyState==='complete')send();else addEventListener('load',send)}catch(_){}})();
+</script>
+<script>document.addEventListener('click',function(e){document.querySelectorAll('details.dd[open]').forEach(function(d){if(!d.contains(e.target))d.removeAttribute('open')})});</script>
 </body></html>
