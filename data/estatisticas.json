@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-09T17:48:23Z",
+ "atualizado_em": "2026-10-09T18:21:38Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
-  "visitas": 59,
-  "visitas_30d": 59,
-  "visitas_90d": 59,
-  "aberturas_pdf": 377,
-  "visitas_hoje": 6,
-  "visitas_7d": 59,
-  "aberturas_hoje": 14,
-  "aberturas_7d": 377,
-  "aberturas_30d": 377,
-  "pdf_abertos": 162,
+  "visitas": 60,
+  "visitas_30d": 60,
+  "visitas_90d": 60,
+  "aberturas_pdf": 384,
+  "visitas_hoje": 7,
+  "visitas_7d": 60,
+  "aberturas_hoje": 21,
+  "aberturas_7d": 384,
+  "aberturas_30d": 384,
+  "pdf_abertos": 169,
   "pdf_descarregados": 215,
-  "pdf_pt": 139,
+  "pdf_pt": 146,
   "pdf_en": 238
  },
  "dias": [
@@ -61,8 +61,8 @@
   },
   {
    "dia": "2026-10-09",
-   "visitas": 6,
-   "aberturas": 14
+   "visitas": 7,
+   "aberturas": 21
   }
  ],
  "paginas": [
@@ -80,7 +80,7 @@
   },
   {
    "path": "/imortalistas/inicio.html",
-   "visitas": 4
+   "visitas": 5
   },
   {
    "path": "/imortalistas/genetica-boa.html",
@@ -194,6 +194,17 @@
    "abertos_pt": 2,
    "abertos_en": 1,
    "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "bexiga-funcao-urinaria",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
    "descarregados_en": 1
   },
   {
@@ -329,6 +340,28 @@
    "descarregados_en": 1
   },
   {
+   "id": "prostata",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "proteina-aminoacidos",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "psicadelicos",
    "ficheiro": null,
    "pt": 2,
@@ -373,7 +406,29 @@
    "descarregados_en": 1
   },
   {
+   "id": "termorregulacao-sudorese",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "valvulas-cardiacas",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "vitaminas-minerais",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -484,17 +539,6 @@
   },
   {
    "id": "baco-sistema-linfatico",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "bexiga-funcao-urinaria",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -824,6 +868,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "inflamacao-autoimunidade",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 1,
+   "total": 3,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
    "id": "inflamacao-senescencia-placa",
    "ficheiro": null,
    "pt": 1,
@@ -866,6 +921,17 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 1
+  },
+  {
+   "id": "longevidade-excecional",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 1,
+   "total": 3,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
   },
   {
    "id": "longevidade-maxima-sintese-genetica",
@@ -979,28 +1045,6 @@
   },
   {
    "id": "polipos-colorretais",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "prostata",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "proteina-aminoacidos",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -1165,17 +1209,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "termorregulacao-sudorese",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "testiculos",
    "ficheiro": null,
    "pt": 1,
@@ -1210,17 +1243,6 @@
   },
   {
    "id": "vesicula-biliar-calculos",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "vitaminas-minerais",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -1295,28 +1317,6 @@
    "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 1
-  },
-  {
-   "id": "inflamacao-autoimunidade",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
-   "id": "longevidade-excecional",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
   },
   {
    "id": "mitocondrias-energia",
@@ -1455,7 +1455,7 @@
    "tipo": "computador",
    "nome": "Windows 10 · Chrome",
    "estimativa": false,
-   "visitas": 2
+   "visitas": 3
   },
   {
    "id": "computador/windows-11-chrome",
@@ -1539,7 +1539,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 348
+   "visitas": 356
   },
   {
    "id": "PT",
@@ -1591,7 +1591,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 406
+   "visitas": 414
   },
   {
    "id": "Firefox",
@@ -1608,12 +1608,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 238
+   "visitas": 242
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 158
+   "visitas": 162
   },
   {
    "id": "Android",
@@ -1650,19 +1650,19 @@
   {
    "id": "desktop",
    "nome": "desktop",
-   "visitas": 36
+   "visitas": 37
   },
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 376
+   "visitas": 383
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 425
+   "visitas": 433
   },
   {
    "id": "https://bing.com",
@@ -2008,8 +2008,8 @@
     },
     {
      "dia": "2026-10-09",
-     "visitas": 3,
-     "aberturas": 14
+     "visitas": 4,
+     "aberturas": 21
     }
    ],
    "paginas": [
@@ -2018,15 +2018,15 @@
      "visitas": 25
     },
     {
+     "path": "/imortalistas/inicio.html",
+     "visitas": 3
+    },
+    {
      "path": "/imortalistas/",
      "visitas": 2
     },
     {
      "path": "/imortalistas/genetica-boa.html",
-     "visitas": 2
-    },
-    {
-     "path": "/imortalistas/inicio.html",
      "visitas": 2
     },
     {
@@ -2090,6 +2090,17 @@
      "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 2
+    },
+    {
+     "id": "bexiga-funcao-urinaria",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
     },
     {
      "id": "doencas-autoimunes",
@@ -2169,6 +2180,28 @@
      "descarregados_en": 1
     },
     {
+     "id": "prostata",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "proteina-aminoacidos",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "sensores-nutrientes-autofagia",
      "ficheiro": null,
      "pt": 2,
@@ -2180,7 +2213,29 @@
      "descarregados_en": 1
     },
     {
+     "id": "termorregulacao-sudorese",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "valvulas-cardiacas",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "vitaminas-minerais",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -2313,17 +2368,6 @@
     },
     {
      "id": "baco-sistema-linfatico",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "bexiga-funcao-urinaria",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2675,6 +2719,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "inflamacao-autoimunidade",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 1,
+     "total": 3,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
      "id": "inflamacao-senescencia-placa",
      "ficheiro": null,
      "pt": 1,
@@ -2739,6 +2794,17 @@
      "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 1
+    },
+    {
+     "id": "longevidade-excecional",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 1,
+     "total": 3,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
     },
     {
      "id": "matriz-extracelular-glicacao",
@@ -2852,28 +2918,6 @@
     },
     {
      "id": "polipos-colorretais",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "prostata",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "proteina-aminoacidos",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -3071,17 +3115,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "termorregulacao-sudorese",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "testiculos",
      "ficheiro": null,
      "pt": 1,
@@ -3116,17 +3149,6 @@
     },
     {
      "id": "vesicula-biliar-calculos",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "vitaminas-minerais",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -3223,28 +3245,6 @@
      "abertos_en": 1,
      "descarregados_pt": 0,
      "descarregados_en": 1
-    },
-    {
-     "id": "inflamacao-autoimunidade",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
-     "id": "longevidade-excecional",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
     },
     {
      "id": "longevidade-maxima-sintese-genetica",
@@ -3373,7 +3373,7 @@
      "tipo": "computador",
      "nome": "Windows 10 · Chrome",
      "estimativa": false,
-     "visitas": 2
+     "visitas": 3
     },
     {
      "id": "computador/windows-10-11-chrome",
@@ -3455,25 +3455,25 @@
    ],
    "aparelhos_desde": "2026-10-03",
    "total": {
-    "visitas": 35,
-    "visitas_30d": 35,
-    "visitas_90d": 35,
-    "aberturas_pdf": 351,
-    "visitas_hoje": 3,
-    "visitas_7d": 35,
-    "aberturas_hoje": 14,
-    "aberturas_7d": 351,
-    "aberturas_30d": 351,
-    "pdf_abertos": 136,
+    "visitas": 36,
+    "visitas_30d": 36,
+    "visitas_90d": 36,
+    "aberturas_pdf": 358,
+    "visitas_hoje": 4,
+    "visitas_7d": 36,
+    "aberturas_hoje": 21,
+    "aberturas_7d": 358,
+    "aberturas_30d": 358,
+    "pdf_abertos": 143,
     "pdf_descarregados": 215,
-    "pdf_pt": 115,
+    "pdf_pt": 122,
     "pdf_en": 236
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 348
+     "visitas": 356
     },
     {
      "id": "US",
