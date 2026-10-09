@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-PT"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Painel de risco ao longo da vida · Sérgio F</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--ink:#16202c;--mut:#5b6777;--line:#e2e6ee;--acc:#2f5bea;--acc2:#e9efff;
+--ok:#16865a;--okb:#e5f6ee;--warn:#b56a00;--warnb:#fff3df;--bad:#c23b3b;--badb:#fdecec;--info:#5b4bd6;--infob:#efedff}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--acc)}
+header.top{background:linear-gradient(135deg,#1d2b53,#2f5bea);color:#fff;padding:18px 16px 16px}
+header.top .w{max-width:1040px;margin:0 auto}
+header.top .crumb{font-size:13px;opacity:.85}header.top .crumb a{color:#fff}
+header.top h1{margin:6px 0 4px;font-size:clamp(21px,4.6vw,30px);line-height:1.2}
+header.top p{margin:0;opacity:.92;max-width:760px}
+main{max-width:1040px;margin:0 auto;padding:14px 12px 40px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 14px;margin:12px 0;box-shadow:0 1px 2px rgba(20,30,60.04)}
+.card h2{margin:0 0 8px;font-size:18px}.card h3{margin:12px 0 6px;font-size:16px}
+.disc{background:#fff8e6;border:1px solid #f1d48b;border-radius:12px;padding:10px 12px;font-size:13.5px;color:#5a4300}
+.mut{color:var(--mut)}.small{font-size:13px}.tiny{font-size:12px}
+.grid{display:grid;gap:12px;grid-template-columns:1fr}
+.grid>*{min-width:0}.chip{white-space:normal}
+@media(min-width:760px){.grid.g2{grid-template-columns:1fr 1fr}.grid.g3{grid-template-columns:1fr 1fr 1fr}}
+.chip{display:inline-block;border-radius:999px;padding:2px 9px;font-size:12px;font-weight:600;border:1px solid transparent;white-space:nowrap}
+.c-ok{background:var(--okb);color:var(--ok)}.c-warn{background:var(--warnb);color:var(--warn)}.c-bad{background:var(--badb);color:var(--bad)}.c-info{background:var(--infob);color:var(--info)}.c-mut{background:#eef1f5;color:#4b5563}
+.sug{display:inline-block;font-size:11.5px;font-style:italic;color:#7a4b00;background:#fff1d6;border-radius:6px;padding:1px 6px;margin-left:4px}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;padding:7px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12.5px;color:var(--mut);font-weight:600}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+input[type=search],input[type=text],select{width:100%;font:inherit;padding:10px 12px;border:1px solid #c9d1de;border-radius:10px;background:#fff}
+input[type=range]{width:100%}
+button.btn{font:inherit;border:1px solid #c9d1de;background:#fff;border-radius:10px;padding:8px 12px;cursor:pointer}
+button.on.btn.on{background:var(--acc);border-color:var(--acc);color:#fff}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.bar{height:12px;background:#edf0f6;border-radius:8px;position:relative;overflow:hidden}
+.bar>i{position:absolute;left:0;top:0;bottom:0;border-radius:8px}
+.src{font-size:12px;color:var(--mut)}
+footer{max-width:1040px;margin:0 auto;padding:0 14px 30px;color:var(--mut);font-size:12.5px}
+.pill-nav{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px}
+.pill-nav button{white-space:nowrap}
+.kpi{font-size:26px;font-weight:700}
+details summary{cursor:pointer;font-weight:600}
+.hidden{display:none}
+</style></head>
+<body>
+<a href="../genetica.html" style="display:block;padding:6px 14px;font-size:13px;text-decoration:none">← Sérgio F</a>
+<header class="top"><div class="w"><div class="crumb"><a href="index.html">← Ferramentas genéticas</a> · Sérgio F</div><h1>Painel de risco ao longo da vida</h1><p>As tuas doenças principais, risco genético contra a média da população em cada fase da vida, com a incerteza marcada.</p></div></header>
+<main>
+<div class="disc"><b>Não é aconselhamento médico.</b> Ferramenta educativa feita só a partir da genética de Sérgio F e de estudos publicados. Os genes indicam tendências, não destinos. Qualquer alteração a fármacos ou suplementos aparece como <i>sugestão (não aplicada)</i> e é para decidir com o médico.</div>
+
+<div class="card"><h2>Como ler</h2>
+<p class="small">Para cada doença: a barra cinzenta é o risco da <b>população</b> numa fase da vida (estudos publicados); a barra azul é a estimativa para Sérgio F = população × risco relativo genético. A zona azul clara é a <b>faixa de incerteza</b>: vai do score mais baixo ao mais alto dos vários scores calculados.</p>
+<p class="small mut">Limites: multiplicar um risco absoluto por um risco relativo é uma aproximação (válida para riscos pequenos; os valores são cortados a 95 %). As populações de base são de outros países e de outras décadas. Não entra o estilo de vida, a medicação nem as análises; com LDL/ApoB muito baixas, por exemplo, o risco coronário real deve ser bem menor.</p>
+<div class="pill-nav"><button data-k="todos">Todas</button><button data-k="alto">Acima da média</button><button data-k="baixo">Abaixo da média</button></div></div>
+<div id="rows"></div>
+<div class="card"><h2>Sem incidência por fase incluída</h2><p class="small mut">Para estas, só se mostra a posição genética (percentil de consenso).</p><div id="na"></div></div>
+
+</main>
+<footer>Sérgio F · versão pública · dados genéticos de 10-10-2026 (scores poligénicos recalculados a 03-10-2026). Não é diagnóstico nem prescrição.</footer>
+<script id="dados-app" type="application/json">{"rows": [{"id": "crc", "nome": "Cancro colorretal", "p": 80.4, "lo": 48.7, "hi": 98.3, "or": 1.67, "orsrc": "Thomas et al., Nat Commun 2023", "fases": [["Até aos 49", 0.4], ["50–64", 1.2], ["65–84", 2.6], ["85 ou mais", 1.7]], "vida": 4.1, "src": "Siegel et al., CA Cancer J Clin 2025 (risco de diagnóstico por intervalo, homens, registos dos EUA 2018–2021; condicionada a estar livre de cancro no início de cada intervalo)", "tipo": "incidência por intervalo", "nota": "O rastreio (FIT e colonoscopia) reduz o risco real, porque remove pólipos antes de virarem cancro.", "g": 1.55, "glo": 0.98, "ghi": 2.97}, {"id": "mel", "nome": "Melanoma", "p": 18.0, "lo": 6.5, "hi": 55.8, "or": 1.685, "orsrc": "Wang et al., Br J Dermatol 2026", "fases": [["Até aos 49", 0.4], ["50–64", 0.8], ["65–84", 2.3], ["85 ou mais", 1.4]], "vida": 3.5, "src": "Siegel et al., CA Cancer J Clin 2025 (risco de diagnóstico por intervalo, homens, registos dos EUA 2018–2021; condicionada a estar livre de cancro no início de cada intervalo)", "tipo": "incidência por intervalo", "nota": "", "g": 0.62, "glo": 0.45, "ghi": 1.08}, {"id": "pro", "nome": "Cancro da próstata", "p": 5.5, "lo": 1.3, "hi": 69.8, "or": 1.85, "orsrc": "Jermy et al., Nat Commun 2024", "fases": [["Até aos 49", 0.2], ["50–64", 3.8], ["65–84", 10.6], ["85 ou mais", 3.2]], "vida": 12.8, "src": "Siegel et al., CA Cancer J Clin 2025 (risco de diagnóstico por intervalo, homens, registos dos EUA 2018–2021; condicionada a estar livre de cancro no início de cada intervalo)", "tipo": "incidência por intervalo", "nota": "O PSA genético é baixo: o PSA medido tende a subestimar o que se passa na próstata.", "g": 0.37, "glo": 0.25, "ghi": 1.38}, {"id": "cad", "nome": "Doença coronária", "p": 18.2, "lo": 4.9, "hi": 53.9, "or": 1.71, "orsrc": "Inouye et al., J Am Coll Cardiol 2018", "fases": [["Risco restante a partir dos 40", 48.6], ["Risco restante a partir dos 70", 34.9]], "vida": null, "src": "Lloyd-Jones et al., Lancet (estudo de Framingham; homens; PMID 10023892)", "tipo": "risco restante de vida", "nota": "Estudo antigo, numa era com menos estatinas: o valor de base atual é provavelmente menor.", "g": 0.61, "glo": 0.41, "ghi": 1.05}, {"id": "tev", "nome": "Trombose venosa", "p": 75.6, "lo": 23.9, "hi": 86.3, "or": 1.51, "orsrc": "Ghouse et al., Nat Genet 2023", "fases": [["Risco restante a partir dos 45 (até aos 85)", 8.1]], "vida": null, "src": "Bell et al., Am J Med 2016 (estudo ARIC)", "tipo": "risco restante de vida", "nota": "Os scores genómicos discordam (percentis 24 e 71): incerteza alta.", "g": 1.33, "glo": 0.75, "ghi": 1.57}, {"id": "avc", "nome": "AVC (como primeira doença neurológica)", "p": 19.1, "lo": 3.5, "hi": 48.0, "or": 1.26, "orsrc": "Abraham et al., Nat Commun 2019", "fases": [["Risco restante a partir dos 45", 18.9]], "vida": null, "src": "Licher et al., J Neurol Neurosurg Psychiatry 2019 (estudo de Roterdão; homens)", "tipo": "risco restante de vida", "nota": "", "g": 0.82, "glo": 0.66, "ghi": 0.99}, {"id": "dem", "nome": "Demência (score de Alzheimer)", "p": 80.0, "lo": 46.4, "hi": 90.8, "or": 1.39, "orsrc": "Kurniansyah et al., Nat Genet 2026", "fases": [["Risco restante a partir dos 45", 13.7]], "vida": null, "src": "Licher et al., J Neurol Neurosurg Psychiatry 2019 (homens; demência como primeira doença neurológica)", "tipo": "risco restante de vida", "nota": "O score é de Alzheimer e o valor de base é de demência em geral: aproximação grosseira.", "g": 1.32, "glo": 0.97, "ghi": 1.55}, {"id": "gla", "nome": "Glaucoma de ângulo aberto", "p": 85.2, "lo": 59.2, "hi": 97.9, "or": 1.68, "orsrc": "Mars et al., Am J Hum Genet 2022", "fases": [["Aos 40", 0.4], ["Aos 70", 2.7], ["Aos 85", 7.3]], "vida": null, "src": "Kapetanakis et al., Br J Ophthalmol 2016 (prevalência estimada por meta-análise)", "tipo": "prevalência nesse ponto", "nota": "A miopia genética muito alta também sobe este risco e não está no score.", "g": 1.72, "glo": 1.13, "ghi": 2.87}], "na": [{"nome": "Diabetes tipo 2", "p": 57.8, "g": 1.12, "cl": "Típica"}, {"nome": "Insuficiência cardíaca", "p": 30.1, "g": 0.8, "cl": "Abaixo da média"}, {"nome": "Cancro da bexiga", "p": 71.7, "g": 1.16, "cl": "Intermédio-alto"}, {"nome": "Fibrilhação auricular", "p": 8.8, "g": 0.44, "cl": "Baixa"}, {"nome": "Depressão", "p": 85.3, "g": null, "cl": "Alta"}, {"nome": "Insónia", "p": 79.7, "g": null, "cl": "Limite alto"}, {"nome": "Doença renal crónica", "p": 13.3, "g": null, "cl": "Baixa"}]}</script>
+<script>
+const D = (function(){var e=document.getElementById('dados-app');return e?JSON.parse(e.textContent):{};})();
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function fmt(x,d){d=(d==null?2:d);return Number(x).toFixed(d).replace('.',',');}
+
+function cap(x){return Math.min(x,95);}
+function row(r){
+  const mx=Math.max(...r.fases.map(f=>cap(f[1]*r.ghi)),...r.fases.map(f=>f[1]))*1.1;
+  const fs=r.fases.map(f=>{const pop=f[1],me=cap(pop*r.g),lo=cap(pop*r.glo),hi=cap(pop*r.ghi);
+    const W=v=>(v/mx*100).toFixed(1);
+    return `<div style="margin:8px 0"><div class="small"><b>${esc(f[0])}</b></div>
+    <div class="row small" style="gap:6px"><span style="width:92px" class="mut">População</span><div class="bar" style="flex:1"><i style="width:${W(pop)}%;background:#9aa6bb"></i></div><span style="width:58px;text-align:right">${fmt(pop,1)} %</span></div>
+    <div class="row small" style="gap:6px"><span style="width:92px"><b>Sérgio F</b></span><div class="bar" style="flex:1"><i style="left:${W(lo)}%;width:${(W(hi)-W(lo)).toFixed(1)}%;background:rgba(47,91,234,.22)"></i><i style="width:${W(me)}%;background:var(--acc);height:6px;top:3px"></i></div><span style="width:58px;text-align:right"><b>${fmt(me,1)} %</b></span></div>
+    <div class="tiny mut" style="margin-left:98px">faixa de incerteza genética ${fmt(lo,1)}–${fmt(hi,1)} %</div></div>`;}).join('');
+  const cls=r.g>1.15?'c-bad':(r.g<0.87?'c-ok':'c-mut');
+  return `<div class="card"><div class="row" style="justify-content:space-between"><h3 style="margin:0">${esc(r.nome)}</h3><span class="chip ${cls}">percentil ${fmt(r.p,1)} · ${fmt(r.g)}×</span></div>
+  <div class="tiny mut">${esc(r.tipo)}</div>${fs}
+  ${r.vida?`<div class="small">Ao longo da vida inteira (população): ${fmt(r.vida,1)} %; estimativa para Sérgio F: <b>${fmt(cap(r.vida*r.g),1)} %</b> (${fmt(cap(r.vida*r.glo),1)}–${fmt(cap(r.vida*r.ghi),1)} %)</div>`:''}
+  ${r.nota?`<div class="small mut" style="margin-top:4px">${esc(r.nota)}</div>`:''}
+  <div class="src" style="margin-top:6px">Base: ${esc(r.src)} · efeito do score: ${esc(r.orsrc)}</div></div>`;
+}
+function filt(k){document.querySelectorAll('.pill-nav button').forEach(b=>b.classList.toggle('on',b.dataset.k===k));
+  const L=D.rows.filter(r=>k==='todos'||(k==='alto'&&r.g>1.15)||(k==='baixo'&&r.g<0.87));
+  document.getElementById('rows').innerHTML=L.map(row).join('')||'<p class="mut">Nada nesta categoria.</p>';}
+document.querySelectorAll('.pill-nav button').forEach(b=>b.addEventListener('click',()=>filt(b.dataset.k)));
+filt('todos');
+document.getElementById('na').innerHTML='<div class="tw"><table><tr><th>Doença</th><th>Percentil</th><th>Leitura</th></tr>'+D.na.map(r=>`<tr><td>${esc(r.nome)}</td><td>${fmt(r.p,1)}</td><td>${esc(r.cl)}${r.g?' · '+fmt(r.g)+'×':''}</td></tr>`).join('')+'</table></div>';
+
+</script>
+</body></html>

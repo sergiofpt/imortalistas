@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="pt-PT"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Simulador “e se?” · Sérgio F</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--ink:#16202c;--mut:#5b6777;--line:#e2e6ee;--acc:#2f5bea;--acc2:#e9efff;
+--ok:#16865a;--okb:#e5f6ee;--warn:#b56a00;--warnb:#fff3df;--bad:#c23b3b;--badb:#fdecec;--info:#5b4bd6;--infob:#efedff}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--acc)}
+header.top{background:linear-gradient(135deg,#1d2b53,#2f5bea);color:#fff;padding:18px 16px 16px}
+header.top .w{max-width:1040px;margin:0 auto}
+header.top .crumb{font-size:13px;opacity:.85}header.top .crumb a{color:#fff}
+header.top h1{margin:6px 0 4px;font-size:clamp(21px,4.6vw,30px);line-height:1.2}
+header.top p{margin:0;opacity:.92;max-width:760px}
+main{max-width:1040px;margin:0 auto;padding:14px 12px 40px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 14px;margin:12px 0;box-shadow:0 1px 2px rgba(20,30,60.04)}
+.card h2{margin:0 0 8px;font-size:18px}.card h3{margin:12px 0 6px;font-size:16px}
+.disc{background:#fff8e6;border:1px solid #f1d48b;border-radius:12px;padding:10px 12px;font-size:13.5px;color:#5a4300}
+.mut{color:var(--mut)}.small{font-size:13px}.tiny{font-size:12px}
+.grid{display:grid;gap:12px;grid-template-columns:1fr}
+.grid>*{min-width:0}.chip{white-space:normal}
+@media(min-width:760px){.grid.g2{grid-template-columns:1fr 1fr}.grid.g3{grid-template-columns:1fr 1fr 1fr}}
+.chip{display:inline-block;border-radius:999px;padding:2px 9px;font-size:12px;font-weight:600;border:1px solid transparent;white-space:nowrap}
+.c-ok{background:var(--okb);color:var(--ok)}.c-warn{background:var(--warnb);color:var(--warn)}.c-bad{background:var(--badb);color:var(--bad)}.c-info{background:var(--infob);color:var(--info)}.c-mut{background:#eef1f5;color:#4b5563}
+.sug{display:inline-block;font-size:11.5px;font-style:italic;color:#7a4b00;background:#fff1d6;border-radius:6px;padding:1px 6px;margin-left:4px}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;padding:7px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12.5px;color:var(--mut);font-weight:600}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+input[type=search],input[type=text],select{width:100%;font:inherit;padding:10px 12px;border:1px solid #c9d1de;border-radius:10px;background:#fff}
+input[type=range]{width:100%}
+button.btn{font:inherit;border:1px solid #c9d1de;background:#fff;border-radius:10px;padding:8px 12px;cursor:pointer}
+button.on.btn.on{background:var(--acc);border-color:var(--acc);color:#fff}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.bar{height:12px;background:#edf0f6;border-radius:8px;position:relative;overflow:hidden}
+.bar>i{position:absolute;left:0;top:0;bottom:0;border-radius:8px}
+.src{font-size:12px;color:var(--mut)}
+footer{max-width:1040px;margin:0 auto;padding:0 14px 30px;color:var(--mut);font-size:12.5px}
+.pill-nav{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px}
+.pill-nav button{white-space:nowrap}
+.kpi{font-size:26px;font-weight:700}
+details summary{cursor:pointer;font-weight:600}
+.hidden{display:none}
+</style></head>
+<body>
+<a href="../genetica.html" style="display:block;padding:6px 14px;font-size:13px;text-decoration:none">← Sérgio F</a>
+<header class="top"><div class="w"><div class="crumb"><a href="index.html">← Ferramentas genéticas</a> · Sérgio F</div><h1>Simulador “e se?”</h1><p>Mexe na LDL/ApoB, tensão, glicose, sono, exercício, tabaco e fibra e vê como muda o risco relativo das tuas doenças principais, partindo do teu percentil genético.</p></div></header>
+<main>
+<div class="disc"><b>Não é aconselhamento médico.</b> Ferramenta educativa feita só a partir da genética de Sérgio F e de estudos publicados. Os genes indicam tendências, não destinos. Qualquer alteração a fármacos ou suplementos aparece como <i>sugestão (não aplicada)</i> e é para decidir com o médico.</div>
+
+<div class="card"><h2>Como funciona</h2>
+<p class="small">Para cada doença, o ponto de partida é o teu <b>percentil genético</b> (consenso de vários scores publicados), convertido em risco relativo com o efeito por desvio-padrão publicado para um desses scores. Os sliders aplicam por cima <b>riscos relativos publicados</b> em meta-análises. Tudo é <b>relativo</b>: não mostra riscos absolutos nem usa medidas do corpo.</p>
+<p class="small mut">Pressupostos: efeitos multiplicativos e independentes (na prática sobrepõem-se, por isso a soma tende a exagerar); estudos observacionais para sono, exercício, fibra e tabaco (associação, não prova de causa); a LDL e a tensão vêm de ensaios. Extrapolar para LDL já muito baixa é incerto. O "ponto de partida" é a posição inicial dos sliders, não um valor medido.</p>
+<div class="row"><button id="reset">Repor ponto de partida</button></div></div>
+<div class="grid g2" style="align-items:start">
+<div><div id="sl" class="grid"></div></div>
+<div><div id="res"></div></div>
+</div>
+<div class="card"><h2>Só genética (sem slider com evidência suficiente)</h2><div id="og"></div></div>
+
+</main>
+<footer>Sérgio F · versão pública · dados genéticos de 10-10-2026 (scores poligénicos recalculados a 03-10-2026). Não é diagnóstico nem prescrição.</footer>
+<script id="dados-app" type="application/json">{"fact": [{"id": "ldl", "t": "LDL / ApoB", "sub": "variação face ao teu valor atual (mg/dL de LDL)", "type": "range", "min": -60, "max": 60, "step": 5, "def": 0, "unit": "mg/dL"}, {"id": "pas", "t": "Tensão arterial sistólica", "sub": "variação face ao teu valor atual", "type": "range", "min": -20, "max": 30, "step": 5, "def": 0, "unit": "mmHg"}, {"id": "hba", "t": "Glicose (HbA1c)", "sub": "categoria", "type": "cat", "opts": ["< 5,0 %", "5,0–5,4 % (referência)", "5,5–5,9 %", "6,0–6,4 %"], "def": 1}, {"id": "sono", "t": "Sono", "sub": "horas por noite", "type": "range", "min": 4, "max": 10, "step": 1, "def": 7, "unit": "h"}, {"id": "ex", "t": "Exercício total", "sub": "MET-min por semana (150 min de marcha rápida ≈ 600)", "type": "cat", "opts": ["< 600", "600–3999", "4000–7999", "≥ 8000"], "def": 1}, {"id": "tab", "t": "Tabaco", "sub": "", "type": "cat", "opts": ["Não fuma", "1 cigarro/dia", "20 cigarros/dia"], "def": 0}, {"id": "fib", "t": "Fibra", "sub": "posição na população", "type": "cat", "opts": ["Baixa (quem come menos)", "Alta (quem come mais)"], "def": 1}], "src": {"ctt": "Cholesterol Treatment Trialists' Collaboration, Lancet 2010 (26 ensaios; por cada 1 mmol/L = 38,7 mg/dL de LDL a menos: eventos coronários major RR 0,76; AVC isquémico RR 0,80)", "ettehad": "Ettehad et al., Lancet 2016 (123 estudos; por cada 10 mmHg de sistólica a menos: doença coronária RR 0,83; AVC 0,73; insuficiência cardíaca 0,72)", "selvin": "Selvin et al., N Engl J Med 2010 (HbA1c em adultos sem diabetes; referência 5,0–5,4 %: diabetes 0,52 / 1,86 / 4,48; doença coronária 0,96 / 1,23 / 1,78; AVC isquémico 1,09 / 1,17 / 2,22)", "capp11": "Cappuccio et al., Eur Heart J 2011 (sono curto: doença coronária RR 1,48, AVC 1,15; sono longo: 1,38 e 1,65)", "capp10": "Cappuccio et al., Diabetes Care 2010 (sono curto: diabetes tipo 2 RR 1,28; sono longo: 1,48)", "kyu": "Kyu et al., BMJ 2016 (exercício total em MET-min/semana face a < 600: cancro do cólon/−17/−21 %; diabetes/−25/−28 %; doença coronária/−23/−25 %; AVC isquémico/−19/−26 %)", "hackshaw": "Hackshaw et al., BMJ 2018 (homens; 1 cigarro/dia: doença coronária RR 1,48, AVC 1,25; 20/dia: 2,04 e 1,64)", "pan": "Pan et al., Lancet Diabetes Endocrinol 2015 (fumador atual: diabetes tipo 2 RR 1,37)", "botteri": "Botteri et al., JAMA 2008 (já fumou vs nunca: cancro colorretal RR 1,18)", "cheng": "Cheng et al., PLoS Med 2013 (fumador atual: tromboembolismo venoso RR 1,23)", "freedman": "Freedman et al., JAMA 2011 (fumador atual: cancro da bexiga HR 4,06)", "reynolds": "Reynolds et al., Lancet 2019 (quem come mais fibra vs quem come menos: doença coronária RR 0,76; AVC 0,78; diabetes tipo 2 0,84; cancro colorretal 0,84)"}, "dis": [{"id": "cad", "nome": "Doença coronária", "p": 18.2, "lo": 4.9, "hi": 53.9, "or": 1.71, "orsrc": "Inouye et al., J Am Coll Cardiol 2018 (HR 1,71 por desvio-padrão)", "g": 0.61, "glo": 0.41, "ghi": 1.05, "eff": {"ldl": {"per": 38.67, "rr": 0.76, "s": "ctt"}, "pas": {"per": 10, "rr": 0.83, "s": "ettehad"}, "hba": {"cat": [0.96, 1, 1.23, 1.78], "s": "selvin"}, "sono": {"short": 1.48, "long": 1.38, "s": "capp11"}, "ex": {"cat": [1, 0.84, 0.77, 0.75], "s": "kyu"}, "tab": {"cat": [1, 1.48, 2.04], "s": "hackshaw"}, "fib": {"cat": [1, 0.76], "s": "reynolds"}}, "nota": "O locus 9p21 em dose dupla pesa no sentido contrário, mas o score global (que já o inclui) é baixo.", "pgs": "PGS000018"}, {"id": "avc", "nome": "AVC isquémico", "p": 19.1, "lo": 3.5, "hi": 48.0, "or": 1.26, "orsrc": "Abraham et al., Nat Commun 2019 (HR 1,26 por desvio-padrão)", "g": 0.82, "glo": 0.66, "ghi": 0.99, "eff": {"ldl": {"per": 38.67, "rr": 0.8, "s": "ctt"}, "pas": {"per": 10, "rr": 0.73, "s": "ettehad"}, "hba": {"cat": [1.09, 1, 1.17, 2.22], "s": "selvin"}, "sono": {"short": 1.15, "long": 1.65, "s": "capp11"}, "ex": {"cat": [1, 0.84, 0.81, 0.74], "s": "kyu"}, "tab": {"cat": [1, 1.25, 1.64], "s": "hackshaw"}, "fib": {"cat": [1, 0.78], "s": "reynolds"}}, "nota": "", "pgs": "metaGRS"}, {"id": "t2d", "nome": "Diabetes tipo 2", "p": 57.8, "lo": 49.3, "hi": 68.9, "or": 1.75, "orsrc": "Hao et al., Nat Med 2022 (OR 1,75 por desvio-padrão)", "g": 1.12, "glo": 0.99, "ghi": 1.32, "eff": {"hba": {"cat": [0.52, 1, 1.86, 4.48], "s": "selvin"}, "sono": {"short": 1.28, "long": 1.48, "s": "capp10"}, "ex": {"cat": [1, 0.86, 0.75, 0.72], "s": "kyu"}, "tab": {"cat": [1, 1.37, 1.37], "s": "pan"}, "fib": {"cat": [1, 0.84], "s": "reynolds"}}, "nota": "", "pgs": "PGS000014"}, {"id": "crc", "nome": "Cancro colorretal", "p": 80.4, "lo": 48.7, "hi": 98.3, "or": 1.67, "orsrc": "Thomas et al., Nat Commun 2023 (OR 1,67 por desvio-padrão)", "g": 1.55, "glo": 0.98, "ghi": 2.97, "eff": {"ex": {"cat": [1, 0.9, 0.83, 0.79], "s": "kyu"}, "tab": {"cat": [1, 1.18, 1.18], "s": "botteri"}, "fib": {"cat": [1, 0.84], "s": "reynolds"}}, "nota": "Pólipos e adenomas com carga de loci no percentil 92,7: o rastreio pesa mais do que qualquer slider.", "pgs": "PGS003852"}, {"id": "tev", "nome": "Trombose venosa", "p": 75.6, "lo": 23.9, "hi": 86.3, "or": 1.51, "orsrc": "Ghouse et al., Nat Genet 2023 (OR 1,51 por desvio-padrão)", "g": 1.33, "glo": 0.75, "ghi": 1.57, "eff": {"tab": {"cat": [1, 1.23, 1.23], "s": "cheng"}}, "nota": "Os 2 scores genómicos discordam (percentis 24 e 71); a maior parte do risco prático vem de cirurgia, imobilização e viagens longas.", "pgs": "PGS003332"}, {"id": "ic", "nome": "Insuficiência cardíaca", "p": 30.1, "lo": 17.9, "hi": 42.3, "or": 1.55, "orsrc": "Hu et al., Genet Med 2026 (OR 1,55 por desvio-padrão)", "g": 0.8, "glo": 0.67, "ghi": 0.92, "eff": {"pas": {"per": 10, "rr": 0.72, "s": "ettehad"}}, "nota": "", "pgs": "PGS012544"}, {"id": "bex", "nome": "Cancro da bexiga", "p": 71.7, "lo": 26.9, "hi": 90.4, "or": 1.3, "orsrc": "Graff et al., Nat Commun 2021 (OR 1,30 por desvio-padrão, score de 15 SNPs)", "g": 1.16, "glo": 0.85, "ghi": 1.41, "eff": {"tab": {"cat": [1, 4.06, 4.06], "s": "freedman"}}, "nota": "Com acetilação lenta (NAT2), o tabaco e as aminas aromáticas pesam ainda mais.", "pgs": "PGS000071"}], "og": [{"id": "gla", "nome": "Glaucoma", "p": 85.2, "lo": 59.2, "hi": 97.9, "or": 1.68, "orsrc": "Mars et al., Am J Hum Genet 2022 (OR 1,68 por desvio-padrão)", "g": 1.72, "glo": 1.13, "ghi": 2.87, "eff": {}, "nota": "Sem slider com evidência: a alavanca é medir a pressão intraocular e fazer OCT.", "pgs": "PGS002761"}, {"id": "alz", "nome": "Doença de Alzheimer", "p": 80.0, "lo": 46.4, "hi": 90.8, "or": 1.39, "orsrc": "Kurniansyah et al., Nat Genet 2026 (OR 1,39 por desvio-padrão)", "g": 1.32, "glo": 0.97, "ghi": 1.55, "eff": {}, "nota": "Tipo de APOE neutro; leitura média-alta, dentro do típico.", "pgs": "PGS012590"}, {"id": "fa", "nome": "Fibrilhação auricular", "p": 8.8, "lo": 2.8, "hi": 10.7, "or": 1.82, "orsrc": "Haydarlou et al., Nat Commun 2026 (OR 1,82 por desvio-padrão)", "g": 0.44, "glo": 0.32, "ghi": 0.48, "eff": {}, "nota": "", "pgs": "PGS012531"}, {"id": "mel", "nome": "Melanoma", "p": 18.0, "lo": 6.5, "hi": 55.8, "or": 1.685, "orsrc": "Wang et al., Br J Dermatol 2026 (OR 1,69 por desvio-padrão)", "g": 0.62, "glo": 0.45, "ghi": 1.08, "eff": {}, "nota": "", "pgs": "PGS019946"}, {"id": "pro", "nome": "Cancro da próstata", "p": 5.5, "lo": 1.3, "hi": 69.8, "or": 1.85, "orsrc": "Jermy et al., Nat Commun 2024 (HR 1,85 por desvio-padrão)", "g": 0.37, "glo": 0.25, "ghi": 1.38, "eff": {}, "nota": "", "pgs": "PGS004872"}], "priv": false}</script>
+<script>
+const D = (function(){var e=document.getElementById('dados-app');return e?JSON.parse(e.textContent):{};})();
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function fmt(x,d){d=(d==null?2:d);return Number(x).toFixed(d).replace('.',',');}
+
+const F=D.fact, S=D.src;
+const state={};F.forEach(f=>state[f.id]=f.def);
+function sliders(){
+  const box=document.getElementById('sl');box.innerHTML='';
+  F.forEach(f=>{
+    const d=document.createElement('div');d.className='card';d.style.margin='0';
+    let ctl='';
+    if(f.type==='range'){ctl=`<input type="range" min="${f.min}" max="${f.max}" step="${f.step}" value="${state[f.id]}" data-id="${f.id}" aria-label="${esc(f.t)}">`;}
+    else{ctl='<div class="row">'+f.opts.map((o,i)=>`<button class="${i==state[f.id]?'on':''}" data-id="${f.id}" data-i="${i}">${esc(o)}</button>`).join('')+'</div>';}
+    d.innerHTML=`<div class="row" style="justify-content:space-between"><b>${esc(f.t)}</b><span class="chip c-info" id="v-${f.id}"></span></div><div class="small mut">${esc(f.sub)}</div>${ctl}`;
+    box.appendChild(d);
+  });
+  box.querySelectorAll('input[type=range]').forEach(el=>el.addEventListener('input',e=>{state[e.target.dataset.id]=+e.target.value;upd();}));
+  box.querySelectorAll('button[data-i]').forEach(el=>el.addEventListener('click',e=>{const b=e.currentTarget;state[b.dataset.id]=+b.dataset.i;
+     b.parentNode.querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));upd();}));
+}
+function vlabel(f){const v=state[f.id];if(f.type==='range'){if(f.id==='sono')return v+' h';return (v>0?'+':'')+v+' '+f.unit;}return f.opts[v];}
+function sleepCat(h){return h<=6?'short':(h>=9?'long':'ref');}
+function mult(eff,st){ // multiplier of scenario st (absolute vs study reference)
+  let m=1,parts=[];
+  for(const k in eff){const e=eff[k];let r=1;
+    if(k==='ldl'||k==='pas'){r=Math.pow(e.rr,-st[k]/e.per);}
+    else if(k==='sono'){const c=sleepCat(st.sono);r=c==='short'?e.short:(c==='long'?e.long:1);}
+    else{r=e.cat[st[k]];}
+    m*=r;parts.push([k,r]);}
+  return [m,parts];
+}
+function base(){const b={};F.forEach(f=>b[f.id]=f.def);return b;}
+function barHTML(v){ // log scale 0.25..4
+  const lo=Math.log(0.25),hi=Math.log(4);const x=(Math.log(Math.max(0.25,Math.min(4,v)))-lo)/(hi-lo)*100;const mid=50;
+  const col=v>1.05?'var(--bad)':(v<0.95?'var(--ok)':'#8a94a6');
+  const l=Math.min(x,mid),w=Math.abs(x-mid);
+  return `<div class="bar" style="height:14px"><i style="left:${l}%;width:${w}%;background:${col}"></i><span style="position:absolute;left:50%;top:-2px;bottom:-2px;width:2px;background:#1d2b53"></span></div>
+  <div class="row tiny mut" style="justify-content:space-between"><span>¼×</span><span>½×</span><span>1× (pessoa mediana)</span><span>2×</span><span>4×</span></div>`;
+}
+const NAMES={ldl:'LDL/ApoB',pas:'Tensão',hba:'HbA1c',sono:'Sono',ex:'Exercício',tab:'Tabaco',fib:'Fibra'};
+function upd(){
+  F.forEach(f=>document.getElementById('v-'+f.id).textContent=vlabel(f));
+  const b=base();const out=document.getElementById('res');out.innerHTML='';
+  D.dis.forEach(d=>{
+    const [mS,parts]=mult(d.eff,state);const [mB]=mult(d.eff,b);
+    const ch=mS/mB;const tot=d.g*mS;
+    const pct=Math.round((ch-1)*100);
+    const chTxt=pct===0?'sem mudança':(pct>0?'+'+pct+' %':pct+' %');
+    const chC=pct>2?'c-bad':(pct<-2?'c-ok':'c-mut');
+    const pr=parts.filter(p=>Math.abs(p[1]-1)>0.001).map(p=>`<span class="chip ${p[1]>1?'c-bad':'c-ok'}">${NAMES[p[0]]} ×${fmt(p[1])}</span>`).join(' ');
+    const srcs=[...new Set(Object.values(d.eff).map(e=>e.s))].map(s=>`<li>${esc(S[s])}</li>`).join('');
+    const c=document.createElement('div');c.className='card';
+    c.innerHTML=`<div class="row" style="justify-content:space-between"><h3 style="margin:0">${esc(d.nome)}</h3><span class="chip ${chC}">face ao ponto de partida: ${chTxt}</span></div>
+     <div class="small">Genética: percentil <b>${fmt(d.p,1)}</b> → ${fmt(d.g)}× a pessoa mediana <span class="mut">(intervalo entre scores ${fmt(d.glo)}–${fmt(d.ghi)}×)</span></div>
+     <div class="small">Cenário (genética × fatores): <b>${fmt(tot)}×</b> a pessoa mediana com hábitos de referência</div>
+     ${barHTML(tot)}
+     <div style="margin-top:6px">${pr||'<span class="small mut">Todos os fatores na posição de referência do estudo.</span>'}</div>
+     ${d.nota?`<div class="small mut" style="margin-top:6px">${esc(d.nota)}</div>`:''}
+     <details class="small" style="margin-top:6px"><summary>Fontes</summary><ul><li>Efeito do score: ${esc(d.orsrc)}${D.priv&&d.pgs?' · '+esc(d.pgs):''}</li>${srcs}</ul></details>`;
+    out.appendChild(c);
+  });
+}
+function onlyg(){
+  const t=document.getElementById('og');
+  t.innerHTML='<div class="tw"><table><tr><th>Doença</th><th>Percentil</th><th>Relativo à pessoa mediana</th><th>Nota</th></tr>'+D.og.map(d=>`<tr><td>${esc(d.nome)}</td><td>${fmt(d.p,1)}</td><td><b>${fmt(d.g)}×</b> <span class="mut small">(${fmt(d.glo)}–${fmt(d.ghi)}×)</span></td><td class="small">${esc(d.nota)}<div class="src">${esc(d.orsrc)}${D.priv&&d.pgs?' · '+esc(d.pgs):''}</div></td></tr>`).join('')+'</table></div>';
+}
+document.getElementById('reset').addEventListener('click',()=>{F.forEach(f=>state[f.id]=f.def);sliders();upd();});
+sliders();upd();onlyg();
+
+</script>
+</body></html>

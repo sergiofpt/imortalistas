@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-PT"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Plano alimentar genético · Sérgio F</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--ink:#16202c;--mut:#5b6777;--line:#e2e6ee;--acc:#2f5bea;--acc2:#e9efff;
+--ok:#16865a;--okb:#e5f6ee;--warn:#b56a00;--warnb:#fff3df;--bad:#c23b3b;--badb:#fdecec;--info:#5b4bd6;--infob:#efedff}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--acc)}
+header.top{background:linear-gradient(135deg,#1d2b53,#2f5bea);color:#fff;padding:18px 16px 16px}
+header.top .w{max-width:1040px;margin:0 auto}
+header.top .crumb{font-size:13px;opacity:.85}header.top .crumb a{color:#fff}
+header.top h1{margin:6px 0 4px;font-size:clamp(21px,4.6vw,30px);line-height:1.2}
+header.top p{margin:0;opacity:.92;max-width:760px}
+main{max-width:1040px;margin:0 auto;padding:14px 12px 40px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 14px;margin:12px 0;box-shadow:0 1px 2px rgba(20,30,60.04)}
+.card h2{margin:0 0 8px;font-size:18px}.card h3{margin:12px 0 6px;font-size:16px}
+.disc{background:#fff8e6;border:1px solid #f1d48b;border-radius:12px;padding:10px 12px;font-size:13.5px;color:#5a4300}
+.mut{color:var(--mut)}.small{font-size:13px}.tiny{font-size:12px}
+.grid{display:grid;gap:12px;grid-template-columns:1fr}
+.grid>*{min-width:0}.chip{white-space:normal}
+@media(min-width:760px){.grid.g2{grid-template-columns:1fr 1fr}.grid.g3{grid-template-columns:1fr 1fr 1fr}}
+.chip{display:inline-block;border-radius:999px;padding:2px 9px;font-size:12px;font-weight:600;border:1px solid transparent;white-space:nowrap}
+.c-ok{background:var(--okb);color:var(--ok)}.c-warn{background:var(--warnb);color:var(--warn)}.c-bad{background:var(--badb);color:var(--bad)}.c-info{background:var(--infob);color:var(--info)}.c-mut{background:#eef1f5;color:#4b5563}
+.sug{display:inline-block;font-size:11.5px;font-style:italic;color:#7a4b00;background:#fff1d6;border-radius:6px;padding:1px 6px;margin-left:4px}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;padding:7px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12.5px;color:var(--mut);font-weight:600}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+input[type=search],input[type=text],select{width:100%;font:inherit;padding:10px 12px;border:1px solid #c9d1de;border-radius:10px;background:#fff}
+input[type=range]{width:100%}
+button.btn{font:inherit;border:1px solid #c9d1de;background:#fff;border-radius:10px;padding:8px 12px;cursor:pointer}
+button.on.btn.on{background:var(--acc);border-color:var(--acc);color:#fff}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.bar{height:12px;background:#edf0f6;border-radius:8px;position:relative;overflow:hidden}
+.bar>i{position:absolute;left:0;top:0;bottom:0;border-radius:8px}
+.src{font-size:12px;color:var(--mut)}
+footer{max-width:1040px;margin:0 auto;padding:0 14px 30px;color:var(--mut);font-size:12.5px}
+.pill-nav{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px}
+.pill-nav button{white-space:nowrap}
+.kpi{font-size:26px;font-weight:700}
+details summary{cursor:pointer;font-weight:600}
+.hidden{display:none}
+</style></head>
+<body>
+<a href="../genetica.html" style="display:block;padding:6px 14px;font-size:13px;text-decoration:none">← Sérgio F</a>
+<header class="top"><div class="w"><div class="crumb"><a href="index.html">← Ferramentas genéticas</a> · Sérgio F</div><h1>Plano alimentar genético</h1><p>Os gostos que os teus genes preveem cruzados com aquilo de que o teu corpo precisa.</p></div></header>
+<main>
+<div class="disc"><b>Não é aconselhamento médico.</b> Ferramenta educativa feita só a partir da genética de Sérgio F e de estudos publicados. Os genes indicam tendências, não destinos. Qualquer alteração a fármacos ou suplementos aparece como <i>sugestão (não aplicada)</i> e é para decidir com o médico.</div>
+
+<div class="card"><h2>Como foi feito</h2><p class="small">Cruza os <b>gostos previstos pela genética</b> (percentis de gosto por alimentos; confiança baixa: os genes explicam pouco do gosto) com as <b>exigências genéticas</b> e as regras fixas de Sérgio F: zero álcool, mais fibra, LDL/ApoB baixas e ferritina abaixo de 100.</p></div>
+<div class="card"><h2>Regras que mandam</h2><div id="rg"></div></div>
+<div class="card"><h2>Um dia-tipo <span class="sug">sugestão (não aplicada)</span></h2><p class="small mut">Montado com alimentos de que provavelmente gostas e que cumprem as regras. Os suplementos e os fármacos não mudam aqui.</p><div id="pl"></div></div>
+<div id="gr"></div>
+
+</main>
+<footer>Sérgio F · versão pública · dados genéticos de 10-10-2026 (scores poligénicos recalculados a 03-10-2026). Não é diagnóstico nem prescrição.</footer>
+<script id="dados-app" type="application/json">{"grupos": [["Aproveita: gostas e faz bem", "c-ok", [{"n": "Peixe cozido/no forno", "p": 100.0, "pred": "Gosta mais do que a média", "why": "Peixe cozido ou no forno é a melhor forma de peixe para o intestino e para a LDL."}, {"n": "Padrão: peixe gordo", "p": 99.0, "pred": "Gosta mais do que a média", "why": "Ómega-3 da comida; a conversão genética de ómega-3 é eficiente (FADS1)."}, {"n": "Cavala", "p": 80.0, "pred": "Ligeiramente: gosta mais do que a média", "why": "Peixe gordo pequeno: ómega-3 com menos metais pesados do que peixes grandes."}, {"n": "Padrão: peixe pequeno (sardinha, anchova)", "p": 76.0, "pred": "Ligeiramente: gosta mais do que a média", "why": "Sardinha e anchova: ómega-3 e cálcio."}, {"n": "Couve-flor", "p": 94.5, "pred": "Gosta mais do que a média", "why": "Crucífera diária; substitui as couves-de-bruxelas de que gostas menos."}, {"n": "Legumes em geral", "p": 92.0, "pred": "Gosta mais do que a média", "why": "Base da fibra: quanto mais, melhor."}, {"n": "Vegetais crus (em grande dose)", "p": 90.0, "pred": "Mais", "why": "Os legumes crus ajudam-te a comer muita fibra."}, {"n": "Cenoura crua", "p": 82.0, "pred": "Gosta mais do que a média", "why": "Snack de fibra sem açúcar adicionado."}, {"n": "Abóbora-manteiga", "p": 79.0, "pred": "Ligeiramente: gosta mais do que a média", "why": "Fibra e potássio (o potássio na urina é geneticamente baixo)."}, {"n": "Papas de aveia", "p": 73.0, "pred": "Ligeiramente: gosta mais do que a média", "why": "Beta-glucano da aveia baixa a LDL; fibra ao pequeno-almoço."}, {"n": "Ameixa", "p": 86.0, "pred": "Gosta mais do que a média", "why": "Fibra; comer entre refeições."}, {"n": "Morangos", "p": 83.5, "pred": "Gosta mais do que a média", "why": "Vitamina C: comer longe das refeições ricas em ferro."}, {"n": "Kiwi", "p": 72.0, "pred": "Ligeiramente: gosta mais do que a média", "why": "Vitamina C e fibra: comer longe das refeições ricas em ferro."}, {"n": "Comida picante", "p": 98.0, "pred": "Gosta mais do que a média", "why": "Usa o picante para tornar leguminosas e legumes mais apetecíveis."}, {"n": "Caril", "p": 89.0, "pred": "Gosta mais do que a média", "why": "Caril com leguminosas: fibra, proteína e pouco ferro de carne."}, {"n": "Padrão: temperos de cozinha (alho, cebola…)", "p": 77.0, "pred": "Ligeiramente: gosta mais do que a média", "why": "Alho e cebola dão fibra prebiótica."}]], ["Cuidado: gostas, mas vai contra as regras", "c-bad", [{"n": "Peixe fumado", "p": 99.0, "pred": "Gosta mais do que a média", "why": "Fumados e carbonizados: evitar por causa do cancro colorretal (percentil 80)."}, {"n": "Padrão: fritos", "p": 92.5, "pred": "Gosta mais do que a média", "why": "Fritura sobe a gordura saturada e oxidada; preferir forno ou cozido."}, {"n": "Carnes processadas (frequência)", "p": 87.0, "pred": "Mais vezes", "why": "Zero carne processada (colorretal); carne vermelha até 300 g por semana."}, {"n": "Cobertura de bolo", "p": 99.0, "pred": "Gosta mais do que a média", "why": "Açúcar perto de zero (fígado sensível à gordura: PNPLA3)."}, {"n": "Maçapão", "p": 93.5, "pred": "Gosta mais do que a média", "why": "Açúcar perto de zero."}, {"n": "Mel", "p": 89.5, "pred": "Gosta mais do que a média", "why": "O mel também é açúcar livre (frutose)."}, {"n": "Cheesecake", "p": 85.5, "pred": "Gosta mais do que a média", "why": "Açúcar e gordura saturada: LDL/ApoB."}, {"n": "Chocolate de leite", "p": 72.5, "pred": "Ligeiramente: gosta mais do que a média", "why": "Preferir cacau sem açúcar (dá zinco e cobre sem ferro de carne)."}, {"n": "Pizza", "p": 87.5, "pred": "Gosta mais do que a média", "why": "Farinha refinada, queijo gordo e enchidos."}, {"n": "Fígado", "p": 69.0, "pred": "Ligeiramente: gosta mais do que a média", "why": "Muito ferro e vitamina A: evitar (ferritina abaixo de 100; isotretinoína)."}, {"n": "Marisco (camarão, mexilhão…)", "p": 86.0, "pred": "Gosta mais do que a média", "why": "Com moderação: o zinco e o cobre devem vir de sementes, leguminosas e cacau."}]], ["Gostas menos: alternativas que funcionam", "c-warn", [{"n": "Abacate", "p": 4.0, "pred": "Gosta menos do que a média", "why": "A gordura boa pode vir do azeite (30–40 mL/dia) e de nozes."}, {"n": "Couves-de-bruxelas", "p": 6.0, "pred": "Gosta menos do que a média", "why": "Troca por couve-flor ou brócolos."}, {"n": "Padrão: comida vegetariana", "p": 12.0, "pred": "Gosta menos do que a média", "why": "Leguminosas com caril ou picante, que estão no teu gosto."}, {"n": "Padrão: vegetais de sabor forte", "p": 15.0, "pred": "Gosta menos do que a média", "why": "Prefere legumes suaves e crus; tempera os fortes com picante."}, {"n": "Padrão: legumes cozinhados", "p": 25.0, "pred": "Ligeiramente: gosta menos do que a média", "why": "Prefere salada e legumes crus."}, {"n": "Salmão", "p": 28.0, "pred": "Ligeiramente: gosta menos do que a média", "why": "Troca por cavala, sardinha ou arenque, de que gostas mais."}]], ["Boas notícias: não gostas e ainda bem", "c-info", [{"n": "Toranja", "p": 2.0, "pred": "Gosta menos do que a média", "why": "A toranja interage com a rapamicina e o tadalafil (CYP3A4): melhor não gostar."}, {"n": "Pão branco", "p": 0.0, "pred": "Gosta menos do que a média", "why": "Melhor pão integral: mais fibra."}, {"n": "Batatas fritas de pacote", "p": 11.0, "pred": "Gosta menos do que a média", "why": "Menos sal, menos gordura de fritura."}, {"n": "Porco (frequência)", "p": 2.0, "pred": "Menos vezes", "why": "Menos carne vermelha e processada."}]]], "regras": [["Álcool", "Zero.", "Posição fixa."], ["Fibra", "Quanto mais, melhor (meta do relatório de dieta: 50 g/dia ou mais).", "Colorretal no percentil 80 e pólipos no 92,7."], ["LDL e ApoB", "Quanto mais baixas, melhor: gordura saturada abaixo de 7 % da energia; café só filtrado; ovos podem ficar.", "9p21 em dose dupla e CETP de alta função."], ["Ferro", "Ferritina sempre abaixo de 100. Carne vermelha até 300 g por semana, sem fígado. Fruta com vitamina C longe das refeições com leguminosas, carne ou cereais.", "HFE com uma variante de absorção de ferro um pouco maior; ferritina genética no percentil 80."], ["Fígado", "Açúcar e frutose perto de zero; nada de álcool.", "PNPLA3, MBOAT7 e alfa-1-antitripsina (SERPINA1) tornam o fígado mais sensível."], ["Folato e colina", "Da comida: vegetais de folha, leguminosas, ovos.", "MTHFR com menor função; homocisteína genética no percentil 92."], ["Magnésio e potássio", "Nozes e sementes de abóbora (30 g cada), leguminosas, abóbora. Potássio: medir no sangue por causa do telmisartan.", "Magnésio genético baixo; potássio na urina no percentil 5."], ["Vesícula", "Um pouco de gordura (azeite) em todas as refeições.", "Score de cálculos biliares de 2022 no percentil 88,8 (os recentes são típicos)."], ["Cetose", "Sem dieta cetogénica, sem jejuns de mais de 24 h, sem óleo MCT.", "Corpos cetónicos genéticos altos e insulina em jejum genética baixa."], ["Horário", "Jantar 3 h ou mais antes de dormir; hidratos (batata-doce) ao almoço.", "MTNR1B: refeições tardias pior toleradas."], ["Sal", "Abaixo de 5 g/dia.", "Sal adicionado genético no percentil 77."], ["Lacticínios", "Toleráveis (lactase persistente); preferir iogurte natural.", "Lactase persistente."]], "plano": [["Pequeno-almoço", "Papas de aveia com nozes e sementes de abóbora; iogurte natural."], ["A meio da manhã", "Kiwi, morangos ou ameixa (longe das refeições com ferro)."], ["Almoço", "Peixe cozido ou no forno (cavala, sardinha, peixe branco) ou leguminosas com caril/picante; couve-flor ou brócolos; batata-doce cozida e arrefecida; azeite."], ["Lanche", "Cenoura crua e outros legumes crus; um punhado de frutos secos."], ["Jantar (3 h ou mais antes de dormir)", "Salada grande com legumes crus, tofu ou peixe, azeite; iogurte natural."], ["Na semana", "Peixe gordo várias vezes; carne vermelha no máximo 300 g; zero processada, zero fumados, zero álcool."]]}</script>
+<script>
+const D = (function(){var e=document.getElementById('dados-app');return e?JSON.parse(e.textContent):{};})();
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function fmt(x,d){d=(d==null?2:d);return Number(x).toFixed(d).replace('.',',');}
+
+document.getElementById('gr').innerHTML=D.grupos.map(g=>`<div class="card"><h2>${esc(g[0])}</h2><div class="tw"><table><tr><th>Alimento</th><th>Gosto previsto</th><th>Porquê</th></tr>`+
+ g[2].map(x=>`<tr><td><b>${esc(x.n)}</b></td><td><span class="chip ${g[1]}">percentil ${fmt(x.p,0)}</span><div class="tiny mut">${esc(x.pred)}</div></td><td class="small">${esc(x.why)}</td></tr>`).join('')+'</table></div></div>').join('');
+document.getElementById('rg').innerHTML='<div class="tw"><table><tr><th>Tema</th><th>Regra</th><th>Base genética</th></tr>'+D.regras.map(r=>`<tr><td><b>${esc(r[0])}</b></td><td class="small">${esc(r[1])}</td><td class="small mut">${esc(r[2])}</td></tr>`).join('')+'</table></div>';
+document.getElementById('pl').innerHTML=D.plano.map(p=>`<div style="padding:8px 0;border-top:1px solid var(--line)"><b>${esc(p[0])}</b><div class="small">${esc(p[1])}</div></div>`).join('');
+
+</script>
+</body></html>
