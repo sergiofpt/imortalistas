@@ -1825,7 +1825,7 @@
        "estado": "otimo"
       }
      ],
-     "estado": "fora"
+     "estado": "quase_otimo"
     },
     {
      "id": "resistencia-a-insulina",
@@ -2159,7 +2159,7 @@
        }
       }
      ],
-     "estado": "fora"
+     "estado": "quase_otimo"
     },
     {
      "id": "declinio-do-sinal-estrogenico",
@@ -2292,7 +2292,7 @@
        "estado": "otimo"
       }
      ],
-     "estado": "fora"
+     "estado": "quase_otimo"
     },
     {
      "id": "acumulacao-de-produtos-finais-de-glicacao-avancada-ages",
@@ -2797,7 +2797,7 @@
        "estado": "sem_dados"
       }
      ],
-     "estado": "fora"
+     "estado": "quase_otimo"
     },
     {
      "id": "rigidez-arterial",
