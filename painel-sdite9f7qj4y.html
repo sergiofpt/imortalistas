@@ -153,7 +153,7 @@ const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',
 const T=o=>o==null?'':typeof o==='string'?o:(LANG==='en'&&o.en?o.en:(o.pt||''));
 const SRC='data/estatisticas.json',RSRC='data/reports.json';
 // ao vivo: o Worker sf-site calcula o mesmo JSON na hora (GoatCounter, token só de leitura; cache de 60 s); só no site publicado (CORS); falha = data/estatisticas.json
-const LIVE_URL=window.SF_LIVE_URL||(location.origin==='https://sergiofpt.github.io'?'https://sf-site.sergiofpt.workers.dev/s/s8ETMTbaarexyQxlCqYsIPflwGC49axbbO3L3r1h':'');
+const LIVE_URL=window.SF_LIVE_URL||(/^(https:\/\/sergiofpt\.github\.io|https:\/\/(www\.)?imortalistas\.com)$/.test(location.origin)?'https://sf-site.sergiofpt.workers.dev/s/s8ETMTbaarexyQxlCqYsIPflwGC49axbbO3L3r1h':'');
 let LIVE=false;
 let S=null,RAW=null,SERR=null,RD=null,DIAS=30,ORIG='tudo';  // ORIG: tudo | pt | fora (Portugal / outros países, de por_origem)
 const num=n=>Math.max(0,Math.round(Number(n)||0));
@@ -181,7 +181,7 @@ function aparelhos(){const a=arr(S.aparelhos);if(!('aparelhos' in S)||!a.length)
 const SIS=[[/windows/i,'🪟'],[/mac ?os|os x|ios|ipad|iphone/i,'🍎'],[/android/i,'🤖'],[/chrome ?os/i,'💻'],[/linux|ubuntu|debian|fedora|bsd/i,'🐧']];
 const BRW=[[/edge/i,'E','#0c7bd6'],[/samsung/i,'S','#1428a0'],[/opera/i,'O','#e81c2e'],[/firefox/i,'F','#ff7139'],[/safari/i,'S','#1b88ca'],[/chrom/i,'C','#2f9e44'],[/brave/i,'B','#fb542b'],[/vivaldi/i,'V','#ef3939']];
 const PAG={'':['Análises ao sangue','Blood tests'],'index.html':['Análises ao sangue','Blood tests'],'analises.html':['Análises ao sangue','Blood tests'],'inicio.html':['Início','Home'],'genetica.html':['Genética Má','Bad Genetics'],'genetica-boa.html':['Genética Boa','Good Genetics'],'genetica-reports.html':['Genética Reports','Genetics Reports']};
-function pagNome(p){const m=/^\/imortalistas\/(.*)$/.exec(String(p||''));const k=m?m[1]:null;return k!==null&&PAG[k]?L(PAG[k][0],PAG[k][1]):null}
+function pagNome(p){let k=String(p||'').replace(/^https?:\/\/[^/]+/i,'').replace(/^\/imortalistas(?=\/|$)/,'').replace(/^\//,'');if(k.endsWith('/'))k=k.slice(0,-1);return PAG[k]?L(PAG[k][0],PAG[k][1]):null}
 // lista com ícone + nome + número + % + barra
 function lista(items,o){const tot=items.reduce((a,x)=>a+num(x.v),0),mx=Math.max(1,...items.map(x=>num(x.v)));
  if(!items.length)return `<p class="nd">${L('Sem dados.','No data.')}</p>`;

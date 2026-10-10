@@ -159,7 +159,9 @@ def _recolher(token, hoje, ini_dt, ini, fim):
     for h in hits:
         mo = RE_OR.match(str(h.get('path') or '')) if h.get('event') else None
         if not mo: continue
-        resto = mo.group(2); pag = resto.startswith('imortalistas/')
+        # página do site (com ou sem o prefixo /imortalistas do GitHub Pages); reports/, download/ e aparelho/ continuam eventos
+        resto = mo.group(2).lstrip('/')
+        pag = resto.startswith('imortalistas/') or not resto.startswith(('reports/', 'download/', 'aparelho/'))
         grupos[mo.group(1)].append(dict(h, path=('/' + resto) if pag else resto, event=not pag))
         for x in h.get('stats') or []:
             dia = str(x.get('day') or '')[:10]
