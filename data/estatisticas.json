@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-10T01:05:37Z",
+ "atualizado_em": "2026-10-10T01:34:57Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
-  "visitas": 62,
-  "visitas_30d": 62,
-  "visitas_90d": 62,
-  "aberturas_pdf": 414,
-  "visitas_hoje": 0,
-  "visitas_7d": 45,
-  "aberturas_hoje": 8,
-  "aberturas_7d": 403,
-  "aberturas_30d": 414,
-  "pdf_abertos": 199,
+  "visitas": 63,
+  "visitas_30d": 63,
+  "visitas_90d": 63,
+  "aberturas_pdf": 420,
+  "visitas_hoje": 1,
+  "visitas_7d": 46,
+  "aberturas_hoje": 14,
+  "aberturas_7d": 409,
+  "aberturas_30d": 420,
+  "pdf_abertos": 205,
   "pdf_descarregados": 215,
-  "pdf_pt": 176,
+  "pdf_pt": 182,
   "pdf_en": 238
  },
  "dias": [
@@ -66,8 +66,8 @@
   },
   {
    "dia": "2026-10-10",
-   "visitas": 0,
-   "aberturas": 8
+   "visitas": 1,
+   "aberturas": 14
   }
  ],
  "paginas": [
@@ -102,6 +102,10 @@
   {
    "path": "/imortalistas/index.html",
    "visitas": 2
+  },
+  {
+   "path": "/imortalistas/analises.html",
+   "visitas": 1
   },
   {
    "path": "/imortalistas/pele-cabelo.html",
@@ -144,6 +148,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "doencas-geneticas-hereditarias",
+   "ficheiro": null,
+   "pt": 4,
+   "en": 2,
+   "total": 6,
+   "abertos_pt": 3,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "referencia-via-forca-hipertrofia-potencia",
    "ficheiro": null,
    "pt": 2,
@@ -166,17 +181,6 @@
    "descarregados_en": 2
   },
   {
-   "id": "doencas-geneticas-hereditarias",
-   "ficheiro": null,
-   "pt": 3,
-   "en": 2,
-   "total": 5,
-   "abertos_pt": 2,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "nariz-seios-perinasais",
    "ficheiro": null,
    "pt": 1,
@@ -184,6 +188,17 @@
    "total": 5,
    "abertos_pt": 0,
    "abertos_en": 3,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "psicadelicos",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 1
   },
@@ -251,6 +266,17 @@
    "abertos_pt": 2,
    "abertos_en": 1,
    "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "atencao-phda",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
    "descarregados_en": 1
   },
   {
@@ -595,17 +621,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "psicadelicos",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "pulmao-funcao-respiratoria",
    "ficheiro": null,
    "pt": 2,
@@ -771,17 +786,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "atencao-phda",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "audicao-zumbido",
    "ficheiro": null,
    "pt": 1,
@@ -936,6 +940,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "estomago-refluxo-helicobacter",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "ferro-metais",
    "ficheiro": null,
    "pt": 2,
@@ -1024,6 +1039,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "hipofise-eixo-hormonal",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 1,
+   "total": 3,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
    "id": "histamina-mastocitos-ige",
    "ficheiro": null,
    "pt": 1,
@@ -1043,6 +1069,17 @@
    "abertos_pt": 0,
    "abertos_en": 1,
    "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "imunidade-envelhecimento-imunitario",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -1310,40 +1347,7 @@
    "descarregados_en": 1
   },
   {
-   "id": "estomago-refluxo-helicobacter",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 2,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "gordura-inflamatoria-lipolise",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 2,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "hipofise-eixo-hormonal",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
-   "id": "imunidade-envelhecimento-imunitario",
    "ficheiro": null,
    "pt": 0,
    "en": 2,
@@ -1429,18 +1433,18 @@
    "visitas": 7
   },
   {
+   "id": "computador/mac-chrome",
+   "tipo": "computador",
+   "nome": "Mac · Chrome",
+   "estimativa": false,
+   "visitas": 7
+  },
+  {
    "id": "android/samsung-galaxy-s24",
    "tipo": "android",
    "nome": "Samsung Galaxy S24",
    "estimativa": false,
    "visitas": 7
-  },
-  {
-   "id": "computador/mac-chrome",
-   "tipo": "computador",
-   "nome": "Mac · Chrome",
-   "estimativa": false,
-   "visitas": 6
   },
   {
    "id": "computador/linux-firefox",
@@ -1552,7 +1556,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 388
+   "visitas": 395
   },
   {
    "id": "PT",
@@ -1604,7 +1608,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 446
+   "visitas": 453
   },
   {
    "id": "Firefox",
@@ -1621,12 +1625,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 263
+   "visitas": 265
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 173
+   "visitas": 178
   },
   {
    "id": "Android",
@@ -1663,19 +1667,19 @@
   {
    "id": "desktop",
    "nome": "desktop",
-   "visitas": 39
+   "visitas": 40
   },
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 413
+   "visitas": 419
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 465
+   "visitas": 472
   },
   {
    "id": "https://bing.com",
@@ -2031,8 +2035,8 @@
     },
     {
      "dia": "2026-10-10",
-     "visitas": 0,
-     "aberturas": 8
+     "visitas": 1,
+     "aberturas": 14
     }
    ],
    "paginas": [
@@ -2051,6 +2055,10 @@
     {
      "path": "/imortalistas/genetica-boa.html",
      "visitas": 2
+    },
+    {
+     "path": "/imortalistas/analises.html",
+     "visitas": 1
     },
     {
      "path": "/imortalistas/genetica.html",
@@ -2156,6 +2164,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "atencao-phda",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "avc-pequenos-vasos-cerebrais",
      "ficheiro": null,
      "pt": 1,
@@ -2223,6 +2242,17 @@
     },
     {
      "id": "doencas-autoimunes",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "doencas-geneticas-hereditarias",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -2442,6 +2472,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "psicadelicos",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "pulmao-funcao-respiratoria",
      "ficheiro": null,
      "pt": 2,
@@ -2607,17 +2648,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "atencao-phda",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "audicao-zumbido",
      "ficheiro": null,
      "pt": 1,
@@ -2739,17 +2769,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "doencas-geneticas-hereditarias",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "dopamina-noradrenalina",
      "ficheiro": null,
      "pt": 1,
@@ -2784,6 +2803,17 @@
     },
     {
      "id": "epilepsia-excitabilidade-neuronal",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "estomago-refluxo-helicobacter",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2882,6 +2912,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "hipofise-eixo-hormonal",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 1,
+     "total": 3,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
      "id": "histamina-mastocitos-ige",
      "ficheiro": null,
      "pt": 1,
@@ -2901,6 +2942,17 @@
      "abertos_pt": 0,
      "abertos_en": 1,
      "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "imunidade-envelhecimento-imunitario",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
      "descarregados_en": 1
     },
     {
@@ -3048,17 +3100,6 @@
     },
     {
      "id": "proteostase",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "psicadelicos",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -3245,17 +3286,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "estomago-refluxo-helicobacter",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "farmacogenomica-632",
      "ficheiro": null,
      "pt": 0,
@@ -3279,28 +3309,6 @@
     },
     {
      "id": "gordura-inflamatoria-lipolise",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "hipofise-eixo-hormonal",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
-     "id": "imunidade-envelhecimento-imunitario",
      "ficheiro": null,
      "pt": 0,
      "en": 2,
@@ -3379,6 +3387,13 @@
    ],
    "aparelhos": [
     {
+     "id": "computador/mac-chrome",
+     "tipo": "computador",
+     "nome": "Mac · Chrome",
+     "estimativa": false,
+     "visitas": 7
+    },
+    {
      "id": "android/samsung-galaxy-s24",
      "tipo": "android",
      "nome": "Samsung Galaxy S24",
@@ -3389,13 +3404,6 @@
      "id": "computador/linux-chrome",
      "tipo": "computador",
      "nome": "Linux · Chrome",
-     "estimativa": false,
-     "visitas": 6
-    },
-    {
-     "id": "computador/mac-chrome",
-     "tipo": "computador",
-     "nome": "Mac · Chrome",
      "estimativa": false,
      "visitas": 6
     },
@@ -3486,25 +3494,25 @@
    ],
    "aparelhos_desde": "2026-10-03",
    "total": {
-    "visitas": 38,
-    "visitas_30d": 38,
-    "visitas_90d": 38,
-    "aberturas_pdf": 388,
-    "visitas_hoje": 0,
-    "visitas_7d": 35,
-    "aberturas_hoje": 8,
-    "aberturas_7d": 388,
-    "aberturas_30d": 388,
-    "pdf_abertos": 173,
+    "visitas": 39,
+    "visitas_30d": 39,
+    "visitas_90d": 39,
+    "aberturas_pdf": 394,
+    "visitas_hoje": 1,
+    "visitas_7d": 36,
+    "aberturas_hoje": 14,
+    "aberturas_7d": 394,
+    "aberturas_30d": 394,
+    "pdf_abertos": 179,
     "pdf_descarregados": 215,
-    "pdf_pt": 152,
+    "pdf_pt": 158,
     "pdf_en": 236
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 388
+     "visitas": 395
     },
     {
      "id": "US",
