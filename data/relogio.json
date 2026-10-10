@@ -1,0 +1,20 @@
+{
+ "metodo": "PhenoAge (Levine 2018)",
+ "colheitas": [
+  {
+   "data": "2026-08-25",
+   "diferenca": -14.9
+  }
+ ],
+ "marcadores": [
+  "Albumina",
+  "Creatinina",
+  "Glicose",
+  "Proteína C reativa (PCR)",
+  "Linfócitos (%)",
+  "Volume globular médio (VGM)",
+  "Amplitude de distribuição dos eritrócitos (RDW)",
+  "Fosfatase alcalina",
+  "Leucócitos"
+ ]
+}

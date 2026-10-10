@@ -126,6 +126,16 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 .lang button:hover{background:var(--nab);color:var(--ink)}.lang button.on{color:var(--ink);font-weight:700}
 .lang .sep{color:var(--na)}
 @media(max-width:640px){html{scroll-padding-top:136px}.topin{gap:4px 8px;padding:6px 12px;flex-wrap:wrap}.tools{order:-1;margin-left:auto;gap:10px}nav.main{flex:1 1 100%;order:2;flex-wrap:wrap;overflow:visible;gap:2px}nav.main a{padding:6px 10px}.lang{font-size:12.5px}.lang button{padding:5px 3px}}
+.relogio-hero{border-radius:12px;padding:16px 18px;margin:0 0 14px}
+.relogio-hero.young{background:var(--okb)}.relogio-hero.old{background:var(--badb)}.relogio-hero.zero{background:var(--nab)}
+.relogio-fig{font-size:36px;font-weight:700;letter-spacing:-.4px;line-height:1.15;font-variant-numeric:tabular-nums}
+.relogio-hero.young .relogio-fig{color:var(--okt)}.relogio-hero.old .relogio-fig{color:var(--badt)}.relogio-hero.zero .relogio-fig{color:var(--ink)}
+.relogio-date{margin-top:4px}
+.relogio-method{margin:0}
+.relogio-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.relogio-chips .pill{font-weight:600;white-space:normal;max-width:100%}
+#relogio svg{width:100%;max-width:560px;height:auto;background:var(--card);border:1px solid var(--line);border-radius:10px;display:block;margin-top:14px}
+@media(max-width:640px){.relogio-fig{font-size:28px}.relogio-hero{padding:14px}}
 </style>
 </head>
 <body>
@@ -168,6 +178,12 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 <div class="legend" style="margin-bottom:10px"><span class="pill ok"><span class="l-pt">Ótimo</span><span class="l-en">Optimal</span></span><span class="pill warn"><span class="l-pt">Aceitável</span><span class="l-en">Acceptable</span></span><span class="pill warn"><span class="l-pt">Fora do ótimo</span><span class="l-en">Outside optimal</span></span><span class="pill bad"><span class="l-pt">Fora da referência</span><span class="l-en">Out of range</span></span><span class="pill na"><span class="l-pt">Sem alvo</span><span class="l-en">No target</span></span><span><span class="l-pt">· “Alvo” = alvo ótimo de longevidade · Δ = data principal vs data de comparação, quando escolhida (verde = aproxima-se do ótimo) · clique num marcador para ver a evolução</span><span class="l-en">· “Target” = optimal longevity target · Δ = main date vs comparison date, when one is chosen (green = moving towards optimal) · click a marker to see its trend</span></span></div>
 <div class="tw tall"><table id="bt"><thead></thead><tbody><tr><td class="mut"><span class="l-pt">A carregar…</span><span class="l-en">Loading…</span></td></tr></tbody></table></div>
 <p class="small mut"><span class="l-pt">Sem resultado no painel de 25-08-2026: bicarbonato, VDRL, lítio. As intolerâncias alimentares estão na secção própria, abaixo.</span><span class="l-en">No result in the 25-08-2026 panel: bicarbonate, VDRL, lithium. Food intolerances are in their own section, below.</span></p>
+</section>
+
+<!-- ============ RELÓGIO BIOLÓGICO ============ -->
+<section id="relogio">
+<h2><span class="l-pt">Relógio biológico</span><span class="l-en">Biological clock</span></h2>
+<div class="card" id="relogioBox"><span class="mut"><span class="l-pt">A carregar…</span><span class="l-en">Loading…</span></span></div>
 </section>
 
 <!-- ============ INTOLERÂNCIAS ALIMENTARES ============ -->
@@ -355,13 +371,41 @@ function summary(rows,a,b,cols){const c={ok:0,warn:0,bad:0,na:0};let t=0,good=0,
  `<div class="legend"><span class="pill ok">${c.ok} ${L('ótimo','optimal')}</span><span class="pill warn">${c.warn} ${L('aceitável/fora do ótimo','acceptable/outside optimal')}</span><span class="pill bad">${c.bad} ${L('fora da referência','out of range')}</span><span class="pill na">${c.na} ${L('sem alvo','no target')}</span></div>`+
  (b?`<div class="legend" style="margin-top:8px"><span>vs ${esc(fdate(b))}:</span><span class="pill ok">${good} ${L('melhoraram','improved')}</span><span class="pill bad">${bad} ${L('pioraram','worsened')}</span><span class="pill info">${chg} ${L('mudaram de estado','changed status')}</span></div>`:cols.length<2?`<div style="margin-top:10px"><span class="await">⏳ ${L('Aguarda próximo exame para comparar com esta data','Awaiting next test to compare with this date')}</span></div>`:'')+
  (IROWS&&IROWS.length?(()=>{const ia=IS?IS.cols[0].data:a,ic=iCounts(ia);return `<div class="small mut" style="margin-top:10px">${L('Estas contagens não incluem as','These counts exclude the')} ${IROWS.length} ${L('análises de intolerâncias alimentares, que têm secção própria','food intolerance tests, which have their own section')} (<a href="#intolerancias">${L('Intolerâncias Alimentares','Food Intolerances')}</a>: ${ic.intolerante.length} ${L('intolerante','intolerant')}, ${ic.nao_intolerante.length} ${L('não intolerante','not intolerant')}).</div>`})():'')}
+// ---- relógio biológico (só a diferença; data/relogio.json) ----
+const RMON={pt:['','jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'],en:['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']};
+function rdate(iso){const p=String(iso).split('-');if(p.length<3)return iso;const mon=RMON[LANG==='en'?'en':'pt'][+p[1]]||p[1];return (+p[2])+' '+mon+' '+p[0]}
+function rdiff(d){const n=Math.abs(Number(d)),s=(Math.round(n*10)/10).toFixed(1),t=LANG==='en'?s:s.replace('.',','),one=Math.abs(n-1)<0.05;
+ if(d<0)return L(t+' ano'+(one?'':'s')+' mais novo',s+' year'+(one?'':'s')+' younger');
+ if(d>0)return L(t+' ano'+(one?'':'s')+' mais velho',s+' year'+(one?'':'s')+' older');
+ return L(t+' anos',s+' years')}
+function relogioSVG(draws){const W=(typeof innerWidth==='number'&&innerWidth<640)?380:560,H=200,Lm=48,R=16,T=18,B=36;
+ const ys=draws.map(d=>Number(d.diferenca));let lo=Math.min(0,...ys),hi=Math.max(0,...ys);if(hi-lo<1e-9){lo-=1;hi+=1}
+ const pad=(hi-lo)*0.16;lo-=pad;hi+=pad;const n=draws.length;
+ const X=i=>n<2?Lm+(W-Lm-R)/2:Lm+28+i*(W-Lm-R-56)/(n-1),Y=v=>T+(hi-v)/(hi-lo)*(H-T-B);
+ let g=`<line x1="${Lm}" x2="${W-R}" y1="${Y(0).toFixed(1)}" y2="${Y(0).toFixed(1)}" style="stroke:var(--mut)" stroke-dasharray="4 3" stroke-width="1.2"/>`;
+ g+=`<text x="${(Lm-6).toFixed(1)}" y="${(Y(0)+3.5).toFixed(1)}" text-anchor="end" font-size="10" style="fill:var(--mut)">0</text>`;
+ if(n>1)g+=`<polyline fill="none" style="stroke:var(--acc)" stroke-width="2" points="${draws.map((d,i)=>X(i).toFixed(1)+','+Y(Number(d.diferenca)).toFixed(1)).join(' ')}"/>`;
+ draws.forEach((d,i)=>{const v=Number(d.diferenca),x=X(i),y=Y(v),col=v<0?'var(--ok)':v>0?'var(--bad)':'var(--mut)';
+  g+=`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="5" style="fill:${col};stroke:var(--card)" stroke-width="1.5"><title>${esc(rdate(d.data))}: ${esc(rdiff(v))}</title></circle>`;
+  g+=`<text x="${x.toFixed(1)}" y="${(H-B+16).toFixed(1)}" text-anchor="middle" font-size="10" style="fill:var(--mut)">${esc(rdate(d.data))}</text>`});
+ return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${L('Diferença ao longo do tempo','Difference over time')}">${g}</svg>`}
+let RELOGIO=null;
+function renderRelogio(){const box=document.getElementById('relogioBox');if(!box||!RELOGIO)return;
+ const draws=(RELOGIO.colheitas||[]).filter(d=>d&&d.data&&isNum(d.diferenca)).slice().sort((a,b)=>a.data<b.data?-1:1);
+ if(!draws.length){box.innerHTML='';return}
+ const last=draws[draws.length-1],v=Number(last.diferenca),cls=v<0?'young':v>0?'old':'zero',n=(RELOGIO.marcadores||[]).length;
+ const line=L((RELOGIO.metodo||'PhenoAge (Levine 2018)')+', calculado com '+n+' marcadores:',(RELOGIO.metodo||'PhenoAge (Levine 2018)')+', from '+n+' markers:');
+ const chips=(RELOGIO.marcadores||[]).map(m=>`<span class="pill na">${esc(m)}</span>`).join('');
+ const chart=draws.length>=2?relogioSVG(draws):'';
+ box.innerHTML=`<div class="relogio-hero ${cls}"><div class="relogio-fig">${esc(rdiff(v))}</div><div class="small mut relogio-date">${esc(rdate(last.data))}</div></div><p class="small relogio-method">${esc(line)}</p><div class="relogio-chips">${chips}</div>${chart}`}
+loadJSON('data/relogio.json').then(D=>{RELOGIO=D;renderRelogio()}).catch(e=>{console.warn(e)});
 // ---- alternar idioma (estático: .l-pt/.l-en; atributos e opções: data-pt/data-en) ----
 function applyLang(){const en=LANG==='en';document.documentElement.lang=en?'en':'pt-PT';document.title=en?'Sérgio F · Tests':'Sérgio F · Análises';
  document.querySelectorAll('[data-en]').forEach(el=>{if(!el.hasAttribute('data-pt'))el.setAttribute('data-pt',el.textContent);el.textContent=en?el.dataset.en:el.dataset.pt});
  document.querySelectorAll('[data-ph-en]').forEach(el=>{if(!el.hasAttribute('data-ph-pt'))el.setAttribute('data-ph-pt',el.placeholder);el.placeholder=en?el.dataset.phEn:el.dataset.phPt});
  document.querySelectorAll('[data-al-en]').forEach(el=>{if(!el.hasAttribute('data-al-pt'))el.setAttribute('data-al-pt',el.getAttribute('aria-label'));el.setAttribute('aria-label',en?el.dataset.alEn:el.dataset.alPt)});
  document.querySelectorAll('#lang button').forEach(b=>{const on=b.dataset.l===LANG;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});
- fillCats();srcTxt();failMsg();if(SS)SS.relabel();if(IS)IS.relabel()}
+ fillCats();srcTxt();failMsg();if(SS)SS.relabel();if(IS)IS.relabel();renderRelogio()}
 document.querySelectorAll('#lang button').forEach(b=>b.addEventListener('click',()=>{if(LANG===b.dataset.l)return;LANG=b.dataset.l;try{localStorage.setItem('lang',LANG)}catch(e){}try{if(/[?&]lang=/i.test(location.search)){const u=new URL(location.href);u.searchParams.set('lang',LANG);history.replaceState(history.state,'',u)}}catch(e){}applyLang()}));
 applyLang();
 
