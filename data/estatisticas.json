@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-09T23:46:31Z",
+ "atualizado_em": "2026-10-10T00:00:24Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 62,
   "visitas_30d": 62,
   "visitas_90d": 62,
-  "aberturas_pdf": 410,
-  "visitas_hoje": 9,
-  "visitas_7d": 62,
-  "aberturas_hoje": 43,
-  "aberturas_7d": 406,
-  "aberturas_30d": 406,
-  "pdf_abertos": 195,
+  "aberturas_pdf": 411,
+  "visitas_hoje": 0,
+  "visitas_7d": 45,
+  "aberturas_hoje": 5,
+  "aberturas_7d": 400,
+  "aberturas_30d": 411,
+  "pdf_abertos": 196,
   "pdf_descarregados": 215,
-  "pdf_pt": 172,
+  "pdf_pt": 173,
   "pdf_en": 238
  },
  "dias": [
@@ -63,6 +63,11 @@
    "dia": "2026-10-09",
    "visitas": 9,
    "aberturas": 43
+  },
+  {
+   "dia": "2026-10-10",
+   "visitas": 0,
+   "aberturas": 5
   }
  ],
  "paginas": [
@@ -569,6 +574,17 @@
   },
   {
    "id": "pulmao-funcao-respiratoria",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "reparacao-adn-estabilidade-genoma",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -1140,17 +1156,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "reparacao-adn-estabilidade-genoma",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "rim-acido-urico",
    "ficheiro": null,
    "pt": 1,
@@ -1547,7 +1552,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 384
+   "visitas": 385
   },
   {
    "id": "PT",
@@ -1599,7 +1604,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 442
+   "visitas": 443
   },
   {
    "id": "Firefox",
@@ -1621,7 +1626,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 171
+   "visitas": 172
   },
   {
    "id": "Android",
@@ -1663,14 +1668,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 409
+   "visitas": 410
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 461
+   "visitas": 462
   },
   {
    "id": "https://bing.com",
@@ -1745,6 +1750,11 @@
     {
      "dia": "2026-10-09",
      "visitas": 3,
+     "aberturas": 0
+    },
+    {
+     "dia": "2026-10-10",
+     "visitas": 0,
      "aberturas": 0
     }
    ],
@@ -1954,8 +1964,8 @@
     "visitas_30d": 10,
     "visitas_90d": 10,
     "aberturas_pdf": 15,
-    "visitas_hoje": 3,
-    "visitas_7d": 10,
+    "visitas_hoje": 0,
+    "visitas_7d": 9,
     "aberturas_hoje": 0,
     "aberturas_7d": 15,
     "aberturas_30d": 15,
@@ -2018,6 +2028,11 @@
      "dia": "2026-10-09",
      "visitas": 6,
      "aberturas": 43
+    },
+    {
+     "dia": "2026-10-10",
+     "visitas": 0,
+     "aberturas": 5
     }
    ],
    "paginas": [
@@ -2406,6 +2421,17 @@
     },
     {
      "id": "pulmao-funcao-respiratoria",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "reparacao-adn-estabilidade-genoma",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3032,17 +3058,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "reparacao-adn-estabilidade-genoma",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "resposta-treino-vo2max",
      "ficheiro": null,
      "pt": 1,
@@ -3474,22 +3489,22 @@
     "visitas": 38,
     "visitas_30d": 38,
     "visitas_90d": 38,
-    "aberturas_pdf": 384,
-    "visitas_hoje": 6,
-    "visitas_7d": 38,
-    "aberturas_hoje": 43,
-    "aberturas_7d": 380,
-    "aberturas_30d": 380,
-    "pdf_abertos": 169,
+    "aberturas_pdf": 385,
+    "visitas_hoje": 0,
+    "visitas_7d": 35,
+    "aberturas_hoje": 5,
+    "aberturas_7d": 385,
+    "aberturas_30d": 385,
+    "pdf_abertos": 170,
     "pdf_descarregados": 215,
-    "pdf_pt": 148,
+    "pdf_pt": 149,
     "pdf_en": 236
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 384
+     "visitas": 385
     },
     {
      "id": "US",
