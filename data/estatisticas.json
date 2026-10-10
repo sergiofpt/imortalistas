@@ -1,15 +1,15 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-10T08:22:11Z",
+ "atualizado_em": "2026-10-10T21:18:17Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
-  "visitas": 64,
-  "visitas_30d": 64,
-  "visitas_90d": 64,
+  "visitas": 65,
+  "visitas_30d": 65,
+  "visitas_90d": 65,
   "aberturas_pdf": 469,
-  "visitas_hoje": 2,
-  "visitas_7d": 47,
+  "visitas_hoje": 3,
+  "visitas_7d": 48,
   "aberturas_hoje": 63,
   "aberturas_7d": 458,
   "aberturas_30d": 469,
@@ -66,65 +66,61 @@
   },
   {
    "dia": "2026-10-10",
-   "visitas": 2,
+   "visitas": 3,
    "aberturas": 63
   }
  ],
  "paginas": [
   {
-   "path": "/imortalistas/genetica-reports.html",
+   "path": "/genetica-reports.html",
    "visitas": 29
   },
   {
-   "path": "/imortalistas/teste-worker",
-   "visitas": 8
+   "path": "/teste-worker",
+   "visitas": 9
   },
   {
-   "path": "/imortalistas",
+   "path": "/",
+   "visitas": 7
+  },
+  {
+   "path": "/inicio.html",
    "visitas": 5
   },
   {
-   "path": "/imortalistas/inicio.html",
-   "visitas": 5
-  },
-  {
-   "path": "/imortalistas/genetica-boa.html",
+   "path": "/genetica-boa.html",
    "visitas": 3
   },
   {
-   "path": "/imortalistas/genetica.html",
+   "path": "/genetica.html",
    "visitas": 3
   },
   {
-   "path": "/imortalistas/origem.html",
+   "path": "/origem.html",
    "visitas": 3
   },
   {
-   "path": "/imortalistas/index.html",
-   "visitas": 2
-  },
-  {
-   "path": "/imortalistas/analises.html",
+   "path": "/analises.html",
    "visitas": 1
   },
   {
-   "path": "/imortalistas/dieta.html",
+   "path": "/dieta.html",
    "visitas": 1
   },
   {
-   "path": "/imortalistas/pele-cabelo.html",
+   "path": "/pele-cabelo.html",
    "visitas": 1
   },
   {
-   "path": "/imortalistas/suplementos.html",
+   "path": "/suplementos.html",
    "visitas": 1
   },
   {
-   "path": "/imortalistas/terapias.html",
+   "path": "/terapias.html",
    "visitas": 1
   },
   {
-   "path": "/imortalistas/treino.html",
+   "path": "/treino.html",
    "visitas": 1
   }
  ],
@@ -1430,18 +1426,18 @@
  ],
  "aparelhos": [
   {
+   "id": "computador/linux-chrome",
+   "tipo": "computador",
+   "nome": "Linux · Chrome",
+   "estimativa": false,
+   "visitas": 8
+  },
+  {
    "id": "computador/mac-chrome",
    "tipo": "computador",
    "nome": "Mac · Chrome",
    "estimativa": false,
    "visitas": 8
-  },
-  {
-   "id": "computador/linux-chrome",
-   "tipo": "computador",
-   "nome": "Linux · Chrome",
-   "estimativa": false,
-   "visitas": 7
   },
   {
    "id": "android/samsung-galaxy-s24",
@@ -1570,7 +1566,7 @@
   {
    "id": "US",
    "nome": "United States",
-   "visitas": 31
+   "visitas": 32
   },
   {
    "id": "CA",
@@ -1612,7 +1608,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 503
+   "visitas": 504
   },
   {
    "id": "Firefox",
@@ -1644,7 +1640,7 @@
   {
    "id": "Linux",
    "nome": "Linux",
-   "visitas": 16
+   "visitas": 17
   },
   {
    "id": "Chrome OS",
@@ -1676,14 +1672,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 468
+   "visitas": 469
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 522
+   "visitas": 523
   },
   {
    "id": "https://bing.com",
@@ -1768,15 +1764,15 @@
    ],
    "paginas": [
     {
-     "path": "/imortalistas/teste-worker",
+     "path": "/teste-worker",
      "visitas": 5
     },
     {
-     "path": "/imortalistas/origem.html",
+     "path": "/origem.html",
      "visitas": 3
     },
     {
-     "path": "/imortalistas/inicio.html",
+     "path": "/inicio.html",
      "visitas": 2
     }
    ],
@@ -2039,57 +2035,57 @@
     },
     {
      "dia": "2026-10-10",
-     "visitas": 2,
+     "visitas": 3,
      "aberturas": 63
     }
    ],
    "paginas": [
     {
-     "path": "/imortalistas/genetica-reports.html",
+     "path": "/genetica-reports.html",
      "visitas": 25
     },
     {
-     "path": "/imortalistas/inicio.html",
+     "path": "/",
      "visitas": 3
     },
     {
-     "path": "/imortalistas/",
+     "path": "/inicio.html",
+     "visitas": 3
+    },
+    {
+     "path": "/genetica-boa.html",
      "visitas": 2
     },
     {
-     "path": "/imortalistas/genetica-boa.html",
-     "visitas": 2
-    },
-    {
-     "path": "/imortalistas/analises.html",
+     "path": "/analises.html",
      "visitas": 1
     },
     {
-     "path": "/imortalistas/dieta.html",
+     "path": "/dieta.html",
      "visitas": 1
     },
     {
-     "path": "/imortalistas/genetica.html",
+     "path": "/genetica.html",
      "visitas": 1
     },
     {
-     "path": "/imortalistas/index.html",
+     "path": "/pele-cabelo.html",
      "visitas": 1
     },
     {
-     "path": "/imortalistas/pele-cabelo.html",
+     "path": "/suplementos.html",
      "visitas": 1
     },
     {
-     "path": "/imortalistas/suplementos.html",
+     "path": "/terapias.html",
      "visitas": 1
     },
     {
-     "path": "/imortalistas/terapias.html",
+     "path": "/teste-worker",
      "visitas": 1
     },
     {
-     "path": "/imortalistas/treino.html",
+     "path": "/treino.html",
      "visitas": 1
     }
    ],
@@ -3402,18 +3398,18 @@
      "visitas": 8
     },
     {
+     "id": "computador/linux-chrome",
+     "tipo": "computador",
+     "nome": "Linux · Chrome",
+     "estimativa": false,
+     "visitas": 7
+    },
+    {
      "id": "android/samsung-galaxy-s24",
      "tipo": "android",
      "nome": "Samsung Galaxy S24",
      "estimativa": false,
      "visitas": 7
-    },
-    {
-     "id": "computador/linux-chrome",
-     "tipo": "computador",
-     "nome": "Linux · Chrome",
-     "estimativa": false,
-     "visitas": 6
     },
     {
      "id": "computador/windows-10-chrome",
@@ -3502,12 +3498,12 @@
    ],
    "aparelhos_desde": "2026-10-03",
    "total": {
-    "visitas": 40,
-    "visitas_30d": 40,
-    "visitas_90d": 40,
+    "visitas": 41,
+    "visitas_30d": 41,
+    "visitas_90d": 41,
     "aberturas_pdf": 443,
-    "visitas_hoje": 2,
-    "visitas_7d": 37,
+    "visitas_hoje": 3,
+    "visitas_7d": 38,
     "aberturas_hoje": 63,
     "aberturas_7d": 443,
     "aberturas_30d": 443,
@@ -3525,7 +3521,7 @@
     {
      "id": "US",
      "nome": "United States",
-     "visitas": 31
+     "visitas": 32
     },
     {
      "id": "CA",
