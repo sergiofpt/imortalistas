@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-10T21:18:17Z",
+ "atualizado_em": "2026-10-10T21:46:23Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 65,
   "visitas_30d": 65,
   "visitas_90d": 65,
-  "aberturas_pdf": 469,
+  "aberturas_pdf": 470,
   "visitas_hoje": 3,
   "visitas_7d": 48,
-  "aberturas_hoje": 63,
-  "aberturas_7d": 458,
-  "aberturas_30d": 469,
-  "pdf_abertos": 254,
+  "aberturas_hoje": 64,
+  "aberturas_7d": 459,
+  "aberturas_30d": 470,
+  "pdf_abertos": 255,
   "pdf_descarregados": 215,
-  "pdf_pt": 231,
+  "pdf_pt": 232,
   "pdf_en": 238
  },
  "dias": [
@@ -67,7 +67,7 @@
   {
    "dia": "2026-10-10",
    "visitas": 3,
-   "aberturas": 63
+   "aberturas": 64
   }
  ],
  "paginas": [
@@ -170,6 +170,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "psicadelicos",
+   "ficheiro": null,
+   "pt": 4,
+   "en": 2,
+   "total": 6,
+   "abertos_pt": 3,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "referencia-via-forca-hipertrofia-potencia",
    "ficheiro": null,
    "pt": 2,
@@ -254,17 +265,6 @@
    "total": 5,
    "abertos_pt": 0,
    "abertos_en": 3,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "psicadelicos",
-   "ficheiro": null,
-   "pt": 3,
-   "en": 2,
-   "total": 5,
-   "abertos_pt": 2,
-   "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 1
   },
@@ -1566,7 +1566,7 @@
   {
    "id": "US",
    "nome": "United States",
-   "visitas": 32
+   "visitas": 33
   },
   {
    "id": "CA",
@@ -1608,7 +1608,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 504
+   "visitas": 505
   },
   {
    "id": "Firefox",
@@ -1640,7 +1640,7 @@
   {
    "id": "Linux",
    "nome": "Linux",
-   "visitas": 17
+   "visitas": 18
   },
   {
    "id": "Chrome OS",
@@ -1672,14 +1672,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 469
+   "visitas": 470
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 523
+   "visitas": 524
   },
   {
    "id": "https://bing.com",
@@ -2036,7 +2036,7 @@
     {
      "dia": "2026-10-10",
      "visitas": 3,
-     "aberturas": 63
+     "aberturas": 64
     }
    ],
    "paginas": [
@@ -2153,6 +2153,17 @@
      "total": 5,
      "abertos_pt": 0,
      "abertos_en": 3,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "psicadelicos",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 1
     },
@@ -2752,17 +2763,6 @@
     },
     {
      "id": "proteostase",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "psicadelicos",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3501,15 +3501,15 @@
     "visitas": 41,
     "visitas_30d": 41,
     "visitas_90d": 41,
-    "aberturas_pdf": 443,
+    "aberturas_pdf": 444,
     "visitas_hoje": 3,
     "visitas_7d": 38,
-    "aberturas_hoje": 63,
-    "aberturas_7d": 443,
-    "aberturas_30d": 443,
-    "pdf_abertos": 228,
+    "aberturas_hoje": 64,
+    "aberturas_7d": 444,
+    "aberturas_30d": 444,
+    "pdf_abertos": 229,
     "pdf_descarregados": 215,
-    "pdf_pt": 207,
+    "pdf_pt": 208,
     "pdf_en": 236
    },
    "paises": [
@@ -3521,7 +3521,7 @@
     {
      "id": "US",
      "nome": "United States",
-     "visitas": 32
+     "visitas": 33
     },
     {
      "id": "CA",
