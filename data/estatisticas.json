@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-10T07:46:56Z",
+ "atualizado_em": "2026-10-10T08:00:43Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 64,
   "visitas_30d": 64,
   "visitas_90d": 64,
-  "aberturas_pdf": 465,
+  "aberturas_pdf": 466,
   "visitas_hoje": 2,
   "visitas_7d": 47,
-  "aberturas_hoje": 59,
-  "aberturas_7d": 454,
-  "aberturas_30d": 465,
-  "pdf_abertos": 250,
+  "aberturas_hoje": 60,
+  "aberturas_7d": 455,
+  "aberturas_30d": 466,
+  "pdf_abertos": 251,
   "pdf_descarregados": 215,
-  "pdf_pt": 227,
+  "pdf_pt": 228,
   "pdf_en": 238
  },
  "dias": [
@@ -67,7 +67,7 @@
   {
    "dia": "2026-10-10",
    "visitas": 2,
-   "aberturas": 59
+   "aberturas": 60
   }
  ],
  "paginas": [
@@ -1285,6 +1285,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "musculo-osso-sarcopenia",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 1,
+   "total": 3,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
    "id": "personalidade-tracos-psicologicos",
    "ficheiro": null,
    "pt": 1,
@@ -1415,17 +1426,6 @@
    "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 1
-  },
-  {
-   "id": "musculo-osso-sarcopenia",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 1,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
   }
  ],
  "aparelhos": [
@@ -1560,7 +1560,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 441
+   "visitas": 442
   },
   {
    "id": "PT",
@@ -1612,7 +1612,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 499
+   "visitas": 500
   },
   {
    "id": "Firefox",
@@ -1634,7 +1634,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 202
+   "visitas": 203
   },
   {
    "id": "Android",
@@ -1676,14 +1676,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 464
+   "visitas": 465
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 518
+   "visitas": 519
   },
   {
    "id": "https://bing.com",
@@ -2040,7 +2040,7 @@
     {
      "dia": "2026-10-10",
      "visitas": 2,
-     "aberturas": 59
+     "aberturas": 60
     }
    ],
    "paginas": [
@@ -3250,6 +3250,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "musculo-osso-sarcopenia",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 1,
+     "total": 3,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
      "id": "personalidade-tracos-psicologicos",
      "ficheiro": null,
      "pt": 1,
@@ -3380,17 +3391,6 @@
      "abertos_en": 1,
      "descarregados_pt": 0,
      "descarregados_en": 1
-    },
-    {
-     "id": "musculo-osso-sarcopenia",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
     }
    ],
    "aparelhos": [
@@ -3505,22 +3505,22 @@
     "visitas": 40,
     "visitas_30d": 40,
     "visitas_90d": 40,
-    "aberturas_pdf": 439,
+    "aberturas_pdf": 440,
     "visitas_hoje": 2,
     "visitas_7d": 37,
-    "aberturas_hoje": 59,
-    "aberturas_7d": 439,
-    "aberturas_30d": 439,
-    "pdf_abertos": 224,
+    "aberturas_hoje": 60,
+    "aberturas_7d": 440,
+    "aberturas_30d": 440,
+    "pdf_abertos": 225,
     "pdf_descarregados": 215,
-    "pdf_pt": 203,
+    "pdf_pt": 204,
     "pdf_en": 236
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 441
+     "visitas": 442
     },
     {
      "id": "US",
