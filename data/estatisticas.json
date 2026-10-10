@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-10T02:20:14Z",
+ "atualizado_em": "2026-10-10T03:18:44Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
-  "visitas": 63,
-  "visitas_30d": 63,
-  "visitas_90d": 63,
-  "aberturas_pdf": 424,
-  "visitas_hoje": 1,
-  "visitas_7d": 46,
-  "aberturas_hoje": 18,
-  "aberturas_7d": 413,
-  "aberturas_30d": 424,
-  "pdf_abertos": 209,
+  "visitas": 64,
+  "visitas_30d": 64,
+  "visitas_90d": 64,
+  "aberturas_pdf": 434,
+  "visitas_hoje": 2,
+  "visitas_7d": 47,
+  "aberturas_hoje": 28,
+  "aberturas_7d": 423,
+  "aberturas_30d": 434,
+  "pdf_abertos": 219,
   "pdf_descarregados": 215,
-  "pdf_pt": 186,
+  "pdf_pt": 196,
   "pdf_en": 238
  },
  "dias": [
@@ -66,8 +66,8 @@
   },
   {
    "dia": "2026-10-10",
-   "visitas": 1,
-   "aberturas": 18
+   "visitas": 2,
+   "aberturas": 28
   }
  ],
  "paginas": [
@@ -105,6 +105,10 @@
   },
   {
    "path": "/imortalistas/analises.html",
+   "visitas": 1
+  },
+  {
+   "path": "/imortalistas/dieta.html",
    "visitas": 1
   },
   {
@@ -179,6 +183,28 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 2
+  },
+  {
+   "id": "farmacogenomica-632",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 3,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "infecoes",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 3,
+   "total": 5,
+   "abertos_pt": 1,
+   "abertos_en": 2,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
   },
   {
    "id": "metilacao-homocisteina-colina",
@@ -313,6 +339,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "cabelo",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "cardiovascular-avancado",
    "ficheiro": null,
    "pt": 2,
@@ -357,6 +394,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "cetose-corpos-cetonicos",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "disruptores-endocrinos-poluentes",
    "ficheiro": null,
    "pt": 2,
@@ -368,7 +416,40 @@
    "descarregados_en": 1
   },
   {
+   "id": "doenca-arterial-periferica",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "doencas-autoimunes",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "dor-analgesia",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "enxaqueca-cefaleias",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -398,17 +479,6 @@
    "abertos_pt": 1,
    "abertos_en": 1,
    "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "farmacogenomica-632",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 2,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -463,17 +533,6 @@
    "total": 4,
    "abertos_pt": 1,
    "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "infecoes",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 3,
-   "total": 4,
-   "abertos_pt": 0,
-   "abertos_en": 2,
    "descarregados_pt": 1,
    "descarregados_en": 1
   },
@@ -577,6 +636,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "pancreas-pancreatite",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "pele-skin-care",
    "ficheiro": null,
    "pt": 2,
@@ -632,6 +702,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "proteostase",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "pulmao-funcao-respiratoria",
    "ficheiro": null,
    "pt": 2,
@@ -666,6 +747,17 @@
   },
   {
    "id": "resumo-clinico-medico",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "rim-acido-urico",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -819,17 +911,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "cabelo",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "cafeina-estimulantes",
    "ficheiro": null,
    "pt": 1,
@@ -842,17 +923,6 @@
   },
   {
    "id": "capacidade-cognitiva-plasticidade",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "cetose-corpos-cetonicos",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -896,40 +966,7 @@
    "descarregados_en": 1
   },
   {
-   "id": "doenca-arterial-periferica",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "dopamina-noradrenalina",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "dor-analgesia",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "enxaqueca-cefaleias",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -1160,17 +1197,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "pancreas-pancreatite",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "perfil-desportivo-resistencia-forca",
    "ficheiro": null,
    "pt": 1,
@@ -1183,28 +1209,6 @@
   },
   {
    "id": "personalidade-tracos-psicologicos",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "proteostase",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "rim-acido-urico",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -1426,16 +1430,16 @@
  ],
  "aparelhos": [
   {
-   "id": "computador/linux-chrome",
-   "tipo": "computador",
-   "nome": "Linux · Chrome",
-   "estimativa": false,
-   "visitas": 7
-  },
-  {
    "id": "computador/mac-chrome",
    "tipo": "computador",
    "nome": "Mac · Chrome",
+   "estimativa": false,
+   "visitas": 8
+  },
+  {
+   "id": "computador/linux-chrome",
+   "tipo": "computador",
+   "nome": "Linux · Chrome",
    "estimativa": false,
    "visitas": 7
   },
@@ -1556,7 +1560,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 399
+   "visitas": 410
   },
   {
    "id": "PT",
@@ -1608,7 +1612,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 457
+   "visitas": 468
   },
   {
    "id": "Firefox",
@@ -1625,12 +1629,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 268
+   "visitas": 275
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 179
+   "visitas": 183
   },
   {
    "id": "Android",
@@ -1667,19 +1671,19 @@
   {
    "id": "desktop",
    "nome": "desktop",
-   "visitas": 40
+   "visitas": 41
   },
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 423
+   "visitas": 433
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 476
+   "visitas": 487
   },
   {
    "id": "https://bing.com",
@@ -2035,8 +2039,8 @@
     },
     {
      "dia": "2026-10-10",
-     "visitas": 1,
-     "aberturas": 18
+     "visitas": 2,
+     "aberturas": 28
     }
    ],
    "paginas": [
@@ -2058,6 +2062,10 @@
     },
     {
      "path": "/imortalistas/analises.html",
+     "visitas": 1
+    },
+    {
+     "path": "/imortalistas/dieta.html",
      "visitas": 1
     },
     {
@@ -2099,6 +2107,17 @@
     },
     {
      "id": "cancros-um-a-um",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 3,
+     "total": 5,
+     "abertos_pt": 1,
+     "abertos_en": 2,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "infecoes",
      "ficheiro": null,
      "pt": 2,
      "en": 3,
@@ -2208,6 +2227,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "cabelo",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "cardiovascular-avancado",
      "ficheiro": null,
      "pt": 2,
@@ -2241,7 +2271,29 @@
      "descarregados_en": 1
     },
     {
+     "id": "cetose-corpos-cetonicos",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "disruptores-endocrinos-poluentes",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "doenca-arterial-periferica",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -2264,6 +2316,28 @@
     },
     {
      "id": "doencas-geneticas-hereditarias",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "dor-analgesia",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "enxaqueca-cefaleias",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -2351,17 +2425,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "infecoes",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 3,
-     "total": 4,
-     "abertos_pt": 0,
-     "abertos_en": 2,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "laringe-voz",
      "ficheiro": null,
      "pt": 2,
@@ -2439,6 +2502,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "pancreas-pancreatite",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "pele-skin-care",
      "ficheiro": null,
      "pt": 2,
@@ -2494,6 +2568,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "proteostase",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "psicadelicos",
      "ficheiro": null,
      "pt": 2,
@@ -2528,6 +2613,17 @@
     },
     {
      "id": "resumo-clinico-medico",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "rim-acido-urico",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -2692,17 +2788,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "cabelo",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "cafeina-estimulantes",
      "ficheiro": null,
      "pt": 1,
@@ -2726,17 +2811,6 @@
     },
     {
      "id": "cartao-farmacogenetico",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "cetose-corpos-cetonicos",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2780,40 +2854,7 @@
      "descarregados_en": 1
     },
     {
-     "id": "doenca-arterial-periferica",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "dopamina-noradrenalina",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "dor-analgesia",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "enxaqueca-cefaleias",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2836,6 +2877,17 @@
     },
     {
      "id": "estomago-refluxo-helicobacter",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "farmacogenomica-632",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -3077,17 +3129,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "pancreas-pancreatite",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "perfil-desportivo-resistencia-forca",
      "ficheiro": null,
      "pt": 1,
@@ -3110,29 +3151,7 @@
      "descarregados_en": 1
     },
     {
-     "id": "proteostase",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "resposta-treino-vo2max",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "rim-acido-urico",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -3297,17 +3316,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "farmacogenomica-632",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "funcao-sexual-eretil",
      "ficheiro": null,
      "pt": 0,
@@ -3391,7 +3399,7 @@
      "tipo": "computador",
      "nome": "Mac · Chrome",
      "estimativa": false,
-     "visitas": 7
+     "visitas": 8
     },
     {
      "id": "android/samsung-galaxy-s24",
@@ -3494,25 +3502,25 @@
    ],
    "aparelhos_desde": "2026-10-03",
    "total": {
-    "visitas": 39,
-    "visitas_30d": 39,
-    "visitas_90d": 39,
-    "aberturas_pdf": 398,
-    "visitas_hoje": 1,
-    "visitas_7d": 36,
-    "aberturas_hoje": 18,
-    "aberturas_7d": 398,
-    "aberturas_30d": 398,
-    "pdf_abertos": 183,
+    "visitas": 40,
+    "visitas_30d": 40,
+    "visitas_90d": 40,
+    "aberturas_pdf": 408,
+    "visitas_hoje": 2,
+    "visitas_7d": 37,
+    "aberturas_hoje": 28,
+    "aberturas_7d": 408,
+    "aberturas_30d": 408,
+    "pdf_abertos": 193,
     "pdf_descarregados": 215,
-    "pdf_pt": 162,
+    "pdf_pt": 172,
     "pdf_en": 236
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 399
+     "visitas": 410
     },
     {
      "id": "US",

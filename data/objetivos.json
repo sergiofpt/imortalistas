@@ -1817,11 +1817,15 @@
         "en": "< 120/80 mmHg"
        },
        "fonte": "https://doi.org/10.1161/CIR.0000000000001078",
-       "resultado": null,
-       "estado": "sem_dados"
+       "resultado": {
+        "valor": "100/58",
+        "unidade": "mmHg",
+        "data": "2026-10-10"
+       },
+       "estado": "otimo"
       }
      ],
-     "estado": "fora"
+     "estado": "quase_otimo"
     },
     {
      "id": "resistencia-a-insulina",
@@ -2155,7 +2159,7 @@
        }
       }
      ],
-     "estado": "fora"
+     "estado": "quase_otimo"
     },
     {
      "id": "declinio-do-sinal-estrogenico",
@@ -2288,7 +2292,7 @@
        "estado": "otimo"
       }
      ],
-     "estado": "fora"
+     "estado": "quase_otimo"
     },
     {
      "id": "acumulacao-de-produtos-finais-de-glicacao-avancada-ages",
@@ -2768,8 +2772,12 @@
         "en": "< 120/80 mmHg"
        },
        "fonte": "https://doi.org/10.1161/CIR.0000000000001078",
-       "resultado": null,
-       "estado": "sem_dados"
+       "resultado": {
+        "valor": "100/58",
+        "unidade": "mmHg",
+        "data": "2026-10-10"
+       },
+       "estado": "otimo"
       },
       {
        "nome": {
@@ -2789,7 +2797,7 @@
        "estado": "sem_dados"
       }
      ],
-     "estado": "fora"
+     "estado": "quase_otimo"
     },
     {
      "id": "rigidez-arterial",
