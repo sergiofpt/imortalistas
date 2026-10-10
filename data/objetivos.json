@@ -1,0 +1,3384 @@
+{
+ "titulo": {
+  "pt": "Objetivos",
+  "en": "Objectives"
+ },
+ "atualizado_em": "2026-10-10",
+ "fonte_dados": [
+  "data/sangue.json",
+  "data/relogio.json"
+ ],
+ "groups": [
+  {
+   "id": "instabilidade-genomica",
+   "nome": {
+    "pt": "Instabilidade genómica",
+    "en": "Genomic instability"
+   },
+   "targets": [
+    {
+     "id": "instabilidade-genomica",
+     "nome": {
+      "pt": "Instabilidade Genómica",
+      "en": "Genomic Instability"
+     },
+     "o_que_e": {
+      "pt": "Acumulação de erros e danos no DNA ao longo da vida. Aumenta o risco de cancro e de perda de função dos tecidos.",
+      "en": "Build-up of errors and damage in DNA over a lifetime. It raises cancer risk and loss of tissue function."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (sequenciação de mutações somáticas, teste de micronúcleos).",
+        "en": "No clinical measure available; research only (somatic mutation sequencing, micronucleus assay)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "danos-ao-dna-e-defice-de-reparacao-do-dna",
+     "nome": {
+      "pt": "Danos ao DNA e Défice de Reparação do DNA",
+      "en": "DNA Damage and Impaired DNA Repair"
+     },
+     "o_que_e": {
+      "pt": "Lesões diárias no DNA que, com a idade, são reparadas de forma menos eficaz.",
+      "en": "Daily DNA lesions that are repaired less efficiently with age."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (ensaio cometa, γH2AX, 8-OHdG na urina).",
+        "en": "No clinical measure available; research only (comet assay, γH2AX, urinary 8-OHdG)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "telomeros-e-limite-de-hayflick",
+     "nome": {
+      "pt": "Telómeros e Limite de Hayflick",
+      "en": "Telomeres and the Hayflick Limit"
+     },
+     "o_que_e": {
+      "pt": "Os telómeros protegem as pontas dos cromossomas e encurtam a cada divisão celular. Quando ficam demasiado curtos, a célula deixa de se dividir.",
+      "en": "Telomeres cap the ends of chromosomes and shorten with each cell division. When too short, the cell stops dividing."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Comprimento dos telómeros",
+        "en": "Telomere length"
+       },
+       "como_se_mede": {
+        "pt": "Flow-FISH ou qPCR no sangue (clínico sobretudo para doenças dos telómeros).",
+        "en": "Flow-FISH or qPCR on blood (clinical mainly for telomere disorders)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido (telómeros muito curtos ou muito longos associam-se a doença)",
+        "en": "no defined optimum (very short and very long telomeres are both linked to disease)"
+       },
+       "fonte": "https://doi.org/10.1073/pnas.1720427115",
+       "resultado": null,
+       "estado": "sem_dados"
+      }
+     ],
+     "estado": "sem_dados"
+    },
+    {
+     "id": "alteracoes-epigeneticas",
+     "nome": {
+      "pt": "Alterações Epigenéticas",
+      "en": "Epigenetic Alterations"
+     },
+     "o_que_e": {
+      "pt": "Mudanças nas marcas químicas que ligam e desligam genes, sem alterar o DNA. São a base dos relógios de idade biológica.",
+      "en": "Changes in the chemical marks that switch genes on and off without changing the DNA. They underlie biological-age clocks."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Ritmo de envelhecimento epigenético (DunedinPACE)",
+        "en": "Epigenetic pace of ageing (DunedinPACE)"
+       },
+       "como_se_mede": {
+        "pt": "Teste de metilação do DNA no sangue (laboratórios comerciais; ainda não é exame clínico de rotina).",
+        "en": "DNA methylation blood test (commercial labs; not yet a routine clinical test)."
+       },
+       "otimo": {
+        "pt": "< 1,0 (menos de 1 ano biológico por ano; 1,0 é a média)",
+        "en": "< 1.0 (less than 1 biological year per year; 1.0 is the average)"
+       },
+       "fonte": "https://doi.org/10.7554/eLife.73420",
+       "resultado": null,
+       "estado": "sem_dados"
+      }
+     ],
+     "estado": "sem_dados"
+    },
+    {
+     "id": "perda-de-proteostase",
+     "nome": {
+      "pt": "Perda de Proteostase",
+      "en": "Loss of Proteostasis"
+     },
+     "o_que_e": {
+      "pt": "Perda da capacidade de dobrar, reparar e eliminar proteínas. As proteínas danificadas acumulam-se e agregam.",
+      "en": "Loss of the ability to fold, repair and clear proteins. Damaged proteins build up and clump."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (proteómica, ensaios de agregação).",
+        "en": "No clinical measure available; research only (proteomics, aggregation assays)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "autofagia-macroautofagia-desregulada",
+     "nome": {
+      "pt": "Autofagia / Macroautofagia Desregulada",
+      "en": "Dysregulated Autophagy / Macroautophagy"
+     },
+     "o_que_e": {
+      "pt": "A autofagia é a reciclagem interna da célula. Com a idade torna-se mais lenta e deixa acumular lixo celular.",
+      "en": "Autophagy is the cell's internal recycling. With age it slows and lets cellular waste build up."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (fluxo de LC3-II em células do sangue).",
+        "en": "No clinical measure available; research only (LC3-II flux in blood cells)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "desregulacao-do-sensoriamento-de-nutrientes",
+     "nome": {
+      "pt": "Desregulação do Sensoriamento de Nutrientes",
+      "en": "Deregulated Nutrient Sensing"
+     },
+     "o_que_e": {
+      "pt": "As vias que detetam nutrientes (insulina/IGF-1, mTOR, AMPK, sirtuínas) ficam desequilibradas. A sinalização de crescimento em excesso acelera o envelhecimento.",
+      "en": "Nutrient-sensing pathways (insulin/IGF-1, mTOR, AMPK, sirtuins) become unbalanced. Excess growth signalling speeds ageing."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Insulina em jejum",
+        "en": "Fasting insulin"
+       },
+       "como_se_mede": {
+        "pt": "Análise ao sangue em jejum.",
+        "en": "Fasting blood test."
+       },
+       "otimo": {
+        "pt": "2–6 µU/mL",
+        "en": "2–6 µU/mL"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 11.6,
+        "unidade": "µU/mL",
+        "data": "2026-08-25"
+       },
+       "estado": "fora",
+       "nota": {
+        "pt": "Jejum não documentado nesta colheita.",
+        "en": "Fasting status not documented for this draw."
+       }
+      },
+      {
+       "nome": {
+        "pt": "IGF-1",
+        "en": "IGF-1"
+       },
+       "como_se_mede": {
+        "pt": "Análise ao sangue.",
+        "en": "Blood test."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido (valores muito baixos e muito altos associam-se a maior risco)",
+        "en": "no defined optimum (both very low and very high values are linked to higher risk)"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_dados"
+      }
+     ],
+     "estado": "fora"
+    },
+    {
+     "id": "disfuncao-mitocondrial",
+     "nome": {
+      "pt": "Disfunção Mitocondrial",
+      "en": "Mitochondrial Dysfunction"
+     },
+     "o_que_e": {
+      "pt": "As mitocôndrias produzem menos energia e mais radicais livres com a idade.",
+      "en": "Mitochondria produce less energy and more free radicals with age."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "VO2max",
+        "en": "VO2max"
+       },
+       "como_se_mede": {
+        "pt": "Prova de esforço cardiopulmonar (ergoespirometria); os relógios desportivos dão uma estimativa.",
+        "en": "Cardiopulmonary exercise test; sports watches give an estimate."
+       },
+       "otimo": {
+        "pt": "Nível \"elite\" para a idade e o sexo (≥ percentil 97,7)",
+        "en": "\"Elite\" level for age and sex (≥ 97.7th percentile)"
+       },
+       "fonte": "https://doi.org/10.1001/jamanetworkopen.2018.3605",
+       "resultado": null,
+       "estado": "sem_dados"
+      }
+     ],
+     "estado": "sem_dados"
+    },
+    {
+     "id": "senescencia-celular",
+     "nome": {
+      "pt": "Senescência Celular",
+      "en": "Cellular Senescence"
+     },
+     "o_que_e": {
+      "pt": "Células danificadas que deixam de se dividir mas não morrem, e libertam sinais inflamatórios para os tecidos à volta.",
+      "en": "Damaged cells that stop dividing but do not die, and release inflammatory signals to nearby tissue."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (p16INK4a em células T, marcadores do secretoma senescente (SASP)).",
+        "en": "No clinical measure available; research only (p16INK4a in T cells, senescence secretome (SASP) markers)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "exaustao-de-celulas-estaminais",
+     "nome": {
+      "pt": "Exaustão de Células Estaminais",
+      "en": "Stem Cell Exhaustion"
+     },
+     "o_que_e": {
+      "pt": "As células estaminais perdem número e capacidade de regenerar os tecidos.",
+      "en": "Stem cells lose numbers and the ability to regenerate tissues."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (contagem e função de células estaminais em biópsias ou sangue).",
+        "en": "No clinical measure available; research only (stem cell counts and function in biopsies or blood)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "alteracao-da-comunicacao-intercelular",
+     "nome": {
+      "pt": "Alteração da Comunicação Intercelular",
+      "en": "Altered Intercellular Communication"
+     },
+     "o_que_e": {
+      "pt": "Os sinais entre células, hormonas e sistema imunitário ficam desregulados, sobretudo com mais inflamação.",
+      "en": "Signalling between cells, hormones and the immune system becomes deregulated, mainly with more inflammation."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (painéis de citocinas e proteómica do plasma).",
+        "en": "No clinical measure available; research only (cytokine panels and plasma proteomics)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "inflamacao-cronica",
+     "nome": {
+      "pt": "Inflamação Crónica",
+      "en": "Chronic Inflammation"
+     },
+     "o_que_e": {
+      "pt": "Inflamação de baixo grau e persistente, sem infeção. Contribui para doenças cardiovasculares, metabólicas e neurodegenerativas.",
+      "en": "Persistent low-grade inflammation without infection. It contributes to cardiovascular, metabolic and neurodegenerative disease."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "PCR de alta sensibilidade",
+        "en": "High-sensitivity CRP"
+       },
+       "como_se_mede": {
+        "pt": "Análise ao sangue (PCR-as).",
+        "en": "Blood test (hs-CRP)."
+       },
+       "otimo": {
+        "pt": "< 1 mg/L",
+        "en": "< 1 mg/L"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 0.44,
+        "unidade": "mg/L",
+        "data": "2026-08-25"
+       },
+       "estado": "otimo"
+      },
+      {
+       "nome": {
+        "pt": "Velocidade de sedimentação",
+        "en": "Erythrocyte sedimentation rate"
+       },
+       "como_se_mede": {
+        "pt": "Análise ao sangue.",
+        "en": "Blood test."
+       },
+       "otimo": {
+        "pt": "0–10 mm/hr",
+        "en": "0–10 mm/hr"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 2.72,
+        "unidade": "mm/hr",
+        "data": "2026-08-25"
+       },
+       "estado": "otimo"
+      }
+     ],
+     "estado": "otimo"
+    },
+    {
+     "id": "disbiose",
+     "nome": {
+      "pt": "Disbiose",
+      "en": "Dysbiosis"
+     },
+     "o_que_e": {
+      "pt": "Desequilíbrio da flora intestinal, com perda de diversidade e de bactérias benéficas.",
+      "en": "Imbalance of the gut microbiota, with loss of diversity and of beneficial bacteria."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (sequenciação do microbioma das fezes (16S ou metagenómica); há testes comerciais, sem valores de referência validados).",
+        "en": "No clinical measure available; research only (stool microbiome sequencing (16S or metagenomics); commercial tests exist without validated reference values)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    }
+   ]
+  },
+  {
+   "id": "epigenetica",
+   "nome": {
+    "pt": "Epigenética",
+    "en": "Epigenetics"
+   },
+   "targets": [
+    {
+     "id": "deriva-epigenetica",
+     "nome": {
+      "pt": "Deriva Epigenética",
+      "en": "Epigenetic Drift"
+     },
+     "o_que_e": {
+      "pt": "Alterações aleatórias nas marcas de metilação do DNA que se acumulam com o tempo.",
+      "en": "Random changes in DNA methylation marks that build up over time."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Ritmo de envelhecimento epigenético (DunedinPACE)",
+        "en": "Epigenetic pace of ageing (DunedinPACE)"
+       },
+       "como_se_mede": {
+        "pt": "Teste de metilação do DNA no sangue (laboratórios comerciais; ainda não é exame clínico de rotina).",
+        "en": "DNA methylation blood test (commercial labs; not yet a routine clinical test)."
+       },
+       "otimo": {
+        "pt": "< 1,0 (menos de 1 ano biológico por ano; 1,0 é a média)",
+        "en": "< 1.0 (less than 1 biological year per year; 1.0 is the average)"
+       },
+       "fonte": "https://doi.org/10.7554/eLife.73420",
+       "resultado": null,
+       "estado": "sem_dados"
+      }
+     ],
+     "estado": "sem_dados"
+    },
+    {
+     "id": "perda-de-fidelidade-epigenetica",
+     "nome": {
+      "pt": "Perda de Fidelidade Epigenética",
+      "en": "Loss of Epigenetic Fidelity"
+     },
+     "o_que_e": {
+      "pt": "As células perdem a capacidade de manter o padrão epigenético correto e a sua identidade.",
+      "en": "Cells lose the ability to keep the correct epigenetic pattern and their identity."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (entropia de metilação do DNA).",
+        "en": "No clinical measure available; research only (DNA methylation entropy)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "perda-de-heterocromatina",
+     "nome": {
+      "pt": "Perda de Heterocromatina",
+      "en": "Loss of Heterochromatin"
+     },
+     "o_que_e": {
+      "pt": "O DNA compactado, que mantém genes silenciados, abre-se com a idade.",
+      "en": "Tightly packed DNA that keeps genes silent opens up with age."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (marcas de histonas H3K9me3, microscopia).",
+        "en": "No clinical measure available; research only (H3K9me3 histone marks, microscopy)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "desregulacao-da-memoria-epigenetica",
+     "nome": {
+      "pt": "Desregulação da Memória Epigenética",
+      "en": "Dysregulated Epigenetic Memory"
+     },
+     "o_que_e": {
+      "pt": "As células \"esquecem\" ou retêm de forma errada padrões de expressão adquiridos.",
+      "en": "Cells \"forget\" or wrongly retain acquired gene-expression patterns."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (perfis de metilação e cromatina).",
+        "en": "No clinical measure available; research only (methylation and chromatin profiling)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "alteracoes-de-nucleossomas-e-histonas",
+     "nome": {
+      "pt": "Alterações de Nucleossomas e Histonas",
+      "en": "Nucleosome and Histone Changes"
+     },
+     "o_que_e": {
+      "pt": "Perda e modificação das histonas, as proteínas onde o DNA se enrola.",
+      "en": "Loss and modification of histones, the proteins DNA wraps around."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (perfis de histonas, nucleossomas circulantes).",
+        "en": "No clinical measure available; research only (histone profiling, circulating nucleosomes)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "reprogramacao-transcricional-aberrante",
+     "nome": {
+      "pt": "Reprogramação Transcricional Aberrante",
+      "en": "Aberrant Transcriptional Reprogramming"
+     },
+     "o_que_e": {
+      "pt": "Genes são ligados ou desligados nos momentos e tecidos errados.",
+      "en": "Genes are switched on or off at the wrong times and in the wrong tissues."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (transcriptómica (RNA-seq)).",
+        "en": "No clinical measure available; research only (transcriptomics (RNA-seq))."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "desorganizacao-da-arquitetura-nuclear",
+     "nome": {
+      "pt": "Desorganização da Arquitetura Nuclear",
+      "en": "Disorganised Nuclear Architecture"
+     },
+     "o_que_e": {
+      "pt": "A organização 3D do DNA dentro do núcleo desfaz-se.",
+      "en": "The 3D organisation of DNA inside the nucleus breaks down."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (Hi-C, microscopia).",
+        "en": "No clinical measure available; research only (Hi-C, microscopy)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "deterioracao-da-lamina-nuclear-e-dos-dominios-associados-a-lamina",
+     "nome": {
+      "pt": "Deterioração da Lâmina Nuclear e dos Domínios Associados à Lâmina",
+      "en": "Deterioration of the Nuclear Lamina and Lamina-Associated Domains"
+     },
+     "o_que_e": {
+      "pt": "A lâmina nuclear, o esqueleto do núcleo, enfraquece e solta zonas do DNA que deviam estar silenciadas.",
+      "en": "The nuclear lamina, the nucleus's scaffold, weakens and releases DNA regions that should stay silent."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (lamina B1, progerina, mapeamento de domínios (DamID)).",
+        "en": "No clinical measure available; research only (lamin B1, progerin, domain mapping (DamID))."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "ativacao-de-retrotransposoes",
+     "nome": {
+      "pt": "Ativação de Retrotransposões",
+      "en": "Retrotransposon Activation"
+     },
+     "o_que_e": {
+      "pt": "Sequências de DNA \"saltitantes\" (como LINE-1) reativam-se e causam danos e inflamação.",
+      "en": "\"Jumping\" DNA sequences (such as LINE-1) reactivate and cause damage and inflammation."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (expressão e metilação de LINE-1).",
+        "en": "No clinical measure available; research only (LINE-1 expression and methylation)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "desregulacao-de-retrovirus-endogenos",
+     "nome": {
+      "pt": "Desregulação de Retrovírus Endógenos",
+      "en": "Endogenous Retrovirus Dysregulation"
+     },
+     "o_que_e": {
+      "pt": "Restos de vírus antigos no genoma reativam-se e ativam a inflamação.",
+      "en": "Remnants of ancient viruses in the genome reactivate and trigger inflammation."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (expressão de ERV por RNA-seq).",
+        "en": "No clinical measure available; research only (ERV expression by RNA-seq)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "acumulacao-de-mutacoes-somaticas",
+     "nome": {
+      "pt": "Acumulação de Mutações Somáticas",
+      "en": "Accumulation of Somatic Mutations"
+     },
+     "o_que_e": {
+      "pt": "Mutações adquiridas em células do corpo ao longo da vida.",
+      "en": "Mutations acquired in body cells over a lifetime."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (sequenciação de célula única ou duplex).",
+        "en": "No clinical measure available; research only (single-cell or duplex sequencing)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "mosaicismo-somatico-tecidual",
+     "nome": {
+      "pt": "Mosaicismo Somático / Tecidual",
+      "en": "Somatic / Tissue Mosaicism"
+     },
+     "o_que_e": {
+      "pt": "Os tecidos passam a ser um mosaico de células com genomas diferentes.",
+      "en": "Tissues become a mosaic of cells with different genomes."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (perda do cromossoma Y no sangue, sequenciação profunda).",
+        "en": "No clinical measure available; research only (loss of chromosome Y in blood, deep sequencing)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "hematopoiese-clonal-chip",
+     "nome": {
+      "pt": "Hematopoiese Clonal (CHIP)",
+      "en": "Clonal Haematopoiesis (CHIP)"
+     },
+     "o_que_e": {
+      "pt": "Um grupo de células do sangue com uma mutação expande-se. Associa-se a mais doença cardiovascular e cancro do sangue.",
+      "en": "A group of blood cells with a mutation expands. It is linked to more cardiovascular disease and blood cancer."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Hematopoiese clonal (CHIP)",
+        "en": "Clonal haematopoiesis (CHIP)"
+       },
+       "como_se_mede": {
+        "pt": "Sequenciação de genes no sangue (disponível em alguns centros).",
+        "en": "Gene sequencing of blood (available at some centres)."
+       },
+       "otimo": {
+        "pt": "Sem clones detetáveis (fração alélica < 2%)",
+        "en": "No detectable clones (variant allele fraction < 2%)"
+       },
+       "fonte": "https://doi.org/10.1056/NEJMoa1408617",
+       "resultado": null,
+       "estado": "sem_dados"
+      }
+     ],
+     "estado": "sem_dados"
+    },
+    {
+     "id": "disfuncao-dos-cilios-primarios",
+     "nome": {
+      "pt": "Disfunção dos Cílios Primários",
+      "en": "Primary Cilia Dysfunction"
+     },
+     "o_que_e": {
+      "pt": "Os cílios primários são antenas das células que captam sinais. Com a idade funcionam pior.",
+      "en": "Primary cilia are cell antennae that pick up signals. They work worse with age."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (microscopia do comprimento e número de cílios).",
+        "en": "No clinical measure available; research only (microscopy of cilia length and number)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    }
+   ]
+  },
+  {
+   "id": "rna-proteostase",
+   "nome": {
+    "pt": "RNA e proteostase",
+    "en": "RNA and proteostasis"
+   },
+   "targets": [
+    {
+     "id": "desregulacao-do-rna",
+     "nome": {
+      "pt": "Desregulação do RNA",
+      "en": "RNA Dysregulation"
+     },
+     "o_que_e": {
+      "pt": "O processamento, transporte e degradação do RNA tornam-se menos precisos.",
+      "en": "RNA processing, transport and breakdown become less precise."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (transcriptómica (RNA-seq)).",
+        "en": "No clinical measure available; research only (transcriptomics (RNA-seq))."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "transcricao-criptica",
+     "nome": {
+      "pt": "Transcrição Críptica",
+      "en": "Cryptic Transcription"
+     },
+     "o_que_e": {
+      "pt": "Produção de RNA a partir de locais errados dentro dos genes.",
+      "en": "RNA is produced from the wrong sites inside genes."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (RNA-seq dirigida).",
+        "en": "No clinical measure available; research only (targeted RNA-seq)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "erros-de-splicing",
+     "nome": {
+      "pt": "Erros de Splicing",
+      "en": "Splicing Errors"
+     },
+     "o_que_e": {
+      "pt": "Erros no corte e junção do RNA, que geram proteínas defeituosas.",
+      "en": "Errors in cutting and joining RNA, producing faulty proteins."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (análise de splicing por RNA-seq).",
+        "en": "No clinical measure available; research only (splicing analysis by RNA-seq)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "aumento-da-velocidade-de-elongacao-transcricional",
+     "nome": {
+      "pt": "Aumento da Velocidade de Elongação Transcricional",
+      "en": "Faster Transcriptional Elongation"
+     },
+     "o_que_e": {
+      "pt": "A maquinaria que copia os genes acelera e comete mais erros.",
+      "en": "The machinery that copies genes speeds up and makes more errors."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (sequenciação de RNA nascente).",
+        "en": "No clinical measure available; research only (nascent RNA sequencing)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "declinio-transcricional-dependente-do-tamanho-do-gene",
+     "nome": {
+      "pt": "Declínio Transcricional Dependente do Tamanho do Gene",
+      "en": "Gene-Length-Dependent Transcriptional Decline"
+     },
+     "o_que_e": {
+      "pt": "Os genes mais longos são cada vez menos expressos com a idade.",
+      "en": "Longer genes are expressed less and less with age."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (transcriptómica (RNA-seq)).",
+        "en": "No clinical measure available; research only (transcriptomics (RNA-seq))."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "agregacao-proteica",
+     "nome": {
+      "pt": "Agregação Proteica",
+      "en": "Protein Aggregation"
+     },
+     "o_que_e": {
+      "pt": "Proteínas mal dobradas juntam-se em agregados tóxicos, como na doença de Alzheimer.",
+      "en": "Misfolded proteins clump into toxic aggregates, as in Alzheimer's disease."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (ensaios de agregação; PET amiloide e p-tau217 no sangue só se usam no diagnóstico de doença).",
+        "en": "No clinical measure available; research only (aggregation assays; amyloid PET and blood p-tau217 are used only to diagnose disease)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "falha-das-chaperonas-moleculares",
+     "nome": {
+      "pt": "Falha das Chaperonas Moleculares",
+      "en": "Molecular Chaperone Failure"
+     },
+     "o_que_e": {
+      "pt": "As chaperonas, que ajudam as proteínas a dobrar-se, perdem eficácia.",
+      "en": "Chaperones, which help proteins fold, lose effectiveness."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (proteínas de choque térmico em tecidos).",
+        "en": "No clinical measure available; research only (heat-shock proteins in tissue)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "disfuncao-do-proteassoma",
+     "nome": {
+      "pt": "Disfunção do Proteassoma",
+      "en": "Proteasome Dysfunction"
+     },
+     "o_que_e": {
+      "pt": "O proteassoma, que destrói proteínas danificadas, trabalha mais devagar.",
+      "en": "The proteasome, which destroys damaged proteins, works more slowly."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (atividade do proteassoma em células).",
+        "en": "No clinical measure available; research only (proteasome activity in cells)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "disfuncao-lisossomal",
+     "nome": {
+      "pt": "Disfunção Lisossomal",
+      "en": "Lysosomal Dysfunction"
+     },
+     "o_que_e": {
+      "pt": "Os lisossomas, onde a célula digere o lixo, perdem acidez e capacidade.",
+      "en": "Lysosomes, where the cell digests waste, lose acidity and capacity."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (acidez e enzimas lisossomais em células).",
+        "en": "No clinical measure available; research only (lysosomal acidity and enzymes in cells)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "autofagia-mediada-por-chaperonas-reduzida",
+     "nome": {
+      "pt": "Autofagia Mediada por Chaperonas Reduzida",
+      "en": "Reduced Chaperone-Mediated Autophagy"
+     },
+     "o_que_e": {
+      "pt": "Uma via seletiva de reciclagem de proteínas (via LAMP2A) diminui com a idade.",
+      "en": "A selective protein-recycling route (via LAMP2A) declines with age."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (níveis de LAMP2A).",
+        "en": "No clinical measure available; research only (LAMP2A levels)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "er-fagia-defeituosa",
+     "nome": {
+      "pt": "ER-fagia Defeituosa",
+      "en": "Defective ER-phagy"
+     },
+     "o_que_e": {
+      "pt": "Falha na reciclagem de partes gastas do retículo endoplasmático.",
+      "en": "Failure to recycle worn parts of the endoplasmic reticulum."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (marcadores de ER-fagia em células).",
+        "en": "No clinical measure available; research only (ER-phagy markers in cells)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "remodelacao-do-reticulo-endoplasmatico",
+     "nome": {
+      "pt": "Remodelação do Retículo Endoplasmático",
+      "en": "Endoplasmic Reticulum Remodelling"
+     },
+     "o_que_e": {
+      "pt": "O retículo endoplasmático, a fábrica de proteínas e lípidos, muda de forma e de tamanho.",
+      "en": "The endoplasmic reticulum, the protein and lipid factory, changes shape and size."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (microscopia eletrónica).",
+        "en": "No clinical measure available; research only (electron microscopy)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "disfuncao-do-reticulo-endoplasmatico",
+     "nome": {
+      "pt": "Disfunção do Retículo Endoplasmático",
+      "en": "Endoplasmic Reticulum Dysfunction"
+     },
+     "o_que_e": {
+      "pt": "Stress crónico do retículo endoplasmático, com proteínas mal dobradas e resposta UPR desregulada.",
+      "en": "Chronic endoplasmic reticulum stress, with misfolded proteins and a deregulated UPR response."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (marcadores da resposta UPR).",
+        "en": "No clinical measure available; research only (UPR markers)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    }
+   ]
+  },
+  {
+   "id": "mitocondrias",
+   "nome": {
+    "pt": "Mitocôndrias",
+    "en": "Mitochondria"
+   },
+   "targets": [
+    {
+     "id": "declinio-da-fosforilacao-oxidativa",
+     "nome": {
+      "pt": "Declínio da Fosforilação Oxidativa",
+      "en": "Decline in Oxidative Phosphorylation"
+     },
+     "o_que_e": {
+      "pt": "As mitocôndrias produzem menos ATP a partir do oxigénio.",
+      "en": "Mitochondria make less ATP from oxygen."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "VO2max",
+        "en": "VO2max"
+       },
+       "como_se_mede": {
+        "pt": "Prova de esforço cardiopulmonar (ergoespirometria); os relógios desportivos dão uma estimativa.",
+        "en": "Cardiopulmonary exercise test; sports watches give an estimate."
+       },
+       "otimo": {
+        "pt": "Nível \"elite\" para a idade e o sexo (≥ percentil 97,7)",
+        "en": "\"Elite\" level for age and sex (≥ 97.7th percentile)"
+       },
+       "fonte": "https://doi.org/10.1001/jamanetworkopen.2018.3605",
+       "resultado": null,
+       "estado": "sem_dados"
+      }
+     ],
+     "estado": "sem_dados"
+    },
+    {
+     "id": "alteracoes-da-dinamica-mitocondrial",
+     "nome": {
+      "pt": "Alterações da Dinâmica Mitocondrial",
+      "en": "Altered Mitochondrial Dynamics"
+     },
+     "o_que_e": {
+      "pt": "Desequilíbrio entre a fusão e a divisão das mitocôndrias.",
+      "en": "Imbalance between mitochondrial fusion and fission."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (microscopia de biópsias musculares).",
+        "en": "No clinical measure available; research only (microscopy of muscle biopsies)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "controlo-de-qualidade-mitocondrial-defeituoso",
+     "nome": {
+      "pt": "Controlo de Qualidade Mitocondrial Defeituoso",
+      "en": "Defective Mitochondrial Quality Control"
+     },
+     "o_que_e": {
+      "pt": "As mitocôndrias danificadas deixam de ser eliminadas (mitofagia) e substituídas.",
+      "en": "Damaged mitochondria are no longer cleared (mitophagy) and replaced."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (marcadores de mitofagia, PINK1/Parkin em células).",
+        "en": "No clinical measure available; research only (mitophagy markers, PINK1/Parkin in cells)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "desregulacao-do-calcio-mitocondrial",
+     "nome": {
+      "pt": "Desregulação do Cálcio Mitocondrial",
+      "en": "Mitochondrial Calcium Dysregulation"
+     },
+     "o_que_e": {
+      "pt": "As mitocôndrias gerem mal o cálcio, o que pode levar à morte celular.",
+      "en": "Mitochondria handle calcium poorly, which can lead to cell death."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (imagem de cálcio em células).",
+        "en": "No clinical measure available; research only (calcium imaging in cells)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "mutacoes-no-dna-mitocondrial",
+     "nome": {
+      "pt": "Mutações no DNA Mitocondrial",
+      "en": "Mitochondrial DNA Mutations"
+     },
+     "o_que_e": {
+      "pt": "O DNA próprio das mitocôndrias acumula mutações e deleções.",
+      "en": "The mitochondria's own DNA accumulates mutations and deletions."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (sequenciação profunda e número de cópias do DNA mitocondrial).",
+        "en": "No clinical measure available; research only (deep sequencing and mitochondrial DNA copy number)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "libertacao-de-damps-mitocondriais",
+     "nome": {
+      "pt": "Libertação de DAMPs Mitocondriais",
+      "en": "Release of Mitochondrial DAMPs"
+     },
+     "o_que_e": {
+      "pt": "Fragmentos de mitocôndrias danificadas saem da célula e ativam a inflamação.",
+      "en": "Fragments of damaged mitochondria leak out and trigger inflammation."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (DNA mitocondrial livre no plasma).",
+        "en": "No clinical measure available; research only (cell-free mitochondrial DNA in plasma)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "declinio-do-nad",
+     "nome": {
+      "pt": "Declínio do NAD+",
+      "en": "NAD+ Decline"
+     },
+     "o_que_e": {
+      "pt": "O NAD+, uma molécula essencial para a energia e reparação do DNA, desce com a idade.",
+      "en": "NAD+, a molecule essential for energy and DNA repair, falls with age."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (NAD+ no sangue por espectrometria de massa; há testes comerciais sem valores de referência validados).",
+        "en": "No clinical measure available; research only (blood NAD+ by mass spectrometry; commercial tests exist without validated reference values)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "desequilibrio-redox",
+     "nome": {
+      "pt": "Desequilíbrio Redox",
+      "en": "Redox Imbalance"
+     },
+     "o_que_e": {
+      "pt": "Desequilíbrio entre oxidantes e antioxidantes (como a glutationa) dentro das células.",
+      "en": "Imbalance between oxidants and antioxidants (such as glutathione) inside cells."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (rácio glutationa reduzida/oxidada (GSH/GSSG)).",
+        "en": "No clinical measure available; research only (reduced/oxidised glutathione ratio (GSH/GSSG))."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "stress-oxidativo",
+     "nome": {
+      "pt": "Stress Oxidativo",
+      "en": "Oxidative Stress"
+     },
+     "o_que_e": {
+      "pt": "Excesso de radicais livres que danificam lípidos, proteínas e DNA.",
+      "en": "Excess free radicals that damage lipids, proteins and DNA."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (F2-isoprostanos na urina, LDL oxidada).",
+        "en": "No clinical measure available; research only (urinary F2-isoprostanes, oxidised LDL)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      },
+      {
+       "nome": {
+        "pt": "Ferritina",
+        "en": "Ferritin"
+       },
+       "como_se_mede": {
+        "pt": "Análise ao sangue; mede as reservas de ferro, que em excesso favorecem radicais livres.",
+        "en": "Blood test; measures iron stores, which in excess promote free radicals."
+       },
+       "otimo": {
+        "pt": "< 100 ng/mL",
+        "en": "< 100 ng/mL"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 310.0,
+        "unidade": "ng/mL",
+        "data": "2026-08-25"
+       },
+       "estado": "fora"
+      },
+      {
+       "nome": {
+        "pt": "Saturação da transferrina",
+        "en": "Transferrin saturation"
+       },
+       "como_se_mede": {
+        "pt": "Análise ao sangue.",
+        "en": "Blood test."
+       },
+       "otimo": {
+        "pt": "25–45 %",
+        "en": "25–45 %"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 37.0,
+        "unidade": "%",
+        "data": "2026-08-25"
+       },
+       "estado": "otimo"
+      }
+     ],
+     "estado": "fora"
+    },
+    {
+     "id": "disfuncao-peroxissomal",
+     "nome": {
+      "pt": "Disfunção Peroxissomal",
+      "en": "Peroxisomal Dysfunction"
+     },
+     "o_que_e": {
+      "pt": "Os peroxissomas, que queimam gorduras de cadeia longa e neutralizam peróxidos, funcionam pior.",
+      "en": "Peroxisomes, which burn long-chain fats and neutralise peroxides, work less well."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (ácidos gordos de cadeia muito longa (VLCFA), usados só no diagnóstico de doenças peroxissomais).",
+        "en": "No clinical measure available; research only (very-long-chain fatty acids (VLCFA), used only to diagnose peroxisomal disorders)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "falha-na-comunicacao-peroxissoma-mitocondria",
+     "nome": {
+      "pt": "Falha na Comunicação Peroxissoma-Mitocôndria",
+      "en": "Peroxisome–Mitochondria Communication Failure"
+     },
+     "o_que_e": {
+      "pt": "Peroxissomas e mitocôndrias deixam de coordenar o metabolismo das gorduras e o controlo dos radicais livres.",
+      "en": "Peroxisomes and mitochondria stop coordinating fat metabolism and free-radical control."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (estudos celulares de contacto entre organelos).",
+        "en": "No clinical measure available; research only (cell studies of organelle contacts)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    }
+   ]
+  },
+  {
+   "id": "metabolismo",
+   "nome": {
+    "pt": "Metabolismo",
+    "en": "Metabolism"
+   },
+   "targets": [
+    {
+     "id": "declinio-da-homeostase-metabolica",
+     "nome": {
+      "pt": "Declínio da Homeostase Metabólica",
+      "en": "Decline in Metabolic Homeostasis"
+     },
+     "o_que_e": {
+      "pt": "O corpo perde a capacidade de manter estáveis a glicose, os lípidos e a pressão arterial.",
+      "en": "The body loses the ability to keep glucose, lipids and blood pressure stable."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Glicose em jejum",
+        "en": "Fasting glucose"
+       },
+       "como_se_mede": {
+        "pt": "Análise ao sangue em jejum.",
+        "en": "Fasting blood test."
+       },
+       "otimo": {
+        "pt": "70–90 mg/dL",
+        "en": "70–90 mg/dL"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 73.3,
+        "unidade": "mg/dL",
+        "data": "2026-08-25"
+       },
+       "estado": "otimo",
+       "nota": {
+        "pt": "Jejum não documentado nesta colheita.",
+        "en": "Fasting status not documented for this draw."
+       }
+      },
+      {
+       "nome": {
+        "pt": "Triglicéridos",
+        "en": "Triglycerides"
+       },
+       "como_se_mede": {
+        "pt": "Perfil lipídico.",
+        "en": "Lipid panel."
+       },
+       "otimo": {
+        "pt": "< 100 mg/dL",
+        "en": "< 100 mg/dL"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 68.0,
+        "unidade": "mg/dL",
+        "data": "2026-08-25"
+       },
+       "estado": "otimo"
+      },
+      {
+       "nome": {
+        "pt": "HDL colesterol",
+        "en": "HDL cholesterol"
+       },
+       "como_se_mede": {
+        "pt": "Perfil lipídico.",
+        "en": "Lipid panel."
+       },
+       "otimo": {
+        "pt": "50–80 mg/dL",
+        "en": "50–80 mg/dL"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 41.0,
+        "unidade": "mg/dL",
+        "data": "2026-08-25"
+       },
+       "estado": "fora"
+      },
+      {
+       "nome": {
+        "pt": "Pressão arterial",
+        "en": "Blood pressure"
+       },
+       "como_se_mede": {
+        "pt": "Medição em repouso ou ambulatória de 24 h (MAPA).",
+        "en": "Resting or 24-hour ambulatory measurement."
+       },
+       "otimo": {
+        "pt": "< 120/80 mmHg",
+        "en": "< 120/80 mmHg"
+       },
+       "fonte": "https://doi.org/10.1161/CIR.0000000000001078",
+       "resultado": null,
+       "estado": "sem_dados"
+      }
+     ],
+     "estado": "fora"
+    },
+    {
+     "id": "resistencia-a-insulina",
+     "nome": {
+      "pt": "Resistência à Insulina",
+      "en": "Insulin Resistance"
+     },
+     "o_que_e": {
+      "pt": "As células respondem menos à insulina, e o pâncreas tem de produzir mais para controlar a glicose.",
+      "en": "Cells respond less to insulin, so the pancreas must make more to control glucose."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Insulina em jejum",
+        "en": "Fasting insulin"
+       },
+       "como_se_mede": {
+        "pt": "Análise ao sangue em jejum.",
+        "en": "Fasting blood test."
+       },
+       "otimo": {
+        "pt": "2–6 µU/mL",
+        "en": "2–6 µU/mL"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 11.6,
+        "unidade": "µU/mL",
+        "data": "2026-08-25"
+       },
+       "estado": "fora",
+       "nota": {
+        "pt": "Jejum não documentado nesta colheita.",
+        "en": "Fasting status not documented for this draw."
+       }
+      },
+      {
+       "nome": {
+        "pt": "HOMA-IR",
+        "en": "HOMA-IR"
+       },
+       "como_se_mede": {
+        "pt": "Cálculo a partir da insulina e da glicose em jejum.",
+        "en": "Calculated from fasting insulin and glucose."
+       },
+       "otimo": {
+        "pt": "0,5–1",
+        "en": "0.5–1"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 2.1,
+        "unidade": "",
+        "data": "2026-08-25"
+       },
+       "estado": "fora",
+       "nota": {
+        "pt": "Jejum não documentado nesta colheita.",
+        "en": "Fasting status not documented for this draw."
+       }
+      },
+      {
+       "nome": {
+        "pt": "Péptido C",
+        "en": "C-peptide"
+       },
+       "como_se_mede": {
+        "pt": "Análise ao sangue.",
+        "en": "Blood test."
+       },
+       "otimo": {
+        "pt": "0,8–2 ng/mL",
+        "en": "0.8–2 ng/mL"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 2.33,
+        "unidade": "ng/mL",
+        "data": "2026-08-25"
+       },
+       "estado": "fora"
+      },
+      {
+       "nome": {
+        "pt": "Rácio triglicéridos/HDL",
+        "en": "Triglyceride/HDL ratio"
+       },
+       "como_se_mede": {
+        "pt": "Cálculo a partir do perfil lipídico.",
+        "en": "Calculated from the lipid panel."
+       },
+       "otimo": {
+        "pt": "0–1",
+        "en": "0–1"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 1.66,
+        "unidade": "ratio",
+        "data": "2026-08-25"
+       },
+       "estado": "fora"
+      }
+     ],
+     "estado": "fora"
+    },
+    {
+     "id": "hiperglicemia-e-intolerancia-a-glicose",
+     "nome": {
+      "pt": "Hiperglicemia e Intolerância à Glicose",
+      "en": "Hyperglycaemia and Glucose Intolerance"
+     },
+     "o_que_e": {
+      "pt": "Glicose no sangue acima do ideal, em jejum ou depois das refeições.",
+      "en": "Blood glucose above ideal, fasting or after meals."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Glicose em jejum",
+        "en": "Fasting glucose"
+       },
+       "como_se_mede": {
+        "pt": "Análise ao sangue em jejum.",
+        "en": "Fasting blood test."
+       },
+       "otimo": {
+        "pt": "70–90 mg/dL",
+        "en": "70–90 mg/dL"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 73.3,
+        "unidade": "mg/dL",
+        "data": "2026-08-25"
+       },
+       "estado": "otimo",
+       "nota": {
+        "pt": "Jejum não documentado nesta colheita.",
+        "en": "Fasting status not documented for this draw."
+       }
+      },
+      {
+       "nome": {
+        "pt": "Frutosamina",
+        "en": "Fructosamine"
+       },
+       "como_se_mede": {
+        "pt": "Análise ao sangue; reflete a glicose média das últimas 2–3 semanas.",
+        "en": "Blood test; reflects average glucose over the last 2–3 weeks."
+       },
+       "otimo": {
+        "pt": "205–250 µmol/L",
+        "en": "205–250 µmol/L"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 210.42,
+        "unidade": "µmol/L",
+        "data": "2026-08-25"
+       },
+       "estado": "otimo",
+       "nota": {
+        "pt": "Usada em vez da HbA1c, que pode ser enganadora quando a vida dos glóbulos vermelhos está alterada.",
+        "en": "Used instead of HbA1c, which can mislead when red-cell lifespan is altered."
+       }
+      }
+     ],
+     "estado": "otimo"
+    },
+    {
+     "id": "disfuncao-do-tecido-adiposo",
+     "nome": {
+      "pt": "Disfunção do Tecido Adiposo",
+      "en": "Adipose Tissue Dysfunction"
+     },
+     "o_que_e": {
+      "pt": "A gordura acumula-se à volta dos órgãos (visceral) e torna-se inflamada.",
+      "en": "Fat builds up around the organs (visceral) and becomes inflamed."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Razão cintura/altura",
+        "en": "Waist-to-height ratio"
+       },
+       "como_se_mede": {
+        "pt": "Fita métrica; a gordura visceral também se mede por DEXA ou RM.",
+        "en": "Tape measure; visceral fat can also be measured by DEXA or MRI."
+       },
+       "otimo": {
+        "pt": "< 0,5",
+        "en": "< 0.5"
+       },
+       "fonte": "https://doi.org/10.1111/j.1467-789X.2011.00952.x",
+       "resultado": null,
+       "estado": "sem_dados"
+      },
+      {
+       "nome": {
+        "pt": "Rácio triglicéridos/HDL",
+        "en": "Triglyceride/HDL ratio"
+       },
+       "como_se_mede": {
+        "pt": "Cálculo a partir do perfil lipídico.",
+        "en": "Calculated from the lipid panel."
+       },
+       "otimo": {
+        "pt": "0–1",
+        "en": "0–1"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 1.66,
+        "unidade": "ratio",
+        "data": "2026-08-25"
+       },
+       "estado": "fora"
+      }
+     ],
+     "estado": "fora"
+    },
+    {
+     "id": "declinio-da-termogenese",
+     "nome": {
+      "pt": "Declínio da Termogénese",
+      "en": "Decline in Thermogenesis"
+     },
+     "o_que_e": {
+      "pt": "A gordura castanha, que queima energia para produzir calor, diminui com a idade.",
+      "en": "Brown fat, which burns energy to make heat, declines with age."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (PET-TAC com 18F-FDG após exposição ao frio).",
+        "en": "No clinical measure available; research only (18F-FDG PET-CT after cold exposure)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "desregulacao-endocrina",
+     "nome": {
+      "pt": "Desregulação Endócrina",
+      "en": "Endocrine Dysregulation"
+     },
+     "o_que_e": {
+      "pt": "As hormonas do eixo hipófise-glândulas mudam de nível e de ritmo com a idade.",
+      "en": "Hormones of the pituitary–gland axes change in level and rhythm with age."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Testosterona total",
+        "en": "Total testosterone"
+       },
+       "como_se_mede": {
+        "pt": "Análise ao sangue.",
+        "en": "Blood test."
+       },
+       "otimo": {
+        "pt": "500–900 ng/dL",
+        "en": "500–900 ng/dL"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 448.74,
+        "unidade": "ng/dL",
+        "data": "2026-08-25"
+       },
+       "estado": "fora"
+      },
+      {
+       "nome": {
+        "pt": "DHEA-S",
+        "en": "DHEA-S"
+       },
+       "como_se_mede": {
+        "pt": "Análise ao sangue.",
+        "en": "Blood test."
+       },
+       "otimo": {
+        "pt": "250–464 µg/dL",
+        "en": "250–464 µg/dL"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 311.87,
+        "unidade": "µg/dL",
+        "data": "2026-08-25"
+       },
+       "estado": "otimo"
+      },
+      {
+       "nome": {
+        "pt": "Cortisol",
+        "en": "Cortisol"
+       },
+       "como_se_mede": {
+        "pt": "Análise ao sangue.",
+        "en": "Blood test."
+       },
+       "otimo": {
+        "pt": "6,2–19,4 µg/dL",
+        "en": "6.2–19.4 µg/dL"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 9.31,
+        "unidade": "µg/dL",
+        "data": "2026-08-25"
+       },
+       "estado": "otimo",
+       "nota": {
+        "pt": "Hora da colheita não indicada.",
+        "en": "Collection time not stated."
+       }
+      }
+     ],
+     "estado": "fora"
+    },
+    {
+     "id": "declinio-do-sinal-estrogenico",
+     "nome": {
+      "pt": "Declínio do Sinal Estrogénico",
+      "en": "Decline in Oestrogen Signalling"
+     },
+     "o_que_e": {
+      "pt": "Queda ou desequilíbrio do estrogénio, que também protege o osso, o cérebro e os vasos nos homens.",
+      "en": "Fall or imbalance of oestrogen, which also protects bone, brain and blood vessels in men."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Estradiol",
+        "en": "Estradiol"
+       },
+       "como_se_mede": {
+        "pt": "Análise ao sangue.",
+        "en": "Blood test."
+       },
+       "otimo": {
+        "pt": "20–35 pg/mL",
+        "en": "20–35 pg/mL"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 51.0,
+        "unidade": "pg/mL",
+        "data": "2026-08-25"
+       },
+       "estado": "fora"
+      }
+     ],
+     "estado": "fora"
+    },
+    {
+     "id": "alteracoes-da-tiroide",
+     "nome": {
+      "pt": "Alterações da Tiroide",
+      "en": "Thyroid Changes"
+     },
+     "o_que_e": {
+      "pt": "Mudanças na produção e conversão das hormonas da tiroide, que regulam o metabolismo.",
+      "en": "Changes in production and conversion of thyroid hormones, which regulate metabolism."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "TSH",
+        "en": "TSH"
+       },
+       "como_se_mede": {
+        "pt": "Análise ao sangue.",
+        "en": "Blood test."
+       },
+       "otimo": {
+        "pt": "0,5–2,5 µIU/mL",
+        "en": "0.5–2.5 µIU/mL"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 1.35,
+        "unidade": "µIU/mL",
+        "data": "2026-08-25"
+       },
+       "estado": "otimo"
+      },
+      {
+       "nome": {
+        "pt": "T4 livre",
+        "en": "Free T4"
+       },
+       "como_se_mede": {
+        "pt": "Análise ao sangue.",
+        "en": "Blood test."
+       },
+       "otimo": {
+        "pt": "1–1,6 ng/dL",
+        "en": "1–1.6 ng/dL"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 1.65,
+        "unidade": "ng/dL",
+        "data": "2026-08-25"
+       },
+       "estado": "fora"
+      },
+      {
+       "nome": {
+        "pt": "T3 livre",
+        "en": "Free T3"
+       },
+       "como_se_mede": {
+        "pt": "Análise ao sangue.",
+        "en": "Blood test."
+       },
+       "otimo": {
+        "pt": "3–4 pg/mL",
+        "en": "3–4 pg/mL"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 3.38,
+        "unidade": "pg/mL",
+        "data": "2026-08-25"
+       },
+       "estado": "otimo"
+      },
+      {
+       "nome": {
+        "pt": "Anticorpos anti-tiroglobulina",
+        "en": "Anti-thyroglobulin antibodies"
+       },
+       "como_se_mede": {
+        "pt": "Análise ao sangue.",
+        "en": "Blood test."
+       },
+       "otimo": {
+        "pt": "0–1 IU/mL",
+        "en": "0–1 IU/mL"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 0.9,
+        "unidade": "IU/mL",
+        "data": "2026-08-25"
+       },
+       "estado": "otimo"
+      }
+     ],
+     "estado": "fora"
+    },
+    {
+     "id": "acumulacao-de-produtos-finais-de-glicacao-avancada-ages",
+     "nome": {
+      "pt": "Acumulação de Produtos Finais de Glicação Avançada (AGEs)",
+      "en": "Accumulation of Advanced Glycation End-products (AGEs)"
+     },
+     "o_que_e": {
+      "pt": "Açúcares ligam-se a proteínas como o colagénio e tornam os tecidos rígidos e inflamados.",
+      "en": "Sugars bind to proteins such as collagen, making tissues stiff and inflamed."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Autofluorescência da pele (AGE Reader)",
+        "en": "Skin autofluorescence (AGE Reader)"
+       },
+       "como_se_mede": {
+        "pt": "Leitor ótico no antebraço; não invasivo.",
+        "en": "Optical reader on the forearm; non-invasive."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido (referência depende da idade)",
+        "en": "no defined optimum (reference depends on age)"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_dados"
+      },
+      {
+       "nome": {
+        "pt": "Frutosamina",
+        "en": "Fructosamine"
+       },
+       "como_se_mede": {
+        "pt": "Análise ao sangue; reflete a glicose média das últimas 2–3 semanas.",
+        "en": "Blood test; reflects average glucose over the last 2–3 weeks."
+       },
+       "otimo": {
+        "pt": "205–250 µmol/L",
+        "en": "205–250 µmol/L"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 210.42,
+        "unidade": "µmol/L",
+        "data": "2026-08-25"
+       },
+       "estado": "otimo",
+       "nota": {
+        "pt": "Usada em vez da HbA1c, que pode ser enganadora quando a vida dos glóbulos vermelhos está alterada.",
+        "en": "Used instead of HbA1c, which can mislead when red-cell lifespan is altered."
+       }
+      }
+     ],
+     "estado": "otimo"
+    }
+   ]
+  },
+  {
+   "id": "inflamacao-matriz",
+   "nome": {
+    "pt": "Inflamação e matriz",
+    "en": "Inflammation and matrix"
+   },
+   "targets": [
+    {
+     "id": "inflammaging",
+     "nome": {
+      "pt": "Inflammaging",
+      "en": "Inflammaging"
+     },
+     "o_que_e": {
+      "pt": "Inflamação crónica de baixo grau típica do envelhecimento.",
+      "en": "The chronic low-grade inflammation typical of ageing."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "PCR de alta sensibilidade",
+        "en": "High-sensitivity CRP"
+       },
+       "como_se_mede": {
+        "pt": "Análise ao sangue (PCR-as).",
+        "en": "Blood test (hs-CRP)."
+       },
+       "otimo": {
+        "pt": "< 1 mg/L",
+        "en": "< 1 mg/L"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 0.44,
+        "unidade": "mg/L",
+        "data": "2026-08-25"
+       },
+       "estado": "otimo"
+      },
+      {
+       "nome": {
+        "pt": "Leucócitos totais",
+        "en": "Total white blood cells"
+       },
+       "como_se_mede": {
+        "pt": "Hemograma.",
+        "en": "Full blood count."
+       },
+       "otimo": {
+        "pt": "3,5–6 ×10³/µL",
+        "en": "3.5–6 ×10³/µL"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 7.03,
+        "unidade": "×10³/µL",
+        "data": "2026-08-25"
+       },
+       "estado": "fora"
+      }
+     ],
+     "estado": "fora"
+    },
+    {
+     "id": "imunossenescencia",
+     "nome": {
+      "pt": "Imunossenescência",
+      "en": "Immunosenescence"
+     },
+     "o_que_e": {
+      "pt": "O sistema imunitário fica menos eficaz contra infeções e cancro, e mais inflamatório.",
+      "en": "The immune system becomes less effective against infection and cancer, and more inflammatory."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Linfócitos (absoluto)",
+        "en": "Lymphocytes (absolute)"
+       },
+       "como_se_mede": {
+        "pt": "Hemograma.",
+        "en": "Full blood count."
+       },
+       "otimo": {
+        "pt": "1–3,5 ×10³/µL",
+        "en": "1–3.5 ×10³/µL"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 3.25,
+        "unidade": "×10³/µL",
+        "data": "2026-08-25"
+       },
+       "estado": "otimo"
+      },
+      {
+       "nome": {
+        "pt": "Células T naive e rácio CD4/CD8",
+        "en": "Naive T cells and CD4/CD8 ratio"
+       },
+       "como_se_mede": {
+        "pt": "Citometria de fluxo no sangue (subpopulações de linfócitos).",
+        "en": "Blood flow cytometry (lymphocyte subsets)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido (um rácio CD4/CD8 < 1 associa-se a pior prognóstico)",
+        "en": "no defined optimum (a CD4/CD8 ratio < 1 is linked to worse outcomes)"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_dados"
+      }
+     ],
+     "estado": "otimo"
+    },
+    {
+     "id": "involucao-timica",
+     "nome": {
+      "pt": "Involução Tímica",
+      "en": "Thymic Involution"
+     },
+     "o_que_e": {
+      "pt": "O timo, onde amadurecem as células T, encolhe e é substituído por gordura.",
+      "en": "The thymus, where T cells mature, shrinks and is replaced by fat."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (TRECs no sangue, volume do timo por TAC ou RM).",
+        "en": "No clinical measure available; research only (blood TRECs, thymus volume on CT or MRI)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "perda-de-celulas-t-naive",
+     "nome": {
+      "pt": "Perda de Células T Naive",
+      "en": "Loss of Naive T Cells"
+     },
+     "o_que_e": {
+      "pt": "Diminuem as células T \"novas\", capazes de reconhecer ameaças que o corpo nunca viu.",
+      "en": "Fewer \"new\" T cells able to recognise threats the body has never seen."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Células T naive e rácio CD4/CD8",
+        "en": "Naive T cells and CD4/CD8 ratio"
+       },
+       "como_se_mede": {
+        "pt": "Citometria de fluxo no sangue (subpopulações de linfócitos).",
+        "en": "Blood flow cytometry (lymphocyte subsets)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido (um rácio CD4/CD8 < 1 associa-se a pior prognóstico)",
+        "en": "no defined optimum (a CD4/CD8 ratio < 1 is linked to worse outcomes)"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_dados"
+      }
+     ],
+     "estado": "sem_dados"
+    },
+    {
+     "id": "restricao-do-repertorio-tcr",
+     "nome": {
+      "pt": "Restrição do Repertório TCR",
+      "en": "Restricted TCR Repertoire"
+     },
+     "o_que_e": {
+      "pt": "A variedade de recetores das células T diminui, e o corpo reconhece menos ameaças diferentes.",
+      "en": "The variety of T-cell receptors shrinks, so the body recognises fewer different threats."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (sequenciação do repertório TCR).",
+        "en": "No clinical measure available; research only (TCR repertoire sequencing)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "disfuncao-da-barreira-intestinal",
+     "nome": {
+      "pt": "Disfunção da Barreira Intestinal",
+      "en": "Gut Barrier Dysfunction"
+     },
+     "o_que_e": {
+      "pt": "A parede do intestino fica mais permeável e deixa passar produtos bacterianos para o sangue.",
+      "en": "The gut wall becomes more permeable and lets bacterial products into the blood."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (teste lactulose/manitol, LPS no plasma; a zonulina não está validada).",
+        "en": "No clinical measure available; research only (lactulose/mannitol test, plasma LPS; zonulin is not validated)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "remodelacao-da-matriz-extracelular",
+     "nome": {
+      "pt": "Remodelação da Matriz Extracelular",
+      "en": "Extracellular Matrix Remodelling"
+     },
+     "o_que_e": {
+      "pt": "A rede de colagénio e outras proteínas entre as células é degradada e reconstruída de forma desequilibrada.",
+      "en": "The network of collagen and other proteins between cells is broken down and rebuilt unevenly."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (fragmentos de colagénio no sangue (PRO-C3, C3M)).",
+        "en": "No clinical measure available; research only (collagen fragments in blood (PRO-C3, C3M))."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "rigidez-da-matriz-extracelular",
+     "nome": {
+      "pt": "Rigidez da Matriz Extracelular",
+      "en": "Extracellular Matrix Stiffening"
+     },
+     "o_que_e": {
+      "pt": "A matriz entre as células fica mais rígida, por ligações cruzadas e glicação.",
+      "en": "The matrix between cells becomes stiffer through cross-linking and glycation."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (elastografia de tecidos).",
+        "en": "No clinical measure available; research only (tissue elastography)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "fragmentacao-da-elastina",
+     "nome": {
+      "pt": "Fragmentação da Elastina",
+      "en": "Elastin Fragmentation"
+     },
+     "o_que_e": {
+      "pt": "A elastina, que dá elasticidade à pele, pulmões e artérias, parte-se e quase não se renova.",
+      "en": "Elastin, which gives elasticity to skin, lungs and arteries, breaks down and is barely renewed."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (desmosina no sangue ou na urina).",
+        "en": "No clinical measure available; research only (desmosine in blood or urine)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "envelhecimento-vascular",
+     "nome": {
+      "pt": "Envelhecimento Vascular",
+      "en": "Vascular Ageing"
+     },
+     "o_que_e": {
+      "pt": "As artérias acumulam placa, perdem flexibilidade e o endotélio funciona pior.",
+      "en": "Arteries build up plaque, lose flexibility and the endothelium works less well."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Apolipoproteína B (ApoB)",
+        "en": "Apolipoprotein B (ApoB)"
+       },
+       "como_se_mede": {
+        "pt": "Análise ao sangue.",
+        "en": "Blood test."
+       },
+       "otimo": {
+        "pt": "< 60 mg/dL (quanto mais baixo, melhor)",
+        "en": "< 60 mg/dL (lower is better)"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 30.0,
+        "unidade": "mg/dL",
+        "data": "2026-08-25"
+       },
+       "estado": "otimo"
+      },
+      {
+       "nome": {
+        "pt": "Lipoproteína(a)",
+        "en": "Lipoprotein(a)"
+       },
+       "como_se_mede": {
+        "pt": "Análise ao sangue.",
+        "en": "Blood test."
+       },
+       "otimo": {
+        "pt": "< 30 mg/dL",
+        "en": "< 30 mg/dL"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 2.0,
+        "unidade": "mg/dL",
+        "data": "2026-08-25"
+       },
+       "estado": "otimo"
+      },
+      {
+       "nome": {
+        "pt": "Homocisteína",
+        "en": "Homocysteine"
+       },
+       "como_se_mede": {
+        "pt": "Análise ao sangue.",
+        "en": "Blood test."
+       },
+       "otimo": {
+        "pt": "5–9 µmol/L",
+        "en": "5–9 µmol/L"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 18.4,
+        "unidade": "µmol/L",
+        "data": "2026-08-25"
+       },
+       "estado": "fora"
+      },
+      {
+       "nome": {
+        "pt": "Pressão arterial",
+        "en": "Blood pressure"
+       },
+       "como_se_mede": {
+        "pt": "Medição em repouso ou ambulatória de 24 h (MAPA).",
+        "en": "Resting or 24-hour ambulatory measurement."
+       },
+       "otimo": {
+        "pt": "< 120/80 mmHg",
+        "en": "< 120/80 mmHg"
+       },
+       "fonte": "https://doi.org/10.1161/CIR.0000000000001078",
+       "resultado": null,
+       "estado": "sem_dados"
+      },
+      {
+       "nome": {
+        "pt": "Score de cálcio coronário (CAC)",
+        "en": "Coronary artery calcium score (CAC)"
+       },
+       "como_se_mede": {
+        "pt": "TAC cardíaca sem contraste.",
+        "en": "Non-contrast cardiac CT."
+       },
+       "otimo": {
+        "pt": "0 (sem cálcio coronário)",
+        "en": "0 (no coronary calcium)"
+       },
+       "fonte": "https://doi.org/10.1161/CIR.0000000000000625",
+       "resultado": null,
+       "estado": "sem_dados"
+      }
+     ],
+     "estado": "fora"
+    },
+    {
+     "id": "rigidez-arterial",
+     "nome": {
+      "pt": "Rigidez Arterial",
+      "en": "Arterial Stiffness"
+     },
+     "o_que_e": {
+      "pt": "As grandes artérias endurecem, o que sobrecarrega o coração, o cérebro e os rins.",
+      "en": "Large arteries stiffen, straining the heart, brain and kidneys."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Velocidade da onda de pulso carotídeo-femoral",
+        "en": "Carotid-femoral pulse wave velocity"
+       },
+       "como_se_mede": {
+        "pt": "Aparelho de tonometria ou oscilometria (clínico, não de rotina).",
+        "en": "Tonometry or oscillometry device (clinical, not routine)."
+       },
+       "otimo": {
+        "pt": "< 10 m/s (limiar de lesão; os valores de referência dependem da idade)",
+        "en": "< 10 m/s (damage threshold; reference values depend on age)"
+       },
+       "fonte": "https://doi.org/10.1093/eurheartj/ehy339",
+       "resultado": null,
+       "estado": "sem_dados"
+      }
+     ],
+     "estado": "sem_dados"
+    }
+   ]
+  },
+  {
+   "id": "circadiano-cerebro",
+   "nome": {
+    "pt": "Ritmo circadiano e cérebro",
+    "en": "Circadian rhythm and brain"
+   },
+   "targets": [
+    {
+     "id": "perturbacoes-circadianas",
+     "nome": {
+      "pt": "Perturbações Circadianas",
+      "en": "Circadian Disruption"
+     },
+     "o_que_e": {
+      "pt": "O ritmo de 24 horas do corpo enfraquece ou desalinha-se com o dia e a noite.",
+      "en": "The body's 24-hour rhythm weakens or falls out of line with day and night."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Regularidade do sono",
+        "en": "Sleep regularity"
+       },
+       "como_se_mede": {
+        "pt": "Actigrafia ou relógio/anel com sensor (índice de regularidade do sono).",
+        "en": "Actigraphy or a sensor watch/ring (sleep regularity index)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido (mais regular associa-se a menor mortalidade)",
+        "en": "no defined optimum (more regular is linked to lower mortality)"
+       },
+       "fonte": "https://doi.org/10.1093/sleep/zsad253",
+       "resultado": null,
+       "estado": "sem_dados"
+      }
+     ],
+     "estado": "sem_dados"
+    },
+    {
+     "id": "desincronizacao-dos-relogios-biologicos",
+     "nome": {
+      "pt": "Desincronização dos Relógios Biológicos",
+      "en": "Desynchronised Biological Clocks"
+     },
+     "o_que_e": {
+      "pt": "Os relógios dos vários órgãos deixam de estar em sintonia com o relógio central do cérebro.",
+      "en": "The clocks in different organs fall out of step with the brain's master clock."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (início da secreção de melatonina (DLMO), perfis de expressão ao longo do dia).",
+        "en": "No clinical measure available; research only (dim-light melatonin onset (DLMO), time-of-day expression profiles)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "perturbacao-do-sono",
+     "nome": {
+      "pt": "Perturbação do Sono",
+      "en": "Sleep Disruption"
+     },
+     "o_que_e": {
+      "pt": "O sono fica mais curto, mais leve e mais fragmentado.",
+      "en": "Sleep becomes shorter, lighter and more fragmented."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Duração do sono",
+        "en": "Sleep duration"
+       },
+       "como_se_mede": {
+        "pt": "Diário de sono, actigrafia ou wearable.",
+        "en": "Sleep diary, actigraphy or wearable."
+       },
+       "otimo": {
+        "pt": "7–9 h por noite",
+        "en": "7–9 h per night"
+       },
+       "fonte": "https://doi.org/10.5665/sleep.4716",
+       "resultado": null,
+       "estado": "sem_dados"
+      },
+      {
+       "nome": {
+        "pt": "Índice de apneia-hipopneia (IAH)",
+        "en": "Apnoea-hypopnoea index (AHI)"
+       },
+       "como_se_mede": {
+        "pt": "Polissonografia ou estudo do sono em casa.",
+        "en": "Polysomnography or home sleep test."
+       },
+       "otimo": {
+        "pt": "< 5 eventos/h",
+        "en": "< 5 events/h"
+       },
+       "fonte": "https://doi.org/10.5664/jcsm.6506",
+       "resultado": null,
+       "estado": "sem_dados"
+      }
+     ],
+     "estado": "sem_dados"
+    },
+    {
+     "id": "disfuncao-glinfatica",
+     "nome": {
+      "pt": "Disfunção Glinfática",
+      "en": "Glymphatic Dysfunction"
+     },
+     "o_que_e": {
+      "pt": "O sistema que limpa resíduos do cérebro durante o sono funciona pior.",
+      "en": "The system that clears waste from the brain during sleep works less well."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (RM com índice DTI-ALPS).",
+        "en": "No clinical measure available; research only (MRI DTI-ALPS index)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1007/s11604-017-0617-z",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "neuroinflamacao",
+     "nome": {
+      "pt": "Neuroinflamação",
+      "en": "Neuroinflammation"
+     },
+     "o_que_e": {
+      "pt": "Inflamação crónica no cérebro, com ativação da microglia.",
+      "en": "Chronic inflammation in the brain, with microglial activation."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (PET de TSPO, GFAP no sangue).",
+        "en": "No clinical measure available; research only (TSPO PET, blood GFAP)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "disfuncao-da-barreira-hematoencefalica",
+     "nome": {
+      "pt": "Disfunção da Barreira Hematoencefálica",
+      "en": "Blood–Brain Barrier Dysfunction"
+     },
+     "o_que_e": {
+      "pt": "A barreira que protege o cérebro do sangue torna-se mais permeável.",
+      "en": "The barrier that shields the brain from the blood becomes leakier."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (RM com contraste dinâmico; o quociente de albumina exige punção lombar).",
+        "en": "No clinical measure available; research only (dynamic contrast MRI; the albumin quotient needs a lumbar puncture)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    }
+   ]
+  },
+  {
+   "id": "musculo-osso",
+   "nome": {
+    "pt": "Músculo e osso",
+    "en": "Muscle and bone"
+   },
+   "targets": [
+    {
+     "id": "sarcopenia",
+     "nome": {
+      "pt": "Sarcopenia",
+      "en": "Sarcopenia"
+     },
+     "o_que_e": {
+      "pt": "Perda progressiva de massa e força muscular com a idade.",
+      "en": "Progressive loss of muscle mass and strength with age."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Força de preensão",
+        "en": "Grip strength"
+       },
+       "como_se_mede": {
+        "pt": "Dinamómetro de mão.",
+        "en": "Hand dynamometer."
+       },
+       "otimo": {
+        "pt": "≥ 27 kg em homens (limiar EWGSOP2); valores mais altos associam-se a menor mortalidade",
+        "en": "≥ 27 kg in men (EWGSOP2 threshold); higher values are linked to lower mortality"
+       },
+       "fonte": "https://doi.org/10.1093/ageing/afy169",
+       "resultado": null,
+       "estado": "sem_dados"
+      },
+      {
+       "nome": {
+        "pt": "Massa muscular apendicular (ASMI)",
+        "en": "Appendicular lean mass index (ASMI)"
+       },
+       "como_se_mede": {
+        "pt": "DEXA de corpo inteiro (massa magra dos braços e pernas / altura²).",
+        "en": "Whole-body DEXA (arm and leg lean mass / height²)."
+       },
+       "otimo": {
+        "pt": "≥ 7,0 kg/m² em homens (limiar EWGSOP2)",
+        "en": "≥ 7.0 kg/m² in men (EWGSOP2 threshold)"
+       },
+       "fonte": "https://doi.org/10.1093/ageing/afy169",
+       "resultado": null,
+       "estado": "sem_dados"
+      }
+     ],
+     "estado": "sem_dados"
+    },
+    {
+     "id": "perda-de-massa-magra",
+     "nome": {
+      "pt": "Perda de Massa Magra",
+      "en": "Loss of Lean Mass"
+     },
+     "o_que_e": {
+      "pt": "Diminuição do músculo e de outros tecidos sem gordura.",
+      "en": "Reduction of muscle and other fat-free tissue."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Massa muscular apendicular (ASMI)",
+        "en": "Appendicular lean mass index (ASMI)"
+       },
+       "como_se_mede": {
+        "pt": "DEXA de corpo inteiro (massa magra dos braços e pernas / altura²).",
+        "en": "Whole-body DEXA (arm and leg lean mass / height²)."
+       },
+       "otimo": {
+        "pt": "≥ 7,0 kg/m² em homens (limiar EWGSOP2)",
+        "en": "≥ 7.0 kg/m² in men (EWGSOP2 threshold)"
+       },
+       "fonte": "https://doi.org/10.1093/ageing/afy169",
+       "resultado": null,
+       "estado": "sem_dados"
+      }
+     ],
+     "estado": "sem_dados"
+    },
+    {
+     "id": "perda-de-forca-muscular",
+     "nome": {
+      "pt": "Perda de Força Muscular",
+      "en": "Loss of Muscle Strength"
+     },
+     "o_que_e": {
+      "pt": "A força cai mais depressa do que a massa muscular e prevê melhor a mortalidade.",
+      "en": "Strength falls faster than muscle mass and better predicts mortality."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Força de preensão",
+        "en": "Grip strength"
+       },
+       "como_se_mede": {
+        "pt": "Dinamómetro de mão.",
+        "en": "Hand dynamometer."
+       },
+       "otimo": {
+        "pt": "≥ 27 kg em homens (limiar EWGSOP2); valores mais altos associam-se a menor mortalidade",
+        "en": "≥ 27 kg in men (EWGSOP2 threshold); higher values are linked to lower mortality"
+       },
+       "fonte": "https://doi.org/10.1093/ageing/afy169",
+       "resultado": null,
+       "estado": "sem_dados"
+      },
+      {
+       "nome": {
+        "pt": "Teste de levantar da cadeira (5 vezes)",
+        "en": "Chair stand test (5 times)"
+       },
+       "como_se_mede": {
+        "pt": "Cronometrar 5 levantamentos seguidos sem usar os braços.",
+        "en": "Time 5 consecutive rises without using the arms."
+       },
+       "otimo": {
+        "pt": "< 15 s (limiar EWGSOP2)",
+        "en": "< 15 s (EWGSOP2 threshold)"
+       },
+       "fonte": "https://doi.org/10.1093/ageing/afy169",
+       "resultado": null,
+       "estado": "sem_dados"
+      }
+     ],
+     "estado": "sem_dados"
+    },
+    {
+     "id": "atrofia-muscular",
+     "nome": {
+      "pt": "Atrofia Muscular",
+      "en": "Muscle Atrophy"
+     },
+     "o_que_e": {
+      "pt": "As fibras musculares encolhem, sobretudo as rápidas.",
+      "en": "Muscle fibres shrink, especially fast-twitch ones."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Área de secção do músculo",
+        "en": "Muscle cross-sectional area"
+       },
+       "como_se_mede": {
+        "pt": "Ecografia, TAC ou RM do músculo.",
+        "en": "Muscle ultrasound, CT or MRI."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1093/ageing/afy169",
+       "resultado": null,
+       "estado": "sem_dados"
+      },
+      {
+       "nome": {
+        "pt": "3-Metil-histidina",
+        "en": "3-Methylhistidine"
+       },
+       "como_se_mede": {
+        "pt": "Análise ao sangue (aminoácidos); sobe quando há degradação de proteína muscular.",
+        "en": "Blood test (amino acids); rises with muscle protein breakdown."
+       },
+       "otimo": {
+        "pt": "2–9 µmol/L",
+        "en": "2–9 µmol/L"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 59.93,
+        "unidade": "µmol/L",
+        "data": "2026-08-25"
+       },
+       "estado": "fora",
+       "nota": {
+        "pt": "Também sobe com carne na dieta e treino intenso.",
+        "en": "Also rises with meat intake and intense training."
+       }
+      }
+     ],
+     "estado": "fora"
+    },
+    {
+     "id": "disfuncao-da-juncao-neuromuscular",
+     "nome": {
+      "pt": "Disfunção da Junção Neuromuscular",
+      "en": "Neuromuscular Junction Dysfunction"
+     },
+     "o_que_e": {
+      "pt": "A ligação entre o nervo e o músculo degrada-se e há perda de unidades motoras.",
+      "en": "The nerve–muscle connection degrades and motor units are lost."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Sem medida clínica",
+        "en": "No clinical measure"
+       },
+       "como_se_mede": {
+        "pt": "Sem medida clínica disponível; só em investigação (fragmento C-terminal da agrina (CAF), eletromiografia de fibra única).",
+        "en": "No clinical measure available; research only (C-terminal agrin fragment (CAF), single-fibre electromyography)."
+       },
+       "otimo": {
+        "pt": "sem valor ótimo definido",
+        "en": "no defined optimum"
+       },
+       "fonte": "https://doi.org/10.1016/j.cell.2022.11.001",
+       "resultado": null,
+       "estado": "sem_medida"
+      }
+     ],
+     "estado": "sem_medida"
+    },
+    {
+     "id": "osteoporose",
+     "nome": {
+      "pt": "Osteoporose",
+      "en": "Osteoporosis"
+     },
+     "o_que_e": {
+      "pt": "Os ossos perdem densidade e qualidade e partem com mais facilidade.",
+      "en": "Bones lose density and quality and break more easily."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Densidade mineral óssea (DEXA)",
+        "en": "Bone mineral density (DEXA)"
+       },
+       "como_se_mede": {
+        "pt": "Densitometria óssea DEXA da coluna e da anca.",
+        "en": "DEXA scan of spine and hip."
+       },
+       "otimo": {
+        "pt": "T-score ≥ −1,0; antes dos 50 anos usa-se o Z-score, > −2,0",
+        "en": "T-score ≥ −1.0; before age 50 the Z-score is used, > −2.0"
+       },
+       "fonte": "https://doi.org/10.1007/s00198-021-05900-y",
+       "resultado": null,
+       "estado": "sem_dados"
+      },
+      {
+       "nome": {
+        "pt": "Vitamina D (25-OH)",
+        "en": "Vitamin D (25-OH)"
+       },
+       "como_se_mede": {
+        "pt": "Análise ao sangue.",
+        "en": "Blood test."
+       },
+       "otimo": {
+        "pt": "40–60 ng/mL",
+        "en": "40–60 ng/mL"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 37.39,
+        "unidade": "ng/mL",
+        "data": "2026-08-25"
+       },
+       "estado": "fora"
+      },
+      {
+       "nome": {
+        "pt": "Cálcio",
+        "en": "Calcium"
+       },
+       "como_se_mede": {
+        "pt": "Análise ao sangue.",
+        "en": "Blood test."
+       },
+       "otimo": {
+        "pt": "9–10 mg/dL",
+        "en": "9–10 mg/dL"
+       },
+       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "resultado": {
+        "valor": 9.58,
+        "unidade": "mg/dL",
+        "data": "2026-08-25"
+       },
+       "estado": "otimo"
+      }
+     ],
+     "estado": "fora"
+    },
+    {
+     "id": "fragilidade",
+     "nome": {
+      "pt": "Fragilidade",
+      "en": "Frailty"
+     },
+     "o_que_e": {
+      "pt": "Perda de reservas físicas que deixa o corpo vulnerável a quedas, doença e stress.",
+      "en": "Loss of physical reserves that leaves the body vulnerable to falls, illness and stress."
+     },
+     "medidas": [
+      {
+       "nome": {
+        "pt": "Fenótipo de fragilidade de Fried",
+        "en": "Fried frailty phenotype"
+       },
+       "como_se_mede": {
+        "pt": "5 critérios: emagrecimento involuntário, exaustão, força de preensão, velocidade de marcha e atividade física.",
+        "en": "5 criteria: unintentional shrinking, exhaustion, grip strength, walking speed and physical activity."
+       },
+       "otimo": {
+        "pt": "0 critérios (robusto)",
+        "en": "0 criteria (robust)"
+       },
+       "fonte": "https://doi.org/10.1093/gerona/56.3.m146",
+       "resultado": null,
+       "estado": "sem_dados"
+      },
+      {
+       "nome": {
+        "pt": "Força de preensão",
+        "en": "Grip strength"
+       },
+       "como_se_mede": {
+        "pt": "Dinamómetro de mão.",
+        "en": "Hand dynamometer."
+       },
+       "otimo": {
+        "pt": "≥ 27 kg em homens (limiar EWGSOP2); valores mais altos associam-se a menor mortalidade",
+        "en": "≥ 27 kg in men (EWGSOP2 threshold); higher values are linked to lower mortality"
+       },
+       "fonte": "https://doi.org/10.1093/ageing/afy169",
+       "resultado": null,
+       "estado": "sem_dados"
+      }
+     ],
+     "estado": "sem_dados"
+    }
+   ]
+  }
+ ]
+}
