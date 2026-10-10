@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="data:,">
+<title>Torneio de gostos · Sérgio F</title>
+<meta name="color-scheme" content="light dark">
+<script>(function(){var d=document.documentElement,t=null,l=null,q=/[?&]lang=(en|pt)(?:&|#|$)/i.exec(location.search);q=q&&q[1].toLowerCase();try{if(q)localStorage.setItem('lang',q);l=localStorage.getItem('lang');t=localStorage.getItem('theme')}catch(e){}if(q)l=q;if(l==='en')d.lang='en';if(t!=='dark'&&t!=='light')t='dark';d.setAttribute('data-theme',t)})()</script>
+<script src="../sf.js"></script>
+<style>
+:root{--bg:#f5f7fa;--card:#fff;--ink:#14202e;--mut:#5b6b7d;--line:#e3e8ef;--acc:#1f5eff;--ok:#12a150;--okb:#e6f6ec;--okink:#0e7a3e;--na:#8a97a8;--nab:#eef1f5;--r:14px;--head:rgba(255,255,255,.94);--actfg:#fff;--acc2:#e9efff;--warn:#6a3e00;--warnb:#fff3df;--bad:#c23b3b;--badb:#fdecec;--info:#5b4bd6;--infob:#efedff;--band:rgba(31,94,255,.22);color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:78px;-webkit-text-size-adjust:100%}
+body{margin:0;font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+header.top{position:sticky;top:0;z-index:50;background:var(--head);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
+.topin{max-width:1240px;margin:0 auto;display:flex;align-items:center;gap:18px;padding:10px 20px}
+nav.main{display:flex;gap:4px;overflow:visible;scrollbar-width:none;flex:1;min-width:0}
+nav.main::-webkit-scrollbar{display:none}
+nav.main a{white-space:nowrap;text-decoration:none;color:var(--mut);font-size:13.5px;padding:7px 11px;border-radius:999px;font-weight:500}
+nav.main a:hover{background:var(--nab);color:var(--ink)}
+nav.main a.active{background:var(--ink);color:var(--actfg)}
+.dd{position:relative;flex:0 0 auto}
+.dd summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;white-space:nowrap;color:var(--mut);font:inherit;font-size:13.5px;font-weight:500;padding:7px 11px;border-radius:999px}
+.dd summary::-webkit-details-marker{display:none}
+.dd summary::marker{content:""}
+.dd summary:hover,.dd[open]>summary{background:var(--nab);color:var(--ink)}
+.dd.on>summary{background:var(--ink);color:var(--actfg)}
+.dd summary:after{content:" ▾";font-size:.72em;opacity:.75}
+.dd[open]>summary:after{content:" ▴"}
+.ddmenu{position:absolute;top:calc(100% + 6px);right:0;min-width:210px;padding:6px;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:0 14px 36px rgba(15,30,50,.18);z-index:80;display:flex;flex-direction:column;gap:2px}
+.ddmenu a{display:block;border-radius:10px}
+main{max-width:980px;margin:0 auto;padding:22px 20px 28px}
+h1{margin:0 0 8px;font-size:28px;letter-spacing:-.3px}
+.lead{margin:0 0 14px;color:var(--mut)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;margin:12px 0}
+.card h2{margin:0 0 8px;font-size:18px;letter-spacing:-.2px}.card h3{margin:12px 0 6px;font-size:16px}
+.mut{color:var(--mut)}.small{font-size:13px}.tiny{font-size:12px}
+.grid{display:grid;gap:12px;grid-template-columns:1fr}
+.grid>*{min-width:0}
+@media(min-width:760px){.grid.g2{grid-template-columns:1fr 1fr}.grid.g3{grid-template-columns:1fr 1fr 1fr}}
+.chip{display:inline-block;border-radius:999px;padding:2px 9px;font-size:12px;font-weight:600;border:1px solid transparent;white-space:normal;max-width:100%}
+.c-ok{background:var(--okb);color:var(--okink)}.c-warn{background:var(--warnb);color:var(--warn)}.c-bad{background:var(--badb);color:var(--bad)}.c-info{background:var(--infob);color:var(--info)}.c-mut{background:var(--nab);color:var(--mut)}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;padding:7px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12.5px;color:var(--mut);font-weight:600}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+main input[type=search],main input[type=text],main select{width:100%;font:inherit;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink)}
+main input[type=range]{width:100%;accent-color:var(--acc)}
+main input:focus,main select:focus{outline:2px solid var(--acc);outline-offset:1px}
+main button,main .btn{font:inherit;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;padding:8px 12px;cursor:pointer}
+main button.on,main .btn.on{background:var(--acc);border-color:var(--acc);color:var(--actfg)}
+main button:focus{outline:2px solid var(--acc);outline-offset:1px}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.bar{height:12px;background:var(--nab);border-radius:8px;position:relative;overflow:hidden}
+.bar>i{position:absolute;left:0;top:0;bottom:0;border-radius:8px}
+.src{font-size:12px;color:var(--mut)}
+footer{max-width:980px;margin:0 auto;padding:0 20px 72px;color:var(--mut);font-size:12.5px}
+.pill-nav{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px}
+.pill-nav button{white-space:nowrap}
+.kpi{font-size:26px;font-weight:700}
+main details summary{cursor:pointer;font-weight:600}
+.hidden{display:none}
+.small.tiny.sc{overflow-wrap:anywhere}
+html[data-theme="dark"]{color-scheme:dark;--bg:#0e141d;--card:#161e2a;--ink:#e5eaf1;--mut:#9aa7b8;--line:#2a3545;--acc:#7a9dff;--nab:#222b39;--head:rgba(16,22,32,.92);--actfg:#0e141d;--ok:#3dce86;--okb:#143226;--okink:#7ee0a8;--warn:#e0a040;--warnb:#3a2c12;--bad:#f07171;--badb:#3a1c1c;--info:#b0a6ff;--infob:#241f45;--acc2:#1c2744;--band:rgba(122,157,255,.40)}
+html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
+.tools{display:flex;align-items:center;gap:14px;margin-left:auto;flex:0 0 auto}
+.lang{display:flex;align-items:center;gap:4px;font-size:13.5px;white-space:nowrap}
+.lang button{font:inherit;border:0;background:none;color:var(--mut);cursor:pointer;padding:6px 6px;border-radius:8px}
+.lang button:hover{background:var(--nab);color:var(--ink)}.lang button.on{color:var(--ink);font-weight:700}
+.lang .sep{color:var(--na,#8a97a8)}
+main a{color:var(--acc)}
+@media(max-width:640px){html{scroll-padding-top:148px}.topin{gap:4px 8px;padding:6px 12px;flex-wrap:wrap}.tools{order:-1;margin-left:auto;gap:10px}nav.main{flex:1 1 100%;order:2;flex-wrap:wrap;gap:2px}nav.main a,.dd summary{padding:6px 10px}h1{font-size:24px}.card{padding:14px}}
+</style>
+
+</head>
+<body data-title-pt="Torneio de gostos · Sérgio F" data-title-en="Torneio de gostos · Sérgio F">
+<header class="top"><div class="topin">
+<nav class="main">
+<a href="../inicio.html" data-en="Home">Início</a><a href="../analises.html#sangue" data-en="Tests">Análises</a><details class="dd on"><summary data-en="Genetics">Genética</summary><div class="ddmenu"><a href="../genetica-reports.html" data-en="Genetics Reports">Genética Reports</a><a href="../genetica-boa.html" data-en="Good Genetics">Genética Boa</a><a href="../genetica.html" data-en="Bad Genetics">Genética Má</a><a href="index.html" class="active" aria-current="page" data-en="Genetic tools">Ferramentas genéticas</a></div></details><details class="dd"><summary data-en="Protocol">Protocolo</summary><div class="ddmenu"><a href="../pele-cabelo.html" data-en="Skin and Hair">Pele e Cabelo</a><a href="../sono.html" data-en="Sleep">Sono</a><a href="../dieta.html" data-en="Diet">Dieta</a><a href="../terapias.html" data-en="Therapies">Terapias</a><a href="../treino.html" data-en="Training">Treino</a><a href="../suplementos.html" data-en="Supplements + Medication">Suplementos + Medicação</a></div></details><a href="../origem.html" data-en="Origin">Origem</a><a href="../estudos.html" data-en="Studies">Estudos</a></nav>
+<div class="tools">
+<div class="lang" id="lang" role="group" aria-label="Idioma / Language"><button type="button" data-l="pt" lang="pt-PT">Português</button><span class="sep" aria-hidden="true">|</span><button type="button" data-l="en" lang="en">English</button></div>
+<div class="lang" id="theme" role="group" aria-label="Tema" data-al-en="Theme"><button type="button" data-t="dark" data-en="Dark">Escuro</button><span class="sep" aria-hidden="true">|</span><button type="button" data-t="light" data-en="Light">Claro</button></div>
+</div>
+</div></header>
+<main>
+<h1>Torneio de gostos</h1>
+<p class="lead">Jogo: adivinha qual de dois alimentos os teus genes preferem.</p>
+
+
+<style>button.big{flex:1 1 140px;padding:14px;font-weight:600}</style><div class="card"><h2>Qual dos dois os teus genes preferem?</h2><p class="small">Escolhe o alimento que achas que a tua genética prevê que gostes mais. Pontuação: <b id="sc">0 / 0</b></p>
+<div class="row" id="ab"></div><div id="fb"></div><p class="tiny mut">Confiança baixa: os genes explicam uma pequena parte do gosto (scores de loci publicados; percentil face à população de referência).</p></div>
+<div class="card"><h2>Ranking genético</h2><div id="rk"></div></div>
+</main>
+<footer>Sérgio F · versão pública · dados genéticos de 10-10-2026 (scores poligénicos recalculados a 03-10-2026). Não é diagnóstico nem prescrição.</footer>
+<script id="dados-app" type="application/json">{"items": [{"n": "Frango assado", "p": 23.5, "pred": "Ligeiramente: gosta menos do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Frango", "p": 27.5, "pred": "Ligeiramente: gosta menos do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Fígado", "p": 69.0, "pred": "Ligeiramente: gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Carne vermelha", "p": 62.5, "pred": "Gosto típico", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Grelhados/churrasco", "p": 40.5, "pred": "Gosto típico", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Salame", "p": 55.0, "pred": "Gosto típico", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Bife", "p": 53.5, "pred": "Gosto típico", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Borrego", "p": 51.5, "pred": "Gosto típico", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Espirro com luz solar (reflexo fótico)", "p": 7.0, "pred": "Menos provável do que a média", "ref": "Pickrell et al. 2016, Nat Genet"}, {"n": "Identificar o cheiro a canela", "p": 86.5, "pred": "Melhor do que a média", "ref": "Forster et al. 2025"}, {"n": "Identificar o cheiro a ananás", "p": 21.5, "pred": "Ligeiramente: pior do que a média", "ref": "Forster et al. 2025"}, {"n": "Cobertura de bolo", "p": 99.0, "pred": "Gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Maçapão", "p": 93.5, "pred": "Gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Mel", "p": 89.5, "pred": "Gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Cheesecake", "p": 85.5, "pred": "Gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Chocolate de leite", "p": 72.5, "pred": "Ligeiramente: gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Croissant", "p": 42.0, "pred": "Gosto típico", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Toranja", "p": 2.0, "pred": "Gosta menos do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Ameixa", "p": 86.0, "pred": "Gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Morangos", "p": 83.5, "pred": "Gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Kiwi", "p": 72.0, "pred": "Ligeiramente: gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Fruta em geral", "p": 66.0, "pred": "Ligeiramente: gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Laranja", "p": 63.0, "pred": "Gosto típico", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Fruta seca (passas, figos…)", "p": 52.0, "pred": "Gosto típico", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Porco (frequência)", "p": 2.0, "pred": "Menos vezes", "ref": "Cole et al. 2020, Nat Commun"}, {"n": "Carnes processadas (frequência)", "p": 87.0, "pred": "Mais vezes", "ref": "Cole et al. 2020, Nat Commun"}, {"n": "Cereais ao pequeno-almoço", "p": 27.0, "pred": "Ligeiramente: menos taças", "ref": "Cole et al. 2020, Nat Commun"}, {"n": "Peixe gordo (frequência)", "p": 69.0, "pred": "Ligeiramente: mais vezes", "ref": "Cole et al. 2020, Nat Commun"}, {"n": "Fruta seca (frequência)", "p": 33.0, "pred": "Ligeiramente: menos", "ref": "Cole et al. 2020, Nat Commun"}, {"n": "Borrego (frequência)", "p": 38.0, "pred": "Típico", "ref": "Cole et al. 2020, Nat Commun"}, {"n": "Pão branco vs integral", "p": 45.0, "pred": "Típico", "ref": "Cole et al. 2020, Nat Commun"}, {"n": "Fatias de pão por semana", "p": 48.0, "pred": "Típico", "ref": "Cole et al. 2020, Nat Commun"}, {"n": "Queijo (frequência)", "p": 51.0, "pred": "Típico", "ref": "Cole et al. 2020, Nat Commun"}, {"n": "peixe gordo", "p": 99.0, "pred": "Gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "peixe", "p": 93.0, "pred": "Gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "fritos", "p": 92.5, "pred": "Gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "pimentos e picante", "p": 92.0, "pred": "Gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "comida vegetariana", "p": 12.0, "pred": "Gosta menos do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "vegetais de sabor forte", "p": 15.0, "pred": "Gosta menos do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "molhos", "p": 15.0, "pred": "Gosta menos do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "pequeno-almoço saudável", "p": 80.0, "pred": "Ligeiramente: gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "temperos de cozinha (alho, cebola…)", "p": 77.0, "pred": "Ligeiramente: gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "peixe pequeno (sardinha, anchova)", "p": 76.0, "pred": "Ligeiramente: gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "comida salgada/sápida (savoury)", "p": 24.0, "pred": "Ligeiramente: gosta menos do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "legumes cozinhados", "p": 25.0, "pred": "Ligeiramente: gosta menos do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "ardor/picante", "p": 26.5, "pred": "Ligeiramente: gosta menos do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "gordura e lacticínios", "p": 27.0, "pred": "Ligeiramente: gosta menos do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "legumes de salada", "p": 72.5, "pred": "Ligeiramente: gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "marisco e peixe", "p": 71.0, "pred": "Ligeiramente: gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "comida gorda", "p": 33.0, "pred": "Ligeiramente: gosta menos do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "hidratos de carbono", "p": 34.0, "pred": "Ligeiramente: gosta menos do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "gostos adquiridos (sabores que se aprendem a gostar)", "p": 35.0, "pred": "Gosto típico", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "sabores ácidos/acres", "p": 35.0, "pred": "Gosto típico", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "bolos e bolachas", "p": 63.0, "pred": "Gosto típico", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "comida sápida e calórica", "p": 61.0, "pred": "Gosto típico", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "sabores intensos", "p": 44.0, "pred": "Gosto típico", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "carne", "p": 45.0, "pred": "Gosto típico", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "sobremesas", "p": 54.0, "pred": "Gosto típico", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "sabor umami (glutamato)", "p": 46.0, "pred": "Gosto típico", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "comida pouco calórica", "p": 54.0, "pred": "Gosto típico", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "comida saudável", "p": 54.0, "pred": "Gosto típico", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "comida amarga", "p": 52.0, "pred": "Gosto típico", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "fruta", "p": 51.5, "pred": "Gosto típico", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "lacticínios", "p": 48.5, "pred": "Gosto típico", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "queijos", "p": 50.0, "pred": "Gosto típico", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Peixe cozido/no forno", "p": 100.0, "pred": "Gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Peixe fumado", "p": 99.0, "pred": "Gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Arinca (haddock)", "p": 97.0, "pred": "Gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Marisco (camarão, mexilhão…)", "p": 86.0, "pred": "Gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Cavala", "p": 80.0, "pred": "Ligeiramente: gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Salmão", "p": 28.0, "pred": "Ligeiramente: gosta menos do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Arenque", "p": 67.0, "pred": "Ligeiramente: gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Sardinhas", "p": 61.0, "pred": "Gosto típico", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Comida picante", "p": 98.0, "pred": "Gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Caril", "p": 89.0, "pred": "Gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Rábano picante (horseradish)", "p": 86.0, "pred": "Gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Molho para salada", "p": 33.0, "pred": "Ligeiramente: gosta menos do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Anis", "p": 58.0, "pred": "Gosto típico", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Alcaparras", "p": 51.0, "pred": "Gosto típico", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Pão branco", "p": 0.0, "pred": "Gosta menos do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Queijo de cabra", "p": 8.0, "pred": "Gosta menos do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Batatas fritas de pacote", "p": 11.0, "pred": "Gosta menos do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Pizza", "p": 87.5, "pred": "Gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Papas de aveia", "p": 73.0, "pred": "Ligeiramente: gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Queijo curado", "p": 31.0, "pred": "Ligeiramente: gosta menos do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Natas", "p": 38.0, "pred": "Gosto típico", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Abacate", "p": 4.0, "pred": "Gosta menos do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Couve-flor", "p": 94.5, "pred": "Gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Couves-de-bruxelas", "p": 6.0, "pred": "Gosta menos do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Legumes em geral", "p": 92.0, "pred": "Gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Cenoura crua", "p": 82.0, "pred": "Gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Alcachofra", "p": 21.0, "pred": "Ligeiramente: gosta menos do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Abóbora-manteiga", "p": 79.0, "pred": "Ligeiramente: gosta mais do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Nabo", "p": 25.5, "pred": "Ligeiramente: gosta menos do que a média", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Couve", "p": 37.0, "pred": "Gosto típico", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Feijão", "p": 41.0, "pred": "Gosto típico", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Beterraba", "p": 59.0, "pred": "Gosto típico", "ref": "May-Wilson et al. 2022, Nat Commun"}, {"n": "Favas", "p": 56.0, "pred": "Gosto típico", "ref": "May-Wilson et al. 2022, Nat Commun"}]}</script>
+<script>
+const D = (function(){var e=document.getElementById('dados-app');return e?JSON.parse(e.textContent):{};})();
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function fmt(x,d){d=(d==null?2:d);return Number(x).toFixed(d).replace('.',',');}
+let sc=0,tot=0,cur=null;
+function pick(){let a,b;do{a=D.items[Math.floor(Math.random()*D.items.length)];b=D.items[Math.floor(Math.random()*D.items.length)];}while(a===b||Math.abs(a.p-b.p)<15);cur=[a,b];
+document.getElementById('ab').innerHTML=cur.map((x,i)=>`<button class="big" data-i="${i}">${esc(x.n)}</button>`).join('<span class="mut">ou</span>');document.getElementById('fb').innerHTML='';
+document.querySelectorAll('#ab button').forEach(b=>b.addEventListener('click',()=>ans(+b.dataset.i)));}
+function ans(i){const w=cur[0].p>=cur[1].p?0:1;tot++;if(i===w)sc++;document.getElementById('sc').textContent=sc+' / '+tot;
+document.getElementById('fb').innerHTML=`<p class="small">${i===w?'✅ Certo!':'❌ Não.'} Os genes preveem mais gosto por <b>${esc(cur[w].n)}</b>.</p>`+cur.map(x=>`<div class="small">${esc(x.n)}: percentil ${fmt(x.p,0)} · ${esc(x.pred)} <span class="tiny mut">(${esc(x.ref)})</span></div>`).join('')+'<button id="nx" style="margin-top:8px">Próximo par</button>';
+document.querySelectorAll('#ab button').forEach(b=>b.disabled=true);document.getElementById('nx').addEventListener('click',pick);}
+pick();
+const rank=[...D.items].sort((a,b)=>b.p-a.p);document.getElementById('rk').innerHTML='<ol class="small">'+rank.slice(0,10).map(x=>`<li>${esc(x.n)} <span class="mut">p${fmt(x.p,0)}</span></li>`).join('')+'</ol><h3>Menos provável de gostar</h3><ol class="small">'+rank.slice(-10).reverse().map(x=>`<li>${esc(x.n)} <span class="mut">p${fmt(x.p,0)}</span></li>`).join('')+'</ol>';
+</script>
+<script>
+let LANG='pt';try{if(localStorage.getItem('lang')==='en')LANG='en'}catch(e){}
+{const q=/[?&]lang=(en|pt)(?:&|#|$)/i.exec(location.search);if(q)LANG=q[1].toLowerCase()}
+function applyLang(){const en=LANG==='en';document.documentElement.lang=en?'en':'pt-PT';document.title=en?document.body.dataset.titleEn:document.body.dataset.titlePt;
+ document.querySelectorAll('[data-en]').forEach(el=>{if(!el.hasAttribute('data-pt'))el.setAttribute('data-pt',el.textContent);el.textContent=en?el.dataset.en:el.dataset.pt});
+ document.querySelectorAll('[data-al-en]').forEach(el=>{if(!el.hasAttribute('data-al-pt'))el.setAttribute('data-al-pt',el.getAttribute('aria-label'));el.setAttribute('aria-label',en?el.dataset.alEn:el.dataset.alPt)});
+ document.querySelectorAll('#lang button').forEach(b=>{const on=b.dataset.l===LANG;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});}
+document.querySelectorAll('#lang button').forEach(b=>b.addEventListener('click',()=>{if(LANG===b.dataset.l)return;LANG=b.dataset.l;try{localStorage.setItem('lang',LANG)}catch(e){}try{if(/[?&]lang=/i.test(location.search)){const u=new URL(location.href);u.searchParams.set('lang',LANG);history.replaceState(history.state,'',u)}}catch(e){}applyLang()}));
+let THEME=null;try{THEME=localStorage.getItem('theme')}catch(e){}
+const curTheme=()=>THEME==='dark'||THEME==='light'?THEME:'dark';
+function applyTheme(){const t=curTheme();document.documentElement.setAttribute('data-theme',t);document.querySelectorAll('#theme button').forEach(b=>{const on=b.dataset.t===t;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)})}
+document.querySelectorAll('#theme button').forEach(b=>b.addEventListener('click',()=>{THEME=b.dataset.t;try{localStorage.setItem('theme',THEME)}catch(e){}applyTheme()}));
+applyTheme();
+applyLang();
+</script>
+<script>
+(function(){try{var W=window.SF_W;if(!W)return;W=String(W).replace(/\/+$/,'');
+ if(location.hash==='#toggle-goatcounter'){var off=localStorage.getItem('skipgc')==='t';if(off)localStorage.removeItem('skipgc');else localStorage.setItem('skipgc','t');alert(off?'Contagem ligada neste browser.':'Contagem desligada neste browser.')}
+ if(localStorage.getItem('skipgc')==='t'||navigator.webdriver||window!==window.top||location.protocol==='file:'||/^(localhost|127\.|10\.|192\.168\.|0\.0\.0\.0$|\[::1\]$)/.test(location.hostname))return;
+ var send=function(){try{var sc=window.screen||{},x={p:location.pathname,t:document.title,r:document.referrer||'',s:sc.width||0,w:sc.width||0,h:sc.height||0,d:window.devicePixelRatio||0,m:navigator.maxTouchPoints||0},u=W+'/e',ok=0,
+  go=function(){if(ok)return;ok=1;var d=JSON.stringify(x);if(navigator.sendBeacon&&navigator.sendBeacon(u,d))return;fetch(u,{method:'POST',body:d,keepalive:true,mode:'no-cors',credentials:'omit'}).catch(function(){})},
+  ud=navigator.userAgentData;
+  if(ud&&ud.getHighEntropyValues){setTimeout(go,800);ud.getHighEntropyValues(['model','platformVersion']).then(function(v){if(v&&v.model)x.mo=String(v.model).slice(0,40);if(v&&v.platformVersion)x.pv=String(v.platformVersion).slice(0,20);go()},go)}else go()}catch(_){}};
+ if(document.visibilityState==='prerender')document.addEventListener('visibilitychange',function f(){if(document.visibilityState!=='prerender'){document.removeEventListener('visibilitychange',f);send()}});
+ else if(document.readyState==='complete')send();else addEventListener('load',send)}catch(_){}})();
+</script>
+<script>document.addEventListener('click',function(e){document.querySelectorAll('details.dd[open]').forEach(function(d){if(!d.contains(e.target))d.removeAttribute('open')})});</script>
+</body></html>

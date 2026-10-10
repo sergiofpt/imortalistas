@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex,nofollow">
 <meta name="referrer" content="no-referrer">
 <link rel="icon" href="data:,">
-<title>Treino genético · Sérgio F</title>
+<title>Audição e zumbido · Sérgio F</title>
 <meta name="color-scheme" content="light dark">
 <script>(function(){var d=document.documentElement,t=null,l=null,q=/[?&]lang=(en|pt)(?:&|#|$)/i.exec(location.search);q=q&&q[1].toLowerCase();try{if(q)localStorage.setItem('lang',q);l=localStorage.getItem('lang');t=localStorage.getItem('theme')}catch(e){}if(q)l=q;if(l==='en')d.lang='en';if(t!=='dark'&&t!=='light')t='dark';d.setAttribute('data-theme',t)})()</script>
 <script src="../sf.js"></script>
@@ -75,7 +75,7 @@ main a{color:var(--acc)}
 </style>
 
 </head>
-<body data-title-pt="Treino genético · Sérgio F" data-title-en="Treino genético · Sérgio F">
+<body data-title-pt="Audição e zumbido · Sérgio F" data-title-en="Audição e zumbido · Sérgio F">
 <header class="top"><div class="topin">
 <nav class="main">
 <a href="../inicio.html" data-en="Home">Início</a><a href="../analises.html#sangue" data-en="Tests">Análises</a><details class="dd on"><summary data-en="Genetics">Genética</summary><div class="ddmenu"><a href="../genetica-reports.html" data-en="Genetics Reports">Genética Reports</a><a href="../genetica-boa.html" data-en="Good Genetics">Genética Boa</a><a href="../genetica.html" data-en="Bad Genetics">Genética Má</a><a href="index.html" class="active" aria-current="page" data-en="Genetic tools">Ferramentas genéticas</a></div></details><details class="dd"><summary data-en="Protocol">Protocolo</summary><div class="ddmenu"><a href="../pele-cabelo.html" data-en="Skin and Hair">Pele e Cabelo</a><a href="../sono.html" data-en="Sleep">Sono</a><a href="../dieta.html" data-en="Diet">Dieta</a><a href="../terapias.html" data-en="Therapies">Terapias</a><a href="../treino.html" data-en="Training">Treino</a><a href="../suplementos.html" data-en="Supplements + Medication">Suplementos + Medicação</a></div></details><a href="../origem.html" data-en="Origin">Origem</a><a href="../estudos.html" data-en="Studies">Estudos</a></nav>
@@ -85,43 +85,51 @@ main a{color:var(--acc)}
 </div>
 </div></header>
 <main>
-<h1>Treino genético</h1>
-<p class="lead">O relatório de força, hipertrofia e potência junto com os riscos de tendões, articulações e fraturas, num modelo de semana.</p>
+<h1>Audição e zumbido</h1>
+<p class="lead">Perda auditiva, zumbido e proteção do ouvido.</p>
 
 
+<style>.sc{padding:8px 0;border-top:1px solid var(--line)}.pb{position:relative;height:10px;border-radius:6px;margin:5px 0 3px;background:linear-gradient(90deg,var(--okb),var(--nab) 40%,var(--nab) 60%,var(--badb))}
+.pb>i{position:absolute;top:-3px;width:16px;height:16px;border-radius:50%;margin-left:-8px;border:2px solid var(--card)}.pb .m50{position:absolute;left:50%;top:-2px;bottom:-2px;width:1px;background:var(--mut)}
+.kp{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px}.kp>div{background:var(--bg);border-radius:10px;padding:8px 10px}</style><div class="card"><h2>Em resumo</h2><div class="kp"><div><div class="kpi">6</div><div class="tiny mut">scores</div></div><div><div class="kpi" style="color:var(--bad)">2</div><div class="tiny mut">desfavoráveis</div></div><div><div class="kpi" style="color:var(--ok)">0</div><div class="tiny mut">favoráveis</div></div><div><div class="kpi">4</div><div class="tiny mut">típicos/informativos</div></div></div><p class="small mut" style="margin-top:8px">Junta os relatórios de audição. O percentil compara com 100 pessoas da população de referência: 50 é a média; acima de 80 ou abaixo de 20 já é uma ponta. Um score genético desloca hipóteses, não decide. A cor segue o juízo do relatório de origem.</p></div>
+<div class="card"><h2>Proteger a audição</h2><ul class="small" style="padding-left:18px"><li>Ruído: a OMS recomenda até 80 dB durante 40 h por semana para adultos (norma OMS-UIT H.870, 2019, revista em 2022); concertos e discotecas com proteção.</li><li>Audiograma de base agora; repetir se surgir zumbido persistente ou dificuldade em perceber conversa com ruído de fundo.</li><li>Fármacos ototóxicos (aminoglicosídeos, cisplatina, doses altas de diuréticos de ansa): avisar o médico.</li></ul><p class='tiny mut'>A variante do ADN mitocondrial ligada à surdez por aminoglicosídeos não é lida pelo chip.</p></div>
+<div class="card"><h2>Achados principais</h2><div id="dl"></div></div>
+<div class="card"><h2>Todos os scores</h2>
+<input type="search" id="pq" placeholder="Procurar…" aria-label="Procurar score">
+<div class="row pill-nav" id="pf" style="margin-top:8px"><button data-f="todos">Todos</button><button data-f="desf">Desfavoráveis</button><button data-f="fav">Favoráveis</button><button data-f="tip">Típicos</button><button data-f="info">Informativos</button></div>
+<div class="row pill-nav" id="ps"><span class="tiny mut">Ordenar:</span><button data-s="p">percentil ↓</button><button data-s="pa">percentil ↑</button><button data-s="n">nome</button></div>
+<div class="tiny mut" id="pn"></div><div id="pl"></div></div>
 
-<div class="card"><h2>Modelo semanal</h2>
-<p class="small">Três sessões de força, duas de zona 2, uma de amplitude de movimento e um dia de descanso, com trabalho de tendão duas vezes por semana. O botão mostra a semana da toma de rapamicina (assumindo a toma na segunda): a última sessão pesada fica 24–48 h antes da toma.</p>
-<div class="row"><button id="rb">Semana da toma de rapamicina</button></div>
-<div class="grid g3" id="sm" style="margin-top:10px"></div></div>
-<div class="card"><h2>Regras de progressão</h2><div id="rg"></div></div>
-<div class="grid g2"><div class="card"><h2>Perfil de força e hipertrofia</h2><div id="pf"></div></div>
-<div class="card"><h2>Riscos de lesão prováveis</h2><div id="ls"></div></div></div>
-<div class="card"><h2>Fármacos atuais e treino</h2><div id="fm"></div></div>
-
+<div class="card"><h2>Rastreios desta área (por fases)</h2><div class='tw'><table><tr><th>Fase</th><th>Exame e motivo</th><th>Frequência</th></tr><tr><td><span class='chip c-info'>Agora</span></td><td><b>Audiograma</b><div class='tiny mut'>Zumbido com carga genética no percentil 99,8</div></td><td class='small'>De base</td></tr></table></div><p class='tiny mut'>Mesma base da Linha do tempo de rastreios; o médico decide.</p></div>
 </main>
 <footer>Sérgio F · versão pública · dados genéticos de 10-10-2026 (scores poligénicos recalculados a 03-10-2026). Não é diagnóstico nem prescrição.</footer>
-<script id="dados-app" type="application/json">{"perfil": [["Força treinável", "ok", "Força de preensão típica (consenso no percentil 51); fibras rápidas funcionais (ACTN3 com variante).", "Moderada"], ["Recuperação rápida", "ok", "TNF, CCL2 e MYLK sem as variantes de mais dano; PCR genética no percentil 26: aguenta frequência de treino mais alta.", "Moderada a fraca"], ["Motor aeróbio", "ok", "PPARGC1A favorável e AMPD1 normal: boa tolerância a volume alto.", "Moderada"], ["Massa magra de base baixa", "bad", "Massa magra abaixo da média (consenso no percentil 27; apendicular no 9,5 num score); IGF-1 genética no percentil 32. Ganhar massa exige mais volume, proteína e consistência.", "Forte (scores)"], ["Pouca vontade espontânea de treinar", "bad", "Exercício físico genético nos percentis 7 a 14; BDNF com variante. A consistência depende de horário fixo, não da vontade.", "Moderada"], ["Sinal hormonal um pouco menor", "warn", "SHBG genética alta (percentil 83) e FAM9B: menos testosterona livre em proporção da total.", "Forte (efeito pequeno)"]], "lesoes": [["Tendões (Aquiles, rotuliano)", "bad", "COL5A1 em dose dupla (tendão mais rígido); MPP7 com variante. O tendão adapta-se mais devagar do que o músculo.", "Fraca a moderada"], ["Ombro (coifa, capsulite)", "warn", "Score de lesões do ombro no percentil 56,9: típico, lado alto.", "Moderada"], ["Joelho (artrose)", "warn", "Artrose do joelho no percentil 56,1.", "Moderada"], ["Anca (artrose)", "ok", "Artrose da anca no percentil 38,9.", "Moderada"], ["Mão e dedos (artrose)", "warn", "Carga de loci de artrose da mão no percentil 97,6 (inclui ALDH1A2).", "Moderada"], ["Tecidos moles em geral", "ok", "Doenças de músculo, ligamento e fáscia no percentil 34,1; Dupuytren 25,1; túnel cárpico 6,3.", "Moderada"], ["Coluna e disco", "ok", "Disco intervertebral no percentil 17; hérnia discal no 3.", "Moderada"], ["Fraturas", "info", "Incerto: dois scores discordam (percentis 84 e 16; consenso 50). A DEXA decide.", "Baixa"]], "farm": [["Ácido bempedoico", "No CLEAR Outcomes (NEJM 2023): rotura de tendão 1,2 % vs 0,9 % com placebo (sem diferença significativa), hiperuricemia e gota mais frequentes. Tendinopatia nova → falar com o médico antes de continuar o treino pesado desse tendão."], ["Isotretinoína", "Dores musculares e articulares e CK mais alta; com exercício vigoroso há risco de rabdomiólise. Ajustar a carga; CK só em repouso (48 h ou mais sem treino)."], ["Rapamicina (sirolímus)", "Uma dose bloqueou o aumento da síntese de proteína muscular após treino de força (Drummond 2009, J Physiol); semivida de cerca de 62 h."], ["Estatina", "SLCO1B1 sem as variantes de miopatia: sem risco genético aumentado; LILRB5 com variante de CK mais alta em repouso."], ["Fluoroquinolonas", "Aumentam o risco de rotura de tendão (mais com corticoides): pedir alternativa sempre que possível."]], "semana": [["Segunda", "Força A: membros inferiores", "Agachamento ou prensa, levantamento romeno, gémeos lentos (3 s a subir, 3 s a descer).", "forca"], ["Terça", "Aeróbio de zona 2 + tendão", "30–45 min de zona 2; excêntricos lentos para Aquiles e rotuliano.", "z2"], ["Quarta", "Força B: membros superiores + ombro", "Aquecimento da coifa; empurrar e puxar; subir a carga acima da cabeça só aos poucos.", "forca"], ["Quinta", "Amplitude de movimento e técnica", "Amplitude de movimento de ombro, anca e tornozelo; técnica com carga leve.", "leve"], ["Sexta", "Força C: corpo inteiro + tendão", "Básicos de corpo inteiro; excêntricos lentos para Aquiles, rotuliano e coifa.", "forca"], ["Sábado", "Zona 2 longa", "Caminhada rápida, bicicleta ou subida; conversa possível.", "z2"], ["Domingo", "Descanso", "Passeio leve; dormir 7–8 h.", "leve"]], "regras": ["Progredir a carga cerca de 10 % por semana, subindo o volume ou a carga, nunca os dois ao mesmo tempo (o tendão precisa de semanas a meses).", "Volume suficiente para hipertrofia: 10 ou mais séries por músculo por semana (Schoenfeld 2017), distribuídas pelas 3 sessões de força.", "Dor de tendão que piora durante a sessão ou na manhã seguinte: reduzir a carga 1–2 semanas, sem parar por completo.", "Horário fixo, metas medidas (força, DEXA) e treino acompanhado: a genética da motivação é baixa.", "Proteína distribuída pelo dia (~140–160 g nos dias de treino, segundo o relatório de dieta) e creatina já em uso.", "NAC só 6 h ou mais depois do treino; sem megadoses de vitaminas C e E perto do treino."]}</script>
+<script id="dados-app" type="application/json">{"rows": [{"n": "Dificuldade auditiva", "p": 46.1, "j": "tip", "c": "Cherny 2020 · PGS000762", "r": "Audição e Zumbido", "g": "", "lc": false}, {"n": "Uso de aparelho auditivo", "p": 90.0, "j": "desf", "c": "Cherny 2020 · PGS000763", "r": "Audição e Zumbido", "g": "", "lc": false}, {"n": "Perda auditiva", "p": 62.1, "j": "tip", "c": "Chen 2025 · PGS019114", "r": "Audição e Zumbido", "g": "", "lc": false}, {"n": "Perda auditiva neurossensorial", "p": 58.3, "j": "tip", "c": "Chen 2025 · PGS019119", "r": "Audição e Zumbido", "g": "", "lc": false}, {"n": "Zumbido (acufenos)", "p": 89.7, "j": "desf", "c": "Chen 2025 · PGS019124", "r": "Audição e Zumbido", "g": "", "lc": false}, {"n": "Zumbido (acufenos)", "p": 24.6, "j": "tip", "c": "Chen 2025 · PGS019123", "r": "Audição e Zumbido", "g": "", "lc": false}], "dest": [{"tx": "Miopia: score genómico no percentil 99,2 e carga de loci no 99,5 (aumenta o risco de glaucoma, descolamento da retina e maculopatia miópica).", "ev": "Forte", "tp": "desf"}, {"tx": "Glaucoma de ângulo aberto: consenso no percentil 85, carga de loci no 91,8 e pressão intraocular alta nos loci; CDKN2B-AS1, SIX6 e TXNRD2 com variante.", "ev": "Moderada a forte", "tp": "desf"}, {"tx": "Vertigem e doença de Ménière com carga de loci no percentil 0,2; GJB2 sem nem.", "ev": "Fraca a moderada", "tp": "fav"}], "diet": [], "showrep": true}</script>
 <script>
 const D = (function(){var e=document.getElementById('dados-app');return e?JSON.parse(e.textContent):{};})();
 function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
 function fmt(x,d){d=(d==null?2:d);return Number(x).toFixed(d).replace('.',',');}
 
-const C={ok:'c-ok',warn:'c-warn',bad:'c-bad',info:'c-info'};
-function tbl(L){return '<div class="tw"><table><tr><th>Tema</th><th>Leitura</th><th>Evidência</th></tr>'+L.map(r=>`<tr><td><span class="chip ${C[r[1]]}">${esc(r[0])}</span></td><td class="small">${esc(r[2])}</td><td class="small mut">${esc(r[3])}</td></tr>`).join('')+'</table></div>';}
-document.getElementById('pf').innerHTML=tbl(D.perfil);document.getElementById('ls').innerHTML=tbl(D.lesoes);
-document.getElementById('fm').innerHTML=D.farm.map(f=>`<div style="padding:6px 0;border-top:1px solid var(--line)"><b>${esc(f[0])}</b><div class="small">${esc(f[1])}</div></div>`).join('');
-document.getElementById('rg').innerHTML='<ul class="small">'+D.regras.map(r=>`<li>${esc(r)}</li>`).join('')+'</ul>';
-let rapa=false;
-function sem(){
-  document.getElementById('rb').classList.toggle('on',rapa);
-  document.getElementById('sm').innerHTML=D.semana.map((d,i)=>{
-    let t=d[1],x=d[2],k=d[3];
-    if(rapa&&i<4&&k==='forca'){t='Leve (semana da toma)';x='Dia da toma e 3 dias seguintes: técnica, amplitude de movimento, isométricos leves, zona 2. Sem sessões pesadas de hipertrofia.';k='leve';}
-    const col={forca:'var(--acc)',z2:'var(--ok)',leve:'var(--mut)'}[k];
-    return `<div class="card" style="margin:0;border-top:5px solid ${col}"><b>${esc(d[0])}</b><div class="small"><b>${esc(t)}</b></div><div class="small mut">${esc(x)}</div></div>`;}).join('');
+const JC={fav:['c-ok','favorável'],desf:['c-bad','desfavorável'],tip:['c-mut','típico'],info:['c-info','informativo']};
+const norm=s=>(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+let F='todos',Q='',S='p';
+function barc(j){return j==='desf'?'var(--bad)':j==='fav'?'var(--ok)':j==='info'?'var(--info)':'var(--mut)';}
+function draw(){
+ document.querySelectorAll('#pf button').forEach(b=>b.classList.toggle('on',b.dataset.f===F));
+ document.querySelectorAll('#ps button').forEach(b=>b.classList.toggle('on',b.dataset.s===S));
+ let L=D.rows.filter(r=>(F==='todos'||r.j===F)&&(!Q||norm(r.n+' '+r.c+' '+r.r).includes(norm(Q))));
+ L.sort(S==='p'?(a,b)=>b.p-a.p:S==='pa'?(a,b)=>a.p-b.p:(a,b)=>a.n.localeCompare(b.n));
+ document.getElementById('pn').textContent=L.length+' de '+D.rows.length+' scores';
+ document.getElementById('pl').innerHTML=L.map(r=>`<div class="sc"><div class="row" style="justify-content:space-between"><b class="small">${esc(r.n)}</b><span class="chip ${JC[r.j][0]}">${JC[r.j][1]}</span></div>
+ <div class="pb"><i style="left:${Math.max(0,Math.min(100,r.p))}%;background:${barc(r.j)}"></i><span class="m50"></span></div>
+ <div class="tiny mut">percentil <b>${fmt(r.p,1)}</b>${r.lc?' · cobertura baixa (menos fiável)':''}${r.c?' · '+esc(r.c):''}${D.showrep?' · '+esc(r.r):''}</div></div>`).join('')||'<p class="small mut">Nada encontrado.</p>';
 }
-document.getElementById('rb').addEventListener('click',()=>{rapa=!rapa;sem();});sem();
+if(document.getElementById('pl')){
+ document.querySelectorAll('#pf button').forEach(b=>b.addEventListener('click',()=>{F=b.dataset.f;draw();}));
+ document.querySelectorAll('#ps button').forEach(b=>b.addEventListener('click',()=>{S=b.dataset.s;draw();}));
+ document.getElementById('pq').addEventListener('input',e=>{Q=e.target.value;draw();});draw();}
+if(document.getElementById('dl')){document.getElementById('dl').innerHTML=D.dest.map(x=>`<div style="padding:7px 0;border-top:1px solid var(--line)"><span class="chip ${x.tp==='fav'?'c-ok':'c-bad'}">${x.tp==='fav'?'favorável':'atenção'}</span> <span class="tiny mut">evidência: ${esc(x.ev||'—')}</span><div class="small">${esc(x.tx)}</div></div>`).join('');}
+if(document.getElementById('di')){const K={priorizar:['c-ok','priorizar'],evitar:['c-bad','evitar'],ajustar:['c-warn','ajustar'],monitorizar:['c-info','monitorizar']};
+ document.getElementById('di').innerHTML='<ul class="small" style="padding-left:18px">'+D.diet.map(x=>`<li><span class="chip ${K[x.k][0]}">${K[x.k][1]}</span> ${esc(x.t)}</li>`).join('')+'</ul>';}
 
 </script>
 <script>
