@@ -11,7 +11,7 @@
 <script>(function(){var d=document.documentElement,t=null,l=null,q=/[?&]lang=(en|pt)(?:&|#|$)/i.exec(location.search);q=q&&q[1].toLowerCase();try{if(q)localStorage.setItem('lang',q);l=localStorage.getItem('lang');t=localStorage.getItem('theme')}catch(e){}if(q)l=q;if(l==='en')d.lang='en';if(t!=='dark'&&t!=='light')t='dark';d.setAttribute('data-theme',t)})()</script>
 <script src="sf.js"></script>
 <style>
-:root{--bg:#f5f7fa;--card:#fff;--ink:#14202e;--mut:#5b6b7d;--line:#e3e8ef;--acc:#1f5eff;--ok:#12a150;--okb:#e6f6ec;--okt:#0b7a3b;--okd:#0b7a3b;--okdfg:#f4fff8;--nearb:#d9f5e4;--nearf:#0b7a3b;--warn:#d98a00;--warnb:#fff4dc;--warnt:#9a5f00;--bad:#d93636;--badb:#fde9e9;--badt:#b02020;--na:#8a97a8;--nab:#eef1f5;--nat:#56657a;--r:14px;--head:rgba(255,255,255,.94);--actfg:#fff;--sil:#e4ebf3;--sil2:#d5dee8;color-scheme:light}
+:root{--bg:#f5f7fa;--card:#fff;--ink:#14202e;--mut:#5b6b7d;--line:#e3e8ef;--acc:#1f5eff;--ok:#12a150;--okb:#e6f6ec;--okt:#0b7a3b;--okd:#0b7a3b;--okdfg:#f4fff8;--nearb:#d9f5e4;--nearf:#0b7a3b;--warn:#d98a00;--warnb:#fff4dc;--warnt:#9a5f00;--bad:#d93636;--badb:#fde9e9;--badt:#b02020;--na:#8a97a8;--nab:#eef1f5;--nat:#56657a;--r:14px;--head:rgba(255,255,255,.94);--actfg:#fff;--bodystroke:rgba(62,98,138,.58);--bodya:rgba(176,208,232,.62);--bodyb:rgba(214,230,242,.34);--halo:rgba(96,150,198,.22);--ostroke:rgba(24,48,72,.42);color-scheme:light}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:78px}
 body{margin:0;font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
@@ -34,55 +34,92 @@ nav.main a.active{background:var(--ink);color:var(--actfg)}
 .ddmenu a{display:block;border-radius:10px}
 main{max-width:1100px;margin:0 auto;padding:22px 20px 72px}
 h1{margin:0 0 16px;font-size:28px;letter-spacing:-.3px}
-h2{margin:0;font-size:22px;letter-spacing:-.2px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+h2{margin:0;font-size:22px;letter-spacing:-.2px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;min-width:0}
 h3{margin:0 0 8px;font-size:13px;font-weight:700;letter-spacing:.3px;text-transform:uppercase;color:var(--mut)}
-.stage{display:grid;grid-template-columns:minmax(280px,420px) minmax(0,1fr);gap:28px;align-items:start}
-.bodycol{min-width:0}
-.side{min-width:0}
-.fig{width:min(100%,400px);height:auto;display:block;margin:0 auto}
-.sil{fill:var(--sil);stroke:var(--sil2);stroke-width:1.2}
-.organ{fill:#8a97a8;stroke:rgba(255,255,255,.9);stroke-width:1.5;transition:fill .35s ease,stroke .15s ease,opacity .15s ease}
-.zone{cursor:pointer}
-.zone:hover .organ,.zone:focus-visible .organ{stroke:var(--ink);stroke-width:2.4;filter:brightness(1.08)}
+.stage{display:grid;grid-template-columns:minmax(280px,460px) minmax(0,1fr);gap:28px;align-items:start}
+.bodycol,.side{min-width:0}
+.figwrap{position:relative}
+.fig{width:auto;height:auto;max-width:100%;max-height:min(820px,calc(100vh - 200px));display:block;margin:0 auto;overflow:visible}
+.halo{pointer-events:none}
+.sil{fill:url(#bodyGrad);stroke:var(--bodystroke);stroke-width:1.35;stroke-linejoin:round}
+.face{fill:none;stroke:var(--bodystroke);stroke-width:1.1;stroke-linecap:round;opacity:.55}
+.zone{cursor:pointer;outline:none;opacity:1;transition:opacity .22s ease-out}
 .zone:focus{outline:none}
-.zone:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
-.zone.on .organ{stroke:var(--ink);stroke-width:2.6;animation:pulse 1.8s ease-in-out infinite}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.78}}
-@media(prefers-reduced-motion:reduce){.zone.on .organ{animation:none;opacity:1}.sidebox.in{animation:none}}
-.st-otimo{fill:#0b7a3b}.st-quase{fill:#7dcca0}.st-fora{fill:#e09a2b}.st-sem{fill:#8a97a8}
-.legend{display:flex;flex-wrap:wrap;gap:8px 14px;list-style:none;margin:12px 0 0;padding:0;justify-content:center;font-size:14px;color:var(--mut)}
-.legend li{display:flex;align-items:center;gap:6px}
-.dot{width:11px;height:11px;border-radius:99px;display:inline-block;flex:0 0 auto}
-.org-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
-.org-chips button{font:inherit;font-size:14px;display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:7px 12px;cursor:pointer}
+.zone:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+.fig.quiet .zone{opacity:.35}
+.fig.quiet .zone.on,.fig.quiet .zone:hover,.fig.quiet .zone:focus-visible{opacity:1}
+.organ{fill:var(--of);stroke:none}
+.organ.line{fill:none;stroke:var(--of);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;pointer-events:stroke}
+.zone.on .organ:not(.line){stroke:var(--ostroke);stroke-width:1.35;stroke-linejoin:round}
+.glow{opacity:0;pointer-events:none;transition:opacity .22s ease-out}
+.glow .organ{filter:url(#soft)}
+.zone.on .glow,.zone:hover .glow,.zone:focus-visible .glow{opacity:.9}
+.hit{fill:none;stroke:transparent;stroke-width:12;pointer-events:stroke}
+.hit.pad{fill:transparent;stroke:none;pointer-events:all}
+.fissure{fill:none;stroke:var(--of);stroke-width:1.05;opacity:.55;pointer-events:none}
+.zone[data-organ="ossos"] .organ.line{stroke-width:1.15;opacity:.72}
+.zone[data-organ="sangue"] .organ.line{stroke-width:1.05;opacity:.7}
+.zone[data-organ="pele"] .organ.line{stroke-width:1.45}
+.zone.on[data-organ="ossos"] .organ.line,.zone.on[data-organ="sangue"] .organ.line,.zone:hover[data-organ="ossos"] .organ.line,.zone:hover[data-organ="sangue"] .organ.line,.zone:focus-visible[data-organ="ossos"] .organ.line,.zone:focus-visible[data-organ="sangue"] .organ.line{opacity:1}
+.shape{transform-box:view-box}
+.zone[data-organ="coracao"] .shape{transform-origin:218px 244px}
+.zone[data-organ="pulmoes"] .shape{transform-origin:203px 256px}
+.fig:not(.quiet) .zone[data-organ="coracao"] .shape,.fig.quiet .zone.on[data-organ="coracao"] .shape{animation:beat 1.1s ease-in-out infinite}
+.fig:not(.quiet) .zone[data-organ="pulmoes"] .shape,.fig.quiet .zone.on[data-organ="pulmoes"] .shape{animation:breath 3.6s ease-in-out infinite}
+@keyframes beat{0%,100%{transform:scale(1)}38%{transform:scale(1.03)}58%{transform:scale(1)}}
+@keyframes breath{0%,100%{transform:scale(1)}50%{transform:scale(1.02)}}
+.st-otimo{--of:rgba(22,112,68,.5);--og:rgba(22,112,68,.55)}
+.st-quase{--of:rgba(78,156,112,.46);--og:rgba(78,156,112,.5)}
+.st-fora{--of:rgba(186,124,42,.48);--og:rgba(186,124,42,.5)}
+.st-sem{--of:rgba(126,142,158,.22);--og:rgba(126,142,158,.28)}
+.floatlab{position:absolute;z-index:6;display:flex;align-items:center;gap:8px;padding:5px 10px 5px 12px;border-radius:999px;background:var(--card);border:1px solid var(--line);box-shadow:0 10px 28px rgba(16,32,48,.14);pointer-events:none;white-space:nowrap;font-size:13px;font-weight:650;transform:translate(-50%,-120%)}
+.floatlab[hidden]{display:none}
+.org-chips{display:flex;gap:8px;margin-top:14px;overflow-x:auto;flex-wrap:nowrap;max-width:100%;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:2px}
+.org-chips::-webkit-scrollbar{display:none}
+.org-chips button{font:inherit;font-size:14px;display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:7px 12px;cursor:pointer;flex:0 0 auto}
 .org-chips button:hover{border-color:var(--acc)}
 .org-chips button.on{border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
 .org-chips button:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
-.hint{margin:0;color:var(--mut);font-size:15px}
-.sidebox{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px 8px}
-.sidebox.in{animation:rise .28s ease}
-@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-.blk{margin:0 0 16px}
+.dot{width:9px;height:9px;border-radius:99px;display:inline-block;flex:0 0 auto;background:var(--of)}
+.sidebox{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px 10px;box-shadow:0 10px 30px rgba(16,32,48,.04)}
+.touch{margin:0;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);font-weight:700}
+.bars{list-style:none;margin:14px 0 6px;padding:0;display:grid;gap:11px}
+.bars li{display:grid;grid-template-columns:12px minmax(0,1fr) auto;grid-template-areas:"d l n" "d b b";column-gap:10px;row-gap:5px;align-items:center}
+.bars .sw{grid-area:d;width:12px;height:12px;border-radius:99px;background:var(--of)}
+.bars .lab{grid-area:l;font-size:14px}
+.bars .num{grid-area:n;font-variant-numeric:tabular-nums;font-weight:700;color:var(--mut)}
+.bars .track{grid-area:b;height:6px;border-radius:99px;background:var(--nab);overflow:hidden}
+.bars .track i{display:block;height:100%;border-radius:99px;background:var(--of)}
+.phead{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin:0 0 12px}
+.back{font:inherit;font-size:14px;font-weight:650;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:6px 12px;cursor:pointer;flex:0 0 auto}
+.back:hover{border-color:var(--acc)}
+.back:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.blk{margin:0 0 18px}
 .rows{list-style:none;margin:0;padding:0}
-.rows li{display:flex;justify-content:space-between;align-items:flex-start;gap:10px 14px;padding:8px 0;border-top:1px solid var(--line);min-width:0}
-.rk{min-width:0;flex:1}
-.rk b,.rows a{font-weight:650}
-.meta{display:block;color:var(--mut);font-size:14px;margin-top:2px}
-.pill{display:inline-block;font-size:11.5px;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap;flex:0 0 auto}
+.rows li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 14px;align-items:center;padding:11px 0;border-top:1px solid var(--line);min-width:0}
+.rows li:first-child{border-top:0}
+.rk{min-width:0}
+.rk b,.rows a{font-weight:650;letter-spacing:-.01em}
+.rows a{min-width:0}
+.meta{display:block;color:var(--mut);font-size:14px;margin-top:2px;font-variant-numeric:tabular-nums}
+.pill{display:inline-block;font-size:11.5px;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap;justify-self:end}
 .pill.ok{background:var(--okb);color:var(--okt)}.pill.okd{background:var(--okd);color:var(--okdfg)}.pill.near{background:var(--nearb);color:var(--nearf)}.pill.warn{background:var(--warnb);color:var(--warnt)}.pill.bad{background:var(--badb);color:var(--badt)}.pill.na{background:var(--nab);color:var(--nat)}.pill.dim{color:var(--mut);font-weight:600}
+.rise{animation:rise .22s ease-out}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 main a{color:var(--acc)}
-html[data-theme="dark"]{color-scheme:dark;--bg:#0e141d;--card:#161e2a;--ink:#e5eaf1;--mut:#9aa7b8;--line:#2a3545;--acc:#7a9dff;--ok:#34c47a;--okb:#11321f;--okt:#63d99a;--okd:#0e6b38;--okdfg:#f3fff8;--nearb:#c6f0d4;--nearf:#08562e;--warn:#e8a63f;--warnb:#36290f;--warnt:#f2bf6b;--bad:#f06464;--badb:#3b1a1d;--badt:#ff8f8f;--na:#7f8c9e;--nab:#222b39;--nat:#aeb9c8;--head:rgba(16,22,32,.92);--actfg:#0e141d;--sil:#243044;--sil2:#33445a}
-html[data-theme="dark"] .organ{stroke:rgba(8,12,18,.55)}
-html[data-theme="dark"] .st-otimo{fill:#1a8f4a}
-html[data-theme="dark"] .st-quase{fill:#8ed4a8}
-html[data-theme="dark"] .st-fora{fill:#e8a63f}
-html[data-theme="dark"] .st-sem{fill:#66788c}
+html[data-theme="dark"]{color-scheme:dark;--bg:#0e141d;--card:#161e2a;--ink:#e5eaf1;--mut:#9aa7b8;--line:#2a3545;--acc:#7a9dff;--ok:#34c47a;--okb:#11321f;--okt:#63d99a;--okd:#0e6b38;--okdfg:#f3fff8;--nearb:#c6f0d4;--nearf:#08562e;--warn:#e8a63f;--warnb:#36290f;--warnt:#f2bf6b;--bad:#f06464;--badb:#3b1a1d;--badt:#ff8f8f;--na:#7f8c9e;--nab:#222b39;--nat:#aeb9c8;--head:rgba(16,22,32,.92);--actfg:#0e141d;--bodystroke:rgba(198,224,246,.72);--bodya:rgba(132,176,214,.2);--bodyb:rgba(86,120,160,.07);--halo:rgba(130,180,224,.2);--ostroke:rgba(236,246,255,.72)}
+html[data-theme="dark"] .st-otimo{--of:rgba(92,196,142,.55);--og:rgba(92,196,142,.7)}
+html[data-theme="dark"] .st-quase{--of:rgba(150,214,176,.42);--og:rgba(150,214,176,.6)}
+html[data-theme="dark"] .st-fora{--of:rgba(214,164,86,.5);--og:rgba(214,164,86,.65)}
+html[data-theme="dark"] .st-sem{--of:rgba(168,186,204,.2);--og:rgba(168,186,204,.35)}
+html[data-theme="dark"] .sidebox{box-shadow:none}
 html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 .tools{display:flex;align-items:center;gap:14px;margin-left:auto;flex:0 0 auto}
 .lang{display:flex;align-items:center;gap:4px;font-size:13.5px;white-space:nowrap}
 .lang button{font:inherit;border:0;background:none;color:var(--mut);cursor:pointer;padding:6px 6px;border-radius:8px}
 .lang button:hover{background:var(--nab);color:var(--ink)}.lang button.on{color:var(--ink);font-weight:700}
 .lang .sep{color:var(--na)}
+@media(min-width:641px){.org-chips{flex-wrap:wrap;overflow:visible}}
 @media(max-width:640px){
  html{scroll-padding-top:148px}
  .topin{gap:4px 8px;padding:6px 12px;flex-wrap:wrap}
@@ -91,11 +128,17 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
  nav.main a,.dd summary{padding:6px 10px}
  h1{font-size:24px}
  .stage{grid-template-columns:1fr}
- .fig{width:min(100%,340px)}
- .org-chips button{min-height:44px}
- .rows li{flex-wrap:wrap}
- .pill{white-space:normal}
- .sidebox{padding:14px 14px 6px}
+ .fig{max-height:60vh}
+ .org-chips button,.back{min-height:44px}
+ .rows li{grid-template-columns:minmax(0,1fr)}
+ .pill{justify-self:start;white-space:normal;max-width:100%}
+ .sidebox{padding:8px 14px 8px}
+ .phead{position:sticky;top:calc(var(--navh,128px) + 6px);z-index:4;background:var(--card);margin:0 -14px 12px;padding:10px 14px;border-bottom:1px solid var(--line)}
+ #panel{scroll-margin-top:4px}
+}
+@media(prefers-reduced-motion:reduce){
+ .zone,.glow,#panel,.rise,.shape{animation:none !important;transition:none !important}
+ .fig:not(.quiet) .zone[data-organ="coracao"] .shape,.fig.quiet .zone.on[data-organ="coracao"] .shape,.fig:not(.quiet) .zone[data-organ="pulmoes"] .shape,.fig.quiet .zone.on[data-organ="pulmoes"] .shape{animation:none !important}
 }
 </style>
 <link rel="stylesheet" href="assets/mobile.css">
@@ -111,90 +154,138 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 </div></header>
 <main>
 <h1 data-en="My body">O meu corpo</h1>
-<div class="stage">
+<div class="stage" id="stage">
 <div class="bodycol">
-<svg class="fig" viewBox="0 0 360 560" width="360" height="560" aria-label="Corpo" data-al-en="Body">
+<div class="figwrap" id="figwrap">
+<svg class="fig" viewBox="46 0 308 852" width="308" height="852" role="group" aria-label="Corpo" data-al-en="Body">
+<defs>
+<linearGradient id="bodyGrad" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="var(--bodya)"/>
+<stop offset="1" stop-color="var(--bodyb)"/>
+</linearGradient>
+<radialGradient id="haloGrad" cx="50%" cy="42%" r="48%">
+<stop offset="0" stop-color="var(--halo)"/>
+<stop offset="72%" stop-color="var(--halo)" stop-opacity="0"/>
+</radialGradient>
+<filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+<feGaussianBlur stdDeviation="5"/>
+</filter>
+<path id="head" d="M200 16C220 16 238 40 240 68C242 94 228 114 212 122C206 128 194 128 188 122C172 114 158 94 160 68C162 40 180 16 200 16Z"/>
+<path id="hair" d="M166 52C158 28 178 14 200 12C222 14 242 28 234 52C220 36 180 36 166 52Z"/>
+<path id="body" d="M186 120C179 122.7 178 130.3 172 136C166 141.7 159 148.3 150 154C141 159.7 125.7 164 118 170C110.3 176 108 182 104 190C100 198 97 207.7 94 218C91 228.3 88 240.3 86 252C84 263.7 83.3 276 82 288C80.7 300 79.3 312.7 78 324C76.7 335.3 75.3 347 74 356C72.7 365 71 370.7 70 378C69 385.3 67.3 393 68 400C68.7 407 70.3 415.3 74 420C77.7 424.7 84.7 428.3 90 428C95.3 427.7 102.3 423.3 106 418C109.7 412.7 110.7 404.3 112 396C113.3 387.7 113 378.3 114 368C115 357.7 116.3 345.7 118 334C119.7 322.3 121.3 310.3 124 298C126.7 285.7 130.7 271.7 134 260C137.3 248.3 141 238 144 228C147 218 151.3 199 152 200C152.7 201 149.3 222 148 234C146.7 246 144 259.3 144 272C144 284.7 148 297.7 148 310C148 322.3 145.7 334 144 346C142.3 358 139.7 370.3 138 382C136.3 393.7 135.3 404 134 416C132.7 428 131.3 440.3 130 454C128.7 467.7 127.3 482.7 126 498C124.7 513.3 123 530 122 546C121 562 120.7 578.3 120 594C119.3 609.7 118.7 624.7 118 640C117.3 655.3 116 671 116 686C116 701 116.7 715.7 118 730C119.3 744.3 122 759.7 124 772C126 784.3 130 796 130 804C130 812 122 815.3 124 820C126 824.7 135.3 829.7 142 832C148.7 834.3 158.7 836 164 834C169.3 832 173.3 826 174 820C174.7 814 168.3 808.3 168 798C167.7 787.7 170.7 772 172 758C173.3 744 175 729 176 714C177 699 177.3 683.7 178 668C178.7 652.3 179.3 636 180 620C180.7 604 181 588.3 182 572C183 555.7 184.7 538.3 186 522C187.3 505.7 188.7 489.3 190 474C191.3 458.7 191.3 437.3 194 430C196.7 422.7 203.3 422.7 206 430C208.7 437.3 208.7 458.7 210 474C211.3 489.3 212.7 505.7 214 522C215.3 538.3 217 555.7 218 572C219 588.3 219.3 604 220 620C220.7 636 221.3 652.3 222 668C222.7 683.7 223 699 224 714C225 729 226.7 744 228 758C229.3 772 232.3 787.7 232 798C231.7 808.3 225.3 814 226 820C226.7 826 230.7 832 236 834C241.3 836 251.3 834.3 258 832C264.7 829.7 274 824.7 276 820C278 815.3 270 812 270 804C270 796 274 784.3 276 772C278 759.7 280.7 744.3 282 730C283.3 715.7 284 701 284 686C284 671 282.7 655.3 282 640C281.3 624.7 280.7 609.7 280 594C279.3 578.3 279 562 278 546C277 530 275.3 513.3 274 498C272.7 482.7 271.3 467.7 270 454C268.7 440.3 267.3 428 266 416C264.7 404 263.7 393.7 262 382C260.3 370.3 257.7 358 256 346C254.3 334 252 322.3 252 310C252 297.7 256 284.7 256 272C256 259.3 253.3 246 252 234C250.7 222 247.3 201 248 200C248.7 199 253 218 256 228C259 238 262.7 248.3 266 260C269.3 271.7 273.3 285.7 276 298C278.7 310.3 280.3 322.3 282 334C283.7 345.7 285 357.7 286 368C287 378.3 286.7 387.7 288 396C289.3 404.3 290.3 412.7 294 418C297.7 423.3 304.7 427.7 310 428C315.3 428.3 322.3 424.7 326 420C329.7 415.3 331.3 407 332 400C332.7 393 331 385.3 330 378C329 370.7 327.3 365 326 356C324.7 347 323.3 335.3 322 324C320.7 312.7 319.3 300 318 288C316.7 276 316 263.7 314 252C312 240.3 309 228.3 306 218C303 207.7 300 198 296 190C292 182 289.7 176 282 170C274.3 164 259 159.7 250 154C241 148.3 234 141.7 228 136C222 130.3 221 122.7 214 120C207 117.3 193 117.3 186 120Z"/>
+<g id="brain">
+<path d="M202 34C182 28 164 44 166 60C168 76 184 86 202 78C202 62 202 46 202 34Z"/>
+<path d="M198 34C218 28 236 44 234 60C232 76 216 86 198 78C198 62 198 46 198 34Z"/>
+<path class="fissure" d="M200 40v32"/>
+</g>
+<g id="eyes">
+<path d="M170 74C178 66 194 66 198 74C192 80 176 80 170 74Z"/>
+<path d="M202 74C208 66 222 66 230 74C224 80 208 80 202 74Z"/>
+</g>
+<g id="thyroid">
+<path d="M182 132C170 128 164 144 172 156C180 166 196 160 198 148C200 138 190 130 182 132Z"/>
+<path d="M218 132C230 128 236 144 228 156C220 166 204 160 202 148C200 138 210 130 218 132Z"/>
+<path d="M196 146h8v6h-8z"/>
+</g>
+<g id="lungs">
+<path d="M190 198C168 204 152 224 148 252C144 280 154 308 172 318C186 326 202 314 206 292C210 268 204 228 196 212C194 204 192 200 190 198Z"/>
+<path class="fissure" d="M164 270C182 258 198 272 204 288"/>
+<path d="M216 200C238 206 256 224 258 250C260 274 250 302 234 312C220 320 208 306 206 286C204 266 212 236 210 218C212 208 214 202 216 200Z"/>
+<path class="fissure" d="M240 260C224 272 212 266 208 248"/>
+</g>
+<path id="heart" d="M214 214C202 204 190 214 192 232C194 248 206 264 220 282C228 268 242 252 244 234C246 216 234 204 222 206C218 208 216 210 214 214Z"/>
+<path id="liver" d="M156 308C152 292 170 280 194 278C214 276 228 290 226 310C224 332 210 356 188 366C168 376 154 364 152 342C150 326 152 316 156 308Z"/>
+<g id="kidneys">
+<path d="M162 340C152 348 150 368 158 386C166 402 182 398 186 380C190 368 182 364 178 356C184 348 188 340 182 332C174 322 168 328 162 340Z"/>
+<path d="M238 328C248 336 250 356 242 374C234 390 218 386 214 368C210 356 218 352 222 344C216 336 212 328 218 320C226 310 232 316 238 328Z"/>
+</g>
+<path id="pancreas" d="M176 334C198 322 232 318 256 330C262 336 256 346 242 348C214 352 186 348 172 340C164 334 168 330 176 334Z"/>
+<g id="gut">
+<path d="M176 388C166 400 178 416 196 412C212 408 210 390 194 384C182 378 170 380 176 388Z"/>
+<path d="M194 396C186 410 200 424 216 418C230 412 226 396 212 390C200 384 186 386 194 396Z"/>
+<path d="M182 406C174 416 184 428 200 424C212 420 212 406 200 402C190 398 176 400 182 406Z"/>
+</g>
+<g id="hormones">
+<path d="M170 336C178 326 192 328 188 340C184 348 172 346 170 336Z"/>
+<path d="M230 324C222 314 208 316 212 328C216 336 228 334 230 324Z"/>
+<path d="M158 404C152 396 146 406 154 416C162 422 168 414 164 404Z"/>
+<path d="M242 404C248 396 254 406 246 416C238 422 232 414 236 404Z"/>
+</g>
+<g id="muscle">
+<path d="M122 176C104 188 94 216 110 234C124 218 142 196 132 178C128 170 126 170 122 176Z"/>
+<path d="M278 176C296 188 306 216 290 234C276 218 258 196 268 178C272 170 274 170 278 176Z"/>
+<path d="M152 456C140 490 136 558 146 622C154 648 170 640 172 606C176 550 166 490 156 460C152 452 152 452 152 456Z"/>
+<path d="M248 456C260 490 264 558 254 622C246 648 230 640 228 606C224 550 234 490 244 460C248 452 248 452 248 456Z"/>
+</g>
+<path id="bones" class="line" d="M200 142V428M164 174C182 162 196 164 200 178M200 178C204 164 218 162 236 174M156 206C176 196 196 202 200 208M200 208C204 202 224 196 244 206M154 230C176 220 196 226 200 232M200 232C204 226 224 220 246 230M154 254C178 246 196 252 200 258M200 258C204 252 222 246 246 254M142 424C166 404 186 422 200 436C214 422 234 404 258 424M150 446C170 466 230 466 250 446M138 448C132 540 126 680 132 800M262 448C268 540 274 680 268 800M110 198C102 250 98 320 104 372M290 198C298 250 302 320 296 372"/>
+<path id="vessels" class="line" d="M194 146C192 168 188 188 198 206M206 146C208 168 212 188 204 206M198 206C216 194 234 206 236 228C238 248 222 264 208 278V416M208 416C192 450 176 530 174 690M208 416C224 450 224 530 226 690M198 208C152 196 120 216 106 276C98 318 100 358 94 396M206 210C254 196 286 216 298 276C306 318 304 358 308 396"/>
+</defs>
+<ellipse class="halo" cx="200" cy="430" rx="168" ry="360" fill="url(#haloGrad)"/>
 <g class="sil" aria-hidden="true">
-<rect x="124" y="318" width="46" height="200" rx="23"/>
-<rect x="190" y="318" width="46" height="200" rx="23"/>
-<rect x="18" y="156" width="128" height="36" rx="18" transform="rotate(-20 146 174)"/>
-<rect x="214" y="156" width="128" height="36" rx="18" transform="rotate(20 214 174)"/>
-<rect x="108" y="140" width="144" height="200" rx="72"/>
-<rect x="163" y="110" width="34" height="40" rx="14"/>
-<ellipse cx="180" cy="68" rx="48" ry="52"/>
+<use href="#body"/>
+<use href="#head"/>
+<path class="face" d="M200 88v12M194 110h12"/>
 </g>
-<g class="zone" data-organ="pele" tabindex="0" role="button">
-<path class="organ st-sem" d="M136 46C136 22 154 12 180 12c26 0 44 10 44 34-16-14-30-20-44-20s-28 6-44 20z"/>
-<ellipse class="organ st-sem" cx="62" cy="174" rx="16" ry="13" transform="rotate(-20 146 174)"/>
+<g class="zone" data-organ="ossos" tabindex="-1" role="button" aria-pressed="false">
+<g class="shape"><g class="glow"><use href="#bones" class="organ line st-sem"/></g><use href="#bones" class="organ line st-sem"/><use href="#bones" class="hit"/></g>
 </g>
-<g class="zone" data-organ="musculos" tabindex="0" role="button">
-<ellipse class="organ st-sem" cx="150" cy="436" rx="18" ry="30"/>
-<ellipse class="organ st-sem" cx="210" cy="436" rx="18" ry="30"/>
+<g class="zone" data-organ="sangue" tabindex="-1" role="button" aria-pressed="false">
+<g class="shape"><g class="glow"><use href="#vessels" class="organ line st-sem"/></g><use href="#vessels" class="organ line st-sem"/><use href="#vessels" class="hit"/></g>
 </g>
-<g class="zone" data-organ="ossos" tabindex="0" role="button">
-<g class="organ st-sem">
-<ellipse cx="147" cy="468" rx="8" ry="8"/>
-<rect x="141" y="468" width="12" height="36" rx="6"/>
-<ellipse cx="147" cy="506" rx="8" ry="8"/>
-<ellipse cx="213" cy="468" rx="8" ry="8"/>
-<rect x="207" y="468" width="12" height="36" rx="6"/>
-<ellipse cx="213" cy="506" rx="8" ry="8"/>
+<g class="zone" data-organ="pele" tabindex="-1" role="button" aria-pressed="false">
+<g class="shape"><g class="glow"><use href="#body" class="organ line st-sem"/><use href="#head" class="organ line st-sem"/><use href="#hair" class="organ st-sem"/></g><use href="#body" class="organ line st-sem"/><use href="#head" class="organ line st-sem"/><use href="#hair" class="organ st-sem"/><use href="#body" class="hit"/><use href="#head" class="hit"/></g>
 </g>
+<g class="zone" data-organ="rins" tabindex="-1" role="button" aria-pressed="false">
+<g class="shape"><g class="glow"><use href="#kidneys" class="organ st-sem"/></g><use href="#kidneys" class="organ st-sem"/></g>
 </g>
-<g class="zone" data-organ="hormonios" tabindex="0" role="button">
-<ellipse class="organ st-sem" cx="180" cy="368" rx="24" ry="13"/>
+<g class="zone" data-organ="musculos" tabindex="-1" role="button" aria-pressed="false">
+<g class="shape"><g class="glow"><use href="#muscle" class="organ st-sem"/></g><use href="#muscle" class="organ st-sem"/></g>
 </g>
-<g class="zone" data-organ="intestino" tabindex="0" role="button">
-<path class="organ st-sem" d="M148 328c14-16 42-18 58-2 12 12 6 26-8 28-16 2-22-10-8-18 10-6 22 0 20 12-2 14-18 22-36 18-20-4-34-16-26-38z"/>
+<g class="zone" data-organ="pulmoes" tabindex="-1" role="button" aria-pressed="false">
+<g class="shape"><g class="glow"><use href="#lungs" class="organ st-sem"/></g><use href="#lungs" class="organ st-sem"/></g>
 </g>
-<g class="zone" data-organ="rins" tabindex="0" role="button">
-<ellipse class="organ st-sem" cx="124" cy="312" rx="12" ry="18"/>
-<ellipse class="organ st-sem" cx="236" cy="308" rx="12" ry="18"/>
+<g class="zone" data-organ="figado" tabindex="-1" role="button" aria-pressed="false">
+<g class="shape"><g class="glow"><use href="#liver" class="organ st-sem"/></g><use href="#liver" class="organ st-sem"/></g>
 </g>
-<g class="zone" data-organ="figado" tabindex="0" role="button">
-<ellipse class="organ st-sem" cx="142" cy="268" rx="32" ry="22"/>
+<g class="zone" data-organ="pancreas" tabindex="-1" role="button" aria-pressed="false">
+<g class="shape"><g class="glow"><use href="#pancreas" class="organ st-sem"/></g><use href="#pancreas" class="organ st-sem"/></g>
 </g>
-<g class="zone" data-organ="pancreas" tabindex="0" role="button">
-<ellipse class="organ st-sem" cx="198" cy="286" rx="24" ry="10"/>
+<g class="zone" data-organ="intestino" tabindex="-1" role="button" aria-pressed="false">
+<g class="shape"><g class="glow"><use href="#gut" class="organ st-sem"/></g><use href="#gut" class="organ st-sem"/></g>
 </g>
-<g class="zone" data-organ="pulmoes" tabindex="0" role="button">
-<ellipse class="organ st-sem" cx="146" cy="206" rx="26" ry="32"/>
-<path class="organ st-sem" d="M186 178c20-6 42 0 48 20 6 24 2 50-8 64-8 10-22 6-26-4-4-18-4-40-8-52-2-8-6-22-6-28z"/>
+<g class="zone" data-organ="coracao" tabindex="-1" role="button" aria-pressed="false">
+<g class="shape"><g class="glow"><use href="#heart" class="organ st-sem"/></g><use href="#heart" class="organ st-sem"/></g>
 </g>
-<g class="zone" data-organ="coracao" tabindex="0" role="button">
-<path class="organ st-sem" d="M214 196c-8-12-22-8-24 4-2-12-16-16-24-4-10 12-8 28 6 40l18 14 18-14c14-12 16-28 6-40z"/>
+<g class="zone" data-organ="hormonios" tabindex="-1" role="button" aria-pressed="false">
+<g class="shape"><g class="glow"><use href="#hormones" class="organ st-sem"/></g><use href="#hormones" class="organ st-sem"/></g>
 </g>
-<g class="zone" data-organ="sangue" tabindex="0" role="button" transform="rotate(20 214 174)">
-<path class="organ st-sem" d="M300 165c0-10 8-16 8-16s8 6 8 16c0 8-8 14-8 14s-8-6-8-14z"/>
+<g class="zone" data-organ="tiroide" tabindex="-1" role="button" aria-pressed="false">
+<g class="shape"><g class="glow"><use href="#thyroid" class="organ st-sem"/></g><use href="#thyroid" class="organ st-sem"/><rect class="hit pad" x="160" y="124" width="80" height="46"/></g>
 </g>
-<g class="zone" data-organ="tiroide" tabindex="0" role="button">
-<g class="organ st-sem">
-<ellipse cx="164" cy="132" rx="12" ry="8"/>
-<ellipse cx="196" cy="132" rx="12" ry="8"/>
-<rect x="174" y="127" width="12" height="10" rx="3"/>
+<g class="zone" data-organ="cerebro" tabindex="-1" role="button" aria-pressed="false">
+<g class="shape"><g class="glow"><use href="#brain" class="organ st-sem"/></g><use href="#brain" class="organ st-sem"/></g>
 </g>
-</g>
-<g class="zone" data-organ="olhos" tabindex="0" role="button">
-<ellipse class="organ st-sem" cx="162" cy="86" rx="10" ry="7"/>
-<ellipse class="organ st-sem" cx="198" cy="86" rx="10" ry="7"/>
-</g>
-<g class="zone" data-organ="cerebro" tabindex="0" role="button">
-<ellipse class="organ st-sem" cx="180" cy="60" rx="26" ry="20"/>
+<g class="zone" data-organ="olhos" tabindex="-1" role="button" aria-pressed="false">
+<g class="shape"><g class="glow"><use href="#eyes" class="organ st-sem"/></g><use href="#eyes" class="organ st-sem"/><rect class="hit pad" x="166" y="62" width="68" height="22"/></g>
 </g>
 </svg>
-<ul class="legend">
-<li><i class="dot st-otimo" aria-hidden="true"></i><span data-en="Optimal">Ótimo</span></li>
-<li><i class="dot st-quase" aria-hidden="true"></i><span data-en="Nearly optimal">Quase ótimo</span></li>
-<li><i class="dot st-fora" aria-hidden="true"></i><span data-en="Outside optimal">Fora do ótimo</span></li>
-<li><i class="dot st-sem" aria-hidden="true"></i><span data-en="No data">Sem dados</span></li>
-</ul>
+<div class="floatlab" id="floatlab" hidden><span id="flname"></span><span id="flst" class="pill"></span></div>
+</div>
 <div class="org-chips" id="chips"></div>
 </div>
 <aside class="side">
-<p class="hint" id="hint" data-en="Choose a zone.">Escolhe uma zona.</p>
-<div class="sidebox" id="panel" hidden>
+<div class="sidebox" id="panel">
+<div id="psum">
+<p class="touch" data-en="Tap an organ">Toque num órgão</p>
+<ul class="bars" id="bars"></ul>
+</div>
+<div id="pdetail" hidden>
+<div class="phead">
 <h2 id="oname"></h2>
+<button type="button" class="back" id="back" data-en="Back">Voltar</button>
+</div>
 <div id="blocks"></div>
+</div>
 </div>
 </aside>
 </div>
@@ -202,16 +293,20 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 <script>
 let LANG='pt';try{if(localStorage.getItem('lang')==='en')LANG='en'}catch(e){}
 {const q=/[?&]lang=(en|pt)(?:&|#|$)/i.exec(location.search);if(q)LANG=q[1].toLowerCase()}
-let ORG=[], MARK=new Map(), TGT=new Map(), BP=null, CUR=null, COL={};
+let ORG=[], MARK=new Map(), TGT=new Map(), BP=null, CUR=null, COL={}, HOVER=null;
 const MES={pt:['','jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'],en:['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']};
 const SL={otimo:['ok','Ótimo','Optimal'],aceitavel:['warn','Aceitável','Acceptable'],fora_do_otimo:['warn','Fora do ótimo','Outside optimal'],fora_de_referencia:['bad','Fora da referência','Out of range'],sem_alvo:['na','Sem alvo','No target']};
 const ST={otimo:['okd','Ótimo','Optimal'],quase_otimo:['near','Quase ótimo','Nearly optimal'],fora:['warn','Fora do ótimo','Outside optimal'],sem_dados:['na','Sem dados','No data'],sem_medida:['na dim','Sem medida clínica','No clinical measure']};
 const FILL={otimo:'st-otimo',quase_otimo:'st-quase',fora:'st-fora',sem_dados:'st-sem'};
+const ORDER=['otimo','quase_otimo','fora','sem_dados'];
+const REDUCE=()=>matchMedia('(prefers-reduced-motion: reduce)').matches;
+const FINE=()=>matchMedia('(hover:hover) and (pointer:fine)').matches;
 function applyLang(){const en=LANG==='en';document.documentElement.lang=en?'en':'pt-PT';document.title=en?document.body.dataset.titleEn:document.body.dataset.titlePt;
  document.querySelectorAll('[data-en]').forEach(el=>{if(!el.hasAttribute('data-pt'))el.setAttribute('data-pt',el.textContent);el.textContent=en?el.dataset.en:el.dataset.pt});
  document.querySelectorAll('[data-al-en]').forEach(el=>{if(!el.hasAttribute('data-al-pt'))el.setAttribute('data-al-pt',el.getAttribute('aria-label')||'');el.setAttribute('aria-label',en?el.dataset.alEn:el.dataset.alPt)});
  document.querySelectorAll('#lang button').forEach(b=>{const on=b.dataset.l===LANG;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});
- labelZones()}
+ labelZones();
+ if(HOVER){const z=document.querySelector('.zone[data-organ="'+HOVER+'"]');if(z)placeLabel(z)}}
 document.querySelectorAll('#lang button').forEach(b=>b.addEventListener('click',()=>{if(LANG===b.dataset.l)return;LANG=b.dataset.l;try{localStorage.setItem('lang',LANG)}catch(e){}try{if(/[?&]lang=/i.test(location.search)){const u=new URL(location.href);u.searchParams.set('lang',LANG);history.replaceState(history.state,'',u)}}catch(e){}applyLang()}));
 const has=x=>x!==null&&x!==undefined&&x!=='';
 const isNum=v=>typeof v==='number'||/^\s*-?\d+(\.\d+)?\s*$/.test(String(v));
@@ -236,9 +331,17 @@ function labelZones(){document.querySelectorAll('.zone').forEach(z=>{const o=ORG
  document.querySelectorAll('#chips button').forEach(b=>{const o=ORG.find(x=>x.id===b.dataset.organ);if(!o)return;b.setAttribute('aria-label',(LANG==='en'?o.en:o.pt)+(COL[o.id]?', '+statusName(COL[o.id]):''))})}
 function pill(spec){const b=document.createElement('span');b.className='pill '+spec[0];b.textContent=spec[1];b.setAttribute('data-en',spec[2]);return b}
 function block(titlePt,titleEn){const s=document.createElement('section');s.className='blk';const h=document.createElement('h3');h.textContent=titlePt;h.setAttribute('data-en',titleEn);const ul=document.createElement('ul');ul.className='rows';s.append(h,ul);return {s,ul}}
+function rise(el){if(!el||REDUCE())return;el.classList.remove('rise');void el.offsetWidth;el.classList.add('rise')}
+function renderSummary(){const counts={otimo:0,quase_otimo:0,fora:0,sem_dados:0};ORG.forEach(o=>{const c=COL[o.id]||'sem_dados';if(counts[c]!=null)counts[c]++});
+ const ul=document.getElementById('bars');ul.textContent='';const n=Math.max(1,ORG.length);
+ ORDER.forEach(k=>{const s=ST[k];const li=document.createElement('li');const sw=document.createElement('i');sw.className='sw '+FILL[k];sw.setAttribute('aria-hidden','true');
+  const lab=document.createElement('span');lab.className='lab';lab.textContent=s[1];lab.setAttribute('data-en',s[2]);
+  const num=document.createElement('span');num.className='num';num.textContent=String(counts[k]);
+  const track=document.createElement('span');track.className='track';const bar=document.createElement('i');bar.className=FILL[k];bar.style.width=(counts[k]/n*100)+'%';track.append(bar);
+  li.append(sw,lab,num,track);ul.append(li)})}
 function renderPanel(id){const o=ORG.find(x=>x.id===id);if(!o)return;CUR=id;
- document.getElementById('hint').hidden=true;
- const box=document.getElementById('panel');box.hidden=false;box.classList.remove('in');void box.offsetWidth;box.classList.add('in');
+ document.getElementById('psum').hidden=true;
+ const det=document.getElementById('pdetail');det.hidden=false;
  const h=document.getElementById('oname');h.textContent='';
  const nm=document.createElement('span');nm.textContent=o.pt;nm.setAttribute('data-en',o.en);h.append(nm,pill(ST[COL[id]]||ST.sem_dados));
  const root=document.getElementById('blocks');root.textContent='';
@@ -257,17 +360,63 @@ function renderPanel(id){const o=ORG.find(x=>x.id===id);if(!o)return;CUR=id;
  if((o.genetica||[]).length){const b=block('Genética','Genetics');o.genetica.forEach(g=>{const li=document.createElement('li');const a=document.createElement('a');a.href=g.href;a.textContent=g.pt;a.setAttribute('data-en',g.en);li.append(a);b.ul.append(li)});root.append(b.s)}
  document.querySelectorAll('.zone').forEach(z=>z.classList.toggle('on',z.dataset.organ===id));
  document.querySelectorAll('#chips button').forEach(b=>{const on=b.dataset.organ===id;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on?'true':'false')});
+ syncFig();rise(det);
+ const chip=document.querySelector('#chips button[data-organ="'+id+'"]');
+ if(chip&&matchMedia('(max-width:640px)').matches)chip.scrollIntoView({inline:'center',block:'nearest',behavior:REDUCE()?'auto':'smooth'});
  applyLang();
- if(window.matchMedia('(max-width:640px)').matches)document.getElementById('panel').scrollIntoView({behavior:'smooth',block:'nearest'});
-}
-function select(id,push){if(!ORG.some(o=>o.id===id))return;renderPanel(id);try{const u=location.pathname+location.search+'#'+id;if(push)history.replaceState(history.state,'',u);else if(location.hash!=='#'+id)history.replaceState(history.state,'',u)}catch(e){}}
-function paint(){ORG.forEach(o=>{COL[o.id]=colourOf(o)});document.querySelectorAll('.zone').forEach(z=>{const cls=FILL[COL[z.dataset.organ]]||'st-sem';z.querySelectorAll('.organ').forEach(el=>{el.classList.remove('st-otimo','st-quase','st-fora','st-sem');el.classList.add(cls)})});
- const chips=document.getElementById('chips');chips.textContent='';ORG.forEach(o=>{const b=document.createElement('button');b.type='button';b.dataset.organ=o.id;b.setAttribute('aria-pressed','false');const i=document.createElement('i');i.className='dot '+(FILL[COL[o.id]]||'st-sem');i.setAttribute('aria-hidden','true');const s=document.createElement('span');s.textContent=o.pt;s.setAttribute('data-en',o.en);b.append(i,s);b.addEventListener('click',()=>select(o.id,true));chips.append(b)});
- const fig=document.querySelector('.fig');fig.addEventListener('click',e=>{const z=e.target.closest('.zone');if(z)select(z.dataset.organ,true)});
- fig.addEventListener('keydown',e=>{const z=e.target.closest('.zone');if(!z)return;if(e.key==='Enter'||e.key===' '){e.preventDefault();select(z.dataset.organ,true)}});
- const hid=(location.hash||'').replace(/^#/,'');if(ORG.some(o=>o.id===hid))select(hid,false);applyLang()}
+ if(matchMedia('(max-width:640px)').matches)document.getElementById('panel').scrollIntoView({behavior:REDUCE()?'auto':'smooth',block:'start'})}
+function setHash(id){try{history.replaceState(history.state,'',location.pathname+location.search+(id?'#'+id:''))}catch(e){}}
+function select(id){if(!ORG.some(o=>o.id===id))return;setRoving(id);renderPanel(id);setHash(id)}
+function clearSel(){if(!CUR)return;CUR=null;HOVER=null;hideLabel();
+ document.querySelectorAll('.zone').forEach(z=>{z.classList.remove('on');z.setAttribute('aria-pressed','false')});
+ document.querySelectorAll('#chips button').forEach(b=>{b.classList.remove('on');b.setAttribute('aria-pressed','false')});
+ document.getElementById('pdetail').hidden=true;document.getElementById('psum').hidden=false;syncFig();rise(document.getElementById('panel'));setHash('');labelZones()}
+function setRoving(id){document.querySelectorAll('.zone').forEach(z=>{z.tabIndex=z.dataset.organ===id?0:-1})}
+function zoneBy(id){return document.querySelector('.zone[data-organ="'+id+'"]')}
+function moveOrgan(id){setRoving(id);const z=zoneBy(id);if(z)z.focus({preventScroll:true});if(CUR)select(id)}
+function syncFig(){const fig=document.querySelector('.fig');const focused=document.activeElement&&document.activeElement.closest&&document.activeElement.closest('.zone');fig.classList.toggle('quiet',!!(CUR||HOVER||focused))}
+function hideLabel(){document.getElementById('floatlab').hidden=true}
+let PTR=null, PTR_FINE=false;
+function placeLabel(z){if(!z||!(PTR_FINE||FINE()))return;const o=ORG.find(x=>x.id===z.dataset.organ);if(!o)return;
+ const lab=document.getElementById('floatlab'),nm=document.getElementById('flname'),st=document.getElementById('flst');
+ const spec=ST[COL[o.id]]||ST.sem_dados;nm.textContent=LANG==='en'?o.en:o.pt;st.className='pill '+spec[0];st.textContent=LANG==='en'?spec[2]:spec[1];
+ lab.hidden=false;const host=document.getElementById('figwrap').getBoundingClientRect();
+ let x,y;
+ if(PTR){x=PTR.x-host.left;y=PTR.y-host.top}
+ else{const br=z.getBoundingClientRect();x=br.left-host.left+Math.min(br.width*.5,36);y=br.top-host.top+8}
+ const lw=lab.offsetWidth||160;x=Math.max(lw/2+6,Math.min(host.width-lw/2-6,x));
+ if(y<34)lab.style.transform='translate(-50%, 12px)';else lab.style.transform='translate(-50%, calc(-100% - 10px))';
+ lab.style.left=x+'px';lab.style.top=y+'px'}
+function paint(){ORG.forEach(o=>{COL[o.id]=colourOf(o)});
+ document.querySelectorAll('.zone').forEach(z=>{const cls=FILL[COL[z.dataset.organ]]||'st-sem';z.querySelectorAll('.organ').forEach(el=>{el.classList.remove('st-otimo','st-quase','st-fora','st-sem');el.classList.add(cls)})});
+ const chips=document.getElementById('chips');chips.textContent='';
+ ORG.forEach(o=>{const b=document.createElement('button');b.type='button';b.dataset.organ=o.id;b.setAttribute('aria-pressed','false');const i=document.createElement('i');i.className='dot '+(FILL[COL[o.id]]||'st-sem');i.setAttribute('aria-hidden','true');const s=document.createElement('span');s.textContent=o.pt;s.setAttribute('data-en',o.en);b.append(i,s);b.addEventListener('click',()=>select(o.id));chips.append(b)});
+ renderSummary();
+ const hid=(location.hash||'').replace(/^#/,'');
+ if(ORG.some(o=>o.id===hid))select(hid);else{setRoving(ORG[0]?ORG[0].id:'');applyLang()}}
 function indexData(sangue,objetivos){(sangue.marcadores||[]).forEach(m=>{const x=stOf(m);if(x)MARK.set(m.m,x)});
  (objetivos.groups||[]).forEach(g=>(g.targets||[]).forEach(t=>{TGT.set(t.id,t);if(!BP)(t.medidas||[]).forEach(m=>{if(m.nome&&m.nome.pt==='Pressão arterial'&&m.resultado)BP=m})}))}
+function navH(){const h=document.querySelector('header.top');if(h)document.documentElement.style.setProperty('--navh',h.offsetHeight+'px')}
+const fig=document.querySelector('.fig');
+document.getElementById('stage').addEventListener('click',e=>{const z=e.target.closest('.zone');if(z){select(z.dataset.organ);return}if(e.target.closest('#chips')||e.target.closest('#panel'))return;clearSel()});
+fig.addEventListener('pointerover',e=>{const z=e.target.closest('.zone');if(!z)return;HOVER=z.dataset.organ;PTR={x:e.clientX,y:e.clientY};PTR_FINE=e.pointerType!=='touch';syncFig();placeLabel(z)});
+fig.addEventListener('pointermove',e=>{if(!HOVER)return;PTR={x:e.clientX,y:e.clientY};PTR_FINE=e.pointerType!=='touch';const z=zoneBy(HOVER);if(z)placeLabel(z)});
+fig.addEventListener('pointerout',e=>{const z=e.target.closest('.zone');if(!z)return;const to=e.relatedTarget&&e.relatedTarget.closest&&e.relatedTarget.closest('.zone');if(to)return;HOVER=null;PTR=null;PTR_FINE=false;hideLabel();syncFig()});
+fig.addEventListener('focusin',e=>{const z=e.target.closest('.zone');if(!z)return;syncFig();if(!HOVER){PTR=null;placeLabel(z)}});
+fig.addEventListener('focusout',()=>{setTimeout(()=>{if(!fig.contains(document.activeElement)){if(!HOVER)hideLabel();syncFig()}},0)});
+document.getElementById('back').addEventListener('click',clearSel);
+document.addEventListener('keydown',e=>{
+ if(e.key==='Escape'){clearSel();return}
+ const zone=e.target.closest&&e.target.closest('.zone');
+ const chip=e.target.closest&&e.target.closest('#chips button');
+ const cur=zone||chip;if(!cur||!ORG.length)return;
+ const ids=ORG.map(o=>o.id),i=ids.indexOf(cur.dataset.organ);if(i<0)return;
+ if(e.key==='ArrowRight'||e.key==='ArrowDown'){e.preventDefault();moveOrgan(ids[(i+1)%ids.length])}
+ else if(e.key==='ArrowLeft'||e.key==='ArrowUp'){e.preventDefault();moveOrgan(ids[(i-1+ids.length)%ids.length])}
+ else if(zone&&e.key==='Tab'){const n=e.shiftKey?i-1:i+1;if(n>=0&&n<ids.length){e.preventDefault();setRoving(ids[n]);zoneBy(ids[n]).focus()}}
+ else if(zone&&(e.key==='Enter'||e.key===' ')){e.preventDefault();select(cur.dataset.organ)}
+});
+navH();addEventListener('resize',navH);
 Promise.all(['data/corpo.json','data/sangue.json','data/objetivos.json'].map(u=>fetch(u).then(r=>{if(!r.ok)throw 0;return r.json()}))).then(function(all){ORG=all[0].orgaos||[];indexData(all[1],all[2]);paint()}).catch(function(){});
 applyLang();
 let THEME=null;try{THEME=localStorage.getItem('theme')}catch(e){}
