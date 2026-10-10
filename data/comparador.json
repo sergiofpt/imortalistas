@@ -110,49 +110,49 @@
   "sf_sup": {
    "figura": "sergio-f",
    "titulo": "Suplementos + Medicação",
-   "url": "https://sergiofpt.github.io/imortalistas/suplementos.html",
+   "url": "suplementos.html",
    "data": "2026-10-06"
   },
   "sf_dieta": {
    "figura": "sergio-f",
    "titulo": "Dieta",
-   "url": "https://sergiofpt.github.io/imortalistas/dieta.html",
+   "url": "dieta.html",
    "data": "2026-10-06"
   },
   "sf_treino": {
    "figura": "sergio-f",
    "titulo": "Treino",
-   "url": "https://sergiofpt.github.io/imortalistas/treino.html",
+   "url": "treino.html",
    "data": "2026-10-06"
   },
   "sf_sono": {
    "figura": "sergio-f",
    "titulo": "Sono",
-   "url": "https://sergiofpt.github.io/imortalistas/sono.html",
+   "url": "sono.html",
    "data": "2026-10-06"
   },
   "sf_terapias": {
    "figura": "sergio-f",
    "titulo": "Terapias",
-   "url": "https://sergiofpt.github.io/imortalistas/terapias.html",
+   "url": "terapias.html",
    "data": "2026-10-06"
   },
   "sf_pele": {
    "figura": "sergio-f",
    "titulo": "Pele e Cabelo",
-   "url": "https://sergiofpt.github.io/imortalistas/pele-cabelo.html",
+   "url": "pele-cabelo.html",
    "data": "2026-10-06"
   },
   "sf_analises": {
    "figura": "sergio-f",
    "titulo": "Análises",
-   "url": "https://sergiofpt.github.io/imortalistas/analises.html",
+   "url": "analises.html",
    "data": "2026-10-10"
   },
   "sf_genetica": {
    "figura": "sergio-f",
    "titulo": "Genética",
-   "url": "https://sergiofpt.github.io/imortalistas/genetica.html",
+   "url": "genetica.html",
    "data": "2026-10-10"
   }
  },

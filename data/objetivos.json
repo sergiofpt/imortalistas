@@ -226,7 +226,7 @@
         "pt": "2–6 µU/mL",
         "en": "2–6 µU/mL"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 11.6,
         "unidade": "µU/mL",
@@ -406,7 +406,7 @@
         "pt": "< 1 mg/L",
         "en": "< 1 mg/L"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 0.44,
         "unidade": "mg/L",
@@ -427,7 +427,7 @@
         "pt": "0–10 mm/hr",
         "en": "0–10 mm/hr"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 2.72,
         "unidade": "mm/hr",
@@ -1622,7 +1622,7 @@
         "pt": "< 100 ng/mL",
         "en": "< 100 ng/mL"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 310.0,
         "unidade": "ng/mL",
@@ -1643,7 +1643,7 @@
         "pt": "25–45 %",
         "en": "25–45 %"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 37.0,
         "unidade": "%",
@@ -1749,7 +1749,7 @@
         "pt": "70–90 mg/dL",
         "en": "70–90 mg/dL"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 73.3,
         "unidade": "mg/dL",
@@ -1774,7 +1774,7 @@
         "pt": "< 100 mg/dL",
         "en": "< 100 mg/dL"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 68.0,
         "unidade": "mg/dL",
@@ -1795,7 +1795,7 @@
         "pt": "50–80 mg/dL",
         "en": "50–80 mg/dL"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 41.0,
         "unidade": "mg/dL",
@@ -1847,7 +1847,7 @@
         "pt": "2–6 µU/mL",
         "en": "2–6 µU/mL"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 11.6,
         "unidade": "µU/mL",
@@ -1872,7 +1872,7 @@
         "pt": "0,5–1",
         "en": "0.5–1"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 2.1,
         "unidade": "",
@@ -1897,7 +1897,7 @@
         "pt": "0,8–2 ng/mL",
         "en": "0.8–2 ng/mL"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 2.33,
         "unidade": "ng/mL",
@@ -1918,7 +1918,7 @@
         "pt": "0–1",
         "en": "0–1"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 1.66,
         "unidade": "ratio",
@@ -1953,7 +1953,7 @@
         "pt": "70–90 mg/dL",
         "en": "70–90 mg/dL"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 73.3,
         "unidade": "mg/dL",
@@ -1978,7 +1978,7 @@
         "pt": "205–250 µmol/L",
         "en": "205–250 µmol/L"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 210.42,
         "unidade": "µmol/L",
@@ -2034,7 +2034,7 @@
         "pt": "0–1",
         "en": "0–1"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 1.66,
         "unidade": "ratio",
@@ -2100,7 +2100,7 @@
         "pt": "500–900 ng/dL",
         "en": "500–900 ng/dL"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 448.74,
         "unidade": "ng/dL",
@@ -2121,7 +2121,7 @@
         "pt": "250–464 µg/dL",
         "en": "250–464 µg/dL"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 311.87,
         "unidade": "µg/dL",
@@ -2142,7 +2142,7 @@
         "pt": "6,2–19,4 µg/dL",
         "en": "6.2–19.4 µg/dL"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 9.31,
         "unidade": "µg/dL",
@@ -2181,7 +2181,7 @@
         "pt": "20–35 pg/mL",
         "en": "20–35 pg/mL"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 51.0,
         "unidade": "pg/mL",
@@ -2216,7 +2216,7 @@
         "pt": "0,5–2,5 µIU/mL",
         "en": "0.5–2.5 µIU/mL"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 1.35,
         "unidade": "µIU/mL",
@@ -2237,7 +2237,7 @@
         "pt": "1–1,6 ng/dL",
         "en": "1–1.6 ng/dL"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 1.65,
         "unidade": "ng/dL",
@@ -2258,7 +2258,7 @@
         "pt": "3–4 pg/mL",
         "en": "3–4 pg/mL"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 3.38,
         "unidade": "pg/mL",
@@ -2279,7 +2279,7 @@
         "pt": "0–1 IU/mL",
         "en": "0–1 IU/mL"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 0.9,
         "unidade": "IU/mL",
@@ -2331,7 +2331,7 @@
         "pt": "205–250 µmol/L",
         "en": "205–250 µmol/L"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 210.42,
         "unidade": "µmol/L",
@@ -2379,7 +2379,7 @@
         "pt": "< 1 mg/L",
         "en": "< 1 mg/L"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 0.44,
         "unidade": "mg/L",
@@ -2400,7 +2400,7 @@
         "pt": "3,5–6 ×10³/µL",
         "en": "3.5–6 ×10³/µL"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 7.03,
         "unidade": "×10³/µL",
@@ -2435,7 +2435,7 @@
         "pt": "1–3,5 ×10³/µL",
         "en": "1–3.5 ×10³/µL"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 3.25,
         "unidade": "×10³/µL",
@@ -2704,7 +2704,7 @@
         "pt": "< 60 mg/dL (quanto mais baixo, melhor)",
         "en": "< 60 mg/dL (lower is better)"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 30.0,
         "unidade": "mg/dL",
@@ -2725,7 +2725,7 @@
         "pt": "< 30 mg/dL",
         "en": "< 30 mg/dL"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 2.0,
         "unidade": "mg/dL",
@@ -2746,7 +2746,7 @@
         "pt": "5–9 µmol/L",
         "en": "5–9 µmol/L"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 18.4,
         "unidade": "µmol/L",
@@ -3211,7 +3211,7 @@
         "pt": "2–9 µmol/L",
         "en": "2–9 µmol/L"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 59.93,
         "unidade": "µmol/L",
@@ -3298,7 +3298,7 @@
         "pt": "40–60 ng/mL",
         "en": "40–60 ng/mL"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 37.39,
         "unidade": "ng/mL",
@@ -3319,7 +3319,7 @@
         "pt": "9–10 mg/dL",
         "en": "9–10 mg/dL"
        },
-       "fonte": "https://sergiofpt.github.io/imortalistas/analises.html",
+       "fonte": "analises.html",
        "resultado": {
         "valor": 9.58,
         "unidade": "mg/dL",
