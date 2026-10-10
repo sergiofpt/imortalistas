@@ -1,0 +1,259 @@
+{
+  "orgaos": [
+    {
+      "id": "cerebro",
+      "pt": "Cérebro",
+      "en": "Brain",
+      "marcadores": [],
+      "alvos": [
+        "perturbacoes-circadianas",
+        "desincronizacao-dos-relogios-biologicos",
+        "perturbacao-do-sono",
+        "disfuncao-glinfatica",
+        "neuroinflamacao",
+        "disfuncao-da-barreira-hematoencefalica"
+      ],
+      "genetica": [
+        {"pt": "Glioma no percentil 90,8", "en": "Glioma at percentile 90.8", "href": "genetica.html#lista"},
+        {"pt": "Alzheimer genómico no percentil 75", "en": "Genomic Alzheimer's at percentile 75", "href": "genetica.html#lista"},
+        {"pt": "Lesões da substância branca no percentil 92", "en": "White-matter lesions at percentile 92", "href": "genetica.html#lista"}
+      ]
+    },
+    {
+      "id": "olhos",
+      "pt": "Olhos",
+      "en": "Eyes",
+      "marcadores": [],
+      "alvos": [],
+      "genetica": [
+        {"pt": "Miopia no percentil 99,2", "en": "Myopia at percentile 99.2", "href": "genetica.html#lista"},
+        {"pt": "Glaucoma de ângulo aberto no percentil 85", "en": "Open-angle glaucoma at percentile 85", "href": "genetica.html#lista"}
+      ]
+    },
+    {
+      "id": "tiroide",
+      "pt": "Tiroide",
+      "en": "Thyroid",
+      "marcadores": ["TSH", "T4 livre", "T3 livre", "T3 total", "T4 total", "Anticorpos anti-tiroglobulina"],
+      "alvos": ["alteracoes-da-tiroide"],
+      "genetica": [
+        {"pt": "Cancro da tiroide nos percentis 79 a 96", "en": "Thyroid cancer at percentiles 79 to 96", "href": "genetica.html#lista"},
+        {"pt": "Bócio nodular nos percentis 90,7 e 93,2", "en": "Nodular goitre at percentiles 90.7 and 93.2", "href": "genetica.html#lista"}
+      ]
+    },
+    {
+      "id": "coracao",
+      "pt": "Coração e vasos",
+      "en": "Heart and vessels",
+      "marcadores": [
+        "Apolipoproteína B",
+        "Lipoproteína(a)",
+        "Homocisteína",
+        "LDL colesterol",
+        "HDL colesterol",
+        "Colesterol total",
+        "Colesterol não-HDL",
+        "Triglicéridos",
+        "VLDL colesterol",
+        "Rácio LDL/HDL",
+        "Rácio colesterol total/HDL",
+        "Apolipoproteína A1",
+        "Rácio ApoB/ApoA1",
+        "PCR de alta sensibilidade",
+        "Proteína C reativa",
+        "Lp-PLA2"
+      ],
+      "alvos": ["envelhecimento-vascular", "rigidez-arterial"],
+      "pressao": true,
+      "genetica": [
+        {"pt": "Doença coronária poligénica baixa: consenso no percentil 18", "en": "Low polygenic coronary disease: consensus at percentile 18", "href": "genetica-boa.html#lista"},
+        {"pt": "Fibrilhação auricular pouco provável: consenso no percentil 9", "en": "Atrial fibrillation unlikely: consensus at percentile 9", "href": "genetica-boa.html#lista"},
+        {"pt": "Tromboembolismo venoso: consenso no percentil 76", "en": "Venous thromboembolism: consensus at percentile 76", "href": "genetica.html#lista"},
+        {"pt": "Aorta ascendente no percentil 79", "en": "Ascending aorta at percentile 79", "href": "genetica.html#lista"}
+      ]
+    },
+    {
+      "id": "pulmoes",
+      "pt": "Pulmões",
+      "en": "Lungs",
+      "marcadores": [],
+      "alvos": [],
+      "genetica": [
+        {"pt": "Enfisema no percentil 96", "en": "Emphysema at percentile 96", "href": "genetica.html#lista"},
+        {"pt": "Pneumonia no percentil 84", "en": "Pneumonia at percentile 84", "href": "genetica.html#lista"},
+        {"pt": "Asma no percentil 4", "en": "Asthma at percentile 4", "href": "genetica-boa.html#lista"}
+      ]
+    },
+    {
+      "id": "figado",
+      "pt": "Fígado",
+      "en": "Liver",
+      "marcadores": [
+        "ALT (TGP)",
+        "AST (TGO)",
+        "GGT",
+        "Fosfatase alcalina",
+        "Bilirrubina total",
+        "Bilirrubina direta",
+        "Bilirrubina indireta",
+        "Albumina",
+        "Globulina",
+        "Proteínas totais",
+        "Rácio albumina/globulina",
+        "LDH",
+        "NAFLD Fibrosis Score"
+      ],
+      "alvos": [],
+      "genetica": [
+        {"pt": "Fígado mais sensível à gordura (fibrose ~2–3× com esteatose)", "en": "Liver more sensitive to fat (fibrosis ~2–3× with steatosis)", "href": "genetica.html#lista"},
+        {"pt": "Cirrose genómica no percentil 15", "en": "Genomic cirrhosis at percentile 15", "href": "genetica-boa.html#lista"}
+      ]
+    },
+    {
+      "id": "rins",
+      "pt": "Rins",
+      "en": "Kidneys",
+      "marcadores": [
+        "TFGe",
+        "Creatinina sérica",
+        "Cistatina C",
+        "Ureia (BUN)",
+        "Ureia sérica",
+        "Rácio BUN/creatinina",
+        "Sódio",
+        "Potássio",
+        "Cloreto",
+        "Ácido úrico",
+        "Cálcio",
+        "Microalbumina urinária",
+        "Rácio albumina/creatinina urinária",
+        "Creatinina urinária"
+      ],
+      "alvos": [],
+      "genetica": [
+        {"pt": "Infeção urinária no percentil 93,8", "en": "Urinary tract infection at percentile 93.8", "href": "genetica.html#lista"},
+        {"pt": "Doença renal crónica: consenso no percentil 13", "en": "Chronic kidney disease: consensus at percentile 13", "href": "genetica-boa.html#lista"}
+      ]
+    },
+    {
+      "id": "pancreas",
+      "pt": "Pâncreas e metabolismo",
+      "en": "Pancreas and metabolism",
+      "marcadores": [
+        "HbA1c",
+        "HbA1c (IFCC)",
+        "Glicose em jejum",
+        "Glicose sérica",
+        "Glicose média estimada",
+        "Frutosamina",
+        "Insulina em jejum",
+        "Péptido C",
+        "HOMA-IR",
+        "Cetonas no sangue",
+        "Rácio TG/HDL",
+        "Amilase",
+        "Lipase"
+      ],
+      "alvos": [
+        "declinio-da-homeostase-metabolica",
+        "resistencia-a-insulina",
+        "hiperglicemia-e-intolerancia-a-glicose",
+        "disfuncao-do-tecido-adiposo",
+        "acumulacao-de-produtos-finais-de-glicacao-avancada-ages"
+      ],
+      "genetica": [
+        {"pt": "Score do pâncreas no percentil 83", "en": "Pancreas score at percentile 83", "href": "genetica.html#lista"},
+        {"pt": "Diabetes tipo 2: consenso no percentil 58", "en": "Type 2 diabetes: consensus at percentile 58", "href": "genetica.html#lista"}
+      ]
+    },
+    {
+      "id": "intestino",
+      "pt": "Intestino",
+      "en": "Gut",
+      "marcadores": [],
+      "alvos": ["disbiose", "disfuncao-da-barreira-intestinal"],
+      "genetica": [
+        {"pt": "Doença diverticular: carga de loci no percentil 97,8", "en": "Diverticular disease: loci burden at percentile 97.8", "href": "genetica.html#lista"},
+        {"pt": "Cancro colorretal: consenso no percentil 80", "en": "Colorectal cancer: consensus at percentile 80", "href": "genetica.html#lista"},
+        {"pt": "Doença inflamatória intestinal muito improvável (percentis 1,7 a 9,3)", "en": "Inflammatory bowel disease very unlikely (percentiles 1.7 to 9.3)", "href": "genetica-boa.html#lista"}
+      ]
+    },
+    {
+      "id": "sangue",
+      "pt": "Sangue e imunidade",
+      "en": "Blood and immunity",
+      "marcadores": [
+        "Leucócitos totais",
+        "Linfócitos (absoluto)",
+        "Neutrófilos (absoluto)",
+        "Hemoglobina",
+        "Hematócrito",
+        "Plaquetas",
+        "Velocidade de sedimentação (VS)",
+        "PCR de alta sensibilidade",
+        "Ferritina",
+        "ANA (anticorpos antinucleares)",
+        "Fator reumatoide"
+      ],
+      "alvos": ["inflamacao-cronica", "inflammaging", "imunossenescencia"],
+      "genetica": [
+        {"pt": "GlycA com loci no percentil 90,4", "en": "GlycA with loci at percentile 90.4", "href": "genetica.html#lista"},
+        {"pt": "Linfoma não-Hodgkin: consenso no percentil 13,8", "en": "Non-Hodgkin lymphoma: consensus at percentile 13.8", "href": "genetica-boa.html#lista"}
+      ]
+    },
+    {
+      "id": "hormonios",
+      "pt": "Hormónios",
+      "en": "Hormones",
+      "marcadores": [
+        "Testosterona total",
+        "Testosterona livre",
+        "Estradiol",
+        "SHBG",
+        "FSH",
+        "LH",
+        "Cortisol",
+        "DHEA-S",
+        "DHEA"
+      ],
+      "alvos": ["desregulacao-endocrina", "declinio-do-sinal-estrogenico"],
+      "genetica": [
+        {"pt": "SHBG genética no percentil 87", "en": "Genetic SHBG at percentile 87", "href": "genetica.html#lista"},
+        {"pt": "FSH no percentil 12", "en": "FSH at percentile 12", "href": "genetica.html#lista"}
+      ]
+    },
+    {
+      "id": "musculos",
+      "pt": "Músculos",
+      "en": "Muscles",
+      "marcadores": ["3-Metil-histidina"],
+      "alvos": ["sarcopenia", "perda-de-massa-magra", "perda-de-forca-muscular", "atrofia-muscular"],
+      "genetica": [
+        {"pt": "Massa magra: consenso no percentil 27", "en": "Lean mass: consensus at percentile 27", "href": "genetica.html#lista"}
+      ]
+    },
+    {
+      "id": "ossos",
+      "pt": "Ossos",
+      "en": "Bones",
+      "marcadores": ["Cálcio", "Vitamina D total (25-OH)", "Fósforo", "Magnésio"],
+      "alvos": ["osteoporose", "fragilidade"],
+      "genetica": [
+        {"pt": "Artrose da mão e dos dedos no percentil 97,6", "en": "Hand and finger osteoarthritis at percentile 97.6", "href": "genetica.html#lista"},
+        {"pt": "Artrose geral no percentil 15,8", "en": "General osteoarthritis at percentile 15.8", "href": "genetica-boa.html#lista"}
+      ]
+    },
+    {
+      "id": "pele",
+      "pt": "Pele e cabelo",
+      "en": "Skin and hair",
+      "marcadores": [],
+      "alvos": [],
+      "genetica": [
+        {"pt": "Eczema e dermatite no percentil 90,4", "en": "Eczema and dermatitis at percentile 90.4", "href": "genetica.html#lista"},
+        {"pt": "Cabelo no percentil 78", "en": "Hair at percentile 78", "href": "genetica.html#lista"},
+        {"pt": "Unhas no percentil 100", "en": "Nails at percentile 100", "href": "genetica.html#lista"}
+      ]
+    }
+  ]
+}
