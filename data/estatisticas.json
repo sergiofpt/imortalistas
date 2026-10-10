@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-10T03:49:19Z",
+ "atualizado_em": "2026-10-10T04:50:31Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 64,
   "visitas_30d": 64,
   "visitas_90d": 64,
-  "aberturas_pdf": 439,
+  "aberturas_pdf": 441,
   "visitas_hoje": 2,
   "visitas_7d": 47,
-  "aberturas_hoje": 33,
-  "aberturas_7d": 428,
-  "aberturas_30d": 439,
-  "pdf_abertos": 224,
+  "aberturas_hoje": 35,
+  "aberturas_7d": 430,
+  "aberturas_30d": 441,
+  "pdf_abertos": 226,
   "pdf_descarregados": 215,
-  "pdf_pt": 201,
+  "pdf_pt": 203,
   "pdf_en": 238
  },
  "dias": [
@@ -67,7 +67,7 @@
   {
    "dia": "2026-10-10",
    "visitas": 2,
-   "aberturas": 33
+   "aberturas": 35
   }
  ],
  "paginas": [
@@ -241,6 +241,17 @@
   },
   {
    "id": "resposta-treino-vo2max",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "ritmo-circadiano-sono",
    "ficheiro": null,
    "pt": 3,
    "en": 2,
@@ -658,6 +669,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "paladar-olfato",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "pancreas-pancreatite",
    "ficheiro": null,
    "pt": 2,
@@ -780,17 +802,6 @@
   },
   {
    "id": "ritmo-cardiaco-arritmias",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "ritmo-circadiano-sono",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -1197,17 +1208,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "paladar-olfato",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "perfil-desportivo-resistencia-forca",
    "ficheiro": null,
    "pt": 1,
@@ -1560,7 +1560,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 415
+   "visitas": 417
   },
   {
    "id": "PT",
@@ -1612,7 +1612,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 473
+   "visitas": 475
   },
   {
    "id": "Firefox",
@@ -1634,7 +1634,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 186
+   "visitas": 188
   },
   {
    "id": "Android",
@@ -1676,14 +1676,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 438
+   "visitas": 440
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 492
+   "visitas": 494
   },
   {
    "id": "https://bing.com",
@@ -2040,7 +2040,7 @@
     {
      "dia": "2026-10-10",
      "visitas": 2,
-     "aberturas": 33
+     "aberturas": 35
     }
    ],
    "paginas": [
@@ -2502,6 +2502,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "paladar-olfato",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "pancreas-pancreatite",
      "ficheiro": null,
      "pt": 2,
@@ -2646,6 +2657,17 @@
     },
     {
      "id": "ritmo-cardiaco-arritmias",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "ritmo-circadiano-sono",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3151,17 +3173,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "paladar-olfato",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "perfil-desportivo-resistencia-forca",
      "ficheiro": null,
      "pt": 1,
@@ -3204,17 +3215,6 @@
      "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 0
-    },
-    {
-     "id": "ritmo-circadiano-sono",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
     },
     {
      "id": "sal-agua-eletrolitos",
@@ -3505,22 +3505,22 @@
     "visitas": 40,
     "visitas_30d": 40,
     "visitas_90d": 40,
-    "aberturas_pdf": 413,
+    "aberturas_pdf": 415,
     "visitas_hoje": 2,
     "visitas_7d": 37,
-    "aberturas_hoje": 33,
-    "aberturas_7d": 413,
-    "aberturas_30d": 413,
-    "pdf_abertos": 198,
+    "aberturas_hoje": 35,
+    "aberturas_7d": 415,
+    "aberturas_30d": 415,
+    "pdf_abertos": 200,
     "pdf_descarregados": 215,
-    "pdf_pt": 177,
+    "pdf_pt": 179,
     "pdf_en": 236
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 415
+     "visitas": 417
     },
     {
      "id": "US",
