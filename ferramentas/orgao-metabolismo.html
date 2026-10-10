@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="data:,">
+<title>Glicose e metabolismo · Sérgio F</title>
+<meta name="color-scheme" content="light dark">
+<script>(function(){var d=document.documentElement,t=null,l=null,q=/[?&]lang=(en|pt)(?:&|#|$)/i.exec(location.search);q=q&&q[1].toLowerCase();try{if(q)localStorage.setItem('lang',q);l=localStorage.getItem('lang');t=localStorage.getItem('theme')}catch(e){}if(q)l=q;if(l==='en')d.lang='en';if(t!=='dark'&&t!=='light')t='dark';d.setAttribute('data-theme',t)})()</script>
+<script src="../sf.js"></script>
+<style>
+:root{--bg:#f5f7fa;--card:#fff;--ink:#14202e;--mut:#5b6b7d;--line:#e3e8ef;--acc:#1f5eff;--ok:#12a150;--okb:#e6f6ec;--okink:#0e7a3e;--na:#8a97a8;--nab:#eef1f5;--r:14px;--head:rgba(255,255,255,.94);--actfg:#fff;--acc2:#e9efff;--warn:#6a3e00;--warnb:#fff3df;--bad:#c23b3b;--badb:#fdecec;--info:#5b4bd6;--infob:#efedff;--band:rgba(31,94,255,.22);color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:78px;-webkit-text-size-adjust:100%}
+body{margin:0;font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+header.top{position:sticky;top:0;z-index:50;background:var(--head);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
+.topin{max-width:1240px;margin:0 auto;display:flex;align-items:center;gap:18px;padding:10px 20px}
+nav.main{display:flex;gap:4px;overflow:visible;scrollbar-width:none;flex:1;min-width:0}
+nav.main::-webkit-scrollbar{display:none}
+nav.main a{white-space:nowrap;text-decoration:none;color:var(--mut);font-size:13.5px;padding:7px 11px;border-radius:999px;font-weight:500}
+nav.main a:hover{background:var(--nab);color:var(--ink)}
+nav.main a.active{background:var(--ink);color:var(--actfg)}
+.dd{position:relative;flex:0 0 auto}
+.dd summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;white-space:nowrap;color:var(--mut);font:inherit;font-size:13.5px;font-weight:500;padding:7px 11px;border-radius:999px}
+.dd summary::-webkit-details-marker{display:none}
+.dd summary::marker{content:""}
+.dd summary:hover,.dd[open]>summary{background:var(--nab);color:var(--ink)}
+.dd.on>summary{background:var(--ink);color:var(--actfg)}
+.dd summary:after{content:" ▾";font-size:.72em;opacity:.75}
+.dd[open]>summary:after{content:" ▴"}
+.ddmenu{position:absolute;top:calc(100% + 6px);right:0;min-width:210px;padding:6px;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:0 14px 36px rgba(15,30,50,.18);z-index:80;display:flex;flex-direction:column;gap:2px}
+.ddmenu a{display:block;border-radius:10px}
+main{max-width:980px;margin:0 auto;padding:22px 20px 28px}
+h1{margin:0 0 8px;font-size:28px;letter-spacing:-.3px}
+.lead{margin:0 0 14px;color:var(--mut)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;margin:12px 0}
+.card h2{margin:0 0 8px;font-size:18px;letter-spacing:-.2px}.card h3{margin:12px 0 6px;font-size:16px}
+.mut{color:var(--mut)}.small{font-size:13px}.tiny{font-size:12px}
+.grid{display:grid;gap:12px;grid-template-columns:1fr}
+.grid>*{min-width:0}
+@media(min-width:760px){.grid.g2{grid-template-columns:1fr 1fr}.grid.g3{grid-template-columns:1fr 1fr 1fr}}
+.chip{display:inline-block;border-radius:999px;padding:2px 9px;font-size:12px;font-weight:600;border:1px solid transparent;white-space:normal;max-width:100%}
+.c-ok{background:var(--okb);color:var(--okink)}.c-warn{background:var(--warnb);color:var(--warn)}.c-bad{background:var(--badb);color:var(--bad)}.c-info{background:var(--infob);color:var(--info)}.c-mut{background:var(--nab);color:var(--mut)}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;padding:7px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12.5px;color:var(--mut);font-weight:600}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+main input[type=search],main input[type=text],main select{width:100%;font:inherit;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink)}
+main input[type=range]{width:100%;accent-color:var(--acc)}
+main input:focus,main select:focus{outline:2px solid var(--acc);outline-offset:1px}
+main button,main .btn{font:inherit;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;padding:8px 12px;cursor:pointer}
+main button.on,main .btn.on{background:var(--acc);border-color:var(--acc);color:var(--actfg)}
+main button:focus{outline:2px solid var(--acc);outline-offset:1px}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.bar{height:12px;background:var(--nab);border-radius:8px;position:relative;overflow:hidden}
+.bar>i{position:absolute;left:0;top:0;bottom:0;border-radius:8px}
+.src{font-size:12px;color:var(--mut)}
+footer{max-width:980px;margin:0 auto;padding:0 20px 72px;color:var(--mut);font-size:12.5px}
+.pill-nav{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px}
+.pill-nav button{white-space:nowrap}
+.kpi{font-size:26px;font-weight:700}
+main details summary{cursor:pointer;font-weight:600}
+.hidden{display:none}
+.small.tiny.sc{overflow-wrap:anywhere}
+html[data-theme="dark"]{color-scheme:dark;--bg:#0e141d;--card:#161e2a;--ink:#e5eaf1;--mut:#9aa7b8;--line:#2a3545;--acc:#7a9dff;--nab:#222b39;--head:rgba(16,22,32,.92);--actfg:#0e141d;--ok:#3dce86;--okb:#143226;--okink:#7ee0a8;--warn:#e0a040;--warnb:#3a2c12;--bad:#f07171;--badb:#3a1c1c;--info:#b0a6ff;--infob:#241f45;--acc2:#1c2744;--band:rgba(122,157,255,.40)}
+html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
+.tools{display:flex;align-items:center;gap:14px;margin-left:auto;flex:0 0 auto}
+.lang{display:flex;align-items:center;gap:4px;font-size:13.5px;white-space:nowrap}
+.lang button{font:inherit;border:0;background:none;color:var(--mut);cursor:pointer;padding:6px 6px;border-radius:8px}
+.lang button:hover{background:var(--nab);color:var(--ink)}.lang button.on{color:var(--ink);font-weight:700}
+.lang .sep{color:var(--na,#8a97a8)}
+main a{color:var(--acc)}
+@media(max-width:640px){html{scroll-padding-top:148px}.topin{gap:4px 8px;padding:6px 12px;flex-wrap:wrap}.tools{order:-1;margin-left:auto;gap:10px}nav.main{flex:1 1 100%;order:2;flex-wrap:wrap;gap:2px}nav.main a,.dd summary{padding:6px 10px}h1{font-size:24px}.card{padding:14px}}
+</style>
+
+</head>
+<body data-title-pt="Glicose e metabolismo · Sérgio F" data-title-en="Glicose e metabolismo · Sérgio F">
+<header class="top"><div class="topin">
+<nav class="main">
+<a href="../inicio.html" data-en="Home">Início</a><a href="../analises.html#sangue" data-en="Tests">Análises</a><details class="dd on"><summary data-en="Genetics">Genética</summary><div class="ddmenu"><a href="../genetica-reports.html" data-en="Genetics Reports">Genética Reports</a><a href="../genetica-boa.html" data-en="Good Genetics">Genética Boa</a><a href="../genetica.html" data-en="Bad Genetics">Genética Má</a><a href="index.html" class="active" aria-current="page" data-en="Genetic tools">Ferramentas genéticas</a></div></details><details class="dd"><summary data-en="Protocol">Protocolo</summary><div class="ddmenu"><a href="../pele-cabelo.html" data-en="Skin and Hair">Pele e Cabelo</a><a href="../sono.html" data-en="Sleep">Sono</a><a href="../dieta.html" data-en="Diet">Dieta</a><a href="../terapias.html" data-en="Therapies">Terapias</a><a href="../treino.html" data-en="Training">Treino</a><a href="../suplementos.html" data-en="Supplements + Medication">Suplementos + Medicação</a></div></details><a href="../origem.html" data-en="Origin">Origem</a><a href="../estudos.html" data-en="Studies">Estudos</a></nav>
+<div class="tools">
+<div class="lang" id="lang" role="group" aria-label="Idioma / Language"><button type="button" data-l="pt" lang="pt-PT">Português</button><span class="sep" aria-hidden="true">|</span><button type="button" data-l="en" lang="en">English</button></div>
+<div class="lang" id="theme" role="group" aria-label="Tema" data-al-en="Theme"><button type="button" data-t="dark" data-en="Dark">Escuro</button><span class="sep" aria-hidden="true">|</span><button type="button" data-t="light" data-en="Light">Claro</button></div>
+</div>
+</div></header>
+<main>
+<h1>Glicose e metabolismo</h1>
+<p class="lead">Glicose e insulina, gordura inflamatória, termogénese, cetose, proteínas e apetite.</p>
+
+
+<style>.sc{padding:8px 0;border-top:1px solid var(--line)}.pb{position:relative;height:10px;border-radius:6px;margin:5px 0 3px;background:linear-gradient(90deg,var(--okb),var(--nab) 40%,var(--nab) 60%,var(--badb))}
+.pb>i{position:absolute;top:-3px;width:16px;height:16px;border-radius:50%;margin-left:-8px;border:2px solid var(--card)}.pb .m50{position:absolute;left:50%;top:-2px;bottom:-2px;width:1px;background:var(--mut)}
+.kp{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px}.kp>div{background:var(--bg);border-radius:10px;padding:8px 10px}</style><div class="card"><h2>Em resumo</h2><div class="kp"><div><div class="kpi">47</div><div class="tiny mut">scores</div></div><div><div class="kpi" style="color:var(--bad)">3</div><div class="tiny mut">desfavoráveis</div></div><div><div class="kpi" style="color:var(--ok)">8</div><div class="tiny mut">favoráveis</div></div><div><div class="kpi">36</div><div class="tiny mut">típicos/informativos</div></div></div><p class="small mut" style="margin-top:8px">Junta 6 relatórios metabólicos. O percentil compara com 100 pessoas da população de referência: 50 é a média; acima de 80 ou abaixo de 20 já é uma ponta. Um score genético desloca hipóteses, não decide. A cor segue o juízo do relatório de origem.</p></div>
+
+<div class="card"><h2>Achados principais</h2><div id="dl"></div></div>
+<div class="card"><h2>Todos os scores</h2>
+<input type="search" id="pq" placeholder="Procurar…" aria-label="Procurar score">
+<div class="row pill-nav" id="pf" style="margin-top:8px"><button data-f="todos">Todos</button><button data-f="desf">Desfavoráveis</button><button data-f="fav">Favoráveis</button><button data-f="tip">Típicos</button><button data-f="info">Informativos</button></div>
+<div class="row pill-nav" id="ps"><span class="tiny mut">Ordenar:</span><button data-s="p">percentil ↓</button><button data-s="pa">percentil ↑</button><button data-s="n">nome</button></div>
+<div class="tiny mut" id="pn"></div><div id="pl"></div></div>
+<div class="card"><h2>O que fazer com isto na alimentação e no dia a dia</h2><div id="di"></div></div>
+
+</main>
+<footer>Sérgio F · versão pública · dados genéticos de 10-10-2026 (scores poligénicos recalculados a 03-10-2026). Não é diagnóstico nem prescrição.</footer>
+<script id="dados-app" type="application/json">{"rows": [{"n": "Tamanho das porções", "p": 43.5, "j": "tip", "c": "PGS001518 · PMID 35324888", "r": "Apetite, Saciedade e Comportamento Alimentar", "g": "", "lc": false}, {"n": "Nunca comer açúcar", "p": 92.9, "j": "fav", "c": "PGS000991 · PMID 35324888", "r": "Apetite, Saciedade e Comportamento Alimentar", "g": "", "lc": false}, {"n": "Fruta fresca", "p": 49.3, "j": "tip", "c": "PGS001062 · PMID 35324888", "r": "Apetite, Saciedade e Comportamento Alimentar", "g": "", "lc": false}, {"n": "Carne processada", "p": 10.3, "j": "fav", "c": "PGS001067 · PMID 35324888", "r": "Apetite, Saciedade e Comportamento Alimentar", "g": "", "lc": false}, {"n": "Variedade da dieta", "p": 97.6, "j": "tip", "c": "PGS001068 · PMID 35324888", "r": "Apetite, Saciedade e Comportamento Alimentar", "g": "", "lc": false}, {"n": "Gosto por doces", "p": 86.7, "j": "desf", "c": "loci publicados (GWAS Catalog)", "r": "Apetite, Saciedade e Comportamento Alimentar", "g": "", "lc": false}, {"n": "Gosto por alimentos muito palatáveis", "p": 34.8, "j": "tip", "c": "loci publicados (GWAS Catalog)", "r": "Apetite, Saciedade e Comportamento Alimentar", "g": "", "lc": false}, {"n": "Proporção de gordura na dieta", "p": 66.4, "j": "tip", "c": "loci publicados (GWAS Catalog)", "r": "Apetite, Saciedade e Comportamento Alimentar", "g": "", "lc": false}, {"n": "Beta-hidroxibutirato (loci do GWAS)", "p": 16.4, "j": "tip", "c": "loci publicados (GWAS Catalog)", "r": "Cetose e Corpos Cetónicos", "g": "", "lc": false}, {"n": "Acetoacetato (loci do GWAS)", "p": 97.0, "j": "tip", "c": "loci publicados (GWAS Catalog)", "r": "Cetose e Corpos Cetónicos", "g": "", "lc": false}, {"n": "Acetona (loci do GWAS)", "p": 93.7, "j": "tip", "c": "loci publicados (GWAS Catalog)", "r": "Cetose e Corpos Cetónicos", "g": "", "lc": false}, {"n": "Diabetes tipo 2", "p": 56.7, "j": "tip", "c": "Khera 2018 · PGS000014", "r": "Glicose, Insulina e Diabetes", "g": "", "lc": false}, {"n": "Diabetes tipo 2", "p": 58.6, "j": "tip", "c": "Weissbrod 2022 · PGS002720", "r": "Glicose, Insulina e Diabetes", "g": "", "lc": false}, {"n": "Diabetes tipo 2", "p": 68.9, "j": "tip", "c": "Huerta-Chagoya 2023 · PGS003443", "r": "Glicose, Insulina e Diabetes", "g": "", "lc": false}, {"n": "Diabetes tipo 2", "p": 62.4, "j": "tip", "c": "Polfus 2021 · PGS000805", "r": "Glicose, Insulina e Diabetes", "g": "", "lc": false}, {"n": "HbA1c", "p": 6.6, "j": "fav", "c": "Privé 2022 · PGS001953", "r": "Glicose, Insulina e Diabetes", "g": "", "lc": false}, {"n": "HbA1c", "p": 8.4, "j": "fav", "c": "Weissbrod 2022 · PGS002697", "r": "Glicose, Insulina e Diabetes", "g": "", "lc": false}, {"n": "Glicose em jejum", "p": 9.5, "j": "fav", "c": "Xie 2020 · PGS000306", "r": "Glicose, Insulina e Diabetes", "g": "", "lc": false}, {"n": "Insulina em jejum", "p": 4.9, "j": "fav", "c": "Xie 2020 · PGS000308", "r": "Glicose, Insulina e Diabetes", "g": "", "lc": false}, {"n": "Insulina em jejum", "p": 74.4, "j": "tip", "c": "Sarnowski 2025 · PGS005276", "r": "Glicose, Insulina e Diabetes", "g": "", "lc": false}, {"n": "Diabetes tipo 1", "p": 41.9, "j": "tip", "c": "Oram 2015 · PGS000021", "r": "Glicose, Insulina e Diabetes", "g": "", "lc": false}, {"n": "Diabetes tipo 1", "p": 29.4, "j": "tip", "c": "Sharp 2019 · PGS000024", "r": "Glicose, Insulina e Diabetes", "g": "", "lc": false}, {"n": "Gordura visceral prevista", "p": 73.3, "j": "tip", "c": "Aly 2021 · PGS000844", "r": "Gordura Inflamatória e Lipólise", "g": "", "lc": false}, {"n": "Gordura abdominal subcutânea (ajustada)", "p": 87.2, "j": "desf", "c": "Agrawal 2022 · PGS002811", "r": "Gordura Inflamatória e Lipólise", "g": "", "lc": false}, {"n": "Percentagem de gordura do tronco", "p": 98.4, "j": "desf", "c": "Tanigawa 2022 · PGS001105", "r": "Gordura Inflamatória e Lipólise", "g": "", "lc": false}, {"n": "Gordura glúteo-femoral (ajustada)", "p": 95.3, "j": "fav", "c": "Agrawal 2022 · PGS002812", "r": "Gordura Inflamatória e Lipólise", "g": "", "lc": false}, {"n": "FABP4 (proteína de ligação de ácidos gordos do adipócito)", "p": 18.5, "j": "fav", "c": "Folkersen 2020 · PGS000237", "r": "Gordura Inflamatória e Lipólise", "g": "", "lc": false}, {"n": "Gordura hepática (ressonância)", "p": 65.4, "j": "tip", "c": "Haas 2021 · PGS002245", "r": "Gordura Inflamatória e Lipólise", "g": "", "lc": false}, {"n": "Fígado gordo não alcoólico", "p": 23.9, "j": "tip", "c": "Schnurr 2022 · PGS002282", "r": "Gordura Inflamatória e Lipólise", "g": "", "lc": false}, {"n": "Fígado gordo não alcoólico", "p": 50.6, "j": "tip", "c": "Tang 2023 · PGS012549", "r": "Gordura Inflamatória e Lipólise", "g": "", "lc": false}, {"n": "Albumina", "p": 36.3, "j": "tip", "c": "PGS001886 · PMID 34995502", "r": "Proteína e Aminoácidos", "g": "", "lc": false}, {"n": "Proteína total", "p": 25.0, "j": "tip", "c": "PGS002001 · PMID 34995502", "r": "Proteína e Aminoácidos", "g": "", "lc": false}, {"n": "Creatinina", "p": 8.7, "j": "tip", "c": "PGS001945 · PMID 34995502", "r": "Proteína e Aminoácidos", "g": "", "lc": false}, {"n": "BCAA: leucina, isoleucina e valina (loci do GWAS)", "p": 35.2, "j": "tip", "c": "loci publicados (GWAS Catalog)", "r": "Proteína e Aminoácidos", "g": "", "lc": false}, {"n": "Glicina (loci do GWAS)", "p": 47.1, "j": "tip", "c": "loci publicados (GWAS Catalog)", "r": "Proteína e Aminoácidos", "g": "", "lc": false}, {"n": "Fenilalanina (loci do GWAS)", "p": 72.7, "j": "tip", "c": "loci publicados (GWAS Catalog)", "r": "Proteína e Aminoácidos", "g": "", "lc": false}, {"n": "Tirosina (loci do GWAS)", "p": 48.7, "j": "tip", "c": "loci publicados (GWAS Catalog)", "r": "Proteína e Aminoácidos", "g": "", "lc": false}, {"n": "Glutamina (loci do GWAS)", "p": 40.6, "j": "tip", "c": "loci publicados (GWAS Catalog)", "r": "Proteína e Aminoácidos", "g": "", "lc": false}, {"n": "Histidina (loci do GWAS)", "p": 7.7, "j": "tip", "c": "loci publicados (GWAS Catalog)", "r": "Proteína e Aminoácidos", "g": "", "lc": false}, {"n": "Taurina plasmática (loci do GWAS)", "p": 37.4, "j": "tip", "c": "loci publicados (GWAS Catalog)", "r": "Proteína e Aminoácidos", "g": "", "lc": false}, {"n": "Ingestão relativa de proteína (loci do GWAS)", "p": 81.5, "j": "tip", "c": "loci publicados (GWAS Catalog)", "r": "Proteína e Aminoácidos", "g": "", "lc": false}, {"n": "Percentagem de gordura corporal", "p": 74.6, "j": "tip", "c": "PGS001917 · PMID 34995502", "r": "Termogénese e Gordura Castanha", "g": "", "lc": false}, {"n": "Taxa metabólica basal", "p": 46.3, "j": "tip", "c": "PGS001108 · PMID 35324888", "r": "Termogénese e Gordura Castanha", "g": "", "lc": false}, {"n": "Gordura visceral (estimada)", "p": 54.8, "j": "tip", "c": "loci publicados (GWAS Catalog)", "r": "Termogénese e Gordura Castanha", "g": "", "lc": false}, {"n": "Adiponectina baixa", "p": 26.4, "j": "tip", "c": "loci publicados (GWAS Catalog)", "r": "Termogénese e Gordura Castanha", "g": "", "lc": false}, {"n": "Leptina", "p": 71.2, "j": "tip", "c": "loci publicados (GWAS Catalog)", "r": "Termogénese e Gordura Castanha", "g": "", "lc": false}, {"n": "Gasto energético", "p": 34.9, "j": "tip", "c": "loci publicados (GWAS Catalog)", "r": "Termogénese e Gordura Castanha", "g": "", "lc": false}], "dest": [{"tx": "Gordura central genética alta: gordura do tronco no percentil 98 e gordura abdominal subcutânea no 87; KLF14 e FTO com variante.", "ev": "Moderada", "tp": "desf"}, {"tx": "Diabetes tipo 2 típica (consenso no percentil 58) mas com TCF7L2, SLC30A8 e KCNJ11 em dose dupla de risco e MTNR1B (refeições tardias pior toleradas).", "ev": "Moderada", "tp": "desf"}, {"tx": "Comportamento alimentar: gosto por doces no percentil 87 e anorexia nervosa no 95.", "ev": "Fraca", "tp": "desf"}, {"tx": "Mitocôndrias: SIRT3 , UCP1 e PPARA intrão 7 com variante (todos ligeiros).", "ev": "Fraca", "tp": "desf"}, {"tx": "Metabolismo das proteínas no percentil 82 (score de 5 variantes) e BCAT2.", "ev": "Fraca", "tp": "desf"}, {"tx": "Fígado: HSD17B13 protetor (atenua o PNPLA3), TM6SF2 ausente e cirrose genómica no percentil 15.", "ev": "Moderada a forte", "tp": "fav"}, {"tx": "Glicemia geneticamente baixa: HbA1c nos percentis 6,6 e 8,4 e glicose em jejum no 9,5 (menos glicação ao longo da vida).", "ev": "Moderada", "tp": "fav"}, {"tx": "Gordura glúteo-femoral genética alta (percentil 95) e adiponectina alta: gordura guardada fora do abdómen e do fígado.", "ev": "Moderada", "tp": "fav"}, {"tx": "Alimentação: preferência genética baixa por carne processada (percentil 10) e MC4R sem as variantes de mais apetite.", "ev": "Fraca a moderada", "tp": "fav"}, {"tx": "Gordura castanha sem as variantes de menor função testadas (UCP1 , ADRB3 ausentes).", "ev": "Fraca", "tp": "fav"}], "diet": [{"k": "priorizar", "t": "Hidratos 35–40% da energia, ≥ 80% de baixo índice glicémico e intactos, sobretudo ao pequeno-almoço e almoço; janela alimentar de 10–12 h"}, {"k": "priorizar", "t": "Melatonina 0,3–1 mg, 30–60 min antes de deitar e ≥ 3 h depois da última refeição"}, {"k": "priorizar", "t": "Proteína em 4 refeições de 30–40 g + treino de força 3×/semana (proteger a massa magra com o retatrutide)"}, {"k": "priorizar", "t": "Zinco total 20–25 mg/dia + cobre 1,5–2 mg (SLC30A8); exposição moderada ao frio (UCP1); treino zona 2 + intervalos"}, {"k": "priorizar", "t": "Hipoglicemia com acarbose: corrigir com dextrose (o açúcar comum não serve). Vigiar HbA1c, glicose e insulina em jejum"}, {"k": "evitar", "t": "Açúcar adicionado, frutose, bebidas açucaradas e sumos (frutose adicionada ≈ 0; GCKR/TCF7L2)"}, {"k": "evitar", "t": "Melatonina em dose alta e refeições ou lanches nas 3 h antes de deitar (MTNR1B)"}, {"k": "evitar", "t": "BCAA ou leucina isolados; berberina (inibe o CYP3A4 da rapamicina e soma-se aos fármacos que baixam a glicose)"}, {"k": "evitar", "t": "Metformina (redundante com a imeglimina); pioglitazona em cima da imeglimina e da acarbose (só como substituta, ver Protocolo)"}, {"k": "evitar", "t": "Trocar o retatrutide por um agonista GLP-1 isolado (resposta genética pior ao GLP-1)"}], "showrep": true}</script>
+<script>
+const D = (function(){var e=document.getElementById('dados-app');return e?JSON.parse(e.textContent):{};})();
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function fmt(x,d){d=(d==null?2:d);return Number(x).toFixed(d).replace('.',',');}
+
+const JC={fav:['c-ok','favorável'],desf:['c-bad','desfavorável'],tip:['c-mut','típico'],info:['c-info','informativo']};
+const norm=s=>(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+let F='todos',Q='',S='p';
+function barc(j){return j==='desf'?'var(--bad)':j==='fav'?'var(--ok)':j==='info'?'var(--info)':'var(--mut)';}
+function draw(){
+ document.querySelectorAll('#pf button').forEach(b=>b.classList.toggle('on',b.dataset.f===F));
+ document.querySelectorAll('#ps button').forEach(b=>b.classList.toggle('on',b.dataset.s===S));
+ let L=D.rows.filter(r=>(F==='todos'||r.j===F)&&(!Q||norm(r.n+' '+r.c+' '+r.r).includes(norm(Q))));
+ L.sort(S==='p'?(a,b)=>b.p-a.p:S==='pa'?(a,b)=>a.p-b.p:(a,b)=>a.n.localeCompare(b.n));
+ document.getElementById('pn').textContent=L.length+' de '+D.rows.length+' scores';
+ document.getElementById('pl').innerHTML=L.map(r=>`<div class="sc"><div class="row" style="justify-content:space-between"><b class="small">${esc(r.n)}</b><span class="chip ${JC[r.j][0]}">${JC[r.j][1]}</span></div>
+ <div class="pb"><i style="left:${Math.max(0,Math.min(100,r.p))}%;background:${barc(r.j)}"></i><span class="m50"></span></div>
+ <div class="tiny mut">percentil <b>${fmt(r.p,1)}</b>${r.lc?' · cobertura baixa (menos fiável)':''}${r.c?' · '+esc(r.c):''}${D.showrep?' · '+esc(r.r):''}</div></div>`).join('')||'<p class="small mut">Nada encontrado.</p>';
+}
+if(document.getElementById('pl')){
+ document.querySelectorAll('#pf button').forEach(b=>b.addEventListener('click',()=>{F=b.dataset.f;draw();}));
+ document.querySelectorAll('#ps button').forEach(b=>b.addEventListener('click',()=>{S=b.dataset.s;draw();}));
+ document.getElementById('pq').addEventListener('input',e=>{Q=e.target.value;draw();});draw();}
+if(document.getElementById('dl')){document.getElementById('dl').innerHTML=D.dest.map(x=>`<div style="padding:7px 0;border-top:1px solid var(--line)"><span class="chip ${x.tp==='fav'?'c-ok':'c-bad'}">${x.tp==='fav'?'favorável':'atenção'}</span> <span class="tiny mut">evidência: ${esc(x.ev||'—')}</span><div class="small">${esc(x.tx)}</div></div>`).join('');}
+if(document.getElementById('di')){const K={priorizar:['c-ok','priorizar'],evitar:['c-bad','evitar'],ajustar:['c-warn','ajustar'],monitorizar:['c-info','monitorizar']};
+ document.getElementById('di').innerHTML='<ul class="small" style="padding-left:18px">'+D.diet.map(x=>`<li><span class="chip ${K[x.k][0]}">${K[x.k][1]}</span> ${esc(x.t)}</li>`).join('')+'</ul>';}
+
+</script>
+<script>
+let LANG='pt';try{if(localStorage.getItem('lang')==='en')LANG='en'}catch(e){}
+{const q=/[?&]lang=(en|pt)(?:&|#|$)/i.exec(location.search);if(q)LANG=q[1].toLowerCase()}
+function applyLang(){const en=LANG==='en';document.documentElement.lang=en?'en':'pt-PT';document.title=en?document.body.dataset.titleEn:document.body.dataset.titlePt;
+ document.querySelectorAll('[data-en]').forEach(el=>{if(!el.hasAttribute('data-pt'))el.setAttribute('data-pt',el.textContent);el.textContent=en?el.dataset.en:el.dataset.pt});
+ document.querySelectorAll('[data-al-en]').forEach(el=>{if(!el.hasAttribute('data-al-pt'))el.setAttribute('data-al-pt',el.getAttribute('aria-label'));el.setAttribute('aria-label',en?el.dataset.alEn:el.dataset.alPt)});
+ document.querySelectorAll('#lang button').forEach(b=>{const on=b.dataset.l===LANG;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});}
+document.querySelectorAll('#lang button').forEach(b=>b.addEventListener('click',()=>{if(LANG===b.dataset.l)return;LANG=b.dataset.l;try{localStorage.setItem('lang',LANG)}catch(e){}try{if(/[?&]lang=/i.test(location.search)){const u=new URL(location.href);u.searchParams.set('lang',LANG);history.replaceState(history.state,'',u)}}catch(e){}applyLang()}));
+let THEME=null;try{THEME=localStorage.getItem('theme')}catch(e){}
+const curTheme=()=>THEME==='dark'||THEME==='light'?THEME:'dark';
+function applyTheme(){const t=curTheme();document.documentElement.setAttribute('data-theme',t);document.querySelectorAll('#theme button').forEach(b=>{const on=b.dataset.t===t;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)})}
+document.querySelectorAll('#theme button').forEach(b=>b.addEventListener('click',()=>{THEME=b.dataset.t;try{localStorage.setItem('theme',THEME)}catch(e){}applyTheme()}));
+applyTheme();
+applyLang();
+</script>
+<script>
+(function(){try{var W=window.SF_W;if(!W)return;W=String(W).replace(/\/+$/,'');
+ if(location.hash==='#toggle-goatcounter'){var off=localStorage.getItem('skipgc')==='t';if(off)localStorage.removeItem('skipgc');else localStorage.setItem('skipgc','t');alert(off?'Contagem ligada neste browser.':'Contagem desligada neste browser.')}
+ if(localStorage.getItem('skipgc')==='t'||navigator.webdriver||window!==window.top||location.protocol==='file:'||/^(localhost|127\.|10\.|192\.168\.|0\.0\.0\.0$|\[::1\]$)/.test(location.hostname))return;
+ var send=function(){try{var sc=window.screen||{},x={p:location.pathname,t:document.title,r:document.referrer||'',s:sc.width||0,w:sc.width||0,h:sc.height||0,d:window.devicePixelRatio||0,m:navigator.maxTouchPoints||0},u=W+'/e',ok=0,
+  go=function(){if(ok)return;ok=1;var d=JSON.stringify(x);if(navigator.sendBeacon&&navigator.sendBeacon(u,d))return;fetch(u,{method:'POST',body:d,keepalive:true,mode:'no-cors',credentials:'omit'}).catch(function(){})},
+  ud=navigator.userAgentData;
+  if(ud&&ud.getHighEntropyValues){setTimeout(go,800);ud.getHighEntropyValues(['model','platformVersion']).then(function(v){if(v&&v.model)x.mo=String(v.model).slice(0,40);if(v&&v.platformVersion)x.pv=String(v.platformVersion).slice(0,20);go()},go)}else go()}catch(_){}};
+ if(document.visibilityState==='prerender')document.addEventListener('visibilitychange',function f(){if(document.visibilityState!=='prerender'){document.removeEventListener('visibilitychange',f);send()}});
+ else if(document.readyState==='complete')send();else addEventListener('load',send)}catch(_){}})();
+</script>
+<script>document.addEventListener('click',function(e){document.querySelectorAll('details.dd[open]').forEach(function(d){if(!d.contains(e.target))d.removeAttribute('open')})});</script>
+</body></html>
