@@ -10,8 +10,6 @@ GOATCOUNTER_TOKEN (variável de ambiente; nunca é escrito em lado nenhum). Só 
   (03-10-2026 23:00 PT; antes disso as visitas não têm origem e só contam no geral). Os totais gerais não mudam (origem/… é ignorado).
 - Sem cortes: todos os caminhos (hits, paginação com exclude_paths até more=false) e listas completas de países / browsers / sistemas /
   tamanhos / origens (offset até more=false); páginas e aparelhos ficam todos no JSON, desde 01-10-2026 (sem janela de 366 dias).
-- Caminhos de página: /imortalistas/x (GitHub Pages) e /x (imortalistas.com) somam-se; /, /index.html e /imortalistas são a entrada.
-  reports/, download/ e aparelho/ continuam eventos, mesmo com o prefixo /imortalistas à frente.
 - Sem IPs nem dados pessoais: só contagens agregadas, nomes de páginas, ficheiros de relatórios, países, browsers, sistemas,
   tamanhos de ecrã e nomes de sites de origem (sem caminhos nem parâmetros).
 - Tolerante: conta sem dados = JSON com zeros (a API responde 404 a /stats/* enquanto o site não tem dados: conta como "sem dados"); erro na API ou token em falta = aviso e saída 0, sem tocar no JSON anterior;
@@ -30,6 +28,11 @@ GOATCOUNTER_TOKEN (variável de ambiente; nunca é escrito em lado nenhum). Só 
   (?dl=1) como download/<f>.pdf (desde DL_DESDE; antes, os downloads contavam como aberturas). Por relatório: abertos_pt/en,
   descarregados_pt/en, pt, en e total (pt/en/total = abertos + descarregados); totais pdf_abertos, pdf_descarregados, pdf_pt, pdf_en.
 
+- Páginas: desde 10-10-2026 o site está em https://imortalistas.com e as visitas chegam como /inicio.html em vez de /imortalistas/inicio.html.
+  O histórico no GoatCounter não é reescrito: "paginas" junta as duas formas (pagina_canonica: sem o prefixo /imortalistas; '', '/', '/index.html',
+  '/imortalistas' e '/imortalistas/' = '/'; <pasta>/index.html = <pasta>/), no geral e em por_origem. Um URL absoluto (github.io ou imortalistas.com)
+  conta na mesma linha. reports/, download/ e aparelho/ continuam eventos, mesmo com o prefixo /imortalistas. origem/pt/ (caminho vazio) é a página inicial.
+
 - Ao vivo: o Worker sf-site (cf_worker/src/stats.js, GET /s/<chave>) calcula o MESMO JSON na hora (mesma lógica; testes de paridade); o painel lê
   primeiro o Worker e este ficheiro/workflow fica como reserva. Qualquer mudança aqui tem de ir também para o stats.js do Worker.
 
@@ -43,7 +46,24 @@ INICIO = dt.datetime(2026, 10, 1, tzinfo=dt.timezone.utc)  # a contagem começou
 RE_PDF = re.compile(r'^/?(reports/[A-Za-z0-9._-]+\.pdf)$')      # abertura (formato de sempre)
 RE_DL = re.compile(r'^/?download/([A-Za-z0-9._-]+\.pdf)$')      # download (botão Descarregar, ?dl=1 no Worker)
 RE_AP = re.compile(r'^/?aparelho/(iphone|ipad|android|android-tablet|computador|outro)/([a-z0-9-]{1,60})$')  # evento do aparelho (Worker)
-RE_OR = re.compile(r'^/?origem/(pt|fora)/(.{1,1000})$')  # cópia do Worker com o grupo de origem (Portugal / outros países)
+RE_OR = re.compile(r'^/?origem/(pt|fora)/(.{0,1000})$')  # cópia do Worker com o grupo de origem (Portugal / outros países); vazio = página inicial "/" (imortalistas.com)
+RE_PREFIXO = re.compile(r'^/imortalistas(?=/|$)')  # prefixo do GitHub Pages (antes de 10-10-2026); em imortalistas.com as páginas chegam sem ele
+
+def pagina_canonica(path):
+    """Junta as duas formas do mesmo caminho: /imortalistas/x.html (GitHub Pages, até 10-10-2026) e /x.html (imortalistas.com, depois).
+
+    As mesmas regras do Worker: tira ?… e #…, o prefixo /imortalistas (também repetido, ou sem a barra inicial),
+    e trata '', '/', '/index.html', '/imortalistas' e '/imortalistas/' como '/'. <pasta>/index.html fica <pasta>/.
+    Um URL absoluto (https://sergiofpt.github.io/… ou https://imortalistas.com/…) entra na mesma linha.
+    """
+    p = str(path or '').split('?')[0].split('#')[0].strip()
+    p = re.sub(r'^[a-z][a-z0-9+.-]*://[^/]+', '', p, flags=re.I)
+    if not p.startswith('/'): p = '/' + p
+    while RE_PREFIXO.match(p):
+        p = RE_PREFIXO.sub('', p, count=1) or '/'
+        if not p.startswith('/'): p = '/' + p
+    if p.endswith('/index.html'): p = p[:-len('index.html')] or '/'
+    return p or '/'
 ORIGEM_DESDE = '2026-10-03T22:00:00Z'  # 03-10-2026 23:00 (PT): a partir daqui as visitas têm origem
 DL_DESDE = '2026-10-03'  # a partir deste dia os downloads contam à parte; antes contavam como aberturas
 VAZIO = {'versao': 1, 'atualizado_em': None, 'desde': None, 'descarregados_desde': DL_DESDE,
@@ -94,34 +114,6 @@ def nome_limpo(s, origem=False):
 def inteiro(x):
     try: return max(0, int(x))
     except (TypeError, ValueError): return 0
-
-def sem_prefixo_site(resto):
-    """Tira um ou mais prefixos imortalistas/ (o caminho no github.io; imortalistas.com não o tem)."""
-    p = str(resto or '').lstrip('/')
-    while p.lower() == 'imortalistas' or p.lower().startswith('imortalistas/'):
-        p = p[len('imortalistas'):].lstrip('/')
-    return p
-
-def normalizar_caminho(path):
-    """Caminho canónico de uma página: sem esquema, query, hash nem prefixo /imortalistas.
-
-    /, /index.html, /imortalistas e /imortalistas/ ficam /. /pasta e /pasta/index.html ficam /pasta/index.html
-    quando esse ficheiro existe. Não usar em eventos (reports/, download/, aparelho/).
-    """
-    p = nome_limpo(str(path or '').split('?')[0].split('#')[0])
-    p = re.sub(r'^[a-z][a-z0-9+.-]*://[^/]+', '', p, flags=re.I)
-    if not p.startswith('/'):
-        p = '/' + p
-    p = '/' + sem_prefixo_site(p)
-    if p != '/' and p.endswith('/'):
-        p = p[:-1]
-    if p in ('/index.html', ''):
-        p = '/'
-    if p != '/' and not p.lower().endswith('.html'):
-        rel = p.lstrip('/') + '/index.html'
-        if os.path.isfile(os.path.join(RAIZ, rel)):
-            p = '/' + rel
-    return p or '/'
 
 def lista_stats(token, pagina, ini, fim, origem=False, incluir=None):
     """Lista completa (sem corte): 100 de cada vez, com offset, até a API dizer more=false."""
@@ -189,11 +181,10 @@ def _recolher(token, hoje, ini_dt, ini, fim):
     for h in hits:
         mo = RE_OR.match(str(h.get('path') or '')) if h.get('event') else None
         if not mo: continue
-        # página do site, com ou sem o prefixo /imortalistas; reports/, download/ e aparelho/ continuam eventos
-        base = sem_prefixo_site(mo.group(2)).split('?')[0].split('#')[0]
-        evento = base.startswith(('reports/', 'download/', 'aparelho/'))
-        caminho = base if evento else normalizar_caminho('/' + base if base else '/')
-        grupos[mo.group(1)].append(dict(h, path=caminho, event=evento))
+        # página do site, com ou sem /imortalistas; caminho vazio (origem/pt/) = '/'. reports/, download/ e aparelho/ continuam eventos
+        base = pagina_canonica(mo.group(2))
+        evento = base.lstrip('/').startswith(('reports/', 'download/', 'aparelho/'))
+        grupos[mo.group(1)].append(dict(h, path=(base.lstrip('/') if evento else base), event=evento))
         for x in h.get('stats') or []:
             dia = str(x.get('day') or '')[:10]
             if re.match(r'^\d{4}-\d{2}-\d{2}$', dia) and inteiro(x.get('daily')) > 0: or_dias.add(dia)
@@ -210,8 +201,8 @@ def agregar(hits, fich, hoje):
     paginas, rel, por_dia, pdf_dia, aps, ap_dias = {}, {}, {}, {}, {}, set()
     for h in hits:
         path, n = str(h.get('path') or ''), inteiro(h.get('count'))
-        # eventos também podem vir com o prefixo /imortalistas (github.io); imortalistas.com não o traz
-        alvo = sem_prefixo_site(path.split('?')[0].split('#')[0]) if h.get('event') else path
+        # o mesmo evento pode vir como /imortalistas/reports/….pdf (github.io) ou reports/….pdf (imortalistas.com)
+        alvo = pagina_canonica(path) if h.get('event') and 'imortalistas' in path.lower() else path
         ma = RE_AP.match(alvo) if h.get('event') else None
         if ma:
             k = ma.group(1) + '/' + ma.group(2)
@@ -238,7 +229,7 @@ def agregar(hits, fich, hoje):
                 dia = str(s.get('day') or '')[:10]
                 if re.match(r'^\d{4}-\d{2}-\d{2}$', dia): pdf_dia[dia] = pdf_dia.get(dia, 0) + inteiro(s.get('daily'))
         else:
-            p = normalizar_caminho(path)
+            p = nome_limpo(pagina_canonica(path))  # /imortalistas/x.html e /x.html contam como a mesma página
             paginas[p] = paginas.get(p, 0) + n
             for s in h.get('stats') or []:
                 dia = str(s.get('day') or '')[:10]
