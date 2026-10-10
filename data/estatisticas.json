@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-10T00:33:16Z",
+ "atualizado_em": "2026-10-10T01:05:37Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 62,
   "visitas_30d": 62,
   "visitas_90d": 62,
-  "aberturas_pdf": 412,
+  "aberturas_pdf": 414,
   "visitas_hoje": 0,
   "visitas_7d": 45,
-  "aberturas_hoje": 6,
-  "aberturas_7d": 401,
-  "aberturas_30d": 412,
-  "pdf_abertos": 197,
+  "aberturas_hoje": 8,
+  "aberturas_7d": 403,
+  "aberturas_30d": 414,
+  "pdf_abertos": 199,
   "pdf_descarregados": 215,
-  "pdf_pt": 174,
+  "pdf_pt": 176,
   "pdf_en": 238
  },
  "dias": [
@@ -67,7 +67,7 @@
   {
    "dia": "2026-10-10",
    "visitas": 0,
-   "aberturas": 6
+   "aberturas": 8
   }
  ],
  "paginas": [
@@ -474,6 +474,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "longevidade-maxima-sintese-genetica",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 1,
+   "total": 4,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
    "id": "matriz-extracelular-glicacao",
    "ficheiro": null,
    "pt": 2,
@@ -497,6 +508,17 @@
   },
   {
    "id": "microbioma-intestino",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "olhos-em-detalhe",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -1068,28 +1090,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "longevidade-maxima-sintese-genetica",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 1,
-   "total": 3,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
-   "id": "olhos-em-detalhe",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "oxitocina-comportamento-social",
    "ficheiro": null,
    "pt": 1,
@@ -1552,7 +1552,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 386
+   "visitas": 388
   },
   {
    "id": "PT",
@@ -1604,7 +1604,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 444
+   "visitas": 446
   },
   {
    "id": "Firefox",
@@ -1621,7 +1621,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 261
+   "visitas": 263
   },
   {
    "id": "macOS",
@@ -1668,14 +1668,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 411
+   "visitas": 413
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 463
+   "visitas": 465
   },
   {
    "id": "https://bing.com",
@@ -2032,7 +2032,7 @@
     {
      "dia": "2026-10-10",
      "visitas": 0,
-     "aberturas": 6
+     "aberturas": 8
     }
    ],
    "paginas": [
@@ -2355,6 +2355,17 @@
     },
     {
      "id": "microbioma-intestino",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "olhos-em-detalhe",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -2959,18 +2970,18 @@
      "descarregados_en": 0
     },
     {
-     "id": "metilacao-homocisteina-colina",
+     "id": "longevidade-maxima-sintese-genetica",
      "ficheiro": null,
-     "pt": 1,
-     "en": 2,
+     "pt": 2,
+     "en": 1,
      "total": 3,
-     "abertos_pt": 0,
+     "abertos_pt": 1,
      "abertos_en": 1,
      "descarregados_pt": 1,
-     "descarregados_en": 1
+     "descarregados_en": 0
     },
     {
-     "id": "olhos-em-detalhe",
+     "id": "metilacao-homocisteina-colina",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -3300,17 +3311,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "longevidade-maxima-sintese-genetica",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 1,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
      "id": "mitocondrias-energia",
      "ficheiro": null,
      "pt": 0,
@@ -3489,22 +3489,22 @@
     "visitas": 38,
     "visitas_30d": 38,
     "visitas_90d": 38,
-    "aberturas_pdf": 386,
+    "aberturas_pdf": 388,
     "visitas_hoje": 0,
     "visitas_7d": 35,
-    "aberturas_hoje": 6,
-    "aberturas_7d": 386,
-    "aberturas_30d": 386,
-    "pdf_abertos": 171,
+    "aberturas_hoje": 8,
+    "aberturas_7d": 388,
+    "aberturas_30d": 388,
+    "pdf_abertos": 173,
     "pdf_descarregados": 215,
-    "pdf_pt": 150,
+    "pdf_pt": 152,
     "pdf_en": 236
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 386
+     "visitas": 388
     },
     {
      "id": "US",
