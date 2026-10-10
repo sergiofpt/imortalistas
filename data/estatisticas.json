@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-10T06:27:32Z",
+ "atualizado_em": "2026-10-10T06:53:17Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 64,
   "visitas_30d": 64,
   "visitas_90d": 64,
-  "aberturas_pdf": 454,
+  "aberturas_pdf": 455,
   "visitas_hoje": 2,
   "visitas_7d": 47,
-  "aberturas_hoje": 48,
-  "aberturas_7d": 443,
-  "aberturas_30d": 454,
-  "pdf_abertos": 239,
+  "aberturas_hoje": 49,
+  "aberturas_7d": 444,
+  "aberturas_30d": 455,
+  "pdf_abertos": 240,
   "pdf_descarregados": 215,
-  "pdf_pt": 216,
+  "pdf_pt": 217,
   "pdf_en": 238
  },
  "dias": [
@@ -67,7 +67,7 @@
   {
    "dia": "2026-10-10",
    "visitas": 2,
-   "aberturas": 48
+   "aberturas": 49
   }
  ],
  "paginas": [
@@ -658,6 +658,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "inflamacao-senescencia-placa",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "intolerancias-alimentares-626",
    "ficheiro": null,
    "pt": 2,
@@ -1197,17 +1208,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "inflamacao-senescencia-placa",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "insuficiencia-cardiaca-cardiomiopatias",
    "ficheiro": null,
    "pt": 1,
@@ -1560,7 +1560,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 430
+   "visitas": 431
   },
   {
    "id": "PT",
@@ -1612,7 +1612,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 488
+   "visitas": 489
   },
   {
    "id": "Firefox",
@@ -1629,7 +1629,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 284
+   "visitas": 285
   },
   {
    "id": "macOS",
@@ -1676,14 +1676,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 453
+   "visitas": 454
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 507
+   "visitas": 508
   },
   {
    "id": "https://bing.com",
@@ -2040,7 +2040,7 @@
     {
      "dia": "2026-10-10",
      "visitas": 2,
-     "aberturas": 48
+     "aberturas": 49
     }
    ],
    "paginas": [
@@ -2503,6 +2503,17 @@
     },
     {
      "id": "impulsividade-recompensa-vicio",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "inflamacao-senescencia-placa",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3140,17 +3151,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "inflamacao-senescencia-placa",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "insuficiencia-cardiaca-cardiomiopatias",
      "ficheiro": null,
      "pt": 1,
@@ -3505,22 +3505,22 @@
     "visitas": 40,
     "visitas_30d": 40,
     "visitas_90d": 40,
-    "aberturas_pdf": 428,
+    "aberturas_pdf": 429,
     "visitas_hoje": 2,
     "visitas_7d": 37,
-    "aberturas_hoje": 48,
-    "aberturas_7d": 428,
-    "aberturas_30d": 428,
-    "pdf_abertos": 213,
+    "aberturas_hoje": 49,
+    "aberturas_7d": 429,
+    "aberturas_30d": 429,
+    "pdf_abertos": 214,
     "pdf_descarregados": 215,
-    "pdf_pt": 192,
+    "pdf_pt": 193,
     "pdf_en": 236
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 430
+     "visitas": 431
     },
     {
      "id": "US",
