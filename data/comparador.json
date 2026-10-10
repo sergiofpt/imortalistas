@@ -1,0 +1,810 @@
+{
+ "titulo": {
+  "pt": "Comparador com figuras públicas",
+  "en": "Comparison with public figures"
+ },
+ "gerado_em": "2026-10-10",
+ "intro": {
+  "pt": "O protocolo do Sérgio F lado a lado com o que Bryan Johnson, Peter Attia e David Sinclair tornaram público. Cada item tem a fonte e a data; onde não há informação pública aparece \"não público\".",
+  "en": "Sérgio F's protocol side by side with what Bryan Johnson, Peter Attia and David Sinclair have made public. Each item has its source and date; where there is no public information it says \"not public\"."
+ },
+ "nota_datas": {
+  "pt": "Os protocolos destas pessoas mudam com o tempo; cada item vale para a data da fonte.",
+  "en": "These people's protocols change over time; each item reflects the date of its source."
+ },
+ "figuras": [
+  {
+   "id": "sergio-f",
+   "nome": "Sérgio F",
+   "descricao": {
+    "pt": "Protocolo publicado neste site.",
+    "en": "Protocol published on this site."
+   }
+  },
+  {
+   "id": "bryan-johnson",
+   "nome": "Bryan Johnson",
+   "descricao": {
+    "pt": "Empresário; protocolo Blueprint / Don't Die publicado por ele.",
+    "en": "Entrepreneur; Blueprint / Don't Die protocol published by him."
+   }
+  },
+  {
+   "id": "peter-attia",
+   "nome": "Peter Attia",
+   "descricao": {
+    "pt": "Médico, autor de Outlive (2023) e do podcast The Drive.",
+    "en": "Physician, author of Outlive (2023) and host of The Drive podcast."
+   }
+  },
+  {
+   "id": "david-sinclair",
+   "nome": "David Sinclair",
+   "descricao": {
+    "pt": "Professor de genética em Harvard, autor de Lifespan (2019). Tem revisto publicamente o que toma.",
+    "en": "Harvard genetics professor, author of Lifespan (2019). He has publicly revised what he takes."
+   }
+  }
+ ],
+ "fontes": {
+  "bj_protocol": {
+   "figura": "bryan-johnson",
+   "titulo": "Bryan's Protocol (Don't Die)",
+   "url": "https://protocol.bryanjohnson.com/",
+   "data": "2026",
+   "data_nota": {
+    "pt": "página assinada \"Planet Earth, 2026\"; consultada a 2026-10-10",
+    "en": "page signed \"Planet Earth, 2026\"; accessed 2026-10-10"
+   }
+  },
+  "bj_morning": {
+   "figura": "bryan-johnson",
+   "titulo": "My Morning Routine (2026)",
+   "url": "https://blueprint.bryanjohnson.com/blogs/news/morning-routine",
+   "data": "2026-04-22"
+  },
+  "bj_rapa": {
+   "figura": "bryan-johnson",
+   "titulo": "I stopped taking rapamycin",
+   "url": "https://blueprint.bryanjohnson.com/blogs/news/i-stopped-taking-rapamycin",
+   "data": "2025-01-25"
+  },
+  "pa_276": {
+   "figura": "peter-attia",
+   "titulo": "The Drive #276 – Peter answers questions on longevity, supplements, protein, fasting, apoB, statins, and more",
+   "url": "https://peterattiamd.com/peter-faq/",
+   "data": "2023-10-23"
+  },
+  "pa_bi": {
+   "figura": "peter-attia",
+   "titulo": "Business Insider – Peter Attia shares the supplements he's taking (sobre o episódio #276)",
+   "url": "https://www.businessinsider.com/supplements-peter-attia-takes-longevity-anti-aging-magnesium-vitamin-d-2023-10",
+   "data": "2023-10-25"
+  },
+  "pa_notes": {
+   "figura": "peter-attia",
+   "titulo": "Podcast Notes – resumo do episódio #276 da The Drive",
+   "url": "https://podcastnotes.org/the-drive-with-dr-peter-attia/episode-276-special-episode-peter-answers-questions-on-longevity-supplements-protein-fasting-apob-statins-and-more-the-drive-with-peter-attia/",
+   "data": "2023-10-23",
+   "data_nota": {
+    "pt": "data do episódio",
+    "en": "episode date"
+   }
+  },
+  "pa_cbs": {
+   "figura": "peter-attia",
+   "titulo": "CBS News / 60 Minutes – Billionaires seek out this doctor's help preparing for advanced age",
+   "url": "https://www.cbsnews.com/news/preparing-for-advanced-age-peter-attia-60-minutes/",
+   "data": "2025-10-26"
+  },
+  "ds_moon": {
+   "figura": "david-sinclair",
+   "titulo": "Moonshots with Peter Diamandis – David Sinclair Reveals Age-Reversing Science (transcrição)",
+   "url": "https://podscripts.co/podcasts/moonshots-with-peter-diamandis/david-sinclair-harvard-professor-reveals-age-reversing-science-to-look-feel-younger",
+   "data": "2025-06-26",
+   "data_nota": {
+    "pt": "gravado a 2025-06-06",
+    "en": "recorded 2025-06-06"
+   }
+  },
+  "sf_sup": {
+   "figura": "sergio-f",
+   "titulo": "Suplementos + Medicação",
+   "url": "https://sergiofpt.github.io/imortalistas/suplementos.html",
+   "data": "2026-10-06"
+  },
+  "sf_dieta": {
+   "figura": "sergio-f",
+   "titulo": "Dieta",
+   "url": "https://sergiofpt.github.io/imortalistas/dieta.html",
+   "data": "2026-10-06"
+  },
+  "sf_treino": {
+   "figura": "sergio-f",
+   "titulo": "Treino",
+   "url": "https://sergiofpt.github.io/imortalistas/treino.html",
+   "data": "2026-10-06"
+  },
+  "sf_sono": {
+   "figura": "sergio-f",
+   "titulo": "Sono",
+   "url": "https://sergiofpt.github.io/imortalistas/sono.html",
+   "data": "2026-10-06"
+  },
+  "sf_terapias": {
+   "figura": "sergio-f",
+   "titulo": "Terapias",
+   "url": "https://sergiofpt.github.io/imortalistas/terapias.html",
+   "data": "2026-10-06"
+  },
+  "sf_pele": {
+   "figura": "sergio-f",
+   "titulo": "Pele e Cabelo",
+   "url": "https://sergiofpt.github.io/imortalistas/pele-cabelo.html",
+   "data": "2026-10-06"
+  },
+  "sf_analises": {
+   "figura": "sergio-f",
+   "titulo": "Análises",
+   "url": "https://sergiofpt.github.io/imortalistas/analises.html",
+   "data": "2026-10-10"
+  },
+  "sf_genetica": {
+   "figura": "sergio-f",
+   "titulo": "Genética",
+   "url": "https://sergiofpt.github.io/imortalistas/genetica.html",
+   "data": "2026-10-10"
+  }
+ },
+ "categorias": [
+  {
+   "id": "farmacos",
+   "nome": {
+    "pt": "Fármacos e péptidos",
+    "en": "Drugs and peptides"
+   },
+   "sergio-f": [
+    {
+     "pt": "Rapamicina 4 mg, 1× a cada 6 semanas",
+     "en": "Rapamycin 4 mg, once every 6 weeks",
+     "fonte": "sf_sup"
+    },
+    {
+     "pt": "Dapagliflozina 10 mg (SGLT2)",
+     "en": "Dapagliflozin 10 mg (SGLT2)",
+     "fonte": "sf_sup"
+    },
+    {
+     "pt": "Acarbose 200 mg, 1–2× por dia",
+     "en": "Acarbose 200 mg, 1–2× a day",
+     "fonte": "sf_sup"
+    },
+    {
+     "pt": "Imeglimina 1000 mg, 2× por dia",
+     "en": "Imeglimin 1000 mg, 2× a day",
+     "fonte": "sf_sup"
+    },
+    {
+     "pt": "Retatrutide 8 mg a cada 6 dias",
+     "en": "Retatrutide 8 mg every 6 days",
+     "fonte": "sf_sup"
+    },
+    {
+     "pt": "Pitavastatina 4 mg + ezetimiba 10 mg + ácido bempedoico 180 mg + inclisiran (PCSK9)",
+     "en": "Pitavastatin 4 mg + ezetimibe 10 mg + bempedoic acid 180 mg + inclisiran (PCSK9)",
+     "fonte": "sf_sup"
+    },
+    {
+     "pt": "Telmisartan 20 mg",
+     "en": "Telmisartan 20 mg",
+     "fonte": "sf_sup"
+    },
+    {
+     "pt": "Tadalafil 5 mg",
+     "en": "Tadalafil 5 mg",
+     "fonte": "sf_sup"
+    },
+    {
+     "pt": "Naltrexona em dose baixa (LDN) 4,5 mg",
+     "en": "Low-dose naltrexone (LDN) 4.5 mg",
+     "fonte": "sf_sup"
+    },
+    {
+     "pt": "17-alfa estradiol 0,5 mg",
+     "en": "17-alpha estradiol 0.5 mg",
+     "fonte": "sf_sup"
+    },
+    {
+     "pt": "Isotretinoína 40 mg, 1× por semana",
+     "en": "Isotretinoin 40 mg, once a week",
+     "fonte": "sf_sup"
+    },
+    {
+     "pt": "Trazodona 25 mg",
+     "en": "Trazodone 25 mg",
+     "fonte": "sf_sup"
+    },
+    {
+     "pt": "Tafero-EM (emtricitabina 200 mg + tenofovir alafenamida 25 mg), 12 semanas por ano",
+     "en": "Tafero-EM (emtricitabine 200 mg + tenofovir alafenamide 25 mg), 12 weeks a year",
+     "fonte": "sf_sup"
+    },
+    {
+     "pt": "Péptidos: epitalon, pinealon, oxitocina, glutationa; ciclo 2× por ano com SS-31, 5-amino-1MQ, MOTS-c, humanina, timosina alfa-1, timalina e FOXO4-DRI",
+     "en": "Peptides: epitalon, pinealon, oxytocin, glutathione; twice-yearly cycle with SS-31, 5-amino-1MQ, MOTS-c, humanin, thymosin alpha-1, thymalin and FOXO4-DRI",
+     "fonte": "sf_sup"
+    }
+   ],
+   "bryan-johnson": [
+    {
+     "pt": "Acarbose (200 mg na rotina diária; 400 mg/dia na lista de receitas da mesma página)",
+     "en": "Acarbose (200 mg in the daily routine; 400 mg/day in the prescription list on the same page)",
+     "fonte": "bj_protocol"
+    },
+    {
+     "pt": "Empagliflozina (Jardiance) 10 mg (SGLT2)",
+     "en": "Empagliflozin (Jardiance) 10 mg (SGLT2)",
+     "fonte": "bj_protocol"
+    },
+    {
+     "pt": "Evolocumab (Repatha) 140 mg a cada 2 semanas (PCSK9)",
+     "en": "Evolocumab (Repatha) 140 mg every 2 weeks (PCSK9)",
+     "fonte": "bj_protocol"
+    },
+    {
+     "pt": "Tadalafil 5 mg",
+     "en": "Tadalafil 5 mg",
+     "fonte": "bj_protocol"
+    },
+    {
+     "pt": "Candesartan 8 mg",
+     "en": "Candesartan 8 mg",
+     "fonte": "bj_protocol"
+    },
+    {
+     "pt": "Metformina 500 mg, em ciclos de 6 semanas com e sem",
+     "en": "Metformin 500 mg, in 6-week on/off cycles",
+     "fonte": "bj_protocol"
+    },
+    {
+     "pt": "Minoxidil oral 3,75 mg (cabelo)",
+     "en": "Oral minoxidil 3.75 mg (hair)",
+     "fonte": "bj_protocol"
+    },
+    {
+     "pt": "Tiroide: Armour Thyroid 60 mg + levotiroxina 100 mcg (hipotiroidismo diagnosticado)",
+     "en": "Thyroid: Armour Thyroid 60 mg + levothyroxine 100 mcg (diagnosed hypothyroidism)",
+     "fonte": "bj_protocol"
+    },
+    {
+     "pt": "Rapamicina: parou a 28 de setembro de 2024, após quase 5 anos, por efeitos adversos",
+     "en": "Rapamycin: stopped on 28 September 2024, after almost 5 years, because of side effects",
+     "fonte": "bj_rapa"
+    }
+   ],
+   "peter-attia": [
+    {
+     "pt": "Rapamicina: parou \"por agora\" porque lhe causava aftas",
+     "en": "Rapamycin: stopped \"for now\" because it gave him mouth sores",
+     "fonte": "pa_cbs"
+    },
+    {
+     "pt": "Aspirina em dose baixa (diz que a justificação é fraca)",
+     "en": "Low-dose aspirin (he says the rationale is weak)",
+     "fonte": "pa_bi"
+    },
+    {
+     "nao_publico": true,
+     "pt": "Restantes fármacos: não público",
+     "en": "Other drugs: not public"
+    }
+   ],
+   "david-sinclair": [
+    {
+     "pt": "Rapamicina: decidiu tomá-la só raramente, cerca de 4× por ano",
+     "en": "Rapamycin: decided to take it only rarely, about 4× a year",
+     "fonte": "ds_moon"
+    },
+    {
+     "pt": "Metformina: ocasionalmente",
+     "en": "Metformin: occasionally",
+     "fonte": "ds_moon"
+    },
+    {
+     "pt": "Aspirina em dose baixa",
+     "en": "Low-dose aspirin",
+     "fonte": "ds_moon"
+    }
+   ]
+  },
+  {
+   "id": "suplementos",
+   "nome": {
+    "pt": "Suplementos",
+    "en": "Supplements"
+   },
+   "sergio-f": [
+    {
+     "pt": "Creatina 5 g, taurina 6 g, colagénio 20 g, glicina 3 g",
+     "en": "Creatine 5 g, taurine 6 g, collagen 20 g, glycine 3 g",
+     "fonte": "sf_sup"
+    },
+    {
+     "pt": "Vitamina D3 10 000 UI + K2 (MK-7) 240 mcg",
+     "en": "Vitamin D3 10,000 IU + K2 (MK-7) 240 mcg",
+     "fonte": "sf_sup"
+    },
+    {
+     "pt": "EPA 1125 mg + DHA 875 mg",
+     "en": "EPA 1125 mg + DHA 875 mg",
+     "fonte": "sf_sup"
+    },
+    {
+     "pt": "Magnésio glicinato 500 mg + acetil-taurato 750 mg",
+     "en": "Magnesium glycinate 500 mg + acetyl-taurate 750 mg",
+     "fonte": "sf_sup"
+    },
+    {
+     "pt": "B2, B6 (P5P) 15 mg, B9 (5-MTHF) 800 mcg, B12 1000 mcg, TMG 1500 mg",
+     "en": "B2, B6 (P5P) 15 mg, B9 (5-MTHF) 800 mcg, B12 1000 mcg, TMG 1500 mg",
+     "fonte": "sf_sup"
+    },
+    {
+     "pt": "NAC 1800 mg, ácido R-lipoico 240 mg, acetilcarnitina 500 mg, Ca-AKG 2 g, L-carnosina 2 g, ergotioneína 10 mg",
+     "en": "NAC 1800 mg, R-lipoic acid 240 mg, acetylcarnitine 500 mg, Ca-AKG 2 g, L-carnosine 2 g, ergothioneine 10 mg",
+     "fonte": "sf_sup"
+    },
+    {
+     "pt": "Fisetina 2,5 g + quercetina 250 mg, 3× por mês",
+     "en": "Fisetin 2.5 g + quercetin 250 mg, 3× a month",
+     "fonte": "sf_sup"
+    },
+    {
+     "pt": "Astaxantina, licopeno, luteína + zeaxantina, sulforafano, luteolina, apigenina, picnogenol, lítio 5 mg, melatonina",
+     "en": "Astaxanthin, lycopene, lutein + zeaxanthin, sulforaphane, luteolin, apigenin, pycnogenol, lithium 5 mg, melatonin",
+     "fonte": "sf_sup"
+    },
+    {
+     "pt": "Probiótico, PHGG 6 g, psyllium 10 g, tributirina 500 mg",
+     "en": "Probiotic, PHGG 6 g, psyllium 10 g, tributyrin 500 mg",
+     "fonte": "sf_sup"
+    },
+    {
+     "pt": "Alho envelhecido e alho negro, hidroxitirosol, folha de oliveira, curcumina Longvida 1 g, gengibre",
+     "en": "Aged and black garlic, hydroxytyrosol, olive leaf, Longvida curcumin 1 g, ginger",
+     "fonte": "sf_sup"
+    }
+   ],
+   "bryan-johnson": [
+    {
+     "pt": "Longevity Mix (1 dose) + creatina 5 g (7,5 g no total)",
+     "en": "Longevity Mix (1 scoop) + creatine 5 g (7.5 g in total)",
+     "fonte": "bj_morning"
+    },
+    {
+     "pt": "Colagénio 11 g ao pequeno-almoço e mais uma dose às 10 h",
+     "en": "Collagen 11 g at breakfast plus another scoop at 10 am",
+     "fonte": "bj_protocol"
+    },
+    {
+     "pt": "Essential Capsules, Advanced Antioxidants, Ashwagandha & Rhodiola",
+     "en": "Essential Capsules, Advanced Antioxidants, Ashwagandha & Rhodiola",
+     "fonte": "bj_morning"
+    },
+    {
+     "pt": "Ómega-3 (EPA/DHA 800 mg)",
+     "en": "Omega-3 (EPA/DHA 800 mg)",
+     "fonte": "bj_protocol"
+    },
+    {
+     "pt": "NMN 500 mg",
+     "en": "NMN 500 mg",
+     "fonte": "bj_morning"
+    },
+    {
+     "pt": "Prebióticos: galacto-oligossacarídeos, inulina e arabinogalactano",
+     "en": "Prebiotics: galacto-oligosaccharides, inulin and arabinogalactan",
+     "fonte": "bj_protocol"
+    }
+   ],
+   "peter-attia": [
+    {
+     "pt": "EPA ~2 g + DHA ~1,5 g por dia",
+     "en": "EPA ~2 g + DHA ~1.5 g a day",
+     "fonte": "pa_bi"
+    },
+    {
+     "pt": "Vitamina D 5000 UI",
+     "en": "Vitamin D 5,000 IU",
+     "fonte": "pa_bi"
+    },
+    {
+     "pt": "Magnésio (cloreto, L-treonato e óxido), cerca de 1 g por dia",
+     "en": "Magnesium (chloride, L-threonate and oxide), about 1 g a day",
+     "fonte": "pa_bi"
+    },
+    {
+     "pt": "Metilfolato + metil-B12; B6 50 mg 3× por semana",
+     "en": "Methylfolate + methyl-B12; B6 50 mg 3× a week",
+     "fonte": "pa_bi"
+    },
+    {
+     "pt": "AG1 (Athletic Greens) e probiótico Pendulum Glucose Control",
+     "en": "AG1 (Athletic Greens) and Pendulum Glucose Control probiotic",
+     "fonte": "pa_bi"
+    }
+   ],
+   "david-sinclair": [
+    {
+     "pt": "NMN, resveratrol, espermidina, vitamina D, vitamina K",
+     "en": "NMN, resveratrol, spermidine, vitamin D, vitamin K",
+     "fonte": "ds_moon"
+    },
+    {
+     "pt": "Fisetina, ácido alfa-lipoico, EPA/DHA",
+     "en": "Fisetin, alpha-lipoic acid, EPA/DHA",
+     "fonte": "ds_moon"
+    },
+    {
+     "pt": "Taurina: começou há cerca de um ano, mas diz que agora parece menos promissora",
+     "en": "Taurine: started about a year earlier, but says it now looks less promising",
+     "fonte": "ds_moon"
+    },
+    {
+     "pt": "Não toma TMG",
+     "en": "Does not take TMG",
+     "fonte": "ds_moon"
+    }
+   ]
+  },
+  {
+   "id": "dieta",
+   "nome": {
+    "pt": "Dieta",
+    "en": "Diet"
+   },
+   "sergio-f": [
+    {
+     "pt": "Jejum intermitente de 23 h (refeições entre as 12 h e as 13 h) e jejum de 72 h 1× por mês",
+     "en": "23-hour intermittent fasting (meals between 12 pm and 1 pm) and a 72-hour fast once a month",
+     "fonte": "sf_dieta"
+    },
+    {
+     "pt": "Cerca de 2145 kcal: 108 g proteína, 214 g hidratos, 100 g gordura, 39 g fibra",
+     "en": "About 2,145 kcal: 108 g protein, 214 g carbs, 100 g fat, 39 g fibre",
+     "fonte": "sf_dieta"
+    },
+    {
+     "pt": "Camarão, arroz ou batata, 45 ml de azeite virgem extra, shiitake, espargos, frutos vermelhos, açaí, romã, nozes, macadâmia, iogurte grego, kimchi",
+     "en": "Shrimp, rice or potato, 45 ml extra virgin olive oil, shiitake, asparagus, berries, açaí, pomegranate, walnuts, macadamia, Greek yogurt, kimchi",
+     "fonte": "sf_dieta"
+    },
+    {
+     "pt": "3 litros de água por dia",
+     "en": "3 litres of water a day",
+     "fonte": "sf_dieta"
+    }
+   ],
+   "bryan-johnson": [
+    {
+     "pt": "2250 kcal (restrição calórica de 10%): 130 g proteína, 206 g hidratos, 101 g gordura",
+     "en": "2,250 kcal (10% caloric restriction): 130 g protein, 206 g carbs, 101 g fat",
+     "fonte": "bj_protocol"
+    },
+    {
+     "pt": "Última refeição por volta do meio-dia",
+     "en": "Final meal around noon",
+     "fonte": "bj_protocol"
+    },
+    {
+     "pt": "Leguminosas, brócolos, couve-flor, cogumelos, frutos vermelhos, frutos secos, azeite virgem extra e fermentados",
+     "en": "Legumes, broccoli, cauliflower, mushrooms, berries, nuts, extra virgin olive oil and fermented foods",
+     "fonte": "bj_protocol"
+    }
+   ],
+   "peter-attia": [
+    {
+     "pt": "Proteína: cerca de 1 g por libra de peso por dia (o que pede aos pacientes)",
+     "en": "Protein: about 1 g per pound of body weight a day (what he asks of patients)",
+     "fonte": "pa_cbs"
+    },
+    {
+     "pt": "Deixou de fazer jejuns prolongados",
+     "en": "Stopped doing prolonged fasts",
+     "fonte": "pa_276"
+    }
+   ],
+   "david-sinclair": [
+    {
+     "pt": "Alimentação 90–95% vegetal",
+     "en": "90–95% plant-based diet",
+     "fonte": "ds_moon"
+    },
+    {
+     "pt": "Tenta não fazer mais de 2 refeições por dia, às vezes 1; salta o pequeno-almoço",
+     "en": "Tries not to eat more than 2 meals a day, sometimes 1; skips breakfast",
+     "fonte": "ds_moon"
+    },
+    {
+     "pt": "Deixou quase por completo o álcool",
+     "en": "Has given up almost all alcohol",
+     "fonte": "ds_moon"
+    }
+   ]
+  },
+  {
+   "id": "exercicio",
+   "nome": {
+    "pt": "Exercício",
+    "en": "Exercise"
+   },
+   "sergio-f": [
+    {
+     "pt": "Terça e sexta: hipertrofia (corpo inteiro) + 90 min de zona 2",
+     "en": "Tuesday and Friday: hypertrophy (full body) + 90 min of zone 2",
+     "fonte": "sf_treino"
+    },
+    {
+     "pt": "Quarta: protocolo norueguês 4×4",
+     "en": "Wednesday: Norwegian 4×4 protocol",
+     "fonte": "sf_treino"
+    },
+    {
+     "pt": "Quinta: treino funcional + 90 min de zona 2",
+     "en": "Thursday: functional training + 90 min of zone 2",
+     "fonte": "sf_treino"
+    },
+    {
+     "pt": "Mais de 20 mil passos todos os dias",
+     "en": "More than 20,000 steps every day",
+     "fonte": "sf_treino"
+    }
+   ],
+   "bryan-johnson": [
+    {
+     "pt": "90 min por dia: cardio, força, equilíbrio e alongamentos; HIIT 2× por semana",
+     "en": "90 min a day: cardio, strength, balance and stretching; HIIT 2× a week",
+     "fonte": "bj_morning"
+    },
+    {
+     "pt": "Recomenda 6 h por semana: 3 sessões de força e 3 de cardio",
+     "en": "Recommends 6 h a week: 3 strength and 3 cardio sessions",
+     "fonte": "bj_protocol"
+    }
+   ],
+   "peter-attia": [
+    {
+     "pt": "Cerca de 10 h por semana: cardio, intervalos para o VO2máx e musculação",
+     "en": "About 10 h a week: cardio, intervals for VO2max and weight training",
+     "fonte": "pa_cbs"
+    },
+    {
+     "pt": "Rucking (caminhar com peso às costas)",
+     "en": "Rucking (walking with a weighted pack)",
+     "fonte": "pa_cbs"
+    }
+   ],
+   "david-sinclair": [
+    {
+     "pt": "Musculação",
+     "en": "Weight training",
+     "fonte": "ds_moon"
+    }
+   ]
+  },
+  {
+   "id": "sono",
+   "nome": {
+    "pt": "Sono",
+    "en": "Sleep"
+   },
+   "sergio-f": [
+    {
+     "pt": "7 h 20 min a 7 h 30 min, sempre à mesma hora",
+     "en": "7 h 20 min to 7 h 30 min, always at the same time",
+     "fonte": "sf_sono"
+    },
+    {
+     "pt": "Quarto e cama a 18–19 °C (Eight Sleep); sem comida 8 h antes",
+     "en": "Room and bed at 18–19 °C (Eight Sleep); no food 8 h before",
+     "fonte": "sf_sono"
+    },
+    {
+     "pt": "Bloqueio total de luz azul 2 h antes; ruído branco ou rosa; blackout e cobertor pesado",
+     "en": "Full blue-light block 2 h before; white or pink noise; blackout and weighted blanket",
+     "fonte": "sf_sono"
+    }
+   ],
+   "bryan-johnson": [
+    {
+     "pt": "Na cama às 20 h 30, acorda por volta das 5 h",
+     "en": "In bed at 8:30 pm, wakes around 5 am",
+     "fonte": "bj_morning"
+    },
+    {
+     "pt": "Última refeição 4 h antes de deitar; ecrãs desligados 60 min antes",
+     "en": "Final meal 4 h before bed; screens off 60 min before",
+     "fonte": "bj_protocol"
+    },
+    {
+     "pt": "Quarto a 18–21 °C, colchão com temperatura controlada; luz de 10 000 lux de manhã",
+     "en": "Bedroom at 18–21 °C, temperature-controlled mattress; 10,000 lux light in the morning",
+     "fonte": "bj_protocol"
+    }
+   ],
+   "peter-attia": [
+    {
+     "pt": "À noite: ashwagandha 600 mg, glicina 2 g e magnésio L-treonato",
+     "en": "At night: ashwagandha 600 mg, glycine 2 g and magnesium L-threonate",
+     "fonte": "pa_notes"
+    }
+   ],
+   "david-sinclair": [
+    {
+     "nao_publico": true,
+     "texto": {
+      "pt": "não público",
+      "en": "not public"
+     }
+    }
+   ]
+  },
+  {
+   "id": "analises",
+   "nome": {
+    "pt": "Análises e monitorização",
+    "en": "Tests and monitoring"
+   },
+   "sergio-f": [
+    {
+     "pt": "4 colheitas de sangue publicadas (jan 2024, fev 2026, mar 2026, ago 2026), com 246 marcadores",
+     "en": "4 blood draws published (Jan 2024, Feb 2026, Mar 2026, Aug 2026), with 246 markers",
+     "fonte": "sf_analises"
+    },
+    {
+     "pt": "Relógio biológico PhenoAge calculado a partir das análises",
+     "en": "PhenoAge biological clock calculated from the blood tests",
+     "fonte": "sf_analises"
+    },
+    {
+     "pt": "Genoma analisado (página Genética)",
+     "en": "Genome analysed (Genetics page)",
+     "fonte": "sf_genetica"
+    },
+    {
+     "pt": "Frequência cardíaca em repouso registada (32 em 03/26)",
+     "en": "Resting heart rate tracked (32 in 03/26)",
+     "fonte": "sf_sono"
+    }
+   ],
+   "bryan-johnson": [
+    {
+     "pt": "Análises ao sangue a cada 3–6 meses",
+     "en": "Blood tests every 3–6 months",
+     "fonte": "bj_protocol"
+    },
+    {
+     "pt": "RM de corpo inteiro anual (acima dos 40 anos ou com risco familiar alto)",
+     "en": "Annual full-body MRI (over 40 or with high family risk)",
+     "fonte": "bj_protocol"
+    },
+    {
+     "pt": "Monitor contínuo de glicose; composição corporal e rigidez arterial todas as manhãs",
+     "en": "Continuous glucose monitor; body composition and arterial stiffness every morning",
+     "fonte": "bj_protocol"
+    }
+   ],
+   "peter-attia": [
+    {
+     "pt": "Defende nunca ter ApoB acima de 30–40 mg/dL, desde cedo",
+     "en": "Advocates never having ApoB above 30–40 mg/dL, starting early",
+     "fonte": "pa_276"
+    },
+    {
+     "pt": "VO2máx, força e DEXA na avaliação dos pacientes",
+     "en": "VO2max, strength and DEXA in patient assessment",
+     "fonte": "pa_cbs"
+    },
+    {
+     "pt": "Faz e recomenda RM de corpo inteiro; sugere o teste ao gene APOE",
+     "en": "Gets and recommends full-body MRI; suggests APOE gene testing",
+     "fonte": "pa_cbs"
+    }
+   ],
+   "david-sinclair": [
+    {
+     "pt": "Monitoriza o sistema imunitário: tipos de células e citocinas inflamatórias",
+     "en": "Monitors his immune system: cell types and inflammatory cytokines",
+     "fonte": "ds_moon"
+    }
+   ]
+  },
+  {
+   "id": "terapias",
+   "nome": {
+    "pt": "Terapias",
+    "en": "Therapies"
+   },
+   "sergio-f": [
+    {
+     "pt": "Troca plasmática terapêutica (plasmaférese)",
+     "en": "Therapeutic plasma exchange (plasmapheresis)",
+     "fonte": "sf_terapias"
+    },
+    {
+     "pt": "HBOT (oxigenoterapia hiperbárica) diária",
+     "en": "Daily HBOT (hyperbaric oxygen therapy)",
+     "fonte": "sf_terapias"
+    },
+    {
+     "pt": "Sauna seca a 90 °C, 20 min, 4× por semana",
+     "en": "Dry sauna at 90 °C, 20 min, 4× a week",
+     "fonte": "sf_terapias"
+    },
+    {
+     "pt": "Luz vermelha 820 + 620 nm, 10 min, 3× por semana; luz de 10 000 lux",
+     "en": "Red light 820 + 620 nm, 10 min, 3× a week; 10,000 lux light",
+     "fonte": "sf_terapias"
+    },
+    {
+     "pt": "Estimulação do nervo vago (Pulsetto), Apollo Neuro, Pulsate, meditação 20–40 min por dia, água com hidrogénio",
+     "en": "Vagus nerve stimulation (Pulsetto), Apollo Neuro, Pulsate, 20–40 min of meditation a day, hydrogen water",
+     "fonte": "sf_terapias"
+    },
+    {
+     "pt": "Pele: tretinoína 0,1%, luz intensa pulsada, laser de CO₂ e HIFU 1× por ano, microagulhamento, peeling químico",
+     "en": "Skin: tretinoin 0.1%, intense pulsed light, CO₂ laser and HIFU once a year, microneedling, chemical peel",
+     "fonte": "sf_pele"
+    }
+   ],
+   "bryan-johnson": [
+    {
+     "pt": "Sauna seca a 93 °C, 20 min por dia",
+     "en": "Dry sauna at 93 °C, 20 min a day",
+     "fonte": "bj_morning"
+    },
+    {
+     "pt": "Luz vermelha / infravermelha próxima, 6 min por dia",
+     "en": "Red / near-infrared light, 6 min a day",
+     "fonte": "bj_morning"
+    },
+    {
+     "pt": "HBOT: 60 sessões de 90 min a 2 atmosferas (protocolo iniciado em nov 2024), ou IHHT",
+     "en": "HBOT: 60 sessions of 90 min at 2 atmospheres (protocol started Nov 2024), or IHHT",
+     "fonte": "bj_protocol"
+    },
+    {
+     "pt": "Ondas de choque nas articulações",
+     "en": "Shockwave therapy on joints",
+     "fonte": "bj_morning"
+    },
+    {
+     "pt": "Terapia génica com folistatina (out 2023) e células estaminais mesenquimais (mar 2024)",
+     "en": "Follistatin gene therapy (Oct 2023) and mesenchymal stem cells (Mar 2024)",
+     "fonte": "bj_protocol"
+    },
+    {
+     "pt": "Pele: tretinoína 0,025–0,1%, lasers 1927 e 1550 nm, Sofwave e Everesse a cada 6 meses",
+     "en": "Skin: tretinoin 0.025–0.1%, 1927 and 1550 nm lasers, Sofwave and Everesse every 6 months",
+     "fonte": "bj_protocol"
+    }
+   ],
+   "peter-attia": [
+    {
+     "nao_publico": true,
+     "texto": {
+      "pt": "não público",
+      "en": "not public"
+     }
+    }
+   ],
+   "david-sinclair": [
+    {
+     "pt": "Sauna",
+     "en": "Sauna",
+     "fonte": "ds_moon"
+    }
+   ]
+  }
+ ]
+}

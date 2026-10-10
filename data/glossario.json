@@ -1,0 +1,868 @@
+{
+ "titulo": {
+  "pt": "Glossário",
+  "en": "Glossary"
+ },
+ "gerado_em": "2026-10-10",
+ "nota": {
+  "pt": "Termos que aparecem no site. A ligação \"ver\" leva a uma página onde o termo é usado.",
+  "en": "Terms used across the site. The \"see\" link opens a page where the term appears."
+ },
+ "termos": [
+  {
+   "termo": "ADN mitocondrial",
+   "categoria": "origem",
+   "definicao": {
+    "pt": "ADN das mitocôndrias, herdado só da mãe.",
+    "en": "DNA in the mitochondria, inherited only from the mother."
+   },
+   "ver": "origem.html"
+  },
+  {
+   "termo": "ADN neandertal",
+   "categoria": "origem",
+   "definicao": {
+    "pt": "Pequena fração do genoma herdada de cruzamentos antigos com neandertais.",
+    "en": "A small fraction of the genome inherited from ancient interbreeding with Neanderthals."
+   },
+   "ver": "origem.html"
+  },
+  {
+   "termo": "Agonista GLP-1",
+   "categoria": "estudos",
+   "definicao": {
+    "pt": "Fármaco que imita a hormona intestinal GLP-1, reduz o apetite e melhora a glicose, como a semaglutida.",
+    "en": "A drug that mimics the gut hormone GLP-1, reduces appetite and improves glucose, such as semaglutide."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "Albumina",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Principal proteína do sangue, produzida pelo fígado; entra no cálculo do PhenoAge.",
+    "en": "The main blood protein, made by the liver; it is part of the PhenoAge calculation."
+   },
+   "ver": "analises.html"
+  },
+  {
+   "termo": "Aleatorização mendeliana",
+   "categoria": "estudos",
+   "definicao": {
+    "pt": "Método que usa variantes genéticas como experiência natural para testar causa e efeito.",
+    "en": "A method that uses genetic variants as a natural experiment to test cause and effect."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "Alelo",
+   "categoria": "genética",
+   "definicao": {
+    "pt": "Cada uma das versões possíveis de uma variante genética.",
+    "en": "Each of the possible versions of a genetic variant."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "ALT e AST",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Enzimas do fígado (e do músculo, no caso da AST) que sobem quando há lesão dessas células.",
+    "en": "Liver enzymes (and muscle, for AST) that rise when those cells are injured."
+   },
+   "ver": "analises.html"
+  },
+  {
+   "termo": "ApoB",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Proteína presente em cada partícula de colesterol aterogénica; mede o número dessas partículas.",
+    "en": "A protein found on every atherogenic cholesterol particle; it counts those particles."
+   },
+   "ver": "analises.html"
+  },
+  {
+   "termo": "Autofagia",
+   "categoria": "estudos",
+   "definicao": {
+    "pt": "Processo de reciclagem em que a célula digere componentes velhos ou danificados.",
+    "en": "A recycling process in which the cell digests old or damaged components."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "Butirato",
+   "categoria": "protocolo",
+   "definicao": {
+    "pt": "Ácido gordo de cadeia curta produzido pelas bactérias intestinais, que alimenta as células do cólon.",
+    "en": "A short-chain fatty acid made by gut bacteria that feeds colon cells."
+   },
+   "ver": "suplementos.html"
+  },
+  {
+   "termo": "Ca-AKG",
+   "categoria": "protocolo",
+   "definicao": {
+    "pt": "Alfa-cetoglutarato de cálcio, um metabolito que prolongou a vida de ratinhos num estudo.",
+    "en": "Calcium alpha-ketoglutarate, a metabolite that extended lifespan in mice in one study."
+   },
+   "ver": "suplementos.html"
+  },
+  {
+   "termo": "Cistatina C",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Proteína usada para estimar a função renal, menos influenciada pela massa muscular do que a creatinina.",
+    "en": "A protein used to estimate kidney function, less affected by muscle mass than creatinine."
+   },
+   "ver": "analises.html"
+  },
+  {
+   "termo": "Creatinina",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Produto do músculo eliminado pelos rins, usado para estimar a função renal.",
+    "en": "A muscle by-product cleared by the kidneys, used to estimate kidney function."
+   },
+   "ver": "analises.html"
+  },
+  {
+   "termo": "Cronótipo",
+   "categoria": "genética",
+   "definicao": {
+    "pt": "Tendência natural de cada pessoa para ser mais matutina ou mais noturna.",
+    "en": "A person's natural tendency to be more of a morning or an evening type."
+   },
+   "ver": "origem.html"
+  },
+  {
+   "termo": "CYP3A4",
+   "categoria": "genética",
+   "definicao": {
+    "pt": "Enzima do fígado que metaboliza muitos fármacos, incluindo a rapamicina.",
+    "en": "A liver enzyme that metabolises many drugs, including rapamycin."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "D-dímeros",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Fragmentos da degradação de coágulos; sobem quando há formação e dissolução de coágulos.",
+    "en": "Fragments from clot breakdown; they rise when clots form and dissolve."
+   },
+   "ver": "ferramentas/comparador.html"
+  },
+  {
+   "termo": "DEXA",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Exame de raios X de baixa dose que mede densidade óssea, massa magra e gordura.",
+    "en": "A low-dose X-ray scan that measures bone density, lean mass and fat."
+   },
+   "ver": "ferramentas/treino.html"
+  },
+  {
+   "termo": "DHEA",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Hormona produzida pelas suprarrenais, precursora de hormonas sexuais, que desce com a idade.",
+    "en": "An adrenal hormone, a precursor of sex hormones, that declines with age."
+   },
+   "ver": "analises.html"
+  },
+  {
+   "termo": "DunedinPACE",
+   "categoria": "estudos",
+   "definicao": {
+    "pt": "Medida epigenética do ritmo a que uma pessoa está a envelhecer neste momento.",
+    "en": "An epigenetic measure of how fast a person is aging right now."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "Ensaio aleatorizado",
+   "categoria": "estudos",
+   "definicao": {
+    "pt": "Estudo em que os participantes são distribuídos ao acaso pelos grupos, o que permite tirar conclusões de causa e efeito.",
+    "en": "A study in which participants are assigned to groups by chance, allowing cause-and-effect conclusions."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "Estatina",
+   "categoria": "protocolo",
+   "definicao": {
+    "pt": "Fármaco que bloqueia a produção de colesterol no fígado, como a pitavastatina.",
+    "en": "A drug that blocks cholesterol production in the liver, such as pitavastatin."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "Esteatose hepática (MASLD)",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Acumulação de gordura no fígado associada a disfunção metabólica.",
+    "en": "Fat build-up in the liver linked to metabolic dysfunction."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "Estudo de coorte",
+   "categoria": "estudos",
+   "definicao": {
+    "pt": "Estudo observacional que segue um grupo de pessoas ao longo do tempo.",
+    "en": "An observational study that follows a group of people over time."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "Farmacogenética",
+   "categoria": "genética",
+   "definicao": {
+    "pt": "Estudo de como os genes influenciam a resposta a fármacos.",
+    "en": "The study of how genes influence drug response."
+   },
+   "ver": "ferramentas/farmacogenetica.html"
+  },
+  {
+   "termo": "Ferritina",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Proteína que armazena ferro; no sangue reflete as reservas de ferro e sobe também com inflamação.",
+    "en": "An iron-storage protein; in blood it reflects iron stores and also rises with inflammation."
+   },
+   "ver": "analises.html"
+  },
+  {
+   "termo": "Fibrinogénio",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Proteína da coagulação que também sobe com a inflamação.",
+    "en": "A clotting protein that also rises with inflammation."
+   },
+   "ver": "genetica.html"
+  },
+  {
+   "termo": "Fosfatase alcalina",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Enzima do fígado e do osso; entra no cálculo do PhenoAge.",
+    "en": "A liver and bone enzyme; it is part of the PhenoAge calculation."
+   },
+   "ver": "analises.html"
+  },
+  {
+   "termo": "Fragilidade",
+   "categoria": "estudos",
+   "definicao": {
+    "pt": "Estado de reserva física reduzida que aumenta o risco de quedas, doença e morte.",
+    "en": "A state of reduced physical reserve that raises the risk of falls, illness and death."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "Genótipo",
+   "categoria": "genética",
+   "definicao": {
+    "pt": "Combinação dos dois alelos que uma pessoa tem numa variante.",
+    "en": "The combination of the two alleles a person carries at a variant."
+   },
+   "ver": "genetica.html"
+  },
+  {
+   "termo": "GGT",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Enzima hepática sensível a gordura no fígado e a algumas substâncias.",
+    "en": "A liver enzyme sensitive to liver fat and certain substances."
+   },
+   "ver": "analises.html"
+  },
+  {
+   "termo": "Glicação / AGEs",
+   "categoria": "protocolo",
+   "definicao": {
+    "pt": "Ligação de açúcares a proteínas, que forma produtos finais de glicação avançada (AGEs) e envelhece os tecidos.",
+    "en": "The binding of sugars to proteins, forming advanced glycation end products (AGEs) that age tissues."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "Gordura visceral",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Gordura à volta dos órgãos abdominais, mais ligada a doença metabólica do que a gordura subcutânea.",
+    "en": "Fat around the abdominal organs, more linked to metabolic disease than fat under the skin."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "GrimAge",
+   "categoria": "estudos",
+   "definicao": {
+    "pt": "Relógio epigenético treinado para prever mortalidade.",
+    "en": "An epigenetic clock trained to predict mortality."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "GWAS",
+   "categoria": "genética",
+   "definicao": {
+    "pt": "Estudo de associação genómica que procura variantes ligadas a uma característica em todo o genoma.",
+    "en": "A genome-wide association study that searches the whole genome for variants linked to a trait."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "Haplogrupo",
+   "categoria": "origem",
+   "definicao": {
+    "pt": "Grupo de linhagens que partilham uma mutação ancestral no cromossoma Y (linha paterna) ou no ADN mitocondrial (linha materna).",
+    "en": "A group of lineages sharing an ancestral mutation on the Y chromosome (paternal line) or in mitochondrial DNA (maternal line)."
+   },
+   "ver": "origem.html"
+  },
+  {
+   "termo": "HbA1c",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Hemoglobina glicada; reflete a média da glicose no sangue nos últimos 2 a 3 meses.",
+    "en": "Glycated haemoglobin; reflects average blood glucose over the past 2 to 3 months."
+   },
+   "ver": "analises.html"
+  },
+  {
+   "termo": "HBOT",
+   "categoria": "protocolo",
+   "definicao": {
+    "pt": "Oxigenoterapia hiperbárica: respirar oxigénio a pressão acima da atmosférica numa câmara.",
+    "en": "Hyperbaric oxygen therapy: breathing oxygen at above-atmospheric pressure in a chamber."
+   },
+   "ver": "terapias.html"
+  },
+  {
+   "termo": "HDL",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Colesterol transportado nas lipoproteínas de alta densidade.",
+    "en": "Cholesterol carried in high-density lipoproteins."
+   },
+   "ver": "analises.html"
+  },
+  {
+   "termo": "Hematócrito",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Percentagem do volume do sangue ocupada por glóbulos vermelhos.",
+    "en": "The share of blood volume taken up by red blood cells."
+   },
+   "ver": "analises.html"
+  },
+  {
+   "termo": "HOMA-IR",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Índice de resistência à insulina calculado a partir da glicose e da insulina em jejum.",
+    "en": "An insulin-resistance index calculated from fasting glucose and insulin."
+   },
+   "ver": "analises.html"
+  },
+  {
+   "termo": "Homocisteína",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Aminoácido do metabolismo da metionina; valores altos associam-se a doença vascular e dependem das vitaminas B.",
+    "en": "An amino acid from methionine metabolism; high levels are linked to vascular disease and depend on B vitamins."
+   },
+   "ver": "analises.html"
+  },
+  {
+   "termo": "HR (hazard ratio)",
+   "categoria": "estudos",
+   "definicao": {
+    "pt": "Razão de risco entre dois grupos ao longo do tempo; abaixo de 1 indica menos eventos no grupo tratado.",
+    "en": "The ratio of risk between two groups over time; below 1 means fewer events in the treated group."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "Idade biológica",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Estimativa de quão envelhecido está o organismo, que pode ser maior ou menor do que a idade de calendário.",
+    "en": "An estimate of how aged the body is, which can be higher or lower than calendar age."
+   },
+   "ver": "analises.html#relogio"
+  },
+  {
+   "termo": "IGF-1",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Fator de crescimento semelhante à insulina, ligado à hormona de crescimento e às vias de deteção de nutrientes.",
+    "en": "Insulin-like growth factor 1, linked to growth hormone and nutrient-sensing pathways."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "IL-6",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Interleucina 6, uma citocina inflamatória que tende a subir com a idade.",
+    "en": "Interleukin 6, an inflammatory cytokine that tends to rise with age."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "Imunossenescência",
+   "categoria": "estudos",
+   "definicao": {
+    "pt": "Declínio do sistema imunitário associado à idade.",
+    "en": "Age-related decline of the immune system."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "Inflammaging",
+   "categoria": "estudos",
+   "definicao": {
+    "pt": "Inflamação crónica de baixo grau que aumenta com a idade.",
+    "en": "Chronic low-grade inflammation that rises with age."
+   },
+   "ver": "inicio.html"
+  },
+  {
+   "termo": "Inibidor SGLT2",
+   "categoria": "estudos",
+   "definicao": {
+    "pt": "Classe de fármacos, como a dapagliflozina, que faz os rins eliminar glicose pela urina.",
+    "en": "A drug class, such as dapagliflozin, that makes the kidneys excrete glucose in urine."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "ITP",
+   "categoria": "estudos",
+   "definicao": {
+    "pt": "Interventions Testing Program: programa do NIA que testa compostos de longevidade em ratinhos em três laboratórios.",
+    "en": "Interventions Testing Program: an NIA programme that tests longevity compounds in mice at three labs."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "Jejum intermitente",
+   "categoria": "protocolo",
+   "definicao": {
+    "pt": "Alternância entre períodos de alimentação e de jejum, por exemplo comer numa janela curta do dia.",
+    "en": "Alternating between eating and fasting periods, for example eating within a short daily window."
+   },
+   "ver": "dieta.html"
+  },
+  {
+   "termo": "LDL",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Colesterol transportado nas lipoproteínas de baixa densidade, principal alvo para baixar o risco cardiovascular.",
+    "en": "Cholesterol carried in low-density lipoproteins, the main target for lowering cardiovascular risk."
+   },
+   "ver": "analises.html"
+  },
+  {
+   "termo": "Linfócitos",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Glóbulos brancos do sistema imunitário adaptativo, como as células T e B.",
+    "en": "White blood cells of the adaptive immune system, such as T and B cells."
+   },
+   "ver": "analises.html"
+  },
+  {
+   "termo": "Lp(a)",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Lipoproteína (a), uma partícula de colesterol com nível sobretudo genético associada a risco cardiovascular.",
+    "en": "Lipoprotein(a), a largely genetically set cholesterol particle linked to cardiovascular risk."
+   },
+   "ver": "genetica.html"
+  },
+  {
+   "termo": "Luz vermelha (fotobiomodulação)",
+   "categoria": "protocolo",
+   "definicao": {
+    "pt": "Exposição a luz vermelha e infravermelha próxima com o objetivo de estimular as células.",
+    "en": "Exposure to red and near-infrared light aimed at stimulating cells."
+   },
+   "ver": "terapias.html"
+  },
+  {
+   "termo": "Meta-análise",
+   "categoria": "estudos",
+   "definicao": {
+    "pt": "Análise que combina estatisticamente os resultados de vários estudos.",
+    "en": "An analysis that statistically combines results from several studies."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "Metabolizador",
+   "categoria": "genética",
+   "definicao": {
+    "pt": "Classificação de quão depressa uma enzima processa um fármaco, de lento a ultrarrápido.",
+    "en": "A classification of how fast an enzyme processes a drug, from poor to ultrarapid."
+   },
+   "ver": "genetica.html"
+  },
+  {
+   "termo": "Metilação do ADN",
+   "categoria": "genética",
+   "definicao": {
+    "pt": "Marca química no ADN que ajuda a ligar ou desligar genes sem alterar a sequência.",
+    "en": "A chemical mark on DNA that helps switch genes on or off without changing the sequence."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "Microbiota",
+   "categoria": "estudos",
+   "definicao": {
+    "pt": "Conjunto de microrganismos que vivem no intestino e noutras partes do corpo.",
+    "en": "The community of microorganisms living in the gut and other body sites."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "mTOR",
+   "categoria": "estudos",
+   "definicao": {
+    "pt": "Proteína que funciona como sensor de nutrientes e controla o crescimento celular; inibi-la com rapamicina prolonga a vida em ratinhos.",
+    "en": "A nutrient-sensing protein that controls cell growth; inhibiting it with rapamycin extends lifespan in mice."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "NT-proBNP",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Marcador libertado pelo coração quando está sob esforço; usado na avaliação da insuficiência cardíaca.",
+    "en": "A marker released by the heart under strain; used to assess heart failure."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "OR (odds ratio)",
+   "categoria": "estudos",
+   "definicao": {
+    "pt": "Razão de probabilidades entre dois grupos; abaixo de 1 indica menor probabilidade do evento.",
+    "en": "The ratio of odds between two groups; below 1 means lower odds of the event."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "PCR (proteína C reativa)",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Marcador de inflamação no sangue; a versão ultrassensível deteta inflamação de baixo grau.",
+    "en": "A blood marker of inflammation; the high-sensitivity version detects low-grade inflammation."
+   },
+   "ver": "analises.html"
+  },
+  {
+   "termo": "PCSK9",
+   "categoria": "protocolo",
+   "definicao": {
+    "pt": "Proteína que reduz os recetores de LDL no fígado; bloqueá-la (por exemplo com inclisiran) baixa o LDL.",
+    "en": "A protein that reduces liver LDL receptors; blocking it (for example with inclisiran) lowers LDL."
+   },
+   "ver": "suplementos.html"
+  },
+  {
+   "termo": "Percentil",
+   "categoria": "genética",
+   "definicao": {
+    "pt": "Posição num grupo de 100: percentil 80 significa valor acima de 80% das pessoas.",
+    "en": "Position within a group of 100: the 80th percentile means a value above 80% of people."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "PhenoAge",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Relógio biológico de Levine (2018) que calcula a idade biológica a partir de 9 análises de sangue comuns e da idade.",
+    "en": "Levine's (2018) biological clock that computes biological age from 9 routine blood tests and age."
+   },
+   "ver": "analises.html#relogio"
+  },
+  {
+   "termo": "Placebo",
+   "categoria": "estudos",
+   "definicao": {
+    "pt": "Tratamento inativo usado como comparação num ensaio.",
+    "en": "An inactive treatment used for comparison in a trial."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "Prebiótico",
+   "categoria": "protocolo",
+   "definicao": {
+    "pt": "Fibra que alimenta as bactérias benéficas do intestino, como a goma de guar parcialmente hidrolisada.",
+    "en": "Fibre that feeds beneficial gut bacteria, such as partially hydrolysed guar gum."
+   },
+   "ver": "suplementos.html"
+  },
+  {
+   "termo": "Probiótico",
+   "categoria": "protocolo",
+   "definicao": {
+    "pt": "Bactérias vivas tomadas para melhorar a microbiota.",
+    "en": "Live bacteria taken to improve the microbiota."
+   },
+   "ver": "suplementos.html"
+  },
+  {
+   "termo": "Proteostase",
+   "categoria": "estudos",
+   "definicao": {
+    "pt": "Equilíbrio entre produção, dobragem e eliminação de proteínas dentro da célula.",
+    "en": "The balance between making, folding and clearing proteins inside the cell."
+   },
+   "ver": "genetica.html"
+  },
+  {
+   "termo": "Protocolo norueguês 4×4",
+   "categoria": "protocolo",
+   "definicao": {
+    "pt": "Treino intervalado de 4 blocos de 4 minutos a alta intensidade, usado para subir o VO2máx.",
+    "en": "Interval training of four 4-minute high-intensity blocks, used to raise VO2max."
+   },
+   "ver": "treino.html"
+  },
+  {
+   "termo": "Péptido",
+   "categoria": "protocolo",
+   "definicao": {
+    "pt": "Cadeia curta de aminoácidos; alguns são usados como fármacos ou em protocolos experimentais.",
+    "en": "A short chain of amino acids; some are used as drugs or in experimental protocols."
+   },
+   "ver": "suplementos.html"
+  },
+  {
+   "termo": "Rapamicina (sirolímus)",
+   "categoria": "protocolo",
+   "definicao": {
+    "pt": "Fármaco imunossupressor que inibe o mTOR, usado em doses baixas e intermitentes em protocolos de longevidade.",
+    "en": "An immunosuppressant drug that inhibits mTOR, used in low intermittent doses in longevity protocols."
+   },
+   "ver": "suplementos.html"
+  },
+  {
+   "termo": "RDW",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Amplitude de distribuição dos eritrócitos: mede a variação de tamanho dos glóbulos vermelhos.",
+    "en": "Red cell distribution width: measures size variation of red blood cells."
+   },
+   "ver": "analises.html"
+  },
+  {
+   "termo": "Relógio epigenético",
+   "categoria": "estudos",
+   "definicao": {
+    "pt": "Algoritmo que estima a idade a partir dos padrões de metilação do ADN.",
+    "en": "An algorithm that estimates age from DNA methylation patterns."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "Restrição calórica",
+   "categoria": "estudos",
+   "definicao": {
+    "pt": "Comer menos calorias do que o habitual sem malnutrição; prolonga a vida em muitos animais.",
+    "en": "Eating fewer calories than usual without malnutrition; it extends lifespan in many animals."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "Ritmo circadiano",
+   "categoria": "protocolo",
+   "definicao": {
+    "pt": "Relógio interno de cerca de 24 horas que regula sono, hormonas e metabolismo.",
+    "en": "The roughly 24-hour internal clock that regulates sleep, hormones and metabolism."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "Sarcopenia",
+   "categoria": "genética",
+   "definicao": {
+    "pt": "Perda de massa e força muscular com a idade.",
+    "en": "Age-related loss of muscle mass and strength."
+   },
+   "ver": "genetica.html"
+  },
+  {
+   "termo": "Score poligénico",
+   "categoria": "genética",
+   "definicao": {
+    "pt": "Pontuação que soma o efeito de muitas variantes para estimar a predisposição genética para uma característica.",
+    "en": "A score that adds up the effect of many variants to estimate genetic predisposition to a trait."
+   },
+   "ver": "genetica.html"
+  },
+  {
+   "termo": "Senescência celular",
+   "categoria": "estudos",
+   "definicao": {
+    "pt": "Estado em que a célula deixa de se dividir mas não morre e liberta sinais inflamatórios.",
+    "en": "A state in which a cell stops dividing but does not die and releases inflammatory signals."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "Senolítico",
+   "categoria": "estudos",
+   "definicao": {
+    "pt": "Composto que elimina seletivamente células senescentes, como a fisetina ou o dasatinib com quercetina.",
+    "en": "A compound that selectively clears senescent cells, such as fisetin or dasatinib plus quercetin."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "SHBG",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Proteína que transporta as hormonas sexuais no sangue e regula a fração livre.",
+    "en": "A protein that carries sex hormones in blood and regulates the free fraction."
+   },
+   "ver": "analises.html"
+  },
+  {
+   "termo": "Sinais do envelhecimento (hallmarks)",
+   "categoria": "estudos",
+   "definicao": {
+    "pt": "Os 12 processos biológicos que, segundo López-Otín e colegas (2023), explicam o envelhecimento.",
+    "en": "The 12 biological processes that, according to López-Otín and colleagues (2023), explain aging."
+   },
+   "ver": "inicio.html"
+  },
+  {
+   "termo": "SNP",
+   "categoria": "genética",
+   "definicao": {
+    "pt": "Variação numa única letra do ADN, a forma mais comum de variação genética.",
+    "en": "A variation at a single DNA letter, the most common type of genetic variation."
+   },
+   "ver": "genetica.html"
+  },
+  {
+   "termo": "Sulforafano",
+   "categoria": "protocolo",
+   "definicao": {
+    "pt": "Composto dos brócolos que ativa defesas antioxidantes das células.",
+    "en": "A broccoli compound that activates cellular antioxidant defences."
+   },
+   "ver": "suplementos.html"
+  },
+  {
+   "termo": "Telómeros",
+   "categoria": "genética",
+   "definicao": {
+    "pt": "Extremidades protetoras dos cromossomas que encurtam a cada divisão celular.",
+    "en": "Protective chromosome ends that shorten with each cell division."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "TFG (taxa de filtração glomerular)",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Estimativa de quanto sangue os rins filtram por minuto.",
+    "en": "An estimate of how much blood the kidneys filter per minute."
+   },
+   "ver": "analises.html"
+  },
+  {
+   "termo": "Troca plasmática (plasmaférese)",
+   "categoria": "protocolo",
+   "definicao": {
+    "pt": "Procedimento que retira o plasma do sangue e o substitui, por exemplo por albumina.",
+    "en": "A procedure that removes blood plasma and replaces it, for example with albumin."
+   },
+   "ver": "terapias.html"
+  },
+  {
+   "termo": "TSH",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Hormona da hipófise que regula a tiroide; serve para avaliar a função tiroideia.",
+    "en": "A pituitary hormone that regulates the thyroid; used to assess thyroid function."
+   },
+   "ver": "analises.html"
+  },
+  {
+   "termo": "UM-HET3",
+   "categoria": "estudos",
+   "definicao": {
+    "pt": "Estirpe de ratinhos geneticamente diversa usada pelo ITP.",
+    "en": "A genetically diverse mouse strain used by the ITP."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "Variante genética",
+   "categoria": "genética",
+   "definicao": {
+    "pt": "Diferença na sequência de ADN entre pessoas.",
+    "en": "A difference in DNA sequence between people."
+   },
+   "ver": "estudos.html"
+  },
+  {
+   "termo": "VGM",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Volume globular médio: tamanho médio dos glóbulos vermelhos.",
+    "en": "Mean corpuscular volume: the average size of red blood cells."
+   },
+   "ver": "analises.html"
+  },
+  {
+   "termo": "VO2máx",
+   "categoria": "protocolo",
+   "definicao": {
+    "pt": "Quantidade máxima de oxigénio que o corpo consegue usar em esforço; forte preditor de longevidade.",
+    "en": "The maximum amount of oxygen the body can use during exercise; a strong predictor of longevity."
+   },
+   "ver": "ferramentas/desporto.html"
+  },
+  {
+   "termo": "Zona 2",
+   "categoria": "protocolo",
+   "definicao": {
+    "pt": "Intensidade de treino aeróbio moderada, em que ainda se consegue falar, usada para treinar as mitocôndrias.",
+    "en": "A moderate aerobic training intensity at which you can still talk, used to train mitochondria."
+   },
+   "ver": "treino.html"
+  },
+  {
+   "termo": "Ácido úrico",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Produto do metabolismo das purinas; em excesso pode causar gota.",
+    "en": "A product of purine metabolism; in excess it can cause gout."
+   },
+   "ver": "analises.html"
+  },
+  {
+   "termo": "Índice ómega-3",
+   "categoria": "análises",
+   "definicao": {
+    "pt": "Percentagem de EPA e DHA nas membranas dos glóbulos vermelhos.",
+    "en": "The percentage of EPA and DHA in red blood cell membranes."
+   },
+   "ver": "analises.html"
+  }
+ ]
+}

@@ -1,0 +1,138 @@
+{
+ "titulo": {
+  "pt": "Registo de alterações do protocolo",
+  "en": "Protocol changelog"
+ },
+ "gerado_em": "2026-10-10",
+ "fuso": "Europe/Lisbon",
+ "metodo": {
+  "pt": "Construído a partir do histórico git do repositório sergiofpt/imortalistas para data/suplementos.txt, data/dieta.txt, data/sono.txt, data/terapias.txt, data/treino.txt, data/pele-cabelo.txt e para as páginas HTML que os antecederam. Só entram alterações reais visíveis no histórico ou confirmadas pelo Sérgio F e já presentes no protocolo público.",
+  "en": "Built from the git history of the sergiofpt/imortalistas repository for data/suplementos.txt, data/dieta.txt, data/sono.txt, data/terapias.txt, data/treino.txt, data/pele-cabelo.txt and the HTML pages that preceded them. Only real changes visible in the history, or confirmed by Sérgio F and already part of the public protocol, are included."
+ },
+ "estado": {
+  "pt": "Desde a publicação a 6 de outubro de 2026, o protocolo público não teve alterações de itens nem de doses.",
+  "en": "Since it was published on 6 October 2026, the public protocol has had no changes to items or doses."
+ },
+ "entradas": [
+  {
+   "data": "2026-10-06",
+   "hora": "20:34",
+   "data_aproximada": false,
+   "tipo": "outra",
+   "subtipo": "publicacao",
+   "area": "suplementos",
+   "item": {
+    "pt": "Página Suplementos + Medicação",
+    "en": "Supplements + Medication page"
+   },
+   "antes": null,
+   "depois": null,
+   "texto": {
+    "pt": "Página Suplementos + Medicação publicada no site com o protocolo em vigor.",
+    "en": "Supplements + Medication page published on the site with the current protocol."
+   },
+   "pagina": "suplementos.html",
+   "commit": "80bf047"
+  },
+  {
+   "data": "2026-10-06",
+   "hora": "20:46",
+   "data_aproximada": false,
+   "tipo": "outra",
+   "subtipo": "publicacao",
+   "area": "pele-cabelo",
+   "item": {
+    "pt": "Página Pele e Cabelo",
+    "en": "Skin and Hair page"
+   },
+   "antes": null,
+   "depois": null,
+   "texto": {
+    "pt": "Página Pele e Cabelo publicada no site com o protocolo em vigor.",
+    "en": "Skin and Hair page published on the site with the current protocol."
+   },
+   "pagina": "pele-cabelo.html",
+   "commit": "3e70831"
+  },
+  {
+   "data": "2026-10-06",
+   "hora": "20:48",
+   "data_aproximada": false,
+   "tipo": "outra",
+   "subtipo": "publicacao",
+   "area": "sono",
+   "item": {
+    "pt": "Página Sono",
+    "en": "Sleep page"
+   },
+   "antes": null,
+   "depois": null,
+   "texto": {
+    "pt": "Página Sono publicada no site com o protocolo em vigor.",
+    "en": "Sleep page published on the site with the current protocol."
+   },
+   "pagina": "sono.html",
+   "commit": "004dae1"
+  },
+  {
+   "data": "2026-10-06",
+   "hora": "20:49",
+   "data_aproximada": false,
+   "tipo": "outra",
+   "subtipo": "publicacao",
+   "area": "dieta",
+   "item": {
+    "pt": "Página Dieta",
+    "en": "Diet page"
+   },
+   "antes": null,
+   "depois": null,
+   "texto": {
+    "pt": "Página Dieta publicada no site com o protocolo em vigor.",
+    "en": "Diet page published on the site with the current protocol."
+   },
+   "pagina": "dieta.html",
+   "commit": "b48ea8a"
+  },
+  {
+   "data": "2026-10-06",
+   "hora": "20:50",
+   "data_aproximada": false,
+   "tipo": "outra",
+   "subtipo": "publicacao",
+   "area": "terapias",
+   "item": {
+    "pt": "Página Terapias",
+    "en": "Therapies page"
+   },
+   "antes": null,
+   "depois": null,
+   "texto": {
+    "pt": "Página Terapias publicada no site com o protocolo em vigor.",
+    "en": "Therapies page published on the site with the current protocol."
+   },
+   "pagina": "terapias.html",
+   "commit": "13ca25a"
+  },
+  {
+   "data": "2026-10-06",
+   "hora": "20:51",
+   "data_aproximada": false,
+   "tipo": "outra",
+   "subtipo": "publicacao",
+   "area": "treino",
+   "item": {
+    "pt": "Página Treino",
+    "en": "Training page"
+   },
+   "antes": null,
+   "depois": null,
+   "texto": {
+    "pt": "Página Treino publicada no site com o protocolo em vigor.",
+    "en": "Training page published on the site with the current protocol."
+   },
+   "pagina": "treino.html",
+   "commit": "463cef5"
+  }
+ ]
+}
