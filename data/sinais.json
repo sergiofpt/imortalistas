@@ -1,0 +1,906 @@
+{
+ "titulo": {
+  "pt": "Os 12 sinais do envelhecimento",
+  "en": "The 12 hallmarks of aging"
+ },
+ "fonte": {
+  "citacao": "López-Otín C, Blasco MA, Partridge L, Serrano M, Kroemer G. Hallmarks of aging: An expanding universe. Cell. 2023;186(2):243-278.",
+  "pmid": "36599349",
+  "doi": "10.1016/j.cell.2022.11.001",
+  "link": "https://pubmed.ncbi.nlm.nih.gov/36599349/"
+ },
+ "intro": {
+  "pt": "Em 2023, López-Otín e colegas atualizaram a lista dos processos biológicos que explicam o envelhecimento para 12 sinais. Para cada um, mostramos o que faz parte do protocolo do Sérgio F e estudos da página Estudos que lhe dizem respeito.",
+  "en": "In 2023, López-Otín and colleagues updated the list of biological processes behind aging to 12 hallmarks. For each one, we show what in Sérgio F's protocol relates to it and studies from the Studies page that concern it."
+ },
+ "nota_metodo": {
+  "pt": "Os itens do protocolo vêm das páginas públicas Suplementos + Medicação, Dieta, Treino e Terapias. Os estudos vêm todos de data/estudos.json; a espécie indica se o estudo foi feito em humanos ou em animais.",
+  "en": "Protocol items come from the public Supplements + Medication, Diet, Training and Therapies pages. All studies come from data/estudos.json; the species field shows whether a study was done in humans or animals."
+ },
+ "gerado_em": "2026-10-10",
+ "estudos_atualizado_em": "2026-10-08",
+ "sinais": [
+  {
+   "id": "instabilidade-genomica",
+   "nome": {
+    "pt": "Instabilidade genómica",
+    "en": "Genomic instability"
+   },
+   "explicacao": {
+    "pt": "Com a idade acumulam-se danos no ADN, como quebras e mutações, e a reparação vai perdendo eficácia. Esses erros alteram o funcionamento das células e aumentam o risco de cancro.",
+    "en": "With age, DNA damage such as breaks and mutations builds up while repair becomes less efficient. These errors disturb how cells work and raise cancer risk."
+   },
+   "estudos": [
+    {
+     "id": "030",
+     "ano": 2026,
+     "especie": "humano",
+     "titulo": {
+      "en": "Low-dose rapamycin and DNA-damage markers in immune cells",
+      "pt": "Rapamicina em dose baixa e marcadores de dano no ADN nas células imunitárias"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/41524558/",
+     "conclusao": {
+      "en": "In a placebo-controlled study of older adults, low-dose rapamycin reduced p21, a marker of DNA-damage-induced senescence, in immune cells.",
+      "pt": "Num estudo controlado com placebo em adultos mais velhos, a rapamicina em dose baixa reduziu o p21, um marcador de senescência induzida por dano no ADN, nas células imunitárias."
+     }
+    },
+    {
+     "id": "097",
+     "ano": 2022,
+     "especie": "humano",
+     "titulo": {
+      "en": "Glycine plus N-acetylcysteine in older adults",
+      "pt": "Glicina com N-acetilcisteína em adultos mais velhos"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/35975308/",
+     "conclusao": {
+      "en": "In older adults, 16 weeks of glycine plus N-acetylcysteine improved glutathione deficiency, oxidative stress, mitochondrial function, inflammation and physical function compared with placebo.",
+      "pt": "Em adultos mais velhos, 16 semanas de glicina com N-acetilcisteína melhoraram o défice de glutationa, o stress oxidativo, a função mitocondrial, a inflamação e a função física face a placebo."
+     }
+    },
+    {
+     "id": "062",
+     "ano": 2025,
+     "especie": "humano",
+     "titulo": {
+      "en": "Long-term N-acetylcysteine and cancer risk in COPD",
+      "pt": "N-acetilcisteína prolongada e risco de cancro na DPOC"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/40084379/",
+     "conclusao": {
+      "en": "In a nationwide cohort of people with COPD, long-term N-acetylcysteine use was associated with a lower risk of cancer.",
+      "pt": "Numa coorte nacional de pessoas com DPOC, o uso prolongado de N-acetilcisteína associou-se a menor risco de cancro."
+     }
+    }
+   ],
+   "o_que_faz_o_sergio_f": {
+    "pt": [
+     "rapamicina (mTOR)",
+     "NAC + glicina (glutationa)",
+     "sulforafano"
+    ],
+    "en": [
+     "rapamycin (mTOR)",
+     "NAC + glycine (glutathione)",
+     "sulforaphane"
+    ]
+   },
+   "numero": 1
+  },
+  {
+   "id": "telomeros",
+   "nome": {
+    "pt": "Encurtamento dos telómeros",
+    "en": "Telomere attrition"
+   },
+   "explicacao": {
+    "pt": "Os telómeros são as pontas protetoras dos cromossomas e encurtam a cada divisão celular. Quando ficam demasiado curtos, a célula deixa de se dividir ou entra em senescência.",
+    "en": "Telomeres are the protective ends of chromosomes and shorten with each cell division. When they get too short, the cell stops dividing or becomes senescent."
+   },
+   "nota": {
+    "pt": "O estudo sobre SGLT2 usou a henagliflozina, outro fármaco da mesma classe, em pessoas com diabetes tipo 2.",
+    "en": "The SGLT2 study used henagliflozin, another drug of the same class, in people with type 2 diabetes."
+   },
+   "estudos": [
+    {
+     "id": "144",
+     "ano": 2025,
+     "especie": "humano",
+     "titulo": {
+      "pt": "Vitamina D, ómega-3 e telómeros (VITAL)",
+      "en": "Vitamin D, omega-3 and telomeres (VITAL)"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/40409468/",
+     "conclusao": {
+      "pt": "Em 1031 participantes do VITAL, 2000 UI/dia de vitamina D3 reduziram o encurtamento dos telómeros em 140 pares de bases ao longo de 4 anos, sem efeito do ómega-3.",
+      "en": "In 1,031 VITAL participants, 2000 IU/day of vitamin D3 reduced telomere shortening by 140 base pairs over 4 years, with no effect from omega-3."
+     }
+    },
+    {
+     "id": "042",
+     "ano": 2025,
+     "especie": "humano",
+     "titulo": {
+      "en": "Henagliflozin and ageing biomarkers in type 2 diabetes",
+      "pt": "Henagliflozina e biomarcadores de envelhecimento na diabetes tipo 2"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/40912255/",
+     "conclusao": {
+      "en": "In a 26-week randomized trial in type 2 diabetes, henagliflozin increased telomere length compared with placebo and also shifted immune and metabolic markers.",
+      "pt": "Num ensaio aleatorizado de 26 semanas na diabetes tipo 2, a henagliflozina aumentou o comprimento dos telómeros face a placebo e também alterou marcadores imunitários e metabólicos."
+     }
+    }
+   ],
+   "o_que_faz_o_sergio_f": {
+    "pt": [
+     "vitamina D3 + K2",
+     "dapagliflozina (inibidor SGLT2)"
+    ],
+    "en": [
+     "vitamin D3 + K2",
+     "dapagliflozin (SGLT2 inhibitor)"
+    ]
+   },
+   "numero": 2
+  },
+  {
+   "id": "epigenetica",
+   "nome": {
+    "pt": "Alterações epigenéticas",
+    "en": "Epigenetic alterations"
+   },
+   "explicacao": {
+    "pt": "A epigenética são as marcas químicas, como a metilação do ADN, que ligam e desligam genes sem mudar a sequência. Com a idade estas marcas desorganizam-se, e é isso que os relógios epigenéticos medem.",
+    "en": "Epigenetics refers to chemical marks, such as DNA methylation, that switch genes on and off without changing the sequence. With age these marks drift, which is what epigenetic clocks measure."
+   },
+   "estudos": [
+    {
+     "id": "047",
+     "ano": 2025,
+     "especie": "humano",
+     "titulo": {
+      "en": "Therapeutic plasma exchange and biological-age clocks",
+      "pt": "Troca terapêutica de plasma e relógios de idade biológica"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/40424097/",
+     "conclusao": {
+      "en": "In a randomized trial of healthy adults over 50, therapeutic plasma exchange, particularly with intravenous immunoglobulin, was associated with rejuvenation signals on biological-age clocks.",
+      "pt": "Num ensaio aleatorizado de adultos saudáveis com mais de 50 anos, a troca terapêutica de plasma, sobretudo com imunoglobulina intravenosa, associou-se a sinais de rejuvenescimento em relógios de idade biológica."
+     }
+    },
+    {
+     "id": "061",
+     "ano": 2025,
+     "especie": "humano",
+     "titulo": {
+      "en": "Vitamin D, omega-3 and exercise in the DO-HEALTH trial",
+      "pt": "Vitamina D, ómega-3 e exercício no ensaio DO-HEALTH"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/39900648/",
+     "conclusao": {
+      "en": "In a post hoc analysis of the DO-HEALTH trial, omega-3 slowed several DNA-methylation clocks over three years, with an added effect when vitamin D and exercise were combined.",
+      "pt": "Numa análise post hoc do ensaio DO-HEALTH, o ómega-3 abrandou vários relógios de metilação do ADN ao longo de três anos, com um efeito adicional quando se juntaram vitamina D e exercício."
+     }
+    },
+    {
+     "id": "068",
+     "ano": 2024,
+     "especie": "humano",
+     "titulo": {
+      "en": "Homocysteine, epigenetic ageing and B vitamins",
+      "pt": "Homocisteína, envelhecimento epigenético e vitaminas B"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/38937999/",
+     "conclusao": {
+      "en": "In people with mild cognitive impairment, higher homocysteine tracked with faster epigenetic ageing, and B-vitamin treatment was followed by a normalization of that acceleration.",
+      "pt": "Em pessoas com défice cognitivo ligeiro, a homocisteína mais alta acompanhou um envelhecimento epigenético mais rápido, e o tratamento com vitaminas B foi seguido de uma normalização dessa aceleração."
+     }
+    }
+   ],
+   "o_que_faz_o_sergio_f": {
+    "pt": [
+     "troca plasmática terapêutica (plasmaférese)",
+     "EPA + DHA, vitamina D3 e treino",
+     "vitaminas B6, B9 (5-MTHF) e B12 + TMG (homocisteína)"
+    ],
+    "en": [
+     "therapeutic plasma exchange (plasmapheresis)",
+     "EPA + DHA, vitamin D3 and training",
+     "vitamins B6, B9 (5-MTHF) and B12 + TMG (homocysteine)"
+    ]
+   },
+   "numero": 3
+  },
+  {
+   "id": "proteostase",
+   "nome": {
+    "pt": "Perda de proteostase",
+    "en": "Loss of proteostasis"
+   },
+   "explicacao": {
+    "pt": "As células precisam de dobrar, reparar e eliminar proteínas de forma correta. Com a idade este controlo falha e acumulam-se agregados de proteínas, como os da doença de Alzheimer.",
+    "en": "Cells must fold, repair and clear proteins correctly. With age this control fails and protein aggregates build up, such as those seen in Alzheimer disease."
+   },
+   "nota": {
+    "pt": "Os estudos sobre lítio e oxitocina são sobretudo em ratinhos; o da ezetimiba é em tecido humano post mortem e só aponta uma hipótese.",
+    "en": "The lithium and oxytocin studies are mostly in mice; the ezetimibe one uses post-mortem human tissue and only points to a hypothesis."
+   },
+   "estudos": [
+    {
+     "id": "043",
+     "ano": 2025,
+     "especie": "humano",
+     "titulo": {
+      "pt": "Lítio endógeno e doença de Alzheimer",
+      "en": "Endogenous lithium and Alzheimer disease"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/40770094/",
+     "conclusao": {
+      "pt": "O lítio no cérebro estava mais baixo em pessoas com défice cognitivo ligeiro, e a sua depleção em ratinhos agravou alterações típicas da doença de Alzheimer, que o orotato de lítio atenuou nesses modelos.",
+      "en": "Brain lithium was lower in people with mild cognitive impairment, and depleting it in mice worsened Alzheimer-like changes, which lithium orotate lessened in those models."
+     }
+    },
+    {
+     "id": "077",
+     "ano": 2024,
+     "especie": "animal",
+     "titulo": {
+      "pt": "Oxitocina e drenagem linfática cerebral em ratinhos",
+      "en": "Oxytocin and brain lymphatic drainage in mice"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/39113801/",
+     "conclusao": {
+      "pt": "Em ratinhos APP/PS1 de meia-idade avançada, a oxitocina intranasal restaurou a drenagem linfática intracraniana, aumentou a saída de amiloide e melhorou o desempenho cognitivo.",
+      "en": "In older middle-aged APP/PS1 mice, intranasal oxytocin restored intracranial lymphatic drainage, increased amyloid clearance and improved cognitive performance."
+     }
+    },
+    {
+     "id": "081",
+     "ano": 2024,
+     "especie": "humano",
+     "titulo": {
+      "pt": "Ezetimiba, agregados cerebrais e demência",
+      "en": "Ezetimibe, brain aggregates and dementia"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/39263528/",
+     "conclusao": {
+      "pt": "Em hipocampos post mortem, os agregados proteicos e a interação entre a hexocinase-1 e a 14-3-3G estavam aumentados na demência e na doença cardíaca, e o artigo aponta o ezetimiba como possível interruptor dessa ligação.",
+      "en": "In postmortem hippocampi, protein aggregates and the hexokinase-1 interaction with 14-3-3G were higher in dementia and heart disease, and the paper points to ezetimibe as a possible disruptor of that binding."
+     }
+    }
+   ],
+   "o_que_faz_o_sergio_f": {
+    "pt": [
+     "lítio",
+     "oxitocina",
+     "ezetimiba",
+     "L-carnosina (glicação / AGEs)"
+    ],
+    "en": [
+     "lithium",
+     "oxytocin",
+     "ezetimibe",
+     "L-carnosine (glycation / AGEs)"
+    ]
+   },
+   "numero": 4
+  },
+  {
+   "id": "autofagia",
+   "nome": {
+    "pt": "Autofagia desregulada",
+    "en": "Disabled macroautophagy"
+   },
+   "explicacao": {
+    "pt": "A autofagia é o sistema de reciclagem da célula, que digere componentes velhos ou danificados. Perde eficácia com a idade e é estimulada pelo jejum e pela inibição do mTOR.",
+    "en": "Autophagy is the cell's recycling system, which digests old or damaged components. It declines with age and is stimulated by fasting and by mTOR inhibition."
+   },
+   "nota": {
+    "pt": "Estes estudos medem a longevidade de ratinhos, não a autofagia diretamente.",
+    "en": "These studies measure lifespan in mice, not autophagy directly."
+   },
+   "estudos": [
+    {
+     "id": "234",
+     "ano": 2009,
+     "especie": "animal",
+     "titulo": {
+      "pt": "Rapamicina iniciada tarde prolonga a vida de ratinhos",
+      "en": "Rapamycin started late in life extends mouse lifespan"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/19587680/",
+     "conclusao": {
+      "pt": "No programa ITP, a rapamicina iniciada aos 600 dias de idade prolongou a vida mediana e máxima de machos e fêmeas, com aumentos de 14% nas fêmeas e 9% nos machos na idade de 90% de mortalidade.",
+      "en": "In the ITP, rapamycin started at 600 days of age extended median and maximal lifespan in both sexes, with 14% (females) and 9% (males) gains in age at 90% mortality."
+     }
+    },
+    {
+     "id": "148",
+     "ano": 2024,
+     "especie": "animal",
+     "titulo": {
+      "pt": "Restrição calórica e jejum em 960 ratinhos diversos",
+      "en": "Caloric restriction and fasting in 960 diverse mice"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/39385029/",
+     "conclusao": {
+      "pt": "Em 960 ratinhos fêmea geneticamente diversos, a restrição calórica e o jejum intermitente prolongaram a vida em proporção à restrição, mas a genética pesou mais e a restrição de 40% reduziu a massa magra.",
+      "en": "In 960 genetically diverse female mice, caloric restriction and intermittent fasting extended lifespan in proportion to restriction, but genetics mattered more and 40% restriction reduced lean mass."
+     }
+    },
+    {
+     "id": "131",
+     "ano": 2026,
+     "especie": "animal",
+     "titulo": {
+      "pt": "Alimentação com horário restrito em ratinhos",
+      "en": "Time-restricted feeding in mice"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/42230994/",
+     "conclusao": {
+      "pt": "Em 264 machos e 264 fêmeas com ração normal, comer numa janela noturna de 8 horas melhorou a saúde em ambos os sexos e aumentou a vida mediana dos machos em 12%, sem efeito significativo nas fêmeas.",
+      "en": "In 264 male and 264 female mice on regular chow, eating within an 8-hour nightly window improved health in both sexes and increased male median lifespan by 12%, with no significant effect in females."
+     }
+    }
+   ],
+   "o_que_faz_o_sergio_f": {
+    "pt": [
+     "rapamicina (mTOR)",
+     "jejum intermitente de 23 h e jejum de 72 h uma vez por mês"
+    ],
+    "en": [
+     "rapamycin (mTOR)",
+     "23-hour intermittent fasting and a 72-hour fast once a month"
+    ]
+   },
+   "numero": 5
+  },
+  {
+   "id": "nutrientes",
+   "nome": {
+    "pt": "Desregulação da deteção de nutrientes",
+    "en": "Deregulated nutrient sensing"
+   },
+   "explicacao": {
+    "pt": "Vias como a insulina/IGF-1, o mTOR e a AMPK dizem à célula se há abundância ou escassez de alimento. Com a idade ficam desreguladas, e reduzir a sua atividade prolonga a vida em vários animais.",
+    "en": "Pathways such as insulin/IGF-1, mTOR and AMPK tell the cell whether food is plentiful or scarce. With age they become deregulated, and dampening them extends lifespan in several animals."
+   },
+   "nota": {
+    "pt": "Os estudos de rapamicina, acarbose e canagliflozina são em ratinhos do ITP; o de retatrutide é um ensaio de perda de peso em humanos.",
+    "en": "The rapamycin, acarbose and canagliflozin studies are ITP mouse studies; the retatrutide one is a human weight-loss trial."
+   },
+   "estudos": [
+    {
+     "id": "234",
+     "ano": 2009,
+     "especie": "animal",
+     "titulo": {
+      "pt": "Rapamicina iniciada tarde prolonga a vida de ratinhos",
+      "en": "Rapamycin started late in life extends mouse lifespan"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/19587680/",
+     "conclusao": {
+      "pt": "No programa ITP, a rapamicina iniciada aos 600 dias de idade prolongou a vida mediana e máxima de machos e fêmeas, com aumentos de 14% nas fêmeas e 9% nos machos na idade de 90% de mortalidade.",
+      "en": "In the ITP, rapamycin started at 600 days of age extended median and maximal lifespan in both sexes, with 14% (females) and 9% (males) gains in age at 90% mortality."
+     }
+    },
+    {
+     "id": "197",
+     "ano": 2019,
+     "especie": "animal",
+     "titulo": {
+      "pt": "Acarbose em três doses no ITP",
+      "en": "Acarbose at three doses in the ITP"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/30688027/",
+     "conclusao": {
+      "pt": "As duas doses mais altas de acarbose aumentaram a longevidade mediana em 16–17% nos machos e 4–5% nas fêmeas, e reduziram tumores do pulmão nos machos.",
+      "en": "The two higher acarbose doses increased median longevity by 16–17% in males and 4–5% in females, and reduced lung tumours in males."
+     }
+    },
+    {
+     "id": "181",
+     "ano": 2020,
+     "especie": "animal",
+     "titulo": {
+      "pt": "Canagliflozina e longevidade no ITP",
+      "en": "Canagliflozin and lifespan in the ITP"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/32990681/",
+     "conclusao": {
+      "pt": "A canagliflozina, um inibidor SGLT2, aumentou a sobrevivência mediana dos machos em 14%, sem benefício na longevidade das fêmeas, apesar de melhorar a glicemia em ambos os sexos.",
+      "en": "The SGLT2 inhibitor canagliflozin increased male median survival by 14%, with no lifespan benefit in females despite better glucose control in both sexes."
+     }
+    },
+    {
+     "id": "091",
+     "ano": 2023,
+     "especie": "humano",
+     "titulo": {
+      "en": "Retatrutide for obesity: a phase 2 trial",
+      "pt": "Retatrutido na obesidade: um ensaio de fase 2"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/37366315/",
+     "conclusao": {
+      "en": "In adults with obesity, 48 weeks of retatrutide produced substantial weight loss, with dose-related gastrointestinal effects and a dose-dependent rise in heart rate.",
+      "pt": "Em adultos com obesidade, 48 semanas de retatrutido produziram um emagrecimento acentuado, com efeitos gastrointestinais ligados à dose e uma subida da frequência cardíaca dependente da dose."
+     }
+    }
+   ],
+   "o_que_faz_o_sergio_f": {
+    "pt": [
+     "rapamicina (mTOR)",
+     "acarbose",
+     "dapagliflozina (SGLT2)",
+     "retatrutide (agonista GLP-1/GIP/glucagon)",
+     "jejum intermitente"
+    ],
+    "en": [
+     "rapamycin (mTOR)",
+     "acarbose",
+     "dapagliflozin (SGLT2)",
+     "retatrutide (GLP-1/GIP/glucagon agonist)",
+     "intermittent fasting"
+    ]
+   },
+   "numero": 6
+  },
+  {
+   "id": "mitocondrias",
+   "nome": {
+    "pt": "Disfunção mitocondrial",
+    "en": "Mitochondrial dysfunction"
+   },
+   "explicacao": {
+    "pt": "As mitocôndrias produzem a energia da célula. Com a idade produzem menos energia e mais radicais livres, o que afeta sobretudo músculo, coração e cérebro.",
+    "en": "Mitochondria produce the cell's energy. With age they make less energy and more free radicals, which mainly affects muscle, heart and brain."
+   },
+   "estudos": [
+    {
+     "id": "097",
+     "ano": 2022,
+     "especie": "humano",
+     "titulo": {
+      "en": "Glycine plus N-acetylcysteine in older adults",
+      "pt": "Glicina com N-acetilcisteína em adultos mais velhos"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/35975308/",
+     "conclusao": {
+      "en": "In older adults, 16 weeks of glycine plus N-acetylcysteine improved glutathione deficiency, oxidative stress, mitochondrial function, inflammation and physical function compared with placebo.",
+      "pt": "Em adultos mais velhos, 16 semanas de glicina com N-acetilcisteína melhoraram o défice de glutationa, o stress oxidativo, a função mitocondrial, a inflamação e a função física face a placebo."
+     }
+    },
+    {
+     "id": "125",
+     "ano": 2007,
+     "especie": "humano",
+     "titulo": {
+      "en": "High-intensity intervals and VO2max",
+      "pt": "Intervalos de alta intensidade e VO2max"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/17414804/",
+     "conclusao": {
+      "en": "In a randomized training study, high-intensity aerobic intervals raised VO2max more than the same total work at moderate intensity.",
+      "pt": "Num estudo aleatorizado de treino, os intervalos aeróbios de alta intensidade aumentaram mais o VO2max do que o mesmo trabalho total feito a intensidade moderada."
+     }
+    },
+    {
+     "id": "164",
+     "ano": 2022,
+     "especie": "humano",
+     "titulo": {
+      "pt": "Aptidão cardiorrespiratória e mortalidade em 750 mil veteranos",
+      "en": "Cardiorespiratory fitness and mortality in 750,000 veterans"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/35926933/",
+     "conclusao": {
+      "pt": "Em 750 302 veteranos americanos, os menos aptos tiveram um risco de morte 4 vezes maior do que os extremamente aptos, sem aumento de risco com aptidão muito alta.",
+      "en": "In 750,302 US veterans, the least fit had a 4-fold higher risk of death than the extremely fit, with no added risk at very high fitness."
+     }
+    }
+   ],
+   "o_que_faz_o_sergio_f": {
+    "pt": [
+     "SS-31 e MOTS-c (ciclo de péptidos)",
+     "NAC + glicina",
+     "ácido R-lipoico",
+     "acetilcarnitina",
+     "treino 4×4 e zona 2"
+    ],
+    "en": [
+     "SS-31 and MOTS-c (peptide cycle)",
+     "NAC + glycine",
+     "R-lipoic acid",
+     "acetylcarnitine",
+     "4×4 and zone 2 training"
+    ]
+   },
+   "numero": 7
+  },
+  {
+   "id": "senescencia",
+   "nome": {
+    "pt": "Senescência celular",
+    "en": "Cellular senescence"
+   },
+   "explicacao": {
+    "pt": "Células senescentes deixam de se dividir mas não morrem, e libertam sinais inflamatórios que danificam os tecidos à volta. Os senolíticos são compostos que tentam eliminá-las.",
+    "en": "Senescent cells stop dividing but do not die, and they release inflammatory signals that damage nearby tissue. Senolytics are compounds that try to clear them."
+   },
+   "nota": {
+    "pt": "Em humanos, o piloto com fisetina deu resultados mistos e os relógios de senescência não desceram após senolíticos.",
+    "en": "In humans, the fisetin pilot gave mixed results and senescence clocks did not fall after senolytics."
+   },
+   "estudos": [
+    {
+     "id": "203",
+     "ano": 2018,
+     "especie": "animal",
+     "titulo": {
+      "pt": "Fisetina como senolítico em ratinhos",
+      "en": "Fisetin as a senolytic in mice"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/30279143/",
+     "conclusao": {
+      "pt": "Entre 10 flavonoides, a fisetina foi o senolítico mais potente e, dada tarde na vida, reduziu patologia da idade e prolongou a vida mediana e máxima de ratinhos.",
+      "en": "Of 10 flavonoids, fisetin was the most potent senolytic and, given late in life, reduced age-related pathology and extended median and maximal mouse lifespan."
+     }
+    },
+    {
+     "id": "070",
+     "ano": 2024,
+     "especie": "humano",
+     "titulo": {
+      "en": "Fisetin and biological age: a pilot study",
+      "pt": "Fisetina e idade biológica: um estudo-piloto"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/39269340/",
+     "conclusao": {
+      "en": "In ten healthy adults over 50, one week of fisetin per month for six months lowered biological age in four, raised it in five and left it unchanged in one, with no statistical change in telomere length.",
+      "pt": "Em dez adultos saudáveis com mais de 50 anos, uma semana de fisetina por mês durante seis meses baixou a idade biológica em quatro, subiu-a em cinco e não a alterou num, sem mudança estatística no comprimento dos telómeros."
+     }
+    },
+    {
+     "id": "030",
+     "ano": 2026,
+     "especie": "humano",
+     "titulo": {
+      "en": "Low-dose rapamycin and DNA-damage markers in immune cells",
+      "pt": "Rapamicina em dose baixa e marcadores de dano no ADN nas células imunitárias"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/41524558/",
+     "conclusao": {
+      "en": "In a placebo-controlled study of older adults, low-dose rapamycin reduced p21, a marker of DNA-damage-induced senescence, in immune cells.",
+      "pt": "Num estudo controlado com placebo em adultos mais velhos, a rapamicina em dose baixa reduziu o p21, um marcador de senescência induzida por dano no ADN, nas células imunitárias."
+     }
+    },
+    {
+     "id": "028",
+     "ano": 2026,
+     "especie": "humano",
+     "titulo": {
+      "pt": "Relógios de senescência e tratamento senolítico",
+      "en": "Senescence clocks and senolytic treatment"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/41746138/",
+     "conclusao": {
+      "pt": "Relógios de metilação treinados para senescência, idade e mortalidade não desceram, e por vezes aceleraram, depois de tratamento senolítico em dados in vivo e in vitro.",
+      "en": "Methylation clocks trained on senescence, age and mortality did not fall, and sometimes sped up, after senolytic treatment in in vivo and in vitro data."
+     }
+    }
+   ],
+   "o_que_faz_o_sergio_f": {
+    "pt": [
+     "fisetina + quercetina (3× por mês)",
+     "FOXO4-DRI (ciclo de péptidos)",
+     "rapamicina"
+    ],
+    "en": [
+     "fisetin + quercetin (3× a month)",
+     "FOXO4-DRI (peptide cycle)",
+     "rapamycin"
+    ]
+   },
+   "numero": 8
+  },
+  {
+   "id": "celulas-estaminais",
+   "nome": {
+    "pt": "Exaustão de células estaminais",
+    "en": "Stem cell exhaustion"
+   },
+   "explicacao": {
+    "pt": "As células estaminais renovam os tecidos, incluindo o sangue e o sistema imunitário. Com a idade diminuem em número e capacidade, e o timo, que forma as células T, encolhe.",
+    "en": "Stem cells renew tissues, including blood and the immune system. With age they decline in number and capacity, and the thymus, which forms T cells, shrinks."
+   },
+   "nota": {
+    "pt": "Em ratinhos, a rapamicina em curso curto regenerou o timo depois de parar, mas em uso crónico fez o timo encolher.",
+    "en": "In mice, a short rapamycin course regenerated the thymus after stopping, but chronic use made it shrink."
+   },
+   "estudos": [
+    {
+     "id": "044",
+     "ano": 2025,
+     "especie": "animal",
+     "titulo": {
+      "pt": "Rapamicina curta e regeneração do timo",
+      "en": "Short-course rapamycin and thymic regeneration"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/40691931/",
+     "conclusao": {
+      "pt": "Em ratinhas, um pulso curto de rapamicina fez o timo involuir e, depois da suspensão, regenerar para além do timo dos controlos da mesma idade.",
+      "en": "In female mice, a short course of rapamycin made the thymus involute and, after withdrawal, regenerate beyond the thymus of age-matched controls."
+     }
+    },
+    {
+     "id": "101",
+     "ano": 2022,
+     "especie": "animal",
+     "titulo": {
+      "pt": "Sirolímus e involução do timo em ratinhos",
+      "en": "Sirolimus and thymic involution in mice"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/35958488/",
+     "conclusao": {
+      "pt": "Em ratinhos BALB/c, o sirolímus crónico provocou involução do timo dependente da dose, com mais apoptose e mais respiração celular sem aumento correspondente de ATP.",
+      "en": "In BALB/c mice, chronic sirolimus caused dose-dependent thymic involution, with more apoptosis and more cellular respiration without a matching rise in ATP."
+     }
+    },
+    {
+     "id": "023",
+     "ano": 2026,
+     "especie": "humano",
+     "titulo": {
+      "en": "Thymic health and mortality in adults",
+      "pt": "Saúde tímica e mortalidade em adultos"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/41851466/",
+     "conclusao": {
+      "en": "In adults, a thymic-health score read from routine scans was associated with lower mortality and with modifiable factors including smoking, obesity and physical activity.",
+      "pt": "Em adultos, uma pontuação de saúde tímica lida em exames de rotina associou-se a menor mortalidade e a fatores modificáveis, entre eles o tabaco, a obesidade e a atividade física."
+     }
+    }
+   ],
+   "o_que_faz_o_sergio_f": {
+    "pt": [
+     "timosina alfa-1 e timalina (ciclo de péptidos)",
+     "rapamicina"
+    ],
+    "en": [
+     "thymosin alpha-1 and thymalin (peptide cycle)",
+     "rapamycin"
+    ]
+   },
+   "numero": 9
+  },
+  {
+   "id": "comunicacao-intercelular",
+   "nome": {
+    "pt": "Comunicação intercelular alterada",
+    "en": "Altered intercellular communication"
+   },
+   "explicacao": {
+    "pt": "As células comunicam por hormonas e outros sinais no sangue. Com a idade, o sangue passa a transportar mais sinais nocivos e menos sinais protetores.",
+    "en": "Cells communicate through hormones and other signals in the blood. With age, blood carries more harmful signals and fewer protective ones."
+   },
+   "estudos": [
+    {
+     "id": "185",
+     "ano": 2020,
+     "especie": "humano",
+     "titulo": {
+      "pt": "Diluir o plasma velho com soro e albumina",
+      "en": "Diluting old plasma with saline-albumin"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/32474458/",
+     "conclusao": {
+      "pt": "Uma única troca de metade do plasma por soro com 5% de albumina melhorou a reparação muscular, reduziu a gordura e a fibrose do fígado e aumentou a neurogénese em ratinhos velhos, e uma plasmaferese humana teve efeitos semelhantes no soro.",
+      "en": "A single exchange of half the plasma for saline with 5% albumin improved muscle repair, reduced liver fat and fibrosis and increased neurogenesis in old mice, and one human plasma exchange had similar serum effects."
+     }
+    },
+    {
+     "id": "047",
+     "ano": 2025,
+     "especie": "humano",
+     "titulo": {
+      "en": "Therapeutic plasma exchange and biological-age clocks",
+      "pt": "Troca terapêutica de plasma e relógios de idade biológica"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/40424097/",
+     "conclusao": {
+      "en": "In a randomized trial of healthy adults over 50, therapeutic plasma exchange, particularly with intravenous immunoglobulin, was associated with rejuvenation signals on biological-age clocks.",
+      "pt": "Num ensaio aleatorizado de adultos saudáveis com mais de 50 anos, a troca terapêutica de plasma, sobretudo com imunoglobulina intravenosa, associou-se a sinais de rejuvenescimento em relógios de idade biológica."
+     }
+    },
+    {
+     "id": "048",
+     "ano": 2025,
+     "especie": "animal",
+     "titulo": {
+      "pt": "Oxitocina com inibidor de ALK5 em ratinhos frágeis",
+      "en": "Oxytocin plus an ALK5 inhibitor in frail mice"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/40848270/",
+     "conclusao": {
+      "pt": "Em ratinhos machos já frágeis, oxitocina com um inibidor de ALK5 prolongou a vida restante e melhorou o desempenho físico e a memória de curto prazo, sem o mesmo ganho de longevidade nas fêmeas.",
+      "en": "In already frail male mice, oxytocin plus an ALK5 inhibitor extended remaining lifespan and improved physical performance and short-term memory, without the same lifespan gain in females."
+     }
+    }
+   ],
+   "o_que_faz_o_sergio_f": {
+    "pt": [
+     "troca plasmática terapêutica (plasmaférese)",
+     "oxitocina"
+    ],
+    "en": [
+     "therapeutic plasma exchange (plasmapheresis)",
+     "oxytocin"
+    ]
+   },
+   "numero": 10
+  },
+  {
+   "id": "inflamacao",
+   "nome": {
+    "pt": "Inflamação crónica",
+    "en": "Chronic inflammation"
+   },
+   "explicacao": {
+    "pt": "Com a idade instala-se uma inflamação baixa e persistente, chamada inflammaging. Está associada a doença cardiovascular, diabetes, demência e fragilidade.",
+    "en": "With age, a low-grade, persistent inflammation sets in, called inflammaging. It is linked to cardiovascular disease, diabetes, dementia and frailty."
+   },
+   "estudos": [
+    {
+     "id": "182",
+     "ano": 2020,
+     "especie": "animal",
+     "titulo": {
+      "pt": "Alfa-cetoglutarato e longevidade em ratinhos",
+      "en": "Alpha-ketoglutarate and lifespan in mice"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/32877690/",
+     "conclusao": {
+      "pt": "O alfa-cetoglutarato de cálcio prolongou a vida de ratinhos C57BL/6, reduziu a fragilidade e baixou as citocinas inflamatórias sistémicas.",
+      "en": "Calcium alpha-ketoglutarate extended lifespan in C57BL/6 mice, reduced frailty and lowered systemic inflammatory cytokines."
+     }
+    },
+    {
+     "id": "109",
+     "ano": 2021,
+     "especie": "humano",
+     "titulo": {
+      "en": "Fermented foods, fibre and the immune system",
+      "pt": "Alimentos fermentados, fibra e o sistema imunitário"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/34256014/",
+     "conclusao": {
+      "en": "In a randomized study of healthy adults, a fermented-food diet increased microbiome diversity and lowered inflammatory markers, whereas added fibre alone did not.",
+      "pt": "Num estudo aleatorizado de adultos saudáveis, uma dieta de alimentos fermentados aumentou a diversidade do microbioma e baixou marcadores inflamatórios, ao passo que a fibra acrescentada isoladamente não o fez."
+     }
+    },
+    {
+     "id": "097",
+     "ano": 2022,
+     "especie": "humano",
+     "titulo": {
+      "en": "Glycine plus N-acetylcysteine in older adults",
+      "pt": "Glicina com N-acetilcisteína em adultos mais velhos"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/35975308/",
+     "conclusao": {
+      "en": "In older adults, 16 weeks of glycine plus N-acetylcysteine improved glutathione deficiency, oxidative stress, mitochondrial function, inflammation and physical function compared with placebo.",
+      "pt": "Em adultos mais velhos, 16 semanas de glicina com N-acetilcisteína melhoraram o défice de glutationa, o stress oxidativo, a função mitocondrial, a inflamação e a função física face a placebo."
+     }
+    }
+   ],
+   "o_que_faz_o_sergio_f": {
+    "pt": [
+     "Ca-AKG",
+     "EPA + DHA",
+     "LDN (naltrexona em dose baixa)",
+     "melatonina",
+     "curcumina Longvida",
+     "kimchi e iogurte grego"
+    ],
+    "en": [
+     "Ca-AKG",
+     "EPA + DHA",
+     "LDN (low-dose naltrexone)",
+     "melatonin",
+     "Longvida curcumin",
+     "kimchi and Greek yogurt"
+    ]
+   },
+   "numero": 11
+  },
+  {
+   "id": "disbiose",
+   "nome": {
+    "pt": "Disbiose",
+    "en": "Dysbiosis"
+   },
+   "explicacao": {
+    "pt": "Disbiose é o desequilíbrio da microbiota intestinal. Com a idade perde-se diversidade e bactérias benéficas, o que pode alimentar a inflamação.",
+    "en": "Dysbiosis is an imbalance of the gut microbiota. With age, diversity and beneficial bacteria are lost, which can fuel inflammation."
+   },
+   "estudos": [
+    {
+     "id": "109",
+     "ano": 2021,
+     "especie": "humano",
+     "titulo": {
+      "en": "Fermented foods, fibre and the immune system",
+      "pt": "Alimentos fermentados, fibra e o sistema imunitário"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/34256014/",
+     "conclusao": {
+      "en": "In a randomized study of healthy adults, a fermented-food diet increased microbiome diversity and lowered inflammatory markers, whereas added fibre alone did not.",
+      "pt": "Num estudo aleatorizado de adultos saudáveis, uma dieta de alimentos fermentados aumentou a diversidade do microbioma e baixou marcadores inflamatórios, ao passo que a fibra acrescentada isoladamente não o fez."
+     }
+    },
+    {
+     "id": "087",
+     "ano": 2023,
+     "especie": "humano",
+     "titulo": {
+      "en": "Dietary fibre and mortality",
+      "pt": "Fibra alimentar e mortalidade"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/38011755/",
+     "conclusao": {
+      "en": "An updated meta-analysis of prospective cohorts associated higher dietary fibre intake with lower all-cause, cardiovascular and cancer mortality.",
+      "pt": "Uma meta-análise atualizada de coortes prospetivas associou uma maior ingestão de fibra a menor mortalidade total, cardiovascular e por cancro."
+     }
+    },
+    {
+     "id": "032",
+     "ano": 2026,
+     "especie": "humano",
+     "titulo": {
+      "en": "Olive oil, gut microbiota and cognition in older adults",
+      "pt": "Azeite, microbiota intestinal e cognição em adultos mais velhos"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/41578342/",
+     "conclusao": {
+      "en": "In older adults, higher virgin-olive-oil intake was associated with preserved cognitive function, with a possible role for the gut microbiota.",
+      "pt": "Em adultos mais velhos, um maior consumo de azeite virgem associou-se a preservação da função cognitiva, com um possível papel da microbiota intestinal."
+     }
+    },
+    {
+     "id": "129",
+     "ano": 2026,
+     "especie": "humano",
+     "titulo": {
+      "pt": "Bifidobactéria, inflamação e envelhecimento",
+      "en": "A bifidobacterium, inflammation and ageing"
+     },
+     "link": "https://pubmed.ncbi.nlm.nih.gov/42642521/",
+     "conclusao": {
+      "pt": "O Bifidobacterium pseudocatenulatum diminuiu com a idade em coortes chinesas e, dado a ratinhos velhos, reduziu a inflamação de vários órgãos e melhorou a cognição e a função motora.",
+      "en": "Bifidobacterium pseudocatenulatum declined with age in Chinese cohorts and, given to old mice, reduced inflammation across organs and improved cognitive and motor function."
+     }
+    }
+   ],
+   "o_que_faz_o_sergio_f": {
+    "pt": [
+     "probiótico (Ultimate Flora 150B)",
+     "goma de guar parcialmente hidrolisada (PHGG)",
+     "psyllium",
+     "tributirina",
+     "kimchi e iogurte grego",
+     "azeite virgem extra"
+    ],
+    "en": [
+     "probiotic (Ultimate Flora 150B)",
+     "partially hydrolysed guar gum (PHGG)",
+     "psyllium",
+     "tributyrin",
+     "kimchi and Greek yogurt",
+     "extra virgin olive oil"
+    ]
+   },
+   "numero": 12
+  }
+ ]
+}

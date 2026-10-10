@@ -6,17 +6,17 @@
 <meta name="robots" content="noindex,nofollow">
 <meta name="referrer" content="no-referrer">
 <link rel="icon" href="data:,">
-<title>Origem</title>
+<title>Os 12 sinais do envelhecimento</title>
 <meta name="color-scheme" content="light dark">
 <script>(function(){var d=document.documentElement,t=null,l=null,q=/[?&]lang=(en|pt)(?:&|#|$)/i.exec(location.search);q=q&&q[1].toLowerCase();try{if(q)localStorage.setItem('lang',q);l=localStorage.getItem('lang');t=localStorage.getItem('theme')}catch(e){}if(q)l=q;if(l==='en')d.lang='en';if(t!=='dark'&&t!=='light')t='dark';d.setAttribute('data-theme',t)})()</script>
 <script src="sf.js"></script>
 <style>
-:root{--bg:#f5f7fa;--card:#fff;--ink:#14202e;--mut:#5b6b7d;--line:#e3e8ef;--acc:#1f5eff;--ok:#12a150;--okb:#e6f6ec;--na:#8a97a8;--nab:#eef1f5;--r:14px;--head:rgba(255,255,255,.94);--actfg:#fff;color-scheme:light}
+:root{--bg:#f5f7fa;--card:#fff;--ink:#14202e;--mut:#5b6b7d;--line:#e3e8ef;--acc:#1f5eff;--ok:#12a150;--okb:#e6f6ec;--okt:#0b7a3b;--info:#1f45b5;--infob:#e8efff;--warn:#9a5f00;--warnb:#fff4dc;--na:#8a97a8;--nab:#eef1f5;--r:14px;--head:rgba(255,255,255,.94);--actfg:#fff;color-scheme:light}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:78px}
 body{margin:0;font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
 header.top{position:sticky;top:0;z-index:50;background:var(--head);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
-.topin{max-width:1240px;margin:0 auto;display:flex;align-items:center;gap:18px;padding:10px 20px}
+.topin{max-width:980px;margin:0 auto;display:flex;align-items:center;gap:18px;padding:10px 20px}
 nav.main{display:flex;gap:4px;overflow:visible;scrollbar-width:none;flex:1;min-width:0}
 nav.main::-webkit-scrollbar{display:none}
 nav.main a{white-space:nowrap;text-decoration:none;color:var(--mut);font-size:13.5px;padding:7px 11px;border-radius:999px;font-weight:500}
@@ -35,41 +35,89 @@ nav.main a.active{background:var(--ink);color:var(--actfg)}
 main{max-width:980px;margin:0 auto;padding:22px 20px 72px}
 h1{margin:0 0 8px;font-size:28px;letter-spacing:-.3px}
 .lead{margin:0 0 8px;color:var(--mut)}
-iframe.app{display:block;width:100%;height:85vh;border:0;border-radius:var(--r);background:var(--card);margin:14px 0 10px}
-.full{margin:0;font-size:13.5px}
-html[data-theme="dark"]{color-scheme:dark;--bg:#0e141d;--card:#161e2a;--ink:#e5eaf1;--mut:#9aa7b8;--line:#2a3545;--acc:#7a9dff;--nab:#222b39;--head:rgba(16,22,32,.92);--actfg:#0e141d}
+.lead[hidden],.src[hidden]{display:none}
+.src{margin:0 0 16px;font-size:13.5px;color:var(--mut)}
+.list{display:grid;gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px}
+.card h2{font-size:18px;margin:0 0 8px;letter-spacing:-.2px;line-height:1.35}
+.card h2 .n{color:var(--mut);font-weight:700;margin-right:6px}
+.card h3{font-size:13.5px;margin:14px 0 6px;color:var(--mut);font-weight:700}
+.card p{margin:0}
+.card ul{margin:0;padding-left:18px}
+.card li{margin:0 0 6px}
+.studies{list-style:none;padding:0}
+.studies li{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:baseline;margin:0 0 8px}
+.pill{display:inline-block;font-size:11.5px;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap}
+.pill.hum{background:var(--infob);color:var(--info)}.pill.ani{background:var(--warnb);color:var(--warn)}
+.note{margin-top:8px;color:var(--mut);font-size:13.5px}
+.small{font-size:12.5px}.mut{color:var(--mut)}
+main a{color:var(--acc)}
+html[data-theme="dark"]{color-scheme:dark;--bg:#0e141d;--card:#161e2a;--ink:#e5eaf1;--mut:#9aa7b8;--line:#2a3545;--acc:#7a9dff;--okb:#11321f;--okt:#63d99a;--info:#a3bcff;--infob:#1d2a4a;--warn:#f2bf6b;--warnb:#36290f;--nab:#222b39;--head:rgba(16,22,32,.92);--actfg:#0e141d;--na:#7f8c9e}
 html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 .tools{display:flex;align-items:center;gap:14px;margin-left:auto;flex:0 0 auto}
 .lang{display:flex;align-items:center;gap:4px;font-size:13.5px;white-space:nowrap}
 .lang button{font:inherit;border:0;background:none;color:var(--mut);cursor:pointer;padding:6px 6px;border-radius:8px}
 .lang button:hover{background:var(--nab);color:var(--ink)}.lang button.on{color:var(--ink);font-weight:700}
-.lang .sep{color:var(--na,#8a97a8)}
-main a{color:var(--acc)}
-@media(max-width:640px){html{scroll-padding-top:148px}.topin{gap:4px 8px;padding:6px 12px;flex-wrap:wrap}.tools{order:-1;margin-left:auto;gap:10px}nav.main{flex:1 1 100%;order:2;flex-wrap:wrap;gap:2px}nav.main a,.dd summary{padding:6px 10px}h1{font-size:24px}}
+.lang .sep{color:var(--na)}
+@media(max-width:640px){html{scroll-padding-top:148px}.topin{gap:4px 8px;padding:6px 12px;flex-wrap:wrap}.tools{order:-1;margin-left:auto;gap:10px}nav.main{flex:1 1 100%;order:2;flex-wrap:wrap;gap:2px}nav.main a,.dd summary{padding:6px 10px}h1{font-size:24px}.card{padding:14px}}
 </style>
 </head>
-<body data-title-pt="Origem" data-title-en="Origin">
+<body data-title-pt="Os 12 sinais do envelhecimento" data-title-en="The 12 hallmarks of aging">
 <header class="top"><div class="topin">
 <nav class="main" id="nav">
-<a href="inicio.html" data-en="Home">Início</a><a href="analises.html#sangue" data-en="Tests">Análises</a><details class="dd"><summary data-en="Genetics">Genética</summary><div class="ddmenu"><a href="genetica-reports.html" data-en="Genetics Reports">Genética Reports</a><a href="genetica-boa.html" data-en="Good Genetics">Genética Boa</a><a href="genetica.html" data-en="Bad Genetics">Genética Má</a><a href="ferramentas/index.html" data-en="Genetic tools">Ferramentas genéticas</a></div></details><details class="dd"><summary data-en="Protocol">Protocolo</summary><div class="ddmenu"><a href="pele-cabelo.html" data-en="Skin and Hair">Pele e Cabelo</a><a href="sono.html" data-en="Sleep">Sono</a><a href="dieta.html" data-en="Diet">Dieta</a><a href="terapias.html" data-en="Therapies">Terapias</a><a href="treino.html" data-en="Training">Treino</a><a href="suplementos.html" data-en="Supplements + Medication">Suplementos + Medicação</a><a href="registo.html" data-en="Changelog">Registo de alterações</a><a href="comparador.html" data-en="Comparison">Comparador</a></div></details><a href="origem.html" class="active" aria-current="page" data-en="Origin">Origem</a><details class="dd"><summary data-en="Studies">Estudos</summary><div class="ddmenu"><a href="estudos.html" data-en="Studies">Estudos</a><a href="sinais.html" data-en="The 12 hallmarks">Os 12 sinais</a><a href="glossario.html" data-en="Glossary">Glossário</a></div></details></nav>
+<a href="inicio.html" data-en="Home">Início</a><a href="analises.html#sangue" data-en="Tests">Análises</a><details class="dd"><summary data-en="Genetics">Genética</summary><div class="ddmenu"><a href="genetica-reports.html" data-en="Genetics Reports">Genética Reports</a><a href="genetica-boa.html" data-en="Good Genetics">Genética Boa</a><a href="genetica.html" data-en="Bad Genetics">Genética Má</a><a href="ferramentas/index.html" data-en="Genetic tools">Ferramentas genéticas</a></div></details><details class="dd"><summary data-en="Protocol">Protocolo</summary><div class="ddmenu"><a href="pele-cabelo.html" data-en="Skin and Hair">Pele e Cabelo</a><a href="sono.html" data-en="Sleep">Sono</a><a href="dieta.html" data-en="Diet">Dieta</a><a href="terapias.html" data-en="Therapies">Terapias</a><a href="treino.html" data-en="Training">Treino</a><a href="suplementos.html" data-en="Supplements + Medication">Suplementos + Medicação</a><a href="registo.html" data-en="Changelog">Registo de alterações</a><a href="comparador.html" data-en="Comparison">Comparador</a></div></details><a href="origem.html" data-en="Origin">Origem</a><details class="dd on"><summary data-en="Studies">Estudos</summary><div class="ddmenu"><a href="estudos.html" data-en="Studies">Estudos</a><a href="sinais.html" class="active" aria-current="page" data-en="The 12 hallmarks">Os 12 sinais</a><a href="glossario.html" data-en="Glossary">Glossário</a></div></details></nav>
 <div class="tools">
 <div class="lang" id="lang" role="group" aria-label="Idioma / Language"><button type="button" data-l="pt" lang="pt-PT">Português</button><span class="sep" aria-hidden="true">|</span><button type="button" data-l="en" lang="en">English</button></div>
 <div class="lang" id="theme" role="group" aria-label="Tema" data-al-en="Theme"><button type="button" data-t="dark" data-en="Dark">Escuro</button><span class="sep" aria-hidden="true">|</span><button type="button" data-t="light" data-en="Light">Claro</button></div>
 </div>
 </div></header>
 <main>
-<h1 data-en="Origin">Origem</h1>
-<p class="lead" data-en="Interactive genetic ancestry map.">Mapa interativo de ancestralidade genética.</p>
-<iframe class="app" src="assets/origem/origem-app.html" title="Origem"></iframe>
-<p class="full"><a href="assets/origem/origem-app.html" data-en="Open full screen">Abrir em ecrã inteiro</a></p>
+<h1 data-en="The 12 hallmarks of aging">Os 12 sinais do envelhecimento</h1>
+<p class="lead" id="lead" hidden></p>
+<p class="src" id="fonte" hidden></p>
+<div class="list" id="list"></div>
 </main>
 <script>
 let LANG='pt';try{if(localStorage.getItem('lang')==='en')LANG='en'}catch(e){}
 {const q=/[?&]lang=(en|pt)(?:&|#|$)/i.exec(location.search);if(q)LANG=q[1].toLowerCase()}
+let DATA=null;
+const L=(p,e)=>LANG==='en'?e:p;
+const BAN=/aconselhamento|n[ãa]o aplicada|ferramenta educativa|decidir com o m[ée]dico/i;
+function okLine(s){return !!(s&&String(s).trim()&&!BAN.test(s))}
+function tx(o){if(o==null)return '';if(typeof o==='string')return o;return LANG==='en'?(o.en||o.pt||''):(o.pt||o.en||'')}
+function render(){const list=document.getElementById('list'),lead=document.getElementById('lead'),fonte=document.getElementById('fonte');
+ if(!DATA)return;
+ const intro=tx(DATA.intro);
+ if(okLine(intro)){lead.hidden=false;lead.textContent=intro}else{lead.hidden=true;lead.textContent=''}
+ fonte.replaceChildren();
+ const f=DATA.fonte||{},cite=f.citacao||'';
+ if(okLine(cite)&&f.link){const a=document.createElement('a');a.href=f.link;a.target='_blank';a.rel='noopener noreferrer';a.textContent=cite;fonte.appendChild(a);fonte.hidden=false}
+ else {fonte.hidden=true}
+ const sinais=(DATA.sinais||[]).slice().sort((a,b)=>(a.numero||0)-(b.numero||0));
+ list.replaceChildren();
+ for(const s of sinais){const art=document.createElement('article');art.className='card';art.id=s.id||'';
+  const h=document.createElement('h2');const n=document.createElement('span');n.className='n';n.textContent=(s.numero||'')+'';h.appendChild(n);h.appendChild(document.createTextNode(tx(s.nome)));art.appendChild(h);
+  const ex=document.createElement('p');ex.textContent=tx(s.explicacao);art.appendChild(ex);
+  const does=s.o_que_faz_o_sergio_f;const items=Array.isArray(does)?does:(does?[tx(does)]:[]);
+  if(items.length){const h3=document.createElement('h3');h3.textContent=L('O que o Sérgio F faz','What Sérgio F does');art.appendChild(h3);
+   const ul=document.createElement('ul');items.forEach(it=>{const li=document.createElement('li');li.textContent=typeof it==='string'?it:tx(it);ul.appendChild(li)});art.appendChild(ul)}
+  const estudos=s.estudos||[];
+  if(estudos.length){const h3=document.createElement('h3');h3.textContent=L('Estudos','Studies');art.appendChild(h3);
+   const ul=document.createElement('ul');ul.className='studies';
+   estudos.forEach(e=>{const li=document.createElement('li');
+    const a=document.createElement('a');a.href=e.link;a.target='_blank';a.rel='noopener noreferrer';a.textContent=tx(e.titulo);li.appendChild(a);
+    if(e.ano){const y=document.createElement('span');y.className='small mut';y.textContent=String(e.ano);li.appendChild(y)}
+    if(e.especie){const pill=document.createElement('span');const animal=e.especie==='animal';pill.className='pill '+(animal?'ani':'hum');pill.textContent=animal?L('Animal','Animal'):L('Humano','Human');li.appendChild(pill)}
+    ul.appendChild(li)});
+   art.appendChild(ul)}
+  const note=tx(s.nota);
+  if(okLine(note)){const p=document.createElement('p');p.className='note';p.textContent=note;art.appendChild(p)}
+  list.appendChild(art)}}
 function applyLang(){const en=LANG==='en';document.documentElement.lang=en?'en':'pt-PT';document.title=en?document.body.dataset.titleEn:document.body.dataset.titlePt;
  document.querySelectorAll('[data-en]').forEach(el=>{if(!el.hasAttribute('data-pt'))el.setAttribute('data-pt',el.textContent);el.textContent=en?el.dataset.en:el.dataset.pt});
  document.querySelectorAll('[data-al-en]').forEach(el=>{if(!el.hasAttribute('data-al-pt'))el.setAttribute('data-al-pt',el.getAttribute('aria-label'));el.setAttribute('aria-label',en?el.dataset.alEn:el.dataset.alPt)});
- document.querySelectorAll('#lang button').forEach(b=>{const on=b.dataset.l===LANG;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});}
+ document.querySelectorAll('#lang button').forEach(b=>{const on=b.dataset.l===LANG;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});
+ render()}
 document.querySelectorAll('#lang button').forEach(b=>b.addEventListener('click',()=>{if(LANG===b.dataset.l)return;LANG=b.dataset.l;try{localStorage.setItem('lang',LANG)}catch(e){}try{if(/[?&]lang=/i.test(location.search)){const u=new URL(location.href);u.searchParams.set('lang',LANG);history.replaceState(history.state,'',u)}}catch(e){}applyLang()}));
 let THEME=null;try{THEME=localStorage.getItem('theme')}catch(e){}
 const curTheme=()=>THEME==='dark'||THEME==='light'?THEME:'dark';
@@ -77,6 +125,7 @@ function applyTheme(){const t=curTheme();document.documentElement.setAttribute('
 document.querySelectorAll('#theme button').forEach(b=>b.addEventListener('click',()=>{THEME=b.dataset.t;try{localStorage.setItem('theme',THEME)}catch(e){}applyTheme()}));
 applyTheme();
 applyLang();
+fetch('data/sinais.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(d=>{DATA=d;render()}).catch(()=>{document.getElementById('list').textContent=L('Não foi possível carregar os dados.','Could not load the data.')});
 </script>
 <script>
 (function(){try{var W=window.SF_W;if(!W)return;W=String(W).replace(/\/+$/,'');
