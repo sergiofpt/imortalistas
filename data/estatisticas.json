@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-10T04:50:31Z",
+ "atualizado_em": "2026-10-10T05:47:14Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 64,
   "visitas_30d": 64,
   "visitas_90d": 64,
-  "aberturas_pdf": 441,
+  "aberturas_pdf": 447,
   "visitas_hoje": 2,
   "visitas_7d": 47,
-  "aberturas_hoje": 35,
-  "aberturas_7d": 430,
-  "aberturas_30d": 441,
-  "pdf_abertos": 226,
+  "aberturas_hoje": 41,
+  "aberturas_7d": 436,
+  "aberturas_30d": 447,
+  "pdf_abertos": 232,
   "pdf_descarregados": 215,
-  "pdf_pt": 203,
+  "pdf_pt": 209,
   "pdf_en": 238
  },
  "dias": [
@@ -67,7 +67,7 @@
   {
    "dia": "2026-10-10",
    "visitas": 2,
-   "aberturas": 35
+   "aberturas": 41
   }
  ],
  "paginas": [
@@ -196,6 +196,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "fertilidade-masculina",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "infecoes",
    "ficheiro": null,
    "pt": 2,
@@ -317,6 +328,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "aorta-aneurismas",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "apetite-saciedade-comportamento-alimentar",
    "ficheiro": null,
    "pt": 2,
@@ -427,6 +449,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "destoxificacao-fase-i-ii",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "disruptores-endocrinos-poluentes",
    "ficheiro": null,
    "pt": 2,
@@ -494,17 +527,6 @@
   },
   {
    "id": "estado-portador",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "fertilidade-masculina",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -856,6 +878,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "tendoes-ligamentos-lesoes",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "termorregulacao-sudorese",
    "ficheiro": null,
    "pt": 2,
@@ -878,6 +911,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "vesicula-biliar-calculos",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "vitaminas-minerais",
    "ficheiro": null,
    "pt": 2,
@@ -890,17 +934,6 @@
   },
   {
    "id": "alimentos-longevidade-173",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "aorta-aneurismas",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -977,14 +1010,14 @@
    "descarregados_en": 1
   },
   {
-   "id": "destoxificacao-fase-i-ii",
+   "id": "dermatite-seborreica-microbioma-pele",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
    "total": 3,
-   "abertos_pt": 0,
+   "abertos_pt": 1,
    "abertos_en": 1,
-   "descarregados_pt": 1,
+   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -1285,17 +1318,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "tendoes-ligamentos-lesoes",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "termogenese-gordura-castanha",
    "ficheiro": null,
    "pt": 1,
@@ -1351,34 +1373,12 @@
    "descarregados_en": 1
   },
   {
-   "id": "vesicula-biliar-calculos",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "visao-audicao",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
    "total": 3,
    "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "dermatite-seborreica-microbioma-pele",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 2,
-   "total": 2,
-   "abertos_pt": 0,
    "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 1
@@ -1560,7 +1560,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 417
+   "visitas": 423
   },
   {
    "id": "PT",
@@ -1612,7 +1612,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 475
+   "visitas": 481
   },
   {
    "id": "Firefox",
@@ -1629,12 +1629,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 277
+   "visitas": 281
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 188
+   "visitas": 190
   },
   {
    "id": "Android",
@@ -1676,14 +1676,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 440
+   "visitas": 446
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 494
+   "visitas": 500
   },
   {
    "id": "https://bing.com",
@@ -2040,7 +2040,7 @@
     {
      "dia": "2026-10-10",
      "visitas": 2,
-     "aberturas": 35
+     "aberturas": 41
     }
    ],
    "paginas": [
@@ -2194,6 +2194,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "aorta-aneurismas",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "atencao-phda",
      "ficheiro": null,
      "pt": 2,
@@ -2293,6 +2304,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "destoxificacao-fase-i-ii",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "disruptores-endocrinos-poluentes",
      "ficheiro": null,
      "pt": 2,
@@ -2371,6 +2393,17 @@
     },
     {
      "id": "estado-portador",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "fertilidade-masculina",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -2722,6 +2755,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "tendoes-ligamentos-lesoes",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "termorregulacao-sudorese",
      "ficheiro": null,
      "pt": 2,
@@ -2734,6 +2778,17 @@
     },
     {
      "id": "valvulas-cardiacas",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "vesicula-biliar-calculos",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -2767,17 +2822,6 @@
     },
     {
      "id": "anestesia-cirurgia",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "aorta-aneurismas",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2876,14 +2920,14 @@
      "descarregados_en": 1
     },
     {
-     "id": "destoxificacao-fase-i-ii",
+     "id": "dermatite-seborreica-microbioma-pele",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
      "total": 3,
-     "abertos_pt": 0,
+     "abertos_pt": 1,
      "abertos_en": 1,
-     "descarregados_pt": 1,
+     "descarregados_pt": 0,
      "descarregados_en": 1
     },
     {
@@ -2938,17 +2982,6 @@
      "total": 3,
      "abertos_pt": 1,
      "abertos_en": 0,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "fertilidade-masculina",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 1
     },
@@ -3250,17 +3283,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "tendoes-ligamentos-lesoes",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "termogenese-gordura-castanha",
      "ficheiro": null,
      "pt": 1,
@@ -3316,34 +3338,12 @@
      "descarregados_en": 1
     },
     {
-     "id": "vesicula-biliar-calculos",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "visao-audicao",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
      "total": 3,
      "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "dermatite-seborreica-microbioma-pele",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
      "abertos_en": 1,
      "descarregados_pt": 0,
      "descarregados_en": 1
@@ -3505,22 +3505,22 @@
     "visitas": 40,
     "visitas_30d": 40,
     "visitas_90d": 40,
-    "aberturas_pdf": 415,
+    "aberturas_pdf": 421,
     "visitas_hoje": 2,
     "visitas_7d": 37,
-    "aberturas_hoje": 35,
-    "aberturas_7d": 415,
-    "aberturas_30d": 415,
-    "pdf_abertos": 200,
+    "aberturas_hoje": 41,
+    "aberturas_7d": 421,
+    "aberturas_30d": 421,
+    "pdf_abertos": 206,
     "pdf_descarregados": 215,
-    "pdf_pt": 179,
+    "pdf_pt": 185,
     "pdf_en": 236
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 417
+     "visitas": 423
     },
     {
      "id": "US",
