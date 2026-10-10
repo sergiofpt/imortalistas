@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-10T05:47:14Z",
+ "atualizado_em": "2026-10-10T06:27:32Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 64,
   "visitas_30d": 64,
   "visitas_90d": 64,
-  "aberturas_pdf": 447,
+  "aberturas_pdf": 454,
   "visitas_hoje": 2,
   "visitas_7d": 47,
-  "aberturas_hoje": 41,
-  "aberturas_7d": 436,
-  "aberturas_30d": 447,
-  "pdf_abertos": 232,
+  "aberturas_hoje": 48,
+  "aberturas_7d": 443,
+  "aberturas_30d": 454,
+  "pdf_abertos": 239,
   "pdf_descarregados": 215,
-  "pdf_pt": 209,
+  "pdf_pt": 216,
   "pdf_en": 238
  },
  "dias": [
@@ -67,7 +67,7 @@
   {
    "dia": "2026-10-10",
    "visitas": 2,
-   "aberturas": 41
+   "aberturas": 48
   }
  ],
  "paginas": [
@@ -218,6 +218,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "intestino-grosso",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "metilacao-homocisteina-colina",
    "ficheiro": null,
    "pt": 3,
@@ -350,6 +361,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "articulacoes-artrose",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "atencao-phda",
    "ficheiro": null,
    "pt": 2,
@@ -384,6 +406,17 @@
   },
   {
    "id": "cabelo",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "cafeina-estimulantes",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -439,6 +472,17 @@
   },
   {
    "id": "cetose-corpos-cetonicos",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "coagulacao-trombose-veias",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -537,6 +581,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "forca-hipertrofia-potencia",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "funcao-sexual-eretil",
    "ficheiro": null,
    "pt": 2,
@@ -545,6 +600,17 @@
    "abertos_pt": 2,
    "abertos_en": 1,
    "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
+   "id": "glicose-insulina-diabetes",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
    "descarregados_en": 1
   },
   {
@@ -582,17 +648,6 @@
   },
   {
    "id": "impulsividade-recompensa-vicio",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "intestino-grosso",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -834,6 +889,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "sal-agua-eletrolitos",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "sensibilidade-radiacao",
    "ficheiro": null,
    "pt": 2,
@@ -944,17 +1010,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "articulacoes-artrose",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "audicao-zumbido",
    "ficheiro": null,
    "pt": 1,
@@ -966,29 +1021,7 @@
    "descarregados_en": 1
   },
   {
-   "id": "cafeina-estimulantes",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "capacidade-cognitiva-plasticidade",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "coagulacao-trombose-veias",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -1076,29 +1109,7 @@
    "descarregados_en": 1
   },
   {
-   "id": "forca-hipertrofia-potencia",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "gaba-glutamato",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "glicose-insulina-diabetes",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -1283,17 +1294,6 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 0
-  },
-  {
-   "id": "sal-agua-eletrolitos",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
   },
   {
    "id": "serotonina-melatonina",
@@ -1560,7 +1560,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 423
+   "visitas": 430
   },
   {
    "id": "PT",
@@ -1612,7 +1612,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 481
+   "visitas": 488
   },
   {
    "id": "Firefox",
@@ -1629,12 +1629,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 281
+   "visitas": 284
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 190
+   "visitas": 194
   },
   {
    "id": "Android",
@@ -1676,14 +1676,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 446
+   "visitas": 453
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 500
+   "visitas": 507
   },
   {
    "id": "https://bing.com",
@@ -2040,7 +2040,7 @@
     {
      "dia": "2026-10-10",
      "visitas": 2,
-     "aberturas": 41
+     "aberturas": 48
     }
    ],
    "paginas": [
@@ -2205,6 +2205,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "articulacoes-artrose",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "atencao-phda",
      "ficheiro": null,
      "pt": 2,
@@ -2260,6 +2271,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "cafeina-estimulantes",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "cardiovascular-avancado",
      "ficheiro": null,
      "pt": 2,
@@ -2294,6 +2316,17 @@
     },
     {
      "id": "cetose-corpos-cetonicos",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "coagulacao-trombose-veias",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -2414,6 +2447,28 @@
      "descarregados_en": 1
     },
     {
+     "id": "forca-hipertrofia-potencia",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "glicose-insulina-diabetes",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "globulos-vermelhos-hemoglobina-plaquetas",
      "ficheiro": null,
      "pt": 2,
@@ -2448,6 +2503,17 @@
     },
     {
      "id": "impulsividade-recompensa-vicio",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "intestino-grosso",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -2711,6 +2777,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "sal-agua-eletrolitos",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "sensibilidade-radiacao",
      "ficheiro": null,
      "pt": 2,
@@ -2843,29 +2920,7 @@
      "descarregados_en": 1
     },
     {
-     "id": "articulacoes-artrose",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "audicao-zumbido",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "cafeina-estimulantes",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2888,17 +2943,6 @@
     },
     {
      "id": "cartao-farmacogenetico",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "coagulacao-trombose-veias",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2997,17 +3041,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "forca-hipertrofia-potencia",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "funcao-sexual-eretil",
      "ficheiro": null,
      "pt": 1,
@@ -3020,17 +3053,6 @@
     },
     {
      "id": "gaba-glutamato",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "glicose-insulina-diabetes",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -3140,17 +3162,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "intestino-grosso",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "intolerancias-alimentares-626",
      "ficheiro": null,
      "pt": 1,
@@ -3248,17 +3259,6 @@
      "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 0
-    },
-    {
-     "id": "sal-agua-eletrolitos",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
     },
     {
      "id": "serotonina-melatonina",
@@ -3505,22 +3505,22 @@
     "visitas": 40,
     "visitas_30d": 40,
     "visitas_90d": 40,
-    "aberturas_pdf": 421,
+    "aberturas_pdf": 428,
     "visitas_hoje": 2,
     "visitas_7d": 37,
-    "aberturas_hoje": 41,
-    "aberturas_7d": 421,
-    "aberturas_30d": 421,
-    "pdf_abertos": 206,
+    "aberturas_hoje": 48,
+    "aberturas_7d": 428,
+    "aberturas_30d": 428,
+    "pdf_abertos": 213,
     "pdf_descarregados": 215,
-    "pdf_pt": 185,
+    "pdf_pt": 192,
     "pdf_en": 236
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 423
+     "visitas": 430
     },
     {
      "id": "US",
