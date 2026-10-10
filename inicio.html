@@ -101,7 +101,7 @@ function renderObjetivos(data){
  const root=document.getElementById('groups');
  function badge(estado){const s=ST[estado]||ST.sem_dados;const b=document.createElement('span');b.className='pill '+s[0];b.textContent=s[1];b.setAttribute('data-en',s[2]);return b}
  function field(kpt,ken,pt,en){const p=document.createElement('p');p.className='field';const k=document.createElement('span');k.className='k';k.textContent=kpt;k.setAttribute('data-en',ken);const v=document.createElement('span');v.textContent=pt;v.setAttribute('data-en',en);p.append(k,v);return p}
- function fmtNum(v){const n=(typeof v==='number'&&Math.abs(v-Math.round(v))<1e-6)?String(Math.round(v)):String(v);return {pt:n.replace('.',','),en:n}}
+ function fmtNum(v){if(typeof v!=='number'){const s=String(v);return {pt:s,en:s}}const n=Math.abs(v-Math.round(v))<1e-6?String(Math.round(v)):String(v);return {pt:n.replace('.',','),en:n}}
  function fmtDate(iso){const p=iso.split('-'),d=+p[2],m=+p[1],y=p[0];return {pt:d+' '+MES.pt[m]+' '+y,en:d+' '+MES.en[m]+' '+y}}
  data.groups.forEach(function(g,i){
   const sec=document.createElement('section');sec.className='card';sec.id=g.id;
