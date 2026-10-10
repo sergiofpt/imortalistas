@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="data:,">
+<title>Sérgio F · O meu corpo</title>
+<meta name="color-scheme" content="light dark">
+<script>(function(){var d=document.documentElement,t=null,l=null,q=/[?&]lang=(en|pt)(?:&|#|$)/i.exec(location.search);q=q&&q[1].toLowerCase();try{if(q)localStorage.setItem('lang',q);l=localStorage.getItem('lang');t=localStorage.getItem('theme')}catch(e){}if(q)l=q;if(l==='en')d.lang='en';if(t!=='dark'&&t!=='light')t='dark';d.setAttribute('data-theme',t)})()</script>
+<script src="sf.js"></script>
+<style>
+:root{--bg:#f5f7fa;--card:#fff;--ink:#14202e;--mut:#5b6b7d;--line:#e3e8ef;--acc:#1f5eff;--ok:#12a150;--okb:#e6f6ec;--okt:#0b7a3b;--okd:#0b7a3b;--okdfg:#f4fff8;--nearb:#d9f5e4;--nearf:#0b7a3b;--warn:#d98a00;--warnb:#fff4dc;--warnt:#9a5f00;--bad:#d93636;--badb:#fde9e9;--badt:#b02020;--na:#8a97a8;--nab:#eef1f5;--nat:#56657a;--r:14px;--head:rgba(255,255,255,.94);--actfg:#fff;--sil:#e4ebf3;--sil2:#d5dee8;color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:78px}
+body{margin:0;font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+header.top{position:sticky;top:0;z-index:50;background:var(--head);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
+.topin{max-width:1240px;margin:0 auto;display:flex;align-items:center;gap:18px;padding:10px 20px}
+nav.main{display:flex;gap:4px;overflow:visible;scrollbar-width:none;flex:1;min-width:0}
+nav.main::-webkit-scrollbar{display:none}
+nav.main a{white-space:nowrap;text-decoration:none;color:var(--mut);font-size:13.5px;padding:7px 11px;border-radius:999px;font-weight:500}
+nav.main a:hover{background:var(--nab);color:var(--ink)}
+nav.main a.active{background:var(--ink);color:var(--actfg)}
+.dd{position:relative;flex:0 0 auto}
+.dd summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;white-space:nowrap;color:var(--mut);font:inherit;font-size:13.5px;font-weight:500;padding:7px 11px;border-radius:999px}
+.dd summary::-webkit-details-marker{display:none}
+.dd summary::marker{content:""}
+.dd summary:hover,.dd[open]>summary{background:var(--nab);color:var(--ink)}
+.dd.on>summary{background:var(--ink);color:var(--actfg)}
+.dd summary:after{content:" ▾";font-size:.72em;opacity:.75}
+.dd[open]>summary:after{content:" ▴"}
+.ddmenu{position:absolute;top:calc(100% + 6px);right:0;min-width:210px;padding:6px;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:0 14px 36px rgba(15,30,50,.18);z-index:80;display:flex;flex-direction:column;gap:2px}@media(max-width:640px){nav.main .ddmenu{position:fixed;left:8px;right:8px;top:auto;width:auto;min-width:0;margin-top:6px;max-height:70vh;overflow:auto}}
+.ddmenu a{display:block;border-radius:10px}
+main{max-width:1100px;margin:0 auto;padding:22px 20px 72px}
+h1{margin:0 0 16px;font-size:28px;letter-spacing:-.3px}
+h2{margin:0;font-size:22px;letter-spacing:-.2px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+h3{margin:0 0 8px;font-size:13px;font-weight:700;letter-spacing:.3px;text-transform:uppercase;color:var(--mut)}
+.stage{display:grid;grid-template-columns:minmax(280px,420px) minmax(0,1fr);gap:28px;align-items:start}
+.bodycol{min-width:0}
+.side{min-width:0}
+.fig{width:min(100%,400px);height:auto;display:block;margin:0 auto}
+.sil{fill:var(--sil);stroke:var(--sil2);stroke-width:1.2}
+.organ{fill:#8a97a8;stroke:rgba(255,255,255,.9);stroke-width:1.5;transition:fill .35s ease,stroke .15s ease,opacity .15s ease}
+.zone{cursor:pointer}
+.zone:hover .organ,.zone:focus-visible .organ{stroke:var(--ink);stroke-width:2.4;filter:brightness(1.08)}
+.zone:focus{outline:none}
+.zone:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.zone.on .organ{stroke:var(--ink);stroke-width:2.6;animation:pulse 1.8s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.78}}
+@media(prefers-reduced-motion:reduce){.zone.on .organ{animation:none;opacity:1}.sidebox.in{animation:none}}
+.st-otimo{fill:#0b7a3b}.st-quase{fill:#7dcca0}.st-fora{fill:#e09a2b}.st-sem{fill:#8a97a8}
+.legend{display:flex;flex-wrap:wrap;gap:8px 14px;list-style:none;margin:12px 0 0;padding:0;justify-content:center;font-size:14px;color:var(--mut)}
+.legend li{display:flex;align-items:center;gap:6px}
+.dot{width:11px;height:11px;border-radius:99px;display:inline-block;flex:0 0 auto}
+.org-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.org-chips button{font:inherit;font-size:14px;display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:7px 12px;cursor:pointer}
+.org-chips button:hover{border-color:var(--acc)}
+.org-chips button.on{border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.org-chips button:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.hint{margin:0;color:var(--mut);font-size:15px}
+.sidebox{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px 8px}
+.sidebox.in{animation:rise .28s ease}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.blk{margin:0 0 16px}
+.rows{list-style:none;margin:0;padding:0}
+.rows li{display:flex;justify-content:space-between;align-items:flex-start;gap:10px 14px;padding:8px 0;border-top:1px solid var(--line);min-width:0}
+.rk{min-width:0;flex:1}
+.rk b,.rows a{font-weight:650}
+.meta{display:block;color:var(--mut);font-size:14px;margin-top:2px}
+.pill{display:inline-block;font-size:11.5px;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap;flex:0 0 auto}
+.pill.ok{background:var(--okb);color:var(--okt)}.pill.okd{background:var(--okd);color:var(--okdfg)}.pill.near{background:var(--nearb);color:var(--nearf)}.pill.warn{background:var(--warnb);color:var(--warnt)}.pill.bad{background:var(--badb);color:var(--badt)}.pill.na{background:var(--nab);color:var(--nat)}.pill.dim{color:var(--mut);font-weight:600}
+main a{color:var(--acc)}
+html[data-theme="dark"]{color-scheme:dark;--bg:#0e141d;--card:#161e2a;--ink:#e5eaf1;--mut:#9aa7b8;--line:#2a3545;--acc:#7a9dff;--ok:#34c47a;--okb:#11321f;--okt:#63d99a;--okd:#0e6b38;--okdfg:#f3fff8;--nearb:#c6f0d4;--nearf:#08562e;--warn:#e8a63f;--warnb:#36290f;--warnt:#f2bf6b;--bad:#f06464;--badb:#3b1a1d;--badt:#ff8f8f;--na:#7f8c9e;--nab:#222b39;--nat:#aeb9c8;--head:rgba(16,22,32,.92);--actfg:#0e141d;--sil:#243044;--sil2:#33445a}
+html[data-theme="dark"] .organ{stroke:rgba(8,12,18,.55)}
+html[data-theme="dark"] .st-otimo{fill:#1a8f4a}
+html[data-theme="dark"] .st-quase{fill:#8ed4a8}
+html[data-theme="dark"] .st-fora{fill:#e8a63f}
+html[data-theme="dark"] .st-sem{fill:#66788c}
+html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
+.tools{display:flex;align-items:center;gap:14px;margin-left:auto;flex:0 0 auto}
+.lang{display:flex;align-items:center;gap:4px;font-size:13.5px;white-space:nowrap}
+.lang button{font:inherit;border:0;background:none;color:var(--mut);cursor:pointer;padding:6px 6px;border-radius:8px}
+.lang button:hover{background:var(--nab);color:var(--ink)}.lang button.on{color:var(--ink);font-weight:700}
+.lang .sep{color:var(--na)}
+@media(max-width:640px){
+ html{scroll-padding-top:148px}
+ .topin{gap:4px 8px;padding:6px 12px;flex-wrap:wrap}
+ .tools{order:-1;margin-left:auto;gap:10px}
+ nav.main{flex:1 1 100%;order:2;flex-wrap:wrap;gap:2px}
+ nav.main a,.dd summary{padding:6px 10px}
+ h1{font-size:24px}
+ .stage{grid-template-columns:1fr}
+ .fig{width:min(100%,340px)}
+ .org-chips button{min-height:44px}
+ .rows li{flex-wrap:wrap}
+ .pill{white-space:normal}
+ .sidebox{padding:14px 14px 6px}
+}
+</style>
+<link rel="stylesheet" href="assets/mobile.css">
+</head>
+<body data-title-pt="Sérgio F · O meu corpo" data-title-en="Sérgio F · My body">
+<header class="top"><div class="topin">
+<nav class="main" id="nav">
+<a href="inicio.html" data-en="Goals">Objetivos</a><a href="analises.html#sangue" data-en="Tests">Análises</a><a href="exames.html" data-en="Check-ups">Exames</a><details class="dd"><summary data-en="Genetics">Genética</summary><div class="ddmenu"><a href="genetica-reports.html" data-en="Genetics Reports">Genética Reports</a><a href="genetica-boa.html" data-en="Good Genetics">Genética Boa</a><a href="genetica.html" data-en="Bad Genetics">Genética Má</a></div></details><details class="dd"><summary data-en="Protocol">Protocolo</summary><div class="ddmenu"><a href="pele-cabelo.html" data-en="Skin and Hair">Pele e Cabelo</a><a href="sono.html" data-en="Sleep">Sono</a><a href="dieta.html" data-en="Diet">Dieta</a><a href="terapias.html" data-en="Therapies">Terapias</a><a href="treino.html" data-en="Training">Treino</a><a href="suplementos.html" data-en="Supplements + Medication">Suplementos + Medicação</a></div></details><a href="estudos.html" data-en="Studies">Estudos</a><a href="origem.html" data-en="Origin">Origem</a><details class="dd on out"><summary data-en="Other">Outros</summary><div class="ddmenu"><a href="corpo.html" class="active" aria-current="page" data-en="My body">O meu corpo</a><a href="registo.html" data-en="Changelog">Registo de alterações</a><a href="comparador.html" data-en="Comparison">Comparador</a><a href="sinais.html" data-en="The 12 hallmarks">Os 12 sinais</a><a href="glossario.html" data-en="Glossary">Glossário</a><a href="ferramentas/index.html" data-en="Genetic tools">Ferramentas genéticas</a></div></details></nav>
+<div class="tools">
+<div class="lang" id="lang" role="group" aria-label="Idioma / Language"><button type="button" data-l="pt" lang="pt-PT">Português</button><span class="sep" aria-hidden="true">|</span><button type="button" data-l="en" lang="en">English</button></div>
+<div class="lang" id="theme" role="group" aria-label="Tema" data-al-en="Theme"><button type="button" data-t="dark" data-en="Dark">Escuro</button><span class="sep" aria-hidden="true">|</span><button type="button" data-t="light" data-en="Light">Claro</button></div>
+</div>
+</div></header>
+<main>
+<h1 data-en="My body">O meu corpo</h1>
+<div class="stage">
+<div class="bodycol">
+<svg class="fig" viewBox="0 0 360 560" width="360" height="560" aria-label="Corpo" data-al-en="Body">
+<g class="sil" aria-hidden="true">
+<rect x="124" y="318" width="46" height="200" rx="23"/>
+<rect x="190" y="318" width="46" height="200" rx="23"/>
+<rect x="18" y="156" width="128" height="36" rx="18" transform="rotate(-20 146 174)"/>
+<rect x="214" y="156" width="128" height="36" rx="18" transform="rotate(20 214 174)"/>
+<rect x="108" y="140" width="144" height="200" rx="72"/>
+<rect x="163" y="110" width="34" height="40" rx="14"/>
+<ellipse cx="180" cy="68" rx="48" ry="52"/>
+</g>
+<g class="zone" data-organ="pele" tabindex="0" role="button">
+<path class="organ st-sem" d="M136 46C136 22 154 12 180 12c26 0 44 10 44 34-16-14-30-20-44-20s-28 6-44 20z"/>
+<ellipse class="organ st-sem" cx="62" cy="174" rx="16" ry="13" transform="rotate(-20 146 174)"/>
+</g>
+<g class="zone" data-organ="musculos" tabindex="0" role="button">
+<ellipse class="organ st-sem" cx="150" cy="436" rx="18" ry="30"/>
+<ellipse class="organ st-sem" cx="210" cy="436" rx="18" ry="30"/>
+</g>
+<g class="zone" data-organ="ossos" tabindex="0" role="button">
+<g class="organ st-sem">
+<ellipse cx="147" cy="468" rx="8" ry="8"/>
+<rect x="141" y="468" width="12" height="36" rx="6"/>
+<ellipse cx="147" cy="506" rx="8" ry="8"/>
+<ellipse cx="213" cy="468" rx="8" ry="8"/>
+<rect x="207" y="468" width="12" height="36" rx="6"/>
+<ellipse cx="213" cy="506" rx="8" ry="8"/>
+</g>
+</g>
+<g class="zone" data-organ="hormonios" tabindex="0" role="button">
+<ellipse class="organ st-sem" cx="180" cy="368" rx="24" ry="13"/>
+</g>
+<g class="zone" data-organ="intestino" tabindex="0" role="button">
+<path class="organ st-sem" d="M148 328c14-16 42-18 58-2 12 12 6 26-8 28-16 2-22-10-8-18 10-6 22 0 20 12-2 14-18 22-36 18-20-4-34-16-26-38z"/>
+</g>
+<g class="zone" data-organ="rins" tabindex="0" role="button">
+<ellipse class="organ st-sem" cx="124" cy="312" rx="12" ry="18"/>
+<ellipse class="organ st-sem" cx="236" cy="308" rx="12" ry="18"/>
+</g>
+<g class="zone" data-organ="figado" tabindex="0" role="button">
+<ellipse class="organ st-sem" cx="142" cy="268" rx="32" ry="22"/>
+</g>
+<g class="zone" data-organ="pancreas" tabindex="0" role="button">
+<ellipse class="organ st-sem" cx="198" cy="286" rx="24" ry="10"/>
+</g>
+<g class="zone" data-organ="pulmoes" tabindex="0" role="button">
+<ellipse class="organ st-sem" cx="146" cy="206" rx="26" ry="32"/>
+<path class="organ st-sem" d="M186 178c20-6 42 0 48 20 6 24 2 50-8 64-8 10-22 6-26-4-4-18-4-40-8-52-2-8-6-22-6-28z"/>
+</g>
+<g class="zone" data-organ="coracao" tabindex="0" role="button">
+<path class="organ st-sem" d="M214 196c-8-12-22-8-24 4-2-12-16-16-24-4-10 12-8 28 6 40l18 14 18-14c14-12 16-28 6-40z"/>
+</g>
+<g class="zone" data-organ="sangue" tabindex="0" role="button" transform="rotate(20 214 174)">
+<path class="organ st-sem" d="M300 165c0-10 8-16 8-16s8 6 8 16c0 8-8 14-8 14s-8-6-8-14z"/>
+</g>
+<g class="zone" data-organ="tiroide" tabindex="0" role="button">
+<g class="organ st-sem">
+<ellipse cx="164" cy="132" rx="12" ry="8"/>
+<ellipse cx="196" cy="132" rx="12" ry="8"/>
+<rect x="174" y="127" width="12" height="10" rx="3"/>
+</g>
+</g>
+<g class="zone" data-organ="olhos" tabindex="0" role="button">
+<ellipse class="organ st-sem" cx="162" cy="86" rx="10" ry="7"/>
+<ellipse class="organ st-sem" cx="198" cy="86" rx="10" ry="7"/>
+</g>
+<g class="zone" data-organ="cerebro" tabindex="0" role="button">
+<ellipse class="organ st-sem" cx="180" cy="60" rx="26" ry="20"/>
+</g>
+</svg>
+<ul class="legend">
+<li><i class="dot st-otimo" aria-hidden="true"></i><span data-en="Optimal">Ótimo</span></li>
+<li><i class="dot st-quase" aria-hidden="true"></i><span data-en="Nearly optimal">Quase ótimo</span></li>
+<li><i class="dot st-fora" aria-hidden="true"></i><span data-en="Outside optimal">Fora do ótimo</span></li>
+<li><i class="dot st-sem" aria-hidden="true"></i><span data-en="No data">Sem dados</span></li>
+</ul>
+<div class="org-chips" id="chips"></div>
+</div>
+<aside class="side">
+<p class="hint" id="hint" data-en="Choose a zone.">Escolhe uma zona.</p>
+<div class="sidebox" id="panel" hidden>
+<h2 id="oname"></h2>
+<div id="blocks"></div>
+</div>
+</aside>
+</div>
+</main>
+<script>
+let LANG='pt';try{if(localStorage.getItem('lang')==='en')LANG='en'}catch(e){}
+{const q=/[?&]lang=(en|pt)(?:&|#|$)/i.exec(location.search);if(q)LANG=q[1].toLowerCase()}
+let ORG=[], MARK=new Map(), TGT=new Map(), BP=null, CUR=null, COL={};
+const MES={pt:['','jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'],en:['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']};
+const SL={otimo:['ok','Ótimo','Optimal'],aceitavel:['warn','Aceitável','Acceptable'],fora_do_otimo:['warn','Fora do ótimo','Outside optimal'],fora_de_referencia:['bad','Fora da referência','Out of range'],sem_alvo:['na','Sem alvo','No target']};
+const ST={otimo:['okd','Ótimo','Optimal'],quase_otimo:['near','Quase ótimo','Nearly optimal'],fora:['warn','Fora do ótimo','Outside optimal'],sem_dados:['na','Sem dados','No data'],sem_medida:['na dim','Sem medida clínica','No clinical measure']};
+const FILL={otimo:'st-otimo',quase_otimo:'st-quase',fora:'st-fora',sem_dados:'st-sem'};
+function applyLang(){const en=LANG==='en';document.documentElement.lang=en?'en':'pt-PT';document.title=en?document.body.dataset.titleEn:document.body.dataset.titlePt;
+ document.querySelectorAll('[data-en]').forEach(el=>{if(!el.hasAttribute('data-pt'))el.setAttribute('data-pt',el.textContent);el.textContent=en?el.dataset.en:el.dataset.pt});
+ document.querySelectorAll('[data-al-en]').forEach(el=>{if(!el.hasAttribute('data-al-pt'))el.setAttribute('data-al-pt',el.getAttribute('aria-label')||'');el.setAttribute('aria-label',en?el.dataset.alEn:el.dataset.alPt)});
+ document.querySelectorAll('#lang button').forEach(b=>{const on=b.dataset.l===LANG;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});
+ labelZones()}
+document.querySelectorAll('#lang button').forEach(b=>b.addEventListener('click',()=>{if(LANG===b.dataset.l)return;LANG=b.dataset.l;try{localStorage.setItem('lang',LANG)}catch(e){}try{if(/[?&]lang=/i.test(location.search)){const u=new URL(location.href);u.searchParams.set('lang',LANG);history.replaceState(history.state,'',u)}}catch(e){}applyLang()}));
+const has=x=>x!==null&&x!==undefined&&x!=='';
+const isNum=v=>typeof v==='number'||/^\s*-?\d+(\.\d+)?\s*$/.test(String(v));
+const toNum=v=>typeof v==='number'?v:parseFloat(v);
+function estado(v,rmin,rmax,omin,omax,regras){regras=regras||[];if(!isNum(v))return 'sem_alvo';v=toNum(v);
+ if(regras.includes('acima_do_otimo_fora')&&has(omax)&&v>=omax)return 'fora_de_referencia';
+ if(regras.includes('sem_limite_inferior'))rmin=null;
+ if(!has(omin)&&!has(omax)&&!has(rmin)&&!has(rmax))return 'sem_alvo';
+ if((!has(omin)||v>=omin)&&(!has(omax)||v<=omax))return 'otimo';
+ if(!((!has(rmin)||v>=rmin)&&(!has(rmax)||v<=rmax)))return 'fora_de_referencia';
+ const lo=has(omin)?omin:0,marg=has(omax)?0.25*(omax-lo):0.10*Math.abs(omin),dist=(has(omin)&&v<omin)?omin-v:v-omax;
+ return dist<=marg?'aceitavel':'fora_do_otimo'}
+function stOf(m){const rs=(m.resultados||[]).slice().sort((a,b)=>a.data<b.data?-1:1);const r=rs[rs.length-1];if(!r)return null;
+ const s=(m.regras||[]).includes('sem_alvo')?'sem_alvo':(SL[r.s]?r.s:estado(r.v,r.ref_min,r.ref_max,m.otimo_min,m.otimo_max,m.regras));return {m,r,s}}
+function fmtVal(v){if(typeof v==='number'||/^-?\d+(\.\d+)?$/.test(String(v))){const s=String(v);return {pt:s.replace('.',','),en:s}}const s=String(v);return {pt:s,en:s}}
+function fmtDate(iso){const p=String(iso||'').split('-');if(p.length<3)return {pt:String(iso||''),en:String(iso||'')};const d=+p[2],m=+p[1],y=p[0];return {pt:d+' '+MES.pt[m]+' '+y,en:d+' '+MES.en[m]+' '+y}}
+function roll(arr){if(!arr.length)return 'sem_dados';const n=arr.length,nO=arr.filter(x=>x==='otimo').length,nF=arr.filter(x=>x==='fora').length;if(nO===n)return 'otimo';if(nF===0)return 'quase_otimo';if(nO>n/2)return 'quase_otimo';return 'fora'}
+function colourOf(o){const dec=(o.alvos||[]).map(id=>TGT.get(id)).filter(t=>t&&(t.estado==='otimo'||t.estado==='quase_otimo'||t.estado==='fora')).map(t=>t.estado);if(dec.length)return roll(dec);
+ const ms=(o.marcadores||[]).map(n=>MARK.get(n)).filter(Boolean).map(x=>x.s).filter(s=>s&&s!=='sem_alvo').map(s=>s==='otimo'?'otimo':s==='aceitavel'?'quase_otimo':'fora');return roll(ms)}
+function statusName(st){const s=ST[st]||ST.sem_dados;return LANG==='en'?s[2]:s[1]}
+function labelZones(){document.querySelectorAll('.zone').forEach(z=>{const o=ORG.find(x=>x.id===z.dataset.organ);if(!o)return;const name=LANG==='en'?o.en:o.pt;z.setAttribute('aria-label',name+(COL[o.id]?', '+statusName(COL[o.id]):''));z.setAttribute('aria-pressed',z.dataset.organ===CUR?'true':'false')});
+ document.querySelectorAll('#chips button').forEach(b=>{const o=ORG.find(x=>x.id===b.dataset.organ);if(!o)return;b.setAttribute('aria-label',(LANG==='en'?o.en:o.pt)+(COL[o.id]?', '+statusName(COL[o.id]):''))})}
+function pill(spec){const b=document.createElement('span');b.className='pill '+spec[0];b.textContent=spec[1];b.setAttribute('data-en',spec[2]);return b}
+function block(titlePt,titleEn){const s=document.createElement('section');s.className='blk';const h=document.createElement('h3');h.textContent=titlePt;h.setAttribute('data-en',titleEn);const ul=document.createElement('ul');ul.className='rows';s.append(h,ul);return {s,ul}}
+function renderPanel(id){const o=ORG.find(x=>x.id===id);if(!o)return;CUR=id;
+ document.getElementById('hint').hidden=true;
+ const box=document.getElementById('panel');box.hidden=false;box.classList.remove('in');void box.offsetWidth;box.classList.add('in');
+ const h=document.getElementById('oname');h.textContent='';
+ const nm=document.createElement('span');nm.textContent=o.pt;nm.setAttribute('data-en',o.en);h.append(nm,pill(ST[COL[id]]||ST.sem_dados));
+ const root=document.getElementById('blocks');root.textContent='';
+ const rows=[];
+ if(o.pressao&&BP)rows.push({kind:'bp'});
+ (o.marcadores||[]).forEach(n=>{const x=MARK.get(n);if(x)rows.push({kind:'m',x})});
+ if(rows.length){const b=block('Os meus resultados','My results');rows.forEach(row=>{
+  const li=document.createElement('li');const rk=document.createElement('div');rk.className='rk';const name=document.createElement('b');const meta=document.createElement('span');meta.className='meta';
+  if(row.kind==='bp'){name.textContent=BP.nome.pt;name.setAttribute('data-en',BP.nome.en);const num=fmtVal(BP.resultado.valor),dt=fmtDate(BP.resultado.data),unit=BP.resultado.unidade||'';
+   meta.textContent=((num.pt+' '+(unit)).trim()+' · '+dt.pt);meta.setAttribute('data-en',((num.en+' '+(unit)).trim()+' · '+dt.en));rk.append(name,meta);li.append(rk,pill(ST[BP.estado]||ST.sem_dados))}
+  else{const m=row.x.m,r=row.x.r,num=fmtVal(r.v),dt=fmtDate(r.data),unit=r.u||'';name.textContent=m.m;name.setAttribute('data-en',m.m_en||m.m);
+   meta.textContent=((num.pt+' '+(unit)).trim()+' · '+dt.pt);meta.setAttribute('data-en',((num.en+' '+(unit)).trim()+' · '+dt.en));rk.append(name,meta);li.append(rk,pill(SL[row.x.s]||SL.sem_alvo))}
+  b.ul.append(li)});root.append(b.s)}
+ const alvos=(o.alvos||[]).map(i=>TGT.get(i)).filter(Boolean);
+ if(alvos.length){const b=block('Objetivos ligados','Linked goals');alvos.forEach(t=>{const li=document.createElement('li');const a=document.createElement('a');a.href='inicio.html#'+t.id;a.textContent=t.nome.pt;a.setAttribute('data-en',t.nome.en);li.append(a,pill(ST[t.estado]||ST.sem_dados));b.ul.append(li)});root.append(b.s)}
+ if((o.genetica||[]).length){const b=block('Genética','Genetics');o.genetica.forEach(g=>{const li=document.createElement('li');const a=document.createElement('a');a.href=g.href;a.textContent=g.pt;a.setAttribute('data-en',g.en);li.append(a);b.ul.append(li)});root.append(b.s)}
+ document.querySelectorAll('.zone').forEach(z=>z.classList.toggle('on',z.dataset.organ===id));
+ document.querySelectorAll('#chips button').forEach(b=>{const on=b.dataset.organ===id;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on?'true':'false')});
+ applyLang();
+ if(window.matchMedia('(max-width:640px)').matches)document.getElementById('panel').scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+function select(id,push){if(!ORG.some(o=>o.id===id))return;renderPanel(id);try{const u=location.pathname+location.search+'#'+id;if(push)history.replaceState(history.state,'',u);else if(location.hash!=='#'+id)history.replaceState(history.state,'',u)}catch(e){}}
+function paint(){ORG.forEach(o=>{COL[o.id]=colourOf(o)});document.querySelectorAll('.zone').forEach(z=>{const cls=FILL[COL[z.dataset.organ]]||'st-sem';z.querySelectorAll('.organ').forEach(el=>{el.classList.remove('st-otimo','st-quase','st-fora','st-sem');el.classList.add(cls)})});
+ const chips=document.getElementById('chips');chips.textContent='';ORG.forEach(o=>{const b=document.createElement('button');b.type='button';b.dataset.organ=o.id;b.setAttribute('aria-pressed','false');const i=document.createElement('i');i.className='dot '+(FILL[COL[o.id]]||'st-sem');i.setAttribute('aria-hidden','true');const s=document.createElement('span');s.textContent=o.pt;s.setAttribute('data-en',o.en);b.append(i,s);b.addEventListener('click',()=>select(o.id,true));chips.append(b)});
+ const fig=document.querySelector('.fig');fig.addEventListener('click',e=>{const z=e.target.closest('.zone');if(z)select(z.dataset.organ,true)});
+ fig.addEventListener('keydown',e=>{const z=e.target.closest('.zone');if(!z)return;if(e.key==='Enter'||e.key===' '){e.preventDefault();select(z.dataset.organ,true)}});
+ const hid=(location.hash||'').replace(/^#/,'');if(ORG.some(o=>o.id===hid))select(hid,false);applyLang()}
+function indexData(sangue,objetivos){(sangue.marcadores||[]).forEach(m=>{const x=stOf(m);if(x)MARK.set(m.m,x)});
+ (objetivos.groups||[]).forEach(g=>(g.targets||[]).forEach(t=>{TGT.set(t.id,t);if(!BP)(t.medidas||[]).forEach(m=>{if(m.nome&&m.nome.pt==='Pressão arterial'&&m.resultado)BP=m})}))}
+Promise.all(['data/corpo.json','data/sangue.json','data/objetivos.json'].map(u=>fetch(u).then(r=>{if(!r.ok)throw 0;return r.json()}))).then(function(all){ORG=all[0].orgaos||[];indexData(all[1],all[2]);paint()}).catch(function(){});
+applyLang();
+let THEME=null;try{THEME=localStorage.getItem('theme')}catch(e){}
+const curTheme=()=>THEME==='dark'||THEME==='light'?THEME:'dark';
+function applyTheme(){const t=curTheme();document.documentElement.setAttribute('data-theme',t);document.querySelectorAll('#theme button').forEach(b=>{const on=b.dataset.t===t;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)})}
+document.querySelectorAll('#theme button').forEach(b=>b.addEventListener('click',()=>{THEME=b.dataset.t;try{localStorage.setItem('theme',THEME)}catch(e){}applyTheme()}));
+applyTheme();
+</script>
+<script>
+(function(){try{var W=window.SF_W;if(!W)return;W=String(W).replace(/\/+$/,'');
+ if(location.hash==='#toggle-goatcounter'){var off=localStorage.getItem('skipgc')==='t';if(off)localStorage.removeItem('skipgc');else localStorage.setItem('skipgc','t');alert(off?'Contagem ligada neste browser.':'Contagem desligada neste browser.')}
+ if(localStorage.getItem('skipgc')==='t'||navigator.webdriver||window!==window.top||location.protocol==='file:'||/^(localhost|127\.|10\.|192\.168\.|0\.0\.0\.0$|\[::1\]$)/.test(location.hostname))return;
+ var send=function(){try{var sc=window.screen||{},x={p:location.pathname,t:document.title,r:document.referrer||'',s:sc.width||0,w:sc.width||0,h:sc.height||0,d:window.devicePixelRatio||0,m:navigator.maxTouchPoints||0},u=W+'/e',ok=0,
+  go=function(){if(ok)return;ok=1;var d=JSON.stringify(x);if(navigator.sendBeacon&&navigator.sendBeacon(u,d))return;fetch(u,{method:'POST',body:d,keepalive:true,mode:'no-cors',credentials:'omit'}).catch(function(){})},
+  ud=navigator.userAgentData;
+  if(ud&&ud.getHighEntropyValues){setTimeout(go,800);ud.getHighEntropyValues(['model','platformVersion']).then(function(v){if(v&&v.model)x.mo=String(v.model).slice(0,40);if(v&&v.platformVersion)x.pv=String(v.platformVersion).slice(0,20);go()},go)}else go()}catch(_){}};
+ if(document.visibilityState==='prerender')document.addEventListener('visibilitychange',function f(){if(document.visibilityState!=='prerender'){document.removeEventListener('visibilitychange',f);send()}});
+ else if(document.readyState==='complete')send();else addEventListener('load',send)}catch(_){}})();
+</script>
+<script>document.addEventListener('click',function(e){document.querySelectorAll('details.dd[open]').forEach(function(d){if(!d.contains(e.target))d.removeAttribute('open')})});</script>
+<script src="assets/mobile.js"></script>
+</body>
+</html>

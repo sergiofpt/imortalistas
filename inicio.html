@@ -36,7 +36,7 @@ main{max-width:980px;margin:0 auto;padding:22px 20px 72px}
 h1{margin:0 0 18px;font-size:28px;letter-spacing:-.3px}
 h2 .n{display:inline-grid;place-items:center;width:1.65em;height:1.65em;margin-right:8px;border-radius:999px;background:var(--nab);color:var(--acc);font-size:12px;font-weight:700;vertical-align:1px}
 .objs{margin:0;padding:0;display:grid;gap:8px}
-.tgt{border:1px solid var(--line);border-radius:10px;background:var(--bg)}
+.tgt{border:1px solid var(--line);border-radius:10px;background:var(--bg);scroll-margin-top:88px}
 .tgt summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;padding:9px 12px}
 .tgt summary::-webkit-details-marker{display:none}
 .tgt summary::marker{content:""}
@@ -78,7 +78,7 @@ main a{color:var(--acc)}
 <body data-title-pt="Sérgio F · Objetivos" data-title-en="Sérgio F · Goals">
 <header class="top"><div class="topin">
 <nav class="main" id="nav">
-<a href="inicio.html" class="active" aria-current="page" data-en="Goals">Objetivos</a><a href="analises.html#sangue" data-en="Tests">Análises</a><a href="exames.html" data-en="Check-ups">Exames</a><details class="dd"><summary data-en="Genetics">Genética</summary><div class="ddmenu"><a href="genetica-reports.html" data-en="Genetics Reports">Genética Reports</a><a href="genetica-boa.html" data-en="Good Genetics">Genética Boa</a><a href="genetica.html" data-en="Bad Genetics">Genética Má</a></div></details><details class="dd"><summary data-en="Protocol">Protocolo</summary><div class="ddmenu"><a href="pele-cabelo.html" data-en="Skin and Hair">Pele e Cabelo</a><a href="sono.html" data-en="Sleep">Sono</a><a href="dieta.html" data-en="Diet">Dieta</a><a href="terapias.html" data-en="Therapies">Terapias</a><a href="treino.html" data-en="Training">Treino</a><a href="suplementos.html" data-en="Supplements + Medication">Suplementos + Medicação</a></div></details><a href="estudos.html" data-en="Studies">Estudos</a><a href="origem.html" data-en="Origin">Origem</a><details class="dd out"><summary data-en="Other">Outros</summary><div class="ddmenu"><a href="registo.html" data-en="Changelog">Registo de alterações</a><a href="comparador.html" data-en="Comparison">Comparador</a><a href="sinais.html" data-en="The 12 hallmarks">Os 12 sinais</a><a href="glossario.html" data-en="Glossary">Glossário</a><a href="ferramentas/index.html" data-en="Genetic tools">Ferramentas genéticas</a></div></details></nav>
+<a href="inicio.html" class="active" aria-current="page" data-en="Goals">Objetivos</a><a href="analises.html#sangue" data-en="Tests">Análises</a><a href="exames.html" data-en="Check-ups">Exames</a><details class="dd"><summary data-en="Genetics">Genética</summary><div class="ddmenu"><a href="genetica-reports.html" data-en="Genetics Reports">Genética Reports</a><a href="genetica-boa.html" data-en="Good Genetics">Genética Boa</a><a href="genetica.html" data-en="Bad Genetics">Genética Má</a></div></details><details class="dd"><summary data-en="Protocol">Protocolo</summary><div class="ddmenu"><a href="pele-cabelo.html" data-en="Skin and Hair">Pele e Cabelo</a><a href="sono.html" data-en="Sleep">Sono</a><a href="dieta.html" data-en="Diet">Dieta</a><a href="terapias.html" data-en="Therapies">Terapias</a><a href="treino.html" data-en="Training">Treino</a><a href="suplementos.html" data-en="Supplements + Medication">Suplementos + Medicação</a></div></details><a href="estudos.html" data-en="Studies">Estudos</a><a href="origem.html" data-en="Origin">Origem</a><details class="dd out"><summary data-en="Other">Outros</summary><div class="ddmenu"><a href="corpo.html" data-en="My body">O meu corpo</a><a href="registo.html" data-en="Changelog">Registo de alterações</a><a href="comparador.html" data-en="Comparison">Comparador</a><a href="sinais.html" data-en="The 12 hallmarks">Os 12 sinais</a><a href="glossario.html" data-en="Glossary">Glossário</a><a href="ferramentas/index.html" data-en="Genetic tools">Ferramentas genéticas</a></div></details></nav>
 <div class="tools">
 <div class="lang" id="lang" role="group" aria-label="Idioma / Language"><button type="button" data-l="pt" lang="pt-PT">Português</button><span class="sep" aria-hidden="true">|</span><button type="button" data-l="en" lang="en">English</button></div>
 <div class="lang" id="theme" role="group" aria-label="Tema" data-al-en="Theme"><button type="button" data-t="dark" data-en="Dark">Escuro</button><span class="sep" aria-hidden="true">|</span><button type="button" data-t="light" data-en="Light">Claro</button></div>
@@ -105,13 +105,13 @@ function renderObjetivos(data){
  function fmtNum(v){if(typeof v!=='number'){const s=String(v);return {pt:s,en:s}}const n=Math.abs(v-Math.round(v))<1e-6?String(Math.round(v)):String(v);return {pt:n.replace('.',','),en:n}}
  function fmtDate(iso){const p=iso.split('-'),d=+p[2],m=+p[1],y=p[0];return {pt:d+' '+MES.pt[m]+' '+y,en:d+' '+MES.en[m]+' '+y}}
  data.groups.forEach(function(g,i){
-  const sec=document.createElement('section');sec.className='card';sec.id=g.id;
+  const sec=document.createElement('section');sec.className='card';sec.id='grupo-'+g.id;
   const h2=document.createElement('h2');
   const n=document.createElement('span');n.className='n';n.setAttribute('aria-hidden','true');n.textContent=String(i+1);
   const gn=document.createElement('span');gn.textContent=g.nome.pt;gn.setAttribute('data-en',g.nome.en);h2.append(n,gn);
   const list=document.createElement('div');list.className='objs';
   g.targets.forEach(function(tg){
-   const det=document.createElement('details');det.className='tgt';
+   const det=document.createElement('details');det.className='tgt';det.id=tg.id;if(location.hash==='#'+tg.id)det.open=true;
    const sum=document.createElement('summary');
    const nm=document.createElement('span');nm.className='nm';nm.textContent=tg.nome.pt;nm.setAttribute('data-en',tg.nome.en);
    sum.append(nm,badge(tg.estado));
@@ -140,7 +140,10 @@ function renderObjetivos(data){
   });
   sec.append(h2,list);root.append(sec);
  });
+ const hid=(location.hash||'').replace(/^#/,'');
+ if(hid){const el=document.getElementById(hid);if(el&&el.tagName==='DETAILS')el.open=true}
 }
+addEventListener('hashchange',function(){const hid=(location.hash||'').replace(/^#/,'');if(!hid)return;const el=document.getElementById(hid);if(el&&el.tagName==='DETAILS'){el.open=true;el.scrollIntoView({block:'start'})}});
 fetch('data/objetivos.json').then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(data){renderObjetivos(data);applyLang()}).catch(function(){});
 applyLang();
 let THEME=null;try{THEME=localStorage.getItem('theme')}catch(e){}
