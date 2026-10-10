@@ -132,6 +132,11 @@ applyLang();
 <script>
 (function(){try{var W=window.SF_W;if(!W)return;W=String(W).replace(/\/+$/,'');
  if(location.hash==='#toggle-goatcounter'){var off=localStorage.getItem('skipgc')==='t';if(off)localStorage.removeItem('skipgc');else localStorage.setItem('skipgc','t');alert(off?'Contagem ligada neste browser.':'Contagem desligada neste browser.')}
+ var proprio=false;try{proprio=localStorage.getItem('sf_nao_contar')==='1'}catch(e){}
+ if(proprio){var marcar=function(a){try{var raw=a.getAttribute('href')||'';if(raw.indexOf('/r/')<0)return;var u=new URL(raw,location.href);if(!/\/r\/[^/?#]+\.pdf$/i.test(u.pathname)||u.searchParams.get('nc')==='1')return;u.searchParams.set('nc','1');a.href=u.href}catch(e){}};
+  var varrer=function(){document.querySelectorAll('a[href*="/r/"]').forEach(marcar)};
+  var armar=function(){varrer();document.addEventListener('click',function(ev){var n=ev.target,a=n&&n.closest?n.closest('a'):null;if(a)marcar(a)},true);if(window.MutationObserver)new MutationObserver(varrer).observe(document.documentElement,{childList:true,subtree:true})};
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',armar);else armar();return}
  if(localStorage.getItem('skipgc')==='t'||navigator.webdriver||window!==window.top||location.protocol==='file:'||/^(localhost|127\.|10\.|192\.168\.|0\.0\.0\.0$|\[::1\]$)/.test(location.hostname))return;
  var send=function(){try{var sc=window.screen||{},x={p:location.pathname,t:document.title,r:document.referrer||'',s:sc.width||0,w:sc.width||0,h:sc.height||0,d:window.devicePixelRatio||0,m:navigator.maxTouchPoints||0},u=W+'/e',ok=0,
   go=function(){if(ok)return;ok=1;var d=JSON.stringify(x);if(navigator.sendBeacon&&navigator.sendBeacon(u,d))return;fetch(u,{method:'POST',body:d,keepalive:true,mode:'no-cors',credentials:'omit'}).catch(function(){})},

@@ -117,6 +117,9 @@ h3{font-size:16px;margin:0;letter-spacing:-.1px}
 .empty{text-align:center;padding:44px 20px}.empty .big{font-size:42px;line-height:1;margin-bottom:10px}.empty b{display:block;font-size:18px;margin-bottom:6px}
 .err{color:var(--mut)}
 .note{font-size:12.5px;color:var(--mut);margin:6px 2px 0;line-height:1.6}
+#ncOwn{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:18px}
+#ncOwn button{font:inherit;font-size:12.5px;font-weight:650;border:1px solid var(--line);background:var(--card2);color:var(--ink);border-radius:999px;padding:5px 12px;cursor:pointer}
+#ncOwn button.on{background:var(--ink);color:var(--actfg);border-color:transparent}
 @media(max-width:1000px){.g4{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:640px){.topin{gap:4px 8px;padding:6px 12px;flex-wrap:wrap}.tools{order:-1;margin-left:auto;gap:10px}nav.main{flex:1 1 100%;order:2;flex-wrap:wrap;overflow:visible;gap:2px}nav.main a{padding:6px 10px}.lang{font-size:12.5px}.lang button{padding:5px 3px}
  main{padding:14px 12px 44px}.hero{padding:22px 20px;border-radius:18px}.hero h1{font-size:24px}.hero .meta{align-items:flex-start}.g3,.g2{grid-template-columns:1fr}.g4{gap:10px}
@@ -142,6 +145,7 @@ h3{font-size:16px;margin:0;letter-spacing:-.1px}
 <div class="meta"><span class="chip" id="sMeta"><span class="l-pt">A carregar…</span><span class="l-en">Loading…</span></span><span class="since" id="sDesde"></span></div>
 </div>
 <div id="sBody"><div class="card err"><span class="l-pt">A carregar data/estatisticas.json…</span><span class="l-en">Loading data/estatisticas.json…</span></div></div>
+<p class="note" id="ncOwn"></p>
 </main>
 
 <script>
@@ -285,10 +289,15 @@ function render(){const box=document.getElementById('sBody'),meta=document.getEl
   `<p class="note">${L('Fonte','Source')}: ${LIVE?L('ao vivo (Worker sf-site, cache de 60 s)','live (sf-site Worker, 60 s cache)'):'data/estatisticas.json'} · ${L('contagem anónima, sem cookies; cada visita e cada abertura de PDF conta (são aberturas e visitas totais, não visitantes únicos); países, browsers, sistemas e tamanhos de ecrã somam visitas e aberturas; aparelhos somam só visitas; esta página não é contada.','anonymous count, no cookies; every visit and every PDF open counts (total visits and opens, not unique visitors); countries, browsers, systems and screen sizes add up visits and opens; devices add up visits only; this page is not counted.')}</p>`;
  document.querySelectorAll('#sDias button').forEach(b=>b.addEventListener('click',()=>{DIAS=Number(b.dataset.d);render()}));ligar();
 }
+function paintNc(){const nao=(()=>{try{return localStorage.getItem('sf_nao_contar')==='1'}catch(e){return false}})();
+ const el=document.getElementById('ncOwn');if(!el)return;
+ el.innerHTML=`<span>${nao?L('Este aparelho NÃO conta nas estatísticas.','This device is NOT counted in the statistics.'):L('Este aparelho conta nas estatísticas.','This device is counted in the statistics.')}</span><button type="button" id="ncStop" class="${nao?'on':''}">${L('Não contar','Don’t count')}</button><button type="button" id="ncGo" class="${nao?'':'on'}">${L('Contar','Count')}</button>`;
+ el.querySelector('#ncStop').addEventListener('click',()=>{try{localStorage.setItem('sf_nao_contar','1')}catch(e){}paintNc()});
+ el.querySelector('#ncGo').addEventListener('click',()=>{try{localStorage.removeItem('sf_nao_contar')}catch(e){}paintNc()})}
 function applyLang(){const en=LANG==='en';document.documentElement.lang=en?'en':'pt-PT';document.title=en?document.body.dataset.titleEn:document.body.dataset.titlePt;
  document.querySelectorAll('[data-en]').forEach(el=>{if(!el.hasAttribute('data-pt'))el.setAttribute('data-pt',el.textContent);el.textContent=en?el.dataset.en:el.dataset.pt});
  document.querySelectorAll('[data-al-en]').forEach(el=>{if(!el.hasAttribute('data-al-pt'))el.setAttribute('data-al-pt',el.getAttribute('aria-label'));el.setAttribute('aria-label',en?el.dataset.alEn:el.dataset.alPt)});
- document.querySelectorAll('#lang button').forEach(b=>{const on=b.dataset.l===LANG;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});render()}
+ document.querySelectorAll('#lang button').forEach(b=>{const on=b.dataset.l===LANG;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});render();paintNc()}
 document.querySelectorAll('#lang button').forEach(b=>b.addEventListener('click',()=>{if(LANG===b.dataset.l)return;LANG=b.dataset.l;try{localStorage.setItem('lang',LANG)}catch(e){}try{if(/[?&]lang=/i.test(location.search)){const u=new URL(location.href);u.searchParams.set('lang',LANG);history.replaceState(history.state,'',u)}}catch(e){}applyLang()}));
 applyLang();
 let ESTR=innerWidth<640;addEventListener('resize',()=>{const e=innerWidth<640;if(e!==ESTR){ESTR=e;render()}});  // gráfico mais alto em ecrãs estreitos
