@@ -10,6 +10,8 @@ GOATCOUNTER_TOKEN (variável de ambiente; nunca é escrito em lado nenhum). Só 
   (03-10-2026 23:00 PT; antes disso as visitas não têm origem e só contam no geral). Os totais gerais não mudam (origem/… é ignorado).
 - Sem cortes: todos os caminhos (hits, paginação com exclude_paths até more=false) e listas completas de países / browsers / sistemas /
   tamanhos / origens (offset até more=false); páginas e aparelhos ficam todos no JSON, desde 01-10-2026 (sem janela de 366 dias).
+- Caminhos de página: /imortalistas/x (GitHub Pages) e /x (imortalistas.com) somam-se; /, /index.html e /imortalistas são a entrada.
+  reports/, download/ e aparelho/ continuam eventos, mesmo com o prefixo /imortalistas à frente.
 - Sem IPs nem dados pessoais: só contagens agregadas, nomes de páginas, ficheiros de relatórios, países, browsers, sistemas,
   tamanhos de ecrã e nomes de sites de origem (sem caminhos nem parâmetros).
 - Tolerante: conta sem dados = JSON com zeros (a API responde 404 a /stats/* enquanto o site não tem dados: conta como "sem dados"); erro na API ou token em falta = aviso e saída 0, sem tocar no JSON anterior;
@@ -93,6 +95,34 @@ def inteiro(x):
     try: return max(0, int(x))
     except (TypeError, ValueError): return 0
 
+def sem_prefixo_site(resto):
+    """Tira um ou mais prefixos imortalistas/ (o caminho no github.io; imortalistas.com não o tem)."""
+    p = str(resto or '').lstrip('/')
+    while p.lower() == 'imortalistas' or p.lower().startswith('imortalistas/'):
+        p = p[len('imortalistas'):].lstrip('/')
+    return p
+
+def normalizar_caminho(path):
+    """Caminho canónico de uma página: sem esquema, query, hash nem prefixo /imortalistas.
+
+    /, /index.html, /imortalistas e /imortalistas/ ficam /. /pasta e /pasta/index.html ficam /pasta/index.html
+    quando esse ficheiro existe. Não usar em eventos (reports/, download/, aparelho/).
+    """
+    p = nome_limpo(str(path or '').split('?')[0].split('#')[0])
+    p = re.sub(r'^[a-z][a-z0-9+.-]*://[^/]+', '', p, flags=re.I)
+    if not p.startswith('/'):
+        p = '/' + p
+    p = '/' + sem_prefixo_site(p)
+    if p != '/' and p.endswith('/'):
+        p = p[:-1]
+    if p in ('/index.html', ''):
+        p = '/'
+    if p != '/' and not p.lower().endswith('.html'):
+        rel = p.lstrip('/') + '/index.html'
+        if os.path.isfile(os.path.join(RAIZ, rel)):
+            p = '/' + rel
+    return p or '/'
+
 def lista_stats(token, pagina, ini, fim, origem=False, incluir=None):
     """Lista completa (sem corte): 100 de cada vez, com offset, até a API dizer more=false."""
     todos, off = [], 0
@@ -159,10 +189,11 @@ def _recolher(token, hoje, ini_dt, ini, fim):
     for h in hits:
         mo = RE_OR.match(str(h.get('path') or '')) if h.get('event') else None
         if not mo: continue
-        # página do site (com ou sem o prefixo /imortalistas do GitHub Pages); reports/, download/ e aparelho/ continuam eventos
-        resto = mo.group(2).lstrip('/')
-        pag = resto.startswith('imortalistas/') or not resto.startswith(('reports/', 'download/', 'aparelho/'))
-        grupos[mo.group(1)].append(dict(h, path=('/' + resto) if pag else resto, event=not pag))
+        # página do site, com ou sem o prefixo /imortalistas; reports/, download/ e aparelho/ continuam eventos
+        base = sem_prefixo_site(mo.group(2)).split('?')[0].split('#')[0]
+        evento = base.startswith(('reports/', 'download/', 'aparelho/'))
+        caminho = base if evento else normalizar_caminho('/' + base if base else '/')
+        grupos[mo.group(1)].append(dict(h, path=caminho, event=evento))
         for x in h.get('stats') or []:
             dia = str(x.get('day') or '')[:10]
             if re.match(r'^\d{4}-\d{2}-\d{2}$', dia) and inteiro(x.get('daily')) > 0: or_dias.add(dia)
@@ -179,7 +210,9 @@ def agregar(hits, fich, hoje):
     paginas, rel, por_dia, pdf_dia, aps, ap_dias = {}, {}, {}, {}, {}, set()
     for h in hits:
         path, n = str(h.get('path') or ''), inteiro(h.get('count'))
-        ma = RE_AP.match(path) if h.get('event') else None
+        # eventos também podem vir com o prefixo /imortalistas (github.io); imortalistas.com não o traz
+        alvo = sem_prefixo_site(path.split('?')[0].split('#')[0]) if h.get('event') else path
+        ma = RE_AP.match(alvo) if h.get('event') else None
         if ma:
             k = ma.group(1) + '/' + ma.group(2)
             nome = nome_limpo(h.get('title') or ma.group(2))[:60]
@@ -190,10 +223,10 @@ def agregar(hits, fich, hoje):
                 if re.match(r'^\d{4}-\d{2}-\d{2}$', dia) and inteiro(s.get('daily')) > 0: ap_dias.add(dia)
             continue
         if h.get('event'):
-            m, tipo = RE_PDF.match(path), 'abertos'
+            m, tipo = RE_PDF.match(alvo), 'abertos'
             if m: f = m.group(1)
             else:
-                m, tipo = RE_DL.match(path), 'descarregados'
+                m, tipo = RE_DL.match(alvo), 'descarregados'
                 if not m: continue
                 f = 'reports/' + m.group(1)
             rid, lng = fich.get(f, (None, 'en' if f.endswith('_en.pdf') else 'pt'))
@@ -205,7 +238,7 @@ def agregar(hits, fich, hoje):
                 dia = str(s.get('day') or '')[:10]
                 if re.match(r'^\d{4}-\d{2}-\d{2}$', dia): pdf_dia[dia] = pdf_dia.get(dia, 0) + inteiro(s.get('daily'))
         else:
-            p = nome_limpo(path.split('?')[0].split('#')[0])
+            p = normalizar_caminho(path)
             paginas[p] = paginas.get(p, 0) + n
             for s in h.get('stats') or []:
                 dia = str(s.get('day') or '')[:10]
