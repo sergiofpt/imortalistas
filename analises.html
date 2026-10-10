@@ -137,6 +137,7 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 #relogio svg{width:100%;max-width:560px;height:auto;background:var(--card);border:1px solid var(--line);border-radius:10px;display:block;margin-top:14px}
 @media(max-width:640px){.relogio-fig{font-size:28px}.relogio-hero{padding:14px}}
 </style>
+<link rel="stylesheet" href="assets/mobile.css">
 </head>
 <body>
 <header class="top"><div class="topin">
@@ -432,5 +433,6 @@ applyTheme();
  else if(document.readyState==='complete')send();else addEventListener('load',send)}catch(_){}})();
 </script>
 <script>document.addEventListener('click',function(e){document.querySelectorAll('details.dd[open]').forEach(function(d){if(!d.contains(e.target))d.removeAttribute('open')})});</script>
+<script src="assets/mobile.js"></script>
 </body>
 </html>

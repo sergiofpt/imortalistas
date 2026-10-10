@@ -168,7 +168,8 @@ table.t8{width:100%;border-collapse:collapse;font-size:12.5px}table.t8 td,table.
 .tr9{cursor:pointer}details summary{cursor:pointer;color:var(--mu)}
 @media(max-width:600px){.grid3{grid-template-columns:1fr 1fr 1fr}.k9 b{font-size:15px}.hero9 .big{font-size:21px}}
 .nb9{font-size:10px;font-weight:700;fill:#fff;pointer-events:none}
-</style></head><body>
+</style><link rel="stylesheet" href="../mobile.css">
+</head><body>
 <div id="app">
 <header><div><h1 id="htitle">Ancestralidade</h1><small>Sérgio F</small></div><button class="btn" id="share">Partilhar</button></header>
 <nav id="tabs">
@@ -871,4 +872,5 @@ if(location.hash.startsWith('#selftest')){setTimeout(()=>{const r=[];const v=id=
   $('#share').click();r.push('share:'+(window._shareURL||'').length);
   if(location.hash=='#selftest-share'){document.body.innerHTML='<img id="si" src="'+window._shareURL+'" style="width:540px">';}
   document.body.dataset.test=r.join(' ');console.log('SELFTEST '+r.join(' '))},900)},500)}
-</script></body></html>
+</script><script src="../mobile.js"></script>
+</body></html>

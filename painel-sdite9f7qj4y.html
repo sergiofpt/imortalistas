@@ -123,6 +123,7 @@ h3{font-size:16px;margin:0;letter-spacing:-.1px}
  .kpi{padding:14px 14px 12px}.kpi .v{font-size:30px;margin:8px 0 2px}.kpi .ico{width:32px;height:32px;font-size:16px;border-radius:10px}.kpi .k{font-size:11px}.kpi .s{font-size:12px}.card{padding:15px 14px}.rk .tot{font-size:19px}}
 @media(max-width:360px){.g4{grid-template-columns:1fr}}
 </style>
+<link rel="stylesheet" href="assets/mobile.css">
 </head>
 <body data-title-pt="Sérgio F · Estatísticas" data-title-en="Sérgio F · Statistics">
 <!-- página escondida: fora do menu, sem ligações a partir das outras páginas, sem contagem de visitas; dados AO VIVO do Worker sf-site (GET /s/<chave>, cache de 60 s; só no site publicado) e, se falhar, data/estatisticas.json (workflow de 15 em 15 minutos, reserva) -->
@@ -288,5 +289,6 @@ document.querySelectorAll('#theme button').forEach(b=>b.addEventListener('click'
 applyTheme();
 </script>
 <script>document.addEventListener('click',function(e){document.querySelectorAll('details.dd[open]').forEach(function(d){if(!d.contains(e.target))d.removeAttribute('open')})});</script>
+<script src="assets/mobile.js"></script>
 </body>
 </html>

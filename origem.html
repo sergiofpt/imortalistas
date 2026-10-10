@@ -47,6 +47,7 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 main a{color:var(--acc)}
 @media(max-width:640px){html{scroll-padding-top:148px}.topin{gap:4px 8px;padding:6px 12px;flex-wrap:wrap}.tools{order:-1;margin-left:auto;gap:10px}nav.main{flex:1 1 100%;order:2;flex-wrap:wrap;gap:2px}nav.main a,.dd summary{padding:6px 10px}h1{font-size:24px}}
 </style>
+<link rel="stylesheet" href="assets/mobile.css">
 </head>
 <body data-title-pt="Origem" data-title-en="Origin">
 <header class="top"><div class="topin">
@@ -60,7 +61,7 @@ main a{color:var(--acc)}
 <main>
 <h1 data-en="Origin">Origem</h1>
 <p class="lead" data-en="Interactive genetic ancestry map.">Mapa interativo de ancestralidade genética.</p>
-<iframe class="app" src="assets/origem/origem-app.html" title="Origem"></iframe>
+<iframe class="app" data-src="assets/origem/origem-app.html" title="Origem" loading="lazy"></iframe>
 <p class="full"><a href="assets/origem/origem-app.html" data-en="Open full screen">Abrir em ecrã inteiro</a></p>
 </main>
 <script>
@@ -90,5 +91,6 @@ applyLang();
  else if(document.readyState==='complete')send();else addEventListener('load',send)}catch(_){}})();
 </script>
 <script>document.addEventListener('click',function(e){document.querySelectorAll('details.dd[open]').forEach(function(d){if(!d.contains(e.target))d.removeAttribute('open')})});</script>
+<script src="assets/mobile.js"></script>
 </body>
 </html>
