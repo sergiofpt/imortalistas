@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-10T03:18:44Z",
+ "atualizado_em": "2026-10-10T03:49:19Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 64,
   "visitas_30d": 64,
   "visitas_90d": 64,
-  "aberturas_pdf": 434,
+  "aberturas_pdf": 439,
   "visitas_hoje": 2,
   "visitas_7d": 47,
-  "aberturas_hoje": 28,
-  "aberturas_7d": 423,
-  "aberturas_30d": 434,
-  "pdf_abertos": 219,
+  "aberturas_hoje": 33,
+  "aberturas_7d": 428,
+  "aberturas_30d": 439,
+  "pdf_abertos": 224,
   "pdf_descarregados": 215,
-  "pdf_pt": 196,
+  "pdf_pt": 201,
   "pdf_en": 238
  },
  "dias": [
@@ -67,7 +67,7 @@
   {
    "dia": "2026-10-10",
    "visitas": 2,
-   "aberturas": 28
+   "aberturas": 33
   }
  ],
  "paginas": [
@@ -132,10 +132,10 @@
   {
    "id": "imortalidade",
    "ficheiro": null,
-   "pt": 7,
+   "pt": 8,
    "en": 5,
-   "total": 12,
-   "abertos_pt": 6,
+   "total": 13,
+   "abertos_pt": 7,
    "abertos_en": 4,
    "descarregados_pt": 1,
    "descarregados_en": 1
@@ -230,6 +230,17 @@
   },
   {
    "id": "psicadelicos",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "resposta-treino-vo2max",
    "ficheiro": null,
    "pt": 3,
    "en": 2,
@@ -493,6 +504,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "funcao-sexual-eretil",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "globulos-vermelhos-hemoglobina-plaquetas",
    "ficheiro": null,
    "pt": 2,
@@ -725,17 +747,6 @@
   },
   {
    "id": "reparacao-adn-estabilidade-genoma",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "resposta-treino-vo2max",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -1032,17 +1043,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "funcao-sexual-eretil",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "gaba-glutamato",
    "ficheiro": null,
    "pt": 1,
@@ -1175,6 +1175,17 @@
    "descarregados_en": 0
   },
   {
+   "id": "mitocondrias-energia",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "oxitocina-comportamento-social",
    "ficheiro": null,
    "pt": 1,
@@ -1216,6 +1227,17 @@
    "abertos_pt": 0,
    "abertos_en": 1,
    "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "relogio-epigenetico-idade-biologica",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -1373,17 +1395,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "mitocondrias-energia",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 2,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "musculo-osso-sarcopenia",
    "ficheiro": null,
    "pt": 1,
@@ -1393,17 +1404,6 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 0
-  },
-  {
-   "id": "relogio-epigenetico-idade-biologica",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 2,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
   },
   {
    "id": "saude-oral-dentes-periodontite",
@@ -1560,7 +1560,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 410
+   "visitas": 415
   },
   {
    "id": "PT",
@@ -1612,7 +1612,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 468
+   "visitas": 473
   },
   {
    "id": "Firefox",
@@ -1629,12 +1629,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 275
+   "visitas": 277
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 183
+   "visitas": 186
   },
   {
    "id": "Android",
@@ -1676,14 +1676,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 433
+   "visitas": 438
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 487
+   "visitas": 492
   },
   {
    "id": "https://bing.com",
@@ -2040,7 +2040,7 @@
     {
      "dia": "2026-10-10",
      "visitas": 2,
-     "aberturas": 28
+     "aberturas": 33
     }
    ],
    "paginas": [
@@ -2107,6 +2107,17 @@
     },
     {
      "id": "cancros-um-a-um",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 3,
+     "total": 5,
+     "abertos_pt": 1,
+     "abertos_en": 2,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "imortalidade",
      "ficheiro": null,
      "pt": 2,
      "en": 3,
@@ -2403,17 +2414,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "imortalidade",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 3,
-     "total": 4,
-     "abertos_pt": 0,
-     "abertos_en": 2,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "impulsividade-recompensa-vicio",
      "ficheiro": null,
      "pt": 2,
@@ -2602,6 +2602,17 @@
     },
     {
      "id": "reparacao-adn-estabilidade-genoma",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "resposta-treino-vo2max",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -2942,6 +2953,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "funcao-sexual-eretil",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "gaba-glutamato",
      "ficheiro": null,
      "pt": 1,
@@ -3107,6 +3129,17 @@
      "descarregados_en": 0
     },
     {
+     "id": "mitocondrias-energia",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "oxitocina-comportamento-social",
      "ficheiro": null,
      "pt": 1,
@@ -3151,14 +3184,14 @@
      "descarregados_en": 1
     },
     {
-     "id": "resposta-treino-vo2max",
+     "id": "relogio-epigenetico-idade-biologica",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
      "total": 3,
-     "abertos_pt": 0,
+     "abertos_pt": 1,
      "abertos_en": 1,
-     "descarregados_pt": 1,
+     "descarregados_pt": 0,
      "descarregados_en": 1
     },
     {
@@ -3316,29 +3349,7 @@
      "descarregados_en": 1
     },
     {
-     "id": "funcao-sexual-eretil",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "gordura-inflamatoria-lipolise",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "mitocondrias-energia",
      "ficheiro": null,
      "pt": 0,
      "en": 2,
@@ -3358,17 +3369,6 @@
      "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 0
-    },
-    {
-     "id": "relogio-epigenetico-idade-biologica",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
     },
     {
      "id": "saude-oral-dentes-periodontite",
@@ -3505,22 +3505,22 @@
     "visitas": 40,
     "visitas_30d": 40,
     "visitas_90d": 40,
-    "aberturas_pdf": 408,
+    "aberturas_pdf": 413,
     "visitas_hoje": 2,
     "visitas_7d": 37,
-    "aberturas_hoje": 28,
-    "aberturas_7d": 408,
-    "aberturas_30d": 408,
-    "pdf_abertos": 193,
+    "aberturas_hoje": 33,
+    "aberturas_7d": 413,
+    "aberturas_30d": 413,
+    "pdf_abertos": 198,
     "pdf_descarregados": 215,
-    "pdf_pt": 172,
+    "pdf_pt": 177,
     "pdf_en": 236
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 410
+     "visitas": 415
     },
     {
      "id": "US",
