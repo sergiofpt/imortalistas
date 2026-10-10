@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-10T01:34:57Z",
+ "atualizado_em": "2026-10-10T01:58:55Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 63,
   "visitas_30d": 63,
   "visitas_90d": 63,
-  "aberturas_pdf": 420,
+  "aberturas_pdf": 421,
   "visitas_hoje": 1,
   "visitas_7d": 46,
-  "aberturas_hoje": 14,
-  "aberturas_7d": 409,
-  "aberturas_30d": 420,
-  "pdf_abertos": 205,
+  "aberturas_hoje": 15,
+  "aberturas_7d": 410,
+  "aberturas_30d": 421,
+  "pdf_abertos": 206,
   "pdf_descarregados": 215,
-  "pdf_pt": 182,
+  "pdf_pt": 183,
   "pdf_en": 238
  },
  "dias": [
@@ -67,7 +67,7 @@
   {
    "dia": "2026-10-10",
    "visitas": 1,
-   "aberturas": 14
+   "aberturas": 15
   }
  ],
  "paginas": [
@@ -1336,6 +1336,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "visao-audicao",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "dermatite-seborreica-microbioma-pele",
    "ficheiro": null,
    "pt": 0,
@@ -1403,17 +1414,6 @@
   },
   {
    "id": "stress-oxidativo-defesa-antioxidante",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 2,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "visao-audicao",
    "ficheiro": null,
    "pt": 0,
    "en": 2,
@@ -1556,7 +1556,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 395
+   "visitas": 396
   },
   {
    "id": "PT",
@@ -1608,7 +1608,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 453
+   "visitas": 454
   },
   {
    "id": "Firefox",
@@ -1625,7 +1625,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 265
+   "visitas": 266
   },
   {
    "id": "macOS",
@@ -1672,14 +1672,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 419
+   "visitas": 420
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 472
+   "visitas": 473
   },
   {
    "id": "https://bing.com",
@@ -2036,7 +2036,7 @@
     {
      "dia": "2026-10-10",
      "visitas": 1,
-     "aberturas": 14
+     "aberturas": 15
     }
    ],
    "paginas": [
@@ -3275,6 +3275,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "visao-audicao",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "dermatite-seborreica-microbioma-pele",
      "ficheiro": null,
      "pt": 0,
@@ -3364,17 +3375,6 @@
     },
     {
      "id": "stress-oxidativo-defesa-antioxidante",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "visao-audicao",
      "ficheiro": null,
      "pt": 0,
      "en": 2,
@@ -3497,22 +3497,22 @@
     "visitas": 39,
     "visitas_30d": 39,
     "visitas_90d": 39,
-    "aberturas_pdf": 394,
+    "aberturas_pdf": 395,
     "visitas_hoje": 1,
     "visitas_7d": 36,
-    "aberturas_hoje": 14,
-    "aberturas_7d": 394,
-    "aberturas_30d": 394,
-    "pdf_abertos": 179,
+    "aberturas_hoje": 15,
+    "aberturas_7d": 395,
+    "aberturas_30d": 395,
+    "pdf_abertos": 180,
     "pdf_descarregados": 215,
-    "pdf_pt": 158,
+    "pdf_pt": 159,
     "pdf_en": 236
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 395
+     "visitas": 396
     },
     {
      "id": "US",
