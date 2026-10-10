@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-10T08:00:43Z",
+ "atualizado_em": "2026-10-10T08:22:11Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 64,
   "visitas_30d": 64,
   "visitas_90d": 64,
-  "aberturas_pdf": 466,
+  "aberturas_pdf": 469,
   "visitas_hoje": 2,
   "visitas_7d": 47,
-  "aberturas_hoje": 60,
-  "aberturas_7d": 455,
-  "aberturas_30d": 466,
-  "pdf_abertos": 251,
+  "aberturas_hoje": 63,
+  "aberturas_7d": 458,
+  "aberturas_30d": 469,
+  "pdf_abertos": 254,
   "pdf_descarregados": 215,
-  "pdf_pt": 228,
+  "pdf_pt": 231,
   "pdf_en": 238
  },
  "dias": [
@@ -67,7 +67,7 @@
   {
    "dia": "2026-10-10",
    "visitas": 2,
-   "aberturas": 60
+   "aberturas": 63
   }
  ],
  "paginas": [
@@ -417,6 +417,17 @@
   },
   {
    "id": "cafeina-estimulantes",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "capacidade-cognitiva-plasticidade",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -1010,6 +1021,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "termogenese-gordura-castanha",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "termorregulacao-sudorese",
    "ficheiro": null,
    "pt": 2,
@@ -1054,6 +1076,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "velocidade-processamento-tempo-reacao",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "vesicula-biliar-calculos",
    "ficheiro": null,
    "pt": 2,
@@ -1088,17 +1121,6 @@
   },
   {
    "id": "audicao-zumbido",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "capacidade-cognitiva-plasticidade",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -1373,17 +1395,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "termogenese-gordura-castanha",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "unhas-cicatrizacao-inflamacao-pele",
    "ficheiro": null,
    "pt": 1,
@@ -1392,17 +1403,6 @@
    "abertos_pt": 1,
    "abertos_en": 1,
    "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "velocidade-processamento-tempo-reacao",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
    "descarregados_en": 1
   },
   {
@@ -1560,7 +1560,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 442
+   "visitas": 445
   },
   {
    "id": "PT",
@@ -1612,7 +1612,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 500
+   "visitas": 503
   },
   {
    "id": "Firefox",
@@ -1629,12 +1629,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 287
+   "visitas": 288
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 203
+   "visitas": 205
   },
   {
    "id": "Android",
@@ -1676,14 +1676,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 465
+   "visitas": 468
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 519
+   "visitas": 522
   },
   {
    "id": "https://bing.com",
@@ -2040,7 +2040,7 @@
     {
      "dia": "2026-10-10",
      "visitas": 2,
-     "aberturas": 60
+     "aberturas": 63
     }
    ],
    "paginas": [
@@ -2283,6 +2283,17 @@
     },
     {
      "id": "cafeina-estimulantes",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "capacidade-cognitiva-plasticidade",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -2909,6 +2920,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "termogenese-gordura-castanha",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "termorregulacao-sudorese",
      "ficheiro": null,
      "pt": 2,
@@ -2943,6 +2965,17 @@
     },
     {
      "id": "valvulas-cardiacas",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "velocidade-processamento-tempo-reacao",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -2998,17 +3031,6 @@
     },
     {
      "id": "audicao-zumbido",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "capacidade-cognitiva-plasticidade",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -3338,17 +3360,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "termogenese-gordura-castanha",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "unhas-cicatrizacao-inflamacao-pele",
      "ficheiro": null,
      "pt": 1,
@@ -3357,17 +3368,6 @@
      "abertos_pt": 1,
      "abertos_en": 1,
      "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "velocidade-processamento-tempo-reacao",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
      "descarregados_en": 1
     },
     {
@@ -3505,22 +3505,22 @@
     "visitas": 40,
     "visitas_30d": 40,
     "visitas_90d": 40,
-    "aberturas_pdf": 440,
+    "aberturas_pdf": 443,
     "visitas_hoje": 2,
     "visitas_7d": 37,
-    "aberturas_hoje": 60,
-    "aberturas_7d": 440,
-    "aberturas_30d": 440,
-    "pdf_abertos": 225,
+    "aberturas_hoje": 63,
+    "aberturas_7d": 443,
+    "aberturas_30d": 443,
+    "pdf_abertos": 228,
     "pdf_descarregados": 215,
-    "pdf_pt": 204,
+    "pdf_pt": 207,
     "pdf_en": 236
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 442
+     "visitas": 445
     },
     {
      "id": "US",
