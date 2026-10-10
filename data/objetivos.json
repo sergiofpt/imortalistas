@@ -1817,8 +1817,12 @@
         "en": "< 120/80 mmHg"
        },
        "fonte": "https://doi.org/10.1161/CIR.0000000000001078",
-       "resultado": null,
-       "estado": "sem_dados"
+       "resultado": {
+        "valor": "100/58",
+        "unidade": "mmHg",
+        "data": "2026-10-10"
+       },
+       "estado": "otimo"
       }
      ],
      "estado": "fora"
@@ -2768,8 +2772,12 @@
         "en": "< 120/80 mmHg"
        },
        "fonte": "https://doi.org/10.1161/CIR.0000000000001078",
-       "resultado": null,
-       "estado": "sem_dados"
+       "resultado": {
+        "valor": "100/58",
+        "unidade": "mmHg",
+        "data": "2026-10-10"
+       },
+       "estado": "otimo"
       },
       {
        "nome": {
