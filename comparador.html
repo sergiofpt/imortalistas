@@ -64,6 +64,7 @@ html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
 .lang .sep{color:var(--na)}
 @media(max-width:640px){html{scroll-padding-top:148px}.topin{gap:4px 8px;padding:6px 12px;flex-wrap:wrap}.tools{order:-1;margin-left:auto;gap:10px}nav.main{flex:1 1 100%;order:2;flex-wrap:wrap;gap:2px}nav.main a,.dd summary{padding:6px 10px}h1{font-size:24px}.pick{display:flex}.col.off{display:none}.col{padding:8px}}
 </style>
+<link rel="stylesheet" href="assets/mobile.css">
 </head>
 <body data-title-pt="Comparador" data-title-en="Comparison">
 <header class="top"><div class="topin">
@@ -164,5 +165,6 @@ fetch('data/comparador.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Err
  else if(document.readyState==='complete')send();else addEventListener('load',send)}catch(_){}})();
 </script>
 <script>document.addEventListener('click',function(e){document.querySelectorAll('details.dd[open]').forEach(function(d){if(!d.contains(e.target))d.removeAttribute('open')})});</script>
+<script src="assets/mobile.js"></script>
 </body>
 </html>

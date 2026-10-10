@@ -1,0 +1,83 @@
+/* Phone layout only. Desktop (wider than 640px) is unchanged. */
+@media (max-width: 640px) {
+  html { scroll-padding-top: 220px; }
+  header.top .topin { align-items: flex-start; }
+  header.top .tools { flex-wrap: wrap; justify-content: flex-end; max-width: 100%; row-gap: 0; }
+  header.top nav.main a,
+  header.top .dd summary {
+    min-height: 44px;
+    padding: 10px 12px;
+    font-size: 15px;
+    box-sizing: border-box;
+  }
+  header.top .dd summary { display: inline-flex; align-items: center; }
+  header.top nav.main .ddmenu a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    font-size: 15px;
+    white-space: normal;
+  }
+  header.top .lang button {
+    min-height: 44px;
+    min-width: 44px;
+    padding: 8px 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  .small, .tiny, .nota, .ano, .note, .rule, .src, .count, footer,
+  .legend, .await, .k, .sub, .pill, .freq, th, .pstat, .study .ano,
+  .term p, .study p, td.small, .mut.small, p.small, div.small, span.small,
+  .conf .t, .conf .tk, .r .sub, .links a {
+    font-size: 14px;
+  }
+  .pager button, .az button, .pill-nav button, main button, .btn,
+  .filters select, .filters input, .ctrl select, input.msearch,
+  details.tgt > summary, details.mfilt > summary {
+    min-height: 44px;
+    box-sizing: border-box;
+  }
+  .pager button, .az button { min-width: 44px; font-size: 15px; padding: 8px 12px; }
+  .filters select, .ctrl select, .filters input[type="search"], input.msearch {
+    font-size: 16px;
+    padding: 10px 12px;
+  }
+  input.msearch {
+    display: block;
+    width: 100%;
+    margin: 0 0 10px;
+    border: 1px solid var(--line, #c9d1de);
+    border-radius: 12px;
+    background: var(--card, #fff);
+    color: var(--ink, inherit);
+  }
+  .filters label, .ctrl label { min-height: 44px; display: flex; align-items: center; }
+  details.tgt > summary { padding-top: 12px; padding-bottom: 12px; }
+  details.mfilt { margin: 0 0 12px; }
+  details.mfilt > summary {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 650;
+    font-size: 15px;
+    padding: 8px 12px;
+    border: 1px solid var(--line, #e3e8ef);
+    border-radius: 12px;
+    background: var(--card, #fff);
+    color: var(--ink, inherit);
+    list-style: none;
+  }
+  details.mfilt > summary::-webkit-details-marker { display: none; }
+  details.mfilt > summary::marker { content: ""; }
+  details.mfilt > summary::after { content: "▾"; margin-left: auto; color: var(--mut, #5b6b7d); }
+  details.mfilt[open] > summary::after { content: "▴"; }
+  .mtable, .tw, .chartwrap { max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  img, video { max-width: 100%; height: auto; }
+  iframe.app { max-width: 100%; }
+  #app nav button { min-height: 48px; }
+  main, .card, .objs, details.tgt, .stack { min-width: 0; max-width: 100%; }
+  details.tgt > summary { flex-wrap: wrap; }
+  .nm { min-width: 0; overflow-wrap: anywhere; }
+  .pill { white-space: normal; max-width: 100%; }
+}

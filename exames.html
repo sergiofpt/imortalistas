@@ -74,6 +74,7 @@ main a{color:var(--acc)}
 @media(max-width:640px){html{scroll-padding-top:148px}.topin{gap:4px 8px;padding:6px 12px;flex-wrap:wrap}.tools{order:-1;margin-left:auto;gap:10px}nav.main{flex:1 1 100%;order:2;flex-wrap:wrap;gap:2px}nav.main a,.dd summary{padding:6px 10px}.stack li{flex-direction:column;gap:2px}.dose{text-align:left}h1{font-size:24px}.objs{grid-template-columns:1fr}.card{padding:16px 14px}}
 .ex{list-style:none;margin:0;padding:0;display:grid;gap:8px}.ex li{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--bg)}.ex .nm{font-weight:650;min-width:0}.ex .freq{margin-left:auto;flex:0 0 auto;font-size:12px;font-weight:650;padding:3px 10px;border-radius:999px;background:var(--nab);color:var(--mut)}
 </style>
+<link rel="stylesheet" href="assets/mobile.css">
 </head>
 <body data-title-pt="Sérgio F · Exames" data-title-en="Sérgio F · Check-ups">
 <header class="top"><div class="topin">
@@ -120,5 +121,6 @@ applyTheme();
  else if(document.readyState==='complete')send();else addEventListener('load',send)}catch(_){}})();
 </script>
 <script>document.addEventListener('click',function(e){document.querySelectorAll('details.dd[open]').forEach(function(d){if(!d.contains(e.target))d.removeAttribute('open')})});</script>
+<script src="assets/mobile.js"></script>
 </body>
 </html>
