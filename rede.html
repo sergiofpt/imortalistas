@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="data:,">
+<title>Sérgio F · Rede do protocolo</title>
+<meta name="color-scheme" content="light dark">
+<script>(function(){var d=document.documentElement,t=null,l=null,q=/[?&]lang=(en|pt)(?:&|#|$)/i.exec(location.search);q=q&&q[1].toLowerCase();try{if(q)localStorage.setItem('lang',q);l=localStorage.getItem('lang');t=localStorage.getItem('theme')}catch(e){}if(q)l=q;if(l==='en')d.lang='en';if(t!=='dark'&&t!=='light')t='dark';d.setAttribute('data-theme',t)})()</script>
+<script src="sf.js"></script>
+<style>
+:root{--bg:#f5f7fa;--card:#fff;--ink:#14202e;--mut:#5b6b7d;--line:#e3e8ef;--acc:#1f5eff;--nab:#eef1f5;--na:#8a97a8;--head:rgba(255,255,255,.94);--actfg:#fff;--link:rgba(31,94,255,.45);color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:78px}
+body{margin:0;font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+header.top{position:sticky;top:0;z-index:50;background:var(--head);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
+.topin{max-width:1240px;margin:0 auto;display:flex;align-items:center;gap:18px;padding:10px 20px}
+nav.main{display:flex;gap:4px;overflow:visible;scrollbar-width:none;flex:1;min-width:0}
+nav.main::-webkit-scrollbar{display:none}
+nav.main a{white-space:nowrap;text-decoration:none;color:var(--mut);font-size:13.5px;padding:7px 11px;border-radius:999px;font-weight:500}
+nav.main a:hover{background:var(--nab);color:var(--ink)}
+nav.main a.active{background:var(--ink);color:var(--actfg)}
+.dd{position:relative;flex:0 0 auto}
+.dd summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;white-space:nowrap;color:var(--mut);font:inherit;font-size:13.5px;font-weight:500;padding:7px 11px;border-radius:999px}
+.dd summary::-webkit-details-marker{display:none}
+.dd summary::marker{content:""}
+.dd summary:hover,.dd[open]>summary{background:var(--nab);color:var(--ink)}
+.dd.on>summary{background:var(--ink);color:var(--actfg)}
+.dd summary:after{content:" ▾";font-size:.72em;opacity:.75}
+.dd[open]>summary:after{content:" ▴"}
+.ddmenu{position:absolute;top:calc(100% + 6px);right:0;min-width:230px;padding:6px;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:0 14px 36px rgba(15,30,50,.18);z-index:80;display:flex;flex-direction:column;gap:2px}@media(max-width:640px){nav.main .ddmenu{position:fixed;left:8px;right:8px;top:auto;width:auto;min-width:0;margin-top:6px;max-height:70vh;overflow:auto}}
+.ddmenu a{display:block;border-radius:10px}
+.tools{display:flex;align-items:center;gap:14px;margin-left:auto;flex:0 0 auto}
+.lang{display:flex;align-items:center;gap:4px;font-size:13.5px;white-space:nowrap}
+.lang button{font:inherit;border:0;background:none;color:var(--mut);cursor:pointer;padding:6px 6px;border-radius:8px}
+.lang button:hover{background:var(--nab);color:var(--ink)}.lang button.on{color:var(--ink);font-weight:700}
+.lang .sep{color:var(--na)}
+html[data-theme="dark"]{color-scheme:dark;--bg:#0e141d;--card:#161e2a;--ink:#e5eaf1;--mut:#9aa7b8;--line:#2a3545;--acc:#7a9dff;--nab:#222b39;--na:#7f8c9e;--head:rgba(16,22,32,.92);--actfg:#0e141d;--link:rgba(150,176,255,.55)}
+html[lang="en"] .l-pt{display:none}html:not([lang="en"]) .l-en{display:none}
+main{max-width:1100px;margin:0 auto;padding:22px 20px 72px}
+h1{margin:0 0 12px;font-size:28px;letter-spacing:-.3px}
+.study{margin:0 0 14px;padding:12px 14px;background:var(--card);border:1px solid var(--line);border-radius:14px;transform:translateY(6px);opacity:0;pointer-events:none;transition:transform .28s cubic-bezier(.16,.84,.28,1),opacity .28s ease}
+.study.on{transform:none;opacity:1;pointer-events:auto}
+.study h2{margin:0 0 4px;font-size:16px;letter-spacing:-.2px}
+.study p{margin:0 0 6px;color:var(--mut);font-size:13px}
+.study a{color:var(--acc);font-weight:650}
+.net{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:8px 4px 12px;overflow:hidden}
+.net svg{width:100%;height:auto;display:block}
+.link{fill:none;stroke:var(--link);stroke-width:1.35;transition:opacity .25s ease}
+.link.hit{stroke:transparent;stroke-width:12;cursor:pointer}
+.link.off,.node.off{opacity:.12}
+.node{cursor:pointer}
+.node text{font:600 11.5px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;fill:var(--ink)}
+.catlab{font:700 10px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;letter-spacing:.08em;fill:var(--mut)}
+.particle{fill:#fff;opacity:.9}
+html[data-theme="light"] .particle{fill:#1f5eff}
+.mlist{display:none}
+.hbtn{display:flex;width:100%;text-align:left;align-items:center;justify-content:space-between;gap:8px;min-height:48px;margin:0 0 8px;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:650 15px/1.3 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;cursor:pointer}
+.hbtn.on{border-color:var(--acc)}
+.hpanel{margin:-4px 0 10px;padding:4px 4px 8px}
+.row{padding:10px 10px;border-top:1px solid var(--line)}
+.row b{display:block}
+.row span{display:block;color:var(--mut);font-size:13px}
+.row a{color:var(--acc);font-size:13px;font-weight:650}
+@media(max-width:640px){
+ html{scroll-padding-top:148px}
+ .topin{gap:4px 8px;padding:6px 12px;flex-wrap:wrap}
+ .tools{order:-1;margin-left:auto;gap:10px}
+ nav.main{flex:1 1 100%;order:2;flex-wrap:wrap;gap:2px}
+ nav.main a,.dd summary{padding:6px 10px}
+ h1{font-size:24px}
+ .net{display:none}
+ .mlist{display:block}
+}
+@media(prefers-reduced-motion:reduce){
+ .study,.link,.node{transition:none}
+ .study{transform:none}
+ .study:not(.on){opacity:0}
+ .particle{display:none}
+}
+</style>
+<link rel="stylesheet" href="assets/mobile.css">
+</head>
+<body data-title-pt="Sérgio F · Rede do protocolo" data-title-en="Sérgio F · Protocol network">
+<header class="top"><div class="topin">
+<nav class="main" id="nav">
+<a href="inicio.html" data-en="Goals">Objetivos</a><a href="analises.html#sangue" data-en="Tests">Análises</a><a href="exames.html" data-en="Check-ups">Exames</a><details class="dd"><summary data-en="Genetics">Genética</summary><div class="ddmenu"><a href="genetica-reports.html" data-en="Genetics Reports">Genética Reports</a><a href="genetica-boa.html" data-en="Good Genetics">Genética Boa</a><a href="genetica.html" data-en="Bad Genetics">Genética Má</a></div></details><details class="dd"><summary data-en="Protocol">Protocolo</summary><div class="ddmenu"><a href="pele-cabelo.html" data-en="Skin and Hair">Pele e Cabelo</a><a href="sono.html" data-en="Sleep">Sono</a><a href="dieta.html" data-en="Diet">Dieta</a><a href="terapias.html" data-en="Therapies">Terapias</a><a href="treino.html" data-en="Training">Treino</a><a href="suplementos.html" data-en="Supplements + Medication">Suplementos + Medicação</a></div></details><a href="estudos.html" data-en="Studies">Estudos</a><a href="origem.html" data-en="Origin">Origem</a><details class="dd on out"><summary data-en="Other">Outros</summary><div class="ddmenu"><a href="corpo.html" data-en="My body">O meu corpo</a><a href="painel.html" data-en="Dashboard">Painel</a><a href="galaxia.html" data-en="Study galaxy">Galáxia dos estudos</a><a href="rede.html" class="active" aria-current="page" data-en="Protocol network">Rede do protocolo</a><a href="registo.html" data-en="Changelog">Registo de alterações</a><a href="comparador.html" data-en="Comparison">Comparador</a><a href="sinais.html" data-en="The 12 hallmarks">Os 12 sinais</a><a href="glossario.html" data-en="Glossary">Glossário</a><a href="ferramentas/index.html" data-en="Genetic tools">Ferramentas genéticas</a></div></details></nav>
+<div class="tools">
+<div class="lang" id="lang" role="group" aria-label="Idioma / Language"><button type="button" data-l="pt" lang="pt-PT">Português</button><span class="sep" aria-hidden="true">|</span><button type="button" data-l="en" lang="en">English</button></div>
+<div class="lang" id="theme" role="group" aria-label="Tema" data-al-en="Theme"><button type="button" data-t="dark" data-en="Dark">Escuro</button><span class="sep" aria-hidden="true">|</span><button type="button" data-t="light" data-en="Light">Claro</button></div>
+</div>
+</div></header>
+<main>
+<h1 data-en="Protocol network">Rede do protocolo</h1>
+<aside class="study" id="study" hidden>
+<h2 id="st"></h2>
+<p id="sm"></p>
+<a id="sl" href="" target="_blank" rel="noopener noreferrer" data-en="Open the study">Abrir o estudo</a>
+</aside>
+<div class="net" id="net"></div>
+<div class="mlist" id="mlist"></div>
+</main>
+<script>
+let LANG='pt';try{if(localStorage.getItem('lang')==='en')LANG='en'}catch(e){}
+{const q=/[?&]lang=(en|pt)(?:&|#|$)/i.exec(location.search);if(q)LANG=q[1].toLowerCase()}
+const REDUCE=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const L=(pt,en)=>LANG==='en'?en:pt;
+const CATS=[
+ {id:'suplementos',pt:'Suplementos',en:'Supplements',c:'#d4b15a'},
+ {id:'farmacos',pt:'Fármacos',en:'Drugs',c:'#e08a8a'},
+ {id:'dieta',pt:'Dieta',en:'Diet',c:'#6fbf8a'},
+ {id:'treino',pt:'Treino',en:'Training',c:'#7eb0e0'},
+ {id:'terapias',pt:'Terapias',en:'Therapies',c:'#c49be0'}
+];
+const NS='http://www.w3.org/2000/svg';
+function el(n,a,p){const e=document.createElementNS(NS,n);if(a)Object.entries(a).forEach(([k,v])=>e.setAttribute(k,v));if(p)p.appendChild(e);return e}
+let DATA=null, EST=null, focusId=null, raf=0, paths=[];
+function applyLang(){const en=LANG==='en';document.documentElement.lang=en?'en':'pt-PT';document.title=en?document.body.dataset.titleEn:document.body.dataset.titlePt;
+ document.querySelectorAll('[data-en]').forEach(n=>{if(!n.hasAttribute('data-pt'))n.setAttribute('data-pt',n.textContent);n.textContent=en?n.dataset.en:n.dataset.pt});
+ document.querySelectorAll('[data-al-en]').forEach(n=>{if(!n.hasAttribute('data-al-pt'))n.setAttribute('data-al-pt',n.getAttribute('aria-label')||'');n.setAttribute('aria-label',en?n.dataset.alEn:n.dataset.alPt)});
+ document.querySelectorAll('#lang button').forEach(b=>{const on=b.dataset.l===LANG;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});
+ if(DATA){paint();if(document.getElementById('study').classList.contains('on')){const id=document.getElementById('study').dataset.eid;if(id)showStudy(id)}}}
+document.querySelectorAll('#lang button').forEach(b=>b.addEventListener('click',()=>{if(LANG===b.dataset.l)return;LANG=b.dataset.l;try{localStorage.setItem('lang',LANG)}catch(e){}try{if(/[?&]lang=/i.test(location.search)){const u=new URL(location.href);u.searchParams.set('lang',LANG);history.replaceState(history.state,'',u)}}catch(e){}applyLang()}));
+let THEME=null;try{THEME=localStorage.getItem('theme')}catch(e){}
+const curTheme=()=>THEME==='dark'||THEME==='light'?THEME:'dark';
+function applyTheme(){const t=curTheme();document.documentElement.setAttribute('data-theme',t);document.querySelectorAll('#theme button').forEach(b=>{const on=b.dataset.t===t;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)})}
+document.querySelectorAll('#theme button').forEach(b=>b.addEventListener('click',()=>{THEME=b.dataset.t;try{localStorage.setItem('theme',THEME)}catch(e){}applyTheme()}));
+applyTheme();
+function showStudy(id){const e=EST[id];if(!e)return;const box=document.getElementById('study');box.hidden=false;box.dataset.eid=id;document.getElementById('st').textContent=(e.titulo&&e.titulo[LANG==='en'?'en':'pt'])||'';const sp=e.especie==='animal'?L('Animal','Animal'):L('Humanos','Human');document.getElementById('sm').textContent=[e.ano,sp].filter(Boolean).join(' · ');const a=document.getElementById('sl');a.href=e.link||'#';if(REDUCE)box.classList.add('on');else requestAnimationFrame(()=>box.classList.add('on'))}
+function curve(y1,y2){const x1=348,x2=760,c=(x1+x2)/2;return 'M'+x1+' '+y1+' C '+c+' '+y1+', '+c+' '+y2+', '+x2+' '+y2}
+function paint(){
+ cancelAnimationFrame(raf);raf=0;
+ const {rede,sinais}=DATA;
+ const host=document.getElementById('net');host.textContent='';
+ const ROW=27,GAP=18;let y=36;const ypos={};
+ CATS.forEach(cat=>{const items=rede.itens.filter(i=>i.cat===cat.id);if(!items.length)return;cat.labelY=y;y+=14;items.forEach(it=>{ypos[it.id]=y;y+=ROW});y+=GAP});
+ const ys=Object.values(ypos);const y0=Math.min(...ys),y1=Math.max(...ys);
+ sinais.forEach((s,i)=>{s._y=y0+(y1-y0)*(sinais.length<2?0:i/(sinais.length-1))});
+ const H=y+8;
+ const svg=el('svg',{viewBox:'0 0 1100 '+H,'role':'img'},host);
+ svg.setAttribute('aria-label',L('Rede do protocolo','Protocol network'));
+ const links=el('g',null,svg);
+ rede.ligacoes.forEach(l=>{const s=sinais.find(x=>x.id===l.sinal);if(!s||ypos[l.item]==null)return;const d=curve(s._y,ypos[l.item]);const vis=el('path',{class:'link',d:d},links);vis.dataset.item=l.item;vis.dataset.sinal=l.sinal;vis.dataset.estudo=l.estudo;const hit=el('path',{class:'link hit',d:d},links);hit.dataset.item=l.item;hit.dataset.sinal=l.sinal;hit.dataset.estudo=l.estudo});
+ const nodes=el('g',null,svg);
+ sinais.forEach(s=>{const g=el('g',{class:'node'},nodes);g.dataset.id=s.id;g.dataset.kind='sinal';el('circle',{cx:332,cy:s._y,r:7,fill:'#7a9dff'},g);const t=el('text',{x:316,y:s._y+4,'text-anchor':'end'},g);t.textContent=L(s.nome.pt,s.nome.en);t.setAttribute('data-pt',s.nome.pt);t.setAttribute('data-en',s.nome.en)});
+ CATS.forEach(cat=>{const items=rede.itens.filter(i=>i.cat===cat.id);if(!items.length)return;const lab=el('text',{class:'catlab',x:776,y:cat.labelY},svg);lab.textContent=L(cat.pt,cat.en).toUpperCase();lab.setAttribute('data-pt',cat.pt.toUpperCase());lab.setAttribute('data-en',cat.en.toUpperCase());items.forEach(it=>{const g=el('g',{class:'node'},nodes);g.dataset.id=it.id;g.dataset.kind='item';el('circle',{cx:776,cy:ypos[it.id],r:6.5,fill:cat.c},g);const t=el('text',{x:792,y:ypos[it.id]+4},g);t.textContent=L(it.pt,it.en);t.setAttribute('data-pt',it.pt);t.setAttribute('data-en',it.en)})});
+ paths=[...svg.querySelectorAll('path.link:not(.hit)')];
+ const dots=el('g',null,svg);
+ const narrow=matchMedia('(max-width:640px)').matches;
+ if(!REDUCE&&!narrow){paths.forEach((p,i)=>{const c=el('circle',{class:'particle',r:2.2,cx:0,cy:0},dots);c.dataset.i=i;c.style.opacity=String(0.35+ (i%5)*0.12)});
+  const t0=performance.now();
+  const tick=now=>{paths.forEach((p,i)=>{const c=dots.children[i];if(!c||p.classList.contains('off')){if(c)c.style.opacity='0';return}const len=p.getTotalLength();const u=((now-t0)/3800+i*0.07)%1;const pt=p.getPointAtLength(u*len);c.setAttribute('transform','translate('+pt.x.toFixed(1)+' '+pt.y.toFixed(1)+')');c.style.opacity=String(0.45+0.4*Math.sin(u*6.28))});raf=requestAnimationFrame(tick)};
+  raf=requestAnimationFrame(tick)}
+ applyFocus();
+ paintList();
+}
+function setOff(node,off){node.classList.toggle('off',off)}
+function applyFocus(){
+ const svg=document.querySelector('#net svg');if(!svg)return;
+ const keep=new Set();
+ if(focusId){keep.add(focusId);(DATA.rede.ligacoes||[]).forEach(l=>{if(l.item===focusId||l.sinal===focusId){keep.add(l.item);keep.add(l.sinal)}})}
+ svg.querySelectorAll('.node').forEach(n=>setOff(n,!!focusId&&!keep.has(n.dataset.id)));
+ svg.querySelectorAll('path.link').forEach(p=>setOff(p,!!focusId&&p.dataset.item!==focusId&&p.dataset.sinal!==focusId));
+}
+function paintList(){
+ const box=document.getElementById('mlist');const open=box.querySelector('.hbtn.on');const openId=open&&open.dataset.id;box.textContent='';
+ DATA.sinais.forEach(s=>{const links=DATA.rede.ligacoes.filter(l=>l.sinal===s.id);const b=document.createElement('button');b.type='button';b.className='hbtn';b.dataset.id=s.id;if(openId===s.id)b.classList.add('on');const nm=document.createElement('span');nm.textContent=L(s.nome.pt,s.nome.en);nm.setAttribute('data-pt',s.nome.pt);nm.setAttribute('data-en',s.nome.en);const n=document.createElement('span');n.textContent=String(links.length);b.append(nm,n);const panel=document.createElement('div');panel.className='hpanel';panel.hidden=openId!==s.id;links.forEach(l=>{const it=DATA.rede.itens.find(i=>i.id===l.item);const e=EST[l.estudo];const row=document.createElement('div');row.className='row';const strong=document.createElement('b');strong.textContent=it?L(it.pt,it.en):l.item;if(it){strong.setAttribute('data-pt',it.pt);strong.setAttribute('data-en',it.en)}const meta=document.createElement('span');const title=(e&&e.titulo&&e.titulo[LANG==='en'?'en':'pt'])||'';meta.textContent=(e?e.ano+' · ':'')+title;const a=document.createElement('a');a.href=(e&&e.link)||'#';a.target='_blank';a.rel='noopener noreferrer';a.textContent=L('Abrir o estudo','Open the study');a.setAttribute('data-pt','Abrir o estudo');a.setAttribute('data-en','Open the study');row.append(strong,meta,a);panel.append(row)});b.addEventListener('click',()=>{const was=b.classList.contains('on');box.querySelectorAll('.hbtn').forEach(x=>x.classList.remove('on'));box.querySelectorAll('.hpanel').forEach(x=>{x.hidden=true});if(!was){b.classList.add('on');panel.hidden=false}});box.append(b,panel)});
+}
+document.getElementById('net').addEventListener('pointerover',e=>{const n=e.target.closest('.node');const p=e.target.closest('path.link');if(n){focusId=n.dataset.id;applyFocus()}else if(p){focusId=p.dataset.item;applyFocus()}});
+document.getElementById('net').addEventListener('pointerleave',()=>{focusId=null;applyFocus()});
+document.getElementById('net').addEventListener('click',e=>{const p=e.target.closest('path.link');if(p&&p.dataset.estudo)showStudy(p.dataset.estudo)});
+applyLang();
+Promise.all(['data/rede.json','data/sinais.json','data/estudos.json'].map(u=>fetch(u).then(r=>{if(!r.ok)throw 0;return r.json()}))).then(all=>{const by={};(all[2].estudos||[]).forEach(e=>{by[e.id]=e});EST=by;DATA={rede:all[0],sinais:all[1].sinais||[]};paint()}).catch(()=>{});
+document.addEventListener('visibilitychange',()=>{if(document.hidden){cancelAnimationFrame(raf);raf=0}else if(DATA&&!REDUCE)paint()});
+</script>
+<script>
+(function(){try{var W=window.SF_W;if(!W)return;W=String(W).replace(/\/+$/,'');
+ if(location.hash==='#toggle-goatcounter'){var off=localStorage.getItem('skipgc')==='t';if(off)localStorage.removeItem('skipgc');else localStorage.setItem('skipgc','t');alert(off?'Contagem ligada neste browser.':'Contagem desligada neste browser.')}
+ if(localStorage.getItem('skipgc')==='t'||navigator.webdriver||window!==window.top||location.protocol==='file:'||/^(localhost|127\.|10\.|192\.168\.|0\.0\.0\.0$|\[::1\]$)/.test(location.hostname))return;
+ var send=function(){try{var sc=window.screen||{},x={p:location.pathname,t:document.title,r:document.referrer||'',s:sc.width||0,w:sc.width||0,h:sc.height||0,d:window.devicePixelRatio||0,m:navigator.maxTouchPoints||0},u=W+'/e',ok=0,
+  go=function(){if(ok)return;ok=1;var d=JSON.stringify(x);if(navigator.sendBeacon&&navigator.sendBeacon(u,d))return;fetch(u,{method:'POST',body:d,keepalive:true,mode:'no-cors',credentials:'omit'}).catch(function(){})},
+  ud=navigator.userAgentData;
+  if(ud&&ud.getHighEntropyValues){setTimeout(go,800);ud.getHighEntropyValues(['model','platformVersion']).then(function(v){if(v&&v.model)x.mo=String(v.model).slice(0,40);if(v&&v.platformVersion)x.pv=String(v.platformVersion).slice(0,20);go()},go)}else go()}catch(_){}};
+ if(document.visibilityState==='prerender')document.addEventListener('visibilitychange',function f(){if(document.visibilityState!=='prerender'){document.removeEventListener('visibilitychange',f);send()}});
+ else if(document.readyState==='complete')send();else addEventListener('load',send)}catch(_){}})();
+</script>
+<script>document.addEventListener('click',function(e){document.querySelectorAll('details.dd[open]').forEach(function(d){if(!d.contains(e.target))d.removeAttribute('open')})});</script>
+<script src="assets/mobile.js"></script>
+</body>
+</html>
