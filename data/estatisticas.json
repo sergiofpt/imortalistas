@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-10T00:00:24Z",
+ "atualizado_em": "2026-10-10T00:33:16Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 62,
   "visitas_30d": 62,
   "visitas_90d": 62,
-  "aberturas_pdf": 411,
+  "aberturas_pdf": 412,
   "visitas_hoje": 0,
   "visitas_7d": 45,
-  "aberturas_hoje": 5,
-  "aberturas_7d": 400,
-  "aberturas_30d": 411,
-  "pdf_abertos": 196,
+  "aberturas_hoje": 6,
+  "aberturas_7d": 401,
+  "aberturas_30d": 412,
+  "pdf_abertos": 197,
   "pdf_descarregados": 215,
-  "pdf_pt": 173,
+  "pdf_pt": 174,
   "pdf_en": 238
  },
  "dias": [
@@ -67,7 +67,7 @@
   {
    "dia": "2026-10-10",
    "visitas": 0,
-   "aberturas": 5
+   "aberturas": 6
   }
  ],
  "paginas": [
@@ -222,6 +222,17 @@
   },
   {
    "id": "anestesia-cirurgia",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "ansiedade-resiliencia-stress",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -706,17 +717,6 @@
   },
   {
    "id": "alimentos-longevidade-173",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "ansiedade-resiliencia-stress",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -1552,7 +1552,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 385
+   "visitas": 386
   },
   {
    "id": "PT",
@@ -1604,7 +1604,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 443
+   "visitas": 444
   },
   {
    "id": "Firefox",
@@ -1626,7 +1626,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 172
+   "visitas": 173
   },
   {
    "id": "Android",
@@ -1668,14 +1668,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 410
+   "visitas": 411
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 462
+   "visitas": 463
   },
   {
    "id": "https://bing.com",
@@ -2032,7 +2032,7 @@
     {
      "dia": "2026-10-10",
      "visitas": 0,
-     "aberturas": 5
+     "aberturas": 6
     }
    ],
    "paginas": [
@@ -2135,6 +2135,17 @@
     },
     {
      "id": "andropausa-envelhecimento-reprodutivo",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "ansiedade-resiliencia-stress",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -2542,17 +2553,6 @@
     },
     {
      "id": "anestesia-cirurgia",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "ansiedade-resiliencia-stress",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -3489,22 +3489,22 @@
     "visitas": 38,
     "visitas_30d": 38,
     "visitas_90d": 38,
-    "aberturas_pdf": 385,
+    "aberturas_pdf": 386,
     "visitas_hoje": 0,
     "visitas_7d": 35,
-    "aberturas_hoje": 5,
-    "aberturas_7d": 385,
-    "aberturas_30d": 385,
-    "pdf_abertos": 170,
+    "aberturas_hoje": 6,
+    "aberturas_7d": 386,
+    "aberturas_30d": 386,
+    "pdf_abertos": 171,
     "pdf_descarregados": 215,
-    "pdf_pt": 149,
+    "pdf_pt": 150,
     "pdf_en": 236
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 385
+     "visitas": 386
     },
     {
      "id": "US",
