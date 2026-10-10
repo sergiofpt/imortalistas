@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-10T02:48:34Z",
+ "atualizado_em": "2026-10-10T03:18:44Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 64,
   "visitas_30d": 64,
   "visitas_90d": 64,
-  "aberturas_pdf": 430,
+  "aberturas_pdf": 434,
   "visitas_hoje": 2,
   "visitas_7d": 47,
-  "aberturas_hoje": 24,
-  "aberturas_7d": 419,
-  "aberturas_30d": 430,
-  "pdf_abertos": 215,
+  "aberturas_hoje": 28,
+  "aberturas_7d": 423,
+  "aberturas_30d": 434,
+  "pdf_abertos": 219,
   "pdf_descarregados": 215,
-  "pdf_pt": 192,
+  "pdf_pt": 196,
   "pdf_en": 238
  },
  "dias": [
@@ -67,7 +67,7 @@
   {
    "dia": "2026-10-10",
    "visitas": 2,
-   "aberturas": 24
+   "aberturas": 28
   }
  ],
  "paginas": [
@@ -183,6 +183,17 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 2
+  },
+  {
+   "id": "farmacogenomica-632",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 3,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
   },
   {
    "id": "infecoes",
@@ -328,6 +339,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "cabelo",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "cardiovascular-avancado",
    "ficheiro": null,
    "pt": 2,
@@ -372,7 +394,29 @@
    "descarregados_en": 1
   },
   {
+   "id": "cetose-corpos-cetonicos",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "disruptores-endocrinos-poluentes",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "doenca-arterial-periferica",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -435,17 +479,6 @@
    "abertos_pt": 1,
    "abertos_en": 1,
    "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "farmacogenomica-632",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 2,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -878,17 +911,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "cabelo",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "cafeina-estimulantes",
    "ficheiro": null,
    "pt": 1,
@@ -901,17 +923,6 @@
   },
   {
    "id": "capacidade-cognitiva-plasticidade",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "cetose-corpos-cetonicos",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -945,17 +956,6 @@
   },
   {
    "id": "destoxificacao-fase-i-ii",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "doenca-arterial-periferica",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -1560,7 +1560,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 406
+   "visitas": 410
   },
   {
    "id": "PT",
@@ -1612,7 +1612,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 464
+   "visitas": 468
   },
   {
    "id": "Firefox",
@@ -1629,12 +1629,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 272
+   "visitas": 275
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 182
+   "visitas": 183
   },
   {
    "id": "Android",
@@ -1676,14 +1676,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 429
+   "visitas": 433
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 483
+   "visitas": 487
   },
   {
    "id": "https://bing.com",
@@ -2040,7 +2040,7 @@
     {
      "dia": "2026-10-10",
      "visitas": 2,
-     "aberturas": 24
+     "aberturas": 28
     }
    ],
    "paginas": [
@@ -2227,6 +2227,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "cabelo",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "cardiovascular-avancado",
      "ficheiro": null,
      "pt": 2,
@@ -2260,7 +2271,29 @@
      "descarregados_en": 1
     },
     {
+     "id": "cetose-corpos-cetonicos",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "disruptores-endocrinos-poluentes",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "doenca-arterial-periferica",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -2755,17 +2788,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "cabelo",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "cafeina-estimulantes",
      "ficheiro": null,
      "pt": 1,
@@ -2789,17 +2811,6 @@
     },
     {
      "id": "cartao-farmacogenetico",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "cetose-corpos-cetonicos",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -2843,17 +2854,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "doenca-arterial-periferica",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "dopamina-noradrenalina",
      "ficheiro": null,
      "pt": 1,
@@ -2877,6 +2877,17 @@
     },
     {
      "id": "estomago-refluxo-helicobacter",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "farmacogenomica-632",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -3305,17 +3316,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "farmacogenomica-632",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "funcao-sexual-eretil",
      "ficheiro": null,
      "pt": 0,
@@ -3505,22 +3505,22 @@
     "visitas": 40,
     "visitas_30d": 40,
     "visitas_90d": 40,
-    "aberturas_pdf": 404,
+    "aberturas_pdf": 408,
     "visitas_hoje": 2,
     "visitas_7d": 37,
-    "aberturas_hoje": 24,
-    "aberturas_7d": 404,
-    "aberturas_30d": 404,
-    "pdf_abertos": 189,
+    "aberturas_hoje": 28,
+    "aberturas_7d": 408,
+    "aberturas_30d": 408,
+    "pdf_abertos": 193,
     "pdf_descarregados": 215,
-    "pdf_pt": 168,
+    "pdf_pt": 172,
     "pdf_en": 236
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 406
+     "visitas": 410
     },
     {
      "id": "US",
