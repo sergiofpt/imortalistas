@@ -110,7 +110,7 @@ let L=D.items.filter(x=>(K==='todos'||(K==='lon'&&x.k==='lon')||(K==='tol'&&x.k=
 document.getElementById('n').textContent=L.length+' alimentos';
 document.getElementById('res').innerHTML=L.slice(0,80).map(x=>`<div class="sc"><div class="row" style="justify-content:space-between"><b>${esc(x.a)}</b><span class="chip ${CL[x.cl][0]}">${CL[x.cl][1]}${x.f?' · '+esc(x.f):''}</span></div>
 <div class="tiny mut">${esc(x.c)}${x.g?' · genes: '+esc(x.g):''}</div>${x.w?`<div class="small"><b>Porquê:</b> ${esc(x.w)}</div>`:''}${x.r?`<div class="small"><b>O teu corpo:</b> ${esc(x.r)}</div>`:''}
-${x.s?`<div class="small"><b>Sugestão:</b> ${esc(x.s.replace(/\s*Sugestão \(não aplicada\)\.?/,''))}</div>`:''}${x.t?`<div class="tiny" style="color:var(--warn)">${esc(x.t)}</div>`:''}<div class="tiny mut">Evidência: ${esc(x.e)}</div></div>`).join('')+(L.length>80?'<p class="small mut">Mostra só 80: escreve mais para filtrar.</p>':'');}
+${x.s?`<div class="small"><b>Sugestão:</b> ${esc(x.s.replace(/\s*Sugestão \([^)]*\)\.?/,''))}</div>`:''}${x.t?`<div class="tiny" style="color:var(--warn)">${esc(x.t)}</div>`:''}<div class="tiny mut">Evidência: ${esc(x.e)}</div></div>`).join('')+(L.length>80?'<p class="small mut">Mostra só 80: escreve mais para filtrar.</p>':'');}
 document.querySelectorAll('#kb button').forEach(b=>b.addEventListener('click',()=>{K=b.dataset.k;draw();}));
 document.getElementById('q').addEventListener('input',e=>{Q=e.target.value;draw();});draw();
 </script>
