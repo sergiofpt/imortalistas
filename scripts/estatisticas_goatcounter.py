@@ -36,7 +36,7 @@ GOATCOUNTER_TOKEN (variável de ambiente; nunca é escrito em lado nenhum). Só 
 - Ao vivo: o Worker sf-site (cf_worker/src/stats.js, GET /s/<chave>) calcula o MESMO JSON na hora (mesma lógica; testes de paridade); o painel lê
   primeiro o Worker e este ficheiro/workflow fica como reserva. Qualquer mudança aqui tem de ir também para o stats.js do Worker.
 
-Uso: GOATCOUNTER_TOKEN=... python3 ferramentas/estatisticas_goatcounter.py [--saida data/estatisticas.json] [--hoje AAAA-MM-DD]
+Uso: GOATCOUNTER_TOKEN=... python3 scripts/estatisticas_goatcounter.py [--saida data/estatisticas.json] [--hoje AAAA-MM-DD]
 """
 import argparse, datetime as dt, json, os, re, sys, time, urllib.error, urllib.parse, urllib.request
 
