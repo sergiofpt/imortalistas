@@ -1,15 +1,15 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-11T00:30:24Z",
+ "atualizado_em": "2026-10-11T07:47:55Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
-  "visitas": 65,
-  "visitas_30d": 65,
-  "visitas_90d": 65,
+  "visitas": 66,
+  "visitas_30d": 66,
+  "visitas_90d": 66,
   "aberturas_pdf": 470,
-  "visitas_hoje": 0,
-  "visitas_7d": 40,
+  "visitas_hoje": 1,
+  "visitas_7d": 41,
   "aberturas_hoje": 0,
   "aberturas_7d": 455,
   "aberturas_30d": 470,
@@ -71,7 +71,7 @@
   },
   {
    "dia": "2026-10-11",
-   "visitas": 0,
+   "visitas": 1,
    "aberturas": 0
   }
  ],
@@ -90,7 +90,7 @@
   },
   {
    "path": "/inicio.html",
-   "visitas": 5
+   "visitas": 6
   },
   {
    "path": "/genetica-boa.html",
@@ -1435,7 +1435,7 @@
    "tipo": "computador",
    "nome": "Linux · Chrome",
    "estimativa": false,
-   "visitas": 8
+   "visitas": 9
   },
   {
    "id": "computador/mac-chrome",
@@ -1571,7 +1571,7 @@
   {
    "id": "US",
    "nome": "United States",
-   "visitas": 33
+   "visitas": 34
   },
   {
    "id": "CA",
@@ -1613,7 +1613,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 505
+   "visitas": 506
   },
   {
    "id": "Firefox",
@@ -1645,7 +1645,7 @@
   {
    "id": "Linux",
    "nome": "Linux",
-   "visitas": 18
+   "visitas": 19
   },
   {
    "id": "Chrome OS",
@@ -1672,7 +1672,7 @@
   {
    "id": "desktop",
    "nome": "desktop",
-   "visitas": 41
+   "visitas": 42
   },
   {
    "id": "unknown",
@@ -1709,6 +1709,11 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
+   "visitas": 1
+  },
+  {
+   "id": "https://imortalistas.com",
+   "nome": "imortalistas.com",
    "visitas": 1
   }
  ],
@@ -2050,7 +2055,7 @@
     },
     {
      "dia": "2026-10-11",
-     "visitas": 0,
+     "visitas": 1,
      "aberturas": 0
     }
    ],
@@ -2060,11 +2065,11 @@
      "visitas": 25
     },
     {
-     "path": "/",
-     "visitas": 3
+     "path": "/inicio.html",
+     "visitas": 4
     },
     {
-     "path": "/inicio.html",
+     "path": "/",
      "visitas": 3
     },
     {
@@ -3406,18 +3411,18 @@
    ],
    "aparelhos": [
     {
+     "id": "computador/linux-chrome",
+     "tipo": "computador",
+     "nome": "Linux · Chrome",
+     "estimativa": false,
+     "visitas": 8
+    },
+    {
      "id": "computador/mac-chrome",
      "tipo": "computador",
      "nome": "Mac · Chrome",
      "estimativa": false,
      "visitas": 8
-    },
-    {
-     "id": "computador/linux-chrome",
-     "tipo": "computador",
-     "nome": "Linux · Chrome",
-     "estimativa": false,
-     "visitas": 7
     },
     {
      "id": "android/samsung-galaxy-s24",
@@ -3513,12 +3518,12 @@
    ],
    "aparelhos_desde": "2026-10-03",
    "total": {
-    "visitas": 41,
-    "visitas_30d": 41,
-    "visitas_90d": 41,
+    "visitas": 42,
+    "visitas_30d": 42,
+    "visitas_90d": 42,
     "aberturas_pdf": 444,
-    "visitas_hoje": 0,
-    "visitas_7d": 35,
+    "visitas_hoje": 1,
+    "visitas_7d": 36,
     "aberturas_hoje": 0,
     "aberturas_7d": 441,
     "aberturas_30d": 444,
@@ -3536,7 +3541,7 @@
     {
      "id": "US",
      "nome": "United States",
-     "visitas": 33
+     "visitas": 34
     },
     {
      "id": "CA",
