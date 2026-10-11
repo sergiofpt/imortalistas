@@ -2,18 +2,18 @@
 r"""Acrescenta uma nova data (colheita) de análises a data/sangue.json.
 
 Uso (a partir da raiz do repositório):
-  python3 ferramentas/adicionar_colheita.py sangue --csv historico.csv --data 2026-12-03 \
+  python3 scripts/adicionar_colheita.py sangue --csv historico.csv --data 2026-12-03 \
       --rotulo "dez 2026" --descricao "03-12-2026" [--rotulo-en "Dec 2026" --descricao-en "03-12-2026"]
       [--nota "..." --nota-en "..."] [--datas-csv 2026-12-03,2026-12-05]
-  python3 ferramentas/adicionar_colheita.py verificar
-  python3 ferramentas/adicionar_colheita.py relatorio --pdf novo.pdf --id meu-relatorio --data 2026-12-03 \
+  python3 scripts/adicionar_colheita.py verificar
+  python3 scripts/adicionar_colheita.py relatorio --pdf novo.pdf --id meu-relatorio --data 2026-12-03 \
       --titulo-pt "Título" --titulo-en "Title" --resumo-pt "Uma linha genérica" --resumo-en "One generic line" \
       --areas cerebro[,longevidade] [--palavras "sono,sleep"] [--genes "CLOCK,PER2"] [--publicado 2026-12-03]
       [--descricao-pt "..." --descricao-en "..."] [--paginas 12] [--lingua-pt português --lingua-en Portuguese] [--nome nome-no-site.pdf]
       (verifica a privacidade do PDF com pdftotext, copia-o para reports/ e junta a entrada em data/reports.json;
        resumo = uma linha, até 120 caracteres, sem resultados pessoais; areas = ids da lista "areas" de reports.json (1 ou 2);
        publicado = data de publicação, por omissão hoje (dá a etiqueta Novo nos 14 dias seguintes); palavras e genes só para a pesquisa)
-  python3 ferramentas/adicionar_colheita.py relatorio-en --pdf report_EN.pdf --id meu-relatorio [--paginas 12]
+  python3 scripts/adicionar_colheita.py relatorio-en --pdf report_EN.pdf --id meu-relatorio [--paginas 12]
       (versão inglesa: verifica, copia para reports/<nome>_en.pdf e grava ficheiro_en/paginas_en/tamanho_kb_en)
 
 É idempotente: voltar a correr com a mesma data substitui os resultados dessa data.
@@ -202,7 +202,7 @@ def privacidade_pdf(caminho):
         achados += [f'metadado {k}' for k in ('Title', 'Author', 'Subject', 'Keywords') if re.search(rf'^{k}:\s*\S', info, re.M)]
     return achados
 
-# página escondida de estatísticas: data/estatisticas.json (placeholder vazio ou gerado por ferramentas/estatisticas_goatcounter.py)
+# página escondida de estatísticas: data/estatisticas.json (placeholder vazio ou gerado por scripts/estatisticas_goatcounter.py)
 F_ESTAT = os.path.join(RAIZ, 'data', 'estatisticas.json')
 def verificar_estatisticas():
     if not os.path.exists(F_ESTAT): print('ERRO data/estatisticas.json em falta'); return False

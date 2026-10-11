@@ -24,7 +24,7 @@ jobs:
       - name: Atualizar data/estatisticas.json
         env:
           GOATCOUNTER_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
-        run: python3 ferramentas/estatisticas_goatcounter.py
+        run: python3 scripts/estatisticas_goatcounter.py
 
       - name: Commit (só se o JSON mudou)
         run: |
