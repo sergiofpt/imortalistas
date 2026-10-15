@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-15T11:06:11Z",
+ "atualizado_em": "2026-10-15T18:58:46Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 68,
   "visitas_30d": 68,
   "visitas_90d": 68,
-  "aberturas_pdf": 471,
+  "aberturas_pdf": 473,
   "visitas_hoje": 2,
   "visitas_7d": 15,
-  "aberturas_hoje": 1,
-  "aberturas_7d": 108,
-  "aberturas_30d": 471,
+  "aberturas_hoje": 3,
+  "aberturas_7d": 110,
+  "aberturas_30d": 473,
   "pdf_abertos": 255,
-  "pdf_descarregados": 216,
-  "pdf_pt": 233,
-  "pdf_en": 238
+  "pdf_descarregados": 218,
+  "pdf_pt": 234,
+  "pdf_en": 239
  },
  "dias": [
   {
@@ -92,7 +92,7 @@
   {
    "dia": "2026-10-15",
    "visitas": 2,
-   "aberturas": 1
+   "aberturas": 3
   }
  ],
  "paginas": [
@@ -218,6 +218,17 @@
   },
   {
    "id": "anestesia-cirurgia",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "apetite-saciedade-comportamento-alimentar",
    "ficheiro": null,
    "pt": 3,
    "en": 2,
@@ -368,17 +379,6 @@
    "abertos_pt": 1,
    "abertos_en": 1,
    "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "apetite-saciedade-comportamento-alimentar",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 2,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -976,6 +976,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "risco-cancro-scores-poligenicos",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "ritmo-cardiaco-arritmias",
    "ficheiro": null,
    "pt": 2,
@@ -1361,17 +1372,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "risco-cancro-scores-poligenicos",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 1,
-   "total": 3,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
    "id": "saude-oral-dentes-periodontite",
    "ficheiro": null,
    "pt": 2,
@@ -1588,7 +1588,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 446
+   "visitas": 448
   },
   {
    "id": "PT",
@@ -1640,7 +1640,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 509
+   "visitas": 511
   },
   {
    "id": "Firefox",
@@ -1657,12 +1657,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 289
+   "visitas": 290
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 205
+   "visitas": 206
   },
   {
    "id": "Android",
@@ -1704,14 +1704,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 471
+   "visitas": 473
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 525
+   "visitas": 527
   },
   {
    "id": "https://bing.com",
@@ -2130,7 +2130,7 @@
     {
      "dia": "2026-10-15",
      "visitas": 0,
-     "aberturas": 1
+     "aberturas": 3
     }
    ],
    "paginas": [
@@ -2318,6 +2318,17 @@
     },
     {
      "id": "aorta-aneurismas",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "apetite-saciedade-comportamento-alimentar",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -2933,6 +2944,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "risco-cancro-scores-poligenicos",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "ritmo-cardiaco-arritmias",
      "ficheiro": null,
      "pt": 2,
@@ -3117,17 +3139,6 @@
      "abertos_pt": 0,
      "abertos_en": 1,
      "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "apetite-saciedade-comportamento-alimentar",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
      "descarregados_en": 1
     },
     {
@@ -3395,17 +3406,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "risco-cancro-scores-poligenicos",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 1,
-     "total": 3,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
      "id": "saude-oral-dentes-periodontite",
      "ficheiro": null,
      "pt": 2,
@@ -3595,22 +3595,22 @@
     "visitas": 42,
     "visitas_30d": 42,
     "visitas_90d": 42,
-    "aberturas_pdf": 445,
+    "aberturas_pdf": 447,
     "visitas_hoje": 0,
     "visitas_7d": 10,
-    "aberturas_hoje": 1,
-    "aberturas_7d": 108,
-    "aberturas_30d": 445,
+    "aberturas_hoje": 3,
+    "aberturas_7d": 110,
+    "aberturas_30d": 447,
     "pdf_abertos": 229,
-    "pdf_descarregados": 216,
-    "pdf_pt": 209,
-    "pdf_en": 236
+    "pdf_descarregados": 218,
+    "pdf_pt": 210,
+    "pdf_en": 237
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 446
+     "visitas": 448
     },
     {
      "id": "US",
