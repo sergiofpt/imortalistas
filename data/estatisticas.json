@@ -1,15 +1,15 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-15T10:32:16Z",
+ "atualizado_em": "2026-10-15T11:06:11Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
-  "visitas": 67,
-  "visitas_30d": 67,
-  "visitas_90d": 67,
+  "visitas": 68,
+  "visitas_30d": 68,
+  "visitas_90d": 68,
   "aberturas_pdf": 471,
-  "visitas_hoje": 1,
-  "visitas_7d": 14,
+  "visitas_hoje": 2,
+  "visitas_7d": 15,
   "aberturas_hoje": 1,
   "aberturas_7d": 108,
   "aberturas_30d": 471,
@@ -91,7 +91,7 @@
   },
   {
    "dia": "2026-10-15",
-   "visitas": 1,
+   "visitas": 2,
    "aberturas": 1
   }
  ],
@@ -105,11 +105,11 @@
    "visitas": 9
   },
   {
-   "path": "/",
-   "visitas": 7
+   "path": "/inicio.html",
+   "visitas": 8
   },
   {
-   "path": "/inicio.html",
+   "path": "/",
    "visitas": 7
   },
   {
@@ -1500,6 +1500,13 @@
    "visitas": 4
   },
   {
+   "id": "android/samsung-galaxy-s25-ultra",
+   "tipo": "android",
+   "nome": "Samsung Galaxy S25 Ultra",
+   "estimativa": false,
+   "visitas": 2
+  },
+  {
    "id": "computador/windows-11-chrome",
    "tipo": "computador",
    "nome": "Windows 11 · Chrome",
@@ -1538,13 +1545,6 @@
    "id": "android/samsung-galaxy-a54",
    "tipo": "android",
    "nome": "Samsung Galaxy A54",
-   "estimativa": false,
-   "visitas": 1
-  },
-  {
-   "id": "android/samsung-galaxy-s25-ultra",
-   "tipo": "android",
-   "nome": "Samsung Galaxy S25 Ultra",
    "estimativa": false,
    "visitas": 1
   },
@@ -1593,7 +1593,7 @@
   {
    "id": "PT",
    "nome": "Portugal",
-   "visitas": 48
+   "visitas": 49
   },
   {
    "id": "US",
@@ -1640,7 +1640,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 508
+   "visitas": 509
   },
   {
    "id": "Firefox",
@@ -1667,7 +1667,7 @@
   {
    "id": "Android",
    "nome": "Android",
-   "visitas": 21
+   "visitas": 22
   },
   {
    "id": "Linux",
@@ -1689,7 +1689,7 @@
   {
    "id": "phone",
    "nome": "phone",
-   "visitas": 17
+   "visitas": 18
   },
   {
    "id": "tablet",
@@ -1726,7 +1726,7 @@
   {
    "id": "https://imortalistas.com",
    "nome": "imortalistas.com",
-   "visitas": 2
+   "visitas": 3
   },
   {
    "id": "https://l.instagram.com",
@@ -1820,7 +1820,7 @@
     },
     {
      "dia": "2026-10-15",
-     "visitas": 1,
+     "visitas": 2,
      "aberturas": 0
     }
    ],
@@ -1831,7 +1831,7 @@
     },
     {
      "path": "/inicio.html",
-     "visitas": 3
+     "visitas": 4
     },
     {
      "path": "/origem.html",
@@ -2010,6 +2010,13 @@
      "visitas": 3
     },
     {
+     "id": "android/samsung-galaxy-s25-ultra",
+     "tipo": "android",
+     "nome": "Samsung Galaxy S25 Ultra",
+     "estimativa": false,
+     "visitas": 2
+    },
+    {
      "id": "computador/windows-10-11-chrome",
      "tipo": "computador",
      "nome": "Windows 10/11 · Chrome",
@@ -2022,23 +2029,16 @@
      "nome": "Android",
      "estimativa": false,
      "visitas": 1
-    },
-    {
-     "id": "android/samsung-galaxy-s25-ultra",
-     "tipo": "android",
-     "nome": "Samsung Galaxy S25 Ultra",
-     "estimativa": false,
-     "visitas": 1
     }
    ],
    "aparelhos_desde": "2026-10-03",
    "total": {
-    "visitas": 11,
-    "visitas_30d": 11,
-    "visitas_90d": 11,
+    "visitas": 12,
+    "visitas_30d": 12,
+    "visitas_90d": 12,
     "aberturas_pdf": 15,
-    "visitas_hoje": 1,
-    "visitas_7d": 4,
+    "visitas_hoje": 2,
+    "visitas_7d": 5,
     "aberturas_hoje": 0,
     "aberturas_7d": 0,
     "aberturas_30d": 15,
@@ -2051,7 +2051,7 @@
     {
      "id": "PT",
      "nome": "Portugal",
-     "visitas": 48
+     "visitas": 49
     }
    ]
   },
