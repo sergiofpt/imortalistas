@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-15T22:33:26Z",
+ "atualizado_em": "2026-10-15T23:42:22Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 68,
   "visitas_30d": 68,
   "visitas_90d": 68,
-  "aberturas_pdf": 474,
+  "aberturas_pdf": 475,
   "visitas_hoje": 2,
   "visitas_7d": 15,
   "aberturas_hoje": 4,
   "aberturas_7d": 111,
   "aberturas_30d": 474,
   "pdf_abertos": 256,
-  "pdf_descarregados": 218,
-  "pdf_pt": 234,
+  "pdf_descarregados": 219,
+  "pdf_pt": 235,
   "pdf_en": 240
  },
  "dias": [
@@ -173,6 +173,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "anestesia-cirurgia",
+   "ficheiro": null,
+   "pt": 4,
+   "en": 2,
+   "total": 6,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 2,
+   "descarregados_en": 1
+  },
+  {
    "id": "avc-pequenos-vasos-cerebrais",
    "ficheiro": null,
    "pt": 3,
@@ -213,17 +224,6 @@
    "total": 6,
    "abertos_pt": 1,
    "abertos_en": 3,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "anestesia-cirurgia",
-   "ficheiro": null,
-   "pt": 3,
-   "en": 2,
-   "total": 5,
-   "abertos_pt": 2,
-   "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 1
   },
@@ -1588,7 +1588,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 448
+   "visitas": 449
   },
   {
    "id": "PT",
@@ -1640,7 +1640,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 512
+   "visitas": 513
   },
   {
    "id": "Firefox",
@@ -1657,7 +1657,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 290
+   "visitas": 291
   },
   {
    "id": "macOS",
@@ -1704,7 +1704,7 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 474
+   "visitas": 475
   }
  ],
  "origens": [
@@ -1741,6 +1741,11 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2212,6 +2217,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "anestesia-cirurgia",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 2,
+     "descarregados_en": 1
+    },
+    {
      "id": "avc-pequenos-vasos-cerebrais",
      "ficheiro": null,
      "pt": 2,
@@ -2290,17 +2306,6 @@
     },
     {
      "id": "andropausa-envelhecimento-reprodutivo",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "anestesia-cirurgia",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3600,22 +3605,22 @@
     "visitas": 42,
     "visitas_30d": 42,
     "visitas_90d": 42,
-    "aberturas_pdf": 448,
+    "aberturas_pdf": 449,
     "visitas_hoje": 0,
     "visitas_7d": 10,
     "aberturas_hoje": 4,
     "aberturas_7d": 111,
     "aberturas_30d": 448,
     "pdf_abertos": 230,
-    "pdf_descarregados": 218,
-    "pdf_pt": 210,
+    "pdf_descarregados": 219,
+    "pdf_pt": 211,
     "pdf_en": 238
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 448
+     "visitas": 449
     },
     {
      "id": "US",
