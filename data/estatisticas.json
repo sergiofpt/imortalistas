@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-15T00:04:36Z",
+ "atualizado_em": "2026-10-15T10:32:16Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
-  "visitas": 66,
-  "visitas_30d": 66,
-  "visitas_90d": 66,
-  "aberturas_pdf": 470,
-  "visitas_hoje": 0,
-  "visitas_7d": 13,
-  "aberturas_hoje": 0,
-  "aberturas_7d": 107,
-  "aberturas_30d": 470,
+  "visitas": 67,
+  "visitas_30d": 67,
+  "visitas_90d": 67,
+  "aberturas_pdf": 471,
+  "visitas_hoje": 1,
+  "visitas_7d": 14,
+  "aberturas_hoje": 1,
+  "aberturas_7d": 108,
+  "aberturas_30d": 471,
   "pdf_abertos": 255,
-  "pdf_descarregados": 215,
-  "pdf_pt": 232,
+  "pdf_descarregados": 216,
+  "pdf_pt": 233,
   "pdf_en": 238
  },
  "dias": [
@@ -91,8 +91,8 @@
   },
   {
    "dia": "2026-10-15",
-   "visitas": 0,
-   "aberturas": 0
+   "visitas": 1,
+   "aberturas": 1
   }
  ],
  "paginas": [
@@ -110,7 +110,7 @@
   },
   {
    "path": "/inicio.html",
-   "visitas": 6
+   "visitas": 7
   },
   {
    "path": "/genetica-boa.html",
@@ -789,6 +789,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "mitocondrias-energia",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "olhos-em-detalhe",
    "ficheiro": null,
    "pt": 2,
@@ -1317,17 +1328,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "mitocondrias-energia",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "musculo-osso-sarcopenia",
    "ficheiro": null,
    "pt": 2,
@@ -1542,6 +1542,13 @@
    "visitas": 1
   },
   {
+   "id": "android/samsung-galaxy-s25-ultra",
+   "tipo": "android",
+   "nome": "Samsung Galaxy S25 Ultra",
+   "estimativa": false,
+   "visitas": 1
+  },
+  {
    "id": "android/samsung-sm-a566b",
    "tipo": "android",
    "nome": "Samsung SM-A566B",
@@ -1581,12 +1588,12 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 445
+   "visitas": 446
   },
   {
    "id": "PT",
    "nome": "Portugal",
-   "visitas": 47
+   "visitas": 48
   },
   {
    "id": "US",
@@ -1633,7 +1640,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 506
+   "visitas": 508
   },
   {
    "id": "Firefox",
@@ -1650,7 +1657,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 288
+   "visitas": 289
   },
   {
    "id": "macOS",
@@ -1660,7 +1667,7 @@
   {
    "id": "Android",
    "nome": "Android",
-   "visitas": 20
+   "visitas": 21
   },
   {
    "id": "Linux",
@@ -1682,7 +1689,7 @@
   {
    "id": "phone",
    "nome": "phone",
-   "visitas": 16
+   "visitas": 17
   },
   {
    "id": "tablet",
@@ -1697,14 +1704,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 470
+   "visitas": 471
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 524
+   "visitas": 525
   },
   {
    "id": "https://bing.com",
@@ -1715,6 +1722,11 @@
    "id": "https://www.rapamycin.news",
    "nome": "www.rapamycin.news",
    "visitas": 4
+  },
+  {
+   "id": "https://imortalistas.com",
+   "nome": "imortalistas.com",
+   "visitas": 2
   },
   {
    "id": "https://l.instagram.com",
@@ -1729,11 +1741,6 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
-   "visitas": 1
-  },
-  {
-   "id": "https://imortalistas.com",
-   "nome": "imortalistas.com",
    "visitas": 1
   }
  ],
@@ -1813,7 +1820,7 @@
     },
     {
      "dia": "2026-10-15",
-     "visitas": 0,
+     "visitas": 1,
      "aberturas": 0
     }
    ],
@@ -1823,12 +1830,12 @@
      "visitas": 5
     },
     {
-     "path": "/origem.html",
+     "path": "/inicio.html",
      "visitas": 3
     },
     {
-     "path": "/inicio.html",
-     "visitas": 2
+     "path": "/origem.html",
+     "visitas": 3
     }
    ],
    "relatorios": [
@@ -2015,16 +2022,23 @@
      "nome": "Android",
      "estimativa": false,
      "visitas": 1
+    },
+    {
+     "id": "android/samsung-galaxy-s25-ultra",
+     "tipo": "android",
+     "nome": "Samsung Galaxy S25 Ultra",
+     "estimativa": false,
+     "visitas": 1
     }
    ],
    "aparelhos_desde": "2026-10-03",
    "total": {
-    "visitas": 10,
-    "visitas_30d": 10,
-    "visitas_90d": 10,
+    "visitas": 11,
+    "visitas_30d": 11,
+    "visitas_90d": 11,
     "aberturas_pdf": 15,
-    "visitas_hoje": 0,
-    "visitas_7d": 3,
+    "visitas_hoje": 1,
+    "visitas_7d": 4,
     "aberturas_hoje": 0,
     "aberturas_7d": 0,
     "aberturas_30d": 15,
@@ -2037,7 +2051,7 @@
     {
      "id": "PT",
      "nome": "Portugal",
-     "visitas": 47
+     "visitas": 48
     }
    ]
   },
@@ -2116,7 +2130,7 @@
     {
      "dia": "2026-10-15",
      "visitas": 0,
-     "aberturas": 0
+     "aberturas": 1
     }
    ],
    "paginas": [
@@ -2711,6 +2725,17 @@
     },
     {
      "id": "microbioma-intestino",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "mitocondrias-energia",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3337,17 +3362,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "mitocondrias-energia",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "musculo-osso-sarcopenia",
      "ficheiro": null,
      "pt": 2,
@@ -3581,22 +3595,22 @@
     "visitas": 42,
     "visitas_30d": 42,
     "visitas_90d": 42,
-    "aberturas_pdf": 444,
+    "aberturas_pdf": 445,
     "visitas_hoje": 0,
     "visitas_7d": 10,
-    "aberturas_hoje": 0,
-    "aberturas_7d": 107,
-    "aberturas_30d": 444,
+    "aberturas_hoje": 1,
+    "aberturas_7d": 108,
+    "aberturas_30d": 445,
     "pdf_abertos": 229,
-    "pdf_descarregados": 215,
-    "pdf_pt": 208,
+    "pdf_descarregados": 216,
+    "pdf_pt": 209,
     "pdf_en": 236
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 445
+     "visitas": 446
     },
     {
      "id": "US",
