@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-16T11:30:35Z",
+ "atualizado_em": "2026-10-16T12:03:24Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 69,
   "visitas_30d": 69,
   "visitas_90d": 69,
-  "aberturas_pdf": 492,
+  "aberturas_pdf": 493,
   "visitas_hoje": 1,
   "visitas_7d": 7,
-  "aberturas_hoje": 18,
-  "aberturas_7d": 86,
-  "aberturas_30d": 492,
+  "aberturas_hoje": 19,
+  "aberturas_7d": 87,
+  "aberturas_30d": 493,
   "pdf_abertos": 262,
-  "pdf_descarregados": 230,
-  "pdf_pt": 239,
+  "pdf_descarregados": 231,
+  "pdf_pt": 240,
   "pdf_en": 253
  },
  "dias": [
@@ -97,7 +97,7 @@
   {
    "dia": "2026-10-16",
    "visitas": 1,
-   "aberturas": 18
+   "aberturas": 19
   }
  ],
  "paginas": [
@@ -215,6 +215,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "suprarrenais-cortisol",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 4,
+   "total": 7,
+   "abertos_pt": 1,
+   "abertos_en": 2,
+   "descarregados_pt": 2,
+   "descarregados_en": 2
+  },
+  {
    "id": "avc-pequenos-vasos-cerebrais",
    "ficheiro": null,
    "pt": 3,
@@ -257,17 +268,6 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 1
-  },
-  {
-   "id": "suprarrenais-cortisol",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 4,
-   "total": 6,
-   "abertos_pt": 1,
-   "abertos_en": 2,
-   "descarregados_pt": 1,
-   "descarregados_en": 2
   },
   {
    "id": "acne-glandulas-sebaceas",
@@ -1655,6 +1655,11 @@
    "visitas": 1
   },
   {
+   "id": "PY",
+   "nome": "Paraguay",
+   "visitas": 1
+  },
+  {
    "id": "RU",
    "nome": "Russia",
    "visitas": 1
@@ -1664,7 +1669,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 531
+   "visitas": 532
   },
   {
    "id": "Firefox",
@@ -1686,7 +1691,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 221
+   "visitas": 222
   },
   {
    "id": "Android",
@@ -1733,7 +1738,7 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 492
+   "visitas": 493
   }
  ],
  "origens": [
@@ -1770,6 +1775,11 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2219,7 +2229,7 @@
     {
      "dia": "2026-10-16",
      "visitas": 1,
-     "aberturas": 18
+     "aberturas": 19
     }
    ],
    "paginas": [
@@ -2322,6 +2332,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "suprarrenais-cortisol",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 4,
+     "total": 7,
+     "abertos_pt": 1,
+     "abertos_en": 2,
+     "descarregados_pt": 2,
+     "descarregados_en": 2
+    },
+    {
      "id": "cancros-um-a-um",
      "ficheiro": null,
      "pt": 2,
@@ -2334,17 +2355,6 @@
     },
     {
      "id": "doencas-autoimunes",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 4,
-     "total": 6,
-     "abertos_pt": 1,
-     "abertos_en": 2,
-     "descarregados_pt": 1,
-     "descarregados_en": 2
-    },
-    {
-     "id": "suprarrenais-cortisol",
      "ficheiro": null,
      "pt": 2,
      "en": 4,
@@ -3688,15 +3698,15 @@
     "visitas": 43,
     "visitas_30d": 43,
     "visitas_90d": 43,
-    "aberturas_pdf": 466,
+    "aberturas_pdf": 467,
     "visitas_hoje": 1,
     "visitas_7d": 5,
-    "aberturas_hoje": 18,
-    "aberturas_7d": 86,
-    "aberturas_30d": 466,
+    "aberturas_hoje": 19,
+    "aberturas_7d": 87,
+    "aberturas_30d": 467,
     "pdf_abertos": 236,
-    "pdf_descarregados": 230,
-    "pdf_pt": 215,
+    "pdf_descarregados": 231,
+    "pdf_pt": 216,
     "pdf_en": 251
    },
    "paises": [
@@ -3753,6 +3763,11 @@
     {
      "id": "PL",
      "nome": "Poland",
+     "visitas": 1
+    },
+    {
+     "id": "PY",
+     "nome": "Paraguay",
      "visitas": 1
     },
     {
