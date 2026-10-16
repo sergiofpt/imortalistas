@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-16T03:50:34Z",
+ "atualizado_em": "2026-10-16T04:29:47Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 69,
   "visitas_30d": 69,
   "visitas_90d": 69,
-  "aberturas_pdf": 483,
+  "aberturas_pdf": 484,
   "visitas_hoje": 1,
   "visitas_7d": 7,
-  "aberturas_hoje": 9,
-  "aberturas_7d": 77,
-  "aberturas_30d": 483,
-  "pdf_abertos": 258,
+  "aberturas_hoje": 10,
+  "aberturas_7d": 78,
+  "aberturas_30d": 484,
+  "pdf_abertos": 259,
   "pdf_descarregados": 225,
   "pdf_pt": 236,
-  "pdf_en": 247
+  "pdf_en": 248
  },
  "dias": [
   {
@@ -97,7 +97,7 @@
   {
    "dia": "2026-10-16",
    "visitas": 1,
-   "aberturas": 9
+   "aberturas": 10
   }
  ],
  "paginas": [
@@ -290,6 +290,17 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 2
+  },
+  {
+   "id": "doencas-autoimunes",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 3,
+   "total": 5,
+   "abertos_pt": 1,
+   "abertos_en": 2,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
   },
   {
    "id": "farmacogenomica-632",
@@ -590,17 +601,6 @@
   },
   {
    "id": "doenca-arterial-periferica",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "doencas-autoimunes",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -1597,7 +1597,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 450
+   "visitas": 451
   },
   {
    "id": "PT",
@@ -1659,7 +1659,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 522
+   "visitas": 523
   },
   {
    "id": "Firefox",
@@ -1676,7 +1676,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 292
+   "visitas": 293
   },
   {
    "id": "macOS",
@@ -1728,7 +1728,7 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 483
+   "visitas": 484
   }
  ],
  "origens": [
@@ -1765,6 +1765,11 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2194,7 +2199,7 @@
     {
      "dia": "2026-10-16",
      "visitas": 1,
-     "aberturas": 9
+     "aberturas": 10
     }
    ],
    "paginas": [
@@ -2350,6 +2355,17 @@
      "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 2
+    },
+    {
+     "id": "doencas-autoimunes",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 3,
+     "total": 5,
+     "abertos_pt": 1,
+     "abertos_en": 2,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
     },
     {
      "id": "infecoes",
@@ -2595,17 +2611,6 @@
     },
     {
      "id": "doenca-arterial-periferica",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "doencas-autoimunes",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3663,22 +3668,22 @@
     "visitas": 43,
     "visitas_30d": 43,
     "visitas_90d": 43,
-    "aberturas_pdf": 457,
+    "aberturas_pdf": 458,
     "visitas_hoje": 1,
     "visitas_7d": 5,
-    "aberturas_hoje": 9,
-    "aberturas_7d": 77,
-    "aberturas_30d": 457,
-    "pdf_abertos": 232,
+    "aberturas_hoje": 10,
+    "aberturas_7d": 78,
+    "aberturas_30d": 458,
+    "pdf_abertos": 233,
     "pdf_descarregados": 225,
     "pdf_pt": 212,
-    "pdf_en": 245
+    "pdf_en": 246
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 450
+     "visitas": 451
     },
     {
      "id": "US",
