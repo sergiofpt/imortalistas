@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-16T04:29:47Z",
+ "atualizado_em": "2026-10-16T05:04:49Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 69,
   "visitas_30d": 69,
   "visitas_90d": 69,
-  "aberturas_pdf": 484,
+  "aberturas_pdf": 485,
   "visitas_hoje": 1,
   "visitas_7d": 7,
-  "aberturas_hoje": 10,
-  "aberturas_7d": 78,
-  "aberturas_30d": 484,
+  "aberturas_hoje": 11,
+  "aberturas_7d": 79,
+  "aberturas_30d": 485,
   "pdf_abertos": 259,
-  "pdf_descarregados": 225,
+  "pdf_descarregados": 226,
   "pdf_pt": 236,
-  "pdf_en": 248
+  "pdf_en": 249
  },
  "dias": [
   {
@@ -97,7 +97,7 @@
   {
    "dia": "2026-10-16",
    "visitas": 1,
-   "aberturas": 10
+   "aberturas": 11
   }
  ],
  "paginas": [
@@ -204,6 +204,17 @@
    "descarregados_en": 2
   },
   {
+   "id": "doencas-autoimunes",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 4,
+   "total": 6,
+   "abertos_pt": 1,
+   "abertos_en": 2,
+   "descarregados_pt": 1,
+   "descarregados_en": 2
+  },
+  {
    "id": "doencas-geneticas-hereditarias",
    "ficheiro": null,
    "pt": 4,
@@ -290,17 +301,6 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 2
-  },
-  {
-   "id": "doencas-autoimunes",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 3,
-   "total": 5,
-   "abertos_pt": 1,
-   "abertos_en": 2,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
   },
   {
    "id": "farmacogenomica-632",
@@ -1607,7 +1607,7 @@
   {
    "id": "US",
    "nome": "United States",
-   "visitas": 37
+   "visitas": 38
   },
   {
    "id": "CA",
@@ -1659,7 +1659,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 523
+   "visitas": 524
   },
   {
    "id": "Firefox",
@@ -1681,7 +1681,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 214
+   "visitas": 215
   },
   {
    "id": "Android",
@@ -1728,14 +1728,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 484
+   "visitas": 485
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 532
+   "visitas": 533
   },
   {
    "id": "https://bing.com",
@@ -2199,7 +2199,7 @@
     {
      "dia": "2026-10-16",
      "visitas": 1,
-     "aberturas": 10
+     "aberturas": 11
     }
    ],
    "paginas": [
@@ -2280,6 +2280,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "doencas-autoimunes",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 4,
+     "total": 6,
+     "abertos_pt": 1,
+     "abertos_en": 2,
+     "descarregados_pt": 1,
+     "descarregados_en": 2
+    },
+    {
      "id": "estado-portador",
      "ficheiro": null,
      "pt": 3,
@@ -2355,17 +2366,6 @@
      "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 2
-    },
-    {
-     "id": "doencas-autoimunes",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 3,
-     "total": 5,
-     "abertos_pt": 1,
-     "abertos_en": 2,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
     },
     {
      "id": "infecoes",
@@ -3668,16 +3668,16 @@
     "visitas": 43,
     "visitas_30d": 43,
     "visitas_90d": 43,
-    "aberturas_pdf": 458,
+    "aberturas_pdf": 459,
     "visitas_hoje": 1,
     "visitas_7d": 5,
-    "aberturas_hoje": 10,
-    "aberturas_7d": 78,
-    "aberturas_30d": 458,
+    "aberturas_hoje": 11,
+    "aberturas_7d": 79,
+    "aberturas_30d": 459,
     "pdf_abertos": 233,
-    "pdf_descarregados": 225,
+    "pdf_descarregados": 226,
     "pdf_pt": 212,
-    "pdf_en": 246
+    "pdf_en": 247
    },
    "paises": [
     {
@@ -3688,7 +3688,7 @@
     {
      "id": "US",
      "nome": "United States",
-     "visitas": 37
+     "visitas": 38
     },
     {
      "id": "CA",
