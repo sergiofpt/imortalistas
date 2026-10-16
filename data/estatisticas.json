@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-16T00:02:15Z",
+ "atualizado_em": "2026-10-16T02:01:58Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 68,
   "visitas_30d": 68,
   "visitas_90d": 68,
-  "aberturas_pdf": 475,
+  "aberturas_pdf": 476,
   "visitas_hoje": 0,
   "visitas_7d": 6,
-  "aberturas_hoje": 1,
-  "aberturas_7d": 69,
-  "aberturas_30d": 475,
+  "aberturas_hoje": 2,
+  "aberturas_7d": 70,
+  "aberturas_30d": 476,
   "pdf_abertos": 256,
-  "pdf_descarregados": 219,
+  "pdf_descarregados": 220,
   "pdf_pt": 235,
-  "pdf_en": 240
+  "pdf_en": 241
  },
  "dias": [
   {
@@ -97,7 +97,7 @@
   {
    "dia": "2026-10-16",
    "visitas": 0,
-   "aberturas": 1
+   "aberturas": 2
   }
  ],
  "paginas": [
@@ -159,12 +159,12 @@
    "id": "imortalidade",
    "ficheiro": null,
    "pt": 8,
-   "en": 5,
-   "total": 13,
+   "en": 6,
+   "total": 14,
    "abertos_pt": 7,
    "abertos_en": 4,
    "descarregados_pt": 1,
-   "descarregados_en": 1
+   "descarregados_en": 2
   },
   {
    "id": "cancros-um-a-um",
@@ -1626,6 +1626,11 @@
    "visitas": 1
   },
   {
+   "id": "HK",
+   "nome": "Hong Kong",
+   "visitas": 1
+  },
+  {
    "id": "NL",
    "nome": "Netherlands",
    "visitas": 1
@@ -1645,7 +1650,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 513
+   "visitas": 514
   },
   {
    "id": "Firefox",
@@ -1667,7 +1672,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 207
+   "visitas": 208
   },
   {
    "id": "Android",
@@ -1709,7 +1714,7 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 475
+   "visitas": 476
   }
  ],
  "origens": [
@@ -1746,6 +1751,11 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2155,7 +2165,7 @@
     {
      "dia": "2026-10-16",
      "visitas": 0,
-     "aberturas": 1
+     "aberturas": 2
     }
    ],
    "paginas": [
@@ -2221,6 +2231,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "imortalidade",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 4,
+     "total": 6,
+     "abertos_pt": 1,
+     "abertos_en": 2,
+     "descarregados_pt": 1,
+     "descarregados_en": 2
+    },
+    {
      "id": "referencia-via-forca-hipertrofia-potencia",
      "ficheiro": null,
      "pt": 2,
@@ -2252,17 +2273,6 @@
      "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 2
-    },
-    {
-     "id": "imortalidade",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 3,
-     "total": 5,
-     "abertos_pt": 1,
-     "abertos_en": 2,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
     },
     {
      "id": "infecoes",
@@ -3620,16 +3630,16 @@
     "visitas": 42,
     "visitas_30d": 42,
     "visitas_90d": 42,
-    "aberturas_pdf": 449,
+    "aberturas_pdf": 450,
     "visitas_hoje": 0,
     "visitas_7d": 4,
-    "aberturas_hoje": 1,
-    "aberturas_7d": 69,
-    "aberturas_30d": 449,
+    "aberturas_hoje": 2,
+    "aberturas_7d": 70,
+    "aberturas_30d": 450,
     "pdf_abertos": 230,
-    "pdf_descarregados": 219,
+    "pdf_descarregados": 220,
     "pdf_pt": 211,
-    "pdf_en": 238
+    "pdf_en": 239
    },
    "paises": [
     {
@@ -3660,6 +3670,11 @@
     {
      "id": "GG",
      "nome": "Guernsey",
+     "visitas": 1
+    },
+    {
+     "id": "HK",
+     "nome": "Hong Kong",
      "visitas": 1
     },
     {
