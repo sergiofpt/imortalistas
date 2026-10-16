@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-16T10:08:04Z",
+ "atualizado_em": "2026-10-16T10:50:30Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 69,
   "visitas_30d": 69,
   "visitas_90d": 69,
-  "aberturas_pdf": 490,
+  "aberturas_pdf": 491,
   "visitas_hoje": 1,
   "visitas_7d": 7,
-  "aberturas_hoje": 16,
-  "aberturas_7d": 84,
-  "aberturas_30d": 490,
-  "pdf_abertos": 261,
+  "aberturas_hoje": 17,
+  "aberturas_7d": 85,
+  "aberturas_30d": 491,
+  "pdf_abertos": 262,
   "pdf_descarregados": 229,
   "pdf_pt": 238,
-  "pdf_en": 252
+  "pdf_en": 253
  },
  "dias": [
   {
@@ -97,7 +97,7 @@
   {
    "dia": "2026-10-16",
    "visitas": 1,
-   "aberturas": 16
+   "aberturas": 17
   }
  ],
  "paginas": [
@@ -174,10 +174,10 @@
    "id": "anestesia-cirurgia",
    "ficheiro": null,
    "pt": 4,
-   "en": 4,
-   "total": 8,
+   "en": 5,
+   "total": 9,
    "abertos_pt": 2,
-   "abertos_en": 2,
+   "abertos_en": 3,
    "descarregados_pt": 2,
    "descarregados_en": 2
   },
@@ -1607,7 +1607,7 @@
   {
    "id": "US",
    "nome": "United States",
-   "visitas": 39
+   "visitas": 40
   },
   {
    "id": "HK",
@@ -1664,7 +1664,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 529
+   "visitas": 530
   },
   {
    "id": "Firefox",
@@ -1686,7 +1686,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 219
+   "visitas": 220
   },
   {
    "id": "Android",
@@ -1733,14 +1733,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 490
+   "visitas": 491
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 536
+   "visitas": 537
   },
   {
    "id": "https://bing.com",
@@ -2214,7 +2214,7 @@
     {
      "dia": "2026-10-16",
      "visitas": 1,
-     "aberturas": 16
+     "aberturas": 17
     }
    ],
    "paginas": [
@@ -2273,7 +2273,7 @@
    ],
    "relatorios": [
     {
-     "id": "imortalidade",
+     "id": "anestesia-cirurgia",
      "ficheiro": null,
      "pt": 3,
      "en": 5,
@@ -2284,13 +2284,13 @@
      "descarregados_en": 2
     },
     {
-     "id": "anestesia-cirurgia",
+     "id": "imortalidade",
      "ficheiro": null,
      "pt": 3,
-     "en": 4,
-     "total": 7,
+     "en": 5,
+     "total": 8,
      "abertos_pt": 1,
-     "abertos_en": 2,
+     "abertos_en": 3,
      "descarregados_pt": 2,
      "descarregados_en": 2
     },
@@ -3683,16 +3683,16 @@
     "visitas": 43,
     "visitas_30d": 43,
     "visitas_90d": 43,
-    "aberturas_pdf": 464,
+    "aberturas_pdf": 465,
     "visitas_hoje": 1,
     "visitas_7d": 5,
-    "aberturas_hoje": 16,
-    "aberturas_7d": 84,
-    "aberturas_30d": 464,
-    "pdf_abertos": 235,
+    "aberturas_hoje": 17,
+    "aberturas_7d": 85,
+    "aberturas_30d": 465,
+    "pdf_abertos": 236,
     "pdf_descarregados": 229,
     "pdf_pt": 214,
-    "pdf_en": 250
+    "pdf_en": 251
    },
    "paises": [
     {
@@ -3703,7 +3703,7 @@
     {
      "id": "US",
      "nome": "United States",
-     "visitas": 39
+     "visitas": 40
     },
     {
      "id": "HK",
