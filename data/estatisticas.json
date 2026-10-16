@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-16T05:04:49Z",
+ "atualizado_em": "2026-10-16T07:23:18Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 69,
   "visitas_30d": 69,
   "visitas_90d": 69,
-  "aberturas_pdf": 485,
+  "aberturas_pdf": 486,
   "visitas_hoje": 1,
   "visitas_7d": 7,
-  "aberturas_hoje": 11,
-  "aberturas_7d": 79,
-  "aberturas_30d": 485,
-  "pdf_abertos": 259,
+  "aberturas_hoje": 12,
+  "aberturas_7d": 80,
+  "aberturas_30d": 486,
+  "pdf_abertos": 260,
   "pdf_descarregados": 226,
   "pdf_pt": 236,
-  "pdf_en": 249
+  "pdf_en": 250
  },
  "dias": [
   {
@@ -97,7 +97,7 @@
   {
    "dia": "2026-10-16",
    "visitas": 1,
-   "aberturas": 11
+   "aberturas": 12
   }
  ],
  "paginas": [
@@ -182,6 +182,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "estado-portador",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 4,
+   "total": 7,
+   "abertos_pt": 1,
+   "abertos_en": 2,
+   "descarregados_pt": 2,
+   "descarregados_en": 2
+  },
+  {
    "id": "anestesia-cirurgia",
    "ficheiro": null,
    "pt": 4,
@@ -224,17 +235,6 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 1
-  },
-  {
-   "id": "estado-portador",
-   "ficheiro": null,
-   "pt": 3,
-   "en": 3,
-   "total": 6,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 2,
-   "descarregados_en": 2
   },
   {
    "id": "psicadelicos",
@@ -1607,7 +1607,7 @@
   {
    "id": "US",
    "nome": "United States",
-   "visitas": 38
+   "visitas": 39
   },
   {
    "id": "CA",
@@ -1659,7 +1659,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 524
+   "visitas": 525
   },
   {
    "id": "Firefox",
@@ -1681,7 +1681,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 215
+   "visitas": 216
   },
   {
    "id": "Android",
@@ -1728,14 +1728,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 485
+   "visitas": 486
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 533
+   "visitas": 534
   },
   {
    "id": "https://bing.com",
@@ -2199,7 +2199,7 @@
     {
      "dia": "2026-10-16",
      "visitas": 1,
-     "aberturas": 11
+     "aberturas": 12
     }
    ],
    "paginas": [
@@ -2258,6 +2258,17 @@
    ],
    "relatorios": [
     {
+     "id": "estado-portador",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 4,
+     "total": 7,
+     "abertos_pt": 1,
+     "abertos_en": 2,
+     "descarregados_pt": 2,
+     "descarregados_en": 2
+    },
+    {
      "id": "imortalidade",
      "ficheiro": null,
      "pt": 2,
@@ -2288,17 +2299,6 @@
      "abertos_pt": 1,
      "abertos_en": 2,
      "descarregados_pt": 1,
-     "descarregados_en": 2
-    },
-    {
-     "id": "estado-portador",
-     "ficheiro": null,
-     "pt": 3,
-     "en": 3,
-     "total": 6,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 2,
      "descarregados_en": 2
     },
     {
@@ -3668,16 +3668,16 @@
     "visitas": 43,
     "visitas_30d": 43,
     "visitas_90d": 43,
-    "aberturas_pdf": 459,
+    "aberturas_pdf": 460,
     "visitas_hoje": 1,
     "visitas_7d": 5,
-    "aberturas_hoje": 11,
-    "aberturas_7d": 79,
-    "aberturas_30d": 459,
-    "pdf_abertos": 233,
+    "aberturas_hoje": 12,
+    "aberturas_7d": 80,
+    "aberturas_30d": 460,
+    "pdf_abertos": 234,
     "pdf_descarregados": 226,
     "pdf_pt": 212,
-    "pdf_en": 247
+    "pdf_en": 248
    },
    "paises": [
     {
@@ -3688,7 +3688,7 @@
     {
      "id": "US",
      "nome": "United States",
-     "visitas": 38
+     "visitas": 39
     },
     {
      "id": "CA",
