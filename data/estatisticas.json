@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-16T08:52:32Z",
+ "atualizado_em": "2026-10-16T10:08:04Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 69,
   "visitas_30d": 69,
   "visitas_90d": 69,
-  "aberturas_pdf": 488,
+  "aberturas_pdf": 490,
   "visitas_hoje": 1,
   "visitas_7d": 7,
-  "aberturas_hoje": 14,
-  "aberturas_7d": 82,
-  "aberturas_30d": 488,
-  "pdf_abertos": 260,
-  "pdf_descarregados": 228,
+  "aberturas_hoje": 16,
+  "aberturas_7d": 84,
+  "aberturas_30d": 490,
+  "pdf_abertos": 261,
+  "pdf_descarregados": 229,
   "pdf_pt": 238,
-  "pdf_en": 250
+  "pdf_en": 252
  },
  "dias": [
   {
@@ -97,7 +97,7 @@
   {
    "dia": "2026-10-16",
    "visitas": 1,
-   "aberturas": 14
+   "aberturas": 16
   }
  ],
  "paginas": [
@@ -171,6 +171,17 @@
    "descarregados_en": 2
   },
   {
+   "id": "anestesia-cirurgia",
+   "ficheiro": null,
+   "pt": 4,
+   "en": 4,
+   "total": 8,
+   "abertos_pt": 2,
+   "abertos_en": 2,
+   "descarregados_pt": 2,
+   "descarregados_en": 2
+  },
+  {
    "id": "cancros-um-a-um",
    "ficheiro": null,
    "pt": 3,
@@ -200,17 +211,6 @@
    "total": 7,
    "abertos_pt": 1,
    "abertos_en": 3,
-   "descarregados_pt": 2,
-   "descarregados_en": 1
-  },
-  {
-   "id": "anestesia-cirurgia",
-   "ficheiro": null,
-   "pt": 4,
-   "en": 2,
-   "total": 6,
-   "abertos_pt": 2,
-   "abertos_en": 1,
    "descarregados_pt": 2,
    "descarregados_en": 1
   },
@@ -1610,6 +1610,11 @@
    "visitas": 39
   },
   {
+   "id": "HK",
+   "nome": "Hong Kong",
+   "visitas": 5
+  },
+  {
    "id": "CA",
    "nome": "Canada",
    "visitas": 4
@@ -1618,11 +1623,6 @@
    "id": "MX",
    "nome": "Mexico",
    "visitas": 4
-  },
-  {
-   "id": "HK",
-   "nome": "Hong Kong",
-   "visitas": 3
   },
   {
    "id": "BR",
@@ -1664,7 +1664,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 527
+   "visitas": 529
   },
   {
    "id": "Firefox",
@@ -1686,7 +1686,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 217
+   "visitas": 219
   },
   {
    "id": "Android",
@@ -1733,14 +1733,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 488
+   "visitas": 490
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 534
+   "visitas": 536
   },
   {
    "id": "https://bing.com",
@@ -2214,7 +2214,7 @@
     {
      "dia": "2026-10-16",
      "visitas": 1,
-     "aberturas": 14
+     "aberturas": 16
     }
    ],
    "paginas": [
@@ -2284,6 +2284,17 @@
      "descarregados_en": 2
     },
     {
+     "id": "anestesia-cirurgia",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 4,
+     "total": 7,
+     "abertos_pt": 1,
+     "abertos_en": 2,
+     "descarregados_pt": 2,
+     "descarregados_en": 2
+    },
+    {
      "id": "estado-portador",
      "ficheiro": null,
      "pt": 3,
@@ -2348,17 +2359,6 @@
      "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 2
-    },
-    {
-     "id": "anestesia-cirurgia",
-     "ficheiro": null,
-     "pt": 3,
-     "en": 2,
-     "total": 5,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 2,
-     "descarregados_en": 1
     },
     {
      "id": "avc-pequenos-vasos-cerebrais",
@@ -3683,16 +3683,16 @@
     "visitas": 43,
     "visitas_30d": 43,
     "visitas_90d": 43,
-    "aberturas_pdf": 462,
+    "aberturas_pdf": 464,
     "visitas_hoje": 1,
     "visitas_7d": 5,
-    "aberturas_hoje": 14,
-    "aberturas_7d": 82,
-    "aberturas_30d": 462,
-    "pdf_abertos": 234,
-    "pdf_descarregados": 228,
+    "aberturas_hoje": 16,
+    "aberturas_7d": 84,
+    "aberturas_30d": 464,
+    "pdf_abertos": 235,
+    "pdf_descarregados": 229,
     "pdf_pt": 214,
-    "pdf_en": 248
+    "pdf_en": 250
    },
    "paises": [
     {
@@ -3706,6 +3706,11 @@
      "visitas": 39
     },
     {
+     "id": "HK",
+     "nome": "Hong Kong",
+     "visitas": 5
+    },
+    {
      "id": "CA",
      "nome": "Canada",
      "visitas": 4
@@ -3714,11 +3719,6 @@
      "id": "MX",
      "nome": "Mexico",
      "visitas": 4
-    },
-    {
-     "id": "HK",
-     "nome": "Hong Kong",
-     "visitas": 3
     },
     {
      "id": "BR",
