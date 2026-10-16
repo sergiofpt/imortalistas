@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-16T13:02:35Z",
+ "atualizado_em": "2026-10-16T14:33:26Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 69,
   "visitas_30d": 69,
   "visitas_90d": 69,
-  "aberturas_pdf": 495,
+  "aberturas_pdf": 496,
   "visitas_hoje": 1,
   "visitas_7d": 7,
-  "aberturas_hoje": 21,
-  "aberturas_7d": 89,
-  "aberturas_30d": 495,
-  "pdf_abertos": 263,
+  "aberturas_hoje": 22,
+  "aberturas_7d": 90,
+  "aberturas_30d": 496,
+  "pdf_abertos": 264,
   "pdf_descarregados": 232,
   "pdf_pt": 240,
-  "pdf_en": 255
+  "pdf_en": 256
  },
  "dias": [
   {
@@ -97,7 +97,7 @@
   {
    "dia": "2026-10-16",
    "visitas": 1,
-   "aberturas": 21
+   "aberturas": 22
   }
  ],
  "paginas": [
@@ -193,6 +193,17 @@
    "descarregados_en": 2
   },
   {
+   "id": "referencia-via-forca-hipertrofia-potencia",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 5,
+   "total": 8,
+   "abertos_pt": 1,
+   "abertos_en": 4,
+   "descarregados_pt": 2,
+   "descarregados_en": 1
+  },
+  {
    "id": "estado-portador",
    "ficheiro": null,
    "pt": 3,
@@ -202,17 +213,6 @@
    "abertos_en": 2,
    "descarregados_pt": 2,
    "descarregados_en": 2
-  },
-  {
-   "id": "referencia-via-forca-hipertrofia-potencia",
-   "ficheiro": null,
-   "pt": 3,
-   "en": 4,
-   "total": 7,
-   "abertos_pt": 1,
-   "abertos_en": 3,
-   "descarregados_pt": 2,
-   "descarregados_en": 1
   },
   {
    "id": "suprarrenais-cortisol",
@@ -1615,13 +1615,13 @@
    "visitas": 7
   },
   {
-   "id": "CA",
-   "nome": "Canada",
-   "visitas": 4
-  },
-  {
    "id": "MX",
    "nome": "Mexico",
+   "visitas": 5
+  },
+  {
+   "id": "CA",
+   "nome": "Canada",
    "visitas": 4
   },
   {
@@ -1669,7 +1669,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 534
+   "visitas": 535
   },
   {
    "id": "Firefox",
@@ -1686,7 +1686,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 296
+   "visitas": 297
   },
   {
    "id": "macOS",
@@ -1738,14 +1738,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 495
+   "visitas": 496
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 539
+   "visitas": 540
   },
   {
    "id": "https://bing.com",
@@ -2229,7 +2229,7 @@
     {
      "dia": "2026-10-16",
      "visitas": 1,
-     "aberturas": 21
+     "aberturas": 22
     }
    ],
    "paginas": [
@@ -2321,6 +2321,17 @@
      "descarregados_en": 2
     },
     {
+     "id": "referencia-via-forca-hipertrofia-potencia",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 5,
+     "total": 8,
+     "abertos_pt": 1,
+     "abertos_en": 4,
+     "descarregados_pt": 2,
+     "descarregados_en": 1
+    },
+    {
      "id": "estado-portador",
      "ficheiro": null,
      "pt": 3,
@@ -2330,17 +2341,6 @@
      "abertos_en": 2,
      "descarregados_pt": 2,
      "descarregados_en": 2
-    },
-    {
-     "id": "referencia-via-forca-hipertrofia-potencia",
-     "ficheiro": null,
-     "pt": 3,
-     "en": 4,
-     "total": 7,
-     "abertos_pt": 1,
-     "abertos_en": 3,
-     "descarregados_pt": 2,
-     "descarregados_en": 1
     },
     {
      "id": "suprarrenais-cortisol",
@@ -3698,16 +3698,16 @@
     "visitas": 43,
     "visitas_30d": 43,
     "visitas_90d": 43,
-    "aberturas_pdf": 469,
+    "aberturas_pdf": 470,
     "visitas_hoje": 1,
     "visitas_7d": 5,
-    "aberturas_hoje": 21,
-    "aberturas_7d": 89,
-    "aberturas_30d": 469,
-    "pdf_abertos": 237,
+    "aberturas_hoje": 22,
+    "aberturas_7d": 90,
+    "aberturas_30d": 470,
+    "pdf_abertos": 238,
     "pdf_descarregados": 232,
     "pdf_pt": 216,
-    "pdf_en": 253
+    "pdf_en": 254
    },
    "paises": [
     {
@@ -3726,13 +3726,13 @@
      "visitas": 7
     },
     {
-     "id": "CA",
-     "nome": "Canada",
-     "visitas": 4
-    },
-    {
      "id": "MX",
      "nome": "Mexico",
+     "visitas": 5
+    },
+    {
+     "id": "CA",
+     "nome": "Canada",
      "visitas": 4
     },
     {
