@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-16T10:50:30Z",
+ "atualizado_em": "2026-10-16T11:30:35Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 69,
   "visitas_30d": 69,
   "visitas_90d": 69,
-  "aberturas_pdf": 491,
+  "aberturas_pdf": 492,
   "visitas_hoje": 1,
   "visitas_7d": 7,
-  "aberturas_hoje": 17,
-  "aberturas_7d": 85,
-  "aberturas_30d": 491,
+  "aberturas_hoje": 18,
+  "aberturas_7d": 86,
+  "aberturas_30d": 492,
   "pdf_abertos": 262,
-  "pdf_descarregados": 229,
-  "pdf_pt": 238,
+  "pdf_descarregados": 230,
+  "pdf_pt": 239,
   "pdf_en": 253
  },
  "dias": [
@@ -97,7 +97,7 @@
   {
    "dia": "2026-10-16",
    "visitas": 1,
-   "aberturas": 17
+   "aberturas": 18
   }
  ],
  "paginas": [
@@ -322,6 +322,17 @@
    "abertos_pt": 2,
    "abertos_en": 1,
    "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "forca-hipertrofia-potencia",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 2,
    "descarregados_en": 1
   },
   {
@@ -645,17 +656,6 @@
   },
   {
    "id": "figado-gordura-hepatica",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "forca-hipertrofia-potencia",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -1597,7 +1597,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 451
+   "visitas": 452
   },
   {
    "id": "PT",
@@ -1664,7 +1664,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 530
+   "visitas": 531
   },
   {
    "id": "Firefox",
@@ -1686,7 +1686,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 220
+   "visitas": 221
   },
   {
    "id": "Android",
@@ -1733,7 +1733,7 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 491
+   "visitas": 492
   }
  ],
  "origens": [
@@ -1770,6 +1770,11 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2214,7 +2219,7 @@
     {
      "dia": "2026-10-16",
      "visitas": 1,
-     "aberturas": 17
+     "aberturas": 18
     }
    ],
    "paginas": [
@@ -2381,6 +2386,17 @@
      "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 2
+    },
+    {
+     "id": "forca-hipertrofia-potencia",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 2,
+     "descarregados_en": 1
     },
     {
      "id": "infecoes",
@@ -2692,17 +2708,6 @@
     },
     {
      "id": "figado-gordura-hepatica",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "forca-hipertrofia-potencia",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3683,22 +3688,22 @@
     "visitas": 43,
     "visitas_30d": 43,
     "visitas_90d": 43,
-    "aberturas_pdf": 465,
+    "aberturas_pdf": 466,
     "visitas_hoje": 1,
     "visitas_7d": 5,
-    "aberturas_hoje": 17,
-    "aberturas_7d": 85,
-    "aberturas_30d": 465,
+    "aberturas_hoje": 18,
+    "aberturas_7d": 86,
+    "aberturas_30d": 466,
     "pdf_abertos": 236,
-    "pdf_descarregados": 229,
-    "pdf_pt": 214,
+    "pdf_descarregados": 230,
+    "pdf_pt": 215,
     "pdf_en": 251
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 451
+     "visitas": 452
     },
     {
      "id": "US",
