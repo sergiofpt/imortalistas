@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-16T02:01:58Z",
+ "atualizado_em": "2026-10-16T03:11:47Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
-  "visitas": 68,
-  "visitas_30d": 68,
-  "visitas_90d": 68,
-  "aberturas_pdf": 476,
-  "visitas_hoje": 0,
-  "visitas_7d": 6,
-  "aberturas_hoje": 2,
-  "aberturas_7d": 70,
-  "aberturas_30d": 476,
-  "pdf_abertos": 256,
-  "pdf_descarregados": 220,
+  "visitas": 69,
+  "visitas_30d": 69,
+  "visitas_90d": 69,
+  "aberturas_pdf": 478,
+  "visitas_hoje": 1,
+  "visitas_7d": 7,
+  "aberturas_hoje": 4,
+  "aberturas_7d": 72,
+  "aberturas_30d": 478,
+  "pdf_abertos": 257,
+  "pdf_descarregados": 221,
   "pdf_pt": 235,
-  "pdf_en": 241
+  "pdf_en": 243
  },
  "dias": [
   {
@@ -96,8 +96,8 @@
   },
   {
    "dia": "2026-10-16",
-   "visitas": 0,
-   "aberturas": 2
+   "visitas": 1,
+   "aberturas": 4
   }
  ],
  "paginas": [
@@ -131,6 +131,10 @@
   },
   {
    "path": "/analises.html",
+   "visitas": 1
+  },
+  {
+   "path": "/contacto.html",
    "visitas": 1
   },
   {
@@ -231,6 +235,17 @@
    "abertos_en": 3,
    "descarregados_pt": 1,
    "descarregados_en": 1
+  },
+  {
+   "id": "suprarrenais-cortisol",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 4,
+   "total": 6,
+   "abertos_pt": 1,
+   "abertos_en": 2,
+   "descarregados_pt": 1,
+   "descarregados_en": 2
   },
   {
    "id": "apetite-saciedade-comportamento-alimentar",
@@ -1036,17 +1051,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "suprarrenais-cortisol",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "telomeros-senescencia-celular",
    "ficheiro": null,
    "pt": 2,
@@ -1460,7 +1464,7 @@
    "tipo": "computador",
    "nome": "Linux · Chrome",
    "estimativa": false,
-   "visitas": 9
+   "visitas": 10
   },
   {
    "id": "computador/mac-chrome",
@@ -1603,12 +1607,17 @@
   {
    "id": "US",
    "nome": "United States",
-   "visitas": 35
+   "visitas": 36
   },
   {
    "id": "CA",
    "nome": "Canada",
    "visitas": 4
+  },
+  {
+   "id": "MX",
+   "nome": "Mexico",
+   "visitas": 2
   },
   {
    "id": "BR",
@@ -1650,7 +1659,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 514
+   "visitas": 517
   },
   {
    "id": "Firefox",
@@ -1672,7 +1681,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 208
+   "visitas": 210
   },
   {
    "id": "Android",
@@ -1682,7 +1691,7 @@
   {
    "id": "Linux",
    "nome": "Linux",
-   "visitas": 19
+   "visitas": 20
   },
   {
    "id": "Chrome OS",
@@ -1712,16 +1721,21 @@
    "visitas": 42
   },
   {
+   "id": "desktophd",
+   "nome": "desktophd",
+   "visitas": 1
+  },
+  {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 476
+   "visitas": 478
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 527
+   "visitas": 530
   },
   {
    "id": "https://bing.com",
@@ -2164,8 +2178,8 @@
     },
     {
      "dia": "2026-10-16",
-     "visitas": 0,
-     "aberturas": 2
+     "visitas": 1,
+     "aberturas": 4
     }
    ],
    "paginas": [
@@ -2187,6 +2201,10 @@
     },
     {
      "path": "/analises.html",
+     "visitas": 1
+    },
+    {
+     "path": "/contacto.html",
      "visitas": 1
     },
     {
@@ -2251,6 +2269,17 @@
      "abertos_en": 3,
      "descarregados_pt": 1,
      "descarregados_en": 1
+    },
+    {
+     "id": "suprarrenais-cortisol",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 4,
+     "total": 6,
+     "abertos_pt": 1,
+     "abertos_en": 2,
+     "descarregados_pt": 1,
+     "descarregados_en": 2
     },
     {
      "id": "anestesia-cirurgia",
@@ -3045,17 +3074,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "suprarrenais-cortisol",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "telomeros-senescencia-celular",
      "ficheiro": null,
      "pt": 2,
@@ -3524,7 +3542,7 @@
      "tipo": "computador",
      "nome": "Linux · Chrome",
      "estimativa": false,
-     "visitas": 8
+     "visitas": 9
     },
     {
      "id": "computador/mac-chrome",
@@ -3627,19 +3645,19 @@
    ],
    "aparelhos_desde": "2026-10-03",
    "total": {
-    "visitas": 42,
-    "visitas_30d": 42,
-    "visitas_90d": 42,
-    "aberturas_pdf": 450,
-    "visitas_hoje": 0,
-    "visitas_7d": 4,
-    "aberturas_hoje": 2,
-    "aberturas_7d": 70,
-    "aberturas_30d": 450,
-    "pdf_abertos": 230,
-    "pdf_descarregados": 220,
+    "visitas": 43,
+    "visitas_30d": 43,
+    "visitas_90d": 43,
+    "aberturas_pdf": 452,
+    "visitas_hoje": 1,
+    "visitas_7d": 5,
+    "aberturas_hoje": 4,
+    "aberturas_7d": 72,
+    "aberturas_30d": 452,
+    "pdf_abertos": 231,
+    "pdf_descarregados": 221,
     "pdf_pt": 211,
-    "pdf_en": 239
+    "pdf_en": 241
    },
    "paises": [
     {
@@ -3650,12 +3668,17 @@
     {
      "id": "US",
      "nome": "United States",
-     "visitas": 35
+     "visitas": 36
     },
     {
      "id": "CA",
      "nome": "Canada",
      "visitas": 4
+    },
+    {
+     "id": "MX",
+     "nome": "Mexico",
+     "visitas": 2
     },
     {
      "id": "BR",
