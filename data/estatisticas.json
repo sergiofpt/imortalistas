@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-17T13:43:47Z",
+ "atualizado_em": "2026-10-17T14:43:40Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 69,
   "visitas_30d": 69,
   "visitas_90d": 69,
-  "aberturas_pdf": 507,
+  "aberturas_pdf": 508,
   "visitas_hoje": 0,
   "visitas_7d": 4,
-  "aberturas_hoje": 11,
-  "aberturas_7d": 37,
-  "aberturas_30d": 507,
+  "aberturas_hoje": 12,
+  "aberturas_7d": 38,
+  "aberturas_30d": 508,
   "pdf_abertos": 271,
-  "pdf_descarregados": 236,
+  "pdf_descarregados": 237,
   "pdf_pt": 245,
-  "pdf_en": 262
+  "pdf_en": 263
  },
  "dias": [
   {
@@ -102,7 +102,7 @@
   {
    "dia": "2026-10-17",
    "visitas": 0,
-   "aberturas": 11
+   "aberturas": 12
   }
  ],
  "paginas": [
@@ -198,6 +198,17 @@
    "descarregados_en": 2
   },
   {
+   "id": "suprarrenais-cortisol",
+   "ficheiro": null,
+   "pt": 4,
+   "en": 5,
+   "total": 9,
+   "abertos_pt": 1,
+   "abertos_en": 2,
+   "descarregados_pt": 3,
+   "descarregados_en": 3
+  },
+  {
    "id": "bexiga-funcao-urinaria",
    "ficheiro": null,
    "pt": 4,
@@ -218,17 +229,6 @@
    "abertos_en": 4,
    "descarregados_pt": 2,
    "descarregados_en": 1
-  },
-  {
-   "id": "suprarrenais-cortisol",
-   "ficheiro": null,
-   "pt": 4,
-   "en": 4,
-   "total": 8,
-   "abertos_pt": 1,
-   "abertos_en": 2,
-   "descarregados_pt": 3,
-   "descarregados_en": 2
   },
   {
    "id": "doencas-autoimunes",
@@ -1612,7 +1612,7 @@
   {
    "id": "US",
    "nome": "United States",
-   "visitas": 42
+   "visitas": 43
   },
   {
    "id": "HK",
@@ -1684,7 +1684,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 546
+   "visitas": 547
   },
   {
    "id": "Firefox",
@@ -1701,7 +1701,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 305
+   "visitas": 306
   },
   {
    "id": "macOS",
@@ -1753,14 +1753,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 507
+   "visitas": 508
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 547
+   "visitas": 548
   },
   {
    "id": "https://bing.com",
@@ -2269,7 +2269,7 @@
     {
      "dia": "2026-10-17",
      "visitas": 0,
-     "aberturas": 11
+     "aberturas": 12
     }
    ],
    "paginas": [
@@ -2361,6 +2361,17 @@
      "descarregados_en": 2
     },
     {
+     "id": "suprarrenais-cortisol",
+     "ficheiro": null,
+     "pt": 4,
+     "en": 5,
+     "total": 9,
+     "abertos_pt": 1,
+     "abertos_en": 2,
+     "descarregados_pt": 3,
+     "descarregados_en": 3
+    },
+    {
      "id": "bexiga-funcao-urinaria",
      "ficheiro": null,
      "pt": 4,
@@ -2381,17 +2392,6 @@
      "abertos_en": 4,
      "descarregados_pt": 2,
      "descarregados_en": 1
-    },
-    {
-     "id": "suprarrenais-cortisol",
-     "ficheiro": null,
-     "pt": 4,
-     "en": 4,
-     "total": 8,
-     "abertos_pt": 1,
-     "abertos_en": 2,
-     "descarregados_pt": 3,
-     "descarregados_en": 2
     },
     {
      "id": "doencas-autoimunes",
@@ -3738,16 +3738,16 @@
     "visitas": 43,
     "visitas_30d": 43,
     "visitas_90d": 43,
-    "aberturas_pdf": 481,
+    "aberturas_pdf": 482,
     "visitas_hoje": 0,
     "visitas_7d": 2,
-    "aberturas_hoje": 11,
-    "aberturas_7d": 37,
-    "aberturas_30d": 481,
+    "aberturas_hoje": 12,
+    "aberturas_7d": 38,
+    "aberturas_30d": 482,
     "pdf_abertos": 245,
-    "pdf_descarregados": 236,
+    "pdf_descarregados": 237,
     "pdf_pt": 221,
-    "pdf_en": 260
+    "pdf_en": 261
    },
    "paises": [
     {
@@ -3758,7 +3758,7 @@
     {
      "id": "US",
      "nome": "United States",
-     "visitas": 42
+     "visitas": 43
     },
     {
      "id": "HK",
