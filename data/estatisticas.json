@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-17T03:26:53Z",
+ "atualizado_em": "2026-10-17T05:30:35Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 69,
   "visitas_30d": 69,
   "visitas_90d": 69,
-  "aberturas_pdf": 498,
+  "aberturas_pdf": 499,
   "visitas_hoje": 0,
   "visitas_7d": 4,
-  "aberturas_hoje": 2,
-  "aberturas_7d": 28,
-  "aberturas_30d": 498,
-  "pdf_abertos": 266,
+  "aberturas_hoje": 3,
+  "aberturas_7d": 29,
+  "aberturas_30d": 499,
+  "pdf_abertos": 267,
   "pdf_descarregados": 232,
   "pdf_pt": 241,
-  "pdf_en": 257
+  "pdf_en": 258
  },
  "dias": [
   {
@@ -102,7 +102,7 @@
   {
    "dia": "2026-10-17",
    "visitas": 0,
-   "aberturas": 2
+   "aberturas": 3
   }
  ],
  "paginas": [
@@ -179,10 +179,10 @@
    "id": "cancros-um-a-um",
    "ficheiro": null,
    "pt": 4,
-   "en": 6,
-   "total": 10,
+   "en": 7,
+   "total": 11,
    "abertos_pt": 3,
-   "abertos_en": 4,
+   "abertos_en": 5,
    "descarregados_pt": 1,
    "descarregados_en": 2
   },
@@ -1630,6 +1630,11 @@
    "visitas": 4
   },
   {
+   "id": "AZ",
+   "nome": "Azerbaijan",
+   "visitas": 1
+  },
+  {
    "id": "BR",
    "nome": "Brazil",
    "visitas": 1
@@ -1679,7 +1684,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 537
+   "visitas": 538
   },
   {
    "id": "Firefox",
@@ -1696,7 +1701,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 299
+   "visitas": 300
   },
   {
    "id": "macOS",
@@ -1748,14 +1753,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 498
+   "visitas": 499
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 541
+   "visitas": 542
   },
   {
    "id": "https://bing.com",
@@ -2254,7 +2259,7 @@
     {
      "dia": "2026-10-17",
      "visitas": 0,
-     "aberturas": 2
+     "aberturas": 3
     }
    ],
    "paginas": [
@@ -2316,10 +2321,10 @@
      "id": "cancros-um-a-um",
      "ficheiro": null,
      "pt": 3,
-     "en": 6,
-     "total": 9,
+     "en": 7,
+     "total": 10,
      "abertos_pt": 2,
-     "abertos_en": 4,
+     "abertos_en": 5,
      "descarregados_pt": 1,
      "descarregados_en": 2
     },
@@ -3723,16 +3728,16 @@
     "visitas": 43,
     "visitas_30d": 43,
     "visitas_90d": 43,
-    "aberturas_pdf": 472,
+    "aberturas_pdf": 473,
     "visitas_hoje": 0,
     "visitas_7d": 2,
-    "aberturas_hoje": 2,
-    "aberturas_7d": 28,
-    "aberturas_30d": 472,
-    "pdf_abertos": 240,
+    "aberturas_hoje": 3,
+    "aberturas_7d": 29,
+    "aberturas_30d": 473,
+    "pdf_abertos": 241,
     "pdf_descarregados": 232,
     "pdf_pt": 217,
-    "pdf_en": 255
+    "pdf_en": 256
    },
    "paises": [
     {
@@ -3759,6 +3764,11 @@
      "id": "CA",
      "nome": "Canada",
      "visitas": 4
+    },
+    {
+     "id": "AZ",
+     "nome": "Azerbaijan",
+     "visitas": 1
     },
     {
      "id": "BR",
