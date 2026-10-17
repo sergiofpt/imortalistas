@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-17T20:43:31Z",
+ "atualizado_em": "2026-10-17T22:41:15Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 69,
   "visitas_30d": 69,
   "visitas_90d": 69,
-  "aberturas_pdf": 510,
+  "aberturas_pdf": 511,
   "visitas_hoje": 0,
   "visitas_7d": 4,
-  "aberturas_hoje": 14,
-  "aberturas_7d": 40,
-  "aberturas_30d": 510,
+  "aberturas_hoje": 15,
+  "aberturas_7d": 41,
+  "aberturas_30d": 511,
   "pdf_abertos": 271,
-  "pdf_descarregados": 239,
+  "pdf_descarregados": 240,
   "pdf_pt": 247,
-  "pdf_en": 263
+  "pdf_en": 264
  },
  "dias": [
   {
@@ -102,7 +102,7 @@
   {
    "dia": "2026-10-17",
    "visitas": 0,
-   "aberturas": 14
+   "aberturas": 15
   }
  ],
  "paginas": [
@@ -168,12 +168,12 @@
    "id": "imortalidade",
    "ficheiro": null,
    "pt": 9,
-   "en": 8,
-   "total": 17,
+   "en": 9,
+   "total": 18,
    "abertos_pt": 7,
    "abertos_en": 6,
    "descarregados_pt": 2,
-   "descarregados_en": 2
+   "descarregados_en": 3
   },
   {
    "id": "anestesia-cirurgia",
@@ -1630,6 +1630,11 @@
    "visitas": 4
   },
   {
+   "id": "PL",
+   "nome": "Poland",
+   "visitas": 2
+  },
+  {
    "id": "AZ",
    "nome": "Azerbaijan",
    "visitas": 1
@@ -1665,11 +1670,6 @@
    "visitas": 1
   },
   {
-   "id": "PL",
-   "nome": "Poland",
-   "visitas": 1
-  },
-  {
    "id": "PY",
    "nome": "Paraguay",
    "visitas": 1
@@ -1689,7 +1689,7 @@
   {
    "id": "Firefox",
    "nome": "Firefox",
-   "visitas": 26
+   "visitas": 27
   },
   {
    "id": "Safari",
@@ -1706,7 +1706,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 227
+   "visitas": 228
   },
   {
    "id": "Android",
@@ -1753,14 +1753,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 510
+   "visitas": 511
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 549
+   "visitas": 550
   },
   {
    "id": "https://bing.com",
@@ -2269,7 +2269,7 @@
     {
      "dia": "2026-10-17",
      "visitas": 0,
-     "aberturas": 14
+     "aberturas": 15
     }
    ],
    "paginas": [
@@ -2353,12 +2353,12 @@
      "id": "imortalidade",
      "ficheiro": null,
      "pt": 3,
-     "en": 6,
-     "total": 9,
+     "en": 7,
+     "total": 10,
      "abertos_pt": 1,
      "abertos_en": 4,
      "descarregados_pt": 2,
-     "descarregados_en": 2
+     "descarregados_en": 3
     },
     {
      "id": "suprarrenais-cortisol",
@@ -3738,16 +3738,16 @@
     "visitas": 43,
     "visitas_30d": 43,
     "visitas_90d": 43,
-    "aberturas_pdf": 484,
+    "aberturas_pdf": 485,
     "visitas_hoje": 0,
     "visitas_7d": 2,
-    "aberturas_hoje": 14,
-    "aberturas_7d": 40,
-    "aberturas_30d": 484,
+    "aberturas_hoje": 15,
+    "aberturas_7d": 41,
+    "aberturas_30d": 485,
     "pdf_abertos": 245,
-    "pdf_descarregados": 239,
+    "pdf_descarregados": 240,
     "pdf_pt": 223,
-    "pdf_en": 261
+    "pdf_en": 262
    },
    "paises": [
     {
@@ -3774,6 +3774,11 @@
      "id": "CA",
      "nome": "Canada",
      "visitas": 4
+    },
+    {
+     "id": "PL",
+     "nome": "Poland",
+     "visitas": 2
     },
     {
      "id": "AZ",
@@ -3808,11 +3813,6 @@
     {
      "id": "PE",
      "nome": "Peru",
-     "visitas": 1
-    },
-    {
-     "id": "PL",
-     "nome": "Poland",
      "visitas": 1
     },
     {
