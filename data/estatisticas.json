@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-17T13:07:38Z",
+ "atualizado_em": "2026-10-17T13:43:47Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 69,
   "visitas_30d": 69,
   "visitas_90d": 69,
-  "aberturas_pdf": 506,
+  "aberturas_pdf": 507,
   "visitas_hoje": 0,
   "visitas_7d": 4,
-  "aberturas_hoje": 10,
-  "aberturas_7d": 36,
-  "aberturas_30d": 506,
+  "aberturas_hoje": 11,
+  "aberturas_7d": 37,
+  "aberturas_30d": 507,
   "pdf_abertos": 271,
-  "pdf_descarregados": 235,
-  "pdf_pt": 244,
+  "pdf_descarregados": 236,
+  "pdf_pt": 245,
   "pdf_en": 262
  },
  "dias": [
@@ -102,7 +102,7 @@
   {
    "dia": "2026-10-17",
    "visitas": 0,
-   "aberturas": 10
+   "aberturas": 11
   }
  ],
  "paginas": [
@@ -220,6 +220,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "suprarrenais-cortisol",
+   "ficheiro": null,
+   "pt": 4,
+   "en": 4,
+   "total": 8,
+   "abertos_pt": 1,
+   "abertos_en": 2,
+   "descarregados_pt": 3,
+   "descarregados_en": 2
+  },
+  {
    "id": "doencas-autoimunes",
    "ficheiro": null,
    "pt": 3,
@@ -232,17 +243,6 @@
   },
   {
    "id": "estado-portador",
-   "ficheiro": null,
-   "pt": 3,
-   "en": 4,
-   "total": 7,
-   "abertos_pt": 1,
-   "abertos_en": 2,
-   "descarregados_pt": 2,
-   "descarregados_en": 2
-  },
-  {
-   "id": "suprarrenais-cortisol",
    "ficheiro": null,
    "pt": 3,
    "en": 4,
@@ -1612,7 +1612,7 @@
   {
    "id": "US",
    "nome": "United States",
-   "visitas": 41
+   "visitas": 42
   },
   {
    "id": "HK",
@@ -1684,7 +1684,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 545
+   "visitas": 546
   },
   {
    "id": "Firefox",
@@ -1701,7 +1701,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 304
+   "visitas": 305
   },
   {
    "id": "macOS",
@@ -1753,7 +1753,7 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 506
+   "visitas": 507
   }
  ],
  "origens": [
@@ -1778,6 +1778,11 @@
    "visitas": 3
   },
   {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
+   "visitas": 2
+  },
+  {
    "id": "https://l.instagram.com",
    "nome": "l.instagram.com",
    "visitas": 1
@@ -1790,11 +1795,6 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
-   "visitas": 1
-  },
-  {
-   "id": "https://sf-site.sergiofpt.workers.dev/r/",
-   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2269,7 +2269,7 @@
     {
      "dia": "2026-10-17",
      "visitas": 0,
-     "aberturas": 10
+     "aberturas": 11
     }
    ],
    "paginas": [
@@ -2383,6 +2383,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "suprarrenais-cortisol",
+     "ficheiro": null,
+     "pt": 4,
+     "en": 4,
+     "total": 8,
+     "abertos_pt": 1,
+     "abertos_en": 2,
+     "descarregados_pt": 3,
+     "descarregados_en": 2
+    },
+    {
      "id": "doencas-autoimunes",
      "ficheiro": null,
      "pt": 3,
@@ -2395,17 +2406,6 @@
     },
     {
      "id": "estado-portador",
-     "ficheiro": null,
-     "pt": 3,
-     "en": 4,
-     "total": 7,
-     "abertos_pt": 1,
-     "abertos_en": 2,
-     "descarregados_pt": 2,
-     "descarregados_en": 2
-    },
-    {
-     "id": "suprarrenais-cortisol",
      "ficheiro": null,
      "pt": 3,
      "en": 4,
@@ -3738,15 +3738,15 @@
     "visitas": 43,
     "visitas_30d": 43,
     "visitas_90d": 43,
-    "aberturas_pdf": 480,
+    "aberturas_pdf": 481,
     "visitas_hoje": 0,
     "visitas_7d": 2,
-    "aberturas_hoje": 10,
-    "aberturas_7d": 36,
-    "aberturas_30d": 480,
+    "aberturas_hoje": 11,
+    "aberturas_7d": 37,
+    "aberturas_30d": 481,
     "pdf_abertos": 245,
-    "pdf_descarregados": 235,
-    "pdf_pt": 220,
+    "pdf_descarregados": 236,
+    "pdf_pt": 221,
     "pdf_en": 260
    },
    "paises": [
@@ -3758,7 +3758,7 @@
     {
      "id": "US",
      "nome": "United States",
-     "visitas": 41
+     "visitas": 42
     },
     {
      "id": "HK",
