@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-17T08:57:46Z",
+ "atualizado_em": "2026-10-17T09:57:22Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 69,
   "visitas_30d": 69,
   "visitas_90d": 69,
-  "aberturas_pdf": 502,
+  "aberturas_pdf": 503,
   "visitas_hoje": 0,
   "visitas_7d": 4,
-  "aberturas_hoje": 6,
-  "aberturas_7d": 32,
-  "aberturas_30d": 502,
-  "pdf_abertos": 269,
+  "aberturas_hoje": 7,
+  "aberturas_7d": 33,
+  "aberturas_30d": 503,
+  "pdf_abertos": 270,
   "pdf_descarregados": 233,
   "pdf_pt": 243,
-  "pdf_en": 259
+  "pdf_en": 260
  },
  "dias": [
   {
@@ -102,7 +102,7 @@
   {
    "dia": "2026-10-17",
    "visitas": 0,
-   "aberturas": 6
+   "aberturas": 7
   }
  ],
  "paginas": [
@@ -275,6 +275,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "forca-hipertrofia-potencia",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 3,
+   "total": 6,
+   "abertos_pt": 1,
+   "abertos_en": 2,
+   "descarregados_pt": 2,
+   "descarregados_en": 1
+  },
+  {
    "id": "psicadelicos",
    "ficheiro": null,
    "pt": 4,
@@ -327,17 +338,6 @@
    "abertos_pt": 2,
    "abertos_en": 1,
    "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "forca-hipertrofia-potencia",
-   "ficheiro": null,
-   "pt": 3,
-   "en": 2,
-   "total": 5,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 2,
    "descarregados_en": 1
   },
   {
@@ -1602,7 +1602,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 453
+   "visitas": 454
   },
   {
    "id": "PT",
@@ -1684,7 +1684,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 541
+   "visitas": 542
   },
   {
    "id": "Firefox",
@@ -1706,7 +1706,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 223
+   "visitas": 224
   },
   {
    "id": "Android",
@@ -1753,7 +1753,7 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 502
+   "visitas": 503
   }
  ],
  "origens": [
@@ -1790,6 +1790,11 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2264,7 +2269,7 @@
     {
      "dia": "2026-10-17",
      "visitas": 0,
-     "aberturas": 6
+     "aberturas": 7
     }
    ],
    "paginas": [
@@ -2411,6 +2416,17 @@
      "descarregados_en": 2
     },
     {
+     "id": "forca-hipertrofia-potencia",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 3,
+     "total": 6,
+     "abertos_pt": 1,
+     "abertos_en": 2,
+     "descarregados_pt": 2,
+     "descarregados_en": 1
+    },
+    {
      "id": "acne-glandulas-sebaceas",
      "ficheiro": null,
      "pt": 2,
@@ -2431,17 +2447,6 @@
      "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 2
-    },
-    {
-     "id": "forca-hipertrofia-potencia",
-     "ficheiro": null,
-     "pt": 3,
-     "en": 2,
-     "total": 5,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 2,
-     "descarregados_en": 1
     },
     {
      "id": "infecoes",
@@ -3733,22 +3738,22 @@
     "visitas": 43,
     "visitas_30d": 43,
     "visitas_90d": 43,
-    "aberturas_pdf": 476,
+    "aberturas_pdf": 477,
     "visitas_hoje": 0,
     "visitas_7d": 2,
-    "aberturas_hoje": 6,
-    "aberturas_7d": 32,
-    "aberturas_30d": 476,
-    "pdf_abertos": 243,
+    "aberturas_hoje": 7,
+    "aberturas_7d": 33,
+    "aberturas_30d": 477,
+    "pdf_abertos": 244,
     "pdf_descarregados": 233,
     "pdf_pt": 219,
-    "pdf_en": 257
+    "pdf_en": 258
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 453
+     "visitas": 454
     },
     {
      "id": "US",
