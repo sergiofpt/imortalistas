@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-17T02:47:56Z",
+ "atualizado_em": "2026-10-17T03:26:53Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 69,
   "visitas_30d": 69,
   "visitas_90d": 69,
-  "aberturas_pdf": 497,
+  "aberturas_pdf": 498,
   "visitas_hoje": 0,
   "visitas_7d": 4,
-  "aberturas_hoje": 1,
-  "aberturas_7d": 27,
-  "aberturas_30d": 497,
-  "pdf_abertos": 265,
+  "aberturas_hoje": 2,
+  "aberturas_7d": 28,
+  "aberturas_30d": 498,
+  "pdf_abertos": 266,
   "pdf_descarregados": 232,
   "pdf_pt": 241,
-  "pdf_en": 256
+  "pdf_en": 257
  },
  "dias": [
   {
@@ -102,7 +102,7 @@
   {
    "dia": "2026-10-17",
    "visitas": 0,
-   "aberturas": 1
+   "aberturas": 2
   }
  ],
  "paginas": [
@@ -168,10 +168,10 @@
    "id": "imortalidade",
    "ficheiro": null,
    "pt": 9,
-   "en": 7,
-   "total": 16,
+   "en": 8,
+   "total": 17,
    "abertos_pt": 7,
-   "abertos_en": 5,
+   "abertos_en": 6,
    "descarregados_pt": 2,
    "descarregados_en": 2
   },
@@ -1645,6 +1645,11 @@
    "visitas": 1
   },
   {
+   "id": "IL",
+   "nome": "Israel",
+   "visitas": 1
+  },
+  {
    "id": "NL",
    "nome": "Netherlands",
    "visitas": 1
@@ -1674,7 +1679,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 536
+   "visitas": 537
   },
   {
    "id": "Firefox",
@@ -1691,7 +1696,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 298
+   "visitas": 299
   },
   {
    "id": "macOS",
@@ -1743,7 +1748,7 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 497
+   "visitas": 498
   }
  ],
  "origens": [
@@ -1780,6 +1785,11 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2244,7 +2254,7 @@
     {
      "dia": "2026-10-17",
      "visitas": 0,
-     "aberturas": 1
+     "aberturas": 2
     }
    ],
    "paginas": [
@@ -2314,18 +2324,18 @@
      "descarregados_en": 2
     },
     {
-     "id": "anestesia-cirurgia",
+     "id": "imortalidade",
      "ficheiro": null,
      "pt": 3,
-     "en": 5,
-     "total": 8,
+     "en": 6,
+     "total": 9,
      "abertos_pt": 1,
-     "abertos_en": 3,
+     "abertos_en": 4,
      "descarregados_pt": 2,
      "descarregados_en": 2
     },
     {
-     "id": "imortalidade",
+     "id": "anestesia-cirurgia",
      "ficheiro": null,
      "pt": 3,
      "en": 5,
@@ -3713,16 +3723,16 @@
     "visitas": 43,
     "visitas_30d": 43,
     "visitas_90d": 43,
-    "aberturas_pdf": 471,
+    "aberturas_pdf": 472,
     "visitas_hoje": 0,
     "visitas_7d": 2,
-    "aberturas_hoje": 1,
-    "aberturas_7d": 27,
-    "aberturas_30d": 471,
-    "pdf_abertos": 239,
+    "aberturas_hoje": 2,
+    "aberturas_7d": 28,
+    "aberturas_30d": 472,
+    "pdf_abertos": 240,
     "pdf_descarregados": 232,
     "pdf_pt": 217,
-    "pdf_en": 254
+    "pdf_en": 255
    },
    "paises": [
     {
@@ -3763,6 +3773,11 @@
     {
      "id": "GG",
      "nome": "Guernsey",
+     "visitas": 1
+    },
+    {
+     "id": "IL",
+     "nome": "Israel",
      "visitas": 1
     },
     {
