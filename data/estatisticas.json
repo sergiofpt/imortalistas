@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-17T00:03:05Z",
+ "atualizado_em": "2026-10-17T02:47:56Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 69,
   "visitas_30d": 69,
   "visitas_90d": 69,
-  "aberturas_pdf": 496,
+  "aberturas_pdf": 497,
   "visitas_hoje": 0,
   "visitas_7d": 4,
-  "aberturas_hoje": 0,
-  "aberturas_7d": 26,
-  "aberturas_30d": 496,
-  "pdf_abertos": 264,
+  "aberturas_hoje": 1,
+  "aberturas_7d": 27,
+  "aberturas_30d": 497,
+  "pdf_abertos": 265,
   "pdf_descarregados": 232,
-  "pdf_pt": 240,
+  "pdf_pt": 241,
   "pdf_en": 256
  },
  "dias": [
@@ -102,7 +102,7 @@
   {
    "dia": "2026-10-17",
    "visitas": 0,
-   "aberturas": 0
+   "aberturas": 1
   }
  ],
  "paginas": [
@@ -176,6 +176,17 @@
    "descarregados_en": 2
   },
   {
+   "id": "cancros-um-a-um",
+   "ficheiro": null,
+   "pt": 4,
+   "en": 6,
+   "total": 10,
+   "abertos_pt": 3,
+   "abertos_en": 4,
+   "descarregados_pt": 1,
+   "descarregados_en": 2
+  },
+  {
    "id": "anestesia-cirurgia",
    "ficheiro": null,
    "pt": 4,
@@ -184,17 +195,6 @@
    "abertos_pt": 2,
    "abertos_en": 3,
    "descarregados_pt": 2,
-   "descarregados_en": 2
-  },
-  {
-   "id": "cancros-um-a-um",
-   "ficheiro": null,
-   "pt": 3,
-   "en": 6,
-   "total": 9,
-   "abertos_pt": 2,
-   "abertos_en": 4,
-   "descarregados_pt": 1,
    "descarregados_en": 2
   },
   {
@@ -1612,7 +1612,7 @@
   {
    "id": "US",
    "nome": "United States",
-   "visitas": 40
+   "visitas": 41
   },
   {
    "id": "HK",
@@ -1674,7 +1674,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 535
+   "visitas": 536
   },
   {
    "id": "Firefox",
@@ -1691,7 +1691,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 297
+   "visitas": 298
   },
   {
    "id": "macOS",
@@ -1743,14 +1743,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 496
+   "visitas": 497
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 540
+   "visitas": 541
   },
   {
    "id": "https://bing.com",
@@ -2244,7 +2244,7 @@
     {
      "dia": "2026-10-17",
      "visitas": 0,
-     "aberturas": 0
+     "aberturas": 1
     }
    ],
    "paginas": [
@@ -2303,6 +2303,17 @@
    ],
    "relatorios": [
     {
+     "id": "cancros-um-a-um",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 6,
+     "total": 9,
+     "abertos_pt": 2,
+     "abertos_en": 4,
+     "descarregados_pt": 1,
+     "descarregados_en": 2
+    },
+    {
      "id": "anestesia-cirurgia",
      "ficheiro": null,
      "pt": 3,
@@ -2311,17 +2322,6 @@
      "abertos_pt": 1,
      "abertos_en": 3,
      "descarregados_pt": 2,
-     "descarregados_en": 2
-    },
-    {
-     "id": "cancros-um-a-um",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 6,
-     "total": 8,
-     "abertos_pt": 1,
-     "abertos_en": 4,
-     "descarregados_pt": 1,
      "descarregados_en": 2
     },
     {
@@ -3713,15 +3713,15 @@
     "visitas": 43,
     "visitas_30d": 43,
     "visitas_90d": 43,
-    "aberturas_pdf": 470,
+    "aberturas_pdf": 471,
     "visitas_hoje": 0,
     "visitas_7d": 2,
-    "aberturas_hoje": 0,
-    "aberturas_7d": 26,
-    "aberturas_30d": 470,
-    "pdf_abertos": 238,
+    "aberturas_hoje": 1,
+    "aberturas_7d": 27,
+    "aberturas_30d": 471,
+    "pdf_abertos": 239,
     "pdf_descarregados": 232,
-    "pdf_pt": 216,
+    "pdf_pt": 217,
     "pdf_en": 254
    },
    "paises": [
@@ -3733,7 +3733,7 @@
     {
      "id": "US",
      "nome": "United States",
-     "visitas": 40
+     "visitas": 41
     },
     {
      "id": "HK",
