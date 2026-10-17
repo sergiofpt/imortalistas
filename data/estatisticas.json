@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-17T06:34:44Z",
+ "atualizado_em": "2026-10-17T08:57:46Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 69,
   "visitas_30d": 69,
   "visitas_90d": 69,
-  "aberturas_pdf": 500,
+  "aberturas_pdf": 502,
   "visitas_hoje": 0,
   "visitas_7d": 4,
-  "aberturas_hoje": 4,
-  "aberturas_7d": 30,
-  "aberturas_30d": 500,
-  "pdf_abertos": 268,
-  "pdf_descarregados": 232,
-  "pdf_pt": 241,
+  "aberturas_hoje": 6,
+  "aberturas_7d": 32,
+  "aberturas_30d": 502,
+  "pdf_abertos": 269,
+  "pdf_descarregados": 233,
+  "pdf_pt": 243,
   "pdf_en": 259
  },
  "dias": [
@@ -102,7 +102,7 @@
   {
    "dia": "2026-10-17",
    "visitas": 0,
-   "aberturas": 4
+   "aberturas": 6
   }
  ],
  "paginas": [
@@ -198,6 +198,17 @@
    "descarregados_en": 2
   },
   {
+   "id": "bexiga-funcao-urinaria",
+   "ficheiro": null,
+   "pt": 4,
+   "en": 4,
+   "total": 8,
+   "abertos_pt": 2,
+   "abertos_en": 2,
+   "descarregados_pt": 2,
+   "descarregados_en": 2
+  },
+  {
    "id": "referencia-via-forca-hipertrofia-potencia",
    "ficheiro": null,
    "pt": 3,
@@ -238,17 +249,6 @@
    "total": 6,
    "abertos_pt": 2,
    "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 2
-  },
-  {
-   "id": "bexiga-funcao-urinaria",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 4,
-   "total": 6,
-   "abertos_pt": 1,
-   "abertos_en": 2,
    "descarregados_pt": 1,
    "descarregados_en": 2
   },
@@ -1617,7 +1617,7 @@
   {
    "id": "HK",
    "nome": "Hong Kong",
-   "visitas": 7
+   "visitas": 9
   },
   {
    "id": "MX",
@@ -1684,7 +1684,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 539
+   "visitas": 541
   },
   {
    "id": "Firefox",
@@ -1701,7 +1701,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 300
+   "visitas": 302
   },
   {
    "id": "macOS",
@@ -1753,14 +1753,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 500
+   "visitas": 502
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 542
+   "visitas": 544
   },
   {
    "id": "https://bing.com",
@@ -2264,7 +2264,7 @@
     {
      "dia": "2026-10-17",
      "visitas": 0,
-     "aberturas": 4
+     "aberturas": 6
     }
    ],
    "paginas": [
@@ -2356,6 +2356,17 @@
      "descarregados_en": 2
     },
     {
+     "id": "bexiga-funcao-urinaria",
+     "ficheiro": null,
+     "pt": 4,
+     "en": 4,
+     "total": 8,
+     "abertos_pt": 2,
+     "abertos_en": 2,
+     "descarregados_pt": 2,
+     "descarregados_en": 2
+    },
+    {
      "id": "referencia-via-forca-hipertrofia-potencia",
      "ficheiro": null,
      "pt": 3,
@@ -2386,17 +2397,6 @@
      "abertos_pt": 1,
      "abertos_en": 2,
      "descarregados_pt": 2,
-     "descarregados_en": 2
-    },
-    {
-     "id": "bexiga-funcao-urinaria",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 4,
-     "total": 6,
-     "abertos_pt": 1,
-     "abertos_en": 2,
-     "descarregados_pt": 1,
      "descarregados_en": 2
     },
     {
@@ -3733,15 +3733,15 @@
     "visitas": 43,
     "visitas_30d": 43,
     "visitas_90d": 43,
-    "aberturas_pdf": 474,
+    "aberturas_pdf": 476,
     "visitas_hoje": 0,
     "visitas_7d": 2,
-    "aberturas_hoje": 4,
-    "aberturas_7d": 30,
-    "aberturas_30d": 474,
-    "pdf_abertos": 242,
-    "pdf_descarregados": 232,
-    "pdf_pt": 217,
+    "aberturas_hoje": 6,
+    "aberturas_7d": 32,
+    "aberturas_30d": 476,
+    "pdf_abertos": 243,
+    "pdf_descarregados": 233,
+    "pdf_pt": 219,
     "pdf_en": 257
    },
    "paises": [
@@ -3758,7 +3758,7 @@
     {
      "id": "HK",
      "nome": "Hong Kong",
-     "visitas": 7
+     "visitas": 9
     },
     {
      "id": "MX",
