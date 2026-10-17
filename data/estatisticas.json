@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-17T10:25:08Z",
+ "atualizado_em": "2026-10-17T11:24:43Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 69,
   "visitas_30d": 69,
   "visitas_90d": 69,
-  "aberturas_pdf": 504,
+  "aberturas_pdf": 505,
   "visitas_hoje": 0,
   "visitas_7d": 4,
-  "aberturas_hoje": 8,
-  "aberturas_7d": 34,
-  "aberturas_30d": 504,
+  "aberturas_hoje": 9,
+  "aberturas_7d": 35,
+  "aberturas_30d": 505,
   "pdf_abertos": 270,
-  "pdf_descarregados": 234,
+  "pdf_descarregados": 235,
   "pdf_pt": 244,
-  "pdf_en": 260
+  "pdf_en": 261
  },
  "dias": [
   {
@@ -102,7 +102,7 @@
   {
    "dia": "2026-10-17",
    "visitas": 0,
-   "aberturas": 8
+   "aberturas": 9
   }
  ],
  "paginas": [
@@ -253,6 +253,17 @@
    "descarregados_en": 2
   },
   {
+   "id": "acne-glandulas-sebaceas",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 4,
+   "total": 6,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 3
+  },
+  {
    "id": "avc-pequenos-vasos-cerebrais",
    "ficheiro": null,
    "pt": 3,
@@ -295,17 +306,6 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 1
-  },
-  {
-   "id": "acne-glandulas-sebaceas",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 3,
-   "total": 5,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 2
   },
   {
    "id": "apetite-saciedade-comportamento-alimentar",
@@ -1617,7 +1617,7 @@
   {
    "id": "HK",
    "nome": "Hong Kong",
-   "visitas": 10
+   "visitas": 11
   },
   {
    "id": "MX",
@@ -1684,7 +1684,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 543
+   "visitas": 544
   },
   {
    "id": "Firefox",
@@ -1701,7 +1701,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 302
+   "visitas": 303
   },
   {
    "id": "macOS",
@@ -1753,14 +1753,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 504
+   "visitas": 505
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 545
+   "visitas": 546
   },
   {
    "id": "https://bing.com",
@@ -2269,7 +2269,7 @@
     {
      "dia": "2026-10-17",
      "visitas": 0,
-     "aberturas": 8
+     "aberturas": 9
     }
    ],
    "paginas": [
@@ -2416,6 +2416,17 @@
      "descarregados_en": 2
     },
     {
+     "id": "acne-glandulas-sebaceas",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 4,
+     "total": 6,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 3
+    },
+    {
      "id": "forca-hipertrofia-potencia",
      "ficheiro": null,
      "pt": 3,
@@ -2425,17 +2436,6 @@
      "abertos_en": 2,
      "descarregados_pt": 2,
      "descarregados_en": 1
-    },
-    {
-     "id": "acne-glandulas-sebaceas",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 3,
-     "total": 5,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 2
     },
     {
      "id": "avc-pequenos-vasos-cerebrais",
@@ -3738,16 +3738,16 @@
     "visitas": 43,
     "visitas_30d": 43,
     "visitas_90d": 43,
-    "aberturas_pdf": 478,
+    "aberturas_pdf": 479,
     "visitas_hoje": 0,
     "visitas_7d": 2,
-    "aberturas_hoje": 8,
-    "aberturas_7d": 34,
-    "aberturas_30d": 478,
+    "aberturas_hoje": 9,
+    "aberturas_7d": 35,
+    "aberturas_30d": 479,
     "pdf_abertos": 244,
-    "pdf_descarregados": 234,
+    "pdf_descarregados": 235,
     "pdf_pt": 220,
-    "pdf_en": 258
+    "pdf_en": 259
    },
    "paises": [
     {
@@ -3763,7 +3763,7 @@
     {
      "id": "HK",
      "nome": "Hong Kong",
-     "visitas": 10
+     "visitas": 11
     },
     {
      "id": "MX",
