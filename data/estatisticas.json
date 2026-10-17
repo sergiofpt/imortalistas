@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-17T15:43:38Z",
+ "atualizado_em": "2026-10-17T20:43:31Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 69,
   "visitas_30d": 69,
   "visitas_90d": 69,
-  "aberturas_pdf": 509,
+  "aberturas_pdf": 510,
   "visitas_hoje": 0,
   "visitas_7d": 4,
-  "aberturas_hoje": 13,
-  "aberturas_7d": 39,
-  "aberturas_30d": 509,
+  "aberturas_hoje": 14,
+  "aberturas_7d": 40,
+  "aberturas_30d": 510,
   "pdf_abertos": 271,
-  "pdf_descarregados": 238,
-  "pdf_pt": 246,
+  "pdf_descarregados": 239,
+  "pdf_pt": 247,
   "pdf_en": 263
  },
  "dias": [
@@ -102,7 +102,7 @@
   {
    "dia": "2026-10-17",
    "visitas": 0,
-   "aberturas": 13
+   "aberturas": 14
   }
  ],
  "paginas": [
@@ -584,6 +584,17 @@
   },
   {
    "id": "coluna-disco-dor-lombar",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "dermatite-seborreica-microbioma-pele",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -1188,17 +1199,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "dermatite-seborreica-microbioma-pele",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "dopamina-noradrenalina",
    "ficheiro": null,
    "pt": 1,
@@ -1602,7 +1602,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 456
+   "visitas": 457
   },
   {
    "id": "PT",
@@ -1684,7 +1684,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 548
+   "visitas": 549
   },
   {
    "id": "Firefox",
@@ -1706,7 +1706,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 226
+   "visitas": 227
   },
   {
    "id": "Android",
@@ -1753,14 +1753,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 509
+   "visitas": 510
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 548
+   "visitas": 549
   },
   {
    "id": "https://bing.com",
@@ -2269,7 +2269,7 @@
     {
      "dia": "2026-10-17",
      "visitas": 0,
-     "aberturas": 13
+     "aberturas": 14
     }
    ],
    "paginas": [
@@ -2659,6 +2659,17 @@
     },
     {
      "id": "coluna-disco-dor-lombar",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "dermatite-seborreica-microbioma-pele",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3307,17 +3318,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "dermatite-seborreica-microbioma-pele",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "dopamina-noradrenalina",
      "ficheiro": null,
      "pt": 1,
@@ -3738,22 +3738,22 @@
     "visitas": 43,
     "visitas_30d": 43,
     "visitas_90d": 43,
-    "aberturas_pdf": 483,
+    "aberturas_pdf": 484,
     "visitas_hoje": 0,
     "visitas_7d": 2,
-    "aberturas_hoje": 13,
-    "aberturas_7d": 39,
-    "aberturas_30d": 483,
+    "aberturas_hoje": 14,
+    "aberturas_7d": 40,
+    "aberturas_30d": 484,
     "pdf_abertos": 245,
-    "pdf_descarregados": 238,
-    "pdf_pt": 222,
+    "pdf_descarregados": 239,
+    "pdf_pt": 223,
     "pdf_en": 261
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 456
+     "visitas": 457
     },
     {
      "id": "US",
