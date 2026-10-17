@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-17T05:30:35Z",
+ "atualizado_em": "2026-10-17T06:34:44Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 69,
   "visitas_30d": 69,
   "visitas_90d": 69,
-  "aberturas_pdf": 499,
+  "aberturas_pdf": 500,
   "visitas_hoje": 0,
   "visitas_7d": 4,
-  "aberturas_hoje": 3,
-  "aberturas_7d": 29,
-  "aberturas_30d": 499,
-  "pdf_abertos": 267,
+  "aberturas_hoje": 4,
+  "aberturas_7d": 30,
+  "aberturas_30d": 500,
+  "pdf_abertos": 268,
   "pdf_descarregados": 232,
   "pdf_pt": 241,
-  "pdf_en": 258
+  "pdf_en": 259
  },
  "dias": [
   {
@@ -102,7 +102,7 @@
   {
    "dia": "2026-10-17",
    "visitas": 0,
-   "aberturas": 3
+   "aberturas": 4
   }
  ],
  "paginas": [
@@ -242,6 +242,17 @@
    "descarregados_en": 2
   },
   {
+   "id": "bexiga-funcao-urinaria",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 4,
+   "total": 6,
+   "abertos_pt": 1,
+   "abertos_en": 2,
+   "descarregados_pt": 1,
+   "descarregados_en": 2
+  },
+  {
    "id": "doencas-autoimunes",
    "ficheiro": null,
    "pt": 2,
@@ -295,17 +306,6 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 1
-  },
-  {
-   "id": "bexiga-funcao-urinaria",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 3,
-   "total": 5,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 2
   },
   {
    "id": "farmacogenomica-632",
@@ -1602,7 +1602,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 452
+   "visitas": 453
   },
   {
    "id": "PT",
@@ -1684,7 +1684,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 538
+   "visitas": 539
   },
   {
    "id": "Firefox",
@@ -1706,7 +1706,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 222
+   "visitas": 223
   },
   {
    "id": "Android",
@@ -1753,7 +1753,7 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 499
+   "visitas": 500
   }
  ],
  "origens": [
@@ -1790,6 +1790,11 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2259,7 +2264,7 @@
     {
      "dia": "2026-10-17",
      "visitas": 0,
-     "aberturas": 3
+     "aberturas": 4
     }
    ],
    "paginas": [
@@ -2384,6 +2389,17 @@
      "descarregados_en": 2
     },
     {
+     "id": "bexiga-funcao-urinaria",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 4,
+     "total": 6,
+     "abertos_pt": 1,
+     "abertos_en": 2,
+     "descarregados_pt": 1,
+     "descarregados_en": 2
+    },
+    {
      "id": "doencas-autoimunes",
      "ficheiro": null,
      "pt": 2,
@@ -2407,17 +2423,6 @@
     },
     {
      "id": "avc-pequenos-vasos-cerebrais",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 3,
-     "total": 5,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 2
-    },
-    {
-     "id": "bexiga-funcao-urinaria",
      "ficheiro": null,
      "pt": 2,
      "en": 3,
@@ -3728,22 +3733,22 @@
     "visitas": 43,
     "visitas_30d": 43,
     "visitas_90d": 43,
-    "aberturas_pdf": 473,
+    "aberturas_pdf": 474,
     "visitas_hoje": 0,
     "visitas_7d": 2,
-    "aberturas_hoje": 3,
-    "aberturas_7d": 29,
-    "aberturas_30d": 473,
-    "pdf_abertos": 241,
+    "aberturas_hoje": 4,
+    "aberturas_7d": 30,
+    "aberturas_30d": 474,
+    "pdf_abertos": 242,
     "pdf_descarregados": 232,
     "pdf_pt": 217,
-    "pdf_en": 256
+    "pdf_en": 257
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 452
+     "visitas": 453
     },
     {
      "id": "US",
