@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-17T14:43:40Z",
+ "atualizado_em": "2026-10-17T15:43:38Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 69,
   "visitas_30d": 69,
   "visitas_90d": 69,
-  "aberturas_pdf": 508,
+  "aberturas_pdf": 509,
   "visitas_hoje": 0,
   "visitas_7d": 4,
-  "aberturas_hoje": 12,
-  "aberturas_7d": 38,
-  "aberturas_30d": 508,
+  "aberturas_hoje": 13,
+  "aberturas_7d": 39,
+  "aberturas_30d": 509,
   "pdf_abertos": 271,
-  "pdf_descarregados": 237,
-  "pdf_pt": 245,
+  "pdf_descarregados": 238,
+  "pdf_pt": 246,
   "pdf_en": 263
  },
  "dias": [
@@ -102,7 +102,7 @@
   {
    "dia": "2026-10-17",
    "visitas": 0,
-   "aberturas": 12
+   "aberturas": 13
   }
  ],
  "paginas": [
@@ -176,6 +176,17 @@
    "descarregados_en": 2
   },
   {
+   "id": "anestesia-cirurgia",
+   "ficheiro": null,
+   "pt": 5,
+   "en": 6,
+   "total": 11,
+   "abertos_pt": 2,
+   "abertos_en": 4,
+   "descarregados_pt": 3,
+   "descarregados_en": 2
+  },
+  {
    "id": "cancros-um-a-um",
    "ficheiro": null,
    "pt": 4,
@@ -184,17 +195,6 @@
    "abertos_pt": 3,
    "abertos_en": 5,
    "descarregados_pt": 1,
-   "descarregados_en": 2
-  },
-  {
-   "id": "anestesia-cirurgia",
-   "ficheiro": null,
-   "pt": 4,
-   "en": 6,
-   "total": 10,
-   "abertos_pt": 2,
-   "abertos_en": 4,
-   "descarregados_pt": 2,
    "descarregados_en": 2
   },
   {
@@ -1602,7 +1602,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 455
+   "visitas": 456
   },
   {
    "id": "PT",
@@ -1684,7 +1684,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 547
+   "visitas": 548
   },
   {
    "id": "Firefox",
@@ -1706,7 +1706,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 225
+   "visitas": 226
   },
   {
    "id": "Android",
@@ -1753,7 +1753,7 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 508
+   "visitas": 509
   }
  ],
  "origens": [
@@ -1783,6 +1783,11 @@
    "visitas": 2
   },
   {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
+   "visitas": 2
+  },
+  {
    "id": "https://l.instagram.com",
    "nome": "l.instagram.com",
    "visitas": 1
@@ -1795,11 +1800,6 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
-   "visitas": 1
-  },
-  {
-   "id": "https://sf-site.sergiofpt.workers.dev/r/",
-   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2269,7 +2269,7 @@
     {
      "dia": "2026-10-17",
      "visitas": 0,
-     "aberturas": 12
+     "aberturas": 13
     }
    ],
    "paginas": [
@@ -2328,6 +2328,17 @@
    ],
    "relatorios": [
     {
+     "id": "anestesia-cirurgia",
+     "ficheiro": null,
+     "pt": 4,
+     "en": 6,
+     "total": 10,
+     "abertos_pt": 1,
+     "abertos_en": 4,
+     "descarregados_pt": 3,
+     "descarregados_en": 2
+    },
+    {
      "id": "cancros-um-a-um",
      "ficheiro": null,
      "pt": 3,
@@ -2336,17 +2347,6 @@
      "abertos_pt": 2,
      "abertos_en": 5,
      "descarregados_pt": 1,
-     "descarregados_en": 2
-    },
-    {
-     "id": "anestesia-cirurgia",
-     "ficheiro": null,
-     "pt": 3,
-     "en": 6,
-     "total": 9,
-     "abertos_pt": 1,
-     "abertos_en": 4,
-     "descarregados_pt": 2,
      "descarregados_en": 2
     },
     {
@@ -3738,22 +3738,22 @@
     "visitas": 43,
     "visitas_30d": 43,
     "visitas_90d": 43,
-    "aberturas_pdf": 482,
+    "aberturas_pdf": 483,
     "visitas_hoje": 0,
     "visitas_7d": 2,
-    "aberturas_hoje": 12,
-    "aberturas_7d": 38,
-    "aberturas_30d": 482,
+    "aberturas_hoje": 13,
+    "aberturas_7d": 39,
+    "aberturas_30d": 483,
     "pdf_abertos": 245,
-    "pdf_descarregados": 237,
-    "pdf_pt": 221,
+    "pdf_descarregados": 238,
+    "pdf_pt": 222,
     "pdf_en": 261
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 455
+     "visitas": 456
     },
     {
      "id": "US",
