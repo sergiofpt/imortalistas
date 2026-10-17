@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-17T09:57:22Z",
+ "atualizado_em": "2026-10-17T10:25:08Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 69,
   "visitas_30d": 69,
   "visitas_90d": 69,
-  "aberturas_pdf": 503,
+  "aberturas_pdf": 504,
   "visitas_hoje": 0,
   "visitas_7d": 4,
-  "aberturas_hoje": 7,
-  "aberturas_7d": 33,
-  "aberturas_30d": 503,
+  "aberturas_hoje": 8,
+  "aberturas_7d": 34,
+  "aberturas_30d": 504,
   "pdf_abertos": 270,
-  "pdf_descarregados": 233,
-  "pdf_pt": 243,
+  "pdf_descarregados": 234,
+  "pdf_pt": 244,
   "pdf_en": 260
  },
  "dias": [
@@ -102,7 +102,7 @@
   {
    "dia": "2026-10-17",
    "visitas": 0,
-   "aberturas": 7
+   "aberturas": 8
   }
  ],
  "paginas": [
@@ -220,6 +220,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "doencas-autoimunes",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 4,
+   "total": 7,
+   "abertos_pt": 1,
+   "abertos_en": 2,
+   "descarregados_pt": 2,
+   "descarregados_en": 2
+  },
+  {
    "id": "estado-portador",
    "ficheiro": null,
    "pt": 3,
@@ -249,17 +260,6 @@
    "total": 6,
    "abertos_pt": 2,
    "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 2
-  },
-  {
-   "id": "doencas-autoimunes",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 4,
-   "total": 6,
-   "abertos_pt": 1,
-   "abertos_en": 2,
    "descarregados_pt": 1,
    "descarregados_en": 2
   },
@@ -1617,7 +1617,7 @@
   {
    "id": "HK",
    "nome": "Hong Kong",
-   "visitas": 9
+   "visitas": 10
   },
   {
    "id": "MX",
@@ -1684,7 +1684,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 542
+   "visitas": 543
   },
   {
    "id": "Firefox",
@@ -1706,7 +1706,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 224
+   "visitas": 225
   },
   {
    "id": "Android",
@@ -1753,14 +1753,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 503
+   "visitas": 504
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 544
+   "visitas": 545
   },
   {
    "id": "https://bing.com",
@@ -2269,7 +2269,7 @@
     {
      "dia": "2026-10-17",
      "visitas": 0,
-     "aberturas": 7
+     "aberturas": 8
     }
    ],
    "paginas": [
@@ -2383,6 +2383,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "doencas-autoimunes",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 4,
+     "total": 7,
+     "abertos_pt": 1,
+     "abertos_en": 2,
+     "descarregados_pt": 2,
+     "descarregados_en": 2
+    },
+    {
      "id": "estado-portador",
      "ficheiro": null,
      "pt": 3,
@@ -2402,17 +2413,6 @@
      "abertos_pt": 1,
      "abertos_en": 2,
      "descarregados_pt": 2,
-     "descarregados_en": 2
-    },
-    {
-     "id": "doencas-autoimunes",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 4,
-     "total": 6,
-     "abertos_pt": 1,
-     "abertos_en": 2,
-     "descarregados_pt": 1,
      "descarregados_en": 2
     },
     {
@@ -3738,15 +3738,15 @@
     "visitas": 43,
     "visitas_30d": 43,
     "visitas_90d": 43,
-    "aberturas_pdf": 477,
+    "aberturas_pdf": 478,
     "visitas_hoje": 0,
     "visitas_7d": 2,
-    "aberturas_hoje": 7,
-    "aberturas_7d": 33,
-    "aberturas_30d": 477,
+    "aberturas_hoje": 8,
+    "aberturas_7d": 34,
+    "aberturas_30d": 478,
     "pdf_abertos": 244,
-    "pdf_descarregados": 233,
-    "pdf_pt": 219,
+    "pdf_descarregados": 234,
+    "pdf_pt": 220,
     "pdf_en": 258
    },
    "paises": [
@@ -3763,7 +3763,7 @@
     {
      "id": "HK",
      "nome": "Hong Kong",
-     "visitas": 9
+     "visitas": 10
     },
     {
      "id": "MX",
