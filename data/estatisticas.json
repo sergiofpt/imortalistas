@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-19T18:00:38Z",
+ "atualizado_em": "2026-10-19T19:20:34Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 70,
   "visitas_30d": 70,
   "visitas_90d": 70,
-  "aberturas_pdf": 512,
+  "aberturas_pdf": 513,
   "visitas_hoje": 1,
   "visitas_7d": 4,
-  "aberturas_hoje": 1,
-  "aberturas_7d": 42,
-  "aberturas_30d": 512,
+  "aberturas_hoje": 2,
+  "aberturas_7d": 43,
+  "aberturas_30d": 513,
   "pdf_abertos": 271,
-  "pdf_descarregados": 241,
-  "pdf_pt": 248,
+  "pdf_descarregados": 242,
+  "pdf_pt": 249,
   "pdf_en": 264
  },
  "dias": [
@@ -112,7 +112,7 @@
   {
    "dia": "2026-10-19",
    "visitas": 1,
-   "aberturas": 1
+   "aberturas": 2
   }
  ],
  "paginas": [
@@ -681,6 +681,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "estomago-refluxo-helicobacter",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "figado-gordura-hepatica",
    "ficheiro": null,
    "pt": 2,
@@ -1231,17 +1242,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "estomago-refluxo-helicobacter",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "ferro-metais",
    "ficheiro": null,
    "pt": 2,
@@ -1612,7 +1612,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 458
+   "visitas": 459
   },
   {
    "id": "PT",
@@ -1694,7 +1694,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 551
+   "visitas": 552
   },
   {
    "id": "Firefox",
@@ -1711,7 +1711,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 306
+   "visitas": 307
   },
   {
    "id": "macOS",
@@ -1763,14 +1763,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 512
+   "visitas": 513
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 551
+   "visitas": 552
   },
   {
    "id": "https://bing.com",
@@ -2299,7 +2299,7 @@
     {
      "dia": "2026-10-19",
      "visitas": 0,
-     "aberturas": 1
+     "aberturas": 2
     }
    ],
    "paginas": [
@@ -2777,6 +2777,17 @@
     },
     {
      "id": "esofago",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "estomago-refluxo-helicobacter",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3370,17 +3381,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "estomago-refluxo-helicobacter",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "farmacogenomica-632",
      "ficheiro": null,
      "pt": 1,
@@ -3768,22 +3768,22 @@
     "visitas": 43,
     "visitas_30d": 43,
     "visitas_90d": 43,
-    "aberturas_pdf": 486,
+    "aberturas_pdf": 487,
     "visitas_hoje": 0,
     "visitas_7d": 1,
-    "aberturas_hoje": 1,
-    "aberturas_7d": 42,
-    "aberturas_30d": 486,
+    "aberturas_hoje": 2,
+    "aberturas_7d": 43,
+    "aberturas_30d": 487,
     "pdf_abertos": 245,
-    "pdf_descarregados": 241,
-    "pdf_pt": 224,
+    "pdf_descarregados": 242,
+    "pdf_pt": 225,
     "pdf_en": 262
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 458
+     "visitas": 459
     },
     {
      "id": "US",
