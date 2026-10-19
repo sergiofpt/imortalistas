@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-19T12:40:14Z",
+ "atualizado_em": "2026-10-19T18:00:38Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 70,
   "visitas_30d": 70,
   "visitas_90d": 70,
-  "aberturas_pdf": 511,
+  "aberturas_pdf": 512,
   "visitas_hoje": 1,
   "visitas_7d": 4,
-  "aberturas_hoje": 0,
-  "aberturas_7d": 41,
-  "aberturas_30d": 511,
+  "aberturas_hoje": 1,
+  "aberturas_7d": 42,
+  "aberturas_30d": 512,
   "pdf_abertos": 271,
-  "pdf_descarregados": 240,
-  "pdf_pt": 247,
+  "pdf_descarregados": 241,
+  "pdf_pt": 248,
   "pdf_en": 264
  },
  "dias": [
@@ -112,7 +112,7 @@
   {
    "dia": "2026-10-19",
    "visitas": 1,
-   "aberturas": 0
+   "aberturas": 1
   }
  ],
  "paginas": [
@@ -1264,6 +1264,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "gordura-inflamatoria-lipolise",
+   "ficheiro": null,
+   "pt": 1,
+   "en": 2,
+   "total": 3,
+   "abertos_pt": 0,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "health-report-72",
    "ficheiro": null,
    "pt": 1,
@@ -1460,17 +1471,6 @@
    "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 1
-  },
-  {
-   "id": "gordura-inflamatoria-lipolise",
-   "ficheiro": null,
-   "pt": 0,
-   "en": 2,
-   "total": 2,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
   }
  ],
  "aparelhos": [
@@ -1612,7 +1612,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 457
+   "visitas": 458
   },
   {
    "id": "PT",
@@ -1694,7 +1694,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 550
+   "visitas": 551
   },
   {
    "id": "Firefox",
@@ -1716,7 +1716,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 228
+   "visitas": 229
   },
   {
    "id": "Android",
@@ -1763,14 +1763,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 511
+   "visitas": 512
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 550
+   "visitas": 551
   },
   {
    "id": "https://bing.com",
@@ -2299,7 +2299,7 @@
     {
      "dia": "2026-10-19",
      "visitas": 0,
-     "aberturas": 0
+     "aberturas": 1
     }
    ],
    "paginas": [
@@ -3425,6 +3425,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "gordura-inflamatoria-lipolise",
+     "ficheiro": null,
+     "pt": 1,
+     "en": 2,
+     "total": 3,
+     "abertos_pt": 0,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "health-report-72",
      "ficheiro": null,
      "pt": 1,
@@ -3643,17 +3654,6 @@
      "abertos_en": 1,
      "descarregados_pt": 0,
      "descarregados_en": 1
-    },
-    {
-     "id": "gordura-inflamatoria-lipolise",
-     "ficheiro": null,
-     "pt": 0,
-     "en": 2,
-     "total": 2,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
     }
    ],
    "aparelhos": [
@@ -3768,22 +3768,22 @@
     "visitas": 43,
     "visitas_30d": 43,
     "visitas_90d": 43,
-    "aberturas_pdf": 485,
+    "aberturas_pdf": 486,
     "visitas_hoje": 0,
     "visitas_7d": 1,
-    "aberturas_hoje": 0,
-    "aberturas_7d": 41,
-    "aberturas_30d": 485,
+    "aberturas_hoje": 1,
+    "aberturas_7d": 42,
+    "aberturas_30d": 486,
     "pdf_abertos": 245,
-    "pdf_descarregados": 240,
-    "pdf_pt": 223,
+    "pdf_descarregados": 241,
+    "pdf_pt": 224,
     "pdf_en": 262
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 457
+     "visitas": 458
     },
     {
      "id": "US",
