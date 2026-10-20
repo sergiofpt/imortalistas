@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-20T02:04:36Z",
+ "atualizado_em": "2026-10-20T03:30:22Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 514,
+  "aberturas_pdf": 515,
   "visitas_hoje": 1,
   "visitas_7d": 5,
-  "aberturas_hoje": 1,
-  "aberturas_7d": 44,
-  "aberturas_30d": 514,
+  "aberturas_hoje": 2,
+  "aberturas_7d": 45,
+  "aberturas_30d": 515,
   "pdf_abertos": 271,
-  "pdf_descarregados": 243,
-  "pdf_pt": 250,
+  "pdf_descarregados": 244,
+  "pdf_pt": 251,
   "pdf_en": 264
  },
  "dias": [
@@ -117,7 +117,7 @@
   {
    "dia": "2026-10-20",
    "visitas": 1,
-   "aberturas": 1
+   "aberturas": 2
   }
  ],
  "paginas": [
@@ -785,6 +785,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "insuficiencia-cardiaca-cardiomiopatias",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "intolerancias-alimentares-626",
    "ficheiro": null,
    "pt": 2,
@@ -1357,17 +1368,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "insuficiencia-cardiaca-cardiomiopatias",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "longevidade-excecional",
    "ficheiro": null,
    "pt": 2,
@@ -1617,7 +1617,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 460
+   "visitas": 461
   },
   {
    "id": "PT",
@@ -1699,7 +1699,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 554
+   "visitas": 555
   },
   {
    "id": "Firefox",
@@ -1721,7 +1721,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 230
+   "visitas": 231
   },
   {
    "id": "Android",
@@ -1768,14 +1768,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 514
+   "visitas": 515
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 553
+   "visitas": 554
   },
   {
    "id": "https://imortalistas.com",
@@ -2314,7 +2314,7 @@
     {
      "dia": "2026-10-20",
      "visitas": 1,
-     "aberturas": 1
+     "aberturas": 2
     }
    ],
    "paginas": [
@@ -2902,6 +2902,17 @@
     },
     {
      "id": "inflamacao-senescencia-placa",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "insuficiencia-cardiaca-cardiomiopatias",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3528,17 +3539,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "insuficiencia-cardiaca-cardiomiopatias",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "intolerancias-alimentares-626",
      "ficheiro": null,
      "pt": 1,
@@ -3783,22 +3783,22 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 488,
+    "aberturas_pdf": 489,
     "visitas_hoje": 1,
     "visitas_7d": 2,
-    "aberturas_hoje": 1,
-    "aberturas_7d": 44,
-    "aberturas_30d": 488,
+    "aberturas_hoje": 2,
+    "aberturas_7d": 45,
+    "aberturas_30d": 489,
     "pdf_abertos": 245,
-    "pdf_descarregados": 243,
-    "pdf_pt": 226,
+    "pdf_descarregados": 244,
+    "pdf_pt": 227,
     "pdf_en": 262
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 460
+     "visitas": 461
     },
     {
      "id": "US",
