@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-20T00:39:50Z",
+ "atualizado_em": "2026-10-20T02:04:36Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
-  "visitas": 70,
-  "visitas_30d": 70,
-  "visitas_90d": 70,
-  "aberturas_pdf": 513,
-  "visitas_hoje": 0,
-  "visitas_7d": 4,
-  "aberturas_hoje": 0,
-  "aberturas_7d": 43,
-  "aberturas_30d": 513,
+  "visitas": 71,
+  "visitas_30d": 71,
+  "visitas_90d": 71,
+  "aberturas_pdf": 514,
+  "visitas_hoje": 1,
+  "visitas_7d": 5,
+  "aberturas_hoje": 1,
+  "aberturas_7d": 44,
+  "aberturas_30d": 514,
   "pdf_abertos": 271,
-  "pdf_descarregados": 242,
-  "pdf_pt": 249,
+  "pdf_descarregados": 243,
+  "pdf_pt": 250,
   "pdf_en": 264
  },
  "dias": [
@@ -116,8 +116,8 @@
   },
   {
    "dia": "2026-10-20",
-   "visitas": 0,
-   "aberturas": 0
+   "visitas": 1,
+   "aberturas": 1
   }
  ],
  "paginas": [
@@ -127,7 +127,7 @@
   },
   {
    "path": "/inicio.html",
-   "visitas": 9
+   "visitas": 10
   },
   {
    "path": "/teste-worker",
@@ -301,6 +301,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "farmacogenomica-632",
+   "ficheiro": null,
+   "pt": 4,
+   "en": 2,
+   "total": 6,
+   "abertos_pt": 3,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "forca-hipertrofia-potencia",
    "ficheiro": null,
    "pt": 3,
@@ -331,17 +342,6 @@
    "abertos_pt": 2,
    "abertos_en": 1,
    "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "farmacogenomica-632",
-   "ficheiro": null,
-   "pt": 3,
-   "en": 2,
-   "total": 5,
-   "abertos_pt": 3,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -1484,7 +1484,7 @@
    "tipo": "computador",
    "nome": "Linux · Chrome",
    "estimativa": false,
-   "visitas": 10
+   "visitas": 11
   },
   {
    "id": "computador/mac-chrome",
@@ -1617,7 +1617,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 459
+   "visitas": 460
   },
   {
    "id": "PT",
@@ -1635,14 +1635,14 @@
    "visitas": 11
   },
   {
-   "id": "MX",
-   "nome": "Mexico",
+   "id": "CA",
+   "nome": "Canada",
    "visitas": 5
   },
   {
-   "id": "CA",
-   "nome": "Canada",
-   "visitas": 4
+   "id": "MX",
+   "nome": "Mexico",
+   "visitas": 5
   },
   {
    "id": "PL",
@@ -1699,7 +1699,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 552
+   "visitas": 554
   },
   {
    "id": "Firefox",
@@ -1721,7 +1721,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 229
+   "visitas": 230
   },
   {
    "id": "Android",
@@ -1731,7 +1731,7 @@
   {
    "id": "Linux",
    "nome": "Linux",
-   "visitas": 20
+   "visitas": 21
   },
   {
    "id": "Chrome OS",
@@ -1753,7 +1753,7 @@
   {
    "id": "tablet",
    "nome": "tablet",
-   "visitas": 8
+   "visitas": 9
   },
   {
    "id": "desktop",
@@ -1768,14 +1768,19 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 513
+   "visitas": 514
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 552
+   "visitas": 553
+  },
+  {
+   "id": "https://imortalistas.com",
+   "nome": "imortalistas.com",
+   "visitas": 5
   },
   {
    "id": "https://bing.com",
@@ -1785,11 +1790,6 @@
   {
    "id": "https://www.rapamycin.news",
    "nome": "www.rapamycin.news",
-   "visitas": 4
-  },
-  {
-   "id": "https://imortalistas.com",
-   "nome": "imortalistas.com",
    "visitas": 4
   },
   {
@@ -2313,8 +2313,8 @@
     },
     {
      "dia": "2026-10-20",
-     "visitas": 0,
-     "aberturas": 0
+     "visitas": 1,
+     "aberturas": 1
     }
    ],
    "paginas": [
@@ -2324,7 +2324,7 @@
     },
     {
      "path": "/inicio.html",
-     "visitas": 4
+     "visitas": 5
     },
     {
      "path": "/",
@@ -2803,6 +2803,17 @@
     },
     {
      "id": "estomago-refluxo-helicobacter",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "farmacogenomica-632",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3396,17 +3407,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "farmacogenomica-632",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "ferro-metais",
      "ficheiro": null,
      "pt": 2,
@@ -3677,7 +3677,7 @@
      "tipo": "computador",
      "nome": "Linux · Chrome",
      "estimativa": false,
-     "visitas": 9
+     "visitas": 10
     },
     {
      "id": "computador/mac-chrome",
@@ -3780,25 +3780,25 @@
    ],
    "aparelhos_desde": "2026-10-03",
    "total": {
-    "visitas": 43,
-    "visitas_30d": 43,
-    "visitas_90d": 43,
-    "aberturas_pdf": 487,
-    "visitas_hoje": 0,
-    "visitas_7d": 1,
-    "aberturas_hoje": 0,
-    "aberturas_7d": 43,
-    "aberturas_30d": 487,
+    "visitas": 44,
+    "visitas_30d": 44,
+    "visitas_90d": 44,
+    "aberturas_pdf": 488,
+    "visitas_hoje": 1,
+    "visitas_7d": 2,
+    "aberturas_hoje": 1,
+    "aberturas_7d": 44,
+    "aberturas_30d": 488,
     "pdf_abertos": 245,
-    "pdf_descarregados": 242,
-    "pdf_pt": 225,
+    "pdf_descarregados": 243,
+    "pdf_pt": 226,
     "pdf_en": 262
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 459
+     "visitas": 460
     },
     {
      "id": "US",
@@ -3811,14 +3811,14 @@
      "visitas": 11
     },
     {
-     "id": "MX",
-     "nome": "Mexico",
+     "id": "CA",
+     "nome": "Canada",
      "visitas": 5
     },
     {
-     "id": "CA",
-     "nome": "Canada",
-     "visitas": 4
+     "id": "MX",
+     "nome": "Mexico",
+     "visitas": 5
     },
     {
      "id": "PL",
