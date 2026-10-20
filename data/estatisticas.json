@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-20T03:30:22Z",
+ "atualizado_em": "2026-10-20T04:49:23Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 515,
+  "aberturas_pdf": 516,
   "visitas_hoje": 1,
   "visitas_7d": 5,
-  "aberturas_hoje": 2,
-  "aberturas_7d": 45,
-  "aberturas_30d": 515,
+  "aberturas_hoje": 3,
+  "aberturas_7d": 46,
+  "aberturas_30d": 516,
   "pdf_abertos": 271,
-  "pdf_descarregados": 244,
-  "pdf_pt": 251,
+  "pdf_descarregados": 245,
+  "pdf_pt": 252,
   "pdf_en": 264
  },
  "dias": [
@@ -117,7 +117,7 @@
   {
    "dia": "2026-10-20",
    "visitas": 1,
-   "aberturas": 2
+   "aberturas": 3
   }
  ],
  "paginas": [
@@ -1170,6 +1170,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "unhas-cicatrizacao-inflamacao-pele",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "valvulas-cardiacas",
    "ficheiro": null,
    "pt": 2,
@@ -1456,17 +1467,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "unhas-cicatrizacao-inflamacao-pele",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "visao-audicao",
    "ficheiro": null,
    "pt": 1,
@@ -1617,7 +1617,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 461
+   "visitas": 462
   },
   {
    "id": "PT",
@@ -1699,7 +1699,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 555
+   "visitas": 556
   },
   {
    "id": "Firefox",
@@ -1716,7 +1716,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 307
+   "visitas": 308
   },
   {
    "id": "macOS",
@@ -1768,14 +1768,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 515
+   "visitas": 516
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 554
+   "visitas": 555
   },
   {
    "id": "https://imortalistas.com",
@@ -2314,7 +2314,7 @@
     {
      "dia": "2026-10-20",
      "visitas": 1,
-     "aberturas": 2
+     "aberturas": 3
     }
    ],
    "paginas": [
@@ -3319,6 +3319,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "unhas-cicatrizacao-inflamacao-pele",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "valvulas-cardiacas",
      "ficheiro": null,
      "pt": 2,
@@ -3649,17 +3660,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "unhas-cicatrizacao-inflamacao-pele",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "visao-audicao",
      "ficheiro": null,
      "pt": 1,
@@ -3783,22 +3783,22 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 489,
+    "aberturas_pdf": 490,
     "visitas_hoje": 1,
     "visitas_7d": 2,
-    "aberturas_hoje": 2,
-    "aberturas_7d": 45,
-    "aberturas_30d": 489,
+    "aberturas_hoje": 3,
+    "aberturas_7d": 46,
+    "aberturas_30d": 490,
     "pdf_abertos": 245,
-    "pdf_descarregados": 244,
-    "pdf_pt": 227,
+    "pdf_descarregados": 245,
+    "pdf_pt": 228,
     "pdf_en": 262
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 461
+     "visitas": 462
     },
     {
      "id": "US",
