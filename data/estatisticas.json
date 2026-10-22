@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-22T00:06:21Z",
+ "atualizado_em": "2026-10-22T19:21:14Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 516,
+  "aberturas_pdf": 519,
   "visitas_hoje": 0,
   "visitas_7d": 3,
-  "aberturas_hoje": 0,
-  "aberturas_7d": 42,
-  "aberturas_30d": 516,
-  "pdf_abertos": 271,
+  "aberturas_hoje": 3,
+  "aberturas_7d": 45,
+  "aberturas_30d": 519,
+  "pdf_abertos": 274,
   "pdf_descarregados": 245,
-  "pdf_pt": 252,
+  "pdf_pt": 255,
   "pdf_en": 264
  },
  "dias": [
@@ -127,7 +127,7 @@
   {
    "dia": "2026-10-22",
    "visitas": 0,
-   "aberturas": 0
+   "aberturas": 3
   }
  ],
  "paginas": [
@@ -422,6 +422,17 @@
   },
   {
    "id": "ritmo-circadiano-sono",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "valvulas-cardiacas",
    "ficheiro": null,
    "pt": 3,
    "en": 2,
@@ -1026,6 +1037,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "relogio-epigenetico-idade-biologica",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "reparacao-adn-estabilidade-genoma",
    "ficheiro": null,
    "pt": 2,
@@ -1114,6 +1136,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "stress-oxidativo-defesa-antioxidante",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "telomeros-senescencia-celular",
    "ficheiro": null,
    "pt": 2,
@@ -1181,17 +1214,6 @@
   },
   {
    "id": "unhas-cicatrizacao-inflamacao-pele",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "valvulas-cardiacas",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -1422,17 +1444,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "relogio-epigenetico-idade-biologica",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "saude-oral-dentes-periodontite",
    "ficheiro": null,
    "pt": 2,
@@ -1452,17 +1463,6 @@
    "abertos_pt": 0,
    "abertos_en": 1,
    "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "stress-oxidativo-defesa-antioxidante",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -1627,7 +1627,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 462
+   "visitas": 463
   },
   {
    "id": "PT",
@@ -1637,7 +1637,7 @@
   {
    "id": "US",
    "nome": "United States",
-   "visitas": 43
+   "visitas": 45
   },
   {
    "id": "HK",
@@ -1709,7 +1709,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 556
+   "visitas": 559
   },
   {
    "id": "Firefox",
@@ -1726,12 +1726,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 308
+   "visitas": 309
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 231
+   "visitas": 233
   },
   {
    "id": "Android",
@@ -1778,7 +1778,7 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 516
+   "visitas": 519
   }
  ],
  "origens": [
@@ -1825,6 +1825,21 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2344,7 +2359,7 @@
     {
      "dia": "2026-10-22",
      "visitas": 0,
-     "aberturas": 0
+     "aberturas": 3
     }
    ],
    "paginas": [
@@ -2547,6 +2562,17 @@
     },
     {
      "id": "psicadelicos",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "valvulas-cardiacas",
      "ficheiro": null,
      "pt": 3,
      "en": 2,
@@ -3173,6 +3199,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "relogio-epigenetico-idade-biologica",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "reparacao-adn-estabilidade-genoma",
      "ficheiro": null,
      "pt": 2,
@@ -3283,6 +3320,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "stress-oxidativo-defesa-antioxidante",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "telomeros-senescencia-celular",
      "ficheiro": null,
      "pt": 2,
@@ -3350,17 +3398,6 @@
     },
     {
      "id": "unhas-cicatrizacao-inflamacao-pele",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "valvulas-cardiacas",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3635,17 +3672,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "relogio-epigenetico-idade-biologica",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "saude-oral-dentes-periodontite",
      "ficheiro": null,
      "pt": 2,
@@ -3665,17 +3691,6 @@
      "abertos_pt": 0,
      "abertos_en": 1,
      "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "stress-oxidativo-defesa-antioxidante",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
      "descarregados_en": 1
     },
     {
@@ -3813,27 +3828,27 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 490,
+    "aberturas_pdf": 493,
     "visitas_hoje": 0,
     "visitas_7d": 2,
-    "aberturas_hoje": 0,
-    "aberturas_7d": 42,
-    "aberturas_30d": 490,
-    "pdf_abertos": 245,
+    "aberturas_hoje": 3,
+    "aberturas_7d": 45,
+    "aberturas_30d": 493,
+    "pdf_abertos": 248,
     "pdf_descarregados": 245,
-    "pdf_pt": 228,
+    "pdf_pt": 231,
     "pdf_en": 262
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 462
+     "visitas": 463
     },
     {
      "id": "US",
      "nome": "United States",
-     "visitas": 43
+     "visitas": 45
     },
     {
      "id": "HK",
