@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-22T21:29:49Z",
+ "atualizado_em": "2026-10-22T22:04:53Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 532,
+  "aberturas_pdf": 534,
   "visitas_hoje": 0,
   "visitas_7d": 3,
-  "aberturas_hoje": 16,
-  "aberturas_7d": 58,
-  "aberturas_30d": 532,
-  "pdf_abertos": 287,
+  "aberturas_hoje": 18,
+  "aberturas_7d": 60,
+  "aberturas_30d": 534,
+  "pdf_abertos": 289,
   "pdf_descarregados": 245,
-  "pdf_pt": 268,
+  "pdf_pt": 270,
   "pdf_en": 264
  },
  "dias": [
@@ -127,7 +127,7 @@
   {
    "dia": "2026-10-22",
    "visitas": 0,
-   "aberturas": 16
+   "aberturas": 18
   }
  ],
  "paginas": [
@@ -850,6 +850,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "inflamacao-autoimunidade",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 1,
+   "total": 4,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
    "id": "inflamacao-senescencia-placa",
    "ficheiro": null,
    "pt": 2,
@@ -947,6 +958,17 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 1
+  },
+  {
+   "id": "musculo-osso-sarcopenia",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 1,
+   "total": 4,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
   },
   {
    "id": "olhos-em-detalhe",
@@ -1411,29 +1433,7 @@
    "descarregados_en": 1
   },
   {
-   "id": "inflamacao-autoimunidade",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 1,
-   "total": 3,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
    "id": "longevidade-excecional",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 1,
-   "total": 3,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
-  },
-  {
-   "id": "musculo-osso-sarcopenia",
    "ficheiro": null,
    "pt": 2,
    "en": 1,
@@ -1627,7 +1627,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 467
+   "visitas": 468
   },
   {
    "id": "PT",
@@ -1637,7 +1637,7 @@
   {
    "id": "US",
    "nome": "United States",
-   "visitas": 46
+   "visitas": 47
   },
   {
    "id": "HK",
@@ -1714,7 +1714,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 572
+   "visitas": 574
   },
   {
    "id": "Firefox",
@@ -1736,7 +1736,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 240
+   "visitas": 242
   },
   {
    "id": "Android",
@@ -1783,14 +1783,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 532
+   "visitas": 534
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 561
+   "visitas": 563
   },
   {
    "id": "https://imortalistas.com",
@@ -2399,7 +2399,7 @@
     {
      "dia": "2026-10-22",
      "visitas": 0,
-     "aberturas": 16
+     "aberturas": 18
     }
    ],
    "paginas": [
@@ -3063,6 +3063,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "inflamacao-autoimunidade",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 1,
+     "total": 4,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
      "id": "inflamacao-senescencia-placa",
      "ficheiro": null,
      "pt": 2,
@@ -3160,6 +3171,17 @@
      "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 1
+    },
+    {
+     "id": "musculo-osso-sarcopenia",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 1,
+     "total": 4,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
     },
     {
      "id": "olhos-em-detalhe",
@@ -3657,17 +3679,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "inflamacao-autoimunidade",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 1,
-     "total": 3,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
      "id": "intolerancias-alimentares-626",
      "ficheiro": null,
      "pt": 1,
@@ -3691,17 +3702,6 @@
     },
     {
      "id": "longevidade-maxima-sintese-genetica",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 1,
-     "total": 3,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
-     "id": "musculo-osso-sarcopenia",
      "ficheiro": null,
      "pt": 2,
      "en": 1,
@@ -3868,27 +3868,27 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 506,
+    "aberturas_pdf": 508,
     "visitas_hoje": 0,
     "visitas_7d": 2,
-    "aberturas_hoje": 16,
-    "aberturas_7d": 58,
-    "aberturas_30d": 506,
-    "pdf_abertos": 261,
+    "aberturas_hoje": 18,
+    "aberturas_7d": 60,
+    "aberturas_30d": 508,
+    "pdf_abertos": 263,
     "pdf_descarregados": 245,
-    "pdf_pt": 244,
+    "pdf_pt": 246,
     "pdf_en": 262
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 467
+     "visitas": 468
     },
     {
      "id": "US",
      "nome": "United States",
-     "visitas": 46
+     "visitas": 47
     },
     {
      "id": "HK",
