@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-22T22:04:53Z",
+ "atualizado_em": "2026-10-22T22:47:17Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 534,
+  "aberturas_pdf": 535,
   "visitas_hoje": 0,
   "visitas_7d": 3,
-  "aberturas_hoje": 18,
-  "aberturas_7d": 60,
-  "aberturas_30d": 534,
-  "pdf_abertos": 289,
+  "aberturas_hoje": 19,
+  "aberturas_7d": 61,
+  "aberturas_30d": 535,
+  "pdf_abertos": 290,
   "pdf_descarregados": 245,
-  "pdf_pt": 270,
+  "pdf_pt": 271,
   "pdf_en": 264
  },
  "dias": [
@@ -127,7 +127,7 @@
   {
    "dia": "2026-10-22",
    "visitas": 0,
-   "aberturas": 18
+   "aberturas": 19
   }
  ],
  "paginas": [
@@ -377,6 +377,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "articulacoes-artrose",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "coagulacao-trombose-veias",
    "ficheiro": null,
    "pt": 3,
@@ -543,17 +554,6 @@
   },
   {
    "id": "aorta-aneurismas",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "articulacoes-artrose",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -1627,7 +1627,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 468
+   "visitas": 469
   },
   {
    "id": "PT",
@@ -1714,7 +1714,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 574
+   "visitas": 575
   },
   {
    "id": "Firefox",
@@ -1731,7 +1731,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 315
+   "visitas": 316
   },
   {
    "id": "macOS",
@@ -1783,7 +1783,7 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 534
+   "visitas": 535
   }
  ],
  "origens": [
@@ -1830,6 +1830,11 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2399,7 +2404,7 @@
     {
      "dia": "2026-10-22",
      "visitas": 0,
-     "aberturas": 18
+     "aberturas": 19
     }
    ],
    "paginas": [
@@ -2565,6 +2570,17 @@
      "abertos_pt": 1,
      "abertos_en": 2,
      "descarregados_pt": 2,
+     "descarregados_en": 1
+    },
+    {
+     "id": "articulacoes-artrose",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
      "descarregados_en": 1
     },
     {
@@ -2756,17 +2772,6 @@
     },
     {
      "id": "apetite-saciedade-comportamento-alimentar",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "articulacoes-artrose",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3868,22 +3873,22 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 508,
+    "aberturas_pdf": 509,
     "visitas_hoje": 0,
     "visitas_7d": 2,
-    "aberturas_hoje": 18,
-    "aberturas_7d": 60,
-    "aberturas_30d": 508,
-    "pdf_abertos": 263,
+    "aberturas_hoje": 19,
+    "aberturas_7d": 61,
+    "aberturas_30d": 509,
+    "pdf_abertos": 264,
     "pdf_descarregados": 245,
-    "pdf_pt": 246,
+    "pdf_pt": 247,
     "pdf_en": 262
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 468
+     "visitas": 469
     },
     {
      "id": "US",
