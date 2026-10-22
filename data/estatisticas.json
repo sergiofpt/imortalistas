@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-22T20:04:06Z",
+ "atualizado_em": "2026-10-22T20:49:29Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 525,
+  "aberturas_pdf": 530,
   "visitas_hoje": 0,
   "visitas_7d": 3,
-  "aberturas_hoje": 9,
-  "aberturas_7d": 51,
-  "aberturas_30d": 525,
-  "pdf_abertos": 280,
+  "aberturas_hoje": 14,
+  "aberturas_7d": 56,
+  "aberturas_30d": 530,
+  "pdf_abertos": 285,
   "pdf_descarregados": 245,
-  "pdf_pt": 261,
+  "pdf_pt": 266,
   "pdf_en": 264
  },
  "dias": [
@@ -127,7 +127,7 @@
   {
    "dia": "2026-10-22",
    "visitas": 0,
-   "aberturas": 9
+   "aberturas": 14
   }
  ],
  "paginas": [
@@ -225,10 +225,10 @@
   {
    "id": "suprarrenais-cortisol",
    "ficheiro": null,
-   "pt": 4,
+   "pt": 5,
    "en": 5,
-   "total": 9,
-   "abertos_pt": 1,
+   "total": 10,
+   "abertos_pt": 2,
    "abertos_en": 2,
    "descarregados_pt": 3,
    "descarregados_en": 3
@@ -236,10 +236,10 @@
   {
    "id": "bexiga-funcao-urinaria",
    "ficheiro": null,
-   "pt": 4,
+   "pt": 5,
    "en": 4,
-   "total": 8,
-   "abertos_pt": 2,
+   "total": 9,
+   "abertos_pt": 3,
    "abertos_en": 2,
    "descarregados_pt": 2,
    "descarregados_en": 2
@@ -455,6 +455,17 @@
   },
   {
    "id": "resposta-treino-vo2max",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "sal-agua-eletrolitos",
    "ficheiro": null,
    "pt": 3,
    "en": 2,
@@ -806,6 +817,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "hipofise-eixo-hormonal",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 1,
+   "total": 4,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
    "id": "hipoxia-altitude",
    "ficheiro": null,
    "pt": 2,
@@ -1125,17 +1147,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "sal-agua-eletrolitos",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "sensibilidade-radiacao",
    "ficheiro": null,
    "pt": 2,
@@ -1257,6 +1268,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "visao-audicao",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "vitaminas-minerais",
    "ficheiro": null,
    "pt": 2,
@@ -1354,17 +1376,6 @@
    "abertos_en": 1,
    "descarregados_pt": 0,
    "descarregados_en": 1
-  },
-  {
-   "id": "hipofise-eixo-hormonal",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 1,
-   "total": 3,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
   },
   {
    "id": "histamina-mastocitos-ige",
@@ -1474,17 +1485,6 @@
    "abertos_pt": 0,
    "abertos_en": 1,
    "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "visao-audicao",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
    "descarregados_en": 1
   }
  ],
@@ -1627,7 +1627,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 465
+   "visitas": 466
   },
   {
    "id": "PT",
@@ -1642,16 +1642,16 @@
   {
    "id": "HK",
    "nome": "Hong Kong",
-   "visitas": 13
-  },
-  {
-   "id": "CA",
-   "nome": "Canada",
-   "visitas": 5
+   "visitas": 15
   },
   {
    "id": "MX",
    "nome": "Mexico",
+   "visitas": 7
+  },
+  {
+   "id": "CA",
+   "nome": "Canada",
    "visitas": 5
   },
   {
@@ -1714,7 +1714,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 565
+   "visitas": 570
   },
   {
    "id": "Firefox",
@@ -1731,12 +1731,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 311
+   "visitas": 315
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 237
+   "visitas": 238
   },
   {
    "id": "Android",
@@ -1783,14 +1783,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 525
+   "visitas": 530
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 558
+   "visitas": 561
   },
   {
    "id": "https://imortalistas.com",
@@ -1830,6 +1830,16 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2379,7 +2389,7 @@
     {
      "dia": "2026-10-22",
      "visitas": 0,
-     "aberturas": 9
+     "aberturas": 14
     }
    ],
    "paginas": [
@@ -2473,10 +2483,10 @@
     {
      "id": "suprarrenais-cortisol",
      "ficheiro": null,
-     "pt": 4,
+     "pt": 5,
      "en": 5,
-     "total": 9,
-     "abertos_pt": 1,
+     "total": 10,
+     "abertos_pt": 2,
      "abertos_en": 2,
      "descarregados_pt": 3,
      "descarregados_en": 3
@@ -2484,10 +2494,10 @@
     {
      "id": "bexiga-funcao-urinaria",
      "ficheiro": null,
-     "pt": 4,
+     "pt": 5,
      "en": 4,
-     "total": 8,
-     "abertos_pt": 2,
+     "total": 9,
+     "abertos_pt": 3,
      "abertos_en": 2,
      "descarregados_pt": 2,
      "descarregados_en": 2
@@ -2626,6 +2636,17 @@
     },
     {
      "id": "ritmo-circadiano-sono",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "sal-agua-eletrolitos",
      "ficheiro": null,
      "pt": 3,
      "en": 2,
@@ -2999,6 +3020,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "hipofise-eixo-hormonal",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 1,
+     "total": 4,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
+    },
+    {
      "id": "hipoxia-altitude",
      "ficheiro": null,
      "pt": 2,
@@ -3329,17 +3361,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "sal-agua-eletrolitos",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "sensibilidade-radiacao",
      "ficheiro": null,
      "pt": 2,
@@ -3458,6 +3479,17 @@
      "abertos_pt": 1,
      "abertos_en": 1,
      "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "visao-audicao",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
      "descarregados_en": 1
     },
     {
@@ -3580,17 +3612,6 @@
      "abertos_en": 1,
      "descarregados_pt": 0,
      "descarregados_en": 1
-    },
-    {
-     "id": "hipofise-eixo-hormonal",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 1,
-     "total": 3,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
     },
     {
      "id": "histamina-mastocitos-ige",
@@ -3723,17 +3744,6 @@
      "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 1
-    },
-    {
-     "id": "visao-audicao",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
     }
    ],
    "aparelhos": [
@@ -3848,22 +3858,22 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 499,
+    "aberturas_pdf": 504,
     "visitas_hoje": 0,
     "visitas_7d": 2,
-    "aberturas_hoje": 9,
-    "aberturas_7d": 51,
-    "aberturas_30d": 499,
-    "pdf_abertos": 254,
+    "aberturas_hoje": 14,
+    "aberturas_7d": 56,
+    "aberturas_30d": 504,
+    "pdf_abertos": 259,
     "pdf_descarregados": 245,
-    "pdf_pt": 237,
+    "pdf_pt": 242,
     "pdf_en": 262
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 465
+     "visitas": 466
     },
     {
      "id": "US",
@@ -3873,16 +3883,16 @@
     {
      "id": "HK",
      "nome": "Hong Kong",
-     "visitas": 13
-    },
-    {
-     "id": "CA",
-     "nome": "Canada",
-     "visitas": 5
+     "visitas": 15
     },
     {
      "id": "MX",
      "nome": "Mexico",
+     "visitas": 7
+    },
+    {
+     "id": "CA",
+     "nome": "Canada",
      "visitas": 5
     },
     {
