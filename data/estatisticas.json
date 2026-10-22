@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-22T19:21:14Z",
+ "atualizado_em": "2026-10-22T20:04:06Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 519,
+  "aberturas_pdf": 525,
   "visitas_hoje": 0,
   "visitas_7d": 3,
-  "aberturas_hoje": 3,
-  "aberturas_7d": 45,
-  "aberturas_30d": 519,
-  "pdf_abertos": 274,
+  "aberturas_hoje": 9,
+  "aberturas_7d": 51,
+  "aberturas_30d": 525,
+  "pdf_abertos": 280,
   "pdf_descarregados": 245,
-  "pdf_pt": 255,
+  "pdf_pt": 261,
   "pdf_en": 264
  },
  "dias": [
@@ -127,7 +127,7 @@
   {
    "dia": "2026-10-22",
    "visitas": 0,
-   "aberturas": 3
+   "aberturas": 9
   }
  ],
  "paginas": [
@@ -344,6 +344,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "ritmo-circadiano-sono",
+   "ficheiro": null,
+   "pt": 4,
+   "en": 2,
+   "total": 6,
+   "abertos_pt": 3,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "apetite-saciedade-comportamento-alimentar",
    "ficheiro": null,
    "pt": 3,
@@ -355,7 +366,29 @@
    "descarregados_en": 1
   },
   {
+   "id": "coagulacao-trombose-veias",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "fertilidade-masculina",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "humor-risco-depressao",
    "ficheiro": null,
    "pt": 3,
    "en": 2,
@@ -410,6 +443,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "proteostase",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "resposta-treino-vo2max",
    "ficheiro": null,
    "pt": 3,
@@ -421,7 +465,7 @@
    "descarregados_en": 1
   },
   {
-   "id": "ritmo-circadiano-sono",
+   "id": "tiroide",
    "ficheiro": null,
    "pt": 3,
    "en": 2,
@@ -608,17 +652,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "coagulacao-trombose-veias",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "coluna-disco-dor-lombar",
    "ficheiro": null,
    "pt": 2,
@@ -762,7 +795,7 @@
    "descarregados_en": 1
   },
   {
-   "id": "hipoxia-altitude",
+   "id": "gordura-inflamatoria-lipolise",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -773,7 +806,7 @@
    "descarregados_en": 1
   },
   {
-   "id": "humor-risco-depressao",
+   "id": "hipoxia-altitude",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -1015,17 +1048,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "proteostase",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "pulmao-funcao-respiratoria",
    "ficheiro": null,
    "pt": 2,
@@ -1202,17 +1224,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "tiroide",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "unhas-cicatrizacao-inflamacao-pele",
    "ficheiro": null,
    "pt": 2,
@@ -1313,17 +1324,6 @@
   },
   {
    "id": "gaba-glutamato",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "gordura-inflamatoria-lipolise",
    "ficheiro": null,
    "pt": 1,
    "en": 2,
@@ -1627,7 +1627,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 463
+   "visitas": 465
   },
   {
    "id": "PT",
@@ -1637,12 +1637,12 @@
   {
    "id": "US",
    "nome": "United States",
-   "visitas": 45
+   "visitas": 46
   },
   {
    "id": "HK",
    "nome": "Hong Kong",
-   "visitas": 11
+   "visitas": 13
   },
   {
    "id": "CA",
@@ -1672,6 +1672,11 @@
   {
    "id": "CO",
    "nome": "Colombia",
+   "visitas": 1
+  },
+  {
+   "id": "GB",
+   "nome": "United Kingdom",
    "visitas": 1
   },
   {
@@ -1709,7 +1714,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 559
+   "visitas": 565
   },
   {
    "id": "Firefox",
@@ -1726,12 +1731,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 309
+   "visitas": 311
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 233
+   "visitas": 237
   },
   {
    "id": "Android",
@@ -1778,14 +1783,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 519
+   "visitas": 525
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 555
+   "visitas": 558
   },
   {
    "id": "https://imortalistas.com",
@@ -1825,6 +1830,21 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2359,7 +2379,7 @@
     {
      "dia": "2026-10-22",
      "visitas": 0,
-     "aberturas": 3
+     "aberturas": 9
     }
    ],
    "paginas": [
@@ -2539,6 +2559,28 @@
      "descarregados_en": 2
     },
     {
+     "id": "coagulacao-trombose-veias",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "humor-risco-depressao",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "infecoes",
      "ficheiro": null,
      "pt": 2,
@@ -2561,7 +2603,40 @@
      "descarregados_en": 1
     },
     {
+     "id": "proteostase",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "psicadelicos",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "ritmo-circadiano-sono",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "tiroide",
      "ficheiro": null,
      "pt": 3,
      "en": 2,
@@ -2748,17 +2823,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "coagulacao-trombose-veias",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "coluna-disco-dor-lombar",
      "ficheiro": null,
      "pt": 2,
@@ -2924,7 +2988,7 @@
      "descarregados_en": 1
     },
     {
-     "id": "hipoxia-altitude",
+     "id": "gordura-inflamatoria-lipolise",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -2935,7 +2999,7 @@
      "descarregados_en": 1
     },
     {
-     "id": "humor-risco-depressao",
+     "id": "hipoxia-altitude",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3177,17 +3241,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "proteostase",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "pulmao-funcao-respiratoria",
      "ficheiro": null,
      "pt": 2,
@@ -3266,17 +3319,6 @@
     },
     {
      "id": "ritmo-cardiaco-arritmias",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "ritmo-circadiano-sono",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3376,17 +3418,6 @@
     },
     {
      "id": "testiculos",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "tiroide",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3519,17 +3550,6 @@
     },
     {
      "id": "gaba-glutamato",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "gordura-inflamatoria-lipolise",
      "ficheiro": null,
      "pt": 1,
      "en": 2,
@@ -3828,32 +3848,32 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 493,
+    "aberturas_pdf": 499,
     "visitas_hoje": 0,
     "visitas_7d": 2,
-    "aberturas_hoje": 3,
-    "aberturas_7d": 45,
-    "aberturas_30d": 493,
-    "pdf_abertos": 248,
+    "aberturas_hoje": 9,
+    "aberturas_7d": 51,
+    "aberturas_30d": 499,
+    "pdf_abertos": 254,
     "pdf_descarregados": 245,
-    "pdf_pt": 231,
+    "pdf_pt": 237,
     "pdf_en": 262
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 463
+     "visitas": 465
     },
     {
      "id": "US",
      "nome": "United States",
-     "visitas": 45
+     "visitas": 46
     },
     {
      "id": "HK",
      "nome": "Hong Kong",
-     "visitas": 11
+     "visitas": 13
     },
     {
      "id": "CA",
@@ -3883,6 +3903,11 @@
     {
      "id": "CO",
      "nome": "Colombia",
+     "visitas": 1
+    },
+    {
+     "id": "GB",
+     "nome": "United Kingdom",
      "visitas": 1
     },
     {
