@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-22T22:47:17Z",
+ "atualizado_em": "2026-10-22T23:14:41Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 535,
+  "aberturas_pdf": 537,
   "visitas_hoje": 0,
   "visitas_7d": 3,
-  "aberturas_hoje": 19,
-  "aberturas_7d": 61,
-  "aberturas_30d": 535,
-  "pdf_abertos": 290,
+  "aberturas_hoje": 20,
+  "aberturas_7d": 62,
+  "aberturas_30d": 536,
+  "pdf_abertos": 292,
   "pdf_descarregados": 245,
-  "pdf_pt": 271,
+  "pdf_pt": 273,
   "pdf_en": 264
  },
  "dias": [
@@ -127,7 +127,7 @@
   {
    "dia": "2026-10-22",
    "visitas": 0,
-   "aberturas": 19
+   "aberturas": 20
   }
  ],
  "paginas": [
@@ -443,6 +443,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "laringe-voz",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "metilacao-homocisteina-colina",
    "ficheiro": null,
    "pt": 3,
@@ -461,6 +472,17 @@
    "total": 5,
    "abertos_pt": 0,
    "abertos_en": 3,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "olhos-em-detalhe",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 1
   },
@@ -894,17 +916,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "laringe-voz",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "lipidos-detalhe",
    "ficheiro": null,
    "pt": 2,
@@ -969,17 +980,6 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 0
-  },
-  {
-   "id": "olhos-em-detalhe",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
   },
   {
    "id": "oxido-nitrico-endotelio",
@@ -1637,7 +1637,7 @@
   {
    "id": "US",
    "nome": "United States",
-   "visitas": 47
+   "visitas": 49
   },
   {
    "id": "HK",
@@ -1714,7 +1714,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 575
+   "visitas": 577
   },
   {
    "id": "Firefox",
@@ -1731,12 +1731,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 316
+   "visitas": 317
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 242
+   "visitas": 243
   },
   {
    "id": "Android",
@@ -1783,14 +1783,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 535
+   "visitas": 537
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 563
+   "visitas": 564
   },
   {
    "id": "https://imortalistas.com",
@@ -1830,6 +1830,11 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2404,7 +2409,7 @@
     {
      "dia": "2026-10-22",
      "visitas": 0,
-     "aberturas": 19
+     "aberturas": 20
     }
    ],
    "paginas": [
@@ -2650,6 +2655,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "laringe-voz",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "nariz-seios-perinasais",
      "ficheiro": null,
      "pt": 1,
@@ -2657,6 +2673,17 @@
      "total": 5,
      "abertos_pt": 0,
      "abertos_en": 3,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "olhos-em-detalhe",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 1
     },
@@ -3112,17 +3139,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "laringe-voz",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "lipidos-detalhe",
      "ficheiro": null,
      "pt": 2,
@@ -3187,17 +3203,6 @@
      "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 0
-    },
-    {
-     "id": "olhos-em-detalhe",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
     },
     {
      "id": "oxido-nitrico-endotelio",
@@ -3873,15 +3878,15 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 509,
+    "aberturas_pdf": 511,
     "visitas_hoje": 0,
     "visitas_7d": 2,
-    "aberturas_hoje": 19,
-    "aberturas_7d": 61,
-    "aberturas_30d": 509,
-    "pdf_abertos": 264,
+    "aberturas_hoje": 20,
+    "aberturas_7d": 62,
+    "aberturas_30d": 510,
+    "pdf_abertos": 266,
     "pdf_descarregados": 245,
-    "pdf_pt": 247,
+    "pdf_pt": 249,
     "pdf_en": 262
    },
    "paises": [
@@ -3893,7 +3898,7 @@
     {
      "id": "US",
      "nome": "United States",
-     "visitas": 47
+     "visitas": 49
     },
     {
      "id": "HK",
