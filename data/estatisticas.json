@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-22T23:14:41Z",
+ "atualizado_em": "2026-10-22T23:47:08Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 537,
+  "aberturas_pdf": 538,
   "visitas_hoje": 0,
   "visitas_7d": 3,
   "aberturas_hoje": 20,
   "aberturas_7d": 62,
   "aberturas_30d": 536,
-  "pdf_abertos": 292,
+  "pdf_abertos": 293,
   "pdf_descarregados": 245,
-  "pdf_pt": 273,
+  "pdf_pt": 274,
   "pdf_en": 264
  },
  "dias": [
@@ -477,6 +477,17 @@
   },
   {
    "id": "olhos-em-detalhe",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "prostata",
    "ficheiro": null,
    "pt": 3,
    "en": 2,
@@ -1070,17 +1081,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "prostata",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "proteina-aminoacidos",
    "ficheiro": null,
    "pt": 2,
@@ -1642,7 +1642,7 @@
   {
    "id": "HK",
    "nome": "Hong Kong",
-   "visitas": 16
+   "visitas": 17
   },
   {
    "id": "MX",
@@ -1714,7 +1714,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 577
+   "visitas": 578
   },
   {
    "id": "Firefox",
@@ -1736,7 +1736,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 243
+   "visitas": 244
   },
   {
    "id": "Android",
@@ -1783,7 +1783,7 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 537
+   "visitas": 538
   }
  ],
  "origens": [
@@ -1830,6 +1830,11 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2688,6 +2693,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "prostata",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "proteostase",
      "ficheiro": null,
      "pt": 3,
@@ -3293,17 +3309,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "prostata",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "proteina-aminoacidos",
      "ficheiro": null,
      "pt": 2,
@@ -3878,15 +3883,15 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 511,
+    "aberturas_pdf": 512,
     "visitas_hoje": 0,
     "visitas_7d": 2,
     "aberturas_hoje": 20,
     "aberturas_7d": 62,
     "aberturas_30d": 510,
-    "pdf_abertos": 266,
+    "pdf_abertos": 267,
     "pdf_descarregados": 245,
-    "pdf_pt": 249,
+    "pdf_pt": 250,
     "pdf_en": 262
    },
    "paises": [
@@ -3903,7 +3908,7 @@
     {
      "id": "HK",
      "nome": "Hong Kong",
-     "visitas": 16
+     "visitas": 17
     },
     {
      "id": "MX",
