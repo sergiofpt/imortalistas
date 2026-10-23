@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-23T00:09:40Z",
+ "atualizado_em": "2026-10-23T01:05:18Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 539,
+  "aberturas_pdf": 541,
   "visitas_hoje": 0,
   "visitas_7d": 2,
-  "aberturas_hoje": 3,
-  "aberturas_7d": 43,
-  "aberturas_30d": 539,
-  "pdf_abertos": 294,
+  "aberturas_hoje": 5,
+  "aberturas_7d": 45,
+  "aberturas_30d": 541,
+  "pdf_abertos": 296,
   "pdf_descarregados": 245,
-  "pdf_pt": 275,
+  "pdf_pt": 277,
   "pdf_en": 264
  },
  "dias": [
@@ -132,7 +132,7 @@
   {
    "dia": "2026-10-23",
    "visitas": 0,
-   "aberturas": 3
+   "aberturas": 5
   }
  ],
  "paginas": [
@@ -503,6 +503,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "pele-skin-care",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "prostata",
    "ficheiro": null,
    "pt": 3,
@@ -537,6 +548,17 @@
   },
   {
    "id": "sal-agua-eletrolitos",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "telomeros-senescencia-celular",
    "ficheiro": null,
    "pt": 3,
    "en": 2,
@@ -1042,17 +1064,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "pele-skin-care",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "perfil-desportivo-resistencia-forca",
    "ficheiro": null,
    "pt": 2,
@@ -1204,17 +1215,6 @@
    "abertos_pt": 2,
    "abertos_en": 1,
    "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "telomeros-senescencia-celular",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
    "descarregados_en": 1
   },
   {
@@ -1632,7 +1632,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 470
+   "visitas": 471
   },
   {
    "id": "PT",
@@ -1660,6 +1660,11 @@
    "visitas": 5
   },
   {
+   "id": "BR",
+   "nome": "Brazil",
+   "visitas": 2
+  },
+  {
    "id": "PL",
    "nome": "Poland",
    "visitas": 2
@@ -1667,11 +1672,6 @@
   {
    "id": "AZ",
    "nome": "Azerbaijan",
-   "visitas": 1
-  },
-  {
-   "id": "BR",
-   "nome": "Brazil",
    "visitas": 1
   },
   {
@@ -1719,7 +1719,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 579
+   "visitas": 581
   },
   {
    "id": "Firefox",
@@ -1736,12 +1736,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 318
+   "visitas": 319
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 244
+   "visitas": 245
   },
   {
    "id": "Android",
@@ -1788,14 +1788,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 539
+   "visitas": 541
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 564
+   "visitas": 565
   },
   {
    "id": "https://imortalistas.com",
@@ -1835,6 +1835,11 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2434,7 +2439,7 @@
     {
      "dia": "2026-10-23",
      "visitas": 0,
-     "aberturas": 3
+     "aberturas": 5
     }
    ],
    "paginas": [
@@ -2724,6 +2729,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "pele-skin-care",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "prostata",
      "ficheiro": null,
      "pt": 3,
@@ -2769,6 +2785,17 @@
     },
     {
      "id": "sal-agua-eletrolitos",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "telomeros-senescencia-celular",
      "ficheiro": null,
      "pt": 3,
      "en": 2,
@@ -3285,17 +3312,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "pele-skin-care",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "perfil-desportivo-resistencia-forca",
      "ficheiro": null,
      "pt": 2,
@@ -3458,17 +3474,6 @@
      "abertos_pt": 2,
      "abertos_en": 1,
      "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
-     "id": "telomeros-senescencia-celular",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
      "descarregados_en": 1
     },
     {
@@ -3903,22 +3908,22 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 513,
+    "aberturas_pdf": 515,
     "visitas_hoje": 0,
     "visitas_7d": 1,
-    "aberturas_hoje": 3,
-    "aberturas_7d": 43,
-    "aberturas_30d": 513,
-    "pdf_abertos": 268,
+    "aberturas_hoje": 5,
+    "aberturas_7d": 45,
+    "aberturas_30d": 515,
+    "pdf_abertos": 270,
     "pdf_descarregados": 245,
-    "pdf_pt": 251,
+    "pdf_pt": 253,
     "pdf_en": 262
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 470
+     "visitas": 471
     },
     {
      "id": "US",
@@ -3941,6 +3946,11 @@
      "visitas": 5
     },
     {
+     "id": "BR",
+     "nome": "Brazil",
+     "visitas": 2
+    },
+    {
      "id": "PL",
      "nome": "Poland",
      "visitas": 2
@@ -3948,11 +3958,6 @@
     {
      "id": "AZ",
      "nome": "Azerbaijan",
-     "visitas": 1
-    },
-    {
-     "id": "BR",
-     "nome": "Brazil",
      "visitas": 1
     },
     {
