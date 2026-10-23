@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-23T23:29:49Z",
+ "atualizado_em": "2026-10-23T23:57:31Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 594,
+  "aberturas_pdf": 595,
   "visitas_hoje": 0,
   "visitas_7d": 2,
   "aberturas_hoje": 57,
   "aberturas_7d": 97,
   "aberturas_30d": 593,
-  "pdf_abertos": 349,
+  "pdf_abertos": 350,
   "pdf_descarregados": 245,
-  "pdf_pt": 330,
+  "pdf_pt": 331,
   "pdf_en": 264
  },
  "dias": [
@@ -734,6 +734,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "pancreas-pancreatite",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "pele-skin-care",
    "ficheiro": null,
    "pt": 3,
@@ -1208,17 +1219,6 @@
   },
   {
    "id": "oxitocina-comportamento-social",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "pancreas-pancreatite",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -1730,6 +1730,11 @@
    "visitas": 1
   },
   {
+   "id": "SA",
+   "nome": "Saudi Arabia",
+   "visitas": 1
+  },
+  {
    "id": "TH",
    "nome": "Thailand",
    "visitas": 1
@@ -1749,7 +1754,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 632
+   "visitas": 633
   },
   {
    "id": "Firefox",
@@ -1771,7 +1776,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 279
+   "visitas": 280
   },
   {
    "id": "Android",
@@ -1818,14 +1823,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 594
+   "visitas": 595
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 596
+   "visitas": 597
   },
   {
    "id": "https://imortalistas.com",
@@ -3111,6 +3116,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "pancreas-pancreatite",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "pele-skin-care",
      "ficheiro": null,
      "pt": 3,
@@ -3628,17 +3644,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "pancreas-pancreatite",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "personalidade-tracos-psicologicos",
      "ficheiro": null,
      "pt": 2,
@@ -4048,15 +4053,15 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 568,
+    "aberturas_pdf": 569,
     "visitas_hoje": 0,
     "visitas_7d": 1,
     "aberturas_hoje": 57,
     "aberturas_7d": 97,
     "aberturas_30d": 567,
-    "pdf_abertos": 323,
+    "pdf_abertos": 324,
     "pdf_descarregados": 245,
-    "pdf_pt": 306,
+    "pdf_pt": 307,
     "pdf_en": 262
    },
    "paises": [
@@ -4153,6 +4158,11 @@
     {
      "id": "RU",
      "nome": "Russia",
+     "visitas": 1
+    },
+    {
+     "id": "SA",
+     "nome": "Saudi Arabia",
      "visitas": 1
     },
     {
