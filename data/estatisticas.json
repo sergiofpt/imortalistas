@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-23T05:07:40Z",
+ "atualizado_em": "2026-10-23T05:49:02Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 557,
+  "aberturas_pdf": 560,
   "visitas_hoje": 0,
   "visitas_7d": 2,
-  "aberturas_hoje": 21,
-  "aberturas_7d": 61,
-  "aberturas_30d": 557,
-  "pdf_abertos": 312,
+  "aberturas_hoje": 24,
+  "aberturas_7d": 64,
+  "aberturas_30d": 560,
+  "pdf_abertos": 315,
   "pdf_descarregados": 245,
-  "pdf_pt": 293,
+  "pdf_pt": 296,
   "pdf_en": 264
  },
  "dias": [
@@ -132,7 +132,7 @@
   {
    "dia": "2026-10-23",
    "visitas": 0,
-   "aberturas": 21
+   "aberturas": 24
   }
  ],
  "paginas": [
@@ -371,6 +371,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "nariz-seios-perinasais",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 4,
+   "total": 6,
+   "abertos_pt": 1,
+   "abertos_en": 3,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "psicadelicos",
    "ficheiro": null,
    "pt": 4,
@@ -470,6 +481,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "glicose-insulina-diabetes",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "hipoxia-altitude",
    "ficheiro": null,
    "pt": 3,
@@ -532,17 +554,6 @@
    "total": 5,
    "abertos_pt": 2,
    "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "nariz-seios-perinasais",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 4,
-   "total": 5,
-   "abertos_pt": 0,
-   "abertos_en": 3,
    "descarregados_pt": 1,
    "descarregados_en": 1
   },
@@ -910,17 +921,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "glicose-insulina-diabetes",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "globulos-vermelhos-hemoglobina-plaquetas",
    "ficheiro": null,
    "pt": 2,
@@ -1098,6 +1098,17 @@
   },
   {
    "id": "perfil-desportivo-resistencia-forca",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 1,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "personalidade-tracos-psicologicos",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -1449,17 +1460,6 @@
    "descarregados_en": 0
   },
   {
-   "id": "personalidade-tracos-psicologicos",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 0,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "saude-oral-dentes-periodontite",
    "ficheiro": null,
    "pt": 2,
@@ -1652,7 +1652,7 @@
   {
    "id": "MX",
    "nome": "Mexico",
-   "visitas": 8
+   "visitas": 9
   },
   {
    "id": "CA",
@@ -1695,6 +1695,16 @@
    "visitas": 1
   },
   {
+   "id": "IN",
+   "nome": "India",
+   "visitas": 1
+  },
+  {
+   "id": "JO",
+   "nome": "Hashemite Kingdom of Jordan",
+   "visitas": 1
+  },
+  {
    "id": "NL",
    "nome": "Netherlands",
    "visitas": 1
@@ -1729,7 +1739,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 595
+   "visitas": 598
   },
   {
    "id": "Firefox",
@@ -1746,7 +1756,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 325
+   "visitas": 328
   },
   {
    "id": "macOS",
@@ -1798,14 +1808,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 557
+   "visitas": 560
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 574
+   "visitas": 576
   },
   {
    "id": "https://imortalistas.com",
@@ -1845,6 +1855,11 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2484,7 +2499,7 @@
     {
      "dia": "2026-10-23",
      "visitas": 0,
-     "aberturas": 21
+     "aberturas": 24
     }
    ],
    "paginas": [
@@ -2664,6 +2679,17 @@
      "descarregados_en": 3
     },
     {
+     "id": "nariz-seios-perinasais",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 4,
+     "total": 6,
+     "abertos_pt": 1,
+     "abertos_en": 3,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "alergias-asma-atopia",
      "ficheiro": null,
      "pt": 3,
@@ -2752,6 +2778,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "glicose-insulina-diabetes",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "hipoxia-altitude",
      "ficheiro": null,
      "pt": 3,
@@ -2814,17 +2851,6 @@
      "total": 5,
      "abertos_pt": 2,
      "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "nariz-seios-perinasais",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 4,
-     "total": 5,
-     "abertos_pt": 0,
-     "abertos_en": 3,
      "descarregados_pt": 1,
      "descarregados_en": 1
     },
@@ -3214,17 +3240,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "glicose-insulina-diabetes",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "globulos-vermelhos-hemoglobina-plaquetas",
      "ficheiro": null,
      "pt": 2,
@@ -3391,6 +3406,17 @@
     },
     {
      "id": "perfil-desportivo-resistencia-forca",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 1,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "personalidade-tracos-psicologicos",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3797,17 +3823,6 @@
      "descarregados_en": 0
     },
     {
-     "id": "personalidade-tracos-psicologicos",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 0,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "saude-oral-dentes-periodontite",
      "ficheiro": null,
      "pt": 2,
@@ -3953,15 +3968,15 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 531,
+    "aberturas_pdf": 534,
     "visitas_hoje": 0,
     "visitas_7d": 1,
-    "aberturas_hoje": 21,
-    "aberturas_7d": 61,
-    "aberturas_30d": 531,
-    "pdf_abertos": 286,
+    "aberturas_hoje": 24,
+    "aberturas_7d": 64,
+    "aberturas_30d": 534,
+    "pdf_abertos": 289,
     "pdf_descarregados": 245,
-    "pdf_pt": 269,
+    "pdf_pt": 272,
     "pdf_en": 262
    },
    "paises": [
@@ -3983,7 +3998,7 @@
     {
      "id": "MX",
      "nome": "Mexico",
-     "visitas": 8
+     "visitas": 9
     },
     {
      "id": "CA",
@@ -4023,6 +4038,16 @@
     {
      "id": "IL",
      "nome": "Israel",
+     "visitas": 1
+    },
+    {
+     "id": "IN",
+     "nome": "India",
+     "visitas": 1
+    },
+    {
+     "id": "JO",
+     "nome": "Hashemite Kingdom of Jordan",
      "visitas": 1
     },
     {
