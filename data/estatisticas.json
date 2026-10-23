@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-23T10:17:04Z",
+ "atualizado_em": "2026-10-23T10:53:58Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 572,
+  "aberturas_pdf": 575,
   "visitas_hoje": 0,
   "visitas_7d": 2,
-  "aberturas_hoje": 36,
-  "aberturas_7d": 76,
-  "aberturas_30d": 572,
-  "pdf_abertos": 327,
+  "aberturas_hoje": 39,
+  "aberturas_7d": 79,
+  "aberturas_30d": 575,
+  "pdf_abertos": 330,
   "pdf_descarregados": 245,
-  "pdf_pt": 308,
+  "pdf_pt": 311,
   "pdf_en": 264
  },
  "dias": [
@@ -132,7 +132,7 @@
   {
    "dia": "2026-10-23",
    "visitas": 0,
-   "aberturas": 36
+   "aberturas": 39
   }
  ],
  "paginas": [
@@ -283,6 +283,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "acne-glandulas-sebaceas",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 4,
+   "total": 7,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 3
+  },
+  {
    "id": "estado-portador",
    "ficheiro": null,
    "pt": 3,
@@ -303,17 +314,6 @@
    "abertos_en": 2,
    "descarregados_pt": 2,
    "descarregados_en": 1
-  },
-  {
-   "id": "acne-glandulas-sebaceas",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 4,
-   "total": 6,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 3
   },
   {
    "id": "avc-pequenos-vasos-cerebrais",
@@ -514,6 +514,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "enxaqueca-cefaleias",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "estomago-refluxo-helicobacter",
    "ficheiro": null,
    "pt": 3,
@@ -526,6 +537,17 @@
   },
   {
    "id": "glicose-insulina-diabetes",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "globulos-vermelhos-hemoglobina-plaquetas",
    "ficheiro": null,
    "pt": 3,
    "en": 2,
@@ -921,17 +943,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "enxaqueca-cefaleias",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "epilepsia-excitabilidade-neuronal",
    "ficheiro": null,
    "pt": 2,
@@ -973,17 +984,6 @@
    "abertos_pt": 2,
    "abertos_en": 1,
    "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
-   "id": "globulos-vermelhos-hemoglobina-plaquetas",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
    "descarregados_en": 1
   },
   {
@@ -1632,12 +1632,12 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 487
+   "visitas": 488
   },
   {
    "id": "US",
    "nome": "United States",
-   "visitas": 52
+   "visitas": 54
   },
   {
    "id": "PT",
@@ -1739,7 +1739,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 610
+   "visitas": 613
   },
   {
    "id": "Firefox",
@@ -1756,12 +1756,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 328
+   "visitas": 329
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 265
+   "visitas": 267
   },
   {
    "id": "Android",
@@ -1808,14 +1808,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 572
+   "visitas": 575
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 582
+   "visitas": 584
   },
   {
    "id": "https://imortalistas.com",
@@ -1855,6 +1855,11 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2529,7 +2534,7 @@
     {
      "dia": "2026-10-23",
      "visitas": 0,
-     "aberturas": 36
+     "aberturas": 39
     }
    ],
    "paginas": [
@@ -2676,6 +2681,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "acne-glandulas-sebaceas",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 4,
+     "total": 7,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 3
+    },
+    {
      "id": "estado-portador",
      "ficheiro": null,
      "pt": 3,
@@ -2696,17 +2712,6 @@
      "abertos_en": 2,
      "descarregados_pt": 2,
      "descarregados_en": 1
-    },
-    {
-     "id": "acne-glandulas-sebaceas",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 4,
-     "total": 6,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 3
     },
     {
      "id": "infecoes",
@@ -2830,6 +2835,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "enxaqueca-cefaleias",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "estomago-refluxo-helicobacter",
      "ficheiro": null,
      "pt": 3,
@@ -2853,6 +2869,17 @@
     },
     {
      "id": "glicose-insulina-diabetes",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "globulos-vermelhos-hemoglobina-plaquetas",
      "ficheiro": null,
      "pt": 3,
      "en": 2,
@@ -3270,17 +3297,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "enxaqueca-cefaleias",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "epilepsia-excitabilidade-neuronal",
      "ficheiro": null,
      "pt": 2,
@@ -3315,17 +3331,6 @@
     },
     {
      "id": "figado-gordura-hepatica",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "globulos-vermelhos-hemoglobina-plaquetas",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3998,27 +4003,27 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 546,
+    "aberturas_pdf": 549,
     "visitas_hoje": 0,
     "visitas_7d": 1,
-    "aberturas_hoje": 36,
-    "aberturas_7d": 76,
-    "aberturas_30d": 546,
-    "pdf_abertos": 301,
+    "aberturas_hoje": 39,
+    "aberturas_7d": 79,
+    "aberturas_30d": 549,
+    "pdf_abertos": 304,
     "pdf_descarregados": 245,
-    "pdf_pt": 284,
+    "pdf_pt": 287,
     "pdf_en": 262
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 487
+     "visitas": 488
     },
     {
      "id": "US",
      "nome": "United States",
-     "visitas": 52
+     "visitas": 54
     },
     {
      "id": "HK",
