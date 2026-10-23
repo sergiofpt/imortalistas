@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-23T11:31:49Z",
+ "atualizado_em": "2026-10-23T12:04:29Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 577,
+  "aberturas_pdf": 580,
   "visitas_hoje": 0,
   "visitas_7d": 2,
-  "aberturas_hoje": 41,
-  "aberturas_7d": 81,
-  "aberturas_30d": 577,
-  "pdf_abertos": 332,
+  "aberturas_hoje": 44,
+  "aberturas_7d": 84,
+  "aberturas_30d": 580,
+  "pdf_abertos": 335,
   "pdf_descarregados": 245,
-  "pdf_pt": 313,
+  "pdf_pt": 316,
   "pdf_en": 264
  },
  "dias": [
@@ -132,7 +132,7 @@
   {
    "dia": "2026-10-23",
    "visitas": 0,
-   "aberturas": 41
+   "aberturas": 44
   }
  ],
  "paginas": [
@@ -272,6 +272,17 @@
    "descarregados_en": 2
   },
   {
+   "id": "estado-portador",
+   "ficheiro": null,
+   "pt": 4,
+   "en": 4,
+   "total": 8,
+   "abertos_pt": 2,
+   "abertos_en": 2,
+   "descarregados_pt": 2,
+   "descarregados_en": 2
+  },
+  {
    "id": "referencia-via-forca-hipertrofia-potencia",
    "ficheiro": null,
    "pt": 3,
@@ -292,17 +303,6 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 3
-  },
-  {
-   "id": "estado-portador",
-   "ficheiro": null,
-   "pt": 3,
-   "en": 4,
-   "total": 7,
-   "abertos_pt": 1,
-   "abertos_en": 2,
-   "descarregados_pt": 2,
-   "descarregados_en": 2
   },
   {
    "id": "forca-hipertrofia-potencia",
@@ -416,6 +416,17 @@
   },
   {
    "id": "alergias-asma-atopia",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "andropausa-envelhecimento-reprodutivo",
    "ficheiro": null,
    "pt": 3,
    "en": 2,
@@ -822,17 +833,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "andropausa-envelhecimento-reprodutivo",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "aorta-aneurismas",
    "ficheiro": null,
    "pt": 2,
@@ -983,6 +983,17 @@
    "total": 4,
    "abertos_pt": 1,
    "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "ferro-metais",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 1,
+   "total": 4,
+   "abertos_pt": 2,
+   "abertos_en": 0,
    "descarregados_pt": 1,
    "descarregados_en": 1
   },
@@ -1372,17 +1383,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "ferro-metais",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 1,
-   "total": 3,
-   "abertos_pt": 1,
-   "abertos_en": 0,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "gaba-glutamato",
    "ficheiro": null,
    "pt": 1,
@@ -1632,7 +1632,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 488
+   "visitas": 490
   },
   {
    "id": "US",
@@ -1665,14 +1665,14 @@
    "visitas": 3
   },
   {
-   "id": "PL",
-   "nome": "Poland",
+   "id": "AU",
+   "nome": "Australia",
    "visitas": 2
   },
   {
-   "id": "AU",
-   "nome": "Australia",
-   "visitas": 1
+   "id": "PL",
+   "nome": "Poland",
+   "visitas": 2
   },
   {
    "id": "AZ",
@@ -1744,7 +1744,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 615
+   "visitas": 618
   },
   {
    "id": "Firefox",
@@ -1766,7 +1766,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 268
+   "visitas": 271
   },
   {
    "id": "Android",
@@ -1813,14 +1813,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 577
+   "visitas": 580
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 585
+   "visitas": 587
   },
   {
    "id": "https://imortalistas.com",
@@ -1860,6 +1860,11 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2544,7 +2549,7 @@
     {
      "dia": "2026-10-23",
      "visitas": 0,
-     "aberturas": 41
+     "aberturas": 44
     }
    ],
    "paginas": [
@@ -2680,6 +2685,17 @@
      "descarregados_en": 2
     },
     {
+     "id": "estado-portador",
+     "ficheiro": null,
+     "pt": 4,
+     "en": 4,
+     "total": 8,
+     "abertos_pt": 2,
+     "abertos_en": 2,
+     "descarregados_pt": 2,
+     "descarregados_en": 2
+    },
+    {
      "id": "referencia-via-forca-hipertrofia-potencia",
      "ficheiro": null,
      "pt": 3,
@@ -2700,17 +2716,6 @@
      "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 3
-    },
-    {
-     "id": "estado-portador",
-     "ficheiro": null,
-     "pt": 3,
-     "en": 4,
-     "total": 7,
-     "abertos_pt": 1,
-     "abertos_en": 2,
-     "descarregados_pt": 2,
-     "descarregados_en": 2
     },
     {
      "id": "forca-hipertrofia-potencia",
@@ -2747,6 +2752,17 @@
     },
     {
      "id": "alergias-asma-atopia",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "andropausa-envelhecimento-reprodutivo",
      "ficheiro": null,
      "pt": 3,
      "en": 2,
@@ -3175,17 +3191,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "andropausa-envelhecimento-reprodutivo",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "aorta-aneurismas",
      "ficheiro": null,
      "pt": 2,
@@ -3358,6 +3363,17 @@
      "total": 4,
      "abertos_pt": 1,
      "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "ferro-metais",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 1,
+     "total": 4,
+     "abertos_pt": 2,
+     "abertos_en": 0,
      "descarregados_pt": 1,
      "descarregados_en": 1
     },
@@ -3747,17 +3763,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "ferro-metais",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 1,
-     "total": 3,
-     "abertos_pt": 1,
-     "abertos_en": 0,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "funcao-sexual-eretil",
      "ficheiro": null,
      "pt": 1,
@@ -4013,22 +4018,22 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 551,
+    "aberturas_pdf": 554,
     "visitas_hoje": 0,
     "visitas_7d": 1,
-    "aberturas_hoje": 41,
-    "aberturas_7d": 81,
-    "aberturas_30d": 551,
-    "pdf_abertos": 306,
+    "aberturas_hoje": 44,
+    "aberturas_7d": 84,
+    "aberturas_30d": 554,
+    "pdf_abertos": 309,
     "pdf_descarregados": 245,
-    "pdf_pt": 289,
+    "pdf_pt": 292,
     "pdf_en": 262
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 488
+     "visitas": 490
     },
     {
      "id": "US",
@@ -4056,14 +4061,14 @@
      "visitas": 3
     },
     {
-     "id": "PL",
-     "nome": "Poland",
+     "id": "AU",
+     "nome": "Australia",
      "visitas": 2
     },
     {
-     "id": "AU",
-     "nome": "Australia",
-     "visitas": 1
+     "id": "PL",
+     "nome": "Poland",
+     "visitas": 2
     },
     {
      "id": "AZ",
