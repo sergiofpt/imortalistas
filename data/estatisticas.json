@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-23T12:04:29Z",
+ "atualizado_em": "2026-10-23T13:00:07Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 580,
+  "aberturas_pdf": 582,
   "visitas_hoje": 0,
   "visitas_7d": 2,
-  "aberturas_hoje": 44,
-  "aberturas_7d": 84,
-  "aberturas_30d": 580,
-  "pdf_abertos": 335,
+  "aberturas_hoje": 46,
+  "aberturas_7d": 86,
+  "aberturas_30d": 582,
+  "pdf_abertos": 337,
   "pdf_descarregados": 245,
-  "pdf_pt": 316,
+  "pdf_pt": 318,
   "pdf_en": 264
  },
  "dias": [
@@ -132,7 +132,7 @@
   {
    "dia": "2026-10-23",
    "visitas": 0,
-   "aberturas": 44
+   "aberturas": 46
   }
  ],
  "paginas": [
@@ -316,6 +316,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "apetite-saciedade-comportamento-alimentar",
+   "ficheiro": null,
+   "pt": 4,
+   "en": 2,
+   "total": 6,
+   "abertos_pt": 3,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "avc-pequenos-vasos-cerebrais",
    "ficheiro": null,
    "pt": 3,
@@ -438,17 +449,6 @@
   },
   {
    "id": "ansiedade-resiliencia-stress",
-   "ficheiro": null,
-   "pt": 3,
-   "en": 2,
-   "total": 5,
-   "abertos_pt": 2,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "apetite-saciedade-comportamento-alimentar",
    "ficheiro": null,
    "pt": 3,
    "en": 2,
@@ -768,6 +768,17 @@
   },
   {
    "id": "telomeros-senescencia-celular",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "tendoes-ligamentos-lesoes",
    "ficheiro": null,
    "pt": 3,
    "en": 2,
@@ -1284,17 +1295,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "tendoes-ligamentos-lesoes",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "termogenese-gordura-castanha",
    "ficheiro": null,
    "pt": 2,
@@ -1632,12 +1632,12 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 490
+   "visitas": 491
   },
   {
    "id": "US",
    "nome": "United States",
-   "visitas": 54
+   "visitas": 55
   },
   {
    "id": "PT",
@@ -1744,7 +1744,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 618
+   "visitas": 620
   },
   {
    "id": "Firefox",
@@ -1761,12 +1761,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 330
+   "visitas": 331
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 271
+   "visitas": 272
   },
   {
    "id": "Android",
@@ -1813,14 +1813,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 580
+   "visitas": 582
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 587
+   "visitas": 588
   },
   {
    "id": "https://imortalistas.com",
@@ -1860,6 +1860,11 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2549,7 +2554,7 @@
     {
      "dia": "2026-10-23",
      "visitas": 0,
-     "aberturas": 44
+     "aberturas": 46
     }
    ],
    "paginas": [
@@ -2774,6 +2779,17 @@
     },
     {
      "id": "ansiedade-resiliencia-stress",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "apetite-saciedade-comportamento-alimentar",
      "ficheiro": null,
      "pt": 3,
      "en": 2,
@@ -3136,6 +3152,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "tendoes-ligamentos-lesoes",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "testiculos",
      "ficheiro": null,
      "pt": 3,
@@ -3192,17 +3219,6 @@
     },
     {
      "id": "aorta-aneurismas",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "apetite-saciedade-comportamento-alimentar",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3653,17 +3669,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "tendoes-ligamentos-lesoes",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "termogenese-gordura-castanha",
      "ficheiro": null,
      "pt": 2,
@@ -4018,27 +4023,27 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 554,
+    "aberturas_pdf": 556,
     "visitas_hoje": 0,
     "visitas_7d": 1,
-    "aberturas_hoje": 44,
-    "aberturas_7d": 84,
-    "aberturas_30d": 554,
-    "pdf_abertos": 309,
+    "aberturas_hoje": 46,
+    "aberturas_7d": 86,
+    "aberturas_30d": 556,
+    "pdf_abertos": 311,
     "pdf_descarregados": 245,
-    "pdf_pt": 292,
+    "pdf_pt": 294,
     "pdf_en": 262
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 490
+     "visitas": 491
     },
     {
      "id": "US",
      "nome": "United States",
-     "visitas": 54
+     "visitas": 55
     },
     {
      "id": "HK",
