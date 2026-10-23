@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-23T14:22:22Z",
+ "atualizado_em": "2026-10-23T15:11:02Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 587,
+  "aberturas_pdf": 589,
   "visitas_hoje": 0,
   "visitas_7d": 2,
-  "aberturas_hoje": 51,
-  "aberturas_7d": 91,
-  "aberturas_30d": 587,
-  "pdf_abertos": 342,
+  "aberturas_hoje": 53,
+  "aberturas_7d": 93,
+  "aberturas_30d": 589,
+  "pdf_abertos": 344,
   "pdf_descarregados": 245,
-  "pdf_pt": 323,
+  "pdf_pt": 325,
   "pdf_en": 264
  },
  "dias": [
@@ -132,7 +132,7 @@
   {
    "dia": "2026-10-23",
    "visitas": 0,
-   "aberturas": 51
+   "aberturas": 53
   }
  ],
  "paginas": [
@@ -789,6 +789,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "resumo-clinico-medico",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "sal-agua-eletrolitos",
    "ficheiro": null,
    "pt": 3,
@@ -867,6 +878,17 @@
   },
   {
    "id": "valvulas-cardiacas",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "vesicula-biliar-calculos",
    "ficheiro": null,
    "pt": 3,
    "en": 2,
@@ -1240,17 +1262,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "resumo-clinico-medico",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "rim-acido-urico",
    "ficheiro": null,
    "pt": 2,
@@ -1329,17 +1340,6 @@
   },
   {
    "id": "velocidade-processamento-tempo-reacao",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "vesicula-biliar-calculos",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -1637,7 +1637,7 @@
   {
    "id": "US",
    "nome": "United States",
-   "visitas": 58
+   "visitas": 60
   },
   {
    "id": "PT",
@@ -1749,7 +1749,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 625
+   "visitas": 627
   },
   {
    "id": "Firefox",
@@ -1771,7 +1771,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 275
+   "visitas": 277
   },
   {
    "id": "Android",
@@ -1818,14 +1818,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 587
+   "visitas": 589
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 591
+   "visitas": 592
   },
   {
    "id": "https://imortalistas.com",
@@ -1865,6 +1865,11 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2569,7 +2574,7 @@
     {
      "dia": "2026-10-23",
      "visitas": 0,
-     "aberturas": 51
+     "aberturas": 53
     }
    ],
    "paginas": [
@@ -3156,6 +3161,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "resumo-clinico-medico",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "ritmo-circadiano-sono",
      "ficheiro": null,
      "pt": 3,
@@ -3245,6 +3261,17 @@
     },
     {
      "id": "valvulas-cardiacas",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "vesicula-biliar-calculos",
      "ficheiro": null,
      "pt": 3,
      "en": 2,
@@ -3640,17 +3667,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "resumo-clinico-medico",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "rim-acido-urico",
      "ficheiro": null,
      "pt": 2,
@@ -3729,17 +3745,6 @@
     },
     {
      "id": "velocidade-processamento-tempo-reacao",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "vesicula-biliar-calculos",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -4038,15 +4043,15 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 561,
+    "aberturas_pdf": 563,
     "visitas_hoje": 0,
     "visitas_7d": 1,
-    "aberturas_hoje": 51,
-    "aberturas_7d": 91,
-    "aberturas_30d": 561,
-    "pdf_abertos": 316,
+    "aberturas_hoje": 53,
+    "aberturas_7d": 93,
+    "aberturas_30d": 563,
+    "pdf_abertos": 318,
     "pdf_descarregados": 245,
-    "pdf_pt": 299,
+    "pdf_pt": 301,
     "pdf_en": 262
    },
    "paises": [
@@ -4058,7 +4063,7 @@
     {
      "id": "US",
      "nome": "United States",
-     "visitas": 58
+     "visitas": 60
     },
     {
      "id": "HK",
