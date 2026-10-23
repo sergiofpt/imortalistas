@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-23T15:53:54Z",
+ "atualizado_em": "2026-10-23T21:05:33Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 591,
+  "aberturas_pdf": 592,
   "visitas_hoje": 0,
   "visitas_7d": 2,
-  "aberturas_hoje": 55,
-  "aberturas_7d": 95,
-  "aberturas_30d": 591,
-  "pdf_abertos": 346,
+  "aberturas_hoje": 56,
+  "aberturas_7d": 96,
+  "aberturas_30d": 592,
+  "pdf_abertos": 347,
   "pdf_descarregados": 245,
-  "pdf_pt": 327,
+  "pdf_pt": 328,
   "pdf_en": 264
  },
  "dias": [
@@ -132,7 +132,7 @@
   {
    "dia": "2026-10-23",
    "visitas": 0,
-   "aberturas": 55
+   "aberturas": 56
   }
  ],
  "paginas": [
@@ -427,6 +427,17 @@
   },
   {
    "id": "ritmo-circadiano-sono",
+   "ficheiro": null,
+   "pt": 4,
+   "en": 2,
+   "total": 6,
+   "abertos_pt": 3,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "sal-agua-eletrolitos",
    "ficheiro": null,
    "pt": 4,
    "en": 2,
@@ -801,17 +812,6 @@
   },
   {
    "id": "resumo-clinico-medico",
-   "ficheiro": null,
-   "pt": 3,
-   "en": 2,
-   "total": 5,
-   "abertos_pt": 2,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "sal-agua-eletrolitos",
    "ficheiro": null,
    "pt": 3,
    "en": 2,
@@ -1647,7 +1647,7 @@
   {
    "id": "HK",
    "nome": "Hong Kong",
-   "visitas": 21
+   "visitas": 22
   },
   {
    "id": "MX",
@@ -1749,7 +1749,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 629
+   "visitas": 630
   },
   {
    "id": "Firefox",
@@ -1766,7 +1766,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 333
+   "visitas": 334
   },
   {
    "id": "macOS",
@@ -1818,14 +1818,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 591
+   "visitas": 592
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 593
+   "visitas": 594
   },
   {
    "id": "https://imortalistas.com",
@@ -2579,7 +2579,7 @@
     {
      "dia": "2026-10-23",
      "visitas": 0,
-     "aberturas": 55
+     "aberturas": 56
     }
    ],
    "paginas": [
@@ -2777,6 +2777,17 @@
      "total": 6,
      "abertos_pt": 1,
      "abertos_en": 3,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "sal-agua-eletrolitos",
+     "ficheiro": null,
+     "pt": 4,
+     "en": 2,
+     "total": 6,
+     "abertos_pt": 3,
+     "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 1
     },
@@ -3189,17 +3200,6 @@
     },
     {
      "id": "ritmo-circadiano-sono",
-     "ficheiro": null,
-     "pt": 3,
-     "en": 2,
-     "total": 5,
-     "abertos_pt": 2,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "sal-agua-eletrolitos",
      "ficheiro": null,
      "pt": 3,
      "en": 2,
@@ -4048,15 +4048,15 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 565,
+    "aberturas_pdf": 566,
     "visitas_hoje": 0,
     "visitas_7d": 1,
-    "aberturas_hoje": 55,
-    "aberturas_7d": 95,
-    "aberturas_30d": 565,
-    "pdf_abertos": 320,
+    "aberturas_hoje": 56,
+    "aberturas_7d": 96,
+    "aberturas_30d": 566,
+    "pdf_abertos": 321,
     "pdf_descarregados": 245,
-    "pdf_pt": 303,
+    "pdf_pt": 304,
     "pdf_en": 262
    },
    "paises": [
@@ -4073,7 +4073,7 @@
     {
      "id": "HK",
      "nome": "Hong Kong",
-     "visitas": 21
+     "visitas": 22
     },
     {
      "id": "MX",
