@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-23T02:30:38Z",
+ "atualizado_em": "2026-10-23T03:08:04Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 545,
+  "aberturas_pdf": 547,
   "visitas_hoje": 0,
   "visitas_7d": 2,
-  "aberturas_hoje": 9,
-  "aberturas_7d": 49,
-  "aberturas_30d": 545,
-  "pdf_abertos": 300,
+  "aberturas_hoje": 11,
+  "aberturas_7d": 51,
+  "aberturas_30d": 547,
+  "pdf_abertos": 302,
   "pdf_descarregados": 245,
-  "pdf_pt": 281,
+  "pdf_pt": 283,
   "pdf_en": 264
  },
  "dias": [
@@ -132,7 +132,7 @@
   {
    "dia": "2026-10-23",
    "visitas": 0,
-   "aberturas": 9
+   "aberturas": 11
   }
  ],
  "paginas": [
@@ -448,6 +448,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "estomago-refluxo-helicobacter",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "humor-risco-depressao",
    "ficheiro": null,
    "pt": 3,
@@ -603,6 +614,17 @@
   },
   {
    "id": "tiroide",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "unhas-cicatrizacao-inflamacao-pele",
    "ficheiro": null,
    "pt": 3,
    "en": 2,
@@ -823,17 +845,6 @@
   },
   {
    "id": "esofago",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "estomago-refluxo-helicobacter",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -1262,17 +1273,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "unhas-cicatrizacao-inflamacao-pele",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "velocidade-processamento-tempo-reacao",
    "ficheiro": null,
    "pt": 2,
@@ -1652,7 +1652,7 @@
   {
    "id": "MX",
    "nome": "Mexico",
-   "visitas": 7
+   "visitas": 8
   },
   {
    "id": "CA",
@@ -1713,13 +1713,18 @@
    "id": "RU",
    "nome": "Russia",
    "visitas": 1
+  },
+  {
+   "id": "UZ",
+   "nome": "Uzbekistan",
+   "visitas": 1
   }
  ],
  "browsers": [
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 585
+   "visitas": 587
   },
   {
    "id": "Firefox",
@@ -1736,12 +1741,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 322
+   "visitas": 323
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 246
+   "visitas": 247
   },
   {
    "id": "Android",
@@ -1788,7 +1793,7 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 545
+   "visitas": 547
   }
  ],
  "origens": [
@@ -1835,6 +1840,16 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2454,7 +2469,7 @@
     {
      "dia": "2026-10-23",
      "visitas": 0,
-     "aberturas": 9
+     "aberturas": 11
     }
    ],
    "paginas": [
@@ -2689,6 +2704,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "estomago-refluxo-helicobacter",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "fertilidade-masculina",
      "ficheiro": null,
      "pt": 3,
@@ -2866,6 +2892,17 @@
     },
     {
      "id": "tiroide",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "unhas-cicatrizacao-inflamacao-pele",
      "ficheiro": null,
      "pt": 3,
      "en": 2,
@@ -3097,17 +3134,6 @@
     },
     {
      "id": "esofago",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "estomago-refluxo-helicobacter",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3536,17 +3562,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "unhas-cicatrizacao-inflamacao-pele",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "velocidade-processamento-tempo-reacao",
      "ficheiro": null,
      "pt": 2,
@@ -3923,15 +3938,15 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 519,
+    "aberturas_pdf": 521,
     "visitas_hoje": 0,
     "visitas_7d": 1,
-    "aberturas_hoje": 9,
-    "aberturas_7d": 49,
-    "aberturas_30d": 519,
-    "pdf_abertos": 274,
+    "aberturas_hoje": 11,
+    "aberturas_7d": 51,
+    "aberturas_30d": 521,
+    "pdf_abertos": 276,
     "pdf_descarregados": 245,
-    "pdf_pt": 257,
+    "pdf_pt": 259,
     "pdf_en": 262
    },
    "paises": [
@@ -3953,7 +3968,7 @@
     {
      "id": "MX",
      "nome": "Mexico",
-     "visitas": 7
+     "visitas": 8
     },
     {
      "id": "CA",
@@ -4013,6 +4028,11 @@
     {
      "id": "RU",
      "nome": "Russia",
+     "visitas": 1
+    },
+    {
+     "id": "UZ",
+     "nome": "Uzbekistan",
      "visitas": 1
     }
    ]
