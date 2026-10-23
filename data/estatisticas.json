@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-23T04:31:33Z",
+ "atualizado_em": "2026-10-23T05:07:40Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 551,
+  "aberturas_pdf": 557,
   "visitas_hoje": 0,
   "visitas_7d": 2,
-  "aberturas_hoje": 15,
-  "aberturas_7d": 55,
-  "aberturas_30d": 551,
-  "pdf_abertos": 306,
+  "aberturas_hoje": 21,
+  "aberturas_7d": 61,
+  "aberturas_30d": 557,
+  "pdf_abertos": 312,
   "pdf_descarregados": 245,
-  "pdf_pt": 287,
+  "pdf_pt": 293,
   "pdf_en": 264
  },
  "dias": [
@@ -132,7 +132,7 @@
   {
    "dia": "2026-10-23",
    "visitas": 0,
-   "aberturas": 15
+   "aberturas": 21
   }
  ],
  "paginas": [
@@ -226,6 +226,17 @@
    "abertos_en": 5,
    "descarregados_pt": 1,
    "descarregados_en": 2
+  },
+  {
+   "id": "capacidade-cognitiva-plasticidade",
+   "ficheiro": null,
+   "pt": 8,
+   "en": 2,
+   "total": 10,
+   "abertos_pt": 7,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
   },
   {
    "id": "suprarrenais-cortisol",
@@ -735,17 +746,6 @@
   },
   {
    "id": "cafeina-estimulantes",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "capacidade-cognitiva-plasticidade",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -1632,7 +1632,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 476
+   "visitas": 482
   },
   {
    "id": "PT",
@@ -1729,7 +1729,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 591
+   "visitas": 595
   },
   {
    "id": "Firefox",
@@ -1739,7 +1739,7 @@
   {
    "id": "Safari",
    "nome": "Safari",
-   "visitas": 4
+   "visitas": 6
   }
  ],
  "sistemas": [
@@ -1751,7 +1751,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 249
+   "visitas": 253
   },
   {
    "id": "Android",
@@ -1764,13 +1764,13 @@
    "visitas": 21
   },
   {
-   "id": "Chrome OS",
-   "nome": "Chrome OS",
-   "visitas": 2
-  },
-  {
    "id": "iOS",
    "nome": "iOS",
+   "visitas": 4
+  },
+  {
+   "id": "Chrome OS",
+   "nome": "Chrome OS",
    "visitas": 2
   }
  ],
@@ -1798,14 +1798,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 551
+   "visitas": 557
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 569
+   "visitas": 574
   },
   {
    "id": "https://imortalistas.com",
@@ -1845,6 +1845,11 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2479,7 +2484,7 @@
     {
      "dia": "2026-10-23",
      "visitas": 0,
-     "aberturas": 15
+     "aberturas": 21
     }
    ],
    "paginas": [
@@ -2558,6 +2563,17 @@
      "abertos_en": 5,
      "descarregados_pt": 1,
      "descarregados_en": 2
+    },
+    {
+     "id": "capacidade-cognitiva-plasticidade",
+     "ficheiro": null,
+     "pt": 8,
+     "en": 2,
+     "total": 10,
+     "abertos_pt": 7,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
     },
     {
      "id": "imortalidade",
@@ -3034,17 +3050,6 @@
     },
     {
      "id": "cafeina-estimulantes",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "capacidade-cognitiva-plasticidade",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3948,22 +3953,22 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 525,
+    "aberturas_pdf": 531,
     "visitas_hoje": 0,
     "visitas_7d": 1,
-    "aberturas_hoje": 15,
-    "aberturas_7d": 55,
-    "aberturas_30d": 525,
-    "pdf_abertos": 280,
+    "aberturas_hoje": 21,
+    "aberturas_7d": 61,
+    "aberturas_30d": 531,
+    "pdf_abertos": 286,
     "pdf_descarregados": 245,
-    "pdf_pt": 263,
+    "pdf_pt": 269,
     "pdf_en": 262
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 476
+     "visitas": 482
     },
     {
      "id": "US",
