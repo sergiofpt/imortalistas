@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-23T23:00:20Z",
+ "atualizado_em": "2026-10-23T23:29:49Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 593,
+  "aberturas_pdf": 594,
   "visitas_hoje": 0,
   "visitas_7d": 2,
   "aberturas_hoje": 57,
   "aberturas_7d": 97,
   "aberturas_30d": 593,
-  "pdf_abertos": 348,
+  "pdf_abertos": 349,
   "pdf_descarregados": 245,
-  "pdf_pt": 329,
+  "pdf_pt": 330,
   "pdf_en": 264
  },
  "dias": [
@@ -438,6 +438,17 @@
   },
   {
    "id": "sal-agua-eletrolitos",
+   "ficheiro": null,
+   "pt": 4,
+   "en": 2,
+   "total": 6,
+   "abertos_pt": 3,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "valvulas-cardiacas",
    "ficheiro": null,
    "pt": 4,
    "en": 2,
@@ -889,17 +900,6 @@
   },
   {
    "id": "unhas-cicatrizacao-inflamacao-pele",
-   "ficheiro": null,
-   "pt": 3,
-   "en": 2,
-   "total": 5,
-   "abertos_pt": 2,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "valvulas-cardiacas",
    "ficheiro": null,
    "pt": 3,
    "en": 2,
@@ -1632,7 +1632,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 492
+   "visitas": 493
   },
   {
    "id": "US",
@@ -1749,7 +1749,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 631
+   "visitas": 632
   },
   {
    "id": "Firefox",
@@ -1766,7 +1766,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 335
+   "visitas": 336
   },
   {
    "id": "macOS",
@@ -1818,14 +1818,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 593
+   "visitas": 594
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 595
+   "visitas": 596
   },
   {
    "id": "https://imortalistas.com",
@@ -2792,6 +2792,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "valvulas-cardiacas",
+     "ficheiro": null,
+     "pt": 4,
+     "en": 2,
+     "total": 6,
+     "abertos_pt": 3,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "alergias-asma-atopia",
      "ficheiro": null,
      "pt": 3,
@@ -3277,17 +3288,6 @@
     },
     {
      "id": "unhas-cicatrizacao-inflamacao-pele",
-     "ficheiro": null,
-     "pt": 3,
-     "en": 2,
-     "total": 5,
-     "abertos_pt": 2,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "valvulas-cardiacas",
      "ficheiro": null,
      "pt": 3,
      "en": 2,
@@ -4048,22 +4048,22 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 567,
+    "aberturas_pdf": 568,
     "visitas_hoje": 0,
     "visitas_7d": 1,
     "aberturas_hoje": 57,
     "aberturas_7d": 97,
     "aberturas_30d": 567,
-    "pdf_abertos": 322,
+    "pdf_abertos": 323,
     "pdf_descarregados": 245,
-    "pdf_pt": 305,
+    "pdf_pt": 306,
     "pdf_en": 262
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 492
+     "visitas": 493
     },
     {
      "id": "US",
