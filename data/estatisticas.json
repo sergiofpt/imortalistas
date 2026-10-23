@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-23T08:12:15Z",
+ "atualizado_em": "2026-10-23T08:52:11Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 566,
+  "aberturas_pdf": 567,
   "visitas_hoje": 0,
   "visitas_7d": 2,
-  "aberturas_hoje": 30,
-  "aberturas_7d": 70,
-  "aberturas_30d": 566,
-  "pdf_abertos": 321,
+  "aberturas_hoje": 31,
+  "aberturas_7d": 71,
+  "aberturas_30d": 567,
+  "pdf_abertos": 322,
   "pdf_descarregados": 245,
-  "pdf_pt": 302,
+  "pdf_pt": 303,
   "pdf_en": 264
  },
  "dias": [
@@ -132,7 +132,7 @@
   {
    "dia": "2026-10-23",
    "visitas": 0,
-   "aberturas": 30
+   "aberturas": 31
   }
  ],
  "paginas": [
@@ -360,6 +360,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "infecoes",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 3,
+   "total": 6,
+   "abertos_pt": 2,
+   "abertos_en": 2,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "metilacao-homocisteina-colina",
    "ficheiro": null,
    "pt": 4,
@@ -543,17 +554,6 @@
    "total": 5,
    "abertos_pt": 2,
    "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "infecoes",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 3,
-   "total": 5,
-   "abertos_pt": 1,
-   "abertos_en": 2,
    "descarregados_pt": 1,
    "descarregados_en": 1
   },
@@ -1637,7 +1637,7 @@
   {
    "id": "US",
    "nome": "United States",
-   "visitas": 51
+   "visitas": 52
   },
   {
    "id": "PT",
@@ -1739,7 +1739,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 604
+   "visitas": 605
   },
   {
    "id": "Firefox",
@@ -1761,7 +1761,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 259
+   "visitas": 260
   },
   {
    "id": "Android",
@@ -1808,14 +1808,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 566
+   "visitas": 567
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 579
+   "visitas": 580
   },
   {
    "id": "https://imortalistas.com",
@@ -2514,7 +2514,7 @@
     {
      "dia": "2026-10-23",
      "visitas": 0,
-     "aberturas": 30
+     "aberturas": 31
     }
    ],
    "paginas": [
@@ -2694,6 +2694,17 @@
      "descarregados_en": 3
     },
     {
+     "id": "infecoes",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 3,
+     "total": 6,
+     "abertos_pt": 2,
+     "abertos_en": 2,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "nariz-seios-perinasais",
      "ficheiro": null,
      "pt": 2,
@@ -2855,17 +2866,6 @@
      "total": 5,
      "abertos_pt": 2,
      "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "infecoes",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 3,
-     "total": 5,
-     "abertos_pt": 1,
-     "abertos_en": 2,
      "descarregados_pt": 1,
      "descarregados_en": 1
     },
@@ -3983,15 +3983,15 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 540,
+    "aberturas_pdf": 541,
     "visitas_hoje": 0,
     "visitas_7d": 1,
-    "aberturas_hoje": 30,
-    "aberturas_7d": 70,
-    "aberturas_30d": 540,
-    "pdf_abertos": 295,
+    "aberturas_hoje": 31,
+    "aberturas_7d": 71,
+    "aberturas_30d": 541,
+    "pdf_abertos": 296,
     "pdf_descarregados": 245,
-    "pdf_pt": 278,
+    "pdf_pt": 279,
     "pdf_en": 262
    },
    "paises": [
@@ -4003,7 +4003,7 @@
     {
      "id": "US",
      "nome": "United States",
-     "visitas": 51
+     "visitas": 52
     },
     {
      "id": "HK",
