@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-23T13:00:07Z",
+ "atualizado_em": "2026-10-23T13:41:30Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 582,
+  "aberturas_pdf": 585,
   "visitas_hoje": 0,
   "visitas_7d": 2,
-  "aberturas_hoje": 46,
-  "aberturas_7d": 86,
-  "aberturas_30d": 582,
-  "pdf_abertos": 337,
+  "aberturas_hoje": 49,
+  "aberturas_7d": 89,
+  "aberturas_30d": 585,
+  "pdf_abertos": 340,
   "pdf_descarregados": 245,
-  "pdf_pt": 318,
+  "pdf_pt": 321,
   "pdf_en": 264
  },
  "dias": [
@@ -132,7 +132,7 @@
   {
    "dia": "2026-10-23",
    "visitas": 0,
-   "aberturas": 46
+   "aberturas": 49
   }
  ],
  "paginas": [
@@ -635,6 +635,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "longevidade-maxima-sintese-genetica",
+   "ficheiro": null,
+   "pt": 4,
+   "en": 1,
+   "total": 5,
+   "abertos_pt": 3,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 0
+  },
+  {
    "id": "olhos-em-detalhe",
    "ficheiro": null,
    "pt": 3,
@@ -658,6 +669,17 @@
   },
   {
    "id": "pele-skin-care",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "perfil-desportivo-resistencia-forca",
    "ficheiro": null,
    "pt": 3,
    "en": 2,
@@ -1042,6 +1064,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "hipertensao-pulmonar-circulacao-pulmao",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "hipofise-eixo-hormonal",
    "ficheiro": null,
    "pt": 3,
@@ -1095,17 +1128,6 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 1
-  },
-  {
-   "id": "longevidade-maxima-sintese-genetica",
-   "ficheiro": null,
-   "pt": 3,
-   "en": 1,
-   "total": 4,
-   "abertos_pt": 2,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 0
   },
   {
    "id": "matriz-extracelular-glicacao",
@@ -1175,17 +1197,6 @@
   },
   {
    "id": "pancreas-pancreatite",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "perfil-desportivo-resistencia-forca",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -1402,17 +1413,6 @@
    "abertos_pt": 0,
    "abertos_en": 1,
    "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "hipertensao-pulmonar-circulacao-pulmao",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -1637,7 +1637,7 @@
   {
    "id": "US",
    "nome": "United States",
-   "visitas": 55
+   "visitas": 56
   },
   {
    "id": "PT",
@@ -1647,7 +1647,7 @@
   {
    "id": "HK",
    "nome": "Hong Kong",
-   "visitas": 20
+   "visitas": 21
   },
   {
    "id": "MX",
@@ -1738,13 +1738,18 @@
    "id": "UZ",
    "nome": "Uzbekistan",
    "visitas": 1
+  },
+  {
+   "id": "VE",
+   "nome": "Venezuela",
+   "visitas": 1
   }
  ],
  "browsers": [
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 620
+   "visitas": 623
   },
   {
    "id": "Firefox",
@@ -1761,12 +1766,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 331
+   "visitas": 332
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 272
+   "visitas": 274
   },
   {
    "id": "Android",
@@ -1813,14 +1818,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 582
+   "visitas": 585
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 588
+   "visitas": 589
   },
   {
    "id": "https://imortalistas.com",
@@ -1860,6 +1865,16 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2554,7 +2569,7 @@
     {
      "dia": "2026-10-23",
      "visitas": 0,
-     "aberturas": 46
+     "aberturas": 49
     }
    ],
    "paginas": [
@@ -3031,6 +3046,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "perfil-desportivo-resistencia-forca",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "pneumococo-imunossenescencia",
      "ficheiro": null,
      "pt": 3,
@@ -3416,6 +3442,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "hipertensao-pulmonar-circulacao-pulmao",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "hipofise-eixo-hormonal",
      "ficheiro": null,
      "pt": 3,
@@ -3469,6 +3506,17 @@
      "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 1
+    },
+    {
+     "id": "longevidade-maxima-sintese-genetica",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 1,
+     "total": 4,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 0
     },
     {
      "id": "matriz-extracelular-glicacao",
@@ -3538,17 +3586,6 @@
     },
     {
      "id": "pancreas-pancreatite",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "perfil-desportivo-resistencia-forca",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3801,17 +3838,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "hipertensao-pulmonar-circulacao-pulmao",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "histamina-mastocitos-ige",
      "ficheiro": null,
      "pt": 1,
@@ -3857,17 +3883,6 @@
     },
     {
      "id": "longevidade-excecional",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 1,
-     "total": 3,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 0
-    },
-    {
-     "id": "longevidade-maxima-sintese-genetica",
      "ficheiro": null,
      "pt": 2,
      "en": 1,
@@ -4023,15 +4038,15 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 556,
+    "aberturas_pdf": 559,
     "visitas_hoje": 0,
     "visitas_7d": 1,
-    "aberturas_hoje": 46,
-    "aberturas_7d": 86,
-    "aberturas_30d": 556,
-    "pdf_abertos": 311,
+    "aberturas_hoje": 49,
+    "aberturas_7d": 89,
+    "aberturas_30d": 559,
+    "pdf_abertos": 314,
     "pdf_descarregados": 245,
-    "pdf_pt": 294,
+    "pdf_pt": 297,
     "pdf_en": 262
    },
    "paises": [
@@ -4043,12 +4058,12 @@
     {
      "id": "US",
      "nome": "United States",
-     "visitas": 55
+     "visitas": 56
     },
     {
      "id": "HK",
      "nome": "Hong Kong",
-     "visitas": 20
+     "visitas": 21
     },
     {
      "id": "MX",
@@ -4138,6 +4153,11 @@
     {
      "id": "UZ",
      "nome": "Uzbekistan",
+     "visitas": 1
+    },
+    {
+     "id": "VE",
+     "nome": "Venezuela",
      "visitas": 1
     }
    ]
