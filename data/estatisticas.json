@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-23T03:51:23Z",
+ "atualizado_em": "2026-10-23T04:31:33Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 548,
+  "aberturas_pdf": 551,
   "visitas_hoje": 0,
   "visitas_7d": 2,
-  "aberturas_hoje": 12,
-  "aberturas_7d": 52,
-  "aberturas_30d": 548,
-  "pdf_abertos": 303,
+  "aberturas_hoje": 15,
+  "aberturas_7d": 55,
+  "aberturas_30d": 551,
+  "pdf_abertos": 306,
   "pdf_descarregados": 245,
-  "pdf_pt": 284,
+  "pdf_pt": 287,
   "pdf_en": 264
  },
  "dias": [
@@ -132,7 +132,7 @@
   {
    "dia": "2026-10-23",
    "visitas": 0,
-   "aberturas": 12
+   "aberturas": 15
   }
  ],
  "paginas": [
@@ -283,6 +283,17 @@
    "descarregados_en": 2
   },
   {
+   "id": "forca-hipertrofia-potencia",
+   "ficheiro": null,
+   "pt": 4,
+   "en": 3,
+   "total": 7,
+   "abertos_pt": 2,
+   "abertos_en": 2,
+   "descarregados_pt": 2,
+   "descarregados_en": 1
+  },
+  {
    "id": "acne-glandulas-sebaceas",
    "ficheiro": null,
    "pt": 2,
@@ -335,17 +346,6 @@
    "abertos_pt": 3,
    "abertos_en": 1,
    "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "forca-hipertrofia-potencia",
-   "ficheiro": null,
-   "pt": 3,
-   "en": 3,
-   "total": 6,
-   "abertos_pt": 1,
-   "abertos_en": 2,
-   "descarregados_pt": 2,
    "descarregados_en": 1
   },
   {
@@ -449,6 +449,17 @@
   },
   {
    "id": "estomago-refluxo-helicobacter",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "hipoxia-altitude",
    "ficheiro": null,
    "pt": 3,
    "en": 2,
@@ -855,6 +866,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "epilepsia-excitabilidade-neuronal",
+   "ficheiro": null,
+   "pt": 2,
+   "en": 2,
+   "total": 4,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "esofago",
    "ficheiro": null,
    "pt": 2,
@@ -930,17 +952,6 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 0
-  },
-  {
-   "id": "hipoxia-altitude",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
   },
   {
    "id": "inflamacao-autoimunidade",
@@ -1350,17 +1361,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "epilepsia-excitabilidade-neuronal",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "ferro-metais",
    "ficheiro": null,
    "pt": 2,
@@ -1632,7 +1632,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 475
+   "visitas": 476
   },
   {
    "id": "PT",
@@ -1647,7 +1647,7 @@
   {
    "id": "HK",
    "nome": "Hong Kong",
-   "visitas": 17
+   "visitas": 18
   },
   {
    "id": "MX",
@@ -1715,6 +1715,11 @@
    "visitas": 1
   },
   {
+   "id": "TH",
+   "nome": "Thailand",
+   "visitas": 1
+  },
+  {
    "id": "UZ",
    "nome": "Uzbekistan",
    "visitas": 1
@@ -1724,7 +1729,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 588
+   "visitas": 591
   },
   {
    "id": "Firefox",
@@ -1741,12 +1746,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 324
+   "visitas": 325
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 247
+   "visitas": 249
   },
   {
    "id": "Android",
@@ -1793,14 +1798,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 548
+   "visitas": 551
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 567
+   "visitas": 569
   },
   {
    "id": "https://imortalistas.com",
@@ -1840,6 +1845,11 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2469,7 +2479,7 @@
     {
      "dia": "2026-10-23",
      "visitas": 0,
-     "aberturas": 12
+     "aberturas": 15
     }
    ],
    "paginas": [
@@ -2616,6 +2626,17 @@
      "descarregados_en": 2
     },
     {
+     "id": "forca-hipertrofia-potencia",
+     "ficheiro": null,
+     "pt": 4,
+     "en": 3,
+     "total": 7,
+     "abertos_pt": 2,
+     "abertos_en": 2,
+     "descarregados_pt": 2,
+     "descarregados_en": 1
+    },
+    {
      "id": "acne-glandulas-sebaceas",
      "ficheiro": null,
      "pt": 2,
@@ -2625,17 +2646,6 @@
      "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 3
-    },
-    {
-     "id": "forca-hipertrofia-potencia",
-     "ficheiro": null,
-     "pt": 3,
-     "en": 3,
-     "total": 6,
-     "abertos_pt": 1,
-     "abertos_en": 2,
-     "descarregados_pt": 2,
-     "descarregados_en": 1
     },
     {
      "id": "alergias-asma-atopia",
@@ -2716,6 +2726,17 @@
     },
     {
      "id": "fertilidade-masculina",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "hipoxia-altitude",
      "ficheiro": null,
      "pt": 3,
      "en": 2,
@@ -3144,6 +3165,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "epilepsia-excitabilidade-neuronal",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "esofago",
      "ficheiro": null,
      "pt": 2,
@@ -3219,17 +3251,6 @@
      "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 0
-    },
-    {
-     "id": "hipoxia-altitude",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
     },
     {
      "id": "inflamacao-autoimunidade",
@@ -3650,17 +3671,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "epilepsia-excitabilidade-neuronal",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "ferro-metais",
      "ficheiro": null,
      "pt": 2,
@@ -3938,22 +3948,22 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 522,
+    "aberturas_pdf": 525,
     "visitas_hoje": 0,
     "visitas_7d": 1,
-    "aberturas_hoje": 12,
-    "aberturas_7d": 52,
-    "aberturas_30d": 522,
-    "pdf_abertos": 277,
+    "aberturas_hoje": 15,
+    "aberturas_7d": 55,
+    "aberturas_30d": 525,
+    "pdf_abertos": 280,
     "pdf_descarregados": 245,
-    "pdf_pt": 260,
+    "pdf_pt": 263,
     "pdf_en": 262
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 475
+     "visitas": 476
     },
     {
      "id": "US",
@@ -3963,7 +3973,7 @@
     {
      "id": "HK",
      "nome": "Hong Kong",
-     "visitas": 17
+     "visitas": 18
     },
     {
      "id": "MX",
@@ -4028,6 +4038,11 @@
     {
      "id": "RU",
      "nome": "Russia",
+     "visitas": 1
+    },
+    {
+     "id": "TH",
+     "nome": "Thailand",
      "visitas": 1
     },
     {
