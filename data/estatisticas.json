@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-23T06:37:16Z",
+ "atualizado_em": "2026-10-23T08:12:15Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 563,
+  "aberturas_pdf": 566,
   "visitas_hoje": 0,
   "visitas_7d": 2,
-  "aberturas_hoje": 27,
-  "aberturas_7d": 67,
-  "aberturas_30d": 563,
-  "pdf_abertos": 318,
+  "aberturas_hoje": 30,
+  "aberturas_7d": 70,
+  "aberturas_30d": 566,
+  "pdf_abertos": 321,
   "pdf_descarregados": 245,
-  "pdf_pt": 299,
+  "pdf_pt": 302,
   "pdf_en": 264
  },
  "dias": [
@@ -132,7 +132,7 @@
   {
    "dia": "2026-10-23",
    "visitas": 0,
-   "aberturas": 27
+   "aberturas": 30
   }
  ],
  "paginas": [
@@ -261,6 +261,17 @@
    "descarregados_en": 2
   },
   {
+   "id": "doencas-autoimunes",
+   "ficheiro": null,
+   "pt": 4,
+   "en": 4,
+   "total": 8,
+   "abertos_pt": 2,
+   "abertos_en": 2,
+   "descarregados_pt": 2,
+   "descarregados_en": 2
+  },
+  {
    "id": "referencia-via-forca-hipertrofia-potencia",
    "ficheiro": null,
    "pt": 3,
@@ -270,17 +281,6 @@
    "abertos_en": 4,
    "descarregados_pt": 2,
    "descarregados_en": 1
-  },
-  {
-   "id": "doencas-autoimunes",
-   "ficheiro": null,
-   "pt": 3,
-   "en": 4,
-   "total": 7,
-   "abertos_pt": 1,
-   "abertos_en": 2,
-   "descarregados_pt": 2,
-   "descarregados_en": 2
   },
   {
    "id": "estado-portador",
@@ -603,6 +603,28 @@
   },
   {
    "id": "pele-skin-care",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "pneumococo-imunossenescencia",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "polipos-colorretais",
    "ficheiro": null,
    "pt": 3,
    "en": 2,
@@ -1119,28 +1141,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "pneumococo-imunossenescencia",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "polipos-colorretais",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "proteina-aminoacidos",
    "ficheiro": null,
    "pt": 2,
@@ -1647,12 +1647,12 @@
   {
    "id": "HK",
    "nome": "Hong Kong",
-   "visitas": 18
+   "visitas": 19
   },
   {
    "id": "MX",
    "nome": "Mexico",
-   "visitas": 10
+   "visitas": 12
   },
   {
    "id": "CA",
@@ -1739,7 +1739,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 601
+   "visitas": 604
   },
   {
    "id": "Firefox",
@@ -1761,7 +1761,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 256
+   "visitas": 259
   },
   {
    "id": "Android",
@@ -1808,14 +1808,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 563
+   "visitas": 566
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 578
+   "visitas": 579
   },
   {
    "id": "https://imortalistas.com",
@@ -1855,6 +1855,16 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2504,7 +2514,7 @@
     {
      "dia": "2026-10-23",
      "visitas": 0,
-     "aberturas": 27
+     "aberturas": 30
     }
    ],
    "paginas": [
@@ -2629,6 +2639,17 @@
      "descarregados_en": 2
     },
     {
+     "id": "doencas-autoimunes",
+     "ficheiro": null,
+     "pt": 4,
+     "en": 4,
+     "total": 8,
+     "abertos_pt": 2,
+     "abertos_en": 2,
+     "descarregados_pt": 2,
+     "descarregados_en": 2
+    },
+    {
      "id": "referencia-via-forca-hipertrofia-potencia",
      "ficheiro": null,
      "pt": 3,
@@ -2638,17 +2659,6 @@
      "abertos_en": 4,
      "descarregados_pt": 2,
      "descarregados_en": 1
-    },
-    {
-     "id": "doencas-autoimunes",
-     "ficheiro": null,
-     "pt": 3,
-     "en": 4,
-     "total": 7,
-     "abertos_pt": 1,
-     "abertos_en": 2,
-     "descarregados_pt": 2,
-     "descarregados_en": 2
     },
     {
      "id": "estado-portador",
@@ -2905,6 +2915,28 @@
     },
     {
      "id": "pele-skin-care",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "pneumococo-imunossenescencia",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "polipos-colorretais",
      "ficheiro": null,
      "pt": 3,
      "en": 2,
@@ -3422,28 +3454,6 @@
     },
     {
      "id": "personalidade-tracos-psicologicos",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "pneumococo-imunossenescencia",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "polipos-colorretais",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3973,15 +3983,15 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 537,
+    "aberturas_pdf": 540,
     "visitas_hoje": 0,
     "visitas_7d": 1,
-    "aberturas_hoje": 27,
-    "aberturas_7d": 67,
-    "aberturas_30d": 537,
-    "pdf_abertos": 292,
+    "aberturas_hoje": 30,
+    "aberturas_7d": 70,
+    "aberturas_30d": 540,
+    "pdf_abertos": 295,
     "pdf_descarregados": 245,
-    "pdf_pt": 275,
+    "pdf_pt": 278,
     "pdf_en": 262
    },
    "paises": [
@@ -3998,12 +4008,12 @@
     {
      "id": "HK",
      "nome": "Hong Kong",
-     "visitas": 18
+     "visitas": 19
     },
     {
      "id": "MX",
      "nome": "Mexico",
-     "visitas": 10
+     "visitas": 12
     },
     {
      "id": "CA",
