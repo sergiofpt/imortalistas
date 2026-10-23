@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-23T09:32:46Z",
+ "atualizado_em": "2026-10-23T10:17:04Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 569,
+  "aberturas_pdf": 572,
   "visitas_hoje": 0,
   "visitas_7d": 2,
-  "aberturas_hoje": 33,
-  "aberturas_7d": 73,
-  "aberturas_30d": 569,
-  "pdf_abertos": 324,
+  "aberturas_hoje": 36,
+  "aberturas_7d": 76,
+  "aberturas_30d": 572,
+  "pdf_abertos": 327,
   "pdf_descarregados": 245,
-  "pdf_pt": 305,
+  "pdf_pt": 308,
   "pdf_en": 264
  },
  "dias": [
@@ -132,7 +132,7 @@
   {
    "dia": "2026-10-23",
    "visitas": 0,
-   "aberturas": 33
+   "aberturas": 36
   }
  ],
  "paginas": [
@@ -208,10 +208,10 @@
   {
    "id": "anestesia-cirurgia",
    "ficheiro": null,
-   "pt": 5,
+   "pt": 6,
    "en": 6,
-   "total": 11,
-   "abertos_pt": 2,
+   "total": 12,
+   "abertos_pt": 3,
    "abertos_en": 4,
    "descarregados_pt": 3,
    "descarregados_en": 2
@@ -426,6 +426,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "ansiedade-resiliencia-stress",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "apetite-saciedade-comportamento-alimentar",
    "ficheiro": null,
    "pt": 3,
@@ -548,6 +559,17 @@
   },
   {
    "id": "impulsividade-recompensa-vicio",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "insuficiencia-cardiaca-cardiomiopatias",
    "ficheiro": null,
    "pt": 3,
    "en": 2,
@@ -757,17 +779,6 @@
   },
   {
    "id": "andropausa-envelhecimento-reprodutivo",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "ansiedade-resiliencia-stress",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -1010,17 +1021,6 @@
   },
   {
    "id": "inflamacao-senescencia-placa",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "insuficiencia-cardiaca-cardiomiopatias",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -1632,7 +1632,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 484
+   "visitas": 487
   },
   {
    "id": "US",
@@ -1739,7 +1739,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 607
+   "visitas": 610
   },
   {
    "id": "Firefox",
@@ -1761,7 +1761,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 262
+   "visitas": 265
   },
   {
    "id": "Android",
@@ -1808,14 +1808,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 569
+   "visitas": 572
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 581
+   "visitas": 582
   },
   {
    "id": "https://imortalistas.com",
@@ -1855,6 +1855,16 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2519,7 +2529,7 @@
     {
      "dia": "2026-10-23",
      "visitas": 0,
-     "aberturas": 33
+     "aberturas": 36
     }
    ],
    "paginas": [
@@ -2578,6 +2588,17 @@
    ],
    "relatorios": [
     {
+     "id": "anestesia-cirurgia",
+     "ficheiro": null,
+     "pt": 5,
+     "en": 6,
+     "total": 11,
+     "abertos_pt": 2,
+     "abertos_en": 4,
+     "descarregados_pt": 3,
+     "descarregados_en": 2
+    },
+    {
      "id": "imortalidade",
      "ficheiro": null,
      "pt": 4,
@@ -2587,17 +2608,6 @@
      "abertos_en": 4,
      "descarregados_pt": 2,
      "descarregados_en": 3
-    },
-    {
-     "id": "anestesia-cirurgia",
-     "ficheiro": null,
-     "pt": 4,
-     "en": 6,
-     "total": 10,
-     "abertos_pt": 1,
-     "abertos_en": 4,
-     "descarregados_pt": 3,
-     "descarregados_en": 2
     },
     {
      "id": "cancros-um-a-um",
@@ -2722,6 +2732,17 @@
     },
     {
      "id": "alergias-asma-atopia",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "ansiedade-resiliencia-stress",
      "ficheiro": null,
      "pt": 3,
      "en": 2,
@@ -2865,6 +2886,17 @@
     },
     {
      "id": "impulsividade-recompensa-vicio",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "insuficiencia-cardiaca-cardiomiopatias",
      "ficheiro": null,
      "pt": 3,
      "en": 2,
@@ -3085,17 +3117,6 @@
     },
     {
      "id": "andropausa-envelhecimento-reprodutivo",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "ansiedade-resiliencia-stress",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3349,17 +3370,6 @@
     },
     {
      "id": "inflamacao-senescencia-placa",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "insuficiencia-cardiaca-cardiomiopatias",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3988,22 +3998,22 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 543,
+    "aberturas_pdf": 546,
     "visitas_hoje": 0,
     "visitas_7d": 1,
-    "aberturas_hoje": 33,
-    "aberturas_7d": 73,
-    "aberturas_30d": 543,
-    "pdf_abertos": 298,
+    "aberturas_hoje": 36,
+    "aberturas_7d": 76,
+    "aberturas_30d": 546,
+    "pdf_abertos": 301,
     "pdf_descarregados": 245,
-    "pdf_pt": 281,
+    "pdf_pt": 284,
     "pdf_en": 262
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 484
+     "visitas": 487
     },
     {
      "id": "US",
