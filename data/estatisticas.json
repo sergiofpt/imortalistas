@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-22T23:47:08Z",
+ "atualizado_em": "2026-10-23T00:09:40Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 538,
+  "aberturas_pdf": 539,
   "visitas_hoje": 0,
-  "visitas_7d": 3,
-  "aberturas_hoje": 20,
-  "aberturas_7d": 62,
-  "aberturas_30d": 536,
-  "pdf_abertos": 293,
+  "visitas_7d": 2,
+  "aberturas_hoje": 3,
+  "aberturas_7d": 43,
+  "aberturas_30d": 539,
+  "pdf_abertos": 294,
   "pdf_descarregados": 245,
-  "pdf_pt": 274,
+  "pdf_pt": 275,
   "pdf_en": 264
  },
  "dias": [
@@ -128,6 +128,11 @@
    "dia": "2026-10-22",
    "visitas": 0,
    "aberturas": 20
+  },
+  {
+   "dia": "2026-10-23",
+   "visitas": 0,
+   "aberturas": 3
   }
  ],
  "paginas": [
@@ -389,6 +394,17 @@
   },
   {
    "id": "coagulacao-trombose-veias",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "destoxificacao-fase-i-ii",
    "ficheiro": null,
    "pt": 3,
    "en": 2,
@@ -719,17 +735,6 @@
   },
   {
    "id": "dermatite-seborreica-microbioma-pele",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "destoxificacao-fase-i-ii",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -1627,7 +1632,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 469
+   "visitas": 470
   },
   {
    "id": "PT",
@@ -1714,7 +1719,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 578
+   "visitas": 579
   },
   {
    "id": "Firefox",
@@ -1731,7 +1736,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 317
+   "visitas": 318
   },
   {
    "id": "macOS",
@@ -1783,7 +1788,7 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 538
+   "visitas": 539
   }
  ],
  "origens": [
@@ -1830,6 +1835,11 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2069,6 +2079,11 @@
     },
     {
      "dia": "2026-10-22",
+     "visitas": 0,
+     "aberturas": 0
+    },
+    {
+     "dia": "2026-10-23",
      "visitas": 0,
      "aberturas": 0
     }
@@ -2415,6 +2430,11 @@
      "dia": "2026-10-22",
      "visitas": 0,
      "aberturas": 20
+    },
+    {
+     "dia": "2026-10-23",
+     "visitas": 0,
+     "aberturas": 3
     }
    ],
    "paginas": [
@@ -2606,6 +2626,17 @@
     },
     {
      "id": "coagulacao-trombose-veias",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "destoxificacao-fase-i-ii",
      "ficheiro": null,
      "pt": 3,
      "en": 2,
@@ -2936,17 +2967,6 @@
     },
     {
      "id": "dermatite-seborreica-microbioma-pele",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "destoxificacao-fase-i-ii",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3883,22 +3903,22 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 512,
+    "aberturas_pdf": 513,
     "visitas_hoje": 0,
-    "visitas_7d": 2,
-    "aberturas_hoje": 20,
-    "aberturas_7d": 62,
-    "aberturas_30d": 510,
-    "pdf_abertos": 267,
+    "visitas_7d": 1,
+    "aberturas_hoje": 3,
+    "aberturas_7d": 43,
+    "aberturas_30d": 513,
+    "pdf_abertos": 268,
     "pdf_descarregados": 245,
-    "pdf_pt": 250,
+    "pdf_pt": 251,
     "pdf_en": 262
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 469
+     "visitas": 470
     },
     {
      "id": "US",
