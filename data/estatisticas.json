@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-23T13:41:30Z",
+ "atualizado_em": "2026-10-23T14:22:22Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 585,
+  "aberturas_pdf": 587,
   "visitas_hoje": 0,
   "visitas_7d": 2,
-  "aberturas_hoje": 49,
-  "aberturas_7d": 89,
-  "aberturas_30d": 585,
-  "pdf_abertos": 340,
+  "aberturas_hoje": 51,
+  "aberturas_7d": 91,
+  "aberturas_30d": 587,
+  "pdf_abertos": 342,
   "pdf_descarregados": 245,
-  "pdf_pt": 321,
+  "pdf_pt": 323,
   "pdf_en": 264
  },
  "dias": [
@@ -132,7 +132,7 @@
   {
    "dia": "2026-10-23",
    "visitas": 0,
-   "aberturas": 49
+   "aberturas": 51
   }
  ],
  "paginas": [
@@ -525,6 +525,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "doenca-arterial-periferica",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "enxaqueca-cefaleias",
    "ficheiro": null,
    "pt": 3,
@@ -644,6 +655,17 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 0
+  },
+  {
+   "id": "microbioma-intestino",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
   },
   {
    "id": "olhos-em-detalhe",
@@ -976,17 +998,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "doenca-arterial-periferica",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "dor-analgesia",
    "ficheiro": null,
    "pt": 2,
@@ -1131,17 +1142,6 @@
   },
   {
    "id": "matriz-extracelular-glicacao",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "microbioma-intestino",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -1637,7 +1637,7 @@
   {
    "id": "US",
    "nome": "United States",
-   "visitas": 56
+   "visitas": 58
   },
   {
    "id": "PT",
@@ -1749,7 +1749,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 623
+   "visitas": 625
   },
   {
    "id": "Firefox",
@@ -1766,12 +1766,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 332
+   "visitas": 333
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 274
+   "visitas": 275
   },
   {
    "id": "Android",
@@ -1818,14 +1818,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 585
+   "visitas": 587
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 589
+   "visitas": 591
   },
   {
    "id": "https://imortalistas.com",
@@ -2569,7 +2569,7 @@
     {
      "dia": "2026-10-23",
      "visitas": 0,
-     "aberturas": 49
+     "aberturas": 51
     }
    ],
    "paginas": [
@@ -2892,6 +2892,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "doenca-arterial-periferica",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "enxaqueca-cefaleias",
      "ficheiro": null,
      "pt": 3,
@@ -3003,6 +3014,17 @@
     },
     {
      "id": "metilacao-homocisteina-colina",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "microbioma-intestino",
      "ficheiro": null,
      "pt": 3,
      "en": 2,
@@ -3343,17 +3365,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "doenca-arterial-periferica",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "doencas-geneticas-hereditarias",
      "ficheiro": null,
      "pt": 2,
@@ -3520,17 +3531,6 @@
     },
     {
      "id": "matriz-extracelular-glicacao",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "microbioma-intestino",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -4038,15 +4038,15 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 559,
+    "aberturas_pdf": 561,
     "visitas_hoje": 0,
     "visitas_7d": 1,
-    "aberturas_hoje": 49,
-    "aberturas_7d": 89,
-    "aberturas_30d": 559,
-    "pdf_abertos": 314,
+    "aberturas_hoje": 51,
+    "aberturas_7d": 91,
+    "aberturas_30d": 561,
+    "pdf_abertos": 316,
     "pdf_descarregados": 245,
-    "pdf_pt": 297,
+    "pdf_pt": 299,
     "pdf_en": 262
    },
    "paises": [
@@ -4058,7 +4058,7 @@
     {
      "id": "US",
      "nome": "United States",
-     "visitas": 56
+     "visitas": 58
     },
     {
      "id": "HK",
