@@ -3193,9 +3193,9 @@
    "m_en": "Vitamin B12",
    "c": "Vitaminas",
    "c_en": "Vitamins",
-   "alvo": "500–1000",
-   "otimo_min": 500,
-   "otimo_max": 1000,
+   "alvo": "200–700",
+   "otimo_min": 200,
+   "otimo_max": 700,
    "resultados": [
     {
      "data": "2026-08-25",
@@ -3204,7 +3204,7 @@
      "ref": "200.00 - 1100.00",
      "ref_min": 200,
      "ref_max": 1100,
-     "s": "otimo"
+     "s": "fora_do_otimo"
     }
    ]
   },
