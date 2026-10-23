@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-23T05:49:02Z",
+ "atualizado_em": "2026-10-23T06:37:16Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 560,
+  "aberturas_pdf": 563,
   "visitas_hoje": 0,
   "visitas_7d": 2,
-  "aberturas_hoje": 24,
-  "aberturas_7d": 64,
-  "aberturas_30d": 560,
-  "pdf_abertos": 315,
+  "aberturas_hoje": 27,
+  "aberturas_7d": 67,
+  "aberturas_30d": 563,
+  "pdf_abertos": 318,
   "pdf_descarregados": 245,
-  "pdf_pt": 296,
+  "pdf_pt": 299,
   "pdf_en": 264
  },
  "dias": [
@@ -132,7 +132,7 @@
   {
    "dia": "2026-10-23",
    "visitas": 0,
-   "aberturas": 24
+   "aberturas": 27
   }
  ],
  "paginas": [
@@ -197,10 +197,10 @@
   {
    "id": "imortalidade",
    "ficheiro": null,
-   "pt": 9,
+   "pt": 10,
    "en": 9,
-   "total": 18,
-   "abertos_pt": 7,
+   "total": 19,
+   "abertos_pt": 8,
    "abertos_en": 6,
    "descarregados_pt": 2,
    "descarregados_en": 3
@@ -437,7 +437,29 @@
    "descarregados_en": 1
   },
   {
+   "id": "cerebro-neurodegeneracao",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "coagulacao-trombose-veias",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "dermatite-seborreica-microbioma-pele",
    "ficheiro": null,
    "pt": 3,
    "en": 2,
@@ -800,17 +822,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "cerebro-neurodegeneracao",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "cetose-corpos-cetonicos",
    "ficheiro": null,
    "pt": 2,
@@ -823,17 +834,6 @@
   },
   {
    "id": "coluna-disco-dor-lombar",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "dermatite-seborreica-microbioma-pele",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -1632,16 +1632,16 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 482
-  },
-  {
-   "id": "PT",
-   "nome": "Portugal",
-   "visitas": 50
+   "visitas": 483
   },
   {
    "id": "US",
    "nome": "United States",
+   "visitas": 51
+  },
+  {
+   "id": "PT",
+   "nome": "Portugal",
    "visitas": 50
   },
   {
@@ -1652,7 +1652,7 @@
   {
    "id": "MX",
    "nome": "Mexico",
-   "visitas": 9
+   "visitas": 10
   },
   {
    "id": "CA",
@@ -1739,7 +1739,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 598
+   "visitas": 601
   },
   {
    "id": "Firefox",
@@ -1761,7 +1761,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 253
+   "visitas": 256
   },
   {
    "id": "Android",
@@ -1808,14 +1808,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 560
+   "visitas": 563
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 576
+   "visitas": 578
   },
   {
    "id": "https://imortalistas.com",
@@ -1855,6 +1855,11 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2499,7 +2504,7 @@
     {
      "dia": "2026-10-23",
      "visitas": 0,
-     "aberturas": 24
+     "aberturas": 27
     }
    ],
    "paginas": [
@@ -2558,6 +2563,17 @@
    ],
    "relatorios": [
     {
+     "id": "imortalidade",
+     "ficheiro": null,
+     "pt": 4,
+     "en": 7,
+     "total": 11,
+     "abertos_pt": 2,
+     "abertos_en": 4,
+     "descarregados_pt": 2,
+     "descarregados_en": 3
+    },
+    {
      "id": "anestesia-cirurgia",
      "ficheiro": null,
      "pt": 4,
@@ -2589,17 +2605,6 @@
      "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 1
-    },
-    {
-     "id": "imortalidade",
-     "ficheiro": null,
-     "pt": 3,
-     "en": 7,
-     "total": 10,
-     "abertos_pt": 1,
-     "abertos_en": 4,
-     "descarregados_pt": 2,
-     "descarregados_en": 3
     },
     {
      "id": "suprarrenais-cortisol",
@@ -2723,7 +2728,29 @@
      "descarregados_en": 2
     },
     {
+     "id": "cerebro-neurodegeneracao",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "coagulacao-trombose-veias",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "dermatite-seborreica-microbioma-pele",
      "ficheiro": null,
      "pt": 3,
      "en": 2,
@@ -3108,17 +3135,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "cerebro-neurodegeneracao",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "cetose-corpos-cetonicos",
      "ficheiro": null,
      "pt": 2,
@@ -3131,17 +3147,6 @@
     },
     {
      "id": "coluna-disco-dor-lombar",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "dermatite-seborreica-microbioma-pele",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3968,27 +3973,27 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 534,
+    "aberturas_pdf": 537,
     "visitas_hoje": 0,
     "visitas_7d": 1,
-    "aberturas_hoje": 24,
-    "aberturas_7d": 64,
-    "aberturas_30d": 534,
-    "pdf_abertos": 289,
+    "aberturas_hoje": 27,
+    "aberturas_7d": 67,
+    "aberturas_30d": 537,
+    "pdf_abertos": 292,
     "pdf_descarregados": 245,
-    "pdf_pt": 272,
+    "pdf_pt": 275,
     "pdf_en": 262
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 482
+     "visitas": 483
     },
     {
      "id": "US",
      "nome": "United States",
-     "visitas": 50
+     "visitas": 51
     },
     {
      "id": "HK",
@@ -3998,7 +4003,7 @@
     {
      "id": "MX",
      "nome": "Mexico",
-     "visitas": 9
+     "visitas": 10
     },
     {
      "id": "CA",
