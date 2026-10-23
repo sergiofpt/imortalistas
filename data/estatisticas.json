@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-23T01:52:35Z",
+ "atualizado_em": "2026-10-23T02:30:38Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 544,
+  "aberturas_pdf": 545,
   "visitas_hoje": 0,
   "visitas_7d": 2,
-  "aberturas_hoje": 8,
-  "aberturas_7d": 48,
-  "aberturas_30d": 544,
-  "pdf_abertos": 299,
+  "aberturas_hoje": 9,
+  "aberturas_7d": 49,
+  "aberturas_30d": 545,
+  "pdf_abertos": 300,
   "pdf_descarregados": 245,
-  "pdf_pt": 280,
+  "pdf_pt": 281,
   "pdf_en": 264
  },
  "dias": [
@@ -132,7 +132,7 @@
   {
    "dia": "2026-10-23",
    "visitas": 0,
-   "aberturas": 8
+   "aberturas": 9
   }
  ],
  "paginas": [
@@ -449,6 +449,17 @@
   },
   {
    "id": "humor-risco-depressao",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "impulsividade-recompensa-vicio",
    "ficheiro": null,
    "pt": 3,
    "en": 2,
@@ -900,17 +911,6 @@
   },
   {
    "id": "hipoxia-altitude",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "impulsividade-recompensa-vicio",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -1632,7 +1632,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 473
+   "visitas": 474
   },
   {
    "id": "PT",
@@ -1719,7 +1719,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 584
+   "visitas": 585
   },
   {
    "id": "Firefox",
@@ -1736,7 +1736,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 321
+   "visitas": 322
   },
   {
    "id": "macOS",
@@ -1788,7 +1788,7 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 544
+   "visitas": 545
   }
  ],
  "origens": [
@@ -1835,6 +1835,11 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2449,7 +2454,7 @@
     {
      "dia": "2026-10-23",
      "visitas": 0,
-     "aberturas": 8
+     "aberturas": 9
     }
    ],
    "paginas": [
@@ -2696,6 +2701,17 @@
     },
     {
      "id": "humor-risco-depressao",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "impulsividade-recompensa-vicio",
      "ficheiro": null,
      "pt": 3,
      "en": 2,
@@ -3169,17 +3185,6 @@
     },
     {
      "id": "hipoxia-altitude",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "impulsividade-recompensa-vicio",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3918,22 +3923,22 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 518,
+    "aberturas_pdf": 519,
     "visitas_hoje": 0,
     "visitas_7d": 1,
-    "aberturas_hoje": 8,
-    "aberturas_7d": 48,
-    "aberturas_30d": 518,
-    "pdf_abertos": 273,
+    "aberturas_hoje": 9,
+    "aberturas_7d": 49,
+    "aberturas_30d": 519,
+    "pdf_abertos": 274,
     "pdf_descarregados": 245,
-    "pdf_pt": 256,
+    "pdf_pt": 257,
     "pdf_en": 262
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 473
+     "visitas": 474
     },
     {
      "id": "US",
