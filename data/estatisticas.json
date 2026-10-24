@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-24T04:05:13Z",
+ "atualizado_em": "2026-10-24T04:48:15Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 599,
+  "aberturas_pdf": 600,
   "visitas_hoje": 0,
   "visitas_7d": 2,
-  "aberturas_hoje": 6,
-  "aberturas_7d": 88,
-  "aberturas_30d": 599,
-  "pdf_abertos": 354,
+  "aberturas_hoje": 7,
+  "aberturas_7d": 89,
+  "aberturas_30d": 600,
+  "pdf_abertos": 355,
   "pdf_descarregados": 245,
-  "pdf_pt": 335,
+  "pdf_pt": 336,
   "pdf_en": 264
  },
  "dias": [
@@ -137,7 +137,7 @@
   {
    "dia": "2026-10-24",
    "visitas": 0,
-   "aberturas": 6
+   "aberturas": 7
   }
  ],
  "paginas": [
@@ -344,6 +344,17 @@
   },
   {
    "id": "doencas-geneticas-hereditarias",
+   "ficheiro": null,
+   "pt": 4,
+   "en": 2,
+   "total": 6,
+   "abertos_pt": 3,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "estomago-refluxo-helicobacter",
    "ficheiro": null,
    "pt": 4,
    "en": 2,
@@ -608,17 +619,6 @@
   },
   {
    "id": "esofago",
-   "ficheiro": null,
-   "pt": 3,
-   "en": 2,
-   "total": 5,
-   "abertos_pt": 2,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "estomago-refluxo-helicobacter",
    "ficheiro": null,
    "pt": 3,
    "en": 2,
@@ -1657,7 +1657,7 @@
   {
    "id": "MX",
    "nome": "Mexico",
-   "visitas": 13
+   "visitas": 14
   },
   {
    "id": "CA",
@@ -1759,7 +1759,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 637
+   "visitas": 638
   },
   {
    "id": "Firefox",
@@ -1781,7 +1781,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 281
+   "visitas": 282
   },
   {
    "id": "Android",
@@ -1828,7 +1828,7 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 599
+   "visitas": 600
   }
  ],
  "origens": [
@@ -1863,6 +1863,11 @@
    "visitas": 2
   },
   {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
+   "visitas": 2
+  },
+  {
    "id": "https://l.instagram.com",
    "nome": "l.instagram.com",
    "visitas": 1
@@ -1875,11 +1880,6 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
-   "visitas": 1
-  },
-  {
-   "id": "https://sf-site.sergiofpt.workers.dev/r/",
-   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2599,7 +2599,7 @@
     {
      "dia": "2026-10-24",
      "visitas": 0,
-     "aberturas": 6
+     "aberturas": 7
     }
    ],
    "paginas": [
@@ -2776,6 +2776,17 @@
      "abertos_pt": 2,
      "abertos_en": 2,
      "descarregados_pt": 2,
+     "descarregados_en": 1
+    },
+    {
+     "id": "estomago-refluxo-helicobacter",
+     "ficheiro": null,
+     "pt": 4,
+     "en": 2,
+     "total": 6,
+     "abertos_pt": 3,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
      "descarregados_en": 1
     },
     {
@@ -2978,17 +2989,6 @@
     },
     {
      "id": "esofago",
-     "ficheiro": null,
-     "pt": 3,
-     "en": 2,
-     "total": 5,
-     "abertos_pt": 2,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "estomago-refluxo-helicobacter",
      "ficheiro": null,
      "pt": 3,
      "en": 2,
@@ -4068,15 +4068,15 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 573,
+    "aberturas_pdf": 574,
     "visitas_hoje": 0,
     "visitas_7d": 1,
-    "aberturas_hoje": 6,
-    "aberturas_7d": 88,
-    "aberturas_30d": 573,
-    "pdf_abertos": 328,
+    "aberturas_hoje": 7,
+    "aberturas_7d": 89,
+    "aberturas_30d": 574,
+    "pdf_abertos": 329,
     "pdf_descarregados": 245,
-    "pdf_pt": 311,
+    "pdf_pt": 312,
     "pdf_en": 262
    },
    "paises": [
@@ -4098,7 +4098,7 @@
     {
      "id": "MX",
      "nome": "Mexico",
-     "visitas": 13
+     "visitas": 14
     },
     {
      "id": "CA",
