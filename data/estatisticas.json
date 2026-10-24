@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-24T15:26:53Z",
+ "atualizado_em": "2026-10-24T15:58:30Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 629,
+  "aberturas_pdf": 631,
   "visitas_hoje": 0,
   "visitas_7d": 2,
-  "aberturas_hoje": 36,
-  "aberturas_7d": 118,
-  "aberturas_30d": 629,
-  "pdf_abertos": 384,
+  "aberturas_hoje": 38,
+  "aberturas_7d": 120,
+  "aberturas_30d": 631,
+  "pdf_abertos": 386,
   "pdf_descarregados": 245,
-  "pdf_pt": 365,
+  "pdf_pt": 367,
   "pdf_en": 264
  },
  "dias": [
@@ -137,7 +137,7 @@
   {
    "dia": "2026-10-24",
    "visitas": 0,
-   "aberturas": 36
+   "aberturas": 38
   }
  ],
  "paginas": [
@@ -266,6 +266,17 @@
    "descarregados_en": 2
   },
   {
+   "id": "acne-glandulas-sebaceas",
+   "ficheiro": null,
+   "pt": 4,
+   "en": 4,
+   "total": 8,
+   "abertos_pt": 3,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 3
+  },
+  {
    "id": "doencas-autoimunes",
    "ficheiro": null,
    "pt": 4,
@@ -297,17 +308,6 @@
    "abertos_en": 4,
    "descarregados_pt": 2,
    "descarregados_en": 1
-  },
-  {
-   "id": "acne-glandulas-sebaceas",
-   "ficheiro": null,
-   "pt": 3,
-   "en": 4,
-   "total": 7,
-   "abertos_pt": 2,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 3
   },
   {
    "id": "avc-pequenos-vasos-cerebrais",
@@ -564,6 +564,17 @@
   },
   {
    "id": "polipos-colorretais",
+   "ficheiro": null,
+   "pt": 4,
+   "en": 2,
+   "total": 6,
+   "abertos_pt": 3,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "prostata",
    "ficheiro": null,
    "pt": 4,
    "en": 2,
@@ -883,17 +894,6 @@
   },
   {
    "id": "perfil-desportivo-resistencia-forca",
-   "ficheiro": null,
-   "pt": 3,
-   "en": 2,
-   "total": 5,
-   "abertos_pt": 2,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "prostata",
    "ficheiro": null,
    "pt": 3,
    "en": 2,
@@ -1637,7 +1637,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 502
+   "visitas": 503
   },
   {
    "id": "US",
@@ -1725,6 +1725,11 @@
    "visitas": 1
   },
   {
+   "id": "KH",
+   "nome": "Cambodia",
+   "visitas": 1
+  },
+  {
    "id": "NL",
    "nome": "Netherlands",
    "visitas": 1
@@ -1764,7 +1769,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 667
+   "visitas": 669
   },
   {
    "id": "Firefox",
@@ -1786,7 +1791,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 299
+   "visitas": 301
   },
   {
    "id": "Android",
@@ -1833,7 +1838,7 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 629
+   "visitas": 631
   }
  ],
  "origens": [
@@ -1856,6 +1861,11 @@
    "id": "https://www.rapamycin.news",
    "nome": "www.rapamycin.news",
    "visitas": 4
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
+   "visitas": 2
   },
   {
    "id": "https://sf-site.sergiofpt.workers.dev/r/",
@@ -2639,7 +2649,7 @@
     {
      "dia": "2026-10-24",
      "visitas": 0,
-     "aberturas": 36
+     "aberturas": 38
     }
    ],
    "paginas": [
@@ -2764,6 +2774,17 @@
      "descarregados_en": 2
     },
     {
+     "id": "acne-glandulas-sebaceas",
+     "ficheiro": null,
+     "pt": 4,
+     "en": 4,
+     "total": 8,
+     "abertos_pt": 3,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 3
+    },
+    {
      "id": "doencas-autoimunes",
      "ficheiro": null,
      "pt": 4,
@@ -2795,17 +2816,6 @@
      "abertos_en": 4,
      "descarregados_pt": 2,
      "descarregados_en": 1
-    },
-    {
-     "id": "acne-glandulas-sebaceas",
-     "ficheiro": null,
-     "pt": 3,
-     "en": 4,
-     "total": 7,
-     "abertos_pt": 2,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 3
     },
     {
      "id": "forca-hipertrofia-potencia",
@@ -2996,6 +3006,17 @@
     },
     {
      "id": "polipos-colorretais",
+     "ficheiro": null,
+     "pt": 4,
+     "en": 2,
+     "total": 6,
+     "abertos_pt": 3,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "prostata",
      "ficheiro": null,
      "pt": 4,
      "en": 2,
@@ -3315,17 +3336,6 @@
     },
     {
      "id": "perfil-desportivo-resistencia-forca",
-     "ficheiro": null,
-     "pt": 3,
-     "en": 2,
-     "total": 5,
-     "abertos_pt": 2,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "prostata",
      "ficheiro": null,
      "pt": 3,
      "en": 2,
@@ -4108,22 +4118,22 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 603,
+    "aberturas_pdf": 605,
     "visitas_hoje": 0,
     "visitas_7d": 1,
-    "aberturas_hoje": 36,
-    "aberturas_7d": 118,
-    "aberturas_30d": 603,
-    "pdf_abertos": 358,
+    "aberturas_hoje": 38,
+    "aberturas_7d": 120,
+    "aberturas_30d": 605,
+    "pdf_abertos": 360,
     "pdf_descarregados": 245,
-    "pdf_pt": 341,
+    "pdf_pt": 343,
     "pdf_en": 262
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 502
+     "visitas": 503
     },
     {
      "id": "US",
@@ -4203,6 +4213,11 @@
     {
      "id": "JO",
      "nome": "Hashemite Kingdom of Jordan",
+     "visitas": 1
+    },
+    {
+     "id": "KH",
+     "nome": "Cambodia",
      "visitas": 1
     },
     {
