@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-24T04:48:15Z",
+ "atualizado_em": "2026-10-24T05:27:35Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 600,
+  "aberturas_pdf": 601,
   "visitas_hoje": 0,
   "visitas_7d": 2,
-  "aberturas_hoje": 7,
-  "aberturas_7d": 89,
-  "aberturas_30d": 600,
-  "pdf_abertos": 355,
+  "aberturas_hoje": 8,
+  "aberturas_7d": 90,
+  "aberturas_30d": 601,
+  "pdf_abertos": 356,
   "pdf_descarregados": 245,
-  "pdf_pt": 336,
+  "pdf_pt": 337,
   "pdf_en": 264
  },
  "dias": [
@@ -137,7 +137,7 @@
   {
    "dia": "2026-10-24",
    "visitas": 0,
-   "aberturas": 7
+   "aberturas": 8
   }
  ],
  "paginas": [
@@ -321,6 +321,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "ritmo-circadiano-sono",
+   "ficheiro": null,
+   "pt": 5,
+   "en": 2,
+   "total": 7,
+   "abertos_pt": 4,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "apetite-saciedade-comportamento-alimentar",
    "ficheiro": null,
    "pt": 4,
@@ -443,17 +454,6 @@
   },
   {
    "id": "psicadelicos",
-   "ficheiro": null,
-   "pt": 4,
-   "en": 2,
-   "total": 6,
-   "abertos_pt": 3,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "ritmo-circadiano-sono",
    "ficheiro": null,
    "pt": 4,
    "en": 2,
@@ -1637,7 +1637,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 494
+   "visitas": 495
   },
   {
    "id": "US",
@@ -1759,7 +1759,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 638
+   "visitas": 639
   },
   {
    "id": "Firefox",
@@ -1776,7 +1776,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 339
+   "visitas": 340
   },
   {
    "id": "macOS",
@@ -1828,7 +1828,7 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 600
+   "visitas": 601
   }
  ],
  "origens": [
@@ -1880,6 +1880,11 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
+   "visitas": 1
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2599,7 +2604,7 @@
     {
      "dia": "2026-10-24",
      "visitas": 0,
-     "aberturas": 7
+     "aberturas": 8
     }
    ],
    "paginas": [
@@ -2819,6 +2824,17 @@
      "total": 6,
      "abertos_pt": 1,
      "abertos_en": 3,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "ritmo-circadiano-sono",
+     "ficheiro": null,
+     "pt": 4,
+     "en": 2,
+     "total": 6,
+     "abertos_pt": 3,
+     "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 1
     },
@@ -3264,17 +3280,6 @@
     },
     {
      "id": "resumo-clinico-medico",
-     "ficheiro": null,
-     "pt": 3,
-     "en": 2,
-     "total": 5,
-     "abertos_pt": 2,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "ritmo-circadiano-sono",
      "ficheiro": null,
      "pt": 3,
      "en": 2,
@@ -4068,22 +4073,22 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 574,
+    "aberturas_pdf": 575,
     "visitas_hoje": 0,
     "visitas_7d": 1,
-    "aberturas_hoje": 7,
-    "aberturas_7d": 89,
-    "aberturas_30d": 574,
-    "pdf_abertos": 329,
+    "aberturas_hoje": 8,
+    "aberturas_7d": 90,
+    "aberturas_30d": 575,
+    "pdf_abertos": 330,
     "pdf_descarregados": 245,
-    "pdf_pt": 312,
+    "pdf_pt": 313,
     "pdf_en": 262
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 494
+     "visitas": 495
     },
     {
      "id": "US",
