@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-24T00:44:07Z",
+ "atualizado_em": "2026-10-24T02:07:50Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 596,
+  "aberturas_pdf": 597,
   "visitas_hoje": 0,
   "visitas_7d": 2,
-  "aberturas_hoje": 3,
-  "aberturas_7d": 85,
-  "aberturas_30d": 596,
-  "pdf_abertos": 351,
+  "aberturas_hoje": 4,
+  "aberturas_7d": 86,
+  "aberturas_30d": 597,
+  "pdf_abertos": 352,
   "pdf_descarregados": 245,
-  "pdf_pt": 332,
+  "pdf_pt": 333,
   "pdf_en": 264
  },
  "dias": [
@@ -137,7 +137,7 @@
   {
    "dia": "2026-10-24",
    "visitas": 0,
-   "aberturas": 3
+   "aberturas": 4
   }
  ],
  "paginas": [
@@ -706,6 +706,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "lipidos-detalhe",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "longevidade-maxima-sintese-genetica",
    "ficheiro": null,
    "pt": 4,
@@ -1158,17 +1169,6 @@
   },
   {
    "id": "intolerancias-alimentares-626",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "lipidos-detalhe",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -1652,7 +1652,7 @@
   {
    "id": "HK",
    "nome": "Hong Kong",
-   "visitas": 23
+   "visitas": 24
   },
   {
    "id": "MX",
@@ -1759,7 +1759,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 634
+   "visitas": 635
   },
   {
    "id": "Firefox",
@@ -1781,7 +1781,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 280
+   "visitas": 281
   },
   {
    "id": "Android",
@@ -1828,14 +1828,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 596
+   "visitas": 597
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 598
+   "visitas": 599
   },
   {
    "id": "https://imortalistas.com",
@@ -2599,7 +2599,7 @@
     {
      "dia": "2026-10-24",
      "visitas": 0,
-     "aberturas": 3
+     "aberturas": 4
     }
    ],
    "paginas": [
@@ -3098,6 +3098,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "lipidos-detalhe",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "metilacao-homocisteina-colina",
      "ficheiro": null,
      "pt": 3,
@@ -3572,17 +3583,6 @@
     },
     {
      "id": "inflamacao-senescencia-placa",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "lipidos-detalhe",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -4068,15 +4068,15 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 570,
+    "aberturas_pdf": 571,
     "visitas_hoje": 0,
     "visitas_7d": 1,
-    "aberturas_hoje": 3,
-    "aberturas_7d": 85,
-    "aberturas_30d": 570,
-    "pdf_abertos": 325,
+    "aberturas_hoje": 4,
+    "aberturas_7d": 86,
+    "aberturas_30d": 571,
+    "pdf_abertos": 326,
     "pdf_descarregados": 245,
-    "pdf_pt": 308,
+    "pdf_pt": 309,
     "pdf_en": 262
    },
    "paises": [
@@ -4093,7 +4093,7 @@
     {
      "id": "HK",
      "nome": "Hong Kong",
-     "visitas": 23
+     "visitas": 24
     },
     {
      "id": "MX",
