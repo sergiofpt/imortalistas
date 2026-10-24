@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-24T14:57:59Z",
+ "atualizado_em": "2026-10-24T15:26:53Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 628,
+  "aberturas_pdf": 629,
   "visitas_hoje": 0,
   "visitas_7d": 2,
-  "aberturas_hoje": 35,
-  "aberturas_7d": 117,
-  "aberturas_30d": 628,
-  "pdf_abertos": 383,
+  "aberturas_hoje": 36,
+  "aberturas_7d": 118,
+  "aberturas_30d": 629,
+  "pdf_abertos": 384,
   "pdf_descarregados": 245,
-  "pdf_pt": 364,
+  "pdf_pt": 365,
   "pdf_en": 264
  },
  "dias": [
@@ -137,7 +137,7 @@
   {
    "dia": "2026-10-24",
    "visitas": 0,
-   "aberturas": 35
+   "aberturas": 36
   }
  ],
  "paginas": [
@@ -233,6 +233,17 @@
    "descarregados_en": 2
   },
   {
+   "id": "suprarrenais-cortisol",
+   "ficheiro": null,
+   "pt": 6,
+   "en": 5,
+   "total": 11,
+   "abertos_pt": 3,
+   "abertos_en": 2,
+   "descarregados_pt": 3,
+   "descarregados_en": 3
+  },
+  {
    "id": "capacidade-cognitiva-plasticidade",
    "ficheiro": null,
    "pt": 8,
@@ -242,17 +253,6 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 1
-  },
-  {
-   "id": "suprarrenais-cortisol",
-   "ficheiro": null,
-   "pt": 5,
-   "en": 5,
-   "total": 10,
-   "abertos_pt": 2,
-   "abertos_en": 2,
-   "descarregados_pt": 3,
-   "descarregados_en": 3
   },
   {
    "id": "bexiga-funcao-urinaria",
@@ -1652,7 +1652,7 @@
   {
    "id": "HK",
    "nome": "Hong Kong",
-   "visitas": 32
+   "visitas": 33
   },
   {
    "id": "MX",
@@ -1764,7 +1764,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 666
+   "visitas": 667
   },
   {
    "id": "Firefox",
@@ -1786,7 +1786,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 298
+   "visitas": 299
   },
   {
    "id": "Android",
@@ -1833,14 +1833,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 628
+   "visitas": 629
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 619
+   "visitas": 620
   },
   {
    "id": "https://imortalistas.com",
@@ -2639,7 +2639,7 @@
     {
      "dia": "2026-10-24",
      "visitas": 0,
-     "aberturas": 35
+     "aberturas": 36
     }
    ],
    "paginas": [
@@ -2720,6 +2720,17 @@
      "descarregados_en": 2
     },
     {
+     "id": "suprarrenais-cortisol",
+     "ficheiro": null,
+     "pt": 6,
+     "en": 5,
+     "total": 11,
+     "abertos_pt": 3,
+     "abertos_en": 2,
+     "descarregados_pt": 3,
+     "descarregados_en": 3
+    },
+    {
      "id": "cancros-um-a-um",
      "ficheiro": null,
      "pt": 3,
@@ -2740,17 +2751,6 @@
      "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 1
-    },
-    {
-     "id": "suprarrenais-cortisol",
-     "ficheiro": null,
-     "pt": 5,
-     "en": 5,
-     "total": 10,
-     "abertos_pt": 2,
-     "abertos_en": 2,
-     "descarregados_pt": 3,
-     "descarregados_en": 3
     },
     {
      "id": "bexiga-funcao-urinaria",
@@ -4108,15 +4108,15 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 602,
+    "aberturas_pdf": 603,
     "visitas_hoje": 0,
     "visitas_7d": 1,
-    "aberturas_hoje": 35,
-    "aberturas_7d": 117,
-    "aberturas_30d": 602,
-    "pdf_abertos": 357,
+    "aberturas_hoje": 36,
+    "aberturas_7d": 118,
+    "aberturas_30d": 603,
+    "pdf_abertos": 358,
     "pdf_descarregados": 245,
-    "pdf_pt": 340,
+    "pdf_pt": 341,
     "pdf_en": 262
    },
    "paises": [
@@ -4133,7 +4133,7 @@
     {
      "id": "HK",
      "nome": "Hong Kong",
-     "visitas": 32
+     "visitas": 33
     },
     {
      "id": "MX",
