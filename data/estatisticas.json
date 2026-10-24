@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-24T09:11:46Z",
+ "atualizado_em": "2026-10-24T09:47:36Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 610,
+  "aberturas_pdf": 612,
   "visitas_hoje": 0,
   "visitas_7d": 2,
-  "aberturas_hoje": 17,
-  "aberturas_7d": 99,
-  "aberturas_30d": 610,
-  "pdf_abertos": 365,
+  "aberturas_hoje": 19,
+  "aberturas_7d": 101,
+  "aberturas_30d": 612,
+  "pdf_abertos": 367,
   "pdf_descarregados": 245,
-  "pdf_pt": 346,
+  "pdf_pt": 348,
   "pdf_en": 264
  },
  "dias": [
@@ -137,7 +137,7 @@
   {
    "dia": "2026-10-24",
    "visitas": 0,
-   "aberturas": 17
+   "aberturas": 19
   }
  ],
  "paginas": [
@@ -387,6 +387,17 @@
    "descarregados_en": 2
   },
   {
+   "id": "disruptores-endocrinos-poluentes",
+   "ficheiro": null,
+   "pt": 4,
+   "en": 2,
+   "total": 6,
+   "abertos_pt": 3,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "doencas-geneticas-hereditarias",
    "ficheiro": null,
    "pt": 4,
@@ -508,6 +519,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "resposta-treino-vo2max",
+   "ficheiro": null,
+   "pt": 4,
+   "en": 2,
+   "total": 6,
+   "abertos_pt": 3,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "sal-agua-eletrolitos",
    "ficheiro": null,
    "pt": 4,
@@ -608,17 +630,6 @@
   },
   {
    "id": "destoxificacao-fase-i-ii",
-   "ficheiro": null,
-   "pt": 3,
-   "en": 2,
-   "total": 5,
-   "abertos_pt": 2,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "disruptores-endocrinos-poluentes",
    "ficheiro": null,
    "pt": 3,
    "en": 2,
@@ -861,17 +872,6 @@
   },
   {
    "id": "pulmao-funcao-respiratoria",
-   "ficheiro": null,
-   "pt": 3,
-   "en": 2,
-   "total": 5,
-   "abertos_pt": 2,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "resposta-treino-vo2max",
    "ficheiro": null,
    "pt": 3,
    "en": 2,
@@ -1637,7 +1637,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 498
+   "visitas": 499
   },
   {
    "id": "US",
@@ -1657,7 +1657,7 @@
   {
    "id": "MX",
    "nome": "Mexico",
-   "visitas": 16
+   "visitas": 17
   },
   {
    "id": "CA",
@@ -1764,7 +1764,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 648
+   "visitas": 650
   },
   {
    "id": "Firefox",
@@ -1786,7 +1786,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 285
+   "visitas": 287
   },
   {
    "id": "Android",
@@ -1833,14 +1833,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 610
+   "visitas": 612
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 606
+   "visitas": 608
   },
   {
    "id": "https://imortalistas.com",
@@ -2619,7 +2619,7 @@
     {
      "dia": "2026-10-24",
      "visitas": 0,
-     "aberturas": 17
+     "aberturas": 19
     }
    ],
    "paginas": [
@@ -2811,6 +2811,17 @@
     },
     {
      "id": "articulacoes-artrose",
+     "ficheiro": null,
+     "pt": 4,
+     "en": 2,
+     "total": 6,
+     "abertos_pt": 3,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "disruptores-endocrinos-poluentes",
      "ficheiro": null,
      "pt": 4,
      "en": 2,
@@ -3020,17 +3031,6 @@
     },
     {
      "id": "destoxificacao-fase-i-ii",
-     "ficheiro": null,
-     "pt": 3,
-     "en": 2,
-     "total": 5,
-     "abertos_pt": 2,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "disruptores-endocrinos-poluentes",
      "ficheiro": null,
      "pt": 3,
      "en": 2,
@@ -3295,6 +3295,17 @@
     },
     {
      "id": "pulmao-funcao-respiratoria",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "resposta-treino-vo2max",
      "ficheiro": null,
      "pt": 3,
      "en": 2,
@@ -3756,17 +3767,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "resposta-treino-vo2max",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "rim-acido-urico",
      "ficheiro": null,
      "pt": 2,
@@ -4088,22 +4088,22 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 584,
+    "aberturas_pdf": 586,
     "visitas_hoje": 0,
     "visitas_7d": 1,
-    "aberturas_hoje": 17,
-    "aberturas_7d": 99,
-    "aberturas_30d": 584,
-    "pdf_abertos": 339,
+    "aberturas_hoje": 19,
+    "aberturas_7d": 101,
+    "aberturas_30d": 586,
+    "pdf_abertos": 341,
     "pdf_descarregados": 245,
-    "pdf_pt": 322,
+    "pdf_pt": 324,
     "pdf_en": 262
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 498
+     "visitas": 499
     },
     {
      "id": "US",
@@ -4118,7 +4118,7 @@
     {
      "id": "MX",
      "nome": "Mexico",
-     "visitas": 16
+     "visitas": 17
     },
     {
      "id": "CA",
