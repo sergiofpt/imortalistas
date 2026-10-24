@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-24T08:33:49Z",
+ "atualizado_em": "2026-10-24T09:11:46Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 608,
+  "aberturas_pdf": 610,
   "visitas_hoje": 0,
   "visitas_7d": 2,
-  "aberturas_hoje": 15,
-  "aberturas_7d": 97,
-  "aberturas_30d": 608,
-  "pdf_abertos": 363,
+  "aberturas_hoje": 17,
+  "aberturas_7d": 99,
+  "aberturas_30d": 610,
+  "pdf_abertos": 365,
   "pdf_descarregados": 245,
-  "pdf_pt": 344,
+  "pdf_pt": 346,
   "pdf_en": 264
  },
  "dias": [
@@ -137,7 +137,7 @@
   {
    "dia": "2026-10-24",
    "visitas": 0,
-   "aberturas": 15
+   "aberturas": 17
   }
  ],
  "paginas": [
@@ -310,6 +310,17 @@
    "descarregados_en": 3
   },
   {
+   "id": "fertilidade-masculina",
+   "ficheiro": null,
+   "pt": 5,
+   "en": 2,
+   "total": 7,
+   "abertos_pt": 4,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "forca-hipertrofia-potencia",
    "ficheiro": null,
    "pt": 4,
@@ -399,17 +410,6 @@
   },
   {
    "id": "farmacogenomica-632",
-   "ficheiro": null,
-   "pt": 4,
-   "en": 2,
-   "total": 6,
-   "abertos_pt": 3,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "fertilidade-masculina",
    "ficheiro": null,
    "pt": 4,
    "en": 2,
@@ -937,6 +937,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "termogenese-gordura-castanha",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "testiculos",
    "ficheiro": null,
    "pt": 3,
@@ -1333,17 +1344,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "termogenese-gordura-castanha",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "termorregulacao-sudorese",
    "ficheiro": null,
    "pt": 2,
@@ -1637,7 +1637,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 497
+   "visitas": 498
   },
   {
    "id": "US",
@@ -1652,7 +1652,7 @@
   {
    "id": "HK",
    "nome": "Hong Kong",
-   "visitas": 27
+   "visitas": 28
   },
   {
    "id": "MX",
@@ -1764,7 +1764,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 646
+   "visitas": 648
   },
   {
    "id": "Firefox",
@@ -1781,7 +1781,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 344
+   "visitas": 346
   },
   {
    "id": "macOS",
@@ -1833,7 +1833,7 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 608
+   "visitas": 610
   }
  ],
  "origens": [
@@ -1856,6 +1856,11 @@
    "id": "https://www.rapamycin.news",
    "nome": "www.rapamycin.news",
    "visitas": 4
+  },
+  {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
+   "visitas": 2
   },
   {
    "id": "https://sf-site.sergiofpt.workers.dev/r/",
@@ -2614,7 +2619,7 @@
     {
      "dia": "2026-10-24",
      "visitas": 0,
-     "aberturas": 15
+     "aberturas": 17
     }
    ],
    "paginas": [
@@ -2817,6 +2822,17 @@
     },
     {
      "id": "estomago-refluxo-helicobacter",
+     "ficheiro": null,
+     "pt": 4,
+     "en": 2,
+     "total": 6,
+     "abertos_pt": 3,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "fertilidade-masculina",
      "ficheiro": null,
      "pt": 4,
      "en": 2,
@@ -3048,17 +3064,6 @@
     },
     {
      "id": "esofago",
-     "ficheiro": null,
-     "pt": 3,
-     "en": 2,
-     "total": 5,
-     "abertos_pt": 2,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "fertilidade-masculina",
      "ficheiro": null,
      "pt": 3,
      "en": 2,
@@ -3345,6 +3350,17 @@
     },
     {
      "id": "tendoes-ligamentos-lesoes",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "termogenese-gordura-castanha",
      "ficheiro": null,
      "pt": 3,
      "en": 2,
@@ -3784,17 +3800,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "termogenese-gordura-castanha",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "termorregulacao-sudorese",
      "ficheiro": null,
      "pt": 2,
@@ -4083,22 +4088,22 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 582,
+    "aberturas_pdf": 584,
     "visitas_hoje": 0,
     "visitas_7d": 1,
-    "aberturas_hoje": 15,
-    "aberturas_7d": 97,
-    "aberturas_30d": 582,
-    "pdf_abertos": 337,
+    "aberturas_hoje": 17,
+    "aberturas_7d": 99,
+    "aberturas_30d": 584,
+    "pdf_abertos": 339,
     "pdf_descarregados": 245,
-    "pdf_pt": 320,
+    "pdf_pt": 322,
     "pdf_en": 262
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 497
+     "visitas": 498
     },
     {
      "id": "US",
@@ -4108,7 +4113,7 @@
     {
      "id": "HK",
      "nome": "Hong Kong",
-     "visitas": 27
+     "visitas": 28
     },
     {
      "id": "MX",
