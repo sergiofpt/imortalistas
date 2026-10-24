@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-24T14:27:42Z",
+ "atualizado_em": "2026-10-24T14:57:59Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 626,
+  "aberturas_pdf": 628,
   "visitas_hoje": 0,
   "visitas_7d": 2,
-  "aberturas_hoje": 33,
-  "aberturas_7d": 115,
-  "aberturas_30d": 626,
-  "pdf_abertos": 381,
+  "aberturas_hoje": 35,
+  "aberturas_7d": 117,
+  "aberturas_30d": 628,
+  "pdf_abertos": 383,
   "pdf_descarregados": 245,
-  "pdf_pt": 362,
+  "pdf_pt": 364,
   "pdf_en": 264
  },
  "dias": [
@@ -137,7 +137,7 @@
   {
    "dia": "2026-10-24",
    "visitas": 0,
-   "aberturas": 33
+   "aberturas": 35
   }
  ],
  "paginas": [
@@ -310,6 +310,17 @@
    "descarregados_en": 3
   },
   {
+   "id": "avc-pequenos-vasos-cerebrais",
+   "ficheiro": null,
+   "pt": 4,
+   "en": 3,
+   "total": 7,
+   "abertos_pt": 3,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 2
+  },
+  {
    "id": "fertilidade-masculina",
    "ficheiro": null,
    "pt": 5,
@@ -374,17 +385,6 @@
    "abertos_en": 1,
    "descarregados_pt": 1,
    "descarregados_en": 1
-  },
-  {
-   "id": "avc-pequenos-vasos-cerebrais",
-   "ficheiro": null,
-   "pt": 3,
-   "en": 3,
-   "total": 6,
-   "abertos_pt": 2,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 2
   },
   {
    "id": "dermatite-seborreica-microbioma-pele",
@@ -1047,6 +1047,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "visao-audicao",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 3,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "vitaminas-minerais",
    "ficheiro": null,
    "pt": 3,
@@ -1377,17 +1388,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "visao-audicao",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 2,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "alimentos-longevidade-173",
    "ficheiro": null,
    "pt": 1,
@@ -1637,7 +1637,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 501
+   "visitas": 502
   },
   {
    "id": "US",
@@ -1680,6 +1680,11 @@
    "visitas": 2
   },
   {
+   "id": "AZ",
+   "nome": "Azerbaijan",
+   "visitas": 2
+  },
+  {
    "id": "PL",
    "nome": "Poland",
    "visitas": 2
@@ -1688,11 +1693,6 @@
    "id": "UZ",
    "nome": "Uzbekistan",
    "visitas": 2
-  },
-  {
-   "id": "AZ",
-   "nome": "Azerbaijan",
-   "visitas": 1
   },
   {
    "id": "CO",
@@ -1764,7 +1764,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 664
+   "visitas": 666
   },
   {
    "id": "Firefox",
@@ -1781,12 +1781,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 350
+   "visitas": 351
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 297
+   "visitas": 298
   },
   {
    "id": "Android",
@@ -1833,14 +1833,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 626
+   "visitas": 628
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 618
+   "visitas": 619
   },
   {
    "id": "https://imortalistas.com",
@@ -1883,6 +1883,11 @@
    "visitas": 2
   },
   {
+   "id": "https://sf-site.sergiofpt.workers.dev/r/",
+   "nome": "sf-site.sergiofpt.workers.dev",
+   "visitas": 2
+  },
+  {
    "id": "https://l.instagram.com",
    "nome": "l.instagram.com",
    "visitas": 1
@@ -1895,11 +1900,6 @@
   {
    "id": "https://sergiofpt.github.io/imortalistas",
    "nome": "sergiofpt.github.io",
-   "visitas": 1
-  },
-  {
-   "id": "https://sf-site.sergiofpt.workers.dev/r/",
-   "nome": "sf-site.sergiofpt.workers.dev",
    "visitas": 1
   },
   {
@@ -2639,7 +2639,7 @@
     {
      "dia": "2026-10-24",
      "visitas": 0,
-     "aberturas": 33
+     "aberturas": 35
     }
    ],
    "paginas": [
@@ -2839,6 +2839,17 @@
      "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 1
+    },
+    {
+     "id": "avc-pequenos-vasos-cerebrais",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 3,
+     "total": 6,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 2
     },
     {
      "id": "dermatite-seborreica-microbioma-pele",
@@ -3081,17 +3092,6 @@
      "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 1
-    },
-    {
-     "id": "avc-pequenos-vasos-cerebrais",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 3,
-     "total": 5,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 2
     },
     {
      "id": "cerebro-neurodegeneracao",
@@ -3501,6 +3501,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "visao-audicao",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 3,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "vitaminas-minerais",
      "ficheiro": null,
      "pt": 3,
@@ -3853,17 +3864,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "visao-audicao",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 2,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "alimentos-longevidade-173",
      "ficheiro": null,
      "pt": 1,
@@ -4108,22 +4108,22 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 600,
+    "aberturas_pdf": 602,
     "visitas_hoje": 0,
     "visitas_7d": 1,
-    "aberturas_hoje": 33,
-    "aberturas_7d": 115,
-    "aberturas_30d": 600,
-    "pdf_abertos": 355,
+    "aberturas_hoje": 35,
+    "aberturas_7d": 117,
+    "aberturas_30d": 602,
+    "pdf_abertos": 357,
     "pdf_descarregados": 245,
-    "pdf_pt": 338,
+    "pdf_pt": 340,
     "pdf_en": 262
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 501
+     "visitas": 502
     },
     {
      "id": "US",
@@ -4161,6 +4161,11 @@
      "visitas": 2
     },
     {
+     "id": "AZ",
+     "nome": "Azerbaijan",
+     "visitas": 2
+    },
+    {
      "id": "PL",
      "nome": "Poland",
      "visitas": 2
@@ -4169,11 +4174,6 @@
      "id": "UZ",
      "nome": "Uzbekistan",
      "visitas": 2
-    },
-    {
-     "id": "AZ",
-     "nome": "Azerbaijan",
-     "visitas": 1
     },
     {
      "id": "CO",
