@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-24T07:23:46Z",
+ "atualizado_em": "2026-10-24T08:01:38Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 605,
+  "aberturas_pdf": 606,
   "visitas_hoje": 0,
   "visitas_7d": 2,
-  "aberturas_hoje": 12,
-  "aberturas_7d": 94,
-  "aberturas_30d": 605,
-  "pdf_abertos": 360,
+  "aberturas_hoje": 13,
+  "aberturas_7d": 95,
+  "aberturas_30d": 606,
+  "pdf_abertos": 361,
   "pdf_descarregados": 245,
-  "pdf_pt": 341,
+  "pdf_pt": 342,
   "pdf_en": 264
  },
  "dias": [
@@ -137,7 +137,7 @@
   {
    "dia": "2026-10-24",
    "visitas": 0,
-   "aberturas": 12
+   "aberturas": 13
   }
  ],
  "paginas": [
@@ -475,6 +475,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "olhos-em-detalhe",
+   "ficheiro": null,
+   "pt": 4,
+   "en": 2,
+   "total": 6,
+   "abertos_pt": 3,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "psicadelicos",
    "ficheiro": null,
    "pt": 4,
@@ -740,17 +751,6 @@
   },
   {
    "id": "microbioma-intestino",
-   "ficheiro": null,
-   "pt": 3,
-   "en": 2,
-   "total": 5,
-   "abertos_pt": 2,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "olhos-em-detalhe",
    "ficheiro": null,
    "pt": 3,
    "en": 2,
@@ -1637,7 +1637,7 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 495
+   "visitas": 496
   },
   {
    "id": "US",
@@ -1764,7 +1764,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 643
+   "visitas": 644
   },
   {
    "id": "Firefox",
@@ -1781,7 +1781,7 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 343
+   "visitas": 344
   },
   {
    "id": "macOS",
@@ -1833,14 +1833,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 605
+   "visitas": 606
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 603
+   "visitas": 604
   },
   {
    "id": "https://imortalistas.com",
@@ -2614,7 +2614,7 @@
     {
      "dia": "2026-10-24",
      "visitas": 0,
-     "aberturas": 12
+     "aberturas": 13
     }
    ],
    "paginas": [
@@ -2856,6 +2856,17 @@
      "total": 6,
      "abertos_pt": 1,
      "abertos_en": 3,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "olhos-em-detalhe",
+     "ficheiro": null,
+     "pt": 4,
+     "en": 2,
+     "total": 6,
+     "abertos_pt": 3,
+     "abertos_en": 1,
      "descarregados_pt": 1,
      "descarregados_en": 1
     },
@@ -3158,17 +3169,6 @@
     },
     {
      "id": "microbioma-intestino",
-     "ficheiro": null,
-     "pt": 3,
-     "en": 2,
-     "total": 5,
-     "abertos_pt": 2,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "olhos-em-detalhe",
      "ficheiro": null,
      "pt": 3,
      "en": 2,
@@ -4083,22 +4083,22 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 579,
+    "aberturas_pdf": 580,
     "visitas_hoje": 0,
     "visitas_7d": 1,
-    "aberturas_hoje": 12,
-    "aberturas_7d": 94,
-    "aberturas_30d": 579,
-    "pdf_abertos": 334,
+    "aberturas_hoje": 13,
+    "aberturas_7d": 95,
+    "aberturas_30d": 580,
+    "pdf_abertos": 335,
     "pdf_descarregados": 245,
-    "pdf_pt": 317,
+    "pdf_pt": 318,
     "pdf_en": 262
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 495
+     "visitas": 496
     },
     {
      "id": "US",
