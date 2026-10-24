@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-24T11:27:24Z",
+ "atualizado_em": "2026-10-24T11:59:10Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 617,
+  "aberturas_pdf": 619,
   "visitas_hoje": 0,
   "visitas_7d": 2,
-  "aberturas_hoje": 24,
-  "aberturas_7d": 106,
-  "aberturas_30d": 617,
-  "pdf_abertos": 372,
+  "aberturas_hoje": 26,
+  "aberturas_7d": 108,
+  "aberturas_30d": 619,
+  "pdf_abertos": 374,
   "pdf_descarregados": 245,
-  "pdf_pt": 353,
+  "pdf_pt": 355,
   "pdf_en": 264
  },
  "dias": [
@@ -137,7 +137,7 @@
   {
    "dia": "2026-10-24",
    "visitas": 0,
-   "aberturas": 24
+   "aberturas": 26
   }
  ],
  "paginas": [
@@ -202,10 +202,10 @@
   {
    "id": "imortalidade",
    "ficheiro": null,
-   "pt": 10,
+   "pt": 11,
    "en": 9,
-   "total": 19,
-   "abertos_pt": 8,
+   "total": 20,
+   "abertos_pt": 9,
    "abertos_en": 6,
    "descarregados_pt": 2,
    "descarregados_en": 3
@@ -915,6 +915,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "relogio-epigenetico-idade-biologica",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 3,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
+   "descarregados_en": 1
+  },
+  {
    "id": "resumo-clinico-medico",
    "ficheiro": null,
    "pt": 3,
@@ -1289,17 +1300,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "relogio-epigenetico-idade-biologica",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 2,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
-   "descarregados_en": 1
-  },
-  {
    "id": "reparacao-adn-estabilidade-genoma",
    "ficheiro": null,
    "pt": 2,
@@ -1652,12 +1652,12 @@
   {
    "id": "HK",
    "nome": "Hong Kong",
-   "visitas": 30
+   "visitas": 31
   },
   {
    "id": "MX",
    "nome": "Mexico",
-   "visitas": 17
+   "visitas": 18
   },
   {
    "id": "CA",
@@ -1764,7 +1764,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 655
+   "visitas": 657
   },
   {
    "id": "Firefox",
@@ -1786,7 +1786,7 @@
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 290
+   "visitas": 292
   },
   {
    "id": "Android",
@@ -1833,14 +1833,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 617
+   "visitas": 619
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 611
+   "visitas": 613
   },
   {
    "id": "https://imortalistas.com",
@@ -2629,7 +2629,7 @@
     {
      "dia": "2026-10-24",
      "visitas": 0,
-     "aberturas": 24
+     "aberturas": 26
     }
    ],
    "paginas": [
@@ -2688,6 +2688,17 @@
    ],
    "relatorios": [
     {
+     "id": "imortalidade",
+     "ficheiro": null,
+     "pt": 5,
+     "en": 7,
+     "total": 12,
+     "abertos_pt": 3,
+     "abertos_en": 4,
+     "descarregados_pt": 2,
+     "descarregados_en": 3
+    },
+    {
      "id": "anestesia-cirurgia",
      "ficheiro": null,
      "pt": 5,
@@ -2697,17 +2708,6 @@
      "abertos_en": 4,
      "descarregados_pt": 3,
      "descarregados_en": 2
-    },
-    {
-     "id": "imortalidade",
-     "ficheiro": null,
-     "pt": 4,
-     "en": 7,
-     "total": 11,
-     "abertos_pt": 2,
-     "abertos_en": 4,
-     "descarregados_pt": 2,
-     "descarregados_en": 3
     },
     {
      "id": "cancros-um-a-um",
@@ -3348,6 +3348,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "relogio-epigenetico-idade-biologica",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 3,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "resposta-treino-vo2max",
      "ficheiro": null,
      "pt": 3,
@@ -3755,17 +3766,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "relogio-epigenetico-idade-biologica",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 2,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "reparacao-adn-estabilidade-genoma",
      "ficheiro": null,
      "pt": 2,
@@ -4098,15 +4098,15 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 591,
+    "aberturas_pdf": 593,
     "visitas_hoje": 0,
     "visitas_7d": 1,
-    "aberturas_hoje": 24,
-    "aberturas_7d": 106,
-    "aberturas_30d": 591,
-    "pdf_abertos": 346,
+    "aberturas_hoje": 26,
+    "aberturas_7d": 108,
+    "aberturas_30d": 593,
+    "pdf_abertos": 348,
     "pdf_descarregados": 245,
-    "pdf_pt": 329,
+    "pdf_pt": 331,
     "pdf_en": 262
    },
    "paises": [
@@ -4123,12 +4123,12 @@
     {
      "id": "HK",
      "nome": "Hong Kong",
-     "visitas": 30
+     "visitas": 31
     },
     {
      "id": "MX",
      "nome": "Mexico",
-     "visitas": 17
+     "visitas": 18
     },
     {
      "id": "CA",
