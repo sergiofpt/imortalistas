@@ -1,6 +1,6 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-25T00:02:54Z",
+ "atualizado_em": "2026-10-25T01:30:55Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
@@ -31,13 +31,13 @@
   },
   {
    "dia": "2026-10-03",
-   "visitas": 17,
-   "aberturas": 11
+   "visitas": 22,
+   "aberturas": 12
   },
   {
    "dia": "2026-10-04",
-   "visitas": 8,
-   "aberturas": 4
+   "visitas": 3,
+   "aberturas": 3
   },
   {
    "dia": "2026-10-05",
@@ -52,22 +52,22 @@
   {
    "dia": "2026-10-07",
    "visitas": 3,
-   "aberturas": 161
+   "aberturas": 172
   },
   {
    "dia": "2026-10-08",
    "visitas": 3,
-   "aberturas": 177
+   "aberturas": 166
   },
   {
    "dia": "2026-10-09",
    "visitas": 9,
-   "aberturas": 43
+   "aberturas": 48
   },
   {
    "dia": "2026-10-10",
    "visitas": 3,
-   "aberturas": 64
+   "aberturas": 59
   },
   {
    "dia": "2026-10-11",
@@ -92,12 +92,12 @@
   {
    "dia": "2026-10-15",
    "visitas": 2,
-   "aberturas": 4
+   "aberturas": 5
   },
   {
    "dia": "2026-10-16",
    "visitas": 1,
-   "aberturas": 22
+   "aberturas": 21
   },
   {
    "dia": "2026-10-17",
@@ -127,17 +127,17 @@
   {
    "dia": "2026-10-22",
    "visitas": 0,
-   "aberturas": 20
+   "aberturas": 23
   },
   {
    "dia": "2026-10-23",
    "visitas": 0,
-   "aberturas": 57
+   "aberturas": 56
   },
   {
    "dia": "2026-10-24",
    "visitas": 0,
-   "aberturas": 38
+   "aberturas": 36
   },
   {
    "dia": "2026-10-25",
@@ -2194,13 +2194,13 @@
     },
     {
      "dia": "2026-10-03",
-     "visitas": 1,
-     "aberturas": 0
+     "visitas": 5,
+     "aberturas": 1
     },
     {
      "dia": "2026-10-04",
-     "visitas": 4,
-     "aberturas": 1
+     "visitas": 0,
+     "aberturas": 0
     },
     {
      "dia": "2026-10-05",
@@ -2574,22 +2574,22 @@
     {
      "dia": "2026-10-07",
      "visitas": 3,
-     "aberturas": 153
+     "aberturas": 164
     },
     {
      "dia": "2026-10-08",
      "visitas": 3,
-     "aberturas": 177
+     "aberturas": 166
     },
     {
      "dia": "2026-10-09",
      "visitas": 6,
-     "aberturas": 43
+     "aberturas": 48
     },
     {
      "dia": "2026-10-10",
      "visitas": 3,
-     "aberturas": 64
+     "aberturas": 59
     },
     {
      "dia": "2026-10-11",
@@ -2614,12 +2614,12 @@
     {
      "dia": "2026-10-15",
      "visitas": 0,
-     "aberturas": 4
+     "aberturas": 5
     },
     {
      "dia": "2026-10-16",
      "visitas": 1,
-     "aberturas": 22
+     "aberturas": 21
     },
     {
      "dia": "2026-10-17",
@@ -2649,17 +2649,17 @@
     {
      "dia": "2026-10-22",
      "visitas": 0,
-     "aberturas": 20
+     "aberturas": 23
     },
     {
      "dia": "2026-10-23",
      "visitas": 0,
-     "aberturas": 57
+     "aberturas": 56
     },
     {
      "dia": "2026-10-24",
      "visitas": 0,
-     "aberturas": 38
+     "aberturas": 36
     },
     {
      "dia": "2026-10-25",
