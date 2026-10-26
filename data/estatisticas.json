@@ -1,21 +1,21 @@
 {
  "versao": 1,
- "atualizado_em": "2026-10-26T00:04:32Z",
+ "atualizado_em": "2026-10-26T01:12:53Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 71,
   "visitas_30d": 71,
   "visitas_90d": 71,
-  "aberturas_pdf": 631,
+  "aberturas_pdf": 641,
   "visitas_hoje": 0,
   "visitas_7d": 1,
-  "aberturas_hoje": 0,
-  "aberturas_7d": 118,
-  "aberturas_30d": 631,
-  "pdf_abertos": 386,
+  "aberturas_hoje": 10,
+  "aberturas_7d": 128,
+  "aberturas_30d": 641,
+  "pdf_abertos": 396,
   "pdf_descarregados": 245,
-  "pdf_pt": 367,
+  "pdf_pt": 377,
   "pdf_en": 264
  },
  "dias": [
@@ -147,7 +147,7 @@
   {
    "dia": "2026-10-26",
    "visitas": 0,
-   "aberturas": 0
+   "aberturas": 10
   }
  ],
  "paginas": [
@@ -331,6 +331,17 @@
    "descarregados_en": 2
   },
   {
+   "id": "doencas-geneticas-hereditarias",
+   "ficheiro": null,
+   "pt": 5,
+   "en": 2,
+   "total": 7,
+   "abertos_pt": 4,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "fertilidade-masculina",
    "ficheiro": null,
    "pt": 5,
@@ -350,6 +361,17 @@
    "abertos_pt": 2,
    "abertos_en": 2,
    "descarregados_pt": 2,
+   "descarregados_en": 1
+  },
+  {
+   "id": "psicadelicos",
+   "ficheiro": null,
+   "pt": 5,
+   "en": 2,
+   "total": 7,
+   "abertos_pt": 4,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
    "descarregados_en": 1
   },
   {
@@ -420,17 +442,6 @@
   },
   {
    "id": "disruptores-endocrinos-poluentes",
-   "ficheiro": null,
-   "pt": 4,
-   "en": 2,
-   "total": 6,
-   "abertos_pt": 3,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "doencas-geneticas-hereditarias",
    "ficheiro": null,
    "pt": 4,
    "en": 2,
@@ -595,17 +606,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "psicadelicos",
-   "ficheiro": null,
-   "pt": 4,
-   "en": 2,
-   "total": 6,
-   "abertos_pt": 3,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "resposta-treino-vo2max",
    "ficheiro": null,
    "pt": 4,
@@ -683,6 +683,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "cafeina-estimulantes",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "cartao-farmacogenetico",
    "ficheiro": null,
    "pt": 3,
@@ -705,7 +716,29 @@
    "descarregados_en": 1
   },
   {
+   "id": "cetose-corpos-cetonicos",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "coagulacao-trombose-veias",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "coluna-disco-dor-lombar",
    "ficheiro": null,
    "pt": 3,
    "en": 2,
@@ -757,6 +790,17 @@
    "abertos_pt": 3,
    "abertos_en": 0,
    "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "funcao-sexual-eretil",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 3,
+   "abertos_en": 1,
+   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -870,6 +914,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "oxitocina-comportamento-social",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "paladar-olfato",
    "ficheiro": null,
    "pt": 3,
@@ -958,6 +1013,17 @@
    "descarregados_en": 1
   },
   {
+   "id": "reparacao-adn-estabilidade-genoma",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
    "id": "resumo-clinico-medico",
    "ficheiro": null,
    "pt": 3,
@@ -970,6 +1036,17 @@
   },
   {
    "id": "risco-cancro-scores-poligenicos",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 2,
+   "total": 5,
+   "abertos_pt": 2,
+   "abertos_en": 1,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "ritmo-cardiaco-arritmias",
    "ficheiro": null,
    "pt": 3,
    "en": 2,
@@ -1134,17 +1211,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "cafeina-estimulantes",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "cardiovascular-avancado",
    "ficheiro": null,
    "pt": 2,
@@ -1157,28 +1223,6 @@
   },
   {
    "id": "celulas-estaminais-regeneracao",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "cetose-corpos-cetonicos",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "coluna-disco-dor-lombar",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -1222,7 +1266,7 @@
    "descarregados_en": 1
   },
   {
-   "id": "funcao-sexual-eretil",
+   "id": "hipertensao-pulmonar-circulacao-pulmao",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -1233,7 +1277,7 @@
    "descarregados_en": 1
   },
   {
-   "id": "hipertensao-pulmonar-circulacao-pulmao",
+   "id": "imunidade-envelhecimento-imunitario",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -1299,17 +1343,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "oxitocina-comportamento-social",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "personalidade-tracos-psicologicos",
    "ficheiro": null,
    "pt": 2,
@@ -1321,29 +1354,7 @@
    "descarregados_en": 1
   },
   {
-   "id": "reparacao-adn-estabilidade-genoma",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "rim-acido-urico",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "ritmo-cardiaco-arritmias",
    "ficheiro": null,
    "pt": 2,
    "en": 2,
@@ -1461,17 +1472,6 @@
    "abertos_pt": 0,
    "abertos_en": 1,
    "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "imunidade-envelhecimento-imunitario",
-   "ficheiro": null,
-   "pt": 1,
-   "en": 2,
-   "total": 3,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 0,
    "descarregados_en": 1
   },
   {
@@ -1647,12 +1647,12 @@
   {
    "id": "SG",
    "nome": "Singapore",
-   "visitas": 503
+   "visitas": 505
   },
   {
    "id": "US",
    "nome": "United States",
-   "visitas": 64
+   "visitas": 67
   },
   {
    "id": "PT",
@@ -1662,17 +1662,17 @@
   {
    "id": "HK",
    "nome": "Hong Kong",
-   "visitas": 33
+   "visitas": 34
   },
   {
    "id": "MX",
    "nome": "Mexico",
-   "visitas": 19
+   "visitas": 21
   },
   {
    "id": "CA",
    "nome": "Canada",
-   "visitas": 5
+   "visitas": 6
   },
   {
    "id": "BR",
@@ -1692,6 +1692,11 @@
   {
    "id": "AZ",
    "nome": "Azerbaijan",
+   "visitas": 2
+  },
+  {
+   "id": "IN",
+   "nome": "India",
    "visitas": 2
   },
   {
@@ -1717,11 +1722,6 @@
   {
    "id": "IL",
    "nome": "Israel",
-   "visitas": 1
-  },
-  {
-   "id": "IN",
-   "nome": "India",
    "visitas": 1
   },
   {
@@ -1779,7 +1779,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 669
+   "visitas": 679
   },
   {
    "id": "Firefox",
@@ -1796,12 +1796,12 @@
   {
    "id": "Windows",
    "nome": "Windows",
-   "visitas": 351
+   "visitas": 356
   },
   {
    "id": "macOS",
    "nome": "macOS",
-   "visitas": 301
+   "visitas": 306
   },
   {
    "id": "Android",
@@ -1848,14 +1848,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 631
+   "visitas": 641
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 620
+   "visitas": 630
   },
   {
    "id": "https://imortalistas.com",
@@ -2679,7 +2679,7 @@
     {
      "dia": "2026-10-26",
      "visitas": 0,
-     "aberturas": 0
+     "aberturas": 10
     }
    ],
    "paginas": [
@@ -3057,6 +3057,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "psicadelicos",
+     "ficheiro": null,
+     "pt": 4,
+     "en": 2,
+     "total": 6,
+     "abertos_pt": 3,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "ritmo-circadiano-sono",
      "ficheiro": null,
      "pt": 4,
@@ -3145,7 +3156,29 @@
      "descarregados_en": 1
     },
     {
+     "id": "cafeina-estimulantes",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "cerebro-neurodegeneracao",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "cetose-corpos-cetonicos",
      "ficheiro": null,
      "pt": 3,
      "en": 2,
@@ -3167,7 +3200,29 @@
      "descarregados_en": 1
     },
     {
+     "id": "coluna-disco-dor-lombar",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "doenca-arterial-periferica",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "doencas-geneticas-hereditarias",
      "ficheiro": null,
      "pt": 3,
      "en": 2,
@@ -3332,6 +3387,17 @@
      "descarregados_en": 1
     },
     {
+     "id": "oxitocina-comportamento-social",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
      "id": "paladar-olfato",
      "ficheiro": null,
      "pt": 3,
@@ -3398,17 +3464,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "psicadelicos",
-     "ficheiro": null,
-     "pt": 3,
-     "en": 2,
-     "total": 5,
-     "abertos_pt": 2,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "pulmao-funcao-respiratoria",
      "ficheiro": null,
      "pt": 3,
@@ -3428,6 +3483,17 @@
      "abertos_pt": 3,
      "abertos_en": 1,
      "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "reparacao-adn-estabilidade-genoma",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
      "descarregados_en": 1
     },
     {
@@ -3454,6 +3520,17 @@
     },
     {
      "id": "risco-cancro-scores-poligenicos",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 2,
+     "total": 5,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "ritmo-cardiaco-arritmias",
      "ficheiro": null,
      "pt": 3,
      "en": 2,
@@ -3618,17 +3695,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "cafeina-estimulantes",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "cardiovascular-avancado",
      "ficheiro": null,
      "pt": 2,
@@ -3652,39 +3718,6 @@
     },
     {
      "id": "celulas-estaminais-regeneracao",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "cetose-corpos-cetonicos",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "coluna-disco-dor-lombar",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "doencas-geneticas-hereditarias",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3739,7 +3772,29 @@
      "descarregados_en": 1
     },
     {
+     "id": "funcao-sexual-eretil",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
      "id": "hipertensao-pulmonar-circulacao-pulmao",
+     "ficheiro": null,
+     "pt": 2,
+     "en": 2,
+     "total": 4,
+     "abertos_pt": 2,
+     "abertos_en": 1,
+     "descarregados_pt": 0,
+     "descarregados_en": 1
+    },
+    {
+     "id": "imunidade-envelhecimento-imunitario",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3805,17 +3860,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "oxitocina-comportamento-social",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "personalidade-tracos-psicologicos",
      "ficheiro": null,
      "pt": 2,
@@ -3827,29 +3871,7 @@
      "descarregados_en": 1
     },
     {
-     "id": "reparacao-adn-estabilidade-genoma",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "rim-acido-urico",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "ritmo-cardiaco-arritmias",
      "ficheiro": null,
      "pt": 2,
      "en": 2,
@@ -3926,17 +3948,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "funcao-sexual-eretil",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
-     "descarregados_en": 1
-    },
-    {
      "id": "gaba-glutamato",
      "ficheiro": null,
      "pt": 1,
@@ -3978,17 +3989,6 @@
      "abertos_pt": 0,
      "abertos_en": 1,
      "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "imunidade-envelhecimento-imunitario",
-     "ficheiro": null,
-     "pt": 1,
-     "en": 2,
-     "total": 3,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 0,
      "descarregados_en": 1
     },
     {
@@ -4148,42 +4148,42 @@
     "visitas": 44,
     "visitas_30d": 44,
     "visitas_90d": 44,
-    "aberturas_pdf": 605,
+    "aberturas_pdf": 615,
     "visitas_hoje": 0,
     "visitas_7d": 1,
-    "aberturas_hoje": 0,
-    "aberturas_7d": 118,
-    "aberturas_30d": 605,
-    "pdf_abertos": 360,
+    "aberturas_hoje": 10,
+    "aberturas_7d": 128,
+    "aberturas_30d": 615,
+    "pdf_abertos": 370,
     "pdf_descarregados": 245,
-    "pdf_pt": 343,
+    "pdf_pt": 353,
     "pdf_en": 262
    },
    "paises": [
     {
      "id": "SG",
      "nome": "Singapore",
-     "visitas": 503
+     "visitas": 505
     },
     {
      "id": "US",
      "nome": "United States",
-     "visitas": 64
+     "visitas": 67
     },
     {
      "id": "HK",
      "nome": "Hong Kong",
-     "visitas": 33
+     "visitas": 34
     },
     {
      "id": "MX",
      "nome": "Mexico",
-     "visitas": 19
+     "visitas": 21
     },
     {
      "id": "CA",
      "nome": "Canada",
-     "visitas": 5
+     "visitas": 6
     },
     {
      "id": "BR",
@@ -4203,6 +4203,11 @@
     {
      "id": "AZ",
      "nome": "Azerbaijan",
+     "visitas": 2
+    },
+    {
+     "id": "IN",
+     "nome": "India",
      "visitas": 2
     },
     {
@@ -4228,11 +4233,6 @@
     {
      "id": "IL",
      "nome": "Israel",
-     "visitas": 1
-    },
-    {
-     "id": "IN",
-     "nome": "India",
      "visitas": 1
     },
     {
