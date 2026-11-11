@@ -1,15 +1,15 @@
 {
  "versao": 1,
- "atualizado_em": "2026-11-11T00:33:29Z",
+ "atualizado_em": "2026-11-11T22:12:49Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
-  "visitas": 71,
-  "visitas_30d": 5,
-  "visitas_90d": 71,
+  "visitas": 73,
+  "visitas_30d": 7,
+  "visitas_90d": 73,
   "aberturas_pdf": 641,
-  "visitas_hoje": 0,
-  "visitas_7d": 0,
+  "visitas_hoje": 2,
+  "visitas_7d": 2,
   "aberturas_hoje": 0,
   "aberturas_7d": 0,
   "aberturas_30d": 171,
@@ -226,7 +226,7 @@
   },
   {
    "dia": "2026-11-11",
-   "visitas": 0,
+   "visitas": 2,
    "aberturas": 0
   }
  ],
@@ -237,7 +237,7 @@
   },
   {
    "path": "/inicio.html",
-   "visitas": 10
+   "visitas": 12
   },
   {
    "path": "/teste-worker",
@@ -1653,6 +1653,13 @@
    "visitas": 2
   },
   {
+   "id": "iphone/iphone-12-12-pro-13-13-pro-14-16e",
+   "tipo": "iphone",
+   "nome": "iPhone 12 / 12 Pro / 13 / 13 Pro / 14 / 16e",
+   "estimativa": true,
+   "visitas": 2
+  },
+  {
    "id": "android/android",
    "tipo": "android",
    "nome": "Android",
@@ -1757,7 +1764,7 @@
   {
    "id": "BR",
    "nome": "Brazil",
-   "visitas": 3
+   "visitas": 5
   },
   {
    "id": "GB",
@@ -1869,7 +1876,7 @@
   {
    "id": "Safari",
    "nome": "Safari",
-   "visitas": 6
+   "visitas": 8
   }
  ],
  "sistemas": [
@@ -1896,7 +1903,7 @@
   {
    "id": "iOS",
    "nome": "iOS",
-   "visitas": 4
+   "visitas": 6
   },
   {
    "id": "Chrome OS",
@@ -1908,7 +1915,7 @@
   {
    "id": "phone",
    "nome": "phone",
-   "visitas": 19
+   "visitas": 21
   },
   {
    "id": "tablet",
@@ -1940,7 +1947,7 @@
   {
    "id": "https://imortalistas.com",
    "nome": "imortalistas.com",
-   "visitas": 5
+   "visitas": 7
   },
   {
    "id": "https://bing.com",
@@ -2918,7 +2925,7 @@
     },
     {
      "dia": "2026-11-11",
-     "visitas": 0,
+     "visitas": 2,
      "aberturas": 0
     }
    ],
@@ -2929,7 +2936,7 @@
     },
     {
      "path": "/inicio.html",
-     "visitas": 5
+     "visitas": 7
     },
     {
      "path": "/",
@@ -4320,6 +4327,13 @@
      "visitas": 2
     },
     {
+     "id": "iphone/iphone-12-12-pro-13-13-pro-14-16e",
+     "tipo": "iphone",
+     "nome": "iPhone 12 / 12 Pro / 13 / 13 Pro / 14 / 16e",
+     "estimativa": true,
+     "visitas": 2
+    },
+    {
      "id": "computador/chromeos-chrome",
      "tipo": "computador",
      "nome": "ChromeOS · Chrome",
@@ -4385,12 +4399,12 @@
    ],
    "aparelhos_desde": "2026-10-03",
    "total": {
-    "visitas": 44,
-    "visitas_30d": 2,
-    "visitas_90d": 44,
+    "visitas": 46,
+    "visitas_30d": 4,
+    "visitas_90d": 46,
     "aberturas_pdf": 615,
-    "visitas_hoje": 0,
-    "visitas_7d": 0,
+    "visitas_hoje": 2,
+    "visitas_7d": 2,
     "aberturas_hoje": 0,
     "aberturas_7d": 0,
     "aberturas_30d": 171,
@@ -4428,7 +4442,7 @@
     {
      "id": "BR",
      "nome": "Brazil",
-     "visitas": 3
+     "visitas": 5
     },
     {
      "id": "GB",
