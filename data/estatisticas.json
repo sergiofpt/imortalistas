@@ -1,6 +1,6 @@
 {
  "versao": 1,
- "atualizado_em": "2026-11-11T22:12:49Z",
+ "atualizado_em": "2026-11-12T03:06:29Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
@@ -8,7 +8,7 @@
   "visitas_30d": 7,
   "visitas_90d": 73,
   "aberturas_pdf": 641,
-  "visitas_hoje": 2,
+  "visitas_hoje": 0,
   "visitas_7d": 2,
   "aberturas_hoje": 0,
   "aberturas_7d": 0,
@@ -227,6 +227,11 @@
   {
    "dia": "2026-11-11",
    "visitas": 2,
+   "aberturas": 0
+  },
+  {
+   "dia": "2026-11-12",
+   "visitas": 0,
    "aberturas": 0
   }
  ],
@@ -2483,6 +2488,11 @@
      "dia": "2026-11-11",
      "visitas": 0,
      "aberturas": 0
+    },
+    {
+     "dia": "2026-11-12",
+     "visitas": 0,
+     "aberturas": 0
     }
    ],
    "paginas": [
@@ -2926,6 +2936,11 @@
     {
      "dia": "2026-11-11",
      "visitas": 2,
+     "aberturas": 0
+    },
+    {
+     "dia": "2026-11-12",
+     "visitas": 0,
      "aberturas": 0
     }
    ],
@@ -4403,7 +4418,7 @@
     "visitas_30d": 4,
     "visitas_90d": 46,
     "aberturas_pdf": 615,
-    "visitas_hoje": 2,
+    "visitas_hoje": 0,
     "visitas_7d": 2,
     "aberturas_hoje": 0,
     "aberturas_7d": 0,
