@@ -1,6 +1,6 @@
 {
  "versao": 1,
- "atualizado_em": "2026-11-16T03:14:26Z",
+ "atualizado_em": "2026-11-17T03:59:58Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
@@ -251,6 +251,11 @@
   },
   {
    "dia": "2026-11-16",
+   "visitas": 0,
+   "aberturas": 0
+  },
+  {
+   "dia": "2026-11-17",
    "visitas": 0,
    "aberturas": 0
   }
@@ -2533,6 +2538,11 @@
      "dia": "2026-11-16",
      "visitas": 0,
      "aberturas": 0
+    },
+    {
+     "dia": "2026-11-17",
+     "visitas": 0,
+     "aberturas": 0
     }
    ],
    "paginas": [
@@ -3000,6 +3010,11 @@
     },
     {
      "dia": "2026-11-16",
+     "visitas": 0,
+     "aberturas": 0
+    },
+    {
+     "dia": "2026-11-17",
      "visitas": 0,
      "aberturas": 0
     }
