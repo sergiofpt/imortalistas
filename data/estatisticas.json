@@ -1,22 +1,22 @@
 {
  "versao": 1,
- "atualizado_em": "2026-11-27T04:05:47Z",
+ "atualizado_em": "2026-11-27T13:56:42Z",
  "desde": "2026-10-01",
  "descarregados_desde": "2026-10-03",
  "total": {
   "visitas": 73,
   "visitas_30d": 2,
   "visitas_90d": 73,
-  "aberturas_pdf": 641,
+  "aberturas_pdf": 660,
   "visitas_hoje": 0,
   "visitas_7d": 0,
-  "aberturas_hoje": 0,
-  "aberturas_7d": 0,
-  "aberturas_30d": 0,
-  "pdf_abertos": 396,
+  "aberturas_hoje": 19,
+  "aberturas_7d": 19,
+  "aberturas_30d": 19,
+  "pdf_abertos": 415,
   "pdf_descarregados": 245,
-  "pdf_pt": 377,
-  "pdf_en": 264
+  "pdf_pt": 387,
+  "pdf_en": 273
  },
  "dias": [
   {
@@ -307,7 +307,7 @@
   {
    "dia": "2026-11-27",
    "visitas": 0,
-   "aberturas": 0
+   "aberturas": 19
   }
  ],
  "paginas": [
@@ -372,10 +372,10 @@
   {
    "id": "imortalidade",
    "ficheiro": null,
-   "pt": 11,
+   "pt": 12,
    "en": 9,
-   "total": 20,
-   "abertos_pt": 9,
+   "total": 21,
+   "abertos_pt": 10,
    "abertos_en": 6,
    "descarregados_pt": 2,
    "descarregados_en": 3
@@ -383,12 +383,23 @@
   {
    "id": "anestesia-cirurgia",
    "ficheiro": null,
-   "pt": 6,
-   "en": 6,
-   "total": 12,
-   "abertos_pt": 3,
-   "abertos_en": 4,
+   "pt": 7,
+   "en": 7,
+   "total": 14,
+   "abertos_pt": 4,
+   "abertos_en": 5,
    "descarregados_pt": 3,
+   "descarregados_en": 2
+  },
+  {
+   "id": "bexiga-funcao-urinaria",
+   "ficheiro": null,
+   "pt": 6,
+   "en": 5,
+   "total": 11,
+   "abertos_pt": 4,
+   "abertos_en": 3,
+   "descarregados_pt": 2,
    "descarregados_en": 2
   },
   {
@@ -414,6 +425,17 @@
    "descarregados_en": 3
   },
   {
+   "id": "acne-glandulas-sebaceas",
+   "ficheiro": null,
+   "pt": 5,
+   "en": 5,
+   "total": 10,
+   "abertos_pt": 4,
+   "abertos_en": 2,
+   "descarregados_pt": 1,
+   "descarregados_en": 3
+  },
+  {
    "id": "capacidade-cognitiva-plasticidade",
    "ficheiro": null,
    "pt": 8,
@@ -425,26 +447,48 @@
    "descarregados_en": 1
   },
   {
-   "id": "bexiga-funcao-urinaria",
+   "id": "referencia-via-forca-hipertrofia-potencia",
+   "ficheiro": null,
+   "pt": 4,
+   "en": 6,
+   "total": 10,
+   "abertos_pt": 2,
+   "abertos_en": 5,
+   "descarregados_pt": 2,
+   "descarregados_en": 1
+  },
+  {
+   "id": "avc-pequenos-vasos-cerebrais",
+   "ficheiro": null,
+   "pt": 5,
+   "en": 4,
+   "total": 9,
+   "abertos_pt": 4,
+   "abertos_en": 2,
+   "descarregados_pt": 1,
+   "descarregados_en": 2
+  },
+  {
+   "id": "forca-hipertrofia-potencia",
    "ficheiro": null,
    "pt": 5,
    "en": 4,
    "total": 9,
    "abertos_pt": 3,
-   "abertos_en": 2,
+   "abertos_en": 3,
    "descarregados_pt": 2,
-   "descarregados_en": 2
+   "descarregados_en": 1
   },
   {
-   "id": "acne-glandulas-sebaceas",
+   "id": "articulacoes-artrose",
    "ficheiro": null,
-   "pt": 4,
-   "en": 4,
+   "pt": 5,
+   "en": 3,
    "total": 8,
-   "abertos_pt": 3,
-   "abertos_en": 1,
+   "abertos_pt": 4,
+   "abertos_en": 2,
    "descarregados_pt": 1,
-   "descarregados_en": 3
+   "descarregados_en": 1
   },
   {
    "id": "doencas-autoimunes",
@@ -469,28 +513,6 @@
    "descarregados_en": 2
   },
   {
-   "id": "referencia-via-forca-hipertrofia-potencia",
-   "ficheiro": null,
-   "pt": 3,
-   "en": 5,
-   "total": 8,
-   "abertos_pt": 1,
-   "abertos_en": 4,
-   "descarregados_pt": 2,
-   "descarregados_en": 1
-  },
-  {
-   "id": "avc-pequenos-vasos-cerebrais",
-   "ficheiro": null,
-   "pt": 4,
-   "en": 3,
-   "total": 7,
-   "abertos_pt": 3,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 2
-  },
-  {
    "id": "doencas-geneticas-hereditarias",
    "ficheiro": null,
    "pt": 5,
@@ -510,17 +532,6 @@
    "abertos_pt": 4,
    "abertos_en": 1,
    "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "forca-hipertrofia-potencia",
-   "ficheiro": null,
-   "pt": 4,
-   "en": 3,
-   "total": 7,
-   "abertos_pt": 2,
-   "abertos_en": 2,
-   "descarregados_pt": 2,
    "descarregados_en": 1
   },
   {
@@ -568,13 +579,24 @@
    "descarregados_en": 1
   },
   {
-   "id": "articulacoes-artrose",
+   "id": "audicao-zumbido",
    "ficheiro": null,
-   "pt": 4,
-   "en": 2,
+   "pt": 3,
+   "en": 3,
    "total": 6,
-   "abertos_pt": 3,
-   "abertos_en": 1,
+   "abertos_pt": 2,
+   "abertos_en": 2,
+   "descarregados_pt": 1,
+   "descarregados_en": 1
+  },
+  {
+   "id": "baco-sistema-linfatico",
+   "ficheiro": null,
+   "pt": 3,
+   "en": 3,
+   "total": 6,
+   "abertos_pt": 2,
+   "abertos_en": 2,
    "descarregados_pt": 1,
    "descarregados_en": 1
   },
@@ -1338,28 +1360,6 @@
    "descarregados_en": 1
   },
   {
-   "id": "audicao-zumbido",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
-   "id": "baco-sistema-linfatico",
-   "ficheiro": null,
-   "pt": 2,
-   "en": 2,
-   "total": 4,
-   "abertos_pt": 1,
-   "abertos_en": 1,
-   "descarregados_pt": 1,
-   "descarregados_en": 1
-  },
-  {
    "id": "cabelo",
    "ficheiro": null,
    "pt": 2,
@@ -1819,7 +1819,7 @@
   {
    "id": "US",
    "nome": "United States",
-   "visitas": 67
+   "visitas": 86
   },
   {
    "id": "PT",
@@ -1946,7 +1946,7 @@
   {
    "id": "Chrome",
    "nome": "Chrome",
-   "visitas": 679
+   "visitas": 698
   },
   {
    "id": "Firefox",
@@ -1971,14 +1971,14 @@
    "visitas": 306
   },
   {
+   "id": "Linux",
+   "nome": "Linux",
+   "visitas": 40
+  },
+  {
    "id": "Android",
    "nome": "Android",
    "visitas": 23
-  },
-  {
-   "id": "Linux",
-   "nome": "Linux",
-   "visitas": 21
   },
   {
    "id": "iOS",
@@ -2015,14 +2015,14 @@
   {
    "id": "unknown",
    "nome": "unknown",
-   "visitas": 641
+   "visitas": 660
   }
  ],
  "origens": [
   {
    "id": "(desconhecido)",
    "nome": "(desconhecido)",
-   "visitas": 630
+   "visitas": 649
   },
   {
    "id": "https://imortalistas.com",
@@ -3166,7 +3166,7 @@
     {
      "dia": "2026-11-27",
      "visitas": 0,
-     "aberturas": 0
+     "aberturas": 19
     }
    ],
    "paginas": [
@@ -3225,25 +3225,36 @@
    ],
    "relatorios": [
     {
+     "id": "anestesia-cirurgia",
+     "ficheiro": null,
+     "pt": 6,
+     "en": 7,
+     "total": 13,
+     "abertos_pt": 3,
+     "abertos_en": 5,
+     "descarregados_pt": 3,
+     "descarregados_en": 2
+    },
+    {
      "id": "imortalidade",
      "ficheiro": null,
-     "pt": 5,
+     "pt": 6,
      "en": 7,
-     "total": 12,
-     "abertos_pt": 3,
+     "total": 13,
+     "abertos_pt": 4,
      "abertos_en": 4,
      "descarregados_pt": 2,
      "descarregados_en": 3
     },
     {
-     "id": "anestesia-cirurgia",
+     "id": "bexiga-funcao-urinaria",
      "ficheiro": null,
-     "pt": 5,
-     "en": 6,
+     "pt": 6,
+     "en": 5,
      "total": 11,
-     "abertos_pt": 2,
-     "abertos_en": 4,
-     "descarregados_pt": 3,
+     "abertos_pt": 4,
+     "abertos_en": 3,
+     "descarregados_pt": 2,
      "descarregados_en": 2
     },
     {
@@ -3255,6 +3266,17 @@
      "abertos_pt": 3,
      "abertos_en": 2,
      "descarregados_pt": 3,
+     "descarregados_en": 3
+    },
+    {
+     "id": "acne-glandulas-sebaceas",
+     "ficheiro": null,
+     "pt": 5,
+     "en": 5,
+     "total": 10,
+     "abertos_pt": 4,
+     "abertos_en": 2,
+     "descarregados_pt": 1,
      "descarregados_en": 3
     },
     {
@@ -3280,26 +3302,48 @@
      "descarregados_en": 1
     },
     {
-     "id": "bexiga-funcao-urinaria",
+     "id": "referencia-via-forca-hipertrofia-potencia",
+     "ficheiro": null,
+     "pt": 4,
+     "en": 6,
+     "total": 10,
+     "abertos_pt": 2,
+     "abertos_en": 5,
+     "descarregados_pt": 2,
+     "descarregados_en": 1
+    },
+    {
+     "id": "forca-hipertrofia-potencia",
      "ficheiro": null,
      "pt": 5,
      "en": 4,
      "total": 9,
      "abertos_pt": 3,
-     "abertos_en": 2,
+     "abertos_en": 3,
      "descarregados_pt": 2,
-     "descarregados_en": 2
+     "descarregados_en": 1
     },
     {
-     "id": "acne-glandulas-sebaceas",
+     "id": "articulacoes-artrose",
+     "ficheiro": null,
+     "pt": 5,
+     "en": 3,
+     "total": 8,
+     "abertos_pt": 4,
+     "abertos_en": 2,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
+    },
+    {
+     "id": "avc-pequenos-vasos-cerebrais",
      "ficheiro": null,
      "pt": 4,
      "en": 4,
      "total": 8,
      "abertos_pt": 3,
-     "abertos_en": 1,
+     "abertos_en": 2,
      "descarregados_pt": 1,
-     "descarregados_en": 3
+     "descarregados_en": 2
     },
     {
      "id": "doencas-autoimunes",
@@ -3324,28 +3368,6 @@
      "descarregados_en": 2
     },
     {
-     "id": "referencia-via-forca-hipertrofia-potencia",
-     "ficheiro": null,
-     "pt": 3,
-     "en": 5,
-     "total": 8,
-     "abertos_pt": 1,
-     "abertos_en": 4,
-     "descarregados_pt": 2,
-     "descarregados_en": 1
-    },
-    {
-     "id": "forca-hipertrofia-potencia",
-     "ficheiro": null,
-     "pt": 4,
-     "en": 3,
-     "total": 7,
-     "abertos_pt": 2,
-     "abertos_en": 2,
-     "descarregados_pt": 2,
-     "descarregados_en": 1
-    },
-    {
      "id": "alergias-asma-atopia",
      "ficheiro": null,
      "pt": 4,
@@ -3357,26 +3379,26 @@
      "descarregados_en": 1
     },
     {
-     "id": "articulacoes-artrose",
-     "ficheiro": null,
-     "pt": 4,
-     "en": 2,
-     "total": 6,
-     "abertos_pt": 3,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "avc-pequenos-vasos-cerebrais",
+     "id": "audicao-zumbido",
      "ficheiro": null,
      "pt": 3,
      "en": 3,
      "total": 6,
      "abertos_pt": 2,
-     "abertos_en": 1,
+     "abertos_en": 2,
      "descarregados_pt": 1,
-     "descarregados_en": 2
+     "descarregados_en": 1
+    },
+    {
+     "id": "baco-sistema-linfatico",
+     "ficheiro": null,
+     "pt": 3,
+     "en": 3,
+     "total": 6,
+     "abertos_pt": 2,
+     "abertos_en": 2,
+     "descarregados_pt": 1,
+     "descarregados_en": 1
     },
     {
      "id": "dermatite-seborreica-microbioma-pele",
@@ -4149,28 +4171,6 @@
      "descarregados_en": 1
     },
     {
-     "id": "audicao-zumbido",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
-     "id": "baco-sistema-linfatico",
-     "ficheiro": null,
-     "pt": 2,
-     "en": 2,
-     "total": 4,
-     "abertos_pt": 1,
-     "abertos_en": 1,
-     "descarregados_pt": 1,
-     "descarregados_en": 1
-    },
-    {
      "id": "cabelo",
      "ficheiro": null,
      "pt": 2,
@@ -4642,16 +4642,16 @@
     "visitas": 46,
     "visitas_30d": 2,
     "visitas_90d": 46,
-    "aberturas_pdf": 615,
+    "aberturas_pdf": 634,
     "visitas_hoje": 0,
     "visitas_7d": 0,
-    "aberturas_hoje": 0,
-    "aberturas_7d": 0,
-    "aberturas_30d": 0,
-    "pdf_abertos": 370,
+    "aberturas_hoje": 19,
+    "aberturas_7d": 19,
+    "aberturas_30d": 19,
+    "pdf_abertos": 389,
     "pdf_descarregados": 245,
-    "pdf_pt": 353,
-    "pdf_en": 262
+    "pdf_pt": 363,
+    "pdf_en": 271
    },
    "paises": [
     {
@@ -4662,7 +4662,7 @@
     {
      "id": "US",
      "nome": "United States",
-     "visitas": 67
+     "visitas": 86
     },
     {
      "id": "HK",
